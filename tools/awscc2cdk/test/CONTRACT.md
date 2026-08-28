@@ -616,3 +616,434 @@ So the acceptance criteria are known-reachable and the failure of a new test mea
 implementation, not the contract. What is *not* pre-validated (and is genuinely open work): whether
 the adapted cdktn emitters can produce that shape for all 11 fixture resources, the CFN
 definition-name recovery rate, and the sharded resources.
+
+---
+
+# Iteration 3 — plan §5 steps 5–6 (sharding + full generation, jsii, pacmak, benchmark)
+
+Written by the contract writer 2026-08-28, after iteration 2 was verified (HEAD `4a666fe`).
+Everything above stays in force: `tools/awscc2cdk/test/**` is read-only for the implementer (the
+one exception is still `test/jsii-exclude.json`), tests may be run but not edited, and a test that
+looks wrong is a report, not a fix.
+
+Scope: plan §5 **step 5** (giant resources, merged namespaces — the whole provider must compile,
+not just the fixture) and **step 6** (generate all 1,494 awscc resources into the committed
+`cdktn-awscc/generated/`, root barrel + `package.json` `exports`, full `jsii` with metrics,
+`jsii-pacmak --targets python`, python import benchmark vs. options.md Option 0).
+**Not** in scope: `lazify` (step 7), docs/README/docgen (step 8), Go/Java/.NET pacmak, data
+sources and list resources (still excluded).
+
+## Commands and time budgets
+
+```
+cd cdktn-awscc
+pnpm install
+pnpm test                       # contract layers 1–5, structural only          budget < 5 min
+RUN_FULL=1 pnpm test            # + full-schema cfn map, aws-ec2 gate, full re-emit + tsc
+                                #                                               budget <= 45 min
+pnpm generate                   # regenerate generated/ from ../schemas/schema.json (same code path
+                                #   the RUN_FULL test calls; this is what you commit) <= 30 min
+pnpm test:jsii / pnpm test:pacmak       # unchanged, mini package only
+NODE_OPTIONS=--max-old-space-size=16384 RUN_FULL_JSII=1 pnpm test:full-jsii
+                                # jsii + jsii-pacmak python over the whole tree   budget <= 90 min
+python3 scripts/bench_python_import.py  # writes the table pasted into docs/phase1-results.md
+```
+
+New `package.json` scripts the implementer adds: `generate`
+(`tools/awscc2cdk/bin/generate-all.ts`) and `test:full-jsii`
+(`RUN_FULL_JSII=1 jest tools/awscc2cdk/test/step6.full-jsii.test.ts`).
+Raise `--max-old-space-size` if jsii OOMs (provider-awscc needed up to 28 GB on CI) and **record
+the value that was actually needed** in `docs/phase1-results.md`. Max RSS is measured with
+`/usr/bin/time -l` (macOS prints "maximum resident set size" in bytes).
+
+## Iteration 3 — findings carried over from the iteration-2 verification
+
+`iter3.findings.test.ts` has one `describe` per finding.
+
+### 1. `breaks-jsii` is measured **post-suffix**
+
+`docs/spike-naming.md` reports 70 `breaks-jsii` hits for the CFN-definition-name-recovery row, but
+those were measured on the *pre-suffix base name* (`DestinationFlowConfigList`, `Lifecycle`, `Id`),
+while `naming.ts#propertyTypeName` unconditionally appends `Property` on **both** branches. The
+identifier that actually reaches jsii is `DestinationFlowConfigListProperty`, which collides with
+nothing.
+
+**Definition, replacing the iteration-2 one:** a candidate counts as `breaks-jsii` when the
+**identifier the generator actually emits** for it is rejected — never the intermediate base name.
+The emitted identifier is `Cc<name>` for a resource class and `<base>Property` for a nested type
+(its `…PropertyOutputReference` / `…PropertyList` / `…PropertyMap` companions are that identifier
+plus a suffix and can only break if it does). Evidence, in this order:
+
+1. jsii's own per-language reserved-word lists (`isReservedByJsii`), applied to the emitted
+   identifier;
+2. a `cdktn.TerraformResource` / `TerraformMetaArguments` member collision on the emitted
+   identifier (or its decapitalisation);
+3. a generator-owned-name collision on the emitted identifier, i.e. the *base* already ends in
+   `Props`, `Property`, `PropertyList`, `PropertyMap` or `PropertyOutputReference` — a doubled
+   suffix is ambiguous. A base merely ending in a bare `List` / `Map` / `OutputReference` is **not**
+   a break post-suffix; that is exactly the misattribution being corrected.
+
+`src/grouped/jsii-evidence.ts` keeps `isReservedByJsii` and `breaksGeneratorOwnedName` as they are
+(they answer "is this bare name legal") and gains the post-suffix entry point the spike uses;
+`spike-naming.ts` must bucket on emitted identifiers. Expected result over awscc 1.98.0: **0** for
+all three sanitizers and **0** for CFN-definition-name recovery. `docs/spike-naming.md` must
+restate the method (the word "post-suffix" is asserted), correct the recovery row to 0, and keep
+the recovery row's `identical` / `diverges-only` counts equal to the report's. If a real
+post-suffix break shows up, that is a finding for the verifier — report it, do not weaken the test.
+Recovery stays load-bearing for *shape parity* (it is what produces CDK's type names) regardless of
+its `decision` cell.
+
+### 2. `cfnRecovery` is part of the declared API
+
+`NamingSpikeReport` gains, as contract (it is already in the code, it was missing from this
+document):
+
+```ts
+export interface NamingSpikeReport {
+  readonly schema: { readonly path: string; readonly providerVersion: string; readonly resourceCount: number };
+  readonly sanitizers: Record<string, SanitizerBuckets>;   // exactly the plan §4 three
+  /** evidence-only row for CFN-definition-name recovery; NOT a plan §4 sanitizer */
+  readonly cfnRecovery: SanitizerBuckets;
+  readonly candidates: SpikeCandidate[];
+}
+```
+
+`sanitizers`' key set stays exactly the plan §4 three; `cfnRecovery` stays outside it and gets its
+own table in `docs/spike-naming.md` with the headers
+`transform | identical | diverges-only | breaks-jsii | decision`.
+
+### 3. Digit-leading identifiers get an uppercase repair
+
+`ensureIdentifierStart` currently yields `_3dModelProperty`, which is a legal TypeScript identifier
+but not a legal jsii **type** name (jsii requires PascalCase, i.e. an uppercase first letter).
+
+**Rule (deterministic, documented in `src/naming.ts` and `docs/spike-naming.md`):** after
+PascalCasing, if the identifier starts with a digit, prefix the single capital letter `N`
+(mnemonic: *numeric*); otherwise uppercase the first character. Never `_`. New export:
+
+```ts
+/** prefixed when a PascalCased name would start with a digit: '3dModel' -> 'N3dModel' */
+export const DIGIT_LEAD_PREFIX = "N";
+```
+
+Asserted: `propertyTypeName(['3d_model']) === 'N3dModelProperty'`,
+`propertyTypeName(['a','3d_model']) === 'N3dModelProperty'` (leaf),
+`propertyTypeName(['9lives']) === 'N9livesProperty'`,
+`propertyTypeName(['model_3d']) === 'Model3dProperty'` (unchanged — the digit is not leading),
+`propertyTypeName('3DModel') === 'N3DModelProperty'` (the recovered-CFN-name branch), the full-path
+collision fallback (`['3d_model','rules']` + `['other','rules']` →
+`N3dModelRulesProperty` + `OtherRulesProperty`), order-independence, no result starting with `_`,
+and every result matching `NAME_GRAMMAR.propertyInterface`. There is still no occurrence in awscc
+1.98.0 — this is a latent-bug fix, so it must not change any emitted byte.
+
+### 4. `.jsiirc.json` goes through `modulePartsFromNamespace`
+
+`src/grouped/jsiirc.ts` derives the dotnet/java segment with
+`scopes[0].namespace.split('::')[1]`, which is wrong for every non-`AWS` family and for
+`AWS::Serverless`. It must use spec2cdk's `modulePartsFromNamespace` (`moduleFamily` +
+`moduleBaseName`, including its `AWS::Serverless` → `AWS::SAM` rewrite), i.e. the same computation
+`namespaceToModuleDefinition()` performs, with the plan §10 roots (`cdktn_awscc`, `Io.Cdktn.AwsCc`,
+`io.cdktn.awscc`). New/changed API:
+
+```ts
+export interface ModuleParts {
+  readonly moduleDir: string;        // the scope-map key, e.g. 'aws-ec2' / 'core'
+  readonly submoduleName: string;    // moduleDir with '-' -> '_'
+  readonly primaryNamespace: string; // scopes[0].namespace
+  readonly moduleFamily: string;     // 'AWS' | 'Alexa' | …
+  readonly moduleBaseName: string;   // 'EC2' | 'ASK' | 'SAM' | …
+}
+/** undefined when the module has no namespace at all (the scope map's `interfaces` entry). */
+export function modulePartsForModule(moduleDir: string): ModuleParts | undefined;
+export function jsiircFor(moduleDir: string): JsiircTargets;
+```
+
+Rules:
+
+* **python** always follows the *directory*: `cdktn_awscc.<moduleDir with '-'→'_'>` (the directory
+  is what we emit; `core` is `cdktn_awscc.core`, not `…aws_cloudformation`).
+* **dotnet** = `Io.Cdktn.AwsCc.<moduleBaseName>` when `moduleFamily === 'AWS'` (plan §10 drops the
+  family segment, mirroring `Amazon.CDK.AWS.EC2`), else
+  `Io.Cdktn.AwsCc.<moduleFamily>.<moduleBaseName>`.
+* **java** = `io.cdktn.awscc.services.<lower(moduleBaseName)>` when `moduleFamily === 'AWS'`, else
+  `io.cdktn.awscc.<lower(moduleFamily)>.<lower(moduleBaseName)>` — exactly
+  `namespaceToModuleDefinition`'s `javaPackage` with our root.
+* a scope-map **`targets` override wins**, with its aws-cdk-lib root swapped for ours
+  (`Amazon.CDK.AWS.` → `Io.Cdktn.AwsCc.`, then `Amazon.CDK.` → `Io.Cdktn.AwsCc.`;
+  `software.amazon.awscdk.` → `io.cdktn.awscc.`). Nine modules in the refreshed map have one
+  (plan §1: "`namespaceToModuleDefinition()` + scope-map `targets` overrides").
+* no namespace at all → fall back to the directory: dotnet `Io.Cdktn.AwsCc.<PascalCase(dir minus
+  'aws-')>`, java `io.cdktn.awscc.services.<lower(dir minus 'aws-')>`.
+* still no `go` key (iteration-2 decision 2).
+
+Expected values asserted verbatim:
+
+| module | python | dotnet | java |
+|---|---|---|---|
+| `aws-ec2` | `cdktn_awscc.aws_ec2` | `Io.Cdktn.AwsCc.EC2` | `io.cdktn.awscc.services.ec2` |
+| `alexa-ask` | `cdktn_awscc.alexa_ask` | `Io.Cdktn.AwsCc.Alexa.Ask` | `io.cdktn.awscc.alexa.ask` |
+| `aws-sam` | `cdktn_awscc.aws_sam` | `Io.Cdktn.AwsCc.SAM` | `io.cdktn.awscc.services.sam` |
+| `core` | `cdktn_awscc.core` | `Io.Cdktn.AwsCc.CloudFormation` | `io.cdktn.awscc.services.cloudformation` |
+| `aws-apigateway` | `cdktn_awscc.aws_apigateway` | `Io.Cdktn.AwsCc.APIGateway` | `io.cdktn.awscc.services.apigateway` |
+| `aws-wafregional` | `cdktn_awscc.aws_wafregional` | `Io.Cdktn.AwsCc.WAFRegional` | `io.cdktn.awscc.services.waf.regional` |
+| `interfaces` | `cdktn_awscc.interfaces` | `Io.Cdktn.AwsCc.Interfaces` | `io.cdktn.awscc.services.interfaces` |
+
+`alexa-ask` (`Alexa.Ask`), `aws-apigateway` (`APIGateway`) and `aws-wafregional`
+(`services.waf.regional`) come from `targets` overrides; the rest are derived. `core` and
+`interfaces` are never emitted (see "no empty modules" below) — they are asserted to pin the
+derivation. Over the whole refreshed map, the dotnet namespace must be unique per module (`core`
+excluded: it shares `AWS::CloudFormation` with `aws-cloudformation`, which wins the scope-map tie).
+
+### 5. Shape-parity ratchet raised
+
+`test/shape-parity.baseline.json` is raised from all zeros to the iteration-2 measurement:
+`analyzer 9, apigateway_resource 0, cloudformation_stack 0, ec2_subnet 2, ec2_vpc 3,
+iotwireless_device_profile 1, kinesisanalyticsv2_application 39, kinesisfirehose_delivery_stream 66,
+lambda_function 17, lex_bot 65, s3_bucket 60`. These may never fall again.
+
+**No iteration-2 test file was edited for any of these findings.** `spike-naming.test.ts` compares
+the doc table against the report generically, `step4.structure.test.ts` asserts the `aws-ec2`
+`.jsiirc.json` (unchanged by the new rule) and only a prefix for the other fixture modules, and
+`step3.naming.test.ts` has no digit-leading case. The only edits under `test/` are additive: the
+four new test files, `helpers/md-table.ts`, the iteration-3 block appended to `helpers/paths.ts`,
+and the raised baseline.
+
+## Iteration 3 — scope map (`step5.scope-map.test.ts`)
+
+**Refresh.** `src/vendored/scope-map.json` is re-vendored from `aws/aws-cdk` **main**,
+commit `6808bb7e04d64a903a73ad56a7879c75019a5908` (2026-08-28), fetched with
+
+```
+gh api repos/aws/aws-cdk/contents/packages/aws-cdk-lib/scripts/scope-map.json --jq .content | base64 -d
+```
+
+302 entries (was 292 at `a9e6639d`): **+** `aws-artifact`, `aws-backupsearch`, `aws-cognitosync`,
+`aws-networkflowmonitor`, `aws-scn`, `aws-states`, `aws-storagegateway`, `aws-thinclient`,
+`aws-transcribe`, `aws-usernotifications`, `aws-wellarchitected`; **−** `aws-dataexchange`.
+`VENDORED.md` records the new commit for that row (and a note that this one file is fetched from
+GitHub, so its commit is ahead of the local `~/cdk/aws-cdk` checkout used for the other spec2cdk
+rows). `src/scope-map.ts` exports `SCOPE_MAP_COMMIT` with that sha. Verified while writing this
+contract: the refresh changes **no** existing module resolution (no namespace changes its winning
+module), so iterations 1–2 stay green.
+
+**Auto-extend** (spec2cdk `generateAll()`'s rule, plan §2): a matched CFN namespace that the scope
+map does not list gets module `modulePartsFromNamespace(namespace).moduleName` (`AWS::Wickr` →
+`aws-wickr`). New API on `src/scope-map.ts`:
+
+```ts
+export const SCOPE_MAP_COMMIT: string;
+/** the namespaces of `cfnTypes` that the vendored map does not cover, sorted */
+export function autoExtendedNamespaces(cfnTypes: readonly string[]): string[];
+/** vendored map + one `{ scopes: [{ namespace }], autoExtended: true }` entry per such namespace */
+export function effectiveScopeMap(cfnTypes: readonly string[]): ScopeMapFile;
+```
+
+`moduleForCfnType` auto-extends on its own (it never returns `undefined` for a well-formed
+`Family::Service::Resource`), so **0 matched resources are module-less**. Over awscc 1.98.0 exactly
+**eight** namespaces need it — the brief's seven **plus `AWS::DataExchange`**, because the refresh
+*removed* `aws-dataexchange` from the map:
+
+| namespace | module | awscc resources |
+|---|---|---|
+| `AWS::AccountAccess` | `aws-accountaccess` | 2 |
+| `AWS::AgentRegistry` | `aws-agentregistry` | 2 |
+| `AWS::CloudHSM` | `aws-cloudhsm` | 1 |
+| `AWS::DRS` | `aws-drs` | 1 |
+| `AWS::DataExchange` | `aws-dataexchange` | 1 |
+| `AWS::OpenSearch` | `aws-opensearch` | 1 |
+| `AWS::ServerlessRepo` | `aws-serverlessrepo` | 1 |
+| `AWS::Wickr` | `aws-wickr` | 1 |
+
+The generator writes the effective map to **`generated/scope-map.effective.json`** (302 + 8 = 310
+entries, the eight flagged `"autoExtended": true`) so a reviewer can see what was invented.
+
+## Iteration 3 — full emission (`step6.full-emit.test.ts`)
+
+`generated/` is **committed** (like the provider repos commit `src/`), regenerated by
+`pnpm generate`, and marked `linguist-generated` by `cdktn-awscc/generated/.gitattributes`
+(`* linguist-generated=true`). Its structural assertions run in the default suite (they only read
+the committed tree); regeneration, byte-determinism and `tsc --noEmit` are gated on `RUN_FULL=1`.
+
+API change (additive, keeps every iteration-2 test untouched):
+
+```ts
+export interface GenerateGroupedOptions {
+  readonly fqpn?: string;
+  readonly modules?: string[];
+  readonly resources?: string[];
+  /** write the whole-tree artifacts: MANIFEST.sha256, scope-map.effective.json,
+   *  package.exports.json. Default false, so a filtered run emits exactly what it did before. */
+  readonly manifest?: boolean;
+}
+```
+
+Contents of `generated/`:
+
+```
+index.ts                    export * as aws_ec2 from './aws-ec2';   (one line per module, sorted)
+MANIFEST.sha256             '<sha256>  <relpath>' per emitted file, sorted by path, itself excluded
+scope-map.effective.json    the 310-entry effective map
+package.exports.json        the package.json `exports` map: '.' + './<module>' for every module
+.gitattributes              * linguist-generated=true                (committed, not generated)
+aws-ec2/index.ts .jsiirc.json vpc.ts subnet.ts …
+```
+
+Asserted:
+
+* **1,494 resource files** — 1,493 matched plus `awscc_datasync_storage_system`, which the pinned
+  spec does not know. **Rule for an unmatched awscc resource** (plan §2 step 4's fallback, made
+  explicit): module = `aws-<awscc service token>` resolved through the effective map (auto-extended
+  if absent), class = `Cc` + PascalCase of the awscc name minus the service token, file = the
+  kebab-cased class name, and every nested type falls back to the attribute-path naming (no CFN
+  recovery is possible). So `awscc_datasync_storage_system` → `aws-datasync/storage-system.ts`,
+  `CcStorageSystem` / `CcStorageSystemProps`. It is **emitted**, not skipped: dropping resources
+  because a pinned spec lags would make the package's contents depend on spec timing.
+* **276 module directories**, each with `index.ts` + `.jsiirc.json`; the module barrel exports every
+  resource file of that module and no shard; the root barrel has exactly one
+  `export * as <snake_case> from './<dir>';` per directory, sorted.
+* **No empty module**: `core` and `interfaces` must not appear (every module has ≥1 resource).
+* `MANIFEST.sha256` lists exactly the emitted files (sorted, itself excluded) and every hash
+  matches the bytes on disk.
+* `package.exports.json` has `.` plus one key per module.
+* **Determinism** (`RUN_FULL=1`): a fresh full generation into a temp directory reproduces the
+  committed tree **byte for byte** — this is both the determinism gate and the "the committed
+  output is current" gate.
+* **`tsc --noEmit` over `generated/` is clean** (`RUN_FULL=1`, budget 45 min for emit + check).
+* `test/out/full-emit-stats.json` is written with `GenerationStats` for the whole provider.
+
+### Sharding (plan §5 step 5)
+
+Measured while writing this contract: **TypeScript does not merge `export namespace X` across
+module files re-exported through a barrel** — two files each declaring `export namespace CcBot`
+give `TS2308` on the barrel and `TS2724` at the use site. So plan §2's "emit `export namespace Vpc
+{…}` blocks in several files" is not a legal shape, and the iteration-2 choice (one file per
+resource, cdktn's `STRUCT_SHARDING_THRESHOLD` left disabled) stands: `lex_bot` compiles today as a
+single file. **Not sharding is a valid outcome of step 5** — what step 5 owes is that the *whole*
+provider compiles and jsii-builds.
+
+If the implementer does need shards (compile time, memory), the only allowed shape — verified to
+type-check while writing this contract — is the alias form:
+
+```ts
+// aws-lex/bot-structs0.ts     (top-level, NOT a namespace, NOT exported by the module barrel)
+export interface SlotValueProperty { … }
+export class SlotValuePropertyOutputReference … { … }
+
+// aws-lex/bot.ts
+import * as structs0 from './bot-structs0';
+export class CcBot extends cdktn.TerraformResource { … }
+export namespace CcBot {
+  export import SlotValueProperty = structs0.SlotValueProperty;
+  export import SlotValuePropertyOutputReference = structs0.SlotValuePropertyOutputReference;
+}
+```
+
+Asserted for every `<file>-structs<N>.ts` that exists: the primary file exists and imports it, the
+module `index.ts` does **not** export it, the shard declares no `namespace`, and every top-level
+export of the shard is re-exported by an `export import` inside the primary file's namespace block.
+If shards survive to the jsii run and jsii rejects the alias form, drop the sharding — do not
+weaken the test.
+
+## Iteration 3 — full jsii build (`step6.full-jsii.test.ts`, `RUN_FULL_JSII=1`)
+
+**The published manifest is a committed file: `tools/awscc2cdk/jsii/package.json`.** It is not
+`cdktn-awscc/package.json` — jsii rewrites the `tsconfig.json` of the package it builds, and the
+workspace manifest/tsconfig belong to the generator and its jest suite. The test stages a temp
+package (`generated/` copied in, `node_modules` symlinked, `exports` merged in from
+`generated/package.exports.json`) and runs jsii there, exactly like the iteration-2 mini build.
+Asserted in the default suite (cheap, and it is what has to be right before the 90-minute run):
+
+* `name` `@cdktn/awscc`, not `private`, Apache-2.0, `stability: "experimental"`, `author.name`,
+  `repository.url` containing `cdktn-io/cdktn-awscc`, a `description` and a `version`;
+* `main` `generated/index.js`, `types` `generated/index.d.ts`;
+* `jsii.outdir` `dist` and `jsii.targets` exactly the plan §10 set:
+  `python {distName: 'cdktn-awscc', module: 'cdktn_awscc'}`,
+  `java {package: 'io.cdktn.awscc', maven: {groupId: 'io.cdktn', artifactId: 'cdktn-awscc'}}`,
+  `dotnet {namespace: 'Io.Cdktn.AwsCc', packageId: 'Io.Cdktn.AwsCc'}`,
+  `go {moduleName: 'github.com/cdktn-io/cdktn-awscc-go'}`;
+* `peerDependencies` exactly `{cdktn: '^0.24.0', constructs: '^10.7.0'}`, with `devDependencies`
+  pinning `cdktn 0.24.0` / `constructs 10.7.0` (the range jsii accepts, iteration-2 finding);
+* no hand-written `exports` map — the generator owns it.
+
+Gated on `RUN_FULL_JSII=1`:
+
+* `jsii --project-references=false --silence-warnings=reserved-word` exits **0**; `.jsii` exists and
+  has **276** submodules including `@cdktn/awscc.aws_ec2`, the type `@cdktn/awscc.aws_ec2.CcVPC`,
+  and more than 1,494 types;
+* `jsii-pacmak --targets python` exits **0**, `dist/python/src/cdktn_awscc/aws_ec2/__init__.py`
+  exists and exactly one `.whl` is produced. Escape hatch, auditable: `PACMAK_WHEEL=0` downgrades
+  to `--code-only` when this machine's pip cannot provision pacmak's venv (measured in iteration 2)
+  — using it is a **finding for the verifier**, not a fix, and the benchmark then installs from
+  `dist/python` instead of the wheel;
+* `test/out/full-build-metrics.json` is written **by the test** (so the numbers are the run's, not
+  transcribed) with
+  `{jsii: {seconds, maxRssMB, jsiiFileBytes, submodules, types}, pacmak_python: {seconds, wheelBytes, fileCount}}`,
+  every field a number, all but `wheelBytes` > 0.
+
+## Iteration 3 — python import benchmark
+
+`scripts/bench_python_import.py` (repo root `scripts/`) creates a venv under the session scratch
+directory, installs **the published `cdktn-provider-awscc` from PyPI** (options.md Option 0
+baseline — record its version and the `jsii-pacmak` version stamped in its metadata if visible) and
+**our freshly built wheel**, plus `cdktn`, and measures with `python -X importtime` and wall clock,
+**5 runs each, median reported**, each measurement in a fresh interpreter:
+
+| # | measurement |
+|---|---|
+| a | `import cdktn_provider_awscc` |
+| b | `from cdktn_provider_awscc import ec2_vpc` |
+| c | `import cdktn_awscc` |
+| d | `from cdktn_awscc import aws_ec2` |
+| e | instantiate one resource inside a `cdktn.TerraformStack` — both packages |
+
+`docs/phase1-results.md` carries the table, with these exact headers, and rows labelled `a`–`e`
+(`e` twice, once per package):
+
+```
+| # | measurement | package | median s | modules loaded |
+```
+
+`modules loaded` is the `len(sys.modules)` delta for that measurement. The doc must also contain
+the lines `jsii-pacmak version: …` and `cdktn-provider-awscc version: …`, plus the
+`--max-old-space-size` value the full jsii build actually needed. Asserted: the script exists, the
+doc exists, the table parses, all five labels are present, both package names appear, `e` appears
+twice, and every `median s` / `modules loaded` cell is numeric.
+
+## Contract decisions taken beyond the plan (iteration 3, 2026-08-28)
+
+1. **Digit-leading repair is `N`**, not `_` and not a spelled-out number: deterministic, one
+   character, keeps the rest of the name intact, and yields the uppercase first letter jsii wants.
+2. **The unmatched awscc resource is emitted**, under an awscc-derived name in an auto-derived
+   module — never skipped, so package contents do not depend on how far the pinned CFN spec lags.
+3. **`generated/scope-map.effective.json` is a build artifact of the generator**, committed and
+   flagged per auto-extended entry, because "which module names did we invent" is exactly what a
+   reviewer needs to see.
+4. **The published manifest lives at `tools/awscc2cdk/jsii/package.json`**, separate from the
+   workspace `package.json`, because jsii owns the `tsconfig.json` of the package it compiles.
+5. **`MANIFEST.sha256` is generator-written** and is how determinism is checked cheaply in the
+   default suite; the `RUN_FULL=1` byte comparison remains the real gate.
+6. **Sharding may end up unused.** Cross-file `export namespace` merging is not available in a
+   module tree (measured); the alias form is the only permitted alternative shape.
+7. **`core` and `interfaces` are never emitted**; their `.jsiirc.json` derivation is still pinned by
+   unit tests so the rule stays total.
+
+## Contract validation (contract writer, 2026-08-28)
+
+Measured on this machine while writing this contract, so the acceptance numbers are known-reachable:
+
+* the refreshed scope map really has 302 entries with exactly the ±12 modules listed, and changes
+  no existing namespace→module winner;
+* over `test/out/cfn-map-report.json` (1,494 awscc / 1,493 matched / 1 unmatched), exactly the
+  eight namespaces above are unmapped, giving **276 module directories** and **1,494** resource
+  files with the unmatched-resource rule;
+* every `.jsiirc.json` value in the table above was recomputed by hand from
+  `modulePartsFromNamespace` + the root swap, and the dotnet namespace is unique across all 302
+  modules minus `core`;
+* the cross-file `export namespace` merge fails (`TS2308`/`TS2724`) and the `export import` alias
+  form type-checks, with `tsc 5.9` from this repo's `node_modules`;
+* the four new test files fail **only** for missing implementation: `pnpm test` after adding them
+  is `8 passed / 4 failed` suites, with all 52 failures in the new files and all iteration-1/2
+  suites green against the raised ratchet baseline.
+
+Not pre-validated (genuinely open work): whether jsii completes over 1,494 resources at all and at
+what heap, whether pacmak can build the wheel here, and what the python import numbers are.
