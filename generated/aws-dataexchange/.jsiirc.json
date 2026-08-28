@@ -4,7 +4,7 @@
       "module": "cdktn_awscc.aws_dataexchange"
     },
     "dotnet": {
-      "namespace": "Io.Cdktn.AwsCc.Dataexchange"
+      "namespace": "Io.Cdktn.AwsCc.DataExchange"
     },
     "java": {
       "package": "io.cdktn.awscc.services.dataexchange"

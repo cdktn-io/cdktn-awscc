@@ -4,7 +4,7 @@
       "module": "cdktn_awscc.aws_serverlessrepo"
     },
     "dotnet": {
-      "namespace": "Io.Cdktn.AwsCc.Serverlessrepo"
+      "namespace": "Io.Cdktn.AwsCc.ServerlessRepo"
     },
     "java": {
       "package": "io.cdktn.awscc.services.serverlessrepo"

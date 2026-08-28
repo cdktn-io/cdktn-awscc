@@ -322,6 +322,14 @@ export async function generateGroupedWithStats(
 
   fs.mkdirSync(outDir, { recursive: true });
 
+  // Iteration 3b, finding 4: `.jsiirc.json` must be derived from the *effective* (auto-extended)
+  // scope map, not just the vendored one, or an auto-extended module has no namespace to derive
+  // its dotnet/java targets from and falls through to `jsiircFor`'s directory-name fallback.
+  // Computed once, up front, from every planned resource's CFN type — the same input
+  // `scope-map.effective.json` below is built from.
+  const matchedCfnTypesForJsiirc = planned.map((p) => p.cfnType).filter((t) => t.length > 0);
+  const effectiveScopeMapForJsiirc = effectiveScopeMap(matchedCfnTypesForJsiirc);
+
   const files: string[] = [];
   const moduleDirs = [...byModule.keys()].sort(cmp);
   let nestedTypes = 0;
@@ -349,7 +357,10 @@ export async function generateGroupedWithStats(
     fs.writeFileSync(path.join(moduleAbsDir, "index.ts"), `${indexLines.join("\n")}\n`);
     files.push(`${moduleDir}/index.ts`);
 
-    fs.writeFileSync(path.join(moduleAbsDir, ".jsiirc.json"), `${JSON.stringify(jsiircFor(moduleDir), null, 2)}\n`);
+    fs.writeFileSync(
+      path.join(moduleAbsDir, ".jsiirc.json"),
+      `${JSON.stringify(jsiircFor(moduleDir, effectiveScopeMapForJsiirc), null, 2)}\n`,
+    );
     files.push(`${moduleDir}/.jsiirc.json`);
 
     rootLines.push(`export * as ${moduleDir.replace(/-/g, "_")} from './${moduleDir}';`);
@@ -363,16 +374,26 @@ export async function generateGroupedWithStats(
   if (options?.manifest) {
     // Whole-tree artifacts (CONTRACT.md "Iteration 3 — full emission"): gated behind `manifest` so
     // a filtered run (mini fixture, single module) emits exactly what it did before iteration 3.
-    const matchedCfnTypes = planned.map((p) => p.cfnType).filter((t) => t.length > 0);
+    // Same effective map already used for `.jsiirc.json` above (finding 4) — computed once.
     fs.writeFileSync(
       path.join(outDir, "scope-map.effective.json"),
-      `${JSON.stringify(effectiveScopeMap(matchedCfnTypes), null, 2)}\n`,
+      `${JSON.stringify(effectiveScopeMapForJsiirc, null, 2)}\n`,
     );
     files.push("scope-map.effective.json");
 
-    const exportsMap: Record<string, unknown> = { ".": { types: "./index.d.ts", default: "./index.js" } };
+    // Iteration 3b, finding 3: the published package.json lives one level *above* `outDir`
+    // (`generated/`), with `main: "generated/index.js"`. Node drops `main` the moment `exports`
+    // exists, so every target here must be resolvable from that package root, not from `outDir`
+    // itself — hence the `./generated/` prefix on every path (CONTRACT.md "Iteration 3b, finding
+    // 3"). The staging model keeps the repo layout: `generated/` is not flattened at publish time.
+    const exportsMap: Record<string, unknown> = {
+      ".": { types: "./generated/index.d.ts", default: "./generated/index.js" },
+    };
     for (const moduleDir of moduleDirs) {
-      exportsMap[`./${moduleDir}`] = { types: `./${moduleDir}/index.d.ts`, default: `./${moduleDir}/index.js` };
+      exportsMap[`./${moduleDir}`] = {
+        types: `./generated/${moduleDir}/index.d.ts`,
+        default: `./generated/${moduleDir}/index.js`,
+      };
     }
     fs.writeFileSync(path.join(outDir, "package.exports.json"), `${JSON.stringify(exportsMap, null, 2)}\n`);
     files.push("package.exports.json");

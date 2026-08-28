@@ -4,7 +4,7 @@
       "module": "cdktn_awscc.aws_opensearch"
     },
     "dotnet": {
-      "namespace": "Io.Cdktn.AwsCc.Opensearch"
+      "namespace": "Io.Cdktn.AwsCc.OpenSearch"
     },
     "java": {
       "package": "io.cdktn.awscc.services.opensearch"

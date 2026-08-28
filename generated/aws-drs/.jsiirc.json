@@ -4,7 +4,7 @@
       "module": "cdktn_awscc.aws_drs"
     },
     "dotnet": {
-      "namespace": "Io.Cdktn.AwsCc.Drs"
+      "namespace": "Io.Cdktn.AwsCc.DRS"
     },
     "java": {
       "package": "io.cdktn.awscc.services.drs"

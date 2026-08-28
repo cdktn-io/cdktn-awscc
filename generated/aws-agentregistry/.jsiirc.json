@@ -4,7 +4,7 @@
       "module": "cdktn_awscc.aws_agentregistry"
     },
     "dotnet": {
-      "namespace": "Io.Cdktn.AwsCc.Agentregistry"
+      "namespace": "Io.Cdktn.AwsCc.AgentRegistry"
     },
     "java": {
       "package": "io.cdktn.awscc.services.agentregistry"

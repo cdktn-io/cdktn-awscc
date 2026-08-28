@@ -1139,9 +1139,9 @@
         "namespace": "AWS::KinesisAnalytics"
       },
       {
-        "deprecated": "use `aws-kinesisanalyticsv2` instead",
         "namespace": "AWS::KinesisAnalyticsV2",
-        "suffix": "V2"
+        "suffix": "V2",
+        "deprecated": "use `aws-kinesisanalyticsv2` instead"
       }
     ]
   },

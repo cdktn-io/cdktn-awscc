@@ -29,6 +29,8 @@ ahead of the rest of the vendored tree by design: 302 entries (was 292), **+**
 `aws-wellarchitected`; **−** `aws-dataexchange`. The refresh changes no existing namespace's winning
 module, so iterations 1–2 stay green.
 
+**Iteration 3b, finding 6**: the copy committed above had been JSON-round-tripped (in `aws-kinesisanalytics`, `deprecated` had moved ahead of `namespace`/`suffix` — the byte-for-byte "unmodified" claim below was wrong). Re-copied verbatim with the same command; the bytes now hash to sha256 `24633aa19d9e1076f597c8af470e87d40c0f65bc509c624b2707bdab24dfa2d2` (32677 bytes), and upstream's `namespace`, `suffix`, `deprecated` key order survives in `AWS::KinesisAnalyticsV2`. Resolution is unaffected — iterations 1–3 stay green on these bytes.
+
 Not vendored from the plan's spec2cdk list: `packages/aws-cdk-lib/scripts/scope-map.json` is
 present (as `src/vendored/scope-map.json`, unmodified) but its loader in this iteration is the
 new `src/scope-map.ts`, not spec2cdk's `module-topology.ts` `readModuleMap` (that reads/writes the

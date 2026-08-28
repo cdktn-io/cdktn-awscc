@@ -4,7 +4,7 @@
       "module": "cdktn_awscc.aws_accountaccess"
     },
     "dotnet": {
-      "namespace": "Io.Cdktn.AwsCc.Accountaccess"
+      "namespace": "Io.Cdktn.AwsCc.AccountAccess"
     },
     "java": {
       "package": "io.cdktn.awscc.services.accountaccess"

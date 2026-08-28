@@ -40,14 +40,25 @@ export interface ModuleParts {
 
 interface ScopeMapEntry {
   readonly scopes?: { readonly namespace: string }[];
-  readonly targets?: { readonly dotnet?: { readonly namespace: string }; readonly java?: { readonly package: string } };
+  // `Record<string, unknown>` here (not a narrower `{dotnet?: …; java?: …}` shape) so this type
+  // also accepts `../scope-map.ts`'s `ScopeMapFile` (its `ModuleEntry.targets` has the same wide
+  // type) — `effectiveScopeMap()`'s result passes straight in, no cast needed at the call site.
+  readonly targets?: Record<string, any>;
 }
 
 type ScopeMapFile = Record<string, ScopeMapEntry>;
 
-/** undefined when the module has no namespace at all (the scope map's `interfaces` entry). */
-export function modulePartsForModule(moduleDir: string): ModuleParts | undefined {
-  const primaryNamespace = (scopeMapJson as ScopeMapFile)[moduleDir]?.scopes?.[0]?.namespace;
+/**
+ * undefined when the module has no namespace at all (the scope map's `interfaces` entry).
+ *
+ * `scopeMap` defaults to the vendored map. Iteration 3b, finding 4: an auto-extended module (one
+ * `effectiveScopeMap` invented for a namespace the vendored map does not list) has no entry in the
+ * vendored map at all, so it fell through to the directory-name fallback below
+ * (`Io.Cdktn.AwsCc.Cloudhsm` instead of `.CloudHSM`). Passing the *effective* map here gives it a
+ * real `primaryNamespace` to derive from, same as any vendored module.
+ */
+export function modulePartsForModule(moduleDir: string, scopeMap: ScopeMapFile = scopeMapJson as ScopeMapFile): ModuleParts | undefined {
+  const primaryNamespace = scopeMap[moduleDir]?.scopes?.[0]?.namespace;
   if (!primaryNamespace) return undefined;
   const { moduleFamily, moduleBaseName } = modulePartsFromNamespace(primaryNamespace);
   return {
@@ -98,10 +109,11 @@ function pascalCaseDir(s: string): string {
     .join("");
 }
 
-export function jsiircFor(moduleDir: string): JsiircTargets {
+/** `scopeMap` defaults to the vendored map — see `modulePartsForModule`. */
+export function jsiircFor(moduleDir: string, scopeMap: ScopeMapFile = scopeMapJson as ScopeMapFile): JsiircTargets {
   const symbol = moduleDir.replace(/-/g, "_");
-  const entry = (scopeMapJson as ScopeMapFile)[moduleDir];
-  const parts = modulePartsForModule(moduleDir);
+  const entry = scopeMap[moduleDir];
+  const parts = modulePartsForModule(moduleDir, scopeMap);
 
   let dotnet: string;
   let java: string;
