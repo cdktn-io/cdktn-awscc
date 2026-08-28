@@ -1,3 +1,8 @@
+// Portions Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+// SPDX-License-Identifier: Apache-2.0
+// (upstream aws-cdk/tools/@aws-cdk/spec2cdk carries this license at the repo root — see its
+// LICENSE/NOTICE — with no per-file header on lib/naming/conventions.ts itself, confirmed against
+// the vendored copy at src/vendored/spec2cdk/naming/conventions.ts.)
 /**
  * Adapted copy of the three plan §4 sanitizers from
  * `src/vendored/spec2cdk/naming/conventions.ts` (upstream spec2cdk `lib/naming/conventions.ts`).

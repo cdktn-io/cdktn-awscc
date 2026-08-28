@@ -1,3 +1,5 @@
+// Copyright (c) HashiCorp, Inc
+// SPDX-License-Identifier: MPL-2.0
 // Adapted from src/vendored/cdktn/models/index.ts — see src/grouped/README.md.
 // provider-function-model is dropped: awscc has no `provider`-shaped terraform schema type
 // (plan §5 step 4 only ever emits managed resources), so ResourceModel never needs it here.

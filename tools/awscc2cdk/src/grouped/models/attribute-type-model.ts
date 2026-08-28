@@ -1,3 +1,5 @@
+// Copyright (c) HashiCorp, Inc
+// SPDX-License-Identifier: MPL-2.0
 // Adapted from src/vendored/cdktn/models/attribute-type-model.ts — see src/grouped/README.md.
 import { Struct } from "./struct";
 import { uppercaseFirst, downcaseFirst } from "../util";

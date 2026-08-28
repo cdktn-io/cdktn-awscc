@@ -1,3 +1,5 @@
+// Copyright (c) HashiCorp, Inc
+// SPDX-License-Identifier: MPL-2.0
 // Adapted from src/vendored/cdktn/emitter/resource-emitter.ts — see src/grouped/README.md.
 // Trimmed to managed resources only: no provider/data-source/ephemeral-resource branches, no
 // provider-defined-functions getter (ResourceModel dropped both, see models/resource-model.ts).

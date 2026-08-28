@@ -1,3 +1,5 @@
+// Copyright (c) HashiCorp, Inc
+// SPDX-License-Identifier: MPL-2.0
 // Adapted from src/vendored/cdktn/models/struct.ts — see src/grouped/README.md.
 import { AttributeModel } from "./attribute-model";
 import { downcaseFirst } from "../util";

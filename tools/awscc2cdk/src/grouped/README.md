@@ -19,8 +19,15 @@ What changed from the vendored originals, and why:
   `TagProperty`). Every other type (`List`/`Set`/`Map`, built on top of this one) composes its own
   name by string-appending a suffix (`List`, `Map`, `OutputReference`, …) to the element's
   `storedClassType`, so qualification propagates through them for free — no other method needed
-  changing. Mapper *function* names are untouched (never qualified: they are always emitted at the
-  top level of the file, so a bare reference is always correct — see `struct-emitter.ts`).
+  changing. Mapper *function* names are a second, orthogonal collision surface handled separately:
+  they are always emitted at the top level of the file regardless of struct nesting, so two
+  resources in the same module with a same-named attribute (e.g. `tags` on `CcVPC` and `CcSubnet`)
+  would collide under a bare name once the module's `index.ts` re-exports both files with `export
+  *`. `namespace-context.ts#resourcePrefix()` (set once per resource file, read unconditionally by
+  `StructAttributeTypeModel#toTerraformFunction`/`#toHclTerraformFunction` and by
+  `emitStructMappers`) prefixes every mapper function with the owning resource's class name —
+  `ccVPCTagsPropertyToTerraform`, not `tagsPropertyToTerraform` — so they are qualified too, just
+  by resource rather than by namespace.
 * **`models/resource-model.ts`** — `configStructName` is public (was `private`) so it can be
   renamed; the provider/data-source/ephemeral-resource branches are dropped (awscc's terraform
   schema only ever has managed resources).

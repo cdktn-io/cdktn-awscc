@@ -1,3 +1,5 @@
+// Copyright (c) HashiCorp, Inc
+// SPDX-License-Identifier: MPL-2.0
 // Adapted from src/vendored/cdktn/emitter/struct-emitter.ts — see src/grouped/README.md.
 //
 // Split into three entry points (the vendored file has one `emit()` that interleaves all of this

@@ -44,6 +44,15 @@ export interface SanitizerBuckets {
 export interface NamingSpikeReport {
   readonly schema: { readonly path: string; readonly providerVersion: string; readonly resourceCount: number };
   readonly sanitizers: Record<string, SanitizerBuckets>;
+  /**
+   * Evidence for CFN-definition-name recovery (`src/grouped/cfn-recovery.ts`), NOT one of the
+   * plan §4 spec2cdk sanitizers, so kept out of `sanitizers` (whose key set is asserted exactly
+   * against the plan §4 list by `spike-naming.test.ts`). `before` = the naive PascalCase of a
+   * nested type's terraform-attribute leaf; `after` = the recovered CFN `TypeDefinition` name when
+   * one exists, else the same naive PascalCase. See docs/spike-naming.md "CFN-definition-name
+   * recovery" for why this, not `sanitizeTypeName`, is what actually fixes the breaks-jsii bucket.
+   */
+  readonly cfnRecovery: SanitizerBuckets;
   readonly candidates: SpikeCandidate[];
 }
 
@@ -117,6 +126,16 @@ function walkBlock(
   }
 }
 
+/**
+ * `raw`/`cdk` here are the **held-constant-input** pair for the `sanitizeTypeName` sanitizer
+ * itself: `raw` = the type-styled name this generator would actually feed it (the recovered CFN
+ * definition name, or the naive PascalCase leaf when none was recovered — exactly `typeStyleName`
+ * below, on both sides), `cdk` = that same input run through `sanitizeTypeName`. CFN-definition-
+ * name recovery is a *separate* transform (naive-leaf-PascalCase -> typeStyleName) with its own
+ * evidence, computed alongside this in `runNamingSpike` and reported as `report.cfnRecovery` — see
+ * verifier feedback round 2, item 1: the two were conflated in round 1's `raw`/`cdk` pair, which
+ * made `sanitizeTypeName` look like it fixed collisions that recovery alone actually fixes.
+ */
 function makeTypeCandidate(
   path: string[],
   ctx: { awscc: string; cfnType?: string; db: SpecDatabase },
@@ -129,22 +148,24 @@ function makeTypeCandidate(
     cfnType: ctx.cfnType,
     kind: "type",
     path: [...path],
-    raw: pascal(leaf),
+    raw: typeStyleName,
     cdk: sanitizeTypeName(typeStyleName),
     cdktnCurrent: toPascalCase(`${awsccBaseName(ctx.awscc)}_${path.join("_")}`),
   };
 }
 
+/** Same held-constant-input shape as `makeTypeCandidate`, for the resource class name itself. */
 function makeResourceCandidate(awscc: string, cfnType: string | undefined): SpikeCandidate {
   const base = awsccBaseName(awscc);
   const cfnResourcePart = cfnType ? cfnType.split("::").pop()! : pascal(base.split("_").pop() ?? base);
+  const typeStyleName = pascal(cfnResourcePart);
   return {
     awscc,
     cfnType,
     kind: "resource",
     path: [],
-    raw: `Cfn${pascal(cfnResourcePart)}`,
-    cdk: `Cfn${sanitizeTypeName(cfnResourcePart)}`,
+    raw: `Cfn${typeStyleName}`,
+    cdk: `Cfn${sanitizeTypeName(typeStyleName)}`,
     cdktnCurrent: toPascalCase(base),
   };
 }
@@ -159,7 +180,10 @@ function bucketize(evaluations: SanitizerEvaluation[]): Omit<SanitizerBuckets, "
   let identical = 0;
   let divergesOnly = 0;
   let breaks = 0;
-  const examples: unknown[] = [];
+  // Separate caps per reason: breaks-jsii entries are rare (as low as 0 of thousands), so a single
+  // shared cap would let cosmetic entries crowd them out of the examples array entirely.
+  const breaksExamples: unknown[] = [];
+  const cosmeticExamples: unknown[] = [];
   for (const e of evaluations) {
     if (e.before === e.after) {
       identical++;
@@ -169,12 +193,13 @@ function bucketize(evaluations: SanitizerEvaluation[]): Omit<SanitizerBuckets, "
     const afterBreaks = breaksJsii(e.after);
     if (beforeBreaks && !afterBreaks) {
       breaks++;
-      if (examples.length < 5) examples.push({ ...e.context, before: e.before, after: e.after, reason: "breaks-jsii" });
+      if (breaksExamples.length < 5) breaksExamples.push({ ...e.context, before: e.before, after: e.after, reason: "breaks-jsii" });
     } else {
       divergesOnly++;
-      if (examples.length < 5) examples.push({ ...e.context, before: e.before, after: e.after, reason: "cosmetic" });
+      if (cosmeticExamples.length < 5) cosmeticExamples.push({ ...e.context, before: e.before, after: e.after, reason: "cosmetic" });
     }
   }
+  const examples = [...breaksExamples, ...cosmeticExamples];
   return { identical, divergesOnly, breaksJsii: breaks, examples };
 }
 
@@ -201,6 +226,10 @@ export function runNamingSpike(
   // Evidence for propertyNameFromCloudFormation: the CFN-style spelling (recovered definition
   // name when we have one, else a Pascal guess) run through naive vs. CFN-aware camelCasing.
   const cfnPropertyEvals: SanitizerEvaluation[] = [];
+  // Evidence for CFN-definition-name recovery itself (src/grouped/cfn-recovery.ts), NOT a plan §4
+  // sanitizer: naive PascalCase of the terraform leaf (before) vs. the recovered CFN TypeDefinition
+  // name, when one exists (after) — see docs/spike-naming.md and report.cfnRecovery below.
+  const cfnRecoveryEvals: SanitizerEvaluation[] = [];
 
   for (const awscc of awsccNames) {
     const cfnType = cfnTypeFor(awscc, db);
@@ -233,6 +262,14 @@ export function runNamingSpike(
         after: propertyNameFromCloudFormation(cfnStyleName),
         context: { awscc, path: c.path },
       });
+
+      // c.raw IS the recovered-or-naive typeStyleName (makeTypeCandidate); the naive baseline for
+      // the recovery transform itself is always the plain PascalCase leaf, recomputed here.
+      cfnRecoveryEvals.push({
+        before: pascal(leaf),
+        after: c.raw,
+        context: { awscc, path: c.path },
+      });
     }
   }
 
@@ -245,6 +282,7 @@ export function runNamingSpike(
   return {
     schema: { path: fqpn, providerVersion, resourceCount: awsccNames.length },
     sanitizers,
+    cfnRecovery: decide(bucketize(cfnRecoveryEvals)),
     candidates,
   };
 }

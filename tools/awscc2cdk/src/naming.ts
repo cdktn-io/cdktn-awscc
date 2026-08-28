@@ -24,15 +24,28 @@ export function propsName(cfnResourceName: string, suffix?: string): string {
 
 const PLAIN_IDENTIFIER = /^[A-Za-z_$][A-Za-z0-9_$]*$/;
 
+/**
+ * `pascalCaseWords`/`fullPathBase` only capitalise word-initial letters; they never guarantee a
+ * legal *leading character* for the identifier as a whole. A path segment that starts with a digit
+ * (e.g. `3d_model`) would otherwise survive as `3dModel...`, which is not a valid TypeScript
+ * identifier. Prefixing a single `_` is the same guard `sanitizeTypeName`'s `makeIdentifier`
+ * applies (`src/grouped/sanitizers.ts`) — see CONTRACT.md "Iteration 2" for why this file doesn't
+ * call that sanitizer directly. No occurrence in awscc 1.98.0 (0 digit-leading leaves across all
+ * 8,590 nested-type candidates — see `docs/spike-naming.md`), so this is latent, not observed.
+ */
+function ensureIdentifierStart(s: string): string {
+  return PLAIN_IDENTIFIER.test(s.charAt(0)) || s.length === 0 ? s : `_${s}`;
+}
+
 /** Splits on any run of non-identifier characters, capitalising the first letter of each piece. */
 function pascalCaseWords(s: string): string {
   const parts = s.split(/[^A-Za-z0-9]+/).filter(Boolean);
-  return parts.map((p) => p.charAt(0).toUpperCase() + p.slice(1)).join("");
+  return ensureIdentifierStart(parts.map((p) => p.charAt(0).toUpperCase() + p.slice(1)).join(""));
 }
 
 /** All path segments PascalCased individually and concatenated — the "full path" fallback name. */
 function fullPathBase(path: readonly string[]): string {
-  return path.map(pascalCaseWords).join("");
+  return ensureIdentifierStart(path.map(pascalCaseWords).join(""));
 }
 
 /**

@@ -1,3 +1,5 @@
+// Copyright (c) HashiCorp, Inc
+// SPDX-License-Identifier: MPL-2.0
 // Adapted from src/vendored/cdktn/models/resource-model.ts — see src/grouped/README.md.
 // Trimmed to managed resources only (awscc's terraform schema has no provider/data-source/
 // ephemeral-resource schemas to generate bindings for), and `className`/`configStructName` are

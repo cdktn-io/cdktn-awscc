@@ -1,3 +1,5 @@
+// Copyright (c) HashiCorp, Inc
+// SPDX-License-Identifier: MPL-2.0
 // Adapted from src/vendored/cdktn/resource-parser.ts — see src/grouped/README.md.
 //
 // Two structural differences from the vendored `Parser`/`ResourceParser`:

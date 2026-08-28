@@ -1,3 +1,5 @@
+// Copyright (c) HashiCorp, Inc
+// SPDX-License-Identifier: MPL-2.0
 // Adapted from src/vendored/cdktn/emitter/attributes-emitter.ts — see src/grouped/README.md.
 // Logic unchanged; only imports repointed at this directory's models (which carry the namespace-
 // qualification behaviour, see models/attribute-type-model.ts) and at the unmodified vendored
