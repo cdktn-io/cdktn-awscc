@@ -1245,3 +1245,285 @@ Measured on this machine while writing this chapter, so every acceptance number 
 
 Still genuinely open: whether `jsii-pacmak` builds the wheel end-to-end inside the graded test on
 this machine, and what the re-measured import numbers are.
+
+---
+
+# Iteration 4 — plan §5 steps 7–8 (lazy loading + documentation)
+
+Scope: vendor `@aws-cdk/lazify`, run it as the post-build step over the jsii-compiled package,
+measure the JS cold start it buys, and write the phase-1 documentation. **Out of scope, do not
+implement:** publishing, the Go/Java/.NET pacmak targets, anything from Phase 2.
+
+New test files (read-only for the implementer):
+`vendored-lazify.test.ts`, `step7.lazify.test.ts`, `step8.docs.test.ts`.
+New helper paths in `helpers/paths.ts` under `/* ---- iteration 4 ---- */`.
+
+## Commands
+
+```
+cd cdktn-awscc
+pnpm test                                              # default suite, minutes
+RUN_FULL=1 pnpm test                                   # + byte-level determinism gate
+PATH="/opt/homebrew/bin:$PATH" NODE_OPTIONS=--max-old-space-size=16384 \
+  RUN_FULL_JSII=1 pnpm jest tools/awscc2cdk/test/step7.lazify.test.ts   # ~30 min
+PATH="/opt/homebrew/bin:$PATH" NODE_OPTIONS=--max-old-space-size=16384 \
+  RUN_FULL_JSII=1 pnpm test:full-jsii                  # unchanged, still green
+pnpm lazify <dir>                                      # the vendored tool
+pnpm docgen                                            # the jsii-docgen sample
+node scripts/bench_js_require.mjs --package <dir> --label before|after --out <json> --runs 5
+```
+
+`step7.lazify.test.ts` stands alone: it stages and compiles its own copy, so it never depends on
+`step6.full-jsii.test.ts` having run, and it does **not** run `jsii-pacmak` (python is not on this
+path). Running the whole suite with `RUN_FULL_JSII=1` runs both `jsii` builds back to back; that is
+allowed but slow — the per-file command above is the one to use while implementing.
+
+## Iteration 4 — vendored lazify (`tools/lazify`, `vendored-lazify.test.ts`)
+
+`~/cdk/aws-cdk/tools/@aws-cdk/lazify` is `"private": true` and is **not on npm** (plan §2), so it is
+copied, not depended on. It goes to **`cdktn-awscc/tools/lazify/`** — a second vendoring root next
+to `tools/awscc2cdk/src/vendored/`, with its own `VENDORED.md`, because it is a *build tool for the
+package*, not generator input.
+
+* Vendored files, each a row in `tools/lazify/VENDORED.md` with the same
+  `| vendored | origin | commit |` shape iteration 1 defined: `lib/index.ts`, `bin/lazify.ts`,
+  `bin/lazify`, `README.md`, `LICENSE`. Origin
+  `~/cdk/aws-cdk/tools/@aws-cdk/lazify/<file>`, commit **`a9e6639df5ed1cbed0f247d3d18bc3db1eaf5ee1`**
+  on every row. Every file under `tools/lazify` except `VENDORED.md` must be accounted for by a row.
+* The copy is **byte-verbatim except for a prepended provenance header**: each vendored file must
+  *end with* upstream's exact bytes (checked against the origin on this machine, which the manifest
+  has already been made to prove exists). `lib/index.ts` and `bin/lazify.ts` additionally carry a
+  header comment in their first 1,500 bytes naming `Apache-2.0`, `@aws-cdk/lazify` and the commit.
+  Upstream's Apache-2.0 `LICENSE` comes along and must still read `Apache License` / `Version 2.0`.
+* **Adapting the tool is done with dependencies, never with edits.** `lib/index.ts` needs only
+  `fs`/`path`/`typescript`; `bin/lazify.ts` needs `fs-extra` (its `yargs`/`esbuild` entries in
+  upstream's `package.json` are not reachable from the two files we copy). So
+  `cdktn-awscc/package.json` gains `fs-extra` + `@types/fs-extra` and a `lazify` script pointing at
+  `tools/lazify/bin/lazify.ts`. Asserted.
+* **cdktn's `lazy-index.ts` pattern stays a documented fallback only** — no code. lazify is
+  preferred because it also lazifies `require()`s *inside* modules, not just the barrel (plan §2).
+
+Gotcha, measured: `cdktn-awscc/tsconfig.json` is picked up by `ts-node` and is fine here
+(`module: commonjs`), but the staged package that lazify runs *in* has jsii's rewritten
+`tsconfig.json` (`module: NodeNext`), which makes `ts-node` refuse to start with `TS5109`. The test
+therefore passes `TS_NODE_COMPILER_OPTIONS='{"module":"commonjs","moduleResolution":"node"}'`; the
+`pnpm lazify` script must do the same, or ship a compiled `lazify`.
+
+## Iteration 4 — lazify over the real build (`step7.lazify.test.ts`, `RUN_FULL_JSII=1`)
+
+Same staging model as iteration 3 (`generated/` copied into a temp root, `exports` merged in from
+`generated/package.exports.json`, `node_modules` symlinked, `jsii --project-references=false
+--silence-warnings=reserved-word`). `bin/lazify.ts` only rewrites a `.js` that has a sibling `.ts`,
+which the staged tree has (jsii compiles in place), so `lazify .` from the staged root is the whole
+invocation — aws-cdk-lib runs the same thing as `env QUIET=1 lazify .` in `cdk-build.post`.
+
+**The output shape, measured by the contract writer** on a two-file probe compiled with this repo's
+`tsc 5.9` (`--module commonjs --target es2022`) and transformed with upstream's `transformFile`, is
+what the assertions are written against:
+
+```js
+// before — generated/index.js (from `export * as aws_ec2 from './aws-ec2'`)
+exports.aws_ec2 = require("./aws-ec2");
+// before — generated/aws-ec2/index.js (from `export * from './vpc'`)
+__exportStar(require("./vpc"), exports);
+
+// after
+var _noFold;
+exports.aws_ec2 = void 0;
+Object.defineProperty(exports, _noFold = "aws_ec2", { enumerable: true, configurable: true, get: () => { var value = require("./aws-ec2"); Object.defineProperty(exports, _noFold = "aws_ec2", { enumerable: true, configurable: true, value }); return value; } });
+Object.defineProperty(exports, _noFold = "CcVPC", { enumerable: true, configurable: true, get: () => { var value = require("./vpc").CcVPC; Object.defineProperty(exports, _noFold = "CcVPC", { enumerable: true, configurable: true, value }); return value; } });
+```
+
+(`var`, not `const`; one line per getter; `exports.<name> = void 0` and the `_noFold =` assignment
+are lazify's deliberate trick to keep `cjs-module-lexer` recognising the export — see its README.
+The test's regexes are whitespace-tolerant versions of exactly this.)
+
+Acceptance, in order:
+
+1. **Before** the transform, `generated/index.js` matches `exports.aws_ec2 = require("./aws-ec2")`
+   and `generated/aws-ec2/index.js` matches `__exportStar(require("./vpc")` — the eagerness we are
+   removing is asserted to exist first, so a passing test can never be a no-op.
+2. The before-lazify benchmark runs (below) and writes into `test/out/js-bench.json`.
+3. `lazify .` over the staged root exits **0**.
+4. `generated/index.js` has **no** `exports.aws_<x> = require(…)` / `__importStar(require(…))` left,
+   and every remaining line containing `require("./aws-…` is a lazify getter body
+   (`var value = require("./aws-…")`).
+5. `generated/index.js` declares `_noFold` and contains a getter for `aws_ec2` → `./aws-ec2` and for
+   `aws_s3` → `./aws-s3`; the count of `Object.defineProperty(exports, _noFold = "aws_…` occurrences
+   is exactly **552** = 276 submodules × 2 (the getter, plus the memoising re-definition inside it).
+6. `generated/aws-ec2/index.js` has no `__exportStar(require(` **call** left (the helper
+   *definition* stays — it is emitted unconditionally by tsc) and has a `CcVPC` → `./vpc` getter.
+7. Through a consumer with the package symlinked into `node_modules/@cdktn/awscc`, both
+   `require('@cdktn/awscc/aws-ec2').CcVPC` and `require('@cdktn/awscc').aws_ec2.CcVPC` are still
+   `function`.
+8. The after-lazify benchmark runs.
+
+## Iteration 4 — JS cold-start benchmark (`scripts/bench_js_require.mjs`)
+
+Node ESM script at the repo root `scripts/`, the JS counterpart of `bench_python_import.py`.
+Contract:
+
+```
+node scripts/bench_js_require.mjs --package <dir> --label before|after --out <json> [--runs 5]
+```
+
+* `--package` is a package root (the staged, compiled `@cdktn/awscc`). The script builds a scratch
+  consumer dir, symlinks the package in as `node_modules/@cdktn/awscc`, and measures **cold starts**:
+  one freshly spawned `node` process per run, `--runs` (default 5) runs, **median** reported. Each
+  child prints one JSON line: `{ requireSeconds, heapUsedBytes, modulesLoaded }` where
+  `heapUsedBytes` is `process.memoryUsage().heapUsed` after the require and `modulesLoaded` is
+  `Object.keys(require.cache).length`. The parent times the whole child process (that wall clock is
+  `medianSeconds`; the in-process number is kept as `medianRequireSeconds`).
+* Measurements:
+
+  | # | expression | package |
+  |---|---|---|
+  | a | `require('@cdktn/awscc')` then touch `.aws_ec2.CcVPC` | `@cdktn/awscc` |
+  | b | `require('@cdktn/awscc/aws-ec2').CcVPC` | `@cdktn/awscc` |
+  | c | `require('@cdktn/provider-awscc')` then touch `.ec2Vpc.Ec2Vpc` | `@cdktn/provider-awscc` |
+
+  `a` and `b` are measured once per `--label` (`before` / `after`). `c` is the options.md Option 0
+  baseline: the script installs **`@cdktn/provider-awscc` latest from npm** into a scratch consumer
+  dir and measures it once, under phase `baseline`, recording the resolved version as
+  `providerAwsccVersion` (1.2.0 at the time of writing). It is not lazified by us and is not
+  re-measured per label.
+* `--out` is merged, not overwritten: running `--label after` must keep the `before` rows. Shape:
+
+```json
+{ "node": "v24.18.0", "runs": 5, "providerAwsccVersion": "1.2.0",
+  "measurements": [ { "id": "a", "phase": "before", "package": "@cdktn/awscc", "expression": "…",
+                      "medianSeconds": 0, "medianRequireSeconds": 0, "heapUsedBytes": 0,
+                      "modulesLoaded": 0, "samples": [0,0,0,0,0] } ] }
+```
+
+  Exactly the five `(id, phase)` pairs `a/before`, `a/after`, `b/before`, `b/after`, `c/baseline`;
+  every numeric field a number **> 0**; `samples.length === runs`; `node` major **≥ 24**.
+  These assertions run in the default suite whenever `test/out/js-bench.json` exists, so the
+  artifact can be re-checked without re-running the 30-minute build.
+
+**Acceptance and the noise band.** The stated acceptance is *after-lazify (a) median <
+before-lazify (a) median*. It is enforced as:
+
+* **hard failure** if `(before − after) / before ≤ −10%` (a real regression);
+* **`console.warn`, not failure**, while `|delta| < 10%`. (a) is a cold start: process spawn, V8
+  boot and the OS page cache dominate a sub-second measurement, and a 5-run median on this laptop
+  spreads by several percent between runs — iteration 3b already recorded 5,345–6,519 MB RSS
+  variance for the *same* build. A sub-10% delta in either direction is not distinguishable from
+  noise and must not decide a graded suite;
+* **hard failure**, always, if `after.modulesLoaded ≥ before.modulesLoaded × 0.5`. This is the
+  assertion with teeth: it is noise-free, and it is the actual claim — `require('@cdktn/awscc')`
+  must stop dragging 276 barrels and 1,494 resource files into `require.cache`. Half is a
+  deliberately loose ratchet; the floor is the `cdktn`/`constructs` kernel chain, which lazify
+  cannot remove.
+
+`docs/phase1-results.md` gets a **"JS load time"** section with the node version (line matching
+`node version: v…`), a reference to `scripts/bench_js_require.mjs`, and a table with exactly these
+headers and the five `#`/`phase` rows above:
+
+```
+| # | measurement | package | phase | median s | modules loaded | heap MB |
+```
+
+## Iteration 4 — docs (`step8.docs.test.ts`)
+
+### `cdktn-awscc/README.md` (new)
+
+Must say what the package is (`@cdktn/awscc`, aws-cdk-lib-shaped **L1** over **Cloud Control**,
+experimental/PoC), and contain a table with exactly these headers and exactly these five rows in
+this order — the CDK↔cdktn import diff per language, from plan §10:
+
+```
+| language | aws-cdk-lib | @cdktn/awscc |
+```
+
+`TypeScript`, `Python`, `Java`, `C#`, `Go`. Every `aws-cdk-lib` cell contains `Cfn`; every
+`@cdktn/awscc` cell contains `Cc` and **not** `Cfn`; the cdktn cells contain, respectively,
+`@cdktn/awscc`, `cdktn_awscc`, `io.cdktn.awscc`, `Io.Cdktn.AwsCc`, `cdktn-awscc-go`.
+The README must also:
+
+* mark the Java/.NET/Go per-module segment layouts as **assumptions** — only the python target has
+  been through `jsii-pacmak` (iteration 3b), so nothing else may be presented as verified;
+* explain the `Cc` prefix (plan §1/§6: a bare name hits jsii reserved words, `Cfn` would misdescribe
+  a Cloud Control resource) with a concrete class (`CcVPC`), and the **nested Property types**
+  (`export namespace` declaration merging, `…Property` interfaces under the resource class);
+* have a section on generation: how it works (`@aws-cdk/aws-service-spec` → CFN↔awscc mapping →
+  scope-map grouping → emit into `generated/`), and how to regenerate (`pnpm generate`);
+* list the build gates verbatim enough to run: `pnpm test`, `RUN_FULL=1`, `RUN_FULL_JSII=1`,
+  `--max-old-space-size=16384`, and `lazify`.
+
+### `docs/phase1-results.md` (consolidated)
+
+Keeps everything it has and gains three sections: **"JS load time"** (above), **"Conclusion"** and
+**"Phase 2 gaps"**.
+
+The **Conclusion** answers the two concerns phase 1 was opened on, with numbers:
+
+1. *Interface-name collisions.* Cite `docs/schema-sweep.md`: **8,590** distinct struct names under
+   the resource-prefixed scheme with **0** collisions, versus **141** collisions within single
+   resources for CDK-style leaf names and **277** for a per-service namespace — and state what was
+   actually implemented (the deterministic collision splitting/suffixing in `src/naming.ts`, its
+   order-independence, and the fact that the shipped shape does not need renaming).
+2. *Python performance.* The iteration-3b table, plus the lazy-loading observation: both packages
+   load **273** modules, because `jsii-pacmak ≥ 1.139` already emits lazy per-submodule Python —
+   so the module count is not the lever; wall clock is, and the grouped shape halves it.
+
+The **Phase 2 gaps** section names the three known holes:
+
+* **shape parity** — the `ourOnly` / `cdkOnly` counts from `test/out/shape-parity.json` (props
+  members and property types), not just a pointer;
+* **meta-properties** — the plan §8 spike list by name (`DeletionPolicy`, `UpdateReplacePolicy`,
+  `DependsOn`, `Condition`, `Metadata`, `CreationPolicy`/`UpdatePolicy`, `Ref`/`Fn::GetAtt`,
+  `lifecycle.ignore_changes`/`timeouts`), with `docs/spike-meta-properties.md` named as the
+  deliverable;
+* **data sources** — awscc's **2,621** data sources (1,494 singular + 1,127 plural) and the 1,117
+  list resources are dropped (plan §9), with the two re-emit options recorded.
+
+It must also state the size of the docgen sample on a line naming `docs/api/aws-ec2.md`, and say
+that it is 1 of **276** modules.
+
+### `docs/api/aws-ec2.md` (jsii-docgen sample)
+
+`jsii-docgen` is added as a devDependency with a `docgen` script; **one** module is rendered
+(`aws-ec2`), not all 276, and the file exists with `CcVPC` in it and is > 50,000 bytes. The point of
+the sample is the size statement in `phase1-results.md`: docgen over the whole assembly is not a
+phase-1 deliverable, and the sample is the evidence for why.
+
+## Contract decisions taken beyond the plan (iteration 4, 2026-08-28)
+
+1. **`tools/lazify` is a second vendoring root**, not part of `tools/awscc2cdk/src/vendored`: that
+   tree is generator *input* (scope map, spec2cdk sanitizers); lazify is a *build tool* that never
+   runs inside the generator. Its hygiene rules are the same, and are asserted separately.
+2. **Verbatim-plus-header, checked against the origin.** Iteration 1's manifest only proved an
+   origin path exists; here the origin is a single unbuilt file, so the copy is diffed against it
+   (`endsWith`) and adapting is limited to adding dependencies.
+3. **The benchmark's teeth are the module count, not the clock.** A wall-clock assertion on a
+   sub-second cold start is a flaky gate; `require.cache` size is deterministic and is what lazify
+   actually changes. The clock is still recorded and still fails on a >10% regression.
+4. **Row (c) is measured once, not per label.** We do not lazify `@cdktn/provider-awscc`; measuring
+   it twice would only add npm and page-cache noise to a fixed baseline.
+5. **The docgen sample is one module by contract**, so nobody "fixes" the suite by rendering 276.
+
+## Contract validation (contract writer, 2026-08-28)
+
+Measured on this machine while writing this chapter, so the acceptance numbers are known-reachable:
+
+* upstream lazify is at commit `a9e6639d`, is unbuilt (`lib/index.ts` only) and its two reachable
+  files import `fs`/`path`/`typescript` and `fs-extra` — no `esbuild`, no `yargs`;
+* the before/after JS shapes quoted above were produced here: `tsc 5.9` from this repo emits
+  `exports.aws_ec2 = require("./sub");` and `__exportStar(require("./vpc"), exports);`, and
+  upstream's `transformFile` rewrites them to exactly the `_noFold` getters quoted, after which
+  `require(index.js).aws_ec2.CcVPC` is still a `function` and `require.cache` holds 3 modules;
+* `ts-node` under a `module: NodeNext` tsconfig fails with `TS5109` unless
+  `TS_NODE_COMPILER_OPTIONS` overrides it — hence the override in the test and in the `lazify`
+  script;
+* `npm view @cdktn/provider-awscc version` → **1.2.0**; `jsii-docgen` latest → **10.12.5**;
+  `node -v` → **v24.18.0** on this machine;
+* `pnpm test` after these edits: **13 passed / 3 failed** suites (+2 skipped),
+  **189 passed / 23 failed / 25 skipped** tests — 8 failures in `vendored-lazify.test.ts`, 13 in
+  `step8.docs.test.ts`, 2 in `step7.lazify.test.ts` (the two `bench_js_require.mjs` source
+  assertions; everything else there is gated on `RUN_FULL_JSII=1` or on the artifact existing).
+  No iteration-1/2/3/3b suite regressed.
+
+Not pre-validated (genuinely open work): whether `lazify` completes over all 276 compiled modules
+(it `require()`s every submodule at transform time to enumerate `export *` symbols, which is the
+slowest and riskiest part), and what the JS cold-start numbers actually are.

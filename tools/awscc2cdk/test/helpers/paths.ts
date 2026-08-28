@@ -61,3 +61,25 @@ export const distDir = path.join(packageRoot, "dist");
 export const distPythonDir = path.join(distDir, "python");
 /** `cdktn-awscc/.gitignore` — must ignore `dist/` (iteration 3b, finding 7) */
 export const packageGitignorePath = path.join(packageRoot, ".gitignore");
+
+/* ---- iteration 4 ---- */
+
+/** `cdktn-awscc/package.json` — the workspace manifest (devDeps for lazify + jsii-docgen) */
+export const packageJsonPath = path.join(packageRoot, "package.json");
+/** `cdktn-awscc/tools/lazify` — the vendored `@aws-cdk/lazify` (plan §5 step 7) */
+export const lazifyDir = path.join(packageRoot, "tools", "lazify");
+export const lazifyVendoredDocPath = path.join(lazifyDir, "VENDORED.md");
+/** upstream lazify, on this machine — the origin every VENDORED.md row must point at */
+export const lazifyOriginDir = path.join(
+  process.env.HOME ?? "",
+  "cdk", "aws-cdk", "tools", "@aws-cdk", "lazify",
+);
+/** JS cold-start require benchmark (plan §5 step 7, the JS half of §7 layer 6) */
+export const jsBenchScriptPath = path.join(repoRoot, "scripts", "bench_js_require.mjs");
+/** written by `scripts/bench_js_require.mjs`, asserted by `step7.lazify.test.ts` */
+export const jsBenchPath = path.join(outDir, "js-bench.json");
+/** the package README (plan §5 step 8, §10) */
+export const readmePath = path.join(packageRoot, "README.md");
+/** jsii-docgen sample output (plan §5 step 8) */
+export const apiDocsDir = path.join(docsDir, "api");
+export const ec2ApiDocPath = path.join(apiDocsDir, "aws-ec2.md");
