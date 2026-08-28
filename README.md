@@ -1,0 +1,144 @@
+# `@cdktn/awscc`
+
+`@cdktn/awscc` is an **experimental, phase-1 proof-of-concept**: an aws-cdk-lib-shaped **L1** layer
+over AWS **Cloud Control** (the `awscc` Terraform provider), generated from the awscc provider
+schema instead of the CloudFormation resource specification. It is not a Terraform-shaped provider
+— that already exists as `@cdktn/provider-awscc` — this package's whole point is to *look like*
+`aws-cdk-lib` closely enough that a future migration can be close to a mechanical `Cfn` → `Cc`
+rename. See `docs/awscdk-compat-plan.md` for the plan this package implements and
+`docs/phase1-results.md` for the measured results.
+
+## What this package is (and isn't)
+
+* One submodule per CFN service (`aws-ec2`, `aws-s3`, `aws-lambda`, …), driven by a copied
+  `aws-cdk-lib` `scope-map.json` — the same grouping aws-cdk-lib itself uses, so a merged CFN
+  namespace (e.g. `AWS::KinesisAnalytics` + `AWS::KinesisAnalyticsV2`) lands in one module here too.
+* Every resource is an **L1** construct only — no L2s, no escape hatches beyond what Cloud Control
+  itself exposes. Phase 2 (an actual `aws-cdk-lib` substitution) is out of scope for this package.
+* 276 modules, 1,494 resources, generated in one pass from `../schemas/schema.json` (an
+  `awscc`-provider `terraform providers schema -json` dump) against the pinned
+  `@aws-cdk/aws-service-spec` database. `generated/` is committed, like the sibling provider repos
+  commit `src/`.
+
+## Import table (plan §10)
+
+The consumer-visible difference between `aws-cdk-lib` and `@cdktn/awscc` is the root import plus a
+mechanical `Cfn` → `Cc` rename:
+
+| language | aws-cdk-lib | @cdktn/awscc |
+| --- | --- | --- |
+| TypeScript | `import { aws_ec2 } from 'aws-cdk-lib'; aws_ec2.CfnVPC` | `import { aws_ec2 } from '@cdktn/awscc'; aws_ec2.CcVPC` (or `require('@cdktn/awscc/aws-ec2')`) |
+| Python | `from aws_cdk import aws_ec2; aws_ec2.CfnVPC` | `from cdktn_awscc import aws_ec2; aws_ec2.CcVPC` |
+| Java | `software.amazon.awscdk.services.ec2.CfnVPC` | `io.cdktn.awscc.services.ec2.CcVPC` |
+| C# | `Amazon.CDK.AWS.EC2.CfnVPC` | `Io.Cdktn.AwsCc.EC2.CcVPC` |
+| Go | `awsec2.NewCfnVPC` (`aws-cdk-go/awscdk/v2/awsec2`) | `awsec2.CcVPC` via `NewCcVPC()` (`cdktn-awscc-go/awsec2`) |
+
+> **Only the Python target has actually been built and imported (`jsii-pacmak --targets python`,
+> see `docs/phase1-results.md`).** The Java, .NET and Go per-module segment layouts above are
+> **assumptions carried over from plan §10** — `io.cdktn.awscc.services.ec2` mirrors
+> `software.amazon.awscdk.services.ec2`, `Io.Cdktn.AwsCc.EC2` mirrors `Amazon.CDK.AWS.EC2` minus the
+> `AWS` segment, and the Go package name is jsii-pacmak's default from the submodule symbol — none
+> of those three targets has been through `jsii-pacmak` yet, so treat those cells as **unconfirmed**
+> until Phase 2 actually builds them.
+
+## Naming: the `Cc` prefix and nested `Property` types
+
+A bare resource name (`Vpc`, `Function`) collides with jsii/TypeScript reserved identifiers and
+would block a future L2 construct sharing the same name in the same submodule; `Cfn` would also
+misdescribe the API, since these resources go through **Cloud Control**, not raw CloudFormation.
+So every resource class gets a **`Cc` prefix** instead: `AWS::EC2::VPC` → `aws_ec2.CcVPC`, with a
+matching `CcVPCProps` interface. This keeps a uniform marker and makes a future Phase-2 codemod a
+pure `Cfn` → `Cc` rename with no per-resource exceptions.
+
+Nested CloudFormation property types are attached to the resource class exactly the way
+`aws-cdk-lib` does it — via TypeScript declaration merging between the class and a `namespace` of
+the same name:
+
+```ts
+export class CcVPC extends cdktn.TerraformResource { /* … */ }
+export namespace CcVPC {
+  export interface VpcEncryptionControlProperty { /* … */ }
+  export class VpcEncryptionControlPropertyOutputReference extends cdktn.ComplexObject { /* … */ }
+}
+```
+
+Where the awscc schema's own CFN `TypeDefinition` name is recoverable, the `…Property` interface is
+named after it (`VpcEncryptionControlProperty`); otherwise it falls back to the resource's
+Terraform attribute path, PascalCased. See `docs/spike-naming.md` for the naming rules and
+`docs/phase1-results.md` for the collision numbers behind that choice.
+
+## How generation works
+
+```
+@aws-cdk/aws-service-spec (CFN type + property database)
+        │
+        ▼
+CFN type ↔ awscc resource mapping (tools/awscc2cdk/src/cfn-map.ts)
+        │
+        ▼
+scope-map grouping (vendored aws-cdk-lib scope-map.json, tools/awscc2cdk/src/scope-map.ts)
+        │
+        ▼
+emit into generated/<module>/<resource>.ts   (tools/awscc2cdk/src/grouped-generate.ts)
+```
+
+1. `../schemas/schema.json` (a `terraform providers schema -json` dump of the `awscc` provider) is
+   read for resource shapes; `@aws-cdk/aws-service-spec` supplies the CloudFormation side of the
+   join (type names, `TypeDefinition` names for nested structs).
+2. Each `awscc_<svc>_<res>` resource is mapped to its CFN type (`AWS::Svc::Res`) where one exists;
+   unmapped resources still get a module and a name, derived straight from the awscc identifier
+   (see CONTRACT.md, "Iteration 3 — full emission").
+3. The CFN namespace is resolved to an `aws-cdk-lib` module directory through the vendored
+   `scope-map.json`, auto-extended for the handful of namespaces the map doesn't list.
+4. The (adapted) `cdk-terrain` / `spec2cdk` generator emits one file per resource, plus a
+   `.jsiirc.json` and `index.ts` per module and a root barrel.
+
+### Regenerating
+
+```
+pnpm generate
+```
+
+runs the whole pipeline against `../schemas/schema.json` and rewrites `generated/` from scratch
+(so a stale resource that changed module never survives). It is the same code path the `RUN_FULL=1`
+test suite calls, so `pnpm generate && git diff --stat generated/` is the offline way to check the
+committed tree is current.
+
+## Build gates
+
+```
+cd cdktn-awscc
+pnpm test                                              # fast contract, < 5 min
+RUN_FULL=1 pnpm test                                   # + full-schema regeneration, determinism, tsc
+PATH="/opt/homebrew/bin:$PATH" NODE_OPTIONS=--max-old-space-size=16384 \
+  RUN_FULL_JSII=1 pnpm test:full-jsii                  # jsii + jsii-pacmak over the whole tree, ~90 min
+```
+
+`--max-old-space-size=16384` (16 GB) is needed because `jsii` compiling all 276 submodules /
+1,494 resources at once peaks in the multi-gigabyte range (measured 5.3–6.5 GB RSS on the machine
+this was built on — see `docs/phase1-results.md`); raise it further if it OOMs on a smaller machine.
+
+After `jsii` compiles the package, a **post-build `lazify` pass** rewrites the compiled `.js` so
+`require('@cdktn/awscc')` no longer eagerly pulls in all 276 submodule barrels (and everything they
+transitively require) — only the submodules actually touched at runtime get loaded:
+
+```
+pnpm lazify <staged-package-dir>       # vendored from ~/cdk/aws-cdk/tools/@aws-cdk/lazify — see tools/lazify/VENDORED.md
+```
+
+`cdktn`'s own `lazy-index.ts` pattern (already emitted per-provider by the vendored generator) is
+kept as a **documented fallback only** — it only lazifies the top-level barrel, not `require()`s
+*inside* already-loaded modules, so it doesn't get the same win `lazify` does. No code wires it up;
+`lazify` is what actually runs. Numbers for the before/after difference are in
+`docs/phase1-results.md`, "JS load time".
+
+## Generating the API doc sample
+
+```
+pnpm docgen
+```
+
+runs `jsii-docgen` over a single module (`aws-ec2`) and writes `docs/api/aws-ec2.md`. Running it
+over the full 276-module assembly is not a phase-1 deliverable (see `docs/phase1-results.md` for
+the size the one-module sample came out at); this script only ever builds and documents one
+submodule at a time.
