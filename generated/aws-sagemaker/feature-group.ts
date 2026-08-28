@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_feature_group
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_feature_group
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,61 +9,61 @@ export interface CcFeatureGroupProps extends cdktn.TerraformMetaArguments {
     /**
     * Description about the FeatureGroup.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_feature_group#description CcFeatureGroup#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_feature_group#description CcFeatureGroup#description}
     */
     readonly description?: string;
     /**
     * The Event Time Feature Name.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_feature_group#event_time_feature_name CcFeatureGroup#event_time_feature_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_feature_group#event_time_feature_name CcFeatureGroup#event_time_feature_name}
     */
     readonly eventTimeFeatureName: string;
     /**
     * An Array of Feature Definition
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_feature_group#feature_definitions CcFeatureGroup#feature_definitions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_feature_group#feature_definitions CcFeatureGroup#feature_definitions}
     */
     readonly featureDefinitions: CcFeatureGroup.FeatureDefinitionProperty[] | cdktn.IResolvable;
     /**
     * The Name of the FeatureGroup.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_feature_group#feature_group_name CcFeatureGroup#feature_group_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_feature_group#feature_group_name CcFeatureGroup#feature_group_name}
     */
     readonly featureGroupName: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_feature_group#offline_store_config CcFeatureGroup#offline_store_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_feature_group#offline_store_config CcFeatureGroup#offline_store_config}
     */
     readonly offlineStoreConfig?: CcFeatureGroup.OfflineStoreConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_feature_group#online_store_config CcFeatureGroup#online_store_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_feature_group#online_store_config CcFeatureGroup#online_store_config}
     */
     readonly onlineStoreConfig?: CcFeatureGroup.OnlineStoreConfigProperty;
     /**
     * The Record Identifier Feature Name.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_feature_group#record_identifier_feature_name CcFeatureGroup#record_identifier_feature_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_feature_group#record_identifier_feature_name CcFeatureGroup#record_identifier_feature_name}
     */
     readonly recordIdentifierFeatureName: string;
     /**
     * Role Arn
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_feature_group#role_arn CcFeatureGroup#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_feature_group#role_arn CcFeatureGroup#role_arn}
     */
     readonly roleArn?: string;
     /**
     * An array of key-value pair to apply to this resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_feature_group#tags CcFeatureGroup#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_feature_group#tags CcFeatureGroup#tags}
     */
     readonly tags?: CcFeatureGroup.TagProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_feature_group#throughput_config CcFeatureGroup#throughput_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_feature_group#throughput_config CcFeatureGroup#throughput_config}
     */
     readonly throughputConfig?: CcFeatureGroup.ThroughputConfigProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_feature_group awscc_sagemaker_feature_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_feature_group awscc_sagemaker_feature_group}
 */
 export class CcFeatureGroup extends cdktn.TerraformResource {
 
@@ -79,7 +79,7 @@ export class CcFeatureGroup extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcFeatureGroup resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcFeatureGroup to import
-    * @param importFromId The id of the existing CcFeatureGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_feature_group#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcFeatureGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_feature_group#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcFeatureGroup to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -91,7 +91,7 @@ export class CcFeatureGroup extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_feature_group awscc_sagemaker_feature_group} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_feature_group awscc_sagemaker_feature_group} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -101,7 +101,8 @@ export class CcFeatureGroup extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_sagemaker_feature_group',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -749,11 +750,11 @@ export function ccFeatureGroupThroughputConfigPropertyToHclTerraform(struct?: Cc
 export namespace CcFeatureGroup {
 export interface FeatureDefinitionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_feature_group#feature_name CcFeatureGroup#feature_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_feature_group#feature_name CcFeatureGroup#feature_name}
     */
     readonly featureName: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_feature_group#feature_type CcFeatureGroup#feature_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_feature_group#feature_type CcFeatureGroup#feature_type}
     */
     readonly featureType: string;
 }
@@ -855,15 +856,15 @@ export class FeatureDefinitionPropertyList extends cdktn.ComplexList {
 }
 export interface DataCatalogConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_feature_group#catalog CcFeatureGroup#catalog}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_feature_group#catalog CcFeatureGroup#catalog}
     */
     readonly catalog?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_feature_group#database CcFeatureGroup#database}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_feature_group#database CcFeatureGroup#database}
     */
     readonly database?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_feature_group#table_name CcFeatureGroup#table_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_feature_group#table_name CcFeatureGroup#table_name}
     */
     readonly tableName?: string;
 }
@@ -971,11 +972,11 @@ export class DataCatalogConfigPropertyOutputReference extends cdktn.ComplexObjec
 }
 export interface S3StorageConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_feature_group#kms_key_id CcFeatureGroup#kms_key_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_feature_group#kms_key_id CcFeatureGroup#kms_key_id}
     */
     readonly kmsKeyId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_feature_group#s3_uri CcFeatureGroup#s3_uri}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_feature_group#s3_uri CcFeatureGroup#s3_uri}
     */
     readonly s3Uri?: string;
 }
@@ -1061,21 +1062,21 @@ export class S3StorageConfigPropertyOutputReference extends cdktn.ComplexObject 
 }
 export interface OfflineStoreConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_feature_group#data_catalog_config CcFeatureGroup#data_catalog_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_feature_group#data_catalog_config CcFeatureGroup#data_catalog_config}
     */
     readonly dataCatalogConfig?: DataCatalogConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_feature_group#disable_glue_table_creation CcFeatureGroup#disable_glue_table_creation}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_feature_group#disable_glue_table_creation CcFeatureGroup#disable_glue_table_creation}
     */
     readonly disableGlueTableCreation?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_feature_group#s3_storage_config CcFeatureGroup#s3_storage_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_feature_group#s3_storage_config CcFeatureGroup#s3_storage_config}
     */
     readonly s3StorageConfig?: S3StorageConfigProperty;
     /**
     * Format for the offline store feature group. Iceberg is the optimal format for feature groups shared between offline and online stores.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_feature_group#table_format CcFeatureGroup#table_format}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_feature_group#table_format CcFeatureGroup#table_format}
     */
     readonly tableFormat?: string;
 }
@@ -1205,7 +1206,7 @@ export class OfflineStoreConfigPropertyOutputReference extends cdktn.ComplexObje
 }
 export interface OnlineStoreSecurityConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_feature_group#kms_key_id CcFeatureGroup#kms_key_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_feature_group#kms_key_id CcFeatureGroup#kms_key_id}
     */
     readonly kmsKeyId?: string;
 }
@@ -1271,13 +1272,13 @@ export interface TtlDurationProperty {
     /**
     * Unit of ttl configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_feature_group#unit CcFeatureGroup#unit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_feature_group#unit CcFeatureGroup#unit}
     */
     readonly unit?: string;
     /**
     * Value of ttl configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_feature_group#value CcFeatureGroup#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_feature_group#value CcFeatureGroup#value}
     */
     readonly value?: number;
 }
@@ -1363,21 +1364,21 @@ export class TtlDurationPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface OnlineStoreConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_feature_group#enable_online_store CcFeatureGroup#enable_online_store}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_feature_group#enable_online_store CcFeatureGroup#enable_online_store}
     */
     readonly enableOnlineStore?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_feature_group#security_config CcFeatureGroup#security_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_feature_group#security_config CcFeatureGroup#security_config}
     */
     readonly securityConfig?: OnlineStoreSecurityConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_feature_group#storage_type CcFeatureGroup#storage_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_feature_group#storage_type CcFeatureGroup#storage_type}
     */
     readonly storageType?: string;
     /**
     * TTL configuration of the feature group
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_feature_group#ttl_duration CcFeatureGroup#ttl_duration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_feature_group#ttl_duration CcFeatureGroup#ttl_duration}
     */
     readonly ttlDuration?: TtlDurationProperty;
 }
@@ -1507,11 +1508,11 @@ export class OnlineStoreConfigPropertyOutputReference extends cdktn.ComplexObjec
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_feature_group#key CcFeatureGroup#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_feature_group#key CcFeatureGroup#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_feature_group#value CcFeatureGroup#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_feature_group#value CcFeatureGroup#value}
     */
     readonly value?: string;
 }
@@ -1621,19 +1622,19 @@ export interface ThroughputConfigProperty {
     /**
     * For provisioned feature groups with online store enabled, this indicates the read throughput you are billed for and can consume without throttling.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_feature_group#provisioned_read_capacity_units CcFeatureGroup#provisioned_read_capacity_units}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_feature_group#provisioned_read_capacity_units CcFeatureGroup#provisioned_read_capacity_units}
     */
     readonly provisionedReadCapacityUnits?: number;
     /**
     * For provisioned feature groups, this indicates the write throughput you are billed for and can consume without throttling.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_feature_group#provisioned_write_capacity_units CcFeatureGroup#provisioned_write_capacity_units}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_feature_group#provisioned_write_capacity_units CcFeatureGroup#provisioned_write_capacity_units}
     */
     readonly provisionedWriteCapacityUnits?: number;
     /**
     * Throughput mode configuration of the feature group
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_feature_group#throughput_mode CcFeatureGroup#throughput_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_feature_group#throughput_mode CcFeatureGroup#throughput_mode}
     */
     readonly throughputMode?: string;
 }

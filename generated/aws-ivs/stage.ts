@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ivs_stage
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ivs_stage
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,25 +9,25 @@ export interface CcStageProps extends cdktn.TerraformMetaArguments {
     /**
     * Configuration object for individual participant recording, to attach to the new stage.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ivs_stage#auto_participant_recording_configuration CcStage#auto_participant_recording_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ivs_stage#auto_participant_recording_configuration CcStage#auto_participant_recording_configuration}
     */
     readonly autoParticipantRecordingConfiguration?: CcStage.AutoParticipantRecordingConfigurationProperty;
     /**
     * Stage name
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ivs_stage#name CcStage#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ivs_stage#name CcStage#name}
     */
     readonly name?: string;
     /**
     * An array of key-value pairs to apply to this resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ivs_stage#tags CcStage#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ivs_stage#tags CcStage#tags}
     */
     readonly tags?: CcStage.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ivs_stage awscc_ivs_stage}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ivs_stage awscc_ivs_stage}
 */
 export class CcStage extends cdktn.TerraformResource {
 
@@ -43,7 +43,7 @@ export class CcStage extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcStage resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcStage to import
-    * @param importFromId The id of the existing CcStage that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ivs_stage#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcStage that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ivs_stage#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcStage to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -55,7 +55,7 @@ export class CcStage extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ivs_stage awscc_ivs_stage} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ivs_stage awscc_ivs_stage} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -65,7 +65,8 @@ export class CcStage extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_ivs_stage',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -420,7 +421,7 @@ export interface ParticipantRecordingHlsConfigurationProperty {
     /**
     * Defines the target duration for recorded segments generated when recording a stage participant. Segments may have durations longer than the specified value when needed to ensure each segment begins with a keyframe. Default: 6.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ivs_stage#target_segment_duration_seconds CcStage#target_segment_duration_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ivs_stage#target_segment_duration_seconds CcStage#target_segment_duration_seconds}
     */
     readonly targetSegmentDurationSeconds?: number;
 }
@@ -486,7 +487,7 @@ export interface HlsConfigurationProperty {
     /**
     * An object representing a configuration of participant HLS recordings for individual participant recording.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ivs_stage#participant_recording_hls_configuration CcStage#participant_recording_hls_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ivs_stage#participant_recording_hls_configuration CcStage#participant_recording_hls_configuration}
     */
     readonly participantRecordingHlsConfiguration?: ParticipantRecordingHlsConfigurationProperty;
 }
@@ -552,19 +553,19 @@ export interface ParticipantThumbnailConfigurationProperty {
     /**
     * Thumbnail recording mode. Default: DISABLED.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ivs_stage#recording_mode CcStage#recording_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ivs_stage#recording_mode CcStage#recording_mode}
     */
     readonly recordingMode?: string;
     /**
     * Indicates the format in which thumbnails are recorded. SEQUENTIAL records all generated thumbnails in a serial manner, to the media/thumbnails/high directory. LATEST saves the latest thumbnail in media/latest_thumbnail/high/thumb.jpg and overwrites it at the interval specified by targetIntervalSeconds. You can enable both SEQUENTIAL and LATEST. Default: SEQUENTIAL.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ivs_stage#storage CcStage#storage}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ivs_stage#storage CcStage#storage}
     */
     readonly storage?: string[];
     /**
     * The targeted thumbnail-generation interval in seconds. This is configurable only if recordingMode is INTERVAL. Default: 60.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ivs_stage#target_interval_seconds CcStage#target_interval_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ivs_stage#target_interval_seconds CcStage#target_interval_seconds}
     */
     readonly targetIntervalSeconds?: number;
 }
@@ -674,7 +675,7 @@ export interface ThumbnailConfigurationProperty {
     /**
     * An object representing a configuration of thumbnails for recorded video from an individual participant.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ivs_stage#participant_thumbnail_configuration CcStage#participant_thumbnail_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ivs_stage#participant_thumbnail_configuration CcStage#participant_thumbnail_configuration}
     */
     readonly participantThumbnailConfiguration?: ParticipantThumbnailConfigurationProperty;
 }
@@ -740,31 +741,31 @@ export interface AutoParticipantRecordingConfigurationProperty {
     /**
     * HLS configuration object for individual participant recording.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ivs_stage#hls_configuration CcStage#hls_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ivs_stage#hls_configuration CcStage#hls_configuration}
     */
     readonly hlsConfiguration?: HlsConfigurationProperty;
     /**
     * Types of media to be recorded. Default: AUDIO_VIDEO.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ivs_stage#media_types CcStage#media_types}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ivs_stage#media_types CcStage#media_types}
     */
     readonly mediaTypes?: string[];
     /**
     * If a stage publisher disconnects and then reconnects within the specified interval, the multiple recordings will be considered a single recording and merged together. The default value is 0, which disables merging.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ivs_stage#recording_reconnect_window_seconds CcStage#recording_reconnect_window_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ivs_stage#recording_reconnect_window_seconds CcStage#recording_reconnect_window_seconds}
     */
     readonly recordingReconnectWindowSeconds?: number;
     /**
     * ARN of the StorageConfiguration resource to use for individual participant recording.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ivs_stage#storage_configuration_arn CcStage#storage_configuration_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ivs_stage#storage_configuration_arn CcStage#storage_configuration_arn}
     */
     readonly storageConfigurationArn?: string;
     /**
     * A complex type that allows you to enable/disable the recording of thumbnails for individual participant recording and modify the interval at which thumbnails are generated for the live session.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ivs_stage#thumbnail_configuration CcStage#thumbnail_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ivs_stage#thumbnail_configuration CcStage#thumbnail_configuration}
     */
     readonly thumbnailConfiguration?: ThumbnailConfigurationProperty;
 }
@@ -918,13 +919,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ivs_stage#key CcStage#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ivs_stage#key CcStage#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 0 to 256 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ivs_stage#value CcStage#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ivs_stage#value CcStage#value}
     */
     readonly value?: string;
 }

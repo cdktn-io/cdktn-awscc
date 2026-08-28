@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/groundstation_dataflow_endpoint_group_v2
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_dataflow_endpoint_group_v2
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,27 +9,27 @@ export interface CcDataflowEndpointGroupV2Props extends cdktn.TerraformMetaArgum
     /**
     * Amount of time, in seconds, after a contact ends that the Ground Station Dataflow Endpoint Group will be in a POSTPASS state. A Ground Station Dataflow Endpoint Group State Change event will be emitted when the Dataflow Endpoint Group enters and exits the POSTPASS state.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/groundstation_dataflow_endpoint_group_v2#contact_post_pass_duration_seconds CcDataflowEndpointGroupV2#contact_post_pass_duration_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_dataflow_endpoint_group_v2#contact_post_pass_duration_seconds CcDataflowEndpointGroupV2#contact_post_pass_duration_seconds}
     */
     readonly contactPostPassDurationSeconds?: number;
     /**
     * Amount of time, in seconds, before a contact starts that the Ground Station Dataflow Endpoint Group will be in a PREPASS state. A Ground Station Dataflow Endpoint Group State Change event will be emitted when the Dataflow Endpoint Group enters and exits the PREPASS state.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/groundstation_dataflow_endpoint_group_v2#contact_pre_pass_duration_seconds CcDataflowEndpointGroupV2#contact_pre_pass_duration_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_dataflow_endpoint_group_v2#contact_pre_pass_duration_seconds CcDataflowEndpointGroupV2#contact_pre_pass_duration_seconds}
     */
     readonly contactPrePassDurationSeconds?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/groundstation_dataflow_endpoint_group_v2#endpoints CcDataflowEndpointGroupV2#endpoints}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_dataflow_endpoint_group_v2#endpoints CcDataflowEndpointGroupV2#endpoints}
     */
     readonly endpoints?: CcDataflowEndpointGroupV2.CreateEndpointDetailsProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/groundstation_dataflow_endpoint_group_v2#tags CcDataflowEndpointGroupV2#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_dataflow_endpoint_group_v2#tags CcDataflowEndpointGroupV2#tags}
     */
     readonly tags?: CcDataflowEndpointGroupV2.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/groundstation_dataflow_endpoint_group_v2 awscc_groundstation_dataflow_endpoint_group_v2}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_dataflow_endpoint_group_v2 awscc_groundstation_dataflow_endpoint_group_v2}
 */
 export class CcDataflowEndpointGroupV2 extends cdktn.TerraformResource {
 
@@ -45,7 +45,7 @@ export class CcDataflowEndpointGroupV2 extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcDataflowEndpointGroupV2 resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcDataflowEndpointGroupV2 to import
-    * @param importFromId The id of the existing CcDataflowEndpointGroupV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/groundstation_dataflow_endpoint_group_v2#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcDataflowEndpointGroupV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_dataflow_endpoint_group_v2#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcDataflowEndpointGroupV2 to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -57,7 +57,7 @@ export class CcDataflowEndpointGroupV2 extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/groundstation_dataflow_endpoint_group_v2 awscc_groundstation_dataflow_endpoint_group_v2} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_dataflow_endpoint_group_v2 awscc_groundstation_dataflow_endpoint_group_v2} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -67,7 +67,8 @@ export class CcDataflowEndpointGroupV2 extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_groundstation_dataflow_endpoint_group_v2',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -1925,13 +1926,13 @@ export interface IntegerRangeProperty {
     /**
     * A maximum value.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/groundstation_dataflow_endpoint_group_v2#maximum CcDataflowEndpointGroupV2#maximum}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_dataflow_endpoint_group_v2#maximum CcDataflowEndpointGroupV2#maximum}
     */
     readonly maximum?: number;
     /**
     * A minimum value.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/groundstation_dataflow_endpoint_group_v2#minimum CcDataflowEndpointGroupV2#minimum}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_dataflow_endpoint_group_v2#minimum CcDataflowEndpointGroupV2#minimum}
     */
     readonly minimum?: number;
 }
@@ -2019,13 +2020,13 @@ export interface RangedSocketAddressProperty {
     /**
     * IPv4 socket address.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/groundstation_dataflow_endpoint_group_v2#name CcDataflowEndpointGroupV2#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_dataflow_endpoint_group_v2#name CcDataflowEndpointGroupV2#name}
     */
     readonly name?: string;
     /**
     * Port range of a socket address.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/groundstation_dataflow_endpoint_group_v2#port_range CcDataflowEndpointGroupV2#port_range}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_dataflow_endpoint_group_v2#port_range CcDataflowEndpointGroupV2#port_range}
     */
     readonly portRange?: IntegerRangeProperty;
 }
@@ -2113,13 +2114,13 @@ export interface RangedConnectionDetailsProperty {
     /**
     * Maximum transmission unit (MTU) size in bytes of a dataflow endpoint.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/groundstation_dataflow_endpoint_group_v2#mtu CcDataflowEndpointGroupV2#mtu}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_dataflow_endpoint_group_v2#mtu CcDataflowEndpointGroupV2#mtu}
     */
     readonly mtu?: number;
     /**
     * A socket address with a port range.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/groundstation_dataflow_endpoint_group_v2#socket_address CcDataflowEndpointGroupV2#socket_address}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_dataflow_endpoint_group_v2#socket_address CcDataflowEndpointGroupV2#socket_address}
     */
     readonly socketAddress?: RangedSocketAddressProperty;
 }
@@ -2207,13 +2208,13 @@ export interface SocketAddressProperty {
     /**
     * IPv4 socket address.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/groundstation_dataflow_endpoint_group_v2#name CcDataflowEndpointGroupV2#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_dataflow_endpoint_group_v2#name CcDataflowEndpointGroupV2#name}
     */
     readonly name?: string;
     /**
     * Port of a socket address.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/groundstation_dataflow_endpoint_group_v2#port CcDataflowEndpointGroupV2#port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_dataflow_endpoint_group_v2#port CcDataflowEndpointGroupV2#port}
     */
     readonly port?: number;
 }
@@ -2301,11 +2302,11 @@ export interface ConnectionDetailsProperty {
     /**
     * Maximum transmission unit (MTU) size in bytes of a dataflow endpoint.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/groundstation_dataflow_endpoint_group_v2#mtu CcDataflowEndpointGroupV2#mtu}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_dataflow_endpoint_group_v2#mtu CcDataflowEndpointGroupV2#mtu}
     */
     readonly mtu?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/groundstation_dataflow_endpoint_group_v2#socket_address CcDataflowEndpointGroupV2#socket_address}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_dataflow_endpoint_group_v2#socket_address CcDataflowEndpointGroupV2#socket_address}
     */
     readonly socketAddress?: SocketAddressProperty;
 }
@@ -2393,13 +2394,13 @@ export interface DownlinkConnectionDetailsProperty {
     /**
     * Socket address of an uplink or downlink agent endpoint with a port range and an optional mtu.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/groundstation_dataflow_endpoint_group_v2#agent_ip_and_port_address CcDataflowEndpointGroupV2#agent_ip_and_port_address}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_dataflow_endpoint_group_v2#agent_ip_and_port_address CcDataflowEndpointGroupV2#agent_ip_and_port_address}
     */
     readonly agentIpAndPortAddress?: RangedConnectionDetailsProperty;
     /**
     * Socket address of an uplink or downlink agent endpoint with an optional mtu.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/groundstation_dataflow_endpoint_group_v2#egress_address_and_port CcDataflowEndpointGroupV2#egress_address_and_port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_dataflow_endpoint_group_v2#egress_address_and_port CcDataflowEndpointGroupV2#egress_address_and_port}
     */
     readonly egressAddressAndPort?: ConnectionDetailsProperty;
 }
@@ -2487,7 +2488,7 @@ export interface DownlinkDataflowDetailsProperty {
     /**
     * Connection details for downlink, from ground station to agent, and customer to agent
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/groundstation_dataflow_endpoint_group_v2#agent_connection_details CcDataflowEndpointGroupV2#agent_connection_details}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_dataflow_endpoint_group_v2#agent_connection_details CcDataflowEndpointGroupV2#agent_connection_details}
     */
     readonly agentConnectionDetails?: DownlinkConnectionDetailsProperty;
 }
@@ -2553,11 +2554,11 @@ export interface DownlinkAwsGroundStationAgentEndpointProperty {
     /**
     * Dataflow details for downlink
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/groundstation_dataflow_endpoint_group_v2#dataflow_details CcDataflowEndpointGroupV2#dataflow_details}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_dataflow_endpoint_group_v2#dataflow_details CcDataflowEndpointGroupV2#dataflow_details}
     */
     readonly dataflowDetails?: DownlinkDataflowDetailsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/groundstation_dataflow_endpoint_group_v2#name CcDataflowEndpointGroupV2#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_dataflow_endpoint_group_v2#name CcDataflowEndpointGroupV2#name}
     */
     readonly name?: string;
 }
@@ -2645,13 +2646,13 @@ export interface EndpointsUplinkAwsGroundStationAgentEndpointDataflowDetailsAgen
     /**
     * A maximum value.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/groundstation_dataflow_endpoint_group_v2#maximum CcDataflowEndpointGroupV2#maximum}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_dataflow_endpoint_group_v2#maximum CcDataflowEndpointGroupV2#maximum}
     */
     readonly maximum?: number;
     /**
     * A minimum value.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/groundstation_dataflow_endpoint_group_v2#minimum CcDataflowEndpointGroupV2#minimum}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_dataflow_endpoint_group_v2#minimum CcDataflowEndpointGroupV2#minimum}
     */
     readonly minimum?: number;
 }
@@ -2739,13 +2740,13 @@ export interface EndpointsUplinkAwsGroundStationAgentEndpointDataflowDetailsAgen
     /**
     * IPv4 socket address.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/groundstation_dataflow_endpoint_group_v2#name CcDataflowEndpointGroupV2#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_dataflow_endpoint_group_v2#name CcDataflowEndpointGroupV2#name}
     */
     readonly name?: string;
     /**
     * Port range of a socket address.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/groundstation_dataflow_endpoint_group_v2#port_range CcDataflowEndpointGroupV2#port_range}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_dataflow_endpoint_group_v2#port_range CcDataflowEndpointGroupV2#port_range}
     */
     readonly portRange?: EndpointsUplinkAwsGroundStationAgentEndpointDataflowDetailsAgentConnectionDetailsAgentIpAndPortAddressSocketAddressPortRangeProperty;
 }
@@ -2833,13 +2834,13 @@ export interface EndpointsUplinkAwsGroundStationAgentEndpointDataflowDetailsAgen
     /**
     * Maximum transmission unit (MTU) size in bytes of a dataflow endpoint.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/groundstation_dataflow_endpoint_group_v2#mtu CcDataflowEndpointGroupV2#mtu}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_dataflow_endpoint_group_v2#mtu CcDataflowEndpointGroupV2#mtu}
     */
     readonly mtu?: number;
     /**
     * A socket address with a port range.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/groundstation_dataflow_endpoint_group_v2#socket_address CcDataflowEndpointGroupV2#socket_address}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_dataflow_endpoint_group_v2#socket_address CcDataflowEndpointGroupV2#socket_address}
     */
     readonly socketAddress?: EndpointsUplinkAwsGroundStationAgentEndpointDataflowDetailsAgentConnectionDetailsAgentIpAndPortAddressSocketAddressProperty;
 }
@@ -2927,13 +2928,13 @@ export interface EndpointsUplinkAwsGroundStationAgentEndpointDataflowDetailsAgen
     /**
     * IPv4 socket address.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/groundstation_dataflow_endpoint_group_v2#name CcDataflowEndpointGroupV2#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_dataflow_endpoint_group_v2#name CcDataflowEndpointGroupV2#name}
     */
     readonly name?: string;
     /**
     * Port of a socket address.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/groundstation_dataflow_endpoint_group_v2#port CcDataflowEndpointGroupV2#port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_dataflow_endpoint_group_v2#port CcDataflowEndpointGroupV2#port}
     */
     readonly port?: number;
 }
@@ -3021,11 +3022,11 @@ export interface EndpointsUplinkAwsGroundStationAgentEndpointDataflowDetailsAgen
     /**
     * Maximum transmission unit (MTU) size in bytes of a dataflow endpoint.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/groundstation_dataflow_endpoint_group_v2#mtu CcDataflowEndpointGroupV2#mtu}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_dataflow_endpoint_group_v2#mtu CcDataflowEndpointGroupV2#mtu}
     */
     readonly mtu?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/groundstation_dataflow_endpoint_group_v2#socket_address CcDataflowEndpointGroupV2#socket_address}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_dataflow_endpoint_group_v2#socket_address CcDataflowEndpointGroupV2#socket_address}
     */
     readonly socketAddress?: EndpointsUplinkAwsGroundStationAgentEndpointDataflowDetailsAgentConnectionDetailsIngressAddressAndPortSocketAddressProperty;
 }
@@ -3113,13 +3114,13 @@ export interface UplinkConnectionDetailsProperty {
     /**
     * Socket address of an uplink or downlink agent endpoint with a port range and an optional mtu.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/groundstation_dataflow_endpoint_group_v2#agent_ip_and_port_address CcDataflowEndpointGroupV2#agent_ip_and_port_address}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_dataflow_endpoint_group_v2#agent_ip_and_port_address CcDataflowEndpointGroupV2#agent_ip_and_port_address}
     */
     readonly agentIpAndPortAddress?: EndpointsUplinkAwsGroundStationAgentEndpointDataflowDetailsAgentConnectionDetailsAgentIpAndPortAddressProperty;
     /**
     * Socket address of an uplink or downlink agent endpoint with an optional mtu.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/groundstation_dataflow_endpoint_group_v2#ingress_address_and_port CcDataflowEndpointGroupV2#ingress_address_and_port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_dataflow_endpoint_group_v2#ingress_address_and_port CcDataflowEndpointGroupV2#ingress_address_and_port}
     */
     readonly ingressAddressAndPort?: EndpointsUplinkAwsGroundStationAgentEndpointDataflowDetailsAgentConnectionDetailsIngressAddressAndPortProperty;
 }
@@ -3207,7 +3208,7 @@ export interface UplinkDataflowDetailsProperty {
     /**
     * Connection details for uplink, from ground station to agent, and customer to agent
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/groundstation_dataflow_endpoint_group_v2#agent_connection_details CcDataflowEndpointGroupV2#agent_connection_details}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_dataflow_endpoint_group_v2#agent_connection_details CcDataflowEndpointGroupV2#agent_connection_details}
     */
     readonly agentConnectionDetails?: UplinkConnectionDetailsProperty;
 }
@@ -3273,11 +3274,11 @@ export interface UplinkAwsGroundStationAgentEndpointProperty {
     /**
     * Dataflow details for uplink
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/groundstation_dataflow_endpoint_group_v2#dataflow_details CcDataflowEndpointGroupV2#dataflow_details}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_dataflow_endpoint_group_v2#dataflow_details CcDataflowEndpointGroupV2#dataflow_details}
     */
     readonly dataflowDetails?: UplinkDataflowDetailsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/groundstation_dataflow_endpoint_group_v2#name CcDataflowEndpointGroupV2#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_dataflow_endpoint_group_v2#name CcDataflowEndpointGroupV2#name}
     */
     readonly name?: string;
 }
@@ -3365,13 +3366,13 @@ export interface CreateEndpointDetailsProperty {
     /**
     * Information about DownlinkAwsGroundStationAgentEndpoint used for create
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/groundstation_dataflow_endpoint_group_v2#downlink_aws_ground_station_agent_endpoint CcDataflowEndpointGroupV2#downlink_aws_ground_station_agent_endpoint}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_dataflow_endpoint_group_v2#downlink_aws_ground_station_agent_endpoint CcDataflowEndpointGroupV2#downlink_aws_ground_station_agent_endpoint}
     */
     readonly downlinkAwsGroundStationAgentEndpoint?: DownlinkAwsGroundStationAgentEndpointProperty;
     /**
     * Information about UplinkAwsGroundStationAgentEndpoint used for create
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/groundstation_dataflow_endpoint_group_v2#uplink_aws_ground_station_agent_endpoint CcDataflowEndpointGroupV2#uplink_aws_ground_station_agent_endpoint}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_dataflow_endpoint_group_v2#uplink_aws_ground_station_agent_endpoint CcDataflowEndpointGroupV2#uplink_aws_ground_station_agent_endpoint}
     */
     readonly uplinkAwsGroundStationAgentEndpoint?: UplinkAwsGroundStationAgentEndpointProperty;
 }
@@ -3479,11 +3480,11 @@ export class CreateEndpointDetailsPropertyList extends cdktn.ComplexList {
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/groundstation_dataflow_endpoint_group_v2#key CcDataflowEndpointGroupV2#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_dataflow_endpoint_group_v2#key CcDataflowEndpointGroupV2#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/groundstation_dataflow_endpoint_group_v2#value CcDataflowEndpointGroupV2#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_dataflow_endpoint_group_v2#value CcDataflowEndpointGroupV2#value}
     */
     readonly value?: string;
 }

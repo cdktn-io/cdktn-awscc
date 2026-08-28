@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_classifier
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_classifier
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,31 +9,31 @@ export interface CcClassifierProps extends cdktn.TerraformMetaArguments {
     /**
     * A classifier for comma-separated values (CSV).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_classifier#csv_classifier CcClassifier#csv_classifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_classifier#csv_classifier CcClassifier#csv_classifier}
     */
     readonly csvClassifier?: CcClassifier.CsvClassifierProperty;
     /**
     * A classifier that uses grok.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_classifier#grok_classifier CcClassifier#grok_classifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_classifier#grok_classifier CcClassifier#grok_classifier}
     */
     readonly grokClassifier?: CcClassifier.GrokClassifierProperty;
     /**
     * A classifier for JSON content.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_classifier#json_classifier CcClassifier#json_classifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_classifier#json_classifier CcClassifier#json_classifier}
     */
     readonly jsonClassifier?: CcClassifier.JsonClassifierProperty;
     /**
     * A classifier for XML content.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_classifier#xml_classifier CcClassifier#xml_classifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_classifier#xml_classifier CcClassifier#xml_classifier}
     */
     readonly xmlClassifier?: CcClassifier.XMLClassifierProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_classifier awscc_glue_classifier}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_classifier awscc_glue_classifier}
 */
 export class CcClassifier extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CcClassifier extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcClassifier resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcClassifier to import
-    * @param importFromId The id of the existing CcClassifier that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_classifier#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcClassifier that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_classifier#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcClassifier to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CcClassifier extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_classifier awscc_glue_classifier} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_classifier awscc_glue_classifier} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -71,7 +71,8 @@ export class CcClassifier extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_glue_classifier',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -434,55 +435,55 @@ export interface CsvClassifierProperty {
     /**
     * Enables the processing of files that contain only one column.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_classifier#allow_single_column CcClassifier#allow_single_column}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_classifier#allow_single_column CcClassifier#allow_single_column}
     */
     readonly allowSingleColumn?: boolean | cdktn.IResolvable;
     /**
     * Indicates whether the CSV file contains custom data types.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_classifier#contains_custom_datatype CcClassifier#contains_custom_datatype}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_classifier#contains_custom_datatype CcClassifier#contains_custom_datatype}
     */
     readonly containsCustomDatatype?: string[];
     /**
     * Indicates whether the CSV file contains a header. A value of UNKNOWN specifies that the classifier will detect whether the CSV file contains headings. A value of PRESENT specifies that the CSV file contains headings. A value of ABSENT specifies that the CSV file does not contain headings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_classifier#contains_header CcClassifier#contains_header}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_classifier#contains_header CcClassifier#contains_header}
     */
     readonly containsHeader?: string;
     /**
     * Enables the configuration of custom data types.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_classifier#custom_datatype_configured CcClassifier#custom_datatype_configured}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_classifier#custom_datatype_configured CcClassifier#custom_datatype_configured}
     */
     readonly customDatatypeConfigured?: boolean | cdktn.IResolvable;
     /**
     * A custom symbol to denote what separates each column entry in the row.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_classifier#delimiter CcClassifier#delimiter}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_classifier#delimiter CcClassifier#delimiter}
     */
     readonly delimiter?: string;
     /**
     * Specifies not to trim values before identifying the type of column values. The default value is true.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_classifier#disable_value_trimming CcClassifier#disable_value_trimming}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_classifier#disable_value_trimming CcClassifier#disable_value_trimming}
     */
     readonly disableValueTrimming?: boolean | cdktn.IResolvable;
     /**
     * A list of strings representing column names.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_classifier#header CcClassifier#header}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_classifier#header CcClassifier#header}
     */
     readonly header?: string[];
     /**
     * The name of the classifier.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_classifier#name CcClassifier#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_classifier#name CcClassifier#name}
     */
     readonly name?: string;
     /**
     * A custom symbol to denote what combines content into a single column value. It must be different from the column delimiter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_classifier#quote_symbol CcClassifier#quote_symbol}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_classifier#quote_symbol CcClassifier#quote_symbol}
     */
     readonly quoteSymbol?: string;
 }
@@ -724,25 +725,25 @@ export interface GrokClassifierProperty {
     /**
     * An identifier of the data format that the classifier matches, such as Twitter, JSON, Omniture logs, and so on.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_classifier#classification CcClassifier#classification}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_classifier#classification CcClassifier#classification}
     */
     readonly classification?: string;
     /**
     * Optional custom grok patterns defined by this classifier.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_classifier#custom_patterns CcClassifier#custom_patterns}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_classifier#custom_patterns CcClassifier#custom_patterns}
     */
     readonly customPatterns?: string;
     /**
     * The grok pattern applied to a data store by this classifier.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_classifier#grok_pattern CcClassifier#grok_pattern}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_classifier#grok_pattern CcClassifier#grok_pattern}
     */
     readonly grokPattern?: string;
     /**
     * The name of the classifier.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_classifier#name CcClassifier#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_classifier#name CcClassifier#name}
     */
     readonly name?: string;
 }
@@ -874,13 +875,13 @@ export interface JsonClassifierProperty {
     /**
     * A JsonPath string defining the JSON data for the classifier to classify. AWS Glue supports a subset of JsonPath, as described in Writing JsonPath Custom Classifiers.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_classifier#json_path CcClassifier#json_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_classifier#json_path CcClassifier#json_path}
     */
     readonly jsonPath?: string;
     /**
     * The name of the classifier.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_classifier#name CcClassifier#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_classifier#name CcClassifier#name}
     */
     readonly name?: string;
 }
@@ -968,19 +969,19 @@ export interface XMLClassifierProperty {
     /**
     * An identifier of the data format that the classifier matches.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_classifier#classification CcClassifier#classification}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_classifier#classification CcClassifier#classification}
     */
     readonly classification?: string;
     /**
     * The name of the classifier.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_classifier#name CcClassifier#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_classifier#name CcClassifier#name}
     */
     readonly name?: string;
     /**
     * The XML tag designating the element that contains each record in an XML document being parsed. This can't identify a self-closing element (closed by />). An empty row element that contains only attributes can be parsed as long as it ends with a closing tag (for example, <row item_a="A" item_b="B"></row> is okay, but <row item_a="A" item_b="B" /> is not).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_classifier#row_tag CcClassifier#row_tag}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_classifier#row_tag CcClassifier#row_tag}
     */
     readonly rowTag?: string;
 }

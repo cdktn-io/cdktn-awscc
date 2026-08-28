@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesweb_user_access_logging_settings
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_user_access_logging_settings
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,17 +9,17 @@ export interface CcUserAccessLoggingSettingsProps extends cdktn.TerraformMetaArg
     /**
     * Kinesis stream ARN to which log events are published.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesweb_user_access_logging_settings#kinesis_stream_arn CcUserAccessLoggingSettings#kinesis_stream_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_user_access_logging_settings#kinesis_stream_arn CcUserAccessLoggingSettings#kinesis_stream_arn}
     */
     readonly kinesisStreamArn: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesweb_user_access_logging_settings#tags CcUserAccessLoggingSettings#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_user_access_logging_settings#tags CcUserAccessLoggingSettings#tags}
     */
     readonly tags?: CcUserAccessLoggingSettings.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesweb_user_access_logging_settings awscc_workspacesweb_user_access_logging_settings}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_user_access_logging_settings awscc_workspacesweb_user_access_logging_settings}
 */
 export class CcUserAccessLoggingSettings extends cdktn.TerraformResource {
 
@@ -35,7 +35,7 @@ export class CcUserAccessLoggingSettings extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcUserAccessLoggingSettings resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcUserAccessLoggingSettings to import
-    * @param importFromId The id of the existing CcUserAccessLoggingSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesweb_user_access_logging_settings#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcUserAccessLoggingSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_user_access_logging_settings#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcUserAccessLoggingSettings to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -47,7 +47,7 @@ export class CcUserAccessLoggingSettings extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesweb_user_access_logging_settings awscc_workspacesweb_user_access_logging_settings} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_user_access_logging_settings awscc_workspacesweb_user_access_logging_settings} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -57,7 +57,8 @@ export class CcUserAccessLoggingSettings extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_workspacesweb_user_access_logging_settings',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -191,11 +192,11 @@ export function ccUserAccessLoggingSettingsTagPropertyToHclTerraform(struct?: Cc
 export namespace CcUserAccessLoggingSettings {
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesweb_user_access_logging_settings#key CcUserAccessLoggingSettings#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_user_access_logging_settings#key CcUserAccessLoggingSettings#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesweb_user_access_logging_settings#value CcUserAccessLoggingSettings#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_user_access_logging_settings#value CcUserAccessLoggingSettings#value}
     */
     readonly value?: string;
 }

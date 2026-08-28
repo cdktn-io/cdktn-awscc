@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_local_gateway_route_table_virtual_interface_group_association
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_local_gateway_route_table_virtual_interface_group_association
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,25 +9,25 @@ export interface CcLocalGatewayRouteTableVirtualInterfaceGroupAssociationProps e
     /**
     * The ID of the local gateway route table.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_local_gateway_route_table_virtual_interface_group_association#local_gateway_route_table_id CcLocalGatewayRouteTableVirtualInterfaceGroupAssociation#local_gateway_route_table_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_local_gateway_route_table_virtual_interface_group_association#local_gateway_route_table_id CcLocalGatewayRouteTableVirtualInterfaceGroupAssociation#local_gateway_route_table_id}
     */
     readonly localGatewayRouteTableId: string;
     /**
     * The ID of the local gateway route table virtual interface group.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_local_gateway_route_table_virtual_interface_group_association#local_gateway_virtual_interface_group_id CcLocalGatewayRouteTableVirtualInterfaceGroupAssociation#local_gateway_virtual_interface_group_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_local_gateway_route_table_virtual_interface_group_association#local_gateway_virtual_interface_group_id CcLocalGatewayRouteTableVirtualInterfaceGroupAssociation#local_gateway_virtual_interface_group_id}
     */
     readonly localGatewayVirtualInterfaceGroupId: string;
     /**
     * The tags for the local gateway route table virtual interface group association.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_local_gateway_route_table_virtual_interface_group_association#tags CcLocalGatewayRouteTableVirtualInterfaceGroupAssociation#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_local_gateway_route_table_virtual_interface_group_association#tags CcLocalGatewayRouteTableVirtualInterfaceGroupAssociation#tags}
     */
     readonly tags?: CcLocalGatewayRouteTableVirtualInterfaceGroupAssociation.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_local_gateway_route_table_virtual_interface_group_association awscc_ec2_local_gateway_route_table_virtual_interface_group_association}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_local_gateway_route_table_virtual_interface_group_association awscc_ec2_local_gateway_route_table_virtual_interface_group_association}
 */
 export class CcLocalGatewayRouteTableVirtualInterfaceGroupAssociation extends cdktn.TerraformResource {
 
@@ -43,7 +43,7 @@ export class CcLocalGatewayRouteTableVirtualInterfaceGroupAssociation extends cd
     * Generates CDKTN code for importing a CcLocalGatewayRouteTableVirtualInterfaceGroupAssociation resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcLocalGatewayRouteTableVirtualInterfaceGroupAssociation to import
-    * @param importFromId The id of the existing CcLocalGatewayRouteTableVirtualInterfaceGroupAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_local_gateway_route_table_virtual_interface_group_association#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcLocalGatewayRouteTableVirtualInterfaceGroupAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_local_gateway_route_table_virtual_interface_group_association#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcLocalGatewayRouteTableVirtualInterfaceGroupAssociation to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -55,7 +55,7 @@ export class CcLocalGatewayRouteTableVirtualInterfaceGroupAssociation extends cd
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_local_gateway_route_table_virtual_interface_group_association awscc_ec2_local_gateway_route_table_virtual_interface_group_association} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_local_gateway_route_table_virtual_interface_group_association awscc_ec2_local_gateway_route_table_virtual_interface_group_association} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -65,7 +65,8 @@ export class CcLocalGatewayRouteTableVirtualInterfaceGroupAssociation extends cd
         super(scope, id, {
             terraformResourceType: 'awscc_ec2_local_gateway_route_table_virtual_interface_group_association',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -235,11 +236,11 @@ export function ccLocalGatewayRouteTableVirtualInterfaceGroupAssociationTagPrope
 export namespace CcLocalGatewayRouteTableVirtualInterfaceGroupAssociation {
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_local_gateway_route_table_virtual_interface_group_association#key CcLocalGatewayRouteTableVirtualInterfaceGroupAssociation#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_local_gateway_route_table_virtual_interface_group_association#key CcLocalGatewayRouteTableVirtualInterfaceGroupAssociation#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_local_gateway_route_table_virtual_interface_group_association#value CcLocalGatewayRouteTableVirtualInterfaceGroupAssociation#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_local_gateway_route_table_virtual_interface_group_association#value CcLocalGatewayRouteTableVirtualInterfaceGroupAssociation#value}
     */
     readonly value?: string;
 }

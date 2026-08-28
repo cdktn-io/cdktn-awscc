@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/securityhub_product_subscription
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_product_subscription
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,13 +9,13 @@ export interface CcProductSubscriptionProps extends cdktn.TerraformMetaArguments
     /**
     * The generic ARN of the product being subscribed to
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/securityhub_product_subscription#product_arn CcProductSubscription#product_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_product_subscription#product_arn CcProductSubscription#product_arn}
     */
     readonly productArn: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/securityhub_product_subscription awscc_securityhub_product_subscription}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_product_subscription awscc_securityhub_product_subscription}
 */
 export class CcProductSubscription extends cdktn.TerraformResource {
 
@@ -31,7 +31,7 @@ export class CcProductSubscription extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcProductSubscription resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcProductSubscription to import
-    * @param importFromId The id of the existing CcProductSubscription that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/securityhub_product_subscription#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcProductSubscription that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_product_subscription#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcProductSubscription to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -43,7 +43,7 @@ export class CcProductSubscription extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/securityhub_product_subscription awscc_securityhub_product_subscription} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_product_subscription awscc_securityhub_product_subscription} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -53,7 +53,8 @@ export class CcProductSubscription extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_securityhub_product_subscription',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,

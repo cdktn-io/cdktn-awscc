@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_addon
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_addon
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,67 +9,67 @@ export interface CcAddonProps extends cdktn.TerraformMetaArguments {
     /**
     * Name of Addon
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_addon#addon_name CcAddon#addon_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_addon#addon_name CcAddon#addon_name}
     */
     readonly addonName: string;
     /**
     * Version of Addon
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_addon#addon_version CcAddon#addon_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_addon#addon_version CcAddon#addon_version}
     */
     readonly addonVersion?: string;
     /**
     * Name of Cluster
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_addon#cluster_name CcAddon#cluster_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_addon#cluster_name CcAddon#cluster_name}
     */
     readonly clusterName: string;
     /**
     * The configuration values to use with the add-on
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_addon#configuration_values CcAddon#configuration_values}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_addon#configuration_values CcAddon#configuration_values}
     */
     readonly configurationValues?: string;
     /**
     * The custom namespace configuration to use with the add-on
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_addon#namespace_config CcAddon#namespace_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_addon#namespace_config CcAddon#namespace_config}
     */
     readonly namespaceConfig?: CcAddon.NamespaceConfigProperty;
     /**
     * An array of pod identities to apply to this add-on.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_addon#pod_identity_associations CcAddon#pod_identity_associations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_addon#pod_identity_associations CcAddon#pod_identity_associations}
     */
     readonly podIdentityAssociations?: CcAddon.PodIdentityAssociationProperty[] | cdktn.IResolvable;
     /**
     * PreserveOnDelete parameter value
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_addon#preserve_on_delete CcAddon#preserve_on_delete}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_addon#preserve_on_delete CcAddon#preserve_on_delete}
     */
     readonly preserveOnDelete?: boolean | cdktn.IResolvable;
     /**
     * Resolve parameter value conflicts
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_addon#resolve_conflicts CcAddon#resolve_conflicts}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_addon#resolve_conflicts CcAddon#resolve_conflicts}
     */
     readonly resolveConflicts?: string;
     /**
     * IAM role to bind to the add-on's service account
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_addon#service_account_role_arn CcAddon#service_account_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_addon#service_account_role_arn CcAddon#service_account_role_arn}
     */
     readonly serviceAccountRoleArn?: string;
     /**
     * An array of key-value pairs to apply to this resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_addon#tags CcAddon#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_addon#tags CcAddon#tags}
     */
     readonly tags?: CcAddon.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_addon awscc_eks_addon}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_addon awscc_eks_addon}
 */
 export class CcAddon extends cdktn.TerraformResource {
 
@@ -85,7 +85,7 @@ export class CcAddon extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcAddon resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcAddon to import
-    * @param importFromId The id of the existing CcAddon that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_addon#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcAddon that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_addon#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcAddon to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -97,7 +97,7 @@ export class CcAddon extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_addon awscc_eks_addon} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_addon awscc_eks_addon} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -107,7 +107,8 @@ export class CcAddon extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_eks_addon',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -494,7 +495,7 @@ export interface NamespaceConfigProperty {
     /**
     * The custom namespace for creating the add-on
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_addon#namespace CcAddon#namespace}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_addon#namespace CcAddon#namespace}
     */
     readonly namespace?: string;
 }
@@ -560,13 +561,13 @@ export interface PodIdentityAssociationProperty {
     /**
     * The IAM role ARN that the pod identity association is created for.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_addon#role_arn CcAddon#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_addon#role_arn CcAddon#role_arn}
     */
     readonly roleArn?: string;
     /**
     * The Kubernetes service account that the pod identity association is created for.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_addon#service_account CcAddon#service_account}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_addon#service_account CcAddon#service_account}
     */
     readonly serviceAccount?: string;
 }
@@ -676,13 +677,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 127 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_addon#key CcAddon#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_addon#key CcAddon#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 1 to 255 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_addon#value CcAddon#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_addon#value CcAddon#value}
     */
     readonly value?: string;
 }

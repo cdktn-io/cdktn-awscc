@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/devopsagent_asset
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/devopsagent_asset
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,37 +9,37 @@ export interface CcAssetProps extends cdktn.TerraformMetaArguments {
     /**
     * The unique identifier of the parent Agent Space. The asset is created as a child of this agent space.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/devopsagent_asset#agent_space_id CcAsset#agent_space_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/devopsagent_asset#agent_space_id CcAsset#agent_space_id}
     */
     readonly agentSpaceId: string;
     /**
     * The type of asset. The Asset API treats this as an open string; call ListAssetTypes for the current authoritative set of supported types. As of launch, customer-creatable types include skill, agents_md, and attachment.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/devopsagent_asset#asset_type CcAsset#asset_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/devopsagent_asset#asset_type CcAsset#asset_type}
     */
     readonly assetType: string;
     /**
     * Inline file list. Mutually exclusive with Zip; enforced by the handler at Create/Update time. Write-only: not repopulated by Read.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/devopsagent_asset#files CcAsset#files}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/devopsagent_asset#files CcAsset#files}
     */
     readonly files?: CcAsset.AssetFileProperty[] | cdktn.IResolvable;
     /**
     * Asset metadata document. Required and optional keys depend on AssetType. Values may be strings, numbers, booleans, or lists of any of those - validated server-side; see the public Asset API docs for the per-type metadata schema.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/devopsagent_asset#metadata CcAsset#metadata}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/devopsagent_asset#metadata CcAsset#metadata}
     */
     readonly metadata?: string;
     /**
     * Base64-encoded zip bundle containing all files for the asset. Mutually exclusive with Files; enforced by the handler at Create/Update time. Write-only: not repopulated by Read. Server treats a zip as 'replace all files' (max 6 MiB).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/devopsagent_asset#zip CcAsset#zip}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/devopsagent_asset#zip CcAsset#zip}
     */
     readonly zip?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/devopsagent_asset awscc_devopsagent_asset}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/devopsagent_asset awscc_devopsagent_asset}
 */
 export class CcAsset extends cdktn.TerraformResource {
 
@@ -55,7 +55,7 @@ export class CcAsset extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcAsset resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcAsset to import
-    * @param importFromId The id of the existing CcAsset that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/devopsagent_asset#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcAsset that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/devopsagent_asset#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcAsset to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -67,7 +67,7 @@ export class CcAsset extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/devopsagent_asset awscc_devopsagent_asset} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/devopsagent_asset awscc_devopsagent_asset} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -77,7 +77,8 @@ export class CcAsset extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_devopsagent_asset',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -311,25 +312,25 @@ export interface AssetFileProperty {
     /**
     * Base64-encoded binary contents of the file. Mutually exclusive with ContentText (max 6 MiB).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/devopsagent_asset#content_bytes CcAsset#content_bytes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/devopsagent_asset#content_bytes CcAsset#content_bytes}
     */
     readonly contentBytes?: string;
     /**
     * UTF-8 text contents of the file. Mutually exclusive with ContentBytes (max 1.5 MiB).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/devopsagent_asset#content_text CcAsset#content_text}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/devopsagent_asset#content_text CcAsset#content_text}
     */
     readonly contentText?: string;
     /**
     * Per-file metadata document. Values may be strings, numbers, booleans, or lists of any of those (validated server-side).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/devopsagent_asset#metadata CcAsset#metadata}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/devopsagent_asset#metadata CcAsset#metadata}
     */
     readonly metadata?: string;
     /**
     * Path of this file within the asset bundle.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/devopsagent_asset#path CcAsset#path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/devopsagent_asset#path CcAsset#path}
     */
     readonly path?: string;
 }

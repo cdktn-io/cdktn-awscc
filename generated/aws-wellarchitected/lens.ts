@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/wellarchitected_lens
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wellarchitected_lens
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,25 +9,25 @@ export interface CcLensProps extends cdktn.TerraformMetaArguments {
     /**
     * The JSON representation of a lens.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/wellarchitected_lens#json_string CcLens#json_string}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wellarchitected_lens#json_string CcLens#json_string}
     */
     readonly jsonString?: string;
     /**
     * The version of the lens.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/wellarchitected_lens#lens_version CcLens#lens_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wellarchitected_lens#lens_version CcLens#lens_version}
     */
     readonly lensVersion?: string;
     /**
     * The tags assigned to the lens.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/wellarchitected_lens#tags CcLens#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wellarchitected_lens#tags CcLens#tags}
     */
     readonly tags?: CcLens.TagsItemsProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/wellarchitected_lens awscc_wellarchitected_lens}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wellarchitected_lens awscc_wellarchitected_lens}
 */
 export class CcLens extends cdktn.TerraformResource {
 
@@ -43,7 +43,7 @@ export class CcLens extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcLens resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcLens to import
-    * @param importFromId The id of the existing CcLens that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/wellarchitected_lens#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcLens that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wellarchitected_lens#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcLens to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -55,7 +55,7 @@ export class CcLens extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/wellarchitected_lens awscc_wellarchitected_lens} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wellarchitected_lens awscc_wellarchitected_lens} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -65,7 +65,8 @@ export class CcLens extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_wellarchitected_lens',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -241,11 +242,11 @@ export function ccLensTagsItemsPropertyToHclTerraform(struct?: CcLens.TagsItemsP
 export namespace CcLens {
 export interface TagsItemsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/wellarchitected_lens#key CcLens#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wellarchitected_lens#key CcLens#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/wellarchitected_lens#value CcLens#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wellarchitected_lens#value CcLens#value}
     */
     readonly value?: string;
 }

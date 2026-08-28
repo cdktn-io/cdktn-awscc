@@ -1,75 +1,75 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_stack
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_stack
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcStackProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_stack#capabilities CcStack#capabilities}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_stack#capabilities CcStack#capabilities}
     */
     readonly capabilities?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_stack#description CcStack#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_stack#description CcStack#description}
     */
     readonly description?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_stack#disable_rollback CcStack#disable_rollback}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_stack#disable_rollback CcStack#disable_rollback}
     */
     readonly disableRollback?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_stack#enable_termination_protection CcStack#enable_termination_protection}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_stack#enable_termination_protection CcStack#enable_termination_protection}
     */
     readonly enableTerminationProtection?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_stack#notification_ar_ns CcStack#notification_ar_ns}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_stack#notification_ar_ns CcStack#notification_ar_ns}
     */
     readonly notificationArNs?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_stack#parameters CcStack#parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_stack#parameters CcStack#parameters}
     */
     readonly parameters?: { [key: string]: string };
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_stack#role_arn CcStack#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_stack#role_arn CcStack#role_arn}
     */
     readonly roleArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_stack#stack_name CcStack#stack_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_stack#stack_name CcStack#stack_name}
     */
     readonly stackName: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_stack#stack_policy_body CcStack#stack_policy_body}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_stack#stack_policy_body CcStack#stack_policy_body}
     */
     readonly stackPolicyBody?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_stack#stack_policy_url CcStack#stack_policy_url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_stack#stack_policy_url CcStack#stack_policy_url}
     */
     readonly stackPolicyUrl?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_stack#stack_status_reason CcStack#stack_status_reason}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_stack#stack_status_reason CcStack#stack_status_reason}
     */
     readonly stackStatusReason?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_stack#tags CcStack#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_stack#tags CcStack#tags}
     */
     readonly tags?: CcStack.TagProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_stack#template_body CcStack#template_body}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_stack#template_body CcStack#template_body}
     */
     readonly templateBody?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_stack#template_url CcStack#template_url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_stack#template_url CcStack#template_url}
     */
     readonly templateUrl?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_stack#timeout_in_minutes CcStack#timeout_in_minutes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_stack#timeout_in_minutes CcStack#timeout_in_minutes}
     */
     readonly timeoutInMinutes?: number;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_stack awscc_cloudformation_stack}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_stack awscc_cloudformation_stack}
 */
 export class CcStack extends cdktn.TerraformResource {
 
@@ -85,7 +85,7 @@ export class CcStack extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcStack resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcStack to import
-    * @param importFromId The id of the existing CcStack that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_stack#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcStack that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_stack#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcStack to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -97,7 +97,7 @@ export class CcStack extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_stack awscc_cloudformation_stack} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_stack awscc_cloudformation_stack} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -107,7 +107,8 @@ export class CcStack extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_cloudformation_stack',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -674,11 +675,11 @@ export class OutputsPropertyList extends cdktn.ComplexList {
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_stack#key CcStack#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_stack#key CcStack#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_stack#value CcStack#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_stack#value CcStack#value}
     */
     readonly value?: string;
 }

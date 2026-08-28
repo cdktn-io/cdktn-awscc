@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigatewayv2_deployment
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_deployment
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,25 +9,25 @@ export interface CcDeploymentProps extends cdktn.TerraformMetaArguments {
     /**
     * The API identifier.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigatewayv2_deployment#api_id CcDeployment#api_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_deployment#api_id CcDeployment#api_id}
     */
     readonly apiId: string;
     /**
     * The description for the deployment resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigatewayv2_deployment#description CcDeployment#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_deployment#description CcDeployment#description}
     */
     readonly description?: string;
     /**
     * The name of an existing stage to associate with the deployment.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigatewayv2_deployment#stage_name CcDeployment#stage_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_deployment#stage_name CcDeployment#stage_name}
     */
     readonly stageName?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigatewayv2_deployment awscc_apigatewayv2_deployment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_deployment awscc_apigatewayv2_deployment}
 */
 export class CcDeployment extends cdktn.TerraformResource {
 
@@ -43,7 +43,7 @@ export class CcDeployment extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcDeployment resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcDeployment to import
-    * @param importFromId The id of the existing CcDeployment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigatewayv2_deployment#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcDeployment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_deployment#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcDeployment to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -55,7 +55,7 @@ export class CcDeployment extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigatewayv2_deployment awscc_apigatewayv2_deployment} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_deployment awscc_apigatewayv2_deployment} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -65,7 +65,8 @@ export class CcDeployment extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_apigatewayv2_deployment',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,

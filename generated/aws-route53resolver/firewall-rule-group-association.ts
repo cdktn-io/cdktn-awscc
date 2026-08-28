@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/route53resolver_firewall_rule_group_association
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53resolver_firewall_rule_group_association
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,43 +9,43 @@ export interface CcFirewallRuleGroupAssociationProps extends cdktn.TerraformMeta
     /**
     * FirewallRuleGroupId
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/route53resolver_firewall_rule_group_association#firewall_rule_group_id CcFirewallRuleGroupAssociation#firewall_rule_group_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53resolver_firewall_rule_group_association#firewall_rule_group_id CcFirewallRuleGroupAssociation#firewall_rule_group_id}
     */
     readonly firewallRuleGroupId: string;
     /**
     * MutationProtectionStatus
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/route53resolver_firewall_rule_group_association#mutation_protection CcFirewallRuleGroupAssociation#mutation_protection}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53resolver_firewall_rule_group_association#mutation_protection CcFirewallRuleGroupAssociation#mutation_protection}
     */
     readonly mutationProtection?: string;
     /**
     * FirewallRuleGroupAssociationName
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/route53resolver_firewall_rule_group_association#name CcFirewallRuleGroupAssociation#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53resolver_firewall_rule_group_association#name CcFirewallRuleGroupAssociation#name}
     */
     readonly name?: string;
     /**
     * Priority
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/route53resolver_firewall_rule_group_association#priority CcFirewallRuleGroupAssociation#priority}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53resolver_firewall_rule_group_association#priority CcFirewallRuleGroupAssociation#priority}
     */
     readonly priority: number;
     /**
     * Tags
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/route53resolver_firewall_rule_group_association#tags CcFirewallRuleGroupAssociation#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53resolver_firewall_rule_group_association#tags CcFirewallRuleGroupAssociation#tags}
     */
     readonly tags?: CcFirewallRuleGroupAssociation.TagProperty[] | cdktn.IResolvable;
     /**
     * VpcId
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/route53resolver_firewall_rule_group_association#vpc_id CcFirewallRuleGroupAssociation#vpc_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53resolver_firewall_rule_group_association#vpc_id CcFirewallRuleGroupAssociation#vpc_id}
     */
     readonly vpcId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/route53resolver_firewall_rule_group_association awscc_route53resolver_firewall_rule_group_association}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53resolver_firewall_rule_group_association awscc_route53resolver_firewall_rule_group_association}
 */
 export class CcFirewallRuleGroupAssociation extends cdktn.TerraformResource {
 
@@ -61,7 +61,7 @@ export class CcFirewallRuleGroupAssociation extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcFirewallRuleGroupAssociation resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcFirewallRuleGroupAssociation to import
-    * @param importFromId The id of the existing CcFirewallRuleGroupAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/route53resolver_firewall_rule_group_association#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcFirewallRuleGroupAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53resolver_firewall_rule_group_association#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcFirewallRuleGroupAssociation to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -73,7 +73,7 @@ export class CcFirewallRuleGroupAssociation extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/route53resolver_firewall_rule_group_association awscc_route53resolver_firewall_rule_group_association} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53resolver_firewall_rule_group_association awscc_route53resolver_firewall_rule_group_association} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -83,7 +83,8 @@ export class CcFirewallRuleGroupAssociation extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_route53resolver_firewall_rule_group_association',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -339,13 +340,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 127 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/route53resolver_firewall_rule_group_association#key CcFirewallRuleGroupAssociation#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53resolver_firewall_rule_group_association#key CcFirewallRuleGroupAssociation#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 1 to 255 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/route53resolver_firewall_rule_group_association#value CcFirewallRuleGroupAssociation#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53resolver_firewall_rule_group_association#value CcFirewallRuleGroupAssociation#value}
     */
     readonly value?: string;
 }

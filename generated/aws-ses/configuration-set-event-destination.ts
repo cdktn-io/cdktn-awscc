@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ses_configuration_set_event_destination
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_configuration_set_event_destination
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,19 +9,19 @@ export interface CcConfigurationSetEventDestinationProps extends cdktn.Terraform
     /**
     * The name of the configuration set that contains the event destination.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ses_configuration_set_event_destination#configuration_set_name CcConfigurationSetEventDestination#configuration_set_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_configuration_set_event_destination#configuration_set_name CcConfigurationSetEventDestination#configuration_set_name}
     */
     readonly configurationSetName: string;
     /**
     * The event destination object.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ses_configuration_set_event_destination#event_destination CcConfigurationSetEventDestination#event_destination}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_configuration_set_event_destination#event_destination CcConfigurationSetEventDestination#event_destination}
     */
     readonly eventDestination: CcConfigurationSetEventDestination.EventDestinationProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ses_configuration_set_event_destination awscc_ses_configuration_set_event_destination}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_configuration_set_event_destination awscc_ses_configuration_set_event_destination}
 */
 export class CcConfigurationSetEventDestination extends cdktn.TerraformResource {
 
@@ -37,7 +37,7 @@ export class CcConfigurationSetEventDestination extends cdktn.TerraformResource 
     * Generates CDKTN code for importing a CcConfigurationSetEventDestination resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcConfigurationSetEventDestination to import
-    * @param importFromId The id of the existing CcConfigurationSetEventDestination that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ses_configuration_set_event_destination#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcConfigurationSetEventDestination that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_configuration_set_event_destination#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcConfigurationSetEventDestination to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -49,7 +49,7 @@ export class CcConfigurationSetEventDestination extends cdktn.TerraformResource 
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ses_configuration_set_event_destination awscc_ses_configuration_set_event_destination} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_configuration_set_event_destination awscc_ses_configuration_set_event_destination} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -59,7 +59,8 @@ export class CcConfigurationSetEventDestination extends cdktn.TerraformResource 
         super(scope, id, {
             terraformResourceType: 'awscc_ses_configuration_set_event_destination',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -393,19 +394,19 @@ export interface DimensionConfigurationProperty {
     /**
     * The default value of the dimension that is published to Amazon CloudWatch if you do not provide the value of the dimension when you send an email.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ses_configuration_set_event_destination#default_dimension_value CcConfigurationSetEventDestination#default_dimension_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_configuration_set_event_destination#default_dimension_value CcConfigurationSetEventDestination#default_dimension_value}
     */
     readonly defaultDimensionValue?: string;
     /**
     * The name of an Amazon CloudWatch dimension associated with an email sending metric.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ses_configuration_set_event_destination#dimension_name CcConfigurationSetEventDestination#dimension_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_configuration_set_event_destination#dimension_name CcConfigurationSetEventDestination#dimension_name}
     */
     readonly dimensionName?: string;
     /**
     * The place where Amazon SES finds the value of a dimension to publish to Amazon CloudWatch. To use the message tags that you specify using an X-SES-MESSAGE-TAGS header or a parameter to the SendEmail/SendRawEmail API, specify messageTag. To use your own email headers, specify emailHeader. To put a custom tag on any link included in your email, specify linkTag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ses_configuration_set_event_destination#dimension_value_source CcConfigurationSetEventDestination#dimension_value_source}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_configuration_set_event_destination#dimension_value_source CcConfigurationSetEventDestination#dimension_value_source}
     */
     readonly dimensionValueSource?: string;
 }
@@ -537,7 +538,7 @@ export interface CloudWatchDestinationProperty {
     /**
     * A list of dimensions upon which to categorize your emails when you publish email sending events to Amazon CloudWatch.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ses_configuration_set_event_destination#dimension_configurations CcConfigurationSetEventDestination#dimension_configurations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_configuration_set_event_destination#dimension_configurations CcConfigurationSetEventDestination#dimension_configurations}
     */
     readonly dimensionConfigurations?: DimensionConfigurationProperty[] | cdktn.IResolvable;
 }
@@ -601,7 +602,7 @@ export class CloudWatchDestinationPropertyOutputReference extends cdktn.ComplexO
 }
 export interface EventBridgeDestinationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ses_configuration_set_event_destination#event_bus_arn CcConfigurationSetEventDestination#event_bus_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_configuration_set_event_destination#event_bus_arn CcConfigurationSetEventDestination#event_bus_arn}
     */
     readonly eventBusArn?: string;
 }
@@ -667,13 +668,13 @@ export interface KinesisFirehoseDestinationProperty {
     /**
     * The ARN of the Amazon Kinesis Firehose stream that email sending events should be published to.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ses_configuration_set_event_destination#delivery_stream_arn CcConfigurationSetEventDestination#delivery_stream_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_configuration_set_event_destination#delivery_stream_arn CcConfigurationSetEventDestination#delivery_stream_arn}
     */
     readonly deliveryStreamArn?: string;
     /**
     * The ARN of the IAM role under which Amazon SES publishes email sending events to the Amazon Kinesis Firehose stream.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ses_configuration_set_event_destination#iam_role_arn CcConfigurationSetEventDestination#iam_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_configuration_set_event_destination#iam_role_arn CcConfigurationSetEventDestination#iam_role_arn}
     */
     readonly iamRoleArn?: string;
 }
@@ -759,7 +760,7 @@ export class KinesisFirehoseDestinationPropertyOutputReference extends cdktn.Com
 }
 export interface SnsDestinationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ses_configuration_set_event_destination#topic_arn CcConfigurationSetEventDestination#topic_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_configuration_set_event_destination#topic_arn CcConfigurationSetEventDestination#topic_arn}
     */
     readonly topicArn?: string;
 }
@@ -825,43 +826,43 @@ export interface EventDestinationProperty {
     /**
     * An object that contains the names, default values, and sources of the dimensions associated with an Amazon CloudWatch event destination.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ses_configuration_set_event_destination#cloudwatch_destination CcConfigurationSetEventDestination#cloudwatch_destination}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_configuration_set_event_destination#cloudwatch_destination CcConfigurationSetEventDestination#cloudwatch_destination}
     */
     readonly cloudwatchDestination?: CloudWatchDestinationProperty;
     /**
     * Sets whether Amazon SES publishes events to this destination when you send an email with the associated configuration set. Set to true to enable publishing to this destination; set to false to prevent publishing to this destination. The default value is false.   
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ses_configuration_set_event_destination#enabled CcConfigurationSetEventDestination#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_configuration_set_event_destination#enabled CcConfigurationSetEventDestination#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
     * An object that contains Event bus ARN associated with the event bridge destination.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ses_configuration_set_event_destination#event_bridge_destination CcConfigurationSetEventDestination#event_bridge_destination}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_configuration_set_event_destination#event_bridge_destination CcConfigurationSetEventDestination#event_bridge_destination}
     */
     readonly eventBridgeDestination?: EventBridgeDestinationProperty;
     /**
     * An object that contains the delivery stream ARN and the IAM role ARN associated with an Amazon Kinesis Firehose event destination.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ses_configuration_set_event_destination#kinesis_firehose_destination CcConfigurationSetEventDestination#kinesis_firehose_destination}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_configuration_set_event_destination#kinesis_firehose_destination CcConfigurationSetEventDestination#kinesis_firehose_destination}
     */
     readonly kinesisFirehoseDestination?: KinesisFirehoseDestinationProperty;
     /**
     * The type of email sending events, send, reject, bounce, complaint, delivery, open, click, renderingFailure, deliveryDelay, and subscription.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ses_configuration_set_event_destination#matching_event_types CcConfigurationSetEventDestination#matching_event_types}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_configuration_set_event_destination#matching_event_types CcConfigurationSetEventDestination#matching_event_types}
     */
     readonly matchingEventTypes: string[];
     /**
     * The name of the event destination set.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ses_configuration_set_event_destination#name CcConfigurationSetEventDestination#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_configuration_set_event_destination#name CcConfigurationSetEventDestination#name}
     */
     readonly name?: string;
     /**
     * An object that contains SNS topic ARN associated event destination.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ses_configuration_set_event_destination#sns_destination CcConfigurationSetEventDestination#sns_destination}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_configuration_set_event_destination#sns_destination CcConfigurationSetEventDestination#sns_destination}
     */
     readonly snsDestination?: SnsDestinationProperty;
 }

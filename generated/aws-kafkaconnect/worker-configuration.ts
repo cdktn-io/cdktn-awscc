@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kafkaconnect_worker_configuration
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kafkaconnect_worker_configuration
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,31 +9,31 @@ export interface CcWorkerConfigurationProps extends cdktn.TerraformMetaArguments
     /**
     * A summary description of the worker configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kafkaconnect_worker_configuration#description CcWorkerConfiguration#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kafkaconnect_worker_configuration#description CcWorkerConfiguration#description}
     */
     readonly description?: string;
     /**
     * The name of the worker configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kafkaconnect_worker_configuration#name CcWorkerConfiguration#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kafkaconnect_worker_configuration#name CcWorkerConfiguration#name}
     */
     readonly name: string;
     /**
     * Base64 encoded contents of connect-distributed.properties file.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kafkaconnect_worker_configuration#properties_file_content CcWorkerConfiguration#properties_file_content}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kafkaconnect_worker_configuration#properties_file_content CcWorkerConfiguration#properties_file_content}
     */
     readonly propertiesFileContent: string;
     /**
     * A collection of tags associated with a resource
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kafkaconnect_worker_configuration#tags CcWorkerConfiguration#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kafkaconnect_worker_configuration#tags CcWorkerConfiguration#tags}
     */
     readonly tags?: CcWorkerConfiguration.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kafkaconnect_worker_configuration awscc_kafkaconnect_worker_configuration}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kafkaconnect_worker_configuration awscc_kafkaconnect_worker_configuration}
 */
 export class CcWorkerConfiguration extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CcWorkerConfiguration extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcWorkerConfiguration resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcWorkerConfiguration to import
-    * @param importFromId The id of the existing CcWorkerConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kafkaconnect_worker_configuration#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcWorkerConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kafkaconnect_worker_configuration#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcWorkerConfiguration to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CcWorkerConfiguration extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kafkaconnect_worker_configuration awscc_kafkaconnect_worker_configuration} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kafkaconnect_worker_configuration awscc_kafkaconnect_worker_configuration} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -71,7 +71,8 @@ export class CcWorkerConfiguration extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_kafkaconnect_worker_configuration',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -250,11 +251,11 @@ export function ccWorkerConfigurationTagPropertyToHclTerraform(struct?: CcWorker
 export namespace CcWorkerConfiguration {
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kafkaconnect_worker_configuration#key CcWorkerConfiguration#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kafkaconnect_worker_configuration#key CcWorkerConfiguration#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kafkaconnect_worker_configuration#value CcWorkerConfiguration#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kafkaconnect_worker_configuration#value CcWorkerConfiguration#value}
     */
     readonly value?: string;
 }

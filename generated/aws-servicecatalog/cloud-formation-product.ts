@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicecatalog_cloudformation_product
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalog_cloudformation_product
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,85 +9,85 @@ export interface CcCloudFormationProductProps extends cdktn.TerraformMetaArgumen
     /**
     * The language code.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicecatalog_cloudformation_product#accept_language CcCloudFormationProduct#accept_language}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalog_cloudformation_product#accept_language CcCloudFormationProduct#accept_language}
     */
     readonly acceptLanguage?: string;
     /**
     * The description of the product.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicecatalog_cloudformation_product#description CcCloudFormationProduct#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalog_cloudformation_product#description CcCloudFormationProduct#description}
     */
     readonly description?: string;
     /**
     * The distributor of the product.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicecatalog_cloudformation_product#distributor CcCloudFormationProduct#distributor}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalog_cloudformation_product#distributor CcCloudFormationProduct#distributor}
     */
     readonly distributor?: string;
     /**
     * The name of the product.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicecatalog_cloudformation_product#name CcCloudFormationProduct#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalog_cloudformation_product#name CcCloudFormationProduct#name}
     */
     readonly name: string;
     /**
     * The owner of the product.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicecatalog_cloudformation_product#owner CcCloudFormationProduct#owner}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalog_cloudformation_product#owner CcCloudFormationProduct#owner}
     */
     readonly owner: string;
     /**
     * The type of product.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicecatalog_cloudformation_product#product_type CcCloudFormationProduct#product_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalog_cloudformation_product#product_type CcCloudFormationProduct#product_type}
     */
     readonly productType?: string;
     /**
     * The configuration of the provisioning artifact (also known as a version).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicecatalog_cloudformation_product#provisioning_artifact_parameters CcCloudFormationProduct#provisioning_artifact_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalog_cloudformation_product#provisioning_artifact_parameters CcCloudFormationProduct#provisioning_artifact_parameters}
     */
     readonly provisioningArtifactParameters?: CcCloudFormationProduct.ProvisioningArtifactPropertiesProperty[] | cdktn.IResolvable;
     /**
     * This property is turned off by default. If turned off, you can update provisioning artifacts or product attributes (such as description, distributor, name, owner, and more) and the associated provisioning artifacts will retain the same unique identifier. Provisioning artifacts are matched within the CloudFormationProduct resource, and only those that have been updated will be changed. Provisioning artifacts are matched by a combinaton of provisioning artifact template URL and name.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicecatalog_cloudformation_product#replace_provisioning_artifacts CcCloudFormationProduct#replace_provisioning_artifacts}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalog_cloudformation_product#replace_provisioning_artifacts CcCloudFormationProduct#replace_provisioning_artifacts}
     */
     readonly replaceProvisioningArtifacts?: boolean | cdktn.IResolvable;
     /**
     * A top level ProductViewDetail response containing details about the product's connection. AWS Service Catalog returns this field for the CreateProduct, UpdateProduct, DescribeProductAsAdmin, and SearchProductAsAdmin APIs. This response contains the same fields as the ConnectionParameters request, with the addition of the LastSync response.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicecatalog_cloudformation_product#source_connection CcCloudFormationProduct#source_connection}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalog_cloudformation_product#source_connection CcCloudFormationProduct#source_connection}
     */
     readonly sourceConnection?: CcCloudFormationProduct.SourceConnectionProperty;
     /**
     * The support information about the product.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicecatalog_cloudformation_product#support_description CcCloudFormationProduct#support_description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalog_cloudformation_product#support_description CcCloudFormationProduct#support_description}
     */
     readonly supportDescription?: string;
     /**
     * The contact email for product support.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicecatalog_cloudformation_product#support_email CcCloudFormationProduct#support_email}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalog_cloudformation_product#support_email CcCloudFormationProduct#support_email}
     */
     readonly supportEmail?: string;
     /**
     * The contact URL for product support.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicecatalog_cloudformation_product#support_url CcCloudFormationProduct#support_url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalog_cloudformation_product#support_url CcCloudFormationProduct#support_url}
     */
     readonly supportUrl?: string;
     /**
     * One or more tags.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicecatalog_cloudformation_product#tags CcCloudFormationProduct#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalog_cloudformation_product#tags CcCloudFormationProduct#tags}
     */
     readonly tags?: CcCloudFormationProduct.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicecatalog_cloudformation_product awscc_servicecatalog_cloudformation_product}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalog_cloudformation_product awscc_servicecatalog_cloudformation_product}
 */
 export class CcCloudFormationProduct extends cdktn.TerraformResource {
 
@@ -103,7 +103,7 @@ export class CcCloudFormationProduct extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcCloudFormationProduct resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcCloudFormationProduct to import
-    * @param importFromId The id of the existing CcCloudFormationProduct that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicecatalog_cloudformation_product#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcCloudFormationProduct that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalog_cloudformation_product#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcCloudFormationProduct to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -115,7 +115,7 @@ export class CcCloudFormationProduct extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicecatalog_cloudformation_product awscc_servicecatalog_cloudformation_product} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalog_cloudformation_product awscc_servicecatalog_cloudformation_product} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -125,7 +125,8 @@ export class CcCloudFormationProduct extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_servicecatalog_cloudformation_product',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -745,13 +746,13 @@ export interface InfoProperty {
     /**
     * The physical id of the resource that contains the template. Currently only supports AWS CloudFormation stack arn
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicecatalog_cloudformation_product#import_from_physical_id CcCloudFormationProduct#import_from_physical_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalog_cloudformation_product#import_from_physical_id CcCloudFormationProduct#import_from_physical_id}
     */
     readonly importFromPhysicalId?: string;
     /**
     * The URL of the AWS CloudFormation template in Amazon S3 in JSON format.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicecatalog_cloudformation_product#load_template_from_url CcCloudFormationProduct#load_template_from_url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalog_cloudformation_product#load_template_from_url CcCloudFormationProduct#load_template_from_url}
     */
     readonly loadTemplateFromUrl?: string;
 }
@@ -839,13 +840,13 @@ export interface ProvisioningArtifactPropertiesProperty {
     /**
     * The description of the provisioning artifact, including how it differs from the previous provisioning artifact.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicecatalog_cloudformation_product#description CcCloudFormationProduct#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalog_cloudformation_product#description CcCloudFormationProduct#description}
     */
     readonly description?: string;
     /**
     * If set to true, AWS Service Catalog stops validating the specified provisioning artifact even if it is invalid.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicecatalog_cloudformation_product#disable_template_validation CcCloudFormationProduct#disable_template_validation}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalog_cloudformation_product#disable_template_validation CcCloudFormationProduct#disable_template_validation}
     */
     readonly disableTemplateValidation?: boolean | cdktn.IResolvable;
     /**
@@ -855,19 +856,19 @@ export interface ProvisioningArtifactPropertiesProperty {
     * 
     * ImportFromPhysicalId: The physical id of the resource that contains the template. Currently only supports AWS CloudFormation stack arn. Specify the physical id in JSON format as follows: ImportFromPhysicalId: "arn:aws:cloudformation:[us-east-1]:[accountId]:stack/[StackName]/[resourceId]
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicecatalog_cloudformation_product#info CcCloudFormationProduct#info}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalog_cloudformation_product#info CcCloudFormationProduct#info}
     */
     readonly info?: InfoProperty;
     /**
     * The name of the provisioning artifact (for example, v1 v2beta). No spaces are allowed.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicecatalog_cloudformation_product#name CcCloudFormationProduct#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalog_cloudformation_product#name CcCloudFormationProduct#name}
     */
     readonly name?: string;
     /**
     * The type of provisioning artifact. Valid values are CLOUD_FORMATION_TEMPLATE, TERRAFORM_OPEN_SOURCE, TERRAFORM_CLOUD, EXTERNAL
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicecatalog_cloudformation_product#type CcCloudFormationProduct#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalog_cloudformation_product#type CcCloudFormationProduct#type}
     */
     readonly type?: string;
 }
@@ -1043,13 +1044,13 @@ export interface CodeStarParametersProperty {
     /**
     * The absolute path where the artifact resides within the repo and branch, formatted as "folder/file.json".
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicecatalog_cloudformation_product#artifact_path CcCloudFormationProduct#artifact_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalog_cloudformation_product#artifact_path CcCloudFormationProduct#artifact_path}
     */
     readonly artifactPath?: string;
     /**
     * The specific branch where the artifact resides.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicecatalog_cloudformation_product#branch CcCloudFormationProduct#branch}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalog_cloudformation_product#branch CcCloudFormationProduct#branch}
     */
     readonly branch?: string;
     /**
@@ -1057,13 +1058,13 @@ export interface CodeStarParametersProperty {
     * 
     * 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicecatalog_cloudformation_product#connection_arn CcCloudFormationProduct#connection_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalog_cloudformation_product#connection_arn CcCloudFormationProduct#connection_arn}
     */
     readonly connectionArn?: string;
     /**
     * The specific repository where the product's artifact-to-be-synced resides, formatted as "Account/Repo."
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicecatalog_cloudformation_product#repository CcCloudFormationProduct#repository}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalog_cloudformation_product#repository CcCloudFormationProduct#repository}
     */
     readonly repository?: string;
 }
@@ -1193,7 +1194,7 @@ export class CodeStarParametersPropertyOutputReference extends cdktn.ComplexObje
 }
 export interface ConnectionParametersProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicecatalog_cloudformation_product#code_star CcCloudFormationProduct#code_star}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalog_cloudformation_product#code_star CcCloudFormationProduct#code_star}
     */
     readonly codeStar?: CodeStarParametersProperty;
 }
@@ -1259,13 +1260,13 @@ export interface SourceConnectionProperty {
     /**
     * The connection details based on the connection Type.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicecatalog_cloudformation_product#connection_parameters CcCloudFormationProduct#connection_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalog_cloudformation_product#connection_parameters CcCloudFormationProduct#connection_parameters}
     */
     readonly connectionParameters?: ConnectionParametersProperty;
     /**
     * The only supported SourceConnection type is Codestar.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicecatalog_cloudformation_product#type CcCloudFormationProduct#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalog_cloudformation_product#type CcCloudFormationProduct#type}
     */
     readonly type?: string;
 }
@@ -1353,13 +1354,13 @@ export interface TagProperty {
     /**
     * The tag key.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicecatalog_cloudformation_product#key CcCloudFormationProduct#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalog_cloudformation_product#key CcCloudFormationProduct#key}
     */
     readonly key?: string;
     /**
     * The tag value
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicecatalog_cloudformation_product#value CcCloudFormationProduct#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalog_cloudformation_product#value CcCloudFormationProduct#value}
     */
     readonly value?: string;
 }

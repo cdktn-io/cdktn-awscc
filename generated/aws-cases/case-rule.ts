@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cases_case_rule
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cases_case_rule
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,37 +9,37 @@ export interface CcCaseRuleProps extends cdktn.TerraformMetaArguments {
     /**
     * A description explaining the purpose and behavior of this case rule. Helps administrators understand when and why this rule applies to case fields.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cases_case_rule#description CcCaseRule#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cases_case_rule#description CcCaseRule#description}
     */
     readonly description?: string;
     /**
     * The unique identifier of the Cases domain.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cases_case_rule#domain_id CcCaseRule#domain_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cases_case_rule#domain_id CcCaseRule#domain_id}
     */
     readonly domainId?: string;
     /**
     * A descriptive name for the case rule. Must be unique within the domain and should clearly indicate the rule's purpose (e.g., 'Priority Field Required for Urgent Cases').
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cases_case_rule#name CcCaseRule#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cases_case_rule#name CcCaseRule#name}
     */
     readonly name: string;
     /**
     * Defines the rule behavior and conditions. Specifies the rule type and the conditions under which it applies. In the Amazon Connect admin website, this corresponds to case field conditions.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cases_case_rule#rule CcCaseRule#rule}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cases_case_rule#rule CcCaseRule#rule}
     */
     readonly rule: CcCaseRule.CaseRuleDetailsProperty;
     /**
     * The tags that you attach to this case rule.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cases_case_rule#tags CcCaseRule#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cases_case_rule#tags CcCaseRule#tags}
     */
     readonly tags?: CcCaseRule.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cases_case_rule awscc_cases_case_rule}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cases_case_rule awscc_cases_case_rule}
 */
 export class CcCaseRule extends cdktn.TerraformResource {
 
@@ -55,7 +55,7 @@ export class CcCaseRule extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcCaseRule resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcCaseRule to import
-    * @param importFromId The id of the existing CcCaseRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cases_case_rule#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcCaseRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cases_case_rule#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcCaseRule to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -67,7 +67,7 @@ export class CcCaseRule extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cases_case_rule awscc_cases_case_rule} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cases_case_rule awscc_cases_case_rule} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -77,7 +77,8 @@ export class CcCaseRule extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_cases_case_rule',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -977,7 +978,7 @@ export interface OperandOneProperty {
     /**
     * The field ID this operand should take the value of.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cases_case_rule#field_id CcCaseRule#field_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cases_case_rule#field_id CcCaseRule#field_id}
     */
     readonly fieldId?: string;
 }
@@ -1043,25 +1044,25 @@ export interface OperandTwoProperty {
     /**
     * A boolean value to compare against the field value in the condition evaluation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cases_case_rule#boolean_value CcCaseRule#boolean_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cases_case_rule#boolean_value CcCaseRule#boolean_value}
     */
     readonly booleanValue?: boolean | cdktn.IResolvable;
     /**
     * A numeric value to compare against the field value in the condition evaluation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cases_case_rule#double_value CcCaseRule#double_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cases_case_rule#double_value CcCaseRule#double_value}
     */
     readonly doubleValue?: number;
     /**
     * An empty operand value.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cases_case_rule#empty_value CcCaseRule#empty_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cases_case_rule#empty_value CcCaseRule#empty_value}
     */
     readonly emptyValue?: string;
     /**
     * A string value to compare against the field value in the condition evaluation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cases_case_rule#string_value CcCaseRule#string_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cases_case_rule#string_value CcCaseRule#string_value}
     */
     readonly stringValue?: string;
 }
@@ -1193,19 +1194,19 @@ export interface BooleanOperandsProperty {
     /**
     * The left hand operand in the condition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cases_case_rule#operand_one CcCaseRule#operand_one}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cases_case_rule#operand_one CcCaseRule#operand_one}
     */
     readonly operandOne?: OperandOneProperty;
     /**
     * The right hand operand in the condition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cases_case_rule#operand_two CcCaseRule#operand_two}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cases_case_rule#operand_two CcCaseRule#operand_two}
     */
     readonly operandTwo?: OperandTwoProperty;
     /**
     * The value of the outer rule if the condition evaluates to true.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cases_case_rule#result CcCaseRule#result}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cases_case_rule#result CcCaseRule#result}
     */
     readonly result?: boolean | cdktn.IResolvable;
 }
@@ -1315,7 +1316,7 @@ export interface RuleHiddenConditionsNotEqualToOperandOneProperty {
     /**
     * The field ID this operand should take the value of.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cases_case_rule#field_id CcCaseRule#field_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cases_case_rule#field_id CcCaseRule#field_id}
     */
     readonly fieldId?: string;
 }
@@ -1381,25 +1382,25 @@ export interface RuleHiddenConditionsNotEqualToOperandTwoProperty {
     /**
     * A boolean value to compare against the field value in the condition evaluation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cases_case_rule#boolean_value CcCaseRule#boolean_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cases_case_rule#boolean_value CcCaseRule#boolean_value}
     */
     readonly booleanValue?: boolean | cdktn.IResolvable;
     /**
     * A numeric value to compare against the field value in the condition evaluation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cases_case_rule#double_value CcCaseRule#double_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cases_case_rule#double_value CcCaseRule#double_value}
     */
     readonly doubleValue?: number;
     /**
     * An empty operand value.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cases_case_rule#empty_value CcCaseRule#empty_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cases_case_rule#empty_value CcCaseRule#empty_value}
     */
     readonly emptyValue?: string;
     /**
     * A string value to compare against the field value in the condition evaluation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cases_case_rule#string_value CcCaseRule#string_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cases_case_rule#string_value CcCaseRule#string_value}
     */
     readonly stringValue?: string;
 }
@@ -1531,19 +1532,19 @@ export interface RuleHiddenConditionsNotEqualToProperty {
     /**
     * The left hand operand in the condition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cases_case_rule#operand_one CcCaseRule#operand_one}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cases_case_rule#operand_one CcCaseRule#operand_one}
     */
     readonly operandOne?: RuleHiddenConditionsNotEqualToOperandOneProperty;
     /**
     * The right hand operand in the condition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cases_case_rule#operand_two CcCaseRule#operand_two}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cases_case_rule#operand_two CcCaseRule#operand_two}
     */
     readonly operandTwo?: RuleHiddenConditionsNotEqualToOperandTwoProperty;
     /**
     * The value of the outer rule if the condition evaluates to true.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cases_case_rule#result CcCaseRule#result}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cases_case_rule#result CcCaseRule#result}
     */
     readonly result?: boolean | cdktn.IResolvable;
 }
@@ -1653,13 +1654,13 @@ export interface BooleanConditionProperty {
     /**
     * Boolean operands for a condition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cases_case_rule#equal_to CcCaseRule#equal_to}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cases_case_rule#equal_to CcCaseRule#equal_to}
     */
     readonly equalTo?: BooleanOperandsProperty;
     /**
     * Boolean operands for a condition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cases_case_rule#not_equal_to CcCaseRule#not_equal_to}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cases_case_rule#not_equal_to CcCaseRule#not_equal_to}
     */
     readonly notEqualTo?: RuleHiddenConditionsNotEqualToProperty;
 }
@@ -1769,13 +1770,13 @@ export interface HiddenCaseRuleProperty {
     /**
     * List of conditions for the hidden rule; the first condition to evaluate to true dictates the value of the rule
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cases_case_rule#conditions CcCaseRule#conditions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cases_case_rule#conditions CcCaseRule#conditions}
     */
     readonly conditions?: BooleanConditionProperty[] | cdktn.IResolvable;
     /**
     * The value of the rule (i.e. whether the field is hidden) should none of the conditions evaluate to true
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cases_case_rule#default_value CcCaseRule#default_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cases_case_rule#default_value CcCaseRule#default_value}
     */
     readonly defaultValue?: boolean | cdktn.IResolvable;
 }
@@ -1863,7 +1864,7 @@ export interface RuleRequiredConditionsEqualToOperandOneProperty {
     /**
     * The field ID this operand should take the value of.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cases_case_rule#field_id CcCaseRule#field_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cases_case_rule#field_id CcCaseRule#field_id}
     */
     readonly fieldId?: string;
 }
@@ -1929,25 +1930,25 @@ export interface RuleRequiredConditionsEqualToOperandTwoProperty {
     /**
     * A boolean value to compare against the field value in the condition evaluation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cases_case_rule#boolean_value CcCaseRule#boolean_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cases_case_rule#boolean_value CcCaseRule#boolean_value}
     */
     readonly booleanValue?: boolean | cdktn.IResolvable;
     /**
     * A numeric value to compare against the field value in the condition evaluation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cases_case_rule#double_value CcCaseRule#double_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cases_case_rule#double_value CcCaseRule#double_value}
     */
     readonly doubleValue?: number;
     /**
     * An empty operand value.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cases_case_rule#empty_value CcCaseRule#empty_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cases_case_rule#empty_value CcCaseRule#empty_value}
     */
     readonly emptyValue?: string;
     /**
     * A string value to compare against the field value in the condition evaluation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cases_case_rule#string_value CcCaseRule#string_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cases_case_rule#string_value CcCaseRule#string_value}
     */
     readonly stringValue?: string;
 }
@@ -2079,19 +2080,19 @@ export interface EqualToProperty {
     /**
     * The left hand operand in the condition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cases_case_rule#operand_one CcCaseRule#operand_one}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cases_case_rule#operand_one CcCaseRule#operand_one}
     */
     readonly operandOne?: RuleRequiredConditionsEqualToOperandOneProperty;
     /**
     * The right hand operand in the condition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cases_case_rule#operand_two CcCaseRule#operand_two}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cases_case_rule#operand_two CcCaseRule#operand_two}
     */
     readonly operandTwo?: RuleRequiredConditionsEqualToOperandTwoProperty;
     /**
     * The value of the outer rule if the condition evaluates to true.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cases_case_rule#result CcCaseRule#result}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cases_case_rule#result CcCaseRule#result}
     */
     readonly result?: boolean | cdktn.IResolvable;
 }
@@ -2201,7 +2202,7 @@ export interface RuleRequiredConditionsNotEqualToOperandOneProperty {
     /**
     * The field ID this operand should take the value of.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cases_case_rule#field_id CcCaseRule#field_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cases_case_rule#field_id CcCaseRule#field_id}
     */
     readonly fieldId?: string;
 }
@@ -2267,25 +2268,25 @@ export interface RuleRequiredConditionsNotEqualToOperandTwoProperty {
     /**
     * A boolean value to compare against the field value in the condition evaluation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cases_case_rule#boolean_value CcCaseRule#boolean_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cases_case_rule#boolean_value CcCaseRule#boolean_value}
     */
     readonly booleanValue?: boolean | cdktn.IResolvable;
     /**
     * A numeric value to compare against the field value in the condition evaluation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cases_case_rule#double_value CcCaseRule#double_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cases_case_rule#double_value CcCaseRule#double_value}
     */
     readonly doubleValue?: number;
     /**
     * An empty operand value.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cases_case_rule#empty_value CcCaseRule#empty_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cases_case_rule#empty_value CcCaseRule#empty_value}
     */
     readonly emptyValue?: string;
     /**
     * A string value to compare against the field value in the condition evaluation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cases_case_rule#string_value CcCaseRule#string_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cases_case_rule#string_value CcCaseRule#string_value}
     */
     readonly stringValue?: string;
 }
@@ -2417,19 +2418,19 @@ export interface RuleRequiredConditionsNotEqualToProperty {
     /**
     * The left hand operand in the condition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cases_case_rule#operand_one CcCaseRule#operand_one}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cases_case_rule#operand_one CcCaseRule#operand_one}
     */
     readonly operandOne?: RuleRequiredConditionsNotEqualToOperandOneProperty;
     /**
     * The right hand operand in the condition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cases_case_rule#operand_two CcCaseRule#operand_two}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cases_case_rule#operand_two CcCaseRule#operand_two}
     */
     readonly operandTwo?: RuleRequiredConditionsNotEqualToOperandTwoProperty;
     /**
     * The value of the outer rule if the condition evaluates to true.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cases_case_rule#result CcCaseRule#result}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cases_case_rule#result CcCaseRule#result}
     */
     readonly result?: boolean | cdktn.IResolvable;
 }
@@ -2539,13 +2540,13 @@ export interface ConditionsProperty {
     /**
     * Boolean operands for a condition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cases_case_rule#equal_to CcCaseRule#equal_to}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cases_case_rule#equal_to CcCaseRule#equal_to}
     */
     readonly equalTo?: EqualToProperty;
     /**
     * Boolean operands for a condition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cases_case_rule#not_equal_to CcCaseRule#not_equal_to}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cases_case_rule#not_equal_to CcCaseRule#not_equal_to}
     */
     readonly notEqualTo?: RuleRequiredConditionsNotEqualToProperty;
 }
@@ -2655,13 +2656,13 @@ export interface RequiredCaseRuleProperty {
     /**
     * An ordered list of boolean conditions that determine when the field should be required. Conditions are evaluated in order, and the first condition that evaluates to true determines whether the field is required, overriding the default value.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cases_case_rule#conditions CcCaseRule#conditions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cases_case_rule#conditions CcCaseRule#conditions}
     */
     readonly conditions?: ConditionsProperty[] | cdktn.IResolvable;
     /**
     * The default required state for the field when none of the specified conditions are met. If true, the field is required by default; if false, the field is optional by default.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cases_case_rule#default_value CcCaseRule#default_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cases_case_rule#default_value CcCaseRule#default_value}
     */
     readonly defaultValue?: boolean | cdktn.IResolvable;
 }
@@ -2749,13 +2750,13 @@ export interface CaseRuleDetailsProperty {
     /**
     * Hidden rule type, used to indicate whether a field is hidden
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cases_case_rule#hidden CcCaseRule#hidden}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cases_case_rule#hidden CcCaseRule#hidden}
     */
     readonly hidden?: HiddenCaseRuleProperty;
     /**
     * A required rule type, used to indicate whether a field is required.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cases_case_rule#required CcCaseRule#required}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cases_case_rule#required CcCaseRule#required}
     */
     readonly required?: RequiredCaseRuleProperty;
 }
@@ -2843,13 +2844,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cases_case_rule#key CcCaseRule#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cases_case_rule#key CcCaseRule#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 0 to 256 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cases_case_rule#value CcCaseRule#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cases_case_rule#value CcCaseRule#value}
     */
     readonly value?: string;
 }

@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_user_profile
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_user_profile
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,37 +9,37 @@ export interface CcUserProfileProps extends cdktn.TerraformMetaArguments {
     /**
     * The identifier of the Amazon DataZone domain in which the user profile would be created.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_user_profile#domain_identifier CcUserProfile#domain_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_user_profile#domain_identifier CcUserProfile#domain_identifier}
     */
     readonly domainIdentifier: string;
     /**
     * The session name of the user profile.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_user_profile#session_name CcUserProfile#session_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_user_profile#session_name CcUserProfile#session_name}
     */
     readonly sessionName?: string;
     /**
     * The status of the user profile.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_user_profile#status CcUserProfile#status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_user_profile#status CcUserProfile#status}
     */
     readonly status?: string;
     /**
     * The ID of the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_user_profile#user_identifier CcUserProfile#user_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_user_profile#user_identifier CcUserProfile#user_identifier}
     */
     readonly userIdentifier: string;
     /**
     * The type of the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_user_profile#user_type CcUserProfile#user_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_user_profile#user_type CcUserProfile#user_type}
     */
     readonly userType?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_user_profile awscc_datazone_user_profile}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_user_profile awscc_datazone_user_profile}
 */
 export class CcUserProfile extends cdktn.TerraformResource {
 
@@ -55,7 +55,7 @@ export class CcUserProfile extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcUserProfile resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcUserProfile to import
-    * @param importFromId The id of the existing CcUserProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_user_profile#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcUserProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_user_profile#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcUserProfile to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -67,7 +67,7 @@ export class CcUserProfile extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_user_profile awscc_datazone_user_profile} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_user_profile awscc_datazone_user_profile} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -77,7 +77,8 @@ export class CcUserProfile extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_datazone_user_profile',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,

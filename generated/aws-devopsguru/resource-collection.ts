@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/devopsguru_resource_collection
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/devopsguru_resource_collection
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,13 +9,13 @@ export interface CcResourceCollectionProps extends cdktn.TerraformMetaArguments 
     /**
     * Information about a filter used to specify which AWS resources are analyzed for anomalous behavior by DevOps Guru.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/devopsguru_resource_collection#resource_collection_filter CcResourceCollection#resource_collection_filter}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/devopsguru_resource_collection#resource_collection_filter CcResourceCollection#resource_collection_filter}
     */
     readonly resourceCollectionFilter: CcResourceCollection.ResourceCollectionFilterProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/devopsguru_resource_collection awscc_devopsguru_resource_collection}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/devopsguru_resource_collection awscc_devopsguru_resource_collection}
 */
 export class CcResourceCollection extends cdktn.TerraformResource {
 
@@ -31,7 +31,7 @@ export class CcResourceCollection extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcResourceCollection resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcResourceCollection to import
-    * @param importFromId The id of the existing CcResourceCollection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/devopsguru_resource_collection#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcResourceCollection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/devopsguru_resource_collection#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcResourceCollection to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -43,7 +43,7 @@ export class CcResourceCollection extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/devopsguru_resource_collection awscc_devopsguru_resource_collection} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/devopsguru_resource_collection awscc_devopsguru_resource_collection} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -53,7 +53,8 @@ export class CcResourceCollection extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_devopsguru_resource_collection',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -227,7 +228,7 @@ export interface CloudFormationCollectionFilterProperty {
     /**
     * An array of CloudFormation stack names.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/devopsguru_resource_collection#stack_names CcResourceCollection#stack_names}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/devopsguru_resource_collection#stack_names CcResourceCollection#stack_names}
     */
     readonly stackNames?: string[];
 }
@@ -293,13 +294,13 @@ export interface TagCollectionProperty {
     /**
     * A Tag key for DevOps Guru app boundary.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/devopsguru_resource_collection#app_boundary_key CcResourceCollection#app_boundary_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/devopsguru_resource_collection#app_boundary_key CcResourceCollection#app_boundary_key}
     */
     readonly appBoundaryKey?: string;
     /**
     * Tag values of DevOps Guru app boundary.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/devopsguru_resource_collection#tag_values CcResourceCollection#tag_values}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/devopsguru_resource_collection#tag_values CcResourceCollection#tag_values}
     */
     readonly tagValues?: string[];
 }
@@ -409,13 +410,13 @@ export interface ResourceCollectionFilterProperty {
     /**
     * CloudFormation resource for DevOps Guru to monitor
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/devopsguru_resource_collection#cloudformation CcResourceCollection#cloudformation}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/devopsguru_resource_collection#cloudformation CcResourceCollection#cloudformation}
     */
     readonly cloudformation?: CloudFormationCollectionFilterProperty;
     /**
     * Tagged resources for DevOps Guru to monitor
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/devopsguru_resource_collection#tags CcResourceCollection#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/devopsguru_resource_collection#tags CcResourceCollection#tags}
     */
     readonly tags?: TagCollectionProperty[] | cdktn.IResolvable;
 }

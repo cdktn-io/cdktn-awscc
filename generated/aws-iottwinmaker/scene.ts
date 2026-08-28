@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iottwinmaker_scene
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iottwinmaker_scene
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,49 +9,49 @@ export interface CcSceneProps extends cdktn.TerraformMetaArguments {
     /**
     * A list of capabilities that the scene uses to render.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iottwinmaker_scene#capabilities CcScene#capabilities}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iottwinmaker_scene#capabilities CcScene#capabilities}
     */
     readonly capabilities?: string[];
     /**
     * The relative path that specifies the location of the content definition file.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iottwinmaker_scene#content_location CcScene#content_location}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iottwinmaker_scene#content_location CcScene#content_location}
     */
     readonly contentLocation: string;
     /**
     * The description of the scene.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iottwinmaker_scene#description CcScene#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iottwinmaker_scene#description CcScene#description}
     */
     readonly description?: string;
     /**
     * The ID of the scene.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iottwinmaker_scene#scene_id CcScene#scene_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iottwinmaker_scene#scene_id CcScene#scene_id}
     */
     readonly sceneId: string;
     /**
     * A key-value pair of scene metadata for the scene.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iottwinmaker_scene#scene_metadata CcScene#scene_metadata}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iottwinmaker_scene#scene_metadata CcScene#scene_metadata}
     */
     readonly sceneMetadata?: { [key: string]: string };
     /**
     * A key-value pair to associate with a resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iottwinmaker_scene#tags CcScene#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iottwinmaker_scene#tags CcScene#tags}
     */
     readonly tags?: { [key: string]: string };
     /**
     * The ID of the scene.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iottwinmaker_scene#workspace_id CcScene#workspace_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iottwinmaker_scene#workspace_id CcScene#workspace_id}
     */
     readonly workspaceId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iottwinmaker_scene awscc_iottwinmaker_scene}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iottwinmaker_scene awscc_iottwinmaker_scene}
 */
 export class CcScene extends cdktn.TerraformResource {
 
@@ -67,7 +67,7 @@ export class CcScene extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcScene resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcScene to import
-    * @param importFromId The id of the existing CcScene that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iottwinmaker_scene#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcScene that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iottwinmaker_scene#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcScene to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -79,7 +79,7 @@ export class CcScene extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iottwinmaker_scene awscc_iottwinmaker_scene} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iottwinmaker_scene awscc_iottwinmaker_scene} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -89,7 +89,8 @@ export class CcScene extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_iottwinmaker_scene',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,

@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehubv2_user_journey
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehubv2_user_journey
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,31 +9,31 @@ export interface CcUserJourneyProps extends cdktn.TerraformMetaArguments {
     /**
     * The description of the user journey.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehubv2_user_journey#description CcUserJourney#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehubv2_user_journey#description CcUserJourney#description}
     */
     readonly description?: string;
     /**
     * The name of the user journey.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehubv2_user_journey#name CcUserJourney#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehubv2_user_journey#name CcUserJourney#name}
     */
     readonly name: string;
     /**
     * The ARN of the resilience policy to associate with this user journey.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehubv2_user_journey#policy_arn CcUserJourney#policy_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehubv2_user_journey#policy_arn CcUserJourney#policy_arn}
     */
     readonly policyArn?: string;
     /**
     * The system ARN or system ID that owns this user journey.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehubv2_user_journey#system_identifier CcUserJourney#system_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehubv2_user_journey#system_identifier CcUserJourney#system_identifier}
     */
     readonly systemIdentifier: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehubv2_user_journey awscc_resiliencehubv2_user_journey}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehubv2_user_journey awscc_resiliencehubv2_user_journey}
 */
 export class CcUserJourney extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CcUserJourney extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcUserJourney resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcUserJourney to import
-    * @param importFromId The id of the existing CcUserJourney that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehubv2_user_journey#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcUserJourney that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehubv2_user_journey#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcUserJourney to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CcUserJourney extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehubv2_user_journey awscc_resiliencehubv2_user_journey} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehubv2_user_journey awscc_resiliencehubv2_user_journey} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -71,7 +71,8 @@ export class CcUserJourney extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_resiliencehubv2_user_journey',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,

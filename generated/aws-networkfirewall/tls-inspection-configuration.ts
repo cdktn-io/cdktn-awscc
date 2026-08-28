@@ -1,31 +1,31 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_tls_inspection_configuration
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_tls_inspection_configuration
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcTLSInspectionConfigurationProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_tls_inspection_configuration#description CcTLSInspectionConfiguration#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_tls_inspection_configuration#description CcTLSInspectionConfiguration#description}
     */
     readonly description?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_tls_inspection_configuration#tags CcTLSInspectionConfiguration#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_tls_inspection_configuration#tags CcTLSInspectionConfiguration#tags}
     */
     readonly tags?: CcTLSInspectionConfiguration.TagProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_tls_inspection_configuration#tls_inspection_configuration CcTLSInspectionConfiguration#tls_inspection_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_tls_inspection_configuration#tls_inspection_configuration CcTLSInspectionConfiguration#tls_inspection_configuration}
     */
     readonly tlsInspectionConfiguration: CcTLSInspectionConfiguration.TLSInspectionConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_tls_inspection_configuration#tls_inspection_configuration_name CcTLSInspectionConfiguration#tls_inspection_configuration_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_tls_inspection_configuration#tls_inspection_configuration_name CcTLSInspectionConfiguration#tls_inspection_configuration_name}
     */
     readonly tlsInspectionConfigurationName: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_tls_inspection_configuration awscc_networkfirewall_tls_inspection_configuration}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_tls_inspection_configuration awscc_networkfirewall_tls_inspection_configuration}
 */
 export class CcTLSInspectionConfiguration extends cdktn.TerraformResource {
 
@@ -41,7 +41,7 @@ export class CcTLSInspectionConfiguration extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcTLSInspectionConfiguration resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcTLSInspectionConfiguration to import
-    * @param importFromId The id of the existing CcTLSInspectionConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_tls_inspection_configuration#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcTLSInspectionConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_tls_inspection_configuration#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcTLSInspectionConfiguration to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -53,7 +53,7 @@ export class CcTLSInspectionConfiguration extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_tls_inspection_configuration awscc_networkfirewall_tls_inspection_configuration} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_tls_inspection_configuration awscc_networkfirewall_tls_inspection_configuration} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -63,7 +63,8 @@ export class CcTLSInspectionConfiguration extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_networkfirewall_tls_inspection_configuration',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -582,11 +583,11 @@ export function ccTLSInspectionConfigurationTLSInspectionConfigurationPropertyTo
 export namespace CcTLSInspectionConfiguration {
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_tls_inspection_configuration#key CcTLSInspectionConfiguration#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_tls_inspection_configuration#key CcTLSInspectionConfiguration#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_tls_inspection_configuration#value CcTLSInspectionConfiguration#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_tls_inspection_configuration#value CcTLSInspectionConfiguration#value}
     */
     readonly value?: string;
 }
@@ -694,11 +695,11 @@ export class TagPropertyList extends cdktn.ComplexList {
 }
 export interface CheckCertificateRevocationStatusProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_tls_inspection_configuration#revoked_status_action CcTLSInspectionConfiguration#revoked_status_action}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_tls_inspection_configuration#revoked_status_action CcTLSInspectionConfiguration#revoked_status_action}
     */
     readonly revokedStatusAction?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_tls_inspection_configuration#unknown_status_action CcTLSInspectionConfiguration#unknown_status_action}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_tls_inspection_configuration#unknown_status_action CcTLSInspectionConfiguration#unknown_status_action}
     */
     readonly unknownStatusAction?: string;
 }
@@ -784,11 +785,11 @@ export class CheckCertificateRevocationStatusPropertyOutputReference extends cdk
 }
 export interface PortRangeProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_tls_inspection_configuration#from_port CcTLSInspectionConfiguration#from_port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_tls_inspection_configuration#from_port CcTLSInspectionConfiguration#from_port}
     */
     readonly fromPort?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_tls_inspection_configuration#to_port CcTLSInspectionConfiguration#to_port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_tls_inspection_configuration#to_port CcTLSInspectionConfiguration#to_port}
     */
     readonly toPort?: number;
 }
@@ -896,7 +897,7 @@ export class PortRangePropertyList extends cdktn.ComplexList {
 }
 export interface AddressProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_tls_inspection_configuration#address_definition CcTLSInspectionConfiguration#address_definition}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_tls_inspection_configuration#address_definition CcTLSInspectionConfiguration#address_definition}
     */
     readonly addressDefinition?: string;
 }
@@ -982,11 +983,11 @@ export class AddressPropertyList extends cdktn.ComplexList {
 }
 export interface SourcePortsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_tls_inspection_configuration#from_port CcTLSInspectionConfiguration#from_port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_tls_inspection_configuration#from_port CcTLSInspectionConfiguration#from_port}
     */
     readonly fromPort?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_tls_inspection_configuration#to_port CcTLSInspectionConfiguration#to_port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_tls_inspection_configuration#to_port CcTLSInspectionConfiguration#to_port}
     */
     readonly toPort?: number;
 }
@@ -1094,7 +1095,7 @@ export class SourcePortsPropertyList extends cdktn.ComplexList {
 }
 export interface SourcesProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_tls_inspection_configuration#address_definition CcTLSInspectionConfiguration#address_definition}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_tls_inspection_configuration#address_definition CcTLSInspectionConfiguration#address_definition}
     */
     readonly addressDefinition?: string;
 }
@@ -1180,23 +1181,23 @@ export class SourcesPropertyList extends cdktn.ComplexList {
 }
 export interface ServerCertificateScopeProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_tls_inspection_configuration#destination_ports CcTLSInspectionConfiguration#destination_ports}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_tls_inspection_configuration#destination_ports CcTLSInspectionConfiguration#destination_ports}
     */
     readonly destinationPorts?: PortRangeProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_tls_inspection_configuration#destinations CcTLSInspectionConfiguration#destinations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_tls_inspection_configuration#destinations CcTLSInspectionConfiguration#destinations}
     */
     readonly destinations?: AddressProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_tls_inspection_configuration#protocols CcTLSInspectionConfiguration#protocols}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_tls_inspection_configuration#protocols CcTLSInspectionConfiguration#protocols}
     */
     readonly protocols?: number[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_tls_inspection_configuration#source_ports CcTLSInspectionConfiguration#source_ports}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_tls_inspection_configuration#source_ports CcTLSInspectionConfiguration#source_ports}
     */
     readonly sourcePorts?: SourcePortsProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_tls_inspection_configuration#sources CcTLSInspectionConfiguration#sources}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_tls_inspection_configuration#sources CcTLSInspectionConfiguration#sources}
     */
     readonly sources?: SourcesProperty[] | cdktn.IResolvable;
 }
@@ -1372,7 +1373,7 @@ export interface ServerCertificateProperty {
     /**
     * A resource ARN.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_tls_inspection_configuration#resource_arn CcTLSInspectionConfiguration#resource_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_tls_inspection_configuration#resource_arn CcTLSInspectionConfiguration#resource_arn}
     */
     readonly resourceArn?: string;
 }
@@ -1460,19 +1461,19 @@ export interface ServerCertificateConfigurationProperty {
     /**
     * A resource ARN.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_tls_inspection_configuration#certificate_authority_arn CcTLSInspectionConfiguration#certificate_authority_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_tls_inspection_configuration#certificate_authority_arn CcTLSInspectionConfiguration#certificate_authority_arn}
     */
     readonly certificateAuthorityArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_tls_inspection_configuration#check_certificate_revocation_status CcTLSInspectionConfiguration#check_certificate_revocation_status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_tls_inspection_configuration#check_certificate_revocation_status CcTLSInspectionConfiguration#check_certificate_revocation_status}
     */
     readonly checkCertificateRevocationStatus?: CheckCertificateRevocationStatusProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_tls_inspection_configuration#scopes CcTLSInspectionConfiguration#scopes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_tls_inspection_configuration#scopes CcTLSInspectionConfiguration#scopes}
     */
     readonly scopes?: ServerCertificateScopeProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_tls_inspection_configuration#server_certificates CcTLSInspectionConfiguration#server_certificates}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_tls_inspection_configuration#server_certificates CcTLSInspectionConfiguration#server_certificates}
     */
     readonly serverCertificates?: ServerCertificateProperty[] | cdktn.IResolvable;
 }
@@ -1624,7 +1625,7 @@ export class ServerCertificateConfigurationPropertyList extends cdktn.ComplexLis
 }
 export interface TLSInspectionConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_tls_inspection_configuration#server_certificate_configurations CcTLSInspectionConfiguration#server_certificate_configurations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_tls_inspection_configuration#server_certificate_configurations CcTLSInspectionConfiguration#server_certificate_configurations}
     */
     readonly serverCertificateConfigurations?: ServerCertificateConfigurationProperty[] | cdktn.IResolvable;
 }

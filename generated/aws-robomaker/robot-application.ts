@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/robomaker_robot_application
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/robomaker_robot_application
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,43 +9,43 @@ export interface CcRobotApplicationProps extends cdktn.TerraformMetaArguments {
     /**
     * The revision ID of robot application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/robomaker_robot_application#current_revision_id CcRobotApplication#current_revision_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/robomaker_robot_application#current_revision_id CcRobotApplication#current_revision_id}
     */
     readonly currentRevisionId?: string;
     /**
     * The URI of the Docker image for the robot application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/robomaker_robot_application#environment CcRobotApplication#environment}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/robomaker_robot_application#environment CcRobotApplication#environment}
     */
     readonly environment?: string;
     /**
     * The name of the robot application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/robomaker_robot_application#name CcRobotApplication#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/robomaker_robot_application#name CcRobotApplication#name}
     */
     readonly name?: string;
     /**
     * The robot software suite used by the robot application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/robomaker_robot_application#robot_software_suite CcRobotApplication#robot_software_suite}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/robomaker_robot_application#robot_software_suite CcRobotApplication#robot_software_suite}
     */
     readonly robotSoftwareSuite: CcRobotApplication.RobotSoftwareSuiteProperty;
     /**
     * The sources of the robot application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/robomaker_robot_application#sources CcRobotApplication#sources}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/robomaker_robot_application#sources CcRobotApplication#sources}
     */
     readonly sources?: CcRobotApplication.SourceConfigProperty[] | cdktn.IResolvable;
     /**
     * A key-value pair to associate with a resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/robomaker_robot_application#tags CcRobotApplication#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/robomaker_robot_application#tags CcRobotApplication#tags}
     */
     readonly tags?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/robomaker_robot_application awscc_robomaker_robot_application}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/robomaker_robot_application awscc_robomaker_robot_application}
 */
 export class CcRobotApplication extends cdktn.TerraformResource {
 
@@ -61,7 +61,7 @@ export class CcRobotApplication extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcRobotApplication resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcRobotApplication to import
-    * @param importFromId The id of the existing CcRobotApplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/robomaker_robot_application#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcRobotApplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/robomaker_robot_application#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcRobotApplication to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -73,7 +73,7 @@ export class CcRobotApplication extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/robomaker_robot_application awscc_robomaker_robot_application} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/robomaker_robot_application awscc_robomaker_robot_application} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -83,7 +83,8 @@ export class CcRobotApplication extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_robomaker_robot_application',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -354,13 +355,13 @@ export interface RobotSoftwareSuiteProperty {
     /**
     * The name of robot software suite.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/robomaker_robot_application#name CcRobotApplication#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/robomaker_robot_application#name CcRobotApplication#name}
     */
     readonly name: string;
     /**
     * The version of robot software suite.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/robomaker_robot_application#version CcRobotApplication#version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/robomaker_robot_application#version CcRobotApplication#version}
     */
     readonly version?: string;
 }
@@ -445,19 +446,19 @@ export interface SourceConfigProperty {
     /**
     * The architecture of robot application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/robomaker_robot_application#architecture CcRobotApplication#architecture}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/robomaker_robot_application#architecture CcRobotApplication#architecture}
     */
     readonly architecture?: string;
     /**
     * The Arn of the S3Bucket that stores the robot application source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/robomaker_robot_application#s3_bucket CcRobotApplication#s3_bucket}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/robomaker_robot_application#s3_bucket CcRobotApplication#s3_bucket}
     */
     readonly s3Bucket?: string;
     /**
     * The s3 key of robot application source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/robomaker_robot_application#s3_key CcRobotApplication#s3_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/robomaker_robot_application#s3_key CcRobotApplication#s3_key}
     */
     readonly s3Key?: string;
 }

@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicecatalog_portfolio_product_association
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalog_portfolio_product_association
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,31 +9,31 @@ export interface CcPortfolioProductAssociationProps extends cdktn.TerraformMetaA
     /**
     * The language code.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicecatalog_portfolio_product_association#accept_language CcPortfolioProductAssociation#accept_language}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalog_portfolio_product_association#accept_language CcPortfolioProductAssociation#accept_language}
     */
     readonly acceptLanguage?: string;
     /**
     * The portfolio identifier.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicecatalog_portfolio_product_association#portfolio_id CcPortfolioProductAssociation#portfolio_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalog_portfolio_product_association#portfolio_id CcPortfolioProductAssociation#portfolio_id}
     */
     readonly portfolioId?: string;
     /**
     * The product identifier.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicecatalog_portfolio_product_association#product_id CcPortfolioProductAssociation#product_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalog_portfolio_product_association#product_id CcPortfolioProductAssociation#product_id}
     */
     readonly productId?: string;
     /**
     * The identifier of the source portfolio. The source portfolio must be a portfolio imported from a different account than the one creating the association. This account must have previously shared this portfolio with the account creating the association.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicecatalog_portfolio_product_association#source_portfolio_id CcPortfolioProductAssociation#source_portfolio_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalog_portfolio_product_association#source_portfolio_id CcPortfolioProductAssociation#source_portfolio_id}
     */
     readonly sourcePortfolioId?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicecatalog_portfolio_product_association awscc_servicecatalog_portfolio_product_association}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalog_portfolio_product_association awscc_servicecatalog_portfolio_product_association}
 */
 export class CcPortfolioProductAssociation extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CcPortfolioProductAssociation extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcPortfolioProductAssociation resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcPortfolioProductAssociation to import
-    * @param importFromId The id of the existing CcPortfolioProductAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicecatalog_portfolio_product_association#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcPortfolioProductAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalog_portfolio_product_association#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcPortfolioProductAssociation to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CcPortfolioProductAssociation extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicecatalog_portfolio_product_association awscc_servicecatalog_portfolio_product_association} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalog_portfolio_product_association awscc_servicecatalog_portfolio_product_association} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -71,7 +71,8 @@ export class CcPortfolioProductAssociation extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_servicecatalog_portfolio_product_association',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,

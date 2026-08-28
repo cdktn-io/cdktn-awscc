@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/globalaccelerator_listener
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/globalaccelerator_listener
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,29 +9,29 @@ export interface CcListenerProps extends cdktn.TerraformMetaArguments {
     /**
     * The Amazon Resource Name (ARN) of the accelerator.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/globalaccelerator_listener#accelerator_arn CcListener#accelerator_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/globalaccelerator_listener#accelerator_arn CcListener#accelerator_arn}
     */
     readonly acceleratorArn: string;
     /**
     * Client affinity lets you direct all requests from a user to the same endpoint.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/globalaccelerator_listener#client_affinity CcListener#client_affinity}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/globalaccelerator_listener#client_affinity CcListener#client_affinity}
     */
     readonly clientAffinity?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/globalaccelerator_listener#port_ranges CcListener#port_ranges}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/globalaccelerator_listener#port_ranges CcListener#port_ranges}
     */
     readonly portRanges: CcListener.PortRangeProperty[] | cdktn.IResolvable;
     /**
     * The protocol for the listener.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/globalaccelerator_listener#protocol CcListener#protocol}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/globalaccelerator_listener#protocol CcListener#protocol}
     */
     readonly protocol?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/globalaccelerator_listener awscc_globalaccelerator_listener}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/globalaccelerator_listener awscc_globalaccelerator_listener}
 */
 export class CcListener extends cdktn.TerraformResource {
 
@@ -47,7 +47,7 @@ export class CcListener extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcListener resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcListener to import
-    * @param importFromId The id of the existing CcListener that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/globalaccelerator_listener#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcListener that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/globalaccelerator_listener#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcListener to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -59,7 +59,7 @@ export class CcListener extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/globalaccelerator_listener awscc_globalaccelerator_listener} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/globalaccelerator_listener awscc_globalaccelerator_listener} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -69,7 +69,8 @@ export class CcListener extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_globalaccelerator_listener',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -245,13 +246,13 @@ export interface PortRangeProperty {
     /**
     * A network port number
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/globalaccelerator_listener#from_port CcListener#from_port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/globalaccelerator_listener#from_port CcListener#from_port}
     */
     readonly fromPort: number;
     /**
     * A network port number
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/globalaccelerator_listener#to_port CcListener#to_port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/globalaccelerator_listener#to_port CcListener#to_port}
     */
     readonly toPort: number;
 }

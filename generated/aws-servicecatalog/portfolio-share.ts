@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicecatalog_portfolio_share
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalog_portfolio_share
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,31 +9,31 @@ export interface CcPortfolioShareProps extends cdktn.TerraformMetaArguments {
     /**
     * The language code.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicecatalog_portfolio_share#accept_language CcPortfolioShare#accept_language}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalog_portfolio_share#accept_language CcPortfolioShare#accept_language}
     */
     readonly acceptLanguage?: string;
     /**
     * The AWS account ID.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicecatalog_portfolio_share#account_id CcPortfolioShare#account_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalog_portfolio_share#account_id CcPortfolioShare#account_id}
     */
     readonly accountId: string;
     /**
     * The portfolio identifier.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicecatalog_portfolio_share#portfolio_id CcPortfolioShare#portfolio_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalog_portfolio_share#portfolio_id CcPortfolioShare#portfolio_id}
     */
     readonly portfolioId: string;
     /**
     * Enables or disables TagOptions sharing when creating the portfolio share.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicecatalog_portfolio_share#share_tag_options CcPortfolioShare#share_tag_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalog_portfolio_share#share_tag_options CcPortfolioShare#share_tag_options}
     */
     readonly shareTagOptions?: boolean | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicecatalog_portfolio_share awscc_servicecatalog_portfolio_share}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalog_portfolio_share awscc_servicecatalog_portfolio_share}
 */
 export class CcPortfolioShare extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CcPortfolioShare extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcPortfolioShare resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcPortfolioShare to import
-    * @param importFromId The id of the existing CcPortfolioShare that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicecatalog_portfolio_share#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcPortfolioShare that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalog_portfolio_share#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcPortfolioShare to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CcPortfolioShare extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicecatalog_portfolio_share awscc_servicecatalog_portfolio_share} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalog_portfolio_share awscc_servicecatalog_portfolio_share} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -71,7 +71,8 @@ export class CcPortfolioShare extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_servicecatalog_portfolio_share',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,

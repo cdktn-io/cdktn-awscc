@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apprunner_vpc_connector
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_vpc_connector
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,31 +9,31 @@ export interface CcVpcConnectorProps extends cdktn.TerraformMetaArguments {
     /**
     * A list of IDs of security groups that App Runner should use for access to AWS resources under the specified subnets. If not specified, App Runner uses the default security group of the Amazon VPC. The default security group allows all outbound traffic.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apprunner_vpc_connector#security_groups CcVpcConnector#security_groups}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_vpc_connector#security_groups CcVpcConnector#security_groups}
     */
     readonly securityGroups?: string[];
     /**
     * A list of IDs of subnets that App Runner should use when it associates your service with a custom Amazon VPC. Specify IDs of subnets of a single Amazon VPC. App Runner determines the Amazon VPC from the subnets you specify.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apprunner_vpc_connector#subnets CcVpcConnector#subnets}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_vpc_connector#subnets CcVpcConnector#subnets}
     */
     readonly subnets: string[];
     /**
     * A list of metadata items that you can associate with your VPC connector resource. A tag is a key-value pair.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apprunner_vpc_connector#tags CcVpcConnector#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_vpc_connector#tags CcVpcConnector#tags}
     */
     readonly tags?: CcVpcConnector.TagProperty[] | cdktn.IResolvable;
     /**
     * A name for the VPC connector. If you don't specify a name, AWS CloudFormation generates a name for your VPC connector.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apprunner_vpc_connector#vpc_connector_name CcVpcConnector#vpc_connector_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_vpc_connector#vpc_connector_name CcVpcConnector#vpc_connector_name}
     */
     readonly vpcConnectorName?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apprunner_vpc_connector awscc_apprunner_vpc_connector}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_vpc_connector awscc_apprunner_vpc_connector}
 */
 export class CcVpcConnector extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CcVpcConnector extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcVpcConnector resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcVpcConnector to import
-    * @param importFromId The id of the existing CcVpcConnector that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apprunner_vpc_connector#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcVpcConnector that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_vpc_connector#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcVpcConnector to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CcVpcConnector extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apprunner_vpc_connector awscc_apprunner_vpc_connector} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_vpc_connector awscc_apprunner_vpc_connector} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -71,7 +71,8 @@ export class CcVpcConnector extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_apprunner_vpc_connector',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -253,11 +254,11 @@ export function ccVpcConnectorTagPropertyToHclTerraform(struct?: CcVpcConnector.
 export namespace CcVpcConnector {
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apprunner_vpc_connector#key CcVpcConnector#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_vpc_connector#key CcVpcConnector#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apprunner_vpc_connector#value CcVpcConnector#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_vpc_connector#value CcVpcConnector#value}
     */
     readonly value?: string;
 }

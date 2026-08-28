@@ -1,35 +1,35 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_dashboard
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_dashboard
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcDashboardProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_dashboard#aws_account_id CcDashboard#aws_account_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_dashboard#aws_account_id CcDashboard#aws_account_id}
     */
     readonly awsAccountId: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_dashboard#dashboard_id CcDashboard#dashboard_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_dashboard#dashboard_id CcDashboard#dashboard_id}
     */
     readonly dashboardId: string;
     /**
     * <p>Dashboard publish options.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_dashboard#dashboard_publish_options CcDashboard#dashboard_publish_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_dashboard#dashboard_publish_options CcDashboard#dashboard_publish_options}
     */
     readonly dashboardPublishOptions?: CcDashboard.DashboardPublishOptionsProperty;
     /**
     * <p>The display name of the dashboard.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_dashboard#name CcDashboard#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_dashboard#name CcDashboard#name}
     */
     readonly name?: string;
     /**
     * <p>A list of QuickSight parameters and the list's override values.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_dashboard#parameters CcDashboard#parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_dashboard#parameters CcDashboard#parameters}
     */
     readonly parameters?: CcDashboard.ParametersProperty;
     /**
@@ -39,20 +39,20 @@ export interface CcDashboardProps extends cdktn.TerraformMetaArguments {
     * 
     *         <p>To specify no permissions, omit the permissions list.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_dashboard#permissions CcDashboard#permissions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_dashboard#permissions CcDashboard#permissions}
     */
     readonly permissions?: CcDashboard.ResourcePermissionProperty[] | cdktn.IResolvable;
     /**
     * <p>Dashboard source entity.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_dashboard#source_entity CcDashboard#source_entity}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_dashboard#source_entity CcDashboard#source_entity}
     */
     readonly sourceEntity: CcDashboard.DashboardSourceEntityProperty;
     /**
     * <p>Contains a map of the key-value pairs for the resource tag or tags assigned to the
     *             dashboard.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_dashboard#tags CcDashboard#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_dashboard#tags CcDashboard#tags}
     */
     readonly tags?: CcDashboard.TagProperty[] | cdktn.IResolvable;
     /**
@@ -61,19 +61,19 @@ export interface CcDashboardProps extends cdktn.TerraformMetaArguments {
     *             entity. The theme ARN must exist in the same AWS account where you create the
     *             dashboard.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_dashboard#theme_arn CcDashboard#theme_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_dashboard#theme_arn CcDashboard#theme_arn}
     */
     readonly themeArn?: string;
     /**
     * <p>A description for the first version of the dashboard being created.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_dashboard#version_description CcDashboard#version_description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_dashboard#version_description CcDashboard#version_description}
     */
     readonly versionDescription?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_dashboard awscc_quicksight_dashboard}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_dashboard awscc_quicksight_dashboard}
 */
 export class CcDashboard extends cdktn.TerraformResource {
 
@@ -89,7 +89,7 @@ export class CcDashboard extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcDashboard resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcDashboard to import
-    * @param importFromId The id of the existing CcDashboard that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_dashboard#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcDashboard that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_dashboard#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcDashboard to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -101,7 +101,7 @@ export class CcDashboard extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_dashboard awscc_quicksight_dashboard} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_dashboard awscc_quicksight_dashboard} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -111,7 +111,8 @@ export class CcDashboard extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_quicksight_dashboard',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -984,7 +985,7 @@ export function ccDashboardVersionPropertyToHclTerraform(struct?: CcDashboard.Ve
 export namespace CcDashboard {
 export interface AdHocFilteringOptionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_dashboard#availability_status CcDashboard#availability_status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_dashboard#availability_status CcDashboard#availability_status}
     */
     readonly availabilityStatus?: string;
 }
@@ -1048,7 +1049,7 @@ export class AdHocFilteringOptionPropertyOutputReference extends cdktn.ComplexOb
 }
 export interface ExportToCSVOptionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_dashboard#availability_status CcDashboard#availability_status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_dashboard#availability_status CcDashboard#availability_status}
     */
     readonly availabilityStatus?: string;
 }
@@ -1112,7 +1113,7 @@ export class ExportToCSVOptionPropertyOutputReference extends cdktn.ComplexObjec
 }
 export interface SheetControlsOptionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_dashboard#visibility_state CcDashboard#visibility_state}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_dashboard#visibility_state CcDashboard#visibility_state}
     */
     readonly visibilityState?: string;
 }
@@ -1178,19 +1179,19 @@ export interface DashboardPublishOptionsProperty {
     /**
     * <p>Ad hoc (one-time) filtering option.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_dashboard#ad_hoc_filtering_option CcDashboard#ad_hoc_filtering_option}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_dashboard#ad_hoc_filtering_option CcDashboard#ad_hoc_filtering_option}
     */
     readonly adHocFilteringOption?: AdHocFilteringOptionProperty;
     /**
     * <p>Export to .csv option.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_dashboard#export_to_csv_option CcDashboard#export_to_csv_option}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_dashboard#export_to_csv_option CcDashboard#export_to_csv_option}
     */
     readonly exportToCsvOption?: ExportToCSVOptionProperty;
     /**
     * <p>Sheet controls option.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_dashboard#sheet_controls_option CcDashboard#sheet_controls_option}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_dashboard#sheet_controls_option CcDashboard#sheet_controls_option}
     */
     readonly sheetControlsOption?: SheetControlsOptionProperty;
 }
@@ -1300,13 +1301,13 @@ export interface DateTimeParameterProperty {
     /**
     * <p>A display name for the date-time parameter.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_dashboard#name CcDashboard#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_dashboard#name CcDashboard#name}
     */
     readonly name?: string;
     /**
     * <p>The values for the date-time parameter.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_dashboard#values CcDashboard#values}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_dashboard#values CcDashboard#values}
     */
     readonly values?: string[];
 }
@@ -1416,13 +1417,13 @@ export interface DecimalParameterProperty {
     /**
     * <p>A display name for the decimal parameter.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_dashboard#name CcDashboard#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_dashboard#name CcDashboard#name}
     */
     readonly name?: string;
     /**
     * <p>The values for the decimal parameter.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_dashboard#values CcDashboard#values}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_dashboard#values CcDashboard#values}
     */
     readonly values?: number[];
 }
@@ -1532,13 +1533,13 @@ export interface IntegerParameterProperty {
     /**
     * <p>The name of the integer parameter.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_dashboard#name CcDashboard#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_dashboard#name CcDashboard#name}
     */
     readonly name?: string;
     /**
     * <p>The values for the integer parameter.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_dashboard#values CcDashboard#values}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_dashboard#values CcDashboard#values}
     */
     readonly values?: number[];
 }
@@ -1648,13 +1649,13 @@ export interface StringParameterProperty {
     /**
     * <p>A display name for a string parameter.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_dashboard#name CcDashboard#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_dashboard#name CcDashboard#name}
     */
     readonly name?: string;
     /**
     * <p>The values of a string parameter.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_dashboard#values CcDashboard#values}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_dashboard#values CcDashboard#values}
     */
     readonly values?: string[];
 }
@@ -1764,25 +1765,25 @@ export interface ParametersProperty {
     /**
     * <p>Date-time parameters.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_dashboard#date_time_parameters CcDashboard#date_time_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_dashboard#date_time_parameters CcDashboard#date_time_parameters}
     */
     readonly dateTimeParameters?: DateTimeParameterProperty[] | cdktn.IResolvable;
     /**
     * <p>Decimal parameters.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_dashboard#decimal_parameters CcDashboard#decimal_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_dashboard#decimal_parameters CcDashboard#decimal_parameters}
     */
     readonly decimalParameters?: DecimalParameterProperty[] | cdktn.IResolvable;
     /**
     * <p>Integer parameters.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_dashboard#integer_parameters CcDashboard#integer_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_dashboard#integer_parameters CcDashboard#integer_parameters}
     */
     readonly integerParameters?: IntegerParameterProperty[] | cdktn.IResolvable;
     /**
     * <p>String parameters.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_dashboard#string_parameters CcDashboard#string_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_dashboard#string_parameters CcDashboard#string_parameters}
     */
     readonly stringParameters?: StringParameterProperty[] | cdktn.IResolvable;
 }
@@ -1914,7 +1915,7 @@ export interface ResourcePermissionProperty {
     /**
     * <p>The IAM action to grant or revoke permissions on.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_dashboard#actions CcDashboard#actions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_dashboard#actions CcDashboard#actions}
     */
     readonly actions?: string[];
     /**
@@ -1934,7 +1935,7 @@ export interface ResourcePermissionProperty {
     *             </li>
     *          </ul>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_dashboard#principal CcDashboard#principal}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_dashboard#principal CcDashboard#principal}
     */
     readonly principal?: string;
 }
@@ -2044,13 +2045,13 @@ export interface DataSetReferenceProperty {
     /**
     * <p>Dataset Amazon Resource Name (ARN).</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_dashboard#data_set_arn CcDashboard#data_set_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_dashboard#data_set_arn CcDashboard#data_set_arn}
     */
     readonly dataSetArn?: string;
     /**
     * <p>Dataset placeholder.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_dashboard#data_set_placeholder CcDashboard#data_set_placeholder}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_dashboard#data_set_placeholder CcDashboard#data_set_placeholder}
     */
     readonly dataSetPlaceholder?: string;
 }
@@ -2160,13 +2161,13 @@ export interface DashboardSourceTemplateProperty {
     /**
     * <p>The Amazon Resource Name (ARN) of the resource.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_dashboard#arn CcDashboard#arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_dashboard#arn CcDashboard#arn}
     */
     readonly arn?: string;
     /**
     * <p>Dataset references.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_dashboard#data_set_references CcDashboard#data_set_references}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_dashboard#data_set_references CcDashboard#data_set_references}
     */
     readonly dataSetReferences?: DataSetReferenceProperty[] | cdktn.IResolvable;
 }
@@ -2254,7 +2255,7 @@ export interface DashboardSourceEntityProperty {
     /**
     * <p>Dashboard source template.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_dashboard#source_template CcDashboard#source_template}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_dashboard#source_template CcDashboard#source_template}
     */
     readonly sourceTemplate?: DashboardSourceTemplateProperty;
 }
@@ -2320,13 +2321,13 @@ export interface TagProperty {
     /**
     * <p>Tag key.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_dashboard#key CcDashboard#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_dashboard#key CcDashboard#key}
     */
     readonly key?: string;
     /**
     * <p>Tag value.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_dashboard#value CcDashboard#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_dashboard#value CcDashboard#value}
     */
     readonly value?: string;
 }

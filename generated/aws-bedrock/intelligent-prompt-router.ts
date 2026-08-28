@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_intelligent_prompt_router
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_intelligent_prompt_router
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,43 +9,43 @@ export interface CcIntelligentPromptRouterProps extends cdktn.TerraformMetaArgum
     /**
     * Description of the Prompt Router.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_intelligent_prompt_router#description CcIntelligentPromptRouter#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_intelligent_prompt_router#description CcIntelligentPromptRouter#description}
     */
     readonly description?: string;
     /**
     * Model configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_intelligent_prompt_router#fallback_model CcIntelligentPromptRouter#fallback_model}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_intelligent_prompt_router#fallback_model CcIntelligentPromptRouter#fallback_model}
     */
     readonly fallbackModel: CcIntelligentPromptRouter.PromptRouterTargetModelProperty;
     /**
     * List of model configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_intelligent_prompt_router#models CcIntelligentPromptRouter#models}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_intelligent_prompt_router#models CcIntelligentPromptRouter#models}
     */
     readonly models: CcIntelligentPromptRouter.ModelsProperty[] | cdktn.IResolvable;
     /**
     * Name of the Prompt Router.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_intelligent_prompt_router#prompt_router_name CcIntelligentPromptRouter#prompt_router_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_intelligent_prompt_router#prompt_router_name CcIntelligentPromptRouter#prompt_router_name}
     */
     readonly promptRouterName: string;
     /**
     * Represents the criteria used for routing requests.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_intelligent_prompt_router#routing_criteria CcIntelligentPromptRouter#routing_criteria}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_intelligent_prompt_router#routing_criteria CcIntelligentPromptRouter#routing_criteria}
     */
     readonly routingCriteria: CcIntelligentPromptRouter.RoutingCriteriaProperty;
     /**
     * List of Tags
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_intelligent_prompt_router#tags CcIntelligentPromptRouter#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_intelligent_prompt_router#tags CcIntelligentPromptRouter#tags}
     */
     readonly tags?: CcIntelligentPromptRouter.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_intelligent_prompt_router awscc_bedrock_intelligent_prompt_router}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_intelligent_prompt_router awscc_bedrock_intelligent_prompt_router}
 */
 export class CcIntelligentPromptRouter extends cdktn.TerraformResource {
 
@@ -61,7 +61,7 @@ export class CcIntelligentPromptRouter extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcIntelligentPromptRouter resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcIntelligentPromptRouter to import
-    * @param importFromId The id of the existing CcIntelligentPromptRouter that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_intelligent_prompt_router#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcIntelligentPromptRouter that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_intelligent_prompt_router#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcIntelligentPromptRouter to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -73,7 +73,7 @@ export class CcIntelligentPromptRouter extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_intelligent_prompt_router awscc_bedrock_intelligent_prompt_router} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_intelligent_prompt_router awscc_bedrock_intelligent_prompt_router} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -83,7 +83,8 @@ export class CcIntelligentPromptRouter extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_bedrock_intelligent_prompt_router',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -411,7 +412,7 @@ export interface PromptRouterTargetModelProperty {
     /**
     * Arn of underlying model which are added in the Prompt Router.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_intelligent_prompt_router#model_arn CcIntelligentPromptRouter#model_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_intelligent_prompt_router#model_arn CcIntelligentPromptRouter#model_arn}
     */
     readonly modelArn: string;
 }
@@ -474,7 +475,7 @@ export interface ModelsProperty {
     /**
     * Arn of underlying model which are added in the Prompt Router.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_intelligent_prompt_router#model_arn CcIntelligentPromptRouter#model_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_intelligent_prompt_router#model_arn CcIntelligentPromptRouter#model_arn}
     */
     readonly modelArn: string;
 }
@@ -557,7 +558,7 @@ export class ModelsPropertyList extends cdktn.ComplexList {
 }
 export interface RoutingCriteriaProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_intelligent_prompt_router#response_quality_difference CcIntelligentPromptRouter#response_quality_difference}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_intelligent_prompt_router#response_quality_difference CcIntelligentPromptRouter#response_quality_difference}
     */
     readonly responseQualityDifference: number;
 }
@@ -620,13 +621,13 @@ export interface TagProperty {
     /**
     * Tag Key
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_intelligent_prompt_router#key CcIntelligentPromptRouter#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_intelligent_prompt_router#key CcIntelligentPromptRouter#key}
     */
     readonly key?: string;
     /**
     * Tag Value
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_intelligent_prompt_router#value CcIntelligentPromptRouter#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_intelligent_prompt_router#value CcIntelligentPromptRouter#value}
     */
     readonly value?: string;
 }

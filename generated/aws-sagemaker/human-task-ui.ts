@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_human_task_ui
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_human_task_ui
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,25 +9,25 @@ export interface CcHumanTaskUiProps extends cdktn.TerraformMetaArguments {
     /**
     * The name of the human task user interface.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_human_task_ui#human_task_ui_name CcHumanTaskUi#human_task_ui_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_human_task_ui#human_task_ui_name CcHumanTaskUi#human_task_ui_name}
     */
     readonly humanTaskUiName: string;
     /**
     * An array of key-value pairs that contain metadata to help you categorize and organize a human review workflow user interface.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_human_task_ui#tags CcHumanTaskUi#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_human_task_ui#tags CcHumanTaskUi#tags}
     */
     readonly tags?: CcHumanTaskUi.TagProperty[] | cdktn.IResolvable;
     /**
     * The Liquid template for the worker user interface.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_human_task_ui#ui_template CcHumanTaskUi#ui_template}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_human_task_ui#ui_template CcHumanTaskUi#ui_template}
     */
     readonly uiTemplate?: CcHumanTaskUi.UiTemplateProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_human_task_ui awscc_sagemaker_human_task_ui}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_human_task_ui awscc_sagemaker_human_task_ui}
 */
 export class CcHumanTaskUi extends cdktn.TerraformResource {
 
@@ -43,7 +43,7 @@ export class CcHumanTaskUi extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcHumanTaskUi resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcHumanTaskUi to import
-    * @param importFromId The id of the existing CcHumanTaskUi that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_human_task_ui#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcHumanTaskUi that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_human_task_ui#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcHumanTaskUi to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -55,7 +55,7 @@ export class CcHumanTaskUi extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_human_task_ui awscc_sagemaker_human_task_ui} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_human_task_ui awscc_sagemaker_human_task_ui} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -65,7 +65,8 @@ export class CcHumanTaskUi extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_sagemaker_human_task_ui',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -255,13 +256,13 @@ export interface TagProperty {
     /**
     * The tag key.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_human_task_ui#key CcHumanTaskUi#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_human_task_ui#key CcHumanTaskUi#key}
     */
     readonly key?: string;
     /**
     * The tag value.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_human_task_ui#value CcHumanTaskUi#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_human_task_ui#value CcHumanTaskUi#value}
     */
     readonly value?: string;
 }
@@ -371,7 +372,7 @@ export interface UiTemplateProperty {
     /**
     * The content of the Liquid template for the worker user interface.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_human_task_ui#content CcHumanTaskUi#content}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_human_task_ui#content CcHumanTaskUi#content}
     */
     readonly content?: string;
 }

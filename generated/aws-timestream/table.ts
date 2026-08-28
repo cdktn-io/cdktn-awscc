@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/timestream_table
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/timestream_table
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,43 +9,43 @@ export interface CcTableProps extends cdktn.TerraformMetaArguments {
     /**
     * The name for the database which the table to be created belongs to.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/timestream_table#database_name CcTable#database_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/timestream_table#database_name CcTable#database_name}
     */
     readonly databaseName: string;
     /**
     * The properties that determine whether magnetic store writes are enabled.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/timestream_table#magnetic_store_write_properties CcTable#magnetic_store_write_properties}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/timestream_table#magnetic_store_write_properties CcTable#magnetic_store_write_properties}
     */
     readonly magneticStoreWriteProperties?: CcTable.MagneticStoreWritePropertiesProperty;
     /**
     * The retention duration of the memory store and the magnetic store.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/timestream_table#retention_properties CcTable#retention_properties}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/timestream_table#retention_properties CcTable#retention_properties}
     */
     readonly retentionProperties?: CcTable.RetentionPropertiesProperty;
     /**
     * A Schema specifies the expected data model of the table.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/timestream_table#schema CcTable#schema}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/timestream_table#schema CcTable#schema}
     */
     readonly schema?: CcTable.SchemaProperty;
     /**
     * The name for the table. If you don't specify a name, AWS CloudFormation generates a unique physical ID and uses that ID for the table name.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/timestream_table#table_name CcTable#table_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/timestream_table#table_name CcTable#table_name}
     */
     readonly tableName?: string;
     /**
     * An array of key-value pairs to apply to this resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/timestream_table#tags CcTable#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/timestream_table#tags CcTable#tags}
     */
     readonly tags?: CcTable.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/timestream_table awscc_timestream_table}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/timestream_table awscc_timestream_table}
 */
 export class CcTable extends cdktn.TerraformResource {
 
@@ -61,7 +61,7 @@ export class CcTable extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcTable resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcTable to import
-    * @param importFromId The id of the existing CcTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/timestream_table#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/timestream_table#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcTable to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -73,7 +73,7 @@ export class CcTable extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/timestream_table awscc_timestream_table} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/timestream_table awscc_timestream_table} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -83,7 +83,8 @@ export class CcTable extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_timestream_table',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -544,25 +545,25 @@ export interface S3ConfigurationProperty {
     /**
     * The bucket name used to store the data.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/timestream_table#bucket_name CcTable#bucket_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/timestream_table#bucket_name CcTable#bucket_name}
     */
     readonly bucketName?: string;
     /**
     * Either SSE_KMS or SSE_S3.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/timestream_table#encryption_option CcTable#encryption_option}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/timestream_table#encryption_option CcTable#encryption_option}
     */
     readonly encryptionOption?: string;
     /**
     * Must be provided if SSE_KMS is specified as the encryption option
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/timestream_table#kms_key_id CcTable#kms_key_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/timestream_table#kms_key_id CcTable#kms_key_id}
     */
     readonly kmsKeyId?: string;
     /**
     * String used to prefix all data in the bucket.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/timestream_table#object_key_prefix CcTable#object_key_prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/timestream_table#object_key_prefix CcTable#object_key_prefix}
     */
     readonly objectKeyPrefix?: string;
 }
@@ -694,7 +695,7 @@ export interface MagneticStoreRejectedDataLocationProperty {
     /**
     * S3 configuration for location to store rejections from magnetic store writes
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/timestream_table#s3_configuration CcTable#s3_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/timestream_table#s3_configuration CcTable#s3_configuration}
     */
     readonly s3Configuration?: S3ConfigurationProperty;
 }
@@ -760,13 +761,13 @@ export interface MagneticStoreWritePropertiesProperty {
     /**
     * Boolean flag indicating whether magnetic store writes are enabled.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/timestream_table#enable_magnetic_store_writes CcTable#enable_magnetic_store_writes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/timestream_table#enable_magnetic_store_writes CcTable#enable_magnetic_store_writes}
     */
     readonly enableMagneticStoreWrites?: boolean | cdktn.IResolvable;
     /**
     * Location to store information about records that were asynchronously rejected during magnetic store writes.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/timestream_table#magnetic_store_rejected_data_location CcTable#magnetic_store_rejected_data_location}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/timestream_table#magnetic_store_rejected_data_location CcTable#magnetic_store_rejected_data_location}
     */
     readonly magneticStoreRejectedDataLocation?: MagneticStoreRejectedDataLocationProperty;
 }
@@ -854,13 +855,13 @@ export interface RetentionPropertiesProperty {
     /**
     * The duration for which data must be stored in the magnetic store.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/timestream_table#magnetic_store_retention_period_in_days CcTable#magnetic_store_retention_period_in_days}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/timestream_table#magnetic_store_retention_period_in_days CcTable#magnetic_store_retention_period_in_days}
     */
     readonly magneticStoreRetentionPeriodInDays?: string;
     /**
     * The duration for which data must be stored in the memory store.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/timestream_table#memory_store_retention_period_in_hours CcTable#memory_store_retention_period_in_hours}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/timestream_table#memory_store_retention_period_in_hours CcTable#memory_store_retention_period_in_hours}
     */
     readonly memoryStoreRetentionPeriodInHours?: string;
 }
@@ -948,19 +949,19 @@ export interface PartitionKeyProperty {
     /**
     * The level of enforcement for the specification of a dimension key in ingested records. Options are REQUIRED (dimension key must be specified) and OPTIONAL (dimension key does not have to be specified).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/timestream_table#enforcement_in_record CcTable#enforcement_in_record}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/timestream_table#enforcement_in_record CcTable#enforcement_in_record}
     */
     readonly enforcementInRecord?: string;
     /**
     * The name of the attribute used for a dimension key.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/timestream_table#name CcTable#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/timestream_table#name CcTable#name}
     */
     readonly name?: string;
     /**
     * The type of the partition key. Options are DIMENSION (dimension key) and MEASURE (measure key).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/timestream_table#type CcTable#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/timestream_table#type CcTable#type}
     */
     readonly type?: string;
 }
@@ -1092,7 +1093,7 @@ export interface SchemaProperty {
     /**
     * A list of partition keys defining the attributes used to partition the table data. The order of the list determines the partition hierarchy. The name and type of each partition key as well as the partition key order cannot be changed after the table is created. However, the enforcement level of each partition key can be changed.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/timestream_table#composite_partition_key CcTable#composite_partition_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/timestream_table#composite_partition_key CcTable#composite_partition_key}
     */
     readonly compositePartitionKey?: PartitionKeyProperty[] | cdktn.IResolvable;
 }
@@ -1156,11 +1157,11 @@ export class SchemaPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/timestream_table#key CcTable#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/timestream_table#key CcTable#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/timestream_table#value CcTable#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/timestream_table#value CcTable#value}
     */
     readonly value?: string;
 }

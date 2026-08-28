@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_evaluator
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_evaluator
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,43 +9,43 @@ export interface CcEvaluatorProps extends cdktn.TerraformMetaArguments {
     /**
     * The description of the evaluator.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_evaluator#description CcEvaluator#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_evaluator#description CcEvaluator#description}
     */
     readonly description?: string;
     /**
     * The configuration for the evaluator.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_evaluator#evaluator_config CcEvaluator#evaluator_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_evaluator#evaluator_config CcEvaluator#evaluator_config}
     */
     readonly evaluatorConfig: CcEvaluator.EvaluatorConfigProperty;
     /**
     * The name of the evaluator. Must be unique within your account.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_evaluator#evaluator_name CcEvaluator#evaluator_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_evaluator#evaluator_name CcEvaluator#evaluator_name}
     */
     readonly evaluatorName: string;
     /**
     * The ARN of the KMS key used to encrypt evaluator data.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_evaluator#kms_key_arn CcEvaluator#kms_key_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_evaluator#kms_key_arn CcEvaluator#kms_key_arn}
     */
     readonly kmsKeyArn?: string;
     /**
     * The evaluation level that determines the scope of evaluation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_evaluator#level CcEvaluator#level}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_evaluator#level CcEvaluator#level}
     */
     readonly level: string;
     /**
     * A list of tags to assign to the evaluator.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_evaluator#tags CcEvaluator#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_evaluator#tags CcEvaluator#tags}
     */
     readonly tags?: CcEvaluator.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_evaluator awscc_bedrockagentcore_evaluator}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_evaluator awscc_bedrockagentcore_evaluator}
 */
 export class CcEvaluator extends cdktn.TerraformResource {
 
@@ -61,7 +61,7 @@ export class CcEvaluator extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcEvaluator resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcEvaluator to import
-    * @param importFromId The id of the existing CcEvaluator that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_evaluator#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcEvaluator that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_evaluator#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcEvaluator to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -73,7 +73,7 @@ export class CcEvaluator extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_evaluator awscc_bedrockagentcore_evaluator} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_evaluator awscc_bedrockagentcore_evaluator} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -83,7 +83,8 @@ export class CcEvaluator extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_bedrockagentcore_evaluator',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -803,13 +804,13 @@ export interface LambdaEvaluatorConfigProperty {
     /**
     * The ARN of the Lambda function used for evaluation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_evaluator#lambda_arn CcEvaluator#lambda_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_evaluator#lambda_arn CcEvaluator#lambda_arn}
     */
     readonly lambdaArn?: string;
     /**
     * The timeout in seconds for the Lambda function invocation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_evaluator#lambda_timeout_in_seconds CcEvaluator#lambda_timeout_in_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_evaluator#lambda_timeout_in_seconds CcEvaluator#lambda_timeout_in_seconds}
     */
     readonly lambdaTimeoutInSeconds?: number;
 }
@@ -897,7 +898,7 @@ export interface CodeBasedEvaluatorConfigProperty {
     /**
     * The Lambda function configuration for code-based evaluation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_evaluator#lambda_config CcEvaluator#lambda_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_evaluator#lambda_config CcEvaluator#lambda_config}
     */
     readonly lambdaConfig?: LambdaEvaluatorConfigProperty;
 }
@@ -963,19 +964,19 @@ export interface InferenceConfigurationProperty {
     /**
     * The maximum number of tokens to generate in the model response.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_evaluator#max_tokens CcEvaluator#max_tokens}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_evaluator#max_tokens CcEvaluator#max_tokens}
     */
     readonly maxTokens?: number;
     /**
     * The temperature value that controls randomness in the model's responses.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_evaluator#temperature CcEvaluator#temperature}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_evaluator#temperature CcEvaluator#temperature}
     */
     readonly temperature?: number;
     /**
     * The top-p sampling parameter that controls the diversity of the model's responses.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_evaluator#top_p CcEvaluator#top_p}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_evaluator#top_p CcEvaluator#top_p}
     */
     readonly topP?: number;
 }
@@ -1085,19 +1086,19 @@ export interface BedrockEvaluatorModelConfigProperty {
     /**
     * Additional model-specific request fields.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_evaluator#additional_model_request_fields CcEvaluator#additional_model_request_fields}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_evaluator#additional_model_request_fields CcEvaluator#additional_model_request_fields}
     */
     readonly additionalModelRequestFields?: string;
     /**
     * The inference configuration parameters that control model behavior during evaluation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_evaluator#inference_config CcEvaluator#inference_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_evaluator#inference_config CcEvaluator#inference_config}
     */
     readonly inferenceConfig?: InferenceConfigurationProperty;
     /**
     * The identifier of the Amazon Bedrock model to use for evaluation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_evaluator#model_id CcEvaluator#model_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_evaluator#model_id CcEvaluator#model_id}
     */
     readonly modelId?: string;
 }
@@ -1207,7 +1208,7 @@ export interface ReasoningConfigurationProperty {
     /**
     * The level of reasoning effort the model applies.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_evaluator#effort CcEvaluator#effort}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_evaluator#effort CcEvaluator#effort}
     */
     readonly effort?: string;
 }
@@ -1273,31 +1274,31 @@ export interface OpenResponsesEvaluatorModelConfigProperty {
     /**
     * The maximum number of output tokens to generate, including visible output and reasoning tokens.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_evaluator#max_output_tokens CcEvaluator#max_output_tokens}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_evaluator#max_output_tokens CcEvaluator#max_output_tokens}
     */
     readonly maxOutputTokens?: number;
     /**
     * The identifier of the model to use for evaluation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_evaluator#model_id CcEvaluator#model_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_evaluator#model_id CcEvaluator#model_id}
     */
     readonly modelId?: string;
     /**
     * The reasoning configuration for reasoning models.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_evaluator#reasoning CcEvaluator#reasoning}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_evaluator#reasoning CcEvaluator#reasoning}
     */
     readonly reasoning?: ReasoningConfigurationProperty;
     /**
     * The sampling temperature between 0 and 2.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_evaluator#temperature CcEvaluator#temperature}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_evaluator#temperature CcEvaluator#temperature}
     */
     readonly temperature?: number;
     /**
     * The nucleus sampling probability mass between 0 and 1.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_evaluator#top_p CcEvaluator#top_p}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_evaluator#top_p CcEvaluator#top_p}
     */
     readonly topP?: number;
 }
@@ -1451,13 +1452,13 @@ export interface EvaluatorModelConfigProperty {
     /**
     * The configuration for using Amazon Bedrock models in evaluator assessments.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_evaluator#bedrock_evaluator_model_config CcEvaluator#bedrock_evaluator_model_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_evaluator#bedrock_evaluator_model_config CcEvaluator#bedrock_evaluator_model_config}
     */
     readonly bedrockEvaluatorModelConfig?: BedrockEvaluatorModelConfigProperty;
     /**
     * The configuration for using OpenResponses-compatible models in evaluator assessments.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_evaluator#responses_evaluator_model_config CcEvaluator#responses_evaluator_model_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_evaluator#responses_evaluator_model_config CcEvaluator#responses_evaluator_model_config}
     */
     readonly responsesEvaluatorModelConfig?: OpenResponsesEvaluatorModelConfigProperty;
 }
@@ -1545,13 +1546,13 @@ export interface CategoricalScaleDefinitionProperty {
     /**
     * The description that explains what this categorical rating represents.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_evaluator#definition CcEvaluator#definition}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_evaluator#definition CcEvaluator#definition}
     */
     readonly definition?: string;
     /**
     * The label of this categorical rating option.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_evaluator#label CcEvaluator#label}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_evaluator#label CcEvaluator#label}
     */
     readonly label?: string;
 }
@@ -1661,19 +1662,19 @@ export interface NumericalScaleDefinitionProperty {
     /**
     * The description that explains what this numerical rating represents.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_evaluator#definition CcEvaluator#definition}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_evaluator#definition CcEvaluator#definition}
     */
     readonly definition?: string;
     /**
     * The label that describes this numerical rating option.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_evaluator#label CcEvaluator#label}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_evaluator#label CcEvaluator#label}
     */
     readonly label?: string;
     /**
     * The numerical value for this rating scale option.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_evaluator#value CcEvaluator#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_evaluator#value CcEvaluator#value}
     */
     readonly value?: number;
 }
@@ -1803,11 +1804,11 @@ export class NumericalScaleDefinitionPropertyList extends cdktn.ComplexList {
 }
 export interface RatingScaleProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_evaluator#categorical CcEvaluator#categorical}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_evaluator#categorical CcEvaluator#categorical}
     */
     readonly categorical?: CategoricalScaleDefinitionProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_evaluator#numerical CcEvaluator#numerical}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_evaluator#numerical CcEvaluator#numerical}
     */
     readonly numerical?: NumericalScaleDefinitionProperty[] | cdktn.IResolvable;
 }
@@ -1895,19 +1896,19 @@ export interface LlmAsAJudgeEvaluatorConfigProperty {
     /**
     * The evaluation instructions that guide the language model in assessing agent performance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_evaluator#instructions CcEvaluator#instructions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_evaluator#instructions CcEvaluator#instructions}
     */
     readonly instructions?: string;
     /**
     * The model configuration that specifies which foundation model to use for evaluation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_evaluator#model_config CcEvaluator#model_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_evaluator#model_config CcEvaluator#model_config}
     */
     readonly modelConfig?: EvaluatorModelConfigProperty;
     /**
     * The rating scale that defines how evaluators should score agent performance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_evaluator#rating_scale CcEvaluator#rating_scale}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_evaluator#rating_scale CcEvaluator#rating_scale}
     */
     readonly ratingScale?: RatingScaleProperty;
 }
@@ -2017,13 +2018,13 @@ export interface EvaluatorConfigProperty {
     /**
     * The configuration for code-based evaluation using a Lambda function.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_evaluator#code_based CcEvaluator#code_based}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_evaluator#code_based CcEvaluator#code_based}
     */
     readonly codeBased?: CodeBasedEvaluatorConfigProperty;
     /**
     * The configuration for LLM-as-a-Judge evaluation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_evaluator#llm_as_a_judge CcEvaluator#llm_as_a_judge}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_evaluator#llm_as_a_judge CcEvaluator#llm_as_a_judge}
     */
     readonly llmAsAJudge?: LlmAsAJudgeEvaluatorConfigProperty;
 }
@@ -2109,11 +2110,11 @@ export class EvaluatorConfigPropertyOutputReference extends cdktn.ComplexObject 
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_evaluator#key CcEvaluator#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_evaluator#key CcEvaluator#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_evaluator#value CcEvaluator#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_evaluator#value CcEvaluator#value}
     */
     readonly value?: string;
 }

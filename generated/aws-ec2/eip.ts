@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_eip
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_eip
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,60 +9,60 @@ export interface CcEIPProps extends cdktn.TerraformMetaArguments {
     /**
     * An Elastic IP address or a carrier IP address in a Wavelength Zone.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_eip#address CcEIP#address}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_eip#address CcEIP#address}
     */
     readonly address?: string;
     /**
     * The network (``vpc``).
     *  If you define an Elastic IP address and associate it with a VPC that is defined in the same template, you must declare a dependency on the VPC-gateway attachment by using the [DependsOn Attribute](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-attribute-dependson.html) on this resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_eip#domain CcEIP#domain}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_eip#domain CcEIP#domain}
     */
     readonly domain?: string;
     /**
     * The ID of the instance.
     *   Updates to the ``InstanceId`` property may require *some interruptions*. Updates on an EIP reassociates the address on its associated resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_eip#instance_id CcEIP#instance_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_eip#instance_id CcEIP#instance_id}
     */
     readonly instanceId?: string;
     /**
     * The ID of an IPAM pool which has an Amazon-provided or BYOIP public IPv4 CIDR provisioned to it. For more information, see [Allocate sequential Elastic IP addresses from an IPAM pool](https://docs.aws.amazon.com/vpc/latest/ipam/tutorials-eip-pool.html) in the *Amazon VPC IPAM User Guide*.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_eip#ipam_pool_id CcEIP#ipam_pool_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_eip#ipam_pool_id CcEIP#ipam_pool_id}
     */
     readonly ipamPoolId?: string;
     /**
     * A unique set of Availability Zones, Local Zones, or Wavelength Zones from which AWS advertises IP addresses. Use this parameter to limit the IP address to this location. IP addresses cannot move between network border groups.
     *  Use [DescribeAvailabilityZones](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeAvailabilityZones.html) to view the network border groups.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_eip#network_border_group CcEIP#network_border_group}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_eip#network_border_group CcEIP#network_border_group}
     */
     readonly networkBorderGroup?: string;
     /**
     * The ID of an address pool that you own. Use this parameter to let Amazon EC2 select an address from the address pool.
     *   Updates to the ``PublicIpv4Pool`` property may require *some interruptions*. Updates on an EIP reassociates the address on its associated resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_eip#public_ipv_4_pool CcEIP#public_ipv_4_pool}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_eip#public_ipv_4_pool CcEIP#public_ipv_4_pool}
     */
     readonly publicIpv4Pool?: string;
     /**
     * Any tags assigned to the Elastic IP address.
     *   Updates to the ``Tags`` property may require *some interruptions*. Updates on an EIP reassociates the address on its associated resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_eip#tags CcEIP#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_eip#tags CcEIP#tags}
     */
     readonly tags?: CcEIP.TagProperty[] | cdktn.IResolvable;
     /**
     * The Elastic IP address you are accepting for transfer. You can only accept one transferred address. For more information on Elastic IP address transfers, see [Transfer Elastic IP addresses](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-eips.html#transfer-EIPs-intro) in the *Amazon Virtual Private Cloud User Guide*.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_eip#transfer_address CcEIP#transfer_address}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_eip#transfer_address CcEIP#transfer_address}
     */
     readonly transferAddress?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_eip awscc_ec2_eip}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_eip awscc_ec2_eip}
 */
 export class CcEIP extends cdktn.TerraformResource {
 
@@ -78,7 +78,7 @@ export class CcEIP extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcEIP resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcEIP to import
-    * @param importFromId The id of the existing CcEIP that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_eip#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcEIP that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_eip#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcEIP to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -90,7 +90,7 @@ export class CcEIP extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_eip awscc_ec2_eip} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_eip awscc_ec2_eip} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -100,7 +100,8 @@ export class CcEIP extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_ec2_eip',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -383,13 +384,13 @@ export interface TagProperty {
     /**
     * The tag key.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_eip#key CcEIP#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_eip#key CcEIP#key}
     */
     readonly key?: string;
     /**
     * The tag value.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_eip#value CcEIP#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_eip#value CcEIP#value}
     */
     readonly value?: string;
 }

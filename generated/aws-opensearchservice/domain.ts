@@ -1,123 +1,123 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcDomainProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#access_policies CcDomain#access_policies}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#access_policies CcDomain#access_policies}
     */
     readonly accessPolicies?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#advanced_options CcDomain#advanced_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#advanced_options CcDomain#advanced_options}
     */
     readonly advancedOptions?: { [key: string]: string };
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#advanced_security_options CcDomain#advanced_security_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#advanced_security_options CcDomain#advanced_security_options}
     */
     readonly advancedSecurityOptions?: CcDomain.AdvancedSecurityOptionsInputProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#aiml_options CcDomain#aiml_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#aiml_options CcDomain#aiml_options}
     */
     readonly aimlOptions?: CcDomain.AIMLOptionsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#automated_snapshot_pause_options CcDomain#automated_snapshot_pause_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#automated_snapshot_pause_options CcDomain#automated_snapshot_pause_options}
     */
     readonly automatedSnapshotPauseOptions?: CcDomain.AutomatedSnapshotPauseOptionsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#cluster_config CcDomain#cluster_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#cluster_config CcDomain#cluster_config}
     */
     readonly clusterConfig?: CcDomain.ClusterConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#cognito_options CcDomain#cognito_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#cognito_options CcDomain#cognito_options}
     */
     readonly cognitoOptions?: CcDomain.CognitoOptionsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#deployment_strategy_options CcDomain#deployment_strategy_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#deployment_strategy_options CcDomain#deployment_strategy_options}
     */
     readonly deploymentStrategyOptions?: CcDomain.DeploymentStrategyOptionsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#domain_endpoint_options CcDomain#domain_endpoint_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#domain_endpoint_options CcDomain#domain_endpoint_options}
     */
     readonly domainEndpointOptions?: CcDomain.DomainEndpointOptionsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#domain_name CcDomain#domain_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#domain_name CcDomain#domain_name}
     */
     readonly domainName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#ebs_options CcDomain#ebs_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#ebs_options CcDomain#ebs_options}
     */
     readonly ebsOptions?: CcDomain.EBSOptionsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#encryption_at_rest_options CcDomain#encryption_at_rest_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#encryption_at_rest_options CcDomain#encryption_at_rest_options}
     */
     readonly encryptionAtRestOptions?: CcDomain.EncryptionAtRestOptionsProperty;
     /**
     * The engine mode of the domain. Determines whether the domain runs the standard (GENERAL) engine or the optimized multi-engine (OPTIMIZED) engine. This value cannot be changed after the domain is created.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#engine_mode CcDomain#engine_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#engine_mode CcDomain#engine_mode}
     */
     readonly engineMode?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#engine_version CcDomain#engine_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#engine_version CcDomain#engine_version}
     */
     readonly engineVersion?: string;
     /**
     * Options for configuring Identity Center
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#identity_center_options CcDomain#identity_center_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#identity_center_options CcDomain#identity_center_options}
     */
     readonly identityCenterOptions?: CcDomain.IdentityCenterOptionsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#ip_address_type CcDomain#ip_address_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#ip_address_type CcDomain#ip_address_type}
     */
     readonly ipAddressType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#log_publishing_options CcDomain#log_publishing_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#log_publishing_options CcDomain#log_publishing_options}
     */
     readonly logPublishingOptions?: { [key: string]: CcDomain.LogPublishingOptionProperty } | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#node_to_node_encryption_options CcDomain#node_to_node_encryption_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#node_to_node_encryption_options CcDomain#node_to_node_encryption_options}
     */
     readonly nodeToNodeEncryptionOptions?: CcDomain.NodeToNodeEncryptionOptionsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#off_peak_window_options CcDomain#off_peak_window_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#off_peak_window_options CcDomain#off_peak_window_options}
     */
     readonly offPeakWindowOptions?: CcDomain.OffPeakWindowOptionsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#skip_shard_migration_wait CcDomain#skip_shard_migration_wait}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#skip_shard_migration_wait CcDomain#skip_shard_migration_wait}
     */
     readonly skipShardMigrationWait?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#snapshot_options CcDomain#snapshot_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#snapshot_options CcDomain#snapshot_options}
     */
     readonly snapshotOptions?: CcDomain.SnapshotOptionsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#software_update_options CcDomain#software_update_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#software_update_options CcDomain#software_update_options}
     */
     readonly softwareUpdateOptions?: CcDomain.SoftwareUpdateOptionsProperty;
     /**
     * An arbitrary set of tags (key-value pairs) for this Domain.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#tags CcDomain#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#tags CcDomain#tags}
     */
     readonly tags?: CcDomain.TagProperty[] | cdktn.IResolvable;
     /**
     * The primary use case of the domain. Determines the default configuration tuned for the workload. For GENERAL engine-mode domains, this value can be changed after creation. For OPTIMIZED engine-mode domains, this value cannot be changed after creation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#use_case CcDomain#use_case}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#use_case CcDomain#use_case}
     */
     readonly useCase?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#vpc_options CcDomain#vpc_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#vpc_options CcDomain#vpc_options}
     */
     readonly vpcOptions?: CcDomain.VPCOptionsProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain awscc_opensearchservice_domain}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain awscc_opensearchservice_domain}
 */
 export class CcDomain extends cdktn.TerraformResource {
 
@@ -133,7 +133,7 @@ export class CcDomain extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcDomain resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcDomain to import
-    * @param importFromId The id of the existing CcDomain that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcDomain that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcDomain to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -145,7 +145,7 @@ export class CcDomain extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain awscc_opensearchservice_domain} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain awscc_opensearchservice_domain} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -155,7 +155,8 @@ export class CcDomain extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_opensearchservice_domain',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -2175,15 +2176,15 @@ export function ccDomainVPCOptionsPropertyToHclTerraform(struct?: CcDomain.VPCOp
 export namespace CcDomain {
 export interface IAMFederationOptionsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#enabled CcDomain#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#enabled CcDomain#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#roles_key CcDomain#roles_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#roles_key CcDomain#roles_key}
     */
     readonly rolesKey?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#subject_key CcDomain#subject_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#subject_key CcDomain#subject_key}
     */
     readonly subjectKey?: string;
 }
@@ -2291,19 +2292,19 @@ export class IAMFederationOptionsPropertyOutputReference extends cdktn.ComplexOb
 }
 export interface JWTOptionsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#enabled CcDomain#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#enabled CcDomain#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#public_key CcDomain#public_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#public_key CcDomain#public_key}
     */
     readonly publicKey?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#roles_key CcDomain#roles_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#roles_key CcDomain#roles_key}
     */
     readonly rolesKey?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#subject_key CcDomain#subject_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#subject_key CcDomain#subject_key}
     */
     readonly subjectKey?: string;
 }
@@ -2433,15 +2434,15 @@ export class JWTOptionsPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface MasterUserOptionsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#master_user_arn CcDomain#master_user_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#master_user_arn CcDomain#master_user_arn}
     */
     readonly masterUserArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#master_user_name CcDomain#master_user_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#master_user_name CcDomain#master_user_name}
     */
     readonly masterUserName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#master_user_password CcDomain#master_user_password}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#master_user_password CcDomain#master_user_password}
     */
     readonly masterUserPassword?: string;
 }
@@ -2549,11 +2550,11 @@ export class MasterUserOptionsPropertyOutputReference extends cdktn.ComplexObjec
 }
 export interface IdpProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#entity_id CcDomain#entity_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#entity_id CcDomain#entity_id}
     */
     readonly entityId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#metadata_content CcDomain#metadata_content}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#metadata_content CcDomain#metadata_content}
     */
     readonly metadataContent?: string;
 }
@@ -2639,31 +2640,31 @@ export class IdpPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface SAMLOptionsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#enabled CcDomain#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#enabled CcDomain#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#idp CcDomain#idp}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#idp CcDomain#idp}
     */
     readonly idp?: IdpProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#master_backend_role CcDomain#master_backend_role}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#master_backend_role CcDomain#master_backend_role}
     */
     readonly masterBackendRole?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#master_user_name CcDomain#master_user_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#master_user_name CcDomain#master_user_name}
     */
     readonly masterUserName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#roles_key CcDomain#roles_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#roles_key CcDomain#roles_key}
     */
     readonly rolesKey?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#session_timeout_minutes CcDomain#session_timeout_minutes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#session_timeout_minutes CcDomain#session_timeout_minutes}
     */
     readonly sessionTimeoutMinutes?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#subject_key CcDomain#subject_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#subject_key CcDomain#subject_key}
     */
     readonly subjectKey?: string;
 }
@@ -2859,31 +2860,31 @@ export class SAMLOptionsPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface AdvancedSecurityOptionsInputProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#anonymous_auth_enabled CcDomain#anonymous_auth_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#anonymous_auth_enabled CcDomain#anonymous_auth_enabled}
     */
     readonly anonymousAuthEnabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#enabled CcDomain#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#enabled CcDomain#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#iam_federation_options CcDomain#iam_federation_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#iam_federation_options CcDomain#iam_federation_options}
     */
     readonly iamFederationOptions?: IAMFederationOptionsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#internal_user_database_enabled CcDomain#internal_user_database_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#internal_user_database_enabled CcDomain#internal_user_database_enabled}
     */
     readonly internalUserDatabaseEnabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#jwt_options CcDomain#jwt_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#jwt_options CcDomain#jwt_options}
     */
     readonly jwtOptions?: JWTOptionsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#master_user_options CcDomain#master_user_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#master_user_options CcDomain#master_user_options}
     */
     readonly masterUserOptions?: MasterUserOptionsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#saml_options CcDomain#saml_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#saml_options CcDomain#saml_options}
     */
     readonly samlOptions?: SAMLOptionsProperty;
 }
@@ -3086,7 +3087,7 @@ export interface S3VectorsEngineProperty {
     /**
     * Whether to enable S3 vectors engine.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#enabled CcDomain#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#enabled CcDomain#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -3152,7 +3153,7 @@ export interface ServerlessVectorAccelerationProperty {
     /**
     * Whether to enable serverless vector acceleration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#enabled CcDomain#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#enabled CcDomain#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -3216,11 +3217,11 @@ export class ServerlessVectorAccelerationPropertyOutputReference extends cdktn.C
 }
 export interface AIMLOptionsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#s3_vectors_engine CcDomain#s3_vectors_engine}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#s3_vectors_engine CcDomain#s3_vectors_engine}
     */
     readonly s3VectorsEngine?: S3VectorsEngineProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#serverless_vector_acceleration CcDomain#serverless_vector_acceleration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#serverless_vector_acceleration CcDomain#serverless_vector_acceleration}
     */
     readonly serverlessVectorAcceleration?: ServerlessVectorAccelerationProperty;
 }
@@ -3306,15 +3307,15 @@ export class AIMLOptionsPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface AutomatedSnapshotPauseOptionsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#enabled CcDomain#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#enabled CcDomain#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#end_time CcDomain#end_time}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#end_time CcDomain#end_time}
     */
     readonly endTime?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#start_time CcDomain#start_time}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#start_time CcDomain#start_time}
     */
     readonly startTime?: string;
 }
@@ -3422,7 +3423,7 @@ export class AutomatedSnapshotPauseOptionsPropertyOutputReference extends cdktn.
 }
 export interface ColdStorageOptionsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#enabled CcDomain#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#enabled CcDomain#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -3486,15 +3487,15 @@ export class ColdStorageOptionsPropertyOutputReference extends cdktn.ComplexObje
 }
 export interface NodeConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#count CcDomain#count}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#count CcDomain#count}
     */
     readonly count?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#enabled CcDomain#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#enabled CcDomain#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#type CcDomain#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#type CcDomain#type}
     */
     readonly type?: string;
 }
@@ -3602,11 +3603,11 @@ export class NodeConfigPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface NodeOptionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#node_config CcDomain#node_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#node_config CcDomain#node_config}
     */
     readonly nodeConfig?: NodeConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#node_type CcDomain#node_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#node_type CcDomain#node_type}
     */
     readonly nodeType?: string;
 }
@@ -3714,7 +3715,7 @@ export class NodeOptionPropertyList extends cdktn.ComplexList {
 }
 export interface ZoneAwarenessConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#availability_zone_count CcDomain#availability_zone_count}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#availability_zone_count CcDomain#availability_zone_count}
     */
     readonly availabilityZoneCount?: number;
 }
@@ -3778,55 +3779,55 @@ export class ZoneAwarenessConfigPropertyOutputReference extends cdktn.ComplexObj
 }
 export interface ClusterConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#cold_storage_options CcDomain#cold_storage_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#cold_storage_options CcDomain#cold_storage_options}
     */
     readonly coldStorageOptions?: ColdStorageOptionsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#dedicated_master_count CcDomain#dedicated_master_count}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#dedicated_master_count CcDomain#dedicated_master_count}
     */
     readonly dedicatedMasterCount?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#dedicated_master_enabled CcDomain#dedicated_master_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#dedicated_master_enabled CcDomain#dedicated_master_enabled}
     */
     readonly dedicatedMasterEnabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#dedicated_master_type CcDomain#dedicated_master_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#dedicated_master_type CcDomain#dedicated_master_type}
     */
     readonly dedicatedMasterType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#instance_count CcDomain#instance_count}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#instance_count CcDomain#instance_count}
     */
     readonly instanceCount?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#instance_type CcDomain#instance_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#instance_type CcDomain#instance_type}
     */
     readonly instanceType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#multi_az_with_standby_enabled CcDomain#multi_az_with_standby_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#multi_az_with_standby_enabled CcDomain#multi_az_with_standby_enabled}
     */
     readonly multiAzWithStandbyEnabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#node_options CcDomain#node_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#node_options CcDomain#node_options}
     */
     readonly nodeOptions?: NodeOptionProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#warm_count CcDomain#warm_count}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#warm_count CcDomain#warm_count}
     */
     readonly warmCount?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#warm_enabled CcDomain#warm_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#warm_enabled CcDomain#warm_enabled}
     */
     readonly warmEnabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#warm_type CcDomain#warm_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#warm_type CcDomain#warm_type}
     */
     readonly warmType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#zone_awareness_config CcDomain#zone_awareness_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#zone_awareness_config CcDomain#zone_awareness_config}
     */
     readonly zoneAwarenessConfig?: ZoneAwarenessConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#zone_awareness_enabled CcDomain#zone_awareness_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#zone_awareness_enabled CcDomain#zone_awareness_enabled}
     */
     readonly zoneAwarenessEnabled?: boolean | cdktn.IResolvable;
 }
@@ -4154,19 +4155,19 @@ export class ClusterConfigPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface CognitoOptionsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#enabled CcDomain#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#enabled CcDomain#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#identity_pool_id CcDomain#identity_pool_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#identity_pool_id CcDomain#identity_pool_id}
     */
     readonly identityPoolId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#role_arn CcDomain#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#role_arn CcDomain#role_arn}
     */
     readonly roleArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#user_pool_id CcDomain#user_pool_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#user_pool_id CcDomain#user_pool_id}
     */
     readonly userPoolId?: string;
 }
@@ -4296,7 +4297,7 @@ export class CognitoOptionsPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface DeploymentStrategyOptionsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#deployment_strategy CcDomain#deployment_strategy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#deployment_strategy CcDomain#deployment_strategy}
     */
     readonly deploymentStrategy?: string;
 }
@@ -4360,23 +4361,23 @@ export class DeploymentStrategyOptionsPropertyOutputReference extends cdktn.Comp
 }
 export interface DomainEndpointOptionsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#custom_endpoint CcDomain#custom_endpoint}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#custom_endpoint CcDomain#custom_endpoint}
     */
     readonly customEndpoint?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#custom_endpoint_certificate_arn CcDomain#custom_endpoint_certificate_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#custom_endpoint_certificate_arn CcDomain#custom_endpoint_certificate_arn}
     */
     readonly customEndpointCertificateArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#custom_endpoint_enabled CcDomain#custom_endpoint_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#custom_endpoint_enabled CcDomain#custom_endpoint_enabled}
     */
     readonly customEndpointEnabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#enforce_https CcDomain#enforce_https}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#enforce_https CcDomain#enforce_https}
     */
     readonly enforceHttps?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#tls_security_policy CcDomain#tls_security_policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#tls_security_policy CcDomain#tls_security_policy}
     */
     readonly tlsSecurityPolicy?: string;
 }
@@ -4528,23 +4529,23 @@ export class DomainEndpointOptionsPropertyOutputReference extends cdktn.ComplexO
 }
 export interface EBSOptionsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#ebs_enabled CcDomain#ebs_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#ebs_enabled CcDomain#ebs_enabled}
     */
     readonly ebsEnabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#iops CcDomain#iops}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#iops CcDomain#iops}
     */
     readonly iops?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#throughput CcDomain#throughput}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#throughput CcDomain#throughput}
     */
     readonly throughput?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#volume_size CcDomain#volume_size}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#volume_size CcDomain#volume_size}
     */
     readonly volumeSize?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#volume_type CcDomain#volume_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#volume_type CcDomain#volume_type}
     */
     readonly volumeType?: string;
 }
@@ -4696,11 +4697,11 @@ export class EBSOptionsPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface EncryptionAtRestOptionsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#enabled CcDomain#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#enabled CcDomain#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#kms_key_id CcDomain#kms_key_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#kms_key_id CcDomain#kms_key_id}
     */
     readonly kmsKeyId?: string;
 }
@@ -4788,25 +4789,25 @@ export interface IdentityCenterOptionsProperty {
     /**
     * Whether Identity Center is enabled.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#enabled_api_access CcDomain#enabled_api_access}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#enabled_api_access CcDomain#enabled_api_access}
     */
     readonly enabledApiAccess?: boolean | cdktn.IResolvable;
     /**
     * The ARN of the Identity Center instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#identity_center_instance_arn CcDomain#identity_center_instance_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#identity_center_instance_arn CcDomain#identity_center_instance_arn}
     */
     readonly identityCenterInstanceArn?: string;
     /**
     * The roles key for Identity Center options.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#roles_key CcDomain#roles_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#roles_key CcDomain#roles_key}
     */
     readonly rolesKey?: string;
     /**
     * The subject key for Identity Center options.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#subject_key CcDomain#subject_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#subject_key CcDomain#subject_key}
     */
     readonly subjectKey?: string;
 }
@@ -4946,11 +4947,11 @@ export class IdentityCenterOptionsPropertyOutputReference extends cdktn.ComplexO
 }
 export interface LogPublishingOptionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#cloudwatch_logs_log_group_arn CcDomain#cloudwatch_logs_log_group_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#cloudwatch_logs_log_group_arn CcDomain#cloudwatch_logs_log_group_arn}
     */
     readonly cloudwatchLogsLogGroupArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#enabled CcDomain#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#enabled CcDomain#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -5056,7 +5057,7 @@ export class LogPublishingOptionPropertyMap extends cdktn.ComplexMap {
 }
 export interface NodeToNodeEncryptionOptionsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#enabled CcDomain#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#enabled CcDomain#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -5120,11 +5121,11 @@ export class NodeToNodeEncryptionOptionsPropertyOutputReference extends cdktn.Co
 }
 export interface WindowStartTimeProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#hours CcDomain#hours}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#hours CcDomain#hours}
     */
     readonly hours?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#minutes CcDomain#minutes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#minutes CcDomain#minutes}
     */
     readonly minutes?: number;
 }
@@ -5210,7 +5211,7 @@ export class WindowStartTimePropertyOutputReference extends cdktn.ComplexObject 
 }
 export interface OffPeakWindowProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#window_start_time CcDomain#window_start_time}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#window_start_time CcDomain#window_start_time}
     */
     readonly windowStartTime?: WindowStartTimeProperty;
 }
@@ -5274,11 +5275,11 @@ export class OffPeakWindowPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface OffPeakWindowOptionsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#enabled CcDomain#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#enabled CcDomain#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#off_peak_window CcDomain#off_peak_window}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#off_peak_window CcDomain#off_peak_window}
     */
     readonly offPeakWindow?: OffPeakWindowProperty;
 }
@@ -5432,7 +5433,7 @@ export class ServiceSoftwareOptionsPropertyOutputReference extends cdktn.Complex
 }
 export interface SnapshotOptionsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#automated_snapshot_start_hour CcDomain#automated_snapshot_start_hour}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#automated_snapshot_start_hour CcDomain#automated_snapshot_start_hour}
     */
     readonly automatedSnapshotStartHour?: number;
 }
@@ -5496,11 +5497,11 @@ export class SnapshotOptionsPropertyOutputReference extends cdktn.ComplexObject 
 }
 export interface SoftwareUpdateOptionsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#auto_software_update_enabled CcDomain#auto_software_update_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#auto_software_update_enabled CcDomain#auto_software_update_enabled}
     */
     readonly autoSoftwareUpdateEnabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#use_latest_service_software_for_blue_green CcDomain#use_latest_service_software_for_blue_green}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#use_latest_service_software_for_blue_green CcDomain#use_latest_service_software_for_blue_green}
     */
     readonly useLatestServiceSoftwareForBlueGreen?: boolean | cdktn.IResolvable;
 }
@@ -5588,13 +5589,13 @@ export interface TagProperty {
     /**
     * The value of the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#key CcDomain#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#key CcDomain#key}
     */
     readonly key?: string;
     /**
     * The key of the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#value CcDomain#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#value CcDomain#value}
     */
     readonly value?: string;
 }
@@ -5704,15 +5705,15 @@ export interface VPCOptionsProperty {
     /**
     * Controls whether egress traffic from the domain is routed through the customer VPC.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#egress_enabled CcDomain#egress_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#egress_enabled CcDomain#egress_enabled}
     */
     readonly egressEnabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#security_group_ids CcDomain#security_group_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#security_group_ids CcDomain#security_group_ids}
     */
     readonly securityGroupIds?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchservice_domain#subnet_ids CcDomain#subnet_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_domain#subnet_ids CcDomain#subnet_ids}
     */
     readonly subnetIds?: string[];
 }

@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/certificatemanager_acme_domain_validation
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/certificatemanager_acme_domain_validation
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,31 +9,31 @@ export interface CcAcmeDomainValidationProps extends cdktn.TerraformMetaArgument
     /**
     * The ARN of the ACME endpoint this domain validation is associated with.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/certificatemanager_acme_domain_validation#acme_endpoint_arn CcAcmeDomainValidation#acme_endpoint_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/certificatemanager_acme_domain_validation#acme_endpoint_arn CcAcmeDomainValidation#acme_endpoint_arn}
     */
     readonly acmeEndpointArn: string;
     /**
     * The domain name to validate.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/certificatemanager_acme_domain_validation#domain_name CcAcmeDomainValidation#domain_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/certificatemanager_acme_domain_validation#domain_name CcAcmeDomainValidation#domain_name}
     */
     readonly domainName: string;
     /**
     * Prevalidation method configuration. Currently only DNS-based prevalidation is supported.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/certificatemanager_acme_domain_validation#prevalidation_options CcAcmeDomainValidation#prevalidation_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/certificatemanager_acme_domain_validation#prevalidation_options CcAcmeDomainValidation#prevalidation_options}
     */
     readonly prevalidationOptions: CcAcmeDomainValidation.PrevalidationOptionsProperty;
     /**
     * Tags associated with the domain validation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/certificatemanager_acme_domain_validation#tags CcAcmeDomainValidation#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/certificatemanager_acme_domain_validation#tags CcAcmeDomainValidation#tags}
     */
     readonly tags?: CcAcmeDomainValidation.TagsItemsProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/certificatemanager_acme_domain_validation awscc_certificatemanager_acme_domain_validation}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/certificatemanager_acme_domain_validation awscc_certificatemanager_acme_domain_validation}
 */
 export class CcAcmeDomainValidation extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CcAcmeDomainValidation extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcAcmeDomainValidation resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcAcmeDomainValidation to import
-    * @param importFromId The id of the existing CcAcmeDomainValidation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/certificatemanager_acme_domain_validation#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcAcmeDomainValidation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/certificatemanager_acme_domain_validation#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcAcmeDomainValidation to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CcAcmeDomainValidation extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/certificatemanager_acme_domain_validation awscc_certificatemanager_acme_domain_validation} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/certificatemanager_acme_domain_validation awscc_certificatemanager_acme_domain_validation} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -71,7 +71,8 @@ export class CcAcmeDomainValidation extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_certificatemanager_acme_domain_validation',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -355,19 +356,19 @@ export interface DomainScopeProperty {
     /**
     * Whether certificates may be issued for the exact domain.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/certificatemanager_acme_domain_validation#exact_domain CcAcmeDomainValidation#exact_domain}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/certificatemanager_acme_domain_validation#exact_domain CcAcmeDomainValidation#exact_domain}
     */
     readonly exactDomain?: string;
     /**
     * Whether certificates may be issued for subdomains of the domain.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/certificatemanager_acme_domain_validation#subdomains CcAcmeDomainValidation#subdomains}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/certificatemanager_acme_domain_validation#subdomains CcAcmeDomainValidation#subdomains}
     */
     readonly subdomains?: string;
     /**
     * Whether wildcard certificates may be issued for the domain.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/certificatemanager_acme_domain_validation#wildcards CcAcmeDomainValidation#wildcards}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/certificatemanager_acme_domain_validation#wildcards CcAcmeDomainValidation#wildcards}
     */
     readonly wildcards?: string;
 }
@@ -477,13 +478,13 @@ export interface DnsPrevalidationOptionsProperty {
     /**
     * Controls which certificate types are authorized to be issued for the domain via the ACME endpoint.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/certificatemanager_acme_domain_validation#domain_scope CcAcmeDomainValidation#domain_scope}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/certificatemanager_acme_domain_validation#domain_scope CcAcmeDomainValidation#domain_scope}
     */
     readonly domainScope?: DomainScopeProperty;
     /**
     * The Route 53 hosted zone ID for automatic DNS record management. When provided, the service creates the validation DNS record on the customer's behalf.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/certificatemanager_acme_domain_validation#hosted_zone_id CcAcmeDomainValidation#hosted_zone_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/certificatemanager_acme_domain_validation#hosted_zone_id CcAcmeDomainValidation#hosted_zone_id}
     */
     readonly hostedZoneId?: string;
 }
@@ -571,7 +572,7 @@ export interface PrevalidationOptionsProperty {
     /**
     * DNS-based prevalidation options for the domain validation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/certificatemanager_acme_domain_validation#dns_prevalidation CcAcmeDomainValidation#dns_prevalidation}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/certificatemanager_acme_domain_validation#dns_prevalidation CcAcmeDomainValidation#dns_prevalidation}
     */
     readonly dnsPrevalidation: DnsPrevalidationOptionsProperty;
 }
@@ -634,13 +635,13 @@ export interface TagsItemsProperty {
     /**
     * The key name of the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/certificatemanager_acme_domain_validation#key CcAcmeDomainValidation#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/certificatemanager_acme_domain_validation#key CcAcmeDomainValidation#key}
     */
     readonly key?: string;
     /**
     * The value for the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/certificatemanager_acme_domain_validation#value CcAcmeDomainValidation#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/certificatemanager_acme_domain_validation#value CcAcmeDomainValidation#value}
     */
     readonly value?: string;
 }

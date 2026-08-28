@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,109 +9,109 @@ export interface CcHarnessProps extends cdktn.TerraformMetaArguments {
     /**
     * The tools that the agent is allowed to use.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#allowed_tools CcHarness#allowed_tools}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#allowed_tools CcHarness#allowed_tools}
     */
     readonly allowedTools?: string[];
     /**
     * The inbound authorization configuration for authenticating incoming requests.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#authorizer_configuration CcHarness#authorizer_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#authorizer_configuration CcHarness#authorizer_configuration}
     */
     readonly authorizerConfiguration?: CcHarness.AuthorizerConfigurationProperty;
     /**
     * The compute environment configuration for the harness, including underlying runtime information.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#environment CcHarness#environment}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#environment CcHarness#environment}
     */
     readonly environment?: CcHarness.HarnessEnvironmentProviderProperty;
     /**
     * The environment artifact for the harness, such as a custom container image.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#environment_artifact CcHarness#environment_artifact}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#environment_artifact CcHarness#environment_artifact}
     */
     readonly environmentArtifact?: CcHarness.HarnessEnvironmentArtifactProperty;
     /**
     * Environment variables to set in the harness runtime environment.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#environment_variables CcHarness#environment_variables}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#environment_variables CcHarness#environment_variables}
     */
     readonly environmentVariables?: { [key: string]: string };
     /**
     * The ARN of the IAM role that the harness assumes when running.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#execution_role_arn CcHarness#execution_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#execution_role_arn CcHarness#execution_role_arn}
     */
     readonly executionRoleArn: string;
     /**
     * The name of the harness.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#harness_name CcHarness#harness_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#harness_name CcHarness#harness_name}
     */
     readonly harnessName: string;
     /**
     * The maximum number of iterations the agent loop can execute per invocation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#max_iterations CcHarness#max_iterations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#max_iterations CcHarness#max_iterations}
     */
     readonly maxIterations?: number;
     /**
     * The maximum number of tokens the agent can generate per iteration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#max_tokens CcHarness#max_tokens}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#max_tokens CcHarness#max_tokens}
     */
     readonly maxTokens?: number;
     /**
     * The AgentCore Memory configuration for persisting conversation context.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#memory CcHarness#memory}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#memory CcHarness#memory}
     */
     readonly memory?: CcHarness.HarnessMemoryConfigurationProperty;
     /**
     * The model configuration for the harness.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#model CcHarness#model}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#model CcHarness#model}
     */
     readonly model: CcHarness.HarnessModelConfigurationProperty;
     /**
     * The skills available to the agent.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#skills CcHarness#skills}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#skills CcHarness#skills}
     */
     readonly skills?: CcHarness.HarnessSkillProperty[] | cdktn.IResolvable;
     /**
     * The system prompt that defines the agent's behavior.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#system_prompt CcHarness#system_prompt}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#system_prompt CcHarness#system_prompt}
     */
     readonly systemPrompt?: CcHarness.HarnessSystemContentBlockProperty[] | cdktn.IResolvable;
     /**
     * Tags to apply to the harness resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#tags CcHarness#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#tags CcHarness#tags}
     */
     readonly tags?: CcHarness.TagProperty[] | cdktn.IResolvable;
     /**
     * The maximum duration in seconds for the agent loop execution per invocation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#timeout_seconds CcHarness#timeout_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#timeout_seconds CcHarness#timeout_seconds}
     */
     readonly timeoutSeconds?: number;
     /**
     * The tools available to the agent.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#tools CcHarness#tools}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#tools CcHarness#tools}
     */
     readonly tools?: CcHarness.HarnessToolProperty[] | cdktn.IResolvable;
     /**
     * The truncation configuration for managing conversation context.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#truncation CcHarness#truncation}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#truncation CcHarness#truncation}
     */
     readonly truncation?: CcHarness.HarnessTruncationConfigurationProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness awscc_bedrockagentcore_harness}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness awscc_bedrockagentcore_harness}
 */
 export class CcHarness extends cdktn.TerraformResource {
 
@@ -127,7 +127,7 @@ export class CcHarness extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcHarness resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcHarness to import
-    * @param importFromId The id of the existing CcHarness that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcHarness that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcHarness to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -139,7 +139,7 @@ export class CcHarness extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness awscc_bedrockagentcore_harness} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness awscc_bedrockagentcore_harness} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -149,7 +149,8 @@ export class CcHarness extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_bedrockagentcore_harness',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -2089,11 +2090,11 @@ export function ccHarnessHarnessTruncationConfigurationPropertyToHclTerraform(st
 export namespace CcHarness {
 export interface ClaimMatchValueTypeProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#match_value_string CcHarness#match_value_string}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#match_value_string CcHarness#match_value_string}
     */
     readonly matchValueString?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#match_value_string_list CcHarness#match_value_string_list}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#match_value_string_list CcHarness#match_value_string_list}
     */
     readonly matchValueStringList?: string[];
 }
@@ -2179,11 +2180,11 @@ export class ClaimMatchValueTypePropertyOutputReference extends cdktn.ComplexObj
 }
 export interface AuthorizingClaimMatchValueTypeProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#claim_match_operator CcHarness#claim_match_operator}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#claim_match_operator CcHarness#claim_match_operator}
     */
     readonly claimMatchOperator?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#claim_match_value CcHarness#claim_match_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#claim_match_value CcHarness#claim_match_value}
     */
     readonly claimMatchValue?: ClaimMatchValueTypeProperty;
 }
@@ -2269,15 +2270,15 @@ export class AuthorizingClaimMatchValueTypePropertyOutputReference extends cdktn
 }
 export interface CustomClaimValidationTypeProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#authorizing_claim_match_value CcHarness#authorizing_claim_match_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#authorizing_claim_match_value CcHarness#authorizing_claim_match_value}
     */
     readonly authorizingClaimMatchValue?: AuthorizingClaimMatchValueTypeProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#inbound_token_claim_name CcHarness#inbound_token_claim_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#inbound_token_claim_name CcHarness#inbound_token_claim_name}
     */
     readonly inboundTokenClaimName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#inbound_token_claim_value_type CcHarness#inbound_token_claim_value_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#inbound_token_claim_value_type CcHarness#inbound_token_claim_value_type}
     */
     readonly inboundTokenClaimValueType?: string;
 }
@@ -2407,23 +2408,23 @@ export class CustomClaimValidationTypePropertyList extends cdktn.ComplexList {
 }
 export interface CustomJWTAuthorizerConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#allowed_audience CcHarness#allowed_audience}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#allowed_audience CcHarness#allowed_audience}
     */
     readonly allowedAudience?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#allowed_clients CcHarness#allowed_clients}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#allowed_clients CcHarness#allowed_clients}
     */
     readonly allowedClients?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#allowed_scopes CcHarness#allowed_scopes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#allowed_scopes CcHarness#allowed_scopes}
     */
     readonly allowedScopes?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#custom_claims CcHarness#custom_claims}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#custom_claims CcHarness#custom_claims}
     */
     readonly customClaims?: CustomClaimValidationTypeProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#discovery_url CcHarness#discovery_url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#discovery_url CcHarness#discovery_url}
     */
     readonly discoveryUrl?: string;
 }
@@ -2575,7 +2576,7 @@ export class CustomJWTAuthorizerConfigurationPropertyOutputReference extends cdk
 }
 export interface AuthorizerConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#custom_jwt_authorizer CcHarness#custom_jwt_authorizer}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#custom_jwt_authorizer CcHarness#custom_jwt_authorizer}
     */
     readonly customJwtAuthorizer?: CustomJWTAuthorizerConfigurationProperty;
 }
@@ -2639,7 +2640,7 @@ export class AuthorizerConfigurationPropertyOutputReference extends cdktn.Comple
 }
 export interface SessionStorageConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#mount_path CcHarness#mount_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#mount_path CcHarness#mount_path}
     */
     readonly mountPath?: string;
 }
@@ -2703,7 +2704,7 @@ export class SessionStorageConfigurationPropertyOutputReference extends cdktn.Co
 }
 export interface FilesystemConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#session_storage CcHarness#session_storage}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#session_storage CcHarness#session_storage}
     */
     readonly sessionStorage?: SessionStorageConfigurationProperty;
 }
@@ -2789,11 +2790,11 @@ export class FilesystemConfigurationPropertyList extends cdktn.ComplexList {
 }
 export interface LifecycleConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#idle_runtime_session_timeout CcHarness#idle_runtime_session_timeout}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#idle_runtime_session_timeout CcHarness#idle_runtime_session_timeout}
     */
     readonly idleRuntimeSessionTimeout?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#max_lifetime CcHarness#max_lifetime}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#max_lifetime CcHarness#max_lifetime}
     */
     readonly maxLifetime?: number;
 }
@@ -2879,11 +2880,11 @@ export class LifecycleConfigurationPropertyOutputReference extends cdktn.Complex
 }
 export interface VpcConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#security_groups CcHarness#security_groups}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#security_groups CcHarness#security_groups}
     */
     readonly securityGroups?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#subnets CcHarness#subnets}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#subnets CcHarness#subnets}
     */
     readonly subnets?: string[];
 }
@@ -2969,11 +2970,11 @@ export class VpcConfigPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface NetworkConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#network_mode CcHarness#network_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#network_mode CcHarness#network_mode}
     */
     readonly networkMode?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#network_mode_config CcHarness#network_mode_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#network_mode_config CcHarness#network_mode_config}
     */
     readonly networkModeConfig?: VpcConfigProperty;
 }
@@ -3059,15 +3060,15 @@ export class NetworkConfigurationPropertyOutputReference extends cdktn.ComplexOb
 }
 export interface HarnessAgentCoreRuntimeEnvironmentProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#filesystem_configurations CcHarness#filesystem_configurations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#filesystem_configurations CcHarness#filesystem_configurations}
     */
     readonly filesystemConfigurations?: FilesystemConfigurationProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#lifecycle_configuration CcHarness#lifecycle_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#lifecycle_configuration CcHarness#lifecycle_configuration}
     */
     readonly lifecycleConfiguration?: LifecycleConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#network_configuration CcHarness#network_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#network_configuration CcHarness#network_configuration}
     */
     readonly networkConfiguration?: NetworkConfigurationProperty;
 }
@@ -3190,7 +3191,7 @@ export class HarnessAgentCoreRuntimeEnvironmentPropertyOutputReference extends c
 }
 export interface HarnessEnvironmentProviderProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#agent_core_runtime_environment CcHarness#agent_core_runtime_environment}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#agent_core_runtime_environment CcHarness#agent_core_runtime_environment}
     */
     readonly agentCoreRuntimeEnvironment?: HarnessAgentCoreRuntimeEnvironmentProperty;
 }
@@ -3256,7 +3257,7 @@ export interface ContainerConfigurationProperty {
     /**
     * The ECR URI of the container.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#container_uri CcHarness#container_uri}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#container_uri CcHarness#container_uri}
     */
     readonly containerUri?: string;
 }
@@ -3320,7 +3321,7 @@ export class ContainerConfigurationPropertyOutputReference extends cdktn.Complex
 }
 export interface HarnessEnvironmentArtifactProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#container_configuration CcHarness#container_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#container_configuration CcHarness#container_configuration}
     */
     readonly containerConfiguration?: ContainerConfigurationProperty;
 }
@@ -3384,15 +3385,15 @@ export class HarnessEnvironmentArtifactPropertyOutputReference extends cdktn.Com
 }
 export interface HarnessAgentCoreMemoryRetrievalConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#relevance_score CcHarness#relevance_score}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#relevance_score CcHarness#relevance_score}
     */
     readonly relevanceScore?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#strategy_id CcHarness#strategy_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#strategy_id CcHarness#strategy_id}
     */
     readonly strategyId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#top_k CcHarness#top_k}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#top_k CcHarness#top_k}
     */
     readonly topK?: number;
 }
@@ -3520,19 +3521,19 @@ export class HarnessAgentCoreMemoryRetrievalConfigPropertyMap extends cdktn.Comp
 }
 export interface HarnessAgentCoreMemoryConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#actor_id CcHarness#actor_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#actor_id CcHarness#actor_id}
     */
     readonly actorId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#arn CcHarness#arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#arn CcHarness#arn}
     */
     readonly arn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#messages_count CcHarness#messages_count}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#messages_count CcHarness#messages_count}
     */
     readonly messagesCount?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#retrieval_config CcHarness#retrieval_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#retrieval_config CcHarness#retrieval_config}
     */
     readonly retrievalConfig?: { [key: string]: HarnessAgentCoreMemoryRetrievalConfigProperty } | cdktn.IResolvable;
 }
@@ -3662,7 +3663,7 @@ export class HarnessAgentCoreMemoryConfigurationPropertyOutputReference extends 
 }
 export interface HarnessMemoryConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#agent_core_memory_configuration CcHarness#agent_core_memory_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#agent_core_memory_configuration CcHarness#agent_core_memory_configuration}
     */
     readonly agentCoreMemoryConfiguration?: HarnessAgentCoreMemoryConfigurationProperty;
 }
@@ -3726,19 +3727,19 @@ export class HarnessMemoryConfigurationPropertyOutputReference extends cdktn.Com
 }
 export interface HarnessBedrockModelConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#max_tokens CcHarness#max_tokens}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#max_tokens CcHarness#max_tokens}
     */
     readonly maxTokens?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#model_id CcHarness#model_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#model_id CcHarness#model_id}
     */
     readonly modelId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#temperature CcHarness#temperature}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#temperature CcHarness#temperature}
     */
     readonly temperature?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#top_p CcHarness#top_p}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#top_p CcHarness#top_p}
     */
     readonly topP?: number;
 }
@@ -3868,27 +3869,27 @@ export class HarnessBedrockModelConfigPropertyOutputReference extends cdktn.Comp
 }
 export interface HarnessGeminiModelConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#api_key_arn CcHarness#api_key_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#api_key_arn CcHarness#api_key_arn}
     */
     readonly apiKeyArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#max_tokens CcHarness#max_tokens}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#max_tokens CcHarness#max_tokens}
     */
     readonly maxTokens?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#model_id CcHarness#model_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#model_id CcHarness#model_id}
     */
     readonly modelId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#temperature CcHarness#temperature}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#temperature CcHarness#temperature}
     */
     readonly temperature?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#top_k CcHarness#top_k}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#top_k CcHarness#top_k}
     */
     readonly topK?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#top_p CcHarness#top_p}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#top_p CcHarness#top_p}
     */
     readonly topP?: number;
 }
@@ -4062,23 +4063,23 @@ export class HarnessGeminiModelConfigPropertyOutputReference extends cdktn.Compl
 }
 export interface HarnessOpenAiModelConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#api_key_arn CcHarness#api_key_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#api_key_arn CcHarness#api_key_arn}
     */
     readonly apiKeyArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#max_tokens CcHarness#max_tokens}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#max_tokens CcHarness#max_tokens}
     */
     readonly maxTokens?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#model_id CcHarness#model_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#model_id CcHarness#model_id}
     */
     readonly modelId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#temperature CcHarness#temperature}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#temperature CcHarness#temperature}
     */
     readonly temperature?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#top_p CcHarness#top_p}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#top_p CcHarness#top_p}
     */
     readonly topP?: number;
 }
@@ -4230,15 +4231,15 @@ export class HarnessOpenAiModelConfigPropertyOutputReference extends cdktn.Compl
 }
 export interface HarnessModelConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#bedrock_model_config CcHarness#bedrock_model_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#bedrock_model_config CcHarness#bedrock_model_config}
     */
     readonly bedrockModelConfig?: HarnessBedrockModelConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#gemini_model_config CcHarness#gemini_model_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#gemini_model_config CcHarness#gemini_model_config}
     */
     readonly geminiModelConfig?: HarnessGeminiModelConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#open_ai_model_config CcHarness#open_ai_model_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#open_ai_model_config CcHarness#open_ai_model_config}
     */
     readonly openAiModelConfig?: HarnessOpenAiModelConfigProperty;
 }
@@ -4348,7 +4349,7 @@ export interface HarnessSkillProperty {
     /**
     * The filesystem path to the skill definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#path CcHarness#path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#path CcHarness#path}
     */
     readonly path?: string;
 }
@@ -4436,7 +4437,7 @@ export interface HarnessSystemContentBlockProperty {
     /**
     * The text content of the system prompt block.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#text CcHarness#text}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#text CcHarness#text}
     */
     readonly text?: string;
 }
@@ -4522,11 +4523,11 @@ export class HarnessSystemContentBlockPropertyList extends cdktn.ComplexList {
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#key CcHarness#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#key CcHarness#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#value CcHarness#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#value CcHarness#value}
     */
     readonly value?: string;
 }
@@ -4634,7 +4635,7 @@ export class TagPropertyList extends cdktn.ComplexList {
 }
 export interface HarnessAgentCoreBrowserConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#browser_arn CcHarness#browser_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#browser_arn CcHarness#browser_arn}
     */
     readonly browserArn?: string;
 }
@@ -4698,7 +4699,7 @@ export class HarnessAgentCoreBrowserConfigPropertyOutputReference extends cdktn.
 }
 export interface HarnessAgentCoreCodeInterpreterConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#code_interpreter_arn CcHarness#code_interpreter_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#code_interpreter_arn CcHarness#code_interpreter_arn}
     */
     readonly codeInterpreterArn?: string;
 }
@@ -4762,23 +4763,23 @@ export class HarnessAgentCoreCodeInterpreterConfigPropertyOutputReference extend
 }
 export interface OAuthCredentialProviderProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#custom_parameters CcHarness#custom_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#custom_parameters CcHarness#custom_parameters}
     */
     readonly customParameters?: { [key: string]: string };
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#default_return_url CcHarness#default_return_url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#default_return_url CcHarness#default_return_url}
     */
     readonly defaultReturnUrl?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#grant_type CcHarness#grant_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#grant_type CcHarness#grant_type}
     */
     readonly grantType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#provider_arn CcHarness#provider_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#provider_arn CcHarness#provider_arn}
     */
     readonly providerArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#scopes CcHarness#scopes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#scopes CcHarness#scopes}
     */
     readonly scopes?: string[];
 }
@@ -4930,15 +4931,15 @@ export class OAuthCredentialProviderPropertyOutputReference extends cdktn.Comple
 }
 export interface HarnessGatewayOutboundAuthProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#aws_iam CcHarness#aws_iam}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#aws_iam CcHarness#aws_iam}
     */
     readonly awsIam?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#none CcHarness#none}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#none CcHarness#none}
     */
     readonly none?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#oauth CcHarness#oauth}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#oauth CcHarness#oauth}
     */
     readonly oauth?: OAuthCredentialProviderProperty;
 }
@@ -5046,11 +5047,11 @@ export class HarnessGatewayOutboundAuthPropertyOutputReference extends cdktn.Com
 }
 export interface HarnessAgentCoreGatewayConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#gateway_arn CcHarness#gateway_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#gateway_arn CcHarness#gateway_arn}
     */
     readonly gatewayArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#outbound_auth CcHarness#outbound_auth}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#outbound_auth CcHarness#outbound_auth}
     */
     readonly outboundAuth?: HarnessGatewayOutboundAuthProperty;
 }
@@ -5136,13 +5137,13 @@ export class HarnessAgentCoreGatewayConfigPropertyOutputReference extends cdktn.
 }
 export interface HarnessInlineFunctionConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#description CcHarness#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#description CcHarness#description}
     */
     readonly description?: string;
     /**
     * JSON Schema describing the tool's input parameters.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#input_schema CcHarness#input_schema}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#input_schema CcHarness#input_schema}
     */
     readonly inputSchema?: string;
 }
@@ -5228,11 +5229,11 @@ export class HarnessInlineFunctionConfigPropertyOutputReference extends cdktn.Co
 }
 export interface HarnessRemoteMcpConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#headers CcHarness#headers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#headers CcHarness#headers}
     */
     readonly headers?: { [key: string]: string };
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#url CcHarness#url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#url CcHarness#url}
     */
     readonly url?: string;
 }
@@ -5318,23 +5319,23 @@ export class HarnessRemoteMcpConfigPropertyOutputReference extends cdktn.Complex
 }
 export interface HarnessToolConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#agent_core_browser CcHarness#agent_core_browser}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#agent_core_browser CcHarness#agent_core_browser}
     */
     readonly agentCoreBrowser?: HarnessAgentCoreBrowserConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#agent_core_code_interpreter CcHarness#agent_core_code_interpreter}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#agent_core_code_interpreter CcHarness#agent_core_code_interpreter}
     */
     readonly agentCoreCodeInterpreter?: HarnessAgentCoreCodeInterpreterConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#agent_core_gateway CcHarness#agent_core_gateway}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#agent_core_gateway CcHarness#agent_core_gateway}
     */
     readonly agentCoreGateway?: HarnessAgentCoreGatewayConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#inline_function CcHarness#inline_function}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#inline_function CcHarness#inline_function}
     */
     readonly inlineFunction?: HarnessInlineFunctionConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#remote_mcp CcHarness#remote_mcp}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#remote_mcp CcHarness#remote_mcp}
     */
     readonly remoteMcp?: HarnessRemoteMcpConfigProperty;
 }
@@ -5486,15 +5487,15 @@ export class HarnessToolConfigurationPropertyOutputReference extends cdktn.Compl
 }
 export interface HarnessToolProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#config CcHarness#config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#config CcHarness#config}
     */
     readonly config?: HarnessToolConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#name CcHarness#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#name CcHarness#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#type CcHarness#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#type CcHarness#type}
     */
     readonly type?: string;
 }
@@ -5624,7 +5625,7 @@ export class HarnessToolPropertyList extends cdktn.ComplexList {
 }
 export interface HarnessSlidingWindowConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#messages_count CcHarness#messages_count}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#messages_count CcHarness#messages_count}
     */
     readonly messagesCount?: number;
 }
@@ -5688,15 +5689,15 @@ export class HarnessSlidingWindowConfigurationPropertyOutputReference extends cd
 }
 export interface HarnessSummarizationConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#preserve_recent_messages CcHarness#preserve_recent_messages}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#preserve_recent_messages CcHarness#preserve_recent_messages}
     */
     readonly preserveRecentMessages?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#summarization_system_prompt CcHarness#summarization_system_prompt}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#summarization_system_prompt CcHarness#summarization_system_prompt}
     */
     readonly summarizationSystemPrompt?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#summary_ratio CcHarness#summary_ratio}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#summary_ratio CcHarness#summary_ratio}
     */
     readonly summaryRatio?: number;
 }
@@ -5804,11 +5805,11 @@ export class HarnessSummarizationConfigurationPropertyOutputReference extends cd
 }
 export interface HarnessTruncationStrategyConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#sliding_window CcHarness#sliding_window}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#sliding_window CcHarness#sliding_window}
     */
     readonly slidingWindow?: HarnessSlidingWindowConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#summarization CcHarness#summarization}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#summarization CcHarness#summarization}
     */
     readonly summarization?: HarnessSummarizationConfigurationProperty;
 }
@@ -5894,11 +5895,11 @@ export class HarnessTruncationStrategyConfigurationPropertyOutputReference exten
 }
 export interface HarnessTruncationConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#config CcHarness#config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#config CcHarness#config}
     */
     readonly config?: HarnessTruncationStrategyConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_harness#strategy CcHarness#strategy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness#strategy CcHarness#strategy}
     */
     readonly strategy?: string;
 }

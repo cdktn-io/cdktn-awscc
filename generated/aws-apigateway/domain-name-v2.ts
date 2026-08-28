@@ -1,49 +1,49 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_domain_name_v2
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_domain_name_v2
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcDomainNameV2Props extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_domain_name_v2#certificate_arn CcDomainNameV2#certificate_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_domain_name_v2#certificate_arn CcDomainNameV2#certificate_arn}
     */
     readonly certificateArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_domain_name_v2#domain_name CcDomainNameV2#domain_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_domain_name_v2#domain_name CcDomainNameV2#domain_name}
     */
     readonly domainName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_domain_name_v2#endpoint_access_mode CcDomainNameV2#endpoint_access_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_domain_name_v2#endpoint_access_mode CcDomainNameV2#endpoint_access_mode}
     */
     readonly endpointAccessMode?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_domain_name_v2#endpoint_configuration CcDomainNameV2#endpoint_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_domain_name_v2#endpoint_configuration CcDomainNameV2#endpoint_configuration}
     */
     readonly endpointConfiguration?: CcDomainNameV2.EndpointConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_domain_name_v2#policy CcDomainNameV2#policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_domain_name_v2#policy CcDomainNameV2#policy}
     */
     readonly policy?: string;
     /**
     * The valid routing modes are [BASE_PATH_MAPPING_ONLY], [ROUTING_RULE_THEN_BASE_PATH_MAPPING] and [ROUTING_RULE_ONLY]. All other inputs are invalid.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_domain_name_v2#routing_mode CcDomainNameV2#routing_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_domain_name_v2#routing_mode CcDomainNameV2#routing_mode}
     */
     readonly routingMode?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_domain_name_v2#security_policy CcDomainNameV2#security_policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_domain_name_v2#security_policy CcDomainNameV2#security_policy}
     */
     readonly securityPolicy?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_domain_name_v2#tags CcDomainNameV2#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_domain_name_v2#tags CcDomainNameV2#tags}
     */
     readonly tags?: CcDomainNameV2.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_domain_name_v2 awscc_apigateway_domain_name_v2}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_domain_name_v2 awscc_apigateway_domain_name_v2}
 */
 export class CcDomainNameV2 extends cdktn.TerraformResource {
 
@@ -59,7 +59,7 @@ export class CcDomainNameV2 extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcDomainNameV2 resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcDomainNameV2 to import
-    * @param importFromId The id of the existing CcDomainNameV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_domain_name_v2#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcDomainNameV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_domain_name_v2#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcDomainNameV2 to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -71,7 +71,7 @@ export class CcDomainNameV2 extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_domain_name_v2 awscc_apigateway_domain_name_v2} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_domain_name_v2 awscc_apigateway_domain_name_v2} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -81,7 +81,8 @@ export class CcDomainNameV2 extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_apigateway_domain_name_v2',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -399,11 +400,11 @@ export function ccDomainNameV2TagPropertyToHclTerraform(struct?: CcDomainNameV2.
 export namespace CcDomainNameV2 {
 export interface EndpointConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_domain_name_v2#ip_address_type CcDomainNameV2#ip_address_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_domain_name_v2#ip_address_type CcDomainNameV2#ip_address_type}
     */
     readonly ipAddressType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_domain_name_v2#types CcDomainNameV2#types}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_domain_name_v2#types CcDomainNameV2#types}
     */
     readonly types?: string[];
 }
@@ -489,11 +490,11 @@ export class EndpointConfigurationPropertyOutputReference extends cdktn.ComplexO
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_domain_name_v2#key CcDomainNameV2#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_domain_name_v2#key CcDomainNameV2#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_domain_name_v2#value CcDomainNameV2#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_domain_name_v2#value CcDomainNameV2#value}
     */
     readonly value?: string;
 }

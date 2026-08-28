@@ -1,49 +1,49 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/paymentcryptography_key
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/paymentcryptography_key
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcKeyProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/paymentcryptography_key#derive_key_usage CcKey#derive_key_usage}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/paymentcryptography_key#derive_key_usage CcKey#derive_key_usage}
     */
     readonly deriveKeyUsage?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/paymentcryptography_key#enabled CcKey#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/paymentcryptography_key#enabled CcKey#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/paymentcryptography_key#exportable CcKey#exportable}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/paymentcryptography_key#exportable CcKey#exportable}
     */
     readonly exportable: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/paymentcryptography_key#key_attributes CcKey#key_attributes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/paymentcryptography_key#key_attributes CcKey#key_attributes}
     */
     readonly keyAttributes: CcKey.KeyAttributesProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/paymentcryptography_key#key_check_value_algorithm CcKey#key_check_value_algorithm}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/paymentcryptography_key#key_check_value_algorithm CcKey#key_check_value_algorithm}
     */
     readonly keyCheckValueAlgorithm?: string;
     /**
     * The resource-based policy attached to the key, in JSON format.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/paymentcryptography_key#policy CcKey#policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/paymentcryptography_key#policy CcKey#policy}
     */
     readonly policy?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/paymentcryptography_key#replication_regions CcKey#replication_regions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/paymentcryptography_key#replication_regions CcKey#replication_regions}
     */
     readonly replicationRegions?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/paymentcryptography_key#tags CcKey#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/paymentcryptography_key#tags CcKey#tags}
     */
     readonly tags?: CcKey.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/paymentcryptography_key awscc_paymentcryptography_key}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/paymentcryptography_key awscc_paymentcryptography_key}
 */
 export class CcKey extends cdktn.TerraformResource {
 
@@ -59,7 +59,7 @@ export class CcKey extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcKey resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcKey to import
-    * @param importFromId The id of the existing CcKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/paymentcryptography_key#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/paymentcryptography_key#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcKey to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -71,7 +71,7 @@ export class CcKey extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/paymentcryptography_key awscc_paymentcryptography_key} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/paymentcryptography_key awscc_paymentcryptography_key} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -81,7 +81,8 @@ export class CcKey extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_paymentcryptography_key',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -525,39 +526,39 @@ export function ccKeyTagPropertyToHclTerraform(struct?: CcKey.TagProperty | cdkt
 export namespace CcKey {
 export interface KeyModesOfUseProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/paymentcryptography_key#decrypt CcKey#decrypt}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/paymentcryptography_key#decrypt CcKey#decrypt}
     */
     readonly decrypt?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/paymentcryptography_key#derive_key CcKey#derive_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/paymentcryptography_key#derive_key CcKey#derive_key}
     */
     readonly deriveKey?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/paymentcryptography_key#encrypt CcKey#encrypt}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/paymentcryptography_key#encrypt CcKey#encrypt}
     */
     readonly encrypt?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/paymentcryptography_key#generate CcKey#generate}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/paymentcryptography_key#generate CcKey#generate}
     */
     readonly generate?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/paymentcryptography_key#no_restrictions CcKey#no_restrictions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/paymentcryptography_key#no_restrictions CcKey#no_restrictions}
     */
     readonly noRestrictions?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/paymentcryptography_key#sign CcKey#sign}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/paymentcryptography_key#sign CcKey#sign}
     */
     readonly sign?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/paymentcryptography_key#unwrap CcKey#unwrap}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/paymentcryptography_key#unwrap CcKey#unwrap}
     */
     readonly unwrap?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/paymentcryptography_key#verify CcKey#verify}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/paymentcryptography_key#verify CcKey#verify}
     */
     readonly verify?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/paymentcryptography_key#wrap CcKey#wrap}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/paymentcryptography_key#wrap CcKey#wrap}
     */
     readonly wrap?: boolean | cdktn.IResolvable;
 }
@@ -797,19 +798,19 @@ export class KeyModesOfUsePropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface KeyAttributesProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/paymentcryptography_key#key_algorithm CcKey#key_algorithm}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/paymentcryptography_key#key_algorithm CcKey#key_algorithm}
     */
     readonly keyAlgorithm: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/paymentcryptography_key#key_class CcKey#key_class}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/paymentcryptography_key#key_class CcKey#key_class}
     */
     readonly keyClass: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/paymentcryptography_key#key_modes_of_use CcKey#key_modes_of_use}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/paymentcryptography_key#key_modes_of_use CcKey#key_modes_of_use}
     */
     readonly keyModesOfUse: KeyModesOfUseProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/paymentcryptography_key#key_usage CcKey#key_usage}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/paymentcryptography_key#key_usage CcKey#key_usage}
     */
     readonly keyUsage: string;
 }
@@ -984,11 +985,11 @@ export class ReplicationStatusPropertyMap extends cdktn.ComplexMap {
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/paymentcryptography_key#key CcKey#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/paymentcryptography_key#key CcKey#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/paymentcryptography_key#value CcKey#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/paymentcryptography_key#value CcKey#value}
     */
     readonly value?: string;
 }

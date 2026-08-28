@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appintegrations_data_integration
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appintegrations_data_integration
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,55 +9,55 @@ export interface CcDataIntegrationProps extends cdktn.TerraformMetaArguments {
     /**
     * The data integration description.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appintegrations_data_integration#description CcDataIntegration#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appintegrations_data_integration#description CcDataIntegration#description}
     */
     readonly description?: string;
     /**
     * The configuration for what files should be pulled from the source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appintegrations_data_integration#file_configuration CcDataIntegration#file_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appintegrations_data_integration#file_configuration CcDataIntegration#file_configuration}
     */
     readonly fileConfiguration?: CcDataIntegration.FileConfigurationProperty;
     /**
     * The KMS key of the data integration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appintegrations_data_integration#kms_key CcDataIntegration#kms_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appintegrations_data_integration#kms_key CcDataIntegration#kms_key}
     */
     readonly kmsKey: string;
     /**
     * The name of the data integration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appintegrations_data_integration#name CcDataIntegration#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appintegrations_data_integration#name CcDataIntegration#name}
     */
     readonly name: string;
     /**
     * The configuration for what data should be pulled from the source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appintegrations_data_integration#object_configuration CcDataIntegration#object_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appintegrations_data_integration#object_configuration CcDataIntegration#object_configuration}
     */
     readonly objectConfiguration?: { [key: string]: { [key: string]: string[] } | cdktn.IResolvable } | cdktn.IResolvable;
     /**
     * The name of the data and how often it should be pulled from the source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appintegrations_data_integration#schedule_config CcDataIntegration#schedule_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appintegrations_data_integration#schedule_config CcDataIntegration#schedule_config}
     */
     readonly scheduleConfig?: CcDataIntegration.ScheduleConfigProperty;
     /**
     * The URI of the data source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appintegrations_data_integration#source_uri CcDataIntegration#source_uri}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appintegrations_data_integration#source_uri CcDataIntegration#source_uri}
     */
     readonly sourceUri: string;
     /**
     * The tags (keys and values) associated with the data integration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appintegrations_data_integration#tags CcDataIntegration#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appintegrations_data_integration#tags CcDataIntegration#tags}
     */
     readonly tags?: CcDataIntegration.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appintegrations_data_integration awscc_appintegrations_data_integration}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appintegrations_data_integration awscc_appintegrations_data_integration}
 */
 export class CcDataIntegration extends cdktn.TerraformResource {
 
@@ -73,7 +73,7 @@ export class CcDataIntegration extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcDataIntegration resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcDataIntegration to import
-    * @param importFromId The id of the existing CcDataIntegration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appintegrations_data_integration#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcDataIntegration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appintegrations_data_integration#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcDataIntegration to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -85,7 +85,7 @@ export class CcDataIntegration extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appintegrations_data_integration awscc_appintegrations_data_integration} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appintegrations_data_integration awscc_appintegrations_data_integration} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -95,7 +95,8 @@ export class CcDataIntegration extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_appintegrations_data_integration',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -450,13 +451,13 @@ export interface FileConfigurationProperty {
     /**
     * Restrictions for what files should be pulled from the source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appintegrations_data_integration#filters CcDataIntegration#filters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appintegrations_data_integration#filters CcDataIntegration#filters}
     */
     readonly filters?: { [key: string]: string[] } | cdktn.IResolvable;
     /**
     * Identifiers for the source folders to pull all files from recursively.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appintegrations_data_integration#folders CcDataIntegration#folders}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appintegrations_data_integration#folders CcDataIntegration#folders}
     */
     readonly folders?: string[];
 }
@@ -544,19 +545,19 @@ export interface ScheduleConfigProperty {
     /**
     * The start date for objects to import in the first flow run. Epoch or ISO timestamp format is supported.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appintegrations_data_integration#first_execution_from CcDataIntegration#first_execution_from}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appintegrations_data_integration#first_execution_from CcDataIntegration#first_execution_from}
     */
     readonly firstExecutionFrom?: string;
     /**
     * The name of the object to pull from the data source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appintegrations_data_integration#object CcDataIntegration#object}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appintegrations_data_integration#object CcDataIntegration#object}
     */
     readonly object?: string;
     /**
     * How often the data should be pulled from data source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appintegrations_data_integration#schedule_expression CcDataIntegration#schedule_expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appintegrations_data_integration#schedule_expression CcDataIntegration#schedule_expression}
     */
     readonly scheduleExpression?: string;
 }
@@ -666,13 +667,13 @@ export interface TagProperty {
     /**
     * A key to identify the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appintegrations_data_integration#key CcDataIntegration#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appintegrations_data_integration#key CcDataIntegration#key}
     */
     readonly key?: string;
     /**
     * Corresponding tag value for the key.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appintegrations_data_integration#value CcDataIntegration#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appintegrations_data_integration#value CcDataIntegration#value}
     */
     readonly value?: string;
 }

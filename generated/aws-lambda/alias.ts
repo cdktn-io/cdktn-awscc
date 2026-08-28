@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_alias
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_alias
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,43 +9,43 @@ export interface CcAliasProps extends cdktn.TerraformMetaArguments {
     /**
     * A description of the alias.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_alias#description CcAlias#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_alias#description CcAlias#description}
     */
     readonly description?: string;
     /**
     * The name of the Lambda function.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_alias#function_name CcAlias#function_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_alias#function_name CcAlias#function_name}
     */
     readonly functionName: string;
     /**
     * The function version that the alias invokes.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_alias#function_version CcAlias#function_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_alias#function_version CcAlias#function_version}
     */
     readonly functionVersion: string;
     /**
     * The name of the alias.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_alias#name CcAlias#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_alias#name CcAlias#name}
     */
     readonly name: string;
     /**
     * Specifies a provisioned concurrency configuration for a function's alias.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_alias#provisioned_concurrency_config CcAlias#provisioned_concurrency_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_alias#provisioned_concurrency_config CcAlias#provisioned_concurrency_config}
     */
     readonly provisionedConcurrencyConfig?: CcAlias.ProvisionedConcurrencyConfigurationProperty;
     /**
     * The routing configuration of the alias.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_alias#routing_config CcAlias#routing_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_alias#routing_config CcAlias#routing_config}
     */
     readonly routingConfig?: CcAlias.AliasRoutingConfigurationProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_alias awscc_lambda_alias}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_alias awscc_lambda_alias}
 */
 export class CcAlias extends cdktn.TerraformResource {
 
@@ -61,7 +61,7 @@ export class CcAlias extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcAlias resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcAlias to import
-    * @param importFromId The id of the existing CcAlias that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_alias#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcAlias that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_alias#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcAlias to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -73,7 +73,7 @@ export class CcAlias extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_alias awscc_lambda_alias} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_alias awscc_lambda_alias} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -83,7 +83,8 @@ export class CcAlias extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_lambda_alias',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -364,7 +365,7 @@ export interface ProvisionedConcurrencyConfigurationProperty {
     /**
     * The amount of provisioned concurrency to allocate for the alias.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_alias#provisioned_concurrent_executions CcAlias#provisioned_concurrent_executions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_alias#provisioned_concurrent_executions CcAlias#provisioned_concurrent_executions}
     */
     readonly provisionedConcurrentExecutions?: number;
 }
@@ -430,13 +431,13 @@ export interface VersionWeightProperty {
     /**
     * The qualifier of the second version.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_alias#function_version CcAlias#function_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_alias#function_version CcAlias#function_version}
     */
     readonly functionVersion?: string;
     /**
     * The percentage of traffic that the alias routes to the second version.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_alias#function_weight CcAlias#function_weight}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_alias#function_weight CcAlias#function_weight}
     */
     readonly functionWeight?: number;
 }
@@ -546,7 +547,7 @@ export interface AliasRoutingConfigurationProperty {
     /**
     * The second version, and the percentage of traffic that's routed to it.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_alias#additional_version_weights CcAlias#additional_version_weights}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_alias#additional_version_weights CcAlias#additional_version_weights}
     */
     readonly additionalVersionWeights?: VersionWeightProperty[] | cdktn.IResolvable;
 }

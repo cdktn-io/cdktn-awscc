@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appconfig_hosted_configuration_version
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appconfig_hosted_configuration_version
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,49 +9,49 @@ export interface CcHostedConfigurationVersionProps extends cdktn.TerraformMetaAr
     /**
     * The application ID.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appconfig_hosted_configuration_version#application_id CcHostedConfigurationVersion#application_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appconfig_hosted_configuration_version#application_id CcHostedConfigurationVersion#application_id}
     */
     readonly applicationId: string;
     /**
     * The configuration profile ID.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appconfig_hosted_configuration_version#configuration_profile_id CcHostedConfigurationVersion#configuration_profile_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appconfig_hosted_configuration_version#configuration_profile_id CcHostedConfigurationVersion#configuration_profile_id}
     */
     readonly configurationProfileId: string;
     /**
     * The content of the configuration or the configuration data.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appconfig_hosted_configuration_version#content CcHostedConfigurationVersion#content}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appconfig_hosted_configuration_version#content CcHostedConfigurationVersion#content}
     */
     readonly content: string;
     /**
     * A standard MIME type describing the format of the configuration content.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appconfig_hosted_configuration_version#content_type CcHostedConfigurationVersion#content_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appconfig_hosted_configuration_version#content_type CcHostedConfigurationVersion#content_type}
     */
     readonly contentType: string;
     /**
     * A description of the hosted configuration version.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appconfig_hosted_configuration_version#description CcHostedConfigurationVersion#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appconfig_hosted_configuration_version#description CcHostedConfigurationVersion#description}
     */
     readonly description?: string;
     /**
     * An optional locking token used to prevent race conditions from overwriting configuration updates when creating a new version. To ensure your data is not overwritten when creating multiple hosted configuration versions in rapid succession, specify the version number of the latest hosted configuration version.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appconfig_hosted_configuration_version#latest_version_number CcHostedConfigurationVersion#latest_version_number}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appconfig_hosted_configuration_version#latest_version_number CcHostedConfigurationVersion#latest_version_number}
     */
     readonly latestVersionNumber?: number;
     /**
     * A user-defined label for an AWS AppConfig hosted configuration version.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appconfig_hosted_configuration_version#version_label CcHostedConfigurationVersion#version_label}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appconfig_hosted_configuration_version#version_label CcHostedConfigurationVersion#version_label}
     */
     readonly versionLabel?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appconfig_hosted_configuration_version awscc_appconfig_hosted_configuration_version}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appconfig_hosted_configuration_version awscc_appconfig_hosted_configuration_version}
 */
 export class CcHostedConfigurationVersion extends cdktn.TerraformResource {
 
@@ -67,7 +67,7 @@ export class CcHostedConfigurationVersion extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcHostedConfigurationVersion resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcHostedConfigurationVersion to import
-    * @param importFromId The id of the existing CcHostedConfigurationVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appconfig_hosted_configuration_version#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcHostedConfigurationVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appconfig_hosted_configuration_version#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcHostedConfigurationVersion to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -79,7 +79,7 @@ export class CcHostedConfigurationVersion extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appconfig_hosted_configuration_version awscc_appconfig_hosted_configuration_version} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appconfig_hosted_configuration_version awscc_appconfig_hosted_configuration_version} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -89,7 +89,8 @@ export class CcHostedConfigurationVersion extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_appconfig_hosted_configuration_version',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,

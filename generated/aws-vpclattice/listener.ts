@@ -1,39 +1,39 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/vpclattice_listener
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/vpclattice_listener
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcListenerProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/vpclattice_listener#default_action CcListener#default_action}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/vpclattice_listener#default_action CcListener#default_action}
     */
     readonly defaultAction: CcListener.DefaultActionProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/vpclattice_listener#name CcListener#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/vpclattice_listener#name CcListener#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/vpclattice_listener#port CcListener#port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/vpclattice_listener#port CcListener#port}
     */
     readonly port?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/vpclattice_listener#protocol CcListener#protocol}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/vpclattice_listener#protocol CcListener#protocol}
     */
     readonly protocol: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/vpclattice_listener#service_identifier CcListener#service_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/vpclattice_listener#service_identifier CcListener#service_identifier}
     */
     readonly serviceIdentifier?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/vpclattice_listener#tags CcListener#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/vpclattice_listener#tags CcListener#tags}
     */
     readonly tags?: CcListener.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/vpclattice_listener awscc_vpclattice_listener}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/vpclattice_listener awscc_vpclattice_listener}
 */
 export class CcListener extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CcListener extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcListener resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcListener to import
-    * @param importFromId The id of the existing CcListener that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/vpclattice_listener#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcListener that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/vpclattice_listener#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcListener to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CcListener extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/vpclattice_listener awscc_vpclattice_listener} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/vpclattice_listener awscc_vpclattice_listener} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -71,7 +71,8 @@ export class CcListener extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_vpclattice_listener',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -442,7 +443,7 @@ export function ccListenerTagPropertyToHclTerraform(struct?: CcListener.TagPrope
 export namespace CcListener {
 export interface FixedResponseProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/vpclattice_listener#status_code CcListener#status_code}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/vpclattice_listener#status_code CcListener#status_code}
     */
     readonly statusCode?: number;
 }
@@ -506,11 +507,11 @@ export class FixedResponsePropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface WeightedTargetGroupProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/vpclattice_listener#target_group_identifier CcListener#target_group_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/vpclattice_listener#target_group_identifier CcListener#target_group_identifier}
     */
     readonly targetGroupIdentifier?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/vpclattice_listener#weight CcListener#weight}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/vpclattice_listener#weight CcListener#weight}
     */
     readonly weight?: number;
 }
@@ -618,7 +619,7 @@ export class WeightedTargetGroupPropertyList extends cdktn.ComplexList {
 }
 export interface ForwardProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/vpclattice_listener#target_groups CcListener#target_groups}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/vpclattice_listener#target_groups CcListener#target_groups}
     */
     readonly targetGroups?: WeightedTargetGroupProperty[] | cdktn.IResolvable;
 }
@@ -682,11 +683,11 @@ export class ForwardPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface DefaultActionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/vpclattice_listener#fixed_response CcListener#fixed_response}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/vpclattice_listener#fixed_response CcListener#fixed_response}
     */
     readonly fixedResponse?: FixedResponseProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/vpclattice_listener#forward CcListener#forward}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/vpclattice_listener#forward CcListener#forward}
     */
     readonly forward?: ForwardProperty;
 }
@@ -772,11 +773,11 @@ export class DefaultActionPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/vpclattice_listener#key CcListener#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/vpclattice_listener#key CcListener#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/vpclattice_listener#value CcListener#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/vpclattice_listener#value CcListener#value}
     */
     readonly value?: string;
 }

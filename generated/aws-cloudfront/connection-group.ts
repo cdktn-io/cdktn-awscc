@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_connection_group
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_connection_group
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,37 +9,37 @@ export interface CcConnectionGroupProps extends cdktn.TerraformMetaArguments {
     /**
     * The ID of the Anycast static IP list.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_connection_group#anycast_ip_list_id CcConnectionGroup#anycast_ip_list_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_connection_group#anycast_ip_list_id CcConnectionGroup#anycast_ip_list_id}
     */
     readonly anycastIpListId?: string;
     /**
     * Whether the connection group is enabled.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_connection_group#enabled CcConnectionGroup#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_connection_group#enabled CcConnectionGroup#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
     * IPv6 is enabled for the connection group.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_connection_group#ipv_6_enabled CcConnectionGroup#ipv_6_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_connection_group#ipv_6_enabled CcConnectionGroup#ipv_6_enabled}
     */
     readonly ipv6Enabled?: boolean | cdktn.IResolvable;
     /**
     * The name of the connection group.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_connection_group#name CcConnectionGroup#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_connection_group#name CcConnectionGroup#name}
     */
     readonly name: string;
     /**
     * A complex type that contains zero or more ``Tag`` elements.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_connection_group#tags CcConnectionGroup#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_connection_group#tags CcConnectionGroup#tags}
     */
     readonly tags?: CcConnectionGroup.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_connection_group awscc_cloudfront_connection_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_connection_group awscc_cloudfront_connection_group}
 */
 export class CcConnectionGroup extends cdktn.TerraformResource {
 
@@ -55,7 +55,7 @@ export class CcConnectionGroup extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcConnectionGroup resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcConnectionGroup to import
-    * @param importFromId The id of the existing CcConnectionGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_connection_group#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcConnectionGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_connection_group#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcConnectionGroup to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -67,7 +67,7 @@ export class CcConnectionGroup extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_connection_group awscc_cloudfront_connection_group} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_connection_group awscc_cloudfront_connection_group} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -77,7 +77,8 @@ export class CcConnectionGroup extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_cloudfront_connection_group',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -316,14 +317,14 @@ export interface TagProperty {
     * A string that contains ``Tag`` key.
     *  The string length should be between 1 and 128 characters. Valid characters include ``a-z``, ``A-Z``, ``0-9``, space, and the special characters ``_ - . : / = + @``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_connection_group#key CcConnectionGroup#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_connection_group#key CcConnectionGroup#key}
     */
     readonly key?: string;
     /**
     * A string that contains an optional ``Tag`` value.
     *  The string length should be between 0 and 256 characters. Valid characters include ``a-z``, ``A-Z``, ``0-9``, space, and the special characters ``_ - . : / = + @``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_connection_group#value CcConnectionGroup#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_connection_group#value CcConnectionGroup#value}
     */
     readonly value?: string;
 }

@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_event_source_mapping
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_event_source_mapping
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,7 +9,7 @@ export interface CcEventSourceMappingProps extends cdktn.TerraformMetaArguments 
     /**
     * Specific configuration settings for an Amazon Managed Streaming for Apache Kafka (Amazon MSK) event source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_event_source_mapping#amazon_managed_kafka_event_source_config CcEventSourceMapping#amazon_managed_kafka_event_source_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_event_source_mapping#amazon_managed_kafka_event_source_config CcEventSourceMapping#amazon_managed_kafka_event_source_config}
     */
     readonly amazonManagedKafkaEventSourceConfig?: CcEventSourceMapping.AmazonManagedKafkaEventSourceConfigProperty;
     /**
@@ -22,33 +22,33 @@ export interface CcEventSourceMappingProps extends cdktn.TerraformMetaArguments 
     *   +  *Amazon MQ (ActiveMQ and RabbitMQ)* – Default 100. Max 10,000.
     *   +  *DocumentDB* – Default 100. Max 10,000.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_event_source_mapping#batch_size CcEventSourceMapping#batch_size}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_event_source_mapping#batch_size CcEventSourceMapping#batch_size}
     */
     readonly batchSize?: number;
     /**
     * (Kinesis and DynamoDB Streams only) If the function returns an error, split the batch in two and retry. The default value is false.
     *   When using ``BisectBatchOnFunctionError``, check the ``BatchSize`` parameter in the ``OnFailure`` destination message's metadata. The ``BatchSize`` could be greater than 1 since LAM consolidates failed messages metadata when writing to the ``OnFailure`` destination.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_event_source_mapping#bisect_batch_on_function_error CcEventSourceMapping#bisect_batch_on_function_error}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_event_source_mapping#bisect_batch_on_function_error CcEventSourceMapping#bisect_batch_on_function_error}
     */
     readonly bisectBatchOnFunctionError?: boolean | cdktn.IResolvable;
     /**
     * (Kinesis, DynamoDB Streams, Amazon MSK, and self-managed Apache Kafka) A configuration object that specifies the destination of an event after Lambda processes it.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_event_source_mapping#destination_config CcEventSourceMapping#destination_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_event_source_mapping#destination_config CcEventSourceMapping#destination_config}
     */
     readonly destinationConfig?: CcEventSourceMapping.DestinationConfigProperty;
     /**
     * Specific configuration settings for a DocumentDB event source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_event_source_mapping#document_db_event_source_config CcEventSourceMapping#document_db_event_source_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_event_source_mapping#document_db_event_source_config CcEventSourceMapping#document_db_event_source_config}
     */
     readonly documentDbEventSourceConfig?: CcEventSourceMapping.DocumentDBEventSourceConfigProperty;
     /**
     * When true, the event source mapping is active. When false, Lambda pauses polling and invocation.
     *  Default: True
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_event_source_mapping#enabled CcEventSourceMapping#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_event_source_mapping#enabled CcEventSourceMapping#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
@@ -60,13 +60,13 @@ export interface CcEventSourceMappingProps extends cdktn.TerraformMetaArguments 
     *   +  *Amazon MQ* – The ARN of the broker.
     *   +  *Amazon DocumentDB* – The ARN of the DocumentDB change stream.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_event_source_mapping#event_source_arn CcEventSourceMapping#event_source_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_event_source_mapping#event_source_arn CcEventSourceMapping#event_source_arn}
     */
     readonly eventSourceArn?: string;
     /**
     * An object that defines the filter criteria that determine whether Lambda should process an event. For more information, see [Lambda event filtering](https://docs.aws.amazon.com/lambda/latest/dg/invocation-eventfiltering.html).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_event_source_mapping#filter_criteria CcEventSourceMapping#filter_criteria}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_event_source_mapping#filter_criteria CcEventSourceMapping#filter_criteria}
     */
     readonly filterCriteria?: CcEventSourceMapping.FilterCriteriaProperty;
     /**
@@ -79,26 +79,26 @@ export interface CcEventSourceMappingProps extends cdktn.TerraformMetaArguments 
     *   
     *  The length constraint applies only to the full ARN. If you specify only the function name, it's limited to 64 characters in length.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_event_source_mapping#function_name CcEventSourceMapping#function_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_event_source_mapping#function_name CcEventSourceMapping#function_name}
     */
     readonly functionName: string;
     /**
     * (Kinesis, DynamoDB Streams, and SQS) A list of current response type enums applied to the event source mapping.
     *  Valid Values: ``ReportBatchItemFailures``
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_event_source_mapping#function_response_types CcEventSourceMapping#function_response_types}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_event_source_mapping#function_response_types CcEventSourceMapping#function_response_types}
     */
     readonly functionResponseTypes?: string[];
     /**
     * The ARN of the KMSlong (KMS) customer managed key that Lambda uses to encrypt your function's [filter criteria](https://docs.aws.amazon.com/lambda/latest/dg/invocation-eventfiltering.html#filtering-basics).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_event_source_mapping#kms_key_arn CcEventSourceMapping#kms_key_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_event_source_mapping#kms_key_arn CcEventSourceMapping#kms_key_arn}
     */
     readonly kmsKeyArn?: string;
     /**
     * (Amazon MSK, and self-managed Apache Kafka only) The logging configuration for your event source. For more information, see [Event source mapping logging](https://docs.aws.amazon.com/lambda/latest/dg/esm-logging.html).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_event_source_mapping#logging_config CcEventSourceMapping#logging_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_event_source_mapping#logging_config CcEventSourceMapping#logging_config}
     */
     readonly loggingConfig?: CcEventSourceMapping.LoggingConfigProperty;
     /**
@@ -107,68 +107,68 @@ export interface CcEventSourceMappingProps extends cdktn.TerraformMetaArguments 
     *  *Default (, Kafka, , event sources)*: 500 ms
     *  *Related setting:* For SQS event sources, when you set ``BatchSize`` to a value greater than 10, you must set ``MaximumBatchingWindowInSeconds`` to at least 1.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_event_source_mapping#maximum_batching_window_in_seconds CcEventSourceMapping#maximum_batching_window_in_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_event_source_mapping#maximum_batching_window_in_seconds CcEventSourceMapping#maximum_batching_window_in_seconds}
     */
     readonly maximumBatchingWindowInSeconds?: number;
     /**
     * (Kinesis, DynamoDB Streams, Amazon MSK, and self-managed Apache Kafka) Discard records older than the specified age. The default value is -1, which sets the maximum age to infinite. When the value is set to infinite, Lambda never discards old records.
     *   The minimum valid value for maximum record age is 60s. Although values less than 60 and greater than -1 fall within the parameter's absolute range, they are not allowed
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_event_source_mapping#maximum_record_age_in_seconds CcEventSourceMapping#maximum_record_age_in_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_event_source_mapping#maximum_record_age_in_seconds CcEventSourceMapping#maximum_record_age_in_seconds}
     */
     readonly maximumRecordAgeInSeconds?: number;
     /**
     * (Kinesis, DynamoDB Streams, Amazon MSK, and self-managed Apache Kafka) Discard records after the specified number of retries. The default value is -1, which sets the maximum number of retries to infinite. When MaximumRetryAttempts is infinite, Lambda retries failed records until the record expires in the event source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_event_source_mapping#maximum_retry_attempts CcEventSourceMapping#maximum_retry_attempts}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_event_source_mapping#maximum_retry_attempts CcEventSourceMapping#maximum_retry_attempts}
     */
     readonly maximumRetryAttempts?: number;
     /**
     * The metrics configuration for your event source. For more information, see [Event source mapping metrics](https://docs.aws.amazon.com/lambda/latest/dg/monitoring-metrics-types.html#event-source-mapping-metrics).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_event_source_mapping#metrics_config CcEventSourceMapping#metrics_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_event_source_mapping#metrics_config CcEventSourceMapping#metrics_config}
     */
     readonly metricsConfig?: CcEventSourceMapping.MetricsConfigProperty;
     /**
     * (Kinesis and DynamoDB Streams only) The number of batches to process concurrently from each shard. The default value is 1.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_event_source_mapping#parallelization_factor CcEventSourceMapping#parallelization_factor}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_event_source_mapping#parallelization_factor CcEventSourceMapping#parallelization_factor}
     */
     readonly parallelizationFactor?: number;
     /**
     * (Amazon SQS, Amazon MSK, and self-managed Apache Kafka only) The provisioned mode configuration for the event source. For more information, see [provisioned mode](https://docs.aws.amazon.com/lambda/latest/dg/invocation-eventsourcemapping.html#invocation-eventsourcemapping-provisioned-mode).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_event_source_mapping#provisioned_poller_config CcEventSourceMapping#provisioned_poller_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_event_source_mapping#provisioned_poller_config CcEventSourceMapping#provisioned_poller_config}
     */
     readonly provisionedPollerConfig?: CcEventSourceMapping.ProvisionedPollerConfigProperty;
     /**
     * (Amazon MQ) The name of the Amazon MQ broker destination queue to consume.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_event_source_mapping#queues CcEventSourceMapping#queues}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_event_source_mapping#queues CcEventSourceMapping#queues}
     */
     readonly queues?: string[];
     /**
     * This property is for Amazon SQS event sources only. You cannot use ``ProvisionedPollerConfig`` while using ``ScalingConfig``. These options are mutually exclusive. To remove the scaling configuration, pass an empty value.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_event_source_mapping#scaling_config CcEventSourceMapping#scaling_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_event_source_mapping#scaling_config CcEventSourceMapping#scaling_config}
     */
     readonly scalingConfig?: CcEventSourceMapping.ScalingConfigProperty;
     /**
     * The self-managed Apache Kafka cluster for your event source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_event_source_mapping#self_managed_event_source CcEventSourceMapping#self_managed_event_source}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_event_source_mapping#self_managed_event_source CcEventSourceMapping#self_managed_event_source}
     */
     readonly selfManagedEventSource?: CcEventSourceMapping.SelfManagedEventSourceProperty;
     /**
     * Specific configuration settings for a self-managed Apache Kafka event source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_event_source_mapping#self_managed_kafka_event_source_config CcEventSourceMapping#self_managed_kafka_event_source_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_event_source_mapping#self_managed_kafka_event_source_config CcEventSourceMapping#self_managed_kafka_event_source_config}
     */
     readonly selfManagedKafkaEventSourceConfig?: CcEventSourceMapping.SelfManagedKafkaEventSourceConfigProperty;
     /**
     * An array of the authentication protocol, VPC components, or virtual host to secure and define your event source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_event_source_mapping#source_access_configurations CcEventSourceMapping#source_access_configurations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_event_source_mapping#source_access_configurations CcEventSourceMapping#source_access_configurations}
     */
     readonly sourceAccessConfigurations?: CcEventSourceMapping.SourceAccessConfigurationProperty[] | cdktn.IResolvable;
     /**
@@ -177,38 +177,38 @@ export interface CcEventSourceMappingProps extends cdktn.TerraformMetaArguments 
     *   +  *TRIM_HORIZON* - Process all available records.
     *   +  *AT_TIMESTAMP* - Specify a time from which to start reading records.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_event_source_mapping#starting_position CcEventSourceMapping#starting_position}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_event_source_mapping#starting_position CcEventSourceMapping#starting_position}
     */
     readonly startingPosition?: string;
     /**
     * With ``StartingPosition`` set to ``AT_TIMESTAMP``, the time from which to start reading, in Unix time seconds. ``StartingPositionTimestamp`` cannot be in the future.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_event_source_mapping#starting_position_timestamp CcEventSourceMapping#starting_position_timestamp}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_event_source_mapping#starting_position_timestamp CcEventSourceMapping#starting_position_timestamp}
     */
     readonly startingPositionTimestamp?: number;
     /**
     * A list of tags to add to the event source mapping.
     *   You must have the ``lambda:TagResource``, ``lambda:UntagResource``, and ``lambda:ListTags`` permissions for your [principal](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_terms-and-concepts.html) to manage the CFN stack. If you don't have these permissions, there might be unexpected behavior with stack-level tags propagating to the resource during resource creation and update.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_event_source_mapping#tags CcEventSourceMapping#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_event_source_mapping#tags CcEventSourceMapping#tags}
     */
     readonly tags?: CcEventSourceMapping.TagProperty[] | cdktn.IResolvable;
     /**
     * The name of the Kafka topic.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_event_source_mapping#topics CcEventSourceMapping#topics}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_event_source_mapping#topics CcEventSourceMapping#topics}
     */
     readonly topics?: string[];
     /**
     * (Kinesis and DynamoDB Streams only) The duration in seconds of a processing window for DynamoDB and Kinesis Streams event sources. A value of 0 seconds indicates no tumbling window.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_event_source_mapping#tumbling_window_in_seconds CcEventSourceMapping#tumbling_window_in_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_event_source_mapping#tumbling_window_in_seconds CcEventSourceMapping#tumbling_window_in_seconds}
     */
     readonly tumblingWindowInSeconds?: number;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_event_source_mapping awscc_lambda_event_source_mapping}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_event_source_mapping awscc_lambda_event_source_mapping}
 */
 export class CcEventSourceMapping extends cdktn.TerraformResource {
 
@@ -224,7 +224,7 @@ export class CcEventSourceMapping extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcEventSourceMapping resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcEventSourceMapping to import
-    * @param importFromId The id of the existing CcEventSourceMapping that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_event_source_mapping#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcEventSourceMapping that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_event_source_mapping#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcEventSourceMapping to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -236,7 +236,7 @@ export class CcEventSourceMapping extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_event_source_mapping awscc_lambda_event_source_mapping} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_event_source_mapping awscc_lambda_event_source_mapping} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -246,7 +246,8 @@ export class CcEventSourceMapping extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_lambda_event_source_mapping',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -1711,13 +1712,13 @@ export interface SchemaRegistryAccessConfigProperty {
     /**
     * The type of authentication Lambda uses to access your schema registry.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_event_source_mapping#type CcEventSourceMapping#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_event_source_mapping#type CcEventSourceMapping#type}
     */
     readonly type?: string;
     /**
     * The URI of the secret (Secrets Manager secret ARN) to authenticate with your schema registry.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_event_source_mapping#uri CcEventSourceMapping#uri}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_event_source_mapping#uri CcEventSourceMapping#uri}
     */
     readonly uri?: string;
 }
@@ -1827,7 +1828,7 @@ export interface SchemaValidationConfigProperty {
     /**
     * The attributes you want your schema registry to validate and filter for. If you selected ``JSON`` as the ``EventRecordFormat``, Lambda also deserializes the selected message attributes.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_event_source_mapping#attribute CcEventSourceMapping#attribute}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_event_source_mapping#attribute CcEventSourceMapping#attribute}
     */
     readonly attribute?: string;
 }
@@ -1915,7 +1916,7 @@ export interface SchemaRegistryConfigProperty {
     /**
     * An array of access configuration objects that tell Lambda how to authenticate with your schema registry.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_event_source_mapping#access_configs CcEventSourceMapping#access_configs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_event_source_mapping#access_configs CcEventSourceMapping#access_configs}
     */
     readonly accessConfigs?: SchemaRegistryAccessConfigProperty[] | cdktn.IResolvable;
     /**
@@ -1923,7 +1924,7 @@ export interface SchemaRegistryConfigProperty {
     *   +  Choose ``JSON`` to have Lambda deliver the record to your function as a standard JSON object.
     *   +  Choose ``SOURCE`` to have Lambda deliver the record to your function in its original source format. Lambda removes all schema metadata, such as the schema ID, before sending the record to your function.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_event_source_mapping#event_record_format CcEventSourceMapping#event_record_format}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_event_source_mapping#event_record_format CcEventSourceMapping#event_record_format}
     */
     readonly eventRecordFormat?: string;
     /**
@@ -1931,13 +1932,13 @@ export interface SchemaRegistryConfigProperty {
     *   +  For GLU schema registries, use the ARN of the registry.
     *   +  For Confluent schema registries, use the URL of the registry.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_event_source_mapping#schema_registry_uri CcEventSourceMapping#schema_registry_uri}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_event_source_mapping#schema_registry_uri CcEventSourceMapping#schema_registry_uri}
     */
     readonly schemaRegistryUri?: string;
     /**
     * An array of schema validation configuration objects, which tell Lambda the message attributes you want to validate and filter using your schema registry.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_event_source_mapping#schema_validation_configs CcEventSourceMapping#schema_validation_configs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_event_source_mapping#schema_validation_configs CcEventSourceMapping#schema_validation_configs}
     */
     readonly schemaValidationConfigs?: SchemaValidationConfigProperty[] | cdktn.IResolvable;
 }
@@ -2069,13 +2070,13 @@ export interface AmazonManagedKafkaEventSourceConfigProperty {
     /**
     * The identifier for the Kafka consumer group to join. The consumer group ID must be unique among all your Kafka event sources. After creating a Kafka event source mapping with the consumer group ID specified, you cannot update this value. For more information, see [Customizable consumer group ID](https://docs.aws.amazon.com/lambda/latest/dg/with-msk.html#services-msk-consumer-group-id).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_event_source_mapping#consumer_group_id CcEventSourceMapping#consumer_group_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_event_source_mapping#consumer_group_id CcEventSourceMapping#consumer_group_id}
     */
     readonly consumerGroupId?: string;
     /**
     * Specific configuration settings for a Kafka schema registry.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_event_source_mapping#schema_registry_config CcEventSourceMapping#schema_registry_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_event_source_mapping#schema_registry_config CcEventSourceMapping#schema_registry_config}
     */
     readonly schemaRegistryConfig?: SchemaRegistryConfigProperty;
 }
@@ -2166,7 +2167,7 @@ export interface OnFailureProperty {
     *   Amazon SNS destinations have a message size limit of 256 KB. If the combined size of the function request and response payload exceeds the limit, Lambda will drop the payload when sending ``OnFailure`` event to the destination. For details on this behavior, refer to [Retaining records of asynchronous invocations](https://docs.aws.amazon.com/lambda/latest/dg/invocation-async-retain-records.html).
     *   To retain records of failed invocations from [Kinesis](https://docs.aws.amazon.com/lambda/latest/dg/with-kinesis.html), [DynamoDB](https://docs.aws.amazon.com/lambda/latest/dg/with-ddb.html), [self-managed Kafka](https://docs.aws.amazon.com/lambda/latest/dg/with-kafka.html#services-smaa-onfailure-destination) or [Amazon MSK](https://docs.aws.amazon.com/lambda/latest/dg/with-msk.html#services-msk-onfailure-destination), you can configure an Amazon SNS topic, Amazon SQS queue, or Amazon S3 bucket as the destination.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_event_source_mapping#destination CcEventSourceMapping#destination}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_event_source_mapping#destination CcEventSourceMapping#destination}
     */
     readonly destination?: string;
 }
@@ -2232,7 +2233,7 @@ export interface DestinationConfigProperty {
     /**
     * The destination configuration for failed invocations.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_event_source_mapping#on_failure CcEventSourceMapping#on_failure}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_event_source_mapping#on_failure CcEventSourceMapping#on_failure}
     */
     readonly onFailure?: OnFailureProperty;
 }
@@ -2298,19 +2299,19 @@ export interface DocumentDBEventSourceConfigProperty {
     /**
     * The name of the collection to consume within the database. If you do not specify a collection, Lambda consumes all collections.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_event_source_mapping#collection_name CcEventSourceMapping#collection_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_event_source_mapping#collection_name CcEventSourceMapping#collection_name}
     */
     readonly collectionName?: string;
     /**
     * The name of the database to consume within the DocumentDB cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_event_source_mapping#database_name CcEventSourceMapping#database_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_event_source_mapping#database_name CcEventSourceMapping#database_name}
     */
     readonly databaseName?: string;
     /**
     * Determines what DocumentDB sends to your event stream during document update operations. If set to UpdateLookup, DocumentDB sends a delta describing the changes, along with a copy of the entire document. Otherwise, DocumentDB sends only a partial document that contains the changes.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_event_source_mapping#full_document CcEventSourceMapping#full_document}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_event_source_mapping#full_document CcEventSourceMapping#full_document}
     */
     readonly fullDocument?: string;
 }
@@ -2420,7 +2421,7 @@ export interface FilterProperty {
     /**
     * A filter pattern. For more information on the syntax of a filter pattern, see [Filter rule syntax](https://docs.aws.amazon.com/lambda/latest/dg/invocation-eventfiltering.html#filtering-syntax).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_event_source_mapping#pattern CcEventSourceMapping#pattern}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_event_source_mapping#pattern CcEventSourceMapping#pattern}
     */
     readonly pattern?: string;
 }
@@ -2508,7 +2509,7 @@ export interface FilterCriteriaProperty {
     /**
     * A list of filters.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_event_source_mapping#filters CcEventSourceMapping#filters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_event_source_mapping#filters CcEventSourceMapping#filters}
     */
     readonly filters?: FilterProperty[] | cdktn.IResolvable;
 }
@@ -2574,7 +2575,7 @@ export interface LoggingConfigProperty {
     /**
     * Set this property to filter the system logs for your function that Lambda sends to CloudWatch. Lambda only sends system logs at the selected level of detail and lower, where ``DEBUG`` is the highest level and ``WARN`` is the lowest.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_event_source_mapping#system_log_level CcEventSourceMapping#system_log_level}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_event_source_mapping#system_log_level CcEventSourceMapping#system_log_level}
     */
     readonly systemLogLevel?: string;
 }
@@ -2645,7 +2646,7 @@ export interface MetricsConfigProperty {
     *   
     *   For more information about these metrics, see [Event source mapping metrics](https://docs.aws.amazon.com/lambda/latest/dg/monitoring-metrics-types.html#event-source-mapping-metrics).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_event_source_mapping#metrics CcEventSourceMapping#metrics}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_event_source_mapping#metrics CcEventSourceMapping#metrics}
     */
     readonly metrics?: string[];
 }
@@ -2711,19 +2712,19 @@ export interface ProvisionedPollerConfigProperty {
     /**
     * The maximum number of event pollers this event source can scale up to. For Amazon SQS events source mappings, default is 200, and minimum value allowed is 2. For Amazon MSK and self-managed Apache Kafka event source mappings, default is 200, and minimum value allowed is 1.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_event_source_mapping#maximum_pollers CcEventSourceMapping#maximum_pollers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_event_source_mapping#maximum_pollers CcEventSourceMapping#maximum_pollers}
     */
     readonly maximumPollers?: number;
     /**
     * The minimum number of event pollers this event source can scale down to. For Amazon SQS events source mappings, default is 2, and minimum 2 required. For Amazon MSK and self-managed Apache Kafka event source mappings, default is 1.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_event_source_mapping#minimum_pollers CcEventSourceMapping#minimum_pollers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_event_source_mapping#minimum_pollers CcEventSourceMapping#minimum_pollers}
     */
     readonly minimumPollers?: number;
     /**
     * (Amazon MSK and self-managed Apache Kafka) The name of the provisioned poller group. Use this option to group multiple ESMs within the event source's VPC to share Event Poller Unit (EPU) capacity. You can use this option to optimize Provisioned mode costs for your ESMs. You can group up to 100 ESMs per poller group and aggregate maximum pollers across all ESMs in a group cannot exceed 2000.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_event_source_mapping#poller_group_name CcEventSourceMapping#poller_group_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_event_source_mapping#poller_group_name CcEventSourceMapping#poller_group_name}
     */
     readonly pollerGroupName?: string;
 }
@@ -2833,7 +2834,7 @@ export interface ScalingConfigProperty {
     /**
     * Limits the number of concurrent instances that the SQS event source can invoke.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_event_source_mapping#maximum_concurrency CcEventSourceMapping#maximum_concurrency}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_event_source_mapping#maximum_concurrency CcEventSourceMapping#maximum_concurrency}
     */
     readonly maximumConcurrency?: number;
 }
@@ -2899,7 +2900,7 @@ export interface EndpointsProperty {
     /**
     * The list of bootstrap servers for your Kafka brokers in the following format: ``"KafkaBootstrapServers": ["abc.xyz.com:xxxx","abc2.xyz.com:xxxx"]``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_event_source_mapping#kafka_bootstrap_servers CcEventSourceMapping#kafka_bootstrap_servers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_event_source_mapping#kafka_bootstrap_servers CcEventSourceMapping#kafka_bootstrap_servers}
     */
     readonly kafkaBootstrapServers?: string[];
 }
@@ -2965,7 +2966,7 @@ export interface SelfManagedEventSourceProperty {
     /**
     * The list of bootstrap servers for your Kafka brokers in the following format: ``"KafkaBootstrapServers": ["abc.xyz.com:xxxx","abc2.xyz.com:xxxx"]``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_event_source_mapping#endpoints CcEventSourceMapping#endpoints}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_event_source_mapping#endpoints CcEventSourceMapping#endpoints}
     */
     readonly endpoints?: EndpointsProperty;
 }
@@ -3031,13 +3032,13 @@ export interface AccessConfigsProperty {
     /**
     * The type of authentication Lambda uses to access your schema registry.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_event_source_mapping#type CcEventSourceMapping#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_event_source_mapping#type CcEventSourceMapping#type}
     */
     readonly type?: string;
     /**
     * The URI of the secret (Secrets Manager secret ARN) to authenticate with your schema registry.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_event_source_mapping#uri CcEventSourceMapping#uri}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_event_source_mapping#uri CcEventSourceMapping#uri}
     */
     readonly uri?: string;
 }
@@ -3147,7 +3148,7 @@ export interface SchemaValidationConfigsProperty {
     /**
     * The attributes you want your schema registry to validate and filter for. If you selected ``JSON`` as the ``EventRecordFormat``, Lambda also deserializes the selected message attributes.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_event_source_mapping#attribute CcEventSourceMapping#attribute}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_event_source_mapping#attribute CcEventSourceMapping#attribute}
     */
     readonly attribute?: string;
 }
@@ -3235,7 +3236,7 @@ export interface SelfManagedKafkaEventSourceConfigSchemaRegistryConfigProperty {
     /**
     * An array of access configuration objects that tell Lambda how to authenticate with your schema registry.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_event_source_mapping#access_configs CcEventSourceMapping#access_configs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_event_source_mapping#access_configs CcEventSourceMapping#access_configs}
     */
     readonly accessConfigs?: AccessConfigsProperty[] | cdktn.IResolvable;
     /**
@@ -3243,7 +3244,7 @@ export interface SelfManagedKafkaEventSourceConfigSchemaRegistryConfigProperty {
     *   +  Choose ``JSON`` to have Lambda deliver the record to your function as a standard JSON object.
     *   +  Choose ``SOURCE`` to have Lambda deliver the record to your function in its original source format. Lambda removes all schema metadata, such as the schema ID, before sending the record to your function.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_event_source_mapping#event_record_format CcEventSourceMapping#event_record_format}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_event_source_mapping#event_record_format CcEventSourceMapping#event_record_format}
     */
     readonly eventRecordFormat?: string;
     /**
@@ -3251,13 +3252,13 @@ export interface SelfManagedKafkaEventSourceConfigSchemaRegistryConfigProperty {
     *   +  For GLU schema registries, use the ARN of the registry.
     *   +  For Confluent schema registries, use the URL of the registry.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_event_source_mapping#schema_registry_uri CcEventSourceMapping#schema_registry_uri}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_event_source_mapping#schema_registry_uri CcEventSourceMapping#schema_registry_uri}
     */
     readonly schemaRegistryUri?: string;
     /**
     * An array of schema validation configuration objects, which tell Lambda the message attributes you want to validate and filter using your schema registry.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_event_source_mapping#schema_validation_configs CcEventSourceMapping#schema_validation_configs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_event_source_mapping#schema_validation_configs CcEventSourceMapping#schema_validation_configs}
     */
     readonly schemaValidationConfigs?: SchemaValidationConfigsProperty[] | cdktn.IResolvable;
 }
@@ -3389,13 +3390,13 @@ export interface SelfManagedKafkaEventSourceConfigProperty {
     /**
     * The identifier for the Kafka consumer group to join. The consumer group ID must be unique among all your Kafka event sources. After creating a Kafka event source mapping with the consumer group ID specified, you cannot update this value. For more information, see [Customizable consumer group ID](https://docs.aws.amazon.com/lambda/latest/dg/with-kafka-process.html#services-smaa-topic-add).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_event_source_mapping#consumer_group_id CcEventSourceMapping#consumer_group_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_event_source_mapping#consumer_group_id CcEventSourceMapping#consumer_group_id}
     */
     readonly consumerGroupId?: string;
     /**
     * Specific configuration settings for a Kafka schema registry.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_event_source_mapping#schema_registry_config CcEventSourceMapping#schema_registry_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_event_source_mapping#schema_registry_config CcEventSourceMapping#schema_registry_config}
     */
     readonly schemaRegistryConfig?: SelfManagedKafkaEventSourceConfigSchemaRegistryConfigProperty;
 }
@@ -3492,13 +3493,13 @@ export interface SourceAccessConfigurationProperty {
     *   +  ``CLIENT_CERTIFICATE_TLS_AUTH`` – (Amazon MSK, self-managed Apache Kafka) The Secrets Manager ARN of your secret key containing the certificate chain (X.509 PEM), private key (PKCS#8 PEM), and private key password (optional) used for mutual TLS authentication of your MSK/Apache Kafka brokers.
     *   +  ``SERVER_ROOT_CA_CERTIFICATE`` – (Self-managed Apache Kafka) The Secrets Manager ARN of your secret key containing the root CA certificate (X.509 PEM) used for TLS encryption of your Apache Kafka brokers.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_event_source_mapping#type CcEventSourceMapping#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_event_source_mapping#type CcEventSourceMapping#type}
     */
     readonly type?: string;
     /**
     * The value for your chosen configuration in ``Type``. For example: ``"URI": "arn:aws:secretsmanager:us-east-1:01234567890:secret:MyBrokerSecretName"``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_event_source_mapping#uri CcEventSourceMapping#uri}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_event_source_mapping#uri CcEventSourceMapping#uri}
     */
     readonly uri?: string;
 }
@@ -3608,13 +3609,13 @@ export interface TagProperty {
     /**
     * The key for this tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_event_source_mapping#key CcEventSourceMapping#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_event_source_mapping#key CcEventSourceMapping#key}
     */
     readonly key?: string;
     /**
     * The value for this tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_event_source_mapping#value CcEventSourceMapping#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_event_source_mapping#value CcEventSourceMapping#value}
     */
     readonly value?: string;
 }

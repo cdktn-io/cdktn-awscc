@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/groundstation_mission_profile
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_mission_profile
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,61 +9,61 @@ export interface CcMissionProfileProps extends cdktn.TerraformMetaArguments {
     /**
     * Post-pass time needed after the contact.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/groundstation_mission_profile#contact_post_pass_duration_seconds CcMissionProfile#contact_post_pass_duration_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_mission_profile#contact_post_pass_duration_seconds CcMissionProfile#contact_post_pass_duration_seconds}
     */
     readonly contactPostPassDurationSeconds?: number;
     /**
     * Pre-pass time needed before the contact.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/groundstation_mission_profile#contact_pre_pass_duration_seconds CcMissionProfile#contact_pre_pass_duration_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_mission_profile#contact_pre_pass_duration_seconds CcMissionProfile#contact_pre_pass_duration_seconds}
     */
     readonly contactPrePassDurationSeconds?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/groundstation_mission_profile#dataflow_edges CcMissionProfile#dataflow_edges}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_mission_profile#dataflow_edges CcMissionProfile#dataflow_edges}
     */
     readonly dataflowEdges: CcMissionProfile.DataflowEdgeProperty[] | cdktn.IResolvable;
     /**
     * Visibilities with shorter duration than the specified minimum viable contact duration will be ignored when searching for available contacts.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/groundstation_mission_profile#minimum_viable_contact_duration_seconds CcMissionProfile#minimum_viable_contact_duration_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_mission_profile#minimum_viable_contact_duration_seconds CcMissionProfile#minimum_viable_contact_duration_seconds}
     */
     readonly minimumViableContactDurationSeconds: number;
     /**
     * A name used to identify a mission profile.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/groundstation_mission_profile#name CcMissionProfile#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_mission_profile#name CcMissionProfile#name}
     */
     readonly name: string;
     /**
     * The ARN of a KMS Key used for encrypting data during transmission from the source to destination locations.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/groundstation_mission_profile#streams_kms_key CcMissionProfile#streams_kms_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_mission_profile#streams_kms_key CcMissionProfile#streams_kms_key}
     */
     readonly streamsKmsKey?: CcMissionProfile.StreamsKmsKeyProperty;
     /**
     * The ARN of the KMS Key or Alias Key role used to define permissions on KMS Key usage.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/groundstation_mission_profile#streams_kms_role CcMissionProfile#streams_kms_role}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_mission_profile#streams_kms_role CcMissionProfile#streams_kms_role}
     */
     readonly streamsKmsRole?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/groundstation_mission_profile#tags CcMissionProfile#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_mission_profile#tags CcMissionProfile#tags}
     */
     readonly tags?: CcMissionProfile.TagProperty[] | cdktn.IResolvable;
     /**
     * ARN of a Config resource of type TelemetrySinkConfig used for telemetry data sink configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/groundstation_mission_profile#telemetry_sink_config_arn CcMissionProfile#telemetry_sink_config_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_mission_profile#telemetry_sink_config_arn CcMissionProfile#telemetry_sink_config_arn}
     */
     readonly telemetrySinkConfigArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/groundstation_mission_profile#tracking_config_arn CcMissionProfile#tracking_config_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_mission_profile#tracking_config_arn CcMissionProfile#tracking_config_arn}
     */
     readonly trackingConfigArn: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/groundstation_mission_profile awscc_groundstation_mission_profile}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_mission_profile awscc_groundstation_mission_profile}
 */
 export class CcMissionProfile extends cdktn.TerraformResource {
 
@@ -79,7 +79,7 @@ export class CcMissionProfile extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcMissionProfile resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcMissionProfile to import
-    * @param importFromId The id of the existing CcMissionProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/groundstation_mission_profile#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcMissionProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_mission_profile#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcMissionProfile to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -91,7 +91,7 @@ export class CcMissionProfile extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/groundstation_mission_profile awscc_groundstation_mission_profile} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_mission_profile awscc_groundstation_mission_profile} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -101,7 +101,8 @@ export class CcMissionProfile extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_groundstation_mission_profile',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -504,11 +505,11 @@ export function ccMissionProfileTagPropertyToHclTerraform(struct?: CcMissionProf
 export namespace CcMissionProfile {
 export interface DataflowEdgeProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/groundstation_mission_profile#destination CcMissionProfile#destination}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_mission_profile#destination CcMissionProfile#destination}
     */
     readonly destination?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/groundstation_mission_profile#source CcMissionProfile#source}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_mission_profile#source CcMissionProfile#source}
     */
     readonly source?: string;
 }
@@ -616,15 +617,15 @@ export class DataflowEdgePropertyList extends cdktn.ComplexList {
 }
 export interface StreamsKmsKeyProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/groundstation_mission_profile#kms_alias_arn CcMissionProfile#kms_alias_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_mission_profile#kms_alias_arn CcMissionProfile#kms_alias_arn}
     */
     readonly kmsAliasArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/groundstation_mission_profile#kms_alias_name CcMissionProfile#kms_alias_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_mission_profile#kms_alias_name CcMissionProfile#kms_alias_name}
     */
     readonly kmsAliasName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/groundstation_mission_profile#kms_key_arn CcMissionProfile#kms_key_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_mission_profile#kms_key_arn CcMissionProfile#kms_key_arn}
     */
     readonly kmsKeyArn?: string;
 }
@@ -732,11 +733,11 @@ export class StreamsKmsKeyPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/groundstation_mission_profile#key CcMissionProfile#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_mission_profile#key CcMissionProfile#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/groundstation_mission_profile#value CcMissionProfile#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_mission_profile#value CcMissionProfile#value}
     */
     readonly value?: string;
 }

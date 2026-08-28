@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/devopsagent_trigger
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/devopsagent_trigger
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,37 +9,37 @@ export interface CcTriggerProps extends cdktn.TerraformMetaArguments {
     /**
     * The action to perform when the trigger fires. A JSON object containing actionType and task.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/devopsagent_trigger#action CcTrigger#action}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/devopsagent_trigger#action CcTrigger#action}
     */
     readonly action: string;
     /**
     * The unique identifier of the parent Agent Space.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/devopsagent_trigger#agent_space_id CcTrigger#agent_space_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/devopsagent_trigger#agent_space_id CcTrigger#agent_space_id}
     */
     readonly agentSpaceId: string;
     /**
     * The condition that causes the trigger to fire.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/devopsagent_trigger#condition CcTrigger#condition}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/devopsagent_trigger#condition CcTrigger#condition}
     */
     readonly condition: CcTrigger.ConditionProperty;
     /**
     * The status of the trigger. Active triggers fire on schedule; Inactive triggers are paused.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/devopsagent_trigger#status CcTrigger#status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/devopsagent_trigger#status CcTrigger#status}
     */
     readonly status?: string;
     /**
     * The type of trigger.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/devopsagent_trigger#type CcTrigger#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/devopsagent_trigger#type CcTrigger#type}
     */
     readonly type: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/devopsagent_trigger awscc_devopsagent_trigger}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/devopsagent_trigger awscc_devopsagent_trigger}
 */
 export class CcTrigger extends cdktn.TerraformResource {
 
@@ -55,7 +55,7 @@ export class CcTrigger extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcTrigger resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcTrigger to import
-    * @param importFromId The id of the existing CcTrigger that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/devopsagent_trigger#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcTrigger that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/devopsagent_trigger#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcTrigger to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -67,7 +67,7 @@ export class CcTrigger extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/devopsagent_trigger awscc_devopsagent_trigger} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/devopsagent_trigger awscc_devopsagent_trigger} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -77,7 +77,8 @@ export class CcTrigger extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_devopsagent_trigger',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -309,7 +310,7 @@ export interface ScheduleProperty {
     /**
     * A cron or rate expression that defines when the trigger fires.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/devopsagent_trigger#expression CcTrigger#expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/devopsagent_trigger#expression CcTrigger#expression}
     */
     readonly expression: string;
 }
@@ -372,7 +373,7 @@ export interface ConditionProperty {
     /**
     * Schedule configuration for a time-based trigger.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/devopsagent_trigger#schedule CcTrigger#schedule}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/devopsagent_trigger#schedule CcTrigger#schedule}
     */
     readonly schedule: ScheduleProperty;
 }

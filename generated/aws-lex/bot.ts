@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,73 +9,73 @@ export interface CcBotProps extends cdktn.TerraformMetaArguments {
     /**
     * Specifies whether to build the bot locales after bot creation completes.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#auto_build_bot_locales CcBot#auto_build_bot_locales}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#auto_build_bot_locales CcBot#auto_build_bot_locales}
     */
     readonly autoBuildBotLocales?: boolean | cdktn.IResolvable;
     /**
     * S3 location of bot definitions zip file, if it's not defined inline in CloudFormation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#bot_file_s3_location CcBot#bot_file_s3_location}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#bot_file_s3_location CcBot#bot_file_s3_location}
     */
     readonly botFileS3Location?: CcBot.S3LocationProperty;
     /**
     * List of bot locales
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#bot_locales CcBot#bot_locales}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#bot_locales CcBot#bot_locales}
     */
     readonly botLocales?: CcBot.BotLocaleProperty[] | cdktn.IResolvable;
     /**
     * A list of tags to add to the bot, which can only be added at bot creation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#bot_tags CcBot#bot_tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#bot_tags CcBot#bot_tags}
     */
     readonly botTags?: CcBot.TagProperty[] | cdktn.IResolvable;
     /**
     * Data privacy setting of the Bot.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#data_privacy CcBot#data_privacy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#data_privacy CcBot#data_privacy}
     */
     readonly dataPrivacy: CcBot.DataPrivacyProperty;
     /**
     * A description of the resource
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#description CcBot#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#description CcBot#description}
     */
     readonly description?: string;
     /**
     * IdleSessionTTLInSeconds of the resource
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#idle_session_ttl_in_seconds CcBot#idle_session_ttl_in_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#idle_session_ttl_in_seconds CcBot#idle_session_ttl_in_seconds}
     */
     readonly idleSessionTtlInSeconds: number;
     /**
     * Unique name for a resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#name CcBot#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#name CcBot#name}
     */
     readonly name: string;
     /**
     * The Amazon Resource Name (ARN) of an IAM role that has permission to access the bot.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#role_arn CcBot#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#role_arn CcBot#role_arn}
     */
     readonly roleArn: string;
     /**
     * Configuring the test bot alias settings for a given bot
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#test_bot_alias_settings CcBot#test_bot_alias_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#test_bot_alias_settings CcBot#test_bot_alias_settings}
     */
     readonly testBotAliasSettings?: CcBot.TestBotAliasSettingsProperty;
     /**
     * A list of tags to add to the test alias for a bot, , which can only be added at bot/bot alias creation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#test_bot_alias_tags CcBot#test_bot_alias_tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#test_bot_alias_tags CcBot#test_bot_alias_tags}
     */
     readonly testBotAliasTags?: CcBot.TestBotAliasTagsProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot awscc_lex_bot}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot awscc_lex_bot}
 */
 export class CcBot extends cdktn.TerraformResource {
 
@@ -91,7 +91,7 @@ export class CcBot extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcBot resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcBot to import
-    * @param importFromId The id of the existing CcBot that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcBot that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcBot to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -103,7 +103,7 @@ export class CcBot extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot awscc_lex_bot} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot awscc_lex_bot} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -113,7 +113,8 @@ export class CcBot extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_lex_bot',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -9414,19 +9415,19 @@ export interface S3LocationProperty {
     /**
     * An Amazon S3 bucket in the same AWS Region as your function. The bucket can be in a different AWS account.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#s3_bucket CcBot#s3_bucket}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#s3_bucket CcBot#s3_bucket}
     */
     readonly s3Bucket?: string;
     /**
     * The Amazon S3 key of the deployment package.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#s3_object_key CcBot#s3_object_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#s3_object_key CcBot#s3_object_key}
     */
     readonly s3ObjectKey?: string;
     /**
     * For versioned objects, the version of the deployment package object to use. If not specified, the current object version will be used.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#s3_object_version CcBot#s3_object_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#s3_object_version CcBot#s3_object_version}
     */
     readonly s3ObjectVersion?: string;
 }
@@ -9536,13 +9537,13 @@ export interface CustomVocabularyItemProperty {
     /**
     * Phrase that should be recognized.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#phrase CcBot#phrase}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#phrase CcBot#phrase}
     */
     readonly phrase?: string;
     /**
     * The degree to which the phrase recognition is boosted.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#weight CcBot#weight}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#weight CcBot#weight}
     */
     readonly weight?: number;
 }
@@ -9650,7 +9651,7 @@ export class CustomVocabularyItemPropertyList extends cdktn.ComplexList {
 }
 export interface CustomVocabularyProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#custom_vocabulary_items CcBot#custom_vocabulary_items}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#custom_vocabulary_items CcBot#custom_vocabulary_items}
     */
     readonly customVocabularyItems?: CustomVocabularyItemProperty[] | cdktn.IResolvable;
 }
@@ -9714,7 +9715,7 @@ export class CustomVocabularyPropertyOutputReference extends cdktn.ComplexObject
 }
 export interface DialogCodeHookSettingProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#enabled CcBot#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#enabled CcBot#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -9780,7 +9781,7 @@ export interface CustomPayloadProperty {
     /**
     * The string that is sent to your application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -9846,13 +9847,13 @@ export interface ButtonProperty {
     /**
     * The text that appears on the button.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#text CcBot#text}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#text CcBot#text}
     */
     readonly text?: string;
     /**
     * The value returned to Amazon Lex when the user chooses this button.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -9962,25 +9963,25 @@ export interface ImageResponseCardProperty {
     /**
     * A list of buttons that should be displayed on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#buttons CcBot#buttons}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#buttons CcBot#buttons}
     */
     readonly buttons?: ButtonProperty[] | cdktn.IResolvable;
     /**
     * The URL of an image to display on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#image_url CcBot#image_url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#image_url CcBot#image_url}
     */
     readonly imageUrl?: string;
     /**
     * The subtitle to display on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#subtitle CcBot#subtitle}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#subtitle CcBot#subtitle}
     */
     readonly subtitle?: string;
     /**
     * The title to display on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#title CcBot#title}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#title CcBot#title}
     */
     readonly title?: string;
 }
@@ -10112,7 +10113,7 @@ export interface PlainTextMessageProperty {
     /**
     * The message to send to the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -10178,7 +10179,7 @@ export interface SSMLMessageProperty {
     /**
     * The SSML text that defines the prompt.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -10244,25 +10245,25 @@ export interface MessageProperty {
     /**
     * A message in a custom format defined by the client application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#custom_payload CcBot#custom_payload}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#custom_payload CcBot#custom_payload}
     */
     readonly customPayload?: CustomPayloadProperty;
     /**
     * A message that defines a response card that the client application can show to the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#image_response_card CcBot#image_response_card}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#image_response_card CcBot#image_response_card}
     */
     readonly imageResponseCard?: ImageResponseCardProperty;
     /**
     * A message in plain text format.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#plain_text_message CcBot#plain_text_message}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#plain_text_message CcBot#plain_text_message}
     */
     readonly plainTextMessage?: PlainTextMessageProperty;
     /**
     * A message in Speech Synthesis Markup Language (SSML).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#ssml_message CcBot#ssml_message}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#ssml_message CcBot#ssml_message}
     */
     readonly ssmlMessage?: SSMLMessageProperty;
 }
@@ -10394,7 +10395,7 @@ export interface BotLocalesIntentsFulfillmentCodeHookFulfillmentUpdatesSpecifica
     /**
     * The string that is sent to your application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -10460,13 +10461,13 @@ export interface BotLocalesIntentsFulfillmentCodeHookFulfillmentUpdatesSpecifica
     /**
     * The text that appears on the button.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#text CcBot#text}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#text CcBot#text}
     */
     readonly text?: string;
     /**
     * The value returned to Amazon Lex when the user chooses this button.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -10576,25 +10577,25 @@ export interface BotLocalesIntentsFulfillmentCodeHookFulfillmentUpdatesSpecifica
     /**
     * A list of buttons that should be displayed on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#buttons CcBot#buttons}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#buttons CcBot#buttons}
     */
     readonly buttons?: BotLocalesIntentsFulfillmentCodeHookFulfillmentUpdatesSpecificationStartResponseMessageGroupsVariationsImageResponseCardButtonsProperty[] | cdktn.IResolvable;
     /**
     * The URL of an image to display on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#image_url CcBot#image_url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#image_url CcBot#image_url}
     */
     readonly imageUrl?: string;
     /**
     * The subtitle to display on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#subtitle CcBot#subtitle}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#subtitle CcBot#subtitle}
     */
     readonly subtitle?: string;
     /**
     * The title to display on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#title CcBot#title}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#title CcBot#title}
     */
     readonly title?: string;
 }
@@ -10726,7 +10727,7 @@ export interface BotLocalesIntentsFulfillmentCodeHookFulfillmentUpdatesSpecifica
     /**
     * The message to send to the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -10792,7 +10793,7 @@ export interface BotLocalesIntentsFulfillmentCodeHookFulfillmentUpdatesSpecifica
     /**
     * The SSML text that defines the prompt.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -10858,25 +10859,25 @@ export interface BotLocalesIntentsFulfillmentCodeHookFulfillmentUpdatesSpecifica
     /**
     * A message in a custom format defined by the client application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#custom_payload CcBot#custom_payload}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#custom_payload CcBot#custom_payload}
     */
     readonly customPayload?: BotLocalesIntentsFulfillmentCodeHookFulfillmentUpdatesSpecificationStartResponseMessageGroupsVariationsCustomPayloadProperty;
     /**
     * A message that defines a response card that the client application can show to the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#image_response_card CcBot#image_response_card}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#image_response_card CcBot#image_response_card}
     */
     readonly imageResponseCard?: BotLocalesIntentsFulfillmentCodeHookFulfillmentUpdatesSpecificationStartResponseMessageGroupsVariationsImageResponseCardProperty;
     /**
     * A message in plain text format.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#plain_text_message CcBot#plain_text_message}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#plain_text_message CcBot#plain_text_message}
     */
     readonly plainTextMessage?: BotLocalesIntentsFulfillmentCodeHookFulfillmentUpdatesSpecificationStartResponseMessageGroupsVariationsPlainTextMessageProperty;
     /**
     * A message in Speech Synthesis Markup Language (SSML).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#ssml_message CcBot#ssml_message}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#ssml_message CcBot#ssml_message}
     */
     readonly ssmlMessage?: BotLocalesIntentsFulfillmentCodeHookFulfillmentUpdatesSpecificationStartResponseMessageGroupsVariationsSsmlMessageProperty;
 }
@@ -11030,13 +11031,13 @@ export interface MessageGroupProperty {
     /**
     * The primary message that Amazon Lex should send to the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#message CcBot#message}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#message CcBot#message}
     */
     readonly message?: MessageProperty;
     /**
     * Message variations to send to the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#variations CcBot#variations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#variations CcBot#variations}
     */
     readonly variations?: BotLocalesIntentsFulfillmentCodeHookFulfillmentUpdatesSpecificationStartResponseMessageGroupsVariationsProperty[] | cdktn.IResolvable;
 }
@@ -11146,19 +11147,19 @@ export interface FulfillmentStartResponseSpecificationProperty {
     /**
     * Determines whether the user can interrupt the start message while it is playing.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#allow_interrupt CcBot#allow_interrupt}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#allow_interrupt CcBot#allow_interrupt}
     */
     readonly allowInterrupt?: boolean | cdktn.IResolvable;
     /**
     * The delay between when the Lambda fulfillment function starts running and the start message is played. If the Lambda function returns before the delay is over, the start message isn't played.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#delay_in_seconds CcBot#delay_in_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#delay_in_seconds CcBot#delay_in_seconds}
     */
     readonly delayInSeconds?: number;
     /**
     * One to 5 message groups that contain update messages. Amazon Lex chooses one of the messages to play to the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#message_groups CcBot#message_groups}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#message_groups CcBot#message_groups}
     */
     readonly messageGroups?: MessageGroupProperty[] | cdktn.IResolvable;
 }
@@ -11268,7 +11269,7 @@ export interface BotLocalesIntentsFulfillmentCodeHookFulfillmentUpdatesSpecifica
     /**
     * The string that is sent to your application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -11334,13 +11335,13 @@ export interface BotLocalesIntentsFulfillmentCodeHookFulfillmentUpdatesSpecifica
     /**
     * The text that appears on the button.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#text CcBot#text}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#text CcBot#text}
     */
     readonly text?: string;
     /**
     * The value returned to Amazon Lex when the user chooses this button.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -11450,25 +11451,25 @@ export interface BotLocalesIntentsFulfillmentCodeHookFulfillmentUpdatesSpecifica
     /**
     * A list of buttons that should be displayed on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#buttons CcBot#buttons}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#buttons CcBot#buttons}
     */
     readonly buttons?: BotLocalesIntentsFulfillmentCodeHookFulfillmentUpdatesSpecificationUpdateResponseMessageGroupsMessageImageResponseCardButtonsProperty[] | cdktn.IResolvable;
     /**
     * The URL of an image to display on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#image_url CcBot#image_url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#image_url CcBot#image_url}
     */
     readonly imageUrl?: string;
     /**
     * The subtitle to display on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#subtitle CcBot#subtitle}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#subtitle CcBot#subtitle}
     */
     readonly subtitle?: string;
     /**
     * The title to display on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#title CcBot#title}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#title CcBot#title}
     */
     readonly title?: string;
 }
@@ -11600,7 +11601,7 @@ export interface BotLocalesIntentsFulfillmentCodeHookFulfillmentUpdatesSpecifica
     /**
     * The message to send to the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -11666,7 +11667,7 @@ export interface BotLocalesIntentsFulfillmentCodeHookFulfillmentUpdatesSpecifica
     /**
     * The SSML text that defines the prompt.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -11732,25 +11733,25 @@ export interface BotLocalesIntentsFulfillmentCodeHookFulfillmentUpdatesSpecifica
     /**
     * A message in a custom format defined by the client application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#custom_payload CcBot#custom_payload}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#custom_payload CcBot#custom_payload}
     */
     readonly customPayload?: BotLocalesIntentsFulfillmentCodeHookFulfillmentUpdatesSpecificationUpdateResponseMessageGroupsMessageCustomPayloadProperty;
     /**
     * A message that defines a response card that the client application can show to the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#image_response_card CcBot#image_response_card}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#image_response_card CcBot#image_response_card}
     */
     readonly imageResponseCard?: BotLocalesIntentsFulfillmentCodeHookFulfillmentUpdatesSpecificationUpdateResponseMessageGroupsMessageImageResponseCardProperty;
     /**
     * A message in plain text format.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#plain_text_message CcBot#plain_text_message}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#plain_text_message CcBot#plain_text_message}
     */
     readonly plainTextMessage?: BotLocalesIntentsFulfillmentCodeHookFulfillmentUpdatesSpecificationUpdateResponseMessageGroupsMessagePlainTextMessageProperty;
     /**
     * A message in Speech Synthesis Markup Language (SSML).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#ssml_message CcBot#ssml_message}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#ssml_message CcBot#ssml_message}
     */
     readonly ssmlMessage?: BotLocalesIntentsFulfillmentCodeHookFulfillmentUpdatesSpecificationUpdateResponseMessageGroupsMessageSsmlMessageProperty;
 }
@@ -11882,7 +11883,7 @@ export interface BotLocalesIntentsFulfillmentCodeHookFulfillmentUpdatesSpecifica
     /**
     * The string that is sent to your application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -11948,13 +11949,13 @@ export interface BotLocalesIntentsFulfillmentCodeHookFulfillmentUpdatesSpecifica
     /**
     * The text that appears on the button.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#text CcBot#text}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#text CcBot#text}
     */
     readonly text?: string;
     /**
     * The value returned to Amazon Lex when the user chooses this button.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -12064,25 +12065,25 @@ export interface BotLocalesIntentsFulfillmentCodeHookFulfillmentUpdatesSpecifica
     /**
     * A list of buttons that should be displayed on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#buttons CcBot#buttons}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#buttons CcBot#buttons}
     */
     readonly buttons?: BotLocalesIntentsFulfillmentCodeHookFulfillmentUpdatesSpecificationUpdateResponseMessageGroupsVariationsImageResponseCardButtonsProperty[] | cdktn.IResolvable;
     /**
     * The URL of an image to display on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#image_url CcBot#image_url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#image_url CcBot#image_url}
     */
     readonly imageUrl?: string;
     /**
     * The subtitle to display on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#subtitle CcBot#subtitle}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#subtitle CcBot#subtitle}
     */
     readonly subtitle?: string;
     /**
     * The title to display on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#title CcBot#title}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#title CcBot#title}
     */
     readonly title?: string;
 }
@@ -12214,7 +12215,7 @@ export interface BotLocalesIntentsFulfillmentCodeHookFulfillmentUpdatesSpecifica
     /**
     * The message to send to the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -12280,7 +12281,7 @@ export interface BotLocalesIntentsFulfillmentCodeHookFulfillmentUpdatesSpecifica
     /**
     * The SSML text that defines the prompt.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -12346,25 +12347,25 @@ export interface BotLocalesIntentsFulfillmentCodeHookFulfillmentUpdatesSpecifica
     /**
     * A message in a custom format defined by the client application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#custom_payload CcBot#custom_payload}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#custom_payload CcBot#custom_payload}
     */
     readonly customPayload?: BotLocalesIntentsFulfillmentCodeHookFulfillmentUpdatesSpecificationUpdateResponseMessageGroupsVariationsCustomPayloadProperty;
     /**
     * A message that defines a response card that the client application can show to the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#image_response_card CcBot#image_response_card}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#image_response_card CcBot#image_response_card}
     */
     readonly imageResponseCard?: BotLocalesIntentsFulfillmentCodeHookFulfillmentUpdatesSpecificationUpdateResponseMessageGroupsVariationsImageResponseCardProperty;
     /**
     * A message in plain text format.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#plain_text_message CcBot#plain_text_message}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#plain_text_message CcBot#plain_text_message}
     */
     readonly plainTextMessage?: BotLocalesIntentsFulfillmentCodeHookFulfillmentUpdatesSpecificationUpdateResponseMessageGroupsVariationsPlainTextMessageProperty;
     /**
     * A message in Speech Synthesis Markup Language (SSML).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#ssml_message CcBot#ssml_message}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#ssml_message CcBot#ssml_message}
     */
     readonly ssmlMessage?: BotLocalesIntentsFulfillmentCodeHookFulfillmentUpdatesSpecificationUpdateResponseMessageGroupsVariationsSsmlMessageProperty;
 }
@@ -12518,13 +12519,13 @@ export interface MessageGroupsProperty {
     /**
     * The primary message that Amazon Lex should send to the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#message CcBot#message}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#message CcBot#message}
     */
     readonly message?: BotLocalesIntentsFulfillmentCodeHookFulfillmentUpdatesSpecificationUpdateResponseMessageGroupsMessageProperty;
     /**
     * Message variations to send to the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#variations CcBot#variations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#variations CcBot#variations}
     */
     readonly variations?: BotLocalesIntentsFulfillmentCodeHookFulfillmentUpdatesSpecificationUpdateResponseMessageGroupsVariationsProperty[] | cdktn.IResolvable;
 }
@@ -12634,19 +12635,19 @@ export interface FulfillmentUpdateResponseSpecificationProperty {
     /**
     * Determines whether the user can interrupt an update message while it is playing.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#allow_interrupt CcBot#allow_interrupt}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#allow_interrupt CcBot#allow_interrupt}
     */
     readonly allowInterrupt?: boolean | cdktn.IResolvable;
     /**
     * The frequency that a message is sent to the user. When the period ends, Amazon Lex chooses a message from the message groups and plays it to the user. If the fulfillment Lambda returns before the first period ends, an update message is not played to the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#frequency_in_seconds CcBot#frequency_in_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#frequency_in_seconds CcBot#frequency_in_seconds}
     */
     readonly frequencyInSeconds?: number;
     /**
     * One to 5 message groups that contain update messages. Amazon Lex chooses one of the messages to play to the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#message_groups CcBot#message_groups}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#message_groups CcBot#message_groups}
     */
     readonly messageGroups?: MessageGroupsProperty[] | cdktn.IResolvable;
 }
@@ -12756,25 +12757,25 @@ export interface FulfillmentUpdatesSpecificationProperty {
     /**
     * Determines whether fulfillment updates are sent to the user. When this field is true, updates are sent.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#active CcBot#active}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#active CcBot#active}
     */
     readonly active?: boolean | cdktn.IResolvable;
     /**
     * Provides settings for a message that is sent to the user when a fulfillment Lambda function starts running.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#start_response CcBot#start_response}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#start_response CcBot#start_response}
     */
     readonly startResponse?: FulfillmentStartResponseSpecificationProperty;
     /**
     * The length of time that the fulfillment Lambda function should run before it times out.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#timeout_in_seconds CcBot#timeout_in_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#timeout_in_seconds CcBot#timeout_in_seconds}
     */
     readonly timeoutInSeconds?: number;
     /**
     * Provides settings for a message that is sent periodically to the user while a fulfillment Lambda function is running.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#update_response CcBot#update_response}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#update_response CcBot#update_response}
     */
     readonly updateResponse?: FulfillmentUpdateResponseSpecificationProperty;
 }
@@ -12906,7 +12907,7 @@ export interface BotLocalesIntentsFulfillmentCodeHookPostFulfillmentStatusSpecif
     /**
     * The string that is sent to your application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -12972,13 +12973,13 @@ export interface BotLocalesIntentsFulfillmentCodeHookPostFulfillmentStatusSpecif
     /**
     * The text that appears on the button.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#text CcBot#text}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#text CcBot#text}
     */
     readonly text?: string;
     /**
     * The value returned to Amazon Lex when the user chooses this button.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -13088,25 +13089,25 @@ export interface BotLocalesIntentsFulfillmentCodeHookPostFulfillmentStatusSpecif
     /**
     * A list of buttons that should be displayed on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#buttons CcBot#buttons}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#buttons CcBot#buttons}
     */
     readonly buttons?: BotLocalesIntentsFulfillmentCodeHookPostFulfillmentStatusSpecificationFailureResponseMessageGroupsListMessageImageResponseCardButtonsProperty[] | cdktn.IResolvable;
     /**
     * The URL of an image to display on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#image_url CcBot#image_url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#image_url CcBot#image_url}
     */
     readonly imageUrl?: string;
     /**
     * The subtitle to display on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#subtitle CcBot#subtitle}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#subtitle CcBot#subtitle}
     */
     readonly subtitle?: string;
     /**
     * The title to display on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#title CcBot#title}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#title CcBot#title}
     */
     readonly title?: string;
 }
@@ -13238,7 +13239,7 @@ export interface BotLocalesIntentsFulfillmentCodeHookPostFulfillmentStatusSpecif
     /**
     * The message to send to the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -13304,7 +13305,7 @@ export interface BotLocalesIntentsFulfillmentCodeHookPostFulfillmentStatusSpecif
     /**
     * The SSML text that defines the prompt.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -13370,25 +13371,25 @@ export interface BotLocalesIntentsFulfillmentCodeHookPostFulfillmentStatusSpecif
     /**
     * A message in a custom format defined by the client application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#custom_payload CcBot#custom_payload}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#custom_payload CcBot#custom_payload}
     */
     readonly customPayload?: BotLocalesIntentsFulfillmentCodeHookPostFulfillmentStatusSpecificationFailureResponseMessageGroupsListMessageCustomPayloadProperty;
     /**
     * A message that defines a response card that the client application can show to the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#image_response_card CcBot#image_response_card}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#image_response_card CcBot#image_response_card}
     */
     readonly imageResponseCard?: BotLocalesIntentsFulfillmentCodeHookPostFulfillmentStatusSpecificationFailureResponseMessageGroupsListMessageImageResponseCardProperty;
     /**
     * A message in plain text format.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#plain_text_message CcBot#plain_text_message}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#plain_text_message CcBot#plain_text_message}
     */
     readonly plainTextMessage?: BotLocalesIntentsFulfillmentCodeHookPostFulfillmentStatusSpecificationFailureResponseMessageGroupsListMessagePlainTextMessageProperty;
     /**
     * A message in Speech Synthesis Markup Language (SSML).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#ssml_message CcBot#ssml_message}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#ssml_message CcBot#ssml_message}
     */
     readonly ssmlMessage?: BotLocalesIntentsFulfillmentCodeHookPostFulfillmentStatusSpecificationFailureResponseMessageGroupsListMessageSsmlMessageProperty;
 }
@@ -13520,7 +13521,7 @@ export interface BotLocalesIntentsFulfillmentCodeHookPostFulfillmentStatusSpecif
     /**
     * The string that is sent to your application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -13586,13 +13587,13 @@ export interface BotLocalesIntentsFulfillmentCodeHookPostFulfillmentStatusSpecif
     /**
     * The text that appears on the button.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#text CcBot#text}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#text CcBot#text}
     */
     readonly text?: string;
     /**
     * The value returned to Amazon Lex when the user chooses this button.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -13702,25 +13703,25 @@ export interface BotLocalesIntentsFulfillmentCodeHookPostFulfillmentStatusSpecif
     /**
     * A list of buttons that should be displayed on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#buttons CcBot#buttons}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#buttons CcBot#buttons}
     */
     readonly buttons?: BotLocalesIntentsFulfillmentCodeHookPostFulfillmentStatusSpecificationFailureResponseMessageGroupsListVariationsImageResponseCardButtonsProperty[] | cdktn.IResolvable;
     /**
     * The URL of an image to display on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#image_url CcBot#image_url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#image_url CcBot#image_url}
     */
     readonly imageUrl?: string;
     /**
     * The subtitle to display on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#subtitle CcBot#subtitle}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#subtitle CcBot#subtitle}
     */
     readonly subtitle?: string;
     /**
     * The title to display on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#title CcBot#title}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#title CcBot#title}
     */
     readonly title?: string;
 }
@@ -13852,7 +13853,7 @@ export interface BotLocalesIntentsFulfillmentCodeHookPostFulfillmentStatusSpecif
     /**
     * The message to send to the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -13918,7 +13919,7 @@ export interface BotLocalesIntentsFulfillmentCodeHookPostFulfillmentStatusSpecif
     /**
     * The SSML text that defines the prompt.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -13984,25 +13985,25 @@ export interface BotLocalesIntentsFulfillmentCodeHookPostFulfillmentStatusSpecif
     /**
     * A message in a custom format defined by the client application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#custom_payload CcBot#custom_payload}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#custom_payload CcBot#custom_payload}
     */
     readonly customPayload?: BotLocalesIntentsFulfillmentCodeHookPostFulfillmentStatusSpecificationFailureResponseMessageGroupsListVariationsCustomPayloadProperty;
     /**
     * A message that defines a response card that the client application can show to the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#image_response_card CcBot#image_response_card}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#image_response_card CcBot#image_response_card}
     */
     readonly imageResponseCard?: BotLocalesIntentsFulfillmentCodeHookPostFulfillmentStatusSpecificationFailureResponseMessageGroupsListVariationsImageResponseCardProperty;
     /**
     * A message in plain text format.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#plain_text_message CcBot#plain_text_message}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#plain_text_message CcBot#plain_text_message}
     */
     readonly plainTextMessage?: BotLocalesIntentsFulfillmentCodeHookPostFulfillmentStatusSpecificationFailureResponseMessageGroupsListVariationsPlainTextMessageProperty;
     /**
     * A message in Speech Synthesis Markup Language (SSML).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#ssml_message CcBot#ssml_message}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#ssml_message CcBot#ssml_message}
     */
     readonly ssmlMessage?: BotLocalesIntentsFulfillmentCodeHookPostFulfillmentStatusSpecificationFailureResponseMessageGroupsListVariationsSsmlMessageProperty;
 }
@@ -14156,13 +14157,13 @@ export interface BotLocalesIntentsFulfillmentCodeHookPostFulfillmentStatusSpecif
     /**
     * The primary message that Amazon Lex should send to the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#message CcBot#message}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#message CcBot#message}
     */
     readonly message?: BotLocalesIntentsFulfillmentCodeHookPostFulfillmentStatusSpecificationFailureResponseMessageGroupsListMessageProperty;
     /**
     * Message variations to send to the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#variations CcBot#variations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#variations CcBot#variations}
     */
     readonly variations?: BotLocalesIntentsFulfillmentCodeHookPostFulfillmentStatusSpecificationFailureResponseMessageGroupsListVariationsProperty[] | cdktn.IResolvable;
 }
@@ -14272,13 +14273,13 @@ export interface ResponseSpecificationProperty {
     /**
     * Indicates whether the user can interrupt a speech prompt from the bot.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#allow_interrupt CcBot#allow_interrupt}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#allow_interrupt CcBot#allow_interrupt}
     */
     readonly allowInterrupt?: boolean | cdktn.IResolvable;
     /**
     * One to 5 message groups that contain update messages. Amazon Lex chooses one of the messages to play to the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#message_groups_list CcBot#message_groups_list}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#message_groups_list CcBot#message_groups_list}
     */
     readonly messageGroupsList?: BotLocalesIntentsFulfillmentCodeHookPostFulfillmentStatusSpecificationFailureResponseMessageGroupsListProperty[] | cdktn.IResolvable;
 }
@@ -14366,7 +14367,7 @@ export interface BotLocalesIntentsFulfillmentCodeHookPostFulfillmentStatusSpecif
     /**
     * The string that is sent to your application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -14432,13 +14433,13 @@ export interface BotLocalesIntentsFulfillmentCodeHookPostFulfillmentStatusSpecif
     /**
     * The text that appears on the button.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#text CcBot#text}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#text CcBot#text}
     */
     readonly text?: string;
     /**
     * The value returned to Amazon Lex when the user chooses this button.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -14548,25 +14549,25 @@ export interface BotLocalesIntentsFulfillmentCodeHookPostFulfillmentStatusSpecif
     /**
     * A list of buttons that should be displayed on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#buttons CcBot#buttons}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#buttons CcBot#buttons}
     */
     readonly buttons?: BotLocalesIntentsFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccessResponseMessageGroupsListMessageImageResponseCardButtonsProperty[] | cdktn.IResolvable;
     /**
     * The URL of an image to display on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#image_url CcBot#image_url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#image_url CcBot#image_url}
     */
     readonly imageUrl?: string;
     /**
     * The subtitle to display on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#subtitle CcBot#subtitle}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#subtitle CcBot#subtitle}
     */
     readonly subtitle?: string;
     /**
     * The title to display on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#title CcBot#title}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#title CcBot#title}
     */
     readonly title?: string;
 }
@@ -14698,7 +14699,7 @@ export interface BotLocalesIntentsFulfillmentCodeHookPostFulfillmentStatusSpecif
     /**
     * The message to send to the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -14764,7 +14765,7 @@ export interface BotLocalesIntentsFulfillmentCodeHookPostFulfillmentStatusSpecif
     /**
     * The SSML text that defines the prompt.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -14830,25 +14831,25 @@ export interface BotLocalesIntentsFulfillmentCodeHookPostFulfillmentStatusSpecif
     /**
     * A message in a custom format defined by the client application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#custom_payload CcBot#custom_payload}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#custom_payload CcBot#custom_payload}
     */
     readonly customPayload?: BotLocalesIntentsFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccessResponseMessageGroupsListMessageCustomPayloadProperty;
     /**
     * A message that defines a response card that the client application can show to the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#image_response_card CcBot#image_response_card}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#image_response_card CcBot#image_response_card}
     */
     readonly imageResponseCard?: BotLocalesIntentsFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccessResponseMessageGroupsListMessageImageResponseCardProperty;
     /**
     * A message in plain text format.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#plain_text_message CcBot#plain_text_message}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#plain_text_message CcBot#plain_text_message}
     */
     readonly plainTextMessage?: BotLocalesIntentsFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccessResponseMessageGroupsListMessagePlainTextMessageProperty;
     /**
     * A message in Speech Synthesis Markup Language (SSML).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#ssml_message CcBot#ssml_message}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#ssml_message CcBot#ssml_message}
     */
     readonly ssmlMessage?: BotLocalesIntentsFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccessResponseMessageGroupsListMessageSsmlMessageProperty;
 }
@@ -14980,7 +14981,7 @@ export interface BotLocalesIntentsFulfillmentCodeHookPostFulfillmentStatusSpecif
     /**
     * The string that is sent to your application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -15046,13 +15047,13 @@ export interface BotLocalesIntentsFulfillmentCodeHookPostFulfillmentStatusSpecif
     /**
     * The text that appears on the button.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#text CcBot#text}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#text CcBot#text}
     */
     readonly text?: string;
     /**
     * The value returned to Amazon Lex when the user chooses this button.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -15162,25 +15163,25 @@ export interface BotLocalesIntentsFulfillmentCodeHookPostFulfillmentStatusSpecif
     /**
     * A list of buttons that should be displayed on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#buttons CcBot#buttons}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#buttons CcBot#buttons}
     */
     readonly buttons?: BotLocalesIntentsFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccessResponseMessageGroupsListVariationsImageResponseCardButtonsProperty[] | cdktn.IResolvable;
     /**
     * The URL of an image to display on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#image_url CcBot#image_url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#image_url CcBot#image_url}
     */
     readonly imageUrl?: string;
     /**
     * The subtitle to display on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#subtitle CcBot#subtitle}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#subtitle CcBot#subtitle}
     */
     readonly subtitle?: string;
     /**
     * The title to display on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#title CcBot#title}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#title CcBot#title}
     */
     readonly title?: string;
 }
@@ -15312,7 +15313,7 @@ export interface BotLocalesIntentsFulfillmentCodeHookPostFulfillmentStatusSpecif
     /**
     * The message to send to the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -15378,7 +15379,7 @@ export interface BotLocalesIntentsFulfillmentCodeHookPostFulfillmentStatusSpecif
     /**
     * The SSML text that defines the prompt.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -15444,25 +15445,25 @@ export interface BotLocalesIntentsFulfillmentCodeHookPostFulfillmentStatusSpecif
     /**
     * A message in a custom format defined by the client application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#custom_payload CcBot#custom_payload}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#custom_payload CcBot#custom_payload}
     */
     readonly customPayload?: BotLocalesIntentsFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccessResponseMessageGroupsListVariationsCustomPayloadProperty;
     /**
     * A message that defines a response card that the client application can show to the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#image_response_card CcBot#image_response_card}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#image_response_card CcBot#image_response_card}
     */
     readonly imageResponseCard?: BotLocalesIntentsFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccessResponseMessageGroupsListVariationsImageResponseCardProperty;
     /**
     * A message in plain text format.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#plain_text_message CcBot#plain_text_message}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#plain_text_message CcBot#plain_text_message}
     */
     readonly plainTextMessage?: BotLocalesIntentsFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccessResponseMessageGroupsListVariationsPlainTextMessageProperty;
     /**
     * A message in Speech Synthesis Markup Language (SSML).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#ssml_message CcBot#ssml_message}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#ssml_message CcBot#ssml_message}
     */
     readonly ssmlMessage?: BotLocalesIntentsFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccessResponseMessageGroupsListVariationsSsmlMessageProperty;
 }
@@ -15616,13 +15617,13 @@ export interface BotLocalesIntentsFulfillmentCodeHookPostFulfillmentStatusSpecif
     /**
     * The primary message that Amazon Lex should send to the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#message CcBot#message}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#message CcBot#message}
     */
     readonly message?: BotLocalesIntentsFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccessResponseMessageGroupsListMessageProperty;
     /**
     * Message variations to send to the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#variations CcBot#variations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#variations CcBot#variations}
     */
     readonly variations?: BotLocalesIntentsFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccessResponseMessageGroupsListVariationsProperty[] | cdktn.IResolvable;
 }
@@ -15732,13 +15733,13 @@ export interface SuccessResponseProperty {
     /**
     * Indicates whether the user can interrupt a speech prompt from the bot.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#allow_interrupt CcBot#allow_interrupt}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#allow_interrupt CcBot#allow_interrupt}
     */
     readonly allowInterrupt?: boolean | cdktn.IResolvable;
     /**
     * One to 5 message groups that contain update messages. Amazon Lex chooses one of the messages to play to the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#message_groups_list CcBot#message_groups_list}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#message_groups_list CcBot#message_groups_list}
     */
     readonly messageGroupsList?: BotLocalesIntentsFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccessResponseMessageGroupsListProperty[] | cdktn.IResolvable;
 }
@@ -15826,7 +15827,7 @@ export interface BotLocalesIntentsFulfillmentCodeHookPostFulfillmentStatusSpecif
     /**
     * The string that is sent to your application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -15892,13 +15893,13 @@ export interface BotLocalesIntentsFulfillmentCodeHookPostFulfillmentStatusSpecif
     /**
     * The text that appears on the button.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#text CcBot#text}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#text CcBot#text}
     */
     readonly text?: string;
     /**
     * The value returned to Amazon Lex when the user chooses this button.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -16008,25 +16009,25 @@ export interface BotLocalesIntentsFulfillmentCodeHookPostFulfillmentStatusSpecif
     /**
     * A list of buttons that should be displayed on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#buttons CcBot#buttons}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#buttons CcBot#buttons}
     */
     readonly buttons?: BotLocalesIntentsFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutResponseMessageGroupsListMessageImageResponseCardButtonsProperty[] | cdktn.IResolvable;
     /**
     * The URL of an image to display on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#image_url CcBot#image_url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#image_url CcBot#image_url}
     */
     readonly imageUrl?: string;
     /**
     * The subtitle to display on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#subtitle CcBot#subtitle}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#subtitle CcBot#subtitle}
     */
     readonly subtitle?: string;
     /**
     * The title to display on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#title CcBot#title}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#title CcBot#title}
     */
     readonly title?: string;
 }
@@ -16158,7 +16159,7 @@ export interface BotLocalesIntentsFulfillmentCodeHookPostFulfillmentStatusSpecif
     /**
     * The message to send to the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -16224,7 +16225,7 @@ export interface BotLocalesIntentsFulfillmentCodeHookPostFulfillmentStatusSpecif
     /**
     * The SSML text that defines the prompt.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -16290,25 +16291,25 @@ export interface BotLocalesIntentsFulfillmentCodeHookPostFulfillmentStatusSpecif
     /**
     * A message in a custom format defined by the client application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#custom_payload CcBot#custom_payload}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#custom_payload CcBot#custom_payload}
     */
     readonly customPayload?: BotLocalesIntentsFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutResponseMessageGroupsListMessageCustomPayloadProperty;
     /**
     * A message that defines a response card that the client application can show to the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#image_response_card CcBot#image_response_card}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#image_response_card CcBot#image_response_card}
     */
     readonly imageResponseCard?: BotLocalesIntentsFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutResponseMessageGroupsListMessageImageResponseCardProperty;
     /**
     * A message in plain text format.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#plain_text_message CcBot#plain_text_message}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#plain_text_message CcBot#plain_text_message}
     */
     readonly plainTextMessage?: BotLocalesIntentsFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutResponseMessageGroupsListMessagePlainTextMessageProperty;
     /**
     * A message in Speech Synthesis Markup Language (SSML).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#ssml_message CcBot#ssml_message}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#ssml_message CcBot#ssml_message}
     */
     readonly ssmlMessage?: BotLocalesIntentsFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutResponseMessageGroupsListMessageSsmlMessageProperty;
 }
@@ -16440,7 +16441,7 @@ export interface BotLocalesIntentsFulfillmentCodeHookPostFulfillmentStatusSpecif
     /**
     * The string that is sent to your application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -16506,13 +16507,13 @@ export interface BotLocalesIntentsFulfillmentCodeHookPostFulfillmentStatusSpecif
     /**
     * The text that appears on the button.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#text CcBot#text}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#text CcBot#text}
     */
     readonly text?: string;
     /**
     * The value returned to Amazon Lex when the user chooses this button.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -16622,25 +16623,25 @@ export interface BotLocalesIntentsFulfillmentCodeHookPostFulfillmentStatusSpecif
     /**
     * A list of buttons that should be displayed on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#buttons CcBot#buttons}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#buttons CcBot#buttons}
     */
     readonly buttons?: BotLocalesIntentsFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutResponseMessageGroupsListVariationsImageResponseCardButtonsProperty[] | cdktn.IResolvable;
     /**
     * The URL of an image to display on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#image_url CcBot#image_url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#image_url CcBot#image_url}
     */
     readonly imageUrl?: string;
     /**
     * The subtitle to display on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#subtitle CcBot#subtitle}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#subtitle CcBot#subtitle}
     */
     readonly subtitle?: string;
     /**
     * The title to display on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#title CcBot#title}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#title CcBot#title}
     */
     readonly title?: string;
 }
@@ -16772,7 +16773,7 @@ export interface BotLocalesIntentsFulfillmentCodeHookPostFulfillmentStatusSpecif
     /**
     * The message to send to the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -16838,7 +16839,7 @@ export interface BotLocalesIntentsFulfillmentCodeHookPostFulfillmentStatusSpecif
     /**
     * The SSML text that defines the prompt.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -16904,25 +16905,25 @@ export interface BotLocalesIntentsFulfillmentCodeHookPostFulfillmentStatusSpecif
     /**
     * A message in a custom format defined by the client application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#custom_payload CcBot#custom_payload}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#custom_payload CcBot#custom_payload}
     */
     readonly customPayload?: BotLocalesIntentsFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutResponseMessageGroupsListVariationsCustomPayloadProperty;
     /**
     * A message that defines a response card that the client application can show to the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#image_response_card CcBot#image_response_card}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#image_response_card CcBot#image_response_card}
     */
     readonly imageResponseCard?: BotLocalesIntentsFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutResponseMessageGroupsListVariationsImageResponseCardProperty;
     /**
     * A message in plain text format.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#plain_text_message CcBot#plain_text_message}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#plain_text_message CcBot#plain_text_message}
     */
     readonly plainTextMessage?: BotLocalesIntentsFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutResponseMessageGroupsListVariationsPlainTextMessageProperty;
     /**
     * A message in Speech Synthesis Markup Language (SSML).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#ssml_message CcBot#ssml_message}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#ssml_message CcBot#ssml_message}
     */
     readonly ssmlMessage?: BotLocalesIntentsFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutResponseMessageGroupsListVariationsSsmlMessageProperty;
 }
@@ -17076,13 +17077,13 @@ export interface BotLocalesIntentsFulfillmentCodeHookPostFulfillmentStatusSpecif
     /**
     * The primary message that Amazon Lex should send to the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#message CcBot#message}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#message CcBot#message}
     */
     readonly message?: BotLocalesIntentsFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutResponseMessageGroupsListMessageProperty;
     /**
     * Message variations to send to the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#variations CcBot#variations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#variations CcBot#variations}
     */
     readonly variations?: BotLocalesIntentsFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutResponseMessageGroupsListVariationsProperty[] | cdktn.IResolvable;
 }
@@ -17192,13 +17193,13 @@ export interface TimeoutResponseProperty {
     /**
     * Indicates whether the user can interrupt a speech prompt from the bot.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#allow_interrupt CcBot#allow_interrupt}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#allow_interrupt CcBot#allow_interrupt}
     */
     readonly allowInterrupt?: boolean | cdktn.IResolvable;
     /**
     * One to 5 message groups that contain update messages. Amazon Lex chooses one of the messages to play to the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#message_groups_list CcBot#message_groups_list}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#message_groups_list CcBot#message_groups_list}
     */
     readonly messageGroupsList?: BotLocalesIntentsFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutResponseMessageGroupsListProperty[] | cdktn.IResolvable;
 }
@@ -17286,19 +17287,19 @@ export interface PostFulfillmentStatusSpecificationProperty {
     /**
     * A list of message groups that Amazon Lex uses to respond the user input.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#failure_response CcBot#failure_response}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#failure_response CcBot#failure_response}
     */
     readonly failureResponse?: ResponseSpecificationProperty;
     /**
     * A list of message groups that Amazon Lex uses to respond the user input.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#success_response CcBot#success_response}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#success_response CcBot#success_response}
     */
     readonly successResponse?: SuccessResponseProperty;
     /**
     * A list of message groups that Amazon Lex uses to respond the user input.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#timeout_response CcBot#timeout_response}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#timeout_response CcBot#timeout_response}
     */
     readonly timeoutResponse?: TimeoutResponseProperty;
 }
@@ -17406,19 +17407,19 @@ export class PostFulfillmentStatusSpecificationPropertyOutputReference extends c
 }
 export interface FulfillmentCodeHookSettingProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#enabled CcBot#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#enabled CcBot#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
     * Provides information for updating the user on the progress of fulfilling an intent.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#fulfillment_updates_specification CcBot#fulfillment_updates_specification}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#fulfillment_updates_specification CcBot#fulfillment_updates_specification}
     */
     readonly fulfillmentUpdatesSpecification?: FulfillmentUpdatesSpecificationProperty;
     /**
     * Provides information for updating the user on the progress of fulfilling an intent.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#post_fulfillment_status_specification CcBot#post_fulfillment_status_specification}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#post_fulfillment_status_specification CcBot#post_fulfillment_status_specification}
     */
     readonly postFulfillmentStatusSpecification?: PostFulfillmentStatusSpecificationProperty;
 }
@@ -17528,7 +17529,7 @@ export interface InputContextProperty {
     /**
     * The name of the context.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#name CcBot#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#name CcBot#name}
     */
     readonly name?: string;
 }
@@ -17616,7 +17617,7 @@ export interface BotLocalesIntentsIntentClosingSettingClosingResponseMessageGrou
     /**
     * The string that is sent to your application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -17682,13 +17683,13 @@ export interface BotLocalesIntentsIntentClosingSettingClosingResponseMessageGrou
     /**
     * The text that appears on the button.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#text CcBot#text}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#text CcBot#text}
     */
     readonly text?: string;
     /**
     * The value returned to Amazon Lex when the user chooses this button.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -17798,25 +17799,25 @@ export interface BotLocalesIntentsIntentClosingSettingClosingResponseMessageGrou
     /**
     * A list of buttons that should be displayed on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#buttons CcBot#buttons}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#buttons CcBot#buttons}
     */
     readonly buttons?: BotLocalesIntentsIntentClosingSettingClosingResponseMessageGroupsListMessageImageResponseCardButtonsProperty[] | cdktn.IResolvable;
     /**
     * The URL of an image to display on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#image_url CcBot#image_url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#image_url CcBot#image_url}
     */
     readonly imageUrl?: string;
     /**
     * The subtitle to display on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#subtitle CcBot#subtitle}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#subtitle CcBot#subtitle}
     */
     readonly subtitle?: string;
     /**
     * The title to display on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#title CcBot#title}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#title CcBot#title}
     */
     readonly title?: string;
 }
@@ -17948,7 +17949,7 @@ export interface BotLocalesIntentsIntentClosingSettingClosingResponseMessageGrou
     /**
     * The message to send to the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -18014,7 +18015,7 @@ export interface BotLocalesIntentsIntentClosingSettingClosingResponseMessageGrou
     /**
     * The SSML text that defines the prompt.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -18080,25 +18081,25 @@ export interface BotLocalesIntentsIntentClosingSettingClosingResponseMessageGrou
     /**
     * A message in a custom format defined by the client application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#custom_payload CcBot#custom_payload}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#custom_payload CcBot#custom_payload}
     */
     readonly customPayload?: BotLocalesIntentsIntentClosingSettingClosingResponseMessageGroupsListMessageCustomPayloadProperty;
     /**
     * A message that defines a response card that the client application can show to the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#image_response_card CcBot#image_response_card}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#image_response_card CcBot#image_response_card}
     */
     readonly imageResponseCard?: BotLocalesIntentsIntentClosingSettingClosingResponseMessageGroupsListMessageImageResponseCardProperty;
     /**
     * A message in plain text format.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#plain_text_message CcBot#plain_text_message}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#plain_text_message CcBot#plain_text_message}
     */
     readonly plainTextMessage?: BotLocalesIntentsIntentClosingSettingClosingResponseMessageGroupsListMessagePlainTextMessageProperty;
     /**
     * A message in Speech Synthesis Markup Language (SSML).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#ssml_message CcBot#ssml_message}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#ssml_message CcBot#ssml_message}
     */
     readonly ssmlMessage?: BotLocalesIntentsIntentClosingSettingClosingResponseMessageGroupsListMessageSsmlMessageProperty;
 }
@@ -18230,7 +18231,7 @@ export interface BotLocalesIntentsIntentClosingSettingClosingResponseMessageGrou
     /**
     * The string that is sent to your application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -18296,13 +18297,13 @@ export interface BotLocalesIntentsIntentClosingSettingClosingResponseMessageGrou
     /**
     * The text that appears on the button.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#text CcBot#text}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#text CcBot#text}
     */
     readonly text?: string;
     /**
     * The value returned to Amazon Lex when the user chooses this button.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -18412,25 +18413,25 @@ export interface BotLocalesIntentsIntentClosingSettingClosingResponseMessageGrou
     /**
     * A list of buttons that should be displayed on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#buttons CcBot#buttons}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#buttons CcBot#buttons}
     */
     readonly buttons?: BotLocalesIntentsIntentClosingSettingClosingResponseMessageGroupsListVariationsImageResponseCardButtonsProperty[] | cdktn.IResolvable;
     /**
     * The URL of an image to display on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#image_url CcBot#image_url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#image_url CcBot#image_url}
     */
     readonly imageUrl?: string;
     /**
     * The subtitle to display on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#subtitle CcBot#subtitle}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#subtitle CcBot#subtitle}
     */
     readonly subtitle?: string;
     /**
     * The title to display on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#title CcBot#title}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#title CcBot#title}
     */
     readonly title?: string;
 }
@@ -18562,7 +18563,7 @@ export interface BotLocalesIntentsIntentClosingSettingClosingResponseMessageGrou
     /**
     * The message to send to the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -18628,7 +18629,7 @@ export interface BotLocalesIntentsIntentClosingSettingClosingResponseMessageGrou
     /**
     * The SSML text that defines the prompt.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -18694,25 +18695,25 @@ export interface BotLocalesIntentsIntentClosingSettingClosingResponseMessageGrou
     /**
     * A message in a custom format defined by the client application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#custom_payload CcBot#custom_payload}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#custom_payload CcBot#custom_payload}
     */
     readonly customPayload?: BotLocalesIntentsIntentClosingSettingClosingResponseMessageGroupsListVariationsCustomPayloadProperty;
     /**
     * A message that defines a response card that the client application can show to the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#image_response_card CcBot#image_response_card}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#image_response_card CcBot#image_response_card}
     */
     readonly imageResponseCard?: BotLocalesIntentsIntentClosingSettingClosingResponseMessageGroupsListVariationsImageResponseCardProperty;
     /**
     * A message in plain text format.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#plain_text_message CcBot#plain_text_message}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#plain_text_message CcBot#plain_text_message}
     */
     readonly plainTextMessage?: BotLocalesIntentsIntentClosingSettingClosingResponseMessageGroupsListVariationsPlainTextMessageProperty;
     /**
     * A message in Speech Synthesis Markup Language (SSML).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#ssml_message CcBot#ssml_message}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#ssml_message CcBot#ssml_message}
     */
     readonly ssmlMessage?: BotLocalesIntentsIntentClosingSettingClosingResponseMessageGroupsListVariationsSsmlMessageProperty;
 }
@@ -18866,13 +18867,13 @@ export interface BotLocalesIntentsIntentClosingSettingClosingResponseMessageGrou
     /**
     * The primary message that Amazon Lex should send to the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#message CcBot#message}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#message CcBot#message}
     */
     readonly message?: BotLocalesIntentsIntentClosingSettingClosingResponseMessageGroupsListMessageProperty;
     /**
     * Message variations to send to the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#variations CcBot#variations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#variations CcBot#variations}
     */
     readonly variations?: BotLocalesIntentsIntentClosingSettingClosingResponseMessageGroupsListVariationsProperty[] | cdktn.IResolvable;
 }
@@ -18982,13 +18983,13 @@ export interface ClosingResponseProperty {
     /**
     * Indicates whether the user can interrupt a speech prompt from the bot.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#allow_interrupt CcBot#allow_interrupt}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#allow_interrupt CcBot#allow_interrupt}
     */
     readonly allowInterrupt?: boolean | cdktn.IResolvable;
     /**
     * One to 5 message groups that contain update messages. Amazon Lex chooses one of the messages to play to the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#message_groups_list CcBot#message_groups_list}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#message_groups_list CcBot#message_groups_list}
     */
     readonly messageGroupsList?: BotLocalesIntentsIntentClosingSettingClosingResponseMessageGroupsListProperty[] | cdktn.IResolvable;
 }
@@ -19076,11 +19077,11 @@ export interface IntentClosingSettingProperty {
     /**
     * A list of message groups that Amazon Lex uses to respond the user input.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#closing_response CcBot#closing_response}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#closing_response CcBot#closing_response}
     */
     readonly closingResponse?: ClosingResponseProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#is_active CcBot#is_active}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#is_active CcBot#is_active}
     */
     readonly isActive?: boolean | cdktn.IResolvable;
 }
@@ -19168,7 +19169,7 @@ export interface BotLocalesIntentsIntentConfirmationSettingDeclinationResponseMe
     /**
     * The string that is sent to your application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -19234,13 +19235,13 @@ export interface BotLocalesIntentsIntentConfirmationSettingDeclinationResponseMe
     /**
     * The text that appears on the button.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#text CcBot#text}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#text CcBot#text}
     */
     readonly text?: string;
     /**
     * The value returned to Amazon Lex when the user chooses this button.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -19350,25 +19351,25 @@ export interface BotLocalesIntentsIntentConfirmationSettingDeclinationResponseMe
     /**
     * A list of buttons that should be displayed on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#buttons CcBot#buttons}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#buttons CcBot#buttons}
     */
     readonly buttons?: BotLocalesIntentsIntentConfirmationSettingDeclinationResponseMessageGroupsListMessageImageResponseCardButtonsProperty[] | cdktn.IResolvable;
     /**
     * The URL of an image to display on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#image_url CcBot#image_url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#image_url CcBot#image_url}
     */
     readonly imageUrl?: string;
     /**
     * The subtitle to display on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#subtitle CcBot#subtitle}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#subtitle CcBot#subtitle}
     */
     readonly subtitle?: string;
     /**
     * The title to display on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#title CcBot#title}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#title CcBot#title}
     */
     readonly title?: string;
 }
@@ -19500,7 +19501,7 @@ export interface BotLocalesIntentsIntentConfirmationSettingDeclinationResponseMe
     /**
     * The message to send to the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -19566,7 +19567,7 @@ export interface BotLocalesIntentsIntentConfirmationSettingDeclinationResponseMe
     /**
     * The SSML text that defines the prompt.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -19632,25 +19633,25 @@ export interface BotLocalesIntentsIntentConfirmationSettingDeclinationResponseMe
     /**
     * A message in a custom format defined by the client application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#custom_payload CcBot#custom_payload}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#custom_payload CcBot#custom_payload}
     */
     readonly customPayload?: BotLocalesIntentsIntentConfirmationSettingDeclinationResponseMessageGroupsListMessageCustomPayloadProperty;
     /**
     * A message that defines a response card that the client application can show to the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#image_response_card CcBot#image_response_card}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#image_response_card CcBot#image_response_card}
     */
     readonly imageResponseCard?: BotLocalesIntentsIntentConfirmationSettingDeclinationResponseMessageGroupsListMessageImageResponseCardProperty;
     /**
     * A message in plain text format.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#plain_text_message CcBot#plain_text_message}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#plain_text_message CcBot#plain_text_message}
     */
     readonly plainTextMessage?: BotLocalesIntentsIntentConfirmationSettingDeclinationResponseMessageGroupsListMessagePlainTextMessageProperty;
     /**
     * A message in Speech Synthesis Markup Language (SSML).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#ssml_message CcBot#ssml_message}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#ssml_message CcBot#ssml_message}
     */
     readonly ssmlMessage?: BotLocalesIntentsIntentConfirmationSettingDeclinationResponseMessageGroupsListMessageSsmlMessageProperty;
 }
@@ -19782,7 +19783,7 @@ export interface BotLocalesIntentsIntentConfirmationSettingDeclinationResponseMe
     /**
     * The string that is sent to your application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -19848,13 +19849,13 @@ export interface BotLocalesIntentsIntentConfirmationSettingDeclinationResponseMe
     /**
     * The text that appears on the button.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#text CcBot#text}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#text CcBot#text}
     */
     readonly text?: string;
     /**
     * The value returned to Amazon Lex when the user chooses this button.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -19964,25 +19965,25 @@ export interface BotLocalesIntentsIntentConfirmationSettingDeclinationResponseMe
     /**
     * A list of buttons that should be displayed on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#buttons CcBot#buttons}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#buttons CcBot#buttons}
     */
     readonly buttons?: BotLocalesIntentsIntentConfirmationSettingDeclinationResponseMessageGroupsListVariationsImageResponseCardButtonsProperty[] | cdktn.IResolvable;
     /**
     * The URL of an image to display on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#image_url CcBot#image_url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#image_url CcBot#image_url}
     */
     readonly imageUrl?: string;
     /**
     * The subtitle to display on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#subtitle CcBot#subtitle}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#subtitle CcBot#subtitle}
     */
     readonly subtitle?: string;
     /**
     * The title to display on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#title CcBot#title}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#title CcBot#title}
     */
     readonly title?: string;
 }
@@ -20114,7 +20115,7 @@ export interface BotLocalesIntentsIntentConfirmationSettingDeclinationResponseMe
     /**
     * The message to send to the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -20180,7 +20181,7 @@ export interface BotLocalesIntentsIntentConfirmationSettingDeclinationResponseMe
     /**
     * The SSML text that defines the prompt.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -20246,25 +20247,25 @@ export interface BotLocalesIntentsIntentConfirmationSettingDeclinationResponseMe
     /**
     * A message in a custom format defined by the client application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#custom_payload CcBot#custom_payload}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#custom_payload CcBot#custom_payload}
     */
     readonly customPayload?: BotLocalesIntentsIntentConfirmationSettingDeclinationResponseMessageGroupsListVariationsCustomPayloadProperty;
     /**
     * A message that defines a response card that the client application can show to the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#image_response_card CcBot#image_response_card}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#image_response_card CcBot#image_response_card}
     */
     readonly imageResponseCard?: BotLocalesIntentsIntentConfirmationSettingDeclinationResponseMessageGroupsListVariationsImageResponseCardProperty;
     /**
     * A message in plain text format.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#plain_text_message CcBot#plain_text_message}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#plain_text_message CcBot#plain_text_message}
     */
     readonly plainTextMessage?: BotLocalesIntentsIntentConfirmationSettingDeclinationResponseMessageGroupsListVariationsPlainTextMessageProperty;
     /**
     * A message in Speech Synthesis Markup Language (SSML).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#ssml_message CcBot#ssml_message}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#ssml_message CcBot#ssml_message}
     */
     readonly ssmlMessage?: BotLocalesIntentsIntentConfirmationSettingDeclinationResponseMessageGroupsListVariationsSsmlMessageProperty;
 }
@@ -20418,13 +20419,13 @@ export interface BotLocalesIntentsIntentConfirmationSettingDeclinationResponseMe
     /**
     * The primary message that Amazon Lex should send to the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#message CcBot#message}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#message CcBot#message}
     */
     readonly message?: BotLocalesIntentsIntentConfirmationSettingDeclinationResponseMessageGroupsListMessageProperty;
     /**
     * Message variations to send to the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#variations CcBot#variations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#variations CcBot#variations}
     */
     readonly variations?: BotLocalesIntentsIntentConfirmationSettingDeclinationResponseMessageGroupsListVariationsProperty[] | cdktn.IResolvable;
 }
@@ -20534,13 +20535,13 @@ export interface DeclinationResponseProperty {
     /**
     * Indicates whether the user can interrupt a speech prompt from the bot.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#allow_interrupt CcBot#allow_interrupt}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#allow_interrupt CcBot#allow_interrupt}
     */
     readonly allowInterrupt?: boolean | cdktn.IResolvable;
     /**
     * One to 5 message groups that contain update messages. Amazon Lex chooses one of the messages to play to the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#message_groups_list CcBot#message_groups_list}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#message_groups_list CcBot#message_groups_list}
     */
     readonly messageGroupsList?: BotLocalesIntentsIntentConfirmationSettingDeclinationResponseMessageGroupsListProperty[] | cdktn.IResolvable;
 }
@@ -20628,7 +20629,7 @@ export interface BotLocalesIntentsIntentConfirmationSettingPromptSpecificationMe
     /**
     * The string that is sent to your application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -20694,13 +20695,13 @@ export interface BotLocalesIntentsIntentConfirmationSettingPromptSpecificationMe
     /**
     * The text that appears on the button.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#text CcBot#text}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#text CcBot#text}
     */
     readonly text?: string;
     /**
     * The value returned to Amazon Lex when the user chooses this button.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -20810,25 +20811,25 @@ export interface BotLocalesIntentsIntentConfirmationSettingPromptSpecificationMe
     /**
     * A list of buttons that should be displayed on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#buttons CcBot#buttons}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#buttons CcBot#buttons}
     */
     readonly buttons?: BotLocalesIntentsIntentConfirmationSettingPromptSpecificationMessageGroupsListMessageImageResponseCardButtonsProperty[] | cdktn.IResolvable;
     /**
     * The URL of an image to display on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#image_url CcBot#image_url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#image_url CcBot#image_url}
     */
     readonly imageUrl?: string;
     /**
     * The subtitle to display on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#subtitle CcBot#subtitle}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#subtitle CcBot#subtitle}
     */
     readonly subtitle?: string;
     /**
     * The title to display on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#title CcBot#title}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#title CcBot#title}
     */
     readonly title?: string;
 }
@@ -20960,7 +20961,7 @@ export interface BotLocalesIntentsIntentConfirmationSettingPromptSpecificationMe
     /**
     * The message to send to the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -21026,7 +21027,7 @@ export interface BotLocalesIntentsIntentConfirmationSettingPromptSpecificationMe
     /**
     * The SSML text that defines the prompt.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -21092,25 +21093,25 @@ export interface BotLocalesIntentsIntentConfirmationSettingPromptSpecificationMe
     /**
     * A message in a custom format defined by the client application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#custom_payload CcBot#custom_payload}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#custom_payload CcBot#custom_payload}
     */
     readonly customPayload?: BotLocalesIntentsIntentConfirmationSettingPromptSpecificationMessageGroupsListMessageCustomPayloadProperty;
     /**
     * A message that defines a response card that the client application can show to the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#image_response_card CcBot#image_response_card}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#image_response_card CcBot#image_response_card}
     */
     readonly imageResponseCard?: BotLocalesIntentsIntentConfirmationSettingPromptSpecificationMessageGroupsListMessageImageResponseCardProperty;
     /**
     * A message in plain text format.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#plain_text_message CcBot#plain_text_message}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#plain_text_message CcBot#plain_text_message}
     */
     readonly plainTextMessage?: BotLocalesIntentsIntentConfirmationSettingPromptSpecificationMessageGroupsListMessagePlainTextMessageProperty;
     /**
     * A message in Speech Synthesis Markup Language (SSML).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#ssml_message CcBot#ssml_message}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#ssml_message CcBot#ssml_message}
     */
     readonly ssmlMessage?: BotLocalesIntentsIntentConfirmationSettingPromptSpecificationMessageGroupsListMessageSsmlMessageProperty;
 }
@@ -21242,7 +21243,7 @@ export interface BotLocalesIntentsIntentConfirmationSettingPromptSpecificationMe
     /**
     * The string that is sent to your application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -21308,13 +21309,13 @@ export interface BotLocalesIntentsIntentConfirmationSettingPromptSpecificationMe
     /**
     * The text that appears on the button.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#text CcBot#text}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#text CcBot#text}
     */
     readonly text?: string;
     /**
     * The value returned to Amazon Lex when the user chooses this button.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -21424,25 +21425,25 @@ export interface BotLocalesIntentsIntentConfirmationSettingPromptSpecificationMe
     /**
     * A list of buttons that should be displayed on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#buttons CcBot#buttons}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#buttons CcBot#buttons}
     */
     readonly buttons?: BotLocalesIntentsIntentConfirmationSettingPromptSpecificationMessageGroupsListVariationsImageResponseCardButtonsProperty[] | cdktn.IResolvable;
     /**
     * The URL of an image to display on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#image_url CcBot#image_url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#image_url CcBot#image_url}
     */
     readonly imageUrl?: string;
     /**
     * The subtitle to display on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#subtitle CcBot#subtitle}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#subtitle CcBot#subtitle}
     */
     readonly subtitle?: string;
     /**
     * The title to display on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#title CcBot#title}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#title CcBot#title}
     */
     readonly title?: string;
 }
@@ -21574,7 +21575,7 @@ export interface BotLocalesIntentsIntentConfirmationSettingPromptSpecificationMe
     /**
     * The message to send to the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -21640,7 +21641,7 @@ export interface BotLocalesIntentsIntentConfirmationSettingPromptSpecificationMe
     /**
     * The SSML text that defines the prompt.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -21706,25 +21707,25 @@ export interface BotLocalesIntentsIntentConfirmationSettingPromptSpecificationMe
     /**
     * A message in a custom format defined by the client application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#custom_payload CcBot#custom_payload}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#custom_payload CcBot#custom_payload}
     */
     readonly customPayload?: BotLocalesIntentsIntentConfirmationSettingPromptSpecificationMessageGroupsListVariationsCustomPayloadProperty;
     /**
     * A message that defines a response card that the client application can show to the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#image_response_card CcBot#image_response_card}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#image_response_card CcBot#image_response_card}
     */
     readonly imageResponseCard?: BotLocalesIntentsIntentConfirmationSettingPromptSpecificationMessageGroupsListVariationsImageResponseCardProperty;
     /**
     * A message in plain text format.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#plain_text_message CcBot#plain_text_message}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#plain_text_message CcBot#plain_text_message}
     */
     readonly plainTextMessage?: BotLocalesIntentsIntentConfirmationSettingPromptSpecificationMessageGroupsListVariationsPlainTextMessageProperty;
     /**
     * A message in Speech Synthesis Markup Language (SSML).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#ssml_message CcBot#ssml_message}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#ssml_message CcBot#ssml_message}
     */
     readonly ssmlMessage?: BotLocalesIntentsIntentConfirmationSettingPromptSpecificationMessageGroupsListVariationsSsmlMessageProperty;
 }
@@ -21878,13 +21879,13 @@ export interface BotLocalesIntentsIntentConfirmationSettingPromptSpecificationMe
     /**
     * The primary message that Amazon Lex should send to the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#message CcBot#message}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#message CcBot#message}
     */
     readonly message?: BotLocalesIntentsIntentConfirmationSettingPromptSpecificationMessageGroupsListMessageProperty;
     /**
     * Message variations to send to the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#variations CcBot#variations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#variations CcBot#variations}
     */
     readonly variations?: BotLocalesIntentsIntentConfirmationSettingPromptSpecificationMessageGroupsListVariationsProperty[] | cdktn.IResolvable;
 }
@@ -21994,13 +21995,13 @@ export interface AllowedInputTypesProperty {
     /**
     * Indicates whether audio input is allowed.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#allow_audio_input CcBot#allow_audio_input}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#allow_audio_input CcBot#allow_audio_input}
     */
     readonly allowAudioInput?: boolean | cdktn.IResolvable;
     /**
     * Indicates whether DTMF input is allowed.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#allow_dtmf_input CcBot#allow_dtmf_input}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#allow_dtmf_input CcBot#allow_dtmf_input}
     */
     readonly allowDtmfInput?: boolean | cdktn.IResolvable;
 }
@@ -22088,13 +22089,13 @@ export interface AudioSpecificationProperty {
     /**
     * Time for which a bot waits after the customer stops speaking to assume the utterance is finished.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#end_timeout_ms CcBot#end_timeout_ms}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#end_timeout_ms CcBot#end_timeout_ms}
     */
     readonly endTimeoutMs?: number;
     /**
     * Time for how long Amazon Lex waits before speech input is truncated and the speech is returned to application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#max_length_ms CcBot#max_length_ms}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#max_length_ms CcBot#max_length_ms}
     */
     readonly maxLengthMs?: number;
 }
@@ -22182,25 +22183,25 @@ export interface DTMFSpecificationProperty {
     /**
     * The DTMF character that clears the accumulated DTMF digits and immediately ends the input.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#deletion_character CcBot#deletion_character}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#deletion_character CcBot#deletion_character}
     */
     readonly deletionCharacter?: string;
     /**
     * The DTMF character that immediately ends input. If the user does not press this character, the input ends after the end timeout.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#end_character CcBot#end_character}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#end_character CcBot#end_character}
     */
     readonly endCharacter?: string;
     /**
     * How long the bot should wait after the last DTMF character input before assuming that the input has concluded.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#end_timeout_ms CcBot#end_timeout_ms}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#end_timeout_ms CcBot#end_timeout_ms}
     */
     readonly endTimeoutMs?: number;
     /**
     * The maximum number of DTMF digits allowed in an utterance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#max_length CcBot#max_length}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#max_length CcBot#max_length}
     */
     readonly maxLength?: number;
 }
@@ -22332,19 +22333,19 @@ export interface AudioAndDTMFInputSpecificationProperty {
     /**
     * Specifies the audio input specifications.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#audio_specification CcBot#audio_specification}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#audio_specification CcBot#audio_specification}
     */
     readonly audioSpecification?: AudioSpecificationProperty;
     /**
     * Specifies the settings on DTMF input.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#dtmf_specification CcBot#dtmf_specification}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#dtmf_specification CcBot#dtmf_specification}
     */
     readonly dtmfSpecification?: DTMFSpecificationProperty;
     /**
     * Time for which a bot waits before assuming that the customer isn't going to speak or press a key. This timeout is shared between Audio and DTMF inputs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#start_timeout_ms CcBot#start_timeout_ms}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#start_timeout_ms CcBot#start_timeout_ms}
     */
     readonly startTimeoutMs?: number;
 }
@@ -22454,7 +22455,7 @@ export interface TextInputSpecificationProperty {
     /**
     * Time for which a bot waits before re-prompting a customer for text input.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#start_timeout_ms CcBot#start_timeout_ms}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#start_timeout_ms CcBot#start_timeout_ms}
     */
     readonly startTimeoutMs?: number;
 }
@@ -22520,25 +22521,25 @@ export interface PromptAttemptSpecificationProperty {
     /**
     * Indicates whether the user can interrupt a speech prompt attempt from the bot.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#allow_interrupt CcBot#allow_interrupt}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#allow_interrupt CcBot#allow_interrupt}
     */
     readonly allowInterrupt?: boolean | cdktn.IResolvable;
     /**
     * Specifies the allowed input types.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#allowed_input_types CcBot#allowed_input_types}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#allowed_input_types CcBot#allowed_input_types}
     */
     readonly allowedInputTypes?: AllowedInputTypesProperty;
     /**
     * Specifies the audio and DTMF input specification.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#audio_and_dtmf_input_specification CcBot#audio_and_dtmf_input_specification}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#audio_and_dtmf_input_specification CcBot#audio_and_dtmf_input_specification}
     */
     readonly audioAndDtmfInputSpecification?: AudioAndDTMFInputSpecificationProperty;
     /**
     * Specifies the text input specifications.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#text_input_specification CcBot#text_input_specification}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#text_input_specification CcBot#text_input_specification}
     */
     readonly textInputSpecification?: TextInputSpecificationProperty;
 }
@@ -22690,31 +22691,31 @@ export interface PromptSpecificationProperty {
     /**
     * Indicates whether the user can interrupt a speech prompt from the bot.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#allow_interrupt CcBot#allow_interrupt}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#allow_interrupt CcBot#allow_interrupt}
     */
     readonly allowInterrupt?: boolean | cdktn.IResolvable;
     /**
     * The maximum number of times the bot tries to elicit a resonse from the user using this prompt.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#max_retries CcBot#max_retries}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#max_retries CcBot#max_retries}
     */
     readonly maxRetries?: number;
     /**
     * One to 5 message groups that contain update messages. Amazon Lex chooses one of the messages to play to the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#message_groups_list CcBot#message_groups_list}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#message_groups_list CcBot#message_groups_list}
     */
     readonly messageGroupsList?: BotLocalesIntentsIntentConfirmationSettingPromptSpecificationMessageGroupsListProperty[] | cdktn.IResolvable;
     /**
     * Indicates how a message is selected from a message group among retries.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#message_selection_strategy CcBot#message_selection_strategy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#message_selection_strategy CcBot#message_selection_strategy}
     */
     readonly messageSelectionStrategy?: string;
     /**
     * Specifies the advanced settings on each attempt of the prompt.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#prompt_attempts_specification CcBot#prompt_attempts_specification}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#prompt_attempts_specification CcBot#prompt_attempts_specification}
     */
     readonly promptAttemptsSpecification?: { [key: string]: PromptAttemptSpecificationProperty } | cdktn.IResolvable;
 }
@@ -22868,17 +22869,17 @@ export interface IntentConfirmationSettingProperty {
     /**
     * A list of message groups that Amazon Lex uses to respond the user input.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#declination_response CcBot#declination_response}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#declination_response CcBot#declination_response}
     */
     readonly declinationResponse?: DeclinationResponseProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#is_active CcBot#is_active}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#is_active CcBot#is_active}
     */
     readonly isActive?: boolean | cdktn.IResolvable;
     /**
     * Prompts the user to confirm the intent.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#prompt_specification CcBot#prompt_specification}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#prompt_specification CcBot#prompt_specification}
     */
     readonly promptSpecification?: PromptSpecificationProperty;
 }
@@ -22988,19 +22989,19 @@ export interface KendraConfigurationProperty {
     /**
     * The Amazon Resource Name (ARN) of the Amazon Kendra index that you want the AMAZON.KendraSearchIntent intent to search.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#kendra_index CcBot#kendra_index}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#kendra_index CcBot#kendra_index}
     */
     readonly kendraIndex?: string;
     /**
     * A query filter that Amazon Lex sends to Amazon Kendra to filter the response from a query.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#query_filter_string CcBot#query_filter_string}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#query_filter_string CcBot#query_filter_string}
     */
     readonly queryFilterString?: string;
     /**
     * Determines whether the AMAZON.KendraSearchIntent intent uses a custom query string to query the Amazon Kendra index.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#query_filter_string_enabled CcBot#query_filter_string_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#query_filter_string_enabled CcBot#query_filter_string_enabled}
     */
     readonly queryFilterStringEnabled?: boolean | cdktn.IResolvable;
 }
@@ -23110,19 +23111,19 @@ export interface OutputContextProperty {
     /**
     * Unique name for a resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#name CcBot#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#name CcBot#name}
     */
     readonly name?: string;
     /**
     * The amount of time, in seconds, that the output context should remain active.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#time_to_live_in_seconds CcBot#time_to_live_in_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#time_to_live_in_seconds CcBot#time_to_live_in_seconds}
     */
     readonly timeToLiveInSeconds?: number;
     /**
     * The number of conversation turns that the output context should remain active.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#turns_to_live CcBot#turns_to_live}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#turns_to_live CcBot#turns_to_live}
     */
     readonly turnsToLive?: number;
 }
@@ -23254,7 +23255,7 @@ export interface SampleUtteranceProperty {
     /**
     * The sample utterance that Amazon Lex uses to build its machine-learning model to recognize intents/slots.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#utterance CcBot#utterance}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#utterance CcBot#utterance}
     */
     readonly utterance?: string;
 }
@@ -23342,13 +23343,13 @@ export interface SlotPriorityProperty {
     /**
     * The priority that a slot should be elicited.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#priority CcBot#priority}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#priority CcBot#priority}
     */
     readonly priority?: number;
     /**
     * The name of the slot.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#slot_name CcBot#slot_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#slot_name CcBot#slot_name}
     */
     readonly slotName?: string;
 }
@@ -23456,7 +23457,7 @@ export class SlotPriorityPropertyList extends cdktn.ComplexList {
 }
 export interface MultipleValuesSettingProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#allow_multiple_values CcBot#allow_multiple_values}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#allow_multiple_values CcBot#allow_multiple_values}
     */
     readonly allowMultipleValues?: boolean | cdktn.IResolvable;
 }
@@ -23522,7 +23523,7 @@ export interface ObfuscationSettingProperty {
     /**
     * Value that determines whether Amazon Lex obscures slot values in conversation logs. The default is to obscure the values.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#obfuscation_setting_type CcBot#obfuscation_setting_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#obfuscation_setting_type CcBot#obfuscation_setting_type}
     */
     readonly obfuscationSettingType?: string;
 }
@@ -23588,7 +23589,7 @@ export interface SlotDefaultValueProperty {
     /**
     * The default value to use when a user doesn't provide a value for a slot.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#default_value CcBot#default_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#default_value CcBot#default_value}
     */
     readonly defaultValue?: string;
 }
@@ -23676,7 +23677,7 @@ export interface SlotDefaultValueSpecificationProperty {
     /**
     * A list of slot default values
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#default_value_list CcBot#default_value_list}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#default_value_list CcBot#default_value_list}
     */
     readonly defaultValueList?: SlotDefaultValueProperty[] | cdktn.IResolvable;
 }
@@ -23742,7 +23743,7 @@ export interface BotLocalesIntentsSlotsValueElicitationSettingPromptSpecificatio
     /**
     * The string that is sent to your application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -23808,13 +23809,13 @@ export interface BotLocalesIntentsSlotsValueElicitationSettingPromptSpecificatio
     /**
     * The text that appears on the button.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#text CcBot#text}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#text CcBot#text}
     */
     readonly text?: string;
     /**
     * The value returned to Amazon Lex when the user chooses this button.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -23924,25 +23925,25 @@ export interface BotLocalesIntentsSlotsValueElicitationSettingPromptSpecificatio
     /**
     * A list of buttons that should be displayed on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#buttons CcBot#buttons}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#buttons CcBot#buttons}
     */
     readonly buttons?: BotLocalesIntentsSlotsValueElicitationSettingPromptSpecificationMessageGroupsListMessageImageResponseCardButtonsProperty[] | cdktn.IResolvable;
     /**
     * The URL of an image to display on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#image_url CcBot#image_url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#image_url CcBot#image_url}
     */
     readonly imageUrl?: string;
     /**
     * The subtitle to display on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#subtitle CcBot#subtitle}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#subtitle CcBot#subtitle}
     */
     readonly subtitle?: string;
     /**
     * The title to display on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#title CcBot#title}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#title CcBot#title}
     */
     readonly title?: string;
 }
@@ -24074,7 +24075,7 @@ export interface BotLocalesIntentsSlotsValueElicitationSettingPromptSpecificatio
     /**
     * The message to send to the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -24140,7 +24141,7 @@ export interface BotLocalesIntentsSlotsValueElicitationSettingPromptSpecificatio
     /**
     * The SSML text that defines the prompt.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -24206,25 +24207,25 @@ export interface BotLocalesIntentsSlotsValueElicitationSettingPromptSpecificatio
     /**
     * A message in a custom format defined by the client application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#custom_payload CcBot#custom_payload}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#custom_payload CcBot#custom_payload}
     */
     readonly customPayload?: BotLocalesIntentsSlotsValueElicitationSettingPromptSpecificationMessageGroupsListMessageCustomPayloadProperty;
     /**
     * A message that defines a response card that the client application can show to the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#image_response_card CcBot#image_response_card}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#image_response_card CcBot#image_response_card}
     */
     readonly imageResponseCard?: BotLocalesIntentsSlotsValueElicitationSettingPromptSpecificationMessageGroupsListMessageImageResponseCardProperty;
     /**
     * A message in plain text format.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#plain_text_message CcBot#plain_text_message}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#plain_text_message CcBot#plain_text_message}
     */
     readonly plainTextMessage?: BotLocalesIntentsSlotsValueElicitationSettingPromptSpecificationMessageGroupsListMessagePlainTextMessageProperty;
     /**
     * A message in Speech Synthesis Markup Language (SSML).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#ssml_message CcBot#ssml_message}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#ssml_message CcBot#ssml_message}
     */
     readonly ssmlMessage?: BotLocalesIntentsSlotsValueElicitationSettingPromptSpecificationMessageGroupsListMessageSsmlMessageProperty;
 }
@@ -24356,7 +24357,7 @@ export interface BotLocalesIntentsSlotsValueElicitationSettingPromptSpecificatio
     /**
     * The string that is sent to your application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -24422,13 +24423,13 @@ export interface BotLocalesIntentsSlotsValueElicitationSettingPromptSpecificatio
     /**
     * The text that appears on the button.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#text CcBot#text}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#text CcBot#text}
     */
     readonly text?: string;
     /**
     * The value returned to Amazon Lex when the user chooses this button.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -24538,25 +24539,25 @@ export interface BotLocalesIntentsSlotsValueElicitationSettingPromptSpecificatio
     /**
     * A list of buttons that should be displayed on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#buttons CcBot#buttons}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#buttons CcBot#buttons}
     */
     readonly buttons?: BotLocalesIntentsSlotsValueElicitationSettingPromptSpecificationMessageGroupsListVariationsImageResponseCardButtonsProperty[] | cdktn.IResolvable;
     /**
     * The URL of an image to display on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#image_url CcBot#image_url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#image_url CcBot#image_url}
     */
     readonly imageUrl?: string;
     /**
     * The subtitle to display on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#subtitle CcBot#subtitle}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#subtitle CcBot#subtitle}
     */
     readonly subtitle?: string;
     /**
     * The title to display on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#title CcBot#title}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#title CcBot#title}
     */
     readonly title?: string;
 }
@@ -24688,7 +24689,7 @@ export interface BotLocalesIntentsSlotsValueElicitationSettingPromptSpecificatio
     /**
     * The message to send to the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -24754,7 +24755,7 @@ export interface BotLocalesIntentsSlotsValueElicitationSettingPromptSpecificatio
     /**
     * The SSML text that defines the prompt.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -24820,25 +24821,25 @@ export interface BotLocalesIntentsSlotsValueElicitationSettingPromptSpecificatio
     /**
     * A message in a custom format defined by the client application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#custom_payload CcBot#custom_payload}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#custom_payload CcBot#custom_payload}
     */
     readonly customPayload?: BotLocalesIntentsSlotsValueElicitationSettingPromptSpecificationMessageGroupsListVariationsCustomPayloadProperty;
     /**
     * A message that defines a response card that the client application can show to the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#image_response_card CcBot#image_response_card}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#image_response_card CcBot#image_response_card}
     */
     readonly imageResponseCard?: BotLocalesIntentsSlotsValueElicitationSettingPromptSpecificationMessageGroupsListVariationsImageResponseCardProperty;
     /**
     * A message in plain text format.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#plain_text_message CcBot#plain_text_message}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#plain_text_message CcBot#plain_text_message}
     */
     readonly plainTextMessage?: BotLocalesIntentsSlotsValueElicitationSettingPromptSpecificationMessageGroupsListVariationsPlainTextMessageProperty;
     /**
     * A message in Speech Synthesis Markup Language (SSML).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#ssml_message CcBot#ssml_message}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#ssml_message CcBot#ssml_message}
     */
     readonly ssmlMessage?: BotLocalesIntentsSlotsValueElicitationSettingPromptSpecificationMessageGroupsListVariationsSsmlMessageProperty;
 }
@@ -24992,13 +24993,13 @@ export interface BotLocalesIntentsSlotsValueElicitationSettingPromptSpecificatio
     /**
     * The primary message that Amazon Lex should send to the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#message CcBot#message}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#message CcBot#message}
     */
     readonly message?: BotLocalesIntentsSlotsValueElicitationSettingPromptSpecificationMessageGroupsListMessageProperty;
     /**
     * Message variations to send to the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#variations CcBot#variations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#variations CcBot#variations}
     */
     readonly variations?: BotLocalesIntentsSlotsValueElicitationSettingPromptSpecificationMessageGroupsListVariationsProperty[] | cdktn.IResolvable;
 }
@@ -25108,13 +25109,13 @@ export interface BotLocalesIntentsSlotsValueElicitationSettingPromptSpecificatio
     /**
     * Indicates whether audio input is allowed.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#allow_audio_input CcBot#allow_audio_input}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#allow_audio_input CcBot#allow_audio_input}
     */
     readonly allowAudioInput?: boolean | cdktn.IResolvable;
     /**
     * Indicates whether DTMF input is allowed.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#allow_dtmf_input CcBot#allow_dtmf_input}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#allow_dtmf_input CcBot#allow_dtmf_input}
     */
     readonly allowDtmfInput?: boolean | cdktn.IResolvable;
 }
@@ -25202,13 +25203,13 @@ export interface BotLocalesIntentsSlotsValueElicitationSettingPromptSpecificatio
     /**
     * Time for which a bot waits after the customer stops speaking to assume the utterance is finished.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#end_timeout_ms CcBot#end_timeout_ms}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#end_timeout_ms CcBot#end_timeout_ms}
     */
     readonly endTimeoutMs?: number;
     /**
     * Time for how long Amazon Lex waits before speech input is truncated and the speech is returned to application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#max_length_ms CcBot#max_length_ms}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#max_length_ms CcBot#max_length_ms}
     */
     readonly maxLengthMs?: number;
 }
@@ -25296,25 +25297,25 @@ export interface DtmfSpecificationProperty {
     /**
     * The DTMF character that clears the accumulated DTMF digits and immediately ends the input.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#deletion_character CcBot#deletion_character}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#deletion_character CcBot#deletion_character}
     */
     readonly deletionCharacter?: string;
     /**
     * The DTMF character that immediately ends input. If the user does not press this character, the input ends after the end timeout.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#end_character CcBot#end_character}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#end_character CcBot#end_character}
     */
     readonly endCharacter?: string;
     /**
     * How long the bot should wait after the last DTMF character input before assuming that the input has concluded.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#end_timeout_ms CcBot#end_timeout_ms}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#end_timeout_ms CcBot#end_timeout_ms}
     */
     readonly endTimeoutMs?: number;
     /**
     * The maximum number of DTMF digits allowed in an utterance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#max_length CcBot#max_length}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#max_length CcBot#max_length}
     */
     readonly maxLength?: number;
 }
@@ -25446,19 +25447,19 @@ export interface AudioAndDtmfInputSpecificationProperty {
     /**
     * Specifies the audio input specifications.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#audio_specification CcBot#audio_specification}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#audio_specification CcBot#audio_specification}
     */
     readonly audioSpecification?: BotLocalesIntentsSlotsValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationAudioSpecificationProperty;
     /**
     * Specifies the settings on DTMF input.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#dtmf_specification CcBot#dtmf_specification}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#dtmf_specification CcBot#dtmf_specification}
     */
     readonly dtmfSpecification?: DtmfSpecificationProperty;
     /**
     * Time for which a bot waits before assuming that the customer isn't going to speak or press a key. This timeout is shared between Audio and DTMF inputs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#start_timeout_ms CcBot#start_timeout_ms}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#start_timeout_ms CcBot#start_timeout_ms}
     */
     readonly startTimeoutMs?: number;
 }
@@ -25568,7 +25569,7 @@ export interface BotLocalesIntentsSlotsValueElicitationSettingPromptSpecificatio
     /**
     * Time for which a bot waits before re-prompting a customer for text input.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#start_timeout_ms CcBot#start_timeout_ms}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#start_timeout_ms CcBot#start_timeout_ms}
     */
     readonly startTimeoutMs?: number;
 }
@@ -25634,25 +25635,25 @@ export interface PromptAttemptsSpecificationProperty {
     /**
     * Indicates whether the user can interrupt a speech prompt attempt from the bot.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#allow_interrupt CcBot#allow_interrupt}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#allow_interrupt CcBot#allow_interrupt}
     */
     readonly allowInterrupt?: boolean | cdktn.IResolvable;
     /**
     * Specifies the allowed input types.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#allowed_input_types CcBot#allowed_input_types}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#allowed_input_types CcBot#allowed_input_types}
     */
     readonly allowedInputTypes?: BotLocalesIntentsSlotsValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAllowedInputTypesProperty;
     /**
     * Specifies the audio and DTMF input specification.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#audio_and_dtmf_input_specification CcBot#audio_and_dtmf_input_specification}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#audio_and_dtmf_input_specification CcBot#audio_and_dtmf_input_specification}
     */
     readonly audioAndDtmfInputSpecification?: AudioAndDtmfInputSpecificationProperty;
     /**
     * Specifies the text input specifications.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#text_input_specification CcBot#text_input_specification}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#text_input_specification CcBot#text_input_specification}
     */
     readonly textInputSpecification?: BotLocalesIntentsSlotsValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationTextInputSpecificationProperty;
 }
@@ -25804,31 +25805,31 @@ export interface BotLocalesIntentsSlotsValueElicitationSettingPromptSpecificatio
     /**
     * Indicates whether the user can interrupt a speech prompt from the bot.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#allow_interrupt CcBot#allow_interrupt}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#allow_interrupt CcBot#allow_interrupt}
     */
     readonly allowInterrupt?: boolean | cdktn.IResolvable;
     /**
     * The maximum number of times the bot tries to elicit a resonse from the user using this prompt.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#max_retries CcBot#max_retries}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#max_retries CcBot#max_retries}
     */
     readonly maxRetries?: number;
     /**
     * One to 5 message groups that contain update messages. Amazon Lex chooses one of the messages to play to the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#message_groups_list CcBot#message_groups_list}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#message_groups_list CcBot#message_groups_list}
     */
     readonly messageGroupsList?: BotLocalesIntentsSlotsValueElicitationSettingPromptSpecificationMessageGroupsListProperty[] | cdktn.IResolvable;
     /**
     * Indicates how a message is selected from a message group among retries.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#message_selection_strategy CcBot#message_selection_strategy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#message_selection_strategy CcBot#message_selection_strategy}
     */
     readonly messageSelectionStrategy?: string;
     /**
     * Specifies the advanced settings on each attempt of the prompt.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#prompt_attempts_specification CcBot#prompt_attempts_specification}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#prompt_attempts_specification CcBot#prompt_attempts_specification}
     */
     readonly promptAttemptsSpecification?: { [key: string]: PromptAttemptsSpecificationProperty } | cdktn.IResolvable;
 }
@@ -25982,7 +25983,7 @@ export interface SampleUtterancesProperty {
     /**
     * The sample utterance that Amazon Lex uses to build its machine-learning model to recognize intents/slots.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#utterance CcBot#utterance}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#utterance CcBot#utterance}
     */
     readonly utterance?: string;
 }
@@ -26070,7 +26071,7 @@ export interface BotLocalesIntentsSlotsValueElicitationSettingWaitAndContinueSpe
     /**
     * The string that is sent to your application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -26136,13 +26137,13 @@ export interface BotLocalesIntentsSlotsValueElicitationSettingWaitAndContinueSpe
     /**
     * The text that appears on the button.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#text CcBot#text}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#text CcBot#text}
     */
     readonly text?: string;
     /**
     * The value returned to Amazon Lex when the user chooses this button.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -26252,25 +26253,25 @@ export interface BotLocalesIntentsSlotsValueElicitationSettingWaitAndContinueSpe
     /**
     * A list of buttons that should be displayed on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#buttons CcBot#buttons}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#buttons CcBot#buttons}
     */
     readonly buttons?: BotLocalesIntentsSlotsValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupsListMessageImageResponseCardButtonsProperty[] | cdktn.IResolvable;
     /**
     * The URL of an image to display on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#image_url CcBot#image_url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#image_url CcBot#image_url}
     */
     readonly imageUrl?: string;
     /**
     * The subtitle to display on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#subtitle CcBot#subtitle}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#subtitle CcBot#subtitle}
     */
     readonly subtitle?: string;
     /**
     * The title to display on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#title CcBot#title}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#title CcBot#title}
     */
     readonly title?: string;
 }
@@ -26402,7 +26403,7 @@ export interface BotLocalesIntentsSlotsValueElicitationSettingWaitAndContinueSpe
     /**
     * The message to send to the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -26468,7 +26469,7 @@ export interface BotLocalesIntentsSlotsValueElicitationSettingWaitAndContinueSpe
     /**
     * The SSML text that defines the prompt.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -26534,25 +26535,25 @@ export interface BotLocalesIntentsSlotsValueElicitationSettingWaitAndContinueSpe
     /**
     * A message in a custom format defined by the client application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#custom_payload CcBot#custom_payload}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#custom_payload CcBot#custom_payload}
     */
     readonly customPayload?: BotLocalesIntentsSlotsValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupsListMessageCustomPayloadProperty;
     /**
     * A message that defines a response card that the client application can show to the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#image_response_card CcBot#image_response_card}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#image_response_card CcBot#image_response_card}
     */
     readonly imageResponseCard?: BotLocalesIntentsSlotsValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupsListMessageImageResponseCardProperty;
     /**
     * A message in plain text format.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#plain_text_message CcBot#plain_text_message}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#plain_text_message CcBot#plain_text_message}
     */
     readonly plainTextMessage?: BotLocalesIntentsSlotsValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupsListMessagePlainTextMessageProperty;
     /**
     * A message in Speech Synthesis Markup Language (SSML).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#ssml_message CcBot#ssml_message}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#ssml_message CcBot#ssml_message}
     */
     readonly ssmlMessage?: BotLocalesIntentsSlotsValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupsListMessageSsmlMessageProperty;
 }
@@ -26684,7 +26685,7 @@ export interface BotLocalesIntentsSlotsValueElicitationSettingWaitAndContinueSpe
     /**
     * The string that is sent to your application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -26750,13 +26751,13 @@ export interface BotLocalesIntentsSlotsValueElicitationSettingWaitAndContinueSpe
     /**
     * The text that appears on the button.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#text CcBot#text}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#text CcBot#text}
     */
     readonly text?: string;
     /**
     * The value returned to Amazon Lex when the user chooses this button.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -26866,25 +26867,25 @@ export interface BotLocalesIntentsSlotsValueElicitationSettingWaitAndContinueSpe
     /**
     * A list of buttons that should be displayed on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#buttons CcBot#buttons}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#buttons CcBot#buttons}
     */
     readonly buttons?: BotLocalesIntentsSlotsValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupsListVariationsImageResponseCardButtonsProperty[] | cdktn.IResolvable;
     /**
     * The URL of an image to display on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#image_url CcBot#image_url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#image_url CcBot#image_url}
     */
     readonly imageUrl?: string;
     /**
     * The subtitle to display on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#subtitle CcBot#subtitle}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#subtitle CcBot#subtitle}
     */
     readonly subtitle?: string;
     /**
     * The title to display on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#title CcBot#title}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#title CcBot#title}
     */
     readonly title?: string;
 }
@@ -27016,7 +27017,7 @@ export interface BotLocalesIntentsSlotsValueElicitationSettingWaitAndContinueSpe
     /**
     * The message to send to the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -27082,7 +27083,7 @@ export interface BotLocalesIntentsSlotsValueElicitationSettingWaitAndContinueSpe
     /**
     * The SSML text that defines the prompt.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -27148,25 +27149,25 @@ export interface BotLocalesIntentsSlotsValueElicitationSettingWaitAndContinueSpe
     /**
     * A message in a custom format defined by the client application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#custom_payload CcBot#custom_payload}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#custom_payload CcBot#custom_payload}
     */
     readonly customPayload?: BotLocalesIntentsSlotsValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupsListVariationsCustomPayloadProperty;
     /**
     * A message that defines a response card that the client application can show to the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#image_response_card CcBot#image_response_card}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#image_response_card CcBot#image_response_card}
     */
     readonly imageResponseCard?: BotLocalesIntentsSlotsValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupsListVariationsImageResponseCardProperty;
     /**
     * A message in plain text format.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#plain_text_message CcBot#plain_text_message}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#plain_text_message CcBot#plain_text_message}
     */
     readonly plainTextMessage?: BotLocalesIntentsSlotsValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupsListVariationsPlainTextMessageProperty;
     /**
     * A message in Speech Synthesis Markup Language (SSML).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#ssml_message CcBot#ssml_message}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#ssml_message CcBot#ssml_message}
     */
     readonly ssmlMessage?: BotLocalesIntentsSlotsValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupsListVariationsSsmlMessageProperty;
 }
@@ -27320,13 +27321,13 @@ export interface BotLocalesIntentsSlotsValueElicitationSettingWaitAndContinueSpe
     /**
     * The primary message that Amazon Lex should send to the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#message CcBot#message}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#message CcBot#message}
     */
     readonly message?: BotLocalesIntentsSlotsValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupsListMessageProperty;
     /**
     * Message variations to send to the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#variations CcBot#variations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#variations CcBot#variations}
     */
     readonly variations?: BotLocalesIntentsSlotsValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupsListVariationsProperty[] | cdktn.IResolvable;
 }
@@ -27436,13 +27437,13 @@ export interface ContinueResponseProperty {
     /**
     * Indicates whether the user can interrupt a speech prompt from the bot.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#allow_interrupt CcBot#allow_interrupt}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#allow_interrupt CcBot#allow_interrupt}
     */
     readonly allowInterrupt?: boolean | cdktn.IResolvable;
     /**
     * One to 5 message groups that contain update messages. Amazon Lex chooses one of the messages to play to the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#message_groups_list CcBot#message_groups_list}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#message_groups_list CcBot#message_groups_list}
     */
     readonly messageGroupsList?: BotLocalesIntentsSlotsValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupsListProperty[] | cdktn.IResolvable;
 }
@@ -27530,7 +27531,7 @@ export interface BotLocalesIntentsSlotsValueElicitationSettingWaitAndContinueSpe
     /**
     * The string that is sent to your application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -27596,13 +27597,13 @@ export interface BotLocalesIntentsSlotsValueElicitationSettingWaitAndContinueSpe
     /**
     * The text that appears on the button.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#text CcBot#text}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#text CcBot#text}
     */
     readonly text?: string;
     /**
     * The value returned to Amazon Lex when the user chooses this button.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -27712,25 +27713,25 @@ export interface BotLocalesIntentsSlotsValueElicitationSettingWaitAndContinueSpe
     /**
     * A list of buttons that should be displayed on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#buttons CcBot#buttons}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#buttons CcBot#buttons}
     */
     readonly buttons?: BotLocalesIntentsSlotsValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupsListMessageImageResponseCardButtonsProperty[] | cdktn.IResolvable;
     /**
     * The URL of an image to display on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#image_url CcBot#image_url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#image_url CcBot#image_url}
     */
     readonly imageUrl?: string;
     /**
     * The subtitle to display on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#subtitle CcBot#subtitle}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#subtitle CcBot#subtitle}
     */
     readonly subtitle?: string;
     /**
     * The title to display on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#title CcBot#title}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#title CcBot#title}
     */
     readonly title?: string;
 }
@@ -27862,7 +27863,7 @@ export interface BotLocalesIntentsSlotsValueElicitationSettingWaitAndContinueSpe
     /**
     * The message to send to the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -27928,7 +27929,7 @@ export interface BotLocalesIntentsSlotsValueElicitationSettingWaitAndContinueSpe
     /**
     * The SSML text that defines the prompt.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -27994,25 +27995,25 @@ export interface BotLocalesIntentsSlotsValueElicitationSettingWaitAndContinueSpe
     /**
     * A message in a custom format defined by the client application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#custom_payload CcBot#custom_payload}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#custom_payload CcBot#custom_payload}
     */
     readonly customPayload?: BotLocalesIntentsSlotsValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupsListMessageCustomPayloadProperty;
     /**
     * A message that defines a response card that the client application can show to the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#image_response_card CcBot#image_response_card}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#image_response_card CcBot#image_response_card}
     */
     readonly imageResponseCard?: BotLocalesIntentsSlotsValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupsListMessageImageResponseCardProperty;
     /**
     * A message in plain text format.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#plain_text_message CcBot#plain_text_message}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#plain_text_message CcBot#plain_text_message}
     */
     readonly plainTextMessage?: BotLocalesIntentsSlotsValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupsListMessagePlainTextMessageProperty;
     /**
     * A message in Speech Synthesis Markup Language (SSML).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#ssml_message CcBot#ssml_message}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#ssml_message CcBot#ssml_message}
     */
     readonly ssmlMessage?: BotLocalesIntentsSlotsValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupsListMessageSsmlMessageProperty;
 }
@@ -28144,7 +28145,7 @@ export interface BotLocalesIntentsSlotsValueElicitationSettingWaitAndContinueSpe
     /**
     * The string that is sent to your application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -28210,13 +28211,13 @@ export interface BotLocalesIntentsSlotsValueElicitationSettingWaitAndContinueSpe
     /**
     * The text that appears on the button.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#text CcBot#text}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#text CcBot#text}
     */
     readonly text?: string;
     /**
     * The value returned to Amazon Lex when the user chooses this button.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -28326,25 +28327,25 @@ export interface BotLocalesIntentsSlotsValueElicitationSettingWaitAndContinueSpe
     /**
     * A list of buttons that should be displayed on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#buttons CcBot#buttons}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#buttons CcBot#buttons}
     */
     readonly buttons?: BotLocalesIntentsSlotsValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupsListVariationsImageResponseCardButtonsProperty[] | cdktn.IResolvable;
     /**
     * The URL of an image to display on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#image_url CcBot#image_url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#image_url CcBot#image_url}
     */
     readonly imageUrl?: string;
     /**
     * The subtitle to display on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#subtitle CcBot#subtitle}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#subtitle CcBot#subtitle}
     */
     readonly subtitle?: string;
     /**
     * The title to display on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#title CcBot#title}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#title CcBot#title}
     */
     readonly title?: string;
 }
@@ -28476,7 +28477,7 @@ export interface BotLocalesIntentsSlotsValueElicitationSettingWaitAndContinueSpe
     /**
     * The message to send to the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -28542,7 +28543,7 @@ export interface BotLocalesIntentsSlotsValueElicitationSettingWaitAndContinueSpe
     /**
     * The SSML text that defines the prompt.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -28608,25 +28609,25 @@ export interface BotLocalesIntentsSlotsValueElicitationSettingWaitAndContinueSpe
     /**
     * A message in a custom format defined by the client application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#custom_payload CcBot#custom_payload}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#custom_payload CcBot#custom_payload}
     */
     readonly customPayload?: BotLocalesIntentsSlotsValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupsListVariationsCustomPayloadProperty;
     /**
     * A message that defines a response card that the client application can show to the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#image_response_card CcBot#image_response_card}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#image_response_card CcBot#image_response_card}
     */
     readonly imageResponseCard?: BotLocalesIntentsSlotsValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupsListVariationsImageResponseCardProperty;
     /**
     * A message in plain text format.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#plain_text_message CcBot#plain_text_message}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#plain_text_message CcBot#plain_text_message}
     */
     readonly plainTextMessage?: BotLocalesIntentsSlotsValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupsListVariationsPlainTextMessageProperty;
     /**
     * A message in Speech Synthesis Markup Language (SSML).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#ssml_message CcBot#ssml_message}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#ssml_message CcBot#ssml_message}
     */
     readonly ssmlMessage?: BotLocalesIntentsSlotsValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupsListVariationsSsmlMessageProperty;
 }
@@ -28780,13 +28781,13 @@ export interface BotLocalesIntentsSlotsValueElicitationSettingWaitAndContinueSpe
     /**
     * The primary message that Amazon Lex should send to the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#message CcBot#message}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#message CcBot#message}
     */
     readonly message?: BotLocalesIntentsSlotsValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupsListMessageProperty;
     /**
     * Message variations to send to the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#variations CcBot#variations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#variations CcBot#variations}
     */
     readonly variations?: BotLocalesIntentsSlotsValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupsListVariationsProperty[] | cdktn.IResolvable;
 }
@@ -28896,25 +28897,25 @@ export interface StillWaitingResponseSpecificationProperty {
     /**
     * Indicates whether the user can interrupt a speech prompt from the bot.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#allow_interrupt CcBot#allow_interrupt}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#allow_interrupt CcBot#allow_interrupt}
     */
     readonly allowInterrupt?: boolean | cdktn.IResolvable;
     /**
     * How often a message should be sent to the user in seconds.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#frequency_in_seconds CcBot#frequency_in_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#frequency_in_seconds CcBot#frequency_in_seconds}
     */
     readonly frequencyInSeconds?: number;
     /**
     * One to 5 message groups that contain update messages. Amazon Lex chooses one of the messages to play to the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#message_groups_list CcBot#message_groups_list}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#message_groups_list CcBot#message_groups_list}
     */
     readonly messageGroupsList?: BotLocalesIntentsSlotsValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupsListProperty[] | cdktn.IResolvable;
     /**
     * If Amazon Lex waits longer than this length of time in seconds for a response, it will stop sending messages.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#timeout_in_seconds CcBot#timeout_in_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#timeout_in_seconds CcBot#timeout_in_seconds}
     */
     readonly timeoutInSeconds?: number;
 }
@@ -29046,7 +29047,7 @@ export interface BotLocalesIntentsSlotsValueElicitationSettingWaitAndContinueSpe
     /**
     * The string that is sent to your application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -29112,13 +29113,13 @@ export interface BotLocalesIntentsSlotsValueElicitationSettingWaitAndContinueSpe
     /**
     * The text that appears on the button.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#text CcBot#text}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#text CcBot#text}
     */
     readonly text?: string;
     /**
     * The value returned to Amazon Lex when the user chooses this button.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -29228,25 +29229,25 @@ export interface BotLocalesIntentsSlotsValueElicitationSettingWaitAndContinueSpe
     /**
     * A list of buttons that should be displayed on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#buttons CcBot#buttons}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#buttons CcBot#buttons}
     */
     readonly buttons?: BotLocalesIntentsSlotsValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupsListMessageImageResponseCardButtonsProperty[] | cdktn.IResolvable;
     /**
     * The URL of an image to display on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#image_url CcBot#image_url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#image_url CcBot#image_url}
     */
     readonly imageUrl?: string;
     /**
     * The subtitle to display on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#subtitle CcBot#subtitle}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#subtitle CcBot#subtitle}
     */
     readonly subtitle?: string;
     /**
     * The title to display on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#title CcBot#title}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#title CcBot#title}
     */
     readonly title?: string;
 }
@@ -29378,7 +29379,7 @@ export interface BotLocalesIntentsSlotsValueElicitationSettingWaitAndContinueSpe
     /**
     * The message to send to the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -29444,7 +29445,7 @@ export interface BotLocalesIntentsSlotsValueElicitationSettingWaitAndContinueSpe
     /**
     * The SSML text that defines the prompt.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -29510,25 +29511,25 @@ export interface BotLocalesIntentsSlotsValueElicitationSettingWaitAndContinueSpe
     /**
     * A message in a custom format defined by the client application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#custom_payload CcBot#custom_payload}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#custom_payload CcBot#custom_payload}
     */
     readonly customPayload?: BotLocalesIntentsSlotsValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupsListMessageCustomPayloadProperty;
     /**
     * A message that defines a response card that the client application can show to the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#image_response_card CcBot#image_response_card}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#image_response_card CcBot#image_response_card}
     */
     readonly imageResponseCard?: BotLocalesIntentsSlotsValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupsListMessageImageResponseCardProperty;
     /**
     * A message in plain text format.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#plain_text_message CcBot#plain_text_message}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#plain_text_message CcBot#plain_text_message}
     */
     readonly plainTextMessage?: BotLocalesIntentsSlotsValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupsListMessagePlainTextMessageProperty;
     /**
     * A message in Speech Synthesis Markup Language (SSML).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#ssml_message CcBot#ssml_message}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#ssml_message CcBot#ssml_message}
     */
     readonly ssmlMessage?: BotLocalesIntentsSlotsValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupsListMessageSsmlMessageProperty;
 }
@@ -29660,7 +29661,7 @@ export interface BotLocalesIntentsSlotsValueElicitationSettingWaitAndContinueSpe
     /**
     * The string that is sent to your application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -29726,13 +29727,13 @@ export interface BotLocalesIntentsSlotsValueElicitationSettingWaitAndContinueSpe
     /**
     * The text that appears on the button.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#text CcBot#text}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#text CcBot#text}
     */
     readonly text?: string;
     /**
     * The value returned to Amazon Lex when the user chooses this button.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -29842,25 +29843,25 @@ export interface BotLocalesIntentsSlotsValueElicitationSettingWaitAndContinueSpe
     /**
     * A list of buttons that should be displayed on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#buttons CcBot#buttons}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#buttons CcBot#buttons}
     */
     readonly buttons?: BotLocalesIntentsSlotsValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupsListVariationsImageResponseCardButtonsProperty[] | cdktn.IResolvable;
     /**
     * The URL of an image to display on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#image_url CcBot#image_url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#image_url CcBot#image_url}
     */
     readonly imageUrl?: string;
     /**
     * The subtitle to display on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#subtitle CcBot#subtitle}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#subtitle CcBot#subtitle}
     */
     readonly subtitle?: string;
     /**
     * The title to display on the response card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#title CcBot#title}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#title CcBot#title}
     */
     readonly title?: string;
 }
@@ -29992,7 +29993,7 @@ export interface BotLocalesIntentsSlotsValueElicitationSettingWaitAndContinueSpe
     /**
     * The message to send to the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -30058,7 +30059,7 @@ export interface BotLocalesIntentsSlotsValueElicitationSettingWaitAndContinueSpe
     /**
     * The SSML text that defines the prompt.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -30124,25 +30125,25 @@ export interface BotLocalesIntentsSlotsValueElicitationSettingWaitAndContinueSpe
     /**
     * A message in a custom format defined by the client application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#custom_payload CcBot#custom_payload}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#custom_payload CcBot#custom_payload}
     */
     readonly customPayload?: BotLocalesIntentsSlotsValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupsListVariationsCustomPayloadProperty;
     /**
     * A message that defines a response card that the client application can show to the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#image_response_card CcBot#image_response_card}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#image_response_card CcBot#image_response_card}
     */
     readonly imageResponseCard?: BotLocalesIntentsSlotsValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupsListVariationsImageResponseCardProperty;
     /**
     * A message in plain text format.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#plain_text_message CcBot#plain_text_message}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#plain_text_message CcBot#plain_text_message}
     */
     readonly plainTextMessage?: BotLocalesIntentsSlotsValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupsListVariationsPlainTextMessageProperty;
     /**
     * A message in Speech Synthesis Markup Language (SSML).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#ssml_message CcBot#ssml_message}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#ssml_message CcBot#ssml_message}
     */
     readonly ssmlMessage?: BotLocalesIntentsSlotsValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupsListVariationsSsmlMessageProperty;
 }
@@ -30296,13 +30297,13 @@ export interface BotLocalesIntentsSlotsValueElicitationSettingWaitAndContinueSpe
     /**
     * The primary message that Amazon Lex should send to the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#message CcBot#message}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#message CcBot#message}
     */
     readonly message?: BotLocalesIntentsSlotsValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupsListMessageProperty;
     /**
     * Message variations to send to the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#variations CcBot#variations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#variations CcBot#variations}
     */
     readonly variations?: BotLocalesIntentsSlotsValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupsListVariationsProperty[] | cdktn.IResolvable;
 }
@@ -30412,13 +30413,13 @@ export interface WaitingResponseProperty {
     /**
     * Indicates whether the user can interrupt a speech prompt from the bot.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#allow_interrupt CcBot#allow_interrupt}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#allow_interrupt CcBot#allow_interrupt}
     */
     readonly allowInterrupt?: boolean | cdktn.IResolvable;
     /**
     * One to 5 message groups that contain update messages. Amazon Lex chooses one of the messages to play to the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#message_groups_list CcBot#message_groups_list}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#message_groups_list CcBot#message_groups_list}
     */
     readonly messageGroupsList?: BotLocalesIntentsSlotsValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupsListProperty[] | cdktn.IResolvable;
 }
@@ -30506,25 +30507,25 @@ export interface WaitAndContinueSpecificationProperty {
     /**
     * The response that Amazon Lex sends to indicate that the bot is ready to continue the conversation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#continue_response CcBot#continue_response}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#continue_response CcBot#continue_response}
     */
     readonly continueResponse?: ContinueResponseProperty;
     /**
     * Specifies whether the bot will wait for a user to respond.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#is_active CcBot#is_active}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#is_active CcBot#is_active}
     */
     readonly isActive?: boolean | cdktn.IResolvable;
     /**
     * The response that Amazon Lex sends periodically to the user to indicate that the bot is still waiting for input from the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#still_waiting_response CcBot#still_waiting_response}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#still_waiting_response CcBot#still_waiting_response}
     */
     readonly stillWaitingResponse?: StillWaitingResponseSpecificationProperty;
     /**
     * The response that Amazon Lex sends to indicate that the bot is waiting for the conversation to continue.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#waiting_response CcBot#waiting_response}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#waiting_response CcBot#waiting_response}
     */
     readonly waitingResponse?: WaitingResponseProperty;
 }
@@ -30656,31 +30657,31 @@ export interface SlotValueElicitationSettingProperty {
     /**
     * A list of default values for a slot.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#default_value_specification CcBot#default_value_specification}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#default_value_specification CcBot#default_value_specification}
     */
     readonly defaultValueSpecification?: SlotDefaultValueSpecificationProperty;
     /**
     * The prompt that Amazon Lex uses to elicit the slot value from the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#prompt_specification CcBot#prompt_specification}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#prompt_specification CcBot#prompt_specification}
     */
     readonly promptSpecification?: BotLocalesIntentsSlotsValueElicitationSettingPromptSpecificationProperty;
     /**
     * If you know a specific pattern that users might respond to an Amazon Lex request for a slot value, you can provide those utterances to improve accuracy.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#sample_utterances CcBot#sample_utterances}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#sample_utterances CcBot#sample_utterances}
     */
     readonly sampleUtterances?: SampleUtterancesProperty[] | cdktn.IResolvable;
     /**
     * Specifies whether the slot is required or optional.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#slot_constraint CcBot#slot_constraint}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#slot_constraint CcBot#slot_constraint}
     */
     readonly slotConstraint?: string;
     /**
     * Specifies the prompts that Amazon Lex uses while a bot is waiting for customer input.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#wait_and_continue_specification CcBot#wait_and_continue_specification}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#wait_and_continue_specification CcBot#wait_and_continue_specification}
     */
     readonly waitAndContinueSpecification?: WaitAndContinueSpecificationProperty;
 }
@@ -30834,37 +30835,37 @@ export interface SlotProperty {
     /**
     * A description of the resource
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#description CcBot#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#description CcBot#description}
     */
     readonly description?: string;
     /**
     * Indicates whether a slot can return multiple values.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#multiple_values_setting CcBot#multiple_values_setting}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#multiple_values_setting CcBot#multiple_values_setting}
     */
     readonly multipleValuesSetting?: MultipleValuesSettingProperty;
     /**
     * Unique name for a resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#name CcBot#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#name CcBot#name}
     */
     readonly name?: string;
     /**
     * Determines whether Amazon Lex obscures slot values in conversation logs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#obfuscation_setting CcBot#obfuscation_setting}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#obfuscation_setting CcBot#obfuscation_setting}
     */
     readonly obfuscationSetting?: ObfuscationSettingProperty;
     /**
     * The slot type name that is used in the slot. Allows for custom and built-in slot type names
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#slot_type_name CcBot#slot_type_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#slot_type_name CcBot#slot_type_name}
     */
     readonly slotTypeName?: string;
     /**
     * Settings that you can use for eliciting a slot value.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value_elicitation_setting CcBot#value_elicitation_setting}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value_elicitation_setting CcBot#value_elicitation_setting}
     */
     readonly valueElicitationSetting?: SlotValueElicitationSettingProperty;
 }
@@ -31062,79 +31063,79 @@ export interface IntentProperty {
     /**
     * A description of the resource
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#description CcBot#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#description CcBot#description}
     */
     readonly description?: string;
     /**
     * Settings that determine the Lambda function that Amazon Lex uses for processing user responses.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#dialog_code_hook CcBot#dialog_code_hook}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#dialog_code_hook CcBot#dialog_code_hook}
     */
     readonly dialogCodeHook?: DialogCodeHookSettingProperty;
     /**
     * Settings that determine if a Lambda function should be invoked to fulfill a specific intent.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#fulfillment_code_hook CcBot#fulfillment_code_hook}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#fulfillment_code_hook CcBot#fulfillment_code_hook}
     */
     readonly fulfillmentCodeHook?: FulfillmentCodeHookSettingProperty;
     /**
     * The list of input contexts specified for the intent.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#input_contexts CcBot#input_contexts}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#input_contexts CcBot#input_contexts}
     */
     readonly inputContexts?: InputContextProperty[] | cdktn.IResolvable;
     /**
     * Response that Amazon Lex sends to the user when the intent is closed.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#intent_closing_setting CcBot#intent_closing_setting}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#intent_closing_setting CcBot#intent_closing_setting}
     */
     readonly intentClosingSetting?: IntentClosingSettingProperty;
     /**
     * Prompts that Amazon Lex sends to the user to confirm the completion of an intent.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#intent_confirmation_setting CcBot#intent_confirmation_setting}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#intent_confirmation_setting CcBot#intent_confirmation_setting}
     */
     readonly intentConfirmationSetting?: IntentConfirmationSettingProperty;
     /**
     * Configuration for searching a Amazon Kendra index specified for the intent.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#kendra_configuration CcBot#kendra_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#kendra_configuration CcBot#kendra_configuration}
     */
     readonly kendraConfiguration?: KendraConfigurationProperty;
     /**
     * Unique name for a resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#name CcBot#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#name CcBot#name}
     */
     readonly name?: string;
     /**
     * A list of contexts that the intent activates when it is fulfilled.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#output_contexts CcBot#output_contexts}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#output_contexts CcBot#output_contexts}
     */
     readonly outputContexts?: OutputContextProperty[] | cdktn.IResolvable;
     /**
     * A unique identifier for the built-in intent to base this intent on.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#parent_intent_signature CcBot#parent_intent_signature}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#parent_intent_signature CcBot#parent_intent_signature}
     */
     readonly parentIntentSignature?: string;
     /**
     * An array of sample utterances
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#sample_utterances CcBot#sample_utterances}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#sample_utterances CcBot#sample_utterances}
     */
     readonly sampleUtterances?: SampleUtteranceProperty[] | cdktn.IResolvable;
     /**
     * List for slot priorities
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#slot_priorities CcBot#slot_priorities}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#slot_priorities CcBot#slot_priorities}
     */
     readonly slotPriorities?: SlotPriorityProperty[] | cdktn.IResolvable;
     /**
     * List of slots
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#slots CcBot#slots}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#slots CcBot#slots}
     */
     readonly slots?: SlotProperty[] | cdktn.IResolvable;
 }
@@ -31486,19 +31487,19 @@ export interface GrammarSlotTypeSourceProperty {
     /**
     * The Amazon KMS key required to decrypt the contents of the grammar, if any.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#kms_key_arn CcBot#kms_key_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#kms_key_arn CcBot#kms_key_arn}
     */
     readonly kmsKeyArn?: string;
     /**
     * The name of the S3 bucket that contains the grammar source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#s3_bucket_name CcBot#s3_bucket_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#s3_bucket_name CcBot#s3_bucket_name}
     */
     readonly s3BucketName?: string;
     /**
     * The path to the grammar in the S3 bucket.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#s3_object_key CcBot#s3_object_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#s3_object_key CcBot#s3_object_key}
     */
     readonly s3ObjectKey?: string;
 }
@@ -31608,7 +31609,7 @@ export interface GrammarSlotTypeSettingProperty {
     /**
     * Describes the Amazon S3 bucket name and location for the grammar that is the source for the slot type.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#source CcBot#source}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#source CcBot#source}
     */
     readonly source?: GrammarSlotTypeSourceProperty;
 }
@@ -31674,7 +31675,7 @@ export interface ExternalSourceSettingProperty {
     /**
     * Settings required for a slot type based on a grammar that you provide.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#grammar_slot_type_setting CcBot#grammar_slot_type_setting}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#grammar_slot_type_setting CcBot#grammar_slot_type_setting}
     */
     readonly grammarSlotTypeSetting?: GrammarSlotTypeSettingProperty;
 }
@@ -31740,7 +31741,7 @@ export interface SampleValueProperty {
     /**
     * The value that can be used for a slot type.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -31806,7 +31807,7 @@ export interface SynonymsProperty {
     /**
     * The value that can be used for a slot type.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -31894,13 +31895,13 @@ export interface SlotTypeValueProperty {
     /**
     * Defines one of the values for a slot type.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#sample_value CcBot#sample_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#sample_value CcBot#sample_value}
     */
     readonly sampleValue?: SampleValueProperty;
     /**
     * Additional values related to the slot type entry.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#synonyms CcBot#synonyms}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#synonyms CcBot#synonyms}
     */
     readonly synonyms?: SynonymsProperty[] | cdktn.IResolvable;
 }
@@ -32010,7 +32011,7 @@ export interface AdvancedRecognitionSettingProperty {
     /**
     * Enables using slot values as a custom vocabulary when recognizing user utterances.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#audio_recognition_strategy CcBot#audio_recognition_strategy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#audio_recognition_strategy CcBot#audio_recognition_strategy}
     */
     readonly audioRecognitionStrategy?: string;
 }
@@ -32076,7 +32077,7 @@ export interface SlotValueRegexFilterProperty {
     /**
     * Regex pattern
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#pattern CcBot#pattern}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#pattern CcBot#pattern}
     */
     readonly pattern?: string;
 }
@@ -32142,17 +32143,17 @@ export interface SlotValueSelectionSettingProperty {
     /**
     * Provides settings that enable advanced recognition settings for slot values.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#advanced_recognition_setting CcBot#advanced_recognition_setting}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#advanced_recognition_setting CcBot#advanced_recognition_setting}
     */
     readonly advancedRecognitionSetting?: AdvancedRecognitionSettingProperty;
     /**
     * A regular expression used to validate the value of a slot.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#regex_filter CcBot#regex_filter}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#regex_filter CcBot#regex_filter}
     */
     readonly regexFilter?: SlotValueRegexFilterProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#resolution_strategy CcBot#resolution_strategy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#resolution_strategy CcBot#resolution_strategy}
     */
     readonly resolutionStrategy?: string;
 }
@@ -32262,37 +32263,37 @@ export interface SlotTypeProperty {
     /**
     * A description of the resource
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#description CcBot#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#description CcBot#description}
     */
     readonly description?: string;
     /**
     * Provides information about the external source of the slot type's definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#external_source_setting CcBot#external_source_setting}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#external_source_setting CcBot#external_source_setting}
     */
     readonly externalSourceSetting?: ExternalSourceSettingProperty;
     /**
     * Unique name for a resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#name CcBot#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#name CcBot#name}
     */
     readonly name?: string;
     /**
     * The built-in slot type used as a parent of this slot type.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#parent_slot_type_signature CcBot#parent_slot_type_signature}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#parent_slot_type_signature CcBot#parent_slot_type_signature}
     */
     readonly parentSlotTypeSignature?: string;
     /**
     * A List of slot type values
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#slot_type_values CcBot#slot_type_values}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#slot_type_values CcBot#slot_type_values}
     */
     readonly slotTypeValues?: SlotTypeValueProperty[] | cdktn.IResolvable;
     /**
     * Contains settings used by Amazon Lex to select a slot value.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value_selection_setting CcBot#value_selection_setting}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value_selection_setting CcBot#value_selection_setting}
     */
     readonly valueSelectionSetting?: SlotValueSelectionSettingProperty;
 }
@@ -32490,13 +32491,13 @@ export interface VoiceSettingsProperty {
     /**
     * Indicates the type of Amazon Polly voice that Amazon Lex should use for voice interaction with the user. For more information, see the engine parameter of the SynthesizeSpeech operation in the Amazon Polly developer guide.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#engine CcBot#engine}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#engine CcBot#engine}
     */
     readonly engine?: string;
     /**
     * The Amazon Polly voice ID that Amazon Lex uses for voice interaction with the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#voice_id CcBot#voice_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#voice_id CcBot#voice_id}
     */
     readonly voiceId?: string;
 }
@@ -32584,43 +32585,43 @@ export interface BotLocaleProperty {
     /**
     * A custom vocabulary is a list of specific phrases that you want Amazon Lex V2 to recognize in the audio input.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#custom_vocabulary CcBot#custom_vocabulary}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#custom_vocabulary CcBot#custom_vocabulary}
     */
     readonly customVocabulary?: CustomVocabularyProperty;
     /**
     * A description of the resource
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#description CcBot#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#description CcBot#description}
     */
     readonly description?: string;
     /**
     * List of intents
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#intents CcBot#intents}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#intents CcBot#intents}
     */
     readonly intents?: IntentProperty[] | cdktn.IResolvable;
     /**
     * The identifier of the language and locale that the bot will be used in.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#locale_id CcBot#locale_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#locale_id CcBot#locale_id}
     */
     readonly localeId?: string;
     /**
     * The specified confidence threshold for inserting the AMAZON.FallbackIntent and AMAZON.KendraSearchIntent intents.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#nlu_confidence_threshold CcBot#nlu_confidence_threshold}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#nlu_confidence_threshold CcBot#nlu_confidence_threshold}
     */
     readonly nluConfidenceThreshold?: number;
     /**
     * List of SlotTypes
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#slot_types CcBot#slot_types}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#slot_types CcBot#slot_types}
     */
     readonly slotTypes?: SlotTypeProperty[] | cdktn.IResolvable;
     /**
     * Settings for using an Amazon Polly voice to communicate with a user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#voice_settings CcBot#voice_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#voice_settings CcBot#voice_settings}
     */
     readonly voiceSettings?: VoiceSettingsProperty;
 }
@@ -32840,13 +32841,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#key CcBot#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#key CcBot#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 0 to 256 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }
@@ -32954,7 +32955,7 @@ export class TagPropertyList extends cdktn.ComplexList {
 }
 export interface DataPrivacyProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#child_directed CcBot#child_directed}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#child_directed CcBot#child_directed}
     */
     readonly childDirected: boolean | cdktn.IResolvable;
 }
@@ -33017,13 +33018,13 @@ export interface LambdaCodeHookProperty {
     /**
     * The version of the request-response that you want Amazon Lex to use to invoke your Lambda function.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#code_hook_interface_version CcBot#code_hook_interface_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#code_hook_interface_version CcBot#code_hook_interface_version}
     */
     readonly codeHookInterfaceVersion?: string;
     /**
     * The Amazon Resource Name (ARN) of the Lambda function.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#lambda_arn CcBot#lambda_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#lambda_arn CcBot#lambda_arn}
     */
     readonly lambdaArn?: string;
 }
@@ -33111,7 +33112,7 @@ export interface CodeHookSpecificationProperty {
     /**
     * Contains information about code hooks that Amazon Lex calls during a conversation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#lambda_code_hook CcBot#lambda_code_hook}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#lambda_code_hook CcBot#lambda_code_hook}
     */
     readonly lambdaCodeHook?: LambdaCodeHookProperty;
 }
@@ -33177,13 +33178,13 @@ export interface BotAliasLocaleSettingsProperty {
     /**
     * Contains information about code hooks that Amazon Lex calls during a conversation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#code_hook_specification CcBot#code_hook_specification}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#code_hook_specification CcBot#code_hook_specification}
     */
     readonly codeHookSpecification?: CodeHookSpecificationProperty;
     /**
     * Whether the Lambda code hook is enabled
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#enabled CcBot#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#enabled CcBot#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -33271,13 +33272,13 @@ export interface BotAliasLocaleSettingsItemProperty {
     /**
     * You can use this parameter to specify a specific Lambda function to run different functions in different locales.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#bot_alias_locale_setting CcBot#bot_alias_locale_setting}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#bot_alias_locale_setting CcBot#bot_alias_locale_setting}
     */
     readonly botAliasLocaleSetting?: BotAliasLocaleSettingsProperty;
     /**
     * A string used to identify the locale
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#locale_id CcBot#locale_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#locale_id CcBot#locale_id}
     */
     readonly localeId?: string;
 }
@@ -33387,19 +33388,19 @@ export interface S3BucketLogDestinationProperty {
     /**
     * The Amazon Resource Name (ARN) of an AWS Key Management Service (KMS) key for encrypting audio log files stored in an S3 bucket.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#kms_key_arn CcBot#kms_key_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#kms_key_arn CcBot#kms_key_arn}
     */
     readonly kmsKeyArn?: string;
     /**
     * The Amazon S3 key of the deployment package.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#log_prefix CcBot#log_prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#log_prefix CcBot#log_prefix}
     */
     readonly logPrefix?: string;
     /**
     * The Amazon Resource Name (ARN) of an Amazon S3 bucket where audio log files are stored.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#s3_bucket_arn CcBot#s3_bucket_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#s3_bucket_arn CcBot#s3_bucket_arn}
     */
     readonly s3BucketArn?: string;
 }
@@ -33509,7 +33510,7 @@ export interface AudioLogDestinationProperty {
     /**
     * Specifies an Amazon S3 bucket for logging audio conversations
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#s3_bucket CcBot#s3_bucket}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#s3_bucket CcBot#s3_bucket}
     */
     readonly s3Bucket?: S3BucketLogDestinationProperty;
 }
@@ -33575,11 +33576,11 @@ export interface AudioLogSettingProperty {
     /**
     * The location of audio log files collected when conversation logging is enabled for a bot.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#destination CcBot#destination}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#destination CcBot#destination}
     */
     readonly destination?: AudioLogDestinationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#enabled CcBot#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#enabled CcBot#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -33689,13 +33690,13 @@ export interface CloudWatchLogGroupLogDestinationProperty {
     /**
     * A string used to identify the groupArn for the Cloudwatch Log Group
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#cloudwatch_log_group_arn CcBot#cloudwatch_log_group_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#cloudwatch_log_group_arn CcBot#cloudwatch_log_group_arn}
     */
     readonly cloudwatchLogGroupArn?: string;
     /**
     * A string containing the value for the Log Prefix
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#log_prefix CcBot#log_prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#log_prefix CcBot#log_prefix}
     */
     readonly logPrefix?: string;
 }
@@ -33781,7 +33782,7 @@ export class CloudWatchLogGroupLogDestinationPropertyOutputReference extends cdk
 }
 export interface TextLogDestinationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#cloudwatch CcBot#cloudwatch}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#cloudwatch CcBot#cloudwatch}
     */
     readonly cloudwatch?: CloudWatchLogGroupLogDestinationProperty;
 }
@@ -33847,11 +33848,11 @@ export interface TextLogSettingProperty {
     /**
     * Defines the Amazon CloudWatch Logs destination log group for conversation text logs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#destination CcBot#destination}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#destination CcBot#destination}
     */
     readonly destination?: TextLogDestinationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#enabled CcBot#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#enabled CcBot#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -33961,13 +33962,13 @@ export interface ConversationLogSettingsProperty {
     /**
     * List of audio log settings that pertain to the conversation log settings for the bot's TestBotAlias.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#audio_log_settings CcBot#audio_log_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#audio_log_settings CcBot#audio_log_settings}
     */
     readonly audioLogSettings?: AudioLogSettingProperty[] | cdktn.IResolvable;
     /**
     * List of text log settings that pertain to the conversation log settings for the bot's TestBotAlias
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#text_log_settings CcBot#text_log_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#text_log_settings CcBot#text_log_settings}
     */
     readonly textLogSettings?: TextLogSettingProperty[] | cdktn.IResolvable;
 }
@@ -34055,7 +34056,7 @@ export interface SentimentAnalysisSettingsProperty {
     /**
     * Enable to call Amazon Comprehend for Sentiment natively within Lex
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#detect_sentiment CcBot#detect_sentiment}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#detect_sentiment CcBot#detect_sentiment}
     */
     readonly detectSentiment?: boolean | cdktn.IResolvable;
 }
@@ -34121,25 +34122,25 @@ export interface TestBotAliasSettingsProperty {
     /**
     * A list of bot alias locale settings to add to the bot alias.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#bot_alias_locale_settings CcBot#bot_alias_locale_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#bot_alias_locale_settings CcBot#bot_alias_locale_settings}
     */
     readonly botAliasLocaleSettings?: BotAliasLocaleSettingsItemProperty[] | cdktn.IResolvable;
     /**
     * Contains information about code hooks that Amazon Lex calls during a conversation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#conversation_log_settings CcBot#conversation_log_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#conversation_log_settings CcBot#conversation_log_settings}
     */
     readonly conversationLogSettings?: ConversationLogSettingsProperty;
     /**
     * A description of the resource
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#description CcBot#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#description CcBot#description}
     */
     readonly description?: string;
     /**
     * Determines whether Amazon Lex will use Amazon Comprehend to detect the sentiment of user utterances.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#sentiment_analysis_settings CcBot#sentiment_analysis_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#sentiment_analysis_settings CcBot#sentiment_analysis_settings}
     */
     readonly sentimentAnalysisSettings?: SentimentAnalysisSettingsProperty;
 }
@@ -34271,13 +34272,13 @@ export interface TestBotAliasTagsProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#key CcBot#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#key CcBot#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 0 to 256 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot#value CcBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#value CcBot#value}
     */
     readonly value?: string;
 }

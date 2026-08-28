@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_key_pair
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_key_pair
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -10,14 +10,14 @@ export interface CcKeyPairProps extends cdktn.TerraformMetaArguments {
     * The format of the key pair.
     *  Default: ``pem``
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_key_pair#key_format CcKeyPair#key_format}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_key_pair#key_format CcKeyPair#key_format}
     */
     readonly keyFormat?: string;
     /**
     * A unique name for the key pair.
     *  Constraints: Up to 255 ASCII characters
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_key_pair#key_name CcKeyPair#key_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_key_pair#key_name CcKeyPair#key_name}
     */
     readonly keyName: string;
     /**
@@ -25,25 +25,25 @@ export interface CcKeyPairProps extends cdktn.TerraformMetaArguments {
     *  If the ``PublicKeyMaterial`` property is specified, the ``KeyType`` property is ignored, and the key type is inferred from the ``PublicKeyMaterial`` value.
     *  Default: ``rsa``
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_key_pair#key_type CcKeyPair#key_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_key_pair#key_type CcKeyPair#key_type}
     */
     readonly keyType?: string;
     /**
     * The public key material. The ``PublicKeyMaterial`` property is used to import a key pair. If this property is not specified, then a new key pair will be created.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_key_pair#public_key_material CcKeyPair#public_key_material}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_key_pair#public_key_material CcKeyPair#public_key_material}
     */
     readonly publicKeyMaterial?: string;
     /**
     * The tags to apply to the key pair.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_key_pair#tags CcKeyPair#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_key_pair#tags CcKeyPair#tags}
     */
     readonly tags?: CcKeyPair.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_key_pair awscc_ec2_key_pair}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_key_pair awscc_ec2_key_pair}
 */
 export class CcKeyPair extends cdktn.TerraformResource {
 
@@ -59,7 +59,7 @@ export class CcKeyPair extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcKeyPair resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcKeyPair to import
-    * @param importFromId The id of the existing CcKeyPair that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_key_pair#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcKeyPair that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_key_pair#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcKeyPair to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -71,7 +71,7 @@ export class CcKeyPair extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_key_pair awscc_ec2_key_pair} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_key_pair awscc_ec2_key_pair} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -81,7 +81,8 @@ export class CcKeyPair extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_ec2_key_pair',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -289,13 +290,13 @@ export interface TagProperty {
     /**
     * The tag key.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_key_pair#key CcKeyPair#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_key_pair#key CcKeyPair#key}
     */
     readonly key?: string;
     /**
     * The tag value.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_key_pair#value CcKeyPair#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_key_pair#value CcKeyPair#value}
     */
     readonly value?: string;
 }

@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudwatch_metric_stream
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudwatch_metric_stream
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,61 +9,61 @@ export interface CcMetricStreamProps extends cdktn.TerraformMetaArguments {
     /**
     * Define which metrics will be not streamed. Metrics matched by multiple instances of MetricStreamFilter are joined with an OR operation by default. If both IncludeFilters and ExcludeFilters are omitted, all metrics in the account will be streamed. IncludeFilters and ExcludeFilters are mutually exclusive. Default to null.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudwatch_metric_stream#exclude_filters CcMetricStream#exclude_filters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudwatch_metric_stream#exclude_filters CcMetricStream#exclude_filters}
     */
     readonly excludeFilters?: CcMetricStream.MetricStreamFilterProperty[] | cdktn.IResolvable;
     /**
     * The ARN of the Kinesis Firehose where to stream the data.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudwatch_metric_stream#firehose_arn CcMetricStream#firehose_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudwatch_metric_stream#firehose_arn CcMetricStream#firehose_arn}
     */
     readonly firehoseArn?: string;
     /**
     * Define which metrics will be streamed. Metrics matched by multiple instances of MetricStreamFilter are joined with an OR operation by default. If both IncludeFilters and ExcludeFilters are omitted, all metrics in the account will be streamed. IncludeFilters and ExcludeFilters are mutually exclusive. Default to null.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudwatch_metric_stream#include_filters CcMetricStream#include_filters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudwatch_metric_stream#include_filters CcMetricStream#include_filters}
     */
     readonly includeFilters?: CcMetricStream.IncludeFiltersProperty[] | cdktn.IResolvable;
     /**
     * If you are creating a metric stream in a monitoring account, specify true to include metrics from source accounts that are linked to this monitoring account, in the metric stream. The default is false.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudwatch_metric_stream#include_linked_accounts_metrics CcMetricStream#include_linked_accounts_metrics}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudwatch_metric_stream#include_linked_accounts_metrics CcMetricStream#include_linked_accounts_metrics}
     */
     readonly includeLinkedAccountsMetrics?: boolean | cdktn.IResolvable;
     /**
     * Name of the metric stream.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudwatch_metric_stream#name CcMetricStream#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudwatch_metric_stream#name CcMetricStream#name}
     */
     readonly name?: string;
     /**
     * The output format of the data streamed to the Kinesis Firehose.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudwatch_metric_stream#output_format CcMetricStream#output_format}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudwatch_metric_stream#output_format CcMetricStream#output_format}
     */
     readonly outputFormat?: string;
     /**
     * The ARN of the role that provides access to the Kinesis Firehose.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudwatch_metric_stream#role_arn CcMetricStream#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudwatch_metric_stream#role_arn CcMetricStream#role_arn}
     */
     readonly roleArn?: string;
     /**
     * By default, a metric stream always sends the MAX, MIN, SUM, and SAMPLECOUNT statistics for each metric that is streamed. You can use this parameter to have the metric stream also send additional statistics in the stream. This array can have up to 100 members.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudwatch_metric_stream#statistics_configurations CcMetricStream#statistics_configurations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudwatch_metric_stream#statistics_configurations CcMetricStream#statistics_configurations}
     */
     readonly statisticsConfigurations?: CcMetricStream.MetricStreamStatisticsConfigurationProperty[] | cdktn.IResolvable;
     /**
     * A set of tags to assign to the delivery stream.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudwatch_metric_stream#tags CcMetricStream#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudwatch_metric_stream#tags CcMetricStream#tags}
     */
     readonly tags?: CcMetricStream.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudwatch_metric_stream awscc_cloudwatch_metric_stream}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudwatch_metric_stream awscc_cloudwatch_metric_stream}
 */
 export class CcMetricStream extends cdktn.TerraformResource {
 
@@ -79,7 +79,7 @@ export class CcMetricStream extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcMetricStream resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcMetricStream to import
-    * @param importFromId The id of the existing CcMetricStream that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudwatch_metric_stream#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcMetricStream that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudwatch_metric_stream#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcMetricStream to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -91,7 +91,7 @@ export class CcMetricStream extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudwatch_metric_stream awscc_cloudwatch_metric_stream} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudwatch_metric_stream awscc_cloudwatch_metric_stream} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -101,7 +101,8 @@ export class CcMetricStream extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_cloudwatch_metric_stream',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -566,13 +567,13 @@ export interface MetricStreamFilterProperty {
     /**
     * Only metrics with MetricNames matching these values will be streamed. Must be set together with Namespace.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudwatch_metric_stream#metric_names CcMetricStream#metric_names}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudwatch_metric_stream#metric_names CcMetricStream#metric_names}
     */
     readonly metricNames?: string[];
     /**
     * Only metrics with Namespace matching this value will be streamed.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudwatch_metric_stream#namespace CcMetricStream#namespace}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudwatch_metric_stream#namespace CcMetricStream#namespace}
     */
     readonly namespace?: string;
 }
@@ -682,13 +683,13 @@ export interface IncludeFiltersProperty {
     /**
     * Only metrics with MetricNames matching these values will be streamed. Must be set together with Namespace.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudwatch_metric_stream#metric_names CcMetricStream#metric_names}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudwatch_metric_stream#metric_names CcMetricStream#metric_names}
     */
     readonly metricNames?: string[];
     /**
     * Only metrics with Namespace matching this value will be streamed.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudwatch_metric_stream#namespace CcMetricStream#namespace}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudwatch_metric_stream#namespace CcMetricStream#namespace}
     */
     readonly namespace?: string;
 }
@@ -798,13 +799,13 @@ export interface MetricStreamStatisticsMetricProperty {
     /**
     * The name of the metric.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudwatch_metric_stream#metric_name CcMetricStream#metric_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudwatch_metric_stream#metric_name CcMetricStream#metric_name}
     */
     readonly metricName?: string;
     /**
     * The namespace of the metric.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudwatch_metric_stream#namespace CcMetricStream#namespace}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudwatch_metric_stream#namespace CcMetricStream#namespace}
     */
     readonly namespace?: string;
 }
@@ -914,13 +915,13 @@ export interface MetricStreamStatisticsConfigurationProperty {
     /**
     * The additional statistics to stream for the metrics listed in IncludeMetrics.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudwatch_metric_stream#additional_statistics CcMetricStream#additional_statistics}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudwatch_metric_stream#additional_statistics CcMetricStream#additional_statistics}
     */
     readonly additionalStatistics?: string[];
     /**
     * An array that defines the metrics that are to have additional statistics streamed.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudwatch_metric_stream#include_metrics CcMetricStream#include_metrics}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudwatch_metric_stream#include_metrics CcMetricStream#include_metrics}
     */
     readonly includeMetrics?: MetricStreamStatisticsMetricProperty[] | cdktn.IResolvable;
 }
@@ -1030,13 +1031,13 @@ export interface TagProperty {
     /**
     * A unique identifier for the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudwatch_metric_stream#key CcMetricStream#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudwatch_metric_stream#key CcMetricStream#key}
     */
     readonly key?: string;
     /**
     * String which you can use to describe or define the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudwatch_metric_stream#value CcMetricStream#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudwatch_metric_stream#value CcMetricStream#value}
     */
     readonly value?: string;
 }

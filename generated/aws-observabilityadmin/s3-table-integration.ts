@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/observabilityadmin_s3_table_integration
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/observabilityadmin_s3_table_integration
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,31 +9,31 @@ export interface CcS3TableIntegrationProps extends cdktn.TerraformMetaArguments 
     /**
     * Encryption configuration for the S3 Table Integration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/observabilityadmin_s3_table_integration#encryption CcS3TableIntegration#encryption}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/observabilityadmin_s3_table_integration#encryption CcS3TableIntegration#encryption}
     */
     readonly encryption: CcS3TableIntegration.EncryptionConfigProperty;
     /**
     * The CloudWatch Logs data sources to associate with the S3 Table Integration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/observabilityadmin_s3_table_integration#log_sources CcS3TableIntegration#log_sources}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/observabilityadmin_s3_table_integration#log_sources CcS3TableIntegration#log_sources}
     */
     readonly logSources?: CcS3TableIntegration.LogSourceProperty[] | cdktn.IResolvable;
     /**
     * The ARN of the role used to access the S3 Table Integration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/observabilityadmin_s3_table_integration#role_arn CcS3TableIntegration#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/observabilityadmin_s3_table_integration#role_arn CcS3TableIntegration#role_arn}
     */
     readonly roleArn: string;
     /**
     * An array of key-value pairs to apply to this resource
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/observabilityadmin_s3_table_integration#tags CcS3TableIntegration#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/observabilityadmin_s3_table_integration#tags CcS3TableIntegration#tags}
     */
     readonly tags?: CcS3TableIntegration.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/observabilityadmin_s3_table_integration awscc_observabilityadmin_s3_table_integration}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/observabilityadmin_s3_table_integration awscc_observabilityadmin_s3_table_integration}
 */
 export class CcS3TableIntegration extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CcS3TableIntegration extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcS3TableIntegration resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcS3TableIntegration to import
-    * @param importFromId The id of the existing CcS3TableIntegration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/observabilityadmin_s3_table_integration#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcS3TableIntegration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/observabilityadmin_s3_table_integration#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcS3TableIntegration to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CcS3TableIntegration extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/observabilityadmin_s3_table_integration awscc_observabilityadmin_s3_table_integration} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/observabilityadmin_s3_table_integration awscc_observabilityadmin_s3_table_integration} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -71,7 +71,8 @@ export class CcS3TableIntegration extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_observabilityadmin_s3_table_integration',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -328,13 +329,13 @@ export interface EncryptionConfigProperty {
     /**
     * The ARN of the KMS key used to encrypt the S3 Table Integration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/observabilityadmin_s3_table_integration#kms_key_arn CcS3TableIntegration#kms_key_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/observabilityadmin_s3_table_integration#kms_key_arn CcS3TableIntegration#kms_key_arn}
     */
     readonly kmsKeyArn?: string;
     /**
     * The server-side encryption algorithm used to encrypt the S3 Table(s) data
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/observabilityadmin_s3_table_integration#sse_algorithm CcS3TableIntegration#sse_algorithm}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/observabilityadmin_s3_table_integration#sse_algorithm CcS3TableIntegration#sse_algorithm}
     */
     readonly sseAlgorithm: string;
 }
@@ -419,19 +420,19 @@ export interface LogSourceProperty {
     /**
     * The ID of the CloudWatch Logs data source association
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/observabilityadmin_s3_table_integration#identifier CcS3TableIntegration#identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/observabilityadmin_s3_table_integration#identifier CcS3TableIntegration#identifier}
     */
     readonly identifier?: string;
     /**
     * The name of the CloudWatch Logs data source
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/observabilityadmin_s3_table_integration#name CcS3TableIntegration#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/observabilityadmin_s3_table_integration#name CcS3TableIntegration#name}
     */
     readonly name?: string;
     /**
     * The type of the CloudWatch Logs data source
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/observabilityadmin_s3_table_integration#type CcS3TableIntegration#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/observabilityadmin_s3_table_integration#type CcS3TableIntegration#type}
     */
     readonly type?: string;
 }
@@ -563,13 +564,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/observabilityadmin_s3_table_integration#key CcS3TableIntegration#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/observabilityadmin_s3_table_integration#key CcS3TableIntegration#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 0 to 256 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/observabilityadmin_s3_table_integration#value CcS3TableIntegration#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/observabilityadmin_s3_table_integration#value CcS3TableIntegration#value}
     */
     readonly value?: string;
 }

@@ -1,55 +1,55 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehubv2_policy
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehubv2_policy
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcPolicyProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehubv2_policy#availability_slo CcPolicy#availability_slo}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehubv2_policy#availability_slo CcPolicy#availability_slo}
     */
     readonly availabilitySlo?: CcPolicy.AvailabilitySloProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehubv2_policy#data_recovery CcPolicy#data_recovery}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehubv2_policy#data_recovery CcPolicy#data_recovery}
     */
     readonly dataRecovery?: CcPolicy.DataRecoveryTargetsProperty;
     /**
     * The description of the policy.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehubv2_policy#description CcPolicy#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehubv2_policy#description CcPolicy#description}
     */
     readonly description?: string;
     /**
     * The KMS key ID for encrypting policy data.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehubv2_policy#kms_key_id CcPolicy#kms_key_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehubv2_policy#kms_key_id CcPolicy#kms_key_id}
     */
     readonly kmsKeyId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehubv2_policy#multi_az CcPolicy#multi_az}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehubv2_policy#multi_az CcPolicy#multi_az}
     */
     readonly multiAz?: CcPolicy.MultiAzTargetsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehubv2_policy#multi_region CcPolicy#multi_region}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehubv2_policy#multi_region CcPolicy#multi_region}
     */
     readonly multiRegion?: CcPolicy.MultiRegionTargetsProperty;
     /**
     * The name of the policy.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehubv2_policy#name CcPolicy#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehubv2_policy#name CcPolicy#name}
     */
     readonly name: string;
     /**
     * Tags assigned to the policy.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehubv2_policy#tags CcPolicy#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehubv2_policy#tags CcPolicy#tags}
     */
     readonly tags?: CcPolicy.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehubv2_policy awscc_resiliencehubv2_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehubv2_policy awscc_resiliencehubv2_policy}
 */
 export class CcPolicy extends cdktn.TerraformResource {
 
@@ -65,7 +65,7 @@ export class CcPolicy extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcPolicy resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcPolicy to import
-    * @param importFromId The id of the existing CcPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehubv2_policy#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehubv2_policy#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcPolicy to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -77,7 +77,7 @@ export class CcPolicy extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehubv2_policy awscc_resiliencehubv2_policy} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehubv2_policy awscc_resiliencehubv2_policy} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -87,7 +87,8 @@ export class CcPolicy extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_resiliencehubv2_policy',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -525,7 +526,7 @@ export interface AvailabilitySloProperty {
     /**
     * Availability target percentage.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehubv2_policy#target CcPolicy#target}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehubv2_policy#target CcPolicy#target}
     */
     readonly target?: number;
 }
@@ -591,7 +592,7 @@ export interface DataRecoveryTargetsProperty {
     /**
     * Time between backups in minutes.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehubv2_policy#time_between_backups_in_minutes CcPolicy#time_between_backups_in_minutes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehubv2_policy#time_between_backups_in_minutes CcPolicy#time_between_backups_in_minutes}
     */
     readonly timeBetweenBackupsInMinutes?: number;
 }
@@ -657,19 +658,19 @@ export interface MultiAzTargetsProperty {
     /**
     * Multi-AZ disaster recovery approach.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehubv2_policy#disaster_recovery_approach CcPolicy#disaster_recovery_approach}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehubv2_policy#disaster_recovery_approach CcPolicy#disaster_recovery_approach}
     */
     readonly disasterRecoveryApproach?: string;
     /**
     * Recovery Point Objective in minutes.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehubv2_policy#rpo_in_minutes CcPolicy#rpo_in_minutes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehubv2_policy#rpo_in_minutes CcPolicy#rpo_in_minutes}
     */
     readonly rpoInMinutes?: number;
     /**
     * Recovery Time Objective in minutes.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehubv2_policy#rto_in_minutes CcPolicy#rto_in_minutes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehubv2_policy#rto_in_minutes CcPolicy#rto_in_minutes}
     */
     readonly rtoInMinutes?: number;
 }
@@ -779,19 +780,19 @@ export interface MultiRegionTargetsProperty {
     /**
     * Multi-Region disaster recovery approach.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehubv2_policy#disaster_recovery_approach CcPolicy#disaster_recovery_approach}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehubv2_policy#disaster_recovery_approach CcPolicy#disaster_recovery_approach}
     */
     readonly disasterRecoveryApproach?: string;
     /**
     * Recovery Point Objective in minutes.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehubv2_policy#rpo_in_minutes CcPolicy#rpo_in_minutes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehubv2_policy#rpo_in_minutes CcPolicy#rpo_in_minutes}
     */
     readonly rpoInMinutes?: number;
     /**
     * Recovery Time Objective in minutes.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehubv2_policy#rto_in_minutes CcPolicy#rto_in_minutes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehubv2_policy#rto_in_minutes CcPolicy#rto_in_minutes}
     */
     readonly rtoInMinutes?: number;
 }
@@ -901,13 +902,13 @@ export interface TagProperty {
     /**
     * The tag key.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehubv2_policy#key CcPolicy#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehubv2_policy#key CcPolicy#key}
     */
     readonly key?: string;
     /**
     * The tag value.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehubv2_policy#value CcPolicy#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehubv2_policy#value CcPolicy#value}
     */
     readonly value?: string;
 }

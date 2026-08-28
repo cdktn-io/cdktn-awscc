@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/elasticbeanstalk_environment
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticbeanstalk_environment
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,79 +9,79 @@ export interface CcEnvironmentProps extends cdktn.TerraformMetaArguments {
     /**
     * The name of the application that is associated with this environment.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/elasticbeanstalk_environment#application_name CcEnvironment#application_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticbeanstalk_environment#application_name CcEnvironment#application_name}
     */
     readonly applicationName: string;
     /**
     * If specified, the environment attempts to use this value as the prefix for the CNAME in your Elastic Beanstalk environment URL. If not specified, the CNAME is generated automatically by appending a random alphanumeric string to the environment name.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/elasticbeanstalk_environment#cname_prefix CcEnvironment#cname_prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticbeanstalk_environment#cname_prefix CcEnvironment#cname_prefix}
     */
     readonly cnamePrefix?: string;
     /**
     * Your description for this environment.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/elasticbeanstalk_environment#description CcEnvironment#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticbeanstalk_environment#description CcEnvironment#description}
     */
     readonly description?: string;
     /**
     * A unique name for the environment.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/elasticbeanstalk_environment#environment_name CcEnvironment#environment_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticbeanstalk_environment#environment_name CcEnvironment#environment_name}
     */
     readonly environmentName?: string;
     /**
     * The Amazon Resource Name (ARN) of an existing IAM role to be used as the environment's operations role.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/elasticbeanstalk_environment#operations_role CcEnvironment#operations_role}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticbeanstalk_environment#operations_role CcEnvironment#operations_role}
     */
     readonly operationsRole?: string;
     /**
     * Key-value pairs defining configuration options for this environment, such as the instance type.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/elasticbeanstalk_environment#option_settings CcEnvironment#option_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticbeanstalk_environment#option_settings CcEnvironment#option_settings}
     */
     readonly optionSettings?: CcEnvironment.OptionSettingProperty[] | cdktn.IResolvable;
     /**
     * The Amazon Resource Name (ARN) of the custom platform to use with the environment.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/elasticbeanstalk_environment#platform_arn CcEnvironment#platform_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticbeanstalk_environment#platform_arn CcEnvironment#platform_arn}
     */
     readonly platformArn?: string;
     /**
     * The name of an Elastic Beanstalk solution stack (platform version) to use with the environment.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/elasticbeanstalk_environment#solution_stack_name CcEnvironment#solution_stack_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticbeanstalk_environment#solution_stack_name CcEnvironment#solution_stack_name}
     */
     readonly solutionStackName?: string;
     /**
     * Specifies the tags applied to resources in the environment.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/elasticbeanstalk_environment#tags CcEnvironment#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticbeanstalk_environment#tags CcEnvironment#tags}
     */
     readonly tags?: CcEnvironment.TagProperty[] | cdktn.IResolvable;
     /**
     * The name of the Elastic Beanstalk configuration template to use with the environment.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/elasticbeanstalk_environment#template_name CcEnvironment#template_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticbeanstalk_environment#template_name CcEnvironment#template_name}
     */
     readonly templateName?: string;
     /**
     * Specifies the tier to use in creating this environment. The environment tier that you choose determines whether Elastic Beanstalk provisions resources to support a web application that handles HTTP(S) requests or a web application that handles background-processing tasks.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/elasticbeanstalk_environment#tier CcEnvironment#tier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticbeanstalk_environment#tier CcEnvironment#tier}
     */
     readonly tier?: CcEnvironment.TierProperty;
     /**
     * The name of the application version to deploy.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/elasticbeanstalk_environment#version_label CcEnvironment#version_label}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticbeanstalk_environment#version_label CcEnvironment#version_label}
     */
     readonly versionLabel?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/elasticbeanstalk_environment awscc_elasticbeanstalk_environment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticbeanstalk_environment awscc_elasticbeanstalk_environment}
 */
 export class CcEnvironment extends cdktn.TerraformResource {
 
@@ -97,7 +97,7 @@ export class CcEnvironment extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcEnvironment resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcEnvironment to import
-    * @param importFromId The id of the existing CcEnvironment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/elasticbeanstalk_environment#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcEnvironment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticbeanstalk_environment#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcEnvironment to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -109,7 +109,7 @@ export class CcEnvironment extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/elasticbeanstalk_environment awscc_elasticbeanstalk_environment} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticbeanstalk_environment awscc_elasticbeanstalk_environment} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -119,7 +119,8 @@ export class CcEnvironment extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_elasticbeanstalk_environment',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -585,25 +586,25 @@ export interface OptionSettingProperty {
     /**
     * A unique namespace that identifies the option's associated AWS resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/elasticbeanstalk_environment#namespace CcEnvironment#namespace}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticbeanstalk_environment#namespace CcEnvironment#namespace}
     */
     readonly namespace?: string;
     /**
     * The name of the configuration option.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/elasticbeanstalk_environment#option_name CcEnvironment#option_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticbeanstalk_environment#option_name CcEnvironment#option_name}
     */
     readonly optionName?: string;
     /**
     * A unique resource name for the option setting. Use it for a time–based scaling configuration option.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/elasticbeanstalk_environment#resource_name CcEnvironment#resource_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticbeanstalk_environment#resource_name CcEnvironment#resource_name}
     */
     readonly resourceName?: string;
     /**
     * The current value for the configuration option.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/elasticbeanstalk_environment#value CcEnvironment#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticbeanstalk_environment#value CcEnvironment#value}
     */
     readonly value?: string;
 }
@@ -757,13 +758,13 @@ export interface TagProperty {
     /**
     * The key name of the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/elasticbeanstalk_environment#key CcEnvironment#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticbeanstalk_environment#key CcEnvironment#key}
     */
     readonly key?: string;
     /**
     * The value for the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/elasticbeanstalk_environment#value CcEnvironment#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticbeanstalk_environment#value CcEnvironment#value}
     */
     readonly value?: string;
 }
@@ -873,19 +874,19 @@ export interface TierProperty {
     /**
     * The name of this environment tier.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/elasticbeanstalk_environment#name CcEnvironment#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticbeanstalk_environment#name CcEnvironment#name}
     */
     readonly name?: string;
     /**
     * The type of this environment tier.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/elasticbeanstalk_environment#type CcEnvironment#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticbeanstalk_environment#type CcEnvironment#type}
     */
     readonly type?: string;
     /**
     * The version of this environment tier. When you don't set a value to it, Elastic Beanstalk uses the latest compatible worker tier version.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/elasticbeanstalk_environment#version CcEnvironment#version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticbeanstalk_environment#version CcEnvironment#version}
     */
     readonly version?: string;
 }

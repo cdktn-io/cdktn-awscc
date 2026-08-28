@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicecatalogappregistry_application
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalogappregistry_application
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,23 +9,23 @@ export interface CcApplicationProps extends cdktn.TerraformMetaArguments {
     /**
     * The description of the application. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicecatalogappregistry_application#description CcApplication#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalogappregistry_application#description CcApplication#description}
     */
     readonly description?: string;
     /**
     * The name of the application. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicecatalogappregistry_application#name CcApplication#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalogappregistry_application#name CcApplication#name}
     */
     readonly name: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicecatalogappregistry_application#tags CcApplication#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalogappregistry_application#tags CcApplication#tags}
     */
     readonly tags?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicecatalogappregistry_application awscc_servicecatalogappregistry_application}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalogappregistry_application awscc_servicecatalogappregistry_application}
 */
 export class CcApplication extends cdktn.TerraformResource {
 
@@ -41,7 +41,7 @@ export class CcApplication extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcApplication resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcApplication to import
-    * @param importFromId The id of the existing CcApplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicecatalogappregistry_application#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcApplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalogappregistry_application#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcApplication to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -53,7 +53,7 @@ export class CcApplication extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicecatalogappregistry_application awscc_servicecatalogappregistry_application} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalogappregistry_application awscc_servicecatalogappregistry_application} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -63,7 +63,8 @@ export class CcApplication extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_servicecatalogappregistry_application',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,

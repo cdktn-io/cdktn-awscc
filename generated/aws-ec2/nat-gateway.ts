@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_nat_gateway
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_nat_gateway
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,7 +9,7 @@ export interface CcNatGatewayProps extends cdktn.TerraformMetaArguments {
     /**
     * [Public NAT gateway only] The allocation ID of the Elastic IP address that's associated with the NAT gateway. This property is required for a public NAT gateway and cannot be specified with a private NAT gateway.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_nat_gateway#allocation_id CcNatGateway#allocation_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_nat_gateway#allocation_id CcNatGateway#allocation_id}
     */
     readonly allocationId?: string;
     /**
@@ -17,7 +17,7 @@ export interface CcNatGatewayProps extends cdktn.TerraformMetaArguments {
     *  A zonal NAT gateway is a NAT Gateway that provides redundancy and scalability within a single availability zone. A regional NAT gateway is a single NAT Gateway that works across multiple availability zones (AZs) in your VPC, providing redundancy, scalability and availability across all the AZs in a Region.
     *  For more information, see [Regional NAT gateways for automatic multi-AZ expansion](https://docs.aws.amazon.com/vpc/latest/userguide/nat-gateways-regional.html) in the *Amazon VPC User Guide*.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_nat_gateway#availability_mode CcNatGateway#availability_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_nat_gateway#availability_mode CcNatGateway#availability_mode}
     */
     readonly availabilityMode?: string;
     /**
@@ -25,69 +25,69 @@ export interface CcNatGatewayProps extends cdktn.TerraformMetaArguments {
     *  A regional NAT gateway is a single NAT Gateway that works across multiple availability zones (AZs) in your VPC, providing redundancy, scalability and availability across all the AZs in a Region.
     *  For more information, see [Regional NAT gateways for automatic multi-AZ expansion](https://docs.aws.amazon.com/vpc/latest/userguide/nat-gateways-regional.html) in the *Amazon VPC User Guide*.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_nat_gateway#availability_zone_addresses CcNatGateway#availability_zone_addresses}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_nat_gateway#availability_zone_addresses CcNatGateway#availability_zone_addresses}
     */
     readonly availabilityZoneAddresses?: CcNatGateway.AvailabilityZoneAddressProperty[] | cdktn.IResolvable;
     /**
     * Indicates whether the NAT gateway supports public or private connectivity. The default is public connectivity.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_nat_gateway#connectivity_type CcNatGateway#connectivity_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_nat_gateway#connectivity_type CcNatGateway#connectivity_type}
     */
     readonly connectivityType?: string;
     /**
     * The maximum amount of time to wait (in seconds) before forcibly releasing the IP addresses if connections are still in progress. Default value is 350 seconds.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_nat_gateway#max_drain_duration_seconds CcNatGateway#max_drain_duration_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_nat_gateway#max_drain_duration_seconds CcNatGateway#max_drain_duration_seconds}
     */
     readonly maxDrainDurationSeconds?: number;
     /**
     * The private IPv4 address to assign to the NAT gateway. If you don't provide an address, a private IPv4 address will be automatically assigned.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_nat_gateway#private_ip_address CcNatGateway#private_ip_address}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_nat_gateway#private_ip_address CcNatGateway#private_ip_address}
     */
     readonly privateIpAddress?: string;
     /**
     * Secondary EIP allocation IDs. For more information, see [Create a NAT gateway](https://docs.aws.amazon.com/vpc/latest/userguide/nat-gateway-working-with.html) in the *Amazon VPC User Guide*.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_nat_gateway#secondary_allocation_ids CcNatGateway#secondary_allocation_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_nat_gateway#secondary_allocation_ids CcNatGateway#secondary_allocation_ids}
     */
     readonly secondaryAllocationIds?: string[];
     /**
     * [Private NAT gateway only] The number of secondary private IPv4 addresses you want to assign to the NAT gateway. For more information about secondary addresses, see [Create a NAT gateway](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-nat-gateway.html#nat-gateway-creating) in the *Amazon Virtual Private Cloud User Guide*.
     *  ``SecondaryPrivateIpAddressCount`` and ``SecondaryPrivateIpAddresses`` cannot be set at the same time.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_nat_gateway#secondary_private_ip_address_count CcNatGateway#secondary_private_ip_address_count}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_nat_gateway#secondary_private_ip_address_count CcNatGateway#secondary_private_ip_address_count}
     */
     readonly secondaryPrivateIpAddressCount?: number;
     /**
     * Secondary private IPv4 addresses. For more information about secondary addresses, see [Create a NAT gateway](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-nat-gateway.html#nat-gateway-creating) in the *Amazon Virtual Private Cloud User Guide*.
     *  ``SecondaryPrivateIpAddressCount`` and ``SecondaryPrivateIpAddresses`` cannot be set at the same time.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_nat_gateway#secondary_private_ip_addresses CcNatGateway#secondary_private_ip_addresses}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_nat_gateway#secondary_private_ip_addresses CcNatGateway#secondary_private_ip_addresses}
     */
     readonly secondaryPrivateIpAddresses?: string[];
     /**
     * The ID of the subnet in which the NAT gateway is located.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_nat_gateway#subnet_id CcNatGateway#subnet_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_nat_gateway#subnet_id CcNatGateway#subnet_id}
     */
     readonly subnetId?: string;
     /**
     * The tags for the NAT gateway.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_nat_gateway#tags CcNatGateway#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_nat_gateway#tags CcNatGateway#tags}
     */
     readonly tags?: CcNatGateway.TagProperty[] | cdktn.IResolvable;
     /**
     * The ID of the VPC in which the NAT gateway is located.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_nat_gateway#vpc_id CcNatGateway#vpc_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_nat_gateway#vpc_id CcNatGateway#vpc_id}
     */
     readonly vpcId?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_nat_gateway awscc_ec2_nat_gateway}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_nat_gateway awscc_ec2_nat_gateway}
 */
 export class CcNatGateway extends cdktn.TerraformResource {
 
@@ -103,7 +103,7 @@ export class CcNatGateway extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcNatGateway resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcNatGateway to import
-    * @param importFromId The id of the existing CcNatGateway that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_nat_gateway#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcNatGateway that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_nat_gateway#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcNatGateway to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -115,7 +115,7 @@ export class CcNatGateway extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_nat_gateway awscc_ec2_nat_gateway} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_nat_gateway awscc_ec2_nat_gateway} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -125,7 +125,8 @@ export class CcNatGateway extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_ec2_nat_gateway',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -563,21 +564,21 @@ export interface AvailabilityZoneAddressProperty {
     /**
     * The allocation IDs of the Elastic IP addresses (EIPs) to be used for handling outbound NAT traffic in this specific Availability Zone.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_nat_gateway#allocation_ids CcNatGateway#allocation_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_nat_gateway#allocation_ids CcNatGateway#allocation_ids}
     */
     readonly allocationIds?: string[];
     /**
     * For regional NAT gateways only: The Availability Zone where this specific NAT gateway configuration will be active. Each AZ in a regional NAT gateway has its own configuration to handle outbound NAT traffic from that AZ. 
     *  A regional NAT gateway is a single NAT Gateway that works across multiple availability zones (AZs) in your VPC, providing redundancy, scalability and availability across all the AZs in a Region.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_nat_gateway#availability_zone CcNatGateway#availability_zone}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_nat_gateway#availability_zone CcNatGateway#availability_zone}
     */
     readonly availabilityZone?: string;
     /**
     * For regional NAT gateways only: The ID of the Availability Zone where this specific NAT gateway configuration will be active. Each AZ in a regional NAT gateway has its own configuration to handle outbound NAT traffic from that AZ. Use this instead of AvailabilityZone for consistent identification of AZs across AWS Regions. 
     *  A regional NAT gateway is a single NAT Gateway that works across multiple availability zones (AZs) in your VPC, providing redundancy, scalability and availability across all the AZs in a Region.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_nat_gateway#availability_zone_id CcNatGateway#availability_zone_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_nat_gateway#availability_zone_id CcNatGateway#availability_zone_id}
     */
     readonly availabilityZoneId?: string;
 }
@@ -709,13 +710,13 @@ export interface TagProperty {
     /**
     * The tag key.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_nat_gateway#key CcNatGateway#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_nat_gateway#key CcNatGateway#key}
     */
     readonly key?: string;
     /**
     * The tag value.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_nat_gateway#value CcNatGateway#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_nat_gateway#value CcNatGateway#value}
     */
     readonly value?: string;
 }

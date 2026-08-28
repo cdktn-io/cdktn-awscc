@@ -1,43 +1,43 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/qbusiness_index
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_index
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcIndexProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/qbusiness_index#application_id CcIndex#application_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_index#application_id CcIndex#application_id}
     */
     readonly applicationId: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/qbusiness_index#capacity_configuration CcIndex#capacity_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_index#capacity_configuration CcIndex#capacity_configuration}
     */
     readonly capacityConfiguration?: CcIndex.IndexCapacityConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/qbusiness_index#description CcIndex#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_index#description CcIndex#description}
     */
     readonly description?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/qbusiness_index#display_name CcIndex#display_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_index#display_name CcIndex#display_name}
     */
     readonly displayName: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/qbusiness_index#document_attribute_configurations CcIndex#document_attribute_configurations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_index#document_attribute_configurations CcIndex#document_attribute_configurations}
     */
     readonly documentAttributeConfigurations?: CcIndex.DocumentAttributeConfigurationProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/qbusiness_index#tags CcIndex#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_index#tags CcIndex#tags}
     */
     readonly tags?: CcIndex.TagProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/qbusiness_index#type CcIndex#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_index#type CcIndex#type}
     */
     readonly type?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/qbusiness_index awscc_qbusiness_index}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_index awscc_qbusiness_index}
 */
 export class CcIndex extends cdktn.TerraformResource {
 
@@ -53,7 +53,7 @@ export class CcIndex extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcIndex resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcIndex to import
-    * @param importFromId The id of the existing CcIndex that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/qbusiness_index#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcIndex that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_index#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcIndex to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -65,7 +65,7 @@ export class CcIndex extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/qbusiness_index awscc_qbusiness_index} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_index awscc_qbusiness_index} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -75,7 +75,8 @@ export class CcIndex extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_qbusiness_index',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -463,7 +464,7 @@ export function ccIndexTagPropertyToHclTerraform(struct?: CcIndex.TagProperty | 
 export namespace CcIndex {
 export interface IndexCapacityConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/qbusiness_index#units CcIndex#units}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_index#units CcIndex#units}
     */
     readonly units?: number;
 }
@@ -527,15 +528,15 @@ export class IndexCapacityConfigurationPropertyOutputReference extends cdktn.Com
 }
 export interface DocumentAttributeConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/qbusiness_index#name CcIndex#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_index#name CcIndex#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/qbusiness_index#search CcIndex#search}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_index#search CcIndex#search}
     */
     readonly search?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/qbusiness_index#type CcIndex#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_index#type CcIndex#type}
     */
     readonly type?: string;
 }
@@ -737,11 +738,11 @@ export class IndexStatisticsPropertyOutputReference extends cdktn.ComplexObject 
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/qbusiness_index#key CcIndex#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_index#key CcIndex#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/qbusiness_index#value CcIndex#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_index#value CcIndex#value}
     */
     readonly value?: string;
 }

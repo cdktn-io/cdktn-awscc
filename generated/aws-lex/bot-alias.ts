@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot_alias
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot_alias
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,55 +9,55 @@ export interface CcBotAliasProps extends cdktn.TerraformMetaArguments {
     /**
     * A list of bot alias locale settings to add to the bot alias.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot_alias#bot_alias_locale_settings CcBotAlias#bot_alias_locale_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot_alias#bot_alias_locale_settings CcBotAlias#bot_alias_locale_settings}
     */
     readonly botAliasLocaleSettings?: CcBotAlias.BotAliasLocaleSettingsItemProperty[] | cdktn.IResolvable;
     /**
     * A unique identifier for a resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot_alias#bot_alias_name CcBotAlias#bot_alias_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot_alias#bot_alias_name CcBotAlias#bot_alias_name}
     */
     readonly botAliasName: string;
     /**
     * A list of tags to add to the bot alias.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot_alias#bot_alias_tags CcBotAlias#bot_alias_tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot_alias#bot_alias_tags CcBotAlias#bot_alias_tags}
     */
     readonly botAliasTags?: CcBotAlias.TagProperty[] | cdktn.IResolvable;
     /**
     * Unique ID of resource
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot_alias#bot_id CcBotAlias#bot_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot_alias#bot_id CcBotAlias#bot_id}
     */
     readonly botId: string;
     /**
     * The version of a bot.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot_alias#bot_version CcBotAlias#bot_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot_alias#bot_version CcBotAlias#bot_version}
     */
     readonly botVersion?: string;
     /**
     * Contains information about code hooks that Amazon Lex calls during a conversation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot_alias#conversation_log_settings CcBotAlias#conversation_log_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot_alias#conversation_log_settings CcBotAlias#conversation_log_settings}
     */
     readonly conversationLogSettings?: CcBotAlias.ConversationLogSettingsProperty;
     /**
     * A description of the bot alias. Use the description to help identify the bot alias in lists.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot_alias#description CcBotAlias#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot_alias#description CcBotAlias#description}
     */
     readonly description?: string;
     /**
     * Determines whether Amazon Lex will use Amazon Comprehend to detect the sentiment of user utterances.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot_alias#sentiment_analysis_settings CcBotAlias#sentiment_analysis_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot_alias#sentiment_analysis_settings CcBotAlias#sentiment_analysis_settings}
     */
     readonly sentimentAnalysisSettings?: CcBotAlias.SentimentAnalysisSettingsProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot_alias awscc_lex_bot_alias}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot_alias awscc_lex_bot_alias}
 */
 export class CcBotAlias extends cdktn.TerraformResource {
 
@@ -73,7 +73,7 @@ export class CcBotAlias extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcBotAlias resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcBotAlias to import
-    * @param importFromId The id of the existing CcBotAlias that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot_alias#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcBotAlias that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot_alias#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcBotAlias to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -85,7 +85,7 @@ export class CcBotAlias extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot_alias awscc_lex_bot_alias} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot_alias awscc_lex_bot_alias} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -95,7 +95,8 @@ export class CcBotAlias extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_lex_bot_alias',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -800,13 +801,13 @@ export interface LambdaCodeHookProperty {
     /**
     * The version of the request-response that you want Amazon Lex to use to invoke your Lambda function.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot_alias#code_hook_interface_version CcBotAlias#code_hook_interface_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot_alias#code_hook_interface_version CcBotAlias#code_hook_interface_version}
     */
     readonly codeHookInterfaceVersion?: string;
     /**
     * The Amazon Resource Name (ARN) of the Lambda function.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot_alias#lambda_arn CcBotAlias#lambda_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot_alias#lambda_arn CcBotAlias#lambda_arn}
     */
     readonly lambdaArn?: string;
 }
@@ -894,7 +895,7 @@ export interface CodeHookSpecificationProperty {
     /**
     * Contains information about code hooks that Amazon Lex calls during a conversation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot_alias#lambda_code_hook CcBotAlias#lambda_code_hook}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot_alias#lambda_code_hook CcBotAlias#lambda_code_hook}
     */
     readonly lambdaCodeHook?: LambdaCodeHookProperty;
 }
@@ -960,13 +961,13 @@ export interface BotAliasLocaleSettingsProperty {
     /**
     * Contains information about code hooks that Amazon Lex calls during a conversation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot_alias#code_hook_specification CcBotAlias#code_hook_specification}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot_alias#code_hook_specification CcBotAlias#code_hook_specification}
     */
     readonly codeHookSpecification?: CodeHookSpecificationProperty;
     /**
     * Whether the Lambda code hook is enabled
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot_alias#enabled CcBotAlias#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot_alias#enabled CcBotAlias#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -1054,13 +1055,13 @@ export interface BotAliasLocaleSettingsItemProperty {
     /**
     * You can use this parameter to specify a specific Lambda function to run different functions in different locales.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot_alias#bot_alias_locale_setting CcBotAlias#bot_alias_locale_setting}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot_alias#bot_alias_locale_setting CcBotAlias#bot_alias_locale_setting}
     */
     readonly botAliasLocaleSetting?: BotAliasLocaleSettingsProperty;
     /**
     * A string used to identify the locale
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot_alias#locale_id CcBotAlias#locale_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot_alias#locale_id CcBotAlias#locale_id}
     */
     readonly localeId?: string;
 }
@@ -1170,13 +1171,13 @@ export interface TagProperty {
     /**
     * A string used to identify this tag
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot_alias#key CcBotAlias#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot_alias#key CcBotAlias#key}
     */
     readonly key?: string;
     /**
     * A string containing the value for the tag
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot_alias#value CcBotAlias#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot_alias#value CcBotAlias#value}
     */
     readonly value?: string;
 }
@@ -1286,19 +1287,19 @@ export interface S3BucketLogDestinationProperty {
     /**
     * The Amazon Resource Name (ARN) of an AWS Key Management Service (KMS) key for encrypting audio log files stored in an S3 bucket.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot_alias#kms_key_arn CcBotAlias#kms_key_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot_alias#kms_key_arn CcBotAlias#kms_key_arn}
     */
     readonly kmsKeyArn?: string;
     /**
     * The Amazon S3 key of the deployment package.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot_alias#log_prefix CcBotAlias#log_prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot_alias#log_prefix CcBotAlias#log_prefix}
     */
     readonly logPrefix?: string;
     /**
     * The Amazon Resource Name (ARN) of an Amazon S3 bucket where audio log files are stored.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot_alias#s3_bucket_arn CcBotAlias#s3_bucket_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot_alias#s3_bucket_arn CcBotAlias#s3_bucket_arn}
     */
     readonly s3BucketArn?: string;
 }
@@ -1408,7 +1409,7 @@ export interface AudioLogDestinationProperty {
     /**
     * Specifies an Amazon S3 bucket for logging audio conversations
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot_alias#s3_bucket CcBotAlias#s3_bucket}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot_alias#s3_bucket CcBotAlias#s3_bucket}
     */
     readonly s3Bucket?: S3BucketLogDestinationProperty;
 }
@@ -1474,11 +1475,11 @@ export interface AudioLogSettingProperty {
     /**
     * The location of audio log files collected when conversation logging is enabled for a bot.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot_alias#destination CcBotAlias#destination}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot_alias#destination CcBotAlias#destination}
     */
     readonly destination?: AudioLogDestinationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot_alias#enabled CcBotAlias#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot_alias#enabled CcBotAlias#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -1588,13 +1589,13 @@ export interface CloudWatchLogGroupLogDestinationProperty {
     /**
     * A string used to identify the groupArn for the Cloudwatch Log Group
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot_alias#cloudwatch_log_group_arn CcBotAlias#cloudwatch_log_group_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot_alias#cloudwatch_log_group_arn CcBotAlias#cloudwatch_log_group_arn}
     */
     readonly cloudwatchLogGroupArn?: string;
     /**
     * A string containing the value for the Log Prefix
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot_alias#log_prefix CcBotAlias#log_prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot_alias#log_prefix CcBotAlias#log_prefix}
     */
     readonly logPrefix?: string;
 }
@@ -1680,7 +1681,7 @@ export class CloudWatchLogGroupLogDestinationPropertyOutputReference extends cdk
 }
 export interface TextLogDestinationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot_alias#cloudwatch CcBotAlias#cloudwatch}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot_alias#cloudwatch CcBotAlias#cloudwatch}
     */
     readonly cloudwatch?: CloudWatchLogGroupLogDestinationProperty;
 }
@@ -1746,11 +1747,11 @@ export interface TextLogSettingProperty {
     /**
     * Defines the Amazon CloudWatch Logs destination log group for conversation text logs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot_alias#destination CcBotAlias#destination}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot_alias#destination CcBotAlias#destination}
     */
     readonly destination?: TextLogDestinationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot_alias#enabled CcBotAlias#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot_alias#enabled CcBotAlias#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -1860,13 +1861,13 @@ export interface ConversationLogSettingsProperty {
     /**
     * List of audio log settings
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot_alias#audio_log_settings CcBotAlias#audio_log_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot_alias#audio_log_settings CcBotAlias#audio_log_settings}
     */
     readonly audioLogSettings?: AudioLogSettingProperty[] | cdktn.IResolvable;
     /**
     * List of text log settings
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot_alias#text_log_settings CcBotAlias#text_log_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot_alias#text_log_settings CcBotAlias#text_log_settings}
     */
     readonly textLogSettings?: TextLogSettingProperty[] | cdktn.IResolvable;
 }
@@ -1954,7 +1955,7 @@ export interface SentimentAnalysisSettingsProperty {
     /**
     * Enable to call Amazon Comprehend for Sentiment natively within Lex
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lex_bot_alias#detect_sentiment CcBotAlias#detect_sentiment}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot_alias#detect_sentiment CcBotAlias#detect_sentiment}
     */
     readonly detectSentiment?: boolean | cdktn.IResolvable;
 }

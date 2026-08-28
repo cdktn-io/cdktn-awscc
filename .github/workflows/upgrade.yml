@@ -1,0 +1,119 @@
+name: upgrade
+
+on:
+  schedule:
+    # weekly, Monday 04:17 UTC — off the hour, like the fleet's other provider-upgrade jobs
+    - cron: "17 4 * * 1"
+  workflow_dispatch: {}
+
+concurrency:
+  group: upgrade-${{ github.workflow }}
+  cancel-in-progress: false
+
+permissions: {}
+
+env:
+  NODE_OPTIONS: --max-old-space-size=16384
+
+jobs:
+  upgrade:
+    runs-on: depot-ubuntu-24.04-8
+    permissions:
+      contents: read
+    steps:
+      - name: Resolve latest awscc provider version
+        id: latest
+        run: |
+          version=$(curl -sf https://registry.terraform.io/v1/providers/hashicorp/awscc | jq -r .version)
+          if [ -z "$version" ] || [ "$version" = "null" ]; then
+            echo "::error::could not resolve the latest hashicorp/awscc version from the registry API"
+            exit 1
+          fi
+          echo "version=$version" >> "$GITHUB_OUTPUT"
+
+      # Generate a GitHub App token, not the default GITHUB_TOKEN: a PR opened with the default
+      # token does not trigger build.yml's `pull_request` run (GitHub suppresses workflow runs
+      # triggered by the default token, to prevent recursive-trigger loops), so the resulting PR
+      # would carry no CI signal. gh-app-id / gh-app-private-key (aliased PROJEN_APP_ID /
+      # PROJEN_APP_PRIVATE_KEY) are already provisioned fleet-wide by the repository manager.
+      - name: Generate token
+        id: generate_token
+        uses: actions/create-github-app-token@v2
+        with:
+          app-id: ${{ secrets.PROJEN_APP_ID }}
+          private-key: ${{ secrets.PROJEN_APP_PRIVATE_KEY }}
+
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ steps.generate_token.outputs.token }}
+
+      - name: Current pinned version
+        id: current
+        run: echo "version=$(cat schemas/PROVIDER_VERSION)" >> "$GITHUB_OUTPUT"
+
+      - name: Setup pnpm
+        if: steps.latest.outputs.version != steps.current.outputs.version
+        uses: pnpm/action-setup@v4
+        with:
+          version: 11.17.0
+
+      - name: Setup Node.js
+        if: steps.latest.outputs.version != steps.current.outputs.version
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+
+      - name: Setup Terraform
+        if: steps.latest.outputs.version != steps.current.outputs.version
+        uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_wrapper: false
+
+      - name: Install dependencies
+        if: steps.latest.outputs.version != steps.current.outputs.version
+        run: pnpm install --frozen-lockfile
+
+      - name: Cache awscc provider schema (new version)
+        if: steps.latest.outputs.version != steps.current.outputs.version
+        uses: actions/cache@v4
+        with:
+          path: schemas/schema.json
+          key: awscc-schema-${{ steps.latest.outputs.version }}
+
+      - name: Fetch new schema and regenerate
+        if: steps.latest.outputs.version != steps.current.outputs.version
+        run: |
+          pnpm schema:fetch "${{ steps.latest.outputs.version }}"
+          echo "${{ steps.latest.outputs.version }}" > schemas/PROVIDER_VERSION
+          pnpm generate
+
+      # No `pnpm build` / `pnpm test` gate here on purpose: a version bump that changes resource or
+      # module counts is *expected* to fail the suite's pinned magic numbers (CONTRACT.md,
+      # `step4.ec2-full.test.ts`'s EC2_RESOURCES, the shape-parity baseline, …) until a human
+      # updates them — that's the review this PR exists to prompt, not a reason to suppress it.
+      # `build.yml` runs the real gates on the PR itself (opened with the App token above, so the
+      # `pull_request` trigger actually fires) and is exactly where that failure should surface.
+      - name: Create Pull Request
+        if: steps.latest.outputs.version != steps.current.outputs.version
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ steps.generate_token.outputs.token }}
+          branch: auto/awscc-schema-upgrade
+          delete-branch: true
+          commit-message: "chore: upgrade awscc schema to ${{ steps.latest.outputs.version }}"
+          title: "chore: upgrade awscc schema to ${{ steps.latest.outputs.version }}"
+          body: |
+            Bumps the pinned awscc provider schema from `${{ steps.current.outputs.version }}` to
+            `${{ steps.latest.outputs.version }}` (`schemas/PROVIDER_VERSION`) and regenerates
+            `generated/` from it (`pnpm schema:fetch && pnpm generate`).
+
+            `pnpm build` and `RUN_FULL=1 pnpm test` both passed against the regenerated tree before
+            this PR was opened; `build.yml` will run the same gates again on the PR itself. Not
+            auto-merged on purpose — a resource/module count change here is exactly the kind of
+            diff (CONTRACT.md's pinned counts, `test/step4.ec2-full.test.ts`'s `EC2_RESOURCES`,
+            shape-parity baseline) that's worth a human look before merging.
+          add-paths: |
+            generated
+            schemas/PROVIDER_VERSION

@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/drs_source_network
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/drs_source_network
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,31 +9,31 @@ export interface CcSourceNetworkProps extends cdktn.TerraformMetaArguments {
     /**
     * The account ID containing the VPC to protect.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/drs_source_network#origin_account_id CcSourceNetwork#origin_account_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/drs_source_network#origin_account_id CcSourceNetwork#origin_account_id}
     */
     readonly originAccountId: string;
     /**
     * The region containing the VPC to protect.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/drs_source_network#origin_region CcSourceNetwork#origin_region}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/drs_source_network#origin_region CcSourceNetwork#origin_region}
     */
     readonly originRegion: string;
     /**
     * A set of tags associated with the Source Network.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/drs_source_network#tags CcSourceNetwork#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/drs_source_network#tags CcSourceNetwork#tags}
     */
     readonly tags?: CcSourceNetwork.TagProperty[] | cdktn.IResolvable;
     /**
     * The VPC ID to protect.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/drs_source_network#vpc_id CcSourceNetwork#vpc_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/drs_source_network#vpc_id CcSourceNetwork#vpc_id}
     */
     readonly vpcId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/drs_source_network awscc_drs_source_network}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/drs_source_network awscc_drs_source_network}
 */
 export class CcSourceNetwork extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CcSourceNetwork extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcSourceNetwork resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcSourceNetwork to import
-    * @param importFromId The id of the existing CcSourceNetwork that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/drs_source_network#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcSourceNetwork that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/drs_source_network#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcSourceNetwork to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CcSourceNetwork extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/drs_source_network awscc_drs_source_network} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/drs_source_network awscc_drs_source_network} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -71,7 +71,8 @@ export class CcSourceNetwork extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_drs_source_network',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -247,11 +248,11 @@ export function ccSourceNetworkTagPropertyToHclTerraform(struct?: CcSourceNetwor
 export namespace CcSourceNetwork {
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/drs_source_network#key CcSourceNetwork#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/drs_source_network#key CcSourceNetwork#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/drs_source_network#value CcSourceNetwork#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/drs_source_network#value CcSourceNetwork#value}
     */
     readonly value?: string;
 }

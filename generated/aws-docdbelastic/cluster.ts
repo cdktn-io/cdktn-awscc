@@ -1,71 +1,71 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/docdbelastic_cluster
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/docdbelastic_cluster
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcClusterProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/docdbelastic_cluster#admin_user_name CcCluster#admin_user_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/docdbelastic_cluster#admin_user_name CcCluster#admin_user_name}
     */
     readonly adminUserName: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/docdbelastic_cluster#admin_user_password CcCluster#admin_user_password}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/docdbelastic_cluster#admin_user_password CcCluster#admin_user_password}
     */
     readonly adminUserPassword?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/docdbelastic_cluster#auth_type CcCluster#auth_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/docdbelastic_cluster#auth_type CcCluster#auth_type}
     */
     readonly authType: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/docdbelastic_cluster#backup_retention_period CcCluster#backup_retention_period}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/docdbelastic_cluster#backup_retention_period CcCluster#backup_retention_period}
     */
     readonly backupRetentionPeriod?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/docdbelastic_cluster#cluster_name CcCluster#cluster_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/docdbelastic_cluster#cluster_name CcCluster#cluster_name}
     */
     readonly clusterName: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/docdbelastic_cluster#kms_key_id CcCluster#kms_key_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/docdbelastic_cluster#kms_key_id CcCluster#kms_key_id}
     */
     readonly kmsKeyId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/docdbelastic_cluster#preferred_backup_window CcCluster#preferred_backup_window}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/docdbelastic_cluster#preferred_backup_window CcCluster#preferred_backup_window}
     */
     readonly preferredBackupWindow?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/docdbelastic_cluster#preferred_maintenance_window CcCluster#preferred_maintenance_window}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/docdbelastic_cluster#preferred_maintenance_window CcCluster#preferred_maintenance_window}
     */
     readonly preferredMaintenanceWindow?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/docdbelastic_cluster#shard_capacity CcCluster#shard_capacity}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/docdbelastic_cluster#shard_capacity CcCluster#shard_capacity}
     */
     readonly shardCapacity: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/docdbelastic_cluster#shard_count CcCluster#shard_count}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/docdbelastic_cluster#shard_count CcCluster#shard_count}
     */
     readonly shardCount: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/docdbelastic_cluster#shard_instance_count CcCluster#shard_instance_count}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/docdbelastic_cluster#shard_instance_count CcCluster#shard_instance_count}
     */
     readonly shardInstanceCount?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/docdbelastic_cluster#subnet_ids CcCluster#subnet_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/docdbelastic_cluster#subnet_ids CcCluster#subnet_ids}
     */
     readonly subnetIds?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/docdbelastic_cluster#tags CcCluster#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/docdbelastic_cluster#tags CcCluster#tags}
     */
     readonly tags?: CcCluster.TagProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/docdbelastic_cluster#vpc_security_group_ids CcCluster#vpc_security_group_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/docdbelastic_cluster#vpc_security_group_ids CcCluster#vpc_security_group_ids}
     */
     readonly vpcSecurityGroupIds?: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/docdbelastic_cluster awscc_docdbelastic_cluster}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/docdbelastic_cluster awscc_docdbelastic_cluster}
 */
 export class CcCluster extends cdktn.TerraformResource {
 
@@ -81,7 +81,7 @@ export class CcCluster extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcCluster resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcCluster to import
-    * @param importFromId The id of the existing CcCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/docdbelastic_cluster#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/docdbelastic_cluster#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcCluster to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -93,7 +93,7 @@ export class CcCluster extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/docdbelastic_cluster awscc_docdbelastic_cluster} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/docdbelastic_cluster awscc_docdbelastic_cluster} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -103,7 +103,8 @@ export class CcCluster extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_docdbelastic_cluster',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -513,11 +514,11 @@ export function ccClusterTagPropertyToHclTerraform(struct?: CcCluster.TagPropert
 export namespace CcCluster {
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/docdbelastic_cluster#key CcCluster#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/docdbelastic_cluster#key CcCluster#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/docdbelastic_cluster#value CcCluster#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/docdbelastic_cluster#value CcCluster#value}
     */
     readonly value?: string;
 }

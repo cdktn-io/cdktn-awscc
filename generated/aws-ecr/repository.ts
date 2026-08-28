@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ecr_repository
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecr_repository
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,38 +9,38 @@ export interface CcRepositoryProps extends cdktn.TerraformMetaArguments {
     /**
     * If true, deleting the repository force deletes the contents of the repository. If false, the repository must be empty before attempting to delete it.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ecr_repository#empty_on_delete CcRepository#empty_on_delete}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecr_repository#empty_on_delete CcRepository#empty_on_delete}
     */
     readonly emptyOnDelete?: boolean | cdktn.IResolvable;
     /**
     * The encryption configuration for the repository. This determines how the contents of your repository are encrypted at rest.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ecr_repository#encryption_configuration CcRepository#encryption_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecr_repository#encryption_configuration CcRepository#encryption_configuration}
     */
     readonly encryptionConfiguration?: CcRepository.EncryptionConfigurationProperty;
     /**
     * The ``imageScanningConfiguration`` parameter is being deprecated, in favor of specifying the image scanning configuration at the registry level. For more information, see ``PutRegistryScanningConfiguration``.
     *   The image scanning configuration for the repository. This determines whether images are scanned for known vulnerabilities after being pushed to the repository.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ecr_repository#image_scanning_configuration CcRepository#image_scanning_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecr_repository#image_scanning_configuration CcRepository#image_scanning_configuration}
     */
     readonly imageScanningConfiguration?: CcRepository.ImageScanningConfigurationProperty;
     /**
     * The tag mutability setting for the repository. If this parameter is omitted, the default setting of ``MUTABLE`` will be used which will allow image tags to be overwritten. If ``IMMUTABLE`` is specified, all image tags within the repository will be immutable which will prevent them from being overwritten.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ecr_repository#image_tag_mutability CcRepository#image_tag_mutability}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecr_repository#image_tag_mutability CcRepository#image_tag_mutability}
     */
     readonly imageTagMutability?: string;
     /**
     * A list of filters that specify which image tags are excluded from the repository's image tag mutability setting.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ecr_repository#image_tag_mutability_exclusion_filters CcRepository#image_tag_mutability_exclusion_filters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecr_repository#image_tag_mutability_exclusion_filters CcRepository#image_tag_mutability_exclusion_filters}
     */
     readonly imageTagMutabilityExclusionFilters?: CcRepository.ImageTagMutabilityExclusionFilterProperty[] | cdktn.IResolvable;
     /**
     * Creates or updates a lifecycle policy. For information about lifecycle policy syntax, see [Lifecycle policy template](https://docs.aws.amazon.com/AmazonECR/latest/userguide/LifecyclePolicies.html).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ecr_repository#lifecycle_policy CcRepository#lifecycle_policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecr_repository#lifecycle_policy CcRepository#lifecycle_policy}
     */
     readonly lifecyclePolicy?: CcRepository.LifecyclePolicyProperty;
     /**
@@ -48,25 +48,25 @@ export interface CcRepositoryProps extends cdktn.TerraformMetaArguments {
     *  The repository name must start with a letter and can only contain lowercase letters, numbers, hyphens, underscores, and forward slashes.
     *   If you specify a name, you cannot perform updates that require replacement of this resource. You can perform updates that require no or some interruption. If you must replace the resource, specify a new name.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ecr_repository#repository_name CcRepository#repository_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecr_repository#repository_name CcRepository#repository_name}
     */
     readonly repositoryName?: string;
     /**
     * The JSON repository policy text to apply to the repository. For more information, see [Amazon ECR repository policies](https://docs.aws.amazon.com/AmazonECR/latest/userguide/repository-policy-examples.html) in the *Amazon Elastic Container Registry User Guide*.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ecr_repository#repository_policy_text CcRepository#repository_policy_text}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecr_repository#repository_policy_text CcRepository#repository_policy_text}
     */
     readonly repositoryPolicyText?: string;
     /**
     * An array of key-value pairs to apply to this resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ecr_repository#tags CcRepository#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecr_repository#tags CcRepository#tags}
     */
     readonly tags?: CcRepository.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ecr_repository awscc_ecr_repository}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecr_repository awscc_ecr_repository}
 */
 export class CcRepository extends cdktn.TerraformResource {
 
@@ -82,7 +82,7 @@ export class CcRepository extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcRepository resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcRepository to import
-    * @param importFromId The id of the existing CcRepository that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ecr_repository#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcRepository that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecr_repository#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcRepository to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -94,7 +94,7 @@ export class CcRepository extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ecr_repository awscc_ecr_repository} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecr_repository awscc_ecr_repository} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -104,7 +104,8 @@ export class CcRepository extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_ecr_repository',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -556,13 +557,13 @@ export interface EncryptionConfigurationProperty {
     *  If you use the ``AES256`` encryption type, Amazon ECR uses server-side encryption with Amazon S3-managed encryption keys which encrypts the images in the repository using an AES256 encryption algorithm.
     *  For more information, see [Amazon ECR encryption at rest](https://docs.aws.amazon.com/AmazonECR/latest/userguide/encryption-at-rest.html) in the *Amazon Elastic Container Registry User Guide*.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ecr_repository#encryption_type CcRepository#encryption_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecr_repository#encryption_type CcRepository#encryption_type}
     */
     readonly encryptionType?: string;
     /**
     * If you use the ``KMS`` encryption type, specify the KMS key to use for encryption. The alias, key ID, or full ARN of the KMS key can be specified. The key must exist in the same Region as the repository. If no key is specified, the default AWS managed KMS key for Amazon ECR will be used.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ecr_repository#kms_key CcRepository#kms_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecr_repository#kms_key CcRepository#kms_key}
     */
     readonly kmsKey?: string;
 }
@@ -650,7 +651,7 @@ export interface ImageScanningConfigurationProperty {
     /**
     * The setting that determines whether images are scanned after being pushed to a repository. If set to ``true``, images will be scanned after being pushed. If this parameter is not specified, it will default to ``false`` and images will not be scanned unless a scan is manually started.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ecr_repository#scan_on_push CcRepository#scan_on_push}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecr_repository#scan_on_push CcRepository#scan_on_push}
     */
     readonly scanOnPush?: boolean | cdktn.IResolvable;
 }
@@ -716,13 +717,13 @@ export interface ImageTagMutabilityExclusionFilterProperty {
     /**
     * Specifies the type of filter to use for excluding image tags from the repository's mutability setting.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ecr_repository#image_tag_mutability_exclusion_filter_type CcRepository#image_tag_mutability_exclusion_filter_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecr_repository#image_tag_mutability_exclusion_filter_type CcRepository#image_tag_mutability_exclusion_filter_type}
     */
     readonly imageTagMutabilityExclusionFilterType?: string;
     /**
     * The value to use when filtering image tags.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ecr_repository#image_tag_mutability_exclusion_filter_value CcRepository#image_tag_mutability_exclusion_filter_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecr_repository#image_tag_mutability_exclusion_filter_value CcRepository#image_tag_mutability_exclusion_filter_value}
     */
     readonly imageTagMutabilityExclusionFilterValue?: string;
 }
@@ -832,13 +833,13 @@ export interface LifecyclePolicyProperty {
     /**
     * The JSON repository policy text to apply to the repository.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ecr_repository#lifecycle_policy_text CcRepository#lifecycle_policy_text}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecr_repository#lifecycle_policy_text CcRepository#lifecycle_policy_text}
     */
     readonly lifecyclePolicyText?: string;
     /**
     * The AWS account ID associated with the registry that contains the repository. If you do? not specify a registry, the default registry is assumed.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ecr_repository#registry_id CcRepository#registry_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecr_repository#registry_id CcRepository#registry_id}
     */
     readonly registryId?: string;
 }
@@ -926,13 +927,13 @@ export interface TagProperty {
     /**
     * One part of a key-value pair that make up a tag. A ``key`` is a general label that acts like a category for more specific tag values.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ecr_repository#key CcRepository#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecr_repository#key CcRepository#key}
     */
     readonly key?: string;
     /**
     * A ``value`` acts as a descriptor within a tag category (key).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ecr_repository#value CcRepository#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecr_repository#value CcRepository#value}
     */
     readonly value?: string;
 }

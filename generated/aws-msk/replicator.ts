@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/msk_replicator
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,49 +9,49 @@ export interface CcReplicatorProps extends cdktn.TerraformMetaArguments {
     /**
     * A summary description of the replicator.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/msk_replicator#description CcReplicator#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#description CcReplicator#description}
     */
     readonly description?: string;
     /**
     * Specifies a list of Kafka clusters which are targets of the replicator.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/msk_replicator#kafka_clusters CcReplicator#kafka_clusters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#kafka_clusters CcReplicator#kafka_clusters}
     */
     readonly kafkaClusters: CcReplicator.KafkaClusterProperty[] | cdktn.IResolvable;
     /**
     * Configuration for log delivery for the replicator.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/msk_replicator#log_delivery CcReplicator#log_delivery}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#log_delivery CcReplicator#log_delivery}
     */
     readonly logDelivery?: CcReplicator.LogDeliveryProperty;
     /**
     * A list of replication configurations, where each configuration targets a given source cluster to target cluster replication flow.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/msk_replicator#replication_info_list CcReplicator#replication_info_list}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#replication_info_list CcReplicator#replication_info_list}
     */
     readonly replicationInfoList: CcReplicator.ReplicationInfoProperty[] | cdktn.IResolvable;
     /**
     * The name of the replicator.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/msk_replicator#replicator_name CcReplicator#replicator_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#replicator_name CcReplicator#replicator_name}
     */
     readonly replicatorName: string;
     /**
     * The Amazon Resource Name (ARN) of the IAM role used by the replicator to access external resources.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/msk_replicator#service_execution_role_arn CcReplicator#service_execution_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#service_execution_role_arn CcReplicator#service_execution_role_arn}
     */
     readonly serviceExecutionRoleArn: string;
     /**
     * A collection of tags associated with a resource
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/msk_replicator#tags CcReplicator#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#tags CcReplicator#tags}
     */
     readonly tags?: CcReplicator.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/msk_replicator awscc_msk_replicator}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator awscc_msk_replicator}
 */
 export class CcReplicator extends cdktn.TerraformResource {
 
@@ -67,7 +67,7 @@ export class CcReplicator extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcReplicator resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcReplicator to import
-    * @param importFromId The id of the existing CcReplicator that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/msk_replicator#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcReplicator that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcReplicator to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -79,7 +79,7 @@ export class CcReplicator extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/msk_replicator awscc_msk_replicator} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator awscc_msk_replicator} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -89,7 +89,8 @@ export class CcReplicator extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_msk_replicator',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -1093,7 +1094,7 @@ export interface AmazonMskClusterProperty {
     /**
     * The ARN of an Amazon MSK cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/msk_replicator#msk_cluster_arn CcReplicator#msk_cluster_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#msk_cluster_arn CcReplicator#msk_cluster_arn}
     */
     readonly mskClusterArn?: string;
 }
@@ -1159,13 +1160,13 @@ export interface ApacheKafkaClusterProperty {
     /**
     * The ID of the Apache Kafka cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/msk_replicator#apache_kafka_cluster_id CcReplicator#apache_kafka_cluster_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#apache_kafka_cluster_id CcReplicator#apache_kafka_cluster_id}
     */
     readonly apacheKafkaClusterId?: string;
     /**
     * The bootstrap broker string of the Apache Kafka cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/msk_replicator#bootstrap_broker_string CcReplicator#bootstrap_broker_string}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#bootstrap_broker_string CcReplicator#bootstrap_broker_string}
     */
     readonly bootstrapBrokerString?: string;
 }
@@ -1253,7 +1254,7 @@ export interface KafkaClusterMtlsAuthenticationProperty {
     /**
     * The Amazon Resource Name (ARN) of the Secrets Manager secret.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/msk_replicator#secret_arn CcReplicator#secret_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#secret_arn CcReplicator#secret_arn}
     */
     readonly secretArn?: string;
 }
@@ -1319,13 +1320,13 @@ export interface KafkaClusterSaslScramAuthenticationProperty {
     /**
     * The SASL/SCRAM authentication mechanism.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/msk_replicator#mechanism CcReplicator#mechanism}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#mechanism CcReplicator#mechanism}
     */
     readonly mechanism?: string;
     /**
     * The Amazon Resource Name (ARN) of the Secrets Manager secret.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/msk_replicator#secret_arn CcReplicator#secret_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#secret_arn CcReplicator#secret_arn}
     */
     readonly secretArn?: string;
 }
@@ -1413,13 +1414,13 @@ export interface KafkaClusterClientAuthenticationProperty {
     /**
     * Details for mTLS client authentication.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/msk_replicator#mtls CcReplicator#mtls}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#mtls CcReplicator#mtls}
     */
     readonly mtls?: KafkaClusterMtlsAuthenticationProperty;
     /**
     * Details for SASL/SCRAM client authentication.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/msk_replicator#sasl_scram CcReplicator#sasl_scram}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#sasl_scram CcReplicator#sasl_scram}
     */
     readonly saslScram?: KafkaClusterSaslScramAuthenticationProperty;
 }
@@ -1507,13 +1508,13 @@ export interface KafkaClusterEncryptionInTransitProperty {
     /**
     * The type of encryption in transit to the Apache Kafka cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/msk_replicator#encryption_type CcReplicator#encryption_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#encryption_type CcReplicator#encryption_type}
     */
     readonly encryptionType?: string;
     /**
     * The root CA certificate.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/msk_replicator#root_ca_certificate CcReplicator#root_ca_certificate}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#root_ca_certificate CcReplicator#root_ca_certificate}
     */
     readonly rootCaCertificate?: string;
 }
@@ -1601,13 +1602,13 @@ export interface KafkaClusterClientVpcConfigProperty {
     /**
     * The AWS security groups to associate with the elastic network interfaces in order to specify what the replicator has access to. If a security group is not specified, the default security group associated with the VPC is used.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/msk_replicator#security_group_ids CcReplicator#security_group_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#security_group_ids CcReplicator#security_group_ids}
     */
     readonly securityGroupIds?: string[];
     /**
     * The list of subnets to connect to in the virtual private cloud (VPC). AWS creates elastic network interfaces inside these subnets.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/msk_replicator#subnet_ids CcReplicator#subnet_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#subnet_ids CcReplicator#subnet_ids}
     */
     readonly subnetIds?: string[];
 }
@@ -1695,31 +1696,31 @@ export interface KafkaClusterProperty {
     /**
     * Details of an Amazon MSK cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/msk_replicator#amazon_msk_cluster CcReplicator#amazon_msk_cluster}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#amazon_msk_cluster CcReplicator#amazon_msk_cluster}
     */
     readonly amazonMskCluster?: AmazonMskClusterProperty;
     /**
     * Details of an Apache Kafka cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/msk_replicator#apache_kafka_cluster CcReplicator#apache_kafka_cluster}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#apache_kafka_cluster CcReplicator#apache_kafka_cluster}
     */
     readonly apacheKafkaCluster?: ApacheKafkaClusterProperty;
     /**
     * Details of the client authentication used by the Apache Kafka cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/msk_replicator#client_authentication CcReplicator#client_authentication}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#client_authentication CcReplicator#client_authentication}
     */
     readonly clientAuthentication?: KafkaClusterClientAuthenticationProperty;
     /**
     * Details of encryption in transit to the Apache Kafka cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/msk_replicator#encryption_in_transit CcReplicator#encryption_in_transit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#encryption_in_transit CcReplicator#encryption_in_transit}
     */
     readonly encryptionInTransit?: KafkaClusterEncryptionInTransitProperty;
     /**
     * Details of an Amazon VPC which has network connectivity to the Apache Kafka cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/msk_replicator#vpc_config CcReplicator#vpc_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#vpc_config CcReplicator#vpc_config}
     */
     readonly vpcConfig?: KafkaClusterClientVpcConfigProperty;
 }
@@ -1895,13 +1896,13 @@ export interface CloudWatchLogsProperty {
     /**
     * Whether log delivery to CloudWatch Logs is enabled.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/msk_replicator#enabled CcReplicator#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#enabled CcReplicator#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
     * The CloudWatch log group that is the destination for log delivery.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/msk_replicator#log_group CcReplicator#log_group}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#log_group CcReplicator#log_group}
     */
     readonly logGroup?: string;
 }
@@ -1989,13 +1990,13 @@ export interface FirehoseProperty {
     /**
     * The Firehose delivery stream that is the destination for log delivery.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/msk_replicator#delivery_stream CcReplicator#delivery_stream}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#delivery_stream CcReplicator#delivery_stream}
     */
     readonly deliveryStream?: string;
     /**
     * Whether log delivery to Firehose is enabled.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/msk_replicator#enabled CcReplicator#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#enabled CcReplicator#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -2083,19 +2084,19 @@ export interface S3Property {
     /**
     * The S3 bucket that is the destination for log delivery.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/msk_replicator#bucket CcReplicator#bucket}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#bucket CcReplicator#bucket}
     */
     readonly bucket?: string;
     /**
     * Whether log delivery to S3 is enabled.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/msk_replicator#enabled CcReplicator#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#enabled CcReplicator#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
     * The S3 prefix that is the destination for log delivery.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/msk_replicator#prefix CcReplicator#prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#prefix CcReplicator#prefix}
     */
     readonly prefix?: string;
 }
@@ -2205,19 +2206,19 @@ export interface ReplicatorLogDeliveryProperty {
     /**
     * Details of the CloudWatch Logs destination for replicator logs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/msk_replicator#cloudwatch_logs CcReplicator#cloudwatch_logs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#cloudwatch_logs CcReplicator#cloudwatch_logs}
     */
     readonly cloudwatchLogs?: CloudWatchLogsProperty;
     /**
     * Details of the Kinesis Data Firehose delivery stream that is the destination for replicator logs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/msk_replicator#firehose CcReplicator#firehose}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#firehose CcReplicator#firehose}
     */
     readonly firehose?: FirehoseProperty;
     /**
     * Details of the Amazon S3 destination for replicator logs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/msk_replicator#s3 CcReplicator#s3}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#s3 CcReplicator#s3}
     */
     readonly s3?: S3Property;
 }
@@ -2327,7 +2328,7 @@ export interface LogDeliveryProperty {
     /**
     * The replicator logs configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/msk_replicator#replicator_log_delivery CcReplicator#replicator_log_delivery}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#replicator_log_delivery CcReplicator#replicator_log_delivery}
     */
     readonly replicatorLogDelivery?: ReplicatorLogDeliveryProperty;
 }
@@ -2393,31 +2394,31 @@ export interface ConsumerGroupReplicationProperty {
     /**
     * The consumer group offset synchronization mode.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/msk_replicator#consumer_group_offset_sync_mode CcReplicator#consumer_group_offset_sync_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#consumer_group_offset_sync_mode CcReplicator#consumer_group_offset_sync_mode}
     */
     readonly consumerGroupOffsetSyncMode?: string;
     /**
     * List of regular expression patterns indicating the consumer groups that should not be replicated.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/msk_replicator#consumer_groups_to_exclude CcReplicator#consumer_groups_to_exclude}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#consumer_groups_to_exclude CcReplicator#consumer_groups_to_exclude}
     */
     readonly consumerGroupsToExclude?: string[];
     /**
     * List of regular expression patterns indicating the consumer groups to copy.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/msk_replicator#consumer_groups_to_replicate CcReplicator#consumer_groups_to_replicate}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#consumer_groups_to_replicate CcReplicator#consumer_groups_to_replicate}
     */
     readonly consumerGroupsToReplicate: string[];
     /**
     * Whether to periodically check for new consumer groups.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/msk_replicator#detect_and_copy_new_consumer_groups CcReplicator#detect_and_copy_new_consumer_groups}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#detect_and_copy_new_consumer_groups CcReplicator#detect_and_copy_new_consumer_groups}
     */
     readonly detectAndCopyNewConsumerGroups?: boolean | cdktn.IResolvable;
     /**
     * Whether to periodically write the translated offsets to __consumer_offsets topic in target cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/msk_replicator#synchronise_consumer_group_offsets CcReplicator#synchronise_consumer_group_offsets}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#synchronise_consumer_group_offsets CcReplicator#synchronise_consumer_group_offsets}
     */
     readonly synchroniseConsumerGroupOffsets?: boolean | cdktn.IResolvable;
 }
@@ -2568,7 +2569,7 @@ export interface ReplicationStartingPositionProperty {
     /**
     * The type of replication starting position.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/msk_replicator#type CcReplicator#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#type CcReplicator#type}
     */
     readonly type?: string;
 }
@@ -2634,7 +2635,7 @@ export interface ReplicationTopicNameConfigurationProperty {
     /**
     * The type of replicated topic name.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/msk_replicator#type CcReplicator#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#type CcReplicator#type}
     */
     readonly type?: string;
 }
@@ -2700,43 +2701,43 @@ export interface TopicReplicationProperty {
     /**
     * Whether to periodically configure remote topic ACLs to match their corresponding upstream topics.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/msk_replicator#copy_access_control_lists_for_topics CcReplicator#copy_access_control_lists_for_topics}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#copy_access_control_lists_for_topics CcReplicator#copy_access_control_lists_for_topics}
     */
     readonly copyAccessControlListsForTopics?: boolean | cdktn.IResolvable;
     /**
     * Whether to periodically configure remote topics to match their corresponding upstream topics.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/msk_replicator#copy_topic_configurations CcReplicator#copy_topic_configurations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#copy_topic_configurations CcReplicator#copy_topic_configurations}
     */
     readonly copyTopicConfigurations?: boolean | cdktn.IResolvable;
     /**
     * Whether to periodically check for new topics and partitions.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/msk_replicator#detect_and_copy_new_topics CcReplicator#detect_and_copy_new_topics}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#detect_and_copy_new_topics CcReplicator#detect_and_copy_new_topics}
     */
     readonly detectAndCopyNewTopics?: boolean | cdktn.IResolvable;
     /**
     * Configuration for specifying the position in the topics to start replicating from.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/msk_replicator#starting_position CcReplicator#starting_position}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#starting_position CcReplicator#starting_position}
     */
     readonly startingPosition?: ReplicationStartingPositionProperty;
     /**
     * Configuration for specifying replicated topic names should be the same as their corresponding upstream topics or prefixed with source cluster alias.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/msk_replicator#topic_name_configuration CcReplicator#topic_name_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#topic_name_configuration CcReplicator#topic_name_configuration}
     */
     readonly topicNameConfiguration?: ReplicationTopicNameConfigurationProperty;
     /**
     * List of regular expression patterns indicating the topics that should not be replicated.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/msk_replicator#topics_to_exclude CcReplicator#topics_to_exclude}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#topics_to_exclude CcReplicator#topics_to_exclude}
     */
     readonly topicsToExclude?: string[];
     /**
     * List of regular expression patterns indicating the topics to copy.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/msk_replicator#topics_to_replicate CcReplicator#topics_to_replicate}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#topics_to_replicate CcReplicator#topics_to_replicate}
     */
     readonly topicsToReplicate: string[];
 }
@@ -2931,43 +2932,43 @@ export interface ReplicationInfoProperty {
     /**
     * Configuration relating to consumer group replication.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/msk_replicator#consumer_group_replication CcReplicator#consumer_group_replication}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#consumer_group_replication CcReplicator#consumer_group_replication}
     */
     readonly consumerGroupReplication: ConsumerGroupReplicationProperty;
     /**
     * Amazon Resource Name of the source Kafka cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/msk_replicator#source_kafka_cluster_arn CcReplicator#source_kafka_cluster_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#source_kafka_cluster_arn CcReplicator#source_kafka_cluster_arn}
     */
     readonly sourceKafkaClusterArn?: string;
     /**
     * The ID of the source Kafka cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/msk_replicator#source_kafka_cluster_id CcReplicator#source_kafka_cluster_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#source_kafka_cluster_id CcReplicator#source_kafka_cluster_id}
     */
     readonly sourceKafkaClusterId?: string;
     /**
     * The type of compression to use writing records to target Kafka cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/msk_replicator#target_compression_type CcReplicator#target_compression_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#target_compression_type CcReplicator#target_compression_type}
     */
     readonly targetCompressionType: string;
     /**
     * Amazon Resource Name of the target Kafka cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/msk_replicator#target_kafka_cluster_arn CcReplicator#target_kafka_cluster_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#target_kafka_cluster_arn CcReplicator#target_kafka_cluster_arn}
     */
     readonly targetKafkaClusterArn?: string;
     /**
     * The ID of the target Kafka cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/msk_replicator#target_kafka_cluster_id CcReplicator#target_kafka_cluster_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#target_kafka_cluster_id CcReplicator#target_kafka_cluster_id}
     */
     readonly targetKafkaClusterId?: string;
     /**
     * Configuration relating to topic replication.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/msk_replicator#topic_replication CcReplicator#topic_replication}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#topic_replication CcReplicator#topic_replication}
     */
     readonly topicReplication: TopicReplicationProperty;
 }
@@ -3176,11 +3177,11 @@ export class ReplicationInfoPropertyList extends cdktn.ComplexList {
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/msk_replicator#key CcReplicator#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#key CcReplicator#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/msk_replicator#value CcReplicator#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#value CcReplicator#value}
     */
     readonly value?: string;
 }

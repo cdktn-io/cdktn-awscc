@@ -1,39 +1,39 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cognito_managed_login_branding
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_managed_login_branding
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcManagedLoginBrandingProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cognito_managed_login_branding#assets CcManagedLoginBranding#assets}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_managed_login_branding#assets CcManagedLoginBranding#assets}
     */
     readonly assets?: CcManagedLoginBranding.AssetTypeProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cognito_managed_login_branding#client_id CcManagedLoginBranding#client_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_managed_login_branding#client_id CcManagedLoginBranding#client_id}
     */
     readonly clientId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cognito_managed_login_branding#return_merged_resources CcManagedLoginBranding#return_merged_resources}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_managed_login_branding#return_merged_resources CcManagedLoginBranding#return_merged_resources}
     */
     readonly returnMergedResources?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cognito_managed_login_branding#settings CcManagedLoginBranding#settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_managed_login_branding#settings CcManagedLoginBranding#settings}
     */
     readonly settings?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cognito_managed_login_branding#use_cognito_provided_values CcManagedLoginBranding#use_cognito_provided_values}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_managed_login_branding#use_cognito_provided_values CcManagedLoginBranding#use_cognito_provided_values}
     */
     readonly useCognitoProvidedValues?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cognito_managed_login_branding#user_pool_id CcManagedLoginBranding#user_pool_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_managed_login_branding#user_pool_id CcManagedLoginBranding#user_pool_id}
     */
     readonly userPoolId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cognito_managed_login_branding awscc_cognito_managed_login_branding}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_managed_login_branding awscc_cognito_managed_login_branding}
 */
 export class CcManagedLoginBranding extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CcManagedLoginBranding extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcManagedLoginBranding resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcManagedLoginBranding to import
-    * @param importFromId The id of the existing CcManagedLoginBranding that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cognito_managed_login_branding#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcManagedLoginBranding that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_managed_login_branding#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcManagedLoginBranding to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CcManagedLoginBranding extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cognito_managed_login_branding awscc_cognito_managed_login_branding} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_managed_login_branding awscc_cognito_managed_login_branding} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -71,7 +71,8 @@ export class CcManagedLoginBranding extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_cognito_managed_login_branding',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -317,23 +318,23 @@ export function ccManagedLoginBrandingAssetTypePropertyToHclTerraform(struct?: C
 export namespace CcManagedLoginBranding {
 export interface AssetTypeProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cognito_managed_login_branding#bytes CcManagedLoginBranding#bytes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_managed_login_branding#bytes CcManagedLoginBranding#bytes}
     */
     readonly bytes?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cognito_managed_login_branding#category CcManagedLoginBranding#category}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_managed_login_branding#category CcManagedLoginBranding#category}
     */
     readonly category?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cognito_managed_login_branding#color_mode CcManagedLoginBranding#color_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_managed_login_branding#color_mode CcManagedLoginBranding#color_mode}
     */
     readonly colorMode?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cognito_managed_login_branding#extension CcManagedLoginBranding#extension}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_managed_login_branding#extension CcManagedLoginBranding#extension}
     */
     readonly extension?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cognito_managed_login_branding#resource_id CcManagedLoginBranding#resource_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_managed_login_branding#resource_id CcManagedLoginBranding#resource_id}
     */
     readonly resourceId?: string;
 }

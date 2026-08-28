@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lookoutmetrics_alert
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutmetrics_alert
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,37 +9,37 @@ export interface CcAlertProps extends cdktn.TerraformMetaArguments {
     /**
     * The action to be taken by the alert when an anomaly is detected.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lookoutmetrics_alert#action CcAlert#action}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutmetrics_alert#action CcAlert#action}
     */
     readonly action: CcAlert.ActionProperty;
     /**
     * A description for the alert.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lookoutmetrics_alert#alert_description CcAlert#alert_description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutmetrics_alert#alert_description CcAlert#alert_description}
     */
     readonly alertDescription?: string;
     /**
     * The name of the alert. If not provided, a name is generated automatically.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lookoutmetrics_alert#alert_name CcAlert#alert_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutmetrics_alert#alert_name CcAlert#alert_name}
     */
     readonly alertName?: string;
     /**
     * A number between 0 and 100 (inclusive) that tunes the sensitivity of the alert.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lookoutmetrics_alert#alert_sensitivity_threshold CcAlert#alert_sensitivity_threshold}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutmetrics_alert#alert_sensitivity_threshold CcAlert#alert_sensitivity_threshold}
     */
     readonly alertSensitivityThreshold: number;
     /**
     * The Amazon resource name (ARN) of the Anomaly Detector to alert.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lookoutmetrics_alert#anomaly_detector_arn CcAlert#anomaly_detector_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutmetrics_alert#anomaly_detector_arn CcAlert#anomaly_detector_arn}
     */
     readonly anomalyDetectorArn: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lookoutmetrics_alert awscc_lookoutmetrics_alert}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutmetrics_alert awscc_lookoutmetrics_alert}
 */
 export class CcAlert extends cdktn.TerraformResource {
 
@@ -55,7 +55,7 @@ export class CcAlert extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcAlert resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcAlert to import
-    * @param importFromId The id of the existing CcAlert that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lookoutmetrics_alert#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcAlert that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutmetrics_alert#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcAlert to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -67,7 +67,7 @@ export class CcAlert extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lookoutmetrics_alert awscc_lookoutmetrics_alert} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutmetrics_alert awscc_lookoutmetrics_alert} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -77,7 +77,8 @@ export class CcAlert extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_lookoutmetrics_alert',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -348,13 +349,13 @@ export interface LambdaConfigurationProperty {
     /**
     * ARN of a Lambda to send alert notifications to.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lookoutmetrics_alert#lambda_arn CcAlert#lambda_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutmetrics_alert#lambda_arn CcAlert#lambda_arn}
     */
     readonly lambdaArn?: string;
     /**
     * ARN of an IAM role that LookoutMetrics should assume to access the Lambda function.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lookoutmetrics_alert#role_arn CcAlert#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutmetrics_alert#role_arn CcAlert#role_arn}
     */
     readonly roleArn?: string;
 }
@@ -442,13 +443,13 @@ export interface SNSConfigurationProperty {
     /**
     * ARN of an IAM role that LookoutMetrics should assume to access the SNS topic.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lookoutmetrics_alert#role_arn CcAlert#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutmetrics_alert#role_arn CcAlert#role_arn}
     */
     readonly roleArn?: string;
     /**
     * ARN of an SNS topic to send alert notifications to.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lookoutmetrics_alert#sns_topic_arn CcAlert#sns_topic_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutmetrics_alert#sns_topic_arn CcAlert#sns_topic_arn}
     */
     readonly snsTopicArn?: string;
 }
@@ -536,13 +537,13 @@ export interface ActionProperty {
     /**
     * Configuration options for a Lambda alert action.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lookoutmetrics_alert#lambda_configuration CcAlert#lambda_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutmetrics_alert#lambda_configuration CcAlert#lambda_configuration}
     */
     readonly lambdaConfiguration?: LambdaConfigurationProperty;
     /**
     * Configuration options for an SNS alert action.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lookoutmetrics_alert#sns_configuration CcAlert#sns_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutmetrics_alert#sns_configuration CcAlert#sns_configuration}
     */
     readonly snsConfiguration?: SNSConfigurationProperty;
 }

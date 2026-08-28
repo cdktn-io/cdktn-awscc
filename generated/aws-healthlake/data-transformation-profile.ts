@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/healthlake_data_transformation_profile
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/healthlake_data_transformation_profile
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,43 +9,43 @@ export interface CcDataTransformationProfileProps extends cdktn.TerraformMetaArg
     /**
     * The identifier (key ID or ARN) of a customer-managed KMS key used to encrypt the profile's template content at rest. If omitted, an AWS owned key is used.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/healthlake_data_transformation_profile#kms_key_id CcDataTransformationProfile#kms_key_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/healthlake_data_transformation_profile#kms_key_id CcDataTransformationProfile#kms_key_id}
     */
     readonly kmsKeyId?: string;
     /**
     * A human-readable description of the profile's purpose.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/healthlake_data_transformation_profile#profile_description CcDataTransformationProfile#profile_description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/healthlake_data_transformation_profile#profile_description CcDataTransformationProfile#profile_description}
     */
     readonly profileDescription?: string;
     /**
     * The human-readable name of the profile.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/healthlake_data_transformation_profile#profile_name CcDataTransformationProfile#profile_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/healthlake_data_transformation_profile#profile_name CcDataTransformationProfile#profile_name}
     */
     readonly profileName: string;
     /**
     * The source from which to create the profile's initial template content. Exactly one of the members must be specified. Use StarterProfile (C-CDA only), ProfileMapping (C-CDA or CSV), or ExistingVersionedProfileId to clone an existing profile. Each produces a published profile.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/healthlake_data_transformation_profile#source CcDataTransformationProfile#source}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/healthlake_data_transformation_profile#source CcDataTransformationProfile#source}
     */
     readonly source?: CcDataTransformationProfile.SourceProperty;
     /**
     * The source format that this profile converts from.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/healthlake_data_transformation_profile#source_format CcDataTransformationProfile#source_format}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/healthlake_data_transformation_profile#source_format CcDataTransformationProfile#source_format}
     */
     readonly sourceFormat: string;
     /**
     * An array of key-value pairs to apply to this profile.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/healthlake_data_transformation_profile#tags CcDataTransformationProfile#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/healthlake_data_transformation_profile#tags CcDataTransformationProfile#tags}
     */
     readonly tags?: CcDataTransformationProfile.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/healthlake_data_transformation_profile awscc_healthlake_data_transformation_profile}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/healthlake_data_transformation_profile awscc_healthlake_data_transformation_profile}
 */
 export class CcDataTransformationProfile extends cdktn.TerraformResource {
 
@@ -61,7 +61,7 @@ export class CcDataTransformationProfile extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcDataTransformationProfile resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcDataTransformationProfile to import
-    * @param importFromId The id of the existing CcDataTransformationProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/healthlake_data_transformation_profile#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcDataTransformationProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/healthlake_data_transformation_profile#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcDataTransformationProfile to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -73,7 +73,7 @@ export class CcDataTransformationProfile extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/healthlake_data_transformation_profile awscc_healthlake_data_transformation_profile} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/healthlake_data_transformation_profile awscc_healthlake_data_transformation_profile} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -83,7 +83,8 @@ export class CcDataTransformationProfile extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_healthlake_data_transformation_profile',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -458,13 +459,13 @@ export interface ExistingVersionedProfileSourceProperty {
     /**
     * The unique identifier of the source profile to clone.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/healthlake_data_transformation_profile#profile_id CcDataTransformationProfile#profile_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/healthlake_data_transformation_profile#profile_id CcDataTransformationProfile#profile_id}
     */
     readonly profileId?: string;
     /**
     * The version number of the source profile to clone.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/healthlake_data_transformation_profile#version CcDataTransformationProfile#version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/healthlake_data_transformation_profile#version CcDataTransformationProfile#version}
     */
     readonly version?: number;
 }
@@ -552,7 +553,7 @@ export interface ProfileMappingSourceProperty {
     /**
     * Map of template file paths to their Velocity template content.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/healthlake_data_transformation_profile#profile_mapping CcDataTransformationProfile#profile_mapping}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/healthlake_data_transformation_profile#profile_mapping CcDataTransformationProfile#profile_mapping}
     */
     readonly profileMapping?: { [key: string]: string };
 }
@@ -618,7 +619,7 @@ export interface StarterProfileSourceProperty {
     /**
     * The name of the starter profile to seed the profile from.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/healthlake_data_transformation_profile#starter_profile_name CcDataTransformationProfile#starter_profile_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/healthlake_data_transformation_profile#starter_profile_name CcDataTransformationProfile#starter_profile_name}
     */
     readonly starterProfileName?: string;
 }
@@ -684,19 +685,19 @@ export interface SourceProperty {
     /**
     * Create the profile by cloning a specific version of an existing profile.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/healthlake_data_transformation_profile#existing_versioned_profile_id CcDataTransformationProfile#existing_versioned_profile_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/healthlake_data_transformation_profile#existing_versioned_profile_id CcDataTransformationProfile#existing_versioned_profile_id}
     */
     readonly existingVersionedProfileId?: ExistingVersionedProfileSourceProperty;
     /**
     * Create the profile from raw Velocity template mapping content.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/healthlake_data_transformation_profile#profile_mapping CcDataTransformationProfile#profile_mapping}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/healthlake_data_transformation_profile#profile_mapping CcDataTransformationProfile#profile_mapping}
     */
     readonly profileMapping?: ProfileMappingSourceProperty;
     /**
     * Create the profile from a predefined starter profile of transformation templates.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/healthlake_data_transformation_profile#starter_profile CcDataTransformationProfile#starter_profile}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/healthlake_data_transformation_profile#starter_profile CcDataTransformationProfile#starter_profile}
     */
     readonly starterProfile?: StarterProfileSourceProperty;
 }
@@ -806,13 +807,13 @@ export interface TagProperty {
     /**
     * The key of the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/healthlake_data_transformation_profile#key CcDataTransformationProfile#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/healthlake_data_transformation_profile#key CcDataTransformationProfile#key}
     */
     readonly key?: string;
     /**
     * The value of the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/healthlake_data_transformation_profile#value CcDataTransformationProfile#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/healthlake_data_transformation_profile#value CcDataTransformationProfile#value}
     */
     readonly value?: string;
 }

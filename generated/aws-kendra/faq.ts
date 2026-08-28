@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kendra_faq
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kendra_faq
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,55 +9,55 @@ export interface CcFaqProps extends cdktn.TerraformMetaArguments {
     /**
     * FAQ description
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kendra_faq#description CcFaq#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kendra_faq#description CcFaq#description}
     */
     readonly description?: string;
     /**
     * FAQ file format
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kendra_faq#file_format CcFaq#file_format}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kendra_faq#file_format CcFaq#file_format}
     */
     readonly fileFormat?: string;
     /**
     * Index ID
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kendra_faq#index_id CcFaq#index_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kendra_faq#index_id CcFaq#index_id}
     */
     readonly indexId: string;
     /**
     * The code for a language.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kendra_faq#language_code CcFaq#language_code}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kendra_faq#language_code CcFaq#language_code}
     */
     readonly languageCode?: string;
     /**
     * FAQ name
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kendra_faq#name CcFaq#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kendra_faq#name CcFaq#name}
     */
     readonly name: string;
     /**
     * FAQ role ARN
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kendra_faq#role_arn CcFaq#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kendra_faq#role_arn CcFaq#role_arn}
     */
     readonly roleArn: string;
     /**
     * FAQ S3 path
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kendra_faq#s3_path CcFaq#s3_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kendra_faq#s3_path CcFaq#s3_path}
     */
     readonly s3Path: CcFaq.S3PathProperty;
     /**
     * Tags for labeling the FAQ
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kendra_faq#tags CcFaq#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kendra_faq#tags CcFaq#tags}
     */
     readonly tags?: CcFaq.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kendra_faq awscc_kendra_faq}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kendra_faq awscc_kendra_faq}
 */
 export class CcFaq extends cdktn.TerraformResource {
 
@@ -73,7 +73,7 @@ export class CcFaq extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcFaq resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcFaq to import
-    * @param importFromId The id of the existing CcFaq that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kendra_faq#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcFaq that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kendra_faq#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcFaq to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -85,7 +85,7 @@ export class CcFaq extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kendra_faq awscc_kendra_faq} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kendra_faq awscc_kendra_faq} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -95,7 +95,8 @@ export class CcFaq extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_kendra_faq',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -401,11 +402,11 @@ export function ccFaqTagPropertyToHclTerraform(struct?: CcFaq.TagProperty | cdkt
 export namespace CcFaq {
 export interface S3PathProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kendra_faq#bucket CcFaq#bucket}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kendra_faq#bucket CcFaq#bucket}
     */
     readonly bucket: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kendra_faq#key CcFaq#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kendra_faq#key CcFaq#key}
     */
     readonly key: string;
 }
@@ -487,13 +488,13 @@ export interface TagProperty {
     /**
     * A string used to identify this tag
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kendra_faq#key CcFaq#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kendra_faq#key CcFaq#key}
     */
     readonly key?: string;
     /**
     * A string containing the value for the tag
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kendra_faq#value CcFaq#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kendra_faq#value CcFaq#value}
     */
     readonly value?: string;
 }

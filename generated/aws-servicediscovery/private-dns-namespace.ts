@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicediscovery_private_dns_namespace
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicediscovery_private_dns_namespace
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,37 +9,37 @@ export interface CcPrivateDnsNamespaceProps extends cdktn.TerraformMetaArguments
     /**
     * A description of the namespace.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicediscovery_private_dns_namespace#description CcPrivateDnsNamespace#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicediscovery_private_dns_namespace#description CcPrivateDnsNamespace#description}
     */
     readonly description?: string;
     /**
     * The name that you want to assign to this namespace. When you create a private DNS namespace, AWS Cloud Map automatically creates an Amazon Route 53 private hosted zone that has the same name as the namespace.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicediscovery_private_dns_namespace#name CcPrivateDnsNamespace#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicediscovery_private_dns_namespace#name CcPrivateDnsNamespace#name}
     */
     readonly name: string;
     /**
     * Properties of the private DNS namespace.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicediscovery_private_dns_namespace#properties CcPrivateDnsNamespace#properties}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicediscovery_private_dns_namespace#properties CcPrivateDnsNamespace#properties}
     */
     readonly properties?: CcPrivateDnsNamespace.PropertiesProperty;
     /**
     * The tags for the namespace. Each tag consists of a key and an optional value, both of which you define. Tag keys can have a maximum character length of 128 characters, and tag values can have a maximum length of 256 characters.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicediscovery_private_dns_namespace#tags CcPrivateDnsNamespace#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicediscovery_private_dns_namespace#tags CcPrivateDnsNamespace#tags}
     */
     readonly tags?: CcPrivateDnsNamespace.TagProperty[] | cdktn.IResolvable;
     /**
     * The ID of the Amazon VPC that you want to associate the namespace with.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicediscovery_private_dns_namespace#vpc CcPrivateDnsNamespace#vpc}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicediscovery_private_dns_namespace#vpc CcPrivateDnsNamespace#vpc}
     */
     readonly vpc?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicediscovery_private_dns_namespace awscc_servicediscovery_private_dns_namespace}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicediscovery_private_dns_namespace awscc_servicediscovery_private_dns_namespace}
 */
 export class CcPrivateDnsNamespace extends cdktn.TerraformResource {
 
@@ -55,7 +55,7 @@ export class CcPrivateDnsNamespace extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcPrivateDnsNamespace resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcPrivateDnsNamespace to import
-    * @param importFromId The id of the existing CcPrivateDnsNamespace that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicediscovery_private_dns_namespace#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcPrivateDnsNamespace that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicediscovery_private_dns_namespace#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcPrivateDnsNamespace to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -67,7 +67,7 @@ export class CcPrivateDnsNamespace extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicediscovery_private_dns_namespace awscc_servicediscovery_private_dns_namespace} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicediscovery_private_dns_namespace awscc_servicediscovery_private_dns_namespace} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -77,7 +77,8 @@ export class CcPrivateDnsNamespace extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_servicediscovery_private_dns_namespace',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -378,7 +379,7 @@ export function ccPrivateDnsNamespaceTagPropertyToHclTerraform(struct?: CcPrivat
 export namespace CcPrivateDnsNamespace {
 export interface SOAProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicediscovery_private_dns_namespace#ttl CcPrivateDnsNamespace#ttl}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicediscovery_private_dns_namespace#ttl CcPrivateDnsNamespace#ttl}
     */
     readonly ttl?: number;
 }
@@ -442,7 +443,7 @@ export class SOAPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface PrivateDnsPropertiesMutableProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicediscovery_private_dns_namespace#soa CcPrivateDnsNamespace#soa}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicediscovery_private_dns_namespace#soa CcPrivateDnsNamespace#soa}
     */
     readonly soa?: SOAProperty;
 }
@@ -506,7 +507,7 @@ export class PrivateDnsPropertiesMutablePropertyOutputReference extends cdktn.Co
 }
 export interface PropertiesProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicediscovery_private_dns_namespace#dns_properties CcPrivateDnsNamespace#dns_properties}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicediscovery_private_dns_namespace#dns_properties CcPrivateDnsNamespace#dns_properties}
     */
     readonly dnsProperties?: PrivateDnsPropertiesMutableProperty;
 }
@@ -570,11 +571,11 @@ export class PropertiesPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicediscovery_private_dns_namespace#key CcPrivateDnsNamespace#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicediscovery_private_dns_namespace#key CcPrivateDnsNamespace#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicediscovery_private_dns_namespace#value CcPrivateDnsNamespace#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicediscovery_private_dns_namespace#value CcPrivateDnsNamespace#value}
     */
     readonly value?: string;
 }

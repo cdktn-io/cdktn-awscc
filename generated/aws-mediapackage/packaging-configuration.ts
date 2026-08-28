@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,49 +9,49 @@ export interface CcPackagingConfigurationProps extends cdktn.TerraformMetaArgume
     /**
     * A CMAF packaging configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#cmaf_package CcPackagingConfiguration#cmaf_package}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#cmaf_package CcPackagingConfiguration#cmaf_package}
     */
     readonly cmafPackage?: CcPackagingConfiguration.CmafPackageProperty;
     /**
     * A Dynamic Adaptive Streaming over HTTP (DASH) packaging configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#dash_package CcPackagingConfiguration#dash_package}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#dash_package CcPackagingConfiguration#dash_package}
     */
     readonly dashPackage?: CcPackagingConfiguration.DashPackageProperty;
     /**
     * An HTTP Live Streaming (HLS) packaging configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#hls_package CcPackagingConfiguration#hls_package}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#hls_package CcPackagingConfiguration#hls_package}
     */
     readonly hlsPackage?: CcPackagingConfiguration.HlsPackageProperty;
     /**
     * A Microsoft Smooth Streaming (MSS) PackagingConfiguration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#mss_package CcPackagingConfiguration#mss_package}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#mss_package CcPackagingConfiguration#mss_package}
     */
     readonly mssPackage?: CcPackagingConfiguration.MssPackageProperty;
     /**
     * The ID of the PackagingConfiguration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#packaging_configuration_id CcPackagingConfiguration#packaging_configuration_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#packaging_configuration_id CcPackagingConfiguration#packaging_configuration_id}
     */
     readonly packagingConfigurationId: string;
     /**
     * The ID of a PackagingGroup.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#packaging_group_id CcPackagingConfiguration#packaging_group_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#packaging_group_id CcPackagingConfiguration#packaging_group_id}
     */
     readonly packagingGroupId: string;
     /**
     * A collection of tags associated with a resource
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#tags CcPackagingConfiguration#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#tags CcPackagingConfiguration#tags}
     */
     readonly tags?: CcPackagingConfiguration.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration awscc_mediapackage_packaging_configuration}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration awscc_mediapackage_packaging_configuration}
 */
 export class CcPackagingConfiguration extends cdktn.TerraformResource {
 
@@ -67,7 +67,7 @@ export class CcPackagingConfiguration extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcPackagingConfiguration resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcPackagingConfiguration to import
-    * @param importFromId The id of the existing CcPackagingConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcPackagingConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcPackagingConfiguration to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -79,7 +79,7 @@ export class CcPackagingConfiguration extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration awscc_mediapackage_packaging_configuration} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration awscc_mediapackage_packaging_configuration} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -89,7 +89,8 @@ export class CcPackagingConfiguration extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_mediapackage_packaging_configuration',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -1456,13 +1457,13 @@ export interface EncryptionContractConfigurationProperty {
     /**
     * A collection of audio encryption presets.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#preset_speke_20_audio CcPackagingConfiguration#preset_speke_20_audio}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#preset_speke_20_audio CcPackagingConfiguration#preset_speke_20_audio}
     */
     readonly presetSpeke20Audio?: string;
     /**
     * A collection of video encryption presets.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#preset_speke_20_video CcPackagingConfiguration#preset_speke_20_video}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#preset_speke_20_video CcPackagingConfiguration#preset_speke_20_video}
     */
     readonly presetSpeke20Video?: string;
 }
@@ -1550,25 +1551,25 @@ export interface SpekeKeyProviderProperty {
     /**
     * The configuration to use for encrypting one or more content tracks separately for endpoints that use SPEKE 2.0.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#encryption_contract_configuration CcPackagingConfiguration#encryption_contract_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#encryption_contract_configuration CcPackagingConfiguration#encryption_contract_configuration}
     */
     readonly encryptionContractConfiguration?: EncryptionContractConfigurationProperty;
     /**
     * An Amazon Resource Name (ARN) of an IAM role that AWS Elemental MediaPackage will assume when accessing the key provider service.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#role_arn CcPackagingConfiguration#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#role_arn CcPackagingConfiguration#role_arn}
     */
     readonly roleArn?: string;
     /**
     * The system IDs to include in key requests.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#system_ids CcPackagingConfiguration#system_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#system_ids CcPackagingConfiguration#system_ids}
     */
     readonly systemIds?: string[];
     /**
     * The URL of the external key provider service.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#url CcPackagingConfiguration#url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#url CcPackagingConfiguration#url}
     */
     readonly url?: string;
 }
@@ -1700,7 +1701,7 @@ export interface CmafEncryptionProperty {
     /**
     * A configuration for accessing an external Secure Packager and Encoder Key Exchange (SPEKE) service that will provide encryption keys.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#speke_key_provider CcPackagingConfiguration#speke_key_provider}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#speke_key_provider CcPackagingConfiguration#speke_key_provider}
     */
     readonly spekeKeyProvider?: SpekeKeyProviderProperty;
 }
@@ -1766,19 +1767,19 @@ export interface StreamSelectionProperty {
     /**
     * The maximum video bitrate (bps) to include in output.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#max_video_bits_per_second CcPackagingConfiguration#max_video_bits_per_second}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#max_video_bits_per_second CcPackagingConfiguration#max_video_bits_per_second}
     */
     readonly maxVideoBitsPerSecond?: number;
     /**
     * The minimum video bitrate (bps) to include in output.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#min_video_bits_per_second CcPackagingConfiguration#min_video_bits_per_second}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#min_video_bits_per_second CcPackagingConfiguration#min_video_bits_per_second}
     */
     readonly minVideoBitsPerSecond?: number;
     /**
     * A directive that determines the order of streams in the output.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#stream_order CcPackagingConfiguration#stream_order}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#stream_order CcPackagingConfiguration#stream_order}
     */
     readonly streamOrder?: string;
 }
@@ -1888,37 +1889,37 @@ export interface HlsManifestProperty {
     /**
     * This setting controls how ad markers are included in the packaged OriginEndpoint. "NONE" will omit all SCTE-35 ad markers from the output. "PASSTHROUGH" causes the manifest to contain a copy of the SCTE-35 ad markers (comments) taken directly from the input HTTP Live Streaming (HLS) manifest. "SCTE35_ENHANCED" generates ad markers and blackout tags based on SCTE-35 messages in the input source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#ad_markers CcPackagingConfiguration#ad_markers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#ad_markers CcPackagingConfiguration#ad_markers}
     */
     readonly adMarkers?: string;
     /**
     * When enabled, an I-Frame only stream will be included in the output.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#include_iframe_only_stream CcPackagingConfiguration#include_iframe_only_stream}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#include_iframe_only_stream CcPackagingConfiguration#include_iframe_only_stream}
     */
     readonly includeIframeOnlyStream?: boolean | cdktn.IResolvable;
     /**
     * An optional string to include in the name of the manifest.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#manifest_name CcPackagingConfiguration#manifest_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#manifest_name CcPackagingConfiguration#manifest_name}
     */
     readonly manifestName?: string;
     /**
     * The interval (in seconds) between each EXT-X-PROGRAM-DATE-TIME tag inserted into manifests. Additionally, when an interval is specified ID3Timed Metadata messages will be generated every 5 seconds using the ingest time of the content. If the interval is not specified, or set to 0, then no EXT-X-PROGRAM-DATE-TIME tags will be inserted into manifests and no ID3Timed Metadata messages will be generated. Note that irrespective of this parameter, if any ID3 Timed Metadata is found in HTTP Live Streaming (HLS) input, it will be passed through to HLS output.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#program_date_time_interval_seconds CcPackagingConfiguration#program_date_time_interval_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#program_date_time_interval_seconds CcPackagingConfiguration#program_date_time_interval_seconds}
     */
     readonly programDateTimeIntervalSeconds?: number;
     /**
     * When enabled, the EXT-X-KEY tag will be repeated in output manifests.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#repeat_ext_x_key CcPackagingConfiguration#repeat_ext_x_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#repeat_ext_x_key CcPackagingConfiguration#repeat_ext_x_key}
     */
     readonly repeatExtXKey?: boolean | cdktn.IResolvable;
     /**
     * A StreamSelection configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#stream_selection CcPackagingConfiguration#stream_selection}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#stream_selection CcPackagingConfiguration#stream_selection}
     */
     readonly streamSelection?: StreamSelectionProperty;
 }
@@ -2116,25 +2117,25 @@ export interface CmafPackageProperty {
     /**
     * A CMAF encryption configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#encryption CcPackagingConfiguration#encryption}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#encryption CcPackagingConfiguration#encryption}
     */
     readonly encryption?: CmafEncryptionProperty;
     /**
     * A list of HLS manifest configurations.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#hls_manifests CcPackagingConfiguration#hls_manifests}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#hls_manifests CcPackagingConfiguration#hls_manifests}
     */
     readonly hlsManifests?: HlsManifestProperty[] | cdktn.IResolvable;
     /**
     * When includeEncoderConfigurationInSegments is set to true, MediaPackage places your encoder's Sequence Parameter Set (SPS), Picture Parameter Set (PPS), and Video Parameter Set (VPS) metadata in every video segment instead of in the init fragment. This lets you use different SPS/PPS/VPS settings for your assets during content playback.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#include_encoder_configuration_in_segments CcPackagingConfiguration#include_encoder_configuration_in_segments}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#include_encoder_configuration_in_segments CcPackagingConfiguration#include_encoder_configuration_in_segments}
     */
     readonly includeEncoderConfigurationInSegments?: boolean | cdktn.IResolvable;
     /**
     * Duration (in seconds) of each fragment. Actual fragments will be rounded to the nearest multiple of the source fragment duration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#segment_duration_seconds CcPackagingConfiguration#segment_duration_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#segment_duration_seconds CcPackagingConfiguration#segment_duration_seconds}
     */
     readonly segmentDurationSeconds?: number;
 }
@@ -2266,19 +2267,19 @@ export interface DashPackageDashManifestsStreamSelectionProperty {
     /**
     * The maximum video bitrate (bps) to include in output.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#max_video_bits_per_second CcPackagingConfiguration#max_video_bits_per_second}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#max_video_bits_per_second CcPackagingConfiguration#max_video_bits_per_second}
     */
     readonly maxVideoBitsPerSecond?: number;
     /**
     * The minimum video bitrate (bps) to include in output.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#min_video_bits_per_second CcPackagingConfiguration#min_video_bits_per_second}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#min_video_bits_per_second CcPackagingConfiguration#min_video_bits_per_second}
     */
     readonly minVideoBitsPerSecond?: number;
     /**
     * A directive that determines the order of streams in the output.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#stream_order CcPackagingConfiguration#stream_order}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#stream_order CcPackagingConfiguration#stream_order}
     */
     readonly streamOrder?: string;
 }
@@ -2388,37 +2389,37 @@ export interface DashManifestProperty {
     /**
     * Determines the position of some tags in the Media Presentation Description (MPD). When set to FULL, elements like SegmentTemplate and ContentProtection are included in each Representation. When set to COMPACT, duplicate elements are combined and presented at the AdaptationSet level.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#manifest_layout CcPackagingConfiguration#manifest_layout}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#manifest_layout CcPackagingConfiguration#manifest_layout}
     */
     readonly manifestLayout?: string;
     /**
     * An optional string to include in the name of the manifest.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#manifest_name CcPackagingConfiguration#manifest_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#manifest_name CcPackagingConfiguration#manifest_name}
     */
     readonly manifestName?: string;
     /**
     * Minimum duration (in seconds) that a player will buffer media before starting the presentation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#min_buffer_time_seconds CcPackagingConfiguration#min_buffer_time_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#min_buffer_time_seconds CcPackagingConfiguration#min_buffer_time_seconds}
     */
     readonly minBufferTimeSeconds?: number;
     /**
     * The Dynamic Adaptive Streaming over HTTP (DASH) profile type. When set to "HBBTV_1_5", HbbTV 1.5 compliant output is enabled.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#profile CcPackagingConfiguration#profile}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#profile CcPackagingConfiguration#profile}
     */
     readonly profile?: string;
     /**
     * The source of scte markers used. When set to SEGMENTS, the scte markers are sourced from the segments of the ingested content. When set to MANIFEST, the scte markers are sourced from the manifest of the ingested content.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#scte_markers_source CcPackagingConfiguration#scte_markers_source}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#scte_markers_source CcPackagingConfiguration#scte_markers_source}
     */
     readonly scteMarkersSource?: string;
     /**
     * A StreamSelection configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#stream_selection CcPackagingConfiguration#stream_selection}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#stream_selection CcPackagingConfiguration#stream_selection}
     */
     readonly streamSelection?: DashPackageDashManifestsStreamSelectionProperty;
 }
@@ -2616,13 +2617,13 @@ export interface DashPackageEncryptionSpekeKeyProviderEncryptionContractConfigur
     /**
     * A collection of audio encryption presets.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#preset_speke_20_audio CcPackagingConfiguration#preset_speke_20_audio}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#preset_speke_20_audio CcPackagingConfiguration#preset_speke_20_audio}
     */
     readonly presetSpeke20Audio?: string;
     /**
     * A collection of video encryption presets.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#preset_speke_20_video CcPackagingConfiguration#preset_speke_20_video}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#preset_speke_20_video CcPackagingConfiguration#preset_speke_20_video}
     */
     readonly presetSpeke20Video?: string;
 }
@@ -2710,25 +2711,25 @@ export interface DashPackageEncryptionSpekeKeyProviderProperty {
     /**
     * The configuration to use for encrypting one or more content tracks separately for endpoints that use SPEKE 2.0.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#encryption_contract_configuration CcPackagingConfiguration#encryption_contract_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#encryption_contract_configuration CcPackagingConfiguration#encryption_contract_configuration}
     */
     readonly encryptionContractConfiguration?: DashPackageEncryptionSpekeKeyProviderEncryptionContractConfigurationProperty;
     /**
     * An Amazon Resource Name (ARN) of an IAM role that AWS Elemental MediaPackage will assume when accessing the key provider service.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#role_arn CcPackagingConfiguration#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#role_arn CcPackagingConfiguration#role_arn}
     */
     readonly roleArn?: string;
     /**
     * The system IDs to include in key requests.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#system_ids CcPackagingConfiguration#system_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#system_ids CcPackagingConfiguration#system_ids}
     */
     readonly systemIds?: string[];
     /**
     * The URL of the external key provider service.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#url CcPackagingConfiguration#url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#url CcPackagingConfiguration#url}
     */
     readonly url?: string;
 }
@@ -2860,7 +2861,7 @@ export interface DashEncryptionProperty {
     /**
     * A configuration for accessing an external Secure Packager and Encoder Key Exchange (SPEKE) service that will provide encryption keys.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#speke_key_provider CcPackagingConfiguration#speke_key_provider}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#speke_key_provider CcPackagingConfiguration#speke_key_provider}
     */
     readonly spekeKeyProvider?: DashPackageEncryptionSpekeKeyProviderProperty;
 }
@@ -2926,43 +2927,43 @@ export interface DashPackageProperty {
     /**
     * A list of DASH manifest configurations.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#dash_manifests CcPackagingConfiguration#dash_manifests}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#dash_manifests CcPackagingConfiguration#dash_manifests}
     */
     readonly dashManifests?: DashManifestProperty[] | cdktn.IResolvable;
     /**
     * A Dynamic Adaptive Streaming over HTTP (DASH) encryption configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#encryption CcPackagingConfiguration#encryption}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#encryption CcPackagingConfiguration#encryption}
     */
     readonly encryption?: DashEncryptionProperty;
     /**
     * When includeEncoderConfigurationInSegments is set to true, MediaPackage places your encoder's Sequence Parameter Set (SPS), Picture Parameter Set (PPS), and Video Parameter Set (VPS) metadata in every video segment instead of in the init fragment. This lets you use different SPS/PPS/VPS settings for your assets during content playback.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#include_encoder_configuration_in_segments CcPackagingConfiguration#include_encoder_configuration_in_segments}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#include_encoder_configuration_in_segments CcPackagingConfiguration#include_encoder_configuration_in_segments}
     */
     readonly includeEncoderConfigurationInSegments?: boolean | cdktn.IResolvable;
     /**
     * When enabled, an I-Frame only stream will be included in the output.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#include_iframe_only_stream CcPackagingConfiguration#include_iframe_only_stream}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#include_iframe_only_stream CcPackagingConfiguration#include_iframe_only_stream}
     */
     readonly includeIframeOnlyStream?: boolean | cdktn.IResolvable;
     /**
     * A list of triggers that controls when the outgoing Dynamic Adaptive Streaming over HTTP (DASH) Media Presentation Description (MPD) will be partitioned into multiple periods. If empty, the content will not be partitioned into more than one period. If the list contains "ADS", new periods will be created where the Asset contains SCTE-35 ad markers.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#period_triggers CcPackagingConfiguration#period_triggers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#period_triggers CcPackagingConfiguration#period_triggers}
     */
     readonly periodTriggers?: string[];
     /**
     * Duration (in seconds) of each fragment. Actual fragments will be rounded to the nearest multiple of the source fragment duration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#segment_duration_seconds CcPackagingConfiguration#segment_duration_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#segment_duration_seconds CcPackagingConfiguration#segment_duration_seconds}
     */
     readonly segmentDurationSeconds?: number;
     /**
     * Determines the type of SegmentTemplate included in the Media Presentation Description (MPD). When set to NUMBER_WITH_TIMELINE, a full timeline is presented in each SegmentTemplate, with $Number$ media URLs. When set to TIME_WITH_TIMELINE, a full timeline is presented in each SegmentTemplate, with $Time$ media URLs. When set to NUMBER_WITH_DURATION, only a duration is included in each SegmentTemplate, with $Number$ media URLs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#segment_template_format CcPackagingConfiguration#segment_template_format}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#segment_template_format CcPackagingConfiguration#segment_template_format}
     */
     readonly segmentTemplateFormat?: string;
 }
@@ -3160,13 +3161,13 @@ export interface HlsPackageEncryptionSpekeKeyProviderEncryptionContractConfigura
     /**
     * A collection of audio encryption presets.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#preset_speke_20_audio CcPackagingConfiguration#preset_speke_20_audio}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#preset_speke_20_audio CcPackagingConfiguration#preset_speke_20_audio}
     */
     readonly presetSpeke20Audio?: string;
     /**
     * A collection of video encryption presets.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#preset_speke_20_video CcPackagingConfiguration#preset_speke_20_video}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#preset_speke_20_video CcPackagingConfiguration#preset_speke_20_video}
     */
     readonly presetSpeke20Video?: string;
 }
@@ -3254,25 +3255,25 @@ export interface HlsPackageEncryptionSpekeKeyProviderProperty {
     /**
     * The configuration to use for encrypting one or more content tracks separately for endpoints that use SPEKE 2.0.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#encryption_contract_configuration CcPackagingConfiguration#encryption_contract_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#encryption_contract_configuration CcPackagingConfiguration#encryption_contract_configuration}
     */
     readonly encryptionContractConfiguration?: HlsPackageEncryptionSpekeKeyProviderEncryptionContractConfigurationProperty;
     /**
     * An Amazon Resource Name (ARN) of an IAM role that AWS Elemental MediaPackage will assume when accessing the key provider service.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#role_arn CcPackagingConfiguration#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#role_arn CcPackagingConfiguration#role_arn}
     */
     readonly roleArn?: string;
     /**
     * The system IDs to include in key requests.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#system_ids CcPackagingConfiguration#system_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#system_ids CcPackagingConfiguration#system_ids}
     */
     readonly systemIds?: string[];
     /**
     * The URL of the external key provider service.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#url CcPackagingConfiguration#url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#url CcPackagingConfiguration#url}
     */
     readonly url?: string;
 }
@@ -3404,19 +3405,19 @@ export interface HlsEncryptionProperty {
     /**
     * An HTTP Live Streaming (HLS) encryption configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#constant_initialization_vector CcPackagingConfiguration#constant_initialization_vector}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#constant_initialization_vector CcPackagingConfiguration#constant_initialization_vector}
     */
     readonly constantInitializationVector?: string;
     /**
     * The encryption method to use.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#encryption_method CcPackagingConfiguration#encryption_method}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#encryption_method CcPackagingConfiguration#encryption_method}
     */
     readonly encryptionMethod?: string;
     /**
     * A configuration for accessing an external Secure Packager and Encoder Key Exchange (SPEKE) service that will provide encryption keys.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#speke_key_provider CcPackagingConfiguration#speke_key_provider}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#speke_key_provider CcPackagingConfiguration#speke_key_provider}
     */
     readonly spekeKeyProvider?: HlsPackageEncryptionSpekeKeyProviderProperty;
 }
@@ -3526,19 +3527,19 @@ export interface HlsPackageHlsManifestsStreamSelectionProperty {
     /**
     * The maximum video bitrate (bps) to include in output.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#max_video_bits_per_second CcPackagingConfiguration#max_video_bits_per_second}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#max_video_bits_per_second CcPackagingConfiguration#max_video_bits_per_second}
     */
     readonly maxVideoBitsPerSecond?: number;
     /**
     * The minimum video bitrate (bps) to include in output.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#min_video_bits_per_second CcPackagingConfiguration#min_video_bits_per_second}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#min_video_bits_per_second CcPackagingConfiguration#min_video_bits_per_second}
     */
     readonly minVideoBitsPerSecond?: number;
     /**
     * A directive that determines the order of streams in the output.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#stream_order CcPackagingConfiguration#stream_order}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#stream_order CcPackagingConfiguration#stream_order}
     */
     readonly streamOrder?: string;
 }
@@ -3648,37 +3649,37 @@ export interface HlsManifestsProperty {
     /**
     * This setting controls how ad markers are included in the packaged OriginEndpoint. "NONE" will omit all SCTE-35 ad markers from the output. "PASSTHROUGH" causes the manifest to contain a copy of the SCTE-35 ad markers (comments) taken directly from the input HTTP Live Streaming (HLS) manifest. "SCTE35_ENHANCED" generates ad markers and blackout tags based on SCTE-35 messages in the input source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#ad_markers CcPackagingConfiguration#ad_markers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#ad_markers CcPackagingConfiguration#ad_markers}
     */
     readonly adMarkers?: string;
     /**
     * When enabled, an I-Frame only stream will be included in the output.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#include_iframe_only_stream CcPackagingConfiguration#include_iframe_only_stream}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#include_iframe_only_stream CcPackagingConfiguration#include_iframe_only_stream}
     */
     readonly includeIframeOnlyStream?: boolean | cdktn.IResolvable;
     /**
     * An optional string to include in the name of the manifest.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#manifest_name CcPackagingConfiguration#manifest_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#manifest_name CcPackagingConfiguration#manifest_name}
     */
     readonly manifestName?: string;
     /**
     * The interval (in seconds) between each EXT-X-PROGRAM-DATE-TIME tag inserted into manifests. Additionally, when an interval is specified ID3Timed Metadata messages will be generated every 5 seconds using the ingest time of the content. If the interval is not specified, or set to 0, then no EXT-X-PROGRAM-DATE-TIME tags will be inserted into manifests and no ID3Timed Metadata messages will be generated. Note that irrespective of this parameter, if any ID3 Timed Metadata is found in HTTP Live Streaming (HLS) input, it will be passed through to HLS output.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#program_date_time_interval_seconds CcPackagingConfiguration#program_date_time_interval_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#program_date_time_interval_seconds CcPackagingConfiguration#program_date_time_interval_seconds}
     */
     readonly programDateTimeIntervalSeconds?: number;
     /**
     * When enabled, the EXT-X-KEY tag will be repeated in output manifests.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#repeat_ext_x_key CcPackagingConfiguration#repeat_ext_x_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#repeat_ext_x_key CcPackagingConfiguration#repeat_ext_x_key}
     */
     readonly repeatExtXKey?: boolean | cdktn.IResolvable;
     /**
     * A StreamSelection configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#stream_selection CcPackagingConfiguration#stream_selection}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#stream_selection CcPackagingConfiguration#stream_selection}
     */
     readonly streamSelection?: HlsPackageHlsManifestsStreamSelectionProperty;
 }
@@ -3876,31 +3877,31 @@ export interface HlsPackageProperty {
     /**
     * An HTTP Live Streaming (HLS) encryption configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#encryption CcPackagingConfiguration#encryption}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#encryption CcPackagingConfiguration#encryption}
     */
     readonly encryption?: HlsEncryptionProperty;
     /**
     * A list of HLS manifest configurations.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#hls_manifests CcPackagingConfiguration#hls_manifests}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#hls_manifests CcPackagingConfiguration#hls_manifests}
     */
     readonly hlsManifests?: HlsManifestsProperty[] | cdktn.IResolvable;
     /**
     * When enabled, MediaPackage passes through digital video broadcasting (DVB) subtitles into the output.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#include_dvb_subtitles CcPackagingConfiguration#include_dvb_subtitles}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#include_dvb_subtitles CcPackagingConfiguration#include_dvb_subtitles}
     */
     readonly includeDvbSubtitles?: boolean | cdktn.IResolvable;
     /**
     * Duration (in seconds) of each fragment. Actual fragments will be rounded to the nearest multiple of the source fragment duration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#segment_duration_seconds CcPackagingConfiguration#segment_duration_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#segment_duration_seconds CcPackagingConfiguration#segment_duration_seconds}
     */
     readonly segmentDurationSeconds?: number;
     /**
     * When enabled, audio streams will be placed in rendition groups in the output.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#use_audio_rendition_group CcPackagingConfiguration#use_audio_rendition_group}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#use_audio_rendition_group CcPackagingConfiguration#use_audio_rendition_group}
     */
     readonly useAudioRenditionGroup?: boolean | cdktn.IResolvable;
 }
@@ -4054,13 +4055,13 @@ export interface MssPackageEncryptionSpekeKeyProviderEncryptionContractConfigura
     /**
     * A collection of audio encryption presets.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#preset_speke_20_audio CcPackagingConfiguration#preset_speke_20_audio}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#preset_speke_20_audio CcPackagingConfiguration#preset_speke_20_audio}
     */
     readonly presetSpeke20Audio?: string;
     /**
     * A collection of video encryption presets.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#preset_speke_20_video CcPackagingConfiguration#preset_speke_20_video}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#preset_speke_20_video CcPackagingConfiguration#preset_speke_20_video}
     */
     readonly presetSpeke20Video?: string;
 }
@@ -4148,25 +4149,25 @@ export interface MssPackageEncryptionSpekeKeyProviderProperty {
     /**
     * The configuration to use for encrypting one or more content tracks separately for endpoints that use SPEKE 2.0.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#encryption_contract_configuration CcPackagingConfiguration#encryption_contract_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#encryption_contract_configuration CcPackagingConfiguration#encryption_contract_configuration}
     */
     readonly encryptionContractConfiguration?: MssPackageEncryptionSpekeKeyProviderEncryptionContractConfigurationProperty;
     /**
     * An Amazon Resource Name (ARN) of an IAM role that AWS Elemental MediaPackage will assume when accessing the key provider service.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#role_arn CcPackagingConfiguration#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#role_arn CcPackagingConfiguration#role_arn}
     */
     readonly roleArn?: string;
     /**
     * The system IDs to include in key requests.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#system_ids CcPackagingConfiguration#system_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#system_ids CcPackagingConfiguration#system_ids}
     */
     readonly systemIds?: string[];
     /**
     * The URL of the external key provider service.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#url CcPackagingConfiguration#url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#url CcPackagingConfiguration#url}
     */
     readonly url?: string;
 }
@@ -4298,7 +4299,7 @@ export interface MssEncryptionProperty {
     /**
     * A configuration for accessing an external Secure Packager and Encoder Key Exchange (SPEKE) service that will provide encryption keys.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#speke_key_provider CcPackagingConfiguration#speke_key_provider}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#speke_key_provider CcPackagingConfiguration#speke_key_provider}
     */
     readonly spekeKeyProvider?: MssPackageEncryptionSpekeKeyProviderProperty;
 }
@@ -4364,19 +4365,19 @@ export interface MssPackageMssManifestsStreamSelectionProperty {
     /**
     * The maximum video bitrate (bps) to include in output.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#max_video_bits_per_second CcPackagingConfiguration#max_video_bits_per_second}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#max_video_bits_per_second CcPackagingConfiguration#max_video_bits_per_second}
     */
     readonly maxVideoBitsPerSecond?: number;
     /**
     * The minimum video bitrate (bps) to include in output.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#min_video_bits_per_second CcPackagingConfiguration#min_video_bits_per_second}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#min_video_bits_per_second CcPackagingConfiguration#min_video_bits_per_second}
     */
     readonly minVideoBitsPerSecond?: number;
     /**
     * A directive that determines the order of streams in the output.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#stream_order CcPackagingConfiguration#stream_order}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#stream_order CcPackagingConfiguration#stream_order}
     */
     readonly streamOrder?: string;
 }
@@ -4486,13 +4487,13 @@ export interface MssManifestProperty {
     /**
     * An optional string to include in the name of the manifest.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#manifest_name CcPackagingConfiguration#manifest_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#manifest_name CcPackagingConfiguration#manifest_name}
     */
     readonly manifestName?: string;
     /**
     * A StreamSelection configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#stream_selection CcPackagingConfiguration#stream_selection}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#stream_selection CcPackagingConfiguration#stream_selection}
     */
     readonly streamSelection?: MssPackageMssManifestsStreamSelectionProperty;
 }
@@ -4602,19 +4603,19 @@ export interface MssPackageProperty {
     /**
     * A CMAF encryption configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#encryption CcPackagingConfiguration#encryption}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#encryption CcPackagingConfiguration#encryption}
     */
     readonly encryption?: MssEncryptionProperty;
     /**
     * A list of MSS manifest configurations.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#mss_manifests CcPackagingConfiguration#mss_manifests}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#mss_manifests CcPackagingConfiguration#mss_manifests}
     */
     readonly mssManifests?: MssManifestProperty[] | cdktn.IResolvable;
     /**
     * Duration (in seconds) of each fragment. Actual fragments will be rounded to the nearest multiple of the source fragment duration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#segment_duration_seconds CcPackagingConfiguration#segment_duration_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#segment_duration_seconds CcPackagingConfiguration#segment_duration_seconds}
     */
     readonly segmentDurationSeconds?: number;
 }
@@ -4722,11 +4723,11 @@ export class MssPackagePropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#key CcPackagingConfiguration#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#key CcPackagingConfiguration#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_packaging_configuration#value CcPackagingConfiguration#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_configuration#value CcPackagingConfiguration#value}
     */
     readonly value?: string;
 }

@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_artifact
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_artifact
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,43 +9,43 @@ export interface CcArtifactProps extends cdktn.TerraformMetaArguments {
     /**
     * The name of the artifact. Must be unique to your account in an AWS Region.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_artifact#artifact_name CcArtifact#artifact_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_artifact#artifact_name CcArtifact#artifact_name}
     */
     readonly artifactName?: string;
     /**
     * The artifact type.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_artifact#artifact_type CcArtifact#artifact_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_artifact#artifact_type CcArtifact#artifact_type}
     */
     readonly artifactType: string;
     /**
     * Metadata properties of the tracking entity, trial, or trial component.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_artifact#metadata_properties CcArtifact#metadata_properties}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_artifact#metadata_properties CcArtifact#metadata_properties}
     */
     readonly metadataProperties?: CcArtifact.MetadataPropertiesProperty;
     /**
     * A list of properties to add to the artifact.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_artifact#properties CcArtifact#properties}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_artifact#properties CcArtifact#properties}
     */
     readonly properties?: { [key: string]: string };
     /**
     * The source of the artifact.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_artifact#source CcArtifact#source}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_artifact#source CcArtifact#source}
     */
     readonly source: CcArtifact.ArtifactSourceProperty;
     /**
     * A list of tags to apply to the artifact.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_artifact#tags CcArtifact#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_artifact#tags CcArtifact#tags}
     */
     readonly tags?: CcArtifact.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_artifact awscc_sagemaker_artifact}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_artifact awscc_sagemaker_artifact}
 */
 export class CcArtifact extends cdktn.TerraformResource {
 
@@ -61,7 +61,7 @@ export class CcArtifact extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcArtifact resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcArtifact to import
-    * @param importFromId The id of the existing CcArtifact that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_artifact#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcArtifact that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_artifact#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcArtifact to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -73,7 +73,7 @@ export class CcArtifact extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_artifact awscc_sagemaker_artifact} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_artifact awscc_sagemaker_artifact} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -83,7 +83,8 @@ export class CcArtifact extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_sagemaker_artifact',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -442,25 +443,25 @@ export interface MetadataPropertiesProperty {
     /**
     * The commit ID.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_artifact#commit_id CcArtifact#commit_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_artifact#commit_id CcArtifact#commit_id}
     */
     readonly commitId?: string;
     /**
     * The entity this entity was generated by.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_artifact#generated_by CcArtifact#generated_by}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_artifact#generated_by CcArtifact#generated_by}
     */
     readonly generatedBy?: string;
     /**
     * The project ID.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_artifact#project_id CcArtifact#project_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_artifact#project_id CcArtifact#project_id}
     */
     readonly projectId?: string;
     /**
     * The repository.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_artifact#repository CcArtifact#repository}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_artifact#repository CcArtifact#repository}
     */
     readonly repository?: string;
 }
@@ -592,13 +593,13 @@ export interface ArtifactSourceTypeProperty {
     /**
     * The type of ID.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_artifact#source_id_type CcArtifact#source_id_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_artifact#source_id_type CcArtifact#source_id_type}
     */
     readonly sourceIdType?: string;
     /**
     * The ID.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_artifact#value CcArtifact#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_artifact#value CcArtifact#value}
     */
     readonly value?: string;
 }
@@ -708,13 +709,13 @@ export interface ArtifactSourceProperty {
     /**
     * A list of source types.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_artifact#source_types CcArtifact#source_types}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_artifact#source_types CcArtifact#source_types}
     */
     readonly sourceTypes?: ArtifactSourceTypeProperty[] | cdktn.IResolvable;
     /**
     * The URI of the source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_artifact#source_uri CcArtifact#source_uri}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_artifact#source_uri CcArtifact#source_uri}
     */
     readonly sourceUri: string;
 }
@@ -799,13 +800,13 @@ export interface TagProperty {
     /**
     * The tag key.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_artifact#key CcArtifact#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_artifact#key CcArtifact#key}
     */
     readonly key?: string;
     /**
     * The tag value.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_artifact#value CcArtifact#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_artifact#value CcArtifact#value}
     */
     readonly value?: string;
 }

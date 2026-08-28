@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_vpc_cidr_block
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc_cidr_block
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,67 +9,67 @@ export interface CcVPCCidrBlockProps extends cdktn.TerraformMetaArguments {
     /**
     * Requests an Amazon-provided IPv6 CIDR block with a /56 prefix length for the VPC. You cannot specify the range of IPv6 addresses, or the size of the CIDR block.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_vpc_cidr_block#amazon_provided_ipv_6_cidr_block CcVPCCidrBlock#amazon_provided_ipv_6_cidr_block}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc_cidr_block#amazon_provided_ipv_6_cidr_block CcVPCCidrBlock#amazon_provided_ipv_6_cidr_block}
     */
     readonly amazonProvidedIpv6CidrBlock?: boolean | cdktn.IResolvable;
     /**
     * An IPv4 CIDR block to associate with the VPC.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_vpc_cidr_block#cidr_block CcVPCCidrBlock#cidr_block}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc_cidr_block#cidr_block CcVPCCidrBlock#cidr_block}
     */
     readonly cidrBlock?: string;
     /**
     * The ID of the IPv4 IPAM pool to Associate a CIDR from to a VPC.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_vpc_cidr_block#ipv_4_ipam_pool_id CcVPCCidrBlock#ipv_4_ipam_pool_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc_cidr_block#ipv_4_ipam_pool_id CcVPCCidrBlock#ipv_4_ipam_pool_id}
     */
     readonly ipv4IpamPoolId?: string;
     /**
     * The netmask length of the IPv4 CIDR you would like to associate from an Amazon VPC IP Address Manager (IPAM) pool.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_vpc_cidr_block#ipv_4_netmask_length CcVPCCidrBlock#ipv_4_netmask_length}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc_cidr_block#ipv_4_netmask_length CcVPCCidrBlock#ipv_4_netmask_length}
     */
     readonly ipv4NetmaskLength?: number;
     /**
     * An IPv6 CIDR block from the IPv6 address pool.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_vpc_cidr_block#ipv_6_cidr_block CcVPCCidrBlock#ipv_6_cidr_block}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc_cidr_block#ipv_6_cidr_block CcVPCCidrBlock#ipv_6_cidr_block}
     */
     readonly ipv6CidrBlock?: string;
     /**
     * The name of the location from which we advertise the IPV6 CIDR block.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_vpc_cidr_block#ipv_6_cidr_block_network_border_group CcVPCCidrBlock#ipv_6_cidr_block_network_border_group}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc_cidr_block#ipv_6_cidr_block_network_border_group CcVPCCidrBlock#ipv_6_cidr_block_network_border_group}
     */
     readonly ipv6CidrBlockNetworkBorderGroup?: string;
     /**
     * The ID of the IPv6 IPAM pool to Associate a CIDR from to a VPC.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_vpc_cidr_block#ipv_6_ipam_pool_id CcVPCCidrBlock#ipv_6_ipam_pool_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc_cidr_block#ipv_6_ipam_pool_id CcVPCCidrBlock#ipv_6_ipam_pool_id}
     */
     readonly ipv6IpamPoolId?: string;
     /**
     * The netmask length of the IPv6 CIDR you would like to associate from an Amazon VPC IP Address Manager (IPAM) pool.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_vpc_cidr_block#ipv_6_netmask_length CcVPCCidrBlock#ipv_6_netmask_length}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc_cidr_block#ipv_6_netmask_length CcVPCCidrBlock#ipv_6_netmask_length}
     */
     readonly ipv6NetmaskLength?: number;
     /**
     * The ID of an IPv6 address pool from which to allocate the IPv6 CIDR block.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_vpc_cidr_block#ipv_6_pool CcVPCCidrBlock#ipv_6_pool}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc_cidr_block#ipv_6_pool CcVPCCidrBlock#ipv_6_pool}
     */
     readonly ipv6Pool?: string;
     /**
     * The ID of the VPC.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_vpc_cidr_block#vpc_id CcVPCCidrBlock#vpc_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc_cidr_block#vpc_id CcVPCCidrBlock#vpc_id}
     */
     readonly vpcId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_vpc_cidr_block awscc_ec2_vpc_cidr_block}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc_cidr_block awscc_ec2_vpc_cidr_block}
 */
 export class CcVPCCidrBlock extends cdktn.TerraformResource {
 
@@ -85,7 +85,7 @@ export class CcVPCCidrBlock extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcVPCCidrBlock resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcVPCCidrBlock to import
-    * @param importFromId The id of the existing CcVPCCidrBlock that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_vpc_cidr_block#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcVPCCidrBlock that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc_cidr_block#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcVPCCidrBlock to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -97,7 +97,7 @@ export class CcVPCCidrBlock extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_vpc_cidr_block awscc_ec2_vpc_cidr_block} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc_cidr_block awscc_ec2_vpc_cidr_block} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -107,7 +107,8 @@ export class CcVPCCidrBlock extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_ec2_vpc_cidr_block',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,

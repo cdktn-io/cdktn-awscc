@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediatailor_channel
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediatailor_channel
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,55 +9,55 @@ export interface CcChannelProps extends cdktn.TerraformMetaArguments {
     /**
     * <p>The list of audiences defined in channel.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediatailor_channel#audiences CcChannel#audiences}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediatailor_channel#audiences CcChannel#audiences}
     */
     readonly audiences?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediatailor_channel#channel_name CcChannel#channel_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediatailor_channel#channel_name CcChannel#channel_name}
     */
     readonly channelName: string;
     /**
     * <p>Slate VOD source configuration.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediatailor_channel#filler_slate CcChannel#filler_slate}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediatailor_channel#filler_slate CcChannel#filler_slate}
     */
     readonly fillerSlate?: CcChannel.SlateSourceProperty;
     /**
     * <p>The log configuration for the channel.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediatailor_channel#log_configuration CcChannel#log_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediatailor_channel#log_configuration CcChannel#log_configuration}
     */
     readonly logConfiguration?: CcChannel.LogConfigurationForChannelProperty;
     /**
     * <p>The channel's output properties.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediatailor_channel#outputs CcChannel#outputs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediatailor_channel#outputs CcChannel#outputs}
     */
     readonly outputs: CcChannel.RequestOutputItemProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediatailor_channel#playback_mode CcChannel#playback_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediatailor_channel#playback_mode CcChannel#playback_mode}
     */
     readonly playbackMode: string;
     /**
     * The tags to assign to the channel.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediatailor_channel#tags CcChannel#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediatailor_channel#tags CcChannel#tags}
     */
     readonly tags?: CcChannel.TagProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediatailor_channel#tier CcChannel#tier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediatailor_channel#tier CcChannel#tier}
     */
     readonly tier?: string;
     /**
     * <p>The configuration for time-shifted viewing.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediatailor_channel#time_shift_configuration CcChannel#time_shift_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediatailor_channel#time_shift_configuration CcChannel#time_shift_configuration}
     */
     readonly timeShiftConfiguration?: CcChannel.TimeShiftConfigurationProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediatailor_channel awscc_mediatailor_channel}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediatailor_channel awscc_mediatailor_channel}
 */
 export class CcChannel extends cdktn.TerraformResource {
 
@@ -73,7 +73,7 @@ export class CcChannel extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcChannel resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcChannel to import
-    * @param importFromId The id of the existing CcChannel that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediatailor_channel#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcChannel that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediatailor_channel#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcChannel to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -85,7 +85,7 @@ export class CcChannel extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediatailor_channel awscc_mediatailor_channel} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediatailor_channel awscc_mediatailor_channel} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -95,7 +95,8 @@ export class CcChannel extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_mediatailor_channel',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -624,13 +625,13 @@ export interface SlateSourceProperty {
     /**
     * <p>The name of the source location where the slate VOD source is stored.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediatailor_channel#source_location_name CcChannel#source_location_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediatailor_channel#source_location_name CcChannel#source_location_name}
     */
     readonly sourceLocationName?: string;
     /**
     * <p>The slate VOD source name. The VOD source must already exist in a source location before it can be used for slate.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediatailor_channel#vod_source_name CcChannel#vod_source_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediatailor_channel#vod_source_name CcChannel#vod_source_name}
     */
     readonly vodSourceName?: string;
 }
@@ -718,7 +719,7 @@ export interface LogConfigurationForChannelProperty {
     /**
     * <p>The log types.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediatailor_channel#log_types CcChannel#log_types}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediatailor_channel#log_types CcChannel#log_types}
     */
     readonly logTypes?: string[];
 }
@@ -784,25 +785,25 @@ export interface DashPlaylistSettingsProperty {
     /**
     * <p>The total duration (in seconds) of each manifest. Minimum value: <code>30</code> seconds. Maximum value: <code>3600</code> seconds.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediatailor_channel#manifest_window_seconds CcChannel#manifest_window_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediatailor_channel#manifest_window_seconds CcChannel#manifest_window_seconds}
     */
     readonly manifestWindowSeconds?: number;
     /**
     * <p>Minimum amount of content (measured in seconds) that a player must keep available in the buffer. Minimum value: <code>2</code> seconds. Maximum value: <code>60</code> seconds.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediatailor_channel#min_buffer_time_seconds CcChannel#min_buffer_time_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediatailor_channel#min_buffer_time_seconds CcChannel#min_buffer_time_seconds}
     */
     readonly minBufferTimeSeconds?: number;
     /**
     * <p>Minimum amount of time (in seconds) that the player should wait before requesting updates to the manifest. Minimum value: <code>2</code> seconds. Maximum value: <code>60</code> seconds.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediatailor_channel#min_update_period_seconds CcChannel#min_update_period_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediatailor_channel#min_update_period_seconds CcChannel#min_update_period_seconds}
     */
     readonly minUpdatePeriodSeconds?: number;
     /**
     * <p>Amount of time (in seconds) that the player should be from the live point at the end of the manifest. Minimum value: <code>2</code> seconds. Maximum value: <code>60</code> seconds.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediatailor_channel#suggested_presentation_delay_seconds CcChannel#suggested_presentation_delay_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediatailor_channel#suggested_presentation_delay_seconds CcChannel#suggested_presentation_delay_seconds}
     */
     readonly suggestedPresentationDelaySeconds?: number;
 }
@@ -934,13 +935,13 @@ export interface HlsPlaylistSettingsProperty {
     /**
     * <p>Determines the type of SCTE 35 tags to use in ad markup. Specify <code>DATERANGE</code> to use <code>DATERANGE</code> tags (for live or VOD content). Specify <code>SCTE35_ENHANCED</code> to use <code>EXT-X-CUE-OUT</code> and <code>EXT-X-CUE-IN</code> tags (for VOD content only).</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediatailor_channel#ad_markup_type CcChannel#ad_markup_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediatailor_channel#ad_markup_type CcChannel#ad_markup_type}
     */
     readonly adMarkupType?: string[];
     /**
     * <p>The total duration (in seconds) of each manifest. Minimum value: <code>30</code> seconds. Maximum value: <code>3600</code> seconds.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediatailor_channel#manifest_window_seconds CcChannel#manifest_window_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediatailor_channel#manifest_window_seconds CcChannel#manifest_window_seconds}
     */
     readonly manifestWindowSeconds?: number;
 }
@@ -1028,25 +1029,25 @@ export interface RequestOutputItemProperty {
     /**
     * <p>Dash manifest configuration parameters.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediatailor_channel#dash_playlist_settings CcChannel#dash_playlist_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediatailor_channel#dash_playlist_settings CcChannel#dash_playlist_settings}
     */
     readonly dashPlaylistSettings?: DashPlaylistSettingsProperty;
     /**
     * <p>HLS playlist configuration parameters.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediatailor_channel#hls_playlist_settings CcChannel#hls_playlist_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediatailor_channel#hls_playlist_settings CcChannel#hls_playlist_settings}
     */
     readonly hlsPlaylistSettings?: HlsPlaylistSettingsProperty;
     /**
     * <p>The name of the manifest for the channel. The name appears in the <code>PlaybackUrl</code>.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediatailor_channel#manifest_name CcChannel#manifest_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediatailor_channel#manifest_name CcChannel#manifest_name}
     */
     readonly manifestName: string;
     /**
     * <p>A string used to match which <code>HttpPackageConfiguration</code> is used for each <code>VodSource</code>.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediatailor_channel#source_group CcChannel#source_group}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediatailor_channel#source_group CcChannel#source_group}
     */
     readonly sourceGroup: string;
 }
@@ -1192,11 +1193,11 @@ export class RequestOutputItemPropertyList extends cdktn.ComplexList {
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediatailor_channel#key CcChannel#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediatailor_channel#key CcChannel#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediatailor_channel#value CcChannel#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediatailor_channel#value CcChannel#value}
     */
     readonly value?: string;
 }
@@ -1306,7 +1307,7 @@ export interface TimeShiftConfigurationProperty {
     /**
     * <p>The maximum time delay for time-shifted viewing. The minimum allowed maximum time delay is 0 seconds, and the maximum allowed maximum time delay is 21600 seconds (6 hours).</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediatailor_channel#max_time_delay_seconds CcChannel#max_time_delay_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediatailor_channel#max_time_delay_seconds CcChannel#max_time_delay_seconds}
     */
     readonly maxTimeDelaySeconds?: number;
 }

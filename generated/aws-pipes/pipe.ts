@@ -1,67 +1,67 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcPipeProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#description CcPipe#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#description CcPipe#description}
     */
     readonly description?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#desired_state CcPipe#desired_state}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#desired_state CcPipe#desired_state}
     */
     readonly desiredState?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#enrichment CcPipe#enrichment}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#enrichment CcPipe#enrichment}
     */
     readonly enrichment?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#enrichment_parameters CcPipe#enrichment_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#enrichment_parameters CcPipe#enrichment_parameters}
     */
     readonly enrichmentParameters?: CcPipe.PipeEnrichmentParametersProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#kms_key_identifier CcPipe#kms_key_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#kms_key_identifier CcPipe#kms_key_identifier}
     */
     readonly kmsKeyIdentifier?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#log_configuration CcPipe#log_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#log_configuration CcPipe#log_configuration}
     */
     readonly logConfiguration?: CcPipe.PipeLogConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#name CcPipe#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#name CcPipe#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#role_arn CcPipe#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#role_arn CcPipe#role_arn}
     */
     readonly roleArn: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#source CcPipe#source}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#source CcPipe#source}
     */
     readonly source: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#source_parameters CcPipe#source_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#source_parameters CcPipe#source_parameters}
     */
     readonly sourceParameters?: CcPipe.PipeSourceParametersProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#tags CcPipe#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#tags CcPipe#tags}
     */
     readonly tags?: { [key: string]: string };
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#target CcPipe#target}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#target CcPipe#target}
     */
     readonly target: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#target_parameters CcPipe#target_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#target_parameters CcPipe#target_parameters}
     */
     readonly targetParameters?: CcPipe.PipeTargetParametersProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe awscc_pipes_pipe}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe awscc_pipes_pipe}
 */
 export class CcPipe extends cdktn.TerraformResource {
 
@@ -77,7 +77,7 @@ export class CcPipe extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcPipe resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcPipe to import
-    * @param importFromId The id of the existing CcPipe that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcPipe that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcPipe to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -89,7 +89,7 @@ export class CcPipe extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe awscc_pipes_pipe} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe awscc_pipes_pipe} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -99,7 +99,8 @@ export class CcPipe extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_pipes_pipe',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -3305,15 +3306,15 @@ export function ccPipePipeTargetParametersPropertyToHclTerraform(struct?: CcPipe
 export namespace CcPipe {
 export interface PipeEnrichmentHttpParametersProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#header_parameters CcPipe#header_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#header_parameters CcPipe#header_parameters}
     */
     readonly headerParameters?: { [key: string]: string };
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#path_parameter_values CcPipe#path_parameter_values}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#path_parameter_values CcPipe#path_parameter_values}
     */
     readonly pathParameterValues?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#query_string_parameters CcPipe#query_string_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#query_string_parameters CcPipe#query_string_parameters}
     */
     readonly queryStringParameters?: { [key: string]: string };
 }
@@ -3421,11 +3422,11 @@ export class PipeEnrichmentHttpParametersPropertyOutputReference extends cdktn.C
 }
 export interface PipeEnrichmentParametersProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#http_parameters CcPipe#http_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#http_parameters CcPipe#http_parameters}
     */
     readonly httpParameters?: PipeEnrichmentHttpParametersProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#input_template CcPipe#input_template}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#input_template CcPipe#input_template}
     */
     readonly inputTemplate?: string;
 }
@@ -3511,7 +3512,7 @@ export class PipeEnrichmentParametersPropertyOutputReference extends cdktn.Compl
 }
 export interface CloudwatchLogsLogDestinationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#log_group_arn CcPipe#log_group_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#log_group_arn CcPipe#log_group_arn}
     */
     readonly logGroupArn?: string;
 }
@@ -3575,7 +3576,7 @@ export class CloudwatchLogsLogDestinationPropertyOutputReference extends cdktn.C
 }
 export interface FirehoseLogDestinationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#delivery_stream_arn CcPipe#delivery_stream_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#delivery_stream_arn CcPipe#delivery_stream_arn}
     */
     readonly deliveryStreamArn?: string;
 }
@@ -3639,19 +3640,19 @@ export class FirehoseLogDestinationPropertyOutputReference extends cdktn.Complex
 }
 export interface S3LogDestinationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#bucket_name CcPipe#bucket_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#bucket_name CcPipe#bucket_name}
     */
     readonly bucketName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#bucket_owner CcPipe#bucket_owner}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#bucket_owner CcPipe#bucket_owner}
     */
     readonly bucketOwner?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#output_format CcPipe#output_format}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#output_format CcPipe#output_format}
     */
     readonly outputFormat?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#prefix CcPipe#prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#prefix CcPipe#prefix}
     */
     readonly prefix?: string;
 }
@@ -3781,23 +3782,23 @@ export class S3LogDestinationPropertyOutputReference extends cdktn.ComplexObject
 }
 export interface PipeLogConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#cloudwatch_logs_log_destination CcPipe#cloudwatch_logs_log_destination}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#cloudwatch_logs_log_destination CcPipe#cloudwatch_logs_log_destination}
     */
     readonly cloudwatchLogsLogDestination?: CloudwatchLogsLogDestinationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#firehose_log_destination CcPipe#firehose_log_destination}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#firehose_log_destination CcPipe#firehose_log_destination}
     */
     readonly firehoseLogDestination?: FirehoseLogDestinationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#include_execution_data CcPipe#include_execution_data}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#include_execution_data CcPipe#include_execution_data}
     */
     readonly includeExecutionData?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#level CcPipe#level}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#level CcPipe#level}
     */
     readonly level?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#s3_log_destination CcPipe#s3_log_destination}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#s3_log_destination CcPipe#s3_log_destination}
     */
     readonly s3LogDestination?: S3LogDestinationProperty;
 }
@@ -3951,7 +3952,7 @@ export interface MQBrokerAccessCredentialsProperty {
     /**
     * Optional SecretManager ARN which stores the database credentials
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#basic_auth CcPipe#basic_auth}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#basic_auth CcPipe#basic_auth}
     */
     readonly basicAuth?: string;
 }
@@ -4015,19 +4016,19 @@ export class MQBrokerAccessCredentialsPropertyOutputReference extends cdktn.Comp
 }
 export interface PipeSourceActiveMQBrokerParametersProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#batch_size CcPipe#batch_size}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#batch_size CcPipe#batch_size}
     */
     readonly batchSize?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#credentials CcPipe#credentials}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#credentials CcPipe#credentials}
     */
     readonly credentials?: MQBrokerAccessCredentialsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#maximum_batching_window_in_seconds CcPipe#maximum_batching_window_in_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#maximum_batching_window_in_seconds CcPipe#maximum_batching_window_in_seconds}
     */
     readonly maximumBatchingWindowInSeconds?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#queue_name CcPipe#queue_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#queue_name CcPipe#queue_name}
     */
     readonly queueName?: string;
 }
@@ -4157,7 +4158,7 @@ export class PipeSourceActiveMQBrokerParametersPropertyOutputReference extends c
 }
 export interface DeadLetterConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#arn CcPipe#arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#arn CcPipe#arn}
     */
     readonly arn?: string;
 }
@@ -4221,35 +4222,35 @@ export class DeadLetterConfigPropertyOutputReference extends cdktn.ComplexObject
 }
 export interface PipeSourceDynamoDBStreamParametersProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#batch_size CcPipe#batch_size}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#batch_size CcPipe#batch_size}
     */
     readonly batchSize?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#dead_letter_config CcPipe#dead_letter_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#dead_letter_config CcPipe#dead_letter_config}
     */
     readonly deadLetterConfig?: DeadLetterConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#maximum_batching_window_in_seconds CcPipe#maximum_batching_window_in_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#maximum_batching_window_in_seconds CcPipe#maximum_batching_window_in_seconds}
     */
     readonly maximumBatchingWindowInSeconds?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#maximum_record_age_in_seconds CcPipe#maximum_record_age_in_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#maximum_record_age_in_seconds CcPipe#maximum_record_age_in_seconds}
     */
     readonly maximumRecordAgeInSeconds?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#maximum_retry_attempts CcPipe#maximum_retry_attempts}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#maximum_retry_attempts CcPipe#maximum_retry_attempts}
     */
     readonly maximumRetryAttempts?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#on_partial_batch_item_failure CcPipe#on_partial_batch_item_failure}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#on_partial_batch_item_failure CcPipe#on_partial_batch_item_failure}
     */
     readonly onPartialBatchItemFailure?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#parallelization_factor CcPipe#parallelization_factor}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#parallelization_factor CcPipe#parallelization_factor}
     */
     readonly parallelizationFactor?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#starting_position CcPipe#starting_position}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#starting_position CcPipe#starting_position}
     */
     readonly startingPosition?: string;
 }
@@ -4467,7 +4468,7 @@ export class PipeSourceDynamoDBStreamParametersPropertyOutputReference extends c
 }
 export interface FilterProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#pattern CcPipe#pattern}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#pattern CcPipe#pattern}
     */
     readonly pattern?: string;
 }
@@ -4553,7 +4554,7 @@ export class FilterPropertyList extends cdktn.ComplexList {
 }
 export interface FilterCriteriaProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#filters CcPipe#filters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#filters CcPipe#filters}
     */
     readonly filters?: FilterProperty[] | cdktn.IResolvable;
 }
@@ -4617,7 +4618,7 @@ export class FilterCriteriaPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface SourceParametersKinesisStreamParametersDeadLetterConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#arn CcPipe#arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#arn CcPipe#arn}
     */
     readonly arn?: string;
 }
@@ -4681,39 +4682,39 @@ export class SourceParametersKinesisStreamParametersDeadLetterConfigPropertyOutp
 }
 export interface PipeSourceKinesisStreamParametersProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#batch_size CcPipe#batch_size}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#batch_size CcPipe#batch_size}
     */
     readonly batchSize?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#dead_letter_config CcPipe#dead_letter_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#dead_letter_config CcPipe#dead_letter_config}
     */
     readonly deadLetterConfig?: SourceParametersKinesisStreamParametersDeadLetterConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#maximum_batching_window_in_seconds CcPipe#maximum_batching_window_in_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#maximum_batching_window_in_seconds CcPipe#maximum_batching_window_in_seconds}
     */
     readonly maximumBatchingWindowInSeconds?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#maximum_record_age_in_seconds CcPipe#maximum_record_age_in_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#maximum_record_age_in_seconds CcPipe#maximum_record_age_in_seconds}
     */
     readonly maximumRecordAgeInSeconds?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#maximum_retry_attempts CcPipe#maximum_retry_attempts}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#maximum_retry_attempts CcPipe#maximum_retry_attempts}
     */
     readonly maximumRetryAttempts?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#on_partial_batch_item_failure CcPipe#on_partial_batch_item_failure}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#on_partial_batch_item_failure CcPipe#on_partial_batch_item_failure}
     */
     readonly onPartialBatchItemFailure?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#parallelization_factor CcPipe#parallelization_factor}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#parallelization_factor CcPipe#parallelization_factor}
     */
     readonly parallelizationFactor?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#starting_position CcPipe#starting_position}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#starting_position CcPipe#starting_position}
     */
     readonly startingPosition?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#starting_position_timestamp CcPipe#starting_position_timestamp}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#starting_position_timestamp CcPipe#starting_position_timestamp}
     */
     readonly startingPositionTimestamp?: string;
 }
@@ -4955,13 +4956,13 @@ export interface MSKAccessCredentialsProperty {
     /**
     * Optional SecretManager ARN which stores the database credentials
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#client_certificate_tls_auth CcPipe#client_certificate_tls_auth}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#client_certificate_tls_auth CcPipe#client_certificate_tls_auth}
     */
     readonly clientCertificateTlsAuth?: string;
     /**
     * Optional SecretManager ARN which stores the database credentials
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#sasl_scram_512_auth CcPipe#sasl_scram_512_auth}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#sasl_scram_512_auth CcPipe#sasl_scram_512_auth}
     */
     readonly saslScram512Auth?: string;
 }
@@ -5047,27 +5048,27 @@ export class MSKAccessCredentialsPropertyOutputReference extends cdktn.ComplexOb
 }
 export interface PipeSourceManagedStreamingKafkaParametersProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#batch_size CcPipe#batch_size}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#batch_size CcPipe#batch_size}
     */
     readonly batchSize?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#consumer_group_id CcPipe#consumer_group_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#consumer_group_id CcPipe#consumer_group_id}
     */
     readonly consumerGroupId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#credentials CcPipe#credentials}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#credentials CcPipe#credentials}
     */
     readonly credentials?: MSKAccessCredentialsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#maximum_batching_window_in_seconds CcPipe#maximum_batching_window_in_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#maximum_batching_window_in_seconds CcPipe#maximum_batching_window_in_seconds}
     */
     readonly maximumBatchingWindowInSeconds?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#starting_position CcPipe#starting_position}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#starting_position CcPipe#starting_position}
     */
     readonly startingPosition?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#topic_name CcPipe#topic_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#topic_name CcPipe#topic_name}
     */
     readonly topicName?: string;
 }
@@ -5243,7 +5244,7 @@ export interface CredentialsProperty {
     /**
     * Optional SecretManager ARN which stores the database credentials
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#basic_auth CcPipe#basic_auth}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#basic_auth CcPipe#basic_auth}
     */
     readonly basicAuth?: string;
 }
@@ -5307,23 +5308,23 @@ export class CredentialsPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface PipeSourceRabbitMQBrokerParametersProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#batch_size CcPipe#batch_size}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#batch_size CcPipe#batch_size}
     */
     readonly batchSize?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#credentials CcPipe#credentials}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#credentials CcPipe#credentials}
     */
     readonly credentials?: CredentialsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#maximum_batching_window_in_seconds CcPipe#maximum_batching_window_in_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#maximum_batching_window_in_seconds CcPipe#maximum_batching_window_in_seconds}
     */
     readonly maximumBatchingWindowInSeconds?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#queue_name CcPipe#queue_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#queue_name CcPipe#queue_name}
     */
     readonly queueName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#virtual_host CcPipe#virtual_host}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#virtual_host CcPipe#virtual_host}
     */
     readonly virtualHost?: string;
 }
@@ -5477,25 +5478,25 @@ export interface SelfManagedKafkaAccessConfigurationCredentialsProperty {
     /**
     * Optional SecretManager ARN which stores the database credentials
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#basic_auth CcPipe#basic_auth}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#basic_auth CcPipe#basic_auth}
     */
     readonly basicAuth?: string;
     /**
     * Optional SecretManager ARN which stores the database credentials
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#client_certificate_tls_auth CcPipe#client_certificate_tls_auth}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#client_certificate_tls_auth CcPipe#client_certificate_tls_auth}
     */
     readonly clientCertificateTlsAuth?: string;
     /**
     * Optional SecretManager ARN which stores the database credentials
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#sasl_scram_256_auth CcPipe#sasl_scram_256_auth}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#sasl_scram_256_auth CcPipe#sasl_scram_256_auth}
     */
     readonly saslScram256Auth?: string;
     /**
     * Optional SecretManager ARN which stores the database credentials
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#sasl_scram_512_auth CcPipe#sasl_scram_512_auth}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#sasl_scram_512_auth CcPipe#sasl_scram_512_auth}
     */
     readonly saslScram512Auth?: string;
 }
@@ -5627,13 +5628,13 @@ export interface SelfManagedKafkaAccessConfigurationVpcProperty {
     /**
     * List of SecurityGroupId.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#security_group CcPipe#security_group}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#security_group CcPipe#security_group}
     */
     readonly securityGroup?: string[];
     /**
     * List of SubnetId.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#subnets CcPipe#subnets}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#subnets CcPipe#subnets}
     */
     readonly subnets?: string[];
 }
@@ -5719,41 +5720,41 @@ export class SelfManagedKafkaAccessConfigurationVpcPropertyOutputReference exten
 }
 export interface PipeSourceSelfManagedKafkaParametersProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#additional_bootstrap_servers CcPipe#additional_bootstrap_servers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#additional_bootstrap_servers CcPipe#additional_bootstrap_servers}
     */
     readonly additionalBootstrapServers?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#batch_size CcPipe#batch_size}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#batch_size CcPipe#batch_size}
     */
     readonly batchSize?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#consumer_group_id CcPipe#consumer_group_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#consumer_group_id CcPipe#consumer_group_id}
     */
     readonly consumerGroupId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#credentials CcPipe#credentials}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#credentials CcPipe#credentials}
     */
     readonly credentials?: SelfManagedKafkaAccessConfigurationCredentialsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#maximum_batching_window_in_seconds CcPipe#maximum_batching_window_in_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#maximum_batching_window_in_seconds CcPipe#maximum_batching_window_in_seconds}
     */
     readonly maximumBatchingWindowInSeconds?: number;
     /**
     * Optional SecretManager ARN which stores the database credentials
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#server_root_ca_certificate CcPipe#server_root_ca_certificate}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#server_root_ca_certificate CcPipe#server_root_ca_certificate}
     */
     readonly serverRootCaCertificate?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#starting_position CcPipe#starting_position}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#starting_position CcPipe#starting_position}
     */
     readonly startingPosition?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#topic_name CcPipe#topic_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#topic_name CcPipe#topic_name}
     */
     readonly topicName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#vpc CcPipe#vpc}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#vpc CcPipe#vpc}
     */
     readonly vpc?: SelfManagedKafkaAccessConfigurationVpcProperty;
 }
@@ -5993,11 +5994,11 @@ export class PipeSourceSelfManagedKafkaParametersPropertyOutputReference extends
 }
 export interface PipeSourceSqsQueueParametersProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#batch_size CcPipe#batch_size}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#batch_size CcPipe#batch_size}
     */
     readonly batchSize?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#maximum_batching_window_in_seconds CcPipe#maximum_batching_window_in_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#maximum_batching_window_in_seconds CcPipe#maximum_batching_window_in_seconds}
     */
     readonly maximumBatchingWindowInSeconds?: number;
 }
@@ -6083,35 +6084,35 @@ export class PipeSourceSqsQueueParametersPropertyOutputReference extends cdktn.C
 }
 export interface PipeSourceParametersProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#active_mq_broker_parameters CcPipe#active_mq_broker_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#active_mq_broker_parameters CcPipe#active_mq_broker_parameters}
     */
     readonly activeMqBrokerParameters?: PipeSourceActiveMQBrokerParametersProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#dynamo_db_stream_parameters CcPipe#dynamo_db_stream_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#dynamo_db_stream_parameters CcPipe#dynamo_db_stream_parameters}
     */
     readonly dynamoDbStreamParameters?: PipeSourceDynamoDBStreamParametersProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#filter_criteria CcPipe#filter_criteria}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#filter_criteria CcPipe#filter_criteria}
     */
     readonly filterCriteria?: FilterCriteriaProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#kinesis_stream_parameters CcPipe#kinesis_stream_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#kinesis_stream_parameters CcPipe#kinesis_stream_parameters}
     */
     readonly kinesisStreamParameters?: PipeSourceKinesisStreamParametersProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#managed_streaming_kafka_parameters CcPipe#managed_streaming_kafka_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#managed_streaming_kafka_parameters CcPipe#managed_streaming_kafka_parameters}
     */
     readonly managedStreamingKafkaParameters?: PipeSourceManagedStreamingKafkaParametersProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#rabbit_mq_broker_parameters CcPipe#rabbit_mq_broker_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#rabbit_mq_broker_parameters CcPipe#rabbit_mq_broker_parameters}
     */
     readonly rabbitMqBrokerParameters?: PipeSourceRabbitMQBrokerParametersProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#self_managed_kafka_parameters CcPipe#self_managed_kafka_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#self_managed_kafka_parameters CcPipe#self_managed_kafka_parameters}
     */
     readonly selfManagedKafkaParameters?: PipeSourceSelfManagedKafkaParametersProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#sqs_queue_parameters CcPipe#sqs_queue_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#sqs_queue_parameters CcPipe#sqs_queue_parameters}
     */
     readonly sqsQueueParameters?: PipeSourceSqsQueueParametersProperty;
 }
@@ -6329,7 +6330,7 @@ export class PipeSourceParametersPropertyOutputReference extends cdktn.ComplexOb
 }
 export interface BatchArrayPropertiesProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#size CcPipe#size}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#size CcPipe#size}
     */
     readonly size?: number;
 }
@@ -6393,11 +6394,11 @@ export class BatchArrayPropertiesPropertyOutputReference extends cdktn.ComplexOb
 }
 export interface BatchEnvironmentVariableProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#name CcPipe#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#name CcPipe#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#value CcPipe#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#value CcPipe#value}
     */
     readonly value?: string;
 }
@@ -6505,11 +6506,11 @@ export class BatchEnvironmentVariablePropertyList extends cdktn.ComplexList {
 }
 export interface BatchResourceRequirementProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#type CcPipe#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#type CcPipe#type}
     */
     readonly type?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#value CcPipe#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#value CcPipe#value}
     */
     readonly value?: string;
 }
@@ -6617,19 +6618,19 @@ export class BatchResourceRequirementPropertyList extends cdktn.ComplexList {
 }
 export interface BatchContainerOverridesProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#command CcPipe#command}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#command CcPipe#command}
     */
     readonly command?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#environment CcPipe#environment}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#environment CcPipe#environment}
     */
     readonly environment?: BatchEnvironmentVariableProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#instance_type CcPipe#instance_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#instance_type CcPipe#instance_type}
     */
     readonly instanceType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#resource_requirements CcPipe#resource_requirements}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#resource_requirements CcPipe#resource_requirements}
     */
     readonly resourceRequirements?: BatchResourceRequirementProperty[] | cdktn.IResolvable;
 }
@@ -6759,11 +6760,11 @@ export class BatchContainerOverridesPropertyOutputReference extends cdktn.Comple
 }
 export interface BatchJobDependencyProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#job_id CcPipe#job_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#job_id CcPipe#job_id}
     */
     readonly jobId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#type CcPipe#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#type CcPipe#type}
     */
     readonly type?: string;
 }
@@ -6871,7 +6872,7 @@ export class BatchJobDependencyPropertyList extends cdktn.ComplexList {
 }
 export interface BatchRetryStrategyProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#attempts CcPipe#attempts}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#attempts CcPipe#attempts}
     */
     readonly attempts?: number;
 }
@@ -6935,31 +6936,31 @@ export class BatchRetryStrategyPropertyOutputReference extends cdktn.ComplexObje
 }
 export interface PipeTargetBatchJobParametersProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#array_properties CcPipe#array_properties}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#array_properties CcPipe#array_properties}
     */
     readonly arrayProperties?: BatchArrayPropertiesProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#container_overrides CcPipe#container_overrides}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#container_overrides CcPipe#container_overrides}
     */
     readonly containerOverrides?: BatchContainerOverridesProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#depends_on CcPipe#depends_on}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#depends_on CcPipe#depends_on}
     */
     readonly dependsOn?: BatchJobDependencyProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#job_definition CcPipe#job_definition}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#job_definition CcPipe#job_definition}
     */
     readonly jobDefinition?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#job_name CcPipe#job_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#job_name CcPipe#job_name}
     */
     readonly jobName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#parameters CcPipe#parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#parameters CcPipe#parameters}
     */
     readonly parameters?: { [key: string]: string };
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#retry_strategy CcPipe#retry_strategy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#retry_strategy CcPipe#retry_strategy}
     */
     readonly retryStrategy?: BatchRetryStrategyProperty;
 }
@@ -7155,11 +7156,11 @@ export class PipeTargetBatchJobParametersPropertyOutputReference extends cdktn.C
 }
 export interface PipeTargetCloudWatchLogsParametersProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#log_stream_name CcPipe#log_stream_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#log_stream_name CcPipe#log_stream_name}
     */
     readonly logStreamName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#timestamp CcPipe#timestamp}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#timestamp CcPipe#timestamp}
     */
     readonly timestamp?: string;
 }
@@ -7245,15 +7246,15 @@ export class PipeTargetCloudWatchLogsParametersPropertyOutputReference extends c
 }
 export interface CapacityProviderStrategyItemProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#base CcPipe#base}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#base CcPipe#base}
     */
     readonly base?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#capacity_provider CcPipe#capacity_provider}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#capacity_provider CcPipe#capacity_provider}
     */
     readonly capacityProvider?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#weight CcPipe#weight}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#weight CcPipe#weight}
     */
     readonly weight?: number;
 }
@@ -7383,15 +7384,15 @@ export class CapacityProviderStrategyItemPropertyList extends cdktn.ComplexList 
 }
 export interface AwsVpcConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#assign_public_ip CcPipe#assign_public_ip}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#assign_public_ip CcPipe#assign_public_ip}
     */
     readonly assignPublicIp?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#security_groups CcPipe#security_groups}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#security_groups CcPipe#security_groups}
     */
     readonly securityGroups?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#subnets CcPipe#subnets}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#subnets CcPipe#subnets}
     */
     readonly subnets?: string[];
 }
@@ -7499,7 +7500,7 @@ export class AwsVpcConfigurationPropertyOutputReference extends cdktn.ComplexObj
 }
 export interface NetworkConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#awsvpc_configuration CcPipe#awsvpc_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#awsvpc_configuration CcPipe#awsvpc_configuration}
     */
     readonly awsvpcConfiguration?: AwsVpcConfigurationProperty;
 }
@@ -7563,11 +7564,11 @@ export class NetworkConfigurationPropertyOutputReference extends cdktn.ComplexOb
 }
 export interface EcsEnvironmentVariableProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#name CcPipe#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#name CcPipe#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#value CcPipe#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#value CcPipe#value}
     */
     readonly value?: string;
 }
@@ -7675,11 +7676,11 @@ export class EcsEnvironmentVariablePropertyList extends cdktn.ComplexList {
 }
 export interface EcsEnvironmentFileProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#type CcPipe#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#type CcPipe#type}
     */
     readonly type?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#value CcPipe#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#value CcPipe#value}
     */
     readonly value?: string;
 }
@@ -7787,11 +7788,11 @@ export class EcsEnvironmentFilePropertyList extends cdktn.ComplexList {
 }
 export interface EcsResourceRequirementProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#type CcPipe#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#type CcPipe#type}
     */
     readonly type?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#value CcPipe#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#value CcPipe#value}
     */
     readonly value?: string;
 }
@@ -7899,35 +7900,35 @@ export class EcsResourceRequirementPropertyList extends cdktn.ComplexList {
 }
 export interface EcsContainerOverrideProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#command CcPipe#command}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#command CcPipe#command}
     */
     readonly command?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#cpu CcPipe#cpu}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#cpu CcPipe#cpu}
     */
     readonly cpu?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#environment CcPipe#environment}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#environment CcPipe#environment}
     */
     readonly environment?: EcsEnvironmentVariableProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#environment_files CcPipe#environment_files}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#environment_files CcPipe#environment_files}
     */
     readonly environmentFiles?: EcsEnvironmentFileProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#memory CcPipe#memory}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#memory CcPipe#memory}
     */
     readonly memory?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#memory_reservation CcPipe#memory_reservation}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#memory_reservation CcPipe#memory_reservation}
     */
     readonly memoryReservation?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#name CcPipe#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#name CcPipe#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#resource_requirements CcPipe#resource_requirements}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#resource_requirements CcPipe#resource_requirements}
     */
     readonly resourceRequirements?: EcsResourceRequirementProperty[] | cdktn.IResolvable;
 }
@@ -8167,7 +8168,7 @@ export class EcsContainerOverridePropertyList extends cdktn.ComplexList {
 }
 export interface EcsEphemeralStorageProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#size_in_gi_b CcPipe#size_in_gi_b}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#size_in_gi_b CcPipe#size_in_gi_b}
     */
     readonly sizeInGiB?: number;
 }
@@ -8231,11 +8232,11 @@ export class EcsEphemeralStoragePropertyOutputReference extends cdktn.ComplexObj
 }
 export interface EcsInferenceAcceleratorOverrideProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#device_name CcPipe#device_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#device_name CcPipe#device_name}
     */
     readonly deviceName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#device_type CcPipe#device_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#device_type CcPipe#device_type}
     */
     readonly deviceType?: string;
 }
@@ -8343,31 +8344,31 @@ export class EcsInferenceAcceleratorOverridePropertyList extends cdktn.ComplexLi
 }
 export interface EcsTaskOverrideProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#container_overrides CcPipe#container_overrides}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#container_overrides CcPipe#container_overrides}
     */
     readonly containerOverrides?: EcsContainerOverrideProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#cpu CcPipe#cpu}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#cpu CcPipe#cpu}
     */
     readonly cpu?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#ephemeral_storage CcPipe#ephemeral_storage}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#ephemeral_storage CcPipe#ephemeral_storage}
     */
     readonly ephemeralStorage?: EcsEphemeralStorageProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#execution_role_arn CcPipe#execution_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#execution_role_arn CcPipe#execution_role_arn}
     */
     readonly executionRoleArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#inference_accelerator_overrides CcPipe#inference_accelerator_overrides}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#inference_accelerator_overrides CcPipe#inference_accelerator_overrides}
     */
     readonly inferenceAcceleratorOverrides?: EcsInferenceAcceleratorOverrideProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#memory CcPipe#memory}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#memory CcPipe#memory}
     */
     readonly memory?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#task_role_arn CcPipe#task_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#task_role_arn CcPipe#task_role_arn}
     */
     readonly taskRoleArn?: string;
 }
@@ -8563,11 +8564,11 @@ export class EcsTaskOverridePropertyOutputReference extends cdktn.ComplexObject 
 }
 export interface PlacementConstraintProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#expression CcPipe#expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#expression CcPipe#expression}
     */
     readonly expression?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#type CcPipe#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#type CcPipe#type}
     */
     readonly type?: string;
 }
@@ -8675,11 +8676,11 @@ export class PlacementConstraintPropertyList extends cdktn.ComplexList {
 }
 export interface PlacementStrategyProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#field CcPipe#field}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#field CcPipe#field}
     */
     readonly field?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#type CcPipe#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#type CcPipe#type}
     */
     readonly type?: string;
 }
@@ -8787,11 +8788,11 @@ export class PlacementStrategyPropertyList extends cdktn.ComplexList {
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#key CcPipe#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#key CcPipe#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#value CcPipe#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#value CcPipe#value}
     */
     readonly value?: string;
 }
@@ -8899,63 +8900,63 @@ export class TagPropertyList extends cdktn.ComplexList {
 }
 export interface PipeTargetEcsTaskParametersProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#capacity_provider_strategy CcPipe#capacity_provider_strategy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#capacity_provider_strategy CcPipe#capacity_provider_strategy}
     */
     readonly capacityProviderStrategy?: CapacityProviderStrategyItemProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#enable_ecs_managed_tags CcPipe#enable_ecs_managed_tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#enable_ecs_managed_tags CcPipe#enable_ecs_managed_tags}
     */
     readonly enableEcsManagedTags?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#enable_execute_command CcPipe#enable_execute_command}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#enable_execute_command CcPipe#enable_execute_command}
     */
     readonly enableExecuteCommand?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#group CcPipe#group}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#group CcPipe#group}
     */
     readonly group?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#launch_type CcPipe#launch_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#launch_type CcPipe#launch_type}
     */
     readonly launchType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#network_configuration CcPipe#network_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#network_configuration CcPipe#network_configuration}
     */
     readonly networkConfiguration?: NetworkConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#overrides CcPipe#overrides}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#overrides CcPipe#overrides}
     */
     readonly overrides?: EcsTaskOverrideProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#placement_constraints CcPipe#placement_constraints}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#placement_constraints CcPipe#placement_constraints}
     */
     readonly placementConstraints?: PlacementConstraintProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#placement_strategy CcPipe#placement_strategy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#placement_strategy CcPipe#placement_strategy}
     */
     readonly placementStrategy?: PlacementStrategyProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#platform_version CcPipe#platform_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#platform_version CcPipe#platform_version}
     */
     readonly platformVersion?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#propagate_tags CcPipe#propagate_tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#propagate_tags CcPipe#propagate_tags}
     */
     readonly propagateTags?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#reference_id CcPipe#reference_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#reference_id CcPipe#reference_id}
     */
     readonly referenceId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#tags CcPipe#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#tags CcPipe#tags}
     */
     readonly tags?: TagProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#task_count CcPipe#task_count}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#task_count CcPipe#task_count}
     */
     readonly taskCount?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#task_definition_arn CcPipe#task_definition_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#task_definition_arn CcPipe#task_definition_arn}
     */
     readonly taskDefinitionArn?: string;
 }
@@ -9327,23 +9328,23 @@ export class PipeTargetEcsTaskParametersPropertyOutputReference extends cdktn.Co
 }
 export interface PipeTargetEventBridgeEventBusParametersProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#detail_type CcPipe#detail_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#detail_type CcPipe#detail_type}
     */
     readonly detailType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#endpoint_id CcPipe#endpoint_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#endpoint_id CcPipe#endpoint_id}
     */
     readonly endpointId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#resources CcPipe#resources}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#resources CcPipe#resources}
     */
     readonly resources?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#source CcPipe#source}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#source CcPipe#source}
     */
     readonly source?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#time CcPipe#time}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#time CcPipe#time}
     */
     readonly time?: string;
 }
@@ -9495,15 +9496,15 @@ export class PipeTargetEventBridgeEventBusParametersPropertyOutputReference exte
 }
 export interface PipeTargetHttpParametersProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#header_parameters CcPipe#header_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#header_parameters CcPipe#header_parameters}
     */
     readonly headerParameters?: { [key: string]: string };
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#path_parameter_values CcPipe#path_parameter_values}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#path_parameter_values CcPipe#path_parameter_values}
     */
     readonly pathParameterValues?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#query_string_parameters CcPipe#query_string_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#query_string_parameters CcPipe#query_string_parameters}
     */
     readonly queryStringParameters?: { [key: string]: string };
 }
@@ -9611,7 +9612,7 @@ export class PipeTargetHttpParametersPropertyOutputReference extends cdktn.Compl
 }
 export interface PipeTargetKinesisStreamParametersProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#partition_key CcPipe#partition_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#partition_key CcPipe#partition_key}
     */
     readonly partitionKey?: string;
 }
@@ -9675,7 +9676,7 @@ export class PipeTargetKinesisStreamParametersPropertyOutputReference extends cd
 }
 export interface PipeTargetLambdaFunctionParametersProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#invocation_type CcPipe#invocation_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#invocation_type CcPipe#invocation_type}
     */
     readonly invocationType?: string;
 }
@@ -9741,35 +9742,35 @@ export interface PipeTargetRedshiftDataParametersProperty {
     /**
     * Redshift Database
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#database CcPipe#database}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#database CcPipe#database}
     */
     readonly database?: string;
     /**
     * Database user name
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#db_user CcPipe#db_user}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#db_user CcPipe#db_user}
     */
     readonly dbUser?: string;
     /**
     * Optional SecretManager ARN which stores the database credentials
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#secret_manager_arn CcPipe#secret_manager_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#secret_manager_arn CcPipe#secret_manager_arn}
     */
     readonly secretManagerArn?: string;
     /**
     * A list of SQLs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#sqls CcPipe#sqls}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#sqls CcPipe#sqls}
     */
     readonly sqls?: string[];
     /**
     * A name for Redshift DataAPI statement which can be used as filter of ListStatement.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#statement_name CcPipe#statement_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#statement_name CcPipe#statement_name}
     */
     readonly statementName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#with_event CcPipe#with_event}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#with_event CcPipe#with_event}
     */
     readonly withEvent?: boolean | cdktn.IResolvable;
 }
@@ -9943,11 +9944,11 @@ export class PipeTargetRedshiftDataParametersPropertyOutputReference extends cdk
 }
 export interface SageMakerPipelineParameterProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#name CcPipe#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#name CcPipe#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#value CcPipe#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#value CcPipe#value}
     */
     readonly value?: string;
 }
@@ -10055,7 +10056,7 @@ export class SageMakerPipelineParameterPropertyList extends cdktn.ComplexList {
 }
 export interface PipeTargetSageMakerPipelineParametersProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#pipeline_parameter_list CcPipe#pipeline_parameter_list}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#pipeline_parameter_list CcPipe#pipeline_parameter_list}
     */
     readonly pipelineParameterList?: SageMakerPipelineParameterProperty[] | cdktn.IResolvable;
 }
@@ -10119,11 +10120,11 @@ export class PipeTargetSageMakerPipelineParametersPropertyOutputReference extend
 }
 export interface PipeTargetSqsQueueParametersProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#message_deduplication_id CcPipe#message_deduplication_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#message_deduplication_id CcPipe#message_deduplication_id}
     */
     readonly messageDeduplicationId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#message_group_id CcPipe#message_group_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#message_group_id CcPipe#message_group_id}
     */
     readonly messageGroupId?: string;
 }
@@ -10209,7 +10210,7 @@ export class PipeTargetSqsQueueParametersPropertyOutputReference extends cdktn.C
 }
 export interface PipeTargetStateMachineParametersProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#invocation_type CcPipe#invocation_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#invocation_type CcPipe#invocation_type}
     */
     readonly invocationType?: string;
 }
@@ -10273,15 +10274,15 @@ export class PipeTargetStateMachineParametersPropertyOutputReference extends cdk
 }
 export interface DimensionMappingProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#dimension_name CcPipe#dimension_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#dimension_name CcPipe#dimension_name}
     */
     readonly dimensionName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#dimension_value CcPipe#dimension_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#dimension_value CcPipe#dimension_value}
     */
     readonly dimensionValue?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#dimension_value_type CcPipe#dimension_value_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#dimension_value_type CcPipe#dimension_value_type}
     */
     readonly dimensionValueType?: string;
 }
@@ -10411,15 +10412,15 @@ export class DimensionMappingPropertyList extends cdktn.ComplexList {
 }
 export interface MultiMeasureAttributeMappingProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#measure_value CcPipe#measure_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#measure_value CcPipe#measure_value}
     */
     readonly measureValue?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#measure_value_type CcPipe#measure_value_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#measure_value_type CcPipe#measure_value_type}
     */
     readonly measureValueType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#multi_measure_attribute_name CcPipe#multi_measure_attribute_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#multi_measure_attribute_name CcPipe#multi_measure_attribute_name}
     */
     readonly multiMeasureAttributeName?: string;
 }
@@ -10549,11 +10550,11 @@ export class MultiMeasureAttributeMappingPropertyList extends cdktn.ComplexList 
 }
 export interface MultiMeasureMappingProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#multi_measure_attribute_mappings CcPipe#multi_measure_attribute_mappings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#multi_measure_attribute_mappings CcPipe#multi_measure_attribute_mappings}
     */
     readonly multiMeasureAttributeMappings?: MultiMeasureAttributeMappingProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#multi_measure_name CcPipe#multi_measure_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#multi_measure_name CcPipe#multi_measure_name}
     */
     readonly multiMeasureName?: string;
 }
@@ -10661,15 +10662,15 @@ export class MultiMeasureMappingPropertyList extends cdktn.ComplexList {
 }
 export interface SingleMeasureMappingProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#measure_name CcPipe#measure_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#measure_name CcPipe#measure_name}
     */
     readonly measureName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#measure_value CcPipe#measure_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#measure_value CcPipe#measure_value}
     */
     readonly measureValue?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#measure_value_type CcPipe#measure_value_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#measure_value_type CcPipe#measure_value_type}
     */
     readonly measureValueType?: string;
 }
@@ -10799,35 +10800,35 @@ export class SingleMeasureMappingPropertyList extends cdktn.ComplexList {
 }
 export interface PipeTargetTimestreamParametersProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#dimension_mappings CcPipe#dimension_mappings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#dimension_mappings CcPipe#dimension_mappings}
     */
     readonly dimensionMappings?: DimensionMappingProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#epoch_time_unit CcPipe#epoch_time_unit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#epoch_time_unit CcPipe#epoch_time_unit}
     */
     readonly epochTimeUnit?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#multi_measure_mappings CcPipe#multi_measure_mappings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#multi_measure_mappings CcPipe#multi_measure_mappings}
     */
     readonly multiMeasureMappings?: MultiMeasureMappingProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#single_measure_mappings CcPipe#single_measure_mappings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#single_measure_mappings CcPipe#single_measure_mappings}
     */
     readonly singleMeasureMappings?: SingleMeasureMappingProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#time_field_type CcPipe#time_field_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#time_field_type CcPipe#time_field_type}
     */
     readonly timeFieldType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#time_value CcPipe#time_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#time_value CcPipe#time_value}
     */
     readonly timeValue?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#timestamp_format CcPipe#timestamp_format}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#timestamp_format CcPipe#timestamp_format}
     */
     readonly timestampFormat?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#version_value CcPipe#version_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#version_value CcPipe#version_value}
     */
     readonly versionValue?: string;
 }
@@ -11045,55 +11046,55 @@ export class PipeTargetTimestreamParametersPropertyOutputReference extends cdktn
 }
 export interface PipeTargetParametersProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#batch_job_parameters CcPipe#batch_job_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#batch_job_parameters CcPipe#batch_job_parameters}
     */
     readonly batchJobParameters?: PipeTargetBatchJobParametersProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#cloudwatch_logs_parameters CcPipe#cloudwatch_logs_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#cloudwatch_logs_parameters CcPipe#cloudwatch_logs_parameters}
     */
     readonly cloudwatchLogsParameters?: PipeTargetCloudWatchLogsParametersProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#ecs_task_parameters CcPipe#ecs_task_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#ecs_task_parameters CcPipe#ecs_task_parameters}
     */
     readonly ecsTaskParameters?: PipeTargetEcsTaskParametersProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#event_bridge_event_bus_parameters CcPipe#event_bridge_event_bus_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#event_bridge_event_bus_parameters CcPipe#event_bridge_event_bus_parameters}
     */
     readonly eventBridgeEventBusParameters?: PipeTargetEventBridgeEventBusParametersProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#http_parameters CcPipe#http_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#http_parameters CcPipe#http_parameters}
     */
     readonly httpParameters?: PipeTargetHttpParametersProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#input_template CcPipe#input_template}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#input_template CcPipe#input_template}
     */
     readonly inputTemplate?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#kinesis_stream_parameters CcPipe#kinesis_stream_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#kinesis_stream_parameters CcPipe#kinesis_stream_parameters}
     */
     readonly kinesisStreamParameters?: PipeTargetKinesisStreamParametersProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#lambda_function_parameters CcPipe#lambda_function_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#lambda_function_parameters CcPipe#lambda_function_parameters}
     */
     readonly lambdaFunctionParameters?: PipeTargetLambdaFunctionParametersProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#redshift_data_parameters CcPipe#redshift_data_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#redshift_data_parameters CcPipe#redshift_data_parameters}
     */
     readonly redshiftDataParameters?: PipeTargetRedshiftDataParametersProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#sage_maker_pipeline_parameters CcPipe#sage_maker_pipeline_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#sage_maker_pipeline_parameters CcPipe#sage_maker_pipeline_parameters}
     */
     readonly sageMakerPipelineParameters?: PipeTargetSageMakerPipelineParametersProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#sqs_queue_parameters CcPipe#sqs_queue_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#sqs_queue_parameters CcPipe#sqs_queue_parameters}
     */
     readonly sqsQueueParameters?: PipeTargetSqsQueueParametersProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#step_function_state_machine_parameters CcPipe#step_function_state_machine_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#step_function_state_machine_parameters CcPipe#step_function_state_machine_parameters}
     */
     readonly stepFunctionStateMachineParameters?: PipeTargetStateMachineParametersProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pipes_pipe#timestream_parameters CcPipe#timestream_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pipes_pipe#timestream_parameters CcPipe#timestream_parameters}
     */
     readonly timestreamParameters?: PipeTargetTimestreamParametersProperty;
 }

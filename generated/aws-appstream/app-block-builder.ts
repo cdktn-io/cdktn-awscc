@@ -1,59 +1,59 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appstream_app_block_builder
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appstream_app_block_builder
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcAppBlockBuilderProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appstream_app_block_builder#access_endpoints CcAppBlockBuilder#access_endpoints}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appstream_app_block_builder#access_endpoints CcAppBlockBuilder#access_endpoints}
     */
     readonly accessEndpoints?: CcAppBlockBuilder.AccessEndpointProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appstream_app_block_builder#app_block_arns CcAppBlockBuilder#app_block_arns}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appstream_app_block_builder#app_block_arns CcAppBlockBuilder#app_block_arns}
     */
     readonly appBlockArns?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appstream_app_block_builder#description CcAppBlockBuilder#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appstream_app_block_builder#description CcAppBlockBuilder#description}
     */
     readonly description?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appstream_app_block_builder#display_name CcAppBlockBuilder#display_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appstream_app_block_builder#display_name CcAppBlockBuilder#display_name}
     */
     readonly displayName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appstream_app_block_builder#enable_default_internet_access CcAppBlockBuilder#enable_default_internet_access}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appstream_app_block_builder#enable_default_internet_access CcAppBlockBuilder#enable_default_internet_access}
     */
     readonly enableDefaultInternetAccess?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appstream_app_block_builder#iam_role_arn CcAppBlockBuilder#iam_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appstream_app_block_builder#iam_role_arn CcAppBlockBuilder#iam_role_arn}
     */
     readonly iamRoleArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appstream_app_block_builder#instance_type CcAppBlockBuilder#instance_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appstream_app_block_builder#instance_type CcAppBlockBuilder#instance_type}
     */
     readonly instanceType: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appstream_app_block_builder#name CcAppBlockBuilder#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appstream_app_block_builder#name CcAppBlockBuilder#name}
     */
     readonly name: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appstream_app_block_builder#platform CcAppBlockBuilder#platform}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appstream_app_block_builder#platform CcAppBlockBuilder#platform}
     */
     readonly platform: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appstream_app_block_builder#tags CcAppBlockBuilder#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appstream_app_block_builder#tags CcAppBlockBuilder#tags}
     */
     readonly tags?: CcAppBlockBuilder.TagProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appstream_app_block_builder#vpc_config CcAppBlockBuilder#vpc_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appstream_app_block_builder#vpc_config CcAppBlockBuilder#vpc_config}
     */
     readonly vpcConfig: CcAppBlockBuilder.VpcConfigProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appstream_app_block_builder awscc_appstream_app_block_builder}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appstream_app_block_builder awscc_appstream_app_block_builder}
 */
 export class CcAppBlockBuilder extends cdktn.TerraformResource {
 
@@ -69,7 +69,7 @@ export class CcAppBlockBuilder extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcAppBlockBuilder resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcAppBlockBuilder to import
-    * @param importFromId The id of the existing CcAppBlockBuilder that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appstream_app_block_builder#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcAppBlockBuilder that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appstream_app_block_builder#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcAppBlockBuilder to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -81,7 +81,7 @@ export class CcAppBlockBuilder extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appstream_app_block_builder awscc_appstream_app_block_builder} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appstream_app_block_builder awscc_appstream_app_block_builder} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -91,7 +91,8 @@ export class CcAppBlockBuilder extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_appstream_app_block_builder',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -506,11 +507,11 @@ export function ccAppBlockBuilderVpcConfigPropertyToHclTerraform(struct?: CcAppB
 export namespace CcAppBlockBuilder {
 export interface AccessEndpointProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appstream_app_block_builder#endpoint_type CcAppBlockBuilder#endpoint_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appstream_app_block_builder#endpoint_type CcAppBlockBuilder#endpoint_type}
     */
     readonly endpointType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appstream_app_block_builder#vpce_id CcAppBlockBuilder#vpce_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appstream_app_block_builder#vpce_id CcAppBlockBuilder#vpce_id}
     */
     readonly vpceId?: string;
 }
@@ -618,11 +619,11 @@ export class AccessEndpointPropertyList extends cdktn.ComplexList {
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appstream_app_block_builder#key CcAppBlockBuilder#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appstream_app_block_builder#key CcAppBlockBuilder#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appstream_app_block_builder#value CcAppBlockBuilder#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appstream_app_block_builder#value CcAppBlockBuilder#value}
     */
     readonly value?: string;
 }
@@ -730,11 +731,11 @@ export class TagPropertyList extends cdktn.ComplexList {
 }
 export interface VpcConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appstream_app_block_builder#security_group_ids CcAppBlockBuilder#security_group_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appstream_app_block_builder#security_group_ids CcAppBlockBuilder#security_group_ids}
     */
     readonly securityGroupIds?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appstream_app_block_builder#subnet_ids CcAppBlockBuilder#subnet_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appstream_app_block_builder#subnet_ids CcAppBlockBuilder#subnet_ids}
     */
     readonly subnetIds?: string[];
 }

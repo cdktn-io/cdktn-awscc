@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_flow_vpc_interface
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_flow_vpc_interface
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,43 +9,43 @@ export interface CcFlowVpcInterfaceProps extends cdktn.TerraformMetaArguments {
     /**
     * The Amazon Resource Name (ARN), a unique identifier for any AWS resource, of the flow.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_flow_vpc_interface#flow_arn CcFlowVpcInterface#flow_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_flow_vpc_interface#flow_arn CcFlowVpcInterface#flow_arn}
     */
     readonly flowArn: string;
     /**
     * Immutable and has to be a unique against other VpcInterfaces in this Flow.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_flow_vpc_interface#name CcFlowVpcInterface#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_flow_vpc_interface#name CcFlowVpcInterface#name}
     */
     readonly name: string;
     /**
     * Role Arn MediaConnect can assume to create ENIs in customer's account.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_flow_vpc_interface#role_arn CcFlowVpcInterface#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_flow_vpc_interface#role_arn CcFlowVpcInterface#role_arn}
     */
     readonly roleArn: string;
     /**
     * Security Group IDs to be used on ENI.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_flow_vpc_interface#security_group_ids CcFlowVpcInterface#security_group_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_flow_vpc_interface#security_group_ids CcFlowVpcInterface#security_group_ids}
     */
     readonly securityGroupIds: string[];
     /**
     * Subnet must be in the AZ of the Flow
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_flow_vpc_interface#subnet_id CcFlowVpcInterface#subnet_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_flow_vpc_interface#subnet_id CcFlowVpcInterface#subnet_id}
     */
     readonly subnetId: string;
     /**
     * Key-value pairs that can be used to tag and organize this VPC network interface.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_flow_vpc_interface#tags CcFlowVpcInterface#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_flow_vpc_interface#tags CcFlowVpcInterface#tags}
     */
     readonly tags?: CcFlowVpcInterface.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_flow_vpc_interface awscc_mediaconnect_flow_vpc_interface}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_flow_vpc_interface awscc_mediaconnect_flow_vpc_interface}
 */
 export class CcFlowVpcInterface extends cdktn.TerraformResource {
 
@@ -61,7 +61,7 @@ export class CcFlowVpcInterface extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcFlowVpcInterface resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcFlowVpcInterface to import
-    * @param importFromId The id of the existing CcFlowVpcInterface that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_flow_vpc_interface#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcFlowVpcInterface that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_flow_vpc_interface#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcFlowVpcInterface to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -73,7 +73,7 @@ export class CcFlowVpcInterface extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_flow_vpc_interface awscc_mediaconnect_flow_vpc_interface} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_flow_vpc_interface awscc_mediaconnect_flow_vpc_interface} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -83,7 +83,8 @@ export class CcFlowVpcInterface extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_mediaconnect_flow_vpc_interface',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -296,11 +297,11 @@ export function ccFlowVpcInterfaceTagPropertyToHclTerraform(struct?: CcFlowVpcIn
 export namespace CcFlowVpcInterface {
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_flow_vpc_interface#key CcFlowVpcInterface#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_flow_vpc_interface#key CcFlowVpcInterface#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_flow_vpc_interface#value CcFlowVpcInterface#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_flow_vpc_interface#value CcFlowVpcInterface#value}
     */
     readonly value?: string;
 }

@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_agent_alias
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_agent_alias
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,37 +9,37 @@ export interface CcAgentAliasProps extends cdktn.TerraformMetaArguments {
     /**
     * Name for a resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_agent_alias#agent_alias_name CcAgentAlias#agent_alias_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_agent_alias#agent_alias_name CcAgentAlias#agent_alias_name}
     */
     readonly agentAliasName: string;
     /**
     * Identifier for a resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_agent_alias#agent_id CcAgentAlias#agent_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_agent_alias#agent_id CcAgentAlias#agent_id}
     */
     readonly agentId: string;
     /**
     * Description of the Resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_agent_alias#description CcAgentAlias#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_agent_alias#description CcAgentAlias#description}
     */
     readonly description?: string;
     /**
     * Routing configuration for an Agent alias.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_agent_alias#routing_configuration CcAgentAlias#routing_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_agent_alias#routing_configuration CcAgentAlias#routing_configuration}
     */
     readonly routingConfiguration?: CcAgentAlias.AgentAliasRoutingConfigurationListItemProperty[] | cdktn.IResolvable;
     /**
     * A map of tag keys and values
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_agent_alias#tags CcAgentAlias#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_agent_alias#tags CcAgentAlias#tags}
     */
     readonly tags?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_agent_alias awscc_bedrock_agent_alias}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_agent_alias awscc_bedrock_agent_alias}
 */
 export class CcAgentAlias extends cdktn.TerraformResource {
 
@@ -55,7 +55,7 @@ export class CcAgentAlias extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcAgentAlias resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcAgentAlias to import
-    * @param importFromId The id of the existing CcAgentAlias that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_agent_alias#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcAgentAlias that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_agent_alias#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcAgentAlias to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -67,7 +67,7 @@ export class CcAgentAlias extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_agent_alias awscc_bedrock_agent_alias} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_agent_alias awscc_bedrock_agent_alias} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -77,7 +77,8 @@ export class CcAgentAlias extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_bedrock_agent_alias',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -457,7 +458,7 @@ export interface AgentAliasRoutingConfigurationListItemProperty {
     /**
     * Agent Version.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_agent_alias#agent_version CcAgentAlias#agent_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_agent_alias#agent_version CcAgentAlias#agent_version}
     */
     readonly agentVersion?: string;
 }

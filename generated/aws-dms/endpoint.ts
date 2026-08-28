@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,193 +9,193 @@ export interface CcEndpointProps extends cdktn.TerraformMetaArguments {
     /**
     * The Amazon Resource Name (ARN) for the certificate.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#certificate_arn CcEndpoint#certificate_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#certificate_arn CcEndpoint#certificate_arn}
     */
     readonly certificateArn?: string;
     /**
     * The name of the endpoint database. For a MySQL source or target endpoint, don't specify DatabaseName. To migrate to a specific database, use this setting and targetDbType.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#database_name CcEndpoint#database_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#database_name CcEndpoint#database_name}
     */
     readonly databaseName?: string;
     /**
     * Settings in JSON format for the source and target DocumentDB endpoint
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#doc_db_settings CcEndpoint#doc_db_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#doc_db_settings CcEndpoint#doc_db_settings}
     */
     readonly docDbSettings?: CcEndpoint.DocDbSettingsProperty;
     /**
     * Settings in JSON format for the target Amazon DynamoDB endpoint
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#dynamo_db_settings CcEndpoint#dynamo_db_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#dynamo_db_settings CcEndpoint#dynamo_db_settings}
     */
     readonly dynamoDbSettings?: CcEndpoint.DynamoDbSettingsProperty;
     /**
     * Settings in JSON format for the target OpenSearch endpoint
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#elasticsearch_settings CcEndpoint#elasticsearch_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#elasticsearch_settings CcEndpoint#elasticsearch_settings}
     */
     readonly elasticsearchSettings?: CcEndpoint.ElasticsearchSettingsProperty;
     /**
     * The database endpoint identifier. Identifiers must begin with a letter and must contain only ASCII letters, digits, and hyphens. They can't end with a hyphen, or contain two consecutive hyphens.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#endpoint_identifier CcEndpoint#endpoint_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#endpoint_identifier CcEndpoint#endpoint_identifier}
     */
     readonly endpointIdentifier?: string;
     /**
     * The type of endpoint. Valid values are source and target.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#endpoint_type CcEndpoint#endpoint_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#endpoint_type CcEndpoint#endpoint_type}
     */
     readonly endpointType: string;
     /**
     * The type of engine for the endpoint, depending on the EndpointType value.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#engine_name CcEndpoint#engine_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#engine_name CcEndpoint#engine_name}
     */
     readonly engineName: string;
     /**
     * Additional attributes associated with the connection
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#extra_connection_attributes CcEndpoint#extra_connection_attributes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#extra_connection_attributes CcEndpoint#extra_connection_attributes}
     */
     readonly extraConnectionAttributes?: string;
     /**
     * Settings in JSON format for the source GCP MySQL endpoint
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#gcp_my_sql_settings CcEndpoint#gcp_my_sql_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#gcp_my_sql_settings CcEndpoint#gcp_my_sql_settings}
     */
     readonly gcpMySqlSettings?: CcEndpoint.GcpMySQLSettingsProperty;
     /**
     * Settings in JSON format for the source IBM Db2 LUW endpoint
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#ibm_db_2_settings CcEndpoint#ibm_db_2_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#ibm_db_2_settings CcEndpoint#ibm_db_2_settings}
     */
     readonly ibmDb2Settings?: CcEndpoint.IbmDb2SettingsProperty;
     /**
     * Settings in JSON format for the target Apache Kafka endpoint
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#kafka_settings CcEndpoint#kafka_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#kafka_settings CcEndpoint#kafka_settings}
     */
     readonly kafkaSettings?: CcEndpoint.KafkaSettingsProperty;
     /**
     * Settings in JSON format for the target endpoint for Amazon Kinesis Data Streams
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#kinesis_settings CcEndpoint#kinesis_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#kinesis_settings CcEndpoint#kinesis_settings}
     */
     readonly kinesisSettings?: CcEndpoint.KinesisSettingsProperty;
     /**
     * An AWS KMS key identifier that is used to encrypt the connection parameters for the endpoint.If you don't specify a value for the KmsKeyId parameter, AWS DMS uses your default encryption key.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#kms_key_id CcEndpoint#kms_key_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#kms_key_id CcEndpoint#kms_key_id}
     */
     readonly kmsKeyId?: string;
     /**
     * Settings in JSON format for the source and target Microsoft SQL Server endpoint
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#microsoft_sql_server_settings CcEndpoint#microsoft_sql_server_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#microsoft_sql_server_settings CcEndpoint#microsoft_sql_server_settings}
     */
     readonly microsoftSqlServerSettings?: CcEndpoint.MicrosoftSqlServerSettingsProperty;
     /**
     * Settings in JSON format for the source MongoDB endpoint
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#mongo_db_settings CcEndpoint#mongo_db_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#mongo_db_settings CcEndpoint#mongo_db_settings}
     */
     readonly mongoDbSettings?: CcEndpoint.MongoDbSettingsProperty;
     /**
     * Settings in JSON format for the source and target MySQL endpoin
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#my_sql_settings CcEndpoint#my_sql_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#my_sql_settings CcEndpoint#my_sql_settings}
     */
     readonly mySqlSettings?: CcEndpoint.MySqlSettingsProperty;
     /**
     * Settings in JSON format for the target Amazon Neptune endpoint
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#neptune_settings CcEndpoint#neptune_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#neptune_settings CcEndpoint#neptune_settings}
     */
     readonly neptuneSettings?: CcEndpoint.NeptuneSettingsProperty;
     /**
     * Settings in JSON format for the source and target Oracle endpoint
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#oracle_settings CcEndpoint#oracle_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#oracle_settings CcEndpoint#oracle_settings}
     */
     readonly oracleSettings?: CcEndpoint.OracleSettingsProperty;
     /**
     * The password to be used to log in to the endpoint database.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#password CcEndpoint#password}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#password CcEndpoint#password}
     */
     readonly password?: string;
     /**
     * The port used by the endpoint database.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#port CcEndpoint#port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#port CcEndpoint#port}
     */
     readonly port?: number;
     /**
     * Settings in JSON format for the source and target PostgreSQL endpoint.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#postgre_sql_settings CcEndpoint#postgre_sql_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#postgre_sql_settings CcEndpoint#postgre_sql_settings}
     */
     readonly postgreSqlSettings?: CcEndpoint.PostgreSqlSettingsProperty;
     /**
     * Settings in JSON format for the target Redis endpoint
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#redis_settings CcEndpoint#redis_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#redis_settings CcEndpoint#redis_settings}
     */
     readonly redisSettings?: CcEndpoint.RedisSettingsProperty;
     /**
     * Settings in JSON format for the Amazon Redshift endpoint.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#redshift_settings CcEndpoint#redshift_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#redshift_settings CcEndpoint#redshift_settings}
     */
     readonly redshiftSettings?: CcEndpoint.RedshiftSettingsProperty;
     /**
     * A display name for the resource identifier at the end of the EndpointArn response parameter that is returned in the created Endpoint object.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#resource_identifier CcEndpoint#resource_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#resource_identifier CcEndpoint#resource_identifier}
     */
     readonly resourceIdentifier?: string;
     /**
     * Settings in JSON format for the source and target Amazon S3 endpoint
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#s3_settings CcEndpoint#s3_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#s3_settings CcEndpoint#s3_settings}
     */
     readonly s3Settings?: CcEndpoint.S3SettingsProperty;
     /**
     * The name of the server where the endpoint database resides.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#server_name CcEndpoint#server_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#server_name CcEndpoint#server_name}
     */
     readonly serverName?: string;
     /**
     * The Secure Sockets Layer (SSL) mode to use for the SSL connection. The default is none.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#ssl_mode CcEndpoint#ssl_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#ssl_mode CcEndpoint#ssl_mode}
     */
     readonly sslMode?: string;
     /**
     * Settings in JSON format for the source and target SAP ASE endpoint.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#sybase_settings CcEndpoint#sybase_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#sybase_settings CcEndpoint#sybase_settings}
     */
     readonly sybaseSettings?: CcEndpoint.SybaseSettingsProperty;
     /**
     * One or more tags to be assigned to the endpoint.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#tags CcEndpoint#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#tags CcEndpoint#tags}
     */
     readonly tags?: CcEndpoint.TagProperty[] | cdktn.IResolvable;
     /**
     * The user name to be used to log in to the endpoint database.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#username CcEndpoint#username}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#username CcEndpoint#username}
     */
     readonly username?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint awscc_dms_endpoint}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint awscc_dms_endpoint}
 */
 export class CcEndpoint extends cdktn.TerraformResource {
 
@@ -211,7 +211,7 @@ export class CcEndpoint extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcEndpoint resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcEndpoint to import
-    * @param importFromId The id of the existing CcEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcEndpoint to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -223,7 +223,7 @@ export class CcEndpoint extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint awscc_dms_endpoint} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint awscc_dms_endpoint} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -233,7 +233,8 @@ export class CcEndpoint extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_dms_endpoint',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -3084,31 +3085,31 @@ export interface DocDbSettingsProperty {
     /**
     * Indicates the number of documents to preview to determine the document organization. Use this setting when NestingLevel is set to "one".
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#docs_to_investigate CcEndpoint#docs_to_investigate}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#docs_to_investigate CcEndpoint#docs_to_investigate}
     */
     readonly docsToInvestigate?: number;
     /**
     * Specifies the document ID. Use this setting when NestingLevel is set to "none"
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#extract_doc_id CcEndpoint#extract_doc_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#extract_doc_id CcEndpoint#extract_doc_id}
     */
     readonly extractDocId?: boolean | cdktn.IResolvable;
     /**
     * Specifies either document or table mode.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#nesting_level CcEndpoint#nesting_level}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#nesting_level CcEndpoint#nesting_level}
     */
     readonly nestingLevel?: string;
     /**
     * The full Amazon Resource Name (ARN) of the IAM role that specifies AWS DMS as the trusted entity and grants the required permissions to access the value in SecretsManagerSecret. The role must allow the iam:PassRole action. SecretsManagerSecret has the value of the AWS Secrets Manager secret that allows access to the DocumentDB endpoint.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#secrets_manager_access_role_arn CcEndpoint#secrets_manager_access_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#secrets_manager_access_role_arn CcEndpoint#secrets_manager_access_role_arn}
     */
     readonly secretsManagerAccessRoleArn?: string;
     /**
     * The full Amazon Resource Name (ARN) of the IAM role that specifies AWS DMS as the trusted entity and grants the required permissions to access the value in SecretsManagerSecret. The role must allow the iam:PassRole action. SecretsManagerSecret has the value of the AWS Secrets Manager secret that allows access to the DocumentDB endpoint.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#secrets_manager_secret_id CcEndpoint#secrets_manager_secret_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#secrets_manager_secret_id CcEndpoint#secrets_manager_secret_id}
     */
     readonly secretsManagerSecretId?: string;
 }
@@ -3262,7 +3263,7 @@ export interface DynamoDbSettingsProperty {
     /**
     * The Amazon Resource Name (ARN) used by the service to access the IAM role. The role must allow the iam:PassRole action.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#service_access_role_arn CcEndpoint#service_access_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#service_access_role_arn CcEndpoint#service_access_role_arn}
     */
     readonly serviceAccessRoleArn?: string;
 }
@@ -3328,25 +3329,25 @@ export interface ElasticsearchSettingsProperty {
     /**
     * The endpoint for the OpenSearch cluster. AWS DMS uses HTTPS if a transport protocol (either HTTP or HTTPS) isn't specified.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#endpoint_uri CcEndpoint#endpoint_uri}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#endpoint_uri CcEndpoint#endpoint_uri}
     */
     readonly endpointUri?: string;
     /**
     * The maximum number of seconds for which DMS retries failed API requests to the OpenSearch cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#error_retry_duration CcEndpoint#error_retry_duration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#error_retry_duration CcEndpoint#error_retry_duration}
     */
     readonly errorRetryDuration?: number;
     /**
     * The maximum percentage of records that can fail to be written before a full load operation stops.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#full_load_error_percentage CcEndpoint#full_load_error_percentage}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#full_load_error_percentage CcEndpoint#full_load_error_percentage}
     */
     readonly fullLoadErrorPercentage?: number;
     /**
     * The Amazon Resource Name (ARN) used by the service to access the IAM role. The role must allow the iam:PassRole action.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#service_access_role_arn CcEndpoint#service_access_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#service_access_role_arn CcEndpoint#service_access_role_arn}
     */
     readonly serviceAccessRoleArn?: string;
 }
@@ -3478,79 +3479,79 @@ export interface GcpMySQLSettingsProperty {
     /**
     * Specifies a script to run immediately after AWS DMS connects to the endpoint. The migration task continues running regardless if the SQL statement succeeds or fails.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#after_connect_script CcEndpoint#after_connect_script}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#after_connect_script CcEndpoint#after_connect_script}
     */
     readonly afterConnectScript?: string;
     /**
     * Adjusts the behavior of AWS DMS when migrating from an SQL Server source database that is hosted as part of an Always On availability group cluster. If you need AWS DMS to poll all the nodes in the Always On cluster for transaction backups, set this attribute to false.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#clean_source_metadata_on_mismatch CcEndpoint#clean_source_metadata_on_mismatch}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#clean_source_metadata_on_mismatch CcEndpoint#clean_source_metadata_on_mismatch}
     */
     readonly cleanSourceMetadataOnMismatch?: boolean | cdktn.IResolvable;
     /**
     * Database name for the endpoint. For a MySQL source or target endpoint, don't explicitly specify the database using the DatabaseName request parameter on either the CreateEndpoint or ModifyEndpoint API call. Specifying DatabaseName when you create or modify a MySQL endpoint replicates all the task tables to this single database. For MySQL endpoints, you specify the database only when you specify the schema in the table-mapping rules of the AWS DMS task.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#database_name CcEndpoint#database_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#database_name CcEndpoint#database_name}
     */
     readonly databaseName?: string;
     /**
     * Specifies how often to check the binary log for new changes/events when the database is idle. The default is five seconds.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#events_poll_interval CcEndpoint#events_poll_interval}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#events_poll_interval CcEndpoint#events_poll_interval}
     */
     readonly eventsPollInterval?: number;
     /**
     * Specifies the maximum size (in KB) of any .csv file used to transfer data to a MySQL-compatible database.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#max_file_size CcEndpoint#max_file_size}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#max_file_size CcEndpoint#max_file_size}
     */
     readonly maxFileSize?: number;
     /**
     * Improves performance when loading data into the MySQL-compatible target database. Specifies how many threads to use to load the data into the MySQL-compatible target database. Setting a large number of threads can have an adverse effect on database performance, because a separate connection is required for each thread. The default is one.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#parallel_load_threads CcEndpoint#parallel_load_threads}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#parallel_load_threads CcEndpoint#parallel_load_threads}
     */
     readonly parallelLoadThreads?: number;
     /**
     * Endpoint connection password.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#password CcEndpoint#password}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#password CcEndpoint#password}
     */
     readonly password?: string;
     /**
     * The port used by the endpoint database.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#port CcEndpoint#port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#port CcEndpoint#port}
     */
     readonly port?: number;
     /**
     * The full Amazon Resource Name (ARN) of the IAM role that specifies AWS DMS as the trusted entity and grants the required permissions to access the value in SecretsManagerSecret. The role must allow the iam:PassRole action. SecretsManagerSecret has the value of the AWS Secrets Manager secret that allows access to the MySQL endpoint.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#secrets_manager_access_role_arn CcEndpoint#secrets_manager_access_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#secrets_manager_access_role_arn CcEndpoint#secrets_manager_access_role_arn}
     */
     readonly secretsManagerAccessRoleArn?: string;
     /**
     * The full ARN, partial ARN, or display name of the SecretsManagerSecret that contains the MySQL endpoint connection details.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#secrets_manager_secret_id CcEndpoint#secrets_manager_secret_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#secrets_manager_secret_id CcEndpoint#secrets_manager_secret_id}
     */
     readonly secretsManagerSecretId?: string;
     /**
     * The MySQL host name.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#server_name CcEndpoint#server_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#server_name CcEndpoint#server_name}
     */
     readonly serverName?: string;
     /**
     * Specifies the time zone for the source MySQL database. Don't enclose time zones in single quotation marks.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#server_timezone CcEndpoint#server_timezone}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#server_timezone CcEndpoint#server_timezone}
     */
     readonly serverTimezone?: string;
     /**
     * Specifies the time zone for the source MySQL database. Don't enclose time zones in single quotation marks.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#username CcEndpoint#username}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#username CcEndpoint#username}
     */
     readonly username?: string;
 }
@@ -3880,55 +3881,55 @@ export interface IbmDb2SettingsProperty {
     /**
     * For ongoing replication (CDC), use CurrentLSN to specify a log sequence number (LSN) where you want the replication to start.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#current_lsn CcEndpoint#current_lsn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#current_lsn CcEndpoint#current_lsn}
     */
     readonly currentLsn?: string;
     /**
     * If true, AWS DMS saves any .csv files to the Db2 LUW target that were used to replicate data. DMS uses these files for analysis and troubleshooting.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#keep_csv_files CcEndpoint#keep_csv_files}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#keep_csv_files CcEndpoint#keep_csv_files}
     */
     readonly keepCsvFiles?: boolean | cdktn.IResolvable;
     /**
     * The amount of time (in milliseconds) before AWS DMS times out operations performed by DMS on the Db2 target. The default value is 1200 (20 minutes).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#load_timeout CcEndpoint#load_timeout}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#load_timeout CcEndpoint#load_timeout}
     */
     readonly loadTimeout?: number;
     /**
     * Specifies the maximum size (in KB) of .csv files used to transfer data to Db2 LUW.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#max_file_size CcEndpoint#max_file_size}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#max_file_size CcEndpoint#max_file_size}
     */
     readonly maxFileSize?: number;
     /**
     * Maximum number of bytes per read, as a NUMBER value. The default is 64 KB.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#max_k_bytes_per_read CcEndpoint#max_k_bytes_per_read}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#max_k_bytes_per_read CcEndpoint#max_k_bytes_per_read}
     */
     readonly maxKBytesPerRead?: number;
     /**
     * The full Amazon Resource Name (ARN) of the IAM role that specifies AWS DMS as the trusted entity and grants the required permissions to access the value in SecretsManagerSecret. The role must allow the iam:PassRole action. SecretsManagerSecret has the value ofthe AWS Secrets Manager secret that allows access to the Db2 LUW endpoint.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#secrets_manager_access_role_arn CcEndpoint#secrets_manager_access_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#secrets_manager_access_role_arn CcEndpoint#secrets_manager_access_role_arn}
     */
     readonly secretsManagerAccessRoleArn?: string;
     /**
     * The full ARN, partial ARN, or display name of the SecretsManagerSecret that contains the IBMDB2 endpoint connection details.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#secrets_manager_secret_id CcEndpoint#secrets_manager_secret_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#secrets_manager_secret_id CcEndpoint#secrets_manager_secret_id}
     */
     readonly secretsManagerSecretId?: string;
     /**
     * Enables ongoing replication (CDC) as a BOOLEAN value. The default is true.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#set_data_capture_changes CcEndpoint#set_data_capture_changes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#set_data_capture_changes CcEndpoint#set_data_capture_changes}
     */
     readonly setDataCaptureChanges?: boolean | cdktn.IResolvable;
     /**
     * The size (in KB) of the in-memory file write buffer used when generating .csv files on the local disk on the DMS replication instance. The default value is 1024 (1 MB).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#write_buffer_size CcEndpoint#write_buffer_size}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#write_buffer_size CcEndpoint#write_buffer_size}
     */
     readonly writeBufferSize?: number;
 }
@@ -4170,109 +4171,109 @@ export interface KafkaSettingsProperty {
     /**
     * A comma-separated list of one or more broker locations in your Kafka cluster that host your Kafka instance. Specify each broker location in the form broker-hostname-or-ip:port 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#broker CcEndpoint#broker}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#broker CcEndpoint#broker}
     */
     readonly broker?: string;
     /**
     * Shows detailed control information for table definition, column definition, and table and column changes in the Kafka message output. The default is false.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#include_control_details CcEndpoint#include_control_details}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#include_control_details CcEndpoint#include_control_details}
     */
     readonly includeControlDetails?: boolean | cdktn.IResolvable;
     /**
     * Include NULL and empty columns for records migrated to the endpoint. The default is false.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#include_null_and_empty CcEndpoint#include_null_and_empty}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#include_null_and_empty CcEndpoint#include_null_and_empty}
     */
     readonly includeNullAndEmpty?: boolean | cdktn.IResolvable;
     /**
     * Shows the partition value within the Kafka message output unless the partition type is schema-table-type. The default is false.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#include_partition_value CcEndpoint#include_partition_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#include_partition_value CcEndpoint#include_partition_value}
     */
     readonly includePartitionValue?: boolean | cdktn.IResolvable;
     /**
     * Includes any data definition language (DDL) operations that change the table in the control data, such as rename-table, drop-table, add-column, drop-column, and rename-column. The default is false.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#include_table_alter_operations CcEndpoint#include_table_alter_operations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#include_table_alter_operations CcEndpoint#include_table_alter_operations}
     */
     readonly includeTableAlterOperations?: boolean | cdktn.IResolvable;
     /**
     * Provides detailed transaction information from the source database. This information includes a commit timestamp, a log position, and values for transaction_id, previous transaction_id, and transaction_record_id (the record offset within a transaction). The default is false.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#include_transaction_details CcEndpoint#include_transaction_details}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#include_transaction_details CcEndpoint#include_transaction_details}
     */
     readonly includeTransactionDetails?: boolean | cdktn.IResolvable;
     /**
     * The output format for the records created on the endpoint. The message format is JSON (default) or JSON_UNFORMATTED (a single line with no tab).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#message_format CcEndpoint#message_format}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#message_format CcEndpoint#message_format}
     */
     readonly messageFormat?: string;
     /**
     * The maximum size in bytes for records created on the endpoint The default is 1,000,000.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#message_max_bytes CcEndpoint#message_max_bytes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#message_max_bytes CcEndpoint#message_max_bytes}
     */
     readonly messageMaxBytes?: number;
     /**
     * Set this optional parameter to true to avoid adding a '0x' prefix to raw data in hexadecimal format. For example, by default, AWS DMS adds a '0x' prefix to the LOB column type in hexadecimal format moving from an Oracle source to a Kafka target. Use the NoHexPrefix endpoint setting to enable migration of RAW data type columns without adding the '0x' prefix.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#no_hex_prefix CcEndpoint#no_hex_prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#no_hex_prefix CcEndpoint#no_hex_prefix}
     */
     readonly noHexPrefix?: boolean | cdktn.IResolvable;
     /**
     * Prefixes schema and table names to partition values, when the partition type is primary-key-type.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#partition_include_schema_table CcEndpoint#partition_include_schema_table}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#partition_include_schema_table CcEndpoint#partition_include_schema_table}
     */
     readonly partitionIncludeSchemaTable?: boolean | cdktn.IResolvable;
     /**
     * The secure password that you created when you first set up your Amazon MSK cluster to validate a client identity and make an encrypted connection between server and client using SASL-SSL authentication.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#sasl_password CcEndpoint#sasl_password}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#sasl_password CcEndpoint#sasl_password}
     */
     readonly saslPassword?: string;
     /**
     * The secure user name you created when you first set up your Amazon MSK cluster to validate a client identity and make an encrypted connection between server and client using SASL-SSL authentication.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#sasl_user_name CcEndpoint#sasl_user_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#sasl_user_name CcEndpoint#sasl_user_name}
     */
     readonly saslUserName?: string;
     /**
     * Set secure connection to a Kafka target endpoint using Transport Layer Security (TLS). Options include ssl-encryption, ssl-authentication, and sasl-ssl. sasl-ssl requires SaslUsername and SaslPassword.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#security_protocol CcEndpoint#security_protocol}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#security_protocol CcEndpoint#security_protocol}
     */
     readonly securityProtocol?: string;
     /**
     * The Amazon Resource Name (ARN) for the private certificate authority (CA) cert that AWS DMS uses to securely connect to your Kafka target endpoint.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#ssl_ca_certificate_arn CcEndpoint#ssl_ca_certificate_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#ssl_ca_certificate_arn CcEndpoint#ssl_ca_certificate_arn}
     */
     readonly sslCaCertificateArn?: string;
     /**
     * The Amazon Resource Name (ARN) of the client certificate used to securely connect to a Kafka target endpoint.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#ssl_client_certificate_arn CcEndpoint#ssl_client_certificate_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#ssl_client_certificate_arn CcEndpoint#ssl_client_certificate_arn}
     */
     readonly sslClientCertificateArn?: string;
     /**
     * The Amazon Resource Name (ARN) for the client private key used to securely connect to a Kafka target endpoint.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#ssl_client_key_arn CcEndpoint#ssl_client_key_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#ssl_client_key_arn CcEndpoint#ssl_client_key_arn}
     */
     readonly sslClientKeyArn?: string;
     /**
     * The password for the client private key used to securely connect to a Kafka target endpoint.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#ssl_client_key_password CcEndpoint#ssl_client_key_password}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#ssl_client_key_password CcEndpoint#ssl_client_key_password}
     */
     readonly sslClientKeyPassword?: string;
     /**
     * The topic to which you migrate the data. If you don't specify a topic, AWS DMS specifies "kafka-default-topic" as the migration topic.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#topic CcEndpoint#topic}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#topic CcEndpoint#topic}
     */
     readonly topic?: string;
 }
@@ -4712,61 +4713,61 @@ export interface KinesisSettingsProperty {
     /**
     * Shows detailed control information for table definition, column definition, and table and column changes in the Kinesis message output. The default is false.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#include_control_details CcEndpoint#include_control_details}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#include_control_details CcEndpoint#include_control_details}
     */
     readonly includeControlDetails?: boolean | cdktn.IResolvable;
     /**
     * Include NULL and empty columns for records migrated to the endpoint. The default is false.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#include_null_and_empty CcEndpoint#include_null_and_empty}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#include_null_and_empty CcEndpoint#include_null_and_empty}
     */
     readonly includeNullAndEmpty?: boolean | cdktn.IResolvable;
     /**
     * Shows the partition value within the Kinesis message output, unless the partition type is schema-table-type. The default is false.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#include_partition_value CcEndpoint#include_partition_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#include_partition_value CcEndpoint#include_partition_value}
     */
     readonly includePartitionValue?: boolean | cdktn.IResolvable;
     /**
     * Includes any data definition language (DDL) operations that change the table in the control data, such as rename-table, drop-table, add-column, drop-column, and rename-column. The default is false.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#include_table_alter_operations CcEndpoint#include_table_alter_operations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#include_table_alter_operations CcEndpoint#include_table_alter_operations}
     */
     readonly includeTableAlterOperations?: boolean | cdktn.IResolvable;
     /**
     * Provides detailed transaction information from the source database.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#include_transaction_details CcEndpoint#include_transaction_details}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#include_transaction_details CcEndpoint#include_transaction_details}
     */
     readonly includeTransactionDetails?: boolean | cdktn.IResolvable;
     /**
     * The output format for the records created on the endpoint. The message format is JSON (default) or JSON_UNFORMATTED (a single line with no tab).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#message_format CcEndpoint#message_format}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#message_format CcEndpoint#message_format}
     */
     readonly messageFormat?: string;
     /**
     * Set this optional parameter to true to avoid adding a '0x' prefix to raw data in hexadecimal format.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#no_hex_prefix CcEndpoint#no_hex_prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#no_hex_prefix CcEndpoint#no_hex_prefix}
     */
     readonly noHexPrefix?: boolean | cdktn.IResolvable;
     /**
     * Prefixes schema and table names to partition values, when the partition type is primary-key-type.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#partition_include_schema_table CcEndpoint#partition_include_schema_table}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#partition_include_schema_table CcEndpoint#partition_include_schema_table}
     */
     readonly partitionIncludeSchemaTable?: boolean | cdktn.IResolvable;
     /**
     * The Amazon Resource Name (ARN) for the IAM role that AWS DMS uses to write to the Kinesis data stream. The role must allow the iam:PassRole action.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#service_access_role_arn CcEndpoint#service_access_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#service_access_role_arn CcEndpoint#service_access_role_arn}
     */
     readonly serviceAccessRoleArn?: string;
     /**
     * The Amazon Resource Name (ARN) for the Amazon Kinesis Data Streams endpoint.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#stream_arn CcEndpoint#stream_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#stream_arn CcEndpoint#stream_arn}
     */
     readonly streamArn?: string;
 }
@@ -5030,103 +5031,103 @@ export interface MicrosoftSqlServerSettingsProperty {
     /**
     * The maximum size of the packets (in bytes) used to transfer data using BCP.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#bcp_packet_size CcEndpoint#bcp_packet_size}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#bcp_packet_size CcEndpoint#bcp_packet_size}
     */
     readonly bcpPacketSize?: number;
     /**
     * Specifies a file group for the AWS DMS internal tables.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#control_tables_file_group CcEndpoint#control_tables_file_group}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#control_tables_file_group CcEndpoint#control_tables_file_group}
     */
     readonly controlTablesFileGroup?: string;
     /**
     * Database name for the endpoint.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#database_name CcEndpoint#database_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#database_name CcEndpoint#database_name}
     */
     readonly databaseName?: string;
     /**
     * Forces LOB lookup on inline LOB.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#force_lob_lookup CcEndpoint#force_lob_lookup}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#force_lob_lookup CcEndpoint#force_lob_lookup}
     */
     readonly forceLobLookup?: boolean | cdktn.IResolvable;
     /**
     * Endpoint connection password.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#password CcEndpoint#password}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#password CcEndpoint#password}
     */
     readonly password?: string;
     /**
     * Endpoint TCP port.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#port CcEndpoint#port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#port CcEndpoint#port}
     */
     readonly port?: number;
     /**
     * Cleans and recreates table metadata information on the replication instance when a mismatch occurs. An example is a situation where running an alter DDL statement on a table might result in different information about the table cached in the replication instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#query_single_always_on_node CcEndpoint#query_single_always_on_node}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#query_single_always_on_node CcEndpoint#query_single_always_on_node}
     */
     readonly querySingleAlwaysOnNode?: boolean | cdktn.IResolvable;
     /**
     * When this attribute is set to Y, AWS DMS only reads changes from transaction log backups and doesn't read from the active transaction log file during ongoing replication. Setting this parameter to Y enables you to control active transaction log file growth during full load and ongoing replication tasks. However, it can add some source latency to ongoing replication.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#read_backup_only CcEndpoint#read_backup_only}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#read_backup_only CcEndpoint#read_backup_only}
     */
     readonly readBackupOnly?: boolean | cdktn.IResolvable;
     /**
     * Use this attribute to minimize the need to access the backup log and enable AWS DMS to prevent truncation using one of the following two methods.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#safeguard_policy CcEndpoint#safeguard_policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#safeguard_policy CcEndpoint#safeguard_policy}
     */
     readonly safeguardPolicy?: string;
     /**
     * The full Amazon Resource Name (ARN) of the IAM role that specifies AWS DMS as the trusted entity and grants the required permissions to access the value in SecretsManagerSecret
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#secrets_manager_access_role_arn CcEndpoint#secrets_manager_access_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#secrets_manager_access_role_arn CcEndpoint#secrets_manager_access_role_arn}
     */
     readonly secretsManagerAccessRoleArn?: string;
     /**
     * The full ARN, partial ARN, or display name of the SecretsManagerSecret that contains the MicrosoftSQLServer endpoint connection details.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#secrets_manager_secret_id CcEndpoint#secrets_manager_secret_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#secrets_manager_secret_id CcEndpoint#secrets_manager_secret_id}
     */
     readonly secretsManagerSecretId?: string;
     /**
     * Fully qualified domain name of the endpoint. For an Amazon RDS SQL Server instance, this is the output of DescribeDBInstances, in the Endpoint.Address field.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#server_name CcEndpoint#server_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#server_name CcEndpoint#server_name}
     */
     readonly serverName?: string;
     /**
     * Indicates the mode used to fetch CDC data.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#tlog_access_mode CcEndpoint#tlog_access_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#tlog_access_mode CcEndpoint#tlog_access_mode}
     */
     readonly tlogAccessMode?: string;
     /**
     * Use the TrimSpaceInChar source endpoint setting to right-trim data on CHAR and NCHAR data types during migration. Setting TrimSpaceInChar does not left-trim data. The default value is true.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#trim_space_in_char CcEndpoint#trim_space_in_char}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#trim_space_in_char CcEndpoint#trim_space_in_char}
     */
     readonly trimSpaceInChar?: boolean | cdktn.IResolvable;
     /**
     * Use this to attribute to transfer data for full-load operations using BCP. When the target table contains an identity column that does not exist in the source table, you must disable the use BCP for loading table option.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#use_bcp_full_load CcEndpoint#use_bcp_full_load}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#use_bcp_full_load CcEndpoint#use_bcp_full_load}
     */
     readonly useBcpFullLoad?: boolean | cdktn.IResolvable;
     /**
     * When this attribute is set to Y, DMS processes third-party transaction log backups if they are created in native format.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#use_third_party_backup_device CcEndpoint#use_third_party_backup_device}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#use_third_party_backup_device CcEndpoint#use_third_party_backup_device}
     */
     readonly useThirdPartyBackupDevice?: boolean | cdktn.IResolvable;
     /**
     * Endpoint connection user name.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#username CcEndpoint#username}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#username CcEndpoint#username}
     */
     readonly username?: string;
 }
@@ -5544,79 +5545,79 @@ export interface MongoDbSettingsProperty {
     /**
     * The authentication mechanism you use to access the MongoDB source endpoint.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#auth_mechanism CcEndpoint#auth_mechanism}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#auth_mechanism CcEndpoint#auth_mechanism}
     */
     readonly authMechanism?: string;
     /**
     * The MongoDB database name. This setting isn't used when AuthType is set to "no".
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#auth_source CcEndpoint#auth_source}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#auth_source CcEndpoint#auth_source}
     */
     readonly authSource?: string;
     /**
     * The authentication type you use to access the MongoDB source endpoint.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#auth_type CcEndpoint#auth_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#auth_type CcEndpoint#auth_type}
     */
     readonly authType?: string;
     /**
     * The database name on the MongoDB source endpoint.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#database_name CcEndpoint#database_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#database_name CcEndpoint#database_name}
     */
     readonly databaseName?: string;
     /**
     * Indicates the number of documents to preview to determine the document organization. Use this setting when NestingLevel is set to "one".
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#docs_to_investigate CcEndpoint#docs_to_investigate}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#docs_to_investigate CcEndpoint#docs_to_investigate}
     */
     readonly docsToInvestigate?: string;
     /**
     * Specifies the document ID. Use this setting when NestingLevel is set to "none".
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#extract_doc_id CcEndpoint#extract_doc_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#extract_doc_id CcEndpoint#extract_doc_id}
     */
     readonly extractDocId?: string;
     /**
     * Specifies either document or table mode.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#nesting_level CcEndpoint#nesting_level}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#nesting_level CcEndpoint#nesting_level}
     */
     readonly nestingLevel?: string;
     /**
     * The password for the user account you use to access the MongoDB source endpoint.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#password CcEndpoint#password}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#password CcEndpoint#password}
     */
     readonly password?: string;
     /**
     * The port value for the MongoDB source endpoint.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#port CcEndpoint#port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#port CcEndpoint#port}
     */
     readonly port?: number;
     /**
     * The full Amazon Resource Name (ARN) of the IAM role that specifies AWS DMS as the trusted entity and grants the required permissions to access the value in SecretsManagerSecret
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#secrets_manager_access_role_arn CcEndpoint#secrets_manager_access_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#secrets_manager_access_role_arn CcEndpoint#secrets_manager_access_role_arn}
     */
     readonly secretsManagerAccessRoleArn?: string;
     /**
     * The full ARN, partial ARN, or display name of the SecretsManagerSecret that contains the MongoDB endpoint connection details.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#secrets_manager_secret_id CcEndpoint#secrets_manager_secret_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#secrets_manager_secret_id CcEndpoint#secrets_manager_secret_id}
     */
     readonly secretsManagerSecretId?: string;
     /**
     * The name of the server on the MongoDB source endpoint.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#server_name CcEndpoint#server_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#server_name CcEndpoint#server_name}
     */
     readonly serverName?: string;
     /**
     * The user name you use to access the MongoDB source endpoint.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#username CcEndpoint#username}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#username CcEndpoint#username}
     */
     readonly username?: string;
 }
@@ -5946,55 +5947,55 @@ export interface MySqlSettingsProperty {
     /**
     * Specifies a script to run immediately after AWS DMS connects to the endpoint. The migration task continues running regardless if the SQL statement succeeds or fails.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#after_connect_script CcEndpoint#after_connect_script}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#after_connect_script CcEndpoint#after_connect_script}
     */
     readonly afterConnectScript?: string;
     /**
     * Cleans and recreates table metadata information on the replication instance when a mismatch occurs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#clean_source_metadata_on_mismatch CcEndpoint#clean_source_metadata_on_mismatch}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#clean_source_metadata_on_mismatch CcEndpoint#clean_source_metadata_on_mismatch}
     */
     readonly cleanSourceMetadataOnMismatch?: boolean | cdktn.IResolvable;
     /**
     * Specifies how often to check the binary log for new changes/events when the database is idle. The default is five seconds.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#events_poll_interval CcEndpoint#events_poll_interval}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#events_poll_interval CcEndpoint#events_poll_interval}
     */
     readonly eventsPollInterval?: number;
     /**
     * Specifies the maximum size (in KB) of any .csv file used to transfer data to a MySQL-compatible database.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#max_file_size CcEndpoint#max_file_size}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#max_file_size CcEndpoint#max_file_size}
     */
     readonly maxFileSize?: number;
     /**
     * Improves performance when loading data into the MySQL-compatible target database. Specifies how many threads to use to load the data into the MySQL-compatible target database.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#parallel_load_threads CcEndpoint#parallel_load_threads}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#parallel_load_threads CcEndpoint#parallel_load_threads}
     */
     readonly parallelLoadThreads?: number;
     /**
     * The full Amazon Resource Name (ARN) of the IAM role that specifies AWS DMS as the trusted entity and grants the required permissions to access the value in SecretsManagerSecret.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#secrets_manager_access_role_arn CcEndpoint#secrets_manager_access_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#secrets_manager_access_role_arn CcEndpoint#secrets_manager_access_role_arn}
     */
     readonly secretsManagerAccessRoleArn?: string;
     /**
     * The full ARN, partial ARN, or display name of the SecretsManagerSecret that contains the MySQL endpoint connection details.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#secrets_manager_secret_id CcEndpoint#secrets_manager_secret_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#secrets_manager_secret_id CcEndpoint#secrets_manager_secret_id}
     */
     readonly secretsManagerSecretId?: string;
     /**
     * Specifies the time zone for the source MySQL database.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#server_timezone CcEndpoint#server_timezone}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#server_timezone CcEndpoint#server_timezone}
     */
     readonly serverTimezone?: string;
     /**
     * Specifies where to migrate source tables on the target, either to a single database or multiple databases.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#target_db_type CcEndpoint#target_db_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#target_db_type CcEndpoint#target_db_type}
     */
     readonly targetDbType?: string;
 }
@@ -6236,43 +6237,43 @@ export interface NeptuneSettingsProperty {
     /**
     * The number of milliseconds for AWS DMS to wait to retry a bulk-load of migrated graph data to the Neptune target database before raising an error. The default is 250.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#error_retry_duration CcEndpoint#error_retry_duration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#error_retry_duration CcEndpoint#error_retry_duration}
     */
     readonly errorRetryDuration?: number;
     /**
     * If you want IAM authorization enabled for this endpoint, set this parameter to true.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#iam_auth_enabled CcEndpoint#iam_auth_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#iam_auth_enabled CcEndpoint#iam_auth_enabled}
     */
     readonly iamAuthEnabled?: boolean | cdktn.IResolvable;
     /**
     * The maximum size in kilobytes of migrated graph data stored in a .csv file before AWS DMS bulk-loads the data to the Neptune target database.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#max_file_size CcEndpoint#max_file_size}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#max_file_size CcEndpoint#max_file_size}
     */
     readonly maxFileSize?: number;
     /**
     * The number of times for AWS DMS to retry a bulk load of migrated graph data to the Neptune target database before raising an error. The default is 5.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#max_retry_count CcEndpoint#max_retry_count}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#max_retry_count CcEndpoint#max_retry_count}
     */
     readonly maxRetryCount?: number;
     /**
     * A folder path where you want AWS DMS to store migrated graph data in the S3 bucket specified by S3BucketName
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#s3_bucket_folder CcEndpoint#s3_bucket_folder}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#s3_bucket_folder CcEndpoint#s3_bucket_folder}
     */
     readonly s3BucketFolder?: string;
     /**
     * The name of the Amazon S3 bucket where AWS DMS can temporarily store migrated graph data in .csv files before bulk-loading it to the Neptune target database.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#s3_bucket_name CcEndpoint#s3_bucket_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#s3_bucket_name CcEndpoint#s3_bucket_name}
     */
     readonly s3BucketName?: string;
     /**
     * The Amazon Resource Name (ARN) of the service role that you created for the Neptune target endpoint. The role must allow the iam:PassRole action.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#service_access_role_arn CcEndpoint#service_access_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#service_access_role_arn CcEndpoint#service_access_role_arn}
     */
     readonly serviceAccessRoleArn?: string;
 }
@@ -6470,211 +6471,211 @@ export interface OracleSettingsProperty {
     /**
     * Set this attribute to false in order to use the Binary Reader to capture change data for an Amazon RDS for Oracle as the source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#access_alternate_directly CcEndpoint#access_alternate_directly}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#access_alternate_directly CcEndpoint#access_alternate_directly}
     */
     readonly accessAlternateDirectly?: boolean | cdktn.IResolvable;
     /**
     * Set this attribute to set up table-level supplemental logging for the Oracle database. This attribute enables PRIMARY KEY supplemental logging on all tables selected for a migration task.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#add_supplemental_logging CcEndpoint#add_supplemental_logging}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#add_supplemental_logging CcEndpoint#add_supplemental_logging}
     */
     readonly addSupplementalLogging?: boolean | cdktn.IResolvable;
     /**
     * Set this attribute with ArchivedLogDestId in a primary/ standby setup
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#additional_archived_log_dest_id CcEndpoint#additional_archived_log_dest_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#additional_archived_log_dest_id CcEndpoint#additional_archived_log_dest_id}
     */
     readonly additionalArchivedLogDestId?: number;
     /**
     * Set this attribute to true to enable replication of Oracle tables containing columns that are nested tables or defined types.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#allow_select_nested_tables CcEndpoint#allow_select_nested_tables}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#allow_select_nested_tables CcEndpoint#allow_select_nested_tables}
     */
     readonly allowSelectNestedTables?: boolean | cdktn.IResolvable;
     /**
     * Specifies the ID of the destination for the archived redo logs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#archived_log_dest_id CcEndpoint#archived_log_dest_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#archived_log_dest_id CcEndpoint#archived_log_dest_id}
     */
     readonly archivedLogDestId?: number;
     /**
     * When this field is set to True, AWS DMS only accesses the archived redo logs
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#archived_logs_only CcEndpoint#archived_logs_only}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#archived_logs_only CcEndpoint#archived_logs_only}
     */
     readonly archivedLogsOnly?: boolean | cdktn.IResolvable;
     /**
     * For an Oracle source endpoint, your Oracle Automatic Storage Management (ASM) password.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#asm_password CcEndpoint#asm_password}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#asm_password CcEndpoint#asm_password}
     */
     readonly asmPassword?: string;
     /**
     * For an Oracle source endpoint, your ASM server address.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#asm_server CcEndpoint#asm_server}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#asm_server CcEndpoint#asm_server}
     */
     readonly asmServer?: string;
     /**
     * For an Oracle source endpoint, your ASM user name.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#asm_user CcEndpoint#asm_user}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#asm_user CcEndpoint#asm_user}
     */
     readonly asmUser?: string;
     /**
     * Specifies whether the length of a character column is in bytes or in characters.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#char_length_semantics CcEndpoint#char_length_semantics}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#char_length_semantics CcEndpoint#char_length_semantics}
     */
     readonly charLengthSemantics?: string;
     /**
     * When set to true, this attribute helps to increase the commit rate on the Oracle target database by writing directly to tables and not writing a trail to database logs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#direct_path_no_log CcEndpoint#direct_path_no_log}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#direct_path_no_log CcEndpoint#direct_path_no_log}
     */
     readonly directPathNoLog?: boolean | cdktn.IResolvable;
     /**
     * When set to true, this attribute specifies a parallel load when useDirectPathFullLoad is set to Y.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#direct_path_parallel_load CcEndpoint#direct_path_parallel_load}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#direct_path_parallel_load CcEndpoint#direct_path_parallel_load}
     */
     readonly directPathParallelLoad?: boolean | cdktn.IResolvable;
     /**
     * Set this attribute to enable homogenous tablespace replication and create existing tables or indexes under the same tablespace on the target.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#enable_homogenous_tablespace CcEndpoint#enable_homogenous_tablespace}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#enable_homogenous_tablespace CcEndpoint#enable_homogenous_tablespace}
     */
     readonly enableHomogenousTablespace?: boolean | cdktn.IResolvable;
     /**
     * Specifies the IDs of one more destinations for one or more archived redo logs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#extra_archived_log_dest_ids CcEndpoint#extra_archived_log_dest_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#extra_archived_log_dest_ids CcEndpoint#extra_archived_log_dest_ids}
     */
     readonly extraArchivedLogDestIds?: number[];
     /**
     * When set to true, this attribute causes a task to fail if the actual size of an LOB column is greater than the specified LobMaxSize.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#fail_tasks_on_lob_truncation CcEndpoint#fail_tasks_on_lob_truncation}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#fail_tasks_on_lob_truncation CcEndpoint#fail_tasks_on_lob_truncation}
     */
     readonly failTasksOnLobTruncation?: boolean | cdktn.IResolvable;
     /**
     * Specifies the number scale. You can select a scale up to 38, or you can select FLOAT. By default, the NUMBER data type is converted to precision 38, scale 10.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#number_datatype_scale CcEndpoint#number_datatype_scale}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#number_datatype_scale CcEndpoint#number_datatype_scale}
     */
     readonly numberDatatypeScale?: number;
     /**
     * Set this string attribute to the required value in order to use the Binary Reader to capture change data for an Amazon RDS for Oracle as the source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#oracle_path_prefix CcEndpoint#oracle_path_prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#oracle_path_prefix CcEndpoint#oracle_path_prefix}
     */
     readonly oraclePathPrefix?: string;
     /**
     * Set this attribute to change the number of threads that DMS configures to perform a change data capture (CDC) load using Oracle Automatic Storage Management (ASM).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#parallel_asm_read_threads CcEndpoint#parallel_asm_read_threads}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#parallel_asm_read_threads CcEndpoint#parallel_asm_read_threads}
     */
     readonly parallelAsmReadThreads?: number;
     /**
     * Set this attribute to change the number of read-ahead blocks that DMS configures to perform a change data capture (CDC) load using Oracle Automatic Storage Management (ASM).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#read_ahead_blocks CcEndpoint#read_ahead_blocks}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#read_ahead_blocks CcEndpoint#read_ahead_blocks}
     */
     readonly readAheadBlocks?: number;
     /**
     * When set to true, this attribute supports tablespace replication.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#read_table_space_name CcEndpoint#read_table_space_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#read_table_space_name CcEndpoint#read_table_space_name}
     */
     readonly readTableSpaceName?: boolean | cdktn.IResolvable;
     /**
     * Set this attribute to true in order to use the Binary Reader to capture change data for an Amazon RDS for Oracle as the source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#replace_path_prefix CcEndpoint#replace_path_prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#replace_path_prefix CcEndpoint#replace_path_prefix}
     */
     readonly replacePathPrefix?: boolean | cdktn.IResolvable;
     /**
     * Specifies the number of seconds that the system waits before resending a query.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#retry_interval CcEndpoint#retry_interval}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#retry_interval CcEndpoint#retry_interval}
     */
     readonly retryInterval?: number;
     /**
     * The full Amazon Resource Name (ARN) of the IAM role that specifies AWS DMS as the trusted entity and grants the required permissions to access the value in SecretsManagerSecret.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#secrets_manager_access_role_arn CcEndpoint#secrets_manager_access_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#secrets_manager_access_role_arn CcEndpoint#secrets_manager_access_role_arn}
     */
     readonly secretsManagerAccessRoleArn?: string;
     /**
     * Required only if your Oracle endpoint uses Advanced Storage Manager (ASM).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#secrets_manager_oracle_asm_access_role_arn CcEndpoint#secrets_manager_oracle_asm_access_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#secrets_manager_oracle_asm_access_role_arn CcEndpoint#secrets_manager_oracle_asm_access_role_arn}
     */
     readonly secretsManagerOracleAsmAccessRoleArn?: string;
     /**
     * Required only if your Oracle endpoint uses Advanced Storage Manager (ASM).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#secrets_manager_oracle_asm_secret_id CcEndpoint#secrets_manager_oracle_asm_secret_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#secrets_manager_oracle_asm_secret_id CcEndpoint#secrets_manager_oracle_asm_secret_id}
     */
     readonly secretsManagerOracleAsmSecretId?: string;
     /**
     * The full ARN, partial ARN, or display name of the SecretsManagerSecret that contains the Oracle endpoint connection details.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#secrets_manager_secret_id CcEndpoint#secrets_manager_secret_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#secrets_manager_secret_id CcEndpoint#secrets_manager_secret_id}
     */
     readonly secretsManagerSecretId?: string;
     /**
     * For an Oracle source endpoint, the transparent data encryption (TDE) password required by AWM DMS to access Oracle redo logs encrypted by TDE using Binary Reader.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#security_db_encryption CcEndpoint#security_db_encryption}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#security_db_encryption CcEndpoint#security_db_encryption}
     */
     readonly securityDbEncryption?: string;
     /**
     * For an Oracle source endpoint, the name of a key used for the transparent data encryption (TDE) of the columns and tablespaces in an Oracle source database that is encrypted using TDE.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#security_db_encryption_name CcEndpoint#security_db_encryption_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#security_db_encryption_name CcEndpoint#security_db_encryption_name}
     */
     readonly securityDbEncryptionName?: string;
     /**
     * Use this attribute to convert SDO_GEOMETRY to GEOJSON format. By default, DMS calls the SDO2GEOJSON custom function if present and accessible. Or you can create your own custom function that mimics the operation of SDOGEOJSON and set SpatialDataOptionToGeoJsonFunctionName to call it instead.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#spatial_data_option_to_geo_json_function_name CcEndpoint#spatial_data_option_to_geo_json_function_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#spatial_data_option_to_geo_json_function_name CcEndpoint#spatial_data_option_to_geo_json_function_name}
     */
     readonly spatialDataOptionToGeoJsonFunctionName?: string;
     /**
     * Use this attribute to specify a time in minutes for the delay in standby sync.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#standby_delay_time CcEndpoint#standby_delay_time}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#standby_delay_time CcEndpoint#standby_delay_time}
     */
     readonly standbyDelayTime?: number;
     /**
     * Set this attribute to true in order to use the Binary Reader to capture change data for an Amazon RDS for Oracle as the source
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#use_alternate_folder_for_online CcEndpoint#use_alternate_folder_for_online}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#use_alternate_folder_for_online CcEndpoint#use_alternate_folder_for_online}
     */
     readonly useAlternateFolderForOnline?: boolean | cdktn.IResolvable;
     /**
     * Set this attribute to True to capture change data using the Binary Reader utility.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#use_b_file CcEndpoint#use_b_file}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#use_b_file CcEndpoint#use_b_file}
     */
     readonly useBFile?: boolean | cdktn.IResolvable;
     /**
     * Set this attribute to True to have AWS DMS use a direct path full load.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#use_direct_path_full_load CcEndpoint#use_direct_path_full_load}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#use_direct_path_full_load CcEndpoint#use_direct_path_full_load}
     */
     readonly useDirectPathFullLoad?: boolean | cdktn.IResolvable;
     /**
     * Set this attribute to True to capture change data using the Oracle LogMiner utility (the default).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#use_logminer_reader CcEndpoint#use_logminer_reader}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#use_logminer_reader CcEndpoint#use_logminer_reader}
     */
     readonly useLogminerReader?: boolean | cdktn.IResolvable;
     /**
     * Set this string attribute to the required value in order to use the Binary Reader to capture change data for an Amazon RDS for Oracle as the source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#use_path_prefix CcEndpoint#use_path_prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#use_path_prefix CcEndpoint#use_path_prefix}
     */
     readonly usePathPrefix?: string;
 }
@@ -7488,97 +7489,97 @@ export interface PostgreSqlSettingsProperty {
     /**
     * For use with change data capture (CDC) only, this attribute has AWS DMS bypass foreign keys and user triggers to reduce the time it takes to bulk load data.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#after_connect_script CcEndpoint#after_connect_script}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#after_connect_script CcEndpoint#after_connect_script}
     */
     readonly afterConnectScript?: string;
     /**
     * The Babelfish for Aurora PostgreSQL database name for the endpoint.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#babelfish_database_name CcEndpoint#babelfish_database_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#babelfish_database_name CcEndpoint#babelfish_database_name}
     */
     readonly babelfishDatabaseName?: string;
     /**
     * To capture DDL events, AWS DMS creates various artifacts in the PostgreSQL database when the task starts. You can later remove these artifacts.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#capture_ddls CcEndpoint#capture_ddls}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#capture_ddls CcEndpoint#capture_ddls}
     */
     readonly captureDdls?: boolean | cdktn.IResolvable;
     /**
     * Specifies the default behavior of the replication's handling of PostgreSQL- compatible endpoints that require some additional configuration, such as Babelfish endpoints.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#database_mode CcEndpoint#database_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#database_mode CcEndpoint#database_mode}
     */
     readonly databaseMode?: string;
     /**
     * The schema in which the operational DDL database artifacts are created.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#ddl_artifacts_schema CcEndpoint#ddl_artifacts_schema}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#ddl_artifacts_schema CcEndpoint#ddl_artifacts_schema}
     */
     readonly ddlArtifactsSchema?: string;
     /**
     * Sets the client statement timeout for the PostgreSQL instance, in seconds. The default value is 60 seconds.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#execute_timeout CcEndpoint#execute_timeout}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#execute_timeout CcEndpoint#execute_timeout}
     */
     readonly executeTimeout?: number;
     /**
     * When set to true, this value causes a task to fail if the actual size of a LOB column is greater than the specified LobMaxSize.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#fail_tasks_on_lob_truncation CcEndpoint#fail_tasks_on_lob_truncation}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#fail_tasks_on_lob_truncation CcEndpoint#fail_tasks_on_lob_truncation}
     */
     readonly failTasksOnLobTruncation?: boolean | cdktn.IResolvable;
     /**
     * The write-ahead log (WAL) heartbeat feature mimics a dummy transaction.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#heartbeat_enable CcEndpoint#heartbeat_enable}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#heartbeat_enable CcEndpoint#heartbeat_enable}
     */
     readonly heartbeatEnable?: boolean | cdktn.IResolvable;
     /**
     * Sets the WAL heartbeat frequency (in minutes).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#heartbeat_frequency CcEndpoint#heartbeat_frequency}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#heartbeat_frequency CcEndpoint#heartbeat_frequency}
     */
     readonly heartbeatFrequency?: number;
     /**
     * Sets the schema in which the heartbeat artifacts are created.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#heartbeat_schema CcEndpoint#heartbeat_schema}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#heartbeat_schema CcEndpoint#heartbeat_schema}
     */
     readonly heartbeatSchema?: string;
     /**
     * When true, lets PostgreSQL migrate the boolean type as boolean.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#map_boolean_as_boolean CcEndpoint#map_boolean_as_boolean}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#map_boolean_as_boolean CcEndpoint#map_boolean_as_boolean}
     */
     readonly mapBooleanAsBoolean?: boolean | cdktn.IResolvable;
     /**
     * Specifies the maximum size (in KB) of any .csv file used to transfer data to PostgreSQL.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#max_file_size CcEndpoint#max_file_size}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#max_file_size CcEndpoint#max_file_size}
     */
     readonly maxFileSize?: number;
     /**
     * Specifies the plugin to use to create a replication slot.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#plugin_name CcEndpoint#plugin_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#plugin_name CcEndpoint#plugin_name}
     */
     readonly pluginName?: string;
     /**
     * The full Amazon Resource Name (ARN) of the IAM role that specifies AWS DMS as the trusted entity and grants the required permissions to access the value in SecretsManagerSecret.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#secrets_manager_access_role_arn CcEndpoint#secrets_manager_access_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#secrets_manager_access_role_arn CcEndpoint#secrets_manager_access_role_arn}
     */
     readonly secretsManagerAccessRoleArn?: string;
     /**
     * The full ARN, partial ARN, or display name of the SecretsManagerSecret that contains the PostgreSQL endpoint connection details.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#secrets_manager_secret_id CcEndpoint#secrets_manager_secret_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#secrets_manager_secret_id CcEndpoint#secrets_manager_secret_id}
     */
     readonly secretsManagerSecretId?: string;
     /**
     * Sets the name of a previously created logical replication slot for a change data capture (CDC) load of the PostgreSQL source instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#slot_name CcEndpoint#slot_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#slot_name CcEndpoint#slot_name}
     */
     readonly slotName?: string;
 }
@@ -7974,43 +7975,43 @@ export interface RedisSettingsProperty {
     /**
     * The password provided with the auth-role and auth-token options of the AuthType setting for a Redis target endpoint.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#auth_password CcEndpoint#auth_password}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#auth_password CcEndpoint#auth_password}
     */
     readonly authPassword?: string;
     /**
     * The type of authentication to perform when connecting to a Redis target.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#auth_type CcEndpoint#auth_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#auth_type CcEndpoint#auth_type}
     */
     readonly authType?: string;
     /**
     * The user name provided with the auth-role option of the AuthType setting for a Redis target endpoint.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#auth_user_name CcEndpoint#auth_user_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#auth_user_name CcEndpoint#auth_user_name}
     */
     readonly authUserName?: string;
     /**
     * Transmission Control Protocol (TCP) port for the endpoint.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#port CcEndpoint#port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#port CcEndpoint#port}
     */
     readonly port?: number;
     /**
     * Fully qualified domain name of the endpoint.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#server_name CcEndpoint#server_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#server_name CcEndpoint#server_name}
     */
     readonly serverName?: string;
     /**
     * The Amazon Resource Name (ARN) for the certificate authority (CA) that DMS uses to connect to your Redis target endpoint.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#ssl_ca_certificate_arn CcEndpoint#ssl_ca_certificate_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#ssl_ca_certificate_arn CcEndpoint#ssl_ca_certificate_arn}
     */
     readonly sslCaCertificateArn?: string;
     /**
     * The connection to a Redis target endpoint using Transport Layer Security (TLS). Valid values include plaintext and ssl-encryption.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#ssl_security_protocol CcEndpoint#ssl_security_protocol}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#ssl_security_protocol CcEndpoint#ssl_security_protocol}
     */
     readonly sslSecurityProtocol?: string;
 }
@@ -8208,157 +8209,157 @@ export interface RedshiftSettingsProperty {
     /**
     * A value that indicates to allow any date format, including invalid formats such as 00/00/00 00:00:00, to be loaded without generating an error. You can choose true or false (the default).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#accept_any_date CcEndpoint#accept_any_date}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#accept_any_date CcEndpoint#accept_any_date}
     */
     readonly acceptAnyDate?: boolean | cdktn.IResolvable;
     /**
     * Code to run after connecting. This parameter should contain the code itself, not the name of a file containing the code.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#after_connect_script CcEndpoint#after_connect_script}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#after_connect_script CcEndpoint#after_connect_script}
     */
     readonly afterConnectScript?: string;
     /**
     * An S3 folder where the comma-separated-value (.csv) files are stored before being uploaded to the target Redshift cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#bucket_folder CcEndpoint#bucket_folder}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#bucket_folder CcEndpoint#bucket_folder}
     */
     readonly bucketFolder?: string;
     /**
     * The name of the intermediate S3 bucket used to store .csv files before uploading data to Redshift.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#bucket_name CcEndpoint#bucket_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#bucket_name CcEndpoint#bucket_name}
     */
     readonly bucketName?: string;
     /**
     * If Amazon Redshift is configured to support case sensitive schema names, set CaseSensitiveNames to true. The default is false.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#case_sensitive_names CcEndpoint#case_sensitive_names}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#case_sensitive_names CcEndpoint#case_sensitive_names}
     */
     readonly caseSensitiveNames?: boolean | cdktn.IResolvable;
     /**
     * If you set CompUpdate to true Amazon Redshift applies automatic compression if the table is empty.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#comp_update CcEndpoint#comp_update}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#comp_update CcEndpoint#comp_update}
     */
     readonly compUpdate?: boolean | cdktn.IResolvable;
     /**
     * A value that sets the amount of time to wait (in milliseconds) before timing out, beginning from when you initially establish a connection.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#connection_timeout CcEndpoint#connection_timeout}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#connection_timeout CcEndpoint#connection_timeout}
     */
     readonly connectionTimeout?: number;
     /**
     * The date format that you are using.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#date_format CcEndpoint#date_format}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#date_format CcEndpoint#date_format}
     */
     readonly dateFormat?: string;
     /**
     * A value that specifies whether AWS DMS should migrate empty CHAR and VARCHAR fields as NULL. A value of true sets empty CHAR and VARCHAR fields to null. The default is false.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#empty_as_null CcEndpoint#empty_as_null}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#empty_as_null CcEndpoint#empty_as_null}
     */
     readonly emptyAsNull?: boolean | cdktn.IResolvable;
     /**
     * The type of server-side encryption that you want to use for your data.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#encryption_mode CcEndpoint#encryption_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#encryption_mode CcEndpoint#encryption_mode}
     */
     readonly encryptionMode?: string;
     /**
     * This setting is only valid for a full-load migration task. Set ExplicitIds to true to have tables with IDENTITY columns override their auto-generated values with explicit values loaded from the source data files used to populate the tables. The default is false.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#explicit_ids CcEndpoint#explicit_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#explicit_ids CcEndpoint#explicit_ids}
     */
     readonly explicitIds?: boolean | cdktn.IResolvable;
     /**
     * The number of threads used to upload a single file. This parameter accepts a value from 1 through 64. It defaults to 10.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#file_transfer_upload_streams CcEndpoint#file_transfer_upload_streams}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#file_transfer_upload_streams CcEndpoint#file_transfer_upload_streams}
     */
     readonly fileTransferUploadStreams?: number;
     /**
     * The amount of time to wait (in milliseconds) before timing out of operations performed by AWS DMS on a Redshift cluster, such as Redshift COPY, INSERT, DELETE, and UPDATE.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#load_timeout CcEndpoint#load_timeout}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#load_timeout CcEndpoint#load_timeout}
     */
     readonly loadTimeout?: number;
     /**
     * When true, lets Redshift migrate the boolean type as boolean. By default, Redshift migrates booleans as varchar(1). You must set this setting on both the source and target endpoints for it to take effect.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#map_boolean_as_boolean CcEndpoint#map_boolean_as_boolean}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#map_boolean_as_boolean CcEndpoint#map_boolean_as_boolean}
     */
     readonly mapBooleanAsBoolean?: boolean | cdktn.IResolvable;
     /**
     * The maximum size (in KB) of any .csv file used to load data on an S3 bucket and transfer data to Amazon Redshift. It defaults to 1048576KB (1 GB).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#max_file_size CcEndpoint#max_file_size}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#max_file_size CcEndpoint#max_file_size}
     */
     readonly maxFileSize?: number;
     /**
     * A value that specifies to remove surrounding quotation marks from strings in the incoming data.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#remove_quotes CcEndpoint#remove_quotes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#remove_quotes CcEndpoint#remove_quotes}
     */
     readonly removeQuotes?: boolean | cdktn.IResolvable;
     /**
     * A value that specifies to replaces the invalid characters specified in ReplaceInvalidChars, substituting the specified characters instead. The default is "?".
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#replace_chars CcEndpoint#replace_chars}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#replace_chars CcEndpoint#replace_chars}
     */
     readonly replaceChars?: string;
     /**
     * A list of characters that you want to replace. Use with ReplaceChars.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#replace_invalid_chars CcEndpoint#replace_invalid_chars}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#replace_invalid_chars CcEndpoint#replace_invalid_chars}
     */
     readonly replaceInvalidChars?: string;
     /**
     * The full Amazon Resource Name (ARN) of the IAM role that specifies AWS DMS as the trusted entity and grants the required permissions to access the value in SecretsManagerSecret.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#secrets_manager_access_role_arn CcEndpoint#secrets_manager_access_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#secrets_manager_access_role_arn CcEndpoint#secrets_manager_access_role_arn}
     */
     readonly secretsManagerAccessRoleArn?: string;
     /**
     * The full ARN, partial ARN, or display name of the SecretsManagerSecret that contains the Amazon Redshift endpoint connection details.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#secrets_manager_secret_id CcEndpoint#secrets_manager_secret_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#secrets_manager_secret_id CcEndpoint#secrets_manager_secret_id}
     */
     readonly secretsManagerSecretId?: string;
     /**
     * The AWS KMS key ID. If you are using SSE_KMS for the EncryptionMode, provide this key ID.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#server_side_encryption_kms_key_id CcEndpoint#server_side_encryption_kms_key_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#server_side_encryption_kms_key_id CcEndpoint#server_side_encryption_kms_key_id}
     */
     readonly serverSideEncryptionKmsKeyId?: string;
     /**
     * The Amazon Resource Name (ARN) of the IAM role that has access to the Amazon Redshift service. The role must allow the iam:PassRole action.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#service_access_role_arn CcEndpoint#service_access_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#service_access_role_arn CcEndpoint#service_access_role_arn}
     */
     readonly serviceAccessRoleArn?: string;
     /**
     * The time format that you want to use. Valid values are auto (case-sensitive), 'timeformat_string', 'epochsecs', or 'epochmillisecs'.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#time_format CcEndpoint#time_format}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#time_format CcEndpoint#time_format}
     */
     readonly timeFormat?: string;
     /**
     * A value that specifies to remove the trailing white space characters from a VARCHAR string.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#trim_blanks CcEndpoint#trim_blanks}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#trim_blanks CcEndpoint#trim_blanks}
     */
     readonly trimBlanks?: boolean | cdktn.IResolvable;
     /**
     * A value that specifies to truncate data in columns to the appropriate number of characters, so that the data fits in the column.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#truncate_columns CcEndpoint#truncate_columns}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#truncate_columns CcEndpoint#truncate_columns}
     */
     readonly truncateColumns?: boolean | cdktn.IResolvable;
     /**
     * The size (in KB) of the in-memory file write buffer used when generating .csv files on the local disk at the DMS replication instance. The default value is 1000 (buffer size is 1000KB).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#write_buffer_size CcEndpoint#write_buffer_size}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#write_buffer_size CcEndpoint#write_buffer_size}
     */
     readonly writeBufferSize?: number;
 }
@@ -8974,247 +8975,247 @@ export interface S3SettingsProperty {
     /**
     * An optional parameter that, when set to true or y, you can use to add column name information to the .csv output file.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#add_column_name CcEndpoint#add_column_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#add_column_name CcEndpoint#add_column_name}
     */
     readonly addColumnName?: boolean | cdktn.IResolvable;
     /**
     * Use the S3 target endpoint setting AddTrailingPaddingCharacter to add padding on string data. The default value is false.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#add_trailing_padding_character CcEndpoint#add_trailing_padding_character}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#add_trailing_padding_character CcEndpoint#add_trailing_padding_character}
     */
     readonly addTrailingPaddingCharacter?: boolean | cdktn.IResolvable;
     /**
     * An optional parameter to set a folder name in the S3 bucket.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#bucket_folder CcEndpoint#bucket_folder}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#bucket_folder CcEndpoint#bucket_folder}
     */
     readonly bucketFolder?: string;
     /**
     * The name of the S3 bucket.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#bucket_name CcEndpoint#bucket_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#bucket_name CcEndpoint#bucket_name}
     */
     readonly bucketName?: string;
     /**
     * A value that enables AWS DMS to specify a predefined (canned) access control list (ACL) for objects created in an Amazon S3 bucket as .csv or .parquet files.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#canned_acl_for_objects CcEndpoint#canned_acl_for_objects}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#canned_acl_for_objects CcEndpoint#canned_acl_for_objects}
     */
     readonly cannedAclForObjects?: string;
     /**
     * A value that enables a change data capture (CDC) load to write INSERT and UPDATE operations to .csv or .parquet (columnar storage) output files.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#cdc_inserts_and_updates CcEndpoint#cdc_inserts_and_updates}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#cdc_inserts_and_updates CcEndpoint#cdc_inserts_and_updates}
     */
     readonly cdcInsertsAndUpdates?: boolean | cdktn.IResolvable;
     /**
     * A value that enables a change data capture (CDC) load to write only INSERT operations to .csv or columnar storage (.parquet) output files. By default (the false setting), the first field in a .csv or .parquet record contains the letter I (INSERT), U (UPDATE), or D (DELETE). These values indicate whether the row was inserted, updated, or deleted at the source database for a CDC load to the target.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#cdc_inserts_only CcEndpoint#cdc_inserts_only}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#cdc_inserts_only CcEndpoint#cdc_inserts_only}
     */
     readonly cdcInsertsOnly?: boolean | cdktn.IResolvable;
     /**
     * Maximum length of the interval, defined in seconds, after which to output a file to Amazon S3.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#cdc_max_batch_interval CcEndpoint#cdc_max_batch_interval}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#cdc_max_batch_interval CcEndpoint#cdc_max_batch_interval}
     */
     readonly cdcMaxBatchInterval?: number;
     /**
     * Minimum file size, defined in kilobytes, to reach for a file output to Amazon S3.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#cdc_min_file_size CcEndpoint#cdc_min_file_size}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#cdc_min_file_size CcEndpoint#cdc_min_file_size}
     */
     readonly cdcMinFileSize?: number;
     /**
     * Specifies the folder path of CDC files. For an S3 source, this setting is required if a task captures change data; otherwise, it's optional.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#cdc_path CcEndpoint#cdc_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#cdc_path CcEndpoint#cdc_path}
     */
     readonly cdcPath?: string;
     /**
     * An optional parameter. When set to GZIP it enables the service to compress the target files.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#compression_type CcEndpoint#compression_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#compression_type CcEndpoint#compression_type}
     */
     readonly compressionType?: string;
     /**
     * The delimiter used to separate columns in the .csv file for both source and target. The default is a comma.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#csv_delimiter CcEndpoint#csv_delimiter}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#csv_delimiter CcEndpoint#csv_delimiter}
     */
     readonly csvDelimiter?: string;
     /**
     * This setting only applies if your Amazon S3 output files during a change data capture (CDC) load are written in .csv format.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#csv_no_sup_value CcEndpoint#csv_no_sup_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#csv_no_sup_value CcEndpoint#csv_no_sup_value}
     */
     readonly csvNoSupValue?: string;
     /**
     * An optional parameter that specifies how AWS DMS treats null values.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#csv_null_value CcEndpoint#csv_null_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#csv_null_value CcEndpoint#csv_null_value}
     */
     readonly csvNullValue?: string;
     /**
     * The delimiter used to separate rows in the .csv file for both source and target.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#csv_row_delimiter CcEndpoint#csv_row_delimiter}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#csv_row_delimiter CcEndpoint#csv_row_delimiter}
     */
     readonly csvRowDelimiter?: string;
     /**
     * The format of the data that you want to use for output.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#data_format CcEndpoint#data_format}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#data_format CcEndpoint#data_format}
     */
     readonly dataFormat?: string;
     /**
     * The size of one data page in bytes. This parameter defaults to 1024 * 1024 bytes (1 MiB). This number is used for .parquet file format only.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#data_page_size CcEndpoint#data_page_size}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#data_page_size CcEndpoint#data_page_size}
     */
     readonly dataPageSize?: number;
     /**
     * Specifies a date separating delimiter to use during folder partitioning. The default value is SLASH. Use this parameter when DatePartitionedEnabled is set to true.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#date_partition_delimiter CcEndpoint#date_partition_delimiter}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#date_partition_delimiter CcEndpoint#date_partition_delimiter}
     */
     readonly datePartitionDelimiter?: string;
     /**
     * When set to true, this parameter partitions S3 bucket folders based on transaction commit dates. The default value is false.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#date_partition_enabled CcEndpoint#date_partition_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#date_partition_enabled CcEndpoint#date_partition_enabled}
     */
     readonly datePartitionEnabled?: boolean | cdktn.IResolvable;
     /**
     * Identifies the sequence of the date format to use during folder partitioning. The default value is YYYYMMDD. Use this parameter when DatePartitionedEnabled is set to true.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#date_partition_sequence CcEndpoint#date_partition_sequence}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#date_partition_sequence CcEndpoint#date_partition_sequence}
     */
     readonly datePartitionSequence?: string;
     /**
     * When creating an S3 target endpoint, set DatePartitionTimezone to convert the current UTC time into a specified time zone.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#date_partition_timezone CcEndpoint#date_partition_timezone}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#date_partition_timezone CcEndpoint#date_partition_timezone}
     */
     readonly datePartitionTimezone?: string;
     /**
     * The maximum size of an encoded dictionary page of a column
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#dict_page_size_limit CcEndpoint#dict_page_size_limit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#dict_page_size_limit CcEndpoint#dict_page_size_limit}
     */
     readonly dictPageSizeLimit?: number;
     /**
     * A value that enables statistics for Parquet pages and row groups.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#enable_statistics CcEndpoint#enable_statistics}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#enable_statistics CcEndpoint#enable_statistics}
     */
     readonly enableStatistics?: boolean | cdktn.IResolvable;
     /**
     * The type of encoding that you're using.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#encoding_type CcEndpoint#encoding_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#encoding_type CcEndpoint#encoding_type}
     */
     readonly encodingType?: string;
     /**
     * The type of server-side encryption that you want to use for your data.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#encryption_mode CcEndpoint#encryption_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#encryption_mode CcEndpoint#encryption_mode}
     */
     readonly encryptionMode?: string;
     /**
     * To specify a bucket owner and prevent sniping, you can use the ExpectedBucketOwner endpoint setting.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#expected_bucket_owner CcEndpoint#expected_bucket_owner}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#expected_bucket_owner CcEndpoint#expected_bucket_owner}
     */
     readonly expectedBucketOwner?: string;
     /**
     * The external table definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#external_table_definition CcEndpoint#external_table_definition}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#external_table_definition CcEndpoint#external_table_definition}
     */
     readonly externalTableDefinition?: string;
     /**
     * When true, allows AWS Glue to catalog your S3 bucket. Creating an AWS Glue catalog lets you use Athena to query your data.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#glue_catalog_generation CcEndpoint#glue_catalog_generation}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#glue_catalog_generation CcEndpoint#glue_catalog_generation}
     */
     readonly glueCatalogGeneration?: boolean | cdktn.IResolvable;
     /**
     * When this value is set to 1, AWS DMS ignores the first row header in a .csv file. A value of 1 turns on the feature; a value of 0 turns off the feature.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#ignore_header_rows CcEndpoint#ignore_header_rows}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#ignore_header_rows CcEndpoint#ignore_header_rows}
     */
     readonly ignoreHeaderRows?: number;
     /**
     * A value that enables a full load to write INSERT operations to the comma-separated value (.csv) output files only to indicate how the rows were added to the source database.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#include_op_for_full_load CcEndpoint#include_op_for_full_load}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#include_op_for_full_load CcEndpoint#include_op_for_full_load}
     */
     readonly includeOpForFullLoad?: boolean | cdktn.IResolvable;
     /**
     * A value that specifies the maximum size (in KB) of any .csv file to be created while migrating to an S3 target during full load.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#max_file_size CcEndpoint#max_file_size}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#max_file_size CcEndpoint#max_file_size}
     */
     readonly maxFileSize?: number;
     /**
     * A value that specifies the precision of any TIMESTAMP column values that are written to an Amazon S3 object file in .parquet format.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#parquet_timestamp_in_millisecond CcEndpoint#parquet_timestamp_in_millisecond}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#parquet_timestamp_in_millisecond CcEndpoint#parquet_timestamp_in_millisecond}
     */
     readonly parquetTimestampInMillisecond?: boolean | cdktn.IResolvable;
     /**
     * The version of the Apache Parquet format that you want to use: parquet_1_0 (the default) or parquet_2_0.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#parquet_version CcEndpoint#parquet_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#parquet_version CcEndpoint#parquet_version}
     */
     readonly parquetVersion?: string;
     /**
     * If this setting is set to true, AWS DMS saves the transaction order for a change data capture (CDC) load on the Amazon S3 target specified by CdcPath.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#preserve_transactions CcEndpoint#preserve_transactions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#preserve_transactions CcEndpoint#preserve_transactions}
     */
     readonly preserveTransactions?: boolean | cdktn.IResolvable;
     /**
     * For an S3 source, when this value is set to true or y, each leading double quotation mark has to be followed by an ending double quotation mark.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#rfc_4180 CcEndpoint#rfc_4180}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#rfc_4180 CcEndpoint#rfc_4180}
     */
     readonly rfc4180?: boolean | cdktn.IResolvable;
     /**
     * The number of rows in a row group.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#row_group_length CcEndpoint#row_group_length}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#row_group_length CcEndpoint#row_group_length}
     */
     readonly rowGroupLength?: number;
     /**
     * If you are using SSE_KMS for the EncryptionMode, provide the AWS KMS key ID. The key that you use needs an attached policy that enables IAM user permissions and allows use of the key.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#server_side_encryption_kms_key_id CcEndpoint#server_side_encryption_kms_key_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#server_side_encryption_kms_key_id CcEndpoint#server_side_encryption_kms_key_id}
     */
     readonly serverSideEncryptionKmsKeyId?: string;
     /**
     * A required parameter that specifies the Amazon Resource Name (ARN) used by the service to access the IAM role.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#service_access_role_arn CcEndpoint#service_access_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#service_access_role_arn CcEndpoint#service_access_role_arn}
     */
     readonly serviceAccessRoleArn?: string;
     /**
     * A value that when nonblank causes AWS DMS to add a column with timestamp information to the endpoint data for an Amazon S3 target.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#timestamp_column_name CcEndpoint#timestamp_column_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#timestamp_column_name CcEndpoint#timestamp_column_name}
     */
     readonly timestampColumnName?: string;
     /**
     * This setting applies if the S3 output files during a change data capture (CDC) load are written in .csv format. If this setting is set to true for columns not included in the supplemental log, AWS DMS uses the value specified by CsvNoSupValue. If this setting isn't set or is set to false, AWS DMS uses the null value for these columns.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#use_csv_no_sup_value CcEndpoint#use_csv_no_sup_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#use_csv_no_sup_value CcEndpoint#use_csv_no_sup_value}
     */
     readonly useCsvNoSupValue?: boolean | cdktn.IResolvable;
     /**
     * When set to true, this parameter uses the task start time as the timestamp column value instead of the time data is written to target
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#use_task_start_time_for_full_load_timestamp CcEndpoint#use_task_start_time_for_full_load_timestamp}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#use_task_start_time_for_full_load_timestamp CcEndpoint#use_task_start_time_for_full_load_timestamp}
     */
     readonly useTaskStartTimeForFullLoadTimestamp?: boolean | cdktn.IResolvable;
 }
@@ -10160,13 +10161,13 @@ export interface SybaseSettingsProperty {
     /**
     * The full Amazon Resource Name (ARN) of the IAM role that specifies AWS DMS as the trusted entity and grants the required permissions to access the value in SecretsManagerSecret
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#secrets_manager_access_role_arn CcEndpoint#secrets_manager_access_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#secrets_manager_access_role_arn CcEndpoint#secrets_manager_access_role_arn}
     */
     readonly secretsManagerAccessRoleArn?: string;
     /**
     * The full ARN, partial ARN, or display name of the SecretsManagerSecret that contains the SAP SAE endpoint connection details.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#secrets_manager_secret_id CcEndpoint#secrets_manager_secret_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#secrets_manager_secret_id CcEndpoint#secrets_manager_secret_id}
     */
     readonly secretsManagerSecretId?: string;
 }
@@ -10254,13 +10255,13 @@ export interface TagProperty {
     /**
     * A key is the required name of the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#key CcEndpoint#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#key CcEndpoint#key}
     */
     readonly key?: string;
     /**
     * A value is the optional value of the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dms_endpoint#value CcEndpoint#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_endpoint#value CcEndpoint#value}
     */
     readonly value?: string;
 }

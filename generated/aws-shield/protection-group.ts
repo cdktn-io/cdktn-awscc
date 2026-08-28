@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/shield_protection_group
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/shield_protection_group
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -12,43 +12,43 @@ export interface CcProtectionGroupProps extends cdktn.TerraformMetaArguments {
     * * Mean - Use the average of the traffic across the group. This is a good choice for resources that share traffic uniformly. Examples include accelerators and load balancers.
     * * Max - Use the highest traffic from each resource. This is useful for resources that don't share traffic and for resources that share that traffic in a non-uniform way. Examples include Amazon CloudFront and origin resources for CloudFront distributions.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/shield_protection_group#aggregation CcProtectionGroup#aggregation}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/shield_protection_group#aggregation CcProtectionGroup#aggregation}
     */
     readonly aggregation: string;
     /**
     * The Amazon Resource Names (ARNs) of the resources to include in the protection group. You must set this when you set `Pattern` to `ARBITRARY` and you must not set it for any other `Pattern` setting.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/shield_protection_group#members CcProtectionGroup#members}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/shield_protection_group#members CcProtectionGroup#members}
     */
     readonly members?: string[];
     /**
     * The criteria to use to choose the protected resources for inclusion in the group. You can include all resources that have protections, provide a list of resource Amazon Resource Names (ARNs), or include all resources of a specified resource type.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/shield_protection_group#pattern CcProtectionGroup#pattern}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/shield_protection_group#pattern CcProtectionGroup#pattern}
     */
     readonly pattern: string;
     /**
     * The name of the protection group. You use this to identify the protection group in lists and to manage the protection group, for example to update, delete, or describe it.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/shield_protection_group#protection_group_id CcProtectionGroup#protection_group_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/shield_protection_group#protection_group_id CcProtectionGroup#protection_group_id}
     */
     readonly protectionGroupId: string;
     /**
     * The resource type to include in the protection group. All protected resources of this type are included in the protection group. Newly protected resources of this type are automatically added to the group. You must set this when you set `Pattern` to `BY_RESOURCE_TYPE` and you must not set it for any other `Pattern` setting.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/shield_protection_group#resource_type CcProtectionGroup#resource_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/shield_protection_group#resource_type CcProtectionGroup#resource_type}
     */
     readonly resourceType?: string;
     /**
     * One or more tag key-value pairs for the Protection object.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/shield_protection_group#tags CcProtectionGroup#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/shield_protection_group#tags CcProtectionGroup#tags}
     */
     readonly tags?: CcProtectionGroup.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/shield_protection_group awscc_shield_protection_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/shield_protection_group awscc_shield_protection_group}
 */
 export class CcProtectionGroup extends cdktn.TerraformResource {
 
@@ -64,7 +64,7 @@ export class CcProtectionGroup extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcProtectionGroup resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcProtectionGroup to import
-    * @param importFromId The id of the existing CcProtectionGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/shield_protection_group#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcProtectionGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/shield_protection_group#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcProtectionGroup to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -76,7 +76,7 @@ export class CcProtectionGroup extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/shield_protection_group awscc_shield_protection_group} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/shield_protection_group awscc_shield_protection_group} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -86,7 +86,8 @@ export class CcProtectionGroup extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_shield_protection_group',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -307,13 +308,13 @@ export interface TagProperty {
     /**
     * Part of the key:value pair that defines a tag. You can use a tag key to describe a category of information, such as "customer." Tag keys are case-sensitive.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/shield_protection_group#key CcProtectionGroup#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/shield_protection_group#key CcProtectionGroup#key}
     */
     readonly key?: string;
     /**
     * Part of the key:value pair that defines a tag. You can use a tag value to describe a specific value within a category, such as "companyA" or "companyB." Tag values are case-sensitive.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/shield_protection_group#value CcProtectionGroup#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/shield_protection_group#value CcProtectionGroup#value}
     */
     readonly value?: string;
 }

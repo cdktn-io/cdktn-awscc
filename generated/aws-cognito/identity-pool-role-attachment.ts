@@ -1,27 +1,27 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cognito_identity_pool_role_attachment
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_identity_pool_role_attachment
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcIdentityPoolRoleAttachmentProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cognito_identity_pool_role_attachment#identity_pool_id CcIdentityPoolRoleAttachment#identity_pool_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_identity_pool_role_attachment#identity_pool_id CcIdentityPoolRoleAttachment#identity_pool_id}
     */
     readonly identityPoolId: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cognito_identity_pool_role_attachment#role_mappings CcIdentityPoolRoleAttachment#role_mappings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_identity_pool_role_attachment#role_mappings CcIdentityPoolRoleAttachment#role_mappings}
     */
     readonly roleMappings?: { [key: string]: CcIdentityPoolRoleAttachment.RoleMappingProperty } | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cognito_identity_pool_role_attachment#roles CcIdentityPoolRoleAttachment#roles}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_identity_pool_role_attachment#roles CcIdentityPoolRoleAttachment#roles}
     */
     readonly roles?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cognito_identity_pool_role_attachment awscc_cognito_identity_pool_role_attachment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_identity_pool_role_attachment awscc_cognito_identity_pool_role_attachment}
 */
 export class CcIdentityPoolRoleAttachment extends cdktn.TerraformResource {
 
@@ -37,7 +37,7 @@ export class CcIdentityPoolRoleAttachment extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcIdentityPoolRoleAttachment resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcIdentityPoolRoleAttachment to import
-    * @param importFromId The id of the existing CcIdentityPoolRoleAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cognito_identity_pool_role_attachment#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcIdentityPoolRoleAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_identity_pool_role_attachment#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcIdentityPoolRoleAttachment to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -49,7 +49,7 @@ export class CcIdentityPoolRoleAttachment extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cognito_identity_pool_role_attachment awscc_cognito_identity_pool_role_attachment} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_identity_pool_role_attachment awscc_cognito_identity_pool_role_attachment} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -59,7 +59,8 @@ export class CcIdentityPoolRoleAttachment extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_cognito_identity_pool_role_attachment',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -307,19 +308,19 @@ export function ccIdentityPoolRoleAttachmentRoleMappingPropertyToHclTerraform(st
 export namespace CcIdentityPoolRoleAttachment {
 export interface MappingRuleProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cognito_identity_pool_role_attachment#claim CcIdentityPoolRoleAttachment#claim}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_identity_pool_role_attachment#claim CcIdentityPoolRoleAttachment#claim}
     */
     readonly claim?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cognito_identity_pool_role_attachment#match_type CcIdentityPoolRoleAttachment#match_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_identity_pool_role_attachment#match_type CcIdentityPoolRoleAttachment#match_type}
     */
     readonly matchType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cognito_identity_pool_role_attachment#role_arn CcIdentityPoolRoleAttachment#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_identity_pool_role_attachment#role_arn CcIdentityPoolRoleAttachment#role_arn}
     */
     readonly roleArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cognito_identity_pool_role_attachment#value CcIdentityPoolRoleAttachment#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_identity_pool_role_attachment#value CcIdentityPoolRoleAttachment#value}
     */
     readonly value?: string;
 }
@@ -471,7 +472,7 @@ export class MappingRulePropertyList extends cdktn.ComplexList {
 }
 export interface RulesConfigurationTypeProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cognito_identity_pool_role_attachment#rules CcIdentityPoolRoleAttachment#rules}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_identity_pool_role_attachment#rules CcIdentityPoolRoleAttachment#rules}
     */
     readonly rules?: MappingRuleProperty[] | cdktn.IResolvable;
 }
@@ -535,19 +536,19 @@ export class RulesConfigurationTypePropertyOutputReference extends cdktn.Complex
 }
 export interface RoleMappingProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cognito_identity_pool_role_attachment#ambiguous_role_resolution CcIdentityPoolRoleAttachment#ambiguous_role_resolution}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_identity_pool_role_attachment#ambiguous_role_resolution CcIdentityPoolRoleAttachment#ambiguous_role_resolution}
     */
     readonly ambiguousRoleResolution?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cognito_identity_pool_role_attachment#identity_provider CcIdentityPoolRoleAttachment#identity_provider}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_identity_pool_role_attachment#identity_provider CcIdentityPoolRoleAttachment#identity_provider}
     */
     readonly identityProvider?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cognito_identity_pool_role_attachment#rules_configuration CcIdentityPoolRoleAttachment#rules_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_identity_pool_role_attachment#rules_configuration CcIdentityPoolRoleAttachment#rules_configuration}
     */
     readonly rulesConfiguration?: RulesConfigurationTypeProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cognito_identity_pool_role_attachment#type CcIdentityPoolRoleAttachment#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_identity_pool_role_attachment#type CcIdentityPoolRoleAttachment#type}
     */
     readonly type?: string;
 }

@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/inspectorv2_code_security_integration
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_code_security_integration
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,35 +9,35 @@ export interface CcCodeSecurityIntegrationProps extends cdktn.TerraformMetaArgum
     /**
     * Create Integration Details
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/inspectorv2_code_security_integration#create_integration_details CcCodeSecurityIntegration#create_integration_details}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_code_security_integration#create_integration_details CcCodeSecurityIntegration#create_integration_details}
     */
     readonly createIntegrationDetails?: CcCodeSecurityIntegration.CreateDetailsProperty;
     /**
     * Code Security Integration name
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/inspectorv2_code_security_integration#name CcCodeSecurityIntegration#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_code_security_integration#name CcCodeSecurityIntegration#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/inspectorv2_code_security_integration#tags CcCodeSecurityIntegration#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_code_security_integration#tags CcCodeSecurityIntegration#tags}
     */
     readonly tags?: { [key: string]: string };
     /**
     * Integration Type
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/inspectorv2_code_security_integration#type CcCodeSecurityIntegration#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_code_security_integration#type CcCodeSecurityIntegration#type}
     */
     readonly type?: string;
     /**
     * Update Integration Details
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/inspectorv2_code_security_integration#update_integration_details CcCodeSecurityIntegration#update_integration_details}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_code_security_integration#update_integration_details CcCodeSecurityIntegration#update_integration_details}
     */
     readonly updateIntegrationDetails?: CcCodeSecurityIntegration.UpdateDetailsProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/inspectorv2_code_security_integration awscc_inspectorv2_code_security_integration}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_code_security_integration awscc_inspectorv2_code_security_integration}
 */
 export class CcCodeSecurityIntegration extends cdktn.TerraformResource {
 
@@ -53,7 +53,7 @@ export class CcCodeSecurityIntegration extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcCodeSecurityIntegration resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcCodeSecurityIntegration to import
-    * @param importFromId The id of the existing CcCodeSecurityIntegration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/inspectorv2_code_security_integration#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcCodeSecurityIntegration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_code_security_integration#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcCodeSecurityIntegration to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -65,7 +65,7 @@ export class CcCodeSecurityIntegration extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/inspectorv2_code_security_integration awscc_inspectorv2_code_security_integration} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_code_security_integration awscc_inspectorv2_code_security_integration} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -75,7 +75,8 @@ export class CcCodeSecurityIntegration extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_inspectorv2_code_security_integration',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -438,11 +439,11 @@ export function ccCodeSecurityIntegrationUpdateDetailsPropertyToHclTerraform(str
 export namespace CcCodeSecurityIntegration {
 export interface CreateGitLabSelfManagedIntegrationDetailProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/inspectorv2_code_security_integration#access_token CcCodeSecurityIntegration#access_token}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_code_security_integration#access_token CcCodeSecurityIntegration#access_token}
     */
     readonly accessToken?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/inspectorv2_code_security_integration#instance_url CcCodeSecurityIntegration#instance_url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_code_security_integration#instance_url CcCodeSecurityIntegration#instance_url}
     */
     readonly instanceUrl?: string;
 }
@@ -528,7 +529,7 @@ export class CreateGitLabSelfManagedIntegrationDetailPropertyOutputReference ext
 }
 export interface CreateDetailsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/inspectorv2_code_security_integration#gitlab_self_managed CcCodeSecurityIntegration#gitlab_self_managed}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_code_security_integration#gitlab_self_managed CcCodeSecurityIntegration#gitlab_self_managed}
     */
     readonly gitlabSelfManaged?: CreateGitLabSelfManagedIntegrationDetailProperty;
 }
@@ -592,11 +593,11 @@ export class CreateDetailsPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface UpdateGitHubIntegrationDetailProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/inspectorv2_code_security_integration#code CcCodeSecurityIntegration#code}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_code_security_integration#code CcCodeSecurityIntegration#code}
     */
     readonly code?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/inspectorv2_code_security_integration#installation_id CcCodeSecurityIntegration#installation_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_code_security_integration#installation_id CcCodeSecurityIntegration#installation_id}
     */
     readonly installationId?: string;
 }
@@ -682,7 +683,7 @@ export class UpdateGitHubIntegrationDetailPropertyOutputReference extends cdktn.
 }
 export interface UpdateGitLabSelfManagedIntegrationDetailProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/inspectorv2_code_security_integration#auth_code CcCodeSecurityIntegration#auth_code}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_code_security_integration#auth_code CcCodeSecurityIntegration#auth_code}
     */
     readonly authCode?: string;
 }
@@ -746,11 +747,11 @@ export class UpdateGitLabSelfManagedIntegrationDetailPropertyOutputReference ext
 }
 export interface UpdateDetailsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/inspectorv2_code_security_integration#github CcCodeSecurityIntegration#github}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_code_security_integration#github CcCodeSecurityIntegration#github}
     */
     readonly github?: UpdateGitHubIntegrationDetailProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/inspectorv2_code_security_integration#gitlab_self_managed CcCodeSecurityIntegration#gitlab_self_managed}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_code_security_integration#gitlab_self_managed CcCodeSecurityIntegration#gitlab_self_managed}
     */
     readonly gitlabSelfManaged?: UpdateGitLabSelfManagedIntegrationDetailProperty;
 }

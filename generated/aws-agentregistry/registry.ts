@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,43 +9,43 @@ export interface CcRegistryProps extends cdktn.TerraformMetaArguments {
     /**
     * Configuration for the registry's record approval workflow.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry#approval_configuration CcRegistry#approval_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry#approval_configuration CcRegistry#approval_configuration}
     */
     readonly approvalConfiguration?: CcRegistry.ApprovalConfigurationProperty;
     /**
     * The type of authorizer that controls how consumers access the registry's search and MCP invoke operations.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry#authorizer_type CcRegistry#authorizer_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry#authorizer_type CcRegistry#authorizer_type}
     */
     readonly authorizerType?: string;
     /**
     * The description of the registry.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry#description CcRegistry#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry#description CcRegistry#description}
     */
     readonly description?: string;
     /**
     * Discovery configuration for the registry. Controls how consumers are authorized to search the registry and invoke its MCP endpoint.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry#discovery_configuration CcRegistry#discovery_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry#discovery_configuration CcRegistry#discovery_configuration}
     */
     readonly discoveryConfiguration?: CcRegistry.DiscoveryConfigurationProperty;
     /**
     * The name of the registry.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry#name CcRegistry#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry#name CcRegistry#name}
     */
     readonly name: string;
     /**
     * Tags to assign to the registry.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry#tags CcRegistry#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry#tags CcRegistry#tags}
     */
     readonly tags?: CcRegistry.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry awscc_agentregistry_registry}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry awscc_agentregistry_registry}
 */
 export class CcRegistry extends cdktn.TerraformResource {
 
@@ -61,7 +61,7 @@ export class CcRegistry extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcRegistry resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcRegistry to import
-    * @param importFromId The id of the existing CcRegistry that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcRegistry that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcRegistry to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -73,7 +73,7 @@ export class CcRegistry extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry awscc_agentregistry_registry} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry awscc_agentregistry_registry} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -83,7 +83,8 @@ export class CcRegistry extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_agentregistry_registry',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -596,7 +597,7 @@ export interface ApprovalConfigurationProperty {
     /**
     * The rules that determine which registry records are automatically approved on submission. When omitted or empty, submitted records require manual review.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry#auto_approval_rules CcRegistry#auto_approval_rules}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry#auto_approval_rules CcRegistry#auto_approval_rules}
     */
     readonly autoApprovalRules?: string[];
 }
@@ -660,11 +661,11 @@ export class ApprovalConfigurationPropertyOutputReference extends cdktn.ComplexO
 }
 export interface ClaimMatchValueTypeProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry#match_value_string CcRegistry#match_value_string}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry#match_value_string CcRegistry#match_value_string}
     */
     readonly matchValueString?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry#match_value_string_list CcRegistry#match_value_string_list}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry#match_value_string_list CcRegistry#match_value_string_list}
     */
     readonly matchValueStringList?: string[];
 }
@@ -750,13 +751,13 @@ export class ClaimMatchValueTypePropertyOutputReference extends cdktn.ComplexObj
 }
 export interface AuthorizingClaimMatchValueTypeProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry#claim_match_operator CcRegistry#claim_match_operator}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry#claim_match_operator CcRegistry#claim_match_operator}
     */
     readonly claimMatchOperator?: string;
     /**
     * The expected value used to match a claim. Exactly one member is set.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry#claim_match_value CcRegistry#claim_match_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry#claim_match_value CcRegistry#claim_match_value}
     */
     readonly claimMatchValue?: ClaimMatchValueTypeProperty;
 }
@@ -844,15 +845,15 @@ export interface CustomClaimValidationTypeProperty {
     /**
     * The value and match operator used to authorize a claim during JWT validation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry#authorizing_claim_match_value CcRegistry#authorizing_claim_match_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry#authorizing_claim_match_value CcRegistry#authorizing_claim_match_value}
     */
     readonly authorizingClaimMatchValue?: AuthorizingClaimMatchValueTypeProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry#inbound_token_claim_name CcRegistry#inbound_token_claim_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry#inbound_token_claim_name CcRegistry#inbound_token_claim_name}
     */
     readonly inboundTokenClaimName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry#inbound_token_claim_value_type CcRegistry#inbound_token_claim_value_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry#inbound_token_claim_value_type CcRegistry#inbound_token_claim_value_type}
     */
     readonly inboundTokenClaimValueType?: string;
 }
@@ -984,31 +985,31 @@ export interface CustomJWTAuthorizerConfigurationProperty {
     /**
     * The audience values accepted during JWT validation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry#allowed_audience CcRegistry#allowed_audience}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry#allowed_audience CcRegistry#allowed_audience}
     */
     readonly allowedAudience?: string[];
     /**
     * The client identifiers accepted during JWT validation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry#allowed_clients CcRegistry#allowed_clients}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry#allowed_clients CcRegistry#allowed_clients}
     */
     readonly allowedClients?: string[];
     /**
     * The scopes accepted during JWT validation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry#allowed_scopes CcRegistry#allowed_scopes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry#allowed_scopes CcRegistry#allowed_scopes}
     */
     readonly allowedScopes?: string[];
     /**
     * Additional custom claim validations applied to the inbound JWT.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry#custom_claims CcRegistry#custom_claims}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry#custom_claims CcRegistry#custom_claims}
     */
     readonly customClaims?: CustomClaimValidationTypeProperty[] | cdktn.IResolvable;
     /**
     * The OpenID Connect discovery URL used to retrieve the identity provider's metadata and signing keys.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry#discovery_url CcRegistry#discovery_url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry#discovery_url CcRegistry#discovery_url}
     */
     readonly discoveryUrl?: string;
 }
@@ -1162,7 +1163,7 @@ export interface AuthorizerConfigurationProperty {
     /**
     * Configuration for a custom JWT authorizer that validates inbound bearer tokens against an OpenID Connect identity provider.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry#custom_jwt_authorizer CcRegistry#custom_jwt_authorizer}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry#custom_jwt_authorizer CcRegistry#custom_jwt_authorizer}
     */
     readonly customJwtAuthorizer?: CustomJWTAuthorizerConfigurationProperty;
 }
@@ -1228,7 +1229,7 @@ export interface DiscoveryConfigurationProperty {
     /**
     * The authorizer configuration for the registry. This is a union - specify exactly one member.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry#authorizer_configuration CcRegistry#authorizer_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry#authorizer_configuration CcRegistry#authorizer_configuration}
     */
     readonly authorizerConfiguration?: AuthorizerConfigurationProperty;
 }
@@ -1294,13 +1295,13 @@ export interface TagProperty {
     /**
     * The key of the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry#key CcRegistry#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry#key CcRegistry#key}
     */
     readonly key?: string;
     /**
     * The value of the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry#value CcRegistry#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry#value CcRegistry#value}
     */
     readonly value?: string;
 }

@@ -1,31 +1,31 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apptest_test_case
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apptest_test_case
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcTestCaseProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apptest_test_case#description CcTestCase#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apptest_test_case#description CcTestCase#description}
     */
     readonly description?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apptest_test_case#name CcTestCase#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apptest_test_case#name CcTestCase#name}
     */
     readonly name: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apptest_test_case#steps CcTestCase#steps}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apptest_test_case#steps CcTestCase#steps}
     */
     readonly steps: CcTestCase.StepProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apptest_test_case#tags CcTestCase#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apptest_test_case#tags CcTestCase#tags}
     */
     readonly tags?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apptest_test_case awscc_apptest_test_case}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apptest_test_case awscc_apptest_test_case}
 */
 export class CcTestCase extends cdktn.TerraformResource {
 
@@ -41,7 +41,7 @@ export class CcTestCase extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcTestCase resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcTestCase to import
-    * @param importFromId The id of the existing CcTestCase that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apptest_test_case#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcTestCase that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apptest_test_case#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcTestCase to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -53,7 +53,7 @@ export class CcTestCase extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apptest_test_case awscc_apptest_test_case} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apptest_test_case awscc_apptest_test_case} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -63,7 +63,8 @@ export class CcTestCase extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_apptest_test_case',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -1183,23 +1184,23 @@ export class LatestVersionPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface DataSetProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apptest_test_case#ccsid CcTestCase#ccsid}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apptest_test_case#ccsid CcTestCase#ccsid}
     */
     readonly ccsid?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apptest_test_case#format CcTestCase#format}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apptest_test_case#format CcTestCase#format}
     */
     readonly format?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apptest_test_case#length CcTestCase#length}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apptest_test_case#length CcTestCase#length}
     */
     readonly length?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apptest_test_case#name CcTestCase#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apptest_test_case#name CcTestCase#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apptest_test_case#type CcTestCase#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apptest_test_case#type CcTestCase#type}
     */
     readonly type?: string;
 }
@@ -1373,11 +1374,11 @@ export class DataSetPropertyList extends cdktn.ComplexList {
 }
 export interface SourceDatabaseMetadataProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apptest_test_case#capture_tool CcTestCase#capture_tool}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apptest_test_case#capture_tool CcTestCase#capture_tool}
     */
     readonly captureTool?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apptest_test_case#type CcTestCase#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apptest_test_case#type CcTestCase#type}
     */
     readonly type?: string;
 }
@@ -1463,11 +1464,11 @@ export class SourceDatabaseMetadataPropertyOutputReference extends cdktn.Complex
 }
 export interface TargetDatabaseMetadataProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apptest_test_case#capture_tool CcTestCase#capture_tool}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apptest_test_case#capture_tool CcTestCase#capture_tool}
     */
     readonly captureTool?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apptest_test_case#type CcTestCase#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apptest_test_case#type CcTestCase#type}
     */
     readonly type?: string;
 }
@@ -1553,11 +1554,11 @@ export class TargetDatabaseMetadataPropertyOutputReference extends cdktn.Complex
 }
 export interface DatabaseCDCProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apptest_test_case#source_metadata CcTestCase#source_metadata}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apptest_test_case#source_metadata CcTestCase#source_metadata}
     */
     readonly sourceMetadata?: SourceDatabaseMetadataProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apptest_test_case#target_metadata CcTestCase#target_metadata}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apptest_test_case#target_metadata CcTestCase#target_metadata}
     */
     readonly targetMetadata?: TargetDatabaseMetadataProperty;
 }
@@ -1643,11 +1644,11 @@ export class DatabaseCDCPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface FileMetadataProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apptest_test_case#data_sets CcTestCase#data_sets}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apptest_test_case#data_sets CcTestCase#data_sets}
     */
     readonly dataSets?: DataSetProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apptest_test_case#database_cdc CcTestCase#database_cdc}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apptest_test_case#database_cdc CcTestCase#database_cdc}
     */
     readonly databaseCdc?: DatabaseCDCProperty;
 }
@@ -1733,15 +1734,15 @@ export class FileMetadataPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface InputFileProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apptest_test_case#file_metadata CcTestCase#file_metadata}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apptest_test_case#file_metadata CcTestCase#file_metadata}
     */
     readonly fileMetadata?: FileMetadataProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apptest_test_case#source_location CcTestCase#source_location}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apptest_test_case#source_location CcTestCase#source_location}
     */
     readonly sourceLocation?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apptest_test_case#target_location CcTestCase#target_location}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apptest_test_case#target_location CcTestCase#target_location}
     */
     readonly targetLocation?: string;
 }
@@ -1849,7 +1850,7 @@ export class InputFilePropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface InputProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apptest_test_case#file CcTestCase#file}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apptest_test_case#file CcTestCase#file}
     */
     readonly file?: InputFileProperty;
 }
@@ -1913,7 +1914,7 @@ export class InputPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface OutputFileProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apptest_test_case#file_location CcTestCase#file_location}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apptest_test_case#file_location CcTestCase#file_location}
     */
     readonly fileLocation?: string;
 }
@@ -1977,7 +1978,7 @@ export class OutputFilePropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface OutputProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apptest_test_case#file CcTestCase#file}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apptest_test_case#file CcTestCase#file}
     */
     readonly file?: OutputFileProperty;
 }
@@ -2041,11 +2042,11 @@ export class OutputPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface CompareActionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apptest_test_case#input CcTestCase#input}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apptest_test_case#input CcTestCase#input}
     */
     readonly input?: InputProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apptest_test_case#output CcTestCase#output}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apptest_test_case#output CcTestCase#output}
     */
     readonly output?: OutputProperty;
 }
@@ -2131,15 +2132,15 @@ export class CompareActionPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface BatchProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apptest_test_case#batch_job_name CcTestCase#batch_job_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apptest_test_case#batch_job_name CcTestCase#batch_job_name}
     */
     readonly batchJobName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apptest_test_case#batch_job_parameters CcTestCase#batch_job_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apptest_test_case#batch_job_parameters CcTestCase#batch_job_parameters}
     */
     readonly batchJobParameters?: { [key: string]: string };
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apptest_test_case#export_data_set_names CcTestCase#export_data_set_names}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apptest_test_case#export_data_set_names CcTestCase#export_data_set_names}
     */
     readonly exportDataSetNames?: string[];
 }
@@ -2247,11 +2248,11 @@ export class BatchPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface ScriptProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apptest_test_case#script_location CcTestCase#script_location}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apptest_test_case#script_location CcTestCase#script_location}
     */
     readonly scriptLocation?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apptest_test_case#type CcTestCase#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apptest_test_case#type CcTestCase#type}
     */
     readonly type?: string;
 }
@@ -2337,11 +2338,11 @@ export class ScriptPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface TN3270Property {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apptest_test_case#export_data_set_names CcTestCase#export_data_set_names}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apptest_test_case#export_data_set_names CcTestCase#export_data_set_names}
     */
     readonly exportDataSetNames?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apptest_test_case#script CcTestCase#script}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apptest_test_case#script CcTestCase#script}
     */
     readonly script?: ScriptProperty;
 }
@@ -2427,11 +2428,11 @@ export class TN3270PropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface MainframeActionTypeProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apptest_test_case#batch CcTestCase#batch}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apptest_test_case#batch CcTestCase#batch}
     */
     readonly batch?: BatchProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apptest_test_case#tn_3270 CcTestCase#tn_3270}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apptest_test_case#tn_3270 CcTestCase#tn_3270}
     */
     readonly tn3270?: TN3270Property;
 }
@@ -2517,7 +2518,7 @@ export class MainframeActionTypePropertyOutputReference extends cdktn.ComplexObj
 }
 export interface MainframeActionPropertiesProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apptest_test_case#dms_task_arn CcTestCase#dms_task_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apptest_test_case#dms_task_arn CcTestCase#dms_task_arn}
     */
     readonly dmsTaskArn?: string;
 }
@@ -2581,15 +2582,15 @@ export class MainframeActionPropertiesPropertyOutputReference extends cdktn.Comp
 }
 export interface MainframeActionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apptest_test_case#action_type CcTestCase#action_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apptest_test_case#action_type CcTestCase#action_type}
     */
     readonly actionType?: MainframeActionTypeProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apptest_test_case#properties CcTestCase#properties}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apptest_test_case#properties CcTestCase#properties}
     */
     readonly properties?: MainframeActionPropertiesProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apptest_test_case#resource CcTestCase#resource}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apptest_test_case#resource CcTestCase#resource}
     */
     readonly resource?: string;
 }
@@ -2697,11 +2698,11 @@ export class MainframeActionPropertyOutputReference extends cdktn.ComplexObject 
 }
 export interface CloudFormationActionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apptest_test_case#action_type CcTestCase#action_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apptest_test_case#action_type CcTestCase#action_type}
     */
     readonly actionType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apptest_test_case#resource CcTestCase#resource}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apptest_test_case#resource CcTestCase#resource}
     */
     readonly resource?: string;
 }
@@ -2787,11 +2788,11 @@ export class CloudFormationActionPropertyOutputReference extends cdktn.ComplexOb
 }
 export interface M2ManagedActionPropertiesProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apptest_test_case#force_stop CcTestCase#force_stop}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apptest_test_case#force_stop CcTestCase#force_stop}
     */
     readonly forceStop?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apptest_test_case#import_data_set_location CcTestCase#import_data_set_location}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apptest_test_case#import_data_set_location CcTestCase#import_data_set_location}
     */
     readonly importDataSetLocation?: string;
 }
@@ -2877,15 +2878,15 @@ export class M2ManagedActionPropertiesPropertyOutputReference extends cdktn.Comp
 }
 export interface M2ManagedApplicationActionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apptest_test_case#action_type CcTestCase#action_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apptest_test_case#action_type CcTestCase#action_type}
     */
     readonly actionType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apptest_test_case#properties CcTestCase#properties}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apptest_test_case#properties CcTestCase#properties}
     */
     readonly properties?: M2ManagedActionPropertiesProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apptest_test_case#resource CcTestCase#resource}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apptest_test_case#resource CcTestCase#resource}
     */
     readonly resource?: string;
 }
@@ -2993,11 +2994,11 @@ export class M2ManagedApplicationActionPropertyOutputReference extends cdktn.Com
 }
 export interface M2NonManagedApplicationActionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apptest_test_case#action_type CcTestCase#action_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apptest_test_case#action_type CcTestCase#action_type}
     */
     readonly actionType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apptest_test_case#resource CcTestCase#resource}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apptest_test_case#resource CcTestCase#resource}
     */
     readonly resource?: string;
 }
@@ -3083,15 +3084,15 @@ export class M2NonManagedApplicationActionPropertyOutputReference extends cdktn.
 }
 export interface ResourceActionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apptest_test_case#cloudformation_action CcTestCase#cloudformation_action}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apptest_test_case#cloudformation_action CcTestCase#cloudformation_action}
     */
     readonly cloudformationAction?: CloudFormationActionProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apptest_test_case#m2_managed_application_action CcTestCase#m2_managed_application_action}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apptest_test_case#m2_managed_application_action CcTestCase#m2_managed_application_action}
     */
     readonly m2ManagedApplicationAction?: M2ManagedApplicationActionProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apptest_test_case#m2_non_managed_application_action CcTestCase#m2_non_managed_application_action}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apptest_test_case#m2_non_managed_application_action CcTestCase#m2_non_managed_application_action}
     */
     readonly m2NonManagedApplicationAction?: M2NonManagedApplicationActionProperty;
 }
@@ -3199,15 +3200,15 @@ export class ResourceActionPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface StepActionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apptest_test_case#compare_action CcTestCase#compare_action}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apptest_test_case#compare_action CcTestCase#compare_action}
     */
     readonly compareAction?: CompareActionProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apptest_test_case#mainframe_action CcTestCase#mainframe_action}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apptest_test_case#mainframe_action CcTestCase#mainframe_action}
     */
     readonly mainframeAction?: MainframeActionProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apptest_test_case#resource_action CcTestCase#resource_action}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apptest_test_case#resource_action CcTestCase#resource_action}
     */
     readonly resourceAction?: ResourceActionProperty;
 }
@@ -3315,15 +3316,15 @@ export class StepActionPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface StepProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apptest_test_case#action CcTestCase#action}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apptest_test_case#action CcTestCase#action}
     */
     readonly action: StepActionProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apptest_test_case#description CcTestCase#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apptest_test_case#description CcTestCase#description}
     */
     readonly description?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apptest_test_case#name CcTestCase#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apptest_test_case#name CcTestCase#name}
     */
     readonly name: string;
 }

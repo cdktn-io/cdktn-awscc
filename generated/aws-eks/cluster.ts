@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_cluster
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_cluster
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,143 +9,143 @@ export interface CcClusterProps extends cdktn.TerraformMetaArguments {
     /**
     * An object representing the Access Config to use for the cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_cluster#access_config CcCluster#access_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_cluster#access_config CcCluster#access_config}
     */
     readonly accessConfig?: CcCluster.AccessConfigProperty;
     /**
     * Set this value to false to avoid creating the default networking add-ons when the cluster is created.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_cluster#bootstrap_self_managed_addons CcCluster#bootstrap_self_managed_addons}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_cluster#bootstrap_self_managed_addons CcCluster#bootstrap_self_managed_addons}
     */
     readonly bootstrapSelfManagedAddons?: boolean | cdktn.IResolvable;
     /**
     * Todo: add description
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_cluster#compute_config CcCluster#compute_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_cluster#compute_config CcCluster#compute_config}
     */
     readonly computeConfig?: CcCluster.ComputeConfigProperty;
     /**
     * Configuration for provisioned control plane scaling.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_cluster#control_plane_scaling_config CcCluster#control_plane_scaling_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_cluster#control_plane_scaling_config CcCluster#control_plane_scaling_config}
     */
     readonly controlPlaneScalingConfig?: CcCluster.ControlPlaneScalingConfigProperty;
     /**
     * Set this value to true to enable deletion protection for the cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_cluster#deletion_protection CcCluster#deletion_protection}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_cluster#deletion_protection CcCluster#deletion_protection}
     */
     readonly deletionProtection?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_cluster#encryption_config CcCluster#encryption_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_cluster#encryption_config CcCluster#encryption_config}
     */
     readonly encryptionConfig?: CcCluster.EncryptionConfigProperty[] | cdktn.IResolvable;
     /**
     * Force cluster version update
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_cluster#force CcCluster#force}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_cluster#force CcCluster#force}
     */
     readonly force?: boolean | cdktn.IResolvable;
     /**
     * The configuration for the Kubernetes API server on an Amazon EKS cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_cluster#kube_api_server_config CcCluster#kube_api_server_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_cluster#kube_api_server_config CcCluster#kube_api_server_config}
     */
     readonly kubeApiServerConfig?: CcCluster.KubeApiServerConfigProperty;
     /**
     * The configuration for the Kubernetes controller manager on an Amazon EKS cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_cluster#kube_controller_manager_config CcCluster#kube_controller_manager_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_cluster#kube_controller_manager_config CcCluster#kube_controller_manager_config}
     */
     readonly kubeControllerManagerConfig?: CcCluster.KubeControllerManagerConfigProperty;
     /**
     * The configuration for the Kubernetes scheduler on an Amazon EKS cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_cluster#kube_scheduler_config CcCluster#kube_scheduler_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_cluster#kube_scheduler_config CcCluster#kube_scheduler_config}
     */
     readonly kubeSchedulerConfig?: CcCluster.KubeSchedulerConfigProperty;
     /**
     * The Kubernetes network configuration for the cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_cluster#kubernetes_network_config CcCluster#kubernetes_network_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_cluster#kubernetes_network_config CcCluster#kubernetes_network_config}
     */
     readonly kubernetesNetworkConfig?: CcCluster.KubernetesNetworkConfigProperty;
     /**
     * Enable exporting the Kubernetes control plane logs for your cluster to CloudWatch Logs based on log types. By default, cluster control plane logs aren't exported to CloudWatch Logs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_cluster#logging CcCluster#logging}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_cluster#logging CcCluster#logging}
     */
     readonly logging?: CcCluster.LoggingProperty;
     /**
     * The unique name to give to your cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_cluster#name CcCluster#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_cluster#name CcCluster#name}
     */
     readonly name?: string;
     /**
     * An object representing the Outpost configuration to use for AWS EKS outpost cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_cluster#outpost_config CcCluster#outpost_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_cluster#outpost_config CcCluster#outpost_config}
     */
     readonly outpostConfig?: CcCluster.OutpostConfigProperty;
     /**
     * Configuration fields for specifying on-premises node and pod CIDRs that are external to the VPC passed during cluster creation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_cluster#remote_network_config CcCluster#remote_network_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_cluster#remote_network_config CcCluster#remote_network_config}
     */
     readonly remoteNetworkConfig?: CcCluster.RemoteNetworkConfigProperty;
     /**
     * An object representing the VPC configuration to use for an Amazon EKS cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_cluster#resources_vpc_config CcCluster#resources_vpc_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_cluster#resources_vpc_config CcCluster#resources_vpc_config}
     */
     readonly resourcesVpcConfig: CcCluster.ResourcesVpcConfigProperty;
     /**
     * The Amazon Resource Name (ARN) of the IAM role that provides permissions for the Kubernetes control plane to make calls to AWS API operations on your behalf.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_cluster#role_arn CcCluster#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_cluster#role_arn CcCluster#role_arn}
     */
     readonly roleArn: string;
     /**
     * The rollback configuration to use for the cluster version rollback.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_cluster#rollback_config CcCluster#rollback_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_cluster#rollback_config CcCluster#rollback_config}
     */
     readonly rollbackConfig?: CcCluster.RollbackConfigProperty;
     /**
     * Todo: add description
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_cluster#storage_config CcCluster#storage_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_cluster#storage_config CcCluster#storage_config}
     */
     readonly storageConfig?: CcCluster.StorageConfigProperty;
     /**
     * An array of key-value pairs to apply to this resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_cluster#tags CcCluster#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_cluster#tags CcCluster#tags}
     */
     readonly tags?: CcCluster.TagProperty[] | cdktn.IResolvable;
     /**
     * An object representing the Upgrade Policy to use for the cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_cluster#upgrade_policy CcCluster#upgrade_policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_cluster#upgrade_policy CcCluster#upgrade_policy}
     */
     readonly upgradePolicy?: CcCluster.UpgradePolicyProperty;
     /**
     * The desired Kubernetes version for your cluster. If you don't specify a value here, the latest version available in Amazon EKS is used.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_cluster#version CcCluster#version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_cluster#version CcCluster#version}
     */
     readonly version?: string;
     /**
     * The current zonal shift configuration to use for the cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_cluster#zonal_shift_config CcCluster#zonal_shift_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_cluster#zonal_shift_config CcCluster#zonal_shift_config}
     */
     readonly zonalShiftConfig?: CcCluster.ZonalShiftConfigProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_cluster awscc_eks_cluster}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_cluster awscc_eks_cluster}
 */
 export class CcCluster extends cdktn.TerraformResource {
 
@@ -161,7 +161,7 @@ export class CcCluster extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcCluster resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcCluster to import
-    * @param importFromId The id of the existing CcCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_cluster#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_cluster#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcCluster to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -173,7 +173,7 @@ export class CcCluster extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_cluster awscc_eks_cluster} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_cluster awscc_eks_cluster} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -183,7 +183,8 @@ export class CcCluster extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_eks_cluster',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -1892,13 +1893,13 @@ export interface AccessConfigProperty {
     /**
     * Specify the authentication mode that should be used to create your cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_cluster#authentication_mode CcCluster#authentication_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_cluster#authentication_mode CcCluster#authentication_mode}
     */
     readonly authenticationMode?: string;
     /**
     * Set this value to false to avoid creating a default cluster admin Access Entry using the IAM principal used to create the cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_cluster#bootstrap_cluster_creator_admin_permissions CcCluster#bootstrap_cluster_creator_admin_permissions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_cluster#bootstrap_cluster_creator_admin_permissions CcCluster#bootstrap_cluster_creator_admin_permissions}
     */
     readonly bootstrapClusterCreatorAdminPermissions?: boolean | cdktn.IResolvable;
 }
@@ -1986,19 +1987,19 @@ export interface ComputeConfigProperty {
     /**
     * Todo: add description
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_cluster#enabled CcCluster#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_cluster#enabled CcCluster#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
     * Todo: add description
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_cluster#node_pools CcCluster#node_pools}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_cluster#node_pools CcCluster#node_pools}
     */
     readonly nodePools?: string[];
     /**
     * Todo: add description
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_cluster#node_role_arn CcCluster#node_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_cluster#node_role_arn CcCluster#node_role_arn}
     */
     readonly nodeRoleArn?: string;
 }
@@ -2108,7 +2109,7 @@ export interface ControlPlaneScalingConfigProperty {
     /**
     * The scaling tier for the provisioned control plane.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_cluster#tier CcCluster#tier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_cluster#tier CcCluster#tier}
     */
     readonly tier?: string;
 }
@@ -2174,7 +2175,7 @@ export interface ProviderProperty {
     /**
     * Amazon Resource Name (ARN) or alias of the KMS key. The KMS key must be symmetric, created in the same region as the cluster, and if the KMS key was created in a different account, the user must have access to the KMS key.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_cluster#key_arn CcCluster#key_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_cluster#key_arn CcCluster#key_arn}
     */
     readonly keyArn?: string;
 }
@@ -2240,13 +2241,13 @@ export interface EncryptionConfigProperty {
     /**
     * The encryption provider for the cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_cluster#provider CcCluster#provider}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_cluster#provider CcCluster#provider}
     */
     readonly provider?: ProviderProperty;
     /**
     * Specifies the resources to be encrypted. The only supported value is "secrets".
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_cluster#resources CcCluster#resources}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_cluster#resources CcCluster#resources}
     */
     readonly resources?: string[];
 }
@@ -2356,13 +2357,13 @@ export interface ServiceNodePortRangeProperty {
     /**
     * The maximum port number in the range.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_cluster#max_port CcCluster#max_port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_cluster#max_port CcCluster#max_port}
     */
     readonly maxPort?: number;
     /**
     * The minimum port number in the range.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_cluster#min_port CcCluster#min_port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_cluster#min_port CcCluster#min_port}
     */
     readonly minPort?: number;
 }
@@ -2450,13 +2451,13 @@ export interface KubeApiServerConfigProperty {
     /**
     * The duration that Kubernetes events are retained (e.g., 30m, 1h).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_cluster#event_ttl CcCluster#event_ttl}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_cluster#event_ttl CcCluster#event_ttl}
     */
     readonly eventTtl?: string;
     /**
     * The port range for Kubernetes NodePort services.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_cluster#service_node_port_range CcCluster#service_node_port_range}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_cluster#service_node_port_range CcCluster#service_node_port_range}
     */
     readonly serviceNodePortRange?: ServiceNodePortRangeProperty;
 }
@@ -2544,7 +2545,7 @@ export interface HorizontalPodAutoscalerControllerConfigProperty {
     /**
     * The interval between each sync of the horizontal pod autoscaler (e.g., 15s, 1m).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_cluster#horizontal_pod_autoscaler_sync_period CcCluster#horizontal_pod_autoscaler_sync_period}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_cluster#horizontal_pod_autoscaler_sync_period CcCluster#horizontal_pod_autoscaler_sync_period}
     */
     readonly horizontalPodAutoscalerSyncPeriod?: string;
 }
@@ -2610,7 +2611,7 @@ export interface KubeControllerManagerConfigProperty {
     /**
     * The horizontal pod autoscaler controller configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_cluster#horizontal_pod_autoscaler_controller_config CcCluster#horizontal_pod_autoscaler_controller_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_cluster#horizontal_pod_autoscaler_controller_config CcCluster#horizontal_pod_autoscaler_controller_config}
     */
     readonly horizontalPodAutoscalerControllerConfig?: HorizontalPodAutoscalerControllerConfigProperty;
 }
@@ -2676,13 +2677,13 @@ export interface ResourceWeightProperty {
     /**
     * The name of the resource (for example, cpu or memory).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_cluster#name CcCluster#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_cluster#name CcCluster#name}
     */
     readonly name?: string;
     /**
     * The weight assigned to the resource for scoring. Must be between 1 and 100.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_cluster#weight CcCluster#weight}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_cluster#weight CcCluster#weight}
     */
     readonly weight?: number;
 }
@@ -2792,13 +2793,13 @@ export interface ScoringStrategyProperty {
     /**
     * The resource weights used for scoring nodes.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_cluster#resources CcCluster#resources}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_cluster#resources CcCluster#resources}
     */
     readonly resources?: ResourceWeightProperty[] | cdktn.IResolvable;
     /**
     * The scoring strategy type (LeastAllocated or MostAllocated).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_cluster#type CcCluster#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_cluster#type CcCluster#type}
     */
     readonly type?: string;
 }
@@ -2886,7 +2887,7 @@ export interface NodeResourcesFitConfigProperty {
     /**
     * The scoring strategy configuration for the NodeResourcesFit scheduler plugin.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_cluster#scoring_strategy CcCluster#scoring_strategy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_cluster#scoring_strategy CcCluster#scoring_strategy}
     */
     readonly scoringStrategy?: ScoringStrategyProperty;
 }
@@ -2952,7 +2953,7 @@ export interface KubeSchedulerConfigProperty {
     /**
     * The NodeResourcesFit plugin configuration for the Kubernetes scheduler.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_cluster#node_resources_fit CcCluster#node_resources_fit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_cluster#node_resources_fit CcCluster#node_resources_fit}
     */
     readonly nodeResourcesFit?: NodeResourcesFitConfigProperty;
 }
@@ -3018,7 +3019,7 @@ export interface ElasticLoadBalancingProperty {
     /**
     * Todo: add description
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_cluster#enabled CcCluster#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_cluster#enabled CcCluster#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -3084,19 +3085,19 @@ export interface KubernetesNetworkConfigProperty {
     /**
     * Todo: add description
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_cluster#elastic_load_balancing CcCluster#elastic_load_balancing}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_cluster#elastic_load_balancing CcCluster#elastic_load_balancing}
     */
     readonly elasticLoadBalancing?: ElasticLoadBalancingProperty;
     /**
     * Ipv4 or Ipv6. You can only specify ipv6 for 1.21 and later clusters that use version 1.10.1 or later of the Amazon VPC CNI add-on
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_cluster#ip_family CcCluster#ip_family}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_cluster#ip_family CcCluster#ip_family}
     */
     readonly ipFamily?: string;
     /**
     * The CIDR block to assign Kubernetes service IP addresses from. If you don't specify a block, Kubernetes assigns addresses from either the 10.100.0.0/16 or 172.20.0.0/16 CIDR blocks. We recommend that you specify a block that does not overlap with resources in other networks that are peered or connected to your VPC. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_cluster#service_ipv_4_cidr CcCluster#service_ipv_4_cidr}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_cluster#service_ipv_4_cidr CcCluster#service_ipv_4_cidr}
     */
     readonly serviceIpv4Cidr?: string;
 }
@@ -3211,7 +3212,7 @@ export interface LoggingTypeConfigProperty {
     /**
     * name of the log type
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_cluster#type CcCluster#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_cluster#type CcCluster#type}
     */
     readonly type?: string;
 }
@@ -3299,7 +3300,7 @@ export interface ClusterLoggingProperty {
     /**
     * Enable control plane logs for your cluster, all log types will be disabled if the array is empty
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_cluster#enabled_types CcCluster#enabled_types}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_cluster#enabled_types CcCluster#enabled_types}
     */
     readonly enabledTypes?: LoggingTypeConfigProperty[] | cdktn.IResolvable;
 }
@@ -3365,7 +3366,7 @@ export interface LoggingProperty {
     /**
     * The cluster control plane logging configuration for your cluster. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_cluster#cluster_logging CcCluster#cluster_logging}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_cluster#cluster_logging CcCluster#cluster_logging}
     */
     readonly clusterLogging?: ClusterLoggingProperty;
 }
@@ -3431,13 +3432,13 @@ export interface ControlPlanePlacementProperty {
     /**
     * The name of the placement group for the Kubernetes control plane instances. This setting can't be changed after cluster creation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_cluster#group_name CcCluster#group_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_cluster#group_name CcCluster#group_name}
     */
     readonly groupName?: string;
     /**
     * Optional parameter to specify the placement group spread level for control plane instances. If not provided, EKS will deploy control plane instances without a placement group.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_cluster#spread_level CcCluster#spread_level}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_cluster#spread_level CcCluster#spread_level}
     */
     readonly spreadLevel?: string;
 }
@@ -3525,7 +3526,7 @@ export interface EtcdPlacementProperty {
     /**
     * Optional parameter to specify the placement group spread level for etcd instances. If not provided, EKS will deploy etcd instances without a placement group.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_cluster#spread_level CcCluster#spread_level}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_cluster#spread_level CcCluster#spread_level}
     */
     readonly spreadLevel?: string;
 }
@@ -3591,31 +3592,31 @@ export interface OutpostConfigProperty {
     /**
     * The EC2 instance type for the Kubernetes control plane instances of your local Amazon EKS cluster on AWS Outposts. This instance type applies to all control plane instances and cannot be changed after cluster creation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_cluster#control_plane_instance_type CcCluster#control_plane_instance_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_cluster#control_plane_instance_type CcCluster#control_plane_instance_type}
     */
     readonly controlPlaneInstanceType?: string;
     /**
     * An object representing the placement configuration for all the control plane instances of your local Amazon EKS cluster on an AWS Outpost.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_cluster#control_plane_placement CcCluster#control_plane_placement}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_cluster#control_plane_placement CcCluster#control_plane_placement}
     */
     readonly controlPlanePlacement?: ControlPlanePlacementProperty;
     /**
     * The EC2 instance type for etcd instances of your local Amazon EKS cluster on AWS Outposts. This instance type applies to all etcd instances and cannot be changed after cluster creation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_cluster#etcd_instance_type CcCluster#etcd_instance_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_cluster#etcd_instance_type CcCluster#etcd_instance_type}
     */
     readonly etcdInstanceType?: string;
     /**
     * An object representing the placement configuration for the etcd instances of your local Amazon EKS cluster on an AWS Outpost.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_cluster#etcd_placement CcCluster#etcd_placement}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_cluster#etcd_placement CcCluster#etcd_placement}
     */
     readonly etcdPlacement?: EtcdPlacementProperty;
     /**
     * The ARN of the Outpost that you want to use for your local Amazon EKS cluster on Outposts. Only a single Outpost ARN is supported.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_cluster#outpost_arns CcCluster#outpost_arns}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_cluster#outpost_arns CcCluster#outpost_arns}
     */
     readonly outpostArns?: string[];
 }
@@ -3769,7 +3770,7 @@ export interface RemoteNodeNetworkProperty {
     /**
     * Specifies the list of remote node CIDRs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_cluster#cidrs CcCluster#cidrs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_cluster#cidrs CcCluster#cidrs}
     */
     readonly cidrs?: string[];
 }
@@ -3857,7 +3858,7 @@ export interface RemotePodNetworkProperty {
     /**
     * Specifies the list of remote pod CIDRs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_cluster#cidrs CcCluster#cidrs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_cluster#cidrs CcCluster#cidrs}
     */
     readonly cidrs?: string[];
 }
@@ -3945,13 +3946,13 @@ export interface RemoteNetworkConfigProperty {
     /**
     * Network configuration of nodes run on-premises with EKS Hybrid Nodes.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_cluster#remote_node_networks CcCluster#remote_node_networks}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_cluster#remote_node_networks CcCluster#remote_node_networks}
     */
     readonly remoteNodeNetworks?: RemoteNodeNetworkProperty[] | cdktn.IResolvable;
     /**
     * Network configuration of pods run on-premises with EKS Hybrid Nodes.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_cluster#remote_pod_networks CcCluster#remote_pod_networks}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_cluster#remote_pod_networks CcCluster#remote_pod_networks}
     */
     readonly remotePodNetworks?: RemotePodNetworkProperty[] | cdktn.IResolvable;
 }
@@ -4039,37 +4040,37 @@ export interface ResourcesVpcConfigProperty {
     /**
     * Specify the egress mode for the cluster control plane. If you set this to CUSTOMER_ROUTED, the control plane routes traffic through your VPC subnets instead of using AWS managed networking.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_cluster#control_plane_egress_mode CcCluster#control_plane_egress_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_cluster#control_plane_egress_mode CcCluster#control_plane_egress_mode}
     */
     readonly controlPlaneEgressMode?: string;
     /**
     * Set this value to true to enable private access for your cluster's Kubernetes API server endpoint. If you enable private access, Kubernetes API requests from within your cluster's VPC use the private VPC endpoint. The default value for this parameter is false, which disables private access for your Kubernetes API server. If you disable private access and you have nodes or AWS Fargate pods in the cluster, then ensure that publicAccessCidrs includes the necessary CIDR blocks for communication with the nodes or Fargate pods.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_cluster#endpoint_private_access CcCluster#endpoint_private_access}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_cluster#endpoint_private_access CcCluster#endpoint_private_access}
     */
     readonly endpointPrivateAccess?: boolean | cdktn.IResolvable;
     /**
     * Set this value to false to disable public access to your cluster's Kubernetes API server endpoint. If you disable public access, your cluster's Kubernetes API server can only receive requests from within the cluster VPC. The default value for this parameter is true, which enables public access for your Kubernetes API server.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_cluster#endpoint_public_access CcCluster#endpoint_public_access}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_cluster#endpoint_public_access CcCluster#endpoint_public_access}
     */
     readonly endpointPublicAccess?: boolean | cdktn.IResolvable;
     /**
     * The CIDR blocks that are allowed access to your cluster's public Kubernetes API server endpoint. Communication to the endpoint from addresses outside of the CIDR blocks that you specify is denied. The default value is 0.0.0.0/0. If you've disabled private endpoint access and you have nodes or AWS Fargate pods in the cluster, then ensure that you specify the necessary CIDR blocks.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_cluster#public_access_cidrs CcCluster#public_access_cidrs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_cluster#public_access_cidrs CcCluster#public_access_cidrs}
     */
     readonly publicAccessCidrs?: string[];
     /**
     * Specify one or more security groups for the cross-account elastic network interfaces that Amazon EKS creates to use to allow communication between your worker nodes and the Kubernetes control plane. If you don't specify a security group, the default security group for your VPC is used.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_cluster#security_group_ids CcCluster#security_group_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_cluster#security_group_ids CcCluster#security_group_ids}
     */
     readonly securityGroupIds?: string[];
     /**
     * Specify subnets for your Amazon EKS nodes. Amazon EKS creates cross-account elastic network interfaces in these subnets to allow communication between your nodes and the Kubernetes control plane.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_cluster#subnet_ids CcCluster#subnet_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_cluster#subnet_ids CcCluster#subnet_ids}
     */
     readonly subnetIds: string[];
 }
@@ -4242,7 +4243,7 @@ export interface RollbackConfigProperty {
     /**
     * The timeout in minutes for the version rollback operation. If not specified, defaults to 720 minutes (12 hours).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_cluster#timeout_minutes CcCluster#timeout_minutes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_cluster#timeout_minutes CcCluster#timeout_minutes}
     */
     readonly timeoutMinutes?: number;
 }
@@ -4308,7 +4309,7 @@ export interface BlockStorageProperty {
     /**
     * Todo: add description
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_cluster#enabled CcCluster#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_cluster#enabled CcCluster#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -4374,7 +4375,7 @@ export interface StorageConfigProperty {
     /**
     * Todo: add description
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_cluster#block_storage CcCluster#block_storage}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_cluster#block_storage CcCluster#block_storage}
     */
     readonly blockStorage?: BlockStorageProperty;
 }
@@ -4440,13 +4441,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_cluster#key CcCluster#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_cluster#key CcCluster#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 0 to 256 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_cluster#value CcCluster#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_cluster#value CcCluster#value}
     */
     readonly value?: string;
 }
@@ -4556,7 +4557,7 @@ export interface UpgradePolicyProperty {
     /**
     * Specify the support type for your cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_cluster#support_type CcCluster#support_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_cluster#support_type CcCluster#support_type}
     */
     readonly supportType?: string;
 }
@@ -4622,7 +4623,7 @@ export interface ZonalShiftConfigProperty {
     /**
     * Set this value to true to enable zonal shift for the cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/eks_cluster#enabled CcCluster#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_cluster#enabled CcCluster#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
 }

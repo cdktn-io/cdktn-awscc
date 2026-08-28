@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_security_group_ingress
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_security_group_ingress
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,19 +9,19 @@ export interface CcSecurityGroupIngressProps extends cdktn.TerraformMetaArgument
     /**
     * The IPv4 ranges
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_security_group_ingress#cidr_ip CcSecurityGroupIngress#cidr_ip}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_security_group_ingress#cidr_ip CcSecurityGroupIngress#cidr_ip}
     */
     readonly cidrIp?: string;
     /**
     * [VPC only] The IPv6 ranges
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_security_group_ingress#cidr_ipv_6 CcSecurityGroupIngress#cidr_ipv_6}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_security_group_ingress#cidr_ipv_6 CcSecurityGroupIngress#cidr_ipv_6}
     */
     readonly cidrIpv6?: string;
     /**
     * Updates the description of an ingress (inbound) security group rule. You can replace an existing description, or add a description to a rule that did not have one previously
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_security_group_ingress#description CcSecurityGroupIngress#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_security_group_ingress#description CcSecurityGroupIngress#description}
     */
     readonly description?: string;
     /**
@@ -29,7 +29,7 @@ export interface CcSecurityGroupIngressProps extends cdktn.TerraformMetaArgument
     * 
     * Use this for ICMP and any protocol that uses ports.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_security_group_ingress#from_port CcSecurityGroupIngress#from_port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_security_group_ingress#from_port CcSecurityGroupIngress#from_port}
     */
     readonly fromPort?: number;
     /**
@@ -37,13 +37,13 @@ export interface CcSecurityGroupIngressProps extends cdktn.TerraformMetaArgument
     * 
     * You must specify the GroupName property or the GroupId property. For security groups that are in a VPC, you must use the GroupId property.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_security_group_ingress#group_id CcSecurityGroupIngress#group_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_security_group_ingress#group_id CcSecurityGroupIngress#group_id}
     */
     readonly groupId?: string;
     /**
     * The name of the security group.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_security_group_ingress#group_name CcSecurityGroupIngress#group_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_security_group_ingress#group_name CcSecurityGroupIngress#group_name}
     */
     readonly groupName?: string;
     /**
@@ -51,7 +51,7 @@ export interface CcSecurityGroupIngressProps extends cdktn.TerraformMetaArgument
     * 
     * [VPC only] Use -1 to specify all protocols. When authorizing security group rules, specifying -1 or a protocol number other than tcp, udp, icmp, or icmpv6 allows traffic on all ports, regardless of any port range you specify. For tcp, udp, and icmp, you must specify a port range. For icmpv6, the port range is optional; if you omit the port range, traffic for all types and codes is allowed.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_security_group_ingress#ip_protocol CcSecurityGroupIngress#ip_protocol}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_security_group_ingress#ip_protocol CcSecurityGroupIngress#ip_protocol}
     */
     readonly ipProtocol: string;
     /**
@@ -59,13 +59,13 @@ export interface CcSecurityGroupIngressProps extends cdktn.TerraformMetaArgument
     * 
     * 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_security_group_ingress#source_prefix_list_id CcSecurityGroupIngress#source_prefix_list_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_security_group_ingress#source_prefix_list_id CcSecurityGroupIngress#source_prefix_list_id}
     */
     readonly sourcePrefixListId?: string;
     /**
     * The ID of the security group. You must specify either the security group ID or the security group name. For security groups in a nondefault VPC, you must specify the security group ID.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_security_group_ingress#source_security_group_id CcSecurityGroupIngress#source_security_group_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_security_group_ingress#source_security_group_id CcSecurityGroupIngress#source_security_group_id}
     */
     readonly sourceSecurityGroupId?: string;
     /**
@@ -73,7 +73,7 @@ export interface CcSecurityGroupIngressProps extends cdktn.TerraformMetaArgument
     * 
     * You must specify the GroupName property or the GroupId property. For security groups that are in a VPC, you must use the GroupId property.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_security_group_ingress#source_security_group_name CcSecurityGroupIngress#source_security_group_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_security_group_ingress#source_security_group_name CcSecurityGroupIngress#source_security_group_name}
     */
     readonly sourceSecurityGroupName?: string;
     /**
@@ -81,7 +81,7 @@ export interface CcSecurityGroupIngressProps extends cdktn.TerraformMetaArgument
     * 
     * If you specify SourceSecurityGroupName or SourceSecurityGroupId and that security group is owned by a different account than the account creating the stack, you must specify the SourceSecurityGroupOwnerId; otherwise, this property is optional.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_security_group_ingress#source_security_group_owner_id CcSecurityGroupIngress#source_security_group_owner_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_security_group_ingress#source_security_group_owner_id CcSecurityGroupIngress#source_security_group_owner_id}
     */
     readonly sourceSecurityGroupOwnerId?: string;
     /**
@@ -89,13 +89,13 @@ export interface CcSecurityGroupIngressProps extends cdktn.TerraformMetaArgument
     * 
     * Use this for ICMP and any protocol that uses ports.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_security_group_ingress#to_port CcSecurityGroupIngress#to_port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_security_group_ingress#to_port CcSecurityGroupIngress#to_port}
     */
     readonly toPort?: number;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_security_group_ingress awscc_ec2_security_group_ingress}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_security_group_ingress awscc_ec2_security_group_ingress}
 */
 export class CcSecurityGroupIngress extends cdktn.TerraformResource {
 
@@ -111,7 +111,7 @@ export class CcSecurityGroupIngress extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcSecurityGroupIngress resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcSecurityGroupIngress to import
-    * @param importFromId The id of the existing CcSecurityGroupIngress that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_security_group_ingress#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcSecurityGroupIngress that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_security_group_ingress#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcSecurityGroupIngress to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -123,7 +123,7 @@ export class CcSecurityGroupIngress extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_security_group_ingress awscc_ec2_security_group_ingress} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_security_group_ingress awscc_ec2_security_group_ingress} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -133,7 +133,8 @@ export class CcSecurityGroupIngress extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_ec2_security_group_ingress',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,

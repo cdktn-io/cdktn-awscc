@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_acl
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_acl
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,19 +9,19 @@ export interface CcNetworkAclProps extends cdktn.TerraformMetaArguments {
     /**
     * The tags for the network ACL.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_acl#tags CcNetworkAcl#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_acl#tags CcNetworkAcl#tags}
     */
     readonly tags?: CcNetworkAcl.TagProperty[] | cdktn.IResolvable;
     /**
     * The ID of the VPC for the network ACL.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_acl#vpc_id CcNetworkAcl#vpc_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_acl#vpc_id CcNetworkAcl#vpc_id}
     */
     readonly vpcId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_acl awscc_ec2_network_acl}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_acl awscc_ec2_network_acl}
 */
 export class CcNetworkAcl extends cdktn.TerraformResource {
 
@@ -37,7 +37,7 @@ export class CcNetworkAcl extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcNetworkAcl resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcNetworkAcl to import
-    * @param importFromId The id of the existing CcNetworkAcl that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_acl#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcNetworkAcl that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_acl#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcNetworkAcl to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -49,7 +49,7 @@ export class CcNetworkAcl extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_acl awscc_ec2_network_acl} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_acl awscc_ec2_network_acl} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -59,7 +59,8 @@ export class CcNetworkAcl extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_ec2_network_acl',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -190,13 +191,13 @@ export interface TagProperty {
     /**
     * The tag key.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_acl#key CcNetworkAcl#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_acl#key CcNetworkAcl#key}
     */
     readonly key?: string;
     /**
     * The tag value.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_acl#value CcNetworkAcl#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_acl#value CcNetworkAcl#value}
     */
     readonly value?: string;
 }

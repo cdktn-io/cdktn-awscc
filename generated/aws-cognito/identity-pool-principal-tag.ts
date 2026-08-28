@@ -1,31 +1,31 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cognito_identity_pool_principal_tag
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_identity_pool_principal_tag
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcIdentityPoolPrincipalTagProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cognito_identity_pool_principal_tag#identity_pool_id CcIdentityPoolPrincipalTag#identity_pool_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_identity_pool_principal_tag#identity_pool_id CcIdentityPoolPrincipalTag#identity_pool_id}
     */
     readonly identityPoolId: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cognito_identity_pool_principal_tag#identity_provider_name CcIdentityPoolPrincipalTag#identity_provider_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_identity_pool_principal_tag#identity_provider_name CcIdentityPoolPrincipalTag#identity_provider_name}
     */
     readonly identityProviderName: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cognito_identity_pool_principal_tag#principal_tags CcIdentityPoolPrincipalTag#principal_tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_identity_pool_principal_tag#principal_tags CcIdentityPoolPrincipalTag#principal_tags}
     */
     readonly principalTags?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cognito_identity_pool_principal_tag#use_defaults CcIdentityPoolPrincipalTag#use_defaults}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_identity_pool_principal_tag#use_defaults CcIdentityPoolPrincipalTag#use_defaults}
     */
     readonly useDefaults?: boolean | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cognito_identity_pool_principal_tag awscc_cognito_identity_pool_principal_tag}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_identity_pool_principal_tag awscc_cognito_identity_pool_principal_tag}
 */
 export class CcIdentityPoolPrincipalTag extends cdktn.TerraformResource {
 
@@ -41,7 +41,7 @@ export class CcIdentityPoolPrincipalTag extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcIdentityPoolPrincipalTag resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcIdentityPoolPrincipalTag to import
-    * @param importFromId The id of the existing CcIdentityPoolPrincipalTag that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cognito_identity_pool_principal_tag#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcIdentityPoolPrincipalTag that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_identity_pool_principal_tag#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcIdentityPoolPrincipalTag to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -53,7 +53,7 @@ export class CcIdentityPoolPrincipalTag extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cognito_identity_pool_principal_tag awscc_cognito_identity_pool_principal_tag} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_identity_pool_principal_tag awscc_cognito_identity_pool_principal_tag} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -63,7 +63,8 @@ export class CcIdentityPoolPrincipalTag extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_cognito_identity_pool_principal_tag',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,

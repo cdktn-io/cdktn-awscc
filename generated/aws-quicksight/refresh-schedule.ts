@@ -1,27 +1,27 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_refresh_schedule
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_refresh_schedule
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcRefreshScheduleProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_refresh_schedule#aws_account_id CcRefreshSchedule#aws_account_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_refresh_schedule#aws_account_id CcRefreshSchedule#aws_account_id}
     */
     readonly awsAccountId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_refresh_schedule#data_set_id CcRefreshSchedule#data_set_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_refresh_schedule#data_set_id CcRefreshSchedule#data_set_id}
     */
     readonly dataSetId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_refresh_schedule#schedule CcRefreshSchedule#schedule}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_refresh_schedule#schedule CcRefreshSchedule#schedule}
     */
     readonly schedule?: CcRefreshSchedule.RefreshScheduleMapProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_refresh_schedule awscc_quicksight_refresh_schedule}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_refresh_schedule awscc_quicksight_refresh_schedule}
 */
 export class CcRefreshSchedule extends cdktn.TerraformResource {
 
@@ -37,7 +37,7 @@ export class CcRefreshSchedule extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcRefreshSchedule resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcRefreshSchedule to import
-    * @param importFromId The id of the existing CcRefreshSchedule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_refresh_schedule#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcRefreshSchedule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_refresh_schedule#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcRefreshSchedule to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -49,7 +49,7 @@ export class CcRefreshSchedule extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_refresh_schedule awscc_quicksight_refresh_schedule} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_refresh_schedule awscc_quicksight_refresh_schedule} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -59,7 +59,8 @@ export class CcRefreshSchedule extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_quicksight_refresh_schedule',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -319,11 +320,11 @@ export interface RefreshOnDayProperty {
     /**
     * <p>The Day Of Month for scheduled refresh.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_refresh_schedule#day_of_month CcRefreshSchedule#day_of_month}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_refresh_schedule#day_of_month CcRefreshSchedule#day_of_month}
     */
     readonly dayOfMonth?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_refresh_schedule#day_of_week CcRefreshSchedule#day_of_week}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_refresh_schedule#day_of_week CcRefreshSchedule#day_of_week}
     */
     readonly dayOfWeek?: string;
 }
@@ -409,25 +410,25 @@ export class RefreshOnDayPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface ScheduleFrequencyProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_refresh_schedule#interval CcRefreshSchedule#interval}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_refresh_schedule#interval CcRefreshSchedule#interval}
     */
     readonly interval?: string;
     /**
     * <p>The day scheduled for refresh.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_refresh_schedule#refresh_on_day CcRefreshSchedule#refresh_on_day}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_refresh_schedule#refresh_on_day CcRefreshSchedule#refresh_on_day}
     */
     readonly refreshOnDay?: RefreshOnDayProperty;
     /**
     * <p>The time of the day for scheduled refresh.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_refresh_schedule#time_of_the_day CcRefreshSchedule#time_of_the_day}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_refresh_schedule#time_of_the_day CcRefreshSchedule#time_of_the_day}
     */
     readonly timeOfTheDay?: string;
     /**
     * <p>The timezone for scheduled refresh.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_refresh_schedule#time_zone CcRefreshSchedule#time_zone}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_refresh_schedule#time_zone CcRefreshSchedule#time_zone}
     */
     readonly timeZone?: string;
 }
@@ -557,25 +558,25 @@ export class ScheduleFrequencyPropertyOutputReference extends cdktn.ComplexObjec
 }
 export interface RefreshScheduleMapProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_refresh_schedule#refresh_type CcRefreshSchedule#refresh_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_refresh_schedule#refresh_type CcRefreshSchedule#refresh_type}
     */
     readonly refreshType?: string;
     /**
     * <p>Information about the schedule frequency.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_refresh_schedule#schedule_frequency CcRefreshSchedule#schedule_frequency}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_refresh_schedule#schedule_frequency CcRefreshSchedule#schedule_frequency}
     */
     readonly scheduleFrequency?: ScheduleFrequencyProperty;
     /**
     * <p>An unique identifier for the refresh schedule.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_refresh_schedule#schedule_id CcRefreshSchedule#schedule_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_refresh_schedule#schedule_id CcRefreshSchedule#schedule_id}
     */
     readonly scheduleId?: string;
     /**
     * <p>The date time after which refresh is to be scheduled</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_refresh_schedule#start_after_date_time CcRefreshSchedule#start_after_date_time}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_refresh_schedule#start_after_date_time CcRefreshSchedule#start_after_date_time}
     */
     readonly startAfterDateTime?: string;
 }

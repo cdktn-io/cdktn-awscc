@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/panorama_package_version
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/panorama_package_version
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,43 +9,43 @@ export interface CcPackageVersionProps extends cdktn.TerraformMetaArguments {
     /**
     * Whether to mark the new version as the latest version.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/panorama_package_version#mark_latest CcPackageVersion#mark_latest}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/panorama_package_version#mark_latest CcPackageVersion#mark_latest}
     */
     readonly markLatest?: boolean | cdktn.IResolvable;
     /**
     * An owner account.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/panorama_package_version#owner_account CcPackageVersion#owner_account}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/panorama_package_version#owner_account CcPackageVersion#owner_account}
     */
     readonly ownerAccount?: string;
     /**
     * A package ID.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/panorama_package_version#package_id CcPackageVersion#package_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/panorama_package_version#package_id CcPackageVersion#package_id}
     */
     readonly packageId: string;
     /**
     * A package version.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/panorama_package_version#package_version CcPackageVersion#package_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/panorama_package_version#package_version CcPackageVersion#package_version}
     */
     readonly packageVersion: string;
     /**
     * A patch version.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/panorama_package_version#patch_version CcPackageVersion#patch_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/panorama_package_version#patch_version CcPackageVersion#patch_version}
     */
     readonly patchVersion: string;
     /**
     * If the version was marked latest, the new version to maker as latest.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/panorama_package_version#updated_latest_patch_version CcPackageVersion#updated_latest_patch_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/panorama_package_version#updated_latest_patch_version CcPackageVersion#updated_latest_patch_version}
     */
     readonly updatedLatestPatchVersion?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/panorama_package_version awscc_panorama_package_version}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/panorama_package_version awscc_panorama_package_version}
 */
 export class CcPackageVersion extends cdktn.TerraformResource {
 
@@ -61,7 +61,7 @@ export class CcPackageVersion extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcPackageVersion resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcPackageVersion to import
-    * @param importFromId The id of the existing CcPackageVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/panorama_package_version#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcPackageVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/panorama_package_version#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcPackageVersion to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -73,7 +73,7 @@ export class CcPackageVersion extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/panorama_package_version awscc_panorama_package_version} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/panorama_package_version awscc_panorama_package_version} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -83,7 +83,8 @@ export class CcPackageVersion extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_panorama_package_version',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,

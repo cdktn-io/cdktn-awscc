@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_data_source
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_data_source
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,85 +9,85 @@ export interface CcDataSourceProps extends cdktn.TerraformMetaArguments {
     /**
     * The metadata forms that are to be attached to the assets that this data source works with.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_data_source#asset_forms_input CcDataSource#asset_forms_input}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_data_source#asset_forms_input CcDataSource#asset_forms_input}
     */
     readonly assetFormsInput?: CcDataSource.FormInputProperty[] | cdktn.IResolvable;
     /**
     * Configuration of the data source. It can be set to either glueRunConfiguration or redshiftRunConfiguration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_data_source#configuration CcDataSource#configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_data_source#configuration CcDataSource#configuration}
     */
     readonly configuration?: CcDataSource.DataSourceConfigurationInputProperty;
     /**
     * The unique identifier of a connection used to fetch relevant parameters from connection during Datasource run
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_data_source#connection_identifier CcDataSource#connection_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_data_source#connection_identifier CcDataSource#connection_identifier}
     */
     readonly connectionIdentifier?: string;
     /**
     * The description of the data source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_data_source#description CcDataSource#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_data_source#description CcDataSource#description}
     */
     readonly description?: string;
     /**
     * The ID of the Amazon DataZone domain where the data source is created.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_data_source#domain_identifier CcDataSource#domain_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_data_source#domain_identifier CcDataSource#domain_identifier}
     */
     readonly domainIdentifier: string;
     /**
     * Specifies whether the data source is enabled.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_data_source#enable_setting CcDataSource#enable_setting}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_data_source#enable_setting CcDataSource#enable_setting}
     */
     readonly enableSetting?: string;
     /**
     * The unique identifier of the Amazon DataZone environment to which the data source publishes assets.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_data_source#environment_identifier CcDataSource#environment_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_data_source#environment_identifier CcDataSource#environment_identifier}
     */
     readonly environmentIdentifier?: string;
     /**
     * The name of the data source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_data_source#name CcDataSource#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_data_source#name CcDataSource#name}
     */
     readonly name: string;
     /**
     * The identifier of the Amazon DataZone project in which you want to add the data source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_data_source#project_identifier CcDataSource#project_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_data_source#project_identifier CcDataSource#project_identifier}
     */
     readonly projectIdentifier: string;
     /**
     * Specifies whether the assets that this data source creates in the inventory are to be also automatically published to the catalog.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_data_source#publish_on_import CcDataSource#publish_on_import}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_data_source#publish_on_import CcDataSource#publish_on_import}
     */
     readonly publishOnImport?: boolean | cdktn.IResolvable;
     /**
     * Specifies whether the business name generation is to be enabled for this data source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_data_source#recommendation CcDataSource#recommendation}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_data_source#recommendation CcDataSource#recommendation}
     */
     readonly recommendation?: CcDataSource.RecommendationConfigurationProperty;
     /**
     * The schedule of the data source runs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_data_source#schedule CcDataSource#schedule}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_data_source#schedule CcDataSource#schedule}
     */
     readonly schedule?: CcDataSource.ScheduleConfigurationProperty;
     /**
     * The type of the data source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_data_source#type CcDataSource#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_data_source#type CcDataSource#type}
     */
     readonly type: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_data_source awscc_datazone_data_source}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_data_source awscc_datazone_data_source}
 */
 export class CcDataSource extends cdktn.TerraformResource {
 
@@ -103,7 +103,7 @@ export class CcDataSource extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcDataSource resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcDataSource to import
-    * @param importFromId The id of the existing CcDataSource that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_data_source#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcDataSource that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_data_source#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcDataSource to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -115,7 +115,7 @@ export class CcDataSource extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_data_source awscc_datazone_data_source} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_data_source awscc_datazone_data_source} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -125,7 +125,8 @@ export class CcDataSource extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_datazone_data_source',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -1107,25 +1108,25 @@ export interface FormInputProperty {
     /**
     * The content of the metadata form.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_data_source#content CcDataSource#content}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_data_source#content CcDataSource#content}
     */
     readonly content?: string;
     /**
     * The name of the metadata form.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_data_source#form_name CcDataSource#form_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_data_source#form_name CcDataSource#form_name}
     */
     readonly formName?: string;
     /**
     * The ID of the metadata form type.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_data_source#type_identifier CcDataSource#type_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_data_source#type_identifier CcDataSource#type_identifier}
     */
     readonly typeIdentifier?: string;
     /**
     * The revision of the metadata form type.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_data_source#type_revision CcDataSource#type_revision}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_data_source#type_revision CcDataSource#type_revision}
     */
     readonly typeRevision?: string;
 }
@@ -1277,13 +1278,13 @@ export class FormInputPropertyList extends cdktn.ComplexList {
 }
 export interface FilterExpressionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_data_source#expression CcDataSource#expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_data_source#expression CcDataSource#expression}
     */
     readonly expression?: string;
     /**
     * The search filter expression type.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_data_source#type CcDataSource#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_data_source#type CcDataSource#type}
     */
     readonly type?: string;
 }
@@ -1393,19 +1394,19 @@ export interface RelationalFilterConfigurationProperty {
     /**
     * The database name specified in the relational filter configuration for the data source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_data_source#database_name CcDataSource#database_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_data_source#database_name CcDataSource#database_name}
     */
     readonly databaseName?: string;
     /**
     * The filter expressions specified in the relational filter configuration for the data source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_data_source#filter_expressions CcDataSource#filter_expressions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_data_source#filter_expressions CcDataSource#filter_expressions}
     */
     readonly filterExpressions?: FilterExpressionProperty[] | cdktn.IResolvable;
     /**
     * The schema name specified in the relational filter configuration for the data source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_data_source#schema_name CcDataSource#schema_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_data_source#schema_name CcDataSource#schema_name}
     */
     readonly schemaName?: string;
 }
@@ -1537,25 +1538,25 @@ export interface GlueRunConfigurationInputProperty {
     /**
     * Specifies whether to automatically import data quality metrics as part of the data source run.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_data_source#auto_import_data_quality_result CcDataSource#auto_import_data_quality_result}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_data_source#auto_import_data_quality_result CcDataSource#auto_import_data_quality_result}
     */
     readonly autoImportDataQualityResult?: boolean | cdktn.IResolvable;
     /**
     * The catalog name in the AWS Glue run configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_data_source#catalog_name CcDataSource#catalog_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_data_source#catalog_name CcDataSource#catalog_name}
     */
     readonly catalogName?: string;
     /**
     * The data access role included in the configuration details of the AWS Glue data source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_data_source#data_access_role CcDataSource#data_access_role}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_data_source#data_access_role CcDataSource#data_access_role}
     */
     readonly dataAccessRole?: string;
     /**
     * The relational filter configurations included in the configuration details of the AWS Glue data source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_data_source#relational_filter_configurations CcDataSource#relational_filter_configurations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_data_source#relational_filter_configurations CcDataSource#relational_filter_configurations}
     */
     readonly relationalFilterConfigurations?: RelationalFilterConfigurationProperty[] | cdktn.IResolvable;
 }
@@ -1687,7 +1688,7 @@ export interface RedshiftCredentialConfigurationProperty {
     /**
     * The ARN of a secret manager for an Amazon Redshift cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_data_source#secret_manager_arn CcDataSource#secret_manager_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_data_source#secret_manager_arn CcDataSource#secret_manager_arn}
     */
     readonly secretManagerArn?: string;
 }
@@ -1753,7 +1754,7 @@ export interface RedshiftClusterStorageProperty {
     /**
     * The name of an Amazon Redshift cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_data_source#cluster_name CcDataSource#cluster_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_data_source#cluster_name CcDataSource#cluster_name}
     */
     readonly clusterName?: string;
 }
@@ -1819,7 +1820,7 @@ export interface RedshiftServerlessStorageProperty {
     /**
     * The name of the Amazon Redshift Serverless workgroup.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_data_source#workgroup_name CcDataSource#workgroup_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_data_source#workgroup_name CcDataSource#workgroup_name}
     */
     readonly workgroupName?: string;
 }
@@ -1885,13 +1886,13 @@ export interface RedshiftStorageProperty {
     /**
     * The name of an Amazon Redshift cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_data_source#redshift_cluster_source CcDataSource#redshift_cluster_source}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_data_source#redshift_cluster_source CcDataSource#redshift_cluster_source}
     */
     readonly redshiftClusterSource?: RedshiftClusterStorageProperty;
     /**
     * The details of the Amazon Redshift Serverless workgroup storage.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_data_source#redshift_serverless_source CcDataSource#redshift_serverless_source}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_data_source#redshift_serverless_source CcDataSource#redshift_serverless_source}
     */
     readonly redshiftServerlessSource?: RedshiftServerlessStorageProperty;
 }
@@ -1977,13 +1978,13 @@ export class RedshiftStoragePropertyOutputReference extends cdktn.ComplexObject 
 }
 export interface FilterExpressionsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_data_source#expression CcDataSource#expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_data_source#expression CcDataSource#expression}
     */
     readonly expression?: string;
     /**
     * The search filter expression type.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_data_source#type CcDataSource#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_data_source#type CcDataSource#type}
     */
     readonly type?: string;
 }
@@ -2093,19 +2094,19 @@ export interface RelationalFilterConfigurationsProperty {
     /**
     * The database name specified in the relational filter configuration for the data source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_data_source#database_name CcDataSource#database_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_data_source#database_name CcDataSource#database_name}
     */
     readonly databaseName?: string;
     /**
     * The filter expressions specified in the relational filter configuration for the data source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_data_source#filter_expressions CcDataSource#filter_expressions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_data_source#filter_expressions CcDataSource#filter_expressions}
     */
     readonly filterExpressions?: FilterExpressionsProperty[] | cdktn.IResolvable;
     /**
     * The schema name specified in the relational filter configuration for the data source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_data_source#schema_name CcDataSource#schema_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_data_source#schema_name CcDataSource#schema_name}
     */
     readonly schemaName?: string;
 }
@@ -2237,25 +2238,25 @@ export interface RedshiftRunConfigurationInputProperty {
     /**
     * The data access role included in the configuration details of the Amazon Redshift data source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_data_source#data_access_role CcDataSource#data_access_role}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_data_source#data_access_role CcDataSource#data_access_role}
     */
     readonly dataAccessRole?: string;
     /**
     * The details of the credentials required to access an Amazon Redshift cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_data_source#redshift_credential_configuration CcDataSource#redshift_credential_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_data_source#redshift_credential_configuration CcDataSource#redshift_credential_configuration}
     */
     readonly redshiftCredentialConfiguration?: RedshiftCredentialConfigurationProperty;
     /**
     * The details of the Amazon Redshift storage as part of the configuration of an Amazon Redshift data source run.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_data_source#redshift_storage CcDataSource#redshift_storage}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_data_source#redshift_storage CcDataSource#redshift_storage}
     */
     readonly redshiftStorage?: RedshiftStorageProperty;
     /**
     * The relational filter configurations included in the configuration details of the Amazon Redshift data source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_data_source#relational_filter_configurations CcDataSource#relational_filter_configurations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_data_source#relational_filter_configurations CcDataSource#relational_filter_configurations}
     */
     readonly relationalFilterConfigurations?: RelationalFilterConfigurationsProperty[] | cdktn.IResolvable;
 }
@@ -2387,7 +2388,7 @@ export interface SageMakerRunConfigurationInputProperty {
     /**
     * The tracking assets of the Amazon SageMaker run.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_data_source#tracking_assets CcDataSource#tracking_assets}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_data_source#tracking_assets CcDataSource#tracking_assets}
     */
     readonly trackingAssets?: { [key: string]: string[] } | cdktn.IResolvable;
 }
@@ -2451,19 +2452,19 @@ export class SageMakerRunConfigurationInputPropertyOutputReference extends cdktn
 }
 export interface DataSourceConfigurationInputProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_data_source#glue_run_configuration CcDataSource#glue_run_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_data_source#glue_run_configuration CcDataSource#glue_run_configuration}
     */
     readonly glueRunConfiguration?: GlueRunConfigurationInputProperty;
     /**
     * The configuration details of the Amazon Redshift data source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_data_source#redshift_run_configuration CcDataSource#redshift_run_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_data_source#redshift_run_configuration CcDataSource#redshift_run_configuration}
     */
     readonly redshiftRunConfiguration?: RedshiftRunConfigurationInputProperty;
     /**
     * The configuration details of the Amazon SageMaker data source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_data_source#sage_maker_run_configuration CcDataSource#sage_maker_run_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_data_source#sage_maker_run_configuration CcDataSource#sage_maker_run_configuration}
     */
     readonly sageMakerRunConfiguration?: SageMakerRunConfigurationInputProperty;
 }
@@ -2573,7 +2574,7 @@ export interface RecommendationConfigurationProperty {
     /**
     * Specifies whether automatic business name generation is to be enabled or not as part of the recommendation configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_data_source#enable_business_name_generation CcDataSource#enable_business_name_generation}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_data_source#enable_business_name_generation CcDataSource#enable_business_name_generation}
     */
     readonly enableBusinessNameGeneration?: boolean | cdktn.IResolvable;
 }
@@ -2639,13 +2640,13 @@ export interface ScheduleConfigurationProperty {
     /**
     * The schedule of the data source runs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_data_source#schedule CcDataSource#schedule}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_data_source#schedule CcDataSource#schedule}
     */
     readonly schedule?: string;
     /**
     * The timezone of the data source run.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_data_source#timezone CcDataSource#timezone}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_data_source#timezone CcDataSource#timezone}
     */
     readonly timezone?: string;
 }

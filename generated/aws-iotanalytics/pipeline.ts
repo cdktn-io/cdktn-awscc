@@ -1,27 +1,27 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_pipeline
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_pipeline
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcPipelineProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_pipeline#pipeline_activities CcPipeline#pipeline_activities}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_pipeline#pipeline_activities CcPipeline#pipeline_activities}
     */
     readonly pipelineActivities: CcPipeline.ActivityProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_pipeline#pipeline_name CcPipeline#pipeline_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_pipeline#pipeline_name CcPipeline#pipeline_name}
     */
     readonly pipelineName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_pipeline#tags CcPipeline#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_pipeline#tags CcPipeline#tags}
     */
     readonly tags?: CcPipeline.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_pipeline awscc_iotanalytics_pipeline}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_pipeline awscc_iotanalytics_pipeline}
 */
 export class CcPipeline extends cdktn.TerraformResource {
 
@@ -37,7 +37,7 @@ export class CcPipeline extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcPipeline resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcPipeline to import
-    * @param importFromId The id of the existing CcPipeline that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_pipeline#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcPipeline that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_pipeline#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcPipeline to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -49,7 +49,7 @@ export class CcPipeline extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_pipeline awscc_iotanalytics_pipeline} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_pipeline awscc_iotanalytics_pipeline} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -59,7 +59,8 @@ export class CcPipeline extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_iotanalytics_pipeline',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -780,15 +781,15 @@ export function ccPipelineTagPropertyToHclTerraform(struct?: CcPipeline.TagPrope
 export namespace CcPipeline {
 export interface AddAttributesProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_pipeline#attributes CcPipeline#attributes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_pipeline#attributes CcPipeline#attributes}
     */
     readonly attributes?: { [key: string]: string };
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_pipeline#name CcPipeline#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_pipeline#name CcPipeline#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_pipeline#next CcPipeline#next}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_pipeline#next CcPipeline#next}
     */
     readonly next?: string;
 }
@@ -896,15 +897,15 @@ export class AddAttributesPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface ChannelProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_pipeline#channel_name CcPipeline#channel_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_pipeline#channel_name CcPipeline#channel_name}
     */
     readonly channelName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_pipeline#name CcPipeline#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_pipeline#name CcPipeline#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_pipeline#next CcPipeline#next}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_pipeline#next CcPipeline#next}
     */
     readonly next?: string;
 }
@@ -1012,11 +1013,11 @@ export class ChannelPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface DatastoreProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_pipeline#datastore_name CcPipeline#datastore_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_pipeline#datastore_name CcPipeline#datastore_name}
     */
     readonly datastoreName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_pipeline#name CcPipeline#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_pipeline#name CcPipeline#name}
     */
     readonly name?: string;
 }
@@ -1102,23 +1103,23 @@ export class DatastorePropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface DeviceRegistryEnrichProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_pipeline#attribute CcPipeline#attribute}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_pipeline#attribute CcPipeline#attribute}
     */
     readonly attribute?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_pipeline#name CcPipeline#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_pipeline#name CcPipeline#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_pipeline#next CcPipeline#next}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_pipeline#next CcPipeline#next}
     */
     readonly next?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_pipeline#role_arn CcPipeline#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_pipeline#role_arn CcPipeline#role_arn}
     */
     readonly roleArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_pipeline#thing_name CcPipeline#thing_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_pipeline#thing_name CcPipeline#thing_name}
     */
     readonly thingName?: string;
 }
@@ -1270,23 +1271,23 @@ export class DeviceRegistryEnrichPropertyOutputReference extends cdktn.ComplexOb
 }
 export interface DeviceShadowEnrichProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_pipeline#attribute CcPipeline#attribute}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_pipeline#attribute CcPipeline#attribute}
     */
     readonly attribute?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_pipeline#name CcPipeline#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_pipeline#name CcPipeline#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_pipeline#next CcPipeline#next}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_pipeline#next CcPipeline#next}
     */
     readonly next?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_pipeline#role_arn CcPipeline#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_pipeline#role_arn CcPipeline#role_arn}
     */
     readonly roleArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_pipeline#thing_name CcPipeline#thing_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_pipeline#thing_name CcPipeline#thing_name}
     */
     readonly thingName?: string;
 }
@@ -1438,15 +1439,15 @@ export class DeviceShadowEnrichPropertyOutputReference extends cdktn.ComplexObje
 }
 export interface FilterProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_pipeline#filter CcPipeline#filter}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_pipeline#filter CcPipeline#filter}
     */
     readonly filter?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_pipeline#name CcPipeline#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_pipeline#name CcPipeline#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_pipeline#next CcPipeline#next}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_pipeline#next CcPipeline#next}
     */
     readonly next?: string;
 }
@@ -1554,19 +1555,19 @@ export class FilterPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface LambdaProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_pipeline#batch_size CcPipeline#batch_size}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_pipeline#batch_size CcPipeline#batch_size}
     */
     readonly batchSize?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_pipeline#lambda_name CcPipeline#lambda_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_pipeline#lambda_name CcPipeline#lambda_name}
     */
     readonly lambdaName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_pipeline#name CcPipeline#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_pipeline#name CcPipeline#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_pipeline#next CcPipeline#next}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_pipeline#next CcPipeline#next}
     */
     readonly next?: string;
 }
@@ -1696,19 +1697,19 @@ export class LambdaPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface MathProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_pipeline#attribute CcPipeline#attribute}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_pipeline#attribute CcPipeline#attribute}
     */
     readonly attribute?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_pipeline#math CcPipeline#math}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_pipeline#math CcPipeline#math}
     */
     readonly math?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_pipeline#name CcPipeline#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_pipeline#name CcPipeline#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_pipeline#next CcPipeline#next}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_pipeline#next CcPipeline#next}
     */
     readonly next?: string;
 }
@@ -1838,15 +1839,15 @@ export class MathPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface RemoveAttributesProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_pipeline#attributes CcPipeline#attributes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_pipeline#attributes CcPipeline#attributes}
     */
     readonly attributes?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_pipeline#name CcPipeline#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_pipeline#name CcPipeline#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_pipeline#next CcPipeline#next}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_pipeline#next CcPipeline#next}
     */
     readonly next?: string;
 }
@@ -1954,15 +1955,15 @@ export class RemoveAttributesPropertyOutputReference extends cdktn.ComplexObject
 }
 export interface SelectAttributesProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_pipeline#attributes CcPipeline#attributes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_pipeline#attributes CcPipeline#attributes}
     */
     readonly attributes?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_pipeline#name CcPipeline#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_pipeline#name CcPipeline#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_pipeline#next CcPipeline#next}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_pipeline#next CcPipeline#next}
     */
     readonly next?: string;
 }
@@ -2070,43 +2071,43 @@ export class SelectAttributesPropertyOutputReference extends cdktn.ComplexObject
 }
 export interface ActivityProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_pipeline#add_attributes CcPipeline#add_attributes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_pipeline#add_attributes CcPipeline#add_attributes}
     */
     readonly addAttributes?: AddAttributesProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_pipeline#channel CcPipeline#channel}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_pipeline#channel CcPipeline#channel}
     */
     readonly channel?: ChannelProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_pipeline#datastore CcPipeline#datastore}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_pipeline#datastore CcPipeline#datastore}
     */
     readonly datastore?: DatastoreProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_pipeline#device_registry_enrich CcPipeline#device_registry_enrich}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_pipeline#device_registry_enrich CcPipeline#device_registry_enrich}
     */
     readonly deviceRegistryEnrich?: DeviceRegistryEnrichProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_pipeline#device_shadow_enrich CcPipeline#device_shadow_enrich}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_pipeline#device_shadow_enrich CcPipeline#device_shadow_enrich}
     */
     readonly deviceShadowEnrich?: DeviceShadowEnrichProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_pipeline#filter CcPipeline#filter}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_pipeline#filter CcPipeline#filter}
     */
     readonly filter?: FilterProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_pipeline#lambda CcPipeline#lambda}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_pipeline#lambda CcPipeline#lambda}
     */
     readonly lambda?: LambdaProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_pipeline#math CcPipeline#math}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_pipeline#math CcPipeline#math}
     */
     readonly math?: MathProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_pipeline#remove_attributes CcPipeline#remove_attributes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_pipeline#remove_attributes CcPipeline#remove_attributes}
     */
     readonly removeAttributes?: RemoveAttributesProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_pipeline#select_attributes CcPipeline#select_attributes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_pipeline#select_attributes CcPipeline#select_attributes}
     */
     readonly selectAttributes?: SelectAttributesProperty;
 }
@@ -2390,11 +2391,11 @@ export class ActivityPropertyList extends cdktn.ComplexList {
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_pipeline#key CcPipeline#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_pipeline#key CcPipeline#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_pipeline#value CcPipeline#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_pipeline#value CcPipeline#value}
     */
     readonly value?: string;
 }

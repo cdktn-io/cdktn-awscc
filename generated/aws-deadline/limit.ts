@@ -1,35 +1,35 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/deadline_limit
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/deadline_limit
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcLimitProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/deadline_limit#amount_requirement_name CcLimit#amount_requirement_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/deadline_limit#amount_requirement_name CcLimit#amount_requirement_name}
     */
     readonly amountRequirementName: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/deadline_limit#description CcLimit#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/deadline_limit#description CcLimit#description}
     */
     readonly description?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/deadline_limit#display_name CcLimit#display_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/deadline_limit#display_name CcLimit#display_name}
     */
     readonly displayName: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/deadline_limit#farm_id CcLimit#farm_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/deadline_limit#farm_id CcLimit#farm_id}
     */
     readonly farmId: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/deadline_limit#max_count CcLimit#max_count}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/deadline_limit#max_count CcLimit#max_count}
     */
     readonly maxCount: number;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/deadline_limit awscc_deadline_limit}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/deadline_limit awscc_deadline_limit}
 */
 export class CcLimit extends cdktn.TerraformResource {
 
@@ -45,7 +45,7 @@ export class CcLimit extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcLimit resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcLimit to import
-    * @param importFromId The id of the existing CcLimit that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/deadline_limit#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcLimit that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/deadline_limit#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcLimit to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -57,7 +57,7 @@ export class CcLimit extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/deadline_limit awscc_deadline_limit} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/deadline_limit awscc_deadline_limit} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -67,7 +67,8 @@ export class CcLimit extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_deadline_limit',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,

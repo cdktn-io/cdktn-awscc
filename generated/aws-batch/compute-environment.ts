@@ -1,61 +1,61 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/batch_compute_environment
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_compute_environment
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcComputeEnvironmentProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/batch_compute_environment#compute_environment_name CcComputeEnvironment#compute_environment_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_compute_environment#compute_environment_name CcComputeEnvironment#compute_environment_name}
     */
     readonly computeEnvironmentName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/batch_compute_environment#compute_resources CcComputeEnvironment#compute_resources}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_compute_environment#compute_resources CcComputeEnvironment#compute_resources}
     */
     readonly computeResources?: CcComputeEnvironment.ComputeResourcesProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/batch_compute_environment#context CcComputeEnvironment#context}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_compute_environment#context CcComputeEnvironment#context}
     */
     readonly context?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/batch_compute_environment#eks_configuration CcComputeEnvironment#eks_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_compute_environment#eks_configuration CcComputeEnvironment#eks_configuration}
     */
     readonly eksConfiguration?: CcComputeEnvironment.EksConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/batch_compute_environment#replace_compute_environment CcComputeEnvironment#replace_compute_environment}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_compute_environment#replace_compute_environment CcComputeEnvironment#replace_compute_environment}
     */
     readonly replaceComputeEnvironment?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/batch_compute_environment#service_role CcComputeEnvironment#service_role}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_compute_environment#service_role CcComputeEnvironment#service_role}
     */
     readonly serviceRole?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/batch_compute_environment#state CcComputeEnvironment#state}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_compute_environment#state CcComputeEnvironment#state}
     */
     readonly state?: string;
     /**
     * A key-value pair to associate with a resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/batch_compute_environment#tags CcComputeEnvironment#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_compute_environment#tags CcComputeEnvironment#tags}
     */
     readonly tags?: { [key: string]: string };
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/batch_compute_environment#type CcComputeEnvironment#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_compute_environment#type CcComputeEnvironment#type}
     */
     readonly type: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/batch_compute_environment#unmanagedv_cpus CcComputeEnvironment#unmanagedv_cpus}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_compute_environment#unmanagedv_cpus CcComputeEnvironment#unmanagedv_cpus}
     */
     readonly unmanagedvCpus?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/batch_compute_environment#update_policy CcComputeEnvironment#update_policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_compute_environment#update_policy CcComputeEnvironment#update_policy}
     */
     readonly updatePolicy?: CcComputeEnvironment.UpdatePolicyProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/batch_compute_environment awscc_batch_compute_environment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_compute_environment awscc_batch_compute_environment}
 */
 export class CcComputeEnvironment extends cdktn.TerraformResource {
 
@@ -71,7 +71,7 @@ export class CcComputeEnvironment extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcComputeEnvironment resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcComputeEnvironment to import
-    * @param importFromId The id of the existing CcComputeEnvironment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/batch_compute_environment#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcComputeEnvironment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_compute_environment#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcComputeEnvironment to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -83,7 +83,7 @@ export class CcComputeEnvironment extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/batch_compute_environment awscc_batch_compute_environment} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_compute_environment awscc_batch_compute_environment} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -93,7 +93,8 @@ export class CcComputeEnvironment extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_batch_compute_environment',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -1180,19 +1181,19 @@ export function ccComputeEnvironmentUpdatePolicyPropertyToHclTerraform(struct?: 
 export namespace CcComputeEnvironment {
 export interface Ec2ConfigurationObjectProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/batch_compute_environment#batch_image_status CcComputeEnvironment#batch_image_status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_compute_environment#batch_image_status CcComputeEnvironment#batch_image_status}
     */
     readonly batchImageStatus?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/batch_compute_environment#image_id_override CcComputeEnvironment#image_id_override}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_compute_environment#image_id_override CcComputeEnvironment#image_id_override}
     */
     readonly imageIdOverride?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/batch_compute_environment#image_kubernetes_version CcComputeEnvironment#image_kubernetes_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_compute_environment#image_kubernetes_version CcComputeEnvironment#image_kubernetes_version}
     */
     readonly imageKubernetesVersion?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/batch_compute_environment#image_type CcComputeEnvironment#image_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_compute_environment#image_type CcComputeEnvironment#image_type}
     */
     readonly imageType?: string;
 }
@@ -1344,23 +1345,23 @@ export class Ec2ConfigurationObjectPropertyList extends cdktn.ComplexList {
 }
 export interface LaunchTemplateSpecificationOverrideProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/batch_compute_environment#launch_template_id CcComputeEnvironment#launch_template_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_compute_environment#launch_template_id CcComputeEnvironment#launch_template_id}
     */
     readonly launchTemplateId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/batch_compute_environment#launch_template_name CcComputeEnvironment#launch_template_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_compute_environment#launch_template_name CcComputeEnvironment#launch_template_name}
     */
     readonly launchTemplateName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/batch_compute_environment#target_instance_types CcComputeEnvironment#target_instance_types}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_compute_environment#target_instance_types CcComputeEnvironment#target_instance_types}
     */
     readonly targetInstanceTypes?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/batch_compute_environment#userdata_type CcComputeEnvironment#userdata_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_compute_environment#userdata_type CcComputeEnvironment#userdata_type}
     */
     readonly userdataType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/batch_compute_environment#version CcComputeEnvironment#version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_compute_environment#version CcComputeEnvironment#version}
     */
     readonly version?: string;
 }
@@ -1534,23 +1535,23 @@ export class LaunchTemplateSpecificationOverridePropertyList extends cdktn.Compl
 }
 export interface LaunchTemplateSpecificationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/batch_compute_environment#launch_template_id CcComputeEnvironment#launch_template_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_compute_environment#launch_template_id CcComputeEnvironment#launch_template_id}
     */
     readonly launchTemplateId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/batch_compute_environment#launch_template_name CcComputeEnvironment#launch_template_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_compute_environment#launch_template_name CcComputeEnvironment#launch_template_name}
     */
     readonly launchTemplateName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/batch_compute_environment#overrides CcComputeEnvironment#overrides}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_compute_environment#overrides CcComputeEnvironment#overrides}
     */
     readonly overrides?: LaunchTemplateSpecificationOverrideProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/batch_compute_environment#userdata_type CcComputeEnvironment#userdata_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_compute_environment#userdata_type CcComputeEnvironment#userdata_type}
     */
     readonly userdataType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/batch_compute_environment#version CcComputeEnvironment#version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_compute_environment#version CcComputeEnvironment#version}
     */
     readonly version?: string;
 }
@@ -1702,7 +1703,7 @@ export class LaunchTemplateSpecificationPropertyOutputReference extends cdktn.Co
 }
 export interface InfrastructureOptimizationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/batch_compute_environment#scale_in_after CcComputeEnvironment#scale_in_after}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_compute_environment#scale_in_after CcComputeEnvironment#scale_in_after}
     */
     readonly scaleInAfter?: number;
 }
@@ -1766,11 +1767,11 @@ export class InfrastructureOptimizationPropertyOutputReference extends cdktn.Com
 }
 export interface CapacityReservationsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/batch_compute_environment#reservation_group_arn CcComputeEnvironment#reservation_group_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_compute_environment#reservation_group_arn CcComputeEnvironment#reservation_group_arn}
     */
     readonly reservationGroupArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/batch_compute_environment#reservation_preference CcComputeEnvironment#reservation_preference}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_compute_environment#reservation_preference CcComputeEnvironment#reservation_preference}
     */
     readonly reservationPreference?: string;
 }
@@ -1856,7 +1857,7 @@ export class CapacityReservationsPropertyOutputReference extends cdktn.ComplexOb
 }
 export interface InstanceRequirementsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/batch_compute_environment#allowed_instance_types CcComputeEnvironment#allowed_instance_types}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_compute_environment#allowed_instance_types CcComputeEnvironment#allowed_instance_types}
     */
     readonly allowedInstanceTypes?: string[];
 }
@@ -1920,7 +1921,7 @@ export class InstanceRequirementsPropertyOutputReference extends cdktn.ComplexOb
 }
 export interface ManagedInstancesLocalStorageConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/batch_compute_environment#use_local_storage CcComputeEnvironment#use_local_storage}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_compute_environment#use_local_storage CcComputeEnvironment#use_local_storage}
     */
     readonly useLocalStorage?: boolean | cdktn.IResolvable;
 }
@@ -1984,11 +1985,11 @@ export class ManagedInstancesLocalStorageConfigurationPropertyOutputReference ex
 }
 export interface ManagedInstancesNetworkConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/batch_compute_environment#security_groups CcComputeEnvironment#security_groups}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_compute_environment#security_groups CcComputeEnvironment#security_groups}
     */
     readonly securityGroups?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/batch_compute_environment#subnets CcComputeEnvironment#subnets}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_compute_environment#subnets CcComputeEnvironment#subnets}
     */
     readonly subnets?: string[];
 }
@@ -2074,7 +2075,7 @@ export class ManagedInstancesNetworkConfigurationPropertyOutputReference extends
 }
 export interface ManagedInstancesStorageConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/batch_compute_environment#storage_size_gi_b CcComputeEnvironment#storage_size_gi_b}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_compute_environment#storage_size_gi_b CcComputeEnvironment#storage_size_gi_b}
     */
     readonly storageSizeGiB?: number;
 }
@@ -2138,43 +2139,43 @@ export class ManagedInstancesStorageConfigurationPropertyOutputReference extends
 }
 export interface InstanceLaunchTemplateProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/batch_compute_environment#capacity_option_type CcComputeEnvironment#capacity_option_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_compute_environment#capacity_option_type CcComputeEnvironment#capacity_option_type}
     */
     readonly capacityOptionType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/batch_compute_environment#capacity_reservations CcComputeEnvironment#capacity_reservations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_compute_environment#capacity_reservations CcComputeEnvironment#capacity_reservations}
     */
     readonly capacityReservations?: CapacityReservationsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/batch_compute_environment#ec_2_instance_profile_arn CcComputeEnvironment#ec_2_instance_profile_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_compute_environment#ec_2_instance_profile_arn CcComputeEnvironment#ec_2_instance_profile_arn}
     */
     readonly ec2InstanceProfileArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/batch_compute_environment#fips_enabled CcComputeEnvironment#fips_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_compute_environment#fips_enabled CcComputeEnvironment#fips_enabled}
     */
     readonly fipsEnabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/batch_compute_environment#instance_metadata_tags_propagation CcComputeEnvironment#instance_metadata_tags_propagation}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_compute_environment#instance_metadata_tags_propagation CcComputeEnvironment#instance_metadata_tags_propagation}
     */
     readonly instanceMetadataTagsPropagation?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/batch_compute_environment#instance_requirements CcComputeEnvironment#instance_requirements}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_compute_environment#instance_requirements CcComputeEnvironment#instance_requirements}
     */
     readonly instanceRequirements?: InstanceRequirementsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/batch_compute_environment#local_storage_configuration CcComputeEnvironment#local_storage_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_compute_environment#local_storage_configuration CcComputeEnvironment#local_storage_configuration}
     */
     readonly localStorageConfiguration?: ManagedInstancesLocalStorageConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/batch_compute_environment#monitoring CcComputeEnvironment#monitoring}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_compute_environment#monitoring CcComputeEnvironment#monitoring}
     */
     readonly monitoring?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/batch_compute_environment#network_configuration CcComputeEnvironment#network_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_compute_environment#network_configuration CcComputeEnvironment#network_configuration}
     */
     readonly networkConfiguration?: ManagedInstancesNetworkConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/batch_compute_environment#storage_configuration CcComputeEnvironment#storage_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_compute_environment#storage_configuration CcComputeEnvironment#storage_configuration}
     */
     readonly storageConfiguration?: ManagedInstancesStorageConfigurationProperty;
 }
@@ -2436,19 +2437,19 @@ export class InstanceLaunchTemplatePropertyOutputReference extends cdktn.Complex
 }
 export interface ManagedInstancesProviderProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/batch_compute_environment#infrastructure_optimization CcComputeEnvironment#infrastructure_optimization}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_compute_environment#infrastructure_optimization CcComputeEnvironment#infrastructure_optimization}
     */
     readonly infrastructureOptimization?: InfrastructureOptimizationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/batch_compute_environment#infrastructure_role_arn CcComputeEnvironment#infrastructure_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_compute_environment#infrastructure_role_arn CcComputeEnvironment#infrastructure_role_arn}
     */
     readonly infrastructureRoleArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/batch_compute_environment#instance_launch_template CcComputeEnvironment#instance_launch_template}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_compute_environment#instance_launch_template CcComputeEnvironment#instance_launch_template}
     */
     readonly instanceLaunchTemplate?: InstanceLaunchTemplateProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/batch_compute_environment#propagate_tags CcComputeEnvironment#propagate_tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_compute_environment#propagate_tags CcComputeEnvironment#propagate_tags}
     */
     readonly propagateTags?: string;
 }
@@ -2578,7 +2579,7 @@ export class ManagedInstancesProviderPropertyOutputReference extends cdktn.Compl
 }
 export interface ComputeScalingPolicyProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/batch_compute_environment#min_scale_down_delay_minutes CcComputeEnvironment#min_scale_down_delay_minutes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_compute_environment#min_scale_down_delay_minutes CcComputeEnvironment#min_scale_down_delay_minutes}
     */
     readonly minScaleDownDelayMinutes?: number;
 }
@@ -2642,91 +2643,91 @@ export class ComputeScalingPolicyPropertyOutputReference extends cdktn.ComplexOb
 }
 export interface ComputeResourcesProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/batch_compute_environment#allocation_strategy CcComputeEnvironment#allocation_strategy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_compute_environment#allocation_strategy CcComputeEnvironment#allocation_strategy}
     */
     readonly allocationStrategy?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/batch_compute_environment#bid_percentage CcComputeEnvironment#bid_percentage}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_compute_environment#bid_percentage CcComputeEnvironment#bid_percentage}
     */
     readonly bidPercentage?: number;
     /**
     * Capacity-level tags for compute environments.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/batch_compute_environment#capacity_tags CcComputeEnvironment#capacity_tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_compute_environment#capacity_tags CcComputeEnvironment#capacity_tags}
     */
     readonly capacityTags?: { [key: string]: string };
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/batch_compute_environment#desiredv_cpus CcComputeEnvironment#desiredv_cpus}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_compute_environment#desiredv_cpus CcComputeEnvironment#desiredv_cpus}
     */
     readonly desiredvCpus?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/batch_compute_environment#ec_2_configuration CcComputeEnvironment#ec_2_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_compute_environment#ec_2_configuration CcComputeEnvironment#ec_2_configuration}
     */
     readonly ec2Configuration?: Ec2ConfigurationObjectProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/batch_compute_environment#ec_2_key_pair CcComputeEnvironment#ec_2_key_pair}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_compute_environment#ec_2_key_pair CcComputeEnvironment#ec_2_key_pair}
     */
     readonly ec2KeyPair?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/batch_compute_environment#image_id CcComputeEnvironment#image_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_compute_environment#image_id CcComputeEnvironment#image_id}
     */
     readonly imageId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/batch_compute_environment#instance_role CcComputeEnvironment#instance_role}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_compute_environment#instance_role CcComputeEnvironment#instance_role}
     */
     readonly instanceRole?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/batch_compute_environment#instance_types CcComputeEnvironment#instance_types}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_compute_environment#instance_types CcComputeEnvironment#instance_types}
     */
     readonly instanceTypes?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/batch_compute_environment#launch_template CcComputeEnvironment#launch_template}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_compute_environment#launch_template CcComputeEnvironment#launch_template}
     */
     readonly launchTemplate?: LaunchTemplateSpecificationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/batch_compute_environment#managed_instances_provider CcComputeEnvironment#managed_instances_provider}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_compute_environment#managed_instances_provider CcComputeEnvironment#managed_instances_provider}
     */
     readonly managedInstancesProvider?: ManagedInstancesProviderProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/batch_compute_environment#maxv_cpus CcComputeEnvironment#maxv_cpus}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_compute_environment#maxv_cpus CcComputeEnvironment#maxv_cpus}
     */
     readonly maxvCpus?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/batch_compute_environment#minv_cpus CcComputeEnvironment#minv_cpus}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_compute_environment#minv_cpus CcComputeEnvironment#minv_cpus}
     */
     readonly minvCpus?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/batch_compute_environment#placement_group CcComputeEnvironment#placement_group}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_compute_environment#placement_group CcComputeEnvironment#placement_group}
     */
     readonly placementGroup?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/batch_compute_environment#scaling_policy CcComputeEnvironment#scaling_policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_compute_environment#scaling_policy CcComputeEnvironment#scaling_policy}
     */
     readonly scalingPolicy?: ComputeScalingPolicyProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/batch_compute_environment#security_group_ids CcComputeEnvironment#security_group_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_compute_environment#security_group_ids CcComputeEnvironment#security_group_ids}
     */
     readonly securityGroupIds?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/batch_compute_environment#spot_iam_fleet_role CcComputeEnvironment#spot_iam_fleet_role}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_compute_environment#spot_iam_fleet_role CcComputeEnvironment#spot_iam_fleet_role}
     */
     readonly spotIamFleetRole?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/batch_compute_environment#subnets CcComputeEnvironment#subnets}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_compute_environment#subnets CcComputeEnvironment#subnets}
     */
     readonly subnets?: string[];
     /**
     * A key-value pair to associate with a resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/batch_compute_environment#tags CcComputeEnvironment#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_compute_environment#tags CcComputeEnvironment#tags}
     */
     readonly tags?: { [key: string]: string };
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/batch_compute_environment#type CcComputeEnvironment#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_compute_environment#type CcComputeEnvironment#type}
     */
     readonly type?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/batch_compute_environment#update_to_latest_image_version CcComputeEnvironment#update_to_latest_image_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_compute_environment#update_to_latest_image_version CcComputeEnvironment#update_to_latest_image_version}
     */
     readonly updateToLatestImageVersion?: boolean | cdktn.IResolvable;
 }
@@ -3230,11 +3231,11 @@ export class ComputeResourcesPropertyOutputReference extends cdktn.ComplexObject
 }
 export interface EksConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/batch_compute_environment#eks_cluster_arn CcComputeEnvironment#eks_cluster_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_compute_environment#eks_cluster_arn CcComputeEnvironment#eks_cluster_arn}
     */
     readonly eksClusterArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/batch_compute_environment#kubernetes_namespace CcComputeEnvironment#kubernetes_namespace}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_compute_environment#kubernetes_namespace CcComputeEnvironment#kubernetes_namespace}
     */
     readonly kubernetesNamespace?: string;
 }
@@ -3320,11 +3321,11 @@ export class EksConfigurationPropertyOutputReference extends cdktn.ComplexObject
 }
 export interface UpdatePolicyProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/batch_compute_environment#job_execution_timeout_minutes CcComputeEnvironment#job_execution_timeout_minutes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_compute_environment#job_execution_timeout_minutes CcComputeEnvironment#job_execution_timeout_minutes}
     */
     readonly jobExecutionTimeoutMinutes?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/batch_compute_environment#terminate_jobs_on_update CcComputeEnvironment#terminate_jobs_on_update}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_compute_environment#terminate_jobs_on_update CcComputeEnvironment#terminate_jobs_on_update}
     */
     readonly terminateJobsOnUpdate?: boolean | cdktn.IResolvable;
 }

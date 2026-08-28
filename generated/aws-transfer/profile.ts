@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_profile
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_profile
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,31 +9,31 @@ export interface CcProfileProps extends cdktn.TerraformMetaArguments {
     /**
     * AS2 identifier agreed with a trading partner.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_profile#as_2_id CcProfile#as_2_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_profile#as_2_id CcProfile#as_2_id}
     */
     readonly as2Id: string;
     /**
     * List of the certificate IDs associated with this profile to be used for encryption and signing of AS2 messages.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_profile#certificate_ids CcProfile#certificate_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_profile#certificate_ids CcProfile#certificate_ids}
     */
     readonly certificateIds?: string[];
     /**
     * Enum specifying whether the profile is local or associated with a trading partner.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_profile#profile_type CcProfile#profile_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_profile#profile_type CcProfile#profile_type}
     */
     readonly profileType: string;
     /**
     * An array of key-value pairs to apply to this resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_profile#tags CcProfile#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_profile#tags CcProfile#tags}
     */
     readonly tags?: CcProfile.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_profile awscc_transfer_profile}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_profile awscc_transfer_profile}
 */
 export class CcProfile extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CcProfile extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcProfile resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcProfile to import
-    * @param importFromId The id of the existing CcProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_profile#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_profile#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcProfile to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CcProfile extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_profile awscc_transfer_profile} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_profile awscc_transfer_profile} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -71,7 +71,8 @@ export class CcProfile extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_transfer_profile',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -252,13 +253,13 @@ export interface TagProperty {
     /**
     * The name assigned to the tag that you create.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_profile#key CcProfile#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_profile#key CcProfile#key}
     */
     readonly key?: string;
     /**
     * Contains one or more values that you assigned to the key name you create.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_profile#value CcProfile#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_profile#value CcProfile#value}
     */
     readonly value?: string;
 }

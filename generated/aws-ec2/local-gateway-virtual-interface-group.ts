@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_local_gateway_virtual_interface_group
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_local_gateway_virtual_interface_group
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,31 +9,31 @@ export interface CcLocalGatewayVirtualInterfaceGroupProps extends cdktn.Terrafor
     /**
     * The Autonomous System Number(ASN) for the local Border Gateway Protocol (BGP)
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_local_gateway_virtual_interface_group#local_bgp_asn CcLocalGatewayVirtualInterfaceGroup#local_bgp_asn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_local_gateway_virtual_interface_group#local_bgp_asn CcLocalGatewayVirtualInterfaceGroup#local_bgp_asn}
     */
     readonly localBgpAsn?: number;
     /**
     * The extended 32-bit ASN for the local BGP configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_local_gateway_virtual_interface_group#local_bgp_asn_extended CcLocalGatewayVirtualInterfaceGroup#local_bgp_asn_extended}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_local_gateway_virtual_interface_group#local_bgp_asn_extended CcLocalGatewayVirtualInterfaceGroup#local_bgp_asn_extended}
     */
     readonly localBgpAsnExtended?: number;
     /**
     * The ID of the local gateway
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_local_gateway_virtual_interface_group#local_gateway_id CcLocalGatewayVirtualInterfaceGroup#local_gateway_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_local_gateway_virtual_interface_group#local_gateway_id CcLocalGatewayVirtualInterfaceGroup#local_gateway_id}
     */
     readonly localGatewayId: string;
     /**
     * The tags assigned to the virtual interface group
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_local_gateway_virtual_interface_group#tags CcLocalGatewayVirtualInterfaceGroup#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_local_gateway_virtual_interface_group#tags CcLocalGatewayVirtualInterfaceGroup#tags}
     */
     readonly tags?: CcLocalGatewayVirtualInterfaceGroup.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_local_gateway_virtual_interface_group awscc_ec2_local_gateway_virtual_interface_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_local_gateway_virtual_interface_group awscc_ec2_local_gateway_virtual_interface_group}
 */
 export class CcLocalGatewayVirtualInterfaceGroup extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CcLocalGatewayVirtualInterfaceGroup extends cdktn.TerraformResource
     * Generates CDKTN code for importing a CcLocalGatewayVirtualInterfaceGroup resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcLocalGatewayVirtualInterfaceGroup to import
-    * @param importFromId The id of the existing CcLocalGatewayVirtualInterfaceGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_local_gateway_virtual_interface_group#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcLocalGatewayVirtualInterfaceGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_local_gateway_virtual_interface_group#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcLocalGatewayVirtualInterfaceGroup to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CcLocalGatewayVirtualInterfaceGroup extends cdktn.TerraformResource
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_local_gateway_virtual_interface_group awscc_ec2_local_gateway_virtual_interface_group} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_local_gateway_virtual_interface_group awscc_ec2_local_gateway_virtual_interface_group} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -71,7 +71,8 @@ export class CcLocalGatewayVirtualInterfaceGroup extends cdktn.TerraformResource
         super(scope, id, {
             terraformResourceType: 'awscc_ec2_local_gateway_virtual_interface_group',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -270,13 +271,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_local_gateway_virtual_interface_group#key CcLocalGatewayVirtualInterfaceGroup#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_local_gateway_virtual_interface_group#key CcLocalGatewayVirtualInterfaceGroup#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 0 to 256 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_local_gateway_virtual_interface_group#value CcLocalGatewayVirtualInterfaceGroup#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_local_gateway_virtual_interface_group#value CcLocalGatewayVirtualInterfaceGroup#value}
     */
     readonly value?: string;
 }

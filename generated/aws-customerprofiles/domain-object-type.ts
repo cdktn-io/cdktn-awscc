@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_domain_object_type
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_domain_object_type
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,43 +9,43 @@ export interface CcDomainObjectTypeProps extends cdktn.TerraformMetaArguments {
     /**
     * Description of the domain object type.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_domain_object_type#description CcDomainObjectType#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_domain_object_type#description CcDomainObjectType#description}
     */
     readonly description?: string;
     /**
     * The unique name of the domain.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_domain_object_type#domain_name CcDomainObjectType#domain_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_domain_object_type#domain_name CcDomainObjectType#domain_name}
     */
     readonly domainName: string;
     /**
     * The default encryption key
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_domain_object_type#encryption_key CcDomainObjectType#encryption_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_domain_object_type#encryption_key CcDomainObjectType#encryption_key}
     */
     readonly encryptionKey?: string;
     /**
     * A map of the name and ObjectType field.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_domain_object_type#fields CcDomainObjectType#fields}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_domain_object_type#fields CcDomainObjectType#fields}
     */
     readonly fields: { [key: string]: CcDomainObjectType.DomainObjectTypeFieldProperty } | cdktn.IResolvable;
     /**
     * The name of the domain object type.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_domain_object_type#object_type_name CcDomainObjectType#object_type_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_domain_object_type#object_type_name CcDomainObjectType#object_type_name}
     */
     readonly objectTypeName: string;
     /**
     * An array of key-value pairs to apply to this resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_domain_object_type#tags CcDomainObjectType#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_domain_object_type#tags CcDomainObjectType#tags}
     */
     readonly tags?: CcDomainObjectType.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_domain_object_type awscc_customerprofiles_domain_object_type}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_domain_object_type awscc_customerprofiles_domain_object_type}
 */
 export class CcDomainObjectType extends cdktn.TerraformResource {
 
@@ -61,7 +61,7 @@ export class CcDomainObjectType extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcDomainObjectType resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcDomainObjectType to import
-    * @param importFromId The id of the existing CcDomainObjectType that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_domain_object_type#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcDomainObjectType that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_domain_object_type#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcDomainObjectType to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -73,7 +73,7 @@ export class CcDomainObjectType extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_domain_object_type awscc_customerprofiles_domain_object_type} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_domain_object_type awscc_customerprofiles_domain_object_type} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -83,7 +83,8 @@ export class CcDomainObjectType extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_customerprofiles_domain_object_type',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -360,25 +361,25 @@ export interface DomainObjectTypeFieldProperty {
     /**
     * The content type of the field.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_domain_object_type#content_type CcDomainObjectType#content_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_domain_object_type#content_type CcDomainObjectType#content_type}
     */
     readonly contentType?: string;
     /**
     * The feature type of the field.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_domain_object_type#feature_type CcDomainObjectType#feature_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_domain_object_type#feature_type CcDomainObjectType#feature_type}
     */
     readonly featureType?: string;
     /**
     * The source field name.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_domain_object_type#source CcDomainObjectType#source}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_domain_object_type#source CcDomainObjectType#source}
     */
     readonly source?: string;
     /**
     * The target field name.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_domain_object_type#target CcDomainObjectType#target}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_domain_object_type#target CcDomainObjectType#target}
     */
     readonly target?: string;
 }
@@ -530,13 +531,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_domain_object_type#key CcDomainObjectType#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_domain_object_type#key CcDomainObjectType#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 0 to 256 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_domain_object_type#value CcDomainObjectType#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_domain_object_type#value CcDomainObjectType#value}
     */
     readonly value?: string;
 }

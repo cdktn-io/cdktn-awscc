@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediatailor_live_source
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediatailor_live_source
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,27 +9,27 @@ export interface CcLiveSourceProps extends cdktn.TerraformMetaArguments {
     /**
     * <p>A list of HTTP package configuration parameters for this live source.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediatailor_live_source#http_package_configurations CcLiveSource#http_package_configurations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediatailor_live_source#http_package_configurations CcLiveSource#http_package_configurations}
     */
     readonly httpPackageConfigurations: CcLiveSource.HttpPackageConfigurationProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediatailor_live_source#live_source_name CcLiveSource#live_source_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediatailor_live_source#live_source_name CcLiveSource#live_source_name}
     */
     readonly liveSourceName: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediatailor_live_source#source_location_name CcLiveSource#source_location_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediatailor_live_source#source_location_name CcLiveSource#source_location_name}
     */
     readonly sourceLocationName: string;
     /**
     * The tags to assign to the live source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediatailor_live_source#tags CcLiveSource#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediatailor_live_source#tags CcLiveSource#tags}
     */
     readonly tags?: CcLiveSource.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediatailor_live_source awscc_mediatailor_live_source}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediatailor_live_source awscc_mediatailor_live_source}
 */
 export class CcLiveSource extends cdktn.TerraformResource {
 
@@ -45,7 +45,7 @@ export class CcLiveSource extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcLiveSource resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcLiveSource to import
-    * @param importFromId The id of the existing CcLiveSource that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediatailor_live_source#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcLiveSource that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediatailor_live_source#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcLiveSource to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -57,7 +57,7 @@ export class CcLiveSource extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediatailor_live_source awscc_mediatailor_live_source} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediatailor_live_source awscc_mediatailor_live_source} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -67,7 +67,8 @@ export class CcLiveSource extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_mediatailor_live_source',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -284,17 +285,17 @@ export interface HttpPackageConfigurationProperty {
     /**
     * <p>The relative path to the URL for this VOD source. This is combined with <code>SourceLocation::HttpConfiguration::BaseUrl</code> to form a valid URL.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediatailor_live_source#path CcLiveSource#path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediatailor_live_source#path CcLiveSource#path}
     */
     readonly path: string;
     /**
     * <p>The name of the source group. This has to match one of the <code>Channel::Outputs::SourceGroup</code>.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediatailor_live_source#source_group CcLiveSource#source_group}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediatailor_live_source#source_group CcLiveSource#source_group}
     */
     readonly sourceGroup: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediatailor_live_source#type CcLiveSource#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediatailor_live_source#type CcLiveSource#type}
     */
     readonly type: string;
 }
@@ -415,11 +416,11 @@ export class HttpPackageConfigurationPropertyList extends cdktn.ComplexList {
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediatailor_live_source#key CcLiveSource#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediatailor_live_source#key CcLiveSource#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediatailor_live_source#value CcLiveSource#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediatailor_live_source#value CcLiveSource#value}
     */
     readonly value?: string;
 }

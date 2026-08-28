@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkmanager_device
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkmanager_device
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,67 +9,67 @@ export interface CcDeviceProps extends cdktn.TerraformMetaArguments {
     /**
     * The Amazon Web Services location of the device, if applicable.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkmanager_device#aws_location CcDevice#aws_location}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkmanager_device#aws_location CcDevice#aws_location}
     */
     readonly awsLocation?: CcDevice.AWSLocationProperty;
     /**
     * The description of the device.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkmanager_device#description CcDevice#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkmanager_device#description CcDevice#description}
     */
     readonly description?: string;
     /**
     * The ID of the global network.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkmanager_device#global_network_id CcDevice#global_network_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkmanager_device#global_network_id CcDevice#global_network_id}
     */
     readonly globalNetworkId: string;
     /**
     * The site location.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkmanager_device#location CcDevice#location}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkmanager_device#location CcDevice#location}
     */
     readonly location?: CcDevice.LocationProperty;
     /**
     * The device model
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkmanager_device#model CcDevice#model}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkmanager_device#model CcDevice#model}
     */
     readonly model?: string;
     /**
     * The device serial number.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkmanager_device#serial_number CcDevice#serial_number}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkmanager_device#serial_number CcDevice#serial_number}
     */
     readonly serialNumber?: string;
     /**
     * The site ID.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkmanager_device#site_id CcDevice#site_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkmanager_device#site_id CcDevice#site_id}
     */
     readonly siteId?: string;
     /**
     * The tags for the device.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkmanager_device#tags CcDevice#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkmanager_device#tags CcDevice#tags}
     */
     readonly tags?: CcDevice.TagProperty[] | cdktn.IResolvable;
     /**
     * The device type.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkmanager_device#type CcDevice#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkmanager_device#type CcDevice#type}
     */
     readonly type?: string;
     /**
     * The device vendor.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkmanager_device#vendor CcDevice#vendor}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkmanager_device#vendor CcDevice#vendor}
     */
     readonly vendor?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkmanager_device awscc_networkmanager_device}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkmanager_device awscc_networkmanager_device}
 */
 export class CcDevice extends cdktn.TerraformResource {
 
@@ -85,7 +85,7 @@ export class CcDevice extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcDevice resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcDevice to import
-    * @param importFromId The id of the existing CcDevice that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkmanager_device#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcDevice that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkmanager_device#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcDevice to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -97,7 +97,7 @@ export class CcDevice extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkmanager_device awscc_networkmanager_device} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkmanager_device awscc_networkmanager_device} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -107,7 +107,8 @@ export class CcDevice extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_networkmanager_device',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -526,13 +527,13 @@ export interface AWSLocationProperty {
     /**
     * The Amazon Resource Name (ARN) of the subnet that the device is located in.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkmanager_device#subnet_arn CcDevice#subnet_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkmanager_device#subnet_arn CcDevice#subnet_arn}
     */
     readonly subnetArn?: string;
     /**
     * The Zone that the device is located in. Specify the ID of an Availability Zone, Local Zone, Wavelength Zone, or an Outpost.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkmanager_device#zone CcDevice#zone}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkmanager_device#zone CcDevice#zone}
     */
     readonly zone?: string;
 }
@@ -620,19 +621,19 @@ export interface LocationProperty {
     /**
     * The physical address.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkmanager_device#address CcDevice#address}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkmanager_device#address CcDevice#address}
     */
     readonly address?: string;
     /**
     * The latitude.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkmanager_device#latitude CcDevice#latitude}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkmanager_device#latitude CcDevice#latitude}
     */
     readonly latitude?: string;
     /**
     * The longitude.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkmanager_device#longitude CcDevice#longitude}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkmanager_device#longitude CcDevice#longitude}
     */
     readonly longitude?: string;
 }
@@ -742,13 +743,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkmanager_device#key CcDevice#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkmanager_device#key CcDevice#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 0 to 256 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkmanager_device#value CcDevice#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkmanager_device#value CcDevice#value}
     */
     readonly value?: string;
 }

@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appintegrations_event_integration
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appintegrations_event_integration
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,37 +9,37 @@ export interface CcEventIntegrationProps extends cdktn.TerraformMetaArguments {
     /**
     * The event integration description.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appintegrations_event_integration#description CcEventIntegration#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appintegrations_event_integration#description CcEventIntegration#description}
     */
     readonly description?: string;
     /**
     * The Amazon Eventbridge bus for the event integration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appintegrations_event_integration#event_bridge_bus CcEventIntegration#event_bridge_bus}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appintegrations_event_integration#event_bridge_bus CcEventIntegration#event_bridge_bus}
     */
     readonly eventBridgeBus: string;
     /**
     * The EventFilter (source) associated with the event integration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appintegrations_event_integration#event_filter CcEventIntegration#event_filter}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appintegrations_event_integration#event_filter CcEventIntegration#event_filter}
     */
     readonly eventFilter: CcEventIntegration.EventFilterProperty;
     /**
     * The name of the event integration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appintegrations_event_integration#name CcEventIntegration#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appintegrations_event_integration#name CcEventIntegration#name}
     */
     readonly name: string;
     /**
     * The tags (keys and values) associated with the event integration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appintegrations_event_integration#tags CcEventIntegration#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appintegrations_event_integration#tags CcEventIntegration#tags}
     */
     readonly tags?: CcEventIntegration.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appintegrations_event_integration awscc_appintegrations_event_integration}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appintegrations_event_integration awscc_appintegrations_event_integration}
 */
 export class CcEventIntegration extends cdktn.TerraformResource {
 
@@ -55,7 +55,7 @@ export class CcEventIntegration extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcEventIntegration resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcEventIntegration to import
-    * @param importFromId The id of the existing CcEventIntegration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appintegrations_event_integration#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcEventIntegration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appintegrations_event_integration#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcEventIntegration to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -67,7 +67,7 @@ export class CcEventIntegration extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appintegrations_event_integration awscc_appintegrations_event_integration} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appintegrations_event_integration awscc_appintegrations_event_integration} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -77,7 +77,8 @@ export class CcEventIntegration extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_appintegrations_event_integration',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -304,7 +305,7 @@ export interface EventFilterProperty {
     /**
     * The source of the events.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appintegrations_event_integration#source CcEventIntegration#source}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appintegrations_event_integration#source CcEventIntegration#source}
     */
     readonly source: string;
 }
@@ -367,13 +368,13 @@ export interface TagProperty {
     /**
     * A key to identify the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appintegrations_event_integration#key CcEventIntegration#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appintegrations_event_integration#key CcEventIntegration#key}
     */
     readonly key?: string;
     /**
     * Corresponding tag value for the key.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appintegrations_event_integration#value CcEventIntegration#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appintegrations_event_integration#value CcEventIntegration#value}
     */
     readonly value?: string;
 }

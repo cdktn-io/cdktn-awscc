@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/secretsmanager_rotation_schedule
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/secretsmanager_rotation_schedule
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,49 +9,49 @@ export interface CcRotationScheduleProps extends cdktn.TerraformMetaArguments {
     /**
     * The list of metadata needed to successfully rotate a managed external secret.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/secretsmanager_rotation_schedule#external_secret_rotation_metadata CcRotationSchedule#external_secret_rotation_metadata}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/secretsmanager_rotation_schedule#external_secret_rotation_metadata CcRotationSchedule#external_secret_rotation_metadata}
     */
     readonly externalSecretRotationMetadata?: CcRotationSchedule.ExternalSecretRotationMetadataItemProperty[] | cdktn.IResolvable;
     /**
     * The ARN of the IAM role that is used by Secrets Manager to rotate a managed external secret.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/secretsmanager_rotation_schedule#external_secret_rotation_role_arn CcRotationSchedule#external_secret_rotation_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/secretsmanager_rotation_schedule#external_secret_rotation_role_arn CcRotationSchedule#external_secret_rotation_role_arn}
     */
     readonly externalSecretRotationRoleArn?: string;
     /**
     * Creates a new Lambda rotation function based on one of the Secrets Manager rotation function templates. To use a rotation function that already exists, specify RotationLambdaARN instead.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/secretsmanager_rotation_schedule#hosted_rotation_lambda CcRotationSchedule#hosted_rotation_lambda}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/secretsmanager_rotation_schedule#hosted_rotation_lambda CcRotationSchedule#hosted_rotation_lambda}
     */
     readonly hostedRotationLambda?: CcRotationSchedule.HostedRotationLambdaProperty;
     /**
     * Specifies whether to rotate the secret immediately or wait until the next scheduled rotation window.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/secretsmanager_rotation_schedule#rotate_immediately_on_update CcRotationSchedule#rotate_immediately_on_update}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/secretsmanager_rotation_schedule#rotate_immediately_on_update CcRotationSchedule#rotate_immediately_on_update}
     */
     readonly rotateImmediatelyOnUpdate?: boolean | cdktn.IResolvable;
     /**
     * The ARN of an existing Lambda rotation function. To specify a rotation function that is also defined in this template, use the Ref function.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/secretsmanager_rotation_schedule#rotation_lambda_arn CcRotationSchedule#rotation_lambda_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/secretsmanager_rotation_schedule#rotation_lambda_arn CcRotationSchedule#rotation_lambda_arn}
     */
     readonly rotationLambdaArn?: string;
     /**
     * A structure that defines the rotation configuration for this secret.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/secretsmanager_rotation_schedule#rotation_rules CcRotationSchedule#rotation_rules}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/secretsmanager_rotation_schedule#rotation_rules CcRotationSchedule#rotation_rules}
     */
     readonly rotationRules?: CcRotationSchedule.RotationRulesProperty;
     /**
     * The ARN or name of the secret to rotate.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/secretsmanager_rotation_schedule#secret_id CcRotationSchedule#secret_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/secretsmanager_rotation_schedule#secret_id CcRotationSchedule#secret_id}
     */
     readonly secretId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/secretsmanager_rotation_schedule awscc_secretsmanager_rotation_schedule}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/secretsmanager_rotation_schedule awscc_secretsmanager_rotation_schedule}
 */
 export class CcRotationSchedule extends cdktn.TerraformResource {
 
@@ -67,7 +67,7 @@ export class CcRotationSchedule extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcRotationSchedule resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcRotationSchedule to import
-    * @param importFromId The id of the existing CcRotationSchedule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/secretsmanager_rotation_schedule#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcRotationSchedule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/secretsmanager_rotation_schedule#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcRotationSchedule to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -79,7 +79,7 @@ export class CcRotationSchedule extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/secretsmanager_rotation_schedule awscc_secretsmanager_rotation_schedule} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/secretsmanager_rotation_schedule awscc_secretsmanager_rotation_schedule} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -89,7 +89,8 @@ export class CcRotationSchedule extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_secretsmanager_rotation_schedule',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -484,13 +485,13 @@ export interface ExternalSecretRotationMetadataItemProperty {
     /**
     * The key name of the metadata item. You can specify a value that's 1 to 256 characters in length.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/secretsmanager_rotation_schedule#key CcRotationSchedule#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/secretsmanager_rotation_schedule#key CcRotationSchedule#key}
     */
     readonly key?: string;
     /**
     * The value for the metadata item. You can specify a value that's 1 to 2048 characters in length.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/secretsmanager_rotation_schedule#value CcRotationSchedule#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/secretsmanager_rotation_schedule#value CcRotationSchedule#value}
     */
     readonly value?: string;
 }
@@ -600,67 +601,67 @@ export interface HostedRotationLambdaProperty {
     /**
     * A string of the characters that you don't want in the password.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/secretsmanager_rotation_schedule#exclude_characters CcRotationSchedule#exclude_characters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/secretsmanager_rotation_schedule#exclude_characters CcRotationSchedule#exclude_characters}
     */
     readonly excludeCharacters?: string;
     /**
     * The ARN of the KMS key that Secrets Manager uses to encrypt the secret. If you don't specify this value, then Secrets Manager uses the key aws/secretsmanager. If aws/secretsmanager doesn't yet exist, then Secrets Manager creates it for you automatically the first time it encrypts the secret value.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/secretsmanager_rotation_schedule#kms_key_arn CcRotationSchedule#kms_key_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/secretsmanager_rotation_schedule#kms_key_arn CcRotationSchedule#kms_key_arn}
     */
     readonly kmsKeyArn?: string;
     /**
     * The ARN of the secret that contains superuser credentials, if you use the alternating users rotation strategy. CloudFormation grants the execution role for the Lambda rotation function GetSecretValue permission to the secret in this property.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/secretsmanager_rotation_schedule#master_secret_arn CcRotationSchedule#master_secret_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/secretsmanager_rotation_schedule#master_secret_arn CcRotationSchedule#master_secret_arn}
     */
     readonly masterSecretArn?: string;
     /**
     * The ARN of the KMS key that Secrets Manager used to encrypt the superuser secret, if you use the alternating users strategy and the superuser secret is encrypted with a customer managed key. You don't need to specify this property if the superuser secret is encrypted using the key aws/secretsmanager. CloudFormation grants the execution role for the Lambda rotation function Decrypt, DescribeKey, and GenerateDataKey permission to the key in this property.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/secretsmanager_rotation_schedule#master_secret_kms_key_arn CcRotationSchedule#master_secret_kms_key_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/secretsmanager_rotation_schedule#master_secret_kms_key_arn CcRotationSchedule#master_secret_kms_key_arn}
     */
     readonly masterSecretKmsKeyArn?: string;
     /**
     * The name of the Lambda rotation function.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/secretsmanager_rotation_schedule#rotation_lambda_name CcRotationSchedule#rotation_lambda_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/secretsmanager_rotation_schedule#rotation_lambda_name CcRotationSchedule#rotation_lambda_name}
     */
     readonly rotationLambdaName?: string;
     /**
     * The type of rotation template to use
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/secretsmanager_rotation_schedule#rotation_type CcRotationSchedule#rotation_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/secretsmanager_rotation_schedule#rotation_type CcRotationSchedule#rotation_type}
     */
     readonly rotationType?: string;
     /**
     * The python runtime associated with the Lambda function
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/secretsmanager_rotation_schedule#runtime CcRotationSchedule#runtime}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/secretsmanager_rotation_schedule#runtime CcRotationSchedule#runtime}
     */
     readonly runtime?: string;
     /**
     * The ARN of the secret that contains superuser credentials, if you use the alternating users rotation strategy. CloudFormation grants the execution role for the Lambda rotation function GetSecretValue permission to the secret in this property.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/secretsmanager_rotation_schedule#superuser_secret_arn CcRotationSchedule#superuser_secret_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/secretsmanager_rotation_schedule#superuser_secret_arn CcRotationSchedule#superuser_secret_arn}
     */
     readonly superuserSecretArn?: string;
     /**
     * The ARN of the KMS key that Secrets Manager used to encrypt the superuser secret, if you use the alternating users strategy and the superuser secret is encrypted with a customer managed key. You don't need to specify this property if the superuser secret is encrypted using the key aws/secretsmanager. CloudFormation grants the execution role for the Lambda rotation function Decrypt, DescribeKey, and GenerateDataKey permission to the key in this property.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/secretsmanager_rotation_schedule#superuser_secret_kms_key_arn CcRotationSchedule#superuser_secret_kms_key_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/secretsmanager_rotation_schedule#superuser_secret_kms_key_arn CcRotationSchedule#superuser_secret_kms_key_arn}
     */
     readonly superuserSecretKmsKeyArn?: string;
     /**
     * A comma-separated list of security group IDs applied to the target database.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/secretsmanager_rotation_schedule#vpc_security_group_ids CcRotationSchedule#vpc_security_group_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/secretsmanager_rotation_schedule#vpc_security_group_ids CcRotationSchedule#vpc_security_group_ids}
     */
     readonly vpcSecurityGroupIds?: string;
     /**
     * A comma separated list of VPC subnet IDs of the target database network. The Lambda rotation function is in the same subnet group.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/secretsmanager_rotation_schedule#vpc_subnet_ids CcRotationSchedule#vpc_subnet_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/secretsmanager_rotation_schedule#vpc_subnet_ids CcRotationSchedule#vpc_subnet_ids}
     */
     readonly vpcSubnetIds?: string;
 }
@@ -946,19 +947,19 @@ export interface RotationRulesProperty {
     /**
     * The number of days between automatic scheduled rotations of the secret. You can use this value to check that your secret meets your compliance guidelines for how often secrets must be rotated.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/secretsmanager_rotation_schedule#automatically_after_days CcRotationSchedule#automatically_after_days}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/secretsmanager_rotation_schedule#automatically_after_days CcRotationSchedule#automatically_after_days}
     */
     readonly automaticallyAfterDays?: number;
     /**
     * The length of the rotation window in hours, for example 3h for a three hour window. Secrets Manager rotates your secret at any time during this window. The window must not extend into the next rotation window or the next UTC day. The window starts according to the ScheduleExpression. If you don't specify a Duration, for a ScheduleExpression in hours, the window automatically closes after one hour. For a ScheduleExpression in days, the window automatically closes at the end of the UTC day.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/secretsmanager_rotation_schedule#duration CcRotationSchedule#duration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/secretsmanager_rotation_schedule#duration CcRotationSchedule#duration}
     */
     readonly duration?: string;
     /**
     * A cron() or rate() expression that defines the schedule for rotating your secret. Secrets Manager rotation schedules use UTC time zone.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/secretsmanager_rotation_schedule#schedule_expression CcRotationSchedule#schedule_expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/secretsmanager_rotation_schedule#schedule_expression CcRotationSchedule#schedule_expression}
     */
     readonly scheduleExpression?: string;
 }

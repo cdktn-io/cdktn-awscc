@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_subnet_cidr_block
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_subnet_cidr_block
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,31 +9,31 @@ export interface CcSubnetCidrBlockProps extends cdktn.TerraformMetaArguments {
     /**
     * The IPv6 network range for the subnet, in CIDR notation. The subnet size must use a /64 prefix length
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_subnet_cidr_block#ipv_6_cidr_block CcSubnetCidrBlock#ipv_6_cidr_block}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_subnet_cidr_block#ipv_6_cidr_block CcSubnetCidrBlock#ipv_6_cidr_block}
     */
     readonly ipv6CidrBlock?: string;
     /**
     * The ID of an IPv6 Amazon VPC IP Address Manager (IPAM) pool from which to allocate, to get the subnet's CIDR
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_subnet_cidr_block#ipv_6_ipam_pool_id CcSubnetCidrBlock#ipv_6_ipam_pool_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_subnet_cidr_block#ipv_6_ipam_pool_id CcSubnetCidrBlock#ipv_6_ipam_pool_id}
     */
     readonly ipv6IpamPoolId?: string;
     /**
     * The netmask length of the IPv6 CIDR to allocate to the subnet from an IPAM pool
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_subnet_cidr_block#ipv_6_netmask_length CcSubnetCidrBlock#ipv_6_netmask_length}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_subnet_cidr_block#ipv_6_netmask_length CcSubnetCidrBlock#ipv_6_netmask_length}
     */
     readonly ipv6NetmaskLength?: number;
     /**
     * The ID of the subnet
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_subnet_cidr_block#subnet_id CcSubnetCidrBlock#subnet_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_subnet_cidr_block#subnet_id CcSubnetCidrBlock#subnet_id}
     */
     readonly subnetId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_subnet_cidr_block awscc_ec2_subnet_cidr_block}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_subnet_cidr_block awscc_ec2_subnet_cidr_block}
 */
 export class CcSubnetCidrBlock extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CcSubnetCidrBlock extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcSubnetCidrBlock resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcSubnetCidrBlock to import
-    * @param importFromId The id of the existing CcSubnetCidrBlock that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_subnet_cidr_block#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcSubnetCidrBlock that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_subnet_cidr_block#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcSubnetCidrBlock to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CcSubnetCidrBlock extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_subnet_cidr_block awscc_ec2_subnet_cidr_block} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_subnet_cidr_block awscc_ec2_subnet_cidr_block} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -71,7 +71,8 @@ export class CcSubnetCidrBlock extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_ec2_subnet_cidr_block',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,

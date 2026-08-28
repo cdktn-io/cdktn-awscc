@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/shield_proactive_engagement
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/shield_proactive_engagement
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -10,20 +10,20 @@ export interface CcProactiveEngagementProps extends cdktn.TerraformMetaArguments
     * A list of email addresses and phone numbers that the Shield Response Team (SRT) can use to contact you for escalations to the SRT and to initiate proactive customer support.
     * To enable proactive engagement, the contact list must include at least one phone number.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/shield_proactive_engagement#emergency_contact_list CcProactiveEngagement#emergency_contact_list}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/shield_proactive_engagement#emergency_contact_list CcProactiveEngagement#emergency_contact_list}
     */
     readonly emergencyContactList: CcProactiveEngagement.EmergencyContactProperty[] | cdktn.IResolvable;
     /**
     * If `ENABLED`, the Shield Response Team (SRT) will use email and phone to notify contacts about escalations to the SRT and to initiate proactive customer support.
     * If `DISABLED`, the SRT will not proactively notify contacts about escalations or to initiate proactive customer support.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/shield_proactive_engagement#proactive_engagement_status CcProactiveEngagement#proactive_engagement_status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/shield_proactive_engagement#proactive_engagement_status CcProactiveEngagement#proactive_engagement_status}
     */
     readonly proactiveEngagementStatus: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/shield_proactive_engagement awscc_shield_proactive_engagement}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/shield_proactive_engagement awscc_shield_proactive_engagement}
 */
 export class CcProactiveEngagement extends cdktn.TerraformResource {
 
@@ -39,7 +39,7 @@ export class CcProactiveEngagement extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcProactiveEngagement resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcProactiveEngagement to import
-    * @param importFromId The id of the existing CcProactiveEngagement that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/shield_proactive_engagement#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcProactiveEngagement that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/shield_proactive_engagement#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcProactiveEngagement to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -51,7 +51,7 @@ export class CcProactiveEngagement extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/shield_proactive_engagement awscc_shield_proactive_engagement} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/shield_proactive_engagement awscc_shield_proactive_engagement} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -61,7 +61,8 @@ export class CcProactiveEngagement extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_shield_proactive_engagement',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -196,19 +197,19 @@ export interface EmergencyContactProperty {
     /**
     * Additional notes regarding the contact.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/shield_proactive_engagement#contact_notes CcProactiveEngagement#contact_notes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/shield_proactive_engagement#contact_notes CcProactiveEngagement#contact_notes}
     */
     readonly contactNotes?: string;
     /**
     * The email address for the contact.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/shield_proactive_engagement#email_address CcProactiveEngagement#email_address}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/shield_proactive_engagement#email_address CcProactiveEngagement#email_address}
     */
     readonly emailAddress: string;
     /**
     * The phone number for the contact
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/shield_proactive_engagement#phone_number CcProactiveEngagement#phone_number}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/shield_proactive_engagement#phone_number CcProactiveEngagement#phone_number}
     */
     readonly phoneNumber?: string;
 }

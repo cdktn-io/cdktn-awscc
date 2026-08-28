@@ -1,35 +1,35 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rolesanywhere_trust_anchor
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rolesanywhere_trust_anchor
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcTrustAnchorProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rolesanywhere_trust_anchor#enabled CcTrustAnchor#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rolesanywhere_trust_anchor#enabled CcTrustAnchor#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rolesanywhere_trust_anchor#name CcTrustAnchor#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rolesanywhere_trust_anchor#name CcTrustAnchor#name}
     */
     readonly name: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rolesanywhere_trust_anchor#notification_settings CcTrustAnchor#notification_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rolesanywhere_trust_anchor#notification_settings CcTrustAnchor#notification_settings}
     */
     readonly notificationSettings?: CcTrustAnchor.NotificationSettingProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rolesanywhere_trust_anchor#source CcTrustAnchor#source}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rolesanywhere_trust_anchor#source CcTrustAnchor#source}
     */
     readonly source: CcTrustAnchor.SourceProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rolesanywhere_trust_anchor#tags CcTrustAnchor#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rolesanywhere_trust_anchor#tags CcTrustAnchor#tags}
     */
     readonly tags?: CcTrustAnchor.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rolesanywhere_trust_anchor awscc_rolesanywhere_trust_anchor}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rolesanywhere_trust_anchor awscc_rolesanywhere_trust_anchor}
 */
 export class CcTrustAnchor extends cdktn.TerraformResource {
 
@@ -45,7 +45,7 @@ export class CcTrustAnchor extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcTrustAnchor resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcTrustAnchor to import
-    * @param importFromId The id of the existing CcTrustAnchor that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rolesanywhere_trust_anchor#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcTrustAnchor that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rolesanywhere_trust_anchor#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcTrustAnchor to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -57,7 +57,7 @@ export class CcTrustAnchor extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rolesanywhere_trust_anchor awscc_rolesanywhere_trust_anchor} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rolesanywhere_trust_anchor awscc_rolesanywhere_trust_anchor} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -67,7 +67,8 @@ export class CcTrustAnchor extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_rolesanywhere_trust_anchor',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -395,19 +396,19 @@ export function ccTrustAnchorTagPropertyToHclTerraform(struct?: CcTrustAnchor.Ta
 export namespace CcTrustAnchor {
 export interface NotificationSettingProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rolesanywhere_trust_anchor#channel CcTrustAnchor#channel}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rolesanywhere_trust_anchor#channel CcTrustAnchor#channel}
     */
     readonly channel?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rolesanywhere_trust_anchor#enabled CcTrustAnchor#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rolesanywhere_trust_anchor#enabled CcTrustAnchor#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rolesanywhere_trust_anchor#event CcTrustAnchor#event}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rolesanywhere_trust_anchor#event CcTrustAnchor#event}
     */
     readonly event?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rolesanywhere_trust_anchor#threshold CcTrustAnchor#threshold}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rolesanywhere_trust_anchor#threshold CcTrustAnchor#threshold}
     */
     readonly threshold?: number;
 }
@@ -559,11 +560,11 @@ export class NotificationSettingPropertyList extends cdktn.ComplexList {
 }
 export interface SourceDataProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rolesanywhere_trust_anchor#acm_pca_arn CcTrustAnchor#acm_pca_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rolesanywhere_trust_anchor#acm_pca_arn CcTrustAnchor#acm_pca_arn}
     */
     readonly acmPcaArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rolesanywhere_trust_anchor#x509_certificate_data CcTrustAnchor#x509_certificate_data}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rolesanywhere_trust_anchor#x509_certificate_data CcTrustAnchor#x509_certificate_data}
     */
     readonly x509CertificateData?: string;
 }
@@ -649,11 +650,11 @@ export class SourceDataPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface SourceProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rolesanywhere_trust_anchor#source_data CcTrustAnchor#source_data}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rolesanywhere_trust_anchor#source_data CcTrustAnchor#source_data}
     */
     readonly sourceData: SourceDataProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rolesanywhere_trust_anchor#source_type CcTrustAnchor#source_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rolesanywhere_trust_anchor#source_type CcTrustAnchor#source_type}
     */
     readonly sourceType: string;
 }
@@ -733,11 +734,11 @@ export class SourcePropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rolesanywhere_trust_anchor#key CcTrustAnchor#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rolesanywhere_trust_anchor#key CcTrustAnchor#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rolesanywhere_trust_anchor#value CcTrustAnchor#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rolesanywhere_trust_anchor#value CcTrustAnchor#value}
     */
     readonly value?: string;
 }

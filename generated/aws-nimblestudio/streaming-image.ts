@@ -1,43 +1,43 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/nimblestudio_streaming_image
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/nimblestudio_streaming_image
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcStreamingImageProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/nimblestudio_streaming_image#description CcStreamingImage#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/nimblestudio_streaming_image#description CcStreamingImage#description}
     */
     readonly description?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/nimblestudio_streaming_image#ec_2_image_id CcStreamingImage#ec_2_image_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/nimblestudio_streaming_image#ec_2_image_id CcStreamingImage#ec_2_image_id}
     */
     readonly ec2ImageId: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/nimblestudio_streaming_image#encryption_configuration_key_arn CcStreamingImage#encryption_configuration_key_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/nimblestudio_streaming_image#encryption_configuration_key_arn CcStreamingImage#encryption_configuration_key_arn}
     */
     readonly encryptionConfigurationKeyArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/nimblestudio_streaming_image#encryption_configuration_key_type CcStreamingImage#encryption_configuration_key_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/nimblestudio_streaming_image#encryption_configuration_key_type CcStreamingImage#encryption_configuration_key_type}
     */
     readonly encryptionConfigurationKeyType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/nimblestudio_streaming_image#name CcStreamingImage#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/nimblestudio_streaming_image#name CcStreamingImage#name}
     */
     readonly name: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/nimblestudio_streaming_image#studio_id CcStreamingImage#studio_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/nimblestudio_streaming_image#studio_id CcStreamingImage#studio_id}
     */
     readonly studioId: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/nimblestudio_streaming_image#tags CcStreamingImage#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/nimblestudio_streaming_image#tags CcStreamingImage#tags}
     */
     readonly tags?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/nimblestudio_streaming_image awscc_nimblestudio_streaming_image}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/nimblestudio_streaming_image awscc_nimblestudio_streaming_image}
 */
 export class CcStreamingImage extends cdktn.TerraformResource {
 
@@ -53,7 +53,7 @@ export class CcStreamingImage extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcStreamingImage resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcStreamingImage to import
-    * @param importFromId The id of the existing CcStreamingImage that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/nimblestudio_streaming_image#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcStreamingImage that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/nimblestudio_streaming_image#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcStreamingImage to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -65,7 +65,7 @@ export class CcStreamingImage extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/nimblestudio_streaming_image awscc_nimblestudio_streaming_image} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/nimblestudio_streaming_image awscc_nimblestudio_streaming_image} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -75,7 +75,8 @@ export class CcStreamingImage extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_nimblestudio_streaming_image',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,

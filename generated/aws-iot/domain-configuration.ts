@@ -1,67 +1,67 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_domain_configuration
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_domain_configuration
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcDomainConfigurationProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_domain_configuration#application_protocol CcDomainConfiguration#application_protocol}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_domain_configuration#application_protocol CcDomainConfiguration#application_protocol}
     */
     readonly applicationProtocol?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_domain_configuration#authentication_type CcDomainConfiguration#authentication_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_domain_configuration#authentication_type CcDomainConfiguration#authentication_type}
     */
     readonly authenticationType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_domain_configuration#authorizer_config CcDomainConfiguration#authorizer_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_domain_configuration#authorizer_config CcDomainConfiguration#authorizer_config}
     */
     readonly authorizerConfig?: CcDomainConfiguration.AuthorizerConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_domain_configuration#client_certificate_config CcDomainConfiguration#client_certificate_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_domain_configuration#client_certificate_config CcDomainConfiguration#client_certificate_config}
     */
     readonly clientCertificateConfig?: CcDomainConfiguration.ClientCertificateConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_domain_configuration#domain_configuration_name CcDomainConfiguration#domain_configuration_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_domain_configuration#domain_configuration_name CcDomainConfiguration#domain_configuration_name}
     */
     readonly domainConfigurationName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_domain_configuration#domain_configuration_status CcDomainConfiguration#domain_configuration_status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_domain_configuration#domain_configuration_status CcDomainConfiguration#domain_configuration_status}
     */
     readonly domainConfigurationStatus?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_domain_configuration#domain_name CcDomainConfiguration#domain_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_domain_configuration#domain_name CcDomainConfiguration#domain_name}
     */
     readonly domainName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_domain_configuration#server_certificate_arns CcDomainConfiguration#server_certificate_arns}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_domain_configuration#server_certificate_arns CcDomainConfiguration#server_certificate_arns}
     */
     readonly serverCertificateArns?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_domain_configuration#server_certificate_config CcDomainConfiguration#server_certificate_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_domain_configuration#server_certificate_config CcDomainConfiguration#server_certificate_config}
     */
     readonly serverCertificateConfig?: CcDomainConfiguration.ServerCertificateConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_domain_configuration#service_type CcDomainConfiguration#service_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_domain_configuration#service_type CcDomainConfiguration#service_type}
     */
     readonly serviceType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_domain_configuration#tags CcDomainConfiguration#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_domain_configuration#tags CcDomainConfiguration#tags}
     */
     readonly tags?: CcDomainConfiguration.TagProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_domain_configuration#tls_config CcDomainConfiguration#tls_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_domain_configuration#tls_config CcDomainConfiguration#tls_config}
     */
     readonly tlsConfig?: CcDomainConfiguration.TlsConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_domain_configuration#validation_certificate_arn CcDomainConfiguration#validation_certificate_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_domain_configuration#validation_certificate_arn CcDomainConfiguration#validation_certificate_arn}
     */
     readonly validationCertificateArn?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_domain_configuration awscc_iot_domain_configuration}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_domain_configuration awscc_iot_domain_configuration}
 */
 export class CcDomainConfiguration extends cdktn.TerraformResource {
 
@@ -77,7 +77,7 @@ export class CcDomainConfiguration extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcDomainConfiguration resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcDomainConfiguration to import
-    * @param importFromId The id of the existing CcDomainConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_domain_configuration#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcDomainConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_domain_configuration#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcDomainConfiguration to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -89,7 +89,7 @@ export class CcDomainConfiguration extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_domain_configuration awscc_iot_domain_configuration} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_domain_configuration awscc_iot_domain_configuration} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -99,7 +99,8 @@ export class CcDomainConfiguration extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_iot_domain_configuration',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -668,11 +669,11 @@ export function ccDomainConfigurationTlsConfigPropertyToHclTerraform(struct?: Cc
 export namespace CcDomainConfiguration {
 export interface AuthorizerConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_domain_configuration#allow_authorizer_override CcDomainConfiguration#allow_authorizer_override}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_domain_configuration#allow_authorizer_override CcDomainConfiguration#allow_authorizer_override}
     */
     readonly allowAuthorizerOverride?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_domain_configuration#default_authorizer_name CcDomainConfiguration#default_authorizer_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_domain_configuration#default_authorizer_name CcDomainConfiguration#default_authorizer_name}
     */
     readonly defaultAuthorizerName?: string;
 }
@@ -758,7 +759,7 @@ export class AuthorizerConfigPropertyOutputReference extends cdktn.ComplexObject
 }
 export interface ClientCertificateConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_domain_configuration#client_certificate_callback_arn CcDomainConfiguration#client_certificate_callback_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_domain_configuration#client_certificate_callback_arn CcDomainConfiguration#client_certificate_callback_arn}
     */
     readonly clientCertificateCallbackArn?: string;
 }
@@ -822,15 +823,15 @@ export class ClientCertificateConfigPropertyOutputReference extends cdktn.Comple
 }
 export interface ServerCertificateConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_domain_configuration#enable_ocsp_check CcDomainConfiguration#enable_ocsp_check}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_domain_configuration#enable_ocsp_check CcDomainConfiguration#enable_ocsp_check}
     */
     readonly enableOcspCheck?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_domain_configuration#ocsp_authorized_responder_arn CcDomainConfiguration#ocsp_authorized_responder_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_domain_configuration#ocsp_authorized_responder_arn CcDomainConfiguration#ocsp_authorized_responder_arn}
     */
     readonly ocspAuthorizedResponderArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_domain_configuration#ocsp_lambda_arn CcDomainConfiguration#ocsp_lambda_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_domain_configuration#ocsp_lambda_arn CcDomainConfiguration#ocsp_lambda_arn}
     */
     readonly ocspLambdaArn?: string;
 }
@@ -1002,11 +1003,11 @@ export class ServerCertificatesPropertyList extends cdktn.ComplexList {
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_domain_configuration#key CcDomainConfiguration#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_domain_configuration#key CcDomainConfiguration#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_domain_configuration#value CcDomainConfiguration#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_domain_configuration#value CcDomainConfiguration#value}
     */
     readonly value?: string;
 }
@@ -1114,7 +1115,7 @@ export class TagPropertyList extends cdktn.ComplexList {
 }
 export interface TlsConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_domain_configuration#security_policy CcDomainConfiguration#security_policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_domain_configuration#security_policy CcDomainConfiguration#security_policy}
     */
     readonly securityPolicy?: string;
 }

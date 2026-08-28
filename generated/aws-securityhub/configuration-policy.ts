@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/securityhub_configuration_policy
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_configuration_policy
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,31 +9,31 @@ export interface CcConfigurationPolicyProps extends cdktn.TerraformMetaArguments
     /**
     * An object that defines how Security Hub is configured.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/securityhub_configuration_policy#configuration_policy CcConfigurationPolicy#configuration_policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_configuration_policy#configuration_policy CcConfigurationPolicy#configuration_policy}
     */
     readonly configurationPolicy: CcConfigurationPolicy.PolicyProperty;
     /**
     * The description of the configuration policy.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/securityhub_configuration_policy#description CcConfigurationPolicy#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_configuration_policy#description CcConfigurationPolicy#description}
     */
     readonly description?: string;
     /**
     * The name of the configuration policy.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/securityhub_configuration_policy#name CcConfigurationPolicy#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_configuration_policy#name CcConfigurationPolicy#name}
     */
     readonly name: string;
     /**
     * A key-value pair to associate with a resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/securityhub_configuration_policy#tags CcConfigurationPolicy#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_configuration_policy#tags CcConfigurationPolicy#tags}
     */
     readonly tags?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/securityhub_configuration_policy awscc_securityhub_configuration_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_configuration_policy awscc_securityhub_configuration_policy}
 */
 export class CcConfigurationPolicy extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CcConfigurationPolicy extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcConfigurationPolicy resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcConfigurationPolicy to import
-    * @param importFromId The id of the existing CcConfigurationPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/securityhub_configuration_policy#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcConfigurationPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_configuration_policy#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcConfigurationPolicy to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CcConfigurationPolicy extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/securityhub_configuration_policy awscc_securityhub_configuration_policy} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_configuration_policy awscc_securityhub_configuration_policy} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -71,7 +71,8 @@ export class CcConfigurationPolicy extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_securityhub_configuration_policy',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -501,49 +502,49 @@ export interface ParameterValueProperty {
     /**
     * A control parameter that is a boolean.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/securityhub_configuration_policy#boolean CcConfigurationPolicy#boolean}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_configuration_policy#boolean CcConfigurationPolicy#boolean}
     */
     readonly boolean?: boolean | cdktn.IResolvable;
     /**
     * A control parameter that is a double.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/securityhub_configuration_policy#double CcConfigurationPolicy#double}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_configuration_policy#double CcConfigurationPolicy#double}
     */
     readonly double?: number;
     /**
     * A control parameter that is an enum.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/securityhub_configuration_policy#enum CcConfigurationPolicy#enum}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_configuration_policy#enum CcConfigurationPolicy#enum}
     */
     readonly enum?: string;
     /**
     * A control parameter that is a list of enums.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/securityhub_configuration_policy#enum_list CcConfigurationPolicy#enum_list}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_configuration_policy#enum_list CcConfigurationPolicy#enum_list}
     */
     readonly enumList?: string[];
     /**
     * A control parameter that is an integer.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/securityhub_configuration_policy#integer CcConfigurationPolicy#integer}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_configuration_policy#integer CcConfigurationPolicy#integer}
     */
     readonly integer?: number;
     /**
     * A control parameter that is a list of integers.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/securityhub_configuration_policy#integer_list CcConfigurationPolicy#integer_list}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_configuration_policy#integer_list CcConfigurationPolicy#integer_list}
     */
     readonly integerList?: number[];
     /**
     * A control parameter that is a string.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/securityhub_configuration_policy#string CcConfigurationPolicy#string}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_configuration_policy#string CcConfigurationPolicy#string}
     */
     readonly string?: string;
     /**
     * A control parameter that is a list of strings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/securityhub_configuration_policy#string_list CcConfigurationPolicy#string_list}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_configuration_policy#string_list CcConfigurationPolicy#string_list}
     */
     readonly stringList?: string[];
 }
@@ -763,13 +764,13 @@ export interface ParameterConfigurationProperty {
     /**
     * An object that includes the data type of a security control parameter and its current value.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/securityhub_configuration_policy#value CcConfigurationPolicy#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_configuration_policy#value CcConfigurationPolicy#value}
     */
     readonly value?: ParameterValueProperty;
     /**
     * Identifies whether a control parameter uses a custom user-defined value or subscribes to the default AWS Security Hub behavior.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/securityhub_configuration_policy#value_type CcConfigurationPolicy#value_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_configuration_policy#value_type CcConfigurationPolicy#value_type}
     */
     readonly valueType?: string;
 }
@@ -877,13 +878,13 @@ export interface SecurityControlCustomParameterProperty {
     /**
     * An object that specifies parameter values for a control in a configuration policy.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/securityhub_configuration_policy#parameters CcConfigurationPolicy#parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_configuration_policy#parameters CcConfigurationPolicy#parameters}
     */
     readonly parameters?: { [key: string]: ParameterConfigurationProperty } | cdktn.IResolvable;
     /**
     * The ID of the security control.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/securityhub_configuration_policy#security_control_id CcConfigurationPolicy#security_control_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_configuration_policy#security_control_id CcConfigurationPolicy#security_control_id}
     */
     readonly securityControlId?: string;
 }
@@ -993,19 +994,19 @@ export interface SecurityControlsConfigurationProperty {
     /**
     * A list of security controls that are disabled in the configuration policy
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/securityhub_configuration_policy#disabled_security_control_identifiers CcConfigurationPolicy#disabled_security_control_identifiers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_configuration_policy#disabled_security_control_identifiers CcConfigurationPolicy#disabled_security_control_identifiers}
     */
     readonly disabledSecurityControlIdentifiers?: string[];
     /**
     * A list of security controls that are enabled in the configuration policy.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/securityhub_configuration_policy#enabled_security_control_identifiers CcConfigurationPolicy#enabled_security_control_identifiers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_configuration_policy#enabled_security_control_identifiers CcConfigurationPolicy#enabled_security_control_identifiers}
     */
     readonly enabledSecurityControlIdentifiers?: string[];
     /**
     * A list of security controls and control parameter values that are included in a configuration policy.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/securityhub_configuration_policy#security_control_custom_parameters CcConfigurationPolicy#security_control_custom_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_configuration_policy#security_control_custom_parameters CcConfigurationPolicy#security_control_custom_parameters}
     */
     readonly securityControlCustomParameters?: SecurityControlCustomParameterProperty[] | cdktn.IResolvable;
 }
@@ -1115,19 +1116,19 @@ export interface SecurityHubPolicyProperty {
     /**
     * A list that defines which security standards are enabled in the configuration policy.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/securityhub_configuration_policy#enabled_standard_identifiers CcConfigurationPolicy#enabled_standard_identifiers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_configuration_policy#enabled_standard_identifiers CcConfigurationPolicy#enabled_standard_identifiers}
     */
     readonly enabledStandardIdentifiers?: string[];
     /**
     * An object that defines which security controls are enabled in an AWS Security Hub configuration policy.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/securityhub_configuration_policy#security_controls_configuration CcConfigurationPolicy#security_controls_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_configuration_policy#security_controls_configuration CcConfigurationPolicy#security_controls_configuration}
     */
     readonly securityControlsConfiguration?: SecurityControlsConfigurationProperty;
     /**
     * Indicates whether Security Hub is enabled in the policy.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/securityhub_configuration_policy#service_enabled CcConfigurationPolicy#service_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_configuration_policy#service_enabled CcConfigurationPolicy#service_enabled}
     */
     readonly serviceEnabled?: boolean | cdktn.IResolvable;
 }
@@ -1237,7 +1238,7 @@ export interface PolicyProperty {
     /**
     * An object that defines how AWS Security Hub is configured.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/securityhub_configuration_policy#security_hub CcConfigurationPolicy#security_hub}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_configuration_policy#security_hub CcConfigurationPolicy#security_hub}
     */
     readonly securityHub?: SecurityHubPolicyProperty;
 }

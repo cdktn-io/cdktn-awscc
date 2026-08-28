@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rekognition_dataset
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rekognition_dataset
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,25 +9,25 @@ export interface CcDatasetProps extends cdktn.TerraformMetaArguments {
     /**
     * The type of the dataset. Specify TRAIN to create a training dataset. Specify TEST to create a test dataset.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rekognition_dataset#dataset_type CcDataset#dataset_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rekognition_dataset#dataset_type CcDataset#dataset_type}
     */
     readonly datasetType: string;
     /**
     * The ARN of the project to which the dataset belongs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rekognition_dataset#project_arn CcDataset#project_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rekognition_dataset#project_arn CcDataset#project_arn}
     */
     readonly projectArn?: string;
     /**
     * An array of key-value pairs to apply to this resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rekognition_dataset#tags CcDataset#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rekognition_dataset#tags CcDataset#tags}
     */
     readonly tags?: CcDataset.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rekognition_dataset awscc_rekognition_dataset}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rekognition_dataset awscc_rekognition_dataset}
 */
 export class CcDataset extends cdktn.TerraformResource {
 
@@ -43,7 +43,7 @@ export class CcDataset extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcDataset resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcDataset to import
-    * @param importFromId The id of the existing CcDataset that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rekognition_dataset#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcDataset that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rekognition_dataset#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcDataset to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -55,7 +55,7 @@ export class CcDataset extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rekognition_dataset awscc_rekognition_dataset} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rekognition_dataset awscc_rekognition_dataset} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -65,7 +65,8 @@ export class CcDataset extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_rekognition_dataset',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -220,13 +221,13 @@ export interface TagProperty {
     /**
     * The key name of the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rekognition_dataset#key CcDataset#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rekognition_dataset#key CcDataset#key}
     */
     readonly key?: string;
     /**
     * The value for the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rekognition_dataset#value CcDataset#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rekognition_dataset#value CcDataset#value}
     */
     readonly value?: string;
 }

@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_host_key
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_host_key
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,31 +9,31 @@ export interface CcHostKeyProps extends cdktn.TerraformMetaArguments {
     /**
     * The text description for this host key.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_host_key#description CcHostKey#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_host_key#description CcHostKey#description}
     */
     readonly description?: string;
     /**
     * The private key portion of an SSH key pair. Transfer Family accepts RSA, ECDSA, and ED25519 keys.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_host_key#host_key_body CcHostKey#host_key_body}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_host_key#host_key_body CcHostKey#host_key_body}
     */
     readonly hostKeyBody?: string;
     /**
     * The identifier of the server that contains the host key.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_host_key#server_id CcHostKey#server_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_host_key#server_id CcHostKey#server_id}
     */
     readonly serverId: string;
     /**
     * Key-value pairs that can be used to group and search for host keys.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_host_key#tags CcHostKey#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_host_key#tags CcHostKey#tags}
     */
     readonly tags?: CcHostKey.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_host_key awscc_transfer_host_key}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_host_key awscc_transfer_host_key}
 */
 export class CcHostKey extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CcHostKey extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcHostKey resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcHostKey to import
-    * @param importFromId The id of the existing CcHostKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_host_key#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcHostKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_host_key#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcHostKey to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CcHostKey extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_host_key awscc_transfer_host_key} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_host_key awscc_transfer_host_key} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -71,7 +71,8 @@ export class CcHostKey extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_transfer_host_key',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -270,13 +271,13 @@ export interface TagProperty {
     /**
     * The name assigned to the tag that you create.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_host_key#key CcHostKey#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_host_key#key CcHostKey#key}
     */
     readonly key?: string;
     /**
     * Contains one or more values that you assigned to the key name you create.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_host_key#value CcHostKey#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_host_key#value CcHostKey#value}
     */
     readonly value?: string;
 }

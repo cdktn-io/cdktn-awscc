@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_domain
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_domain
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,37 +9,37 @@ export interface CcDomainProps extends cdktn.TerraformMetaArguments {
     /**
     * The URL of the SQS dead letter queue
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_domain#dead_letter_queue_url CcDomain#dead_letter_queue_url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_domain#dead_letter_queue_url CcDomain#dead_letter_queue_url}
     */
     readonly deadLetterQueueUrl?: string;
     /**
     * The default encryption key
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_domain#default_encryption_key CcDomain#default_encryption_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_domain#default_encryption_key CcDomain#default_encryption_key}
     */
     readonly defaultEncryptionKey?: string;
     /**
     * The default number of days until the data within the domain expires.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_domain#default_expiration_days CcDomain#default_expiration_days}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_domain#default_expiration_days CcDomain#default_expiration_days}
     */
     readonly defaultExpirationDays?: number;
     /**
     * The unique name of the domain.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_domain#domain_name CcDomain#domain_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_domain#domain_name CcDomain#domain_name}
     */
     readonly domainName: string;
     /**
     * The tags (keys and values) associated with the domain
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_domain#tags CcDomain#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_domain#tags CcDomain#tags}
     */
     readonly tags?: CcDomain.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_domain awscc_customerprofiles_domain}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_domain awscc_customerprofiles_domain}
 */
 export class CcDomain extends cdktn.TerraformResource {
 
@@ -55,7 +55,7 @@ export class CcDomain extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcDomain resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcDomain to import
-    * @param importFromId The id of the existing CcDomain that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_domain#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcDomain that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_domain#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcDomain to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -67,7 +67,7 @@ export class CcDomain extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_domain awscc_customerprofiles_domain} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_domain awscc_customerprofiles_domain} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -77,7 +77,8 @@ export class CcDomain extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_customerprofiles_domain',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -283,11 +284,11 @@ export function ccDomainTagPropertyToHclTerraform(struct?: CcDomain.TagProperty 
 export namespace CcDomain {
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_domain#key CcDomain#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_domain#key CcDomain#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_domain#value CcDomain#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_domain#value CcDomain#value}
     */
     readonly value?: string;
 }

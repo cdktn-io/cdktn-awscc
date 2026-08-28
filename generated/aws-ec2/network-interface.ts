@@ -1,121 +1,121 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_interface
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_interface
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcNetworkInterfaceProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_interface#connection_tracking_specification CcNetworkInterface#connection_tracking_specification}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_interface#connection_tracking_specification CcNetworkInterface#connection_tracking_specification}
     */
     readonly connectionTrackingSpecification?: CcNetworkInterface.ConnectionTrackingSpecificationProperty;
     /**
     * A description for the network interface.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_interface#description CcNetworkInterface#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_interface#description CcNetworkInterface#description}
     */
     readonly description?: string;
     /**
     * If you have instances or ENIs that rely on the IPv6 address not changing, to avoid disrupting traffic to instances or ENIs, you can enable a primary IPv6 address. Enable this option to automatically assign an IPv6 associated with the ENI attached to your instance to be the primary IPv6 address. When you enable an IPv6 address to be a primary IPv6, you cannot disable it. Traffic will be routed to the primary IPv6 address until the instance is terminated or the ENI is detached. If you have multiple IPv6 addresses associated with an ENI and you enable a primary IPv6 address, the first IPv6 address associated with the ENI becomes the primary IPv6 address.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_interface#enable_primary_ipv_6 CcNetworkInterface#enable_primary_ipv_6}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_interface#enable_primary_ipv_6 CcNetworkInterface#enable_primary_ipv_6}
     */
     readonly enablePrimaryIpv6?: boolean | cdktn.IResolvable;
     /**
     * A list of security group IDs associated with this network interface.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_interface#group_set CcNetworkInterface#group_set}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_interface#group_set CcNetworkInterface#group_set}
     */
     readonly groupSet?: string[];
     /**
     * Indicates the type of network interface.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_interface#interface_type CcNetworkInterface#interface_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_interface#interface_type CcNetworkInterface#interface_type}
     */
     readonly interfaceType?: string;
     /**
     * The number of IPv4 prefixes to assign to a network interface. When you specify a number of IPv4 prefixes, Amazon EC2 selects these prefixes from your existing subnet CIDR reservations, if available, or from free spaces in the subnet. By default, these will be /28 prefixes. You can't specify a count of IPv4 prefixes if you've specified one of the following: specific IPv4 prefixes, specific private IPv4 addresses, or a count of private IPv4 addresses.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_interface#ipv_4_prefix_count CcNetworkInterface#ipv_4_prefix_count}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_interface#ipv_4_prefix_count CcNetworkInterface#ipv_4_prefix_count}
     */
     readonly ipv4PrefixCount?: number;
     /**
     * Assigns a list of IPv4 prefixes to the network interface. If you want EC2 to automatically assign IPv4 prefixes, use the Ipv4PrefixCount property and do not specify this property. Presently, only /28 prefixes are supported. You can't specify IPv4 prefixes if you've specified one of the following: a count of IPv4 prefixes, specific private IPv4 addresses, or a count of private IPv4 addresses.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_interface#ipv_4_prefixes CcNetworkInterface#ipv_4_prefixes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_interface#ipv_4_prefixes CcNetworkInterface#ipv_4_prefixes}
     */
     readonly ipv4Prefixes?: CcNetworkInterface.Ipv4PrefixSpecificationProperty[] | cdktn.IResolvable;
     /**
     * The number of IPv6 addresses to assign to a network interface. Amazon EC2 automatically selects the IPv6 addresses from the subnet range. To specify specific IPv6 addresses, use the Ipv6Addresses property and don't specify this property.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_interface#ipv_6_address_count CcNetworkInterface#ipv_6_address_count}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_interface#ipv_6_address_count CcNetworkInterface#ipv_6_address_count}
     */
     readonly ipv6AddressCount?: number;
     /**
     * One or more specific IPv6 addresses from the IPv6 CIDR block range of your subnet to associate with the network interface. If you're specifying a number of IPv6 addresses, use the Ipv6AddressCount property and don't specify this property.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_interface#ipv_6_addresses CcNetworkInterface#ipv_6_addresses}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_interface#ipv_6_addresses CcNetworkInterface#ipv_6_addresses}
     */
     readonly ipv6Addresses?: CcNetworkInterface.InstanceIpv6AddressProperty[] | cdktn.IResolvable;
     /**
     * The number of IPv6 prefixes to assign to a network interface. When you specify a number of IPv6 prefixes, Amazon EC2 selects these prefixes from your existing subnet CIDR reservations, if available, or from free spaces in the subnet. By default, these will be /80 prefixes. You can't specify a count of IPv6 prefixes if you've specified one of the following: specific IPv6 prefixes, specific IPv6 addresses, or a count of IPv6 addresses.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_interface#ipv_6_prefix_count CcNetworkInterface#ipv_6_prefix_count}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_interface#ipv_6_prefix_count CcNetworkInterface#ipv_6_prefix_count}
     */
     readonly ipv6PrefixCount?: number;
     /**
     * Assigns a list of IPv6 prefixes to the network interface. If you want EC2 to automatically assign IPv6 prefixes, use the Ipv6PrefixCount property and do not specify this property. Presently, only /80 prefixes are supported. You can't specify IPv6 prefixes if you've specified one of the following: a count of IPv6 prefixes, specific IPv6 addresses, or a count of IPv6 addresses.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_interface#ipv_6_prefixes CcNetworkInterface#ipv_6_prefixes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_interface#ipv_6_prefixes CcNetworkInterface#ipv_6_prefixes}
     */
     readonly ipv6Prefixes?: CcNetworkInterface.Ipv6PrefixSpecificationProperty[] | cdktn.IResolvable;
     /**
     * Assigns a single private IP address to the network interface, which is used as the primary private IP address. If you want to specify multiple private IP address, use the PrivateIpAddresses property. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_interface#private_ip_address CcNetworkInterface#private_ip_address}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_interface#private_ip_address CcNetworkInterface#private_ip_address}
     */
     readonly privateIpAddress?: string;
     /**
     * Assigns a list of private IP addresses to the network interface. You can specify a primary private IP address by setting the value of the Primary property to true in the PrivateIpAddressSpecification property. If you want EC2 to automatically assign private IP addresses, use the SecondaryPrivateIpAddressCount property and do not specify this property.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_interface#private_ip_addresses CcNetworkInterface#private_ip_addresses}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_interface#private_ip_addresses CcNetworkInterface#private_ip_addresses}
     */
     readonly privateIpAddresses?: CcNetworkInterface.PrivateIpAddressSpecificationProperty[] | cdktn.IResolvable;
     /**
     * Public IP DNS hostname type
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_interface#public_ip_dns_hostname_type_specification CcNetworkInterface#public_ip_dns_hostname_type_specification}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_interface#public_ip_dns_hostname_type_specification CcNetworkInterface#public_ip_dns_hostname_type_specification}
     */
     readonly publicIpDnsHostnameTypeSpecification?: string;
     /**
     * The number of secondary private IPv4 addresses to assign to a network interface. When you specify a number of secondary IPv4 addresses, Amazon EC2 selects these IP addresses within the subnet's IPv4 CIDR range. You can't specify this option and specify more than one private IP address using privateIpAddresses
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_interface#secondary_private_ip_address_count CcNetworkInterface#secondary_private_ip_address_count}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_interface#secondary_private_ip_address_count CcNetworkInterface#secondary_private_ip_address_count}
     */
     readonly secondaryPrivateIpAddressCount?: number;
     /**
     * Indicates whether traffic to or from the instance is validated.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_interface#source_dest_check CcNetworkInterface#source_dest_check}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_interface#source_dest_check CcNetworkInterface#source_dest_check}
     */
     readonly sourceDestCheck?: boolean | cdktn.IResolvable;
     /**
     * The ID of the subnet to associate with the network interface.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_interface#subnet_id CcNetworkInterface#subnet_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_interface#subnet_id CcNetworkInterface#subnet_id}
     */
     readonly subnetId: string;
     /**
     * An arbitrary set of tags (key-value pairs) for this network interface.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_interface#tags CcNetworkInterface#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_interface#tags CcNetworkInterface#tags}
     */
     readonly tags?: CcNetworkInterface.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_interface awscc_ec2_network_interface}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_interface awscc_ec2_network_interface}
 */
 export class CcNetworkInterface extends cdktn.TerraformResource {
 
@@ -131,7 +131,7 @@ export class CcNetworkInterface extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcNetworkInterface resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcNetworkInterface to import
-    * @param importFromId The id of the existing CcNetworkInterface that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_interface#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcNetworkInterface that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_interface#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcNetworkInterface to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -143,7 +143,7 @@ export class CcNetworkInterface extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_interface awscc_ec2_network_interface} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_interface awscc_ec2_network_interface} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -153,7 +153,8 @@ export class CcNetworkInterface extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_ec2_network_interface',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -884,15 +885,15 @@ export function ccNetworkInterfaceTagPropertyToHclTerraform(struct?: CcNetworkIn
 export namespace CcNetworkInterface {
 export interface ConnectionTrackingSpecificationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_interface#tcp_established_timeout CcNetworkInterface#tcp_established_timeout}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_interface#tcp_established_timeout CcNetworkInterface#tcp_established_timeout}
     */
     readonly tcpEstablishedTimeout?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_interface#udp_stream_timeout CcNetworkInterface#udp_stream_timeout}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_interface#udp_stream_timeout CcNetworkInterface#udp_stream_timeout}
     */
     readonly udpStreamTimeout?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_interface#udp_timeout CcNetworkInterface#udp_timeout}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_interface#udp_timeout CcNetworkInterface#udp_timeout}
     */
     readonly udpTimeout?: number;
 }
@@ -1000,7 +1001,7 @@ export class ConnectionTrackingSpecificationPropertyOutputReference extends cdkt
 }
 export interface Ipv4PrefixSpecificationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_interface#ipv_4_prefix CcNetworkInterface#ipv_4_prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_interface#ipv_4_prefix CcNetworkInterface#ipv_4_prefix}
     */
     readonly ipv4Prefix?: string;
 }
@@ -1086,7 +1087,7 @@ export class Ipv4PrefixSpecificationPropertyList extends cdktn.ComplexList {
 }
 export interface InstanceIpv6AddressProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_interface#ipv_6_address CcNetworkInterface#ipv_6_address}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_interface#ipv_6_address CcNetworkInterface#ipv_6_address}
     */
     readonly ipv6Address?: string;
 }
@@ -1172,7 +1173,7 @@ export class InstanceIpv6AddressPropertyList extends cdktn.ComplexList {
 }
 export interface Ipv6PrefixSpecificationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_interface#ipv_6_prefix CcNetworkInterface#ipv_6_prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_interface#ipv_6_prefix CcNetworkInterface#ipv_6_prefix}
     */
     readonly ipv6Prefix?: string;
 }
@@ -1258,11 +1259,11 @@ export class Ipv6PrefixSpecificationPropertyList extends cdktn.ComplexList {
 }
 export interface PrivateIpAddressSpecificationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_interface#primary CcNetworkInterface#primary}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_interface#primary CcNetworkInterface#primary}
     */
     readonly primary?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_interface#private_ip_address CcNetworkInterface#private_ip_address}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_interface#private_ip_address CcNetworkInterface#private_ip_address}
     */
     readonly privateIpAddress?: string;
 }
@@ -1418,11 +1419,11 @@ export class PublicIpDnsNameOptionsPropertyOutputReference extends cdktn.Complex
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_interface#key CcNetworkInterface#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_interface#key CcNetworkInterface#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_interface#value CcNetworkInterface#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_interface#value CcNetworkInterface#value}
     */
     readonly value?: string;
 }

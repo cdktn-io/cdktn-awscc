@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/s3express_directory_bucket
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3express_directory_bucket
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,53 +9,53 @@ export interface CcDirectoryBucketProps extends cdktn.TerraformMetaArguments {
     /**
     * Specifies default encryption for a bucket using server-side encryption with Amazon S3 managed keys (SSE-S3) or AWS KMS keys (SSE-KMS).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/s3express_directory_bucket#bucket_encryption CcDirectoryBucket#bucket_encryption}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3express_directory_bucket#bucket_encryption CcDirectoryBucket#bucket_encryption}
     */
     readonly bucketEncryption?: CcDirectoryBucket.BucketEncryptionProperty;
     /**
     * Specifies a name for the bucket. The bucket name must contain only lowercase letters, numbers, and hyphens (-). A directory bucket name must be unique in the chosen Availability Zone or Local Zone. The bucket name must also follow the format 'bucket_base_name--zone_id--x-s3'. The zone_id can be the ID of an Availability Zone or a Local Zone. If you don't specify a name, AWS CloudFormation generates a unique physical ID and uses that ID for the bucket name.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/s3express_directory_bucket#bucket_name CcDirectoryBucket#bucket_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3express_directory_bucket#bucket_name CcDirectoryBucket#bucket_name}
     */
     readonly bucketName?: string;
     /**
     * Specifies the number of Availability Zone or Local Zone that's used for redundancy for the bucket.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/s3express_directory_bucket#data_redundancy CcDirectoryBucket#data_redundancy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3express_directory_bucket#data_redundancy CcDirectoryBucket#data_redundancy}
     */
     readonly dataRedundancy: string;
     /**
     * The inventory configuration for an Amazon S3 Express bucket.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/s3express_directory_bucket#inventory_configurations CcDirectoryBucket#inventory_configurations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3express_directory_bucket#inventory_configurations CcDirectoryBucket#inventory_configurations}
     */
     readonly inventoryConfigurations?: CcDirectoryBucket.InventoryConfigurationProperty[] | cdktn.IResolvable;
     /**
     * Lifecycle rules that define how Amazon S3 Express manages objects during their lifetime.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/s3express_directory_bucket#lifecycle_configuration CcDirectoryBucket#lifecycle_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3express_directory_bucket#lifecycle_configuration CcDirectoryBucket#lifecycle_configuration}
     */
     readonly lifecycleConfiguration?: CcDirectoryBucket.LifecycleConfigurationProperty;
     /**
     * Specifies the Zone ID of the Availability Zone or Local Zone where the directory bucket will be created. An example Availability Zone ID value is 'use1-az5'.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/s3express_directory_bucket#location_name CcDirectoryBucket#location_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3express_directory_bucket#location_name CcDirectoryBucket#location_name}
     */
     readonly locationName: string;
     /**
     * Specifies the metrics configurations for the Amazon S3 Express bucket.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/s3express_directory_bucket#metrics_configurations CcDirectoryBucket#metrics_configurations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3express_directory_bucket#metrics_configurations CcDirectoryBucket#metrics_configurations}
     */
     readonly metricsConfigurations?: CcDirectoryBucket.MetricsConfigurationProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/s3express_directory_bucket#tags CcDirectoryBucket#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3express_directory_bucket#tags CcDirectoryBucket#tags}
     */
     readonly tags?: CcDirectoryBucket.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/s3express_directory_bucket awscc_s3express_directory_bucket}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3express_directory_bucket awscc_s3express_directory_bucket}
 */
 export class CcDirectoryBucket extends cdktn.TerraformResource {
 
@@ -71,7 +71,7 @@ export class CcDirectoryBucket extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcDirectoryBucket resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcDirectoryBucket to import
-    * @param importFromId The id of the existing CcDirectoryBucket that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/s3express_directory_bucket#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcDirectoryBucket that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3express_directory_bucket#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcDirectoryBucket to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -83,7 +83,7 @@ export class CcDirectoryBucket extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/s3express_directory_bucket awscc_s3express_directory_bucket} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3express_directory_bucket awscc_s3express_directory_bucket} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -93,7 +93,8 @@ export class CcDirectoryBucket extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_s3express_directory_bucket',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -773,11 +774,11 @@ export interface ServerSideEncryptionByDefaultProperty {
     /**
     * AWS Key Management Service (KMS) customer managed key ID to use for the default encryption. This parameter is allowed only if SSEAlgorithm is set to aws:kms. You can specify this parameter with the key ID or the Amazon Resource Name (ARN) of the KMS key
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/s3express_directory_bucket#kms_master_key_id CcDirectoryBucket#kms_master_key_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3express_directory_bucket#kms_master_key_id CcDirectoryBucket#kms_master_key_id}
     */
     readonly kmsMasterKeyId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/s3express_directory_bucket#sse_algorithm CcDirectoryBucket#sse_algorithm}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3express_directory_bucket#sse_algorithm CcDirectoryBucket#sse_algorithm}
     */
     readonly sseAlgorithm?: string;
 }
@@ -865,13 +866,13 @@ export interface ServerSideEncryptionRuleProperty {
     /**
     * Specifies whether Amazon S3 should use an S3 Bucket Key with server-side encryption using KMS (SSE-KMS) for new objects in the bucket. Existing objects are not affected. Amazon S3 Express One Zone uses an S3 Bucket Key with SSE-KMS and S3 Bucket Key cannot be disabled. It's only allowed to set the BucketKeyEnabled element to true.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/s3express_directory_bucket#bucket_key_enabled CcDirectoryBucket#bucket_key_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3express_directory_bucket#bucket_key_enabled CcDirectoryBucket#bucket_key_enabled}
     */
     readonly bucketKeyEnabled?: boolean | cdktn.IResolvable;
     /**
     * Specifies the default server-side encryption to apply to new objects in the bucket. If a PUT Object request doesn't specify any server-side encryption, this default encryption will be applied.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/s3express_directory_bucket#server_side_encryption_by_default CcDirectoryBucket#server_side_encryption_by_default}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3express_directory_bucket#server_side_encryption_by_default CcDirectoryBucket#server_side_encryption_by_default}
     */
     readonly serverSideEncryptionByDefault?: ServerSideEncryptionByDefaultProperty;
 }
@@ -981,7 +982,7 @@ export interface BucketEncryptionProperty {
     /**
     * Specifies the default server-side-encryption configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/s3express_directory_bucket#server_side_encryption_configuration CcDirectoryBucket#server_side_encryption_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3express_directory_bucket#server_side_encryption_configuration CcDirectoryBucket#server_side_encryption_configuration}
     */
     readonly serverSideEncryptionConfiguration?: ServerSideEncryptionRuleProperty[] | cdktn.IResolvable;
 }
@@ -1047,25 +1048,25 @@ export interface DestinationProperty {
     /**
     * The account ID that owns the destination S3 bucket. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/s3express_directory_bucket#bucket_account_id CcDirectoryBucket#bucket_account_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3express_directory_bucket#bucket_account_id CcDirectoryBucket#bucket_account_id}
     */
     readonly bucketAccountId?: string;
     /**
     * The Amazon Resource Name (ARN) of the destination Amazon S3 bucket to which data is exported.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/s3express_directory_bucket#bucket_arn CcDirectoryBucket#bucket_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3express_directory_bucket#bucket_arn CcDirectoryBucket#bucket_arn}
     */
     readonly bucketArn?: string;
     /**
     * Specifies the file format used when exporting data to Amazon S3.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/s3express_directory_bucket#format CcDirectoryBucket#format}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3express_directory_bucket#format CcDirectoryBucket#format}
     */
     readonly format?: string;
     /**
     * The prefix to use when exporting data. The prefix is prepended to all results.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/s3express_directory_bucket#prefix CcDirectoryBucket#prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3express_directory_bucket#prefix CcDirectoryBucket#prefix}
     */
     readonly prefix?: string;
 }
@@ -1197,19 +1198,19 @@ export interface InventoryConfigurationProperty {
     /**
     * Specifies information about where to publish inventory reports for an Amazon S3 Express bucket.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/s3express_directory_bucket#destination CcDirectoryBucket#destination}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3express_directory_bucket#destination CcDirectoryBucket#destination}
     */
     readonly destination?: DestinationProperty;
     /**
     * Specifies whether the inventory is enabled or disabled.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/s3express_directory_bucket#enabled CcDirectoryBucket#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3express_directory_bucket#enabled CcDirectoryBucket#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
     * The ID used to identify the inventory configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/s3express_directory_bucket#id CcDirectoryBucket#id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3express_directory_bucket#id CcDirectoryBucket#id}
     *
     * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
     * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1218,25 +1219,25 @@ export interface InventoryConfigurationProperty {
     /**
     * Object versions to include in the inventory list.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/s3express_directory_bucket#included_object_versions CcDirectoryBucket#included_object_versions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3express_directory_bucket#included_object_versions CcDirectoryBucket#included_object_versions}
     */
     readonly includedObjectVersions?: string;
     /**
     * Contains the optional fields that are included in the inventory results.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/s3express_directory_bucket#optional_fields CcDirectoryBucket#optional_fields}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3express_directory_bucket#optional_fields CcDirectoryBucket#optional_fields}
     */
     readonly optionalFields?: string[];
     /**
     * The prefix that is prepended to all inventory results.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/s3express_directory_bucket#prefix CcDirectoryBucket#prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3express_directory_bucket#prefix CcDirectoryBucket#prefix}
     */
     readonly prefix?: string;
     /**
     * Specifies the schedule for generating inventory results.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/s3express_directory_bucket#schedule_frequency CcDirectoryBucket#schedule_frequency}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3express_directory_bucket#schedule_frequency CcDirectoryBucket#schedule_frequency}
     */
     readonly scheduleFrequency?: string;
 }
@@ -1456,7 +1457,7 @@ export interface AbortIncompleteMultipartUploadProperty {
     /**
     * Specifies the number of days after which Amazon S3 aborts an incomplete multipart upload.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/s3express_directory_bucket#days_after_initiation CcDirectoryBucket#days_after_initiation}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3express_directory_bucket#days_after_initiation CcDirectoryBucket#days_after_initiation}
     */
     readonly daysAfterInitiation?: number;
 }
@@ -1522,34 +1523,34 @@ export interface RuleProperty {
     /**
     * Specifies the days since the initiation of an incomplete multipart upload that Amazon S3 will wait before permanently removing all parts of the upload.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/s3express_directory_bucket#abort_incomplete_multipart_upload CcDirectoryBucket#abort_incomplete_multipart_upload}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3express_directory_bucket#abort_incomplete_multipart_upload CcDirectoryBucket#abort_incomplete_multipart_upload}
     */
     readonly abortIncompleteMultipartUpload?: AbortIncompleteMultipartUploadProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/s3express_directory_bucket#expiration_in_days CcDirectoryBucket#expiration_in_days}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3express_directory_bucket#expiration_in_days CcDirectoryBucket#expiration_in_days}
     */
     readonly expirationInDays?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/s3express_directory_bucket#id CcDirectoryBucket#id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3express_directory_bucket#id CcDirectoryBucket#id}
     *
     * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
     * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
     */
     readonly id?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/s3express_directory_bucket#object_size_greater_than CcDirectoryBucket#object_size_greater_than}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3express_directory_bucket#object_size_greater_than CcDirectoryBucket#object_size_greater_than}
     */
     readonly objectSizeGreaterThan?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/s3express_directory_bucket#object_size_less_than CcDirectoryBucket#object_size_less_than}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3express_directory_bucket#object_size_less_than CcDirectoryBucket#object_size_less_than}
     */
     readonly objectSizeLessThan?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/s3express_directory_bucket#prefix CcDirectoryBucket#prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3express_directory_bucket#prefix CcDirectoryBucket#prefix}
     */
     readonly prefix?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/s3express_directory_bucket#status CcDirectoryBucket#status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3express_directory_bucket#status CcDirectoryBucket#status}
     */
     readonly status?: string;
 }
@@ -1769,7 +1770,7 @@ export interface LifecycleConfigurationProperty {
     /**
     * A lifecycle rule for individual objects in an Amazon S3 Express bucket.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/s3express_directory_bucket#rules CcDirectoryBucket#rules}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3express_directory_bucket#rules CcDirectoryBucket#rules}
     */
     readonly rules?: RuleProperty[] | cdktn.IResolvable;
 }
@@ -1835,13 +1836,13 @@ export interface MetricsConfigurationProperty {
     /**
     * The access point ARN used when evaluating a metrics filter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/s3express_directory_bucket#access_point_arn CcDirectoryBucket#access_point_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3express_directory_bucket#access_point_arn CcDirectoryBucket#access_point_arn}
     */
     readonly accessPointArn?: string;
     /**
     * The ID used to identify the metrics configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/s3express_directory_bucket#id CcDirectoryBucket#id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3express_directory_bucket#id CcDirectoryBucket#id}
     *
     * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
     * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1850,7 +1851,7 @@ export interface MetricsConfigurationProperty {
     /**
     * The prefix used when evaluating a metrics filter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/s3express_directory_bucket#prefix CcDirectoryBucket#prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3express_directory_bucket#prefix CcDirectoryBucket#prefix}
     */
     readonly prefix?: string;
 }
@@ -1980,11 +1981,11 @@ export class MetricsConfigurationPropertyList extends cdktn.ComplexList {
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/s3express_directory_bucket#key CcDirectoryBucket#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3express_directory_bucket#key CcDirectoryBucket#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/s3express_directory_bucket#value CcDirectoryBucket#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3express_directory_bucket#value CcDirectoryBucket#value}
     */
     readonly value?: string;
 }

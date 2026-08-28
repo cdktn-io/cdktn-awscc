@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_object_type
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_object_type
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,85 +9,85 @@ export interface CcObjectTypeProps extends cdktn.TerraformMetaArguments {
     /**
     * Indicates whether a profile should be created when data is received.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_object_type#allow_profile_creation CcObjectType#allow_profile_creation}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_object_type#allow_profile_creation CcObjectType#allow_profile_creation}
     */
     readonly allowProfileCreation?: boolean | cdktn.IResolvable;
     /**
     * Description of the profile object type.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_object_type#description CcObjectType#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_object_type#description CcObjectType#description}
     */
     readonly description: string;
     /**
     * The unique name of the domain.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_object_type#domain_name CcObjectType#domain_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_object_type#domain_name CcObjectType#domain_name}
     */
     readonly domainName: string;
     /**
     * The default encryption key
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_object_type#encryption_key CcObjectType#encryption_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_object_type#encryption_key CcObjectType#encryption_key}
     */
     readonly encryptionKey?: string;
     /**
     * The default number of days until the data within the domain expires.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_object_type#expiration_days CcObjectType#expiration_days}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_object_type#expiration_days CcObjectType#expiration_days}
     */
     readonly expirationDays?: number;
     /**
     * A list of the name and ObjectType field.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_object_type#fields CcObjectType#fields}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_object_type#fields CcObjectType#fields}
     */
     readonly fields?: CcObjectType.FieldMapProperty[] | cdktn.IResolvable;
     /**
     * A list of unique keys that can be used to map data to the profile.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_object_type#keys CcObjectType#keys}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_object_type#keys CcObjectType#keys}
     */
     readonly keys?: CcObjectType.KeyMapProperty[] | cdktn.IResolvable;
     /**
     * The maximum number of profile objects for this object type
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_object_type#max_profile_object_count CcObjectType#max_profile_object_count}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_object_type#max_profile_object_count CcObjectType#max_profile_object_count}
     */
     readonly maxProfileObjectCount?: number;
     /**
     * The name of the profile object type.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_object_type#object_type_name CcObjectType#object_type_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_object_type#object_type_name CcObjectType#object_type_name}
     */
     readonly objectTypeName: string;
     /**
     * The format of your sourceLastUpdatedTimestamp that was previously set up.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_object_type#source_last_updated_timestamp_format CcObjectType#source_last_updated_timestamp_format}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_object_type#source_last_updated_timestamp_format CcObjectType#source_last_updated_timestamp_format}
     */
     readonly sourceLastUpdatedTimestampFormat?: string;
     /**
     * Defines the priority order of object types. Lower value indicates higher priority.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_object_type#source_priority CcObjectType#source_priority}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_object_type#source_priority CcObjectType#source_priority}
     */
     readonly sourcePriority?: number;
     /**
     * The tags (keys and values) associated with the integration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_object_type#tags CcObjectType#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_object_type#tags CcObjectType#tags}
     */
     readonly tags?: CcObjectType.TagProperty[] | cdktn.IResolvable;
     /**
     * A unique identifier for the object template.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_object_type#template_id CcObjectType#template_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_object_type#template_id CcObjectType#template_id}
     */
     readonly templateId?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_object_type awscc_customerprofiles_object_type}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_object_type awscc_customerprofiles_object_type}
 */
 export class CcObjectType extends cdktn.TerraformResource {
 
@@ -103,7 +103,7 @@ export class CcObjectType extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcObjectType resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcObjectType to import
-    * @param importFromId The id of the existing CcObjectType that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_object_type#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcObjectType that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_object_type#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcObjectType to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -115,7 +115,7 @@ export class CcObjectType extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_object_type awscc_customerprofiles_object_type} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_object_type awscc_customerprofiles_object_type} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -125,7 +125,8 @@ export class CcObjectType extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_customerprofiles_object_type',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -679,19 +680,19 @@ export interface ObjectTypeFieldProperty {
     /**
     * The content type of the field. Used for determining equality when searching.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_object_type#content_type CcObjectType#content_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_object_type#content_type CcObjectType#content_type}
     */
     readonly contentType?: string;
     /**
     * A field of a ProfileObject. For example: _source.FirstName, where "_source" is a ProfileObjectType of a Zendesk user and "FirstName" is a field in that ObjectType.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_object_type#source CcObjectType#source}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_object_type#source CcObjectType#source}
     */
     readonly source?: string;
     /**
     * The location of the data in the standard ProfileObject model. For example: _profile.Address.PostalCode.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_object_type#target CcObjectType#target}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_object_type#target CcObjectType#target}
     */
     readonly target?: string;
 }
@@ -799,13 +800,13 @@ export class ObjectTypeFieldPropertyOutputReference extends cdktn.ComplexObject 
 }
 export interface FieldMapProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_object_type#name CcObjectType#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_object_type#name CcObjectType#name}
     */
     readonly name?: string;
     /**
     * Represents a field in a ProfileObjectType.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_object_type#object_type_field CcObjectType#object_type_field}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_object_type#object_type_field CcObjectType#object_type_field}
     */
     readonly objectTypeField?: ObjectTypeFieldProperty;
 }
@@ -915,13 +916,13 @@ export interface ObjectTypeKeyProperty {
     /**
     * The reference for the key name of the fields map. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_object_type#field_names CcObjectType#field_names}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_object_type#field_names CcObjectType#field_names}
     */
     readonly fieldNames?: string[];
     /**
     * The types of keys that a ProfileObject can have. Each ProfileObject can have only 1 UNIQUE key but multiple PROFILE keys. PROFILE means that this key can be used to tie an object to a PROFILE. UNIQUE means that it can be used to uniquely identify an object. If a key a is marked as SECONDARY, it will be used to search for profiles after all other PROFILE keys have been searched. A LOOKUP_ONLY key is only used to match a profile but is not persisted to be used for searching of the profile. A NEW_ONLY key is only used if the profile does not already exist before the object is ingested, otherwise it is only used for matching objects to profiles.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_object_type#standard_identifiers CcObjectType#standard_identifiers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_object_type#standard_identifiers CcObjectType#standard_identifiers}
     */
     readonly standardIdentifiers?: string[];
 }
@@ -1029,11 +1030,11 @@ export class ObjectTypeKeyPropertyList extends cdktn.ComplexList {
 }
 export interface KeyMapProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_object_type#name CcObjectType#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_object_type#name CcObjectType#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_object_type#object_type_key_list CcObjectType#object_type_key_list}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_object_type#object_type_key_list CcObjectType#object_type_key_list}
     */
     readonly objectTypeKeyList?: ObjectTypeKeyProperty[] | cdktn.IResolvable;
 }
@@ -1141,11 +1142,11 @@ export class KeyMapPropertyList extends cdktn.ComplexList {
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_object_type#key CcObjectType#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_object_type#key CcObjectType#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_object_type#value CcObjectType#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_object_type#value CcObjectType#value}
     */
     readonly value?: string;
 }

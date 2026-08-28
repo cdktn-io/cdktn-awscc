@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_library
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_library
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,31 +9,31 @@ export interface CcDataAutomationLibraryProps extends cdktn.TerraformMetaArgumen
     /**
     * KMS Encryption Configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_library#encryption_configuration CcDataAutomationLibrary#encryption_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_library#encryption_configuration CcDataAutomationLibrary#encryption_configuration}
     */
     readonly encryptionConfiguration?: CcDataAutomationLibrary.EncryptionConfigurationProperty;
     /**
     * Description of the DataAutomationLibrary
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_library#library_description CcDataAutomationLibrary#library_description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_library#library_description CcDataAutomationLibrary#library_description}
     */
     readonly libraryDescription?: string;
     /**
     * Name of the DataAutomationLibrary
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_library#library_name CcDataAutomationLibrary#library_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_library#library_name CcDataAutomationLibrary#library_name}
     */
     readonly libraryName: string;
     /**
     * List of tags
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_library#tags CcDataAutomationLibrary#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_library#tags CcDataAutomationLibrary#tags}
     */
     readonly tags?: CcDataAutomationLibrary.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_library awscc_bedrock_data_automation_library}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_library awscc_bedrock_data_automation_library}
 */
 export class CcDataAutomationLibrary extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CcDataAutomationLibrary extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcDataAutomationLibrary resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcDataAutomationLibrary to import
-    * @param importFromId The id of the existing CcDataAutomationLibrary that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_library#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcDataAutomationLibrary that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_library#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcDataAutomationLibrary to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CcDataAutomationLibrary extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_library awscc_bedrock_data_automation_library} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_library awscc_bedrock_data_automation_library} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -71,7 +71,8 @@ export class CcDataAutomationLibrary extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_bedrock_data_automation_library',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -324,13 +325,13 @@ export interface EncryptionConfigurationProperty {
     /**
     * KMS Encryption Context
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_library#kms_encryption_context CcDataAutomationLibrary#kms_encryption_context}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_library#kms_encryption_context CcDataAutomationLibrary#kms_encryption_context}
     */
     readonly kmsEncryptionContext?: { [key: string]: string };
     /**
     * KMS Key Identifier
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_library#kms_key_id CcDataAutomationLibrary#kms_key_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_library#kms_key_id CcDataAutomationLibrary#kms_key_id}
     */
     readonly kmsKeyId?: string;
 }
@@ -477,13 +478,13 @@ export interface TagProperty {
     /**
     * Tag key
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_library#key CcDataAutomationLibrary#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_library#key CcDataAutomationLibrary#key}
     */
     readonly key?: string;
     /**
     * Tag value
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_library#value CcDataAutomationLibrary#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_library#value CcDataAutomationLibrary#value}
     */
     readonly value?: string;
 }

@@ -1,51 +1,51 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspaces_workspaces_pool
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspaces_workspaces_pool
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcWorkspacesPoolProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspaces_workspaces_pool#application_settings CcWorkspacesPool#application_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspaces_workspaces_pool#application_settings CcWorkspacesPool#application_settings}
     */
     readonly applicationSettings?: CcWorkspacesPool.ApplicationSettingsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspaces_workspaces_pool#bundle_id CcWorkspacesPool#bundle_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspaces_workspaces_pool#bundle_id CcWorkspacesPool#bundle_id}
     */
     readonly bundleId: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspaces_workspaces_pool#capacity CcWorkspacesPool#capacity}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspaces_workspaces_pool#capacity CcWorkspacesPool#capacity}
     */
     readonly capacity: CcWorkspacesPool.CapacityProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspaces_workspaces_pool#description CcWorkspacesPool#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspaces_workspaces_pool#description CcWorkspacesPool#description}
     */
     readonly description?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspaces_workspaces_pool#directory_id CcWorkspacesPool#directory_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspaces_workspaces_pool#directory_id CcWorkspacesPool#directory_id}
     */
     readonly directoryId: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspaces_workspaces_pool#pool_name CcWorkspacesPool#pool_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspaces_workspaces_pool#pool_name CcWorkspacesPool#pool_name}
     */
     readonly poolName: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspaces_workspaces_pool#running_mode CcWorkspacesPool#running_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspaces_workspaces_pool#running_mode CcWorkspacesPool#running_mode}
     */
     readonly runningMode?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspaces_workspaces_pool#tags CcWorkspacesPool#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspaces_workspaces_pool#tags CcWorkspacesPool#tags}
     */
     readonly tags?: CcWorkspacesPool.TagProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspaces_workspaces_pool#timeout_settings CcWorkspacesPool#timeout_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspaces_workspaces_pool#timeout_settings CcWorkspacesPool#timeout_settings}
     */
     readonly timeoutSettings?: CcWorkspacesPool.TimeoutSettingsProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspaces_workspaces_pool awscc_workspaces_workspaces_pool}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspaces_workspaces_pool awscc_workspaces_workspaces_pool}
 */
 export class CcWorkspacesPool extends cdktn.TerraformResource {
 
@@ -61,7 +61,7 @@ export class CcWorkspacesPool extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcWorkspacesPool resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcWorkspacesPool to import
-    * @param importFromId The id of the existing CcWorkspacesPool that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspaces_workspaces_pool#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcWorkspacesPool that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspaces_workspaces_pool#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcWorkspacesPool to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -73,7 +73,7 @@ export class CcWorkspacesPool extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspaces_workspaces_pool awscc_workspaces_workspaces_pool} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspaces_workspaces_pool awscc_workspaces_workspaces_pool} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -83,7 +83,8 @@ export class CcWorkspacesPool extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_workspaces_workspaces_pool',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -492,11 +493,11 @@ export function ccWorkspacesPoolTimeoutSettingsPropertyToHclTerraform(struct?: C
 export namespace CcWorkspacesPool {
 export interface ApplicationSettingsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspaces_workspaces_pool#settings_group CcWorkspacesPool#settings_group}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspaces_workspaces_pool#settings_group CcWorkspacesPool#settings_group}
     */
     readonly settingsGroup?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspaces_workspaces_pool#status CcWorkspacesPool#status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspaces_workspaces_pool#status CcWorkspacesPool#status}
     */
     readonly status?: string;
 }
@@ -582,7 +583,7 @@ export class ApplicationSettingsPropertyOutputReference extends cdktn.ComplexObj
 }
 export interface CapacityProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspaces_workspaces_pool#desired_user_sessions CcWorkspacesPool#desired_user_sessions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspaces_workspaces_pool#desired_user_sessions CcWorkspacesPool#desired_user_sessions}
     */
     readonly desiredUserSessions: number;
 }
@@ -643,11 +644,11 @@ export class CapacityPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspaces_workspaces_pool#key CcWorkspacesPool#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspaces_workspaces_pool#key CcWorkspacesPool#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspaces_workspaces_pool#value CcWorkspacesPool#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspaces_workspaces_pool#value CcWorkspacesPool#value}
     */
     readonly value?: string;
 }
@@ -755,15 +756,15 @@ export class TagPropertyList extends cdktn.ComplexList {
 }
 export interface TimeoutSettingsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspaces_workspaces_pool#disconnect_timeout_in_seconds CcWorkspacesPool#disconnect_timeout_in_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspaces_workspaces_pool#disconnect_timeout_in_seconds CcWorkspacesPool#disconnect_timeout_in_seconds}
     */
     readonly disconnectTimeoutInSeconds?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspaces_workspaces_pool#idle_disconnect_timeout_in_seconds CcWorkspacesPool#idle_disconnect_timeout_in_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspaces_workspaces_pool#idle_disconnect_timeout_in_seconds CcWorkspacesPool#idle_disconnect_timeout_in_seconds}
     */
     readonly idleDisconnectTimeoutInSeconds?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspaces_workspaces_pool#max_user_duration_in_seconds CcWorkspacesPool#max_user_duration_in_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspaces_workspaces_pool#max_user_duration_in_seconds CcWorkspacesPool#max_user_duration_in_seconds}
     */
     readonly maxUserDurationInSeconds?: number;
 }

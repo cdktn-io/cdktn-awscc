@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/signer_signing_profile
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/signer_signing_profile
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,25 +9,25 @@ export interface CcSigningProfileProps extends cdktn.TerraformMetaArguments {
     /**
     * The ID of the target signing platform.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/signer_signing_profile#platform_id CcSigningProfile#platform_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/signer_signing_profile#platform_id CcSigningProfile#platform_id}
     */
     readonly platformId: string;
     /**
     * Signature validity period of the profile.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/signer_signing_profile#signature_validity_period CcSigningProfile#signature_validity_period}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/signer_signing_profile#signature_validity_period CcSigningProfile#signature_validity_period}
     */
     readonly signatureValidityPeriod?: CcSigningProfile.SignatureValidityPeriodProperty;
     /**
     * A list of tags associated with the signing profile.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/signer_signing_profile#tags CcSigningProfile#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/signer_signing_profile#tags CcSigningProfile#tags}
     */
     readonly tags?: CcSigningProfile.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/signer_signing_profile awscc_signer_signing_profile}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/signer_signing_profile awscc_signer_signing_profile}
 */
 export class CcSigningProfile extends cdktn.TerraformResource {
 
@@ -43,7 +43,7 @@ export class CcSigningProfile extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcSigningProfile resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcSigningProfile to import
-    * @param importFromId The id of the existing CcSigningProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/signer_signing_profile#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcSigningProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/signer_signing_profile#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcSigningProfile to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -55,7 +55,7 @@ export class CcSigningProfile extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/signer_signing_profile awscc_signer_signing_profile} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/signer_signing_profile awscc_signer_signing_profile} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -65,7 +65,8 @@ export class CcSigningProfile extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_signer_signing_profile',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -270,11 +271,11 @@ export function ccSigningProfileTagPropertyToHclTerraform(struct?: CcSigningProf
 export namespace CcSigningProfile {
 export interface SignatureValidityPeriodProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/signer_signing_profile#type CcSigningProfile#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/signer_signing_profile#type CcSigningProfile#type}
     */
     readonly type?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/signer_signing_profile#value CcSigningProfile#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/signer_signing_profile#value CcSigningProfile#value}
     */
     readonly value?: number;
 }
@@ -360,11 +361,11 @@ export class SignatureValidityPeriodPropertyOutputReference extends cdktn.Comple
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/signer_signing_profile#key CcSigningProfile#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/signer_signing_profile#key CcSigningProfile#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/signer_signing_profile#value CcSigningProfile#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/signer_signing_profile#value CcSigningProfile#value}
     */
     readonly value?: string;
 }

@@ -1,85 +1,85 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcDataSetProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#aws_account_id CcDataSet#aws_account_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#aws_account_id CcDataSet#aws_account_id}
     */
     readonly awsAccountId?: string;
     /**
     * <p>Groupings of columns that work together in certain QuickSight features. Currently, only geospatial hierarchy is supported.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#column_groups CcDataSet#column_groups}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#column_groups CcDataSet#column_groups}
     */
     readonly columnGroups?: CcDataSet.ColumnGroupProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#column_level_permission_rules CcDataSet#column_level_permission_rules}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#column_level_permission_rules CcDataSet#column_level_permission_rules}
     */
     readonly columnLevelPermissionRules?: CcDataSet.ColumnLevelPermissionRuleProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#data_set_id CcDataSet#data_set_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#data_set_id CcDataSet#data_set_id}
     */
     readonly dataSetId?: string;
     /**
     * <p>The dataset usage configuration for the dataset.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#data_set_usage_configuration CcDataSet#data_set_usage_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#data_set_usage_configuration CcDataSet#data_set_usage_configuration}
     */
     readonly dataSetUsageConfiguration?: CcDataSet.DataSetUsageConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#field_folders CcDataSet#field_folders}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#field_folders CcDataSet#field_folders}
     */
     readonly fieldFolders?: { [key: string]: CcDataSet.FieldFolderProperty } | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#import_mode CcDataSet#import_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#import_mode CcDataSet#import_mode}
     */
     readonly importMode?: string;
     /**
     * <p>Wait policy to use when creating/updating dataset. Default is to wait for SPICE ingestion to finish with timeout of 36 hours.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#ingestion_wait_policy CcDataSet#ingestion_wait_policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#ingestion_wait_policy CcDataSet#ingestion_wait_policy}
     */
     readonly ingestionWaitPolicy?: CcDataSet.IngestionWaitPolicyProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#logical_table_map CcDataSet#logical_table_map}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#logical_table_map CcDataSet#logical_table_map}
     */
     readonly logicalTableMap?: { [key: string]: CcDataSet.LogicalTableProperty } | cdktn.IResolvable;
     /**
     * <p>The display name for the dataset.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#name CcDataSet#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#name CcDataSet#name}
     */
     readonly name?: string;
     /**
     * <p>A list of resource permissions on the dataset.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#permissions CcDataSet#permissions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#permissions CcDataSet#permissions}
     */
     readonly permissions?: CcDataSet.ResourcePermissionProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#physical_table_map CcDataSet#physical_table_map}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#physical_table_map CcDataSet#physical_table_map}
     */
     readonly physicalTableMap?: { [key: string]: CcDataSet.PhysicalTableProperty } | cdktn.IResolvable;
     /**
     * <p>The row-level security configuration for the dataset.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#row_level_permission_data_set CcDataSet#row_level_permission_data_set}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#row_level_permission_data_set CcDataSet#row_level_permission_data_set}
     */
     readonly rowLevelPermissionDataSet?: CcDataSet.RowLevelPermissionDataSetProperty;
     /**
     * <p>Contains a map of the key-value pairs for the resource tag or tags assigned to the dataset.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#tags CcDataSet#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#tags CcDataSet#tags}
     */
     readonly tags?: CcDataSet.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set awscc_quicksight_data_set}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set awscc_quicksight_data_set}
 */
 export class CcDataSet extends cdktn.TerraformResource {
 
@@ -95,7 +95,7 @@ export class CcDataSet extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcDataSet resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcDataSet to import
-    * @param importFromId The id of the existing CcDataSet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcDataSet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcDataSet to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -107,7 +107,7 @@ export class CcDataSet extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set awscc_quicksight_data_set} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set awscc_quicksight_data_set} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -117,7 +117,8 @@ export class CcDataSet extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_quicksight_data_set',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -1854,17 +1855,17 @@ export interface GeoSpatialColumnGroupProperty {
     /**
     * <p>Columns in this hierarchy.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#columns CcDataSet#columns}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#columns CcDataSet#columns}
     */
     readonly columns?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#country_code CcDataSet#country_code}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#country_code CcDataSet#country_code}
     */
     readonly countryCode?: string;
     /**
     * <p>A display name for the hierarchy.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#name CcDataSet#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#name CcDataSet#name}
     */
     readonly name?: string;
 }
@@ -1974,7 +1975,7 @@ export interface ColumnGroupProperty {
     /**
     * <p>Geospatial column group that denotes a hierarchy.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#geo_spatial_column_group CcDataSet#geo_spatial_column_group}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#geo_spatial_column_group CcDataSet#geo_spatial_column_group}
     */
     readonly geoSpatialColumnGroup?: GeoSpatialColumnGroupProperty;
 }
@@ -2060,11 +2061,11 @@ export class ColumnGroupPropertyList extends cdktn.ComplexList {
 }
 export interface ColumnLevelPermissionRuleProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#column_names CcDataSet#column_names}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#column_names CcDataSet#column_names}
     */
     readonly columnNames?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#principals CcDataSet#principals}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#principals CcDataSet#principals}
     */
     readonly principals?: string[];
 }
@@ -2172,11 +2173,11 @@ export class ColumnLevelPermissionRulePropertyList extends cdktn.ComplexList {
 }
 export interface DataSetUsageConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#disable_use_as_direct_query_source CcDataSet#disable_use_as_direct_query_source}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#disable_use_as_direct_query_source CcDataSet#disable_use_as_direct_query_source}
     */
     readonly disableUseAsDirectQuerySource?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#disable_use_as_imported_source CcDataSet#disable_use_as_imported_source}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#disable_use_as_imported_source CcDataSet#disable_use_as_imported_source}
     */
     readonly disableUseAsImportedSource?: boolean | cdktn.IResolvable;
 }
@@ -2262,11 +2263,11 @@ export class DataSetUsageConfigurationPropertyOutputReference extends cdktn.Comp
 }
 export interface FieldFolderProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#columns CcDataSet#columns}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#columns CcDataSet#columns}
     */
     readonly columns?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#description CcDataSet#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#description CcDataSet#description}
     */
     readonly description?: string;
 }
@@ -2375,14 +2376,14 @@ export interface IngestionWaitPolicyProperty {
     * <p>The maximum time (in hours) to wait for Ingestion to complete. Default timeout is 36 hours.
     *  Applicable only when DataSetImportMode mode is set to SPICE and WaitForSpiceIngestion is set to true.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#ingestion_wait_time_in_hours CcDataSet#ingestion_wait_time_in_hours}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#ingestion_wait_time_in_hours CcDataSet#ingestion_wait_time_in_hours}
     */
     readonly ingestionWaitTimeInHours?: number;
     /**
     * <p>Wait for SPICE ingestion to finish to mark dataset creation/update successful. Default (true).
     *   Applicable only when DataSetImportMode mode is set to SPICE.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#wait_for_spice_ingestion CcDataSet#wait_for_spice_ingestion}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#wait_for_spice_ingestion CcDataSet#wait_for_spice_ingestion}
     */
     readonly waitForSpiceIngestion?: boolean | cdktn.IResolvable;
 }
@@ -2470,18 +2471,18 @@ export interface CastColumnTypeOperationProperty {
     /**
     * <p>Column name.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#column_name CcDataSet#column_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#column_name CcDataSet#column_name}
     */
     readonly columnName?: string;
     /**
     * <p>When casting a column from string to datetime type, you can supply a string in a
     *             format supported by Amazon QuickSight to denote the source data format.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#format CcDataSet#format}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#format CcDataSet#format}
     */
     readonly format?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#new_column_type CcDataSet#new_column_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#new_column_type CcDataSet#new_column_type}
     */
     readonly newColumnType?: string;
 }
@@ -2593,19 +2594,19 @@ export interface CalculatedColumnProperty {
     *             of a calculated column matches that of an existing calculated column, Amazon QuickSight
     *             preserves the existing calculated column.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#column_id CcDataSet#column_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#column_id CcDataSet#column_id}
     */
     readonly columnId?: string;
     /**
     * <p>Column name.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#column_name CcDataSet#column_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#column_name CcDataSet#column_name}
     */
     readonly columnName?: string;
     /**
     * <p>An expression that defines the calculated column.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#expression CcDataSet#expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#expression CcDataSet#expression}
     */
     readonly expression?: string;
 }
@@ -2737,7 +2738,7 @@ export interface CreateColumnsOperationProperty {
     /**
     * <p>Calculated columns to create.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#columns CcDataSet#columns}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#columns CcDataSet#columns}
     */
     readonly columns?: CalculatedColumnProperty[] | cdktn.IResolvable;
 }
@@ -2804,7 +2805,7 @@ export interface FilterOperationProperty {
     * <p>An expression that must evaluate to a Boolean value. Rows for which the expression
     *             evaluates to true are kept in the dataset.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#condition_expression CcDataSet#condition_expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#condition_expression CcDataSet#condition_expression}
     */
     readonly conditionExpression?: string;
 }
@@ -2870,7 +2871,7 @@ export interface ProjectOperationProperty {
     /**
     * <p>Projected columns.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#projected_columns CcDataSet#projected_columns}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#projected_columns CcDataSet#projected_columns}
     */
     readonly projectedColumns?: string[];
 }
@@ -2936,13 +2937,13 @@ export interface RenameColumnOperationProperty {
     /**
     * <p>The name of the column to be renamed.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#column_name CcDataSet#column_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#column_name CcDataSet#column_name}
     */
     readonly columnName?: string;
     /**
     * <p>The new name for the column.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#new_column_name CcDataSet#new_column_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#new_column_name CcDataSet#new_column_name}
     */
     readonly newColumnName?: string;
 }
@@ -3030,7 +3031,7 @@ export interface ColumnDescriptionProperty {
     /**
     * <p>The text of a description for a column.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#text CcDataSet#text}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#text CcDataSet#text}
     */
     readonly text?: string;
 }
@@ -3096,11 +3097,11 @@ export interface ColumnTagProperty {
     /**
     * <p>Metadata that contains a description for a column.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#column_description CcDataSet#column_description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#column_description CcDataSet#column_description}
     */
     readonly columnDescription?: ColumnDescriptionProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#column_geographic_role CcDataSet#column_geographic_role}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#column_geographic_role CcDataSet#column_geographic_role}
     */
     readonly columnGeographicRole?: string;
 }
@@ -3210,7 +3211,7 @@ export interface TagColumnOperationProperty {
     /**
     * <p>The column that this operation acts on.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#column_name CcDataSet#column_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#column_name CcDataSet#column_name}
     */
     readonly columnName?: string;
     /**
@@ -3219,7 +3220,7 @@ export interface TagColumnOperationProperty {
     *             <p>This is not tags for the AWS tagging feature. .</p>
     *         </note>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#tags CcDataSet#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#tags CcDataSet#tags}
     */
     readonly tags?: ColumnTagProperty[] | cdktn.IResolvable;
 }
@@ -3307,39 +3308,39 @@ export interface TransformOperationProperty {
     /**
     * <p>A transform operation that casts a column to a different type.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#cast_column_type_operation CcDataSet#cast_column_type_operation}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#cast_column_type_operation CcDataSet#cast_column_type_operation}
     */
     readonly castColumnTypeOperation?: CastColumnTypeOperationProperty;
     /**
     * <p>A transform operation that creates calculated columns. Columns created in one such
     *             operation form a lexical closure.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#create_columns_operation CcDataSet#create_columns_operation}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#create_columns_operation CcDataSet#create_columns_operation}
     */
     readonly createColumnsOperation?: CreateColumnsOperationProperty;
     /**
     * <p>A transform operation that filters rows based on a condition.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#filter_operation CcDataSet#filter_operation}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#filter_operation CcDataSet#filter_operation}
     */
     readonly filterOperation?: FilterOperationProperty;
     /**
     * <p>A transform operation that projects columns. Operations that come after a projection
     *             can only refer to projected columns.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#project_operation CcDataSet#project_operation}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#project_operation CcDataSet#project_operation}
     */
     readonly projectOperation?: ProjectOperationProperty;
     /**
     * <p>A transform operation that renames a column.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#rename_column_operation CcDataSet#rename_column_operation}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#rename_column_operation CcDataSet#rename_column_operation}
     */
     readonly renameColumnOperation?: RenameColumnOperationProperty;
     /**
     * <p>A transform operation that tags a column with additional information.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#tag_column_operation CcDataSet#tag_column_operation}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#tag_column_operation CcDataSet#tag_column_operation}
     */
     readonly tagColumnOperation?: TagColumnOperationProperty;
 }
@@ -3535,7 +3536,7 @@ export class TransformOperationPropertyList extends cdktn.ComplexList {
 }
 export interface JoinKeyPropertiesProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#unique_key CcDataSet#unique_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#unique_key CcDataSet#unique_key}
     */
     readonly uniqueKey?: boolean | cdktn.IResolvable;
 }
@@ -3599,7 +3600,7 @@ export class JoinKeyPropertiesPropertyOutputReference extends cdktn.ComplexObjec
 }
 export interface RightJoinKeyPropertiesProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#unique_key CcDataSet#unique_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#unique_key CcDataSet#unique_key}
     */
     readonly uniqueKey?: boolean | cdktn.IResolvable;
 }
@@ -3663,33 +3664,33 @@ export class RightJoinKeyPropertiesPropertyOutputReference extends cdktn.Complex
 }
 export interface JoinInstructionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#left_join_key_properties CcDataSet#left_join_key_properties}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#left_join_key_properties CcDataSet#left_join_key_properties}
     */
     readonly leftJoinKeyProperties?: JoinKeyPropertiesProperty;
     /**
     * <p>Left operand.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#left_operand CcDataSet#left_operand}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#left_operand CcDataSet#left_operand}
     */
     readonly leftOperand?: string;
     /**
     * <p>On Clause.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#on_clause CcDataSet#on_clause}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#on_clause CcDataSet#on_clause}
     */
     readonly onClause?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#right_join_key_properties CcDataSet#right_join_key_properties}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#right_join_key_properties CcDataSet#right_join_key_properties}
     */
     readonly rightJoinKeyProperties?: RightJoinKeyPropertiesProperty;
     /**
     * <p>Right operand.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#right_operand CcDataSet#right_operand}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#right_operand CcDataSet#right_operand}
     */
     readonly rightOperand?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#type CcDataSet#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#type CcDataSet#type}
     */
     readonly type?: string;
 }
@@ -3865,19 +3866,19 @@ export interface LogicalTableSourceProperty {
     /**
     * <p>The Amazon Resource Name (ARN) for the dataset.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#data_set_arn CcDataSet#data_set_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#data_set_arn CcDataSet#data_set_arn}
     */
     readonly dataSetArn?: string;
     /**
     * <p>Join instruction.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#join_instruction CcDataSet#join_instruction}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#join_instruction CcDataSet#join_instruction}
     */
     readonly joinInstruction?: JoinInstructionProperty;
     /**
     * <p>Physical table ID.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#physical_table_id CcDataSet#physical_table_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#physical_table_id CcDataSet#physical_table_id}
     */
     readonly physicalTableId?: string;
 }
@@ -3987,20 +3988,20 @@ export interface LogicalTableProperty {
     /**
     * <p>A display name for the logical table.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#alias CcDataSet#alias}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#alias CcDataSet#alias}
     */
     readonly alias?: string;
     /**
     * <p>Transform operations that act on this logical table.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#data_transforms CcDataSet#data_transforms}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#data_transforms CcDataSet#data_transforms}
     */
     readonly dataTransforms?: TransformOperationProperty[] | cdktn.IResolvable;
     /**
     * <p>Information about the source of a logical table. This is a variant type structure. For
     *             this structure to be valid, only one of the attributes can be non-null.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#source CcDataSet#source}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#source CcDataSet#source}
     */
     readonly source?: LogicalTableSourceProperty;
 }
@@ -4194,7 +4195,7 @@ export interface ResourcePermissionProperty {
     /**
     * <p>The IAM action to grant or revoke permissions on.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#actions CcDataSet#actions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#actions CcDataSet#actions}
     */
     readonly actions?: string[];
     /**
@@ -4214,7 +4215,7 @@ export interface ResourcePermissionProperty {
     *             </li>
     *          </ul>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#principal CcDataSet#principal}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#principal CcDataSet#principal}
     */
     readonly principal?: string;
 }
@@ -4324,11 +4325,11 @@ export interface InputColumnProperty {
     /**
     * <p>The name of this column in the underlying data source.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#name CcDataSet#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#name CcDataSet#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#type CcDataSet#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#type CcDataSet#type}
     */
     readonly type?: string;
 }
@@ -4438,25 +4439,25 @@ export interface CustomSqlProperty {
     /**
     * <p>The column schema from the SQL query result set.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#columns CcDataSet#columns}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#columns CcDataSet#columns}
     */
     readonly columns?: InputColumnProperty[] | cdktn.IResolvable;
     /**
     * <p>The Amazon Resource Name (ARN) of the data source.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#data_source_arn CcDataSet#data_source_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#data_source_arn CcDataSet#data_source_arn}
     */
     readonly dataSourceArn?: string;
     /**
     * <p>A display name for the SQL query result.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#name CcDataSet#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#name CcDataSet#name}
     */
     readonly name?: string;
     /**
     * <p>The SQL query.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#sql_query CcDataSet#sql_query}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#sql_query CcDataSet#sql_query}
     */
     readonly sqlQuery?: string;
 }
@@ -4588,11 +4589,11 @@ export interface PhysicalTableMapRelationalTableInputColumnsProperty {
     /**
     * <p>The name of this column in the underlying data source.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#name CcDataSet#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#name CcDataSet#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#type CcDataSet#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#type CcDataSet#type}
     */
     readonly type?: string;
 }
@@ -4702,31 +4703,31 @@ export interface RelationalTableProperty {
     /**
     * <p>The catalog associated with a table.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#catalog CcDataSet#catalog}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#catalog CcDataSet#catalog}
     */
     readonly catalog?: string;
     /**
     * <p>The Amazon Resource Name (ARN) for the data source.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#data_source_arn CcDataSet#data_source_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#data_source_arn CcDataSet#data_source_arn}
     */
     readonly dataSourceArn?: string;
     /**
     * <p>The column schema of the table.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#input_columns CcDataSet#input_columns}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#input_columns CcDataSet#input_columns}
     */
     readonly inputColumns?: PhysicalTableMapRelationalTableInputColumnsProperty[] | cdktn.IResolvable;
     /**
     * <p>The name of the relational table.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#name CcDataSet#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#name CcDataSet#name}
     */
     readonly name?: string;
     /**
     * <p>The schema name. This name applies to certain relational database engines.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#schema CcDataSet#schema}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#schema CcDataSet#schema}
     */
     readonly schema?: string;
 }
@@ -4880,11 +4881,11 @@ export interface PhysicalTableMapS3SourceInputColumnsProperty {
     /**
     * <p>The name of this column in the underlying data source.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#name CcDataSet#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#name CcDataSet#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#type CcDataSet#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#type CcDataSet#type}
     */
     readonly type?: string;
 }
@@ -4994,27 +4995,27 @@ export interface UploadSettingsProperty {
     /**
     * <p>Whether the file has a header row, or the files each have a header row.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#contains_header CcDataSet#contains_header}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#contains_header CcDataSet#contains_header}
     */
     readonly containsHeader?: boolean | cdktn.IResolvable;
     /**
     * <p>The delimiter between values in the file.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#delimiter CcDataSet#delimiter}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#delimiter CcDataSet#delimiter}
     */
     readonly delimiter?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#format CcDataSet#format}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#format CcDataSet#format}
     */
     readonly format?: string;
     /**
     * <p>A row number to start reading data from.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#start_from_row CcDataSet#start_from_row}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#start_from_row CcDataSet#start_from_row}
     */
     readonly startFromRow?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#text_qualifier CcDataSet#text_qualifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#text_qualifier CcDataSet#text_qualifier}
     */
     readonly textQualifier?: string;
 }
@@ -5168,19 +5169,19 @@ export interface S3SourceProperty {
     /**
     * <p>The amazon Resource Name (ARN) for the data source.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#data_source_arn CcDataSet#data_source_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#data_source_arn CcDataSet#data_source_arn}
     */
     readonly dataSourceArn?: string;
     /**
     * <p>A physical table type for as S3 data source.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#input_columns CcDataSet#input_columns}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#input_columns CcDataSet#input_columns}
     */
     readonly inputColumns?: PhysicalTableMapS3SourceInputColumnsProperty[] | cdktn.IResolvable;
     /**
     * <p>Information about the format for a source file or files.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#upload_settings CcDataSet#upload_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#upload_settings CcDataSet#upload_settings}
     */
     readonly uploadSettings?: UploadSettingsProperty;
 }
@@ -5290,19 +5291,19 @@ export interface PhysicalTableProperty {
     /**
     * <p>A physical table type built from the results of the custom SQL query.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#custom_sql CcDataSet#custom_sql}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#custom_sql CcDataSet#custom_sql}
     */
     readonly customSql?: CustomSqlProperty;
     /**
     * <p>A physical table type for relational data sources.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#relational_table CcDataSet#relational_table}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#relational_table CcDataSet#relational_table}
     */
     readonly relationalTable?: RelationalTableProperty;
     /**
     * <p>A physical table type for as S3 data source.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#s3_source CcDataSet#s3_source}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#s3_source CcDataSet#s3_source}
     */
     readonly s3Source?: S3SourceProperty;
 }
@@ -5432,21 +5433,21 @@ export interface RowLevelPermissionDataSetProperty {
     /**
     * <p>The Amazon Resource Name (ARN) of the permission dataset.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#arn CcDataSet#arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#arn CcDataSet#arn}
     */
     readonly arn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#format_version CcDataSet#format_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#format_version CcDataSet#format_version}
     */
     readonly formatVersion?: string;
     /**
     * <p>The namespace associated with the row-level permissions dataset.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#namespace CcDataSet#namespace}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#namespace CcDataSet#namespace}
     */
     readonly namespace?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#permission_policy CcDataSet#permission_policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#permission_policy CcDataSet#permission_policy}
     */
     readonly permissionPolicy?: string;
 }
@@ -5578,13 +5579,13 @@ export interface TagProperty {
     /**
     * <p>Tag key.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#key CcDataSet#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#key CcDataSet#key}
     */
     readonly key?: string;
     /**
     * <p>Tag value.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/quicksight_data_set#value CcDataSet#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_set#value CcDataSet#value}
     */
     readonly value?: string;
 }

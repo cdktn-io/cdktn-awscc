@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_job
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_job
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,145 +9,145 @@ export interface CcJobProps extends cdktn.TerraformMetaArguments {
     /**
     * The number of capacity units that are allocated to this job.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_job#allocated_capacity CcJob#allocated_capacity}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_job#allocated_capacity CcJob#allocated_capacity}
     */
     readonly allocatedCapacity?: number;
     /**
     * The code that executes a job.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_job#command CcJob#command}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_job#command CcJob#command}
     */
     readonly command: CcJob.JobCommandProperty;
     /**
     * Specifies the connections used by a job
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_job#connections CcJob#connections}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_job#connections CcJob#connections}
     */
     readonly connections?: CcJob.ConnectionsListProperty;
     /**
     * The default arguments for this job, specified as name-value pairs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_job#default_arguments CcJob#default_arguments}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_job#default_arguments CcJob#default_arguments}
     */
     readonly defaultArguments?: string;
     /**
     * A description of the job.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_job#description CcJob#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_job#description CcJob#description}
     */
     readonly description?: string;
     /**
     * Indicates whether the job is run with a standard or flexible execution class.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_job#execution_class CcJob#execution_class}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_job#execution_class CcJob#execution_class}
     */
     readonly executionClass?: string;
     /**
     * The maximum number of concurrent runs that are allowed for this job.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_job#execution_property CcJob#execution_property}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_job#execution_property CcJob#execution_property}
     */
     readonly executionProperty?: CcJob.ExecutionPropertyProperty;
     /**
     * Glue version determines the versions of Apache Spark and Python that AWS Glue supports.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_job#glue_version CcJob#glue_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_job#glue_version CcJob#glue_version}
     */
     readonly glueVersion?: string;
     /**
     * Property description not available.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_job#job_mode CcJob#job_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_job#job_mode CcJob#job_mode}
     */
     readonly jobMode?: string;
     /**
     * Property description not available.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_job#job_run_queuing_enabled CcJob#job_run_queuing_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_job#job_run_queuing_enabled CcJob#job_run_queuing_enabled}
     */
     readonly jobRunQueuingEnabled?: boolean | cdktn.IResolvable;
     /**
     * This field is reserved for future use.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_job#log_uri CcJob#log_uri}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_job#log_uri CcJob#log_uri}
     */
     readonly logUri?: string;
     /**
     * Property description not available.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_job#maintenance_window CcJob#maintenance_window}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_job#maintenance_window CcJob#maintenance_window}
     */
     readonly maintenanceWindow?: string;
     /**
     * The number of AWS Glue data processing units (DPUs) that can be allocated when this job runs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_job#max_capacity CcJob#max_capacity}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_job#max_capacity CcJob#max_capacity}
     */
     readonly maxCapacity?: number;
     /**
     * The maximum number of times to retry this job after a JobRun fails
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_job#max_retries CcJob#max_retries}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_job#max_retries CcJob#max_retries}
     */
     readonly maxRetries?: number;
     /**
     * The name you assign to the job definition
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_job#name CcJob#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_job#name CcJob#name}
     */
     readonly name?: string;
     /**
     * Non-overridable arguments for this job, specified as name-value pairs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_job#non_overridable_arguments CcJob#non_overridable_arguments}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_job#non_overridable_arguments CcJob#non_overridable_arguments}
     */
     readonly nonOverridableArguments?: string;
     /**
     * Specifies configuration properties of a notification.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_job#notification_property CcJob#notification_property}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_job#notification_property CcJob#notification_property}
     */
     readonly notificationProperty?: CcJob.NotificationPropertyProperty;
     /**
     * The number of workers of a defined workerType that are allocated when a job runs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_job#number_of_workers CcJob#number_of_workers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_job#number_of_workers CcJob#number_of_workers}
     */
     readonly numberOfWorkers?: number;
     /**
     * The name or Amazon Resource Name (ARN) of the IAM role associated with this job.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_job#role CcJob#role}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_job#role CcJob#role}
     */
     readonly role: string;
     /**
     * The name of the SecurityConfiguration structure to be used with this job.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_job#security_configuration CcJob#security_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_job#security_configuration CcJob#security_configuration}
     */
     readonly securityConfiguration?: string;
     /**
     * The tags to use with this job.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_job#tags CcJob#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_job#tags CcJob#tags}
     */
     readonly tags?: string;
     /**
     * The maximum time that a job run can consume resources before it is terminated and enters TIMEOUT status.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_job#timeout CcJob#timeout}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_job#timeout CcJob#timeout}
     */
     readonly timeout?: number;
     /**
     * TThe type of predefined worker that is allocated when a job runs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_job#worker_type CcJob#worker_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_job#worker_type CcJob#worker_type}
     */
     readonly workerType?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_job awscc_glue_job}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_job awscc_glue_job}
 */
 export class CcJob extends cdktn.TerraformResource {
 
@@ -163,7 +163,7 @@ export class CcJob extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcJob resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcJob to import
-    * @param importFromId The id of the existing CcJob that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_job#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcJob that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_job#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcJob to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -175,7 +175,7 @@ export class CcJob extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_job awscc_glue_job} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_job awscc_glue_job} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -185,7 +185,8 @@ export class CcJob extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_glue_job',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -916,25 +917,25 @@ export interface JobCommandProperty {
     /**
     * The name of the job command
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_job#name CcJob#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_job#name CcJob#name}
     */
     readonly name?: string;
     /**
     * The Python version being used to execute a Python shell job.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_job#python_version CcJob#python_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_job#python_version CcJob#python_version}
     */
     readonly pythonVersion?: string;
     /**
     * Runtime is used to specify the versions of Ray, Python and additional libraries available in your environment
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_job#runtime CcJob#runtime}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_job#runtime CcJob#runtime}
     */
     readonly runtime?: string;
     /**
     * Specifies the Amazon Simple Storage Service (Amazon S3) path to a script that executes a job
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_job#script_location CcJob#script_location}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_job#script_location CcJob#script_location}
     */
     readonly scriptLocation?: string;
 }
@@ -1066,7 +1067,7 @@ export interface ConnectionsListProperty {
     /**
     * A list of connections used by the job.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_job#connections CcJob#connections}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_job#connections CcJob#connections}
     */
     readonly connections?: string[];
 }
@@ -1132,7 +1133,7 @@ export interface ExecutionPropertyProperty {
     /**
     * The maximum number of concurrent runs allowed for the job.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_job#max_concurrent_runs CcJob#max_concurrent_runs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_job#max_concurrent_runs CcJob#max_concurrent_runs}
     */
     readonly maxConcurrentRuns?: number;
 }
@@ -1198,7 +1199,7 @@ export interface NotificationPropertyProperty {
     /**
     * It is the number of minutes to wait before sending a job run delay notification after a job run starts
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_job#notify_delay_after CcJob#notify_delay_after}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_job#notify_delay_after CcJob#notify_delay_after}
     */
     readonly notifyDelayAfter?: number;
 }

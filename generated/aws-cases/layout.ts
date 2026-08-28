@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cases_layout
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cases_layout
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,31 +9,31 @@ export interface CcLayoutProps extends cdktn.TerraformMetaArguments {
     /**
     * Defines the layout structure and field organization for the case interface. Specifies which fields appear in the top panel and More Info tab, and their display order.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cases_layout#content CcLayout#content}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cases_layout#content CcLayout#content}
     */
     readonly content: CcLayout.LayoutContentProperty;
     /**
     * The unique identifier of the Cases domain.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cases_layout#domain_id CcLayout#domain_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cases_layout#domain_id CcLayout#domain_id}
     */
     readonly domainId?: string;
     /**
     * A descriptive name for the layout. Must be unique within the Cases domain and should clearly indicate the layout's purpose and field organization.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cases_layout#name CcLayout#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cases_layout#name CcLayout#name}
     */
     readonly name: string;
     /**
     * The tags that you attach to this layout.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cases_layout#tags CcLayout#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cases_layout#tags CcLayout#tags}
     */
     readonly tags?: CcLayout.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cases_layout awscc_cases_layout}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cases_layout awscc_cases_layout}
 */
 export class CcLayout extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CcLayout extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcLayout resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcLayout to import
-    * @param importFromId The id of the existing CcLayout that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cases_layout#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcLayout that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cases_layout#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcLayout to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CcLayout extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cases_layout awscc_cases_layout} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cases_layout awscc_cases_layout} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -71,7 +71,8 @@ export class CcLayout extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_cases_layout',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -583,7 +584,7 @@ export interface FieldItemProperty {
     /**
     * The unique identifier of a field.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cases_layout#id CcLayout#id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cases_layout#id CcLayout#id}
     *
     * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
     * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -674,13 +675,13 @@ export interface FieldGroupProperty {
     /**
     * An ordered list of fields to display in this group. The order determines the sequence in which fields appear in the agent interface. Each field is referenced by its unique field ID.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cases_layout#fields CcLayout#fields}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cases_layout#fields CcLayout#fields}
     */
     readonly fields?: FieldItemProperty[] | cdktn.IResolvable;
     /**
     * A descriptive name for the field group. Helps organize related fields together in the layout interface.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cases_layout#name CcLayout#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cases_layout#name CcLayout#name}
     */
     readonly name?: string;
 }
@@ -768,7 +769,7 @@ export interface SectionProperty {
     /**
     * Consists of a group of fields and associated properties.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cases_layout#field_group CcLayout#field_group}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cases_layout#field_group CcLayout#field_group}
     */
     readonly fieldGroup?: FieldGroupProperty;
 }
@@ -856,7 +857,7 @@ export interface LayoutSectionsProperty {
     /**
     * Defines the sections within a panel or tab. Contains field groups that organize related fields together.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cases_layout#sections CcLayout#sections}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cases_layout#sections CcLayout#sections}
     */
     readonly sections?: SectionProperty[] | cdktn.IResolvable;
 }
@@ -922,7 +923,7 @@ export interface FieldsProperty {
     /**
     * The unique identifier of a field.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cases_layout#id CcLayout#id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cases_layout#id CcLayout#id}
     *
     * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
     * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1013,13 +1014,13 @@ export interface ContentBasicTopPanelSectionsFieldGroupProperty {
     /**
     * An ordered list of fields to display in this group. The order determines the sequence in which fields appear in the agent interface. Each field is referenced by its unique field ID.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cases_layout#fields CcLayout#fields}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cases_layout#fields CcLayout#fields}
     */
     readonly fields?: FieldsProperty[] | cdktn.IResolvable;
     /**
     * A descriptive name for the field group. Helps organize related fields together in the layout interface.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cases_layout#name CcLayout#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cases_layout#name CcLayout#name}
     */
     readonly name?: string;
 }
@@ -1107,7 +1108,7 @@ export interface SectionsProperty {
     /**
     * Consists of a group of fields and associated properties.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cases_layout#field_group CcLayout#field_group}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cases_layout#field_group CcLayout#field_group}
     */
     readonly fieldGroup?: ContentBasicTopPanelSectionsFieldGroupProperty;
 }
@@ -1195,7 +1196,7 @@ export interface TopPanelProperty {
     /**
     * Defines the sections within a panel or tab. Contains field groups that organize related fields together.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cases_layout#sections CcLayout#sections}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cases_layout#sections CcLayout#sections}
     */
     readonly sections?: SectionsProperty[] | cdktn.IResolvable;
 }
@@ -1261,13 +1262,13 @@ export interface BasicLayoutProperty {
     /**
     * Sections within a panel or tab of the page layout.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cases_layout#more_info CcLayout#more_info}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cases_layout#more_info CcLayout#more_info}
     */
     readonly moreInfo?: LayoutSectionsProperty;
     /**
     * Sections within a panel or tab of the page layout.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cases_layout#top_panel CcLayout#top_panel}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cases_layout#top_panel CcLayout#top_panel}
     */
     readonly topPanel?: TopPanelProperty;
 }
@@ -1355,7 +1356,7 @@ export interface LayoutContentProperty {
     /**
     * Defines the field layout for the agent's case interface. Configures which fields appear in the top panel (immediately visible) and More Info tab (expandable section) of the case view, allowing customization of the agent experience.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cases_layout#basic CcLayout#basic}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cases_layout#basic CcLayout#basic}
     */
     readonly basic?: BasicLayoutProperty;
 }
@@ -1421,13 +1422,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cases_layout#key CcLayout#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cases_layout#key CcLayout#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 0 to 256 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cases_layout#value CcLayout#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cases_layout#value CcLayout#value}
     */
     readonly value?: string;
 }

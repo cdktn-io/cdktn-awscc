@@ -1,35 +1,35 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resourceexplorer2_view
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resourceexplorer2_view
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcViewProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resourceexplorer2_view#filters CcView#filters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resourceexplorer2_view#filters CcView#filters}
     */
     readonly filters?: CcView.SearchFilterProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resourceexplorer2_view#included_properties CcView#included_properties}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resourceexplorer2_view#included_properties CcView#included_properties}
     */
     readonly includedProperties?: CcView.IncludedPropertyProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resourceexplorer2_view#scope CcView#scope}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resourceexplorer2_view#scope CcView#scope}
     */
     readonly scope?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resourceexplorer2_view#tags CcView#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resourceexplorer2_view#tags CcView#tags}
     */
     readonly tags?: { [key: string]: string };
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resourceexplorer2_view#view_name CcView#view_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resourceexplorer2_view#view_name CcView#view_name}
     */
     readonly viewName: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resourceexplorer2_view awscc_resourceexplorer2_view}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resourceexplorer2_view awscc_resourceexplorer2_view}
 */
 export class CcView extends cdktn.TerraformResource {
 
@@ -45,7 +45,7 @@ export class CcView extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcView resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcView to import
-    * @param importFromId The id of the existing CcView that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resourceexplorer2_view#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcView that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resourceexplorer2_view#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcView to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -57,7 +57,7 @@ export class CcView extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resourceexplorer2_view awscc_resourceexplorer2_view} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resourceexplorer2_view awscc_resourceexplorer2_view} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -67,7 +67,8 @@ export class CcView extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_resourceexplorer2_view',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -291,7 +292,7 @@ export function ccViewIncludedPropertyPropertyToHclTerraform(struct?: CcView.Inc
 export namespace CcView {
 export interface SearchFilterProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resourceexplorer2_view#filter_string CcView#filter_string}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resourceexplorer2_view#filter_string CcView#filter_string}
     */
     readonly filterString?: string;
 }
@@ -355,7 +356,7 @@ export class SearchFilterPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface IncludedPropertyProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resourceexplorer2_view#name CcView#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resourceexplorer2_view#name CcView#name}
     */
     readonly name?: string;
 }

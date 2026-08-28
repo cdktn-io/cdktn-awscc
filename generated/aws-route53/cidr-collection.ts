@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/route53_cidr_collection
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53_cidr_collection
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,19 +9,19 @@ export interface CcCidrCollectionProps extends cdktn.TerraformMetaArguments {
     /**
     * A complex type that contains information about the list of CIDR locations.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/route53_cidr_collection#locations CcCidrCollection#locations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53_cidr_collection#locations CcCidrCollection#locations}
     */
     readonly locations?: CcCidrCollection.LocationProperty[] | cdktn.IResolvable;
     /**
     * A unique name for the CIDR collection.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/route53_cidr_collection#name CcCidrCollection#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53_cidr_collection#name CcCidrCollection#name}
     */
     readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/route53_cidr_collection awscc_route53_cidr_collection}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53_cidr_collection awscc_route53_cidr_collection}
 */
 export class CcCidrCollection extends cdktn.TerraformResource {
 
@@ -37,7 +37,7 @@ export class CcCidrCollection extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcCidrCollection resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcCidrCollection to import
-    * @param importFromId The id of the existing CcCidrCollection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/route53_cidr_collection#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcCidrCollection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53_cidr_collection#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcCidrCollection to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -49,7 +49,7 @@ export class CcCidrCollection extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/route53_cidr_collection awscc_route53_cidr_collection} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53_cidr_collection awscc_route53_cidr_collection} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -59,7 +59,8 @@ export class CcCidrCollection extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_route53_cidr_collection',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -195,13 +196,13 @@ export interface LocationProperty {
     /**
     * A list of CIDR blocks.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/route53_cidr_collection#cidr_list CcCidrCollection#cidr_list}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53_cidr_collection#cidr_list CcCidrCollection#cidr_list}
     */
     readonly cidrList?: string[];
     /**
     * The name of the location that is associated with the CIDR collection.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/route53_cidr_collection#location_name CcCidrCollection#location_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53_cidr_collection#location_name CcCidrCollection#location_name}
     */
     readonly locationName?: string;
 }

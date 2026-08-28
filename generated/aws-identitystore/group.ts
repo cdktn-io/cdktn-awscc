@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/identitystore_group
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/identitystore_group
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,25 +9,25 @@ export interface CcGroupProps extends cdktn.TerraformMetaArguments {
     /**
     * A string containing the description of the group.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/identitystore_group#description CcGroup#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/identitystore_group#description CcGroup#description}
     */
     readonly description?: string;
     /**
     * A string containing the name of the group. This value is commonly displayed when the group is referenced.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/identitystore_group#display_name CcGroup#display_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/identitystore_group#display_name CcGroup#display_name}
     */
     readonly displayName: string;
     /**
     * The globally unique identifier for the identity store.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/identitystore_group#identity_store_id CcGroup#identity_store_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/identitystore_group#identity_store_id CcGroup#identity_store_id}
     */
     readonly identityStoreId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/identitystore_group awscc_identitystore_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/identitystore_group awscc_identitystore_group}
 */
 export class CcGroup extends cdktn.TerraformResource {
 
@@ -43,7 +43,7 @@ export class CcGroup extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcGroup resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcGroup to import
-    * @param importFromId The id of the existing CcGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/identitystore_group#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/identitystore_group#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcGroup to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -55,7 +55,7 @@ export class CcGroup extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/identitystore_group awscc_identitystore_group} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/identitystore_group awscc_identitystore_group} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -65,7 +65,8 @@ export class CcGroup extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_identitystore_group',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,

@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/securityhub_security_control
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_security_control
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,31 +9,31 @@ export interface CcSecurityControlProps extends cdktn.TerraformMetaArguments {
     /**
     * The most recent reason for updating the customizable properties of a security control. This differs from the UpdateReason field of the BatchUpdateStandardsControlAssociations API, which tracks the reason for updating the enablement status of a control. This field accepts alphanumeric characters in addition to white spaces, dashes, and underscores.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/securityhub_security_control#last_update_reason CcSecurityControl#last_update_reason}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_security_control#last_update_reason CcSecurityControl#last_update_reason}
     */
     readonly lastUpdateReason?: string;
     /**
     * An object that identifies the name of a control parameter, its current value, and whether it has been customized.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/securityhub_security_control#parameters CcSecurityControl#parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_security_control#parameters CcSecurityControl#parameters}
     */
     readonly parameters: { [key: string]: CcSecurityControl.ParameterConfigurationProperty } | cdktn.IResolvable;
     /**
     * The Amazon Resource Name (ARN) for a security control across standards, such as `arn:aws:securityhub:eu-central-1:123456789012:security-control/S3.1`. This parameter doesn't mention a specific standard.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/securityhub_security_control#security_control_arn CcSecurityControl#security_control_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_security_control#security_control_arn CcSecurityControl#security_control_arn}
     */
     readonly securityControlArn?: string;
     /**
     * The unique identifier of a security control across standards. Values for this field typically consist of an AWS service name and a number, such as APIGateway.3.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/securityhub_security_control#security_control_id CcSecurityControl#security_control_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_security_control#security_control_id CcSecurityControl#security_control_id}
     */
     readonly securityControlId?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/securityhub_security_control awscc_securityhub_security_control}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_security_control awscc_securityhub_security_control}
 */
 export class CcSecurityControl extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CcSecurityControl extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcSecurityControl resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcSecurityControl to import
-    * @param importFromId The id of the existing CcSecurityControl that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/securityhub_security_control#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcSecurityControl that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_security_control#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcSecurityControl to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CcSecurityControl extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/securityhub_security_control awscc_securityhub_security_control} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_security_control awscc_securityhub_security_control} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -71,7 +71,8 @@ export class CcSecurityControl extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_securityhub_security_control',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -324,49 +325,49 @@ export interface ParameterValueProperty {
     /**
     * A control parameter that is a boolean.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/securityhub_security_control#boolean CcSecurityControl#boolean}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_security_control#boolean CcSecurityControl#boolean}
     */
     readonly boolean?: boolean | cdktn.IResolvable;
     /**
     * A control parameter that is a double.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/securityhub_security_control#double CcSecurityControl#double}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_security_control#double CcSecurityControl#double}
     */
     readonly double?: number;
     /**
     * A control parameter that is a enum.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/securityhub_security_control#enum CcSecurityControl#enum}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_security_control#enum CcSecurityControl#enum}
     */
     readonly enum?: string;
     /**
     * A control parameter that is a list of enums.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/securityhub_security_control#enum_list CcSecurityControl#enum_list}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_security_control#enum_list CcSecurityControl#enum_list}
     */
     readonly enumList?: string[];
     /**
     * A control parameter that is a integer.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/securityhub_security_control#integer CcSecurityControl#integer}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_security_control#integer CcSecurityControl#integer}
     */
     readonly integer?: number;
     /**
     * A control parameter that is a list of integers.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/securityhub_security_control#integer_list CcSecurityControl#integer_list}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_security_control#integer_list CcSecurityControl#integer_list}
     */
     readonly integerList?: number[];
     /**
     * A control parameter that is a string.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/securityhub_security_control#string CcSecurityControl#string}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_security_control#string CcSecurityControl#string}
     */
     readonly string?: string;
     /**
     * A control parameter that is a list of strings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/securityhub_security_control#string_list CcSecurityControl#string_list}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_security_control#string_list CcSecurityControl#string_list}
     */
     readonly stringList?: string[];
 }
@@ -584,11 +585,11 @@ export class ParameterValuePropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface ParameterConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/securityhub_security_control#value CcSecurityControl#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_security_control#value CcSecurityControl#value}
     */
     readonly value?: ParameterValueProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/securityhub_security_control#value_type CcSecurityControl#value_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_security_control#value_type CcSecurityControl#value_type}
     */
     readonly valueType?: string;
 }

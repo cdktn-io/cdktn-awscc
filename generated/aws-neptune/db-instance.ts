@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/neptune_db_instance
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/neptune_db_instance
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,7 +9,7 @@ export interface CcDBInstanceProps extends cdktn.TerraformMetaArguments {
     /**
     * Indicates that major version upgrades are allowed. Changing this parameter doesn't result in an outage and the change is asynchronously applied as soon as possible. This parameter must be set to true when specifying a value for the EngineVersion parameter that is a different major version than the DB instance's current version.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/neptune_db_instance#allow_major_version_upgrade CcDBInstance#allow_major_version_upgrade}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/neptune_db_instance#allow_major_version_upgrade CcDBInstance#allow_major_version_upgrade}
     */
     readonly allowMajorVersionUpgrade?: boolean | cdktn.IResolvable;
     /**
@@ -17,19 +17,19 @@ export interface CcDBInstanceProps extends cdktn.TerraformMetaArguments {
     * 
     * When updating this property, some interruptions may occur.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/neptune_db_instance#auto_minor_version_upgrade CcDBInstance#auto_minor_version_upgrade}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/neptune_db_instance#auto_minor_version_upgrade CcDBInstance#auto_minor_version_upgrade}
     */
     readonly autoMinorVersionUpgrade?: boolean | cdktn.IResolvable;
     /**
     * Specifies the name of the Availability Zone the DB instance is located in.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/neptune_db_instance#availability_zone CcDBInstance#availability_zone}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/neptune_db_instance#availability_zone CcDBInstance#availability_zone}
     */
     readonly availabilityZone?: string;
     /**
     * If the DB instance is a member of a DB cluster, contains the name of the DB cluster that the DB instance is a member of.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/neptune_db_instance#db_cluster_identifier CcDBInstance#db_cluster_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/neptune_db_instance#db_cluster_identifier CcDBInstance#db_cluster_identifier}
     */
     readonly dbClusterIdentifier?: string;
     /**
@@ -37,19 +37,19 @@ export interface CcDBInstanceProps extends cdktn.TerraformMetaArguments {
     * 
     * If you update this property, some interruptions may occur.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/neptune_db_instance#db_instance_class CcDBInstance#db_instance_class}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/neptune_db_instance#db_instance_class CcDBInstance#db_instance_class}
     */
     readonly dbInstanceClass: string;
     /**
     * Contains a user-supplied database identifier. This identifier is the unique key that identifies a DB instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/neptune_db_instance#db_instance_identifier CcDBInstance#db_instance_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/neptune_db_instance#db_instance_identifier CcDBInstance#db_instance_identifier}
     */
     readonly dbInstanceIdentifier?: string;
     /**
     * The name of an existing DB parameter group or a reference to an AWS::Neptune::DBParameterGroup resource created in the template. If any of the data members of the referenced parameter group are changed during an update, the DB instance might need to be restarted, which causes some interruption. If the parameter group contains static parameters, whether they were changed or not, an update triggers a reboot.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/neptune_db_instance#db_parameter_group_name CcDBInstance#db_parameter_group_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/neptune_db_instance#db_parameter_group_name CcDBInstance#db_parameter_group_name}
     */
     readonly dbParameterGroupName?: string;
     /**
@@ -61,37 +61,37 @@ export interface CcDBInstanceProps extends cdktn.TerraformMetaArguments {
     * 
     * 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/neptune_db_instance#db_snapshot_identifier CcDBInstance#db_snapshot_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/neptune_db_instance#db_snapshot_identifier CcDBInstance#db_snapshot_identifier}
     */
     readonly dbSnapshotIdentifier?: string;
     /**
     * A DB subnet group to associate with the DB instance. If you update this value, the new subnet group must be a subnet group in a new virtual private cloud (VPC).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/neptune_db_instance#db_subnet_group_name CcDBInstance#db_subnet_group_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/neptune_db_instance#db_subnet_group_name CcDBInstance#db_subnet_group_name}
     */
     readonly dbSubnetGroupName?: string;
     /**
     * Specifies the weekly time range during which system maintenance can occur, in Universal Coordinated Time (UTC).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/neptune_db_instance#preferred_maintenance_window CcDBInstance#preferred_maintenance_window}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/neptune_db_instance#preferred_maintenance_window CcDBInstance#preferred_maintenance_window}
     */
     readonly preferredMaintenanceWindow?: string;
     /**
     * Indicates that public accessibility is enabled. This should be enabled in combination with IAM Auth enabled on the DBCluster
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/neptune_db_instance#publicly_accessible CcDBInstance#publicly_accessible}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/neptune_db_instance#publicly_accessible CcDBInstance#publicly_accessible}
     */
     readonly publiclyAccessible?: boolean | cdktn.IResolvable;
     /**
     * An arbitrary set of tags (key-value pairs) for this DB instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/neptune_db_instance#tags CcDBInstance#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/neptune_db_instance#tags CcDBInstance#tags}
     */
     readonly tags?: CcDBInstance.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/neptune_db_instance awscc_neptune_db_instance}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/neptune_db_instance awscc_neptune_db_instance}
 */
 export class CcDBInstance extends cdktn.TerraformResource {
 
@@ -107,7 +107,7 @@ export class CcDBInstance extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcDBInstance resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcDBInstance to import
-    * @param importFromId The id of the existing CcDBInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/neptune_db_instance#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcDBInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/neptune_db_instance#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcDBInstance to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -119,7 +119,7 @@ export class CcDBInstance extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/neptune_db_instance awscc_neptune_db_instance} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/neptune_db_instance awscc_neptune_db_instance} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -129,7 +129,8 @@ export class CcDBInstance extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_neptune_db_instance',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -505,13 +506,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/neptune_db_instance#key CcDBInstance#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/neptune_db_instance#key CcDBInstance#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 0 to 256 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/neptune_db_instance#value CcDBInstance#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/neptune_db_instance#value CcDBInstance#value}
     */
     readonly value?: string;
 }

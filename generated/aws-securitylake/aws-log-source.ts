@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/securitylake_aws_log_source
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securitylake_aws_log_source
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,31 +9,31 @@ export interface CcAwsLogSourceProps extends cdktn.TerraformMetaArguments {
     /**
     * AWS account where you want to collect logs from.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/securitylake_aws_log_source#accounts CcAwsLogSource#accounts}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securitylake_aws_log_source#accounts CcAwsLogSource#accounts}
     */
     readonly accounts?: string[];
     /**
     * The ARN for the data lake.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/securitylake_aws_log_source#data_lake_arn CcAwsLogSource#data_lake_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securitylake_aws_log_source#data_lake_arn CcAwsLogSource#data_lake_arn}
     */
     readonly dataLakeArn: string;
     /**
     * The name for a AWS source. This must be a Regionally unique value.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/securitylake_aws_log_source#source_name CcAwsLogSource#source_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securitylake_aws_log_source#source_name CcAwsLogSource#source_name}
     */
     readonly sourceName: string;
     /**
     * The version for a AWS source. This must be a Regionally unique value.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/securitylake_aws_log_source#source_version CcAwsLogSource#source_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securitylake_aws_log_source#source_version CcAwsLogSource#source_version}
     */
     readonly sourceVersion: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/securitylake_aws_log_source awscc_securitylake_aws_log_source}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securitylake_aws_log_source awscc_securitylake_aws_log_source}
 */
 export class CcAwsLogSource extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CcAwsLogSource extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcAwsLogSource resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcAwsLogSource to import
-    * @param importFromId The id of the existing CcAwsLogSource that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/securitylake_aws_log_source#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcAwsLogSource that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securitylake_aws_log_source#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcAwsLogSource to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CcAwsLogSource extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/securitylake_aws_log_source awscc_securitylake_aws_log_source} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securitylake_aws_log_source awscc_securitylake_aws_log_source} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -71,7 +71,8 @@ export class CcAwsLogSource extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_securitylake_aws_log_source',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,

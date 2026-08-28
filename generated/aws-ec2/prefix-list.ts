@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_prefix_list
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_prefix_list
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,37 +9,37 @@ export interface CcPrefixListProps extends cdktn.TerraformMetaArguments {
     /**
     * Ip Version of Prefix List.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_prefix_list#address_family CcPrefixList#address_family}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_prefix_list#address_family CcPrefixList#address_family}
     */
     readonly addressFamily: string;
     /**
     * Entries of Prefix List.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_prefix_list#entries CcPrefixList#entries}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_prefix_list#entries CcPrefixList#entries}
     */
     readonly entries?: CcPrefixList.EntryProperty[] | cdktn.IResolvable;
     /**
     * Max Entries of Prefix List.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_prefix_list#max_entries CcPrefixList#max_entries}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_prefix_list#max_entries CcPrefixList#max_entries}
     */
     readonly maxEntries?: number;
     /**
     * Name of Prefix List.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_prefix_list#prefix_list_name CcPrefixList#prefix_list_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_prefix_list#prefix_list_name CcPrefixList#prefix_list_name}
     */
     readonly prefixListName: string;
     /**
     * Tags for Prefix List
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_prefix_list#tags CcPrefixList#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_prefix_list#tags CcPrefixList#tags}
     */
     readonly tags?: CcPrefixList.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_prefix_list awscc_ec2_prefix_list}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_prefix_list awscc_ec2_prefix_list}
 */
 export class CcPrefixList extends cdktn.TerraformResource {
 
@@ -55,7 +55,7 @@ export class CcPrefixList extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcPrefixList resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcPrefixList to import
-    * @param importFromId The id of the existing CcPrefixList that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_prefix_list#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcPrefixList that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_prefix_list#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcPrefixList to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -67,7 +67,7 @@ export class CcPrefixList extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_prefix_list awscc_ec2_prefix_list} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_prefix_list awscc_ec2_prefix_list} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -77,7 +77,8 @@ export class CcPrefixList extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_ec2_prefix_list',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -327,11 +328,11 @@ export function ccPrefixListTagPropertyToHclTerraform(struct?: CcPrefixList.TagP
 export namespace CcPrefixList {
 export interface EntryProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_prefix_list#cidr CcPrefixList#cidr}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_prefix_list#cidr CcPrefixList#cidr}
     */
     readonly cidr?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_prefix_list#description CcPrefixList#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_prefix_list#description CcPrefixList#description}
     */
     readonly description?: string;
 }
@@ -439,11 +440,11 @@ export class EntryPropertyList extends cdktn.ComplexList {
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_prefix_list#key CcPrefixList#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_prefix_list#key CcPrefixList#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_prefix_list#value CcPrefixList#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_prefix_list#value CcPrefixList#value}
     */
     readonly value?: string;
 }

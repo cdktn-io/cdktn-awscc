@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/route53recoveryreadiness_recovery_group
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53recoveryreadiness_recovery_group
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,25 +9,25 @@ export interface CcRecoveryGroupProps extends cdktn.TerraformMetaArguments {
     /**
     * A list of the cell Amazon Resource Names (ARNs) in the recovery group.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/route53recoveryreadiness_recovery_group#cells CcRecoveryGroup#cells}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53recoveryreadiness_recovery_group#cells CcRecoveryGroup#cells}
     */
     readonly cells?: string[];
     /**
     * The name of the recovery group to create.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/route53recoveryreadiness_recovery_group#recovery_group_name CcRecoveryGroup#recovery_group_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53recoveryreadiness_recovery_group#recovery_group_name CcRecoveryGroup#recovery_group_name}
     */
     readonly recoveryGroupName?: string;
     /**
     * A collection of tags associated with a resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/route53recoveryreadiness_recovery_group#tags CcRecoveryGroup#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53recoveryreadiness_recovery_group#tags CcRecoveryGroup#tags}
     */
     readonly tags?: CcRecoveryGroup.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/route53recoveryreadiness_recovery_group awscc_route53recoveryreadiness_recovery_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53recoveryreadiness_recovery_group awscc_route53recoveryreadiness_recovery_group}
 */
 export class CcRecoveryGroup extends cdktn.TerraformResource {
 
@@ -43,7 +43,7 @@ export class CcRecoveryGroup extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcRecoveryGroup resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcRecoveryGroup to import
-    * @param importFromId The id of the existing CcRecoveryGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/route53recoveryreadiness_recovery_group#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcRecoveryGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53recoveryreadiness_recovery_group#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcRecoveryGroup to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -55,7 +55,7 @@ export class CcRecoveryGroup extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/route53recoveryreadiness_recovery_group awscc_route53recoveryreadiness_recovery_group} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53recoveryreadiness_recovery_group awscc_route53recoveryreadiness_recovery_group} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -65,7 +65,8 @@ export class CcRecoveryGroup extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_route53recoveryreadiness_recovery_group',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -221,11 +222,11 @@ export function ccRecoveryGroupTagPropertyToHclTerraform(struct?: CcRecoveryGrou
 export namespace CcRecoveryGroup {
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/route53recoveryreadiness_recovery_group#key CcRecoveryGroup#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53recoveryreadiness_recovery_group#key CcRecoveryGroup#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/route53recoveryreadiness_recovery_group#value CcRecoveryGroup#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53recoveryreadiness_recovery_group#value CcRecoveryGroup#value}
     */
     readonly value?: string;
 }

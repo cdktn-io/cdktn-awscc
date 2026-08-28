@@ -1,59 +1,59 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/qbusiness_web_experience
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_web_experience
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcWebExperienceProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/qbusiness_web_experience#application_id CcWebExperience#application_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_web_experience#application_id CcWebExperience#application_id}
     */
     readonly applicationId: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/qbusiness_web_experience#browser_extension_configuration CcWebExperience#browser_extension_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_web_experience#browser_extension_configuration CcWebExperience#browser_extension_configuration}
     */
     readonly browserExtensionConfiguration?: CcWebExperience.BrowserExtensionConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/qbusiness_web_experience#customization_configuration CcWebExperience#customization_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_web_experience#customization_configuration CcWebExperience#customization_configuration}
     */
     readonly customizationConfiguration?: CcWebExperience.CustomizationConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/qbusiness_web_experience#identity_provider_configuration CcWebExperience#identity_provider_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_web_experience#identity_provider_configuration CcWebExperience#identity_provider_configuration}
     */
     readonly identityProviderConfiguration?: CcWebExperience.IdentityProviderConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/qbusiness_web_experience#origins CcWebExperience#origins}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_web_experience#origins CcWebExperience#origins}
     */
     readonly origins?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/qbusiness_web_experience#role_arn CcWebExperience#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_web_experience#role_arn CcWebExperience#role_arn}
     */
     readonly roleArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/qbusiness_web_experience#sample_prompts_control_mode CcWebExperience#sample_prompts_control_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_web_experience#sample_prompts_control_mode CcWebExperience#sample_prompts_control_mode}
     */
     readonly samplePromptsControlMode?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/qbusiness_web_experience#subtitle CcWebExperience#subtitle}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_web_experience#subtitle CcWebExperience#subtitle}
     */
     readonly subtitle?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/qbusiness_web_experience#tags CcWebExperience#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_web_experience#tags CcWebExperience#tags}
     */
     readonly tags?: CcWebExperience.TagProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/qbusiness_web_experience#title CcWebExperience#title}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_web_experience#title CcWebExperience#title}
     */
     readonly title?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/qbusiness_web_experience#welcome_message CcWebExperience#welcome_message}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_web_experience#welcome_message CcWebExperience#welcome_message}
     */
     readonly welcomeMessage?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/qbusiness_web_experience awscc_qbusiness_web_experience}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_web_experience awscc_qbusiness_web_experience}
 */
 export class CcWebExperience extends cdktn.TerraformResource {
 
@@ -69,7 +69,7 @@ export class CcWebExperience extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcWebExperience resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcWebExperience to import
-    * @param importFromId The id of the existing CcWebExperience that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/qbusiness_web_experience#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcWebExperience that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_web_experience#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcWebExperience to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -81,7 +81,7 @@ export class CcWebExperience extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/qbusiness_web_experience awscc_qbusiness_web_experience} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_web_experience awscc_qbusiness_web_experience} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -91,7 +91,8 @@ export class CcWebExperience extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_qbusiness_web_experience',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -646,7 +647,7 @@ export function ccWebExperienceTagPropertyToHclTerraform(struct?: CcWebExperienc
 export namespace CcWebExperience {
 export interface BrowserExtensionConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/qbusiness_web_experience#enabled_browser_extensions CcWebExperience#enabled_browser_extensions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_web_experience#enabled_browser_extensions CcWebExperience#enabled_browser_extensions}
     */
     readonly enabledBrowserExtensions?: string[];
 }
@@ -710,19 +711,19 @@ export class BrowserExtensionConfigurationPropertyOutputReference extends cdktn.
 }
 export interface CustomizationConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/qbusiness_web_experience#custom_css_url CcWebExperience#custom_css_url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_web_experience#custom_css_url CcWebExperience#custom_css_url}
     */
     readonly customCssUrl?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/qbusiness_web_experience#favicon_url CcWebExperience#favicon_url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_web_experience#favicon_url CcWebExperience#favicon_url}
     */
     readonly faviconUrl?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/qbusiness_web_experience#font_url CcWebExperience#font_url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_web_experience#font_url CcWebExperience#font_url}
     */
     readonly fontUrl?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/qbusiness_web_experience#logo_url CcWebExperience#logo_url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_web_experience#logo_url CcWebExperience#logo_url}
     */
     readonly logoUrl?: string;
 }
@@ -852,11 +853,11 @@ export class CustomizationConfigurationPropertyOutputReference extends cdktn.Com
 }
 export interface OpenIDConnectProviderConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/qbusiness_web_experience#secrets_arn CcWebExperience#secrets_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_web_experience#secrets_arn CcWebExperience#secrets_arn}
     */
     readonly secretsArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/qbusiness_web_experience#secrets_role CcWebExperience#secrets_role}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_web_experience#secrets_role CcWebExperience#secrets_role}
     */
     readonly secretsRole?: string;
 }
@@ -942,7 +943,7 @@ export class OpenIDConnectProviderConfigurationPropertyOutputReference extends c
 }
 export interface SamlProviderConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/qbusiness_web_experience#authentication_url CcWebExperience#authentication_url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_web_experience#authentication_url CcWebExperience#authentication_url}
     */
     readonly authenticationUrl?: string;
 }
@@ -1006,11 +1007,11 @@ export class SamlProviderConfigurationPropertyOutputReference extends cdktn.Comp
 }
 export interface IdentityProviderConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/qbusiness_web_experience#open_id_connect_configuration CcWebExperience#open_id_connect_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_web_experience#open_id_connect_configuration CcWebExperience#open_id_connect_configuration}
     */
     readonly openIdConnectConfiguration?: OpenIDConnectProviderConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/qbusiness_web_experience#saml_configuration CcWebExperience#saml_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_web_experience#saml_configuration CcWebExperience#saml_configuration}
     */
     readonly samlConfiguration?: SamlProviderConfigurationProperty;
 }
@@ -1096,11 +1097,11 @@ export class IdentityProviderConfigurationPropertyOutputReference extends cdktn.
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/qbusiness_web_experience#key CcWebExperience#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_web_experience#key CcWebExperience#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/qbusiness_web_experience#value CcWebExperience#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_web_experience#value CcWebExperience#value}
     */
     readonly value?: string;
 }

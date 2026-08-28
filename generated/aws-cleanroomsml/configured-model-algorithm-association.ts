@@ -1,41 +1,41 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanroomsml_configured_model_algorithm_association
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanroomsml_configured_model_algorithm_association
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcConfiguredModelAlgorithmAssociationProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanroomsml_configured_model_algorithm_association#configured_model_algorithm_arn CcConfiguredModelAlgorithmAssociation#configured_model_algorithm_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanroomsml_configured_model_algorithm_association#configured_model_algorithm_arn CcConfiguredModelAlgorithmAssociation#configured_model_algorithm_arn}
     */
     readonly configuredModelAlgorithmArn: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanroomsml_configured_model_algorithm_association#description CcConfiguredModelAlgorithmAssociation#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanroomsml_configured_model_algorithm_association#description CcConfiguredModelAlgorithmAssociation#description}
     */
     readonly description?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanroomsml_configured_model_algorithm_association#membership_identifier CcConfiguredModelAlgorithmAssociation#membership_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanroomsml_configured_model_algorithm_association#membership_identifier CcConfiguredModelAlgorithmAssociation#membership_identifier}
     */
     readonly membershipIdentifier: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanroomsml_configured_model_algorithm_association#name CcConfiguredModelAlgorithmAssociation#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanroomsml_configured_model_algorithm_association#name CcConfiguredModelAlgorithmAssociation#name}
     */
     readonly name: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanroomsml_configured_model_algorithm_association#privacy_configuration CcConfiguredModelAlgorithmAssociation#privacy_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanroomsml_configured_model_algorithm_association#privacy_configuration CcConfiguredModelAlgorithmAssociation#privacy_configuration}
     */
     readonly privacyConfiguration?: CcConfiguredModelAlgorithmAssociation.PrivacyConfigurationProperty;
     /**
     * An arbitrary set of tags (key-value pairs) for this cleanrooms-ml configured model algorithm association.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanroomsml_configured_model_algorithm_association#tags CcConfiguredModelAlgorithmAssociation#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanroomsml_configured_model_algorithm_association#tags CcConfiguredModelAlgorithmAssociation#tags}
     */
     readonly tags?: CcConfiguredModelAlgorithmAssociation.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanroomsml_configured_model_algorithm_association awscc_cleanroomsml_configured_model_algorithm_association}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanroomsml_configured_model_algorithm_association awscc_cleanroomsml_configured_model_algorithm_association}
 */
 export class CcConfiguredModelAlgorithmAssociation extends cdktn.TerraformResource {
 
@@ -51,7 +51,7 @@ export class CcConfiguredModelAlgorithmAssociation extends cdktn.TerraformResour
     * Generates CDKTN code for importing a CcConfiguredModelAlgorithmAssociation resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcConfiguredModelAlgorithmAssociation to import
-    * @param importFromId The id of the existing CcConfiguredModelAlgorithmAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanroomsml_configured_model_algorithm_association#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcConfiguredModelAlgorithmAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanroomsml_configured_model_algorithm_association#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcConfiguredModelAlgorithmAssociation to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -63,7 +63,7 @@ export class CcConfiguredModelAlgorithmAssociation extends cdktn.TerraformResour
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanroomsml_configured_model_algorithm_association awscc_cleanroomsml_configured_model_algorithm_association} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanroomsml_configured_model_algorithm_association awscc_cleanroomsml_configured_model_algorithm_association} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -73,7 +73,8 @@ export class CcConfiguredModelAlgorithmAssociation extends cdktn.TerraformResour
         super(scope, id, {
             terraformResourceType: 'awscc_cleanroomsml_configured_model_algorithm_association',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -866,11 +867,11 @@ export function ccConfiguredModelAlgorithmAssociationTagPropertyToHclTerraform(s
 export namespace CcConfiguredModelAlgorithmAssociation {
 export interface TrainedModelExportsMaxSizeProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanroomsml_configured_model_algorithm_association#unit CcConfiguredModelAlgorithmAssociation#unit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanroomsml_configured_model_algorithm_association#unit CcConfiguredModelAlgorithmAssociation#unit}
     */
     readonly unit?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanroomsml_configured_model_algorithm_association#value CcConfiguredModelAlgorithmAssociation#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanroomsml_configured_model_algorithm_association#value CcConfiguredModelAlgorithmAssociation#value}
     */
     readonly value?: number;
 }
@@ -956,11 +957,11 @@ export class TrainedModelExportsMaxSizePropertyOutputReference extends cdktn.Com
 }
 export interface TrainedModelExportsConfigurationPolicyProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanroomsml_configured_model_algorithm_association#files_to_export CcConfiguredModelAlgorithmAssociation#files_to_export}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanroomsml_configured_model_algorithm_association#files_to_export CcConfiguredModelAlgorithmAssociation#files_to_export}
     */
     readonly filesToExport?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanroomsml_configured_model_algorithm_association#max_size CcConfiguredModelAlgorithmAssociation#max_size}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanroomsml_configured_model_algorithm_association#max_size CcConfiguredModelAlgorithmAssociation#max_size}
     */
     readonly maxSize?: TrainedModelExportsMaxSizeProperty;
 }
@@ -1046,7 +1047,7 @@ export class TrainedModelExportsConfigurationPolicyPropertyOutputReference exten
 }
 export interface CustomEntityConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanroomsml_configured_model_algorithm_association#custom_data_identifiers CcConfiguredModelAlgorithmAssociation#custom_data_identifiers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanroomsml_configured_model_algorithm_association#custom_data_identifiers CcConfiguredModelAlgorithmAssociation#custom_data_identifiers}
     */
     readonly customDataIdentifiers?: string[];
 }
@@ -1110,11 +1111,11 @@ export class CustomEntityConfigPropertyOutputReference extends cdktn.ComplexObje
 }
 export interface LogRedactionConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanroomsml_configured_model_algorithm_association#custom_entity_config CcConfiguredModelAlgorithmAssociation#custom_entity_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanroomsml_configured_model_algorithm_association#custom_entity_config CcConfiguredModelAlgorithmAssociation#custom_entity_config}
     */
     readonly customEntityConfig?: CustomEntityConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanroomsml_configured_model_algorithm_association#entities_to_redact CcConfiguredModelAlgorithmAssociation#entities_to_redact}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanroomsml_configured_model_algorithm_association#entities_to_redact CcConfiguredModelAlgorithmAssociation#entities_to_redact}
     */
     readonly entitiesToRedact?: string[];
 }
@@ -1200,19 +1201,19 @@ export class LogRedactionConfigurationPropertyOutputReference extends cdktn.Comp
 }
 export interface LogsConfigurationPolicyProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanroomsml_configured_model_algorithm_association#allowed_account_ids CcConfiguredModelAlgorithmAssociation#allowed_account_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanroomsml_configured_model_algorithm_association#allowed_account_ids CcConfiguredModelAlgorithmAssociation#allowed_account_ids}
     */
     readonly allowedAccountIds?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanroomsml_configured_model_algorithm_association#filter_pattern CcConfiguredModelAlgorithmAssociation#filter_pattern}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanroomsml_configured_model_algorithm_association#filter_pattern CcConfiguredModelAlgorithmAssociation#filter_pattern}
     */
     readonly filterPattern?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanroomsml_configured_model_algorithm_association#log_redaction_configuration CcConfiguredModelAlgorithmAssociation#log_redaction_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanroomsml_configured_model_algorithm_association#log_redaction_configuration CcConfiguredModelAlgorithmAssociation#log_redaction_configuration}
     */
     readonly logRedactionConfiguration?: LogRedactionConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanroomsml_configured_model_algorithm_association#log_type CcConfiguredModelAlgorithmAssociation#log_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanroomsml_configured_model_algorithm_association#log_type CcConfiguredModelAlgorithmAssociation#log_type}
     */
     readonly logType?: string;
 }
@@ -1364,11 +1365,11 @@ export class LogsConfigurationPolicyPropertyList extends cdktn.ComplexList {
 }
 export interface TrainedModelInferenceMaxOutputSizeProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanroomsml_configured_model_algorithm_association#unit CcConfiguredModelAlgorithmAssociation#unit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanroomsml_configured_model_algorithm_association#unit CcConfiguredModelAlgorithmAssociation#unit}
     */
     readonly unit?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanroomsml_configured_model_algorithm_association#value CcConfiguredModelAlgorithmAssociation#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanroomsml_configured_model_algorithm_association#value CcConfiguredModelAlgorithmAssociation#value}
     */
     readonly value?: number;
 }
@@ -1454,11 +1455,11 @@ export class TrainedModelInferenceMaxOutputSizePropertyOutputReference extends c
 }
 export interface TrainedModelInferenceJobsConfigurationPolicyProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanroomsml_configured_model_algorithm_association#container_logs CcConfiguredModelAlgorithmAssociation#container_logs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanroomsml_configured_model_algorithm_association#container_logs CcConfiguredModelAlgorithmAssociation#container_logs}
     */
     readonly containerLogs?: LogsConfigurationPolicyProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanroomsml_configured_model_algorithm_association#max_output_size CcConfiguredModelAlgorithmAssociation#max_output_size}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanroomsml_configured_model_algorithm_association#max_output_size CcConfiguredModelAlgorithmAssociation#max_output_size}
     */
     readonly maxOutputSize?: TrainedModelInferenceMaxOutputSizeProperty;
 }
@@ -1544,7 +1545,7 @@ export class TrainedModelInferenceJobsConfigurationPolicyPropertyOutputReference
 }
 export interface PrivacyConfigurationPoliciesTrainedModelsContainerLogsLogRedactionConfigurationCustomEntityConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanroomsml_configured_model_algorithm_association#custom_data_identifiers CcConfiguredModelAlgorithmAssociation#custom_data_identifiers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanroomsml_configured_model_algorithm_association#custom_data_identifiers CcConfiguredModelAlgorithmAssociation#custom_data_identifiers}
     */
     readonly customDataIdentifiers?: string[];
 }
@@ -1608,11 +1609,11 @@ export class PrivacyConfigurationPoliciesTrainedModelsContainerLogsLogRedactionC
 }
 export interface PrivacyConfigurationPoliciesTrainedModelsContainerLogsLogRedactionConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanroomsml_configured_model_algorithm_association#custom_entity_config CcConfiguredModelAlgorithmAssociation#custom_entity_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanroomsml_configured_model_algorithm_association#custom_entity_config CcConfiguredModelAlgorithmAssociation#custom_entity_config}
     */
     readonly customEntityConfig?: PrivacyConfigurationPoliciesTrainedModelsContainerLogsLogRedactionConfigurationCustomEntityConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanroomsml_configured_model_algorithm_association#entities_to_redact CcConfiguredModelAlgorithmAssociation#entities_to_redact}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanroomsml_configured_model_algorithm_association#entities_to_redact CcConfiguredModelAlgorithmAssociation#entities_to_redact}
     */
     readonly entitiesToRedact?: string[];
 }
@@ -1698,19 +1699,19 @@ export class PrivacyConfigurationPoliciesTrainedModelsContainerLogsLogRedactionC
 }
 export interface ContainerLogsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanroomsml_configured_model_algorithm_association#allowed_account_ids CcConfiguredModelAlgorithmAssociation#allowed_account_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanroomsml_configured_model_algorithm_association#allowed_account_ids CcConfiguredModelAlgorithmAssociation#allowed_account_ids}
     */
     readonly allowedAccountIds?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanroomsml_configured_model_algorithm_association#filter_pattern CcConfiguredModelAlgorithmAssociation#filter_pattern}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanroomsml_configured_model_algorithm_association#filter_pattern CcConfiguredModelAlgorithmAssociation#filter_pattern}
     */
     readonly filterPattern?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanroomsml_configured_model_algorithm_association#log_redaction_configuration CcConfiguredModelAlgorithmAssociation#log_redaction_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanroomsml_configured_model_algorithm_association#log_redaction_configuration CcConfiguredModelAlgorithmAssociation#log_redaction_configuration}
     */
     readonly logRedactionConfiguration?: PrivacyConfigurationPoliciesTrainedModelsContainerLogsLogRedactionConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanroomsml_configured_model_algorithm_association#log_type CcConfiguredModelAlgorithmAssociation#log_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanroomsml_configured_model_algorithm_association#log_type CcConfiguredModelAlgorithmAssociation#log_type}
     */
     readonly logType?: string;
 }
@@ -1862,7 +1863,7 @@ export class ContainerLogsPropertyList extends cdktn.ComplexList {
 }
 export interface MetricsConfigurationPolicyProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanroomsml_configured_model_algorithm_association#noise_level CcConfiguredModelAlgorithmAssociation#noise_level}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanroomsml_configured_model_algorithm_association#noise_level CcConfiguredModelAlgorithmAssociation#noise_level}
     */
     readonly noiseLevel?: string;
 }
@@ -1926,11 +1927,11 @@ export class MetricsConfigurationPolicyPropertyOutputReference extends cdktn.Com
 }
 export interface TrainedModelArtifactMaxSizeProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanroomsml_configured_model_algorithm_association#unit CcConfiguredModelAlgorithmAssociation#unit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanroomsml_configured_model_algorithm_association#unit CcConfiguredModelAlgorithmAssociation#unit}
     */
     readonly unit?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanroomsml_configured_model_algorithm_association#value CcConfiguredModelAlgorithmAssociation#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanroomsml_configured_model_algorithm_association#value CcConfiguredModelAlgorithmAssociation#value}
     */
     readonly value?: number;
 }
@@ -2016,15 +2017,15 @@ export class TrainedModelArtifactMaxSizePropertyOutputReference extends cdktn.Co
 }
 export interface TrainedModelsConfigurationPolicyProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanroomsml_configured_model_algorithm_association#container_logs CcConfiguredModelAlgorithmAssociation#container_logs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanroomsml_configured_model_algorithm_association#container_logs CcConfiguredModelAlgorithmAssociation#container_logs}
     */
     readonly containerLogs?: ContainerLogsProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanroomsml_configured_model_algorithm_association#container_metrics CcConfiguredModelAlgorithmAssociation#container_metrics}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanroomsml_configured_model_algorithm_association#container_metrics CcConfiguredModelAlgorithmAssociation#container_metrics}
     */
     readonly containerMetrics?: MetricsConfigurationPolicyProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanroomsml_configured_model_algorithm_association#max_artifact_size CcConfiguredModelAlgorithmAssociation#max_artifact_size}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanroomsml_configured_model_algorithm_association#max_artifact_size CcConfiguredModelAlgorithmAssociation#max_artifact_size}
     */
     readonly maxArtifactSize?: TrainedModelArtifactMaxSizeProperty;
 }
@@ -2132,15 +2133,15 @@ export class TrainedModelsConfigurationPolicyPropertyOutputReference extends cdk
 }
 export interface PrivacyConfigurationPoliciesProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanroomsml_configured_model_algorithm_association#trained_model_exports CcConfiguredModelAlgorithmAssociation#trained_model_exports}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanroomsml_configured_model_algorithm_association#trained_model_exports CcConfiguredModelAlgorithmAssociation#trained_model_exports}
     */
     readonly trainedModelExports?: TrainedModelExportsConfigurationPolicyProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanroomsml_configured_model_algorithm_association#trained_model_inference_jobs CcConfiguredModelAlgorithmAssociation#trained_model_inference_jobs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanroomsml_configured_model_algorithm_association#trained_model_inference_jobs CcConfiguredModelAlgorithmAssociation#trained_model_inference_jobs}
     */
     readonly trainedModelInferenceJobs?: TrainedModelInferenceJobsConfigurationPolicyProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanroomsml_configured_model_algorithm_association#trained_models CcConfiguredModelAlgorithmAssociation#trained_models}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanroomsml_configured_model_algorithm_association#trained_models CcConfiguredModelAlgorithmAssociation#trained_models}
     */
     readonly trainedModels?: TrainedModelsConfigurationPolicyProperty;
 }
@@ -2248,7 +2249,7 @@ export class PrivacyConfigurationPoliciesPropertyOutputReference extends cdktn.C
 }
 export interface PrivacyConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanroomsml_configured_model_algorithm_association#policies CcConfiguredModelAlgorithmAssociation#policies}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanroomsml_configured_model_algorithm_association#policies CcConfiguredModelAlgorithmAssociation#policies}
     */
     readonly policies?: PrivacyConfigurationPoliciesProperty;
 }
@@ -2312,11 +2313,11 @@ export class PrivacyConfigurationPropertyOutputReference extends cdktn.ComplexOb
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanroomsml_configured_model_algorithm_association#key CcConfiguredModelAlgorithmAssociation#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanroomsml_configured_model_algorithm_association#key CcConfiguredModelAlgorithmAssociation#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanroomsml_configured_model_algorithm_association#value CcConfiguredModelAlgorithmAssociation#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanroomsml_configured_model_algorithm_association#value CcConfiguredModelAlgorithmAssociation#value}
     */
     readonly value?: string;
 }

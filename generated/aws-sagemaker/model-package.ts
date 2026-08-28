@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,163 +9,163 @@ export interface CcModelPackageProps extends cdktn.TerraformMetaArguments {
     /**
     * An array of additional Inference Specification objects.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#additional_inference_specifications CcModelPackage#additional_inference_specifications}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#additional_inference_specifications CcModelPackage#additional_inference_specifications}
     */
     readonly additionalInferenceSpecifications?: CcModelPackage.AdditionalInferenceSpecificationDefinitionProperty[] | cdktn.IResolvable;
     /**
     * An array of additional Inference Specification objects.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#additional_inference_specifications_to_add CcModelPackage#additional_inference_specifications_to_add}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#additional_inference_specifications_to_add CcModelPackage#additional_inference_specifications_to_add}
     */
     readonly additionalInferenceSpecificationsToAdd?: CcModelPackage.AdditionalInferenceSpecificationsToAddProperty[] | cdktn.IResolvable;
     /**
     * A description provided for the model approval.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#approval_description CcModelPackage#approval_description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#approval_description CcModelPackage#approval_description}
     */
     readonly approvalDescription?: string;
     /**
     * Whether to certify the model package for listing on AWS Marketplace.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#certify_for_marketplace CcModelPackage#certify_for_marketplace}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#certify_for_marketplace CcModelPackage#certify_for_marketplace}
     */
     readonly certifyForMarketplace?: boolean | cdktn.IResolvable;
     /**
     * A unique token that guarantees that the call to this API is idempotent.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#client_token CcModelPackage#client_token}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#client_token CcModelPackage#client_token}
     */
     readonly clientToken?: string;
     /**
     * The metadata properties associated with the model package versions.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#customer_metadata_properties CcModelPackage#customer_metadata_properties}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#customer_metadata_properties CcModelPackage#customer_metadata_properties}
     */
     readonly customerMetadataProperties?: { [key: string]: string };
     /**
     * The machine learning domain of the model package you specified.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#domain CcModelPackage#domain}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#domain CcModelPackage#domain}
     */
     readonly domain?: string;
     /**
     * Represents the drift check baselines that can be used when the model monitor is set using the model package.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#drift_check_baselines CcModelPackage#drift_check_baselines}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#drift_check_baselines CcModelPackage#drift_check_baselines}
     */
     readonly driftCheckBaselines?: CcModelPackage.DriftCheckBaselinesProperty;
     /**
     * Details about inference jobs that can be run with models based on this model package.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#inference_specification CcModelPackage#inference_specification}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#inference_specification CcModelPackage#inference_specification}
     */
     readonly inferenceSpecification?: CcModelPackage.InferenceSpecificationProperty;
     /**
     * Metadata properties of the tracking entity, trial, or trial component.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#metadata_properties CcModelPackage#metadata_properties}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#metadata_properties CcModelPackage#metadata_properties}
     */
     readonly metadataProperties?: CcModelPackage.MetadataPropertiesProperty;
     /**
     * The approval status of the model package.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#model_approval_status CcModelPackage#model_approval_status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#model_approval_status CcModelPackage#model_approval_status}
     */
     readonly modelApprovalStatus?: string;
     /**
     * The model card associated with the model package.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#model_card CcModelPackage#model_card}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#model_card CcModelPackage#model_card}
     */
     readonly modelCard?: CcModelPackage.ModelCardProperty;
     /**
     * A structure that contains model metrics reports.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#model_metrics CcModelPackage#model_metrics}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#model_metrics CcModelPackage#model_metrics}
     */
     readonly modelMetrics?: CcModelPackage.ModelMetricsProperty;
     /**
     * The description of the model package.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#model_package_description CcModelPackage#model_package_description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#model_package_description CcModelPackage#model_package_description}
     */
     readonly modelPackageDescription?: string;
     /**
     * The name of the model package group.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#model_package_group_name CcModelPackage#model_package_group_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#model_package_group_name CcModelPackage#model_package_group_name}
     */
     readonly modelPackageGroupName?: string;
     /**
     * The name or arn of the model package.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#model_package_name CcModelPackage#model_package_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#model_package_name CcModelPackage#model_package_name}
     */
     readonly modelPackageName?: string;
     /**
     * Details about the current status of the model package.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#model_package_status_details CcModelPackage#model_package_status_details}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#model_package_status_details CcModelPackage#model_package_status_details}
     */
     readonly modelPackageStatusDetails?: CcModelPackage.ModelPackageStatusDetailsProperty;
     /**
     * The version of the model package.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#model_package_version CcModelPackage#model_package_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#model_package_version CcModelPackage#model_package_version}
     */
     readonly modelPackageVersion?: number;
     /**
     * The Amazon Simple Storage Service (Amazon S3) path where the sample payload are stored pointing to single gzip compressed tar archive.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#sample_payload_url CcModelPackage#sample_payload_url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#sample_payload_url CcModelPackage#sample_payload_url}
     */
     readonly samplePayloadUrl?: string;
     /**
     * An optional AWS Key Management Service key to encrypt, decrypt, and re-encrypt model package information for regulated workloads with highly sensitive data.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#security_config CcModelPackage#security_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#security_config CcModelPackage#security_config}
     */
     readonly securityConfig?: CcModelPackage.SecurityConfigProperty;
     /**
     * Indicates if you want to skip model validation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#skip_model_validation CcModelPackage#skip_model_validation}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#skip_model_validation CcModelPackage#skip_model_validation}
     */
     readonly skipModelValidation?: string;
     /**
     * Details about the algorithm that was used to create the model package.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#source_algorithm_specification CcModelPackage#source_algorithm_specification}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#source_algorithm_specification CcModelPackage#source_algorithm_specification}
     */
     readonly sourceAlgorithmSpecification?: CcModelPackage.SourceAlgorithmSpecificationProperty;
     /**
     * The URI of the source for the model package.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#source_uri CcModelPackage#source_uri}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#source_uri CcModelPackage#source_uri}
     */
     readonly sourceUri?: string;
     /**
     * An array of key-value pairs to apply to this resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#tags CcModelPackage#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#tags CcModelPackage#tags}
     */
     readonly tags?: CcModelPackage.TagProperty[] | cdktn.IResolvable;
     /**
     * The machine learning task your model package accomplishes.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#task CcModelPackage#task}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#task CcModelPackage#task}
     */
     readonly task?: string;
     /**
     * Specifies configurations for one or more transform jobs that Amazon SageMaker runs to test the model package.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#validation_specification CcModelPackage#validation_specification}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#validation_specification CcModelPackage#validation_specification}
     */
     readonly validationSpecification?: CcModelPackage.ValidationSpecificationProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package awscc_sagemaker_model_package}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package awscc_sagemaker_model_package}
 */
 export class CcModelPackage extends cdktn.TerraformResource {
 
@@ -181,7 +181,7 @@ export class CcModelPackage extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcModelPackage resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcModelPackage to import
-    * @param importFromId The id of the existing CcModelPackage that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcModelPackage that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcModelPackage to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -193,7 +193,7 @@ export class CcModelPackage extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package awscc_sagemaker_model_package} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package awscc_sagemaker_model_package} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -203,7 +203,8 @@ export class CcModelPackage extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_sagemaker_model_package',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -3603,7 +3604,7 @@ export interface ModelAccessConfigProperty {
     /**
     * Specifies agreement to the model end-user license agreement (EULA).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#accept_eula CcModelPackage#accept_eula}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#accept_eula CcModelPackage#accept_eula}
     */
     readonly acceptEula?: boolean | cdktn.IResolvable;
 }
@@ -3669,25 +3670,25 @@ export interface S3ModelDataSourceProperty {
     /**
     * Specifies how the ML model data is prepared.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#compression_type CcModelPackage#compression_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#compression_type CcModelPackage#compression_type}
     */
     readonly compressionType?: string;
     /**
     * Specifies the access configuration file for the ML model.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#model_access_config CcModelPackage#model_access_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#model_access_config CcModelPackage#model_access_config}
     */
     readonly modelAccessConfig?: ModelAccessConfigProperty;
     /**
     * Specifies the type of ML model data to deploy.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#s3_data_type CcModelPackage#s3_data_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#s3_data_type CcModelPackage#s3_data_type}
     */
     readonly s3DataType?: string;
     /**
     * Specifies the S3 path of ML model data to deploy.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#s3_uri CcModelPackage#s3_uri}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#s3_uri CcModelPackage#s3_uri}
     */
     readonly s3Uri?: string;
 }
@@ -3819,7 +3820,7 @@ export interface ModelDataSourceProperty {
     /**
     * Specifies the S3 location of ML model data to deploy.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#s3_data_source CcModelPackage#s3_data_source}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#s3_data_source CcModelPackage#s3_data_source}
     */
     readonly s3DataSource?: S3ModelDataSourceProperty;
 }
@@ -3885,7 +3886,7 @@ export interface ModelInputProperty {
     /**
     * The input configuration object for the model.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#data_input_config CcModelPackage#data_input_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#data_input_config CcModelPackage#data_input_config}
     */
     readonly dataInputConfig?: string;
 }
@@ -3951,59 +3952,59 @@ export interface ModelPackageContainerDefinitionProperty {
     /**
     * The DNS host name for the Docker container.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#container_hostname CcModelPackage#container_hostname}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#container_hostname CcModelPackage#container_hostname}
     */
     readonly containerHostname?: string;
     /**
     * Sets the environment variables in the Docker container
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#environment CcModelPackage#environment}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#environment CcModelPackage#environment}
     */
     readonly environment?: { [key: string]: string };
     /**
     * The machine learning framework of the model package container image.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#framework CcModelPackage#framework}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#framework CcModelPackage#framework}
     */
     readonly framework?: string;
     /**
     * The framework version of the Model Package Container Image.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#framework_version CcModelPackage#framework_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#framework_version CcModelPackage#framework_version}
     */
     readonly frameworkVersion?: string;
     /**
     * The Amazon EC2 Container Registry (Amazon ECR) path where inference code is stored.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#image CcModelPackage#image}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#image CcModelPackage#image}
     */
     readonly image?: string;
     /**
     * An MD5 hash of the training algorithm that identifies the Docker image used for training.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#image_digest CcModelPackage#image_digest}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#image_digest CcModelPackage#image_digest}
     */
     readonly imageDigest?: string;
     /**
     * Specifies the location of ML model data to deploy during endpoint creation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#model_data_source CcModelPackage#model_data_source}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#model_data_source CcModelPackage#model_data_source}
     */
     readonly modelDataSource?: ModelDataSourceProperty;
     /**
     * A structure with Model Input details.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#model_data_url CcModelPackage#model_data_url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#model_data_url CcModelPackage#model_data_url}
     */
     readonly modelDataUrl?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#model_input CcModelPackage#model_input}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#model_input CcModelPackage#model_input}
     */
     readonly modelInput?: ModelInputProperty;
     /**
     * The name of a pre-trained machine learning benchmarked by Amazon SageMaker Inference Recommender model that matches your model.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#nearest_model_name CcModelPackage#nearest_model_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#nearest_model_name CcModelPackage#nearest_model_name}
     */
     readonly nearestModelName?: string;
 }
@@ -4289,43 +4290,43 @@ export interface AdditionalInferenceSpecificationDefinitionProperty {
     /**
     * The Amazon ECR registry path of the Docker image that contains the inference code.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#containers CcModelPackage#containers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#containers CcModelPackage#containers}
     */
     readonly containers?: ModelPackageContainerDefinitionProperty[] | cdktn.IResolvable;
     /**
     * A description of the additional Inference specification.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#description CcModelPackage#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#description CcModelPackage#description}
     */
     readonly description?: string;
     /**
     * A unique name to identify the additional inference specification. The name must be unique within the list of your additional inference specifications for a particular model package.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#name CcModelPackage#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#name CcModelPackage#name}
     */
     readonly name?: string;
     /**
     * The supported MIME types for the input data.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#supported_content_types CcModelPackage#supported_content_types}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#supported_content_types CcModelPackage#supported_content_types}
     */
     readonly supportedContentTypes?: string[];
     /**
     * A list of the instance types that are used to generate inferences in real-time
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#supported_realtime_inference_instance_types CcModelPackage#supported_realtime_inference_instance_types}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#supported_realtime_inference_instance_types CcModelPackage#supported_realtime_inference_instance_types}
     */
     readonly supportedRealtimeInferenceInstanceTypes?: string[];
     /**
     * The supported MIME types for the output data.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#supported_response_mime_types CcModelPackage#supported_response_mime_types}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#supported_response_mime_types CcModelPackage#supported_response_mime_types}
     */
     readonly supportedResponseMimeTypes?: string[];
     /**
     * A list of the instance types on which a transformation job can be run or on which an endpoint can be deployed.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#supported_transform_instance_types CcModelPackage#supported_transform_instance_types}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#supported_transform_instance_types CcModelPackage#supported_transform_instance_types}
     */
     readonly supportedTransformInstanceTypes?: string[];
 }
@@ -4545,7 +4546,7 @@ export interface AdditionalInferenceSpecificationsToAddContainersModelDataSource
     /**
     * Specifies agreement to the model end-user license agreement (EULA).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#accept_eula CcModelPackage#accept_eula}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#accept_eula CcModelPackage#accept_eula}
     */
     readonly acceptEula?: boolean | cdktn.IResolvable;
 }
@@ -4611,25 +4612,25 @@ export interface AdditionalInferenceSpecificationsToAddContainersModelDataSource
     /**
     * Specifies how the ML model data is prepared.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#compression_type CcModelPackage#compression_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#compression_type CcModelPackage#compression_type}
     */
     readonly compressionType?: string;
     /**
     * Specifies the access configuration file for the ML model.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#model_access_config CcModelPackage#model_access_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#model_access_config CcModelPackage#model_access_config}
     */
     readonly modelAccessConfig?: AdditionalInferenceSpecificationsToAddContainersModelDataSourceS3DataSourceModelAccessConfigProperty;
     /**
     * Specifies the type of ML model data to deploy.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#s3_data_type CcModelPackage#s3_data_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#s3_data_type CcModelPackage#s3_data_type}
     */
     readonly s3DataType?: string;
     /**
     * Specifies the S3 path of ML model data to deploy.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#s3_uri CcModelPackage#s3_uri}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#s3_uri CcModelPackage#s3_uri}
     */
     readonly s3Uri?: string;
 }
@@ -4761,7 +4762,7 @@ export interface AdditionalInferenceSpecificationsToAddContainersModelDataSource
     /**
     * Specifies the S3 location of ML model data to deploy.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#s3_data_source CcModelPackage#s3_data_source}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#s3_data_source CcModelPackage#s3_data_source}
     */
     readonly s3DataSource?: AdditionalInferenceSpecificationsToAddContainersModelDataSourceS3DataSourceProperty;
 }
@@ -4827,7 +4828,7 @@ export interface AdditionalInferenceSpecificationsToAddContainersModelInputPrope
     /**
     * The input configuration object for the model.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#data_input_config CcModelPackage#data_input_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#data_input_config CcModelPackage#data_input_config}
     */
     readonly dataInputConfig?: string;
 }
@@ -4893,59 +4894,59 @@ export interface AdditionalInferenceSpecificationsToAddContainersProperty {
     /**
     * The DNS host name for the Docker container.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#container_hostname CcModelPackage#container_hostname}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#container_hostname CcModelPackage#container_hostname}
     */
     readonly containerHostname?: string;
     /**
     * Sets the environment variables in the Docker container
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#environment CcModelPackage#environment}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#environment CcModelPackage#environment}
     */
     readonly environment?: { [key: string]: string };
     /**
     * The machine learning framework of the model package container image.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#framework CcModelPackage#framework}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#framework CcModelPackage#framework}
     */
     readonly framework?: string;
     /**
     * The framework version of the Model Package Container Image.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#framework_version CcModelPackage#framework_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#framework_version CcModelPackage#framework_version}
     */
     readonly frameworkVersion?: string;
     /**
     * The Amazon EC2 Container Registry (Amazon ECR) path where inference code is stored.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#image CcModelPackage#image}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#image CcModelPackage#image}
     */
     readonly image?: string;
     /**
     * An MD5 hash of the training algorithm that identifies the Docker image used for training.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#image_digest CcModelPackage#image_digest}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#image_digest CcModelPackage#image_digest}
     */
     readonly imageDigest?: string;
     /**
     * Specifies the location of ML model data to deploy during endpoint creation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#model_data_source CcModelPackage#model_data_source}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#model_data_source CcModelPackage#model_data_source}
     */
     readonly modelDataSource?: AdditionalInferenceSpecificationsToAddContainersModelDataSourceProperty;
     /**
     * A structure with Model Input details.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#model_data_url CcModelPackage#model_data_url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#model_data_url CcModelPackage#model_data_url}
     */
     readonly modelDataUrl?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#model_input CcModelPackage#model_input}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#model_input CcModelPackage#model_input}
     */
     readonly modelInput?: AdditionalInferenceSpecificationsToAddContainersModelInputProperty;
     /**
     * The name of a pre-trained machine learning benchmarked by Amazon SageMaker Inference Recommender model that matches your model.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#nearest_model_name CcModelPackage#nearest_model_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#nearest_model_name CcModelPackage#nearest_model_name}
     */
     readonly nearestModelName?: string;
 }
@@ -5231,43 +5232,43 @@ export interface AdditionalInferenceSpecificationsToAddProperty {
     /**
     * The Amazon ECR registry path of the Docker image that contains the inference code.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#containers CcModelPackage#containers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#containers CcModelPackage#containers}
     */
     readonly containers?: AdditionalInferenceSpecificationsToAddContainersProperty[] | cdktn.IResolvable;
     /**
     * A description of the additional Inference specification.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#description CcModelPackage#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#description CcModelPackage#description}
     */
     readonly description?: string;
     /**
     * A unique name to identify the additional inference specification. The name must be unique within the list of your additional inference specifications for a particular model package.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#name CcModelPackage#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#name CcModelPackage#name}
     */
     readonly name?: string;
     /**
     * The supported MIME types for the input data.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#supported_content_types CcModelPackage#supported_content_types}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#supported_content_types CcModelPackage#supported_content_types}
     */
     readonly supportedContentTypes?: string[];
     /**
     * A list of the instance types that are used to generate inferences in real-time
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#supported_realtime_inference_instance_types CcModelPackage#supported_realtime_inference_instance_types}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#supported_realtime_inference_instance_types CcModelPackage#supported_realtime_inference_instance_types}
     */
     readonly supportedRealtimeInferenceInstanceTypes?: string[];
     /**
     * The supported MIME types for the output data.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#supported_response_mime_types CcModelPackage#supported_response_mime_types}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#supported_response_mime_types CcModelPackage#supported_response_mime_types}
     */
     readonly supportedResponseMimeTypes?: string[];
     /**
     * A list of the instance types on which a transformation job can be run or on which an endpoint can be deployed.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#supported_transform_instance_types CcModelPackage#supported_transform_instance_types}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#supported_transform_instance_types CcModelPackage#supported_transform_instance_types}
     */
     readonly supportedTransformInstanceTypes?: string[];
 }
@@ -5487,19 +5488,19 @@ export interface FileSourceProperty {
     /**
     * The digest of the file source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#content_digest CcModelPackage#content_digest}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#content_digest CcModelPackage#content_digest}
     */
     readonly contentDigest?: string;
     /**
     * The type of content stored in the file source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#content_type CcModelPackage#content_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#content_type CcModelPackage#content_type}
     */
     readonly contentType?: string;
     /**
     * The Amazon S3 URI for the file source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#s3_uri CcModelPackage#s3_uri}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#s3_uri CcModelPackage#s3_uri}
     */
     readonly s3Uri?: string;
 }
@@ -5609,19 +5610,19 @@ export interface MetricsSourceProperty {
     /**
     * The digest of the metric source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#content_digest CcModelPackage#content_digest}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#content_digest CcModelPackage#content_digest}
     */
     readonly contentDigest?: string;
     /**
     * The type of content stored in the metric source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#content_type CcModelPackage#content_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#content_type CcModelPackage#content_type}
     */
     readonly contentType?: string;
     /**
     * The Amazon S3 URI for the metric source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#s3_uri CcModelPackage#s3_uri}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#s3_uri CcModelPackage#s3_uri}
     */
     readonly s3Uri?: string;
 }
@@ -5731,19 +5732,19 @@ export interface PreTrainingConstraintsProperty {
     /**
     * The digest of the metric source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#content_digest CcModelPackage#content_digest}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#content_digest CcModelPackage#content_digest}
     */
     readonly contentDigest?: string;
     /**
     * The type of content stored in the metric source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#content_type CcModelPackage#content_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#content_type CcModelPackage#content_type}
     */
     readonly contentType?: string;
     /**
     * The Amazon S3 URI for the metric source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#s3_uri CcModelPackage#s3_uri}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#s3_uri CcModelPackage#s3_uri}
     */
     readonly s3Uri?: string;
 }
@@ -5853,19 +5854,19 @@ export interface DriftCheckBiasProperty {
     /**
     * Represents a File Source Object.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#config_file CcModelPackage#config_file}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#config_file CcModelPackage#config_file}
     */
     readonly configFile?: FileSourceProperty;
     /**
     * Represents a Metric Source Object.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#post_training_constraints CcModelPackage#post_training_constraints}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#post_training_constraints CcModelPackage#post_training_constraints}
     */
     readonly postTrainingConstraints?: MetricsSourceProperty;
     /**
     * Represents a Metric Source Object.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#pre_training_constraints CcModelPackage#pre_training_constraints}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#pre_training_constraints CcModelPackage#pre_training_constraints}
     */
     readonly preTrainingConstraints?: PreTrainingConstraintsProperty;
 }
@@ -5975,19 +5976,19 @@ export interface ConfigFileProperty {
     /**
     * The digest of the file source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#content_digest CcModelPackage#content_digest}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#content_digest CcModelPackage#content_digest}
     */
     readonly contentDigest?: string;
     /**
     * The type of content stored in the file source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#content_type CcModelPackage#content_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#content_type CcModelPackage#content_type}
     */
     readonly contentType?: string;
     /**
     * The Amazon S3 URI for the file source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#s3_uri CcModelPackage#s3_uri}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#s3_uri CcModelPackage#s3_uri}
     */
     readonly s3Uri?: string;
 }
@@ -6097,19 +6098,19 @@ export interface DriftCheckBaselinesExplainabilityConstraintsProperty {
     /**
     * The digest of the metric source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#content_digest CcModelPackage#content_digest}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#content_digest CcModelPackage#content_digest}
     */
     readonly contentDigest?: string;
     /**
     * The type of content stored in the metric source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#content_type CcModelPackage#content_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#content_type CcModelPackage#content_type}
     */
     readonly contentType?: string;
     /**
     * The Amazon S3 URI for the metric source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#s3_uri CcModelPackage#s3_uri}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#s3_uri CcModelPackage#s3_uri}
     */
     readonly s3Uri?: string;
 }
@@ -6219,13 +6220,13 @@ export interface DriftCheckExplainabilityProperty {
     /**
     * Represents a File Source Object.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#config_file CcModelPackage#config_file}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#config_file CcModelPackage#config_file}
     */
     readonly configFile?: ConfigFileProperty;
     /**
     * Represents a Metric Source Object.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#constraints CcModelPackage#constraints}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#constraints CcModelPackage#constraints}
     */
     readonly constraints?: DriftCheckBaselinesExplainabilityConstraintsProperty;
 }
@@ -6313,19 +6314,19 @@ export interface DriftCheckBaselinesModelDataQualityConstraintsProperty {
     /**
     * The digest of the metric source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#content_digest CcModelPackage#content_digest}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#content_digest CcModelPackage#content_digest}
     */
     readonly contentDigest?: string;
     /**
     * The type of content stored in the metric source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#content_type CcModelPackage#content_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#content_type CcModelPackage#content_type}
     */
     readonly contentType?: string;
     /**
     * The Amazon S3 URI for the metric source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#s3_uri CcModelPackage#s3_uri}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#s3_uri CcModelPackage#s3_uri}
     */
     readonly s3Uri?: string;
 }
@@ -6435,19 +6436,19 @@ export interface DriftCheckBaselinesModelDataQualityStatisticsProperty {
     /**
     * The digest of the metric source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#content_digest CcModelPackage#content_digest}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#content_digest CcModelPackage#content_digest}
     */
     readonly contentDigest?: string;
     /**
     * The type of content stored in the metric source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#content_type CcModelPackage#content_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#content_type CcModelPackage#content_type}
     */
     readonly contentType?: string;
     /**
     * The Amazon S3 URI for the metric source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#s3_uri CcModelPackage#s3_uri}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#s3_uri CcModelPackage#s3_uri}
     */
     readonly s3Uri?: string;
 }
@@ -6557,13 +6558,13 @@ export interface DriftCheckModelDataQualityProperty {
     /**
     * Represents a Metric Source Object.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#constraints CcModelPackage#constraints}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#constraints CcModelPackage#constraints}
     */
     readonly constraints?: DriftCheckBaselinesModelDataQualityConstraintsProperty;
     /**
     * Represents a Metric Source Object.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#statistics CcModelPackage#statistics}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#statistics CcModelPackage#statistics}
     */
     readonly statistics?: DriftCheckBaselinesModelDataQualityStatisticsProperty;
 }
@@ -6651,19 +6652,19 @@ export interface DriftCheckBaselinesModelQualityConstraintsProperty {
     /**
     * The digest of the metric source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#content_digest CcModelPackage#content_digest}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#content_digest CcModelPackage#content_digest}
     */
     readonly contentDigest?: string;
     /**
     * The type of content stored in the metric source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#content_type CcModelPackage#content_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#content_type CcModelPackage#content_type}
     */
     readonly contentType?: string;
     /**
     * The Amazon S3 URI for the metric source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#s3_uri CcModelPackage#s3_uri}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#s3_uri CcModelPackage#s3_uri}
     */
     readonly s3Uri?: string;
 }
@@ -6773,19 +6774,19 @@ export interface DriftCheckBaselinesModelQualityStatisticsProperty {
     /**
     * The digest of the metric source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#content_digest CcModelPackage#content_digest}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#content_digest CcModelPackage#content_digest}
     */
     readonly contentDigest?: string;
     /**
     * The type of content stored in the metric source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#content_type CcModelPackage#content_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#content_type CcModelPackage#content_type}
     */
     readonly contentType?: string;
     /**
     * The Amazon S3 URI for the metric source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#s3_uri CcModelPackage#s3_uri}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#s3_uri CcModelPackage#s3_uri}
     */
     readonly s3Uri?: string;
 }
@@ -6895,13 +6896,13 @@ export interface DriftCheckModelQualityProperty {
     /**
     * Represents a Metric Source Object.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#constraints CcModelPackage#constraints}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#constraints CcModelPackage#constraints}
     */
     readonly constraints?: DriftCheckBaselinesModelQualityConstraintsProperty;
     /**
     * Represents a Metric Source Object.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#statistics CcModelPackage#statistics}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#statistics CcModelPackage#statistics}
     */
     readonly statistics?: DriftCheckBaselinesModelQualityStatisticsProperty;
 }
@@ -6989,25 +6990,25 @@ export interface DriftCheckBaselinesProperty {
     /**
     * Represents the drift check bias baselines that can be used when the model monitor is set using the model package.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#bias CcModelPackage#bias}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#bias CcModelPackage#bias}
     */
     readonly bias?: DriftCheckBiasProperty;
     /**
     * Contains explainability metrics for a model.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#explainability CcModelPackage#explainability}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#explainability CcModelPackage#explainability}
     */
     readonly explainability?: DriftCheckExplainabilityProperty;
     /**
     * Represents the drift check data quality baselines that can be used when the model monitor is set using the model package.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#model_data_quality CcModelPackage#model_data_quality}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#model_data_quality CcModelPackage#model_data_quality}
     */
     readonly modelDataQuality?: DriftCheckModelDataQualityProperty;
     /**
     * Represents the drift check model quality baselines that can be used when the model monitor is set using the model package.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#model_quality CcModelPackage#model_quality}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#model_quality CcModelPackage#model_quality}
     */
     readonly modelQuality?: DriftCheckModelQualityProperty;
 }
@@ -7139,7 +7140,7 @@ export interface InferenceSpecificationContainersModelDataSourceS3DataSourceMode
     /**
     * Specifies agreement to the model end-user license agreement (EULA).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#accept_eula CcModelPackage#accept_eula}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#accept_eula CcModelPackage#accept_eula}
     */
     readonly acceptEula?: boolean | cdktn.IResolvable;
 }
@@ -7205,25 +7206,25 @@ export interface InferenceSpecificationContainersModelDataSourceS3DataSourceProp
     /**
     * Specifies how the ML model data is prepared.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#compression_type CcModelPackage#compression_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#compression_type CcModelPackage#compression_type}
     */
     readonly compressionType?: string;
     /**
     * Specifies the access configuration file for the ML model.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#model_access_config CcModelPackage#model_access_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#model_access_config CcModelPackage#model_access_config}
     */
     readonly modelAccessConfig?: InferenceSpecificationContainersModelDataSourceS3DataSourceModelAccessConfigProperty;
     /**
     * Specifies the type of ML model data to deploy.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#s3_data_type CcModelPackage#s3_data_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#s3_data_type CcModelPackage#s3_data_type}
     */
     readonly s3DataType?: string;
     /**
     * Specifies the S3 path of ML model data to deploy.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#s3_uri CcModelPackage#s3_uri}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#s3_uri CcModelPackage#s3_uri}
     */
     readonly s3Uri?: string;
 }
@@ -7355,7 +7356,7 @@ export interface InferenceSpecificationContainersModelDataSourceProperty {
     /**
     * Specifies the S3 location of ML model data to deploy.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#s3_data_source CcModelPackage#s3_data_source}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#s3_data_source CcModelPackage#s3_data_source}
     */
     readonly s3DataSource?: InferenceSpecificationContainersModelDataSourceS3DataSourceProperty;
 }
@@ -7421,7 +7422,7 @@ export interface InferenceSpecificationContainersModelInputProperty {
     /**
     * The input configuration object for the model.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#data_input_config CcModelPackage#data_input_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#data_input_config CcModelPackage#data_input_config}
     */
     readonly dataInputConfig?: string;
 }
@@ -7487,59 +7488,59 @@ export interface InferenceSpecificationContainersProperty {
     /**
     * The DNS host name for the Docker container.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#container_hostname CcModelPackage#container_hostname}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#container_hostname CcModelPackage#container_hostname}
     */
     readonly containerHostname?: string;
     /**
     * Sets the environment variables in the Docker container
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#environment CcModelPackage#environment}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#environment CcModelPackage#environment}
     */
     readonly environment?: { [key: string]: string };
     /**
     * The machine learning framework of the model package container image.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#framework CcModelPackage#framework}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#framework CcModelPackage#framework}
     */
     readonly framework?: string;
     /**
     * The framework version of the Model Package Container Image.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#framework_version CcModelPackage#framework_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#framework_version CcModelPackage#framework_version}
     */
     readonly frameworkVersion?: string;
     /**
     * The Amazon EC2 Container Registry (Amazon ECR) path where inference code is stored.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#image CcModelPackage#image}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#image CcModelPackage#image}
     */
     readonly image?: string;
     /**
     * An MD5 hash of the training algorithm that identifies the Docker image used for training.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#image_digest CcModelPackage#image_digest}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#image_digest CcModelPackage#image_digest}
     */
     readonly imageDigest?: string;
     /**
     * Specifies the location of ML model data to deploy during endpoint creation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#model_data_source CcModelPackage#model_data_source}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#model_data_source CcModelPackage#model_data_source}
     */
     readonly modelDataSource?: InferenceSpecificationContainersModelDataSourceProperty;
     /**
     * A structure with Model Input details.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#model_data_url CcModelPackage#model_data_url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#model_data_url CcModelPackage#model_data_url}
     */
     readonly modelDataUrl?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#model_input CcModelPackage#model_input}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#model_input CcModelPackage#model_input}
     */
     readonly modelInput?: InferenceSpecificationContainersModelInputProperty;
     /**
     * The name of a pre-trained machine learning benchmarked by Amazon SageMaker Inference Recommender model that matches your model.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#nearest_model_name CcModelPackage#nearest_model_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#nearest_model_name CcModelPackage#nearest_model_name}
     */
     readonly nearestModelName?: string;
 }
@@ -7825,31 +7826,31 @@ export interface InferenceSpecificationProperty {
     /**
     * The Amazon ECR registry path of the Docker image that contains the inference code.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#containers CcModelPackage#containers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#containers CcModelPackage#containers}
     */
     readonly containers?: InferenceSpecificationContainersProperty[] | cdktn.IResolvable;
     /**
     * The supported MIME types for the input data.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#supported_content_types CcModelPackage#supported_content_types}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#supported_content_types CcModelPackage#supported_content_types}
     */
     readonly supportedContentTypes?: string[];
     /**
     * A list of the instance types that are used to generate inferences in real-time
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#supported_realtime_inference_instance_types CcModelPackage#supported_realtime_inference_instance_types}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#supported_realtime_inference_instance_types CcModelPackage#supported_realtime_inference_instance_types}
     */
     readonly supportedRealtimeInferenceInstanceTypes?: string[];
     /**
     * The supported MIME types for the output data.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#supported_response_mime_types CcModelPackage#supported_response_mime_types}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#supported_response_mime_types CcModelPackage#supported_response_mime_types}
     */
     readonly supportedResponseMimeTypes?: string[];
     /**
     * A list of the instance types on which a transformation job can be run or on which an endpoint can be deployed.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#supported_transform_instance_types CcModelPackage#supported_transform_instance_types}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#supported_transform_instance_types CcModelPackage#supported_transform_instance_types}
     */
     readonly supportedTransformInstanceTypes?: string[];
 }
@@ -8003,25 +8004,25 @@ export interface MetadataPropertiesProperty {
     /**
     * The commit ID.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#commit_id CcModelPackage#commit_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#commit_id CcModelPackage#commit_id}
     */
     readonly commitId?: string;
     /**
     * The entity this entity was generated by.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#generated_by CcModelPackage#generated_by}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#generated_by CcModelPackage#generated_by}
     */
     readonly generatedBy?: string;
     /**
     * The project ID metadata.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#project_id CcModelPackage#project_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#project_id CcModelPackage#project_id}
     */
     readonly projectId?: string;
     /**
     * The repository metadata.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#repository CcModelPackage#repository}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#repository CcModelPackage#repository}
     */
     readonly repository?: string;
 }
@@ -8153,13 +8154,13 @@ export interface ModelCardProperty {
     /**
     * The content of the model card.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#model_card_content CcModelPackage#model_card_content}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#model_card_content CcModelPackage#model_card_content}
     */
     readonly modelCardContent?: string;
     /**
     * The approval status of the model card within your organization.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#model_card_status CcModelPackage#model_card_status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#model_card_status CcModelPackage#model_card_status}
     */
     readonly modelCardStatus?: string;
 }
@@ -8247,19 +8248,19 @@ export interface PostTrainingReportProperty {
     /**
     * The digest of the metric source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#content_digest CcModelPackage#content_digest}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#content_digest CcModelPackage#content_digest}
     */
     readonly contentDigest?: string;
     /**
     * The type of content stored in the metric source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#content_type CcModelPackage#content_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#content_type CcModelPackage#content_type}
     */
     readonly contentType?: string;
     /**
     * The Amazon S3 URI for the metric source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#s3_uri CcModelPackage#s3_uri}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#s3_uri CcModelPackage#s3_uri}
     */
     readonly s3Uri?: string;
 }
@@ -8369,19 +8370,19 @@ export interface PreTrainingReportProperty {
     /**
     * The digest of the metric source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#content_digest CcModelPackage#content_digest}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#content_digest CcModelPackage#content_digest}
     */
     readonly contentDigest?: string;
     /**
     * The type of content stored in the metric source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#content_type CcModelPackage#content_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#content_type CcModelPackage#content_type}
     */
     readonly contentType?: string;
     /**
     * The Amazon S3 URI for the metric source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#s3_uri CcModelPackage#s3_uri}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#s3_uri CcModelPackage#s3_uri}
     */
     readonly s3Uri?: string;
 }
@@ -8491,19 +8492,19 @@ export interface ModelMetricsBiasReportProperty {
     /**
     * The digest of the metric source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#content_digest CcModelPackage#content_digest}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#content_digest CcModelPackage#content_digest}
     */
     readonly contentDigest?: string;
     /**
     * The type of content stored in the metric source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#content_type CcModelPackage#content_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#content_type CcModelPackage#content_type}
     */
     readonly contentType?: string;
     /**
     * The Amazon S3 URI for the metric source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#s3_uri CcModelPackage#s3_uri}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#s3_uri CcModelPackage#s3_uri}
     */
     readonly s3Uri?: string;
 }
@@ -8613,19 +8614,19 @@ export interface BiasProperty {
     /**
     * Represents a Metric Source Object.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#post_training_report CcModelPackage#post_training_report}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#post_training_report CcModelPackage#post_training_report}
     */
     readonly postTrainingReport?: PostTrainingReportProperty;
     /**
     * Represents a Metric Source Object.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#pre_training_report CcModelPackage#pre_training_report}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#pre_training_report CcModelPackage#pre_training_report}
     */
     readonly preTrainingReport?: PreTrainingReportProperty;
     /**
     * Represents a Metric Source Object.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#report CcModelPackage#report}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#report CcModelPackage#report}
     */
     readonly report?: ModelMetricsBiasReportProperty;
 }
@@ -8735,19 +8736,19 @@ export interface ModelMetricsExplainabilityReportProperty {
     /**
     * The digest of the metric source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#content_digest CcModelPackage#content_digest}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#content_digest CcModelPackage#content_digest}
     */
     readonly contentDigest?: string;
     /**
     * The type of content stored in the metric source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#content_type CcModelPackage#content_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#content_type CcModelPackage#content_type}
     */
     readonly contentType?: string;
     /**
     * The Amazon S3 URI for the metric source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#s3_uri CcModelPackage#s3_uri}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#s3_uri CcModelPackage#s3_uri}
     */
     readonly s3Uri?: string;
 }
@@ -8857,7 +8858,7 @@ export interface ExplainabilityProperty {
     /**
     * Represents a Metric Source Object.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#report CcModelPackage#report}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#report CcModelPackage#report}
     */
     readonly report?: ModelMetricsExplainabilityReportProperty;
 }
@@ -8923,19 +8924,19 @@ export interface ModelMetricsModelDataQualityConstraintsProperty {
     /**
     * The digest of the metric source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#content_digest CcModelPackage#content_digest}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#content_digest CcModelPackage#content_digest}
     */
     readonly contentDigest?: string;
     /**
     * The type of content stored in the metric source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#content_type CcModelPackage#content_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#content_type CcModelPackage#content_type}
     */
     readonly contentType?: string;
     /**
     * The Amazon S3 URI for the metric source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#s3_uri CcModelPackage#s3_uri}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#s3_uri CcModelPackage#s3_uri}
     */
     readonly s3Uri?: string;
 }
@@ -9045,19 +9046,19 @@ export interface ModelMetricsModelDataQualityStatisticsProperty {
     /**
     * The digest of the metric source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#content_digest CcModelPackage#content_digest}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#content_digest CcModelPackage#content_digest}
     */
     readonly contentDigest?: string;
     /**
     * The type of content stored in the metric source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#content_type CcModelPackage#content_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#content_type CcModelPackage#content_type}
     */
     readonly contentType?: string;
     /**
     * The Amazon S3 URI for the metric source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#s3_uri CcModelPackage#s3_uri}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#s3_uri CcModelPackage#s3_uri}
     */
     readonly s3Uri?: string;
 }
@@ -9167,13 +9168,13 @@ export interface ModelDataQualityProperty {
     /**
     * Represents a Metric Source Object.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#constraints CcModelPackage#constraints}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#constraints CcModelPackage#constraints}
     */
     readonly constraints?: ModelMetricsModelDataQualityConstraintsProperty;
     /**
     * Represents a Metric Source Object.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#statistics CcModelPackage#statistics}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#statistics CcModelPackage#statistics}
     */
     readonly statistics?: ModelMetricsModelDataQualityStatisticsProperty;
 }
@@ -9261,19 +9262,19 @@ export interface ModelMetricsModelQualityConstraintsProperty {
     /**
     * The digest of the metric source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#content_digest CcModelPackage#content_digest}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#content_digest CcModelPackage#content_digest}
     */
     readonly contentDigest?: string;
     /**
     * The type of content stored in the metric source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#content_type CcModelPackage#content_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#content_type CcModelPackage#content_type}
     */
     readonly contentType?: string;
     /**
     * The Amazon S3 URI for the metric source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#s3_uri CcModelPackage#s3_uri}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#s3_uri CcModelPackage#s3_uri}
     */
     readonly s3Uri?: string;
 }
@@ -9383,19 +9384,19 @@ export interface ModelMetricsModelQualityStatisticsProperty {
     /**
     * The digest of the metric source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#content_digest CcModelPackage#content_digest}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#content_digest CcModelPackage#content_digest}
     */
     readonly contentDigest?: string;
     /**
     * The type of content stored in the metric source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#content_type CcModelPackage#content_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#content_type CcModelPackage#content_type}
     */
     readonly contentType?: string;
     /**
     * The Amazon S3 URI for the metric source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#s3_uri CcModelPackage#s3_uri}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#s3_uri CcModelPackage#s3_uri}
     */
     readonly s3Uri?: string;
 }
@@ -9505,13 +9506,13 @@ export interface ModelQualityProperty {
     /**
     * Represents a Metric Source Object.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#constraints CcModelPackage#constraints}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#constraints CcModelPackage#constraints}
     */
     readonly constraints?: ModelMetricsModelQualityConstraintsProperty;
     /**
     * Represents a Metric Source Object.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#statistics CcModelPackage#statistics}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#statistics CcModelPackage#statistics}
     */
     readonly statistics?: ModelMetricsModelQualityStatisticsProperty;
 }
@@ -9599,25 +9600,25 @@ export interface ModelMetricsProperty {
     /**
     * Contains bias metrics for a model.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#bias CcModelPackage#bias}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#bias CcModelPackage#bias}
     */
     readonly bias?: BiasProperty;
     /**
     * Contains explainability metrics for a model.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#explainability CcModelPackage#explainability}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#explainability CcModelPackage#explainability}
     */
     readonly explainability?: ExplainabilityProperty;
     /**
     * Metrics that measure the quality of the input data for a model.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#model_data_quality CcModelPackage#model_data_quality}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#model_data_quality CcModelPackage#model_data_quality}
     */
     readonly modelDataQuality?: ModelDataQualityProperty;
     /**
     * Metrics that measure the quality of a model.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#model_quality CcModelPackage#model_quality}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#model_quality CcModelPackage#model_quality}
     */
     readonly modelQuality?: ModelQualityProperty;
 }
@@ -9749,19 +9750,19 @@ export interface ModelPackageStatusItemProperty {
     /**
     * If the overall status is Failed, the reason for the failure.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#failure_reason CcModelPackage#failure_reason}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#failure_reason CcModelPackage#failure_reason}
     */
     readonly failureReason?: string;
     /**
     * The name of the model package for which the overall status is being reported.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#name CcModelPackage#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#name CcModelPackage#name}
     */
     readonly name?: string;
     /**
     * The current status.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#status CcModelPackage#status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#status CcModelPackage#status}
     */
     readonly status?: string;
 }
@@ -9891,7 +9892,7 @@ export class ModelPackageStatusItemPropertyList extends cdktn.ComplexList {
 }
 export interface ModelPackageStatusDetailsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#validation_statuses CcModelPackage#validation_statuses}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#validation_statuses CcModelPackage#validation_statuses}
     */
     readonly validationStatuses?: ModelPackageStatusItemProperty[] | cdktn.IResolvable;
 }
@@ -9957,7 +9958,7 @@ export interface SecurityConfigProperty {
     /**
     * The AWS KMS Key ID (KMSKeyId) used for encryption of model package information.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#kms_key_id CcModelPackage#kms_key_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#kms_key_id CcModelPackage#kms_key_id}
     */
     readonly kmsKeyId?: string;
 }
@@ -10023,13 +10024,13 @@ export interface SourceAlgorithmProperty {
     /**
     * The name of an algorithm that was used to create the model package. The algorithm must be either an algorithm resource in your Amazon SageMaker account or an algorithm in AWS Marketplace that you are subscribed to.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#algorithm_name CcModelPackage#algorithm_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#algorithm_name CcModelPackage#algorithm_name}
     */
     readonly algorithmName?: string;
     /**
     * The Amazon S3 path where the model artifacts, which result from model training, are stored. This path must point to a single gzip compressed tar archive (.tar.gz suffix).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#model_data_url CcModelPackage#model_data_url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#model_data_url CcModelPackage#model_data_url}
     */
     readonly modelDataUrl?: string;
 }
@@ -10139,7 +10140,7 @@ export interface SourceAlgorithmSpecificationProperty {
     /**
     * A list of algorithms that were used to create a model package.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#source_algorithms CcModelPackage#source_algorithms}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#source_algorithms CcModelPackage#source_algorithms}
     */
     readonly sourceAlgorithms?: SourceAlgorithmProperty[] | cdktn.IResolvable;
 }
@@ -10205,13 +10206,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 127 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#key CcModelPackage#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#key CcModelPackage#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 1 to 255 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#value CcModelPackage#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#value CcModelPackage#value}
     */
     readonly value?: string;
 }
@@ -10321,13 +10322,13 @@ export interface S3DataSourceProperty {
     /**
     * The S3 Data Source Type
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#s3_data_type CcModelPackage#s3_data_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#s3_data_type CcModelPackage#s3_data_type}
     */
     readonly s3DataType?: string;
     /**
     * Depending on the value specified for the S3DataType, identifies either a key name prefix or a manifest.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#s3_uri CcModelPackage#s3_uri}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#s3_uri CcModelPackage#s3_uri}
     */
     readonly s3Uri?: string;
 }
@@ -10415,7 +10416,7 @@ export interface DataSourceProperty {
     /**
     * Describes the S3 data source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#s3_data_source CcModelPackage#s3_data_source}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#s3_data_source CcModelPackage#s3_data_source}
     */
     readonly s3DataSource?: S3DataSourceProperty;
 }
@@ -10481,25 +10482,25 @@ export interface TransformInputProperty {
     /**
     * If your transform data is compressed, specify the compression type. Amazon SageMaker automatically decompresses the data for the transform job accordingly. The default value is None.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#compression_type CcModelPackage#compression_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#compression_type CcModelPackage#compression_type}
     */
     readonly compressionType?: string;
     /**
     * The multipurpose internet mail extension (MIME) type of the data. Amazon SageMaker uses the MIME type with each http call to transfer data to the transform job.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#content_type CcModelPackage#content_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#content_type CcModelPackage#content_type}
     */
     readonly contentType?: string;
     /**
     * Describes the input source of a transform job and the way the transform job consumes it.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#data_source CcModelPackage#data_source}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#data_source CcModelPackage#data_source}
     */
     readonly dataSource?: DataSourceProperty;
     /**
     * The method to use to split the transform job's data files into smaller batches. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#split_type CcModelPackage#split_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#split_type CcModelPackage#split_type}
     */
     readonly splitType?: string;
 }
@@ -10631,25 +10632,25 @@ export interface TransformOutputProperty {
     /**
     * The MIME type used to specify the output data. Amazon SageMaker uses the MIME type with each http call to transfer data from the transform job.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#accept CcModelPackage#accept}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#accept CcModelPackage#accept}
     */
     readonly accept?: string;
     /**
     * Defines how to assemble the results of the transform job as a single S3 object.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#assemble_with CcModelPackage#assemble_with}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#assemble_with CcModelPackage#assemble_with}
     */
     readonly assembleWith?: string;
     /**
     * The AWS Key Management Service (AWS KMS) key that Amazon SageMaker uses to encrypt the model artifacts at rest using Amazon S3 server-side encryption.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#kms_key_id CcModelPackage#kms_key_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#kms_key_id CcModelPackage#kms_key_id}
     */
     readonly kmsKeyId?: string;
     /**
     * The Amazon S3 path where you want Amazon SageMaker to store the results of the transform job.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#s3_output_path CcModelPackage#s3_output_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#s3_output_path CcModelPackage#s3_output_path}
     */
     readonly s3OutputPath?: string;
 }
@@ -10781,19 +10782,19 @@ export interface TransformResourcesProperty {
     /**
     * The number of ML compute instances to use in the transform job. For distributed transform jobs, specify a value greater than 1. The default value is 1.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#instance_count CcModelPackage#instance_count}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#instance_count CcModelPackage#instance_count}
     */
     readonly instanceCount?: number;
     /**
     * The ML compute instance type for the transform job.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#instance_type CcModelPackage#instance_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#instance_type CcModelPackage#instance_type}
     */
     readonly instanceType?: string;
     /**
     * The AWS Key Management Service (AWS KMS) key that Amazon SageMaker uses to encrypt model data on the storage volume attached to the ML compute instance(s) that run the batch transform job.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#volume_kms_key_id CcModelPackage#volume_kms_key_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#volume_kms_key_id CcModelPackage#volume_kms_key_id}
     */
     readonly volumeKmsKeyId?: string;
 }
@@ -10903,43 +10904,43 @@ export interface TransformJobDefinitionProperty {
     /**
     * A string that determines the number of records included in a single mini-batch.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#batch_strategy CcModelPackage#batch_strategy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#batch_strategy CcModelPackage#batch_strategy}
     */
     readonly batchStrategy?: string;
     /**
     * Sets the environment variables in the Docker container
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#environment CcModelPackage#environment}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#environment CcModelPackage#environment}
     */
     readonly environment?: { [key: string]: string };
     /**
     * The maximum number of parallel requests that can be sent to each instance in a transform job. The default value is 1.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#max_concurrent_transforms CcModelPackage#max_concurrent_transforms}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#max_concurrent_transforms CcModelPackage#max_concurrent_transforms}
     */
     readonly maxConcurrentTransforms?: number;
     /**
     * The maximum payload size allowed, in MB. A payload is the data portion of a record (without metadata).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#max_payload_in_mb CcModelPackage#max_payload_in_mb}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#max_payload_in_mb CcModelPackage#max_payload_in_mb}
     */
     readonly maxPayloadInMb?: number;
     /**
     * Describes the input source of a transform job and the way the transform job consumes it.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#transform_input CcModelPackage#transform_input}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#transform_input CcModelPackage#transform_input}
     */
     readonly transformInput?: TransformInputProperty;
     /**
     * Describes the results of a transform job.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#transform_output CcModelPackage#transform_output}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#transform_output CcModelPackage#transform_output}
     */
     readonly transformOutput?: TransformOutputProperty;
     /**
     * Describes the resources, including ML instance types and ML instance count, to use for transform job.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#transform_resources CcModelPackage#transform_resources}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#transform_resources CcModelPackage#transform_resources}
     */
     readonly transformResources?: TransformResourcesProperty;
 }
@@ -11137,13 +11138,13 @@ export interface ValidationProfileProperty {
     /**
     * The name of the profile for the model package.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#profile_name CcModelPackage#profile_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#profile_name CcModelPackage#profile_name}
     */
     readonly profileName?: string;
     /**
     * Defines the input needed to run a transform job using the inference specification specified in the algorithm.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#transform_job_definition CcModelPackage#transform_job_definition}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#transform_job_definition CcModelPackage#transform_job_definition}
     */
     readonly transformJobDefinition?: TransformJobDefinitionProperty;
 }
@@ -11251,13 +11252,13 @@ export class ValidationProfilePropertyList extends cdktn.ComplexList {
 }
 export interface ValidationSpecificationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#validation_profiles CcModelPackage#validation_profiles}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#validation_profiles CcModelPackage#validation_profiles}
     */
     readonly validationProfiles?: ValidationProfileProperty[] | cdktn.IResolvable;
     /**
     * The IAM roles to be used for the validation of the model package.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_model_package#validation_role CcModelPackage#validation_role}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_model_package#validation_role CcModelPackage#validation_role}
     */
     readonly validationRole?: string;
 }

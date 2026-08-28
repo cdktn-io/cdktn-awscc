@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lightsail_bucket
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_bucket
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,49 +9,49 @@ export interface CcBucketProps extends cdktn.TerraformMetaArguments {
     /**
     * An object that sets the public accessibility of objects in the specified bucket.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lightsail_bucket#access_rules CcBucket#access_rules}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_bucket#access_rules CcBucket#access_rules}
     */
     readonly accessRules?: CcBucket.AccessRulesProperty;
     /**
     * The name for the bucket.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lightsail_bucket#bucket_name CcBucket#bucket_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_bucket#bucket_name CcBucket#bucket_name}
     */
     readonly bucketName: string;
     /**
     * The ID of the bundle to use for the bucket.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lightsail_bucket#bundle_id CcBucket#bundle_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_bucket#bundle_id CcBucket#bundle_id}
     */
     readonly bundleId: string;
     /**
     * Specifies whether to enable or disable versioning of objects in the bucket.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lightsail_bucket#object_versioning CcBucket#object_versioning}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_bucket#object_versioning CcBucket#object_versioning}
     */
     readonly objectVersioning?: boolean | cdktn.IResolvable;
     /**
     * An array of strings to specify the AWS account IDs that can access the bucket.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lightsail_bucket#read_only_access_accounts CcBucket#read_only_access_accounts}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_bucket#read_only_access_accounts CcBucket#read_only_access_accounts}
     */
     readonly readOnlyAccessAccounts?: string[];
     /**
     * The names of the Lightsail resources for which to set bucket access.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lightsail_bucket#resources_receiving_access CcBucket#resources_receiving_access}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_bucket#resources_receiving_access CcBucket#resources_receiving_access}
     */
     readonly resourcesReceivingAccess?: string[];
     /**
     * An array of key-value pairs to apply to this resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lightsail_bucket#tags CcBucket#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_bucket#tags CcBucket#tags}
     */
     readonly tags?: CcBucket.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lightsail_bucket awscc_lightsail_bucket}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_bucket awscc_lightsail_bucket}
 */
 export class CcBucket extends cdktn.TerraformResource {
 
@@ -67,7 +67,7 @@ export class CcBucket extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcBucket resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcBucket to import
-    * @param importFromId The id of the existing CcBucket that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lightsail_bucket#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcBucket that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_bucket#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcBucket to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -79,7 +79,7 @@ export class CcBucket extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lightsail_bucket awscc_lightsail_bucket} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_bucket awscc_lightsail_bucket} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -89,7 +89,8 @@ export class CcBucket extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_lightsail_bucket',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -384,13 +385,13 @@ export interface AccessRulesProperty {
     /**
     * A Boolean value that indicates whether the access control list (ACL) permissions that are applied to individual objects override the getObject option that is currently specified.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lightsail_bucket#allow_public_overrides CcBucket#allow_public_overrides}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_bucket#allow_public_overrides CcBucket#allow_public_overrides}
     */
     readonly allowPublicOverrides?: boolean | cdktn.IResolvable;
     /**
     * Specifies the anonymous access to all objects in a bucket.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lightsail_bucket#get_object CcBucket#get_object}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_bucket#get_object CcBucket#get_object}
     */
     readonly fetchObject?: string;
 }
@@ -478,13 +479,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lightsail_bucket#key CcBucket#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_bucket#key CcBucket#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 0 to 256 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lightsail_bucket#value CcBucket#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_bucket#value CcBucket#value}
     */
     readonly value?: string;
 }

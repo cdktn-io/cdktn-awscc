@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/timestream_influx_db_instance
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/timestream_influx_db_instance
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,115 +9,115 @@ export interface CcInfluxDBInstanceProps extends cdktn.TerraformMetaArguments {
     /**
     * The allocated storage for the InfluxDB instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/timestream_influx_db_instance#allocated_storage CcInfluxDBInstance#allocated_storage}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/timestream_influx_db_instance#allocated_storage CcInfluxDBInstance#allocated_storage}
     */
     readonly allocatedStorage?: number;
     /**
     * The bucket for the InfluxDB instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/timestream_influx_db_instance#bucket CcInfluxDBInstance#bucket}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/timestream_influx_db_instance#bucket CcInfluxDBInstance#bucket}
     */
     readonly bucket?: string;
     /**
     * The compute instance of the InfluxDB instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/timestream_influx_db_instance#db_instance_type CcInfluxDBInstance#db_instance_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/timestream_influx_db_instance#db_instance_type CcInfluxDBInstance#db_instance_type}
     */
     readonly dbInstanceType?: string;
     /**
     * The name of an existing InfluxDB parameter group.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/timestream_influx_db_instance#db_parameter_group_identifier CcInfluxDBInstance#db_parameter_group_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/timestream_influx_db_instance#db_parameter_group_identifier CcInfluxDBInstance#db_parameter_group_identifier}
     */
     readonly dbParameterGroupIdentifier?: string;
     /**
     * The storage type of the InfluxDB instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/timestream_influx_db_instance#db_storage_type CcInfluxDBInstance#db_storage_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/timestream_influx_db_instance#db_storage_type CcInfluxDBInstance#db_storage_type}
     */
     readonly dbStorageType?: string;
     /**
     * Deployment type of the InfluxDB Instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/timestream_influx_db_instance#deployment_type CcInfluxDBInstance#deployment_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/timestream_influx_db_instance#deployment_type CcInfluxDBInstance#deployment_type}
     */
     readonly deploymentType?: string;
     /**
     * Configuration for sending logs to customer account from the InfluxDB instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/timestream_influx_db_instance#log_delivery_configuration CcInfluxDBInstance#log_delivery_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/timestream_influx_db_instance#log_delivery_configuration CcInfluxDBInstance#log_delivery_configuration}
     */
     readonly logDeliveryConfiguration?: CcInfluxDBInstance.LogDeliveryConfigurationProperty;
     /**
     * The maintenance schedule for the InfluxDB instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/timestream_influx_db_instance#maintenance_schedule CcInfluxDBInstance#maintenance_schedule}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/timestream_influx_db_instance#maintenance_schedule CcInfluxDBInstance#maintenance_schedule}
     */
     readonly maintenanceSchedule?: CcInfluxDBInstance.MaintenanceScheduleProperty;
     /**
     * The unique name that is associated with the InfluxDB instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/timestream_influx_db_instance#name CcInfluxDBInstance#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/timestream_influx_db_instance#name CcInfluxDBInstance#name}
     */
     readonly name?: string;
     /**
     * Network type of the InfluxDB Instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/timestream_influx_db_instance#network_type CcInfluxDBInstance#network_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/timestream_influx_db_instance#network_type CcInfluxDBInstance#network_type}
     */
     readonly networkType?: string;
     /**
     * The organization for the InfluxDB instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/timestream_influx_db_instance#organization CcInfluxDBInstance#organization}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/timestream_influx_db_instance#organization CcInfluxDBInstance#organization}
     */
     readonly organization?: string;
     /**
     * The password for the InfluxDB instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/timestream_influx_db_instance#password CcInfluxDBInstance#password}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/timestream_influx_db_instance#password CcInfluxDBInstance#password}
     */
     readonly password?: string;
     /**
     * The port number on which InfluxDB accepts connections.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/timestream_influx_db_instance#port CcInfluxDBInstance#port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/timestream_influx_db_instance#port CcInfluxDBInstance#port}
     */
     readonly port?: number;
     /**
     * Attach a public IP to the customer ENI.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/timestream_influx_db_instance#publicly_accessible CcInfluxDBInstance#publicly_accessible}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/timestream_influx_db_instance#publicly_accessible CcInfluxDBInstance#publicly_accessible}
     */
     readonly publiclyAccessible?: boolean | cdktn.IResolvable;
     /**
     * An arbitrary set of tags (key-value pairs) for this DB instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/timestream_influx_db_instance#tags CcInfluxDBInstance#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/timestream_influx_db_instance#tags CcInfluxDBInstance#tags}
     */
     readonly tags?: CcInfluxDBInstance.TagProperty[] | cdktn.IResolvable;
     /**
     * The username for the InfluxDB instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/timestream_influx_db_instance#username CcInfluxDBInstance#username}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/timestream_influx_db_instance#username CcInfluxDBInstance#username}
     */
     readonly username?: string;
     /**
     * A list of Amazon EC2 VPC security groups to associate with this InfluxDB instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/timestream_influx_db_instance#vpc_security_group_ids CcInfluxDBInstance#vpc_security_group_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/timestream_influx_db_instance#vpc_security_group_ids CcInfluxDBInstance#vpc_security_group_ids}
     */
     readonly vpcSecurityGroupIds?: string[];
     /**
     * A list of EC2 subnet IDs for this InfluxDB instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/timestream_influx_db_instance#vpc_subnet_ids CcInfluxDBInstance#vpc_subnet_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/timestream_influx_db_instance#vpc_subnet_ids CcInfluxDBInstance#vpc_subnet_ids}
     */
     readonly vpcSubnetIds?: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/timestream_influx_db_instance awscc_timestream_influx_db_instance}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/timestream_influx_db_instance awscc_timestream_influx_db_instance}
 */
 export class CcInfluxDBInstance extends cdktn.TerraformResource {
 
@@ -133,7 +133,7 @@ export class CcInfluxDBInstance extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcInfluxDBInstance resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcInfluxDBInstance to import
-    * @param importFromId The id of the existing CcInfluxDBInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/timestream_influx_db_instance#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcInfluxDBInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/timestream_influx_db_instance#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcInfluxDBInstance to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -145,7 +145,7 @@ export class CcInfluxDBInstance extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/timestream_influx_db_instance awscc_timestream_influx_db_instance} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/timestream_influx_db_instance awscc_timestream_influx_db_instance} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -155,7 +155,8 @@ export class CcInfluxDBInstance extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_timestream_influx_db_instance',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -812,13 +813,13 @@ export interface S3ConfigurationProperty {
     /**
     * The bucket name for logs to be sent from the InfluxDB instance
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/timestream_influx_db_instance#bucket_name CcInfluxDBInstance#bucket_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/timestream_influx_db_instance#bucket_name CcInfluxDBInstance#bucket_name}
     */
     readonly bucketName?: string;
     /**
     * Specifies whether logging to customer specified bucket is enabled.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/timestream_influx_db_instance#enabled CcInfluxDBInstance#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/timestream_influx_db_instance#enabled CcInfluxDBInstance#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -906,7 +907,7 @@ export interface LogDeliveryConfigurationProperty {
     /**
     * S3 configuration for sending logs to customer account from the InfluxDB instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/timestream_influx_db_instance#s3_configuration CcInfluxDBInstance#s3_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/timestream_influx_db_instance#s3_configuration CcInfluxDBInstance#s3_configuration}
     */
     readonly s3Configuration?: S3ConfigurationProperty;
 }
@@ -972,13 +973,13 @@ export interface MaintenanceScheduleProperty {
     /**
     * The preferred maintenance window in format ddd:HH:MM-ddd:HH:MM.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/timestream_influx_db_instance#preferred_maintenance_window CcInfluxDBInstance#preferred_maintenance_window}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/timestream_influx_db_instance#preferred_maintenance_window CcInfluxDBInstance#preferred_maintenance_window}
     */
     readonly preferredMaintenanceWindow?: string;
     /**
     * The IANA timezone identifier for the maintenance schedule.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/timestream_influx_db_instance#timezone CcInfluxDBInstance#timezone}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/timestream_influx_db_instance#timezone CcInfluxDBInstance#timezone}
     */
     readonly timezone?: string;
 }
@@ -1066,13 +1067,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/timestream_influx_db_instance#key CcInfluxDBInstance#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/timestream_influx_db_instance#key CcInfluxDBInstance#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 0 to 256 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/timestream_influx_db_instance#value CcInfluxDBInstance#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/timestream_influx_db_instance#value CcInfluxDBInstance#value}
     */
     readonly value?: string;
 }

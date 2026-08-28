@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appintegrations_application
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appintegrations_application
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,73 +9,73 @@ export interface CcApplicationProps extends cdktn.TerraformMetaArguments {
     /**
     * The application configuration. Cannot be used when IsService is true.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appintegrations_application#application_config CcApplication#application_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appintegrations_application#application_config CcApplication#application_config}
     */
     readonly applicationConfig?: CcApplication.ApplicationConfigProperty;
     /**
     * Application source config
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appintegrations_application#application_source_config CcApplication#application_source_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appintegrations_application#application_source_config CcApplication#application_source_config}
     */
     readonly applicationSourceConfig: CcApplication.ApplicationSourceConfigProperty;
     /**
     * The type of application
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appintegrations_application#application_type CcApplication#application_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appintegrations_application#application_type CcApplication#application_type}
     */
     readonly applicationType?: string;
     /**
     * The application description.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appintegrations_application#description CcApplication#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appintegrations_application#description CcApplication#description}
     */
     readonly description?: string;
     /**
     * The iframe configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appintegrations_application#iframe_config CcApplication#iframe_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appintegrations_application#iframe_config CcApplication#iframe_config}
     */
     readonly iframeConfig?: CcApplication.IframeConfigProperty;
     /**
     * The initialization timeout in milliseconds. Required when IsService is true.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appintegrations_application#initialization_timeout CcApplication#initialization_timeout}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appintegrations_application#initialization_timeout CcApplication#initialization_timeout}
     */
     readonly initializationTimeout?: number;
     /**
     * Indicates if the application is a service
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appintegrations_application#is_service CcApplication#is_service}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appintegrations_application#is_service CcApplication#is_service}
     */
     readonly isService?: boolean | cdktn.IResolvable;
     /**
     * The name of the application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appintegrations_application#name CcApplication#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appintegrations_application#name CcApplication#name}
     */
     readonly name: string;
     /**
     * The namespace of the application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appintegrations_application#namespace CcApplication#namespace}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appintegrations_application#namespace CcApplication#namespace}
     */
     readonly namespace: string;
     /**
     * The configuration of events or requests that the application has access to.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appintegrations_application#permissions CcApplication#permissions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appintegrations_application#permissions CcApplication#permissions}
     */
     readonly permissions?: string[];
     /**
     * The tags (keys and values) associated with the application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appintegrations_application#tags CcApplication#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appintegrations_application#tags CcApplication#tags}
     */
     readonly tags?: CcApplication.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appintegrations_application awscc_appintegrations_application}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appintegrations_application awscc_appintegrations_application}
 */
 export class CcApplication extends cdktn.TerraformResource {
 
@@ -91,7 +91,7 @@ export class CcApplication extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcApplication resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcApplication to import
-    * @param importFromId The id of the existing CcApplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appintegrations_application#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcApplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appintegrations_application#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcApplication to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -103,7 +103,7 @@ export class CcApplication extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appintegrations_application awscc_appintegrations_application} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appintegrations_application awscc_appintegrations_application} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -113,7 +113,8 @@ export class CcApplication extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_appintegrations_application',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -621,7 +622,7 @@ export function ccApplicationTagPropertyToHclTerraform(struct?: CcApplication.Ta
 export namespace CcApplication {
 export interface ContactHandlingProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appintegrations_application#scope CcApplication#scope}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appintegrations_application#scope CcApplication#scope}
     */
     readonly scope?: string;
 }
@@ -685,7 +686,7 @@ export class ContactHandlingPropertyOutputReference extends cdktn.ComplexObject 
 }
 export interface ApplicationConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appintegrations_application#contact_handling CcApplication#contact_handling}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appintegrations_application#contact_handling CcApplication#contact_handling}
     */
     readonly contactHandling?: ContactHandlingProperty;
 }
@@ -749,11 +750,11 @@ export class ApplicationConfigPropertyOutputReference extends cdktn.ComplexObjec
 }
 export interface ExternalUrlConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appintegrations_application#access_url CcApplication#access_url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appintegrations_application#access_url CcApplication#access_url}
     */
     readonly accessUrl: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appintegrations_application#approved_origins CcApplication#approved_origins}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appintegrations_application#approved_origins CcApplication#approved_origins}
     */
     readonly approvedOrigins?: string[];
 }
@@ -836,7 +837,7 @@ export class ExternalUrlConfigPropertyOutputReference extends cdktn.ComplexObjec
 }
 export interface ApplicationSourceConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appintegrations_application#external_url_config CcApplication#external_url_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appintegrations_application#external_url_config CcApplication#external_url_config}
     */
     readonly externalUrlConfig: ExternalUrlConfigProperty;
 }
@@ -897,11 +898,11 @@ export class ApplicationSourceConfigPropertyOutputReference extends cdktn.Comple
 }
 export interface IframeConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appintegrations_application#allow CcApplication#allow}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appintegrations_application#allow CcApplication#allow}
     */
     readonly allow?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appintegrations_application#sandbox CcApplication#sandbox}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appintegrations_application#sandbox CcApplication#sandbox}
     */
     readonly sandbox?: string[];
 }
@@ -989,13 +990,13 @@ export interface TagProperty {
     /**
     * A key to identify the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appintegrations_application#key CcApplication#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appintegrations_application#key CcApplication#key}
     */
     readonly key?: string;
     /**
     * Corresponding tag value for the key.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appintegrations_application#value CcApplication#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appintegrations_application#value CcApplication#value}
     */
     readonly value?: string;
 }

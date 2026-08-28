@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_asset
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_asset
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,49 +9,49 @@ export interface CcAssetProps extends cdktn.TerraformMetaArguments {
     /**
     * The unique identifier for the Asset.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_asset#asset_id CcAsset#asset_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_asset#asset_id CcAsset#asset_id}
     */
     readonly assetId: string;
     /**
     * The list of egress endpoints available for the Asset.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_asset#egress_endpoints CcAsset#egress_endpoints}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_asset#egress_endpoints CcAsset#egress_endpoints}
     */
     readonly egressEndpoints?: CcAsset.EgressEndpointProperty[] | cdktn.IResolvable;
     /**
     * The ID of the PackagingGroup for the Asset.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_asset#packaging_group_id CcAsset#packaging_group_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_asset#packaging_group_id CcAsset#packaging_group_id}
     */
     readonly packagingGroupId: string;
     /**
     * The resource ID to include in SPEKE key requests.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_asset#resource_id CcAsset#resource_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_asset#resource_id CcAsset#resource_id}
     */
     readonly resourceId?: string;
     /**
     * ARN of the source object in S3.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_asset#source_arn CcAsset#source_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_asset#source_arn CcAsset#source_arn}
     */
     readonly sourceArn: string;
     /**
     * The IAM role_arn used to access the source S3 bucket.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_asset#source_role_arn CcAsset#source_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_asset#source_role_arn CcAsset#source_role_arn}
     */
     readonly sourceRoleArn: string;
     /**
     * A collection of tags associated with a resource
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_asset#tags CcAsset#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_asset#tags CcAsset#tags}
     */
     readonly tags?: CcAsset.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_asset awscc_mediapackage_asset}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_asset awscc_mediapackage_asset}
 */
 export class CcAsset extends cdktn.TerraformResource {
 
@@ -67,7 +67,7 @@ export class CcAsset extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcAsset resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcAsset to import
-    * @param importFromId The id of the existing CcAsset that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_asset#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcAsset that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_asset#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcAsset to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -79,7 +79,7 @@ export class CcAsset extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_asset awscc_mediapackage_asset} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_asset awscc_mediapackage_asset} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -89,7 +89,8 @@ export class CcAsset extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_mediapackage_asset',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -373,13 +374,13 @@ export interface EgressEndpointProperty {
     /**
     * The ID of the PackagingConfiguration being applied to the Asset.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_asset#packaging_configuration_id CcAsset#packaging_configuration_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_asset#packaging_configuration_id CcAsset#packaging_configuration_id}
     */
     readonly packagingConfigurationId?: string;
     /**
     * The URL of the parent manifest for the repackaged Asset.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_asset#url CcAsset#url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_asset#url CcAsset#url}
     */
     readonly url?: string;
 }
@@ -487,11 +488,11 @@ export class EgressEndpointPropertyList extends cdktn.ComplexList {
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_asset#key CcAsset#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_asset#key CcAsset#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediapackage_asset#value CcAsset#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_asset#value CcAsset#value}
     */
     readonly value?: string;
 }

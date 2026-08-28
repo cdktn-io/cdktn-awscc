@@ -1,39 +1,39 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_id_mapping_table
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_id_mapping_table
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcIdMappingTableProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_id_mapping_table#description CcIdMappingTable#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_id_mapping_table#description CcIdMappingTable#description}
     */
     readonly description?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_id_mapping_table#input_reference_config CcIdMappingTable#input_reference_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_id_mapping_table#input_reference_config CcIdMappingTable#input_reference_config}
     */
     readonly inputReferenceConfig: CcIdMappingTable.IdMappingTableInputReferenceConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_id_mapping_table#kms_key_arn CcIdMappingTable#kms_key_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_id_mapping_table#kms_key_arn CcIdMappingTable#kms_key_arn}
     */
     readonly kmsKeyArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_id_mapping_table#membership_identifier CcIdMappingTable#membership_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_id_mapping_table#membership_identifier CcIdMappingTable#membership_identifier}
     */
     readonly membershipIdentifier: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_id_mapping_table#name CcIdMappingTable#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_id_mapping_table#name CcIdMappingTable#name}
     */
     readonly name: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_id_mapping_table#tags CcIdMappingTable#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_id_mapping_table#tags CcIdMappingTable#tags}
     */
     readonly tags?: CcIdMappingTable.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_id_mapping_table awscc_cleanrooms_id_mapping_table}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_id_mapping_table awscc_cleanrooms_id_mapping_table}
 */
 export class CcIdMappingTable extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CcIdMappingTable extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcIdMappingTable resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcIdMappingTable to import
-    * @param importFromId The id of the existing CcIdMappingTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_id_mapping_table#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcIdMappingTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_id_mapping_table#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcIdMappingTable to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CcIdMappingTable extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_id_mapping_table awscc_cleanrooms_id_mapping_table} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_id_mapping_table awscc_cleanrooms_id_mapping_table} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -71,7 +71,8 @@ export class CcIdMappingTable extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_cleanrooms_id_mapping_table',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -395,11 +396,11 @@ export function ccIdMappingTableTagPropertyToHclTerraform(struct?: CcIdMappingTa
 export namespace CcIdMappingTable {
 export interface IdMappingTableInputReferenceConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_id_mapping_table#input_reference_arn CcIdMappingTable#input_reference_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_id_mapping_table#input_reference_arn CcIdMappingTable#input_reference_arn}
     */
     readonly inputReferenceArn: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_id_mapping_table#manage_resource_policies CcIdMappingTable#manage_resource_policies}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_id_mapping_table#manage_resource_policies CcIdMappingTable#manage_resource_policies}
     */
     readonly manageResourcePolicies: boolean | cdktn.IResolvable;
 }
@@ -572,11 +573,11 @@ export class InputReferencePropertiesPropertyOutputReference extends cdktn.Compl
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_id_mapping_table#key CcIdMappingTable#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_id_mapping_table#key CcIdMappingTable#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_id_mapping_table#value CcIdMappingTable#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_id_mapping_table#value CcIdMappingTable#value}
     */
     readonly value?: string;
 }

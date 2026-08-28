@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/certificatemanager_acme_external_account_binding
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/certificatemanager_acme_external_account_binding
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,31 +9,31 @@ export interface CcAcmeExternalAccountBindingProps extends cdktn.TerraformMetaAr
     /**
     * The ARN of the ACME endpoint this binding is associated with.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/certificatemanager_acme_external_account_binding#acme_endpoint_arn CcAcmeExternalAccountBinding#acme_endpoint_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/certificatemanager_acme_external_account_binding#acme_endpoint_arn CcAcmeExternalAccountBinding#acme_endpoint_arn}
     */
     readonly acmeEndpointArn: string;
     /**
     * The expiration configuration for the external account binding.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/certificatemanager_acme_external_account_binding#expiration CcAcmeExternalAccountBinding#expiration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/certificatemanager_acme_external_account_binding#expiration CcAcmeExternalAccountBinding#expiration}
     */
     readonly expiration?: CcAcmeExternalAccountBinding.ExpirationProperty;
     /**
     * The IAM role ARN for cross-account access.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/certificatemanager_acme_external_account_binding#role_arn CcAcmeExternalAccountBinding#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/certificatemanager_acme_external_account_binding#role_arn CcAcmeExternalAccountBinding#role_arn}
     */
     readonly roleArn: string;
     /**
     * Tags associated with the external account binding.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/certificatemanager_acme_external_account_binding#tags CcAcmeExternalAccountBinding#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/certificatemanager_acme_external_account_binding#tags CcAcmeExternalAccountBinding#tags}
     */
     readonly tags?: CcAcmeExternalAccountBinding.TagsItemsProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/certificatemanager_acme_external_account_binding awscc_certificatemanager_acme_external_account_binding}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/certificatemanager_acme_external_account_binding awscc_certificatemanager_acme_external_account_binding}
 */
 export class CcAcmeExternalAccountBinding extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CcAcmeExternalAccountBinding extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcAcmeExternalAccountBinding resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcAcmeExternalAccountBinding to import
-    * @param importFromId The id of the existing CcAcmeExternalAccountBinding that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/certificatemanager_acme_external_account_binding#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcAcmeExternalAccountBinding that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/certificatemanager_acme_external_account_binding#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcAcmeExternalAccountBinding to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CcAcmeExternalAccountBinding extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/certificatemanager_acme_external_account_binding awscc_certificatemanager_acme_external_account_binding} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/certificatemanager_acme_external_account_binding awscc_certificatemanager_acme_external_account_binding} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -71,7 +71,8 @@ export class CcAcmeExternalAccountBinding extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_certificatemanager_acme_external_account_binding',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -284,13 +285,13 @@ export interface ExpirationProperty {
     /**
     * The time unit for the expiration value.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/certificatemanager_acme_external_account_binding#type CcAcmeExternalAccountBinding#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/certificatemanager_acme_external_account_binding#type CcAcmeExternalAccountBinding#type}
     */
     readonly type?: string;
     /**
     * The expiration value.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/certificatemanager_acme_external_account_binding#value CcAcmeExternalAccountBinding#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/certificatemanager_acme_external_account_binding#value CcAcmeExternalAccountBinding#value}
     */
     readonly value?: number;
 }
@@ -378,13 +379,13 @@ export interface TagsItemsProperty {
     /**
     * The key name of the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/certificatemanager_acme_external_account_binding#key CcAcmeExternalAccountBinding#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/certificatemanager_acme_external_account_binding#key CcAcmeExternalAccountBinding#key}
     */
     readonly key?: string;
     /**
     * The value for the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/certificatemanager_acme_external_account_binding#value CcAcmeExternalAccountBinding#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/certificatemanager_acme_external_account_binding#value CcAcmeExternalAccountBinding#value}
     */
     readonly value?: string;
 }

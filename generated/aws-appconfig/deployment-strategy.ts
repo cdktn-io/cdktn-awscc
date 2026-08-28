@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appconfig_deployment_strategy
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appconfig_deployment_strategy
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,25 +9,25 @@ export interface CcDeploymentStrategyProps extends cdktn.TerraformMetaArguments 
     /**
     * Total amount of time for a deployment to last.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appconfig_deployment_strategy#deployment_duration_in_minutes CcDeploymentStrategy#deployment_duration_in_minutes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appconfig_deployment_strategy#deployment_duration_in_minutes CcDeploymentStrategy#deployment_duration_in_minutes}
     */
     readonly deploymentDurationInMinutes: number;
     /**
     * A description of the deployment strategy.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appconfig_deployment_strategy#description CcDeploymentStrategy#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appconfig_deployment_strategy#description CcDeploymentStrategy#description}
     */
     readonly description?: string;
     /**
     * Specifies the amount of time AWS AppConfig monitors for Amazon CloudWatch alarms after the configuration has been deployed to 100% of its targets, before considering the deployment to be complete. If an alarm is triggered during this time, AWS AppConfig rolls back the deployment. You must configure permissions for AWS AppConfig to roll back based on CloudWatch alarms. For more information, see Configuring permissions for rollback based on Amazon CloudWatch alarms in the AWS AppConfig User Guide.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appconfig_deployment_strategy#final_bake_time_in_minutes CcDeploymentStrategy#final_bake_time_in_minutes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appconfig_deployment_strategy#final_bake_time_in_minutes CcDeploymentStrategy#final_bake_time_in_minutes}
     */
     readonly finalBakeTimeInMinutes?: number;
     /**
     * The percentage of targets to receive a deployed configuration during each interval.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appconfig_deployment_strategy#growth_factor CcDeploymentStrategy#growth_factor}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appconfig_deployment_strategy#growth_factor CcDeploymentStrategy#growth_factor}
     */
     readonly growthFactor: number;
     /**
@@ -45,31 +45,31 @@ export interface CcDeploymentStrategyProps extends cdktn.TerraformMetaArguments 
     * 
     * Expressed numerically, the deployment rolls out as follows: 2% of the targets, 4% of the targets, 8% of the targets, and continues until the configuration has been deployed to all targets.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appconfig_deployment_strategy#growth_type CcDeploymentStrategy#growth_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appconfig_deployment_strategy#growth_type CcDeploymentStrategy#growth_type}
     */
     readonly growthType?: string;
     /**
     * A name for the deployment strategy.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appconfig_deployment_strategy#name CcDeploymentStrategy#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appconfig_deployment_strategy#name CcDeploymentStrategy#name}
     */
     readonly name: string;
     /**
     * Save the deployment strategy to a Systems Manager (SSM) document.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appconfig_deployment_strategy#replicate_to CcDeploymentStrategy#replicate_to}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appconfig_deployment_strategy#replicate_to CcDeploymentStrategy#replicate_to}
     */
     readonly replicateTo: string;
     /**
     * Assigns metadata to an AWS AppConfig resource. Tags help organize and categorize your AWS AppConfig resources. Each tag consists of a key and an optional value, both of which you define. You can specify a maximum of 50 tags for a resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appconfig_deployment_strategy#tags CcDeploymentStrategy#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appconfig_deployment_strategy#tags CcDeploymentStrategy#tags}
     */
     readonly tags?: CcDeploymentStrategy.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appconfig_deployment_strategy awscc_appconfig_deployment_strategy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appconfig_deployment_strategy awscc_appconfig_deployment_strategy}
 */
 export class CcDeploymentStrategy extends cdktn.TerraformResource {
 
@@ -85,7 +85,7 @@ export class CcDeploymentStrategy extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcDeploymentStrategy resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcDeploymentStrategy to import
-    * @param importFromId The id of the existing CcDeploymentStrategy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appconfig_deployment_strategy#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcDeploymentStrategy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appconfig_deployment_strategy#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcDeploymentStrategy to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -97,7 +97,7 @@ export class CcDeploymentStrategy extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appconfig_deployment_strategy awscc_appconfig_deployment_strategy} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appconfig_deployment_strategy awscc_appconfig_deployment_strategy} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -107,7 +107,8 @@ export class CcDeploymentStrategy extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_appconfig_deployment_strategy',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -373,13 +374,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appconfig_deployment_strategy#key CcDeploymentStrategy#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appconfig_deployment_strategy#key CcDeploymentStrategy#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 0 to 256 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appconfig_deployment_strategy#value CcDeploymentStrategy#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appconfig_deployment_strategy#value CcDeploymentStrategy#value}
     */
     readonly value?: string;
 }

@@ -1,27 +1,27 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/verifiedpermissions_policy
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/verifiedpermissions_policy
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcPolicyProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/verifiedpermissions_policy#definition CcPolicy#definition}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/verifiedpermissions_policy#definition CcPolicy#definition}
     */
     readonly definition: CcPolicy.PolicyDefinitionProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/verifiedpermissions_policy#name CcPolicy#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/verifiedpermissions_policy#name CcPolicy#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/verifiedpermissions_policy#policy_store_id CcPolicy#policy_store_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/verifiedpermissions_policy#policy_store_id CcPolicy#policy_store_id}
     */
     readonly policyStoreId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/verifiedpermissions_policy awscc_verifiedpermissions_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/verifiedpermissions_policy awscc_verifiedpermissions_policy}
 */
 export class CcPolicy extends cdktn.TerraformResource {
 
@@ -37,7 +37,7 @@ export class CcPolicy extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcPolicy resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcPolicy to import
-    * @param importFromId The id of the existing CcPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/verifiedpermissions_policy#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/verifiedpermissions_policy#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcPolicy to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -49,7 +49,7 @@ export class CcPolicy extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/verifiedpermissions_policy awscc_verifiedpermissions_policy} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/verifiedpermissions_policy awscc_verifiedpermissions_policy} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -59,7 +59,8 @@ export class CcPolicy extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_verifiedpermissions_policy',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -369,11 +370,11 @@ export function ccPolicyPolicyDefinitionPropertyToHclTerraform(struct?: CcPolicy
 export namespace CcPolicy {
 export interface StaticPolicyDefinitionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/verifiedpermissions_policy#description CcPolicy#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/verifiedpermissions_policy#description CcPolicy#description}
     */
     readonly description?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/verifiedpermissions_policy#statement CcPolicy#statement}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/verifiedpermissions_policy#statement CcPolicy#statement}
     */
     readonly statement?: string;
 }
@@ -459,11 +460,11 @@ export class StaticPolicyDefinitionPropertyOutputReference extends cdktn.Complex
 }
 export interface EntityIdentifierProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/verifiedpermissions_policy#entity_id CcPolicy#entity_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/verifiedpermissions_policy#entity_id CcPolicy#entity_id}
     */
     readonly entityId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/verifiedpermissions_policy#entity_type CcPolicy#entity_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/verifiedpermissions_policy#entity_type CcPolicy#entity_type}
     */
     readonly entityType?: string;
 }
@@ -549,11 +550,11 @@ export class EntityIdentifierPropertyOutputReference extends cdktn.ComplexObject
 }
 export interface ResourceProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/verifiedpermissions_policy#entity_id CcPolicy#entity_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/verifiedpermissions_policy#entity_id CcPolicy#entity_id}
     */
     readonly entityId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/verifiedpermissions_policy#entity_type CcPolicy#entity_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/verifiedpermissions_policy#entity_type CcPolicy#entity_type}
     */
     readonly entityType?: string;
 }
@@ -639,15 +640,15 @@ export class ResourcePropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface TemplateLinkedPolicyDefinitionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/verifiedpermissions_policy#policy_template_id CcPolicy#policy_template_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/verifiedpermissions_policy#policy_template_id CcPolicy#policy_template_id}
     */
     readonly policyTemplateId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/verifiedpermissions_policy#principal CcPolicy#principal}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/verifiedpermissions_policy#principal CcPolicy#principal}
     */
     readonly principal?: EntityIdentifierProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/verifiedpermissions_policy#resource CcPolicy#resource}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/verifiedpermissions_policy#resource CcPolicy#resource}
     */
     readonly resource?: ResourceProperty;
 }
@@ -755,11 +756,11 @@ export class TemplateLinkedPolicyDefinitionPropertyOutputReference extends cdktn
 }
 export interface PolicyDefinitionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/verifiedpermissions_policy#static CcPolicy#static}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/verifiedpermissions_policy#static CcPolicy#static}
     */
     readonly static?: StaticPolicyDefinitionProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/verifiedpermissions_policy#template_linked CcPolicy#template_linked}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/verifiedpermissions_policy#template_linked CcPolicy#template_linked}
     */
     readonly templateLinked?: TemplateLinkedPolicyDefinitionProperty;
 }

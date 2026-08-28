@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchserverless_security_config
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchserverless_security_config
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,43 +9,43 @@ export interface CcSecurityConfigProps extends cdktn.TerraformMetaArguments {
     /**
     * Security config description
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchserverless_security_config#description CcSecurityConfig#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchserverless_security_config#description CcSecurityConfig#description}
     */
     readonly description?: string;
     /**
     * Describe IAM federation options in form of key value map
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchserverless_security_config#iam_federation_options CcSecurityConfig#iam_federation_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchserverless_security_config#iam_federation_options CcSecurityConfig#iam_federation_options}
     */
     readonly iamFederationOptions?: CcSecurityConfig.IamFederationConfigOptionsProperty;
     /**
     * Describes IAM Identity Center options for an OpenSearch Serverless security configuration in the form of a key-value map
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchserverless_security_config#iam_identity_center_options CcSecurityConfig#iam_identity_center_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchserverless_security_config#iam_identity_center_options CcSecurityConfig#iam_identity_center_options}
     */
     readonly iamIdentityCenterOptions?: CcSecurityConfig.IamIdentityCenterConfigOptionsProperty;
     /**
     * The friendly name of the security config
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchserverless_security_config#name CcSecurityConfig#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchserverless_security_config#name CcSecurityConfig#name}
     */
     readonly name?: string;
     /**
     * Describes saml options in form of key value map
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchserverless_security_config#saml_options CcSecurityConfig#saml_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchserverless_security_config#saml_options CcSecurityConfig#saml_options}
     */
     readonly samlOptions?: CcSecurityConfig.SamlConfigOptionsProperty;
     /**
     * Config type for security config
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchserverless_security_config#type CcSecurityConfig#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchserverless_security_config#type CcSecurityConfig#type}
     */
     readonly type?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchserverless_security_config awscc_opensearchserverless_security_config}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchserverless_security_config awscc_opensearchserverless_security_config}
 */
 export class CcSecurityConfig extends cdktn.TerraformResource {
 
@@ -61,7 +61,7 @@ export class CcSecurityConfig extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcSecurityConfig resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcSecurityConfig to import
-    * @param importFromId The id of the existing CcSecurityConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchserverless_security_config#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcSecurityConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchserverless_security_config#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcSecurityConfig to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -73,7 +73,7 @@ export class CcSecurityConfig extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchserverless_security_config awscc_opensearchserverless_security_config} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchserverless_security_config awscc_opensearchserverless_security_config} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -83,7 +83,8 @@ export class CcSecurityConfig extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_opensearchserverless_security_config',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -415,13 +416,13 @@ export interface IamFederationConfigOptionsProperty {
     /**
     * Group attribute for this IAM federation integration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchserverless_security_config#group_attribute CcSecurityConfig#group_attribute}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchserverless_security_config#group_attribute CcSecurityConfig#group_attribute}
     */
     readonly groupAttribute?: string;
     /**
     * User attribute for this IAM federation integration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchserverless_security_config#user_attribute CcSecurityConfig#user_attribute}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchserverless_security_config#user_attribute CcSecurityConfig#user_attribute}
     */
     readonly userAttribute?: string;
 }
@@ -509,19 +510,19 @@ export interface IamIdentityCenterConfigOptionsProperty {
     /**
     * Group attribute for this IAM Identity Center integration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchserverless_security_config#group_attribute CcSecurityConfig#group_attribute}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchserverless_security_config#group_attribute CcSecurityConfig#group_attribute}
     */
     readonly groupAttribute?: string;
     /**
     * The ARN of the IAM Identity Center instance used to integrate with OpenSearch Serverless
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchserverless_security_config#instance_arn CcSecurityConfig#instance_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchserverless_security_config#instance_arn CcSecurityConfig#instance_arn}
     */
     readonly instanceArn?: string;
     /**
     * User attribute for this IAM Identity Center integration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchserverless_security_config#user_attribute CcSecurityConfig#user_attribute}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchserverless_security_config#user_attribute CcSecurityConfig#user_attribute}
     */
     readonly userAttribute?: string;
 }
@@ -646,31 +647,31 @@ export interface SamlConfigOptionsProperty {
     /**
     * Group attribute for this saml integration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchserverless_security_config#group_attribute CcSecurityConfig#group_attribute}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchserverless_security_config#group_attribute CcSecurityConfig#group_attribute}
     */
     readonly groupAttribute?: string;
     /**
     * The XML saml provider metadata document that you want to use
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchserverless_security_config#metadata CcSecurityConfig#metadata}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchserverless_security_config#metadata CcSecurityConfig#metadata}
     */
     readonly metadata?: string;
     /**
     * Custom entity id attribute to override default entity id for this saml integration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchserverless_security_config#open_search_serverless_entity_id CcSecurityConfig#open_search_serverless_entity_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchserverless_security_config#open_search_serverless_entity_id CcSecurityConfig#open_search_serverless_entity_id}
     */
     readonly openSearchServerlessEntityId?: string;
     /**
     * Defines the session timeout in minutes
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchserverless_security_config#session_timeout CcSecurityConfig#session_timeout}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchserverless_security_config#session_timeout CcSecurityConfig#session_timeout}
     */
     readonly sessionTimeout?: number;
     /**
     * Custom attribute for this saml integration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opensearchserverless_security_config#user_attribute CcSecurityConfig#user_attribute}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchserverless_security_config#user_attribute CcSecurityConfig#user_attribute}
     */
     readonly userAttribute?: string;
 }

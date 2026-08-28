@@ -1,35 +1,35 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/chatbot_custom_action
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/chatbot_custom_action
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcCustomActionProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/chatbot_custom_action#action_name CcCustomAction#action_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/chatbot_custom_action#action_name CcCustomAction#action_name}
     */
     readonly actionName: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/chatbot_custom_action#alias_name CcCustomAction#alias_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/chatbot_custom_action#alias_name CcCustomAction#alias_name}
     */
     readonly aliasName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/chatbot_custom_action#attachments CcCustomAction#attachments}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/chatbot_custom_action#attachments CcCustomAction#attachments}
     */
     readonly attachments?: CcCustomAction.CustomActionAttachmentProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/chatbot_custom_action#definition CcCustomAction#definition}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/chatbot_custom_action#definition CcCustomAction#definition}
     */
     readonly definition: CcCustomAction.CustomActionDefinitionProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/chatbot_custom_action#tags CcCustomAction#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/chatbot_custom_action#tags CcCustomAction#tags}
     */
     readonly tags?: CcCustomAction.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/chatbot_custom_action awscc_chatbot_custom_action}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/chatbot_custom_action awscc_chatbot_custom_action}
 */
 export class CcCustomAction extends cdktn.TerraformResource {
 
@@ -45,7 +45,7 @@ export class CcCustomAction extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcCustomAction resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcCustomAction to import
-    * @param importFromId The id of the existing CcCustomAction that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/chatbot_custom_action#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcCustomAction that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/chatbot_custom_action#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcCustomAction to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -57,7 +57,7 @@ export class CcCustomAction extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/chatbot_custom_action awscc_chatbot_custom_action} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/chatbot_custom_action awscc_chatbot_custom_action} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -67,7 +67,8 @@ export class CcCustomAction extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_chatbot_custom_action',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -390,15 +391,15 @@ export function ccCustomActionTagPropertyToHclTerraform(struct?: CcCustomAction.
 export namespace CcCustomAction {
 export interface CustomActionAttachmentCriteriaProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/chatbot_custom_action#operator CcCustomAction#operator}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/chatbot_custom_action#operator CcCustomAction#operator}
     */
     readonly operator?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/chatbot_custom_action#value CcCustomAction#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/chatbot_custom_action#value CcCustomAction#value}
     */
     readonly value?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/chatbot_custom_action#variable_name CcCustomAction#variable_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/chatbot_custom_action#variable_name CcCustomAction#variable_name}
     */
     readonly variableName?: string;
 }
@@ -528,19 +529,19 @@ export class CustomActionAttachmentCriteriaPropertyList extends cdktn.ComplexLis
 }
 export interface CustomActionAttachmentProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/chatbot_custom_action#button_text CcCustomAction#button_text}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/chatbot_custom_action#button_text CcCustomAction#button_text}
     */
     readonly buttonText?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/chatbot_custom_action#criteria CcCustomAction#criteria}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/chatbot_custom_action#criteria CcCustomAction#criteria}
     */
     readonly criteria?: CustomActionAttachmentCriteriaProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/chatbot_custom_action#notification_type CcCustomAction#notification_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/chatbot_custom_action#notification_type CcCustomAction#notification_type}
     */
     readonly notificationType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/chatbot_custom_action#variables CcCustomAction#variables}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/chatbot_custom_action#variables CcCustomAction#variables}
     */
     readonly variables?: { [key: string]: string };
 }
@@ -692,7 +693,7 @@ export class CustomActionAttachmentPropertyList extends cdktn.ComplexList {
 }
 export interface CustomActionDefinitionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/chatbot_custom_action#command_text CcCustomAction#command_text}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/chatbot_custom_action#command_text CcCustomAction#command_text}
     */
     readonly commandText: string;
 }
@@ -753,11 +754,11 @@ export class CustomActionDefinitionPropertyOutputReference extends cdktn.Complex
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/chatbot_custom_action#key CcCustomAction#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/chatbot_custom_action#key CcCustomAction#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/chatbot_custom_action#value CcCustomAction#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/chatbot_custom_action#value CcCustomAction#value}
     */
     readonly value?: string;
 }

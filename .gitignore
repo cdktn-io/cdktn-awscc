@@ -2,3 +2,7 @@ node_modules/
 out/
 *.tsbuildinfo
 dist/
+# fetched by `pnpm schema:fetch` (scripts/update-provider-schema.ts); ~35 MB, never committed.
+# schemas/PROVIDER_VERSION (the pin `generated/` was built from) is deliberately NOT ignored here.
+schemas/schema.json
+schemas/.terraform*

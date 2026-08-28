@@ -1,31 +1,31 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/vpclattice_service_network_resource_association
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/vpclattice_service_network_resource_association
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcServiceNetworkResourceAssociationProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/vpclattice_service_network_resource_association#private_dns_enabled CcServiceNetworkResourceAssociation#private_dns_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/vpclattice_service_network_resource_association#private_dns_enabled CcServiceNetworkResourceAssociation#private_dns_enabled}
     */
     readonly privateDnsEnabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/vpclattice_service_network_resource_association#resource_configuration_id CcServiceNetworkResourceAssociation#resource_configuration_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/vpclattice_service_network_resource_association#resource_configuration_id CcServiceNetworkResourceAssociation#resource_configuration_id}
     */
     readonly resourceConfigurationId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/vpclattice_service_network_resource_association#service_network_id CcServiceNetworkResourceAssociation#service_network_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/vpclattice_service_network_resource_association#service_network_id CcServiceNetworkResourceAssociation#service_network_id}
     */
     readonly serviceNetworkId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/vpclattice_service_network_resource_association#tags CcServiceNetworkResourceAssociation#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/vpclattice_service_network_resource_association#tags CcServiceNetworkResourceAssociation#tags}
     */
     readonly tags?: CcServiceNetworkResourceAssociation.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/vpclattice_service_network_resource_association awscc_vpclattice_service_network_resource_association}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/vpclattice_service_network_resource_association awscc_vpclattice_service_network_resource_association}
 */
 export class CcServiceNetworkResourceAssociation extends cdktn.TerraformResource {
 
@@ -41,7 +41,7 @@ export class CcServiceNetworkResourceAssociation extends cdktn.TerraformResource
     * Generates CDKTN code for importing a CcServiceNetworkResourceAssociation resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcServiceNetworkResourceAssociation to import
-    * @param importFromId The id of the existing CcServiceNetworkResourceAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/vpclattice_service_network_resource_association#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcServiceNetworkResourceAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/vpclattice_service_network_resource_association#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcServiceNetworkResourceAssociation to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -53,7 +53,7 @@ export class CcServiceNetworkResourceAssociation extends cdktn.TerraformResource
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/vpclattice_service_network_resource_association awscc_vpclattice_service_network_resource_association} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/vpclattice_service_network_resource_association awscc_vpclattice_service_network_resource_association} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -63,7 +63,8 @@ export class CcServiceNetworkResourceAssociation extends cdktn.TerraformResource
         super(scope, id, {
             terraformResourceType: 'awscc_vpclattice_service_network_resource_association',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -248,11 +249,11 @@ export function ccServiceNetworkResourceAssociationTagPropertyToHclTerraform(str
 export namespace CcServiceNetworkResourceAssociation {
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/vpclattice_service_network_resource_association#key CcServiceNetworkResourceAssociation#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/vpclattice_service_network_resource_association#key CcServiceNetworkResourceAssociation#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/vpclattice_service_network_resource_association#value CcServiceNetworkResourceAssociation#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/vpclattice_service_network_resource_association#value CcServiceNetworkResourceAssociation#value}
     */
     readonly value?: string;
 }

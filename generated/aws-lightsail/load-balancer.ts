@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lightsail_load_balancer
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_load_balancer
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,61 +9,61 @@ export interface CcLoadBalancerProps extends cdktn.TerraformMetaArguments {
     /**
     * The names of the instances attached to the load balancer.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lightsail_load_balancer#attached_instances CcLoadBalancer#attached_instances}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_load_balancer#attached_instances CcLoadBalancer#attached_instances}
     */
     readonly attachedInstances?: string[];
     /**
     * The path you provided to perform the load balancer health check. If you didn't specify a health check path, Lightsail uses the root path of your website (e.g., "/").
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lightsail_load_balancer#health_check_path CcLoadBalancer#health_check_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_load_balancer#health_check_path CcLoadBalancer#health_check_path}
     */
     readonly healthCheckPath?: string;
     /**
     * The instance port where you're creating your load balancer.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lightsail_load_balancer#instance_port CcLoadBalancer#instance_port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_load_balancer#instance_port CcLoadBalancer#instance_port}
     */
     readonly instancePort: number;
     /**
     * The IP address type for the load balancer. The possible values are ipv4 for IPv4 only, and dualstack for IPv4 and IPv6. The default value is dualstack.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lightsail_load_balancer#ip_address_type CcLoadBalancer#ip_address_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_load_balancer#ip_address_type CcLoadBalancer#ip_address_type}
     */
     readonly ipAddressType?: string;
     /**
     * The name of your load balancer.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lightsail_load_balancer#load_balancer_name CcLoadBalancer#load_balancer_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_load_balancer#load_balancer_name CcLoadBalancer#load_balancer_name}
     */
     readonly loadBalancerName: string;
     /**
     * Configuration option to enable session stickiness.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lightsail_load_balancer#session_stickiness_enabled CcLoadBalancer#session_stickiness_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_load_balancer#session_stickiness_enabled CcLoadBalancer#session_stickiness_enabled}
     */
     readonly sessionStickinessEnabled?: boolean | cdktn.IResolvable;
     /**
     * Configuration option to adjust session stickiness cookie duration parameter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lightsail_load_balancer#session_stickiness_lb_cookie_duration_seconds CcLoadBalancer#session_stickiness_lb_cookie_duration_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_load_balancer#session_stickiness_lb_cookie_duration_seconds CcLoadBalancer#session_stickiness_lb_cookie_duration_seconds}
     */
     readonly sessionStickinessLbCookieDurationSeconds?: string;
     /**
     * An array of key-value pairs to apply to this resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lightsail_load_balancer#tags CcLoadBalancer#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_load_balancer#tags CcLoadBalancer#tags}
     */
     readonly tags?: CcLoadBalancer.TagProperty[] | cdktn.IResolvable;
     /**
     * The name of the TLS policy to apply to the load balancer.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lightsail_load_balancer#tls_policy_name CcLoadBalancer#tls_policy_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_load_balancer#tls_policy_name CcLoadBalancer#tls_policy_name}
     */
     readonly tlsPolicyName?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lightsail_load_balancer awscc_lightsail_load_balancer}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_load_balancer awscc_lightsail_load_balancer}
 */
 export class CcLoadBalancer extends cdktn.TerraformResource {
 
@@ -79,7 +79,7 @@ export class CcLoadBalancer extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcLoadBalancer resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcLoadBalancer to import
-    * @param importFromId The id of the existing CcLoadBalancer that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lightsail_load_balancer#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcLoadBalancer that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_load_balancer#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcLoadBalancer to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -91,7 +91,7 @@ export class CcLoadBalancer extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lightsail_load_balancer awscc_lightsail_load_balancer} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_load_balancer awscc_lightsail_load_balancer} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -101,7 +101,8 @@ export class CcLoadBalancer extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_lightsail_load_balancer',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -397,13 +398,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lightsail_load_balancer#key CcLoadBalancer#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_load_balancer#key CcLoadBalancer#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 0 to 256 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lightsail_load_balancer#value CcLoadBalancer#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_load_balancer#value CcLoadBalancer#value}
     */
     readonly value?: string;
 }

@@ -1,37 +1,37 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_vpc_endpoint_association
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_vpc_endpoint_association
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcVpcEndpointAssociationProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_vpc_endpoint_association#description CcVpcEndpointAssociation#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_vpc_endpoint_association#description CcVpcEndpointAssociation#description}
     */
     readonly description?: string;
     /**
     * A resource ARN.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_vpc_endpoint_association#firewall_arn CcVpcEndpointAssociation#firewall_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_vpc_endpoint_association#firewall_arn CcVpcEndpointAssociation#firewall_arn}
     */
     readonly firewallArn: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_vpc_endpoint_association#subnet_mapping CcVpcEndpointAssociation#subnet_mapping}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_vpc_endpoint_association#subnet_mapping CcVpcEndpointAssociation#subnet_mapping}
     */
     readonly subnetMapping: CcVpcEndpointAssociation.SubnetMappingProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_vpc_endpoint_association#tags CcVpcEndpointAssociation#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_vpc_endpoint_association#tags CcVpcEndpointAssociation#tags}
     */
     readonly tags?: CcVpcEndpointAssociation.TagProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_vpc_endpoint_association#vpc_id CcVpcEndpointAssociation#vpc_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_vpc_endpoint_association#vpc_id CcVpcEndpointAssociation#vpc_id}
     */
     readonly vpcId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_vpc_endpoint_association awscc_networkfirewall_vpc_endpoint_association}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_vpc_endpoint_association awscc_networkfirewall_vpc_endpoint_association}
 */
 export class CcVpcEndpointAssociation extends cdktn.TerraformResource {
 
@@ -47,7 +47,7 @@ export class CcVpcEndpointAssociation extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcVpcEndpointAssociation resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcVpcEndpointAssociation to import
-    * @param importFromId The id of the existing CcVpcEndpointAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_vpc_endpoint_association#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcVpcEndpointAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_vpc_endpoint_association#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcVpcEndpointAssociation to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -59,7 +59,7 @@ export class CcVpcEndpointAssociation extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_vpc_endpoint_association awscc_networkfirewall_vpc_endpoint_association} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_vpc_endpoint_association awscc_networkfirewall_vpc_endpoint_association} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -69,7 +69,8 @@ export class CcVpcEndpointAssociation extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_networkfirewall_vpc_endpoint_association',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -313,13 +314,13 @@ export interface SubnetMappingProperty {
     /**
     * A IPAddressType
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_vpc_endpoint_association#ip_address_type CcVpcEndpointAssociation#ip_address_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_vpc_endpoint_association#ip_address_type CcVpcEndpointAssociation#ip_address_type}
     */
     readonly ipAddressType?: string;
     /**
     * A SubnetId.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_vpc_endpoint_association#subnet_id CcVpcEndpointAssociation#subnet_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_vpc_endpoint_association#subnet_id CcVpcEndpointAssociation#subnet_id}
     */
     readonly subnetId: string;
 }
@@ -402,11 +403,11 @@ export class SubnetMappingPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_vpc_endpoint_association#key CcVpcEndpointAssociation#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_vpc_endpoint_association#key CcVpcEndpointAssociation#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_vpc_endpoint_association#value CcVpcEndpointAssociation#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_vpc_endpoint_association#value CcVpcEndpointAssociation#value}
     */
     readonly value?: string;
 }

@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ssm_maintenance_window_target
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_maintenance_window_target
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,43 +9,43 @@ export interface CcMaintenanceWindowTargetProps extends cdktn.TerraformMetaArgum
     /**
     * A description for the target.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ssm_maintenance_window_target#description CcMaintenanceWindowTarget#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_maintenance_window_target#description CcMaintenanceWindowTarget#description}
     */
     readonly description?: string;
     /**
     * The name for the maintenance window target.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ssm_maintenance_window_target#name CcMaintenanceWindowTarget#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_maintenance_window_target#name CcMaintenanceWindowTarget#name}
     */
     readonly name?: string;
     /**
     * A user-provided value that will be included in any Amazon CloudWatch Events events that are raised while running tasks for these targets in this maintenance window.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ssm_maintenance_window_target#owner_information CcMaintenanceWindowTarget#owner_information}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_maintenance_window_target#owner_information CcMaintenanceWindowTarget#owner_information}
     */
     readonly ownerInformation?: string;
     /**
     * The type of target that is being registered with the maintenance window.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ssm_maintenance_window_target#resource_type CcMaintenanceWindowTarget#resource_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_maintenance_window_target#resource_type CcMaintenanceWindowTarget#resource_type}
     */
     readonly resourceType: string;
     /**
     * The targets to register with the maintenance window.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ssm_maintenance_window_target#targets CcMaintenanceWindowTarget#targets}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_maintenance_window_target#targets CcMaintenanceWindowTarget#targets}
     */
     readonly targets: CcMaintenanceWindowTarget.TargetsProperty[] | cdktn.IResolvable;
     /**
     * The ID of the maintenance window to register the target with.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ssm_maintenance_window_target#window_id CcMaintenanceWindowTarget#window_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_maintenance_window_target#window_id CcMaintenanceWindowTarget#window_id}
     */
     readonly windowId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ssm_maintenance_window_target awscc_ssm_maintenance_window_target}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_maintenance_window_target awscc_ssm_maintenance_window_target}
 */
 export class CcMaintenanceWindowTarget extends cdktn.TerraformResource {
 
@@ -61,7 +61,7 @@ export class CcMaintenanceWindowTarget extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcMaintenanceWindowTarget resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcMaintenanceWindowTarget to import
-    * @param importFromId The id of the existing CcMaintenanceWindowTarget that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ssm_maintenance_window_target#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcMaintenanceWindowTarget that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_maintenance_window_target#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcMaintenanceWindowTarget to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -73,7 +73,7 @@ export class CcMaintenanceWindowTarget extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ssm_maintenance_window_target awscc_ssm_maintenance_window_target} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_maintenance_window_target awscc_ssm_maintenance_window_target} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -83,7 +83,8 @@ export class CcMaintenanceWindowTarget extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_ssm_maintenance_window_target',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -304,13 +305,13 @@ export interface TargetsProperty {
     /**
     * User-defined criteria for sending commands that target managed nodes that meet the criteria.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ssm_maintenance_window_target#key CcMaintenanceWindowTarget#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_maintenance_window_target#key CcMaintenanceWindowTarget#key}
     */
     readonly key: string;
     /**
     * User-defined criteria that maps to Key.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ssm_maintenance_window_target#values CcMaintenanceWindowTarget#values}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_maintenance_window_target#values CcMaintenanceWindowTarget#values}
     */
     readonly values: string[];
 }

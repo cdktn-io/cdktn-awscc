@@ -1,0 +1,99 @@
+name: build
+
+on:
+  pull_request: {}
+  push:
+    branches: [main]
+  workflow_dispatch: {}
+
+concurrency:
+  group: build-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions: {}
+
+env:
+  # jsii compiling all 276 submodules / 1,494 resources at once peaks in the multi-gigabyte range
+  # (measured 5.3-6.5 GB RSS — see docs/phase1-results.md); depot-ubuntu-24.04-8 is the 8 core /
+  # 32 GB runner the fleet's other heap-heavy providers (e.g. aws, datadog) use for the same reason.
+  NODE_OPTIONS: --max-old-space-size=16384
+
+jobs:
+  build:
+    runs-on: depot-ubuntu-24.04-8
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 11.17.0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+
+      - name: Setup Python (jsii-pacmak python target)
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: "Setup Terraform (schema fetch: @cdktn/provider-schema shells out to it)"
+        uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_wrapper: false
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      # schemas/PROVIDER_VERSION pins the awscc provider version generated/ was built from (see
+      # scripts/update-provider-schema.ts); cache on its content so a schema that hasn't changed
+      # doesn't get re-fetched (and re-run `terraform init`) on every build. upgrade.yml is the only
+      # workflow that intentionally fetches a *newer* version than this pin.
+      - name: Cache awscc provider schema
+        id: cache-schema
+        uses: actions/cache@v4
+        with:
+          path: schemas/schema.json
+          key: awscc-schema-${{ hashFiles('schemas/PROVIDER_VERSION') }}
+
+      - name: Fetch awscc provider schema (pinned version)
+        if: steps.cache-schema.outputs.cache-hit != 'true'
+        run: pnpm schema:fetch
+
+      - name: Build (tsc)
+        run: pnpm build
+
+      - name: Test
+        run: pnpm test
+
+      - name: Test (full schema regeneration + determinism + tsc gate)
+        run: RUN_FULL=1 pnpm test
+
+      # Regenerates generated/ from the pinned schema and fails if that differs from what's
+      # committed — the offline version of this check is `pnpm generate && git diff --stat
+      # generated/` (README.md, "Regenerating"). Runs after the schema is on disk and after the
+      # RUN_FULL suite has already proved the generator is deterministic and type-checks.
+      - name: Check generated/ is current
+        run: |
+          pnpm generate
+          git diff --exit-code -- generated/ || {
+            echo "::error::generated/ is stale — run 'pnpm schema:fetch && pnpm generate' locally and commit the result.";
+            exit 1;
+          }
+
+      - name: Package (js, python)
+        run: pnpm package --targets js,python
+
+      - name: Upload dist
+        uses: actions/upload-artifact@v4
+        with:
+          name: dist
+          path: dist
+          retention-days: 7
+          if-no-files-found: error

@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/logs_log_anomaly_detector
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/logs_log_anomaly_detector
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,45 +9,45 @@ export interface CcLogAnomalyDetectorProps extends cdktn.TerraformMetaArguments 
     /**
     * Account ID for owner of detector
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/logs_log_anomaly_detector#account_id CcLogAnomalyDetector#account_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/logs_log_anomaly_detector#account_id CcLogAnomalyDetector#account_id}
     */
     readonly accountId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/logs_log_anomaly_detector#anomaly_visibility_time CcLogAnomalyDetector#anomaly_visibility_time}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/logs_log_anomaly_detector#anomaly_visibility_time CcLogAnomalyDetector#anomaly_visibility_time}
     */
     readonly anomalyVisibilityTime?: number;
     /**
     * Name of detector
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/logs_log_anomaly_detector#detector_name CcLogAnomalyDetector#detector_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/logs_log_anomaly_detector#detector_name CcLogAnomalyDetector#detector_name}
     */
     readonly detectorName?: string;
     /**
     * How often log group is evaluated
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/logs_log_anomaly_detector#evaluation_frequency CcLogAnomalyDetector#evaluation_frequency}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/logs_log_anomaly_detector#evaluation_frequency CcLogAnomalyDetector#evaluation_frequency}
     */
     readonly evaluationFrequency?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/logs_log_anomaly_detector#filter_pattern CcLogAnomalyDetector#filter_pattern}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/logs_log_anomaly_detector#filter_pattern CcLogAnomalyDetector#filter_pattern}
     */
     readonly filterPattern?: string;
     /**
     * The Amazon Resource Name (ARN) of the CMK to use when encrypting log data.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/logs_log_anomaly_detector#kms_key_id CcLogAnomalyDetector#kms_key_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/logs_log_anomaly_detector#kms_key_id CcLogAnomalyDetector#kms_key_id}
     */
     readonly kmsKeyId?: string;
     /**
     * List of Arns for the given log group
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/logs_log_anomaly_detector#log_group_arn_list CcLogAnomalyDetector#log_group_arn_list}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/logs_log_anomaly_detector#log_group_arn_list CcLogAnomalyDetector#log_group_arn_list}
     */
     readonly logGroupArnList?: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/logs_log_anomaly_detector awscc_logs_log_anomaly_detector}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/logs_log_anomaly_detector awscc_logs_log_anomaly_detector}
 */
 export class CcLogAnomalyDetector extends cdktn.TerraformResource {
 
@@ -63,7 +63,7 @@ export class CcLogAnomalyDetector extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcLogAnomalyDetector resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcLogAnomalyDetector to import
-    * @param importFromId The id of the existing CcLogAnomalyDetector that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/logs_log_anomaly_detector#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcLogAnomalyDetector that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/logs_log_anomaly_detector#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcLogAnomalyDetector to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -75,7 +75,7 @@ export class CcLogAnomalyDetector extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/logs_log_anomaly_detector awscc_logs_log_anomaly_detector} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/logs_log_anomaly_detector awscc_logs_log_anomaly_detector} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -85,7 +85,8 @@ export class CcLogAnomalyDetector extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_logs_log_anomaly_detector',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,

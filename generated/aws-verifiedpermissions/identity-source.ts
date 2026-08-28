@@ -1,27 +1,27 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/verifiedpermissions_identity_source
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/verifiedpermissions_identity_source
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcIdentitySourceProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/verifiedpermissions_identity_source#configuration CcIdentitySource#configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/verifiedpermissions_identity_source#configuration CcIdentitySource#configuration}
     */
     readonly configuration: CcIdentitySource.IdentitySourceConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/verifiedpermissions_identity_source#policy_store_id CcIdentitySource#policy_store_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/verifiedpermissions_identity_source#policy_store_id CcIdentitySource#policy_store_id}
     */
     readonly policyStoreId: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/verifiedpermissions_identity_source#principal_entity_type CcIdentitySource#principal_entity_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/verifiedpermissions_identity_source#principal_entity_type CcIdentitySource#principal_entity_type}
     */
     readonly principalEntityType?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/verifiedpermissions_identity_source awscc_verifiedpermissions_identity_source}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/verifiedpermissions_identity_source awscc_verifiedpermissions_identity_source}
 */
 export class CcIdentitySource extends cdktn.TerraformResource {
 
@@ -37,7 +37,7 @@ export class CcIdentitySource extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcIdentitySource resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcIdentitySource to import
-    * @param importFromId The id of the existing CcIdentitySource that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/verifiedpermissions_identity_source#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcIdentitySource that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/verifiedpermissions_identity_source#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcIdentitySource to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -49,7 +49,7 @@ export class CcIdentitySource extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/verifiedpermissions_identity_source awscc_verifiedpermissions_identity_source} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/verifiedpermissions_identity_source awscc_verifiedpermissions_identity_source} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -59,7 +59,8 @@ export class CcIdentitySource extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_verifiedpermissions_identity_source',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -509,7 +510,7 @@ export function ccIdentitySourceDetailsPropertyToHclTerraform(struct?: CcIdentit
 export namespace CcIdentitySource {
 export interface CognitoGroupConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/verifiedpermissions_identity_source#group_entity_type CcIdentitySource#group_entity_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/verifiedpermissions_identity_source#group_entity_type CcIdentitySource#group_entity_type}
     */
     readonly groupEntityType?: string;
 }
@@ -573,15 +574,15 @@ export class CognitoGroupConfigurationPropertyOutputReference extends cdktn.Comp
 }
 export interface CognitoUserPoolConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/verifiedpermissions_identity_source#client_ids CcIdentitySource#client_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/verifiedpermissions_identity_source#client_ids CcIdentitySource#client_ids}
     */
     readonly clientIds?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/verifiedpermissions_identity_source#group_configuration CcIdentitySource#group_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/verifiedpermissions_identity_source#group_configuration CcIdentitySource#group_configuration}
     */
     readonly groupConfiguration?: CognitoGroupConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/verifiedpermissions_identity_source#user_pool_arn CcIdentitySource#user_pool_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/verifiedpermissions_identity_source#user_pool_arn CcIdentitySource#user_pool_arn}
     */
     readonly userPoolArn?: string;
 }
@@ -689,11 +690,11 @@ export class CognitoUserPoolConfigurationPropertyOutputReference extends cdktn.C
 }
 export interface OpenIdConnectGroupConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/verifiedpermissions_identity_source#group_claim CcIdentitySource#group_claim}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/verifiedpermissions_identity_source#group_claim CcIdentitySource#group_claim}
     */
     readonly groupClaim?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/verifiedpermissions_identity_source#group_entity_type CcIdentitySource#group_entity_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/verifiedpermissions_identity_source#group_entity_type CcIdentitySource#group_entity_type}
     */
     readonly groupEntityType?: string;
 }
@@ -779,11 +780,11 @@ export class OpenIdConnectGroupConfigurationPropertyOutputReference extends cdkt
 }
 export interface OpenIdConnectAccessTokenConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/verifiedpermissions_identity_source#audiences CcIdentitySource#audiences}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/verifiedpermissions_identity_source#audiences CcIdentitySource#audiences}
     */
     readonly audiences?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/verifiedpermissions_identity_source#principal_id_claim CcIdentitySource#principal_id_claim}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/verifiedpermissions_identity_source#principal_id_claim CcIdentitySource#principal_id_claim}
     */
     readonly principalIdClaim?: string;
 }
@@ -869,11 +870,11 @@ export class OpenIdConnectAccessTokenConfigurationPropertyOutputReference extend
 }
 export interface OpenIdConnectIdentityTokenConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/verifiedpermissions_identity_source#client_ids CcIdentitySource#client_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/verifiedpermissions_identity_source#client_ids CcIdentitySource#client_ids}
     */
     readonly clientIds?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/verifiedpermissions_identity_source#principal_id_claim CcIdentitySource#principal_id_claim}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/verifiedpermissions_identity_source#principal_id_claim CcIdentitySource#principal_id_claim}
     */
     readonly principalIdClaim?: string;
 }
@@ -959,11 +960,11 @@ export class OpenIdConnectIdentityTokenConfigurationPropertyOutputReference exte
 }
 export interface OpenIdConnectTokenSelectionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/verifiedpermissions_identity_source#access_token_only CcIdentitySource#access_token_only}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/verifiedpermissions_identity_source#access_token_only CcIdentitySource#access_token_only}
     */
     readonly accessTokenOnly?: OpenIdConnectAccessTokenConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/verifiedpermissions_identity_source#identity_token_only CcIdentitySource#identity_token_only}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/verifiedpermissions_identity_source#identity_token_only CcIdentitySource#identity_token_only}
     */
     readonly identityTokenOnly?: OpenIdConnectIdentityTokenConfigurationProperty;
 }
@@ -1049,19 +1050,19 @@ export class OpenIdConnectTokenSelectionPropertyOutputReference extends cdktn.Co
 }
 export interface OpenIdConnectConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/verifiedpermissions_identity_source#entity_id_prefix CcIdentitySource#entity_id_prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/verifiedpermissions_identity_source#entity_id_prefix CcIdentitySource#entity_id_prefix}
     */
     readonly entityIdPrefix?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/verifiedpermissions_identity_source#group_configuration CcIdentitySource#group_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/verifiedpermissions_identity_source#group_configuration CcIdentitySource#group_configuration}
     */
     readonly groupConfiguration?: OpenIdConnectGroupConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/verifiedpermissions_identity_source#issuer CcIdentitySource#issuer}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/verifiedpermissions_identity_source#issuer CcIdentitySource#issuer}
     */
     readonly issuer?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/verifiedpermissions_identity_source#token_selection CcIdentitySource#token_selection}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/verifiedpermissions_identity_source#token_selection CcIdentitySource#token_selection}
     */
     readonly tokenSelection?: OpenIdConnectTokenSelectionProperty;
 }
@@ -1191,11 +1192,11 @@ export class OpenIdConnectConfigurationPropertyOutputReference extends cdktn.Com
 }
 export interface IdentitySourceConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/verifiedpermissions_identity_source#cognito_user_pool_configuration CcIdentitySource#cognito_user_pool_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/verifiedpermissions_identity_source#cognito_user_pool_configuration CcIdentitySource#cognito_user_pool_configuration}
     */
     readonly cognitoUserPoolConfiguration?: CognitoUserPoolConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/verifiedpermissions_identity_source#open_id_connect_configuration CcIdentitySource#open_id_connect_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/verifiedpermissions_identity_source#open_id_connect_configuration CcIdentitySource#open_id_connect_configuration}
     */
     readonly openIdConnectConfiguration?: OpenIdConnectConfigurationProperty;
 }

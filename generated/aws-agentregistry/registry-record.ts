@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry_record
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry_record
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,55 +9,55 @@ export interface CcRegistryRecordProps extends cdktn.TerraformMetaArguments {
     /**
     * The description of the registry record.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry_record#description CcRegistryRecord#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry_record#description CcRegistryRecord#description}
     */
     readonly description?: string;
     /**
     * The typed set of descriptors for a registry record. Exactly one descriptor field is populated based on the record type.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry_record#descriptors CcRegistryRecord#descriptors}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry_record#descriptors CcRegistryRecord#descriptors}
     */
     readonly descriptors: CcRegistryRecord.DescriptorsProperty;
     /**
     * The human-readable display name of the registry record.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry_record#display_name CcRegistryRecord#display_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry_record#display_name CcRegistryRecord#display_name}
     */
     readonly displayName?: string;
     /**
     * The name of the registry record.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry_record#name CcRegistryRecord#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry_record#name CcRegistryRecord#name}
     */
     readonly name: string;
     /**
     * The type of the registry record.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry_record#record_type CcRegistryRecord#record_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry_record#record_type CcRegistryRecord#record_type}
     */
     readonly recordType: string;
     /**
     * The version of the registry record.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry_record#record_version CcRegistryRecord#record_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry_record#record_version CcRegistryRecord#record_version}
     */
     readonly recordVersion?: string;
     /**
     * The identifier of the registry containing the record.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry_record#registry_id CcRegistryRecord#registry_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry_record#registry_id CcRegistryRecord#registry_id}
     */
     readonly registryId: string;
     /**
     * Tags to assign to the registry record.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry_record#tags CcRegistryRecord#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry_record#tags CcRegistryRecord#tags}
     */
     readonly tags?: CcRegistryRecord.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry_record awscc_agentregistry_registry_record}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry_record awscc_agentregistry_registry_record}
 */
 export class CcRegistryRecord extends cdktn.TerraformResource {
 
@@ -73,7 +73,7 @@ export class CcRegistryRecord extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcRegistryRecord resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcRegistryRecord to import
-    * @param importFromId The id of the existing CcRegistryRecord that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry_record#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcRegistryRecord that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry_record#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcRegistryRecord to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -85,7 +85,7 @@ export class CcRegistryRecord extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry_record awscc_agentregistry_registry_record} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry_record awscc_agentregistry_registry_record} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -95,7 +95,8 @@ export class CcRegistryRecord extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_agentregistry_registry_record',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -1279,19 +1280,19 @@ export interface RegistryRecordIamCredentialProviderProperty {
     /**
     * The SigV4 signing region.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry_record#region CcRegistryRecord#region}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry_record#region CcRegistryRecord#region}
     */
     readonly region?: string;
     /**
     * The ARN of the IAM role.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry_record#role_arn CcRegistryRecord#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry_record#role_arn CcRegistryRecord#role_arn}
     */
     readonly roleArn?: string;
     /**
     * The SigV4 signing service name.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry_record#service CcRegistryRecord#service}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry_record#service CcRegistryRecord#service}
     */
     readonly service?: string;
 }
@@ -1401,23 +1402,23 @@ export interface RegistryRecordOAuthCredentialProviderProperty {
     /**
     * Additional custom parameters for the OAuth flow.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry_record#custom_parameters CcRegistryRecord#custom_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry_record#custom_parameters CcRegistryRecord#custom_parameters}
     */
     readonly customParameters?: { [key: string]: string };
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry_record#grant_type CcRegistryRecord#grant_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry_record#grant_type CcRegistryRecord#grant_type}
     */
     readonly grantType?: string;
     /**
     * The ARN of the OAuth credential provider.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry_record#provider_arn CcRegistryRecord#provider_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry_record#provider_arn CcRegistryRecord#provider_arn}
     */
     readonly providerArn?: string;
     /**
     * OAuth scopes to request.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry_record#scopes CcRegistryRecord#scopes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry_record#scopes CcRegistryRecord#scopes}
     */
     readonly scopes?: string[];
 }
@@ -1549,13 +1550,13 @@ export interface RegistryRecordCredentialProviderUnionProperty {
     /**
     * IAM credential provider configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry_record#iam_credential_provider CcRegistryRecord#iam_credential_provider}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry_record#iam_credential_provider CcRegistryRecord#iam_credential_provider}
     */
     readonly iamCredentialProvider?: RegistryRecordIamCredentialProviderProperty;
     /**
     * OAuth credential provider configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry_record#oauth_credential_provider CcRegistryRecord#oauth_credential_provider}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry_record#oauth_credential_provider CcRegistryRecord#oauth_credential_provider}
     */
     readonly oauthCredentialProvider?: RegistryRecordOAuthCredentialProviderProperty;
 }
@@ -1643,11 +1644,11 @@ export interface RegistryRecordCredentialProviderConfigurationProperty {
     /**
     * The credential provider details. Specify exactly one member.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry_record#credential_provider CcRegistryRecord#credential_provider}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry_record#credential_provider CcRegistryRecord#credential_provider}
     */
     readonly credentialProvider?: RegistryRecordCredentialProviderUnionProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry_record#credential_provider_type CcRegistryRecord#credential_provider_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry_record#credential_provider_type CcRegistryRecord#credential_provider_type}
     */
     readonly credentialProviderType?: string;
 }
@@ -1757,13 +1758,13 @@ export interface DescriptorSourceFromUrlProperty {
     /**
     * The credential providers used to authenticate when fetching descriptor content from the source URL.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry_record#credential_provider_configurations CcRegistryRecord#credential_provider_configurations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry_record#credential_provider_configurations CcRegistryRecord#credential_provider_configurations}
     */
     readonly credentialProviderConfigurations?: RegistryRecordCredentialProviderConfigurationProperty[] | cdktn.IResolvable;
     /**
     * URL source for descriptor content.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry_record#url CcRegistryRecord#url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry_record#url CcRegistryRecord#url}
     */
     readonly url?: string;
 }
@@ -1851,7 +1852,7 @@ export interface DescriptorSourceProperty {
     /**
     * URL-based descriptor source configuration, with credential provider configurations for authenticated URL retrieval.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry_record#from_url CcRegistryRecord#from_url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry_record#from_url CcRegistryRecord#from_url}
     */
     readonly fromUrl?: DescriptorSourceFromUrlProperty;
 }
@@ -1917,19 +1918,19 @@ export interface A2aAgentCardDescriptorProperty {
     /**
     * Descriptor payload data.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry_record#data CcRegistryRecord#data}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry_record#data CcRegistryRecord#data}
     */
     readonly data?: string;
     /**
     * Version of the descriptor type schema.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry_record#data_schema_version CcRegistryRecord#data_schema_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry_record#data_schema_version CcRegistryRecord#data_schema_version}
     */
     readonly dataSchemaVersion?: string;
     /**
     * The source configuration that defines where descriptor content is retrieved from.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry_record#source CcRegistryRecord#source}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry_record#source CcRegistryRecord#source}
     */
     readonly source?: DescriptorSourceProperty;
 }
@@ -2039,7 +2040,7 @@ export interface SkillMdSourceFromUrlProperty {
     /**
     * URL source for the SkillMd document.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry_record#url CcRegistryRecord#url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry_record#url CcRegistryRecord#url}
     */
     readonly url?: string;
 }
@@ -2105,7 +2106,7 @@ export interface SkillMdSourceProperty {
     /**
     * URL-based source for SkillMd content (sync is skipped; content is provided inline via Data).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry_record#from_url CcRegistryRecord#from_url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry_record#from_url CcRegistryRecord#from_url}
     */
     readonly fromUrl?: SkillMdSourceFromUrlProperty;
 }
@@ -2171,19 +2172,19 @@ export interface AgentSkillsMdDescriptorProperty {
     /**
     * Descriptor payload data.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry_record#data CcRegistryRecord#data}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry_record#data CcRegistryRecord#data}
     */
     readonly data?: string;
     /**
     * Version of the descriptor type schema.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry_record#data_schema_version CcRegistryRecord#data_schema_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry_record#data_schema_version CcRegistryRecord#data_schema_version}
     */
     readonly dataSchemaVersion?: string;
     /**
     * Source configuration for a SkillMd document. Unlike MCP/A2A sources, SkillMd does not support credential providers.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry_record#source CcRegistryRecord#source}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry_record#source CcRegistryRecord#source}
     */
     readonly source?: SkillMdSourceProperty;
 }
@@ -2293,7 +2294,7 @@ export interface AgentSkillsAdditionalDataProperty {
     /**
     * Markdown-format descriptor containing an agent skills document.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry_record#skill_md CcRegistryRecord#skill_md}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry_record#skill_md CcRegistryRecord#skill_md}
     */
     readonly skillMd?: AgentSkillsMdDescriptorProperty;
 }
@@ -2359,19 +2360,19 @@ export interface AgentSkillsDefinitionDescriptorProperty {
     /**
     * Additional data associated with an agent skills definition descriptor.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry_record#additional_data CcRegistryRecord#additional_data}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry_record#additional_data CcRegistryRecord#additional_data}
     */
     readonly additionalData?: AgentSkillsAdditionalDataProperty;
     /**
     * Descriptor payload data.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry_record#data CcRegistryRecord#data}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry_record#data CcRegistryRecord#data}
     */
     readonly data?: string;
     /**
     * Version of the descriptor type schema.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry_record#data_schema_version CcRegistryRecord#data_schema_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry_record#data_schema_version CcRegistryRecord#data_schema_version}
     */
     readonly dataSchemaVersion?: string;
 }
@@ -2481,7 +2482,7 @@ export interface CustomDescriptorProperty {
     /**
     * Descriptor payload data.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry_record#data CcRegistryRecord#data}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry_record#data CcRegistryRecord#data}
     */
     readonly data?: string;
 }
@@ -2547,13 +2548,13 @@ export interface McpToolsDescriptorProperty {
     /**
     * Descriptor payload data.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry_record#data CcRegistryRecord#data}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry_record#data CcRegistryRecord#data}
     */
     readonly data?: string;
     /**
     * Version of the tools descriptor schema.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry_record#data_schema_version CcRegistryRecord#data_schema_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry_record#data_schema_version CcRegistryRecord#data_schema_version}
     */
     readonly dataSchemaVersion?: string;
 }
@@ -2641,7 +2642,7 @@ export interface McpServerAdditionalDataProperty {
     /**
     * The MCP tools descriptor.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry_record#tools CcRegistryRecord#tools}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry_record#tools CcRegistryRecord#tools}
     */
     readonly tools?: McpToolsDescriptorProperty;
 }
@@ -2707,19 +2708,19 @@ export interface IamCredentialProviderProperty {
     /**
     * The SigV4 signing region.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry_record#region CcRegistryRecord#region}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry_record#region CcRegistryRecord#region}
     */
     readonly region?: string;
     /**
     * The ARN of the IAM role.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry_record#role_arn CcRegistryRecord#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry_record#role_arn CcRegistryRecord#role_arn}
     */
     readonly roleArn?: string;
     /**
     * The SigV4 signing service name.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry_record#service CcRegistryRecord#service}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry_record#service CcRegistryRecord#service}
     */
     readonly service?: string;
 }
@@ -2829,23 +2830,23 @@ export interface OauthCredentialProviderProperty {
     /**
     * Additional custom parameters for the OAuth flow.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry_record#custom_parameters CcRegistryRecord#custom_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry_record#custom_parameters CcRegistryRecord#custom_parameters}
     */
     readonly customParameters?: { [key: string]: string };
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry_record#grant_type CcRegistryRecord#grant_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry_record#grant_type CcRegistryRecord#grant_type}
     */
     readonly grantType?: string;
     /**
     * The ARN of the OAuth credential provider.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry_record#provider_arn CcRegistryRecord#provider_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry_record#provider_arn CcRegistryRecord#provider_arn}
     */
     readonly providerArn?: string;
     /**
     * OAuth scopes to request.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry_record#scopes CcRegistryRecord#scopes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry_record#scopes CcRegistryRecord#scopes}
     */
     readonly scopes?: string[];
 }
@@ -2977,13 +2978,13 @@ export interface CredentialProviderProperty {
     /**
     * IAM credential provider configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry_record#iam_credential_provider CcRegistryRecord#iam_credential_provider}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry_record#iam_credential_provider CcRegistryRecord#iam_credential_provider}
     */
     readonly iamCredentialProvider?: IamCredentialProviderProperty;
     /**
     * OAuth credential provider configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry_record#oauth_credential_provider CcRegistryRecord#oauth_credential_provider}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry_record#oauth_credential_provider CcRegistryRecord#oauth_credential_provider}
     */
     readonly oauthCredentialProvider?: OauthCredentialProviderProperty;
 }
@@ -3071,11 +3072,11 @@ export interface CredentialProviderConfigurationsProperty {
     /**
     * The credential provider details. Specify exactly one member.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry_record#credential_provider CcRegistryRecord#credential_provider}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry_record#credential_provider CcRegistryRecord#credential_provider}
     */
     readonly credentialProvider?: CredentialProviderProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry_record#credential_provider_type CcRegistryRecord#credential_provider_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry_record#credential_provider_type CcRegistryRecord#credential_provider_type}
     */
     readonly credentialProviderType?: string;
 }
@@ -3185,13 +3186,13 @@ export interface FromUrlProperty {
     /**
     * The credential providers used to authenticate when fetching descriptor content from the source URL.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry_record#credential_provider_configurations CcRegistryRecord#credential_provider_configurations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry_record#credential_provider_configurations CcRegistryRecord#credential_provider_configurations}
     */
     readonly credentialProviderConfigurations?: CredentialProviderConfigurationsProperty[] | cdktn.IResolvable;
     /**
     * URL source for descriptor content.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry_record#url CcRegistryRecord#url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry_record#url CcRegistryRecord#url}
     */
     readonly url?: string;
 }
@@ -3279,7 +3280,7 @@ export interface SourceProperty {
     /**
     * URL-based descriptor source configuration, with credential provider configurations for authenticated URL retrieval.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry_record#from_url CcRegistryRecord#from_url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry_record#from_url CcRegistryRecord#from_url}
     */
     readonly fromUrl?: FromUrlProperty;
 }
@@ -3345,25 +3346,25 @@ export interface McpServerDescriptorProperty {
     /**
     * Additional data associated with an MCP server descriptor.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry_record#additional_data CcRegistryRecord#additional_data}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry_record#additional_data CcRegistryRecord#additional_data}
     */
     readonly additionalData?: McpServerAdditionalDataProperty;
     /**
     * Descriptor payload data.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry_record#data CcRegistryRecord#data}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry_record#data CcRegistryRecord#data}
     */
     readonly data?: string;
     /**
     * Version of the descriptor type schema.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry_record#data_schema_version CcRegistryRecord#data_schema_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry_record#data_schema_version CcRegistryRecord#data_schema_version}
     */
     readonly dataSchemaVersion?: string;
     /**
     * The source configuration that defines where descriptor content is retrieved from.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry_record#source CcRegistryRecord#source}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry_record#source CcRegistryRecord#source}
     */
     readonly source?: SourceProperty;
 }
@@ -3495,25 +3496,25 @@ export interface DescriptorsProperty {
     /**
     * The A2A agent card descriptor, populated when the record type is AGENT.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry_record#a2_a_agent_card CcRegistryRecord#a2_a_agent_card}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry_record#a2_a_agent_card CcRegistryRecord#a2_a_agent_card}
     */
     readonly a2AAgentCard?: A2aAgentCardDescriptorProperty;
     /**
     * The agent skills definition descriptor, populated when the record type is SKILL.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry_record#agent_skills_definition CcRegistryRecord#agent_skills_definition}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry_record#agent_skills_definition CcRegistryRecord#agent_skills_definition}
     */
     readonly agentSkillsDefinition?: AgentSkillsDefinitionDescriptorProperty;
     /**
     * The custom descriptor, populated when the record type is CUSTOM.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry_record#custom CcRegistryRecord#custom}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry_record#custom CcRegistryRecord#custom}
     */
     readonly custom?: CustomDescriptorProperty;
     /**
     * The MCP server descriptor, populated when the record type is MCP.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry_record#mcp_server CcRegistryRecord#mcp_server}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry_record#mcp_server CcRegistryRecord#mcp_server}
     */
     readonly mcpServer?: McpServerDescriptorProperty;
 }
@@ -3645,13 +3646,13 @@ export interface TagProperty {
     /**
     * The key of the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry_record#key CcRegistryRecord#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry_record#key CcRegistryRecord#key}
     */
     readonly key?: string;
     /**
     * The value of the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/agentregistry_registry_record#value CcRegistryRecord#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/agentregistry_registry_record#value CcRegistryRecord#value}
     */
     readonly value?: string;
 }

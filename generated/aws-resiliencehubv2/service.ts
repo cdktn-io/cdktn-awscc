@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehubv2_service
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehubv2_service
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,77 +9,77 @@ export interface CcServiceProps extends cdktn.TerraformMetaArguments {
     /**
     * Assertions associated with this service.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehubv2_service#assertions CcService#assertions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehubv2_service#assertions CcService#assertions}
     */
     readonly assertions?: CcService.AssertionDefinitionProperty[] | cdktn.IResolvable;
     /**
     * Systems associated with this service.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehubv2_service#associated_systems CcService#associated_systems}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehubv2_service#associated_systems CcService#associated_systems}
     */
     readonly associatedSystems?: CcService.AssociatedSystemProperty[] | cdktn.IResolvable;
     /**
     * Dependency discovery state.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehubv2_service#dependency_discovery CcService#dependency_discovery}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehubv2_service#dependency_discovery CcService#dependency_discovery}
     */
     readonly dependencyDiscovery?: string;
     /**
     * The description of the service.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehubv2_service#description CcService#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehubv2_service#description CcService#description}
     */
     readonly description?: string;
     /**
     * Input sources for this service.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehubv2_service#input_sources CcService#input_sources}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehubv2_service#input_sources CcService#input_sources}
     */
     readonly inputSources?: CcService.InputSourceDefinitionProperty[] | cdktn.IResolvable;
     /**
     * The KMS key ID for encrypting service data.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehubv2_service#kms_key_id CcService#kms_key_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehubv2_service#kms_key_id CcService#kms_key_id}
     */
     readonly kmsKeyId?: string;
     /**
     * The name of the service.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehubv2_service#name CcService#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehubv2_service#name CcService#name}
     */
     readonly name: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehubv2_service#permission_model CcService#permission_model}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehubv2_service#permission_model CcService#permission_model}
     */
     readonly permissionModel?: CcService.PermissionModelProperty;
     /**
     * The ARN of the resilience policy to associate.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehubv2_service#policy_arn CcService#policy_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehubv2_service#policy_arn CcService#policy_arn}
     */
     readonly policyArn?: string;
     /**
     * AWS regions for the service.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehubv2_service#regions CcService#regions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehubv2_service#regions CcService#regions}
     */
     readonly regions: string[];
     /**
     * Configuration for automatic report generation on a Service.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehubv2_service#report_configuration CcService#report_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehubv2_service#report_configuration CcService#report_configuration}
     */
     readonly reportConfiguration?: CcService.ServiceReportConfigurationProperty;
     /**
     * Tags assigned to the service.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehubv2_service#tags CcService#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehubv2_service#tags CcService#tags}
     */
     readonly tags?: CcService.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehubv2_service awscc_resiliencehubv2_service}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehubv2_service awscc_resiliencehubv2_service}
 */
 export class CcService extends cdktn.TerraformResource {
 
@@ -95,7 +95,7 @@ export class CcService extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcService resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcService to import
-    * @param importFromId The id of the existing CcService that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehubv2_service#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcService that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehubv2_service#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcService to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -107,7 +107,7 @@ export class CcService extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehubv2_service awscc_resiliencehubv2_service} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehubv2_service awscc_resiliencehubv2_service} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -117,7 +117,8 @@ export class CcService extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_resiliencehubv2_service',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -1069,7 +1070,7 @@ export interface AssertionDefinitionProperty {
     /**
     * The text of the assertion.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehubv2_service#text CcService#text}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehubv2_service#text CcService#text}
     */
     readonly text?: string;
 }
@@ -1157,13 +1158,13 @@ export interface AssociatedSystemProperty {
     /**
     * The system ARN.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehubv2_service#system_arn CcService#system_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehubv2_service#system_arn CcService#system_arn}
     */
     readonly systemArn?: string;
     /**
     * User journey IDs associated with this system.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehubv2_service#user_journey_ids CcService#user_journey_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehubv2_service#user_journey_ids CcService#user_journey_ids}
     */
     readonly userJourneyIds?: string[];
 }
@@ -1609,13 +1610,13 @@ export interface EksSourceProperty {
     /**
     * ARN of the EKS cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehubv2_service#cluster_arn CcService#cluster_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehubv2_service#cluster_arn CcService#cluster_arn}
     */
     readonly clusterArn?: string;
     /**
     * EKS namespaces.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehubv2_service#namespaces CcService#namespaces}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehubv2_service#namespaces CcService#namespaces}
     */
     readonly namespaces?: string[];
 }
@@ -1703,13 +1704,13 @@ export interface ResourceTagProperty {
     /**
     * Tag key.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehubv2_service#key CcService#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehubv2_service#key CcService#key}
     */
     readonly key?: string;
     /**
     * Tag values.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehubv2_service#values CcService#values}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehubv2_service#values CcService#values}
     */
     readonly values?: string[];
 }
@@ -1819,29 +1820,29 @@ export interface ResourceConfigurationProperty {
     /**
     * ARN of a CloudFormation stack.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehubv2_service#cfn_stack_arn CcService#cfn_stack_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehubv2_service#cfn_stack_arn CcService#cfn_stack_arn}
     */
     readonly cfnStackArn?: string;
     /**
     * S3 URL of a design file.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehubv2_service#design_file_s3_url CcService#design_file_s3_url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehubv2_service#design_file_s3_url CcService#design_file_s3_url}
     */
     readonly designFileS3Url?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehubv2_service#eks CcService#eks}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehubv2_service#eks CcService#eks}
     */
     readonly eks?: EksSourceProperty;
     /**
     * Resource tags to discover resources.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehubv2_service#resource_tags CcService#resource_tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehubv2_service#resource_tags CcService#resource_tags}
     */
     readonly resourceTags?: ResourceTagProperty[] | cdktn.IResolvable;
     /**
     * URL of a Terraform state file.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehubv2_service#tf_state_file_url CcService#tf_state_file_url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehubv2_service#tf_state_file_url CcService#tf_state_file_url}
     */
     readonly tfStateFileUrl?: string;
 }
@@ -1995,7 +1996,7 @@ export interface InputSourceDefinitionProperty {
     /**
     * Resource configuration for an input source. Provide exactly one field.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehubv2_service#resource_configuration CcService#resource_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehubv2_service#resource_configuration CcService#resource_configuration}
     */
     readonly resourceConfiguration?: ResourceConfigurationProperty;
 }
@@ -2083,13 +2084,13 @@ export interface CrossAccountRoleConfigurationProperty {
     /**
     * ARN of the cross-account IAM role.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehubv2_service#cross_account_role_arn CcService#cross_account_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehubv2_service#cross_account_role_arn CcService#cross_account_role_arn}
     */
     readonly crossAccountRoleArn?: string;
     /**
     * External ID for cross-account access.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehubv2_service#external_id CcService#external_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehubv2_service#external_id CcService#external_id}
     */
     readonly externalId?: string;
 }
@@ -2199,13 +2200,13 @@ export interface PermissionModelProperty {
     /**
     * Cross-account role ARNs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehubv2_service#cross_account_role_arns CcService#cross_account_role_arns}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehubv2_service#cross_account_role_arns CcService#cross_account_role_arns}
     */
     readonly crossAccountRoleArns?: CrossAccountRoleConfigurationProperty[] | cdktn.IResolvable;
     /**
     * Name of the invoker IAM role.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehubv2_service#invoker_role_name CcService#invoker_role_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehubv2_service#invoker_role_name CcService#invoker_role_name}
     */
     readonly invokerRoleName?: string;
 }
@@ -2293,13 +2294,13 @@ export interface S3ReportOutputConfigurationProperty {
     /**
     * Account ID of the bucket owner.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehubv2_service#bucket_owner CcService#bucket_owner}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehubv2_service#bucket_owner CcService#bucket_owner}
     */
     readonly bucketOwner?: string;
     /**
     * S3 bucket path where reports will be written.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehubv2_service#bucket_path CcService#bucket_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehubv2_service#bucket_path CcService#bucket_path}
     */
     readonly bucketPath?: string;
 }
@@ -2387,7 +2388,7 @@ export interface ReportOutputConfigurationProperty {
     /**
     * S3 configuration for report output.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehubv2_service#s3 CcService#s3}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehubv2_service#s3 CcService#s3}
     */
     readonly s3?: S3ReportOutputConfigurationProperty;
 }
@@ -2475,7 +2476,7 @@ export interface ServiceReportConfigurationProperty {
     /**
     * Output destinations for generated reports.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehubv2_service#report_output CcService#report_output}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehubv2_service#report_output CcService#report_output}
     */
     readonly reportOutput?: ReportOutputConfigurationProperty[] | cdktn.IResolvable;
 }
@@ -2541,13 +2542,13 @@ export interface TagProperty {
     /**
     * The tag key.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehubv2_service#key CcService#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehubv2_service#key CcService#key}
     */
     readonly key?: string;
     /**
     * The tag value.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehubv2_service#value CcService#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehubv2_service#value CcService#value}
     */
     readonly value?: string;
 }

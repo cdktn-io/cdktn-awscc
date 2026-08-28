@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_studio_lifecycle_config
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_studio_lifecycle_config
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,31 +9,31 @@ export interface CcStudioLifecycleConfigProps extends cdktn.TerraformMetaArgumen
     /**
     * The App type that the Lifecycle Configuration is attached to.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_studio_lifecycle_config#studio_lifecycle_config_app_type CcStudioLifecycleConfig#studio_lifecycle_config_app_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_studio_lifecycle_config#studio_lifecycle_config_app_type CcStudioLifecycleConfig#studio_lifecycle_config_app_type}
     */
     readonly studioLifecycleConfigAppType: string;
     /**
     * The content of your Amazon SageMaker Studio Lifecycle Configuration script. This content must be base64 encoded.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_studio_lifecycle_config#studio_lifecycle_config_content CcStudioLifecycleConfig#studio_lifecycle_config_content}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_studio_lifecycle_config#studio_lifecycle_config_content CcStudioLifecycleConfig#studio_lifecycle_config_content}
     */
     readonly studioLifecycleConfigContent: string;
     /**
     * The name of the Amazon SageMaker Studio Lifecycle Configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_studio_lifecycle_config#studio_lifecycle_config_name CcStudioLifecycleConfig#studio_lifecycle_config_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_studio_lifecycle_config#studio_lifecycle_config_name CcStudioLifecycleConfig#studio_lifecycle_config_name}
     */
     readonly studioLifecycleConfigName: string;
     /**
     * Tags to be associated with the Lifecycle Configuration. Each tag consists of a key and an optional value. Tag keys must be unique per resource. Tags are searchable using the Search API.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_studio_lifecycle_config#tags CcStudioLifecycleConfig#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_studio_lifecycle_config#tags CcStudioLifecycleConfig#tags}
     */
     readonly tags?: CcStudioLifecycleConfig.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_studio_lifecycle_config awscc_sagemaker_studio_lifecycle_config}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_studio_lifecycle_config awscc_sagemaker_studio_lifecycle_config}
 */
 export class CcStudioLifecycleConfig extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CcStudioLifecycleConfig extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcStudioLifecycleConfig resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcStudioLifecycleConfig to import
-    * @param importFromId The id of the existing CcStudioLifecycleConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_studio_lifecycle_config#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcStudioLifecycleConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_studio_lifecycle_config#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcStudioLifecycleConfig to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CcStudioLifecycleConfig extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_studio_lifecycle_config awscc_sagemaker_studio_lifecycle_config} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_studio_lifecycle_config awscc_sagemaker_studio_lifecycle_config} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -71,7 +71,8 @@ export class CcStudioLifecycleConfig extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_sagemaker_studio_lifecycle_config',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -242,11 +243,11 @@ export function ccStudioLifecycleConfigTagPropertyToHclTerraform(struct?: CcStud
 export namespace CcStudioLifecycleConfig {
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_studio_lifecycle_config#key CcStudioLifecycleConfig#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_studio_lifecycle_config#key CcStudioLifecycleConfig#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_studio_lifecycle_config#value CcStudioLifecycleConfig#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_studio_lifecycle_config#value CcStudioLifecycleConfig#value}
     */
     readonly value?: string;
 }

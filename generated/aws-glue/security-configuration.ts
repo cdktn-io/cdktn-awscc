@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_security_configuration
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_security_configuration
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,19 +9,19 @@ export interface CcSecurityConfigurationProps extends cdktn.TerraformMetaArgumen
     /**
     * The encryption configuration for the security configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_security_configuration#encryption_configuration CcSecurityConfiguration#encryption_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_security_configuration#encryption_configuration CcSecurityConfiguration#encryption_configuration}
     */
     readonly encryptionConfiguration: CcSecurityConfiguration.EncryptionConfigurationProperty;
     /**
     * The name for the security configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_security_configuration#name CcSecurityConfiguration#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_security_configuration#name CcSecurityConfiguration#name}
     */
     readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_security_configuration awscc_glue_security_configuration}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_security_configuration awscc_glue_security_configuration}
 */
 export class CcSecurityConfiguration extends cdktn.TerraformResource {
 
@@ -37,7 +37,7 @@ export class CcSecurityConfiguration extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcSecurityConfiguration resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcSecurityConfiguration to import
-    * @param importFromId The id of the existing CcSecurityConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_security_configuration#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcSecurityConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_security_configuration#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcSecurityConfiguration to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -49,7 +49,7 @@ export class CcSecurityConfiguration extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_security_configuration awscc_glue_security_configuration} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_security_configuration awscc_glue_security_configuration} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -59,7 +59,8 @@ export class CcSecurityConfiguration extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_glue_security_configuration',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -298,11 +299,11 @@ export function ccSecurityConfigurationEncryptionConfigurationPropertyToHclTerra
 export namespace CcSecurityConfiguration {
 export interface CloudWatchEncryptionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_security_configuration#cloudwatch_encryption_mode CcSecurityConfiguration#cloudwatch_encryption_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_security_configuration#cloudwatch_encryption_mode CcSecurityConfiguration#cloudwatch_encryption_mode}
     */
     readonly cloudwatchEncryptionMode?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_security_configuration#kms_key_arn CcSecurityConfiguration#kms_key_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_security_configuration#kms_key_arn CcSecurityConfiguration#kms_key_arn}
     */
     readonly kmsKeyArn?: string;
 }
@@ -388,11 +389,11 @@ export class CloudWatchEncryptionPropertyOutputReference extends cdktn.ComplexOb
 }
 export interface JobBookmarksEncryptionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_security_configuration#job_bookmarks_encryption_mode CcSecurityConfiguration#job_bookmarks_encryption_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_security_configuration#job_bookmarks_encryption_mode CcSecurityConfiguration#job_bookmarks_encryption_mode}
     */
     readonly jobBookmarksEncryptionMode?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_security_configuration#kms_key_arn CcSecurityConfiguration#kms_key_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_security_configuration#kms_key_arn CcSecurityConfiguration#kms_key_arn}
     */
     readonly kmsKeyArn?: string;
 }
@@ -478,11 +479,11 @@ export class JobBookmarksEncryptionPropertyOutputReference extends cdktn.Complex
 }
 export interface S3EncryptionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_security_configuration#kms_key_arn CcSecurityConfiguration#kms_key_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_security_configuration#kms_key_arn CcSecurityConfiguration#kms_key_arn}
     */
     readonly kmsKeyArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_security_configuration#s3_encryption_mode CcSecurityConfiguration#s3_encryption_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_security_configuration#s3_encryption_mode CcSecurityConfiguration#s3_encryption_mode}
     */
     readonly s3EncryptionMode?: string;
 }
@@ -592,19 +593,19 @@ export interface EncryptionConfigurationProperty {
     /**
     * The encryption configuration for Amazon CloudWatch.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_security_configuration#cloudwatch_encryption CcSecurityConfiguration#cloudwatch_encryption}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_security_configuration#cloudwatch_encryption CcSecurityConfiguration#cloudwatch_encryption}
     */
     readonly cloudwatchEncryption?: CloudWatchEncryptionProperty;
     /**
     * The encryption configuration for job bookmarks.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_security_configuration#job_bookmarks_encryption CcSecurityConfiguration#job_bookmarks_encryption}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_security_configuration#job_bookmarks_encryption CcSecurityConfiguration#job_bookmarks_encryption}
     */
     readonly jobBookmarksEncryption?: JobBookmarksEncryptionProperty;
     /**
     * The encryption configuration for Amazon Simple Storage Service (Amazon S3) data.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_security_configuration#s3_encryptions CcSecurityConfiguration#s3_encryptions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_security_configuration#s3_encryptions CcSecurityConfiguration#s3_encryptions}
     */
     readonly s3Encryptions?: S3EncryptionProperty[] | cdktn.IResolvable;
 }

@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_browser_custom
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_browser_custom
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,61 +9,61 @@ export interface CcBrowserCustomProps extends cdktn.TerraformMetaArguments {
     /**
     * Browser signing configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_browser_custom#browser_signing CcBrowserCustom#browser_signing}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_browser_custom#browser_signing CcBrowserCustom#browser_signing}
     */
     readonly browserSigning?: CcBrowserCustom.BrowserSigningProperty;
     /**
     * List of root CA certificates in PEM format.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_browser_custom#certificates CcBrowserCustom#certificates}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_browser_custom#certificates CcBrowserCustom#certificates}
     */
     readonly certificates?: CcBrowserCustom.CertificateProperty[] | cdktn.IResolvable;
     /**
     * The description of the browser.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_browser_custom#description CcBrowserCustom#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_browser_custom#description CcBrowserCustom#description}
     */
     readonly description?: string;
     /**
     * A list of enterprise policy files for the browser.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_browser_custom#enterprise_policies CcBrowserCustom#enterprise_policies}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_browser_custom#enterprise_policies CcBrowserCustom#enterprise_policies}
     */
     readonly enterprisePolicies?: CcBrowserCustom.BrowserEnterprisePolicyProperty[] | cdktn.IResolvable;
     /**
     * The Amazon Resource Name (ARN) of the IAM role that the browser uses to access resources.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_browser_custom#execution_role_arn CcBrowserCustom#execution_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_browser_custom#execution_role_arn CcBrowserCustom#execution_role_arn}
     */
     readonly executionRoleArn?: string;
     /**
     * The name of the browser.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_browser_custom#name CcBrowserCustom#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_browser_custom#name CcBrowserCustom#name}
     */
     readonly name: string;
     /**
     * Network configuration for browser.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_browser_custom#network_configuration CcBrowserCustom#network_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_browser_custom#network_configuration CcBrowserCustom#network_configuration}
     */
     readonly networkConfiguration: CcBrowserCustom.BrowserNetworkConfigurationProperty;
     /**
     * Recording configuration for browser.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_browser_custom#recording_config CcBrowserCustom#recording_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_browser_custom#recording_config CcBrowserCustom#recording_config}
     */
     readonly recordingConfig?: CcBrowserCustom.RecordingConfigProperty;
     /**
     * A map of tag keys and values
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_browser_custom#tags CcBrowserCustom#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_browser_custom#tags CcBrowserCustom#tags}
     */
     readonly tags?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_browser_custom awscc_bedrockagentcore_browser_custom}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_browser_custom awscc_bedrockagentcore_browser_custom}
 */
 export class CcBrowserCustom extends cdktn.TerraformResource {
 
@@ -79,7 +79,7 @@ export class CcBrowserCustom extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcBrowserCustom resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcBrowserCustom to import
-    * @param importFromId The id of the existing CcBrowserCustom that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_browser_custom#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcBrowserCustom that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_browser_custom#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcBrowserCustom to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -91,7 +91,7 @@ export class CcBrowserCustom extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_browser_custom awscc_bedrockagentcore_browser_custom} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_browser_custom awscc_bedrockagentcore_browser_custom} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -101,7 +101,8 @@ export class CcBrowserCustom extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_bedrockagentcore_browser_custom',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -695,7 +696,7 @@ export function ccBrowserCustomRecordingConfigPropertyToHclTerraform(struct?: Cc
 export namespace CcBrowserCustom {
 export interface BrowserSigningProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_browser_custom#enabled CcBrowserCustom#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_browser_custom#enabled CcBrowserCustom#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -761,7 +762,7 @@ export interface CertificateLocationProperty {
     /**
     * Secrets Manager secret ARN.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_browser_custom#secret_arn CcBrowserCustom#secret_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_browser_custom#secret_arn CcBrowserCustom#secret_arn}
     */
     readonly secretArn?: string;
 }
@@ -827,7 +828,7 @@ export interface CertificateProperty {
     /**
     * Certificate location in Secrets Manager.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_browser_custom#certificate_location CcBrowserCustom#certificate_location}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_browser_custom#certificate_location CcBrowserCustom#certificate_location}
     */
     readonly certificateLocation?: CertificateLocationProperty;
 }
@@ -913,11 +914,11 @@ export class CertificatePropertyList extends cdktn.ComplexList {
 }
 export interface S3LocationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_browser_custom#bucket CcBrowserCustom#bucket}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_browser_custom#bucket CcBrowserCustom#bucket}
     */
     readonly bucket?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_browser_custom#prefix CcBrowserCustom#prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_browser_custom#prefix CcBrowserCustom#prefix}
     */
     readonly prefix?: string;
 }
@@ -1005,13 +1006,13 @@ export interface BrowserEnterprisePolicyProperty {
     /**
     * The S3 location of the enterprise policy file.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_browser_custom#location CcBrowserCustom#location}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_browser_custom#location CcBrowserCustom#location}
     */
     readonly location?: S3LocationProperty;
     /**
     * The type of browser enterprise policy.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_browser_custom#type CcBrowserCustom#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_browser_custom#type CcBrowserCustom#type}
     */
     readonly type?: string;
 }
@@ -1121,13 +1122,13 @@ export interface VpcConfigProperty {
     /**
     * Security groups for VPC
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_browser_custom#security_groups CcBrowserCustom#security_groups}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_browser_custom#security_groups CcBrowserCustom#security_groups}
     */
     readonly securityGroups?: string[];
     /**
     * Subnets for VPC
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_browser_custom#subnets CcBrowserCustom#subnets}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_browser_custom#subnets CcBrowserCustom#subnets}
     */
     readonly subnets?: string[];
 }
@@ -1215,13 +1216,13 @@ export interface BrowserNetworkConfigurationProperty {
     /**
     * Network modes supported by browser
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_browser_custom#network_mode CcBrowserCustom#network_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_browser_custom#network_mode CcBrowserCustom#network_mode}
     */
     readonly networkMode?: string;
     /**
     * Network mode configuration for VPC
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_browser_custom#vpc_config CcBrowserCustom#vpc_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_browser_custom#vpc_config CcBrowserCustom#vpc_config}
     */
     readonly vpcConfig?: VpcConfigProperty;
 }
@@ -1307,11 +1308,11 @@ export class BrowserNetworkConfigurationPropertyOutputReference extends cdktn.Co
 }
 export interface RecordingConfigS3LocationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_browser_custom#bucket CcBrowserCustom#bucket}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_browser_custom#bucket CcBrowserCustom#bucket}
     */
     readonly bucket?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_browser_custom#prefix CcBrowserCustom#prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_browser_custom#prefix CcBrowserCustom#prefix}
     */
     readonly prefix?: string;
 }
@@ -1397,13 +1398,13 @@ export class RecordingConfigS3LocationPropertyOutputReference extends cdktn.Comp
 }
 export interface RecordingConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_browser_custom#enabled CcBrowserCustom#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_browser_custom#enabled CcBrowserCustom#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
     * S3 Location Configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_browser_custom#s3_location CcBrowserCustom#s3_location}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_browser_custom#s3_location CcBrowserCustom#s3_location}
     */
     readonly s3Location?: RecordingConfigS3LocationProperty;
 }

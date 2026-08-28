@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/logs_metric_filter
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/logs_metric_filter
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -10,49 +10,49 @@ export interface CcMetricFilterProps extends cdktn.TerraformMetaArguments {
     * This parameter is valid only for log groups that have an active log transformer. For more information about log transformers, see [PutTransformer](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutTransformer.html).
     *  If this value is ``true``, the metric filter is applied on the transformed version of the log events instead of the original ingested log events.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/logs_metric_filter#apply_on_transformed_logs CcMetricFilter#apply_on_transformed_logs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/logs_metric_filter#apply_on_transformed_logs CcMetricFilter#apply_on_transformed_logs}
     */
     readonly applyOnTransformedLogs?: boolean | cdktn.IResolvable;
     /**
     * The list of system fields that are emitted as additional dimensions in the generated metrics. Returns the ``emitSystemFieldDimensions`` value if it was specified when the metric filter was created.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/logs_metric_filter#emit_system_field_dimensions CcMetricFilter#emit_system_field_dimensions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/logs_metric_filter#emit_system_field_dimensions CcMetricFilter#emit_system_field_dimensions}
     */
     readonly emitSystemFieldDimensions?: string[];
     /**
     * The filter expression that specifies which log events are processed by this metric filter based on system fields. Returns the ``fieldSelectionCriteria`` value if it was specified when the metric filter was created.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/logs_metric_filter#field_selection_criteria CcMetricFilter#field_selection_criteria}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/logs_metric_filter#field_selection_criteria CcMetricFilter#field_selection_criteria}
     */
     readonly fieldSelectionCriteria?: string;
     /**
     * The name of the metric filter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/logs_metric_filter#filter_name CcMetricFilter#filter_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/logs_metric_filter#filter_name CcMetricFilter#filter_name}
     */
     readonly filterName?: string;
     /**
     * A filter pattern for extracting metric data out of ingested log events. For more information, see [Filter and Pattern Syntax](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/FilterAndPatternSyntax.html).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/logs_metric_filter#filter_pattern CcMetricFilter#filter_pattern}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/logs_metric_filter#filter_pattern CcMetricFilter#filter_pattern}
     */
     readonly filterPattern: string;
     /**
     * The name of an existing log group that you want to associate with this metric filter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/logs_metric_filter#log_group_name CcMetricFilter#log_group_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/logs_metric_filter#log_group_name CcMetricFilter#log_group_name}
     */
     readonly logGroupName: string;
     /**
     * The metric transformations.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/logs_metric_filter#metric_transformations CcMetricFilter#metric_transformations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/logs_metric_filter#metric_transformations CcMetricFilter#metric_transformations}
     */
     readonly metricTransformations: CcMetricFilter.MetricTransformationProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/logs_metric_filter awscc_logs_metric_filter}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/logs_metric_filter awscc_logs_metric_filter}
 */
 export class CcMetricFilter extends cdktn.TerraformResource {
 
@@ -68,7 +68,7 @@ export class CcMetricFilter extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcMetricFilter resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcMetricFilter to import
-    * @param importFromId The id of the existing CcMetricFilter that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/logs_metric_filter#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcMetricFilter that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/logs_metric_filter#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcMetricFilter to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -80,7 +80,7 @@ export class CcMetricFilter extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/logs_metric_filter awscc_logs_metric_filter} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/logs_metric_filter awscc_logs_metric_filter} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -90,7 +90,8 @@ export class CcMetricFilter extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_logs_metric_filter',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -396,13 +397,13 @@ export interface DimensionProperty {
     * The name for the CW metric dimension that the metric filter creates.
     *  Dimension names must contain only ASCII characters, must include at least one non-whitespace character, and cannot start with a colon (:).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/logs_metric_filter#key CcMetricFilter#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/logs_metric_filter#key CcMetricFilter#key}
     */
     readonly key?: string;
     /**
     * The log event field that will contain the value for this dimension. This dimension will only be published for a metric if the value is found in the log event. For example, ``$.eventType`` for JSON log events, or ``$server`` for space-delimited log events.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/logs_metric_filter#value CcMetricFilter#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/logs_metric_filter#value CcMetricFilter#value}
     */
     readonly value?: string;
 }
@@ -512,7 +513,7 @@ export interface MetricTransformationProperty {
     /**
     * (Optional) The value to emit when a filter pattern does not match a log event. This value can be null.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/logs_metric_filter#default_value CcMetricFilter#default_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/logs_metric_filter#default_value CcMetricFilter#default_value}
     */
     readonly defaultValue?: number;
     /**
@@ -521,31 +522,31 @@ export interface MetricTransformationProperty {
     *  CloudWatch Logs disables a metric filter if it generates 1000 different name/value pairs for your specified dimensions within a certain amount of time. This helps to prevent accidental high charges.
     *  You can also set up a billing alarm to alert you if your charges are higher than expected. For more information, see [Creating a Billing Alarm to Monitor Your Estimated Charges](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/monitor_estimated_charges_with_cloudwatch.html).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/logs_metric_filter#dimensions CcMetricFilter#dimensions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/logs_metric_filter#dimensions CcMetricFilter#dimensions}
     */
     readonly dimensions?: DimensionProperty[] | cdktn.IResolvable;
     /**
     * The name of the CloudWatch metric.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/logs_metric_filter#metric_name CcMetricFilter#metric_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/logs_metric_filter#metric_name CcMetricFilter#metric_name}
     */
     readonly metricName: string;
     /**
     * A custom namespace to contain your metric in CloudWatch. Use namespaces to group together metrics that are similar. For more information, see [Namespaces](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/cloudwatch_concepts.html#Namespace).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/logs_metric_filter#metric_namespace CcMetricFilter#metric_namespace}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/logs_metric_filter#metric_namespace CcMetricFilter#metric_namespace}
     */
     readonly metricNamespace: string;
     /**
     * The value that is published to the CloudWatch metric. For example, if you're counting the occurrences of a particular term like ``Error``, specify 1 for the metric value. If you're counting the number of bytes transferred, reference the value that is in the log event by using $. followed by the name of the field that you specified in the filter pattern, such as ``$.size``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/logs_metric_filter#metric_value CcMetricFilter#metric_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/logs_metric_filter#metric_value CcMetricFilter#metric_value}
     */
     readonly metricValue: string;
     /**
     * The unit to assign to the metric. If you omit this, the unit is set as ``None``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/logs_metric_filter#unit CcMetricFilter#unit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/logs_metric_filter#unit CcMetricFilter#unit}
     */
     readonly unit?: string;
 }

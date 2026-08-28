@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/elasticloadbalancingv2_load_balancer
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticloadbalancingv2_load_balancer
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,20 +9,20 @@ export interface CcLoadBalancerProps extends cdktn.TerraformMetaArguments {
     /**
     * Indicates whether to enable stabilization when creating or updating an LCU reservation. This ensures that the final stack status reflects the status of the LCU reservation. The default is ``false``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/elasticloadbalancingv2_load_balancer#enable_capacity_reservation_provision_stabilize CcLoadBalancer#enable_capacity_reservation_provision_stabilize}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticloadbalancingv2_load_balancer#enable_capacity_reservation_provision_stabilize CcLoadBalancer#enable_capacity_reservation_provision_stabilize}
     */
     readonly enableCapacityReservationProvisionStabilize?: boolean | cdktn.IResolvable;
     /**
     * [Network Load Balancers with UDP listeners] Indicates whether to use an IPv6 prefix from each subnet for source NAT. The IP address type must be ``dualstack``. The default value is ``off``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/elasticloadbalancingv2_load_balancer#enable_prefix_for_ipv_6_source_nat CcLoadBalancer#enable_prefix_for_ipv_6_source_nat}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticloadbalancingv2_load_balancer#enable_prefix_for_ipv_6_source_nat CcLoadBalancer#enable_prefix_for_ipv_6_source_nat}
     */
     readonly enablePrefixForIpv6SourceNat?: string;
     /**
     * Indicates whether to evaluate inbound security group rules for traffic sent to a Network Load Balancer through privatelink. The default is ``on``.
     *  You can't configure this property on a Network Load Balancer unless you associated a security group with the load balancer when you created it.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/elasticloadbalancingv2_load_balancer#enforce_security_group_inbound_rules_on_private_link_traffic CcLoadBalancer#enforce_security_group_inbound_rules_on_private_link_traffic}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticloadbalancingv2_load_balancer#enforce_security_group_inbound_rules_on_private_link_traffic CcLoadBalancer#enforce_security_group_inbound_rules_on_private_link_traffic}
     */
     readonly enforceSecurityGroupInboundRulesOnPrivateLinkTraffic?: string;
     /**
@@ -31,32 +31,32 @@ export interface CcLoadBalancerProps extends cdktn.TerraformMetaArguments {
     *  Application Load Balancer authentication supports IPv4 addresses only when connecting to an Identity Provider (IdP) or Amazon Cognito endpoint. Without a public IPv4 address the load balancer can't complete the authentication process, resulting in HTTP 500 errors.
     *  [Network Load Balancers and Gateway Load Balancers] The possible values are ``ipv4`` (IPv4 addresses) and ``dualstack`` (IPv4 and IPv6 addresses).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/elasticloadbalancingv2_load_balancer#ip_address_type CcLoadBalancer#ip_address_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticloadbalancingv2_load_balancer#ip_address_type CcLoadBalancer#ip_address_type}
     */
     readonly ipAddressType?: string;
     /**
     * The ID of the IPv4 IPAM pool.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/elasticloadbalancingv2_load_balancer#ipv_4_ipam_pool_id CcLoadBalancer#ipv_4_ipam_pool_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticloadbalancingv2_load_balancer#ipv_4_ipam_pool_id CcLoadBalancer#ipv_4_ipam_pool_id}
     */
     readonly ipv4IpamPoolId?: string;
     /**
     * The load balancer attributes. Attributes that you do not modify retain their current values.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/elasticloadbalancingv2_load_balancer#load_balancer_attributes CcLoadBalancer#load_balancer_attributes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticloadbalancingv2_load_balancer#load_balancer_attributes CcLoadBalancer#load_balancer_attributes}
     */
     readonly loadBalancerAttributes?: CcLoadBalancer.LoadBalancerAttributeProperty[] | cdktn.IResolvable;
     /**
     * The minimum capacity for a load balancer.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/elasticloadbalancingv2_load_balancer#minimum_load_balancer_capacity CcLoadBalancer#minimum_load_balancer_capacity}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticloadbalancingv2_load_balancer#minimum_load_balancer_capacity CcLoadBalancer#minimum_load_balancer_capacity}
     */
     readonly minimumLoadBalancerCapacity?: CcLoadBalancer.MinimumLoadBalancerCapacityProperty;
     /**
     * The name of the load balancer. This name must be unique per region per account, can have a maximum of 32 characters, must contain only alphanumeric characters or hyphens, must not begin or end with a hyphen, and must not begin with "internal-".
     *  If you don't specify a name, AWS CloudFormation generates a unique physical ID for the load balancer. If you specify a name, you cannot perform updates that require replacement of this resource, but you can perform other updates. To replace the resource, specify a new name.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/elasticloadbalancingv2_load_balancer#name CcLoadBalancer#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticloadbalancingv2_load_balancer#name CcLoadBalancer#name}
     */
     readonly name?: string;
     /**
@@ -65,13 +65,13 @@ export interface CcLoadBalancerProps extends cdktn.TerraformMetaArguments {
     *  The default is an Internet-facing load balancer.
     *  You can't specify a scheme for a Gateway Load Balancer.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/elasticloadbalancingv2_load_balancer#scheme CcLoadBalancer#scheme}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticloadbalancingv2_load_balancer#scheme CcLoadBalancer#scheme}
     */
     readonly scheme?: string;
     /**
     * [Application Load Balancers and Network Load Balancers] The IDs of the security groups for the load balancer.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/elasticloadbalancingv2_load_balancer#security_groups CcLoadBalancer#security_groups}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticloadbalancingv2_load_balancer#security_groups CcLoadBalancer#security_groups}
     */
     readonly securityGroups?: string[];
     /**
@@ -82,7 +82,7 @@ export interface CcLoadBalancerProps extends cdktn.TerraformMetaArguments {
     *  [Network Load Balancers] You can specify subnets from one or more Availability Zones. You can specify one Elastic IP address per subnet if you need static IP addresses for your internet-facing load balancer. For internal load balancers, you can specify one private IP address per subnet from the IPv4 range of the subnet. For internet-facing load balancer, you can specify one IPv6 address per subnet.
     *  [Gateway Load Balancers] You can specify subnets from one or more Availability Zones. You can't specify Elastic IP addresses for your subnets.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/elasticloadbalancingv2_load_balancer#subnet_mappings CcLoadBalancer#subnet_mappings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticloadbalancingv2_load_balancer#subnet_mappings CcLoadBalancer#subnet_mappings}
     */
     readonly subnetMappings?: CcLoadBalancer.SubnetMappingProperty[] | cdktn.IResolvable;
     /**
@@ -92,25 +92,25 @@ export interface CcLoadBalancerProps extends cdktn.TerraformMetaArguments {
     *  [Application Load Balancers on Local Zones] You can specify subnets from one or more Local Zones.
     *  [Network Load Balancers and Gateway Load Balancers] You can specify subnets from one or more Availability Zones.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/elasticloadbalancingv2_load_balancer#subnets CcLoadBalancer#subnets}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticloadbalancingv2_load_balancer#subnets CcLoadBalancer#subnets}
     */
     readonly subnets?: string[];
     /**
     * The tags to assign to the load balancer.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/elasticloadbalancingv2_load_balancer#tags CcLoadBalancer#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticloadbalancingv2_load_balancer#tags CcLoadBalancer#tags}
     */
     readonly tags?: CcLoadBalancer.TagProperty[] | cdktn.IResolvable;
     /**
     * The type of load balancer. The default is ``application``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/elasticloadbalancingv2_load_balancer#type CcLoadBalancer#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticloadbalancingv2_load_balancer#type CcLoadBalancer#type}
     */
     readonly type?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/elasticloadbalancingv2_load_balancer awscc_elasticloadbalancingv2_load_balancer}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticloadbalancingv2_load_balancer awscc_elasticloadbalancingv2_load_balancer}
 */
 export class CcLoadBalancer extends cdktn.TerraformResource {
 
@@ -126,7 +126,7 @@ export class CcLoadBalancer extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcLoadBalancer resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcLoadBalancer to import
-    * @param importFromId The id of the existing CcLoadBalancer that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/elasticloadbalancingv2_load_balancer#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcLoadBalancer that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticloadbalancingv2_load_balancer#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcLoadBalancer to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -138,7 +138,7 @@ export class CcLoadBalancer extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/elasticloadbalancingv2_load_balancer awscc_elasticloadbalancingv2_load_balancer} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticloadbalancingv2_load_balancer awscc_elasticloadbalancingv2_load_balancer} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -148,7 +148,8 @@ export class CcLoadBalancer extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_elasticloadbalancingv2_load_balancer',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -751,13 +752,13 @@ export interface LoadBalancerAttributeProperty {
     *   +  ``dns_record.client_routing_policy`` - Indicates how traffic is distributed among the load balancer Availability Zones. The possible values are ``availability_zone_affinity`` with 100 percent zonal affinity, ``partial_availability_zone_affinity`` with 85 percent zonal affinity, and ``any_availability_zone`` with 0 percent zonal affinity.
     *   +  ``secondary_ips.auto_assigned.per_subnet`` - The number of secondary IP addresses to configure for your load balancer nodes. Use to address port allocation errors if you can't add targets. The valid range is 0 to 7. The default is 0. After you set this value, you can't decrease it.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/elasticloadbalancingv2_load_balancer#key CcLoadBalancer#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticloadbalancingv2_load_balancer#key CcLoadBalancer#key}
     */
     readonly key?: string;
     /**
     * The value of the attribute.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/elasticloadbalancingv2_load_balancer#value CcLoadBalancer#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticloadbalancingv2_load_balancer#value CcLoadBalancer#value}
     */
     readonly value?: string;
 }
@@ -867,7 +868,7 @@ export interface MinimumLoadBalancerCapacityProperty {
     /**
     * The number of capacity units.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/elasticloadbalancingv2_load_balancer#capacity_units CcLoadBalancer#capacity_units}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticloadbalancingv2_load_balancer#capacity_units CcLoadBalancer#capacity_units}
     */
     readonly capacityUnits?: number;
 }
@@ -933,31 +934,31 @@ export interface SubnetMappingProperty {
     /**
     * [Network Load Balancers] The allocation ID of the Elastic IP address for an internet-facing load balancer.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/elasticloadbalancingv2_load_balancer#allocation_id CcLoadBalancer#allocation_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticloadbalancingv2_load_balancer#allocation_id CcLoadBalancer#allocation_id}
     */
     readonly allocationId?: string;
     /**
     * [Network Load Balancers] The IPv6 address.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/elasticloadbalancingv2_load_balancer#i_pv_6_address CcLoadBalancer#i_pv_6_address}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticloadbalancingv2_load_balancer#i_pv_6_address CcLoadBalancer#i_pv_6_address}
     */
     readonly iPv6Address?: string;
     /**
     * [Network Load Balancers] The private IPv4 address for an internal load balancer.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/elasticloadbalancingv2_load_balancer#private_i_pv_4_address CcLoadBalancer#private_i_pv_4_address}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticloadbalancingv2_load_balancer#private_i_pv_4_address CcLoadBalancer#private_i_pv_4_address}
     */
     readonly privateIPv4Address?: string;
     /**
     * [Network Load Balancers with UDP listeners] The IPv6 prefix to use for source NAT. Specify an IPv6 prefix (/80 netmask) from the subnet CIDR block or ``auto_assigned`` to use an IPv6 prefix selected at random from the subnet CIDR block.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/elasticloadbalancingv2_load_balancer#source_nat_ipv_6_prefix CcLoadBalancer#source_nat_ipv_6_prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticloadbalancingv2_load_balancer#source_nat_ipv_6_prefix CcLoadBalancer#source_nat_ipv_6_prefix}
     */
     readonly sourceNatIpv6Prefix?: string;
     /**
     * The ID of the subnet.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/elasticloadbalancingv2_load_balancer#subnet_id CcLoadBalancer#subnet_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticloadbalancingv2_load_balancer#subnet_id CcLoadBalancer#subnet_id}
     */
     readonly subnetId?: string;
 }
@@ -1133,13 +1134,13 @@ export interface TagProperty {
     /**
     * The key of the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/elasticloadbalancingv2_load_balancer#key CcLoadBalancer#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticloadbalancingv2_load_balancer#key CcLoadBalancer#key}
     */
     readonly key?: string;
     /**
     * The value of the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/elasticloadbalancingv2_load_balancer#value CcLoadBalancer#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticloadbalancingv2_load_balancer#value CcLoadBalancer#value}
     */
     readonly value?: string;
 }

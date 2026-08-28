@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_ipam_pool_cidr
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_pool_cidr
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,25 +9,25 @@ export interface CcIPAMPoolCidrProps extends cdktn.TerraformMetaArguments {
     /**
     * Represents a single IPv4 or IPv6 CIDR
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_ipam_pool_cidr#cidr CcIPAMPoolCidr#cidr}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_pool_cidr#cidr CcIPAMPoolCidr#cidr}
     */
     readonly cidr?: string;
     /**
     * Id of the IPAM Pool.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_ipam_pool_cidr#ipam_pool_id CcIPAMPoolCidr#ipam_pool_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_pool_cidr#ipam_pool_id CcIPAMPoolCidr#ipam_pool_id}
     */
     readonly ipamPoolId: string;
     /**
     * The desired netmask length of the provision. If set, IPAM will choose a block of free space with this size and return the CIDR representing it.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_ipam_pool_cidr#netmask_length CcIPAMPoolCidr#netmask_length}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_pool_cidr#netmask_length CcIPAMPoolCidr#netmask_length}
     */
     readonly netmaskLength?: number;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_ipam_pool_cidr awscc_ec2_ipam_pool_cidr}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_pool_cidr awscc_ec2_ipam_pool_cidr}
 */
 export class CcIPAMPoolCidr extends cdktn.TerraformResource {
 
@@ -43,7 +43,7 @@ export class CcIPAMPoolCidr extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcIPAMPoolCidr resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcIPAMPoolCidr to import
-    * @param importFromId The id of the existing CcIPAMPoolCidr that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_ipam_pool_cidr#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcIPAMPoolCidr that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_pool_cidr#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcIPAMPoolCidr to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -55,7 +55,7 @@ export class CcIPAMPoolCidr extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_ipam_pool_cidr awscc_ec2_ipam_pool_cidr} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_pool_cidr awscc_ec2_ipam_pool_cidr} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -65,7 +65,8 @@ export class CcIPAMPoolCidr extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_ec2_ipam_pool_cidr',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,

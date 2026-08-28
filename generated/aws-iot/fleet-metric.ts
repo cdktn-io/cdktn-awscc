@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_fleet_metric
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_fleet_metric
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,67 +9,67 @@ export interface CcFleetMetricProps extends cdktn.TerraformMetaArguments {
     /**
     * The aggregation field to perform aggregation and metric emission
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_fleet_metric#aggregation_field CcFleetMetric#aggregation_field}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_fleet_metric#aggregation_field CcFleetMetric#aggregation_field}
     */
     readonly aggregationField?: string;
     /**
     * Aggregation types supported by Fleet Indexing
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_fleet_metric#aggregation_type CcFleetMetric#aggregation_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_fleet_metric#aggregation_type CcFleetMetric#aggregation_type}
     */
     readonly aggregationType?: CcFleetMetric.AggregationTypeProperty;
     /**
     * The description of a fleet metric
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_fleet_metric#description CcFleetMetric#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_fleet_metric#description CcFleetMetric#description}
     */
     readonly description?: string;
     /**
     * The index name of a fleet metric
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_fleet_metric#index_name CcFleetMetric#index_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_fleet_metric#index_name CcFleetMetric#index_name}
     */
     readonly indexName?: string;
     /**
     * The name of the fleet metric
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_fleet_metric#metric_name CcFleetMetric#metric_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_fleet_metric#metric_name CcFleetMetric#metric_name}
     */
     readonly metricName: string;
     /**
     * The period of metric emission in seconds
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_fleet_metric#period CcFleetMetric#period}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_fleet_metric#period CcFleetMetric#period}
     */
     readonly period?: number;
     /**
     * The Fleet Indexing query used by a fleet metric
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_fleet_metric#query_string CcFleetMetric#query_string}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_fleet_metric#query_string CcFleetMetric#query_string}
     */
     readonly queryString?: string;
     /**
     * The version of a Fleet Indexing query used by a fleet metric
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_fleet_metric#query_version CcFleetMetric#query_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_fleet_metric#query_version CcFleetMetric#query_version}
     */
     readonly queryVersion?: string;
     /**
     * An array of key-value pairs to apply to this resource
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_fleet_metric#tags CcFleetMetric#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_fleet_metric#tags CcFleetMetric#tags}
     */
     readonly tags?: CcFleetMetric.TagProperty[] | cdktn.IResolvable;
     /**
     * The unit of data points emitted by a fleet metric
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_fleet_metric#unit CcFleetMetric#unit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_fleet_metric#unit CcFleetMetric#unit}
     */
     readonly unit?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_fleet_metric awscc_iot_fleet_metric}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_fleet_metric awscc_iot_fleet_metric}
 */
 export class CcFleetMetric extends cdktn.TerraformResource {
 
@@ -85,7 +85,7 @@ export class CcFleetMetric extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcFleetMetric resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcFleetMetric to import
-    * @param importFromId The id of the existing CcFleetMetric that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_fleet_metric#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcFleetMetric that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_fleet_metric#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcFleetMetric to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -97,7 +97,7 @@ export class CcFleetMetric extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_fleet_metric awscc_iot_fleet_metric} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_fleet_metric awscc_iot_fleet_metric} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -107,7 +107,8 @@ export class CcFleetMetric extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_iot_fleet_metric',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -482,13 +483,13 @@ export interface AggregationTypeProperty {
     /**
     * Fleet Indexing aggregation type names such as Statistics, Percentiles and Cardinality
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_fleet_metric#name CcFleetMetric#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_fleet_metric#name CcFleetMetric#name}
     */
     readonly name?: string;
     /**
     * Fleet Indexing aggregation type values
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_fleet_metric#values CcFleetMetric#values}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_fleet_metric#values CcFleetMetric#values}
     */
     readonly values?: string[];
 }
@@ -576,13 +577,13 @@ export interface TagProperty {
     /**
     * The tag's key
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_fleet_metric#key CcFleetMetric#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_fleet_metric#key CcFleetMetric#key}
     */
     readonly key?: string;
     /**
     * The tag's value
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_fleet_metric#value CcFleetMetric#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_fleet_metric#value CcFleetMetric#value}
     */
     readonly value?: string;
 }

@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pcs_queue
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pcs_queue
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,37 +9,37 @@ export interface CcQueueProps extends cdktn.TerraformMetaArguments {
     /**
     * The ID of the cluster of the queue.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pcs_queue#cluster_id CcQueue#cluster_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pcs_queue#cluster_id CcQueue#cluster_id}
     */
     readonly clusterId: string;
     /**
     * The list of compute node group configurations associated with the queue. Queues assign jobs to associated compute node groups.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pcs_queue#compute_node_group_configurations CcQueue#compute_node_group_configurations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pcs_queue#compute_node_group_configurations CcQueue#compute_node_group_configurations}
     */
     readonly computeNodeGroupConfigurations?: CcQueue.ComputeNodeGroupConfigurationProperty[] | cdktn.IResolvable;
     /**
     * The name that identifies the queue.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pcs_queue#name CcQueue#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pcs_queue#name CcQueue#name}
     */
     readonly name?: string;
     /**
     * The Slurm configuration for the queue.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pcs_queue#slurm_configuration CcQueue#slurm_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pcs_queue#slurm_configuration CcQueue#slurm_configuration}
     */
     readonly slurmConfiguration?: CcQueue.SlurmConfigurationProperty;
     /**
     * 1 or more tags added to the resource. Each tag consists of a tag key and tag value. The tag value is optional and can be an empty string.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pcs_queue#tags CcQueue#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pcs_queue#tags CcQueue#tags}
     */
     readonly tags?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pcs_queue awscc_pcs_queue}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pcs_queue awscc_pcs_queue}
 */
 export class CcQueue extends cdktn.TerraformResource {
 
@@ -55,7 +55,7 @@ export class CcQueue extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcQueue resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcQueue to import
-    * @param importFromId The id of the existing CcQueue that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pcs_queue#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcQueue that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pcs_queue#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcQueue to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -67,7 +67,7 @@ export class CcQueue extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pcs_queue awscc_pcs_queue} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pcs_queue awscc_pcs_queue} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -77,7 +77,8 @@ export class CcQueue extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_pcs_queue',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -377,7 +378,7 @@ export interface ComputeNodeGroupConfigurationProperty {
     /**
     * The compute node group ID for the compute node group configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pcs_queue#compute_node_group_id CcQueue#compute_node_group_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pcs_queue#compute_node_group_id CcQueue#compute_node_group_id}
     */
     readonly computeNodeGroupId?: string;
 }
@@ -524,13 +525,13 @@ export interface SlurmCustomSettingProperty {
     /**
     * AWS PCS supports configuration of the Slurm parameters for queues:.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pcs_queue#parameter_name CcQueue#parameter_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pcs_queue#parameter_name CcQueue#parameter_name}
     */
     readonly parameterName?: string;
     /**
     * The value for the configured Slurm setting.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pcs_queue#parameter_value CcQueue#parameter_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pcs_queue#parameter_value CcQueue#parameter_value}
     */
     readonly parameterValue?: string;
 }
@@ -640,7 +641,7 @@ export interface SlurmConfigurationProperty {
     /**
     * Custom Slurm parameters that directly map to Slurm configuration settings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/pcs_queue#slurm_custom_settings CcQueue#slurm_custom_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pcs_queue#slurm_custom_settings CcQueue#slurm_custom_settings}
     */
     readonly slurmCustomSettings?: SlurmCustomSettingProperty[] | cdktn.IResolvable;
 }

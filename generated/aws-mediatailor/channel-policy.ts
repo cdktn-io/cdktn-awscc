@@ -1,25 +1,25 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediatailor_channel_policy
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediatailor_channel_policy
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcChannelPolicyProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediatailor_channel_policy#channel_name CcChannelPolicy#channel_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediatailor_channel_policy#channel_name CcChannelPolicy#channel_name}
     */
     readonly channelName: string;
     /**
     * <p>The IAM policy for the channel. IAM policies are used to control access to your channel.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediatailor_channel_policy#policy CcChannelPolicy#policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediatailor_channel_policy#policy CcChannelPolicy#policy}
     */
     readonly policy: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediatailor_channel_policy awscc_mediatailor_channel_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediatailor_channel_policy awscc_mediatailor_channel_policy}
 */
 export class CcChannelPolicy extends cdktn.TerraformResource {
 
@@ -35,7 +35,7 @@ export class CcChannelPolicy extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcChannelPolicy resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcChannelPolicy to import
-    * @param importFromId The id of the existing CcChannelPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediatailor_channel_policy#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcChannelPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediatailor_channel_policy#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcChannelPolicy to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -47,7 +47,7 @@ export class CcChannelPolicy extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediatailor_channel_policy awscc_mediatailor_channel_policy} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediatailor_channel_policy awscc_mediatailor_channel_policy} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -57,7 +57,8 @@ export class CcChannelPolicy extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_mediatailor_channel_policy',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,

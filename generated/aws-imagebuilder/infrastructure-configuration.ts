@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_infrastructure_configuration
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_infrastructure_configuration
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,91 +9,91 @@ export interface CcInfrastructureConfigurationProps extends cdktn.TerraformMetaA
     /**
     * The description of the infrastructure configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_infrastructure_configuration#description CcInfrastructureConfiguration#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_infrastructure_configuration#description CcInfrastructureConfiguration#description}
     */
     readonly description?: string;
     /**
     * The instance metadata option settings for the infrastructure configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_infrastructure_configuration#instance_metadata_options CcInfrastructureConfiguration#instance_metadata_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_infrastructure_configuration#instance_metadata_options CcInfrastructureConfiguration#instance_metadata_options}
     */
     readonly instanceMetadataOptions?: CcInfrastructureConfiguration.InstanceMetadataOptionsProperty;
     /**
     * The instance profile of the infrastructure configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_infrastructure_configuration#instance_profile_name CcInfrastructureConfiguration#instance_profile_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_infrastructure_configuration#instance_profile_name CcInfrastructureConfiguration#instance_profile_name}
     */
     readonly instanceProfileName: string;
     /**
     * The instance types of the infrastructure configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_infrastructure_configuration#instance_types CcInfrastructureConfiguration#instance_types}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_infrastructure_configuration#instance_types CcInfrastructureConfiguration#instance_types}
     */
     readonly instanceTypes?: string[];
     /**
     * The EC2 key pair of the infrastructure configuration..
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_infrastructure_configuration#key_pair CcInfrastructureConfiguration#key_pair}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_infrastructure_configuration#key_pair CcInfrastructureConfiguration#key_pair}
     */
     readonly keyPair?: string;
     /**
     * The logging configuration of the infrastructure configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_infrastructure_configuration#logging CcInfrastructureConfiguration#logging}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_infrastructure_configuration#logging CcInfrastructureConfiguration#logging}
     */
     readonly logging?: CcInfrastructureConfiguration.LoggingProperty;
     /**
     * The name of the infrastructure configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_infrastructure_configuration#name CcInfrastructureConfiguration#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_infrastructure_configuration#name CcInfrastructureConfiguration#name}
     */
     readonly name: string;
     /**
     * The placement option settings for the infrastructure configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_infrastructure_configuration#placement CcInfrastructureConfiguration#placement}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_infrastructure_configuration#placement CcInfrastructureConfiguration#placement}
     */
     readonly placement?: CcInfrastructureConfiguration.PlacementProperty;
     /**
     * The tags attached to the resource created by Image Builder.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_infrastructure_configuration#resource_tags CcInfrastructureConfiguration#resource_tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_infrastructure_configuration#resource_tags CcInfrastructureConfiguration#resource_tags}
     */
     readonly resourceTags?: { [key: string]: string };
     /**
     * The security group IDs of the infrastructure configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_infrastructure_configuration#security_group_ids CcInfrastructureConfiguration#security_group_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_infrastructure_configuration#security_group_ids CcInfrastructureConfiguration#security_group_ids}
     */
     readonly securityGroupIds?: string[];
     /**
     * The SNS Topic Amazon Resource Name (ARN) of the infrastructure configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_infrastructure_configuration#sns_topic_arn CcInfrastructureConfiguration#sns_topic_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_infrastructure_configuration#sns_topic_arn CcInfrastructureConfiguration#sns_topic_arn}
     */
     readonly snsTopicArn?: string;
     /**
     * The subnet ID of the infrastructure configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_infrastructure_configuration#subnet_id CcInfrastructureConfiguration#subnet_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_infrastructure_configuration#subnet_id CcInfrastructureConfiguration#subnet_id}
     */
     readonly subnetId?: string;
     /**
     * The tags associated with the component.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_infrastructure_configuration#tags CcInfrastructureConfiguration#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_infrastructure_configuration#tags CcInfrastructureConfiguration#tags}
     */
     readonly tags?: { [key: string]: string };
     /**
     * The terminate instance on failure configuration of the infrastructure configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_infrastructure_configuration#terminate_instance_on_failure CcInfrastructureConfiguration#terminate_instance_on_failure}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_infrastructure_configuration#terminate_instance_on_failure CcInfrastructureConfiguration#terminate_instance_on_failure}
     */
     readonly terminateInstanceOnFailure?: boolean | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_infrastructure_configuration awscc_imagebuilder_infrastructure_configuration}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_infrastructure_configuration awscc_imagebuilder_infrastructure_configuration}
 */
 export class CcInfrastructureConfiguration extends cdktn.TerraformResource {
 
@@ -109,7 +109,7 @@ export class CcInfrastructureConfiguration extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcInfrastructureConfiguration resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcInfrastructureConfiguration to import
-    * @param importFromId The id of the existing CcInfrastructureConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_infrastructure_configuration#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcInfrastructureConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_infrastructure_configuration#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcInfrastructureConfiguration to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -121,7 +121,7 @@ export class CcInfrastructureConfiguration extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_infrastructure_configuration awscc_imagebuilder_infrastructure_configuration} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_infrastructure_configuration awscc_imagebuilder_infrastructure_configuration} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -131,7 +131,8 @@ export class CcInfrastructureConfiguration extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_imagebuilder_infrastructure_configuration',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -665,13 +666,13 @@ export interface InstanceMetadataOptionsProperty {
     /**
     * Limit the number of hops that an instance metadata request can traverse to reach its destination.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_infrastructure_configuration#http_put_response_hop_limit CcInfrastructureConfiguration#http_put_response_hop_limit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_infrastructure_configuration#http_put_response_hop_limit CcInfrastructureConfiguration#http_put_response_hop_limit}
     */
     readonly httpPutResponseHopLimit?: number;
     /**
     * Indicates whether a signed token header is required for instance metadata retrieval requests. The values affect the response as follows: 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_infrastructure_configuration#http_tokens CcInfrastructureConfiguration#http_tokens}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_infrastructure_configuration#http_tokens CcInfrastructureConfiguration#http_tokens}
     */
     readonly httpTokens?: string;
 }
@@ -759,13 +760,13 @@ export interface S3LogsProperty {
     /**
     * S3BucketName
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_infrastructure_configuration#s3_bucket_name CcInfrastructureConfiguration#s3_bucket_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_infrastructure_configuration#s3_bucket_name CcInfrastructureConfiguration#s3_bucket_name}
     */
     readonly s3BucketName?: string;
     /**
     * S3KeyPrefix
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_infrastructure_configuration#s3_key_prefix CcInfrastructureConfiguration#s3_key_prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_infrastructure_configuration#s3_key_prefix CcInfrastructureConfiguration#s3_key_prefix}
     */
     readonly s3KeyPrefix?: string;
 }
@@ -853,7 +854,7 @@ export interface LoggingProperty {
     /**
     * The S3 path in which to store the logs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_infrastructure_configuration#s3_logs CcInfrastructureConfiguration#s3_logs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_infrastructure_configuration#s3_logs CcInfrastructureConfiguration#s3_logs}
     */
     readonly s3Logs?: S3LogsProperty;
 }
@@ -919,25 +920,25 @@ export interface PlacementProperty {
     /**
     * AvailabilityZone
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_infrastructure_configuration#availability_zone CcInfrastructureConfiguration#availability_zone}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_infrastructure_configuration#availability_zone CcInfrastructureConfiguration#availability_zone}
     */
     readonly availabilityZone?: string;
     /**
     * HostId
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_infrastructure_configuration#host_id CcInfrastructureConfiguration#host_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_infrastructure_configuration#host_id CcInfrastructureConfiguration#host_id}
     */
     readonly hostId?: string;
     /**
     * HostResourceGroupArn
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_infrastructure_configuration#host_resource_group_arn CcInfrastructureConfiguration#host_resource_group_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_infrastructure_configuration#host_resource_group_arn CcInfrastructureConfiguration#host_resource_group_arn}
     */
     readonly hostResourceGroupArn?: string;
     /**
     * Tenancy
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_infrastructure_configuration#tenancy CcInfrastructureConfiguration#tenancy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_infrastructure_configuration#tenancy CcInfrastructureConfiguration#tenancy}
     */
     readonly tenancy?: string;
 }

@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/organizations_organizational_unit
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/organizations_organizational_unit
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,25 +9,25 @@ export interface CcOrganizationalUnitProps extends cdktn.TerraformMetaArguments 
     /**
     * The friendly name of this OU.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/organizations_organizational_unit#name CcOrganizationalUnit#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/organizations_organizational_unit#name CcOrganizationalUnit#name}
     */
     readonly name: string;
     /**
     * The unique identifier (ID) of the parent root or OU that you want to create the new OU in.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/organizations_organizational_unit#parent_id CcOrganizationalUnit#parent_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/organizations_organizational_unit#parent_id CcOrganizationalUnit#parent_id}
     */
     readonly parentId: string;
     /**
     * A list of tags that you want to attach to the newly created OU.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/organizations_organizational_unit#tags CcOrganizationalUnit#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/organizations_organizational_unit#tags CcOrganizationalUnit#tags}
     */
     readonly tags?: CcOrganizationalUnit.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/organizations_organizational_unit awscc_organizations_organizational_unit}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/organizations_organizational_unit awscc_organizations_organizational_unit}
 */
 export class CcOrganizationalUnit extends cdktn.TerraformResource {
 
@@ -43,7 +43,7 @@ export class CcOrganizationalUnit extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcOrganizationalUnit resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcOrganizationalUnit to import
-    * @param importFromId The id of the existing CcOrganizationalUnit that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/organizations_organizational_unit#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcOrganizationalUnit that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/organizations_organizational_unit#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcOrganizationalUnit to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -55,7 +55,7 @@ export class CcOrganizationalUnit extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/organizations_organizational_unit awscc_organizations_organizational_unit} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/organizations_organizational_unit awscc_organizations_organizational_unit} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -65,7 +65,8 @@ export class CcOrganizationalUnit extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_organizations_organizational_unit',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -227,13 +228,13 @@ export interface TagProperty {
     /**
     * The key identifier, or name, of the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/organizations_organizational_unit#key CcOrganizationalUnit#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/organizations_organizational_unit#key CcOrganizationalUnit#key}
     */
     readonly key?: string;
     /**
     * The string value that's associated with the key of the tag. You can set the value of a tag to an empty string, but you can't set the value of a tag to null.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/organizations_organizational_unit#value CcOrganizationalUnit#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/organizations_organizational_unit#value CcOrganizationalUnit#value}
     */
     readonly value?: string;
 }

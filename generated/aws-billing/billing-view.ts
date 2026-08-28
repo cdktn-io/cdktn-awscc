@@ -1,39 +1,39 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/billing_billing_view
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/billing_billing_view
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcBillingViewProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/billing_billing_view#data_filter_expression CcBillingView#data_filter_expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/billing_billing_view#data_filter_expression CcBillingView#data_filter_expression}
     */
     readonly dataFilterExpression?: CcBillingView.DataFilterExpressionProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/billing_billing_view#description CcBillingView#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/billing_billing_view#description CcBillingView#description}
     */
     readonly description?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/billing_billing_view#name CcBillingView#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/billing_billing_view#name CcBillingView#name}
     */
     readonly name: string;
     /**
     * An array of strings that define the billing view's source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/billing_billing_view#source_views CcBillingView#source_views}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/billing_billing_view#source_views CcBillingView#source_views}
     */
     readonly sourceViews: string[];
     /**
     * An array of key-value pairs associated to the billing view being created.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/billing_billing_view#tags CcBillingView#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/billing_billing_view#tags CcBillingView#tags}
     */
     readonly tags?: CcBillingView.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/billing_billing_view awscc_billing_billing_view}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/billing_billing_view awscc_billing_billing_view}
 */
 export class CcBillingView extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CcBillingView extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcBillingView resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcBillingView to import
-    * @param importFromId The id of the existing CcBillingView that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/billing_billing_view#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcBillingView that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/billing_billing_view#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcBillingView to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CcBillingView extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/billing_billing_view awscc_billing_billing_view} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/billing_billing_view awscc_billing_billing_view} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -71,7 +71,8 @@ export class CcBillingView extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_billing_billing_view',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -444,11 +445,11 @@ export function ccBillingViewTagPropertyToHclTerraform(struct?: CcBillingView.Ta
 export namespace CcBillingView {
 export interface DimensionsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/billing_billing_view#key CcBillingView#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/billing_billing_view#key CcBillingView#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/billing_billing_view#values CcBillingView#values}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/billing_billing_view#values CcBillingView#values}
     */
     readonly values?: string[];
 }
@@ -534,11 +535,11 @@ export class DimensionsPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface TagsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/billing_billing_view#key CcBillingView#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/billing_billing_view#key CcBillingView#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/billing_billing_view#values CcBillingView#values}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/billing_billing_view#values CcBillingView#values}
     */
     readonly values?: string[];
 }
@@ -626,13 +627,13 @@ export interface TimeRangeProperty {
     /**
     * The time in ISO 8601 format, UTC time (YYYY-MM-DDTHH:MM:SSZ).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/billing_billing_view#begin_date_inclusive CcBillingView#begin_date_inclusive}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/billing_billing_view#begin_date_inclusive CcBillingView#begin_date_inclusive}
     */
     readonly beginDateInclusive?: string;
     /**
     * The time in ISO 8601 format, UTC time (YYYY-MM-DDTHH:MM:SSZ).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/billing_billing_view#end_date_inclusive CcBillingView#end_date_inclusive}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/billing_billing_view#end_date_inclusive CcBillingView#end_date_inclusive}
     */
     readonly endDateInclusive?: string;
 }
@@ -718,15 +719,15 @@ export class TimeRangePropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface DataFilterExpressionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/billing_billing_view#dimensions CcBillingView#dimensions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/billing_billing_view#dimensions CcBillingView#dimensions}
     */
     readonly dimensions?: DimensionsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/billing_billing_view#tags CcBillingView#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/billing_billing_view#tags CcBillingView#tags}
     */
     readonly tags?: TagsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/billing_billing_view#time_range CcBillingView#time_range}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/billing_billing_view#time_range CcBillingView#time_range}
     */
     readonly timeRange?: TimeRangeProperty;
 }
@@ -836,13 +837,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/billing_billing_view#key CcBillingView#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/billing_billing_view#key CcBillingView#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 0 to 256 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/billing_billing_view#value CcBillingView#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/billing_billing_view#value CcBillingView#value}
     */
     readonly value?: string;
 }

@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_guard_hook
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_guard_hook
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,65 +9,65 @@ export interface CcGuardHookProps extends cdktn.TerraformMetaArguments {
     /**
     * The typename alias for the hook.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_guard_hook#alias CcGuardHook#alias}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_guard_hook#alias CcGuardHook#alias}
     */
     readonly alias: string;
     /**
     * The execution role ARN assumed by hooks to read Guard rules from S3 and write Guard outputs to S3.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_guard_hook#execution_role CcGuardHook#execution_role}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_guard_hook#execution_role CcGuardHook#execution_role}
     */
     readonly executionRole: string;
     /**
     * Attribute to specify CloudFormation behavior on hook failure.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_guard_hook#failure_mode CcGuardHook#failure_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_guard_hook#failure_mode CcGuardHook#failure_mode}
     */
     readonly failureMode?: string;
     /**
     * Attribute to specify which stacks this hook applies to or should get invoked for
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_guard_hook#hook_status CcGuardHook#hook_status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_guard_hook#hook_status CcGuardHook#hook_status}
     */
     readonly hookStatus?: string;
     /**
     * S3 Bucket where the guard validate report will be uploaded to
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_guard_hook#log_bucket CcGuardHook#log_bucket}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_guard_hook#log_bucket CcGuardHook#log_bucket}
     */
     readonly logBucket?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_guard_hook#options CcGuardHook#options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_guard_hook#options CcGuardHook#options}
     */
     readonly options?: CcGuardHook.OptionsProperty;
     /**
     * S3 Source Location for the Guard files.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_guard_hook#rule_location CcGuardHook#rule_location}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_guard_hook#rule_location CcGuardHook#rule_location}
     */
     readonly ruleLocation: CcGuardHook.S3LocationProperty;
     /**
     * Filters to allow hooks to target specific stack attributes
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_guard_hook#stack_filters CcGuardHook#stack_filters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_guard_hook#stack_filters CcGuardHook#stack_filters}
     */
     readonly stackFilters?: CcGuardHook.StackFiltersProperty;
     /**
     * Attribute to specify which targets should invoke the hook
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_guard_hook#target_filters CcGuardHook#target_filters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_guard_hook#target_filters CcGuardHook#target_filters}
     */
     readonly targetFilters?: CcGuardHook.TargetFiltersProperty;
     /**
     * Which operations should this Hook run against? Resource changes, stacks or change sets.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_guard_hook#target_operations CcGuardHook#target_operations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_guard_hook#target_operations CcGuardHook#target_operations}
     */
     readonly targetOperations: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_guard_hook awscc_cloudformation_guard_hook}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_guard_hook awscc_cloudformation_guard_hook}
 */
 export class CcGuardHook extends cdktn.TerraformResource {
 
@@ -83,7 +83,7 @@ export class CcGuardHook extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcGuardHook resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcGuardHook to import
-    * @param importFromId The id of the existing CcGuardHook that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_guard_hook#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcGuardHook that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_guard_hook#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcGuardHook to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -95,7 +95,7 @@ export class CcGuardHook extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_guard_hook awscc_cloudformation_guard_hook} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_guard_hook awscc_cloudformation_guard_hook} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -105,7 +105,8 @@ export class CcGuardHook extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_cloudformation_guard_hook',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -662,7 +663,7 @@ export interface OptionsProperty {
     /**
     * Specifies the S3 location of input parameter files for your Guard rules. You can specify either a single S3 location or an array of up to 10 S3 locations.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_guard_hook#input_params CcGuardHook#input_params}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_guard_hook#input_params CcGuardHook#input_params}
     */
     readonly inputParams?: string;
 }
@@ -728,13 +729,13 @@ export interface S3LocationProperty {
     /**
     * S3 uri of Guard files.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_guard_hook#uri CcGuardHook#uri}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_guard_hook#uri CcGuardHook#uri}
     */
     readonly uri: string;
     /**
     * S3 object version
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_guard_hook#version_id CcGuardHook#version_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_guard_hook#version_id CcGuardHook#version_id}
     */
     readonly versionId?: string;
 }
@@ -819,13 +820,13 @@ export interface StackNamesProperty {
     /**
     * List of stack names that the hook is going to be excluded from
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_guard_hook#exclude CcGuardHook#exclude}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_guard_hook#exclude CcGuardHook#exclude}
     */
     readonly exclude?: string[];
     /**
     * List of stack names that the hook is going to target
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_guard_hook#include CcGuardHook#include}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_guard_hook#include CcGuardHook#include}
     */
     readonly include?: string[];
 }
@@ -913,13 +914,13 @@ export interface StackRolesProperty {
     /**
     * List of stack roles that the hook is going to be excluded from
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_guard_hook#exclude CcGuardHook#exclude}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_guard_hook#exclude CcGuardHook#exclude}
     */
     readonly exclude?: string[];
     /**
     * List of stack roles that the hook is going to target
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_guard_hook#include CcGuardHook#include}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_guard_hook#include CcGuardHook#include}
     */
     readonly include?: string[];
 }
@@ -1007,19 +1008,19 @@ export interface StackFiltersProperty {
     /**
     * Attribute to specify the filtering behavior. ANY will make the Hook pass if one filter matches. ALL will make the Hook pass if all filters match
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_guard_hook#filtering_criteria CcGuardHook#filtering_criteria}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_guard_hook#filtering_criteria CcGuardHook#filtering_criteria}
     */
     readonly filteringCriteria?: string;
     /**
     * List of stack names as filters
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_guard_hook#stack_names CcGuardHook#stack_names}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_guard_hook#stack_names CcGuardHook#stack_names}
     */
     readonly stackNames?: StackNamesProperty;
     /**
     * List of stack roles that are performing the stack operations.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_guard_hook#stack_roles CcGuardHook#stack_roles}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_guard_hook#stack_roles CcGuardHook#stack_roles}
     */
     readonly stackRoles?: StackRolesProperty;
 }
@@ -1129,19 +1130,19 @@ export interface HookTargetProperty {
     /**
     * Target actions are the type of operation hooks will be executed at.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_guard_hook#action CcGuardHook#action}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_guard_hook#action CcGuardHook#action}
     */
     readonly action?: string;
     /**
     * Invocation points are the point in provisioning workflow where hooks will be executed.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_guard_hook#invocation_point CcGuardHook#invocation_point}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_guard_hook#invocation_point CcGuardHook#invocation_point}
     */
     readonly invocationPoint?: string;
     /**
     * Type name of hook target. Hook targets are the destination where hooks will be invoked against.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_guard_hook#target_name CcGuardHook#target_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_guard_hook#target_name CcGuardHook#target_name}
     */
     readonly targetName?: string;
 }
@@ -1273,25 +1274,25 @@ export interface TargetFiltersProperty {
     /**
     * List of actions that the hook is going to target
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_guard_hook#actions CcGuardHook#actions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_guard_hook#actions CcGuardHook#actions}
     */
     readonly actions?: string[];
     /**
     * List of invocation points that the hook is going to target
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_guard_hook#invocation_points CcGuardHook#invocation_points}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_guard_hook#invocation_points CcGuardHook#invocation_points}
     */
     readonly invocationPoints?: string[];
     /**
     * List of type names that the hook is going to target
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_guard_hook#target_names CcGuardHook#target_names}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_guard_hook#target_names CcGuardHook#target_names}
     */
     readonly targetNames?: string[];
     /**
     * List of hook targets
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_guard_hook#targets CcGuardHook#targets}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_guard_hook#targets CcGuardHook#targets}
     */
     readonly targets?: HookTargetProperty[] | cdktn.IResolvable;
 }

@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/supportapp_slack_channel_configuration
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/supportapp_slack_channel_configuration
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,55 +9,55 @@ export interface CcSlackChannelConfigurationProps extends cdktn.TerraformMetaArg
     /**
     * The channel ID in Slack, which identifies a channel within a workspace.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/supportapp_slack_channel_configuration#channel_id CcSlackChannelConfiguration#channel_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/supportapp_slack_channel_configuration#channel_id CcSlackChannelConfiguration#channel_id}
     */
     readonly channelId: string;
     /**
     * The channel name in Slack.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/supportapp_slack_channel_configuration#channel_name CcSlackChannelConfiguration#channel_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/supportapp_slack_channel_configuration#channel_name CcSlackChannelConfiguration#channel_name}
     */
     readonly channelName?: string;
     /**
     * The Amazon Resource Name (ARN) of an IAM role that grants the AWS Support App access to perform operations for AWS services.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/supportapp_slack_channel_configuration#channel_role_arn CcSlackChannelConfiguration#channel_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/supportapp_slack_channel_configuration#channel_role_arn CcSlackChannelConfiguration#channel_role_arn}
     */
     readonly channelRoleArn: string;
     /**
     * Whether to notify when a correspondence is added to a case.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/supportapp_slack_channel_configuration#notify_on_add_correspondence_to_case CcSlackChannelConfiguration#notify_on_add_correspondence_to_case}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/supportapp_slack_channel_configuration#notify_on_add_correspondence_to_case CcSlackChannelConfiguration#notify_on_add_correspondence_to_case}
     */
     readonly notifyOnAddCorrespondenceToCase?: boolean | cdktn.IResolvable;
     /**
     * The severity level of a support case that a customer wants to get notified for.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/supportapp_slack_channel_configuration#notify_on_case_severity CcSlackChannelConfiguration#notify_on_case_severity}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/supportapp_slack_channel_configuration#notify_on_case_severity CcSlackChannelConfiguration#notify_on_case_severity}
     */
     readonly notifyOnCaseSeverity: string;
     /**
     * Whether to notify when a case is created or reopened.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/supportapp_slack_channel_configuration#notify_on_create_or_reopen_case CcSlackChannelConfiguration#notify_on_create_or_reopen_case}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/supportapp_slack_channel_configuration#notify_on_create_or_reopen_case CcSlackChannelConfiguration#notify_on_create_or_reopen_case}
     */
     readonly notifyOnCreateOrReopenCase?: boolean | cdktn.IResolvable;
     /**
     * Whether to notify when a case is resolved.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/supportapp_slack_channel_configuration#notify_on_resolve_case CcSlackChannelConfiguration#notify_on_resolve_case}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/supportapp_slack_channel_configuration#notify_on_resolve_case CcSlackChannelConfiguration#notify_on_resolve_case}
     */
     readonly notifyOnResolveCase?: boolean | cdktn.IResolvable;
     /**
     * The team ID in Slack, which uniquely identifies a workspace.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/supportapp_slack_channel_configuration#team_id CcSlackChannelConfiguration#team_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/supportapp_slack_channel_configuration#team_id CcSlackChannelConfiguration#team_id}
     */
     readonly teamId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/supportapp_slack_channel_configuration awscc_supportapp_slack_channel_configuration}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/supportapp_slack_channel_configuration awscc_supportapp_slack_channel_configuration}
 */
 export class CcSlackChannelConfiguration extends cdktn.TerraformResource {
 
@@ -73,7 +73,7 @@ export class CcSlackChannelConfiguration extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcSlackChannelConfiguration resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcSlackChannelConfiguration to import
-    * @param importFromId The id of the existing CcSlackChannelConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/supportapp_slack_channel_configuration#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcSlackChannelConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/supportapp_slack_channel_configuration#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcSlackChannelConfiguration to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -85,7 +85,7 @@ export class CcSlackChannelConfiguration extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/supportapp_slack_channel_configuration awscc_supportapp_slack_channel_configuration} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/supportapp_slack_channel_configuration awscc_supportapp_slack_channel_configuration} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -95,7 +95,8 @@ export class CcSlackChannelConfiguration extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_supportapp_slack_channel_configuration',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,

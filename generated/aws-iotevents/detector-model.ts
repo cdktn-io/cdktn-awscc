@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,51 +9,51 @@ export interface CcDetectorModelProps extends cdktn.TerraformMetaArguments {
     /**
     * Information that defines how a detector operates.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#detector_model_definition CcDetectorModel#detector_model_definition}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#detector_model_definition CcDetectorModel#detector_model_definition}
     */
     readonly detectorModelDefinition: CcDetectorModel.DetectorModelDefinitionProperty;
     /**
     * A brief description of the detector model.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#detector_model_description CcDetectorModel#detector_model_description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#detector_model_description CcDetectorModel#detector_model_description}
     */
     readonly detectorModelDescription?: string;
     /**
     * The name of the detector model.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#detector_model_name CcDetectorModel#detector_model_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#detector_model_name CcDetectorModel#detector_model_name}
     */
     readonly detectorModelName?: string;
     /**
     * Information about the order in which events are evaluated and how actions are executed.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#evaluation_method CcDetectorModel#evaluation_method}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#evaluation_method CcDetectorModel#evaluation_method}
     */
     readonly evaluationMethod?: string;
     /**
     * The value used to identify a detector instance. When a device or system sends input, a new detector instance with a unique key value is created. ITE can continue to route input to its corresponding detector instance based on this identifying information. 
     *  This parameter uses a JSON-path expression to select the attribute-value pair in the message payload that is used for identification. To route the message to the correct detector instance, the device must send a message payload that contains the same attribute-value.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#key CcDetectorModel#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#key CcDetectorModel#key}
     */
     readonly key?: string;
     /**
     * The ARN of the role that grants permission to ITE to perform its operations.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#role_arn CcDetectorModel#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#role_arn CcDetectorModel#role_arn}
     */
     readonly roleArn: string;
     /**
     * An array of key-value pairs to apply to this resource.
     *  For more information, see [Tag](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#tags CcDetectorModel#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#tags CcDetectorModel#tags}
     */
     readonly tags?: CcDetectorModel.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model awscc_iotevents_detector_model}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model awscc_iotevents_detector_model}
 */
 export class CcDetectorModel extends cdktn.TerraformResource {
 
@@ -69,7 +69,7 @@ export class CcDetectorModel extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcDetectorModel resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcDetectorModel to import
-    * @param importFromId The id of the existing CcDetectorModel that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcDetectorModel that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcDetectorModel to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -81,7 +81,7 @@ export class CcDetectorModel extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model awscc_iotevents_detector_model} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model awscc_iotevents_detector_model} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -91,7 +91,8 @@ export class CcDetectorModel extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_iotevents_detector_model',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -5130,7 +5131,7 @@ export interface ClearTimerProperty {
     /**
     * The name of the timer to clear.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#timer_name CcDetectorModel#timer_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#timer_name CcDetectorModel#timer_name}
     */
     readonly timerName?: string;
 }
@@ -5196,13 +5197,13 @@ export interface PayloadProperty {
     /**
     * The content of the payload. You can use a string expression that includes quoted strings (``'<string>'``), variables (``$variable.<variable-name>``), input values (``$input.<input-name>.<path-to-datum>``), string concatenations, and quoted strings that contain ``${}`` as the content. The recommended maximum size of a content expression is 1 KB.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#content_expression CcDetectorModel#content_expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#content_expression CcDetectorModel#content_expression}
     */
     readonly contentExpression?: string;
     /**
     * The value of the payload type can be either ``STRING`` or ``JSON``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#type CcDetectorModel#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#type CcDetectorModel#type}
     */
     readonly type?: string;
 }
@@ -5291,13 +5292,13 @@ export interface DynamoDBv2Property {
     * Information needed to configure the payload.
     *  By default, ITE generates a standard payload in JSON for any action. This action payload contains all attribute-value pairs that have the information about the detector model instance and the event triggered the action. To configure the action payload, you can use ``contentExpression``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#payload CcDetectorModel#payload}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#payload CcDetectorModel#payload}
     */
     readonly payload?: PayloadProperty;
     /**
     * The name of the DynamoDB table.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#table_name CcDetectorModel#table_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#table_name CcDetectorModel#table_name}
     */
     readonly tableName?: string;
 }
@@ -5385,13 +5386,13 @@ export interface DetectorModelDefinitionStatesOnEnterEventsActionsDynamoDbPayloa
     /**
     * The content of the payload. You can use a string expression that includes quoted strings (``'<string>'``), variables (``$variable.<variable-name>``), input values (``$input.<input-name>.<path-to-datum>``), string concatenations, and quoted strings that contain ``${}`` as the content. The recommended maximum size of a content expression is 1 KB.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#content_expression CcDetectorModel#content_expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#content_expression CcDetectorModel#content_expression}
     */
     readonly contentExpression?: string;
     /**
     * The value of the payload type can be either ``STRING`` or ``JSON``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#type CcDetectorModel#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#type CcDetectorModel#type}
     */
     readonly type?: string;
 }
@@ -5479,7 +5480,7 @@ export interface DynamoDBProperty {
     /**
     * The name of the hash key (also called the partition key). The ``hashKeyField`` value must match the partition key of the target DynamoDB table.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#hash_key_field CcDetectorModel#hash_key_field}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#hash_key_field CcDetectorModel#hash_key_field}
     */
     readonly hashKeyField?: string;
     /**
@@ -5489,13 +5490,13 @@ export interface DynamoDBProperty {
     *   
     *  If you don't specify ``hashKeyType``, the default value is ``'STRING'``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#hash_key_type CcDetectorModel#hash_key_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#hash_key_type CcDetectorModel#hash_key_type}
     */
     readonly hashKeyType?: string;
     /**
     * The value of the hash key (also called the partition key).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#hash_key_value CcDetectorModel#hash_key_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#hash_key_value CcDetectorModel#hash_key_value}
     */
     readonly hashKeyValue?: string;
     /**
@@ -5506,27 +5507,27 @@ export interface DynamoDBProperty {
     *   
     *  If you don't specify this parameter, ITE triggers the ``'INSERT'`` operation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#operation CcDetectorModel#operation}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#operation CcDetectorModel#operation}
     */
     readonly operation?: string;
     /**
     * Information needed to configure the payload.
     *  By default, ITE generates a standard payload in JSON for any action. This action payload contains all attribute-value pairs that have the information about the detector model instance and the event triggered the action. To configure the action payload, you can use ``contentExpression``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#payload CcDetectorModel#payload}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#payload CcDetectorModel#payload}
     */
     readonly payload?: DetectorModelDefinitionStatesOnEnterEventsActionsDynamoDbPayloadProperty;
     /**
     * The name of the DynamoDB column that receives the action payload.
     *  If you don't specify this parameter, the name of the DynamoDB column is ``payload``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#payload_field CcDetectorModel#payload_field}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#payload_field CcDetectorModel#payload_field}
     */
     readonly payloadField?: string;
     /**
     * The name of the range key (also called the sort key). The ``rangeKeyField`` value must match the sort key of the target DynamoDB table.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#range_key_field CcDetectorModel#range_key_field}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#range_key_field CcDetectorModel#range_key_field}
     */
     readonly rangeKeyField?: string;
     /**
@@ -5536,19 +5537,19 @@ export interface DynamoDBProperty {
     *   
     *  If you don't specify ``rangeKeyField``, the default value is ``'STRING'``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#range_key_type CcDetectorModel#range_key_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#range_key_type CcDetectorModel#range_key_type}
     */
     readonly rangeKeyType?: string;
     /**
     * The value of the range key (also called the sort key).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#range_key_value CcDetectorModel#range_key_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#range_key_value CcDetectorModel#range_key_value}
     */
     readonly rangeKeyValue?: string;
     /**
     * The name of the DynamoDB table. The ``tableName`` value must match the table name of the target DynamoDB table.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#table_name CcDetectorModel#table_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#table_name CcDetectorModel#table_name}
     */
     readonly tableName?: string;
 }
@@ -5812,13 +5813,13 @@ export interface DetectorModelDefinitionStatesOnEnterEventsActionsFirehosePayloa
     /**
     * The content of the payload. You can use a string expression that includes quoted strings (``'<string>'``), variables (``$variable.<variable-name>``), input values (``$input.<input-name>.<path-to-datum>``), string concatenations, and quoted strings that contain ``${}`` as the content. The recommended maximum size of a content expression is 1 KB.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#content_expression CcDetectorModel#content_expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#content_expression CcDetectorModel#content_expression}
     */
     readonly contentExpression?: string;
     /**
     * The value of the payload type can be either ``STRING`` or ``JSON``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#type CcDetectorModel#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#type CcDetectorModel#type}
     */
     readonly type?: string;
 }
@@ -5906,19 +5907,19 @@ export interface FirehoseProperty {
     /**
     * The name of the Kinesis Data Firehose delivery stream where the data is written.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#delivery_stream_name CcDetectorModel#delivery_stream_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#delivery_stream_name CcDetectorModel#delivery_stream_name}
     */
     readonly deliveryStreamName?: string;
     /**
     * You can configure the action payload when you send a message to an Amazon Data Firehose delivery stream.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#payload CcDetectorModel#payload}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#payload CcDetectorModel#payload}
     */
     readonly payload?: DetectorModelDefinitionStatesOnEnterEventsActionsFirehosePayloadProperty;
     /**
     * A character separator that is used to separate records written to the Kinesis Data Firehose delivery stream. Valid values are: '\n' (newline), '\t' (tab), '\r\n' (Windows newline), ',' (comma).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#separator CcDetectorModel#separator}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#separator CcDetectorModel#separator}
     */
     readonly separator?: string;
 }
@@ -6028,13 +6029,13 @@ export interface DetectorModelDefinitionStatesOnEnterEventsActionsIotEventsPaylo
     /**
     * The content of the payload. You can use a string expression that includes quoted strings (``'<string>'``), variables (``$variable.<variable-name>``), input values (``$input.<input-name>.<path-to-datum>``), string concatenations, and quoted strings that contain ``${}`` as the content. The recommended maximum size of a content expression is 1 KB.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#content_expression CcDetectorModel#content_expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#content_expression CcDetectorModel#content_expression}
     */
     readonly contentExpression?: string;
     /**
     * The value of the payload type can be either ``STRING`` or ``JSON``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#type CcDetectorModel#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#type CcDetectorModel#type}
     */
     readonly type?: string;
 }
@@ -6122,13 +6123,13 @@ export interface IotEventsProperty {
     /**
     * The name of the ITE input where the data is sent.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#input_name CcDetectorModel#input_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#input_name CcDetectorModel#input_name}
     */
     readonly inputName?: string;
     /**
     * You can configure the action payload when you send a message to an ITE input.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#payload CcDetectorModel#payload}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#payload CcDetectorModel#payload}
     */
     readonly payload?: DetectorModelDefinitionStatesOnEnterEventsActionsIotEventsPayloadProperty;
 }
@@ -6216,13 +6217,13 @@ export interface AssetPropertyTimestampProperty {
     /**
     * The nanosecond offset converted from ``timeInSeconds``. The valid range is between 0-999999999.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#offset_in_nanos CcDetectorModel#offset_in_nanos}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#offset_in_nanos CcDetectorModel#offset_in_nanos}
     */
     readonly offsetInNanos?: string;
     /**
     * The timestamp, in seconds, in the Unix epoch format. The valid range is between 1-31556889864403199.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#time_in_seconds CcDetectorModel#time_in_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#time_in_seconds CcDetectorModel#time_in_seconds}
     */
     readonly timeInSeconds?: string;
 }
@@ -6310,25 +6311,25 @@ export interface AssetPropertyVariantProperty {
     /**
     * The asset property value is a Boolean value that must be ``'TRUE'`` or ``'FALSE'``. You must use an expression, and the evaluated result should be a Boolean value.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#boolean_value CcDetectorModel#boolean_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#boolean_value CcDetectorModel#boolean_value}
     */
     readonly booleanValue?: string;
     /**
     * The asset property value is a double. You must use an expression, and the evaluated result should be a double.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#double_value CcDetectorModel#double_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#double_value CcDetectorModel#double_value}
     */
     readonly doubleValue?: string;
     /**
     * The asset property value is an integer. You must use an expression, and the evaluated result should be an integer.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#integer_value CcDetectorModel#integer_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#integer_value CcDetectorModel#integer_value}
     */
     readonly integerValue?: string;
     /**
     * The asset property value is a string. You must use an expression, and the evaluated result should be a string.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#string_value CcDetectorModel#string_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#string_value CcDetectorModel#string_value}
     */
     readonly stringValue?: string;
 }
@@ -6460,19 +6461,19 @@ export interface AssetPropertyValueProperty {
     /**
     * The quality of the asset property value. The value must be ``'GOOD'``, ``'BAD'``, or ``'UNCERTAIN'``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#quality CcDetectorModel#quality}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#quality CcDetectorModel#quality}
     */
     readonly quality?: string;
     /**
     * The timestamp associated with the asset property value. The default is the current event time.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#timestamp CcDetectorModel#timestamp}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#timestamp CcDetectorModel#timestamp}
     */
     readonly timestamp?: AssetPropertyTimestampProperty;
     /**
     * The value to send to an asset property.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#value CcDetectorModel#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#value CcDetectorModel#value}
     */
     readonly value?: AssetPropertyVariantProperty;
 }
@@ -6582,31 +6583,31 @@ export interface IotSiteWiseProperty {
     /**
     * The ID of the asset that has the specified property.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#asset_id CcDetectorModel#asset_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#asset_id CcDetectorModel#asset_id}
     */
     readonly assetId?: string;
     /**
     * A unique identifier for this entry. You can use the entry ID to track which data entry causes an error in case of failure. The default is a new unique identifier.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#entry_id CcDetectorModel#entry_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#entry_id CcDetectorModel#entry_id}
     */
     readonly entryId?: string;
     /**
     * The alias of the asset property.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#property_alias CcDetectorModel#property_alias}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#property_alias CcDetectorModel#property_alias}
     */
     readonly propertyAlias?: string;
     /**
     * The ID of the asset property.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#property_id CcDetectorModel#property_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#property_id CcDetectorModel#property_id}
     */
     readonly propertyId?: string;
     /**
     * The value to send to the asset property. This value contains timestamp, quality, and value (TQV) information.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#property_value CcDetectorModel#property_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#property_value CcDetectorModel#property_value}
     */
     readonly propertyValue?: AssetPropertyValueProperty;
 }
@@ -6760,13 +6761,13 @@ export interface DetectorModelDefinitionStatesOnEnterEventsActionsIotTopicPublis
     /**
     * The content of the payload. You can use a string expression that includes quoted strings (``'<string>'``), variables (``$variable.<variable-name>``), input values (``$input.<input-name>.<path-to-datum>``), string concatenations, and quoted strings that contain ``${}`` as the content. The recommended maximum size of a content expression is 1 KB.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#content_expression CcDetectorModel#content_expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#content_expression CcDetectorModel#content_expression}
     */
     readonly contentExpression?: string;
     /**
     * The value of the payload type can be either ``STRING`` or ``JSON``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#type CcDetectorModel#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#type CcDetectorModel#type}
     */
     readonly type?: string;
 }
@@ -6854,13 +6855,13 @@ export interface IotTopicPublishProperty {
     /**
     * The MQTT topic of the message. You can use a string expression that includes variables (``$variable.<variable-name>``) and input values (``$input.<input-name>.<path-to-datum>``) as the topic string.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#mqtt_topic CcDetectorModel#mqtt_topic}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#mqtt_topic CcDetectorModel#mqtt_topic}
     */
     readonly mqttTopic?: string;
     /**
     * You can configure the action payload when you publish a message to an IoTCore topic.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#payload CcDetectorModel#payload}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#payload CcDetectorModel#payload}
     */
     readonly payload?: DetectorModelDefinitionStatesOnEnterEventsActionsIotTopicPublishPayloadProperty;
 }
@@ -6948,13 +6949,13 @@ export interface DetectorModelDefinitionStatesOnEnterEventsActionsLambdaPayloadP
     /**
     * The content of the payload. You can use a string expression that includes quoted strings (``'<string>'``), variables (``$variable.<variable-name>``), input values (``$input.<input-name>.<path-to-datum>``), string concatenations, and quoted strings that contain ``${}`` as the content. The recommended maximum size of a content expression is 1 KB.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#content_expression CcDetectorModel#content_expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#content_expression CcDetectorModel#content_expression}
     */
     readonly contentExpression?: string;
     /**
     * The value of the payload type can be either ``STRING`` or ``JSON``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#type CcDetectorModel#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#type CcDetectorModel#type}
     */
     readonly type?: string;
 }
@@ -7042,13 +7043,13 @@ export interface LambdaProperty {
     /**
     * The ARN of the Lambda function that is executed.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#function_arn CcDetectorModel#function_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#function_arn CcDetectorModel#function_arn}
     */
     readonly functionArn?: string;
     /**
     * You can configure the action payload when you send a message to a Lambda function.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#payload CcDetectorModel#payload}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#payload CcDetectorModel#payload}
     */
     readonly payload?: DetectorModelDefinitionStatesOnEnterEventsActionsLambdaPayloadProperty;
 }
@@ -7136,7 +7137,7 @@ export interface ResetTimerProperty {
     /**
     * The name of the timer to reset.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#timer_name CcDetectorModel#timer_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#timer_name CcDetectorModel#timer_name}
     */
     readonly timerName?: string;
 }
@@ -7202,19 +7203,19 @@ export interface SetTimerProperty {
     /**
     * The duration of the timer, in seconds. You can use a string expression that includes numbers, variables (``$variable.<variable-name>``), and input values (``$input.<input-name>.<path-to-datum>``) as the duration. The range of the duration is 1-31622400 seconds. To ensure accuracy, the minimum duration is 60 seconds. The evaluated result of the duration is rounded down to the nearest whole number.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#duration_expression CcDetectorModel#duration_expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#duration_expression CcDetectorModel#duration_expression}
     */
     readonly durationExpression?: string;
     /**
     * The number of seconds until the timer expires. The minimum value is 60 seconds to ensure accuracy. The maximum value is 31622400 seconds.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#seconds CcDetectorModel#seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#seconds CcDetectorModel#seconds}
     */
     readonly seconds?: number;
     /**
     * The name of the timer.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#timer_name CcDetectorModel#timer_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#timer_name CcDetectorModel#timer_name}
     */
     readonly timerName?: string;
 }
@@ -7324,13 +7325,13 @@ export interface SetVariableProperty {
     /**
     * The new value of the variable.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#value CcDetectorModel#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#value CcDetectorModel#value}
     */
     readonly value?: string;
     /**
     * The name of the variable.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#variable_name CcDetectorModel#variable_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#variable_name CcDetectorModel#variable_name}
     */
     readonly variableName?: string;
 }
@@ -7418,13 +7419,13 @@ export interface DetectorModelDefinitionStatesOnEnterEventsActionsSnsPayloadProp
     /**
     * The content of the payload. You can use a string expression that includes quoted strings (``'<string>'``), variables (``$variable.<variable-name>``), input values (``$input.<input-name>.<path-to-datum>``), string concatenations, and quoted strings that contain ``${}`` as the content. The recommended maximum size of a content expression is 1 KB.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#content_expression CcDetectorModel#content_expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#content_expression CcDetectorModel#content_expression}
     */
     readonly contentExpression?: string;
     /**
     * The value of the payload type can be either ``STRING`` or ``JSON``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#type CcDetectorModel#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#type CcDetectorModel#type}
     */
     readonly type?: string;
 }
@@ -7512,13 +7513,13 @@ export interface SnsProperty {
     /**
     * You can configure the action payload when you send a message as an Amazon SNS push notification.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#payload CcDetectorModel#payload}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#payload CcDetectorModel#payload}
     */
     readonly payload?: DetectorModelDefinitionStatesOnEnterEventsActionsSnsPayloadProperty;
     /**
     * The ARN of the Amazon SNS target where the message is sent.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#target_arn CcDetectorModel#target_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#target_arn CcDetectorModel#target_arn}
     */
     readonly targetArn?: string;
 }
@@ -7606,13 +7607,13 @@ export interface DetectorModelDefinitionStatesOnEnterEventsActionsSqsPayloadProp
     /**
     * The content of the payload. You can use a string expression that includes quoted strings (``'<string>'``), variables (``$variable.<variable-name>``), input values (``$input.<input-name>.<path-to-datum>``), string concatenations, and quoted strings that contain ``${}`` as the content. The recommended maximum size of a content expression is 1 KB.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#content_expression CcDetectorModel#content_expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#content_expression CcDetectorModel#content_expression}
     */
     readonly contentExpression?: string;
     /**
     * The value of the payload type can be either ``STRING`` or ``JSON``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#type CcDetectorModel#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#type CcDetectorModel#type}
     */
     readonly type?: string;
 }
@@ -7700,19 +7701,19 @@ export interface SqsProperty {
     /**
     * You can configure the action payload when you send a message to an Amazon SQS queue.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#payload CcDetectorModel#payload}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#payload CcDetectorModel#payload}
     */
     readonly payload?: DetectorModelDefinitionStatesOnEnterEventsActionsSqsPayloadProperty;
     /**
     * The URL of the SQS queue where the data is written.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#queue_url CcDetectorModel#queue_url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#queue_url CcDetectorModel#queue_url}
     */
     readonly queueUrl?: string;
     /**
     * Set this to TRUE if you want the data to be base-64 encoded before it is written to the queue. Otherwise, set this to FALSE.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#use_base_64 CcDetectorModel#use_base_64}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#use_base_64 CcDetectorModel#use_base_64}
     */
     readonly useBase64?: boolean | cdktn.IResolvable;
 }
@@ -7822,79 +7823,79 @@ export interface ActionProperty {
     /**
     * Information needed to clear the timer.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#clear_timer CcDetectorModel#clear_timer}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#clear_timer CcDetectorModel#clear_timer}
     */
     readonly clearTimer?: ClearTimerProperty;
     /**
     * Writes to the DynamoDB table that you created. The default action payload contains all attribute-value pairs that have the information about the detector model instance and the event that triggered the action. You can customize the [payload](https://docs.aws.amazon.com/iotevents/latest/apireference/API_Payload.html). A separate column of the DynamoDB table receives one attribute-value pair in the payload that you specify. For more information, see [Actions](https://docs.aws.amazon.com/iotevents/latest/developerguide/iotevents-event-actions.html) in *Developer Guide*.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#dynamo_d_bv_2 CcDetectorModel#dynamo_d_bv_2}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#dynamo_d_bv_2 CcDetectorModel#dynamo_d_bv_2}
     */
     readonly dynamoDBv2?: DynamoDBv2Property;
     /**
     * Writes to the DynamoDB table that you created. The default action payload contains all attribute-value pairs that have the information about the detector model instance and the event that triggered the action. You can customize the [payload](https://docs.aws.amazon.com/iotevents/latest/apireference/API_Payload.html). One column of the DynamoDB table receives all attribute-value pairs in the payload that you specify. For more information, see [Actions](https://docs.aws.amazon.com/iotevents/latest/developerguide/iotevents-event-actions.html) in *Developer Guide*.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#dynamo_db CcDetectorModel#dynamo_db}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#dynamo_db CcDetectorModel#dynamo_db}
     */
     readonly dynamoDb?: DynamoDBProperty;
     /**
     * Sends information about the detector model instance and the event that triggered the action to an Amazon Kinesis Data Firehose delivery stream.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#firehose CcDetectorModel#firehose}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#firehose CcDetectorModel#firehose}
     */
     readonly firehose?: FirehoseProperty;
     /**
     * Sends ITE input, which passes information about the detector model instance and the event that triggered the action.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#iot_events CcDetectorModel#iot_events}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#iot_events CcDetectorModel#iot_events}
     */
     readonly iotEvents?: IotEventsProperty;
     /**
     * Sends information about the detector model instance and the event that triggered the action to an asset property in ITSW .
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#iot_site_wise CcDetectorModel#iot_site_wise}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#iot_site_wise CcDetectorModel#iot_site_wise}
     */
     readonly iotSiteWise?: IotSiteWiseProperty;
     /**
     * Publishes an MQTT message with the given topic to the IoT message broker.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#iot_topic_publish CcDetectorModel#iot_topic_publish}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#iot_topic_publish CcDetectorModel#iot_topic_publish}
     */
     readonly iotTopicPublish?: IotTopicPublishProperty;
     /**
     * Calls a Lambda function, passing in information about the detector model instance and the event that triggered the action.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#lambda CcDetectorModel#lambda}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#lambda CcDetectorModel#lambda}
     */
     readonly lambda?: LambdaProperty;
     /**
     * Information needed to reset the timer.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#reset_timer CcDetectorModel#reset_timer}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#reset_timer CcDetectorModel#reset_timer}
     */
     readonly resetTimer?: ResetTimerProperty;
     /**
     * Information needed to set the timer.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#set_timer CcDetectorModel#set_timer}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#set_timer CcDetectorModel#set_timer}
     */
     readonly setTimer?: SetTimerProperty;
     /**
     * Sets a variable to a specified value.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#set_variable CcDetectorModel#set_variable}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#set_variable CcDetectorModel#set_variable}
     */
     readonly setVariable?: SetVariableProperty;
     /**
     * Sends an Amazon SNS message.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#sns CcDetectorModel#sns}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#sns CcDetectorModel#sns}
     */
     readonly sns?: SnsProperty;
     /**
     * Sends an Amazon SNS message.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#sqs CcDetectorModel#sqs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#sqs CcDetectorModel#sqs}
     */
     readonly sqs?: SqsProperty;
 }
@@ -8246,19 +8247,19 @@ export interface EventProperty {
     /**
     * The actions to be performed.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#actions CcDetectorModel#actions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#actions CcDetectorModel#actions}
     */
     readonly actions?: ActionProperty[] | cdktn.IResolvable;
     /**
     * Optional. The Boolean expression that, when TRUE, causes the ``actions`` to be performed. If not present, the actions are performed (=TRUE). If the expression result is not a Boolean value, the actions are not performed (=FALSE).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#condition CcDetectorModel#condition}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#condition CcDetectorModel#condition}
     */
     readonly condition?: string;
     /**
     * The name of the event.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#event_name CcDetectorModel#event_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#event_name CcDetectorModel#event_name}
     */
     readonly eventName?: string;
 }
@@ -8390,7 +8391,7 @@ export interface OnEnterProperty {
     /**
     * Specifies the actions that are performed when the state is entered and the ``condition`` is ``TRUE``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#events CcDetectorModel#events}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#events CcDetectorModel#events}
     */
     readonly events?: EventProperty[] | cdktn.IResolvable;
 }
@@ -8456,7 +8457,7 @@ export interface DetectorModelDefinitionStatesOnExitEventsActionsClearTimerPrope
     /**
     * The name of the timer to clear.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#timer_name CcDetectorModel#timer_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#timer_name CcDetectorModel#timer_name}
     */
     readonly timerName?: string;
 }
@@ -8522,13 +8523,13 @@ export interface DetectorModelDefinitionStatesOnExitEventsActionsDynamoDBv2Paylo
     /**
     * The content of the payload. You can use a string expression that includes quoted strings (``'<string>'``), variables (``$variable.<variable-name>``), input values (``$input.<input-name>.<path-to-datum>``), string concatenations, and quoted strings that contain ``${}`` as the content. The recommended maximum size of a content expression is 1 KB.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#content_expression CcDetectorModel#content_expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#content_expression CcDetectorModel#content_expression}
     */
     readonly contentExpression?: string;
     /**
     * The value of the payload type can be either ``STRING`` or ``JSON``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#type CcDetectorModel#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#type CcDetectorModel#type}
     */
     readonly type?: string;
 }
@@ -8617,13 +8618,13 @@ export interface DetectorModelDefinitionStatesOnExitEventsActionsDynamoDBv2Prope
     * Information needed to configure the payload.
     *  By default, ITE generates a standard payload in JSON for any action. This action payload contains all attribute-value pairs that have the information about the detector model instance and the event triggered the action. To configure the action payload, you can use ``contentExpression``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#payload CcDetectorModel#payload}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#payload CcDetectorModel#payload}
     */
     readonly payload?: DetectorModelDefinitionStatesOnExitEventsActionsDynamoDBv2PayloadProperty;
     /**
     * The name of the DynamoDB table.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#table_name CcDetectorModel#table_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#table_name CcDetectorModel#table_name}
     */
     readonly tableName?: string;
 }
@@ -8711,13 +8712,13 @@ export interface DetectorModelDefinitionStatesOnExitEventsActionsDynamoDbPayload
     /**
     * The content of the payload. You can use a string expression that includes quoted strings (``'<string>'``), variables (``$variable.<variable-name>``), input values (``$input.<input-name>.<path-to-datum>``), string concatenations, and quoted strings that contain ``${}`` as the content. The recommended maximum size of a content expression is 1 KB.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#content_expression CcDetectorModel#content_expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#content_expression CcDetectorModel#content_expression}
     */
     readonly contentExpression?: string;
     /**
     * The value of the payload type can be either ``STRING`` or ``JSON``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#type CcDetectorModel#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#type CcDetectorModel#type}
     */
     readonly type?: string;
 }
@@ -8805,7 +8806,7 @@ export interface DetectorModelDefinitionStatesOnExitEventsActionsDynamoDbPropert
     /**
     * The name of the hash key (also called the partition key). The ``hashKeyField`` value must match the partition key of the target DynamoDB table.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#hash_key_field CcDetectorModel#hash_key_field}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#hash_key_field CcDetectorModel#hash_key_field}
     */
     readonly hashKeyField?: string;
     /**
@@ -8815,13 +8816,13 @@ export interface DetectorModelDefinitionStatesOnExitEventsActionsDynamoDbPropert
     *   
     *  If you don't specify ``hashKeyType``, the default value is ``'STRING'``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#hash_key_type CcDetectorModel#hash_key_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#hash_key_type CcDetectorModel#hash_key_type}
     */
     readonly hashKeyType?: string;
     /**
     * The value of the hash key (also called the partition key).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#hash_key_value CcDetectorModel#hash_key_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#hash_key_value CcDetectorModel#hash_key_value}
     */
     readonly hashKeyValue?: string;
     /**
@@ -8832,27 +8833,27 @@ export interface DetectorModelDefinitionStatesOnExitEventsActionsDynamoDbPropert
     *   
     *  If you don't specify this parameter, ITE triggers the ``'INSERT'`` operation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#operation CcDetectorModel#operation}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#operation CcDetectorModel#operation}
     */
     readonly operation?: string;
     /**
     * Information needed to configure the payload.
     *  By default, ITE generates a standard payload in JSON for any action. This action payload contains all attribute-value pairs that have the information about the detector model instance and the event triggered the action. To configure the action payload, you can use ``contentExpression``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#payload CcDetectorModel#payload}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#payload CcDetectorModel#payload}
     */
     readonly payload?: DetectorModelDefinitionStatesOnExitEventsActionsDynamoDbPayloadProperty;
     /**
     * The name of the DynamoDB column that receives the action payload.
     *  If you don't specify this parameter, the name of the DynamoDB column is ``payload``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#payload_field CcDetectorModel#payload_field}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#payload_field CcDetectorModel#payload_field}
     */
     readonly payloadField?: string;
     /**
     * The name of the range key (also called the sort key). The ``rangeKeyField`` value must match the sort key of the target DynamoDB table.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#range_key_field CcDetectorModel#range_key_field}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#range_key_field CcDetectorModel#range_key_field}
     */
     readonly rangeKeyField?: string;
     /**
@@ -8862,19 +8863,19 @@ export interface DetectorModelDefinitionStatesOnExitEventsActionsDynamoDbPropert
     *   
     *  If you don't specify ``rangeKeyField``, the default value is ``'STRING'``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#range_key_type CcDetectorModel#range_key_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#range_key_type CcDetectorModel#range_key_type}
     */
     readonly rangeKeyType?: string;
     /**
     * The value of the range key (also called the sort key).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#range_key_value CcDetectorModel#range_key_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#range_key_value CcDetectorModel#range_key_value}
     */
     readonly rangeKeyValue?: string;
     /**
     * The name of the DynamoDB table. The ``tableName`` value must match the table name of the target DynamoDB table.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#table_name CcDetectorModel#table_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#table_name CcDetectorModel#table_name}
     */
     readonly tableName?: string;
 }
@@ -9138,13 +9139,13 @@ export interface DetectorModelDefinitionStatesOnExitEventsActionsFirehosePayload
     /**
     * The content of the payload. You can use a string expression that includes quoted strings (``'<string>'``), variables (``$variable.<variable-name>``), input values (``$input.<input-name>.<path-to-datum>``), string concatenations, and quoted strings that contain ``${}`` as the content. The recommended maximum size of a content expression is 1 KB.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#content_expression CcDetectorModel#content_expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#content_expression CcDetectorModel#content_expression}
     */
     readonly contentExpression?: string;
     /**
     * The value of the payload type can be either ``STRING`` or ``JSON``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#type CcDetectorModel#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#type CcDetectorModel#type}
     */
     readonly type?: string;
 }
@@ -9232,19 +9233,19 @@ export interface DetectorModelDefinitionStatesOnExitEventsActionsFirehosePropert
     /**
     * The name of the Kinesis Data Firehose delivery stream where the data is written.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#delivery_stream_name CcDetectorModel#delivery_stream_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#delivery_stream_name CcDetectorModel#delivery_stream_name}
     */
     readonly deliveryStreamName?: string;
     /**
     * You can configure the action payload when you send a message to an Amazon Data Firehose delivery stream.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#payload CcDetectorModel#payload}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#payload CcDetectorModel#payload}
     */
     readonly payload?: DetectorModelDefinitionStatesOnExitEventsActionsFirehosePayloadProperty;
     /**
     * A character separator that is used to separate records written to the Kinesis Data Firehose delivery stream. Valid values are: '\n' (newline), '\t' (tab), '\r\n' (Windows newline), ',' (comma).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#separator CcDetectorModel#separator}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#separator CcDetectorModel#separator}
     */
     readonly separator?: string;
 }
@@ -9354,13 +9355,13 @@ export interface DetectorModelDefinitionStatesOnExitEventsActionsIotEventsPayloa
     /**
     * The content of the payload. You can use a string expression that includes quoted strings (``'<string>'``), variables (``$variable.<variable-name>``), input values (``$input.<input-name>.<path-to-datum>``), string concatenations, and quoted strings that contain ``${}`` as the content. The recommended maximum size of a content expression is 1 KB.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#content_expression CcDetectorModel#content_expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#content_expression CcDetectorModel#content_expression}
     */
     readonly contentExpression?: string;
     /**
     * The value of the payload type can be either ``STRING`` or ``JSON``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#type CcDetectorModel#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#type CcDetectorModel#type}
     */
     readonly type?: string;
 }
@@ -9448,13 +9449,13 @@ export interface DetectorModelDefinitionStatesOnExitEventsActionsIotEventsProper
     /**
     * The name of the ITE input where the data is sent.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#input_name CcDetectorModel#input_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#input_name CcDetectorModel#input_name}
     */
     readonly inputName?: string;
     /**
     * You can configure the action payload when you send a message to an ITE input.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#payload CcDetectorModel#payload}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#payload CcDetectorModel#payload}
     */
     readonly payload?: DetectorModelDefinitionStatesOnExitEventsActionsIotEventsPayloadProperty;
 }
@@ -9542,13 +9543,13 @@ export interface DetectorModelDefinitionStatesOnExitEventsActionsIotSiteWiseProp
     /**
     * The nanosecond offset converted from ``timeInSeconds``. The valid range is between 0-999999999.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#offset_in_nanos CcDetectorModel#offset_in_nanos}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#offset_in_nanos CcDetectorModel#offset_in_nanos}
     */
     readonly offsetInNanos?: string;
     /**
     * The timestamp, in seconds, in the Unix epoch format. The valid range is between 1-31556889864403199.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#time_in_seconds CcDetectorModel#time_in_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#time_in_seconds CcDetectorModel#time_in_seconds}
     */
     readonly timeInSeconds?: string;
 }
@@ -9636,25 +9637,25 @@ export interface DetectorModelDefinitionStatesOnExitEventsActionsIotSiteWiseProp
     /**
     * The asset property value is a Boolean value that must be ``'TRUE'`` or ``'FALSE'``. You must use an expression, and the evaluated result should be a Boolean value.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#boolean_value CcDetectorModel#boolean_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#boolean_value CcDetectorModel#boolean_value}
     */
     readonly booleanValue?: string;
     /**
     * The asset property value is a double. You must use an expression, and the evaluated result should be a double.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#double_value CcDetectorModel#double_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#double_value CcDetectorModel#double_value}
     */
     readonly doubleValue?: string;
     /**
     * The asset property value is an integer. You must use an expression, and the evaluated result should be an integer.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#integer_value CcDetectorModel#integer_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#integer_value CcDetectorModel#integer_value}
     */
     readonly integerValue?: string;
     /**
     * The asset property value is a string. You must use an expression, and the evaluated result should be a string.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#string_value CcDetectorModel#string_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#string_value CcDetectorModel#string_value}
     */
     readonly stringValue?: string;
 }
@@ -9786,19 +9787,19 @@ export interface DetectorModelDefinitionStatesOnExitEventsActionsIotSiteWiseProp
     /**
     * The quality of the asset property value. The value must be ``'GOOD'``, ``'BAD'``, or ``'UNCERTAIN'``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#quality CcDetectorModel#quality}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#quality CcDetectorModel#quality}
     */
     readonly quality?: string;
     /**
     * The timestamp associated with the asset property value. The default is the current event time.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#timestamp CcDetectorModel#timestamp}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#timestamp CcDetectorModel#timestamp}
     */
     readonly timestamp?: DetectorModelDefinitionStatesOnExitEventsActionsIotSiteWisePropertyValueTimestampProperty;
     /**
     * The value to send to an asset property.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#value CcDetectorModel#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#value CcDetectorModel#value}
     */
     readonly value?: DetectorModelDefinitionStatesOnExitEventsActionsIotSiteWisePropertyValueValueProperty;
 }
@@ -9908,31 +9909,31 @@ export interface DetectorModelDefinitionStatesOnExitEventsActionsIotSiteWiseProp
     /**
     * The ID of the asset that has the specified property.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#asset_id CcDetectorModel#asset_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#asset_id CcDetectorModel#asset_id}
     */
     readonly assetId?: string;
     /**
     * A unique identifier for this entry. You can use the entry ID to track which data entry causes an error in case of failure. The default is a new unique identifier.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#entry_id CcDetectorModel#entry_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#entry_id CcDetectorModel#entry_id}
     */
     readonly entryId?: string;
     /**
     * The alias of the asset property.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#property_alias CcDetectorModel#property_alias}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#property_alias CcDetectorModel#property_alias}
     */
     readonly propertyAlias?: string;
     /**
     * The ID of the asset property.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#property_id CcDetectorModel#property_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#property_id CcDetectorModel#property_id}
     */
     readonly propertyId?: string;
     /**
     * The value to send to the asset property. This value contains timestamp, quality, and value (TQV) information.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#property_value CcDetectorModel#property_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#property_value CcDetectorModel#property_value}
     */
     readonly propertyValue?: DetectorModelDefinitionStatesOnExitEventsActionsIotSiteWisePropertyValueProperty;
 }
@@ -10086,13 +10087,13 @@ export interface DetectorModelDefinitionStatesOnExitEventsActionsIotTopicPublish
     /**
     * The content of the payload. You can use a string expression that includes quoted strings (``'<string>'``), variables (``$variable.<variable-name>``), input values (``$input.<input-name>.<path-to-datum>``), string concatenations, and quoted strings that contain ``${}`` as the content. The recommended maximum size of a content expression is 1 KB.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#content_expression CcDetectorModel#content_expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#content_expression CcDetectorModel#content_expression}
     */
     readonly contentExpression?: string;
     /**
     * The value of the payload type can be either ``STRING`` or ``JSON``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#type CcDetectorModel#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#type CcDetectorModel#type}
     */
     readonly type?: string;
 }
@@ -10180,13 +10181,13 @@ export interface DetectorModelDefinitionStatesOnExitEventsActionsIotTopicPublish
     /**
     * The MQTT topic of the message. You can use a string expression that includes variables (``$variable.<variable-name>``) and input values (``$input.<input-name>.<path-to-datum>``) as the topic string.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#mqtt_topic CcDetectorModel#mqtt_topic}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#mqtt_topic CcDetectorModel#mqtt_topic}
     */
     readonly mqttTopic?: string;
     /**
     * You can configure the action payload when you publish a message to an IoTCore topic.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#payload CcDetectorModel#payload}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#payload CcDetectorModel#payload}
     */
     readonly payload?: DetectorModelDefinitionStatesOnExitEventsActionsIotTopicPublishPayloadProperty;
 }
@@ -10274,13 +10275,13 @@ export interface DetectorModelDefinitionStatesOnExitEventsActionsLambdaPayloadPr
     /**
     * The content of the payload. You can use a string expression that includes quoted strings (``'<string>'``), variables (``$variable.<variable-name>``), input values (``$input.<input-name>.<path-to-datum>``), string concatenations, and quoted strings that contain ``${}`` as the content. The recommended maximum size of a content expression is 1 KB.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#content_expression CcDetectorModel#content_expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#content_expression CcDetectorModel#content_expression}
     */
     readonly contentExpression?: string;
     /**
     * The value of the payload type can be either ``STRING`` or ``JSON``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#type CcDetectorModel#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#type CcDetectorModel#type}
     */
     readonly type?: string;
 }
@@ -10368,13 +10369,13 @@ export interface DetectorModelDefinitionStatesOnExitEventsActionsLambdaProperty 
     /**
     * The ARN of the Lambda function that is executed.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#function_arn CcDetectorModel#function_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#function_arn CcDetectorModel#function_arn}
     */
     readonly functionArn?: string;
     /**
     * You can configure the action payload when you send a message to a Lambda function.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#payload CcDetectorModel#payload}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#payload CcDetectorModel#payload}
     */
     readonly payload?: DetectorModelDefinitionStatesOnExitEventsActionsLambdaPayloadProperty;
 }
@@ -10462,7 +10463,7 @@ export interface DetectorModelDefinitionStatesOnExitEventsActionsResetTimerPrope
     /**
     * The name of the timer to reset.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#timer_name CcDetectorModel#timer_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#timer_name CcDetectorModel#timer_name}
     */
     readonly timerName?: string;
 }
@@ -10528,19 +10529,19 @@ export interface DetectorModelDefinitionStatesOnExitEventsActionsSetTimerPropert
     /**
     * The duration of the timer, in seconds. You can use a string expression that includes numbers, variables (``$variable.<variable-name>``), and input values (``$input.<input-name>.<path-to-datum>``) as the duration. The range of the duration is 1-31622400 seconds. To ensure accuracy, the minimum duration is 60 seconds. The evaluated result of the duration is rounded down to the nearest whole number.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#duration_expression CcDetectorModel#duration_expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#duration_expression CcDetectorModel#duration_expression}
     */
     readonly durationExpression?: string;
     /**
     * The number of seconds until the timer expires. The minimum value is 60 seconds to ensure accuracy. The maximum value is 31622400 seconds.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#seconds CcDetectorModel#seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#seconds CcDetectorModel#seconds}
     */
     readonly seconds?: number;
     /**
     * The name of the timer.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#timer_name CcDetectorModel#timer_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#timer_name CcDetectorModel#timer_name}
     */
     readonly timerName?: string;
 }
@@ -10650,13 +10651,13 @@ export interface DetectorModelDefinitionStatesOnExitEventsActionsSetVariableProp
     /**
     * The new value of the variable.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#value CcDetectorModel#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#value CcDetectorModel#value}
     */
     readonly value?: string;
     /**
     * The name of the variable.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#variable_name CcDetectorModel#variable_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#variable_name CcDetectorModel#variable_name}
     */
     readonly variableName?: string;
 }
@@ -10744,13 +10745,13 @@ export interface DetectorModelDefinitionStatesOnExitEventsActionsSnsPayloadPrope
     /**
     * The content of the payload. You can use a string expression that includes quoted strings (``'<string>'``), variables (``$variable.<variable-name>``), input values (``$input.<input-name>.<path-to-datum>``), string concatenations, and quoted strings that contain ``${}`` as the content. The recommended maximum size of a content expression is 1 KB.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#content_expression CcDetectorModel#content_expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#content_expression CcDetectorModel#content_expression}
     */
     readonly contentExpression?: string;
     /**
     * The value of the payload type can be either ``STRING`` or ``JSON``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#type CcDetectorModel#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#type CcDetectorModel#type}
     */
     readonly type?: string;
 }
@@ -10838,13 +10839,13 @@ export interface DetectorModelDefinitionStatesOnExitEventsActionsSnsProperty {
     /**
     * You can configure the action payload when you send a message as an Amazon SNS push notification.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#payload CcDetectorModel#payload}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#payload CcDetectorModel#payload}
     */
     readonly payload?: DetectorModelDefinitionStatesOnExitEventsActionsSnsPayloadProperty;
     /**
     * The ARN of the Amazon SNS target where the message is sent.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#target_arn CcDetectorModel#target_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#target_arn CcDetectorModel#target_arn}
     */
     readonly targetArn?: string;
 }
@@ -10932,13 +10933,13 @@ export interface DetectorModelDefinitionStatesOnExitEventsActionsSqsPayloadPrope
     /**
     * The content of the payload. You can use a string expression that includes quoted strings (``'<string>'``), variables (``$variable.<variable-name>``), input values (``$input.<input-name>.<path-to-datum>``), string concatenations, and quoted strings that contain ``${}`` as the content. The recommended maximum size of a content expression is 1 KB.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#content_expression CcDetectorModel#content_expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#content_expression CcDetectorModel#content_expression}
     */
     readonly contentExpression?: string;
     /**
     * The value of the payload type can be either ``STRING`` or ``JSON``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#type CcDetectorModel#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#type CcDetectorModel#type}
     */
     readonly type?: string;
 }
@@ -11026,19 +11027,19 @@ export interface DetectorModelDefinitionStatesOnExitEventsActionsSqsProperty {
     /**
     * You can configure the action payload when you send a message to an Amazon SQS queue.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#payload CcDetectorModel#payload}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#payload CcDetectorModel#payload}
     */
     readonly payload?: DetectorModelDefinitionStatesOnExitEventsActionsSqsPayloadProperty;
     /**
     * The URL of the SQS queue where the data is written.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#queue_url CcDetectorModel#queue_url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#queue_url CcDetectorModel#queue_url}
     */
     readonly queueUrl?: string;
     /**
     * Set this to TRUE if you want the data to be base-64 encoded before it is written to the queue. Otherwise, set this to FALSE.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#use_base_64 CcDetectorModel#use_base_64}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#use_base_64 CcDetectorModel#use_base_64}
     */
     readonly useBase64?: boolean | cdktn.IResolvable;
 }
@@ -11148,79 +11149,79 @@ export interface DetectorModelDefinitionStatesOnExitEventsActionsProperty {
     /**
     * Information needed to clear the timer.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#clear_timer CcDetectorModel#clear_timer}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#clear_timer CcDetectorModel#clear_timer}
     */
     readonly clearTimer?: DetectorModelDefinitionStatesOnExitEventsActionsClearTimerProperty;
     /**
     * Writes to the DynamoDB table that you created. The default action payload contains all attribute-value pairs that have the information about the detector model instance and the event that triggered the action. You can customize the [payload](https://docs.aws.amazon.com/iotevents/latest/apireference/API_Payload.html). A separate column of the DynamoDB table receives one attribute-value pair in the payload that you specify. For more information, see [Actions](https://docs.aws.amazon.com/iotevents/latest/developerguide/iotevents-event-actions.html) in *Developer Guide*.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#dynamo_d_bv_2 CcDetectorModel#dynamo_d_bv_2}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#dynamo_d_bv_2 CcDetectorModel#dynamo_d_bv_2}
     */
     readonly dynamoDBv2?: DetectorModelDefinitionStatesOnExitEventsActionsDynamoDBv2Property;
     /**
     * Writes to the DynamoDB table that you created. The default action payload contains all attribute-value pairs that have the information about the detector model instance and the event that triggered the action. You can customize the [payload](https://docs.aws.amazon.com/iotevents/latest/apireference/API_Payload.html). One column of the DynamoDB table receives all attribute-value pairs in the payload that you specify. For more information, see [Actions](https://docs.aws.amazon.com/iotevents/latest/developerguide/iotevents-event-actions.html) in *Developer Guide*.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#dynamo_db CcDetectorModel#dynamo_db}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#dynamo_db CcDetectorModel#dynamo_db}
     */
     readonly dynamoDb?: DetectorModelDefinitionStatesOnExitEventsActionsDynamoDbProperty;
     /**
     * Sends information about the detector model instance and the event that triggered the action to an Amazon Kinesis Data Firehose delivery stream.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#firehose CcDetectorModel#firehose}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#firehose CcDetectorModel#firehose}
     */
     readonly firehose?: DetectorModelDefinitionStatesOnExitEventsActionsFirehoseProperty;
     /**
     * Sends ITE input, which passes information about the detector model instance and the event that triggered the action.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#iot_events CcDetectorModel#iot_events}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#iot_events CcDetectorModel#iot_events}
     */
     readonly iotEvents?: DetectorModelDefinitionStatesOnExitEventsActionsIotEventsProperty;
     /**
     * Sends information about the detector model instance and the event that triggered the action to an asset property in ITSW .
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#iot_site_wise CcDetectorModel#iot_site_wise}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#iot_site_wise CcDetectorModel#iot_site_wise}
     */
     readonly iotSiteWise?: DetectorModelDefinitionStatesOnExitEventsActionsIotSiteWiseProperty;
     /**
     * Publishes an MQTT message with the given topic to the IoT message broker.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#iot_topic_publish CcDetectorModel#iot_topic_publish}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#iot_topic_publish CcDetectorModel#iot_topic_publish}
     */
     readonly iotTopicPublish?: DetectorModelDefinitionStatesOnExitEventsActionsIotTopicPublishProperty;
     /**
     * Calls a Lambda function, passing in information about the detector model instance and the event that triggered the action.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#lambda CcDetectorModel#lambda}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#lambda CcDetectorModel#lambda}
     */
     readonly lambda?: DetectorModelDefinitionStatesOnExitEventsActionsLambdaProperty;
     /**
     * Information needed to reset the timer.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#reset_timer CcDetectorModel#reset_timer}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#reset_timer CcDetectorModel#reset_timer}
     */
     readonly resetTimer?: DetectorModelDefinitionStatesOnExitEventsActionsResetTimerProperty;
     /**
     * Information needed to set the timer.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#set_timer CcDetectorModel#set_timer}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#set_timer CcDetectorModel#set_timer}
     */
     readonly setTimer?: DetectorModelDefinitionStatesOnExitEventsActionsSetTimerProperty;
     /**
     * Sets a variable to a specified value.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#set_variable CcDetectorModel#set_variable}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#set_variable CcDetectorModel#set_variable}
     */
     readonly setVariable?: DetectorModelDefinitionStatesOnExitEventsActionsSetVariableProperty;
     /**
     * Sends an Amazon SNS message.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#sns CcDetectorModel#sns}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#sns CcDetectorModel#sns}
     */
     readonly sns?: DetectorModelDefinitionStatesOnExitEventsActionsSnsProperty;
     /**
     * Sends an Amazon SNS message.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#sqs CcDetectorModel#sqs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#sqs CcDetectorModel#sqs}
     */
     readonly sqs?: DetectorModelDefinitionStatesOnExitEventsActionsSqsProperty;
 }
@@ -11572,19 +11573,19 @@ export interface DetectorModelDefinitionStatesOnExitEventsProperty {
     /**
     * The actions to be performed.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#actions CcDetectorModel#actions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#actions CcDetectorModel#actions}
     */
     readonly actions?: DetectorModelDefinitionStatesOnExitEventsActionsProperty[] | cdktn.IResolvable;
     /**
     * Optional. The Boolean expression that, when TRUE, causes the ``actions`` to be performed. If not present, the actions are performed (=TRUE). If the expression result is not a Boolean value, the actions are not performed (=FALSE).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#condition CcDetectorModel#condition}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#condition CcDetectorModel#condition}
     */
     readonly condition?: string;
     /**
     * The name of the event.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#event_name CcDetectorModel#event_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#event_name CcDetectorModel#event_name}
     */
     readonly eventName?: string;
 }
@@ -11716,7 +11717,7 @@ export interface OnExitProperty {
     /**
     * Specifies the ``actions`` that are performed when the state is exited and the ``condition`` is ``TRUE``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#events CcDetectorModel#events}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#events CcDetectorModel#events}
     */
     readonly events?: DetectorModelDefinitionStatesOnExitEventsProperty[] | cdktn.IResolvable;
 }
@@ -11782,7 +11783,7 @@ export interface DetectorModelDefinitionStatesOnInputEventsActionsClearTimerProp
     /**
     * The name of the timer to clear.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#timer_name CcDetectorModel#timer_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#timer_name CcDetectorModel#timer_name}
     */
     readonly timerName?: string;
 }
@@ -11848,13 +11849,13 @@ export interface DetectorModelDefinitionStatesOnInputEventsActionsDynamoDBv2Payl
     /**
     * The content of the payload. You can use a string expression that includes quoted strings (``'<string>'``), variables (``$variable.<variable-name>``), input values (``$input.<input-name>.<path-to-datum>``), string concatenations, and quoted strings that contain ``${}`` as the content. The recommended maximum size of a content expression is 1 KB.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#content_expression CcDetectorModel#content_expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#content_expression CcDetectorModel#content_expression}
     */
     readonly contentExpression?: string;
     /**
     * The value of the payload type can be either ``STRING`` or ``JSON``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#type CcDetectorModel#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#type CcDetectorModel#type}
     */
     readonly type?: string;
 }
@@ -11943,13 +11944,13 @@ export interface DetectorModelDefinitionStatesOnInputEventsActionsDynamoDBv2Prop
     * Information needed to configure the payload.
     *  By default, ITE generates a standard payload in JSON for any action. This action payload contains all attribute-value pairs that have the information about the detector model instance and the event triggered the action. To configure the action payload, you can use ``contentExpression``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#payload CcDetectorModel#payload}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#payload CcDetectorModel#payload}
     */
     readonly payload?: DetectorModelDefinitionStatesOnInputEventsActionsDynamoDBv2PayloadProperty;
     /**
     * The name of the DynamoDB table.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#table_name CcDetectorModel#table_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#table_name CcDetectorModel#table_name}
     */
     readonly tableName?: string;
 }
@@ -12037,13 +12038,13 @@ export interface DetectorModelDefinitionStatesOnInputEventsActionsDynamoDbPayloa
     /**
     * The content of the payload. You can use a string expression that includes quoted strings (``'<string>'``), variables (``$variable.<variable-name>``), input values (``$input.<input-name>.<path-to-datum>``), string concatenations, and quoted strings that contain ``${}`` as the content. The recommended maximum size of a content expression is 1 KB.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#content_expression CcDetectorModel#content_expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#content_expression CcDetectorModel#content_expression}
     */
     readonly contentExpression?: string;
     /**
     * The value of the payload type can be either ``STRING`` or ``JSON``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#type CcDetectorModel#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#type CcDetectorModel#type}
     */
     readonly type?: string;
 }
@@ -12131,7 +12132,7 @@ export interface DetectorModelDefinitionStatesOnInputEventsActionsDynamoDbProper
     /**
     * The name of the hash key (also called the partition key). The ``hashKeyField`` value must match the partition key of the target DynamoDB table.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#hash_key_field CcDetectorModel#hash_key_field}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#hash_key_field CcDetectorModel#hash_key_field}
     */
     readonly hashKeyField?: string;
     /**
@@ -12141,13 +12142,13 @@ export interface DetectorModelDefinitionStatesOnInputEventsActionsDynamoDbProper
     *   
     *  If you don't specify ``hashKeyType``, the default value is ``'STRING'``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#hash_key_type CcDetectorModel#hash_key_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#hash_key_type CcDetectorModel#hash_key_type}
     */
     readonly hashKeyType?: string;
     /**
     * The value of the hash key (also called the partition key).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#hash_key_value CcDetectorModel#hash_key_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#hash_key_value CcDetectorModel#hash_key_value}
     */
     readonly hashKeyValue?: string;
     /**
@@ -12158,27 +12159,27 @@ export interface DetectorModelDefinitionStatesOnInputEventsActionsDynamoDbProper
     *   
     *  If you don't specify this parameter, ITE triggers the ``'INSERT'`` operation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#operation CcDetectorModel#operation}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#operation CcDetectorModel#operation}
     */
     readonly operation?: string;
     /**
     * Information needed to configure the payload.
     *  By default, ITE generates a standard payload in JSON for any action. This action payload contains all attribute-value pairs that have the information about the detector model instance and the event triggered the action. To configure the action payload, you can use ``contentExpression``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#payload CcDetectorModel#payload}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#payload CcDetectorModel#payload}
     */
     readonly payload?: DetectorModelDefinitionStatesOnInputEventsActionsDynamoDbPayloadProperty;
     /**
     * The name of the DynamoDB column that receives the action payload.
     *  If you don't specify this parameter, the name of the DynamoDB column is ``payload``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#payload_field CcDetectorModel#payload_field}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#payload_field CcDetectorModel#payload_field}
     */
     readonly payloadField?: string;
     /**
     * The name of the range key (also called the sort key). The ``rangeKeyField`` value must match the sort key of the target DynamoDB table.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#range_key_field CcDetectorModel#range_key_field}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#range_key_field CcDetectorModel#range_key_field}
     */
     readonly rangeKeyField?: string;
     /**
@@ -12188,19 +12189,19 @@ export interface DetectorModelDefinitionStatesOnInputEventsActionsDynamoDbProper
     *   
     *  If you don't specify ``rangeKeyField``, the default value is ``'STRING'``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#range_key_type CcDetectorModel#range_key_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#range_key_type CcDetectorModel#range_key_type}
     */
     readonly rangeKeyType?: string;
     /**
     * The value of the range key (also called the sort key).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#range_key_value CcDetectorModel#range_key_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#range_key_value CcDetectorModel#range_key_value}
     */
     readonly rangeKeyValue?: string;
     /**
     * The name of the DynamoDB table. The ``tableName`` value must match the table name of the target DynamoDB table.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#table_name CcDetectorModel#table_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#table_name CcDetectorModel#table_name}
     */
     readonly tableName?: string;
 }
@@ -12464,13 +12465,13 @@ export interface DetectorModelDefinitionStatesOnInputEventsActionsFirehosePayloa
     /**
     * The content of the payload. You can use a string expression that includes quoted strings (``'<string>'``), variables (``$variable.<variable-name>``), input values (``$input.<input-name>.<path-to-datum>``), string concatenations, and quoted strings that contain ``${}`` as the content. The recommended maximum size of a content expression is 1 KB.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#content_expression CcDetectorModel#content_expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#content_expression CcDetectorModel#content_expression}
     */
     readonly contentExpression?: string;
     /**
     * The value of the payload type can be either ``STRING`` or ``JSON``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#type CcDetectorModel#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#type CcDetectorModel#type}
     */
     readonly type?: string;
 }
@@ -12558,19 +12559,19 @@ export interface DetectorModelDefinitionStatesOnInputEventsActionsFirehoseProper
     /**
     * The name of the Kinesis Data Firehose delivery stream where the data is written.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#delivery_stream_name CcDetectorModel#delivery_stream_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#delivery_stream_name CcDetectorModel#delivery_stream_name}
     */
     readonly deliveryStreamName?: string;
     /**
     * You can configure the action payload when you send a message to an Amazon Data Firehose delivery stream.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#payload CcDetectorModel#payload}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#payload CcDetectorModel#payload}
     */
     readonly payload?: DetectorModelDefinitionStatesOnInputEventsActionsFirehosePayloadProperty;
     /**
     * A character separator that is used to separate records written to the Kinesis Data Firehose delivery stream. Valid values are: '\n' (newline), '\t' (tab), '\r\n' (Windows newline), ',' (comma).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#separator CcDetectorModel#separator}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#separator CcDetectorModel#separator}
     */
     readonly separator?: string;
 }
@@ -12680,13 +12681,13 @@ export interface DetectorModelDefinitionStatesOnInputEventsActionsIotEventsPaylo
     /**
     * The content of the payload. You can use a string expression that includes quoted strings (``'<string>'``), variables (``$variable.<variable-name>``), input values (``$input.<input-name>.<path-to-datum>``), string concatenations, and quoted strings that contain ``${}`` as the content. The recommended maximum size of a content expression is 1 KB.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#content_expression CcDetectorModel#content_expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#content_expression CcDetectorModel#content_expression}
     */
     readonly contentExpression?: string;
     /**
     * The value of the payload type can be either ``STRING`` or ``JSON``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#type CcDetectorModel#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#type CcDetectorModel#type}
     */
     readonly type?: string;
 }
@@ -12774,13 +12775,13 @@ export interface DetectorModelDefinitionStatesOnInputEventsActionsIotEventsPrope
     /**
     * The name of the ITE input where the data is sent.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#input_name CcDetectorModel#input_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#input_name CcDetectorModel#input_name}
     */
     readonly inputName?: string;
     /**
     * You can configure the action payload when you send a message to an ITE input.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#payload CcDetectorModel#payload}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#payload CcDetectorModel#payload}
     */
     readonly payload?: DetectorModelDefinitionStatesOnInputEventsActionsIotEventsPayloadProperty;
 }
@@ -12868,13 +12869,13 @@ export interface DetectorModelDefinitionStatesOnInputEventsActionsIotSiteWisePro
     /**
     * The nanosecond offset converted from ``timeInSeconds``. The valid range is between 0-999999999.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#offset_in_nanos CcDetectorModel#offset_in_nanos}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#offset_in_nanos CcDetectorModel#offset_in_nanos}
     */
     readonly offsetInNanos?: string;
     /**
     * The timestamp, in seconds, in the Unix epoch format. The valid range is between 1-31556889864403199.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#time_in_seconds CcDetectorModel#time_in_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#time_in_seconds CcDetectorModel#time_in_seconds}
     */
     readonly timeInSeconds?: string;
 }
@@ -12962,25 +12963,25 @@ export interface DetectorModelDefinitionStatesOnInputEventsActionsIotSiteWisePro
     /**
     * The asset property value is a Boolean value that must be ``'TRUE'`` or ``'FALSE'``. You must use an expression, and the evaluated result should be a Boolean value.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#boolean_value CcDetectorModel#boolean_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#boolean_value CcDetectorModel#boolean_value}
     */
     readonly booleanValue?: string;
     /**
     * The asset property value is a double. You must use an expression, and the evaluated result should be a double.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#double_value CcDetectorModel#double_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#double_value CcDetectorModel#double_value}
     */
     readonly doubleValue?: string;
     /**
     * The asset property value is an integer. You must use an expression, and the evaluated result should be an integer.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#integer_value CcDetectorModel#integer_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#integer_value CcDetectorModel#integer_value}
     */
     readonly integerValue?: string;
     /**
     * The asset property value is a string. You must use an expression, and the evaluated result should be a string.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#string_value CcDetectorModel#string_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#string_value CcDetectorModel#string_value}
     */
     readonly stringValue?: string;
 }
@@ -13112,19 +13113,19 @@ export interface DetectorModelDefinitionStatesOnInputEventsActionsIotSiteWisePro
     /**
     * The quality of the asset property value. The value must be ``'GOOD'``, ``'BAD'``, or ``'UNCERTAIN'``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#quality CcDetectorModel#quality}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#quality CcDetectorModel#quality}
     */
     readonly quality?: string;
     /**
     * The timestamp associated with the asset property value. The default is the current event time.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#timestamp CcDetectorModel#timestamp}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#timestamp CcDetectorModel#timestamp}
     */
     readonly timestamp?: DetectorModelDefinitionStatesOnInputEventsActionsIotSiteWisePropertyValueTimestampProperty;
     /**
     * The value to send to an asset property.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#value CcDetectorModel#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#value CcDetectorModel#value}
     */
     readonly value?: DetectorModelDefinitionStatesOnInputEventsActionsIotSiteWisePropertyValueValueProperty;
 }
@@ -13234,31 +13235,31 @@ export interface DetectorModelDefinitionStatesOnInputEventsActionsIotSiteWisePro
     /**
     * The ID of the asset that has the specified property.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#asset_id CcDetectorModel#asset_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#asset_id CcDetectorModel#asset_id}
     */
     readonly assetId?: string;
     /**
     * A unique identifier for this entry. You can use the entry ID to track which data entry causes an error in case of failure. The default is a new unique identifier.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#entry_id CcDetectorModel#entry_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#entry_id CcDetectorModel#entry_id}
     */
     readonly entryId?: string;
     /**
     * The alias of the asset property.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#property_alias CcDetectorModel#property_alias}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#property_alias CcDetectorModel#property_alias}
     */
     readonly propertyAlias?: string;
     /**
     * The ID of the asset property.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#property_id CcDetectorModel#property_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#property_id CcDetectorModel#property_id}
     */
     readonly propertyId?: string;
     /**
     * The value to send to the asset property. This value contains timestamp, quality, and value (TQV) information.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#property_value CcDetectorModel#property_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#property_value CcDetectorModel#property_value}
     */
     readonly propertyValue?: DetectorModelDefinitionStatesOnInputEventsActionsIotSiteWisePropertyValueProperty;
 }
@@ -13412,13 +13413,13 @@ export interface DetectorModelDefinitionStatesOnInputEventsActionsIotTopicPublis
     /**
     * The content of the payload. You can use a string expression that includes quoted strings (``'<string>'``), variables (``$variable.<variable-name>``), input values (``$input.<input-name>.<path-to-datum>``), string concatenations, and quoted strings that contain ``${}`` as the content. The recommended maximum size of a content expression is 1 KB.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#content_expression CcDetectorModel#content_expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#content_expression CcDetectorModel#content_expression}
     */
     readonly contentExpression?: string;
     /**
     * The value of the payload type can be either ``STRING`` or ``JSON``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#type CcDetectorModel#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#type CcDetectorModel#type}
     */
     readonly type?: string;
 }
@@ -13506,13 +13507,13 @@ export interface DetectorModelDefinitionStatesOnInputEventsActionsIotTopicPublis
     /**
     * The MQTT topic of the message. You can use a string expression that includes variables (``$variable.<variable-name>``) and input values (``$input.<input-name>.<path-to-datum>``) as the topic string.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#mqtt_topic CcDetectorModel#mqtt_topic}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#mqtt_topic CcDetectorModel#mqtt_topic}
     */
     readonly mqttTopic?: string;
     /**
     * You can configure the action payload when you publish a message to an IoTCore topic.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#payload CcDetectorModel#payload}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#payload CcDetectorModel#payload}
     */
     readonly payload?: DetectorModelDefinitionStatesOnInputEventsActionsIotTopicPublishPayloadProperty;
 }
@@ -13600,13 +13601,13 @@ export interface DetectorModelDefinitionStatesOnInputEventsActionsLambdaPayloadP
     /**
     * The content of the payload. You can use a string expression that includes quoted strings (``'<string>'``), variables (``$variable.<variable-name>``), input values (``$input.<input-name>.<path-to-datum>``), string concatenations, and quoted strings that contain ``${}`` as the content. The recommended maximum size of a content expression is 1 KB.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#content_expression CcDetectorModel#content_expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#content_expression CcDetectorModel#content_expression}
     */
     readonly contentExpression?: string;
     /**
     * The value of the payload type can be either ``STRING`` or ``JSON``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#type CcDetectorModel#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#type CcDetectorModel#type}
     */
     readonly type?: string;
 }
@@ -13694,13 +13695,13 @@ export interface DetectorModelDefinitionStatesOnInputEventsActionsLambdaProperty
     /**
     * The ARN of the Lambda function that is executed.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#function_arn CcDetectorModel#function_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#function_arn CcDetectorModel#function_arn}
     */
     readonly functionArn?: string;
     /**
     * You can configure the action payload when you send a message to a Lambda function.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#payload CcDetectorModel#payload}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#payload CcDetectorModel#payload}
     */
     readonly payload?: DetectorModelDefinitionStatesOnInputEventsActionsLambdaPayloadProperty;
 }
@@ -13788,7 +13789,7 @@ export interface DetectorModelDefinitionStatesOnInputEventsActionsResetTimerProp
     /**
     * The name of the timer to reset.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#timer_name CcDetectorModel#timer_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#timer_name CcDetectorModel#timer_name}
     */
     readonly timerName?: string;
 }
@@ -13854,19 +13855,19 @@ export interface DetectorModelDefinitionStatesOnInputEventsActionsSetTimerProper
     /**
     * The duration of the timer, in seconds. You can use a string expression that includes numbers, variables (``$variable.<variable-name>``), and input values (``$input.<input-name>.<path-to-datum>``) as the duration. The range of the duration is 1-31622400 seconds. To ensure accuracy, the minimum duration is 60 seconds. The evaluated result of the duration is rounded down to the nearest whole number.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#duration_expression CcDetectorModel#duration_expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#duration_expression CcDetectorModel#duration_expression}
     */
     readonly durationExpression?: string;
     /**
     * The number of seconds until the timer expires. The minimum value is 60 seconds to ensure accuracy. The maximum value is 31622400 seconds.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#seconds CcDetectorModel#seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#seconds CcDetectorModel#seconds}
     */
     readonly seconds?: number;
     /**
     * The name of the timer.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#timer_name CcDetectorModel#timer_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#timer_name CcDetectorModel#timer_name}
     */
     readonly timerName?: string;
 }
@@ -13976,13 +13977,13 @@ export interface DetectorModelDefinitionStatesOnInputEventsActionsSetVariablePro
     /**
     * The new value of the variable.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#value CcDetectorModel#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#value CcDetectorModel#value}
     */
     readonly value?: string;
     /**
     * The name of the variable.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#variable_name CcDetectorModel#variable_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#variable_name CcDetectorModel#variable_name}
     */
     readonly variableName?: string;
 }
@@ -14070,13 +14071,13 @@ export interface DetectorModelDefinitionStatesOnInputEventsActionsSnsPayloadProp
     /**
     * The content of the payload. You can use a string expression that includes quoted strings (``'<string>'``), variables (``$variable.<variable-name>``), input values (``$input.<input-name>.<path-to-datum>``), string concatenations, and quoted strings that contain ``${}`` as the content. The recommended maximum size of a content expression is 1 KB.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#content_expression CcDetectorModel#content_expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#content_expression CcDetectorModel#content_expression}
     */
     readonly contentExpression?: string;
     /**
     * The value of the payload type can be either ``STRING`` or ``JSON``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#type CcDetectorModel#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#type CcDetectorModel#type}
     */
     readonly type?: string;
 }
@@ -14164,13 +14165,13 @@ export interface DetectorModelDefinitionStatesOnInputEventsActionsSnsProperty {
     /**
     * You can configure the action payload when you send a message as an Amazon SNS push notification.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#payload CcDetectorModel#payload}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#payload CcDetectorModel#payload}
     */
     readonly payload?: DetectorModelDefinitionStatesOnInputEventsActionsSnsPayloadProperty;
     /**
     * The ARN of the Amazon SNS target where the message is sent.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#target_arn CcDetectorModel#target_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#target_arn CcDetectorModel#target_arn}
     */
     readonly targetArn?: string;
 }
@@ -14258,13 +14259,13 @@ export interface DetectorModelDefinitionStatesOnInputEventsActionsSqsPayloadProp
     /**
     * The content of the payload. You can use a string expression that includes quoted strings (``'<string>'``), variables (``$variable.<variable-name>``), input values (``$input.<input-name>.<path-to-datum>``), string concatenations, and quoted strings that contain ``${}`` as the content. The recommended maximum size of a content expression is 1 KB.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#content_expression CcDetectorModel#content_expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#content_expression CcDetectorModel#content_expression}
     */
     readonly contentExpression?: string;
     /**
     * The value of the payload type can be either ``STRING`` or ``JSON``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#type CcDetectorModel#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#type CcDetectorModel#type}
     */
     readonly type?: string;
 }
@@ -14352,19 +14353,19 @@ export interface DetectorModelDefinitionStatesOnInputEventsActionsSqsProperty {
     /**
     * You can configure the action payload when you send a message to an Amazon SQS queue.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#payload CcDetectorModel#payload}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#payload CcDetectorModel#payload}
     */
     readonly payload?: DetectorModelDefinitionStatesOnInputEventsActionsSqsPayloadProperty;
     /**
     * The URL of the SQS queue where the data is written.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#queue_url CcDetectorModel#queue_url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#queue_url CcDetectorModel#queue_url}
     */
     readonly queueUrl?: string;
     /**
     * Set this to TRUE if you want the data to be base-64 encoded before it is written to the queue. Otherwise, set this to FALSE.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#use_base_64 CcDetectorModel#use_base_64}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#use_base_64 CcDetectorModel#use_base_64}
     */
     readonly useBase64?: boolean | cdktn.IResolvable;
 }
@@ -14474,79 +14475,79 @@ export interface DetectorModelDefinitionStatesOnInputEventsActionsProperty {
     /**
     * Information needed to clear the timer.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#clear_timer CcDetectorModel#clear_timer}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#clear_timer CcDetectorModel#clear_timer}
     */
     readonly clearTimer?: DetectorModelDefinitionStatesOnInputEventsActionsClearTimerProperty;
     /**
     * Writes to the DynamoDB table that you created. The default action payload contains all attribute-value pairs that have the information about the detector model instance and the event that triggered the action. You can customize the [payload](https://docs.aws.amazon.com/iotevents/latest/apireference/API_Payload.html). A separate column of the DynamoDB table receives one attribute-value pair in the payload that you specify. For more information, see [Actions](https://docs.aws.amazon.com/iotevents/latest/developerguide/iotevents-event-actions.html) in *Developer Guide*.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#dynamo_d_bv_2 CcDetectorModel#dynamo_d_bv_2}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#dynamo_d_bv_2 CcDetectorModel#dynamo_d_bv_2}
     */
     readonly dynamoDBv2?: DetectorModelDefinitionStatesOnInputEventsActionsDynamoDBv2Property;
     /**
     * Writes to the DynamoDB table that you created. The default action payload contains all attribute-value pairs that have the information about the detector model instance and the event that triggered the action. You can customize the [payload](https://docs.aws.amazon.com/iotevents/latest/apireference/API_Payload.html). One column of the DynamoDB table receives all attribute-value pairs in the payload that you specify. For more information, see [Actions](https://docs.aws.amazon.com/iotevents/latest/developerguide/iotevents-event-actions.html) in *Developer Guide*.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#dynamo_db CcDetectorModel#dynamo_db}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#dynamo_db CcDetectorModel#dynamo_db}
     */
     readonly dynamoDb?: DetectorModelDefinitionStatesOnInputEventsActionsDynamoDbProperty;
     /**
     * Sends information about the detector model instance and the event that triggered the action to an Amazon Kinesis Data Firehose delivery stream.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#firehose CcDetectorModel#firehose}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#firehose CcDetectorModel#firehose}
     */
     readonly firehose?: DetectorModelDefinitionStatesOnInputEventsActionsFirehoseProperty;
     /**
     * Sends ITE input, which passes information about the detector model instance and the event that triggered the action.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#iot_events CcDetectorModel#iot_events}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#iot_events CcDetectorModel#iot_events}
     */
     readonly iotEvents?: DetectorModelDefinitionStatesOnInputEventsActionsIotEventsProperty;
     /**
     * Sends information about the detector model instance and the event that triggered the action to an asset property in ITSW .
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#iot_site_wise CcDetectorModel#iot_site_wise}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#iot_site_wise CcDetectorModel#iot_site_wise}
     */
     readonly iotSiteWise?: DetectorModelDefinitionStatesOnInputEventsActionsIotSiteWiseProperty;
     /**
     * Publishes an MQTT message with the given topic to the IoT message broker.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#iot_topic_publish CcDetectorModel#iot_topic_publish}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#iot_topic_publish CcDetectorModel#iot_topic_publish}
     */
     readonly iotTopicPublish?: DetectorModelDefinitionStatesOnInputEventsActionsIotTopicPublishProperty;
     /**
     * Calls a Lambda function, passing in information about the detector model instance and the event that triggered the action.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#lambda CcDetectorModel#lambda}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#lambda CcDetectorModel#lambda}
     */
     readonly lambda?: DetectorModelDefinitionStatesOnInputEventsActionsLambdaProperty;
     /**
     * Information needed to reset the timer.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#reset_timer CcDetectorModel#reset_timer}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#reset_timer CcDetectorModel#reset_timer}
     */
     readonly resetTimer?: DetectorModelDefinitionStatesOnInputEventsActionsResetTimerProperty;
     /**
     * Information needed to set the timer.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#set_timer CcDetectorModel#set_timer}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#set_timer CcDetectorModel#set_timer}
     */
     readonly setTimer?: DetectorModelDefinitionStatesOnInputEventsActionsSetTimerProperty;
     /**
     * Sets a variable to a specified value.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#set_variable CcDetectorModel#set_variable}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#set_variable CcDetectorModel#set_variable}
     */
     readonly setVariable?: DetectorModelDefinitionStatesOnInputEventsActionsSetVariableProperty;
     /**
     * Sends an Amazon SNS message.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#sns CcDetectorModel#sns}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#sns CcDetectorModel#sns}
     */
     readonly sns?: DetectorModelDefinitionStatesOnInputEventsActionsSnsProperty;
     /**
     * Sends an Amazon SNS message.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#sqs CcDetectorModel#sqs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#sqs CcDetectorModel#sqs}
     */
     readonly sqs?: DetectorModelDefinitionStatesOnInputEventsActionsSqsProperty;
 }
@@ -14898,19 +14899,19 @@ export interface DetectorModelDefinitionStatesOnInputEventsProperty {
     /**
     * The actions to be performed.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#actions CcDetectorModel#actions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#actions CcDetectorModel#actions}
     */
     readonly actions?: DetectorModelDefinitionStatesOnInputEventsActionsProperty[] | cdktn.IResolvable;
     /**
     * Optional. The Boolean expression that, when TRUE, causes the ``actions`` to be performed. If not present, the actions are performed (=TRUE). If the expression result is not a Boolean value, the actions are not performed (=FALSE).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#condition CcDetectorModel#condition}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#condition CcDetectorModel#condition}
     */
     readonly condition?: string;
     /**
     * The name of the event.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#event_name CcDetectorModel#event_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#event_name CcDetectorModel#event_name}
     */
     readonly eventName?: string;
 }
@@ -15042,7 +15043,7 @@ export interface DetectorModelDefinitionStatesOnInputTransitionEventsActionsClea
     /**
     * The name of the timer to clear.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#timer_name CcDetectorModel#timer_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#timer_name CcDetectorModel#timer_name}
     */
     readonly timerName?: string;
 }
@@ -15108,13 +15109,13 @@ export interface DetectorModelDefinitionStatesOnInputTransitionEventsActionsDyna
     /**
     * The content of the payload. You can use a string expression that includes quoted strings (``'<string>'``), variables (``$variable.<variable-name>``), input values (``$input.<input-name>.<path-to-datum>``), string concatenations, and quoted strings that contain ``${}`` as the content. The recommended maximum size of a content expression is 1 KB.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#content_expression CcDetectorModel#content_expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#content_expression CcDetectorModel#content_expression}
     */
     readonly contentExpression?: string;
     /**
     * The value of the payload type can be either ``STRING`` or ``JSON``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#type CcDetectorModel#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#type CcDetectorModel#type}
     */
     readonly type?: string;
 }
@@ -15203,13 +15204,13 @@ export interface DetectorModelDefinitionStatesOnInputTransitionEventsActionsDyna
     * Information needed to configure the payload.
     *  By default, ITE generates a standard payload in JSON for any action. This action payload contains all attribute-value pairs that have the information about the detector model instance and the event triggered the action. To configure the action payload, you can use ``contentExpression``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#payload CcDetectorModel#payload}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#payload CcDetectorModel#payload}
     */
     readonly payload?: DetectorModelDefinitionStatesOnInputTransitionEventsActionsDynamoDBv2PayloadProperty;
     /**
     * The name of the DynamoDB table.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#table_name CcDetectorModel#table_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#table_name CcDetectorModel#table_name}
     */
     readonly tableName?: string;
 }
@@ -15297,13 +15298,13 @@ export interface DetectorModelDefinitionStatesOnInputTransitionEventsActionsDyna
     /**
     * The content of the payload. You can use a string expression that includes quoted strings (``'<string>'``), variables (``$variable.<variable-name>``), input values (``$input.<input-name>.<path-to-datum>``), string concatenations, and quoted strings that contain ``${}`` as the content. The recommended maximum size of a content expression is 1 KB.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#content_expression CcDetectorModel#content_expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#content_expression CcDetectorModel#content_expression}
     */
     readonly contentExpression?: string;
     /**
     * The value of the payload type can be either ``STRING`` or ``JSON``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#type CcDetectorModel#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#type CcDetectorModel#type}
     */
     readonly type?: string;
 }
@@ -15391,7 +15392,7 @@ export interface DetectorModelDefinitionStatesOnInputTransitionEventsActionsDyna
     /**
     * The name of the hash key (also called the partition key). The ``hashKeyField`` value must match the partition key of the target DynamoDB table.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#hash_key_field CcDetectorModel#hash_key_field}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#hash_key_field CcDetectorModel#hash_key_field}
     */
     readonly hashKeyField?: string;
     /**
@@ -15401,13 +15402,13 @@ export interface DetectorModelDefinitionStatesOnInputTransitionEventsActionsDyna
     *   
     *  If you don't specify ``hashKeyType``, the default value is ``'STRING'``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#hash_key_type CcDetectorModel#hash_key_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#hash_key_type CcDetectorModel#hash_key_type}
     */
     readonly hashKeyType?: string;
     /**
     * The value of the hash key (also called the partition key).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#hash_key_value CcDetectorModel#hash_key_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#hash_key_value CcDetectorModel#hash_key_value}
     */
     readonly hashKeyValue?: string;
     /**
@@ -15418,27 +15419,27 @@ export interface DetectorModelDefinitionStatesOnInputTransitionEventsActionsDyna
     *   
     *  If you don't specify this parameter, ITE triggers the ``'INSERT'`` operation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#operation CcDetectorModel#operation}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#operation CcDetectorModel#operation}
     */
     readonly operation?: string;
     /**
     * Information needed to configure the payload.
     *  By default, ITE generates a standard payload in JSON for any action. This action payload contains all attribute-value pairs that have the information about the detector model instance and the event triggered the action. To configure the action payload, you can use ``contentExpression``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#payload CcDetectorModel#payload}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#payload CcDetectorModel#payload}
     */
     readonly payload?: DetectorModelDefinitionStatesOnInputTransitionEventsActionsDynamoDbPayloadProperty;
     /**
     * The name of the DynamoDB column that receives the action payload.
     *  If you don't specify this parameter, the name of the DynamoDB column is ``payload``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#payload_field CcDetectorModel#payload_field}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#payload_field CcDetectorModel#payload_field}
     */
     readonly payloadField?: string;
     /**
     * The name of the range key (also called the sort key). The ``rangeKeyField`` value must match the sort key of the target DynamoDB table.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#range_key_field CcDetectorModel#range_key_field}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#range_key_field CcDetectorModel#range_key_field}
     */
     readonly rangeKeyField?: string;
     /**
@@ -15448,19 +15449,19 @@ export interface DetectorModelDefinitionStatesOnInputTransitionEventsActionsDyna
     *   
     *  If you don't specify ``rangeKeyField``, the default value is ``'STRING'``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#range_key_type CcDetectorModel#range_key_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#range_key_type CcDetectorModel#range_key_type}
     */
     readonly rangeKeyType?: string;
     /**
     * The value of the range key (also called the sort key).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#range_key_value CcDetectorModel#range_key_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#range_key_value CcDetectorModel#range_key_value}
     */
     readonly rangeKeyValue?: string;
     /**
     * The name of the DynamoDB table. The ``tableName`` value must match the table name of the target DynamoDB table.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#table_name CcDetectorModel#table_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#table_name CcDetectorModel#table_name}
     */
     readonly tableName?: string;
 }
@@ -15724,13 +15725,13 @@ export interface DetectorModelDefinitionStatesOnInputTransitionEventsActionsFire
     /**
     * The content of the payload. You can use a string expression that includes quoted strings (``'<string>'``), variables (``$variable.<variable-name>``), input values (``$input.<input-name>.<path-to-datum>``), string concatenations, and quoted strings that contain ``${}`` as the content. The recommended maximum size of a content expression is 1 KB.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#content_expression CcDetectorModel#content_expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#content_expression CcDetectorModel#content_expression}
     */
     readonly contentExpression?: string;
     /**
     * The value of the payload type can be either ``STRING`` or ``JSON``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#type CcDetectorModel#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#type CcDetectorModel#type}
     */
     readonly type?: string;
 }
@@ -15818,19 +15819,19 @@ export interface DetectorModelDefinitionStatesOnInputTransitionEventsActionsFire
     /**
     * The name of the Kinesis Data Firehose delivery stream where the data is written.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#delivery_stream_name CcDetectorModel#delivery_stream_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#delivery_stream_name CcDetectorModel#delivery_stream_name}
     */
     readonly deliveryStreamName?: string;
     /**
     * You can configure the action payload when you send a message to an Amazon Data Firehose delivery stream.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#payload CcDetectorModel#payload}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#payload CcDetectorModel#payload}
     */
     readonly payload?: DetectorModelDefinitionStatesOnInputTransitionEventsActionsFirehosePayloadProperty;
     /**
     * A character separator that is used to separate records written to the Kinesis Data Firehose delivery stream. Valid values are: '\n' (newline), '\t' (tab), '\r\n' (Windows newline), ',' (comma).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#separator CcDetectorModel#separator}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#separator CcDetectorModel#separator}
     */
     readonly separator?: string;
 }
@@ -15940,13 +15941,13 @@ export interface DetectorModelDefinitionStatesOnInputTransitionEventsActionsIotE
     /**
     * The content of the payload. You can use a string expression that includes quoted strings (``'<string>'``), variables (``$variable.<variable-name>``), input values (``$input.<input-name>.<path-to-datum>``), string concatenations, and quoted strings that contain ``${}`` as the content. The recommended maximum size of a content expression is 1 KB.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#content_expression CcDetectorModel#content_expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#content_expression CcDetectorModel#content_expression}
     */
     readonly contentExpression?: string;
     /**
     * The value of the payload type can be either ``STRING`` or ``JSON``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#type CcDetectorModel#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#type CcDetectorModel#type}
     */
     readonly type?: string;
 }
@@ -16034,13 +16035,13 @@ export interface DetectorModelDefinitionStatesOnInputTransitionEventsActionsIotE
     /**
     * The name of the ITE input where the data is sent.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#input_name CcDetectorModel#input_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#input_name CcDetectorModel#input_name}
     */
     readonly inputName?: string;
     /**
     * You can configure the action payload when you send a message to an ITE input.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#payload CcDetectorModel#payload}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#payload CcDetectorModel#payload}
     */
     readonly payload?: DetectorModelDefinitionStatesOnInputTransitionEventsActionsIotEventsPayloadProperty;
 }
@@ -16128,13 +16129,13 @@ export interface DetectorModelDefinitionStatesOnInputTransitionEventsActionsIotS
     /**
     * The nanosecond offset converted from ``timeInSeconds``. The valid range is between 0-999999999.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#offset_in_nanos CcDetectorModel#offset_in_nanos}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#offset_in_nanos CcDetectorModel#offset_in_nanos}
     */
     readonly offsetInNanos?: string;
     /**
     * The timestamp, in seconds, in the Unix epoch format. The valid range is between 1-31556889864403199.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#time_in_seconds CcDetectorModel#time_in_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#time_in_seconds CcDetectorModel#time_in_seconds}
     */
     readonly timeInSeconds?: string;
 }
@@ -16222,25 +16223,25 @@ export interface DetectorModelDefinitionStatesOnInputTransitionEventsActionsIotS
     /**
     * The asset property value is a Boolean value that must be ``'TRUE'`` or ``'FALSE'``. You must use an expression, and the evaluated result should be a Boolean value.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#boolean_value CcDetectorModel#boolean_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#boolean_value CcDetectorModel#boolean_value}
     */
     readonly booleanValue?: string;
     /**
     * The asset property value is a double. You must use an expression, and the evaluated result should be a double.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#double_value CcDetectorModel#double_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#double_value CcDetectorModel#double_value}
     */
     readonly doubleValue?: string;
     /**
     * The asset property value is an integer. You must use an expression, and the evaluated result should be an integer.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#integer_value CcDetectorModel#integer_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#integer_value CcDetectorModel#integer_value}
     */
     readonly integerValue?: string;
     /**
     * The asset property value is a string. You must use an expression, and the evaluated result should be a string.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#string_value CcDetectorModel#string_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#string_value CcDetectorModel#string_value}
     */
     readonly stringValue?: string;
 }
@@ -16372,19 +16373,19 @@ export interface DetectorModelDefinitionStatesOnInputTransitionEventsActionsIotS
     /**
     * The quality of the asset property value. The value must be ``'GOOD'``, ``'BAD'``, or ``'UNCERTAIN'``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#quality CcDetectorModel#quality}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#quality CcDetectorModel#quality}
     */
     readonly quality?: string;
     /**
     * The timestamp associated with the asset property value. The default is the current event time.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#timestamp CcDetectorModel#timestamp}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#timestamp CcDetectorModel#timestamp}
     */
     readonly timestamp?: DetectorModelDefinitionStatesOnInputTransitionEventsActionsIotSiteWisePropertyValueTimestampProperty;
     /**
     * The value to send to an asset property.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#value CcDetectorModel#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#value CcDetectorModel#value}
     */
     readonly value?: DetectorModelDefinitionStatesOnInputTransitionEventsActionsIotSiteWisePropertyValueValueProperty;
 }
@@ -16494,31 +16495,31 @@ export interface DetectorModelDefinitionStatesOnInputTransitionEventsActionsIotS
     /**
     * The ID of the asset that has the specified property.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#asset_id CcDetectorModel#asset_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#asset_id CcDetectorModel#asset_id}
     */
     readonly assetId?: string;
     /**
     * A unique identifier for this entry. You can use the entry ID to track which data entry causes an error in case of failure. The default is a new unique identifier.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#entry_id CcDetectorModel#entry_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#entry_id CcDetectorModel#entry_id}
     */
     readonly entryId?: string;
     /**
     * The alias of the asset property.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#property_alias CcDetectorModel#property_alias}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#property_alias CcDetectorModel#property_alias}
     */
     readonly propertyAlias?: string;
     /**
     * The ID of the asset property.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#property_id CcDetectorModel#property_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#property_id CcDetectorModel#property_id}
     */
     readonly propertyId?: string;
     /**
     * The value to send to the asset property. This value contains timestamp, quality, and value (TQV) information.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#property_value CcDetectorModel#property_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#property_value CcDetectorModel#property_value}
     */
     readonly propertyValue?: DetectorModelDefinitionStatesOnInputTransitionEventsActionsIotSiteWisePropertyValueProperty;
 }
@@ -16672,13 +16673,13 @@ export interface DetectorModelDefinitionStatesOnInputTransitionEventsActionsIotT
     /**
     * The content of the payload. You can use a string expression that includes quoted strings (``'<string>'``), variables (``$variable.<variable-name>``), input values (``$input.<input-name>.<path-to-datum>``), string concatenations, and quoted strings that contain ``${}`` as the content. The recommended maximum size of a content expression is 1 KB.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#content_expression CcDetectorModel#content_expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#content_expression CcDetectorModel#content_expression}
     */
     readonly contentExpression?: string;
     /**
     * The value of the payload type can be either ``STRING`` or ``JSON``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#type CcDetectorModel#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#type CcDetectorModel#type}
     */
     readonly type?: string;
 }
@@ -16766,13 +16767,13 @@ export interface DetectorModelDefinitionStatesOnInputTransitionEventsActionsIotT
     /**
     * The MQTT topic of the message. You can use a string expression that includes variables (``$variable.<variable-name>``) and input values (``$input.<input-name>.<path-to-datum>``) as the topic string.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#mqtt_topic CcDetectorModel#mqtt_topic}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#mqtt_topic CcDetectorModel#mqtt_topic}
     */
     readonly mqttTopic?: string;
     /**
     * You can configure the action payload when you publish a message to an IoTCore topic.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#payload CcDetectorModel#payload}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#payload CcDetectorModel#payload}
     */
     readonly payload?: DetectorModelDefinitionStatesOnInputTransitionEventsActionsIotTopicPublishPayloadProperty;
 }
@@ -16860,13 +16861,13 @@ export interface DetectorModelDefinitionStatesOnInputTransitionEventsActionsLamb
     /**
     * The content of the payload. You can use a string expression that includes quoted strings (``'<string>'``), variables (``$variable.<variable-name>``), input values (``$input.<input-name>.<path-to-datum>``), string concatenations, and quoted strings that contain ``${}`` as the content. The recommended maximum size of a content expression is 1 KB.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#content_expression CcDetectorModel#content_expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#content_expression CcDetectorModel#content_expression}
     */
     readonly contentExpression?: string;
     /**
     * The value of the payload type can be either ``STRING`` or ``JSON``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#type CcDetectorModel#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#type CcDetectorModel#type}
     */
     readonly type?: string;
 }
@@ -16954,13 +16955,13 @@ export interface DetectorModelDefinitionStatesOnInputTransitionEventsActionsLamb
     /**
     * The ARN of the Lambda function that is executed.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#function_arn CcDetectorModel#function_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#function_arn CcDetectorModel#function_arn}
     */
     readonly functionArn?: string;
     /**
     * You can configure the action payload when you send a message to a Lambda function.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#payload CcDetectorModel#payload}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#payload CcDetectorModel#payload}
     */
     readonly payload?: DetectorModelDefinitionStatesOnInputTransitionEventsActionsLambdaPayloadProperty;
 }
@@ -17048,7 +17049,7 @@ export interface DetectorModelDefinitionStatesOnInputTransitionEventsActionsRese
     /**
     * The name of the timer to reset.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#timer_name CcDetectorModel#timer_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#timer_name CcDetectorModel#timer_name}
     */
     readonly timerName?: string;
 }
@@ -17114,19 +17115,19 @@ export interface DetectorModelDefinitionStatesOnInputTransitionEventsActionsSetT
     /**
     * The duration of the timer, in seconds. You can use a string expression that includes numbers, variables (``$variable.<variable-name>``), and input values (``$input.<input-name>.<path-to-datum>``) as the duration. The range of the duration is 1-31622400 seconds. To ensure accuracy, the minimum duration is 60 seconds. The evaluated result of the duration is rounded down to the nearest whole number.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#duration_expression CcDetectorModel#duration_expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#duration_expression CcDetectorModel#duration_expression}
     */
     readonly durationExpression?: string;
     /**
     * The number of seconds until the timer expires. The minimum value is 60 seconds to ensure accuracy. The maximum value is 31622400 seconds.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#seconds CcDetectorModel#seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#seconds CcDetectorModel#seconds}
     */
     readonly seconds?: number;
     /**
     * The name of the timer.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#timer_name CcDetectorModel#timer_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#timer_name CcDetectorModel#timer_name}
     */
     readonly timerName?: string;
 }
@@ -17236,13 +17237,13 @@ export interface DetectorModelDefinitionStatesOnInputTransitionEventsActionsSetV
     /**
     * The new value of the variable.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#value CcDetectorModel#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#value CcDetectorModel#value}
     */
     readonly value?: string;
     /**
     * The name of the variable.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#variable_name CcDetectorModel#variable_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#variable_name CcDetectorModel#variable_name}
     */
     readonly variableName?: string;
 }
@@ -17330,13 +17331,13 @@ export interface DetectorModelDefinitionStatesOnInputTransitionEventsActionsSnsP
     /**
     * The content of the payload. You can use a string expression that includes quoted strings (``'<string>'``), variables (``$variable.<variable-name>``), input values (``$input.<input-name>.<path-to-datum>``), string concatenations, and quoted strings that contain ``${}`` as the content. The recommended maximum size of a content expression is 1 KB.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#content_expression CcDetectorModel#content_expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#content_expression CcDetectorModel#content_expression}
     */
     readonly contentExpression?: string;
     /**
     * The value of the payload type can be either ``STRING`` or ``JSON``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#type CcDetectorModel#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#type CcDetectorModel#type}
     */
     readonly type?: string;
 }
@@ -17424,13 +17425,13 @@ export interface DetectorModelDefinitionStatesOnInputTransitionEventsActionsSnsP
     /**
     * You can configure the action payload when you send a message as an Amazon SNS push notification.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#payload CcDetectorModel#payload}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#payload CcDetectorModel#payload}
     */
     readonly payload?: DetectorModelDefinitionStatesOnInputTransitionEventsActionsSnsPayloadProperty;
     /**
     * The ARN of the Amazon SNS target where the message is sent.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#target_arn CcDetectorModel#target_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#target_arn CcDetectorModel#target_arn}
     */
     readonly targetArn?: string;
 }
@@ -17518,13 +17519,13 @@ export interface DetectorModelDefinitionStatesOnInputTransitionEventsActionsSqsP
     /**
     * The content of the payload. You can use a string expression that includes quoted strings (``'<string>'``), variables (``$variable.<variable-name>``), input values (``$input.<input-name>.<path-to-datum>``), string concatenations, and quoted strings that contain ``${}`` as the content. The recommended maximum size of a content expression is 1 KB.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#content_expression CcDetectorModel#content_expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#content_expression CcDetectorModel#content_expression}
     */
     readonly contentExpression?: string;
     /**
     * The value of the payload type can be either ``STRING`` or ``JSON``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#type CcDetectorModel#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#type CcDetectorModel#type}
     */
     readonly type?: string;
 }
@@ -17612,19 +17613,19 @@ export interface DetectorModelDefinitionStatesOnInputTransitionEventsActionsSqsP
     /**
     * You can configure the action payload when you send a message to an Amazon SQS queue.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#payload CcDetectorModel#payload}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#payload CcDetectorModel#payload}
     */
     readonly payload?: DetectorModelDefinitionStatesOnInputTransitionEventsActionsSqsPayloadProperty;
     /**
     * The URL of the SQS queue where the data is written.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#queue_url CcDetectorModel#queue_url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#queue_url CcDetectorModel#queue_url}
     */
     readonly queueUrl?: string;
     /**
     * Set this to TRUE if you want the data to be base-64 encoded before it is written to the queue. Otherwise, set this to FALSE.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#use_base_64 CcDetectorModel#use_base_64}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#use_base_64 CcDetectorModel#use_base_64}
     */
     readonly useBase64?: boolean | cdktn.IResolvable;
 }
@@ -17734,79 +17735,79 @@ export interface DetectorModelDefinitionStatesOnInputTransitionEventsActionsProp
     /**
     * Information needed to clear the timer.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#clear_timer CcDetectorModel#clear_timer}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#clear_timer CcDetectorModel#clear_timer}
     */
     readonly clearTimer?: DetectorModelDefinitionStatesOnInputTransitionEventsActionsClearTimerProperty;
     /**
     * Writes to the DynamoDB table that you created. The default action payload contains all attribute-value pairs that have the information about the detector model instance and the event that triggered the action. You can customize the [payload](https://docs.aws.amazon.com/iotevents/latest/apireference/API_Payload.html). A separate column of the DynamoDB table receives one attribute-value pair in the payload that you specify. For more information, see [Actions](https://docs.aws.amazon.com/iotevents/latest/developerguide/iotevents-event-actions.html) in *Developer Guide*.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#dynamo_d_bv_2 CcDetectorModel#dynamo_d_bv_2}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#dynamo_d_bv_2 CcDetectorModel#dynamo_d_bv_2}
     */
     readonly dynamoDBv2?: DetectorModelDefinitionStatesOnInputTransitionEventsActionsDynamoDBv2Property;
     /**
     * Writes to the DynamoDB table that you created. The default action payload contains all attribute-value pairs that have the information about the detector model instance and the event that triggered the action. You can customize the [payload](https://docs.aws.amazon.com/iotevents/latest/apireference/API_Payload.html). One column of the DynamoDB table receives all attribute-value pairs in the payload that you specify. For more information, see [Actions](https://docs.aws.amazon.com/iotevents/latest/developerguide/iotevents-event-actions.html) in *Developer Guide*.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#dynamo_db CcDetectorModel#dynamo_db}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#dynamo_db CcDetectorModel#dynamo_db}
     */
     readonly dynamoDb?: DetectorModelDefinitionStatesOnInputTransitionEventsActionsDynamoDbProperty;
     /**
     * Sends information about the detector model instance and the event that triggered the action to an Amazon Kinesis Data Firehose delivery stream.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#firehose CcDetectorModel#firehose}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#firehose CcDetectorModel#firehose}
     */
     readonly firehose?: DetectorModelDefinitionStatesOnInputTransitionEventsActionsFirehoseProperty;
     /**
     * Sends ITE input, which passes information about the detector model instance and the event that triggered the action.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#iot_events CcDetectorModel#iot_events}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#iot_events CcDetectorModel#iot_events}
     */
     readonly iotEvents?: DetectorModelDefinitionStatesOnInputTransitionEventsActionsIotEventsProperty;
     /**
     * Sends information about the detector model instance and the event that triggered the action to an asset property in ITSW .
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#iot_site_wise CcDetectorModel#iot_site_wise}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#iot_site_wise CcDetectorModel#iot_site_wise}
     */
     readonly iotSiteWise?: DetectorModelDefinitionStatesOnInputTransitionEventsActionsIotSiteWiseProperty;
     /**
     * Publishes an MQTT message with the given topic to the IoT message broker.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#iot_topic_publish CcDetectorModel#iot_topic_publish}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#iot_topic_publish CcDetectorModel#iot_topic_publish}
     */
     readonly iotTopicPublish?: DetectorModelDefinitionStatesOnInputTransitionEventsActionsIotTopicPublishProperty;
     /**
     * Calls a Lambda function, passing in information about the detector model instance and the event that triggered the action.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#lambda CcDetectorModel#lambda}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#lambda CcDetectorModel#lambda}
     */
     readonly lambda?: DetectorModelDefinitionStatesOnInputTransitionEventsActionsLambdaProperty;
     /**
     * Information needed to reset the timer.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#reset_timer CcDetectorModel#reset_timer}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#reset_timer CcDetectorModel#reset_timer}
     */
     readonly resetTimer?: DetectorModelDefinitionStatesOnInputTransitionEventsActionsResetTimerProperty;
     /**
     * Information needed to set the timer.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#set_timer CcDetectorModel#set_timer}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#set_timer CcDetectorModel#set_timer}
     */
     readonly setTimer?: DetectorModelDefinitionStatesOnInputTransitionEventsActionsSetTimerProperty;
     /**
     * Sets a variable to a specified value.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#set_variable CcDetectorModel#set_variable}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#set_variable CcDetectorModel#set_variable}
     */
     readonly setVariable?: DetectorModelDefinitionStatesOnInputTransitionEventsActionsSetVariableProperty;
     /**
     * Sends an Amazon SNS message.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#sns CcDetectorModel#sns}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#sns CcDetectorModel#sns}
     */
     readonly sns?: DetectorModelDefinitionStatesOnInputTransitionEventsActionsSnsProperty;
     /**
     * Sends an Amazon SNS message.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#sqs CcDetectorModel#sqs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#sqs CcDetectorModel#sqs}
     */
     readonly sqs?: DetectorModelDefinitionStatesOnInputTransitionEventsActionsSqsProperty;
 }
@@ -18158,25 +18159,25 @@ export interface TransitionEventProperty {
     /**
     * The actions to be performed.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#actions CcDetectorModel#actions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#actions CcDetectorModel#actions}
     */
     readonly actions?: DetectorModelDefinitionStatesOnInputTransitionEventsActionsProperty[] | cdktn.IResolvable;
     /**
     * Required. A Boolean expression that when TRUE causes the actions to be performed and the ``nextState`` to be entered.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#condition CcDetectorModel#condition}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#condition CcDetectorModel#condition}
     */
     readonly condition?: string;
     /**
     * The name of the transition event.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#event_name CcDetectorModel#event_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#event_name CcDetectorModel#event_name}
     */
     readonly eventName?: string;
     /**
     * The next state to enter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#next_state CcDetectorModel#next_state}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#next_state CcDetectorModel#next_state}
     */
     readonly nextState?: string;
 }
@@ -18330,13 +18331,13 @@ export interface OnInputProperty {
     /**
     * Specifies the actions performed when the ``condition`` evaluates to TRUE.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#events CcDetectorModel#events}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#events CcDetectorModel#events}
     */
     readonly events?: DetectorModelDefinitionStatesOnInputEventsProperty[] | cdktn.IResolvable;
     /**
     * Specifies the actions performed, and the next state entered, when a ``condition`` evaluates to TRUE.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#transition_events CcDetectorModel#transition_events}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#transition_events CcDetectorModel#transition_events}
     */
     readonly transitionEvents?: TransitionEventProperty[] | cdktn.IResolvable;
 }
@@ -18424,25 +18425,25 @@ export interface StateProperty {
     /**
     * When entering this state, perform these ``actions`` if the ``condition`` is TRUE.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#on_enter CcDetectorModel#on_enter}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#on_enter CcDetectorModel#on_enter}
     */
     readonly onEnter?: OnEnterProperty;
     /**
     * When exiting this state, perform these ``actions`` if the specified ``condition`` is ``TRUE``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#on_exit CcDetectorModel#on_exit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#on_exit CcDetectorModel#on_exit}
     */
     readonly onExit?: OnExitProperty;
     /**
     * When an input is received and the ``condition`` is TRUE, perform the specified ``actions``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#on_input CcDetectorModel#on_input}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#on_input CcDetectorModel#on_input}
     */
     readonly onInput?: OnInputProperty;
     /**
     * The name of the state.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#state_name CcDetectorModel#state_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#state_name CcDetectorModel#state_name}
     */
     readonly stateName: string;
 }
@@ -18593,13 +18594,13 @@ export interface DetectorModelDefinitionProperty {
     /**
     * The state that is entered at the creation of each detector (instance).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#initial_state_name CcDetectorModel#initial_state_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#initial_state_name CcDetectorModel#initial_state_name}
     */
     readonly initialStateName: string;
     /**
     * Information about the states of the detector.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#states CcDetectorModel#states}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#states CcDetectorModel#states}
     */
     readonly states: StateProperty[] | cdktn.IResolvable;
 }
@@ -18681,13 +18682,13 @@ export interface TagProperty {
     /**
     * The tag's key.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#key CcDetectorModel#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#key CcDetectorModel#key}
     */
     readonly key?: string;
     /**
     * The tag's value.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotevents_detector_model#value CcDetectorModel#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotevents_detector_model#value CcDetectorModel#value}
     */
     readonly value?: string;
 }

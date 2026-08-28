@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_flow_output
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_flow_output
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,137 +9,137 @@ export interface CcFlowOutputProps extends cdktn.TerraformMetaArguments {
     /**
     * The range of IP addresses that should be allowed to initiate output requests to this flow. These IP addresses should be in the form of a Classless Inter-Domain Routing (CIDR) block; for example, 10.0.0.0/16.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_flow_output#cidr_allow_list CcFlowOutput#cidr_allow_list}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_flow_output#cidr_allow_list CcFlowOutput#cidr_allow_list}
     */
     readonly cidrAllowList?: string[];
     /**
     * A description of the output.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_flow_output#description CcFlowOutput#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_flow_output#description CcFlowOutput#description}
     */
     readonly description?: string;
     /**
     * The address where you want to send the output.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_flow_output#destination CcFlowOutput#destination}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_flow_output#destination CcFlowOutput#destination}
     */
     readonly destination?: string;
     /**
     * The type of key used for the encryption. If no keyType is provided, the service will use the default setting (static-key).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_flow_output#encryption CcFlowOutput#encryption}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_flow_output#encryption CcFlowOutput#encryption}
     */
     readonly encryption?: CcFlowOutput.EncryptionProperty;
     /**
     * The Amazon Resource Name (ARN), a unique identifier for any AWS resource, of the flow.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_flow_output#flow_arn CcFlowOutput#flow_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_flow_output#flow_arn CcFlowOutput#flow_arn}
     */
     readonly flowArn: string;
     /**
     * The maximum latency in milliseconds. This parameter applies only to RIST-based and Zixi-based streams.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_flow_output#max_latency CcFlowOutput#max_latency}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_flow_output#max_latency CcFlowOutput#max_latency}
     */
     readonly maxLatency?: number;
     /**
     * The definition for each media stream that is associated with the output.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_flow_output#media_stream_output_configurations CcFlowOutput#media_stream_output_configurations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_flow_output#media_stream_output_configurations CcFlowOutput#media_stream_output_configurations}
     */
     readonly mediaStreamOutputConfigurations?: CcFlowOutput.MediaStreamOutputConfigurationProperty[] | cdktn.IResolvable;
     /**
     * The minimum latency in milliseconds.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_flow_output#min_latency CcFlowOutput#min_latency}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_flow_output#min_latency CcFlowOutput#min_latency}
     */
     readonly minLatency?: number;
     /**
     * The name of the output. This value must be unique within the current flow.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_flow_output#name CcFlowOutput#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_flow_output#name CcFlowOutput#name}
     */
     readonly name?: string;
     /**
     * The timecode source for the NDI output.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_flow_output#ndi_output_timecode_source CcFlowOutput#ndi_output_timecode_source}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_flow_output#ndi_output_timecode_source CcFlowOutput#ndi_output_timecode_source}
     */
     readonly ndiOutputTimecodeSource?: string;
     /**
     * A suffix for the names of the NDI sources that the flow creates. If a custom name isn't specified, MediaConnect uses the output name.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_flow_output#ndi_program_name CcFlowOutput#ndi_program_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_flow_output#ndi_program_name CcFlowOutput#ndi_program_name}
     */
     readonly ndiProgramName?: string;
     /**
     * A quality setting for the NDI Speed HQ encoder.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_flow_output#ndi_speed_hq_quality CcFlowOutput#ndi_speed_hq_quality}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_flow_output#ndi_speed_hq_quality CcFlowOutput#ndi_speed_hq_quality}
     */
     readonly ndiSpeedHqQuality?: number;
     /**
     * An indication of whether the output should transmit data or not.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_flow_output#output_status CcFlowOutput#output_status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_flow_output#output_status CcFlowOutput#output_status}
     */
     readonly outputStatus?: string;
     /**
     * The port to use when content is distributed to this output.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_flow_output#port CcFlowOutput#port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_flow_output#port CcFlowOutput#port}
     */
     readonly port?: number;
     /**
     * The protocol that is used by the source or output.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_flow_output#protocol CcFlowOutput#protocol}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_flow_output#protocol CcFlowOutput#protocol}
     */
     readonly protocol?: string;
     /**
     * The remote ID for the Zixi-pull stream.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_flow_output#remote_id CcFlowOutput#remote_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_flow_output#remote_id CcFlowOutput#remote_id}
     */
     readonly remoteId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_flow_output#router_integration_state CcFlowOutput#router_integration_state}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_flow_output#router_integration_state CcFlowOutput#router_integration_state}
     */
     readonly routerIntegrationState?: string;
     /**
     * The configuration that defines how content is encrypted during transit between the MediaConnect router and a MediaConnect flow.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_flow_output#router_integration_transit_encryption CcFlowOutput#router_integration_transit_encryption}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_flow_output#router_integration_transit_encryption CcFlowOutput#router_integration_transit_encryption}
     */
     readonly routerIntegrationTransitEncryption?: CcFlowOutput.FlowTransitEncryptionProperty;
     /**
     * The smoothing latency in milliseconds for RIST, RTP, and RTP-FEC streams.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_flow_output#smoothing_latency CcFlowOutput#smoothing_latency}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_flow_output#smoothing_latency CcFlowOutput#smoothing_latency}
     */
     readonly smoothingLatency?: number;
     /**
     * The stream ID that you want to use for this transport. This parameter applies only to Zixi-based streams.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_flow_output#stream_id CcFlowOutput#stream_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_flow_output#stream_id CcFlowOutput#stream_id}
     */
     readonly streamId?: string;
     /**
     * Key-value pairs that can be used to tag and organize this flow output.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_flow_output#tags CcFlowOutput#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_flow_output#tags CcFlowOutput#tags}
     */
     readonly tags?: CcFlowOutput.TagProperty[] | cdktn.IResolvable;
     /**
     * The name of the VPC interface attachment to use for this output.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_flow_output#vpc_interface_attachment CcFlowOutput#vpc_interface_attachment}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_flow_output#vpc_interface_attachment CcFlowOutput#vpc_interface_attachment}
     */
     readonly vpcInterfaceAttachment?: CcFlowOutput.VpcInterfaceAttachmentProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_flow_output awscc_mediaconnect_flow_output}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_flow_output awscc_mediaconnect_flow_output}
 */
 export class CcFlowOutput extends cdktn.TerraformResource {
 
@@ -155,7 +155,7 @@ export class CcFlowOutput extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcFlowOutput resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcFlowOutput to import
-    * @param importFromId The id of the existing CcFlowOutput that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_flow_output#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcFlowOutput that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_flow_output#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcFlowOutput to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -167,7 +167,7 @@ export class CcFlowOutput extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_flow_output awscc_mediaconnect_flow_output} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_flow_output awscc_mediaconnect_flow_output} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -177,7 +177,8 @@ export class CcFlowOutput extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_mediaconnect_flow_output',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -1142,25 +1143,25 @@ export interface EncryptionProperty {
     /**
     * The type of algorithm that is used for the encryption (such as aes128, aes192, or aes256).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_flow_output#algorithm CcFlowOutput#algorithm}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_flow_output#algorithm CcFlowOutput#algorithm}
     */
     readonly algorithm?: string;
     /**
     * The type of key that is used for the encryption. If no keyType is provided, the service will use the default setting (static-key).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_flow_output#key_type CcFlowOutput#key_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_flow_output#key_type CcFlowOutput#key_type}
     */
     readonly keyType?: string;
     /**
     * The ARN of the role that you created during setup (when you set up AWS Elemental MediaConnect as a trusted entity).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_flow_output#role_arn CcFlowOutput#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_flow_output#role_arn CcFlowOutput#role_arn}
     */
     readonly roleArn?: string;
     /**
     *  The ARN of the secret that you created in AWS Secrets Manager to store the encryption key. This parameter is required for static key encryption and is not valid for SPEKE encryption.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_flow_output#secret_arn CcFlowOutput#secret_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_flow_output#secret_arn CcFlowOutput#secret_arn}
     */
     readonly secretArn?: string;
 }
@@ -1292,7 +1293,7 @@ export interface InterfaceProperty {
     /**
     * The name of the VPC interface that you want to use for the media stream associated with the output.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_flow_output#name CcFlowOutput#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_flow_output#name CcFlowOutput#name}
     */
     readonly name?: string;
 }
@@ -1358,19 +1359,19 @@ export interface DestinationConfigurationProperty {
     /**
     * The IP address where contents of the media stream will be sent.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_flow_output#destination_ip CcFlowOutput#destination_ip}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_flow_output#destination_ip CcFlowOutput#destination_ip}
     */
     readonly destinationIp?: string;
     /**
     * The port to use when the content of the media stream is distributed to the output.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_flow_output#destination_port CcFlowOutput#destination_port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_flow_output#destination_port CcFlowOutput#destination_port}
     */
     readonly destinationPort?: number;
     /**
     * The VPC interface that is used for the media stream associated with the output.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_flow_output#interface CcFlowOutput#interface}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_flow_output#interface CcFlowOutput#interface}
     */
     readonly interface?: InterfaceProperty;
 }
@@ -1502,13 +1503,13 @@ export interface EncodingParametersProperty {
     /**
     * A value that is used to calculate compression for an output. The bitrate of the output is calculated as follows: Output bitrate = (1 / compressionFactor) * (source bitrate) This property only applies to outputs that use the ST 2110 JPEG XS protocol, with a flow source that uses the CDI protocol. Valid values are in the range of 3.0 to 10.0, inclusive.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_flow_output#compression_factor CcFlowOutput#compression_factor}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_flow_output#compression_factor CcFlowOutput#compression_factor}
     */
     readonly compressionFactor?: number;
     /**
     * A setting on the encoder that drives compression settings. This property only applies to video media streams associated with outputs that use the ST 2110 JPEG XS protocol, with a flow source that uses the CDI protocol.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_flow_output#encoder_profile CcFlowOutput#encoder_profile}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_flow_output#encoder_profile CcFlowOutput#encoder_profile}
     */
     readonly encoderProfile?: string;
 }
@@ -1596,25 +1597,25 @@ export interface MediaStreamOutputConfigurationProperty {
     /**
     * The media streams that you want to associate with the output.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_flow_output#destination_configurations CcFlowOutput#destination_configurations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_flow_output#destination_configurations CcFlowOutput#destination_configurations}
     */
     readonly destinationConfigurations?: DestinationConfigurationProperty[] | cdktn.IResolvable;
     /**
     * The format that will be used to encode the data. For ancillary data streams, set the encoding name to smpte291. For audio streams, set the encoding name to pcm. For video streams on sources or outputs that use the CDI protocol, set the encoding name to raw. For video streams on sources or outputs that use the ST 2110 JPEG XS protocol, set the encoding name to jxsv.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_flow_output#encoding_name CcFlowOutput#encoding_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_flow_output#encoding_name CcFlowOutput#encoding_name}
     */
     readonly encodingName?: string;
     /**
     * A collection of parameters that determine how MediaConnect will convert the content. These fields only apply to outputs on flows that have a CDI source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_flow_output#encoding_parameters CcFlowOutput#encoding_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_flow_output#encoding_parameters CcFlowOutput#encoding_parameters}
     */
     readonly encodingParameters?: EncodingParametersProperty;
     /**
     * A name that helps you distinguish one media stream from another.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_flow_output#media_stream_name CcFlowOutput#media_stream_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_flow_output#media_stream_name CcFlowOutput#media_stream_name}
     */
     readonly mediaStreamName?: string;
 }
@@ -1768,13 +1769,13 @@ export interface SecretsManagerEncryptionKeyConfigurationProperty {
     /**
     * The ARN of the IAM role used for transit encryption to the router input using AWS Secrets Manager.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_flow_output#role_arn CcFlowOutput#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_flow_output#role_arn CcFlowOutput#role_arn}
     */
     readonly roleArn?: string;
     /**
     * The ARN of the AWS Secrets Manager secret used for transit encryption to the router input.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_flow_output#secret_arn CcFlowOutput#secret_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_flow_output#secret_arn CcFlowOutput#secret_arn}
     */
     readonly secretArn?: string;
 }
@@ -1862,13 +1863,13 @@ export interface FlowTransitEncryptionKeyConfigurationProperty {
     /**
     * Configuration settings for automatic encryption key management, where MediaConnect handles key creation and rotation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_flow_output#automatic CcFlowOutput#automatic}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_flow_output#automatic CcFlowOutput#automatic}
     */
     readonly automatic?: string;
     /**
     * The configuration settings for transit encryption of a flow output using AWS Secrets Manager, including the secret ARN and role ARN.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_flow_output#secrets_manager CcFlowOutput#secrets_manager}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_flow_output#secrets_manager CcFlowOutput#secrets_manager}
     */
     readonly secretsManager?: SecretsManagerEncryptionKeyConfigurationProperty;
 }
@@ -1956,11 +1957,11 @@ export interface FlowTransitEncryptionProperty {
     /**
     * Configuration settings for flow transit encryption keys.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_flow_output#encryption_key_configuration CcFlowOutput#encryption_key_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_flow_output#encryption_key_configuration CcFlowOutput#encryption_key_configuration}
     */
     readonly encryptionKeyConfiguration?: FlowTransitEncryptionKeyConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_flow_output#encryption_key_type CcFlowOutput#encryption_key_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_flow_output#encryption_key_type CcFlowOutput#encryption_key_type}
     */
     readonly encryptionKeyType?: string;
 }
@@ -2046,11 +2047,11 @@ export class FlowTransitEncryptionPropertyOutputReference extends cdktn.ComplexO
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_flow_output#key CcFlowOutput#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_flow_output#key CcFlowOutput#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_flow_output#value CcFlowOutput#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_flow_output#value CcFlowOutput#value}
     */
     readonly value?: string;
 }
@@ -2160,7 +2161,7 @@ export interface VpcInterfaceAttachmentProperty {
     /**
     * The name of the VPC interface to use for this output.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_flow_output#vpc_interface_name CcFlowOutput#vpc_interface_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_flow_output#vpc_interface_name CcFlowOutput#vpc_interface_name}
     */
     readonly vpcInterfaceName?: string;
 }

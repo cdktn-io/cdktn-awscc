@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/chime_app_instance
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/chime_app_instance
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,25 +9,25 @@ export interface CcAppInstanceProps extends cdktn.TerraformMetaArguments {
     /**
     * The metadata of the AppInstance. Limited to a 1KB string in UTF-8.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/chime_app_instance#metadata CcAppInstance#metadata}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/chime_app_instance#metadata CcAppInstance#metadata}
     */
     readonly metadata?: string;
     /**
     * The name of the AppInstance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/chime_app_instance#name CcAppInstance#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/chime_app_instance#name CcAppInstance#name}
     */
     readonly name: string;
     /**
     * Tags assigned to the AppInstance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/chime_app_instance#tags CcAppInstance#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/chime_app_instance#tags CcAppInstance#tags}
     */
     readonly tags?: CcAppInstance.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/chime_app_instance awscc_chime_app_instance}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/chime_app_instance awscc_chime_app_instance}
 */
 export class CcAppInstance extends cdktn.TerraformResource {
 
@@ -43,7 +43,7 @@ export class CcAppInstance extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcAppInstance resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcAppInstance to import
-    * @param importFromId The id of the existing CcAppInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/chime_app_instance#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcAppInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/chime_app_instance#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcAppInstance to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -55,7 +55,7 @@ export class CcAppInstance extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/chime_app_instance awscc_chime_app_instance} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/chime_app_instance awscc_chime_app_instance} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -65,7 +65,8 @@ export class CcAppInstance extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_chime_app_instance',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -230,13 +231,13 @@ export interface TagProperty {
     /**
     * The key in a tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/chime_app_instance#key CcAppInstance#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/chime_app_instance#key CcAppInstance#key}
     */
     readonly key?: string;
     /**
     * The value in a tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/chime_app_instance#value CcAppInstance#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/chime_app_instance#value CcAppInstance#value}
     */
     readonly value?: string;
 }

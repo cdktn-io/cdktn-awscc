@@ -1,43 +1,43 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/greengrassv2_deployment
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/greengrassv2_deployment
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcDeploymentProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/greengrassv2_deployment#components CcDeployment#components}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/greengrassv2_deployment#components CcDeployment#components}
     */
     readonly components?: { [key: string]: CcDeployment.ComponentDeploymentSpecificationProperty } | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/greengrassv2_deployment#deployment_name CcDeployment#deployment_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/greengrassv2_deployment#deployment_name CcDeployment#deployment_name}
     */
     readonly deploymentName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/greengrassv2_deployment#deployment_policies CcDeployment#deployment_policies}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/greengrassv2_deployment#deployment_policies CcDeployment#deployment_policies}
     */
     readonly deploymentPolicies?: CcDeployment.DeploymentPoliciesProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/greengrassv2_deployment#iot_job_configuration CcDeployment#iot_job_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/greengrassv2_deployment#iot_job_configuration CcDeployment#iot_job_configuration}
     */
     readonly iotJobConfiguration?: CcDeployment.DeploymentIoTJobConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/greengrassv2_deployment#parent_target_arn CcDeployment#parent_target_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/greengrassv2_deployment#parent_target_arn CcDeployment#parent_target_arn}
     */
     readonly parentTargetArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/greengrassv2_deployment#tags CcDeployment#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/greengrassv2_deployment#tags CcDeployment#tags}
     */
     readonly tags?: { [key: string]: string };
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/greengrassv2_deployment#target_arn CcDeployment#target_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/greengrassv2_deployment#target_arn CcDeployment#target_arn}
     */
     readonly targetArn: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/greengrassv2_deployment awscc_greengrassv2_deployment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/greengrassv2_deployment awscc_greengrassv2_deployment}
 */
 export class CcDeployment extends cdktn.TerraformResource {
 
@@ -53,7 +53,7 @@ export class CcDeployment extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcDeployment resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcDeployment to import
-    * @param importFromId The id of the existing CcDeployment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/greengrassv2_deployment#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcDeployment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/greengrassv2_deployment#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcDeployment to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -65,7 +65,7 @@ export class CcDeployment extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/greengrassv2_deployment awscc_greengrassv2_deployment} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/greengrassv2_deployment awscc_greengrassv2_deployment} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -75,7 +75,8 @@ export class CcDeployment extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_greengrassv2_deployment',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -833,11 +834,11 @@ export function ccDeploymentDeploymentIoTJobConfigurationPropertyToHclTerraform(
 export namespace CcDeployment {
 export interface ComponentConfigurationUpdateProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/greengrassv2_deployment#merge CcDeployment#merge}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/greengrassv2_deployment#merge CcDeployment#merge}
     */
     readonly merge?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/greengrassv2_deployment#reset CcDeployment#reset}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/greengrassv2_deployment#reset CcDeployment#reset}
     */
     readonly reset?: string[];
 }
@@ -923,11 +924,11 @@ export class ComponentConfigurationUpdatePropertyOutputReference extends cdktn.C
 }
 export interface SystemResourceLimitsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/greengrassv2_deployment#cpus CcDeployment#cpus}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/greengrassv2_deployment#cpus CcDeployment#cpus}
     */
     readonly cpus?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/greengrassv2_deployment#memory CcDeployment#memory}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/greengrassv2_deployment#memory CcDeployment#memory}
     */
     readonly memory?: number;
 }
@@ -1013,15 +1014,15 @@ export class SystemResourceLimitsPropertyOutputReference extends cdktn.ComplexOb
 }
 export interface ComponentRunWithProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/greengrassv2_deployment#posix_user CcDeployment#posix_user}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/greengrassv2_deployment#posix_user CcDeployment#posix_user}
     */
     readonly posixUser?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/greengrassv2_deployment#system_resource_limits CcDeployment#system_resource_limits}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/greengrassv2_deployment#system_resource_limits CcDeployment#system_resource_limits}
     */
     readonly systemResourceLimits?: SystemResourceLimitsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/greengrassv2_deployment#windows_user CcDeployment#windows_user}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/greengrassv2_deployment#windows_user CcDeployment#windows_user}
     */
     readonly windowsUser?: string;
 }
@@ -1129,15 +1130,15 @@ export class ComponentRunWithPropertyOutputReference extends cdktn.ComplexObject
 }
 export interface ComponentDeploymentSpecificationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/greengrassv2_deployment#component_version CcDeployment#component_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/greengrassv2_deployment#component_version CcDeployment#component_version}
     */
     readonly componentVersion?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/greengrassv2_deployment#configuration_update CcDeployment#configuration_update}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/greengrassv2_deployment#configuration_update CcDeployment#configuration_update}
     */
     readonly configurationUpdate?: ComponentConfigurationUpdateProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/greengrassv2_deployment#run_with CcDeployment#run_with}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/greengrassv2_deployment#run_with CcDeployment#run_with}
     */
     readonly runWith?: ComponentRunWithProperty;
 }
@@ -1265,11 +1266,11 @@ export class ComponentDeploymentSpecificationPropertyMap extends cdktn.ComplexMa
 }
 export interface DeploymentComponentUpdatePolicyProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/greengrassv2_deployment#action CcDeployment#action}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/greengrassv2_deployment#action CcDeployment#action}
     */
     readonly action?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/greengrassv2_deployment#timeout_in_seconds CcDeployment#timeout_in_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/greengrassv2_deployment#timeout_in_seconds CcDeployment#timeout_in_seconds}
     */
     readonly timeoutInSeconds?: number;
 }
@@ -1355,7 +1356,7 @@ export class DeploymentComponentUpdatePolicyPropertyOutputReference extends cdkt
 }
 export interface DeploymentConfigurationValidationPolicyProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/greengrassv2_deployment#timeout_in_seconds CcDeployment#timeout_in_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/greengrassv2_deployment#timeout_in_seconds CcDeployment#timeout_in_seconds}
     */
     readonly timeoutInSeconds?: number;
 }
@@ -1419,15 +1420,15 @@ export class DeploymentConfigurationValidationPolicyPropertyOutputReference exte
 }
 export interface DeploymentPoliciesProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/greengrassv2_deployment#component_update_policy CcDeployment#component_update_policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/greengrassv2_deployment#component_update_policy CcDeployment#component_update_policy}
     */
     readonly componentUpdatePolicy?: DeploymentComponentUpdatePolicyProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/greengrassv2_deployment#configuration_validation_policy CcDeployment#configuration_validation_policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/greengrassv2_deployment#configuration_validation_policy CcDeployment#configuration_validation_policy}
     */
     readonly configurationValidationPolicy?: DeploymentConfigurationValidationPolicyProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/greengrassv2_deployment#failure_handling_policy CcDeployment#failure_handling_policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/greengrassv2_deployment#failure_handling_policy CcDeployment#failure_handling_policy}
     */
     readonly failureHandlingPolicy?: string;
 }
@@ -1535,19 +1536,19 @@ export class DeploymentPoliciesPropertyOutputReference extends cdktn.ComplexObje
 }
 export interface IoTJobAbortCriteriaProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/greengrassv2_deployment#action CcDeployment#action}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/greengrassv2_deployment#action CcDeployment#action}
     */
     readonly action?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/greengrassv2_deployment#failure_type CcDeployment#failure_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/greengrassv2_deployment#failure_type CcDeployment#failure_type}
     */
     readonly failureType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/greengrassv2_deployment#min_number_of_executed_things CcDeployment#min_number_of_executed_things}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/greengrassv2_deployment#min_number_of_executed_things CcDeployment#min_number_of_executed_things}
     */
     readonly minNumberOfExecutedThings?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/greengrassv2_deployment#threshold_percentage CcDeployment#threshold_percentage}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/greengrassv2_deployment#threshold_percentage CcDeployment#threshold_percentage}
     */
     readonly thresholdPercentage?: number;
 }
@@ -1699,7 +1700,7 @@ export class IoTJobAbortCriteriaPropertyList extends cdktn.ComplexList {
 }
 export interface IoTJobAbortConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/greengrassv2_deployment#criteria_list CcDeployment#criteria_list}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/greengrassv2_deployment#criteria_list CcDeployment#criteria_list}
     */
     readonly criteriaList?: IoTJobAbortCriteriaProperty[] | cdktn.IResolvable;
 }
@@ -1763,11 +1764,11 @@ export class IoTJobAbortConfigPropertyOutputReference extends cdktn.ComplexObjec
 }
 export interface IoTJobRateIncreaseCriteriaProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/greengrassv2_deployment#number_of_notified_things CcDeployment#number_of_notified_things}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/greengrassv2_deployment#number_of_notified_things CcDeployment#number_of_notified_things}
     */
     readonly numberOfNotifiedThings?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/greengrassv2_deployment#number_of_succeeded_things CcDeployment#number_of_succeeded_things}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/greengrassv2_deployment#number_of_succeeded_things CcDeployment#number_of_succeeded_things}
     */
     readonly numberOfSucceededThings?: number;
 }
@@ -1853,15 +1854,15 @@ export class IoTJobRateIncreaseCriteriaPropertyOutputReference extends cdktn.Com
 }
 export interface IoTJobExponentialRolloutRateProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/greengrassv2_deployment#base_rate_per_minute CcDeployment#base_rate_per_minute}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/greengrassv2_deployment#base_rate_per_minute CcDeployment#base_rate_per_minute}
     */
     readonly baseRatePerMinute?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/greengrassv2_deployment#increment_factor CcDeployment#increment_factor}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/greengrassv2_deployment#increment_factor CcDeployment#increment_factor}
     */
     readonly incrementFactor?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/greengrassv2_deployment#rate_increase_criteria CcDeployment#rate_increase_criteria}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/greengrassv2_deployment#rate_increase_criteria CcDeployment#rate_increase_criteria}
     */
     readonly rateIncreaseCriteria?: IoTJobRateIncreaseCriteriaProperty;
 }
@@ -1969,11 +1970,11 @@ export class IoTJobExponentialRolloutRatePropertyOutputReference extends cdktn.C
 }
 export interface IoTJobExecutionsRolloutConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/greengrassv2_deployment#exponential_rate CcDeployment#exponential_rate}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/greengrassv2_deployment#exponential_rate CcDeployment#exponential_rate}
     */
     readonly exponentialRate?: IoTJobExponentialRolloutRateProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/greengrassv2_deployment#maximum_per_minute CcDeployment#maximum_per_minute}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/greengrassv2_deployment#maximum_per_minute CcDeployment#maximum_per_minute}
     */
     readonly maximumPerMinute?: number;
 }
@@ -2059,7 +2060,7 @@ export class IoTJobExecutionsRolloutConfigPropertyOutputReference extends cdktn.
 }
 export interface IoTJobTimeoutConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/greengrassv2_deployment#in_progress_timeout_in_minutes CcDeployment#in_progress_timeout_in_minutes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/greengrassv2_deployment#in_progress_timeout_in_minutes CcDeployment#in_progress_timeout_in_minutes}
     */
     readonly inProgressTimeoutInMinutes?: number;
 }
@@ -2123,15 +2124,15 @@ export class IoTJobTimeoutConfigPropertyOutputReference extends cdktn.ComplexObj
 }
 export interface DeploymentIoTJobConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/greengrassv2_deployment#abort_config CcDeployment#abort_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/greengrassv2_deployment#abort_config CcDeployment#abort_config}
     */
     readonly abortConfig?: IoTJobAbortConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/greengrassv2_deployment#job_executions_rollout_config CcDeployment#job_executions_rollout_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/greengrassv2_deployment#job_executions_rollout_config CcDeployment#job_executions_rollout_config}
     */
     readonly jobExecutionsRolloutConfig?: IoTJobExecutionsRolloutConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/greengrassv2_deployment#timeout_config CcDeployment#timeout_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/greengrassv2_deployment#timeout_config CcDeployment#timeout_config}
     */
     readonly timeoutConfig?: IoTJobTimeoutConfigProperty;
 }

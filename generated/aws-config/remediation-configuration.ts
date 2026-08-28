@@ -1,55 +1,55 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/config_remediation_configuration
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/config_remediation_configuration
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcRemediationConfigurationProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/config_remediation_configuration#automatic CcRemediationConfiguration#automatic}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/config_remediation_configuration#automatic CcRemediationConfiguration#automatic}
     */
     readonly automatic?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/config_remediation_configuration#config_rule_name CcRemediationConfiguration#config_rule_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/config_remediation_configuration#config_rule_name CcRemediationConfiguration#config_rule_name}
     */
     readonly configRuleName: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/config_remediation_configuration#execution_controls CcRemediationConfiguration#execution_controls}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/config_remediation_configuration#execution_controls CcRemediationConfiguration#execution_controls}
     */
     readonly executionControls?: CcRemediationConfiguration.ExecutionControlsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/config_remediation_configuration#maximum_automatic_attempts CcRemediationConfiguration#maximum_automatic_attempts}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/config_remediation_configuration#maximum_automatic_attempts CcRemediationConfiguration#maximum_automatic_attempts}
     */
     readonly maximumAutomaticAttempts?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/config_remediation_configuration#parameters CcRemediationConfiguration#parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/config_remediation_configuration#parameters CcRemediationConfiguration#parameters}
     */
     readonly parameters?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/config_remediation_configuration#resource_type CcRemediationConfiguration#resource_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/config_remediation_configuration#resource_type CcRemediationConfiguration#resource_type}
     */
     readonly resourceType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/config_remediation_configuration#retry_attempt_seconds CcRemediationConfiguration#retry_attempt_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/config_remediation_configuration#retry_attempt_seconds CcRemediationConfiguration#retry_attempt_seconds}
     */
     readonly retryAttemptSeconds?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/config_remediation_configuration#target_id CcRemediationConfiguration#target_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/config_remediation_configuration#target_id CcRemediationConfiguration#target_id}
     */
     readonly targetId: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/config_remediation_configuration#target_type CcRemediationConfiguration#target_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/config_remediation_configuration#target_type CcRemediationConfiguration#target_type}
     */
     readonly targetType: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/config_remediation_configuration#target_version CcRemediationConfiguration#target_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/config_remediation_configuration#target_version CcRemediationConfiguration#target_version}
     */
     readonly targetVersion?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/config_remediation_configuration awscc_config_remediation_configuration}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/config_remediation_configuration awscc_config_remediation_configuration}
 */
 export class CcRemediationConfiguration extends cdktn.TerraformResource {
 
@@ -65,7 +65,7 @@ export class CcRemediationConfiguration extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcRemediationConfiguration resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcRemediationConfiguration to import
-    * @param importFromId The id of the existing CcRemediationConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/config_remediation_configuration#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcRemediationConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/config_remediation_configuration#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcRemediationConfiguration to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -77,7 +77,7 @@ export class CcRemediationConfiguration extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/config_remediation_configuration awscc_config_remediation_configuration} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/config_remediation_configuration awscc_config_remediation_configuration} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -87,7 +87,8 @@ export class CcRemediationConfiguration extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_config_remediation_configuration',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -427,11 +428,11 @@ export function ccRemediationConfigurationExecutionControlsPropertyToHclTerrafor
 export namespace CcRemediationConfiguration {
 export interface SsmControlsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/config_remediation_configuration#concurrent_execution_rate_percentage CcRemediationConfiguration#concurrent_execution_rate_percentage}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/config_remediation_configuration#concurrent_execution_rate_percentage CcRemediationConfiguration#concurrent_execution_rate_percentage}
     */
     readonly concurrentExecutionRatePercentage?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/config_remediation_configuration#error_percentage CcRemediationConfiguration#error_percentage}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/config_remediation_configuration#error_percentage CcRemediationConfiguration#error_percentage}
     */
     readonly errorPercentage?: number;
 }
@@ -517,7 +518,7 @@ export class SsmControlsPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface ExecutionControlsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/config_remediation_configuration#ssm_controls CcRemediationConfiguration#ssm_controls}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/config_remediation_configuration#ssm_controls CcRemediationConfiguration#ssm_controls}
     */
     readonly ssmControls?: SsmControlsProperty;
 }

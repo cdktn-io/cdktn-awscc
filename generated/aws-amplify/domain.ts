@@ -1,43 +1,43 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/amplify_domain
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/amplify_domain
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcDomainProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/amplify_domain#app_id CcDomain#app_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/amplify_domain#app_id CcDomain#app_id}
     */
     readonly appId: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/amplify_domain#auto_sub_domain_creation_patterns CcDomain#auto_sub_domain_creation_patterns}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/amplify_domain#auto_sub_domain_creation_patterns CcDomain#auto_sub_domain_creation_patterns}
     */
     readonly autoSubDomainCreationPatterns?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/amplify_domain#auto_sub_domain_iam_role CcDomain#auto_sub_domain_iam_role}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/amplify_domain#auto_sub_domain_iam_role CcDomain#auto_sub_domain_iam_role}
     */
     readonly autoSubDomainIamRole?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/amplify_domain#certificate_settings CcDomain#certificate_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/amplify_domain#certificate_settings CcDomain#certificate_settings}
     */
     readonly certificateSettings?: CcDomain.CertificateSettingsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/amplify_domain#domain_name CcDomain#domain_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/amplify_domain#domain_name CcDomain#domain_name}
     */
     readonly domainName: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/amplify_domain#enable_auto_sub_domain CcDomain#enable_auto_sub_domain}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/amplify_domain#enable_auto_sub_domain CcDomain#enable_auto_sub_domain}
     */
     readonly enableAutoSubDomain?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/amplify_domain#sub_domain_settings CcDomain#sub_domain_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/amplify_domain#sub_domain_settings CcDomain#sub_domain_settings}
     */
     readonly subDomainSettings: CcDomain.SubDomainSettingProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/amplify_domain awscc_amplify_domain}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/amplify_domain awscc_amplify_domain}
 */
 export class CcDomain extends cdktn.TerraformResource {
 
@@ -53,7 +53,7 @@ export class CcDomain extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcDomain resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcDomain to import
-    * @param importFromId The id of the existing CcDomain that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/amplify_domain#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcDomain that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/amplify_domain#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcDomain to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -65,7 +65,7 @@ export class CcDomain extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/amplify_domain awscc_amplify_domain} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/amplify_domain awscc_amplify_domain} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -75,7 +75,8 @@ export class CcDomain extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_amplify_domain',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -445,11 +446,11 @@ export class CertificatePropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface CertificateSettingsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/amplify_domain#certificate_type CcDomain#certificate_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/amplify_domain#certificate_type CcDomain#certificate_type}
     */
     readonly certificateType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/amplify_domain#custom_certificate_arn CcDomain#custom_certificate_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/amplify_domain#custom_certificate_arn CcDomain#custom_certificate_arn}
     */
     readonly customCertificateArn?: string;
 }
@@ -535,11 +536,11 @@ export class CertificateSettingsPropertyOutputReference extends cdktn.ComplexObj
 }
 export interface SubDomainSettingProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/amplify_domain#branch_name CcDomain#branch_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/amplify_domain#branch_name CcDomain#branch_name}
     */
     readonly branchName: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/amplify_domain#prefix CcDomain#prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/amplify_domain#prefix CcDomain#prefix}
     */
     readonly prefix: string;
 }

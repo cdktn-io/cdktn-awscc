@@ -1,23 +1,23 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appstream_stack_fleet_association
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appstream_stack_fleet_association
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcStackFleetAssociationProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appstream_stack_fleet_association#fleet_name CcStackFleetAssociation#fleet_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appstream_stack_fleet_association#fleet_name CcStackFleetAssociation#fleet_name}
     */
     readonly fleetName: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appstream_stack_fleet_association#stack_name CcStackFleetAssociation#stack_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appstream_stack_fleet_association#stack_name CcStackFleetAssociation#stack_name}
     */
     readonly stackName: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appstream_stack_fleet_association awscc_appstream_stack_fleet_association}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appstream_stack_fleet_association awscc_appstream_stack_fleet_association}
 */
 export class CcStackFleetAssociation extends cdktn.TerraformResource {
 
@@ -33,7 +33,7 @@ export class CcStackFleetAssociation extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcStackFleetAssociation resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcStackFleetAssociation to import
-    * @param importFromId The id of the existing CcStackFleetAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appstream_stack_fleet_association#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcStackFleetAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appstream_stack_fleet_association#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcStackFleetAssociation to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -45,7 +45,7 @@ export class CcStackFleetAssociation extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appstream_stack_fleet_association awscc_appstream_stack_fleet_association} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appstream_stack_fleet_association awscc_appstream_stack_fleet_association} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -55,7 +55,8 @@ export class CcStackFleetAssociation extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_appstream_stack_fleet_association',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,

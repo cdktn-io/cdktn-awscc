@@ -1,49 +1,49 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_membership
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_membership
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcMembershipProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_membership#collaboration_identifier CcMembership#collaboration_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_membership#collaboration_identifier CcMembership#collaboration_identifier}
     */
     readonly collaborationIdentifier: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_membership#default_job_result_configuration CcMembership#default_job_result_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_membership#default_job_result_configuration CcMembership#default_job_result_configuration}
     */
     readonly defaultJobResultConfiguration?: CcMembership.MembershipProtectedJobResultConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_membership#default_result_configuration CcMembership#default_result_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_membership#default_result_configuration CcMembership#default_result_configuration}
     */
     readonly defaultResultConfiguration?: CcMembership.MembershipProtectedQueryResultConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_membership#is_metrics_enabled CcMembership#is_metrics_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_membership#is_metrics_enabled CcMembership#is_metrics_enabled}
     */
     readonly isMetricsEnabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_membership#job_log_status CcMembership#job_log_status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_membership#job_log_status CcMembership#job_log_status}
     */
     readonly jobLogStatus?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_membership#payment_configuration CcMembership#payment_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_membership#payment_configuration CcMembership#payment_configuration}
     */
     readonly paymentConfiguration?: CcMembership.MembershipPaymentConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_membership#query_log_status CcMembership#query_log_status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_membership#query_log_status CcMembership#query_log_status}
     */
     readonly queryLogStatus: string;
     /**
     * An arbitrary set of tags (key-value pairs) for this cleanrooms membership.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_membership#tags CcMembership#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_membership#tags CcMembership#tags}
     */
     readonly tags?: CcMembership.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_membership awscc_cleanrooms_membership}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_membership awscc_cleanrooms_membership}
 */
 export class CcMembership extends cdktn.TerraformResource {
 
@@ -59,7 +59,7 @@ export class CcMembership extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcMembership resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcMembership to import
-    * @param importFromId The id of the existing CcMembership that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_membership#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcMembership that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_membership#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcMembership to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -71,7 +71,7 @@ export class CcMembership extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_membership awscc_cleanrooms_membership} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_membership awscc_cleanrooms_membership} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -81,7 +81,8 @@ export class CcMembership extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_cleanrooms_membership',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -826,11 +827,11 @@ export function ccMembershipTagPropertyToHclTerraform(struct?: CcMembership.TagP
 export namespace CcMembership {
 export interface ProtectedJobS3OutputConfigurationInputProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_membership#bucket CcMembership#bucket}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_membership#bucket CcMembership#bucket}
     */
     readonly bucket?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_membership#key_prefix CcMembership#key_prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_membership#key_prefix CcMembership#key_prefix}
     */
     readonly keyPrefix?: string;
 }
@@ -916,7 +917,7 @@ export class ProtectedJobS3OutputConfigurationInputPropertyOutputReference exten
 }
 export interface MembershipProtectedJobOutputConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_membership#s3 CcMembership#s3}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_membership#s3 CcMembership#s3}
     */
     readonly s3?: ProtectedJobS3OutputConfigurationInputProperty;
 }
@@ -980,11 +981,11 @@ export class MembershipProtectedJobOutputConfigurationPropertyOutputReference ex
 }
 export interface MembershipProtectedJobResultConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_membership#output_configuration CcMembership#output_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_membership#output_configuration CcMembership#output_configuration}
     */
     readonly outputConfiguration?: MembershipProtectedJobOutputConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_membership#role_arn CcMembership#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_membership#role_arn CcMembership#role_arn}
     */
     readonly roleArn?: string;
 }
@@ -1070,19 +1071,19 @@ export class MembershipProtectedJobResultConfigurationPropertyOutputReference ex
 }
 export interface ProtectedQueryS3OutputConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_membership#bucket CcMembership#bucket}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_membership#bucket CcMembership#bucket}
     */
     readonly bucket?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_membership#key_prefix CcMembership#key_prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_membership#key_prefix CcMembership#key_prefix}
     */
     readonly keyPrefix?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_membership#result_format CcMembership#result_format}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_membership#result_format CcMembership#result_format}
     */
     readonly resultFormat?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_membership#single_file_output CcMembership#single_file_output}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_membership#single_file_output CcMembership#single_file_output}
     */
     readonly singleFileOutput?: boolean | cdktn.IResolvable;
 }
@@ -1212,7 +1213,7 @@ export class ProtectedQueryS3OutputConfigurationPropertyOutputReference extends 
 }
 export interface MembershipProtectedQueryOutputConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_membership#s3 CcMembership#s3}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_membership#s3 CcMembership#s3}
     */
     readonly s3?: ProtectedQueryS3OutputConfigurationProperty;
 }
@@ -1276,11 +1277,11 @@ export class MembershipProtectedQueryOutputConfigurationPropertyOutputReference 
 }
 export interface MembershipProtectedQueryResultConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_membership#output_configuration CcMembership#output_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_membership#output_configuration CcMembership#output_configuration}
     */
     readonly outputConfiguration?: MembershipProtectedQueryOutputConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_membership#role_arn CcMembership#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_membership#role_arn CcMembership#role_arn}
     */
     readonly roleArn?: string;
 }
@@ -1366,7 +1367,7 @@ export class MembershipProtectedQueryResultConfigurationPropertyOutputReference 
 }
 export interface MembershipJobComputePaymentConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_membership#is_responsible CcMembership#is_responsible}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_membership#is_responsible CcMembership#is_responsible}
     */
     readonly isResponsible?: boolean | cdktn.IResolvable;
 }
@@ -1430,7 +1431,7 @@ export class MembershipJobComputePaymentConfigPropertyOutputReference extends cd
 }
 export interface MembershipModelInferencePaymentConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_membership#is_responsible CcMembership#is_responsible}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_membership#is_responsible CcMembership#is_responsible}
     */
     readonly isResponsible?: boolean | cdktn.IResolvable;
 }
@@ -1494,7 +1495,7 @@ export class MembershipModelInferencePaymentConfigPropertyOutputReference extend
 }
 export interface MembershipModelTrainingPaymentConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_membership#is_responsible CcMembership#is_responsible}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_membership#is_responsible CcMembership#is_responsible}
     */
     readonly isResponsible?: boolean | cdktn.IResolvable;
 }
@@ -1558,7 +1559,7 @@ export class MembershipModelTrainingPaymentConfigPropertyOutputReference extends
 }
 export interface MembershipSyntheticDataGenerationPaymentConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_membership#is_responsible CcMembership#is_responsible}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_membership#is_responsible CcMembership#is_responsible}
     */
     readonly isResponsible?: boolean | cdktn.IResolvable;
 }
@@ -1622,15 +1623,15 @@ export class MembershipSyntheticDataGenerationPaymentConfigPropertyOutputReferen
 }
 export interface MembershipMLPaymentConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_membership#model_inference CcMembership#model_inference}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_membership#model_inference CcMembership#model_inference}
     */
     readonly modelInference?: MembershipModelInferencePaymentConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_membership#model_training CcMembership#model_training}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_membership#model_training CcMembership#model_training}
     */
     readonly modelTraining?: MembershipModelTrainingPaymentConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_membership#synthetic_data_generation CcMembership#synthetic_data_generation}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_membership#synthetic_data_generation CcMembership#synthetic_data_generation}
     */
     readonly syntheticDataGeneration?: MembershipSyntheticDataGenerationPaymentConfigProperty;
 }
@@ -1738,7 +1739,7 @@ export class MembershipMLPaymentConfigPropertyOutputReference extends cdktn.Comp
 }
 export interface MembershipQueryComputePaymentConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_membership#is_responsible CcMembership#is_responsible}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_membership#is_responsible CcMembership#is_responsible}
     */
     readonly isResponsible?: boolean | cdktn.IResolvable;
 }
@@ -1802,15 +1803,15 @@ export class MembershipQueryComputePaymentConfigPropertyOutputReference extends 
 }
 export interface MembershipPaymentConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_membership#job_compute CcMembership#job_compute}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_membership#job_compute CcMembership#job_compute}
     */
     readonly jobCompute?: MembershipJobComputePaymentConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_membership#machine_learning CcMembership#machine_learning}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_membership#machine_learning CcMembership#machine_learning}
     */
     readonly machineLearning?: MembershipMLPaymentConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_membership#query_compute CcMembership#query_compute}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_membership#query_compute CcMembership#query_compute}
     */
     readonly queryCompute?: MembershipQueryComputePaymentConfigProperty;
 }
@@ -1918,11 +1919,11 @@ export class MembershipPaymentConfigurationPropertyOutputReference extends cdktn
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_membership#key CcMembership#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_membership#key CcMembership#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_membership#value CcMembership#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_membership#value CcMembership#value}
     */
     readonly value?: string;
 }

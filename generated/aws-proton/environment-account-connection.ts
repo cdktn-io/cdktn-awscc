@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/proton_environment_account_connection
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/proton_environment_account_connection
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,37 +9,37 @@ export interface CcEnvironmentAccountConnectionProps extends cdktn.TerraformMeta
     /**
     * The Amazon Resource Name (ARN) of an IAM service role in the environment account. AWS Proton uses this role to provision infrastructure resources using CodeBuild-based provisioning in the associated environment account.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/proton_environment_account_connection#codebuild_role_arn CcEnvironmentAccountConnection#codebuild_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/proton_environment_account_connection#codebuild_role_arn CcEnvironmentAccountConnection#codebuild_role_arn}
     */
     readonly codebuildRoleArn?: string;
     /**
     * The Amazon Resource Name (ARN) of the IAM service role that AWS Proton uses when provisioning directly defined components in the associated environment account. It determines the scope of infrastructure that a component can provision in the account.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/proton_environment_account_connection#component_role_arn CcEnvironmentAccountConnection#component_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/proton_environment_account_connection#component_role_arn CcEnvironmentAccountConnection#component_role_arn}
     */
     readonly componentRoleArn?: string;
     /**
     * The environment account that's connected to the environment account connection.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/proton_environment_account_connection#environment_account_id CcEnvironmentAccountConnection#environment_account_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/proton_environment_account_connection#environment_account_id CcEnvironmentAccountConnection#environment_account_id}
     */
     readonly environmentAccountId?: string;
     /**
     * The name of the AWS Proton environment that's created in the associated management account.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/proton_environment_account_connection#environment_name CcEnvironmentAccountConnection#environment_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/proton_environment_account_connection#environment_name CcEnvironmentAccountConnection#environment_name}
     */
     readonly environmentName?: string;
     /**
     * The ID of the management account that accepts or rejects the environment account connection. You create an manage the AWS Proton environment in this account. If the management account accepts the environment account connection, AWS Proton can use the associated IAM role to provision environment infrastructure resources in the associated environment account.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/proton_environment_account_connection#management_account_id CcEnvironmentAccountConnection#management_account_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/proton_environment_account_connection#management_account_id CcEnvironmentAccountConnection#management_account_id}
     */
     readonly managementAccountId?: string;
     /**
     * The Amazon Resource Name (ARN) of the IAM service role that's created in the environment account. AWS Proton uses this role to provision infrastructure resources in the associated environment account.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/proton_environment_account_connection#role_arn CcEnvironmentAccountConnection#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/proton_environment_account_connection#role_arn CcEnvironmentAccountConnection#role_arn}
     */
     readonly roleArn?: string;
     /**
@@ -47,13 +47,13 @@ export interface CcEnvironmentAccountConnectionProps extends cdktn.TerraformMeta
     *          <p>For more information, see <a href="https://docs.aws.amazon.com/proton/latest/userguide/resources.html">Proton resources and tagging</a> in the
     *         <i>Proton User Guide</i>.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/proton_environment_account_connection#tags CcEnvironmentAccountConnection#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/proton_environment_account_connection#tags CcEnvironmentAccountConnection#tags}
     */
     readonly tags?: CcEnvironmentAccountConnection.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/proton_environment_account_connection awscc_proton_environment_account_connection}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/proton_environment_account_connection awscc_proton_environment_account_connection}
 */
 export class CcEnvironmentAccountConnection extends cdktn.TerraformResource {
 
@@ -69,7 +69,7 @@ export class CcEnvironmentAccountConnection extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcEnvironmentAccountConnection resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcEnvironmentAccountConnection to import
-    * @param importFromId The id of the existing CcEnvironmentAccountConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/proton_environment_account_connection#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcEnvironmentAccountConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/proton_environment_account_connection#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcEnvironmentAccountConnection to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -81,7 +81,7 @@ export class CcEnvironmentAccountConnection extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/proton_environment_account_connection awscc_proton_environment_account_connection} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/proton_environment_account_connection awscc_proton_environment_account_connection} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -91,7 +91,8 @@ export class CcEnvironmentAccountConnection extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_proton_environment_account_connection',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -355,13 +356,13 @@ export interface TagProperty {
     /**
     * <p>The key of the resource tag.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/proton_environment_account_connection#key CcEnvironmentAccountConnection#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/proton_environment_account_connection#key CcEnvironmentAccountConnection#key}
     */
     readonly key?: string;
     /**
     * <p>The value of the resource tag.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/proton_environment_account_connection#value CcEnvironmentAccountConnection#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/proton_environment_account_connection#value CcEnvironmentAccountConnection#value}
     */
     readonly value?: string;
 }

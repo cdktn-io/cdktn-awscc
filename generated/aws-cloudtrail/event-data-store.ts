@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudtrail_event_data_store
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudtrail_event_data_store
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,101 +9,101 @@ export interface CcEventDataStoreProps extends cdktn.TerraformMetaArguments {
     /**
     * The advanced event selectors that were used to select events for the data store.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudtrail_event_data_store#advanced_event_selectors CcEventDataStore#advanced_event_selectors}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudtrail_event_data_store#advanced_event_selectors CcEventDataStore#advanced_event_selectors}
     */
     readonly advancedEventSelectors?: CcEventDataStore.AdvancedEventSelectorProperty[] | cdktn.IResolvable;
     /**
     * The mode that the event data store will use to charge for event storage.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudtrail_event_data_store#billing_mode CcEventDataStore#billing_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudtrail_event_data_store#billing_mode CcEventDataStore#billing_mode}
     */
     readonly billingMode?: string;
     /**
     * An array that enriches event records in an existing event data store by including additional information specified in individual ContexKeySelector entries. If you add ContextKeySelectors, you must set MaxEventSize to Large.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudtrail_event_data_store#context_key_selectors CcEventDataStore#context_key_selectors}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudtrail_event_data_store#context_key_selectors CcEventDataStore#context_key_selectors}
     */
     readonly contextKeySelectors?: CcEventDataStore.ContextKeySelectorProperty[] | cdktn.IResolvable;
     /**
     * Indicates whether federation is enabled on an event data store.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudtrail_event_data_store#federation_enabled CcEventDataStore#federation_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudtrail_event_data_store#federation_enabled CcEventDataStore#federation_enabled}
     */
     readonly federationEnabled?: boolean | cdktn.IResolvable;
     /**
     * The ARN of the role used for event data store federation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudtrail_event_data_store#federation_role_arn CcEventDataStore#federation_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudtrail_event_data_store#federation_role_arn CcEventDataStore#federation_role_arn}
     */
     readonly federationRoleArn?: string;
     /**
     * Indicates whether the event data store is ingesting events.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudtrail_event_data_store#ingestion_enabled CcEventDataStore#ingestion_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudtrail_event_data_store#ingestion_enabled CcEventDataStore#ingestion_enabled}
     */
     readonly ingestionEnabled?: boolean | cdktn.IResolvable;
     /**
     * Lets you enable Insights event logging by specifying the Insights selectors that you want to enable on an existing event data store. Both InsightSelectors and InsightsDestination need to have a value in order to enable Insights events on an event data store.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudtrail_event_data_store#insight_selectors CcEventDataStore#insight_selectors}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudtrail_event_data_store#insight_selectors CcEventDataStore#insight_selectors}
     */
     readonly insightSelectors?: CcEventDataStore.InsightSelectorProperty[] | cdktn.IResolvable;
     /**
     * Specifies the ARN of the event data store that will collect Insights events. Both InsightSelectors and InsightsDestination need to have a value in order to enable Insights events on an event data store
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudtrail_event_data_store#insights_destination CcEventDataStore#insights_destination}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudtrail_event_data_store#insights_destination CcEventDataStore#insights_destination}
     */
     readonly insightsDestination?: string;
     /**
     * Specifies the KMS key ID to use to encrypt the events delivered by CloudTrail. The value can be an alias name prefixed by 'alias/', a fully specified ARN to an alias, a fully specified ARN to a key, or a globally unique identifier.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudtrail_event_data_store#kms_key_id CcEventDataStore#kms_key_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudtrail_event_data_store#kms_key_id CcEventDataStore#kms_key_id}
     */
     readonly kmsKeyId?: string;
     /**
     * Specifies the maximum size allowed for the event. Valid values are Standard and Large. If you add ContextKeySelectors, this value must be set to Large.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudtrail_event_data_store#max_event_size CcEventDataStore#max_event_size}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudtrail_event_data_store#max_event_size CcEventDataStore#max_event_size}
     */
     readonly maxEventSize?: string;
     /**
     * Indicates whether the event data store includes events from all regions, or only from the region in which it was created.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudtrail_event_data_store#multi_region_enabled CcEventDataStore#multi_region_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudtrail_event_data_store#multi_region_enabled CcEventDataStore#multi_region_enabled}
     */
     readonly multiRegionEnabled?: boolean | cdktn.IResolvable;
     /**
     * The name of the event data store.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudtrail_event_data_store#name CcEventDataStore#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudtrail_event_data_store#name CcEventDataStore#name}
     */
     readonly name?: string;
     /**
     * Indicates that an event data store is collecting logged events for an organization.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudtrail_event_data_store#organization_enabled CcEventDataStore#organization_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudtrail_event_data_store#organization_enabled CcEventDataStore#organization_enabled}
     */
     readonly organizationEnabled?: boolean | cdktn.IResolvable;
     /**
     * The retention period, in days.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudtrail_event_data_store#retention_period CcEventDataStore#retention_period}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudtrail_event_data_store#retention_period CcEventDataStore#retention_period}
     */
     readonly retentionPeriod?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudtrail_event_data_store#tags CcEventDataStore#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudtrail_event_data_store#tags CcEventDataStore#tags}
     */
     readonly tags?: CcEventDataStore.TagProperty[] | cdktn.IResolvable;
     /**
     * Indicates whether the event data store is protected from termination.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudtrail_event_data_store#termination_protection_enabled CcEventDataStore#termination_protection_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudtrail_event_data_store#termination_protection_enabled CcEventDataStore#termination_protection_enabled}
     */
     readonly terminationProtectionEnabled?: boolean | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudtrail_event_data_store awscc_cloudtrail_event_data_store}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudtrail_event_data_store awscc_cloudtrail_event_data_store}
 */
 export class CcEventDataStore extends cdktn.TerraformResource {
 
@@ -119,7 +119,7 @@ export class CcEventDataStore extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcEventDataStore resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcEventDataStore to import
-    * @param importFromId The id of the existing CcEventDataStore that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudtrail_event_data_store#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcEventDataStore that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudtrail_event_data_store#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcEventDataStore to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -131,7 +131,7 @@ export class CcEventDataStore extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudtrail_event_data_store awscc_cloudtrail_event_data_store} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudtrail_event_data_store awscc_cloudtrail_event_data_store} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -141,7 +141,8 @@ export class CcEventDataStore extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_cloudtrail_event_data_store',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -802,43 +803,43 @@ export interface AdvancedFieldSelectorProperty {
     /**
     * An operator that includes events that match the last few characters of the event record field specified as the value of Field.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudtrail_event_data_store#ends_with CcEventDataStore#ends_with}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudtrail_event_data_store#ends_with CcEventDataStore#ends_with}
     */
     readonly endsWith?: string[];
     /**
     * An operator that includes events that match the exact value of the event record field specified as the value of Field. This is the only valid operator that you can use with the readOnly, eventCategory, and resources.type fields.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudtrail_event_data_store#equals CcEventDataStore#equals}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudtrail_event_data_store#equals CcEventDataStore#equals}
     */
     readonly equalTo?: string[];
     /**
     * A field in an event record on which to filter events to be logged. Supported fields include readOnly, eventCategory, eventSource (for management events), eventName, resources.type, and resources.ARN.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudtrail_event_data_store#field CcEventDataStore#field}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudtrail_event_data_store#field CcEventDataStore#field}
     */
     readonly field?: string;
     /**
     * An operator that excludes events that match the last few characters of the event record field specified as the value of Field.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudtrail_event_data_store#not_ends_with CcEventDataStore#not_ends_with}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudtrail_event_data_store#not_ends_with CcEventDataStore#not_ends_with}
     */
     readonly notEndsWith?: string[];
     /**
     * An operator that excludes events that match the exact value of the event record field specified as the value of Field.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudtrail_event_data_store#not_equals CcEventDataStore#not_equals}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudtrail_event_data_store#not_equals CcEventDataStore#not_equals}
     */
     readonly notEquals?: string[];
     /**
     * An operator that excludes events that match the first few characters of the event record field specified as the value of Field.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudtrail_event_data_store#not_starts_with CcEventDataStore#not_starts_with}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudtrail_event_data_store#not_starts_with CcEventDataStore#not_starts_with}
     */
     readonly notStartsWith?: string[];
     /**
     * An operator that includes events that match the first few characters of the event record field specified as the value of Field.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudtrail_event_data_store#starts_with CcEventDataStore#starts_with}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudtrail_event_data_store#starts_with CcEventDataStore#starts_with}
     */
     readonly startsWith?: string[];
 }
@@ -1058,13 +1059,13 @@ export interface AdvancedEventSelectorProperty {
     /**
     * Contains all selector statements in an advanced event selector.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudtrail_event_data_store#field_selectors CcEventDataStore#field_selectors}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudtrail_event_data_store#field_selectors CcEventDataStore#field_selectors}
     */
     readonly fieldSelectors?: AdvancedFieldSelectorProperty[] | cdktn.IResolvable;
     /**
     * An optional, descriptive name for an advanced event selector, such as "Log data events for only two S3 buckets".
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudtrail_event_data_store#name CcEventDataStore#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudtrail_event_data_store#name CcEventDataStore#name}
     */
     readonly name?: string;
 }
@@ -1174,13 +1175,13 @@ export interface ContextKeySelectorProperty {
     /**
     * An operator that includes events that match the exact value of the event record field specified in Type.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudtrail_event_data_store#equals CcEventDataStore#equals}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudtrail_event_data_store#equals CcEventDataStore#equals}
     */
     readonly equalTo?: string[];
     /**
     * Specifies the type of the event record field in ContextKeySelector. Valid values include RequestContext, TagContext.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudtrail_event_data_store#type CcEventDataStore#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudtrail_event_data_store#type CcEventDataStore#type}
     */
     readonly type?: string;
 }
@@ -1290,7 +1291,7 @@ export interface InsightSelectorProperty {
     /**
     * The type of Insights to log on an event data store.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudtrail_event_data_store#insight_type CcEventDataStore#insight_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudtrail_event_data_store#insight_type CcEventDataStore#insight_type}
     */
     readonly insightType?: string;
 }
@@ -1378,13 +1379,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 127 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudtrail_event_data_store#key CcEventDataStore#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudtrail_event_data_store#key CcEventDataStore#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 1 to 255 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudtrail_event_data_store#value CcEventDataStore#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudtrail_event_data_store#value CcEventDataStore#value}
     */
     readonly value?: string;
 }

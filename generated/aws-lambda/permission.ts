@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_permission
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_permission
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,13 +9,13 @@ export interface CcPermissionProps extends cdktn.TerraformMetaArguments {
     /**
     * The action that the principal can use on the function. For example, ``lambda:InvokeFunction`` or ``lambda:GetFunction``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_permission#action CcPermission#action}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_permission#action CcPermission#action}
     */
     readonly action: string;
     /**
     * For Alexa Smart Home functions, a token that the invoker must supply.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_permission#event_source_token CcPermission#event_source_token}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_permission#event_source_token CcPermission#event_source_token}
     */
     readonly eventSourceToken?: string;
     /**
@@ -27,50 +27,50 @@ export interface CcPermissionProps extends cdktn.TerraformMetaArguments {
     *   
     *  You can append a version number or alias to any of the formats. The length constraint applies only to the full ARN. If you specify only the function name, it is limited to 64 characters in length.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_permission#function_name CcPermission#function_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_permission#function_name CcPermission#function_name}
     */
     readonly functionName: string;
     /**
     * The type of authentication that your function URL uses. Set to ``AWS_IAM`` if you want to restrict access to authenticated users only. Set to ``NONE`` if you want to bypass IAM authentication to create a public endpoint. For more information, see [Control access to Lambda function URLs](https://docs.aws.amazon.com/lambda/latest/dg/urls-auth.html).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_permission#function_url_auth_type CcPermission#function_url_auth_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_permission#function_url_auth_type CcPermission#function_url_auth_type}
     */
     readonly functionUrlAuthType?: string;
     /**
     * Indicates whether the permission applies when the function is invoked through a function URL.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_permission#invoked_via_function_url CcPermission#invoked_via_function_url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_permission#invoked_via_function_url CcPermission#invoked_via_function_url}
     */
     readonly invokedViaFunctionUrl?: boolean | cdktn.IResolvable;
     /**
     * The AWS-service, AWS-account, IAM user, or IAM role that invokes the function. If you specify a service, use ``SourceArn`` or ``SourceAccount`` to limit who can invoke the function through that service.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_permission#principal CcPermission#principal}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_permission#principal CcPermission#principal}
     */
     readonly principal: string;
     /**
     * The identifier for your organization in AOlong. Use this to grant permissions to all the AWS-accounts under this organization.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_permission#principal_org_id CcPermission#principal_org_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_permission#principal_org_id CcPermission#principal_org_id}
     */
     readonly principalOrgId?: string;
     /**
     * For AWS-service, the ID of the AWS-account that owns the resource. Use this together with ``SourceArn`` to ensure that the specified account owns the resource. It is possible for an Amazon S3 bucket to be deleted by its owner and recreated by another account.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_permission#source_account CcPermission#source_account}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_permission#source_account CcPermission#source_account}
     */
     readonly sourceAccount?: string;
     /**
     * For AWS-services, the ARN of the AWS resource that invokes the function. For example, an Amazon S3 bucket or Amazon SNS topic.
     *  Note that Lambda configures the comparison using the ``StringLike`` operator.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_permission#source_arn CcPermission#source_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_permission#source_arn CcPermission#source_arn}
     */
     readonly sourceArn?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_permission awscc_lambda_permission}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_permission awscc_lambda_permission}
 */
 export class CcPermission extends cdktn.TerraformResource {
 
@@ -86,7 +86,7 @@ export class CcPermission extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcPermission resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcPermission to import
-    * @param importFromId The id of the existing CcPermission that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_permission#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcPermission that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_permission#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcPermission to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -98,7 +98,7 @@ export class CcPermission extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lambda_permission awscc_lambda_permission} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_permission awscc_lambda_permission} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -108,7 +108,8 @@ export class CcPermission extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_lambda_permission',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,

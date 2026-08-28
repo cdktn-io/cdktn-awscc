@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_response_headers_policy
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_response_headers_policy
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,13 +9,13 @@ export interface CcResponseHeadersPolicyProps extends cdktn.TerraformMetaArgumen
     /**
     * A response headers policy configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_response_headers_policy#response_headers_policy_config CcResponseHeadersPolicy#response_headers_policy_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_response_headers_policy#response_headers_policy_config CcResponseHeadersPolicy#response_headers_policy_config}
     */
     readonly responseHeadersPolicyConfig: CcResponseHeadersPolicy.ResponseHeadersPolicyConfigProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_response_headers_policy awscc_cloudfront_response_headers_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_response_headers_policy awscc_cloudfront_response_headers_policy}
 */
 export class CcResponseHeadersPolicy extends cdktn.TerraformResource {
 
@@ -31,7 +31,7 @@ export class CcResponseHeadersPolicy extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcResponseHeadersPolicy resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcResponseHeadersPolicy to import
-    * @param importFromId The id of the existing CcResponseHeadersPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_response_headers_policy#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcResponseHeadersPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_response_headers_policy#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcResponseHeadersPolicy to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -43,7 +43,7 @@ export class CcResponseHeadersPolicy extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_response_headers_policy awscc_cloudfront_response_headers_policy} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_response_headers_policy awscc_cloudfront_response_headers_policy} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -53,7 +53,8 @@ export class CcResponseHeadersPolicy extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_cloudfront_response_headers_policy',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -871,7 +872,7 @@ export interface AccessControlAllowHeadersProperty {
     /**
     * The list of HTTP header names. You can specify ``*`` to allow all headers.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_response_headers_policy#items CcResponseHeadersPolicy#items}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_response_headers_policy#items CcResponseHeadersPolicy#items}
     */
     readonly items?: string[];
 }
@@ -947,7 +948,7 @@ export interface AccessControlAllowMethodsProperty {
     *   
     *  ``ALL`` is a special value that includes all of the listed HTTP methods.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_response_headers_policy#items CcResponseHeadersPolicy#items}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_response_headers_policy#items CcResponseHeadersPolicy#items}
     */
     readonly items?: string[];
 }
@@ -1013,7 +1014,7 @@ export interface AccessControlAllowOriginsProperty {
     /**
     * The list of origins (domain names). You can specify ``*`` to allow all origins.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_response_headers_policy#items CcResponseHeadersPolicy#items}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_response_headers_policy#items CcResponseHeadersPolicy#items}
     */
     readonly items?: string[];
 }
@@ -1079,7 +1080,7 @@ export interface AccessControlExposeHeadersProperty {
     /**
     * The list of HTTP headers. You can specify ``*`` to expose all headers.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_response_headers_policy#items CcResponseHeadersPolicy#items}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_response_headers_policy#items CcResponseHeadersPolicy#items}
     */
     readonly items?: string[];
 }
@@ -1146,48 +1147,48 @@ export interface CorsConfigProperty {
     * A Boolean that CloudFront uses as the value for the ``Access-Control-Allow-Credentials`` HTTP response header.
     *  For more information about the ``Access-Control-Allow-Credentials`` HTTP response header, see [Access-Control-Allow-Credentials](https://docs.aws.amazon.com/https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Allow-Credentials) in the MDN Web Docs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_response_headers_policy#access_control_allow_credentials CcResponseHeadersPolicy#access_control_allow_credentials}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_response_headers_policy#access_control_allow_credentials CcResponseHeadersPolicy#access_control_allow_credentials}
     */
     readonly accessControlAllowCredentials?: boolean | cdktn.IResolvable;
     /**
     * A list of HTTP header names that CloudFront includes as values for the ``Access-Control-Allow-Headers`` HTTP response header.
     *  For more information about the ``Access-Control-Allow-Headers`` HTTP response header, see [Access-Control-Allow-Headers](https://docs.aws.amazon.com/https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Allow-Headers) in the MDN Web Docs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_response_headers_policy#access_control_allow_headers CcResponseHeadersPolicy#access_control_allow_headers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_response_headers_policy#access_control_allow_headers CcResponseHeadersPolicy#access_control_allow_headers}
     */
     readonly accessControlAllowHeaders?: AccessControlAllowHeadersProperty;
     /**
     * A list of HTTP methods that CloudFront includes as values for the ``Access-Control-Allow-Methods`` HTTP response header.
     *  For more information about the ``Access-Control-Allow-Methods`` HTTP response header, see [Access-Control-Allow-Methods](https://docs.aws.amazon.com/https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Allow-Methods) in the MDN Web Docs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_response_headers_policy#access_control_allow_methods CcResponseHeadersPolicy#access_control_allow_methods}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_response_headers_policy#access_control_allow_methods CcResponseHeadersPolicy#access_control_allow_methods}
     */
     readonly accessControlAllowMethods?: AccessControlAllowMethodsProperty;
     /**
     * A list of origins (domain names) that CloudFront can use as the value for the ``Access-Control-Allow-Origin`` HTTP response header.
     *  For more information about the ``Access-Control-Allow-Origin`` HTTP response header, see [Access-Control-Allow-Origin](https://docs.aws.amazon.com/https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Allow-Origin) in the MDN Web Docs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_response_headers_policy#access_control_allow_origins CcResponseHeadersPolicy#access_control_allow_origins}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_response_headers_policy#access_control_allow_origins CcResponseHeadersPolicy#access_control_allow_origins}
     */
     readonly accessControlAllowOrigins?: AccessControlAllowOriginsProperty;
     /**
     * A list of HTTP headers that CloudFront includes as values for the ``Access-Control-Expose-Headers`` HTTP response header.
     *  For more information about the ``Access-Control-Expose-Headers`` HTTP response header, see [Access-Control-Expose-Headers](https://docs.aws.amazon.com/https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Expose-Headers) in the MDN Web Docs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_response_headers_policy#access_control_expose_headers CcResponseHeadersPolicy#access_control_expose_headers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_response_headers_policy#access_control_expose_headers CcResponseHeadersPolicy#access_control_expose_headers}
     */
     readonly accessControlExposeHeaders?: AccessControlExposeHeadersProperty;
     /**
     * A number that CloudFront uses as the value for the ``Access-Control-Max-Age`` HTTP response header.
     *  For more information about the ``Access-Control-Max-Age`` HTTP response header, see [Access-Control-Max-Age](https://docs.aws.amazon.com/https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Max-Age) in the MDN Web Docs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_response_headers_policy#access_control_max_age_sec CcResponseHeadersPolicy#access_control_max_age_sec}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_response_headers_policy#access_control_max_age_sec CcResponseHeadersPolicy#access_control_max_age_sec}
     */
     readonly accessControlMaxAgeSec?: number;
     /**
     * A Boolean that determines whether CloudFront overrides HTTP response headers received from the origin with the ones specified in this response headers policy.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_response_headers_policy#origin_override CcResponseHeadersPolicy#origin_override}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_response_headers_policy#origin_override CcResponseHeadersPolicy#origin_override}
     */
     readonly originOverride?: boolean | cdktn.IResolvable;
 }
@@ -1385,19 +1386,19 @@ export interface CustomHeaderProperty {
     /**
     * The HTTP response header name.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_response_headers_policy#header CcResponseHeadersPolicy#header}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_response_headers_policy#header CcResponseHeadersPolicy#header}
     */
     readonly header?: string;
     /**
     * A Boolean that determines whether CloudFront overrides a response header with the same name received from the origin with the header specified here.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_response_headers_policy#override CcResponseHeadersPolicy#override}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_response_headers_policy#override CcResponseHeadersPolicy#override}
     */
     readonly override?: boolean | cdktn.IResolvable;
     /**
     * The value for the HTTP response header.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_response_headers_policy#value CcResponseHeadersPolicy#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_response_headers_policy#value CcResponseHeadersPolicy#value}
     */
     readonly value?: string;
 }
@@ -1529,7 +1530,7 @@ export interface CustomHeadersConfigProperty {
     /**
     * The list of HTTP response headers and their values.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_response_headers_policy#items CcResponseHeadersPolicy#items}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_response_headers_policy#items CcResponseHeadersPolicy#items}
     */
     readonly items?: CustomHeaderProperty[] | cdktn.IResolvable;
 }
@@ -1595,7 +1596,7 @@ export interface RemoveHeaderProperty {
     /**
     * The HTTP header name.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_response_headers_policy#header CcResponseHeadersPolicy#header}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_response_headers_policy#header CcResponseHeadersPolicy#header}
     */
     readonly header?: string;
 }
@@ -1683,7 +1684,7 @@ export interface RemoveHeadersConfigProperty {
     /**
     * The list of HTTP header names.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_response_headers_policy#items CcResponseHeadersPolicy#items}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_response_headers_policy#items CcResponseHeadersPolicy#items}
     */
     readonly items?: RemoveHeaderProperty[] | cdktn.IResolvable;
 }
@@ -1750,13 +1751,13 @@ export interface ContentSecurityPolicyProperty {
     * The policy directives and their values that CloudFront includes as values for the ``Content-Security-Policy`` HTTP response header.
     *  For more information about the ``Content-Security-Policy`` HTTP response header, see [Content-Security-Policy](https://docs.aws.amazon.com/https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy) in the MDN Web Docs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_response_headers_policy#content_security_policy CcResponseHeadersPolicy#content_security_policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_response_headers_policy#content_security_policy CcResponseHeadersPolicy#content_security_policy}
     */
     readonly contentSecurityPolicy?: string;
     /**
     * A Boolean that determines whether CloudFront overrides the ``Content-Security-Policy`` HTTP response header received from the origin with the one specified in this response headers policy.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_response_headers_policy#override CcResponseHeadersPolicy#override}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_response_headers_policy#override CcResponseHeadersPolicy#override}
     */
     readonly override?: boolean | cdktn.IResolvable;
 }
@@ -1844,7 +1845,7 @@ export interface ContentTypeOptionsProperty {
     /**
     * A Boolean that determines whether CloudFront overrides the ``X-Content-Type-Options`` HTTP response header received from the origin with the one specified in this response headers policy.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_response_headers_policy#override CcResponseHeadersPolicy#override}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_response_headers_policy#override CcResponseHeadersPolicy#override}
     */
     readonly override?: boolean | cdktn.IResolvable;
 }
@@ -1911,13 +1912,13 @@ export interface FrameOptionsProperty {
     * The value of the ``X-Frame-Options`` HTTP response header. Valid values are ``DENY`` and ``SAMEORIGIN``.
     *  For more information about these values, see [X-Frame-Options](https://docs.aws.amazon.com/https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options) in the MDN Web Docs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_response_headers_policy#frame_option CcResponseHeadersPolicy#frame_option}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_response_headers_policy#frame_option CcResponseHeadersPolicy#frame_option}
     */
     readonly frameOption?: string;
     /**
     * A Boolean that determines whether CloudFront overrides the ``X-Frame-Options`` HTTP response header received from the origin with the one specified in this response headers policy.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_response_headers_policy#override CcResponseHeadersPolicy#override}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_response_headers_policy#override CcResponseHeadersPolicy#override}
     */
     readonly override?: boolean | cdktn.IResolvable;
 }
@@ -2005,14 +2006,14 @@ export interface ReferrerPolicyProperty {
     /**
     * A Boolean that determines whether CloudFront overrides the ``Referrer-Policy`` HTTP response header received from the origin with the one specified in this response headers policy.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_response_headers_policy#override CcResponseHeadersPolicy#override}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_response_headers_policy#override CcResponseHeadersPolicy#override}
     */
     readonly override?: boolean | cdktn.IResolvable;
     /**
     * Determines whether CloudFront includes the ``Referrer-Policy`` HTTP response header and the header's value.
     *  For more information about the ``Referrer-Policy`` HTTP response header, see [Referrer-Policy](https://docs.aws.amazon.com/https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy) in the MDN Web Docs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_response_headers_policy#referrer_policy CcResponseHeadersPolicy#referrer_policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_response_headers_policy#referrer_policy CcResponseHeadersPolicy#referrer_policy}
     */
     readonly referrerPolicy?: string;
 }
@@ -2100,25 +2101,25 @@ export interface StrictTransportSecurityProperty {
     /**
     * A number that CloudFront uses as the value for the ``max-age`` directive in the ``Strict-Transport-Security`` HTTP response header.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_response_headers_policy#access_control_max_age_sec CcResponseHeadersPolicy#access_control_max_age_sec}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_response_headers_policy#access_control_max_age_sec CcResponseHeadersPolicy#access_control_max_age_sec}
     */
     readonly accessControlMaxAgeSec?: number;
     /**
     * A Boolean that determines whether CloudFront includes the ``includeSubDomains`` directive in the ``Strict-Transport-Security`` HTTP response header.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_response_headers_policy#include_subdomains CcResponseHeadersPolicy#include_subdomains}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_response_headers_policy#include_subdomains CcResponseHeadersPolicy#include_subdomains}
     */
     readonly includeSubdomains?: boolean | cdktn.IResolvable;
     /**
     * A Boolean that determines whether CloudFront overrides the ``Strict-Transport-Security`` HTTP response header received from the origin with the one specified in this response headers policy.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_response_headers_policy#override CcResponseHeadersPolicy#override}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_response_headers_policy#override CcResponseHeadersPolicy#override}
     */
     readonly override?: boolean | cdktn.IResolvable;
     /**
     * A Boolean that determines whether CloudFront includes the ``preload`` directive in the ``Strict-Transport-Security`` HTTP response header.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_response_headers_policy#preload CcResponseHeadersPolicy#preload}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_response_headers_policy#preload CcResponseHeadersPolicy#preload}
     */
     readonly preload?: boolean | cdktn.IResolvable;
 }
@@ -2251,20 +2252,20 @@ export interface XSSProtectionProperty {
     * A Boolean that determines whether CloudFront includes the ``mode=block`` directive in the ``X-XSS-Protection`` header.
     *  For more information about this directive, see [X-XSS-Protection](https://docs.aws.amazon.com/https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-XSS-Protection) in the MDN Web Docs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_response_headers_policy#mode_block CcResponseHeadersPolicy#mode_block}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_response_headers_policy#mode_block CcResponseHeadersPolicy#mode_block}
     */
     readonly modeBlock?: boolean | cdktn.IResolvable;
     /**
     * A Boolean that determines whether CloudFront overrides the ``X-XSS-Protection`` HTTP response header received from the origin with the one specified in this response headers policy.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_response_headers_policy#override CcResponseHeadersPolicy#override}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_response_headers_policy#override CcResponseHeadersPolicy#override}
     */
     readonly override?: boolean | cdktn.IResolvable;
     /**
     * A Boolean that determines the value of the ``X-XSS-Protection`` HTTP response header. When this setting is ``true``, the value of the ``X-XSS-Protection`` header is ``1``. When this setting is ``false``, the value of the ``X-XSS-Protection`` header is ``0``.
     *  For more information about these settings, see [X-XSS-Protection](https://docs.aws.amazon.com/https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-XSS-Protection) in the MDN Web Docs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_response_headers_policy#protection CcResponseHeadersPolicy#protection}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_response_headers_policy#protection CcResponseHeadersPolicy#protection}
     */
     readonly protection?: boolean | cdktn.IResolvable;
     /**
@@ -2272,7 +2273,7 @@ export interface XSSProtectionProperty {
     *  You cannot specify a ``ReportUri`` when ``ModeBlock`` is ``true``.
     *  For more information about using a reporting URL, see [X-XSS-Protection](https://docs.aws.amazon.com/https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-XSS-Protection) in the MDN Web Docs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_response_headers_policy#report_uri CcResponseHeadersPolicy#report_uri}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_response_headers_policy#report_uri CcResponseHeadersPolicy#report_uri}
     */
     readonly reportUri?: string;
 }
@@ -2405,42 +2406,42 @@ export interface SecurityHeadersConfigProperty {
     * The policy directives and their values that CloudFront includes as values for the ``Content-Security-Policy`` HTTP response header.
     *  For more information about the ``Content-Security-Policy`` HTTP response header, see [Content-Security-Policy](https://docs.aws.amazon.com/https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy) in the MDN Web Docs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_response_headers_policy#content_security_policy CcResponseHeadersPolicy#content_security_policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_response_headers_policy#content_security_policy CcResponseHeadersPolicy#content_security_policy}
     */
     readonly contentSecurityPolicy?: ContentSecurityPolicyProperty;
     /**
     * Determines whether CloudFront includes the ``X-Content-Type-Options`` HTTP response header with its value set to ``nosniff``.
     *  For more information about the ``X-Content-Type-Options`` HTTP response header, see [X-Content-Type-Options](https://docs.aws.amazon.com/https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Content-Type-Options) in the MDN Web Docs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_response_headers_policy#content_type_options CcResponseHeadersPolicy#content_type_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_response_headers_policy#content_type_options CcResponseHeadersPolicy#content_type_options}
     */
     readonly contentTypeOptions?: ContentTypeOptionsProperty;
     /**
     * Determines whether CloudFront includes the ``X-Frame-Options`` HTTP response header and the header's value.
     *  For more information about the ``X-Frame-Options`` HTTP response header, see [X-Frame-Options](https://docs.aws.amazon.com/https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options) in the MDN Web Docs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_response_headers_policy#frame_options CcResponseHeadersPolicy#frame_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_response_headers_policy#frame_options CcResponseHeadersPolicy#frame_options}
     */
     readonly frameOptions?: FrameOptionsProperty;
     /**
     * Determines whether CloudFront includes the ``Referrer-Policy`` HTTP response header and the header's value.
     *  For more information about the ``Referrer-Policy`` HTTP response header, see [Referrer-Policy](https://docs.aws.amazon.com/https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy) in the MDN Web Docs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_response_headers_policy#referrer_policy CcResponseHeadersPolicy#referrer_policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_response_headers_policy#referrer_policy CcResponseHeadersPolicy#referrer_policy}
     */
     readonly referrerPolicy?: ReferrerPolicyProperty;
     /**
     * Determines whether CloudFront includes the ``Strict-Transport-Security`` HTTP response header and the header's value.
     *  For more information about the ``Strict-Transport-Security`` HTTP response header, see [Security headers](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/understanding-response-headers-policies.html#understanding-response-headers-policies-security) in the *Amazon CloudFront Developer Guide* and [Strict-Transport-Security](https://docs.aws.amazon.com/https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security) in the MDN Web Docs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_response_headers_policy#strict_transport_security CcResponseHeadersPolicy#strict_transport_security}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_response_headers_policy#strict_transport_security CcResponseHeadersPolicy#strict_transport_security}
     */
     readonly strictTransportSecurity?: StrictTransportSecurityProperty;
     /**
     * Determines whether CloudFront includes the ``X-XSS-Protection`` HTTP response header and the header's value.
     *  For more information about the ``X-XSS-Protection`` HTTP response header, see [X-XSS-Protection](https://docs.aws.amazon.com/https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-XSS-Protection) in the MDN Web Docs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_response_headers_policy#xss_protection CcResponseHeadersPolicy#xss_protection}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_response_headers_policy#xss_protection CcResponseHeadersPolicy#xss_protection}
     */
     readonly xssProtection?: XSSProtectionProperty;
 }
@@ -2616,13 +2617,13 @@ export interface ServerTimingHeadersConfigProperty {
     /**
     * A Boolean that determines whether CloudFront adds the ``Server-Timing`` header to HTTP responses that it sends in response to requests that match a cache behavior that's associated with this response headers policy.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_response_headers_policy#enabled CcResponseHeadersPolicy#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_response_headers_policy#enabled CcResponseHeadersPolicy#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
     * A number 0?100 (inclusive) that specifies the percentage of responses that you want CloudFront to add the ``Server-Timing`` header to. When you set the sampling rate to 100, CloudFront adds the ``Server-Timing`` header to the HTTP response for every request that matches the cache behavior that this response headers policy is attached to. When you set it to 50, CloudFront adds the header to 50% of the responses for requests that match the cache behavior. You can set the sampling rate to any number 0?100 with up to four decimal places.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_response_headers_policy#sampling_rate CcResponseHeadersPolicy#sampling_rate}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_response_headers_policy#sampling_rate CcResponseHeadersPolicy#sampling_rate}
     */
     readonly samplingRate?: number;
 }
@@ -2711,44 +2712,44 @@ export interface ResponseHeadersPolicyConfigProperty {
     * A comment to describe the response headers policy.
     *  The comment cannot be longer than 128 characters.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_response_headers_policy#comment CcResponseHeadersPolicy#comment}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_response_headers_policy#comment CcResponseHeadersPolicy#comment}
     */
     readonly comment?: string;
     /**
     * A configuration for a set of HTTP response headers that are used for cross-origin resource sharing (CORS).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_response_headers_policy#cors_config CcResponseHeadersPolicy#cors_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_response_headers_policy#cors_config CcResponseHeadersPolicy#cors_config}
     */
     readonly corsConfig?: CorsConfigProperty;
     /**
     * A configuration for a set of custom HTTP response headers.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_response_headers_policy#custom_headers_config CcResponseHeadersPolicy#custom_headers_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_response_headers_policy#custom_headers_config CcResponseHeadersPolicy#custom_headers_config}
     */
     readonly customHeadersConfig?: CustomHeadersConfigProperty;
     /**
     * A name to identify the response headers policy.
     *  The name must be unique for response headers policies in this AWS-account.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_response_headers_policy#name CcResponseHeadersPolicy#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_response_headers_policy#name CcResponseHeadersPolicy#name}
     */
     readonly name: string;
     /**
     * A configuration for a set of HTTP headers to remove from the HTTP response.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_response_headers_policy#remove_headers_config CcResponseHeadersPolicy#remove_headers_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_response_headers_policy#remove_headers_config CcResponseHeadersPolicy#remove_headers_config}
     */
     readonly removeHeadersConfig?: RemoveHeadersConfigProperty;
     /**
     * A configuration for a set of security-related HTTP response headers.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_response_headers_policy#security_headers_config CcResponseHeadersPolicy#security_headers_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_response_headers_policy#security_headers_config CcResponseHeadersPolicy#security_headers_config}
     */
     readonly securityHeadersConfig?: SecurityHeadersConfigProperty;
     /**
     * A configuration for enabling the ``Server-Timing`` header in HTTP responses sent from CloudFront.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_response_headers_policy#server_timing_headers_config CcResponseHeadersPolicy#server_timing_headers_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_response_headers_policy#server_timing_headers_config CcResponseHeadersPolicy#server_timing_headers_config}
     */
     readonly serverTimingHeadersConfig?: ServerTimingHeadersConfigProperty;
 }

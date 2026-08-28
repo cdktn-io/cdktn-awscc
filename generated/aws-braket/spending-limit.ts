@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/braket_spending_limit
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/braket_spending_limit
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,31 +9,31 @@ export interface CcSpendingLimitProps extends cdktn.TerraformMetaArguments {
     /**
     * The Amazon Resource Name (ARN) of the quantum device to apply the spending limit to.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/braket_spending_limit#device_arn CcSpendingLimit#device_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/braket_spending_limit#device_arn CcSpendingLimit#device_arn}
     */
     readonly deviceArn: string;
     /**
     * The maximum amount that can be spent on the specified device, in USD.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/braket_spending_limit#spending_limit CcSpendingLimit#spending_limit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/braket_spending_limit#spending_limit CcSpendingLimit#spending_limit}
     */
     readonly spendingLimit: string;
     /**
     * The tags to apply to the spending limit.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/braket_spending_limit#tags CcSpendingLimit#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/braket_spending_limit#tags CcSpendingLimit#tags}
     */
     readonly tags?: CcSpendingLimit.TagProperty[] | cdktn.IResolvable;
     /**
     * Defines a time range for spending limits, specifying when the limit is active.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/braket_spending_limit#time_period CcSpendingLimit#time_period}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/braket_spending_limit#time_period CcSpendingLimit#time_period}
     */
     readonly timePeriod?: CcSpendingLimit.TimePeriodProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/braket_spending_limit awscc_braket_spending_limit}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/braket_spending_limit awscc_braket_spending_limit}
 */
 export class CcSpendingLimit extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CcSpendingLimit extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcSpendingLimit resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcSpendingLimit to import
-    * @param importFromId The id of the existing CcSpendingLimit that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/braket_spending_limit#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcSpendingLimit that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/braket_spending_limit#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcSpendingLimit to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CcSpendingLimit extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/braket_spending_limit awscc_braket_spending_limit} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/braket_spending_limit awscc_braket_spending_limit} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -71,7 +71,8 @@ export class CcSpendingLimit extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_braket_spending_limit',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -304,13 +305,13 @@ export interface TagProperty {
     /**
     * The key name of the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/braket_spending_limit#key CcSpendingLimit#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/braket_spending_limit#key CcSpendingLimit#key}
     */
     readonly key?: string;
     /**
     * The value for the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/braket_spending_limit#value CcSpendingLimit#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/braket_spending_limit#value CcSpendingLimit#value}
     */
     readonly value?: string;
 }
@@ -420,13 +421,13 @@ export interface TimePeriodProperty {
     /**
     * The end date and time for the spending limit period, in ISO 8601 format.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/braket_spending_limit#end_at CcSpendingLimit#end_at}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/braket_spending_limit#end_at CcSpendingLimit#end_at}
     */
     readonly endAt?: string;
     /**
     * The start date and time for the spending limit period, in ISO 8601 format.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/braket_spending_limit#start_at CcSpendingLimit#start_at}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/braket_spending_limit#start_at CcSpendingLimit#start_at}
     */
     readonly startAt?: string;
 }

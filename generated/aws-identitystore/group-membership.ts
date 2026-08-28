@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/identitystore_group_membership
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/identitystore_group_membership
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,25 +9,25 @@ export interface CcGroupMembershipProps extends cdktn.TerraformMetaArguments {
     /**
     * The unique identifier for a group in the identity store.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/identitystore_group_membership#group_id CcGroupMembership#group_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/identitystore_group_membership#group_id CcGroupMembership#group_id}
     */
     readonly groupId: string;
     /**
     * The globally unique identifier for the identity store.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/identitystore_group_membership#identity_store_id CcGroupMembership#identity_store_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/identitystore_group_membership#identity_store_id CcGroupMembership#identity_store_id}
     */
     readonly identityStoreId: string;
     /**
     * An object containing the identifier of a group member.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/identitystore_group_membership#member_id CcGroupMembership#member_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/identitystore_group_membership#member_id CcGroupMembership#member_id}
     */
     readonly memberId: CcGroupMembership.MemberIdProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/identitystore_group_membership awscc_identitystore_group_membership}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/identitystore_group_membership awscc_identitystore_group_membership}
 */
 export class CcGroupMembership extends cdktn.TerraformResource {
 
@@ -43,7 +43,7 @@ export class CcGroupMembership extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcGroupMembership resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcGroupMembership to import
-    * @param importFromId The id of the existing CcGroupMembership that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/identitystore_group_membership#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcGroupMembership that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/identitystore_group_membership#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcGroupMembership to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -55,7 +55,7 @@ export class CcGroupMembership extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/identitystore_group_membership awscc_identitystore_group_membership} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/identitystore_group_membership awscc_identitystore_group_membership} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -65,7 +65,8 @@ export class CcGroupMembership extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_identitystore_group_membership',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -207,7 +208,7 @@ export interface MemberIdProperty {
     /**
     * The identifier for a user in the identity store.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/identitystore_group_membership#user_id CcGroupMembership#user_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/identitystore_group_membership#user_id CcGroupMembership#user_id}
     */
     readonly userId: string;
 }

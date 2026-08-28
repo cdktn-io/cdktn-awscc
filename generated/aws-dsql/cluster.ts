@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dsql_cluster
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dsql_cluster
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,35 +9,35 @@ export interface CcClusterProps extends cdktn.TerraformMetaArguments {
     /**
     * Whether deletion protection is enabled in this cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dsql_cluster#deletion_protection_enabled CcCluster#deletion_protection_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dsql_cluster#deletion_protection_enabled CcCluster#deletion_protection_enabled}
     */
     readonly deletionProtectionEnabled?: boolean | cdktn.IResolvable;
     /**
     * The KMS key that encrypts data on the cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dsql_cluster#kms_encryption_key CcCluster#kms_encryption_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dsql_cluster#kms_encryption_key CcCluster#kms_encryption_key}
     */
     readonly kmsEncryptionKey?: string;
     /**
     * The Multi-region properties associated to this cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dsql_cluster#multi_region_properties CcCluster#multi_region_properties}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dsql_cluster#multi_region_properties CcCluster#multi_region_properties}
     */
     readonly multiRegionProperties?: CcCluster.MultiRegionPropertiesProperty;
     /**
     * The IAM policy applied to the cluster resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dsql_cluster#policy_document CcCluster#policy_document}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dsql_cluster#policy_document CcCluster#policy_document}
     */
     readonly policyDocument?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dsql_cluster#tags CcCluster#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dsql_cluster#tags CcCluster#tags}
     */
     readonly tags?: CcCluster.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dsql_cluster awscc_dsql_cluster}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dsql_cluster awscc_dsql_cluster}
 */
 export class CcCluster extends cdktn.TerraformResource {
 
@@ -53,7 +53,7 @@ export class CcCluster extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcCluster resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcCluster to import
-    * @param importFromId The id of the existing CcCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dsql_cluster#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dsql_cluster#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcCluster to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -65,7 +65,7 @@ export class CcCluster extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dsql_cluster awscc_dsql_cluster} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dsql_cluster awscc_dsql_cluster} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -75,7 +75,8 @@ export class CcCluster extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_dsql_cluster',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -421,13 +422,13 @@ export class EncryptionDetailsPropertyOutputReference extends cdktn.ComplexObjec
 }
 export interface MultiRegionPropertiesProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dsql_cluster#clusters CcCluster#clusters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dsql_cluster#clusters CcCluster#clusters}
     */
     readonly clusters?: string[];
     /**
     * The witness region in a multi-region cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dsql_cluster#witness_region CcCluster#witness_region}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dsql_cluster#witness_region CcCluster#witness_region}
     */
     readonly witnessRegion?: string;
 }
@@ -515,13 +516,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dsql_cluster#key CcCluster#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dsql_cluster#key CcCluster#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 1 to 256 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dsql_cluster#value CcCluster#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dsql_cluster#value CcCluster#value}
     */
     readonly value?: string;
 }

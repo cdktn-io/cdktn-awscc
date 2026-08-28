@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/route53resolver_firewall_rule_group
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53resolver_firewall_rule_group
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,25 +9,25 @@ export interface CcFirewallRuleGroupProps extends cdktn.TerraformMetaArguments {
     /**
     * FirewallRules
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/route53resolver_firewall_rule_group#firewall_rules CcFirewallRuleGroup#firewall_rules}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53resolver_firewall_rule_group#firewall_rules CcFirewallRuleGroup#firewall_rules}
     */
     readonly firewallRules?: CcFirewallRuleGroup.FirewallRuleProperty[] | cdktn.IResolvable;
     /**
     * FirewallRuleGroupName
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/route53resolver_firewall_rule_group#name CcFirewallRuleGroup#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53resolver_firewall_rule_group#name CcFirewallRuleGroup#name}
     */
     readonly name?: string;
     /**
     * Tags
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/route53resolver_firewall_rule_group#tags CcFirewallRuleGroup#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53resolver_firewall_rule_group#tags CcFirewallRuleGroup#tags}
     */
     readonly tags?: CcFirewallRuleGroup.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/route53resolver_firewall_rule_group awscc_route53resolver_firewall_rule_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53resolver_firewall_rule_group awscc_route53resolver_firewall_rule_group}
 */
 export class CcFirewallRuleGroup extends cdktn.TerraformResource {
 
@@ -43,7 +43,7 @@ export class CcFirewallRuleGroup extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcFirewallRuleGroup resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcFirewallRuleGroup to import
-    * @param importFromId The id of the existing CcFirewallRuleGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/route53resolver_firewall_rule_group#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcFirewallRuleGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53resolver_firewall_rule_group#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcFirewallRuleGroup to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -55,7 +55,7 @@ export class CcFirewallRuleGroup extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/route53resolver_firewall_rule_group awscc_route53resolver_firewall_rule_group} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53resolver_firewall_rule_group awscc_route53resolver_firewall_rule_group} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -65,7 +65,8 @@ export class CcFirewallRuleGroup extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_route53resolver_firewall_rule_group',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -523,7 +524,7 @@ export interface FirewallAdvancedContentCategoryConfigProperty {
     /**
     * The content category value.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/route53resolver_firewall_rule_group#category CcFirewallRuleGroup#category}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53resolver_firewall_rule_group#category CcFirewallRuleGroup#category}
     */
     readonly category?: string;
 }
@@ -589,7 +590,7 @@ export interface FirewallAdvancedThreatCategoryConfigProperty {
     /**
     * The threat category value.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/route53resolver_firewall_rule_group#category CcFirewallRuleGroup#category}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53resolver_firewall_rule_group#category CcFirewallRuleGroup#category}
     */
     readonly category?: string;
 }
@@ -655,7 +656,7 @@ export interface PartnerThreatProtectionConfigProperty {
     /**
     * The partner identifier value.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/route53resolver_firewall_rule_group#partner CcFirewallRuleGroup#partner}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53resolver_firewall_rule_group#partner CcFirewallRuleGroup#partner}
     */
     readonly partner?: string;
 }
@@ -721,19 +722,19 @@ export interface FirewallRuleTypeProperty {
     /**
     * Configuration for an advanced content category rule type.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/route53resolver_firewall_rule_group#firewall_advanced_content_category CcFirewallRuleGroup#firewall_advanced_content_category}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53resolver_firewall_rule_group#firewall_advanced_content_category CcFirewallRuleGroup#firewall_advanced_content_category}
     */
     readonly firewallAdvancedContentCategory?: FirewallAdvancedContentCategoryConfigProperty;
     /**
     * Configuration for an advanced threat category rule type.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/route53resolver_firewall_rule_group#firewall_advanced_threat_category CcFirewallRuleGroup#firewall_advanced_threat_category}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53resolver_firewall_rule_group#firewall_advanced_threat_category CcFirewallRuleGroup#firewall_advanced_threat_category}
     */
     readonly firewallAdvancedThreatCategory?: FirewallAdvancedThreatCategoryConfigProperty;
     /**
     * Configuration for a partner threat protection rule type.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/route53resolver_firewall_rule_group#partner_threat_protection CcFirewallRuleGroup#partner_threat_protection}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53resolver_firewall_rule_group#partner_threat_protection CcFirewallRuleGroup#partner_threat_protection}
     */
     readonly partnerThreatProtection?: PartnerThreatProtectionConfigProperty;
 }
@@ -843,85 +844,85 @@ export interface FirewallRuleProperty {
     /**
     * Rule Action
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/route53resolver_firewall_rule_group#action CcFirewallRuleGroup#action}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53resolver_firewall_rule_group#action CcFirewallRuleGroup#action}
     */
     readonly action?: string;
     /**
     * BlockOverrideDnsType
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/route53resolver_firewall_rule_group#block_override_dns_type CcFirewallRuleGroup#block_override_dns_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53resolver_firewall_rule_group#block_override_dns_type CcFirewallRuleGroup#block_override_dns_type}
     */
     readonly blockOverrideDnsType?: string;
     /**
     * BlockOverrideDomain
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/route53resolver_firewall_rule_group#block_override_domain CcFirewallRuleGroup#block_override_domain}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53resolver_firewall_rule_group#block_override_domain CcFirewallRuleGroup#block_override_domain}
     */
     readonly blockOverrideDomain?: string;
     /**
     * BlockOverrideTtl
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/route53resolver_firewall_rule_group#block_override_ttl CcFirewallRuleGroup#block_override_ttl}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53resolver_firewall_rule_group#block_override_ttl CcFirewallRuleGroup#block_override_ttl}
     */
     readonly blockOverrideTtl?: number;
     /**
     * BlockResponse
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/route53resolver_firewall_rule_group#block_response CcFirewallRuleGroup#block_response}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53resolver_firewall_rule_group#block_response CcFirewallRuleGroup#block_response}
     */
     readonly blockResponse?: string;
     /**
     * ConfidenceThreshold
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/route53resolver_firewall_rule_group#confidence_threshold CcFirewallRuleGroup#confidence_threshold}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53resolver_firewall_rule_group#confidence_threshold CcFirewallRuleGroup#confidence_threshold}
     */
     readonly confidenceThreshold?: string;
     /**
     * DnsThreatProtection
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/route53resolver_firewall_rule_group#dns_threat_protection CcFirewallRuleGroup#dns_threat_protection}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53resolver_firewall_rule_group#dns_threat_protection CcFirewallRuleGroup#dns_threat_protection}
     */
     readonly dnsThreatProtection?: string;
     /**
     * ResourceId
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/route53resolver_firewall_rule_group#firewall_domain_list_id CcFirewallRuleGroup#firewall_domain_list_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53resolver_firewall_rule_group#firewall_domain_list_id CcFirewallRuleGroup#firewall_domain_list_id}
     */
     readonly firewallDomainListId?: string;
     /**
     * FirewallDomainRedirectionAction
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/route53resolver_firewall_rule_group#firewall_domain_redirection_action CcFirewallRuleGroup#firewall_domain_redirection_action}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53resolver_firewall_rule_group#firewall_domain_redirection_action CcFirewallRuleGroup#firewall_domain_redirection_action}
     */
     readonly firewallDomainRedirectionAction?: string;
     /**
     * Advanced firewall rule type. Mutually exclusive with FirewallDomainListId and DnsThreatProtection/ConfidenceThreshold.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/route53resolver_firewall_rule_group#firewall_rule_type CcFirewallRuleGroup#firewall_rule_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53resolver_firewall_rule_group#firewall_rule_type CcFirewallRuleGroup#firewall_rule_type}
     */
     readonly firewallRuleType?: FirewallRuleTypeProperty;
     /**
     * ResourceId
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/route53resolver_firewall_rule_group#firewall_threat_protection_id CcFirewallRuleGroup#firewall_threat_protection_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53resolver_firewall_rule_group#firewall_threat_protection_id CcFirewallRuleGroup#firewall_threat_protection_id}
     */
     readonly firewallThreatProtectionId?: string;
     /**
     * Rule Priority
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/route53resolver_firewall_rule_group#priority CcFirewallRuleGroup#priority}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53resolver_firewall_rule_group#priority CcFirewallRuleGroup#priority}
     */
     readonly priority?: number;
     /**
     * Qtype
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/route53resolver_firewall_rule_group#qtype CcFirewallRuleGroup#qtype}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53resolver_firewall_rule_group#qtype CcFirewallRuleGroup#qtype}
     */
     readonly qtype?: string;
     /**
     * The status of the firewall rule.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/route53resolver_firewall_rule_group#status CcFirewallRuleGroup#status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53resolver_firewall_rule_group#status CcFirewallRuleGroup#status}
     */
     readonly status?: string;
 }
@@ -1295,13 +1296,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 127 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/route53resolver_firewall_rule_group#key CcFirewallRuleGroup#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53resolver_firewall_rule_group#key CcFirewallRuleGroup#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 1 to 255 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/route53resolver_firewall_rule_group#value CcFirewallRuleGroup#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53resolver_firewall_rule_group#value CcFirewallRuleGroup#value}
     */
     readonly value?: string;
 }

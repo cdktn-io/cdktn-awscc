@@ -1,39 +1,39 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/qbusiness_retriever
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_retriever
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcRetrieverProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/qbusiness_retriever#application_id CcRetriever#application_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_retriever#application_id CcRetriever#application_id}
     */
     readonly applicationId: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/qbusiness_retriever#configuration CcRetriever#configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_retriever#configuration CcRetriever#configuration}
     */
     readonly configuration: CcRetriever.RetrieverConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/qbusiness_retriever#display_name CcRetriever#display_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_retriever#display_name CcRetriever#display_name}
     */
     readonly displayName: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/qbusiness_retriever#role_arn CcRetriever#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_retriever#role_arn CcRetriever#role_arn}
     */
     readonly roleArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/qbusiness_retriever#tags CcRetriever#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_retriever#tags CcRetriever#tags}
     */
     readonly tags?: CcRetriever.TagProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/qbusiness_retriever#type CcRetriever#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_retriever#type CcRetriever#type}
     */
     readonly type: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/qbusiness_retriever awscc_qbusiness_retriever}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_retriever awscc_qbusiness_retriever}
 */
 export class CcRetriever extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CcRetriever extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcRetriever resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcRetriever to import
-    * @param importFromId The id of the existing CcRetriever that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/qbusiness_retriever#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcRetriever that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_retriever#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcRetriever to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CcRetriever extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/qbusiness_retriever awscc_qbusiness_retriever} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_retriever awscc_qbusiness_retriever} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -71,7 +71,8 @@ export class CcRetriever extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_qbusiness_retriever',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -404,7 +405,7 @@ export function ccRetrieverTagPropertyToHclTerraform(struct?: CcRetriever.TagPro
 export namespace CcRetriever {
 export interface KendraIndexConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/qbusiness_retriever#index_id CcRetriever#index_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_retriever#index_id CcRetriever#index_id}
     */
     readonly indexId?: string;
 }
@@ -468,7 +469,7 @@ export class KendraIndexConfigurationPropertyOutputReference extends cdktn.Compl
 }
 export interface NativeIndexConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/qbusiness_retriever#index_id CcRetriever#index_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_retriever#index_id CcRetriever#index_id}
     */
     readonly indexId?: string;
 }
@@ -532,11 +533,11 @@ export class NativeIndexConfigurationPropertyOutputReference extends cdktn.Compl
 }
 export interface RetrieverConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/qbusiness_retriever#kendra_index_configuration CcRetriever#kendra_index_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_retriever#kendra_index_configuration CcRetriever#kendra_index_configuration}
     */
     readonly kendraIndexConfiguration?: KendraIndexConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/qbusiness_retriever#native_index_configuration CcRetriever#native_index_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_retriever#native_index_configuration CcRetriever#native_index_configuration}
     */
     readonly nativeIndexConfiguration?: NativeIndexConfigurationProperty;
 }
@@ -622,11 +623,11 @@ export class RetrieverConfigurationPropertyOutputReference extends cdktn.Complex
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/qbusiness_retriever#key CcRetriever#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_retriever#key CcRetriever#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/qbusiness_retriever#value CcRetriever#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_retriever#value CcRetriever#value}
     */
     readonly value?: string;
 }

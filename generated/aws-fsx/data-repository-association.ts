@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fsx_data_repository_association
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fsx_data_repository_association
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,49 +9,49 @@ export interface CcDataRepositoryAssociationProps extends cdktn.TerraformMetaArg
     /**
     * A boolean flag indicating whether an import data repository task to import metadata should run after the data repository association is created. The task runs if this flag is set to true.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fsx_data_repository_association#batch_import_meta_data_on_create CcDataRepositoryAssociation#batch_import_meta_data_on_create}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fsx_data_repository_association#batch_import_meta_data_on_create CcDataRepositoryAssociation#batch_import_meta_data_on_create}
     */
     readonly batchImportMetaDataOnCreate?: boolean | cdktn.IResolvable;
     /**
     * The path to the Amazon S3 data repository that will be linked to the file system. The path can be an S3 bucket or prefix in the format s3://myBucket/myPrefix/ . This path specifies where in the S3 data repository files will be imported from or exported to.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fsx_data_repository_association#data_repository_path CcDataRepositoryAssociation#data_repository_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fsx_data_repository_association#data_repository_path CcDataRepositoryAssociation#data_repository_path}
     */
     readonly dataRepositoryPath: string;
     /**
     * The globally unique ID of the file system, assigned by Amazon FSx.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fsx_data_repository_association#file_system_id CcDataRepositoryAssociation#file_system_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fsx_data_repository_association#file_system_id CcDataRepositoryAssociation#file_system_id}
     */
     readonly fileSystemId: string;
     /**
     * This path specifies where in your file system files will be exported from or imported to. This file system directory can be linked to only one Amazon S3 bucket, and no other S3 bucket can be linked to the directory.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fsx_data_repository_association#file_system_path CcDataRepositoryAssociation#file_system_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fsx_data_repository_association#file_system_path CcDataRepositoryAssociation#file_system_path}
     */
     readonly fileSystemPath: string;
     /**
     * For files imported from a data repository, this value determines the stripe count and maximum amount of data per file (in MiB) stored on a single physical disk. The maximum number of disks that a single file can be striped across is limited by the total number of disks that make up the file system.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fsx_data_repository_association#imported_file_chunk_size CcDataRepositoryAssociation#imported_file_chunk_size}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fsx_data_repository_association#imported_file_chunk_size CcDataRepositoryAssociation#imported_file_chunk_size}
     */
     readonly importedFileChunkSize?: number;
     /**
     * The configuration for an Amazon S3 data repository linked to an Amazon FSx Lustre file system with a data repository association. The configuration defines which file events (new, changed, or deleted files or directories) are automatically imported from the linked data repository to the file system or automatically exported from the file system to the data repository.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fsx_data_repository_association#s3 CcDataRepositoryAssociation#s3}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fsx_data_repository_association#s3 CcDataRepositoryAssociation#s3}
     */
     readonly s3?: CcDataRepositoryAssociation.S3Property;
     /**
     * A list of Tag values, with a maximum of 50 elements.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fsx_data_repository_association#tags CcDataRepositoryAssociation#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fsx_data_repository_association#tags CcDataRepositoryAssociation#tags}
     */
     readonly tags?: CcDataRepositoryAssociation.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fsx_data_repository_association awscc_fsx_data_repository_association}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fsx_data_repository_association awscc_fsx_data_repository_association}
 */
 export class CcDataRepositoryAssociation extends cdktn.TerraformResource {
 
@@ -67,7 +67,7 @@ export class CcDataRepositoryAssociation extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcDataRepositoryAssociation resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcDataRepositoryAssociation to import
-    * @param importFromId The id of the existing CcDataRepositoryAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fsx_data_repository_association#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcDataRepositoryAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fsx_data_repository_association#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcDataRepositoryAssociation to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -79,7 +79,7 @@ export class CcDataRepositoryAssociation extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fsx_data_repository_association awscc_fsx_data_repository_association} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fsx_data_repository_association awscc_fsx_data_repository_association} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -89,7 +89,8 @@ export class CcDataRepositoryAssociation extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_fsx_data_repository_association',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -434,7 +435,7 @@ export function ccDataRepositoryAssociationTagPropertyToHclTerraform(struct?: Cc
 export namespace CcDataRepositoryAssociation {
 export interface AutoExportPolicyProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fsx_data_repository_association#events CcDataRepositoryAssociation#events}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fsx_data_repository_association#events CcDataRepositoryAssociation#events}
     */
     readonly events?: string[];
 }
@@ -498,7 +499,7 @@ export class AutoExportPolicyPropertyOutputReference extends cdktn.ComplexObject
 }
 export interface AutoImportPolicyProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fsx_data_repository_association#events CcDataRepositoryAssociation#events}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fsx_data_repository_association#events CcDataRepositoryAssociation#events}
     */
     readonly events?: string[];
 }
@@ -564,13 +565,13 @@ export interface S3Property {
     /**
     * Specifies the type of updated objects (new, changed, deleted) that will be automatically exported from your file system to the linked S3 bucket.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fsx_data_repository_association#auto_export_policy CcDataRepositoryAssociation#auto_export_policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fsx_data_repository_association#auto_export_policy CcDataRepositoryAssociation#auto_export_policy}
     */
     readonly autoExportPolicy?: AutoExportPolicyProperty;
     /**
     * Specifies the type of updated objects (new, changed, deleted) that will be automatically imported from the linked S3 bucket to your file system.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fsx_data_repository_association#auto_import_policy CcDataRepositoryAssociation#auto_import_policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fsx_data_repository_association#auto_import_policy CcDataRepositoryAssociation#auto_import_policy}
     */
     readonly autoImportPolicy?: AutoImportPolicyProperty;
 }
@@ -658,13 +659,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fsx_data_repository_association#key CcDataRepositoryAssociation#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fsx_data_repository_association#key CcDataRepositoryAssociation#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 0 to 256 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fsx_data_repository_association#value CcDataRepositoryAssociation#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fsx_data_repository_association#value CcDataRepositoryAssociation#value}
     */
     readonly value?: string;
 }

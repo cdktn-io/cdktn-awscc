@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_workflow
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_workflow
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,31 +9,31 @@ export interface CcWorkflowProps extends cdktn.TerraformMetaArguments {
     /**
     * A textual description for the workflow.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_workflow#description CcWorkflow#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_workflow#description CcWorkflow#description}
     */
     readonly description?: string;
     /**
     * Specifies the steps (actions) to take if any errors are encountered during execution of the workflow.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_workflow#on_exception_steps CcWorkflow#on_exception_steps}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_workflow#on_exception_steps CcWorkflow#on_exception_steps}
     */
     readonly onExceptionSteps?: CcWorkflow.WorkflowStepProperty[] | cdktn.IResolvable;
     /**
     * Specifies the details for the steps that are in the specified workflow.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_workflow#steps CcWorkflow#steps}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_workflow#steps CcWorkflow#steps}
     */
     readonly steps: CcWorkflow.StepsProperty[] | cdktn.IResolvable;
     /**
     * Key-value pairs that can be used to group and search for workflows. Tags are metadata attached to workflows for any purpose.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_workflow#tags CcWorkflow#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_workflow#tags CcWorkflow#tags}
     */
     readonly tags?: CcWorkflow.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_workflow awscc_transfer_workflow}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_workflow awscc_transfer_workflow}
 */
 export class CcWorkflow extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CcWorkflow extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcWorkflow resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcWorkflow to import
-    * @param importFromId The id of the existing CcWorkflow that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_workflow#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcWorkflow that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_workflow#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcWorkflow to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CcWorkflow extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_workflow awscc_transfer_workflow} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_workflow awscc_transfer_workflow} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -71,7 +71,8 @@ export class CcWorkflow extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_transfer_workflow',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -1297,13 +1298,13 @@ export interface S3InputFileLocationProperty {
     /**
     * Specifies the S3 bucket that contains the file.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_workflow#bucket CcWorkflow#bucket}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_workflow#bucket CcWorkflow#bucket}
     */
     readonly bucket?: string;
     /**
     * The name assigned to the file when it was created in S3. You use the object key to retrieve the object.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_workflow#key CcWorkflow#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_workflow#key CcWorkflow#key}
     */
     readonly key?: string;
 }
@@ -1391,7 +1392,7 @@ export interface S3FileLocationProperty {
     /**
     * Specifies the details for a S3 file.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_workflow#s3_file_location CcWorkflow#s3_file_location}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_workflow#s3_file_location CcWorkflow#s3_file_location}
     */
     readonly s3FileLocation?: S3InputFileLocationProperty;
 }
@@ -1457,25 +1458,25 @@ export interface CopyStepDetailsProperty {
     /**
     * Specifies the location for the file being copied. Only applicable for the Copy type of workflow steps.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_workflow#destination_file_location CcWorkflow#destination_file_location}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_workflow#destination_file_location CcWorkflow#destination_file_location}
     */
     readonly destinationFileLocation?: S3FileLocationProperty;
     /**
     * The name of the step, used as an identifier.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_workflow#name CcWorkflow#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_workflow#name CcWorkflow#name}
     */
     readonly name?: string;
     /**
     * A flag that indicates whether or not to overwrite an existing file of the same name. The default is FALSE.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_workflow#overwrite_existing CcWorkflow#overwrite_existing}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_workflow#overwrite_existing CcWorkflow#overwrite_existing}
     */
     readonly overwriteExisting?: string;
     /**
     * Specifies which file to use as input to the workflow step.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_workflow#source_file_location CcWorkflow#source_file_location}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_workflow#source_file_location CcWorkflow#source_file_location}
     */
     readonly sourceFileLocation?: string;
 }
@@ -1607,25 +1608,25 @@ export interface CustomStepDetailsProperty {
     /**
     * The name of the step, used as an identifier.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_workflow#name CcWorkflow#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_workflow#name CcWorkflow#name}
     */
     readonly name?: string;
     /**
     * Specifies which file to use as input to the workflow step.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_workflow#source_file_location CcWorkflow#source_file_location}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_workflow#source_file_location CcWorkflow#source_file_location}
     */
     readonly sourceFileLocation?: string;
     /**
     * The ARN for the lambda function that is being called.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_workflow#target CcWorkflow#target}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_workflow#target CcWorkflow#target}
     */
     readonly target?: string;
     /**
     * Timeout, in seconds, for the step.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_workflow#timeout_seconds CcWorkflow#timeout_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_workflow#timeout_seconds CcWorkflow#timeout_seconds}
     */
     readonly timeoutSeconds?: number;
 }
@@ -1757,13 +1758,13 @@ export interface EfsInputFileLocationProperty {
     /**
     * Specifies the EFS filesystem that contains the file.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_workflow#file_system_id CcWorkflow#file_system_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_workflow#file_system_id CcWorkflow#file_system_id}
     */
     readonly fileSystemId?: string;
     /**
     * The name assigned to the file when it was created in EFS. You use the object path to retrieve the object.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_workflow#path CcWorkflow#path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_workflow#path CcWorkflow#path}
     */
     readonly path?: string;
 }
@@ -1851,13 +1852,13 @@ export interface OnExceptionStepsDecryptStepDetailsDestinationFileLocationS3File
     /**
     * Specifies the S3 bucket that contains the file.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_workflow#bucket CcWorkflow#bucket}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_workflow#bucket CcWorkflow#bucket}
     */
     readonly bucket?: string;
     /**
     * The name assigned to the file when it was created in S3. You use the object key to retrieve the object.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_workflow#key CcWorkflow#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_workflow#key CcWorkflow#key}
     */
     readonly key?: string;
 }
@@ -1945,13 +1946,13 @@ export interface InputFileLocationProperty {
     /**
     * Specifies the details for an EFS file.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_workflow#efs_file_location CcWorkflow#efs_file_location}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_workflow#efs_file_location CcWorkflow#efs_file_location}
     */
     readonly efsFileLocation?: EfsInputFileLocationProperty;
     /**
     * Specifies the details for a S3 file.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_workflow#s3_file_location CcWorkflow#s3_file_location}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_workflow#s3_file_location CcWorkflow#s3_file_location}
     */
     readonly s3FileLocation?: OnExceptionStepsDecryptStepDetailsDestinationFileLocationS3FileLocationProperty;
 }
@@ -2039,31 +2040,31 @@ export interface DecryptStepDetailsProperty {
     /**
     * Specifies the location for the file being decrypted. Only applicable for the Decrypt type of workflow steps.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_workflow#destination_file_location CcWorkflow#destination_file_location}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_workflow#destination_file_location CcWorkflow#destination_file_location}
     */
     readonly destinationFileLocation?: InputFileLocationProperty;
     /**
     * The name of the step, used as an identifier.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_workflow#name CcWorkflow#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_workflow#name CcWorkflow#name}
     */
     readonly name?: string;
     /**
     * A flag that indicates whether or not to overwrite an existing file of the same name. The default is FALSE.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_workflow#overwrite_existing CcWorkflow#overwrite_existing}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_workflow#overwrite_existing CcWorkflow#overwrite_existing}
     */
     readonly overwriteExisting?: string;
     /**
     * Specifies which file to use as input to the workflow step.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_workflow#source_file_location CcWorkflow#source_file_location}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_workflow#source_file_location CcWorkflow#source_file_location}
     */
     readonly sourceFileLocation?: string;
     /**
     * Specifies which encryption method to use.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_workflow#type CcWorkflow#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_workflow#type CcWorkflow#type}
     */
     readonly type?: string;
 }
@@ -2217,13 +2218,13 @@ export interface DeleteStepDetailsProperty {
     /**
     * The name of the step, used as an identifier.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_workflow#name CcWorkflow#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_workflow#name CcWorkflow#name}
     */
     readonly name?: string;
     /**
     * Specifies which file to use as input to the workflow step.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_workflow#source_file_location CcWorkflow#source_file_location}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_workflow#source_file_location CcWorkflow#source_file_location}
     */
     readonly sourceFileLocation?: string;
 }
@@ -2311,13 +2312,13 @@ export interface S3TagProperty {
     /**
     * The name assigned to the tag that you create.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_workflow#key CcWorkflow#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_workflow#key CcWorkflow#key}
     */
     readonly key?: string;
     /**
     * The value that corresponds to the key.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_workflow#value CcWorkflow#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_workflow#value CcWorkflow#value}
     */
     readonly value?: string;
 }
@@ -2427,19 +2428,19 @@ export interface TagStepDetailsProperty {
     /**
     * The name of the step, used as an identifier.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_workflow#name CcWorkflow#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_workflow#name CcWorkflow#name}
     */
     readonly name?: string;
     /**
     * Specifies which file to use as input to the workflow step.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_workflow#source_file_location CcWorkflow#source_file_location}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_workflow#source_file_location CcWorkflow#source_file_location}
     */
     readonly sourceFileLocation?: string;
     /**
     * Array that contains from 1 to 10 key/value pairs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_workflow#tags CcWorkflow#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_workflow#tags CcWorkflow#tags}
     */
     readonly tags?: S3TagProperty[] | cdktn.IResolvable;
 }
@@ -2549,35 +2550,35 @@ export interface WorkflowStepProperty {
     /**
     * Details for a step that performs a file copy.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_workflow#copy_step_details CcWorkflow#copy_step_details}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_workflow#copy_step_details CcWorkflow#copy_step_details}
     */
     readonly copyStepDetails?: CopyStepDetailsProperty;
     /**
     * Details for a step that invokes a lambda function.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_workflow#custom_step_details CcWorkflow#custom_step_details}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_workflow#custom_step_details CcWorkflow#custom_step_details}
     */
     readonly customStepDetails?: CustomStepDetailsProperty;
     /**
     * Details for a step that performs a file decryption.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_workflow#decrypt_step_details CcWorkflow#decrypt_step_details}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_workflow#decrypt_step_details CcWorkflow#decrypt_step_details}
     */
     readonly decryptStepDetails?: DecryptStepDetailsProperty;
     /**
     * Details for a step that deletes the file.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_workflow#delete_step_details CcWorkflow#delete_step_details}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_workflow#delete_step_details CcWorkflow#delete_step_details}
     */
     readonly deleteStepDetails?: DeleteStepDetailsProperty;
     /**
     * Details for a step that creates one or more tags.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_workflow#tag_step_details CcWorkflow#tag_step_details}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_workflow#tag_step_details CcWorkflow#tag_step_details}
     */
     readonly tagStepDetails?: TagStepDetailsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_workflow#type CcWorkflow#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_workflow#type CcWorkflow#type}
     */
     readonly type?: string;
 }
@@ -2775,13 +2776,13 @@ export interface StepsCopyStepDetailsDestinationFileLocationS3FileLocationProper
     /**
     * Specifies the S3 bucket that contains the file.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_workflow#bucket CcWorkflow#bucket}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_workflow#bucket CcWorkflow#bucket}
     */
     readonly bucket?: string;
     /**
     * The name assigned to the file when it was created in S3. You use the object key to retrieve the object.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_workflow#key CcWorkflow#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_workflow#key CcWorkflow#key}
     */
     readonly key?: string;
 }
@@ -2869,7 +2870,7 @@ export interface StepsCopyStepDetailsDestinationFileLocationProperty {
     /**
     * Specifies the details for a S3 file.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_workflow#s3_file_location CcWorkflow#s3_file_location}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_workflow#s3_file_location CcWorkflow#s3_file_location}
     */
     readonly s3FileLocation?: StepsCopyStepDetailsDestinationFileLocationS3FileLocationProperty;
 }
@@ -2935,25 +2936,25 @@ export interface StepsCopyStepDetailsProperty {
     /**
     * Specifies the location for the file being copied. Only applicable for the Copy type of workflow steps.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_workflow#destination_file_location CcWorkflow#destination_file_location}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_workflow#destination_file_location CcWorkflow#destination_file_location}
     */
     readonly destinationFileLocation?: StepsCopyStepDetailsDestinationFileLocationProperty;
     /**
     * The name of the step, used as an identifier.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_workflow#name CcWorkflow#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_workflow#name CcWorkflow#name}
     */
     readonly name?: string;
     /**
     * A flag that indicates whether or not to overwrite an existing file of the same name. The default is FALSE.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_workflow#overwrite_existing CcWorkflow#overwrite_existing}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_workflow#overwrite_existing CcWorkflow#overwrite_existing}
     */
     readonly overwriteExisting?: string;
     /**
     * Specifies which file to use as input to the workflow step.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_workflow#source_file_location CcWorkflow#source_file_location}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_workflow#source_file_location CcWorkflow#source_file_location}
     */
     readonly sourceFileLocation?: string;
 }
@@ -3085,25 +3086,25 @@ export interface StepsCustomStepDetailsProperty {
     /**
     * The name of the step, used as an identifier.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_workflow#name CcWorkflow#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_workflow#name CcWorkflow#name}
     */
     readonly name?: string;
     /**
     * Specifies which file to use as input to the workflow step.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_workflow#source_file_location CcWorkflow#source_file_location}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_workflow#source_file_location CcWorkflow#source_file_location}
     */
     readonly sourceFileLocation?: string;
     /**
     * The ARN for the lambda function that is being called.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_workflow#target CcWorkflow#target}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_workflow#target CcWorkflow#target}
     */
     readonly target?: string;
     /**
     * Timeout, in seconds, for the step.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_workflow#timeout_seconds CcWorkflow#timeout_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_workflow#timeout_seconds CcWorkflow#timeout_seconds}
     */
     readonly timeoutSeconds?: number;
 }
@@ -3235,13 +3236,13 @@ export interface EfsFileLocationProperty {
     /**
     * Specifies the EFS filesystem that contains the file.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_workflow#file_system_id CcWorkflow#file_system_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_workflow#file_system_id CcWorkflow#file_system_id}
     */
     readonly fileSystemId?: string;
     /**
     * The name assigned to the file when it was created in EFS. You use the object path to retrieve the object.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_workflow#path CcWorkflow#path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_workflow#path CcWorkflow#path}
     */
     readonly path?: string;
 }
@@ -3329,13 +3330,13 @@ export interface StepsDecryptStepDetailsDestinationFileLocationS3FileLocationPro
     /**
     * Specifies the S3 bucket that contains the file.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_workflow#bucket CcWorkflow#bucket}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_workflow#bucket CcWorkflow#bucket}
     */
     readonly bucket?: string;
     /**
     * The name assigned to the file when it was created in S3. You use the object key to retrieve the object.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_workflow#key CcWorkflow#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_workflow#key CcWorkflow#key}
     */
     readonly key?: string;
 }
@@ -3423,13 +3424,13 @@ export interface StepsDecryptStepDetailsDestinationFileLocationProperty {
     /**
     * Specifies the details for an EFS file.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_workflow#efs_file_location CcWorkflow#efs_file_location}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_workflow#efs_file_location CcWorkflow#efs_file_location}
     */
     readonly efsFileLocation?: EfsFileLocationProperty;
     /**
     * Specifies the details for a S3 file.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_workflow#s3_file_location CcWorkflow#s3_file_location}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_workflow#s3_file_location CcWorkflow#s3_file_location}
     */
     readonly s3FileLocation?: StepsDecryptStepDetailsDestinationFileLocationS3FileLocationProperty;
 }
@@ -3517,31 +3518,31 @@ export interface StepsDecryptStepDetailsProperty {
     /**
     * Specifies the location for the file being decrypted. Only applicable for the Decrypt type of workflow steps.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_workflow#destination_file_location CcWorkflow#destination_file_location}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_workflow#destination_file_location CcWorkflow#destination_file_location}
     */
     readonly destinationFileLocation?: StepsDecryptStepDetailsDestinationFileLocationProperty;
     /**
     * The name of the step, used as an identifier.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_workflow#name CcWorkflow#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_workflow#name CcWorkflow#name}
     */
     readonly name?: string;
     /**
     * A flag that indicates whether or not to overwrite an existing file of the same name. The default is FALSE.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_workflow#overwrite_existing CcWorkflow#overwrite_existing}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_workflow#overwrite_existing CcWorkflow#overwrite_existing}
     */
     readonly overwriteExisting?: string;
     /**
     * Specifies which file to use as input to the workflow step.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_workflow#source_file_location CcWorkflow#source_file_location}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_workflow#source_file_location CcWorkflow#source_file_location}
     */
     readonly sourceFileLocation?: string;
     /**
     * Specifies which encryption method to use.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_workflow#type CcWorkflow#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_workflow#type CcWorkflow#type}
     */
     readonly type?: string;
 }
@@ -3695,13 +3696,13 @@ export interface StepsDeleteStepDetailsProperty {
     /**
     * The name of the step, used as an identifier.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_workflow#name CcWorkflow#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_workflow#name CcWorkflow#name}
     */
     readonly name?: string;
     /**
     * Specifies which file to use as input to the workflow step.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_workflow#source_file_location CcWorkflow#source_file_location}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_workflow#source_file_location CcWorkflow#source_file_location}
     */
     readonly sourceFileLocation?: string;
 }
@@ -3789,13 +3790,13 @@ export interface TagsProperty {
     /**
     * The name assigned to the tag that you create.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_workflow#key CcWorkflow#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_workflow#key CcWorkflow#key}
     */
     readonly key?: string;
     /**
     * The value that corresponds to the key.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_workflow#value CcWorkflow#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_workflow#value CcWorkflow#value}
     */
     readonly value?: string;
 }
@@ -3905,19 +3906,19 @@ export interface StepsTagStepDetailsProperty {
     /**
     * The name of the step, used as an identifier.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_workflow#name CcWorkflow#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_workflow#name CcWorkflow#name}
     */
     readonly name?: string;
     /**
     * Specifies which file to use as input to the workflow step.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_workflow#source_file_location CcWorkflow#source_file_location}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_workflow#source_file_location CcWorkflow#source_file_location}
     */
     readonly sourceFileLocation?: string;
     /**
     * Array that contains from 1 to 10 key/value pairs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_workflow#tags CcWorkflow#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_workflow#tags CcWorkflow#tags}
     */
     readonly tags?: TagsProperty[] | cdktn.IResolvable;
 }
@@ -4027,35 +4028,35 @@ export interface StepsProperty {
     /**
     * Details for a step that performs a file copy.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_workflow#copy_step_details CcWorkflow#copy_step_details}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_workflow#copy_step_details CcWorkflow#copy_step_details}
     */
     readonly copyStepDetails?: StepsCopyStepDetailsProperty;
     /**
     * Details for a step that invokes a lambda function.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_workflow#custom_step_details CcWorkflow#custom_step_details}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_workflow#custom_step_details CcWorkflow#custom_step_details}
     */
     readonly customStepDetails?: StepsCustomStepDetailsProperty;
     /**
     * Details for a step that performs a file decryption.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_workflow#decrypt_step_details CcWorkflow#decrypt_step_details}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_workflow#decrypt_step_details CcWorkflow#decrypt_step_details}
     */
     readonly decryptStepDetails?: StepsDecryptStepDetailsProperty;
     /**
     * Details for a step that deletes the file.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_workflow#delete_step_details CcWorkflow#delete_step_details}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_workflow#delete_step_details CcWorkflow#delete_step_details}
     */
     readonly deleteStepDetails?: StepsDeleteStepDetailsProperty;
     /**
     * Details for a step that creates one or more tags.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_workflow#tag_step_details CcWorkflow#tag_step_details}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_workflow#tag_step_details CcWorkflow#tag_step_details}
     */
     readonly tagStepDetails?: StepsTagStepDetailsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_workflow#type CcWorkflow#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_workflow#type CcWorkflow#type}
     */
     readonly type?: string;
 }
@@ -4253,13 +4254,13 @@ export interface TagProperty {
     /**
     * The name assigned to the tag that you create.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_workflow#key CcWorkflow#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_workflow#key CcWorkflow#key}
     */
     readonly key?: string;
     /**
     * Contains one or more values that you assigned to the key name you create.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_workflow#value CcWorkflow#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_workflow#value CcWorkflow#value}
     */
     readonly value?: string;
 }

@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_payment_credential_provider
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_payment_credential_provider
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,31 +9,31 @@ export interface CcPaymentCredentialProviderProps extends cdktn.TerraformMetaArg
     /**
     * Supported vendor types for payment providers
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_payment_credential_provider#credential_provider_vendor CcPaymentCredentialProvider#credential_provider_vendor}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_payment_credential_provider#credential_provider_vendor CcPaymentCredentialProvider#credential_provider_vendor}
     */
     readonly credentialProviderVendor: string;
     /**
     * Unique name for the payment credential provider
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_payment_credential_provider#name CcPaymentCredentialProvider#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_payment_credential_provider#name CcPaymentCredentialProvider#name}
     */
     readonly name: string;
     /**
     * Provider configuration input containing secrets for creation/update
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_payment_credential_provider#provider_configuration_input CcPaymentCredentialProvider#provider_configuration_input}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_payment_credential_provider#provider_configuration_input CcPaymentCredentialProvider#provider_configuration_input}
     */
     readonly providerConfigurationInput?: CcPaymentCredentialProvider.PaymentProviderConfigurationInputProperty;
     /**
     * Tags for the payment credential provider
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_payment_credential_provider#tags CcPaymentCredentialProvider#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_payment_credential_provider#tags CcPaymentCredentialProvider#tags}
     */
     readonly tags?: CcPaymentCredentialProvider.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_payment_credential_provider awscc_bedrockagentcore_payment_credential_provider}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_payment_credential_provider awscc_bedrockagentcore_payment_credential_provider}
 */
 export class CcPaymentCredentialProvider extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CcPaymentCredentialProvider extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcPaymentCredentialProvider resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcPaymentCredentialProvider to import
-    * @param importFromId The id of the existing CcPaymentCredentialProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_payment_credential_provider#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcPaymentCredentialProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_payment_credential_provider#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcPaymentCredentialProvider to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CcPaymentCredentialProvider extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_payment_credential_provider awscc_bedrockagentcore_payment_credential_provider} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_payment_credential_provider awscc_bedrockagentcore_payment_credential_provider} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -71,7 +71,8 @@ export class CcPaymentCredentialProvider extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_bedrockagentcore_payment_credential_provider',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -746,13 +747,13 @@ export interface SecretReferenceProperty {
     /**
     * The JSON key within the secret that contains the credential value
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_payment_credential_provider#json_key CcPaymentCredentialProvider#json_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_payment_credential_provider#json_key CcPaymentCredentialProvider#json_key}
     */
     readonly jsonKey?: string;
     /**
     * The ID or ARN of the secret in AWS Secrets Manager
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_payment_credential_provider#secret_id CcPaymentCredentialProvider#secret_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_payment_credential_provider#secret_id CcPaymentCredentialProvider#secret_id}
     */
     readonly secretId?: string;
 }
@@ -840,13 +841,13 @@ export interface WalletSecretConfigProperty {
     /**
     * The JSON key within the secret that contains the credential value
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_payment_credential_provider#json_key CcPaymentCredentialProvider#json_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_payment_credential_provider#json_key CcPaymentCredentialProvider#json_key}
     */
     readonly jsonKey?: string;
     /**
     * The ID or ARN of the secret in AWS Secrets Manager
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_payment_credential_provider#secret_id CcPaymentCredentialProvider#secret_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_payment_credential_provider#secret_id CcPaymentCredentialProvider#secret_id}
     */
     readonly secretId?: string;
 }
@@ -934,43 +935,43 @@ export interface CoinbaseCdpConfigurationInputProperty {
     /**
     * The Coinbase CDP API key ID
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_payment_credential_provider#api_key_id CcPaymentCredentialProvider#api_key_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_payment_credential_provider#api_key_id CcPaymentCredentialProvider#api_key_id}
     */
     readonly apiKeyId?: string;
     /**
     * The Coinbase CDP API key secret
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_payment_credential_provider#api_key_secret CcPaymentCredentialProvider#api_key_secret}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_payment_credential_provider#api_key_secret CcPaymentCredentialProvider#api_key_secret}
     */
     readonly apiKeySecret?: string;
     /**
     * A reference to a customer-provided secret stored in AWS Secrets Manager
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_payment_credential_provider#api_key_secret_config CcPaymentCredentialProvider#api_key_secret_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_payment_credential_provider#api_key_secret_config CcPaymentCredentialProvider#api_key_secret_config}
     */
     readonly apiKeySecretConfig?: SecretReferenceProperty;
     /**
     * The source of the secret. Use MANAGED for service-managed secrets or EXTERNAL for customer-provided secrets.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_payment_credential_provider#api_key_secret_source CcPaymentCredentialProvider#api_key_secret_source}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_payment_credential_provider#api_key_secret_source CcPaymentCredentialProvider#api_key_secret_source}
     */
     readonly apiKeySecretSource?: string;
     /**
     * The Coinbase CDP wallet secret
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_payment_credential_provider#wallet_secret CcPaymentCredentialProvider#wallet_secret}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_payment_credential_provider#wallet_secret CcPaymentCredentialProvider#wallet_secret}
     */
     readonly walletSecret?: string;
     /**
     * A reference to a customer-provided secret stored in AWS Secrets Manager
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_payment_credential_provider#wallet_secret_config CcPaymentCredentialProvider#wallet_secret_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_payment_credential_provider#wallet_secret_config CcPaymentCredentialProvider#wallet_secret_config}
     */
     readonly walletSecretConfig?: WalletSecretConfigProperty;
     /**
     * The source of the secret. Use MANAGED for service-managed secrets or EXTERNAL for customer-provided secrets.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_payment_credential_provider#wallet_secret_source CcPaymentCredentialProvider#wallet_secret_source}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_payment_credential_provider#wallet_secret_source CcPaymentCredentialProvider#wallet_secret_source}
     */
     readonly walletSecretSource?: string;
 }
@@ -1168,13 +1169,13 @@ export interface AppSecretConfigProperty {
     /**
     * The JSON key within the secret that contains the credential value
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_payment_credential_provider#json_key CcPaymentCredentialProvider#json_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_payment_credential_provider#json_key CcPaymentCredentialProvider#json_key}
     */
     readonly jsonKey?: string;
     /**
     * The ID or ARN of the secret in AWS Secrets Manager
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_payment_credential_provider#secret_id CcPaymentCredentialProvider#secret_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_payment_credential_provider#secret_id CcPaymentCredentialProvider#secret_id}
     */
     readonly secretId?: string;
 }
@@ -1262,13 +1263,13 @@ export interface AuthorizationPrivateKeyConfigProperty {
     /**
     * The JSON key within the secret that contains the credential value
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_payment_credential_provider#json_key CcPaymentCredentialProvider#json_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_payment_credential_provider#json_key CcPaymentCredentialProvider#json_key}
     */
     readonly jsonKey?: string;
     /**
     * The ID or ARN of the secret in AWS Secrets Manager
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_payment_credential_provider#secret_id CcPaymentCredentialProvider#secret_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_payment_credential_provider#secret_id CcPaymentCredentialProvider#secret_id}
     */
     readonly secretId?: string;
 }
@@ -1356,49 +1357,49 @@ export interface StripePrivyConfigurationInputProperty {
     /**
     * The app ID provided by Privy
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_payment_credential_provider#app_id CcPaymentCredentialProvider#app_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_payment_credential_provider#app_id CcPaymentCredentialProvider#app_id}
     */
     readonly appId?: string;
     /**
     * The app secret provided by Privy
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_payment_credential_provider#app_secret CcPaymentCredentialProvider#app_secret}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_payment_credential_provider#app_secret CcPaymentCredentialProvider#app_secret}
     */
     readonly appSecret?: string;
     /**
     * A reference to a customer-provided secret stored in AWS Secrets Manager
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_payment_credential_provider#app_secret_config CcPaymentCredentialProvider#app_secret_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_payment_credential_provider#app_secret_config CcPaymentCredentialProvider#app_secret_config}
     */
     readonly appSecretConfig?: AppSecretConfigProperty;
     /**
     * The source of the secret. Use MANAGED for service-managed secrets or EXTERNAL for customer-provided secrets.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_payment_credential_provider#app_secret_source CcPaymentCredentialProvider#app_secret_source}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_payment_credential_provider#app_secret_source CcPaymentCredentialProvider#app_secret_source}
     */
     readonly appSecretSource?: string;
     /**
     * The authorization ID for the Stripe Privy integration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_payment_credential_provider#authorization_id CcPaymentCredentialProvider#authorization_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_payment_credential_provider#authorization_id CcPaymentCredentialProvider#authorization_id}
     */
     readonly authorizationId?: string;
     /**
     * The authorization private key for the Stripe Privy integration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_payment_credential_provider#authorization_private_key CcPaymentCredentialProvider#authorization_private_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_payment_credential_provider#authorization_private_key CcPaymentCredentialProvider#authorization_private_key}
     */
     readonly authorizationPrivateKey?: string;
     /**
     * A reference to a customer-provided secret stored in AWS Secrets Manager
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_payment_credential_provider#authorization_private_key_config CcPaymentCredentialProvider#authorization_private_key_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_payment_credential_provider#authorization_private_key_config CcPaymentCredentialProvider#authorization_private_key_config}
     */
     readonly authorizationPrivateKeyConfig?: AuthorizationPrivateKeyConfigProperty;
     /**
     * The source of the secret. Use MANAGED for service-managed secrets or EXTERNAL for customer-provided secrets.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_payment_credential_provider#authorization_private_key_source CcPaymentCredentialProvider#authorization_private_key_source}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_payment_credential_provider#authorization_private_key_source CcPaymentCredentialProvider#authorization_private_key_source}
     */
     readonly authorizationPrivateKeySource?: string;
 }
@@ -1618,13 +1619,13 @@ export interface PaymentProviderConfigurationInputProperty {
     /**
     * Coinbase CDP configuration with API credentials
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_payment_credential_provider#coinbase_cdp_configuration CcPaymentCredentialProvider#coinbase_cdp_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_payment_credential_provider#coinbase_cdp_configuration CcPaymentCredentialProvider#coinbase_cdp_configuration}
     */
     readonly coinbaseCdpConfiguration?: CoinbaseCdpConfigurationInputProperty;
     /**
     * Stripe Privy configuration with credentials
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_payment_credential_provider#stripe_privy_configuration CcPaymentCredentialProvider#stripe_privy_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_payment_credential_provider#stripe_privy_configuration CcPaymentCredentialProvider#stripe_privy_configuration}
     */
     readonly stripePrivyConfiguration?: StripePrivyConfigurationInputProperty;
 }
@@ -2017,11 +2018,11 @@ export class ProviderConfigurationOutputPropertyOutputReference extends cdktn.Co
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_payment_credential_provider#key CcPaymentCredentialProvider#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_payment_credential_provider#key CcPaymentCredentialProvider#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_payment_credential_provider#value CcPaymentCredentialProvider#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_payment_credential_provider#value CcPaymentCredentialProvider#value}
     */
     readonly value?: string;
 }

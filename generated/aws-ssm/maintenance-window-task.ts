@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ssm_maintenance_window_task
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_maintenance_window_task
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,91 +9,91 @@ export interface CcMaintenanceWindowTaskProps extends cdktn.TerraformMetaArgumen
     /**
     * The specification for whether tasks should continue to run after the cutoff time specified in the maintenance windows is reached.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ssm_maintenance_window_task#cutoff_behavior CcMaintenanceWindowTask#cutoff_behavior}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_maintenance_window_task#cutoff_behavior CcMaintenanceWindowTask#cutoff_behavior}
     */
     readonly cutoffBehavior?: string;
     /**
     * A description of the task.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ssm_maintenance_window_task#description CcMaintenanceWindowTask#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_maintenance_window_task#description CcMaintenanceWindowTask#description}
     */
     readonly description?: string;
     /**
     * Information about an Amazon S3 bucket to write Run Command task-level logs to.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ssm_maintenance_window_task#logging_info CcMaintenanceWindowTask#logging_info}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_maintenance_window_task#logging_info CcMaintenanceWindowTask#logging_info}
     */
     readonly loggingInfo?: CcMaintenanceWindowTask.LoggingInfoProperty;
     /**
     * The maximum number of targets this task can be run for, in parallel.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ssm_maintenance_window_task#max_concurrency CcMaintenanceWindowTask#max_concurrency}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_maintenance_window_task#max_concurrency CcMaintenanceWindowTask#max_concurrency}
     */
     readonly maxConcurrency?: string;
     /**
     * The maximum number of errors allowed before this task stops being scheduled.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ssm_maintenance_window_task#max_errors CcMaintenanceWindowTask#max_errors}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_maintenance_window_task#max_errors CcMaintenanceWindowTask#max_errors}
     */
     readonly maxErrors?: string;
     /**
     * The task name.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ssm_maintenance_window_task#name CcMaintenanceWindowTask#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_maintenance_window_task#name CcMaintenanceWindowTask#name}
     */
     readonly name?: string;
     /**
     * The priority of the task in the maintenance window. The lower the number, the higher the priority. Tasks that have the same priority are scheduled in parallel.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ssm_maintenance_window_task#priority CcMaintenanceWindowTask#priority}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_maintenance_window_task#priority CcMaintenanceWindowTask#priority}
     */
     readonly priority: number;
     /**
     * The Amazon Resource Name (ARN) of the IAM service role for AWS Systems Manager to assume when running a maintenance window task.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ssm_maintenance_window_task#service_role_arn CcMaintenanceWindowTask#service_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_maintenance_window_task#service_role_arn CcMaintenanceWindowTask#service_role_arn}
     */
     readonly serviceRoleArn?: string;
     /**
     * The targets (either instances or window target ids).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ssm_maintenance_window_task#targets CcMaintenanceWindowTask#targets}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_maintenance_window_task#targets CcMaintenanceWindowTask#targets}
     */
     readonly targets?: CcMaintenanceWindowTask.TargetProperty[] | cdktn.IResolvable;
     /**
     * The resource that the task uses during execution.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ssm_maintenance_window_task#task_arn CcMaintenanceWindowTask#task_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_maintenance_window_task#task_arn CcMaintenanceWindowTask#task_arn}
     */
     readonly taskArn: string;
     /**
     * The parameters to pass to the task when it runs. Populate only the fields that match the task type. All other fields should be empty.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ssm_maintenance_window_task#task_invocation_parameters CcMaintenanceWindowTask#task_invocation_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_maintenance_window_task#task_invocation_parameters CcMaintenanceWindowTask#task_invocation_parameters}
     */
     readonly taskInvocationParameters?: CcMaintenanceWindowTask.TaskInvocationParametersProperty;
     /**
     * The parameters to pass to the task when it runs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ssm_maintenance_window_task#task_parameters CcMaintenanceWindowTask#task_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_maintenance_window_task#task_parameters CcMaintenanceWindowTask#task_parameters}
     */
     readonly taskParameters?: string;
     /**
     * The type of task.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ssm_maintenance_window_task#task_type CcMaintenanceWindowTask#task_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_maintenance_window_task#task_type CcMaintenanceWindowTask#task_type}
     */
     readonly taskType: string;
     /**
     * The ID of the maintenance window where the task is registered.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ssm_maintenance_window_task#window_id CcMaintenanceWindowTask#window_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_maintenance_window_task#window_id CcMaintenanceWindowTask#window_id}
     */
     readonly windowId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ssm_maintenance_window_task awscc_ssm_maintenance_window_task}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_maintenance_window_task awscc_ssm_maintenance_window_task}
 */
 export class CcMaintenanceWindowTask extends cdktn.TerraformResource {
 
@@ -109,7 +109,7 @@ export class CcMaintenanceWindowTask extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcMaintenanceWindowTask resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcMaintenanceWindowTask to import
-    * @param importFromId The id of the existing CcMaintenanceWindowTask that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ssm_maintenance_window_task#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcMaintenanceWindowTask that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_maintenance_window_task#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcMaintenanceWindowTask to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -121,7 +121,7 @@ export class CcMaintenanceWindowTask extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ssm_maintenance_window_task awscc_ssm_maintenance_window_task} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_maintenance_window_task awscc_ssm_maintenance_window_task} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -131,7 +131,8 @@ export class CcMaintenanceWindowTask extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_ssm_maintenance_window_task',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -933,15 +934,15 @@ export function ccMaintenanceWindowTaskTaskInvocationParametersPropertyToHclTerr
 export namespace CcMaintenanceWindowTask {
 export interface LoggingInfoProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ssm_maintenance_window_task#region CcMaintenanceWindowTask#region}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_maintenance_window_task#region CcMaintenanceWindowTask#region}
     */
     readonly region?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ssm_maintenance_window_task#s3_bucket CcMaintenanceWindowTask#s3_bucket}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_maintenance_window_task#s3_bucket CcMaintenanceWindowTask#s3_bucket}
     */
     readonly s3Bucket?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ssm_maintenance_window_task#s3_prefix CcMaintenanceWindowTask#s3_prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_maintenance_window_task#s3_prefix CcMaintenanceWindowTask#s3_prefix}
     */
     readonly s3Prefix?: string;
 }
@@ -1049,11 +1050,11 @@ export class LoggingInfoPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface TargetProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ssm_maintenance_window_task#key CcMaintenanceWindowTask#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_maintenance_window_task#key CcMaintenanceWindowTask#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ssm_maintenance_window_task#values CcMaintenanceWindowTask#values}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_maintenance_window_task#values CcMaintenanceWindowTask#values}
     */
     readonly values?: string[];
 }
@@ -1161,11 +1162,11 @@ export class TargetPropertyList extends cdktn.ComplexList {
 }
 export interface MaintenanceWindowAutomationParametersProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ssm_maintenance_window_task#document_version CcMaintenanceWindowTask#document_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_maintenance_window_task#document_version CcMaintenanceWindowTask#document_version}
     */
     readonly documentVersion?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ssm_maintenance_window_task#parameters CcMaintenanceWindowTask#parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_maintenance_window_task#parameters CcMaintenanceWindowTask#parameters}
     */
     readonly parameters?: string;
 }
@@ -1251,15 +1252,15 @@ export class MaintenanceWindowAutomationParametersPropertyOutputReference extend
 }
 export interface MaintenanceWindowLambdaParametersProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ssm_maintenance_window_task#client_context CcMaintenanceWindowTask#client_context}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_maintenance_window_task#client_context CcMaintenanceWindowTask#client_context}
     */
     readonly clientContext?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ssm_maintenance_window_task#payload CcMaintenanceWindowTask#payload}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_maintenance_window_task#payload CcMaintenanceWindowTask#payload}
     */
     readonly payload?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ssm_maintenance_window_task#qualifier CcMaintenanceWindowTask#qualifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_maintenance_window_task#qualifier CcMaintenanceWindowTask#qualifier}
     */
     readonly qualifier?: string;
 }
@@ -1369,13 +1370,13 @@ export interface CloudWatchOutputConfigProperty {
     /**
     * The name of the CloudWatch log group where you want to send command output.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ssm_maintenance_window_task#cloudwatch_log_group_name CcMaintenanceWindowTask#cloudwatch_log_group_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_maintenance_window_task#cloudwatch_log_group_name CcMaintenanceWindowTask#cloudwatch_log_group_name}
     */
     readonly cloudwatchLogGroupName?: string;
     /**
     * Enables Systems Manager to send command output to CloudWatch Logs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ssm_maintenance_window_task#cloudwatch_output_enabled CcMaintenanceWindowTask#cloudwatch_output_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_maintenance_window_task#cloudwatch_output_enabled CcMaintenanceWindowTask#cloudwatch_output_enabled}
     */
     readonly cloudwatchOutputEnabled?: boolean | cdktn.IResolvable;
 }
@@ -1461,15 +1462,15 @@ export class CloudWatchOutputConfigPropertyOutputReference extends cdktn.Complex
 }
 export interface NotificationConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ssm_maintenance_window_task#notification_arn CcMaintenanceWindowTask#notification_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_maintenance_window_task#notification_arn CcMaintenanceWindowTask#notification_arn}
     */
     readonly notificationArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ssm_maintenance_window_task#notification_events CcMaintenanceWindowTask#notification_events}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_maintenance_window_task#notification_events CcMaintenanceWindowTask#notification_events}
     */
     readonly notificationEvents?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ssm_maintenance_window_task#notification_type CcMaintenanceWindowTask#notification_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_maintenance_window_task#notification_type CcMaintenanceWindowTask#notification_type}
     */
     readonly notificationType?: string;
 }
@@ -1577,47 +1578,47 @@ export class NotificationConfigPropertyOutputReference extends cdktn.ComplexObje
 }
 export interface MaintenanceWindowRunCommandParametersProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ssm_maintenance_window_task#cloudwatch_output_config CcMaintenanceWindowTask#cloudwatch_output_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_maintenance_window_task#cloudwatch_output_config CcMaintenanceWindowTask#cloudwatch_output_config}
     */
     readonly cloudwatchOutputConfig?: CloudWatchOutputConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ssm_maintenance_window_task#comment CcMaintenanceWindowTask#comment}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_maintenance_window_task#comment CcMaintenanceWindowTask#comment}
     */
     readonly comment?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ssm_maintenance_window_task#document_hash CcMaintenanceWindowTask#document_hash}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_maintenance_window_task#document_hash CcMaintenanceWindowTask#document_hash}
     */
     readonly documentHash?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ssm_maintenance_window_task#document_hash_type CcMaintenanceWindowTask#document_hash_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_maintenance_window_task#document_hash_type CcMaintenanceWindowTask#document_hash_type}
     */
     readonly documentHashType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ssm_maintenance_window_task#document_version CcMaintenanceWindowTask#document_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_maintenance_window_task#document_version CcMaintenanceWindowTask#document_version}
     */
     readonly documentVersion?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ssm_maintenance_window_task#notification_config CcMaintenanceWindowTask#notification_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_maintenance_window_task#notification_config CcMaintenanceWindowTask#notification_config}
     */
     readonly notificationConfig?: NotificationConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ssm_maintenance_window_task#output_s3_bucket_name CcMaintenanceWindowTask#output_s3_bucket_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_maintenance_window_task#output_s3_bucket_name CcMaintenanceWindowTask#output_s3_bucket_name}
     */
     readonly outputS3BucketName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ssm_maintenance_window_task#output_s3_key_prefix CcMaintenanceWindowTask#output_s3_key_prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_maintenance_window_task#output_s3_key_prefix CcMaintenanceWindowTask#output_s3_key_prefix}
     */
     readonly outputS3KeyPrefix?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ssm_maintenance_window_task#parameters CcMaintenanceWindowTask#parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_maintenance_window_task#parameters CcMaintenanceWindowTask#parameters}
     */
     readonly parameters?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ssm_maintenance_window_task#service_role_arn CcMaintenanceWindowTask#service_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_maintenance_window_task#service_role_arn CcMaintenanceWindowTask#service_role_arn}
     */
     readonly serviceRoleArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ssm_maintenance_window_task#timeout_seconds CcMaintenanceWindowTask#timeout_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_maintenance_window_task#timeout_seconds CcMaintenanceWindowTask#timeout_seconds}
     */
     readonly timeoutSeconds?: number;
 }
@@ -1901,11 +1902,11 @@ export class MaintenanceWindowRunCommandParametersPropertyOutputReference extend
 }
 export interface MaintenanceWindowStepFunctionsParametersProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ssm_maintenance_window_task#input CcMaintenanceWindowTask#input}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_maintenance_window_task#input CcMaintenanceWindowTask#input}
     */
     readonly input?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ssm_maintenance_window_task#name CcMaintenanceWindowTask#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_maintenance_window_task#name CcMaintenanceWindowTask#name}
     */
     readonly name?: string;
 }
@@ -1991,19 +1992,19 @@ export class MaintenanceWindowStepFunctionsParametersPropertyOutputReference ext
 }
 export interface TaskInvocationParametersProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ssm_maintenance_window_task#maintenance_window_automation_parameters CcMaintenanceWindowTask#maintenance_window_automation_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_maintenance_window_task#maintenance_window_automation_parameters CcMaintenanceWindowTask#maintenance_window_automation_parameters}
     */
     readonly maintenanceWindowAutomationParameters?: MaintenanceWindowAutomationParametersProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ssm_maintenance_window_task#maintenance_window_lambda_parameters CcMaintenanceWindowTask#maintenance_window_lambda_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_maintenance_window_task#maintenance_window_lambda_parameters CcMaintenanceWindowTask#maintenance_window_lambda_parameters}
     */
     readonly maintenanceWindowLambdaParameters?: MaintenanceWindowLambdaParametersProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ssm_maintenance_window_task#maintenance_window_run_command_parameters CcMaintenanceWindowTask#maintenance_window_run_command_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_maintenance_window_task#maintenance_window_run_command_parameters CcMaintenanceWindowTask#maintenance_window_run_command_parameters}
     */
     readonly maintenanceWindowRunCommandParameters?: MaintenanceWindowRunCommandParametersProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ssm_maintenance_window_task#maintenance_window_step_functions_parameters CcMaintenanceWindowTask#maintenance_window_step_functions_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_maintenance_window_task#maintenance_window_step_functions_parameters CcMaintenanceWindowTask#maintenance_window_step_functions_parameters}
     */
     readonly maintenanceWindowStepFunctionsParameters?: MaintenanceWindowStepFunctionsParametersProperty;
 }

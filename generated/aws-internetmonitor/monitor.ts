@@ -1,63 +1,63 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/internetmonitor_monitor
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/internetmonitor_monitor
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcMonitorProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/internetmonitor_monitor#health_events_config CcMonitor#health_events_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/internetmonitor_monitor#health_events_config CcMonitor#health_events_config}
     */
     readonly healthEventsConfig?: CcMonitor.HealthEventsConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/internetmonitor_monitor#include_linked_accounts CcMonitor#include_linked_accounts}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/internetmonitor_monitor#include_linked_accounts CcMonitor#include_linked_accounts}
     */
     readonly includeLinkedAccounts?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/internetmonitor_monitor#internet_measurements_log_delivery CcMonitor#internet_measurements_log_delivery}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/internetmonitor_monitor#internet_measurements_log_delivery CcMonitor#internet_measurements_log_delivery}
     */
     readonly internetMeasurementsLogDelivery?: CcMonitor.InternetMeasurementsLogDeliveryProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/internetmonitor_monitor#linked_account_id CcMonitor#linked_account_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/internetmonitor_monitor#linked_account_id CcMonitor#linked_account_id}
     */
     readonly linkedAccountId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/internetmonitor_monitor#max_city_networks_to_monitor CcMonitor#max_city_networks_to_monitor}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/internetmonitor_monitor#max_city_networks_to_monitor CcMonitor#max_city_networks_to_monitor}
     */
     readonly maxCityNetworksToMonitor?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/internetmonitor_monitor#monitor_name CcMonitor#monitor_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/internetmonitor_monitor#monitor_name CcMonitor#monitor_name}
     */
     readonly monitorName: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/internetmonitor_monitor#resources CcMonitor#resources}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/internetmonitor_monitor#resources CcMonitor#resources}
     */
     readonly resources?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/internetmonitor_monitor#resources_to_add CcMonitor#resources_to_add}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/internetmonitor_monitor#resources_to_add CcMonitor#resources_to_add}
     */
     readonly resourcesToAdd?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/internetmonitor_monitor#resources_to_remove CcMonitor#resources_to_remove}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/internetmonitor_monitor#resources_to_remove CcMonitor#resources_to_remove}
     */
     readonly resourcesToRemove?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/internetmonitor_monitor#status CcMonitor#status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/internetmonitor_monitor#status CcMonitor#status}
     */
     readonly status?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/internetmonitor_monitor#tags CcMonitor#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/internetmonitor_monitor#tags CcMonitor#tags}
     */
     readonly tags?: CcMonitor.TagProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/internetmonitor_monitor#traffic_percentage_to_monitor CcMonitor#traffic_percentage_to_monitor}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/internetmonitor_monitor#traffic_percentage_to_monitor CcMonitor#traffic_percentage_to_monitor}
     */
     readonly trafficPercentageToMonitor?: number;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/internetmonitor_monitor awscc_internetmonitor_monitor}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/internetmonitor_monitor awscc_internetmonitor_monitor}
 */
 export class CcMonitor extends cdktn.TerraformResource {
 
@@ -73,7 +73,7 @@ export class CcMonitor extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcMonitor resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcMonitor to import
-    * @param importFromId The id of the existing CcMonitor that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/internetmonitor_monitor#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcMonitor that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/internetmonitor_monitor#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcMonitor to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -85,7 +85,7 @@ export class CcMonitor extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/internetmonitor_monitor awscc_internetmonitor_monitor} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/internetmonitor_monitor awscc_internetmonitor_monitor} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -95,7 +95,8 @@ export class CcMonitor extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_internetmonitor_monitor',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -697,15 +698,15 @@ export function ccMonitorTagPropertyToHclTerraform(struct?: CcMonitor.TagPropert
 export namespace CcMonitor {
 export interface LocalHealthEventsConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/internetmonitor_monitor#health_score_threshold CcMonitor#health_score_threshold}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/internetmonitor_monitor#health_score_threshold CcMonitor#health_score_threshold}
     */
     readonly healthScoreThreshold?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/internetmonitor_monitor#min_traffic_impact CcMonitor#min_traffic_impact}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/internetmonitor_monitor#min_traffic_impact CcMonitor#min_traffic_impact}
     */
     readonly minTrafficImpact?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/internetmonitor_monitor#status CcMonitor#status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/internetmonitor_monitor#status CcMonitor#status}
     */
     readonly status?: string;
 }
@@ -813,15 +814,15 @@ export class LocalHealthEventsConfigPropertyOutputReference extends cdktn.Comple
 }
 export interface PerformanceLocalHealthEventsConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/internetmonitor_monitor#health_score_threshold CcMonitor#health_score_threshold}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/internetmonitor_monitor#health_score_threshold CcMonitor#health_score_threshold}
     */
     readonly healthScoreThreshold?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/internetmonitor_monitor#min_traffic_impact CcMonitor#min_traffic_impact}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/internetmonitor_monitor#min_traffic_impact CcMonitor#min_traffic_impact}
     */
     readonly minTrafficImpact?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/internetmonitor_monitor#status CcMonitor#status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/internetmonitor_monitor#status CcMonitor#status}
     */
     readonly status?: string;
 }
@@ -929,19 +930,19 @@ export class PerformanceLocalHealthEventsConfigPropertyOutputReference extends c
 }
 export interface HealthEventsConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/internetmonitor_monitor#availability_local_health_events_config CcMonitor#availability_local_health_events_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/internetmonitor_monitor#availability_local_health_events_config CcMonitor#availability_local_health_events_config}
     */
     readonly availabilityLocalHealthEventsConfig?: LocalHealthEventsConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/internetmonitor_monitor#availability_score_threshold CcMonitor#availability_score_threshold}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/internetmonitor_monitor#availability_score_threshold CcMonitor#availability_score_threshold}
     */
     readonly availabilityScoreThreshold?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/internetmonitor_monitor#performance_local_health_events_config CcMonitor#performance_local_health_events_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/internetmonitor_monitor#performance_local_health_events_config CcMonitor#performance_local_health_events_config}
     */
     readonly performanceLocalHealthEventsConfig?: PerformanceLocalHealthEventsConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/internetmonitor_monitor#performance_score_threshold CcMonitor#performance_score_threshold}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/internetmonitor_monitor#performance_score_threshold CcMonitor#performance_score_threshold}
     */
     readonly performanceScoreThreshold?: number;
 }
@@ -1071,15 +1072,15 @@ export class HealthEventsConfigPropertyOutputReference extends cdktn.ComplexObje
 }
 export interface S3ConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/internetmonitor_monitor#bucket_name CcMonitor#bucket_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/internetmonitor_monitor#bucket_name CcMonitor#bucket_name}
     */
     readonly bucketName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/internetmonitor_monitor#bucket_prefix CcMonitor#bucket_prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/internetmonitor_monitor#bucket_prefix CcMonitor#bucket_prefix}
     */
     readonly bucketPrefix?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/internetmonitor_monitor#log_delivery_status CcMonitor#log_delivery_status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/internetmonitor_monitor#log_delivery_status CcMonitor#log_delivery_status}
     */
     readonly logDeliveryStatus?: string;
 }
@@ -1187,7 +1188,7 @@ export class S3ConfigPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface InternetMeasurementsLogDeliveryProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/internetmonitor_monitor#s3_config CcMonitor#s3_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/internetmonitor_monitor#s3_config CcMonitor#s3_config}
     */
     readonly s3Config?: S3ConfigProperty;
 }
@@ -1251,11 +1252,11 @@ export class InternetMeasurementsLogDeliveryPropertyOutputReference extends cdkt
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/internetmonitor_monitor#key CcMonitor#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/internetmonitor_monitor#key CcMonitor#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/internetmonitor_monitor#value CcMonitor#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/internetmonitor_monitor#value CcMonitor#value}
     */
     readonly value?: string;
 }

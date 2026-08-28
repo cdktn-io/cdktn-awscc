@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_vpc_endpoint
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc_endpoint
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,13 +9,13 @@ export interface CcVPCEndpointProps extends cdktn.TerraformMetaArguments {
     /**
     * Describes the DNS options for an endpoint.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_vpc_endpoint#dns_options CcVPCEndpoint#dns_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc_endpoint#dns_options CcVPCEndpoint#dns_options}
     */
     readonly dnsOptions?: CcVPCEndpoint.DnsOptionsSpecificationProperty;
     /**
     * The supported IP address types.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_vpc_endpoint#ip_address_type CcVPCEndpoint#ip_address_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc_endpoint#ip_address_type CcVPCEndpoint#ip_address_type}
     */
     readonly ipAddressType?: string;
     /**
@@ -23,7 +23,7 @@ export interface CcVPCEndpointProps extends cdktn.TerraformMetaArguments {
     *  For CloudFormation templates in YAML, you can provide the policy in JSON or YAML format. For example, if you have a JSON policy, you can convert it to YAML before including it in the YAML template, and CFNlong converts the policy to JSON format before calling the API actions for privatelink. Alternatively, you can include the JSON directly in the YAML, as shown in the following ``Properties`` section:
     *  ``Properties: VpcEndpointType: 'Interface' ServiceName: !Sub 'com.amazonaws.${AWS::Region}.logs' PolicyDocument: '{ "Version":"2012-10-17", "Statement": [{ "Effect":"Allow", "Principal":"*", "Action":["logs:Describe*","logs:Get*","logs:List*","logs:FilterLogEvents"], "Resource":"*" }] }'``
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_vpc_endpoint#policy_document CcVPCEndpoint#policy_document}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc_endpoint#policy_document CcVPCEndpoint#policy_document}
     */
     readonly policyDocument?: string;
     /**
@@ -32,74 +32,74 @@ export interface CcVPCEndpointProps extends cdktn.TerraformMetaArguments {
     *  This property is supported only for interface endpoints.
     *  Default: ``false``
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_vpc_endpoint#private_dns_enabled CcVPCEndpoint#private_dns_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc_endpoint#private_dns_enabled CcVPCEndpoint#private_dns_enabled}
     */
     readonly privateDnsEnabled?: boolean | cdktn.IResolvable;
     /**
     * The Amazon Resource Name (ARN) of the resource configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_vpc_endpoint#resource_configuration_arn CcVPCEndpoint#resource_configuration_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc_endpoint#resource_configuration_arn CcVPCEndpoint#resource_configuration_arn}
     */
     readonly resourceConfigurationArn?: string;
     /**
     * The IDs of the route tables. Routing is supported only for gateway endpoints.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_vpc_endpoint#route_table_ids CcVPCEndpoint#route_table_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc_endpoint#route_table_ids CcVPCEndpoint#route_table_ids}
     */
     readonly routeTableIds?: string[];
     /**
     * The IDs of the security groups to associate with the endpoint network interfaces. If this parameter is not specified, we use the default security group for the VPC. Security groups are supported only for interface endpoints.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_vpc_endpoint#security_group_ids CcVPCEndpoint#security_group_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc_endpoint#security_group_ids CcVPCEndpoint#security_group_ids}
     */
     readonly securityGroupIds?: string[];
     /**
     * The name of the endpoint service.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_vpc_endpoint#service_name CcVPCEndpoint#service_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc_endpoint#service_name CcVPCEndpoint#service_name}
     */
     readonly serviceName?: string;
     /**
     * The Amazon Resource Name (ARN) of the service network.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_vpc_endpoint#service_network_arn CcVPCEndpoint#service_network_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc_endpoint#service_network_arn CcVPCEndpoint#service_network_arn}
     */
     readonly serviceNetworkArn?: string;
     /**
     * Describes a Region.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_vpc_endpoint#service_region CcVPCEndpoint#service_region}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc_endpoint#service_region CcVPCEndpoint#service_region}
     */
     readonly serviceRegion?: string;
     /**
     * The IDs of the subnets in which to create endpoint network interfaces. You must specify this property for an interface endpoint or a Gateway Load Balancer endpoint. You can't specify this property for a gateway endpoint. For a Gateway Load Balancer endpoint, you can specify only one subnet.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_vpc_endpoint#subnet_ids CcVPCEndpoint#subnet_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc_endpoint#subnet_ids CcVPCEndpoint#subnet_ids}
     */
     readonly subnetIds?: string[];
     /**
     * The tags to associate with the endpoint.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_vpc_endpoint#tags CcVPCEndpoint#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc_endpoint#tags CcVPCEndpoint#tags}
     */
     readonly tags?: CcVPCEndpoint.TagProperty[] | cdktn.IResolvable;
     /**
     * The type of endpoint.
     *  Default: Gateway
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_vpc_endpoint#vpc_endpoint_type CcVPCEndpoint#vpc_endpoint_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc_endpoint#vpc_endpoint_type CcVPCEndpoint#vpc_endpoint_type}
     */
     readonly vpcEndpointType?: string;
     /**
     * The ID of the VPC.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_vpc_endpoint#vpc_id CcVPCEndpoint#vpc_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc_endpoint#vpc_id CcVPCEndpoint#vpc_id}
     */
     readonly vpcId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_vpc_endpoint awscc_ec2_vpc_endpoint}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc_endpoint awscc_ec2_vpc_endpoint}
 */
 export class CcVPCEndpoint extends cdktn.TerraformResource {
 
@@ -115,7 +115,7 @@ export class CcVPCEndpoint extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcVPCEndpoint resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcVPCEndpoint to import
-    * @param importFromId The id of the existing CcVPCEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_vpc_endpoint#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcVPCEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc_endpoint#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcVPCEndpoint to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -127,7 +127,7 @@ export class CcVPCEndpoint extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_vpc_endpoint awscc_ec2_vpc_endpoint} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc_endpoint awscc_ec2_vpc_endpoint} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -137,7 +137,8 @@ export class CcVPCEndpoint extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_ec2_vpc_endpoint',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -622,25 +623,25 @@ export interface DnsOptionsSpecificationProperty {
     /**
     * The DNS records created for the endpoint.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_vpc_endpoint#dns_record_ip_type CcVPCEndpoint#dns_record_ip_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc_endpoint#dns_record_ip_type CcVPCEndpoint#dns_record_ip_type}
     */
     readonly dnsRecordIpType?: string;
     /**
     * Indicates whether to enable private DNS only for inbound endpoints. This option is available only for services that support both gateway and interface endpoints. It routes traffic that originates from the VPC to the gateway endpoint and traffic that originates from on-premises to the interface endpoint.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_vpc_endpoint#private_dns_only_for_inbound_resolver_endpoint CcVPCEndpoint#private_dns_only_for_inbound_resolver_endpoint}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc_endpoint#private_dns_only_for_inbound_resolver_endpoint CcVPCEndpoint#private_dns_only_for_inbound_resolver_endpoint}
     */
     readonly privateDnsOnlyForInboundResolverEndpoint?: string;
     /**
     * The preference for which private domains have a private hosted zone created for and associated with the specified VPC. Only supported when private DNS is enabled and when the VPC endpoint type is ServiceNetwork or Resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_vpc_endpoint#private_dns_preference CcVPCEndpoint#private_dns_preference}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc_endpoint#private_dns_preference CcVPCEndpoint#private_dns_preference}
     */
     readonly privateDnsPreference?: string;
     /**
     * Indicates which of the private domains to create private hosted zones for and associate with the specified VPC. Only supported when private DNS is enabled and the private DNS preference is ``VERIFIED_DOMAINS_AND_SPECIFIED_DOMAINS`` or ``SPECIFIED_DOMAINS_ONLY``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_vpc_endpoint#private_dns_specified_domains CcVPCEndpoint#private_dns_specified_domains}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc_endpoint#private_dns_specified_domains CcVPCEndpoint#private_dns_specified_domains}
     */
     readonly privateDnsSpecifiedDomains?: string[];
 }
@@ -773,14 +774,14 @@ export interface TagProperty {
     * The key of the tag.
     *  Constraints: Tag keys are case-sensitive and accept a maximum of 127 Unicode characters. May not begin with ``aws:``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_vpc_endpoint#key CcVPCEndpoint#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc_endpoint#key CcVPCEndpoint#key}
     */
     readonly key?: string;
     /**
     * The value of the tag.
     *  Constraints: Tag values are case-sensitive and accept a maximum of 256 Unicode characters.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_vpc_endpoint#value CcVPCEndpoint#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc_endpoint#value CcVPCEndpoint#value}
     */
     readonly value?: string;
 }

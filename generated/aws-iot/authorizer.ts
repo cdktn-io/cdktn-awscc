@@ -1,47 +1,47 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_authorizer
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_authorizer
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcAuthorizerProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_authorizer#authorizer_function_arn CcAuthorizer#authorizer_function_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_authorizer#authorizer_function_arn CcAuthorizer#authorizer_function_arn}
     */
     readonly authorizerFunctionArn: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_authorizer#authorizer_name CcAuthorizer#authorizer_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_authorizer#authorizer_name CcAuthorizer#authorizer_name}
     */
     readonly authorizerName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_authorizer#enable_caching_for_http CcAuthorizer#enable_caching_for_http}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_authorizer#enable_caching_for_http CcAuthorizer#enable_caching_for_http}
     */
     readonly enableCachingForHttp?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_authorizer#signing_disabled CcAuthorizer#signing_disabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_authorizer#signing_disabled CcAuthorizer#signing_disabled}
     */
     readonly signingDisabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_authorizer#status CcAuthorizer#status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_authorizer#status CcAuthorizer#status}
     */
     readonly status?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_authorizer#tags CcAuthorizer#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_authorizer#tags CcAuthorizer#tags}
     */
     readonly tags?: CcAuthorizer.TagProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_authorizer#token_key_name CcAuthorizer#token_key_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_authorizer#token_key_name CcAuthorizer#token_key_name}
     */
     readonly tokenKeyName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_authorizer#token_signing_public_keys CcAuthorizer#token_signing_public_keys}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_authorizer#token_signing_public_keys CcAuthorizer#token_signing_public_keys}
     */
     readonly tokenSigningPublicKeys?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_authorizer awscc_iot_authorizer}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_authorizer awscc_iot_authorizer}
 */
 export class CcAuthorizer extends cdktn.TerraformResource {
 
@@ -57,7 +57,7 @@ export class CcAuthorizer extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcAuthorizer resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcAuthorizer to import
-    * @param importFromId The id of the existing CcAuthorizer that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_authorizer#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcAuthorizer that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_authorizer#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcAuthorizer to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -69,7 +69,7 @@ export class CcAuthorizer extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_authorizer awscc_iot_authorizer} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_authorizer awscc_iot_authorizer} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -79,7 +79,8 @@ export class CcAuthorizer extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_iot_authorizer',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -352,11 +353,11 @@ export function ccAuthorizerTagPropertyToHclTerraform(struct?: CcAuthorizer.TagP
 export namespace CcAuthorizer {
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_authorizer#key CcAuthorizer#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_authorizer#key CcAuthorizer#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_authorizer#value CcAuthorizer#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_authorizer#value CcAuthorizer#value}
     */
     readonly value?: string;
 }

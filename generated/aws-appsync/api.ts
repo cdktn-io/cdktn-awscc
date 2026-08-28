@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appsync_api
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_api
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,31 +9,31 @@ export interface CcApiProps extends cdktn.TerraformMetaArguments {
     /**
     * The configuration for an Event Api
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appsync_api#event_config CcApi#event_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_api#event_config CcApi#event_config}
     */
     readonly eventConfig?: CcApi.EventConfigProperty;
     /**
     * The name of the AppSync API.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appsync_api#name CcApi#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_api#name CcApi#name}
     */
     readonly name: string;
     /**
     * The owner contact information for an API resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appsync_api#owner_contact CcApi#owner_contact}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_api#owner_contact CcApi#owner_contact}
     */
     readonly ownerContact?: string;
     /**
     * An arbitrary set of tags (key-value pairs) for this AppSync API.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appsync_api#tags CcApi#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_api#tags CcApi#tags}
     */
     readonly tags?: CcApi.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appsync_api awscc_appsync_api}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_api awscc_appsync_api}
 */
 export class CcApi extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CcApi extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcApi resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcApi to import
-    * @param importFromId The id of the existing CcApi that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appsync_api#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcApi that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_api#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcApi to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CcApi extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appsync_api awscc_appsync_api} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_api awscc_appsync_api} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -71,7 +71,8 @@ export class CcApi extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_appsync_api',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -693,15 +694,15 @@ export class DnsPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface CognitoConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appsync_api#app_id_client_regex CcApi#app_id_client_regex}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_api#app_id_client_regex CcApi#app_id_client_regex}
     */
     readonly appIdClientRegex?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appsync_api#aws_region CcApi#aws_region}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_api#aws_region CcApi#aws_region}
     */
     readonly awsRegion?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appsync_api#user_pool_id CcApi#user_pool_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_api#user_pool_id CcApi#user_pool_id}
     */
     readonly userPoolId?: string;
 }
@@ -809,15 +810,15 @@ export class CognitoConfigPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface LambdaAuthorizerConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appsync_api#authorizer_result_ttl_in_seconds CcApi#authorizer_result_ttl_in_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_api#authorizer_result_ttl_in_seconds CcApi#authorizer_result_ttl_in_seconds}
     */
     readonly authorizerResultTtlInSeconds?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appsync_api#authorizer_uri CcApi#authorizer_uri}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_api#authorizer_uri CcApi#authorizer_uri}
     */
     readonly authorizerUri?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appsync_api#identity_validation_expression CcApi#identity_validation_expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_api#identity_validation_expression CcApi#identity_validation_expression}
     */
     readonly identityValidationExpression?: string;
 }
@@ -925,19 +926,19 @@ export class LambdaAuthorizerConfigPropertyOutputReference extends cdktn.Complex
 }
 export interface OpenIDConnectConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appsync_api#auth_ttl CcApi#auth_ttl}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_api#auth_ttl CcApi#auth_ttl}
     */
     readonly authTtl?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appsync_api#client_id CcApi#client_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_api#client_id CcApi#client_id}
     */
     readonly clientId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appsync_api#iat_ttl CcApi#iat_ttl}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_api#iat_ttl CcApi#iat_ttl}
     */
     readonly iatTtl?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appsync_api#issuer CcApi#issuer}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_api#issuer CcApi#issuer}
     */
     readonly issuer?: string;
 }
@@ -1069,25 +1070,25 @@ export interface AuthProviderProperty {
     /**
     * Security configuration for your AppSync API.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appsync_api#auth_type CcApi#auth_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_api#auth_type CcApi#auth_type}
     */
     readonly authType?: string;
     /**
     * Optional authorization configuration for using Amazon Cognito user pools with your API endpoint.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appsync_api#cognito_config CcApi#cognito_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_api#cognito_config CcApi#cognito_config}
     */
     readonly cognitoConfig?: CognitoConfigProperty;
     /**
     * A LambdaAuthorizerConfig holds configuration on how to authorize AWS AppSync API access when using the AWS_LAMBDA authorizer mode. Be aware that an AWS AppSync API may have only one Lambda authorizer configured at a time.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appsync_api#lambda_authorizer_config CcApi#lambda_authorizer_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_api#lambda_authorizer_config CcApi#lambda_authorizer_config}
     */
     readonly lambdaAuthorizerConfig?: LambdaAuthorizerConfigProperty;
     /**
     * The OpenID Connect configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appsync_api#open_id_connect_config CcApi#open_id_connect_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_api#open_id_connect_config CcApi#open_id_connect_config}
     */
     readonly openIdConnectConfig?: OpenIDConnectConfigProperty;
 }
@@ -1241,7 +1242,7 @@ export interface AuthModeProperty {
     /**
     * Security configuration for your AppSync API.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appsync_api#auth_type CcApi#auth_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_api#auth_type CcApi#auth_type}
     */
     readonly authType?: string;
 }
@@ -1329,7 +1330,7 @@ export interface DefaultPublishAuthModesProperty {
     /**
     * Security configuration for your AppSync API.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appsync_api#auth_type CcApi#auth_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_api#auth_type CcApi#auth_type}
     */
     readonly authType?: string;
 }
@@ -1417,7 +1418,7 @@ export interface DefaultSubscribeAuthModesProperty {
     /**
     * Security configuration for your AppSync API.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appsync_api#auth_type CcApi#auth_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_api#auth_type CcApi#auth_type}
     */
     readonly authType?: string;
 }
@@ -1503,13 +1504,13 @@ export class DefaultSubscribeAuthModesPropertyList extends cdktn.ComplexList {
 }
 export interface EventLogConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appsync_api#cloudwatch_logs_role_arn CcApi#cloudwatch_logs_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_api#cloudwatch_logs_role_arn CcApi#cloudwatch_logs_role_arn}
     */
     readonly cloudwatchLogsRoleArn?: string;
     /**
     * Logging level for the AppSync API.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appsync_api#log_level CcApi#log_level}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_api#log_level CcApi#log_level}
     */
     readonly logLevel?: string;
 }
@@ -1597,31 +1598,31 @@ export interface EventConfigProperty {
     /**
     * A list of auth providers for the AppSync API.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appsync_api#auth_providers CcApi#auth_providers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_api#auth_providers CcApi#auth_providers}
     */
     readonly authProviders?: AuthProviderProperty[] | cdktn.IResolvable;
     /**
     * A list of auth modes for the AppSync API.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appsync_api#connection_auth_modes CcApi#connection_auth_modes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_api#connection_auth_modes CcApi#connection_auth_modes}
     */
     readonly connectionAuthModes?: AuthModeProperty[] | cdktn.IResolvable;
     /**
     * A list of auth modes for the AppSync API.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appsync_api#default_publish_auth_modes CcApi#default_publish_auth_modes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_api#default_publish_auth_modes CcApi#default_publish_auth_modes}
     */
     readonly defaultPublishAuthModes?: DefaultPublishAuthModesProperty[] | cdktn.IResolvable;
     /**
     * A list of auth modes for the AppSync API.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appsync_api#default_subscribe_auth_modes CcApi#default_subscribe_auth_modes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_api#default_subscribe_auth_modes CcApi#default_subscribe_auth_modes}
     */
     readonly defaultSubscribeAuthModes?: DefaultSubscribeAuthModesProperty[] | cdktn.IResolvable;
     /**
     * The log config for the AppSync API.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appsync_api#log_config CcApi#log_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_api#log_config CcApi#log_config}
     */
     readonly logConfig?: EventLogConfigProperty;
 }
@@ -1775,13 +1776,13 @@ export interface TagProperty {
     /**
     * A string used to identify this tag. You can specify a maximum of 128 characters for a tag key.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appsync_api#key CcApi#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_api#key CcApi#key}
     */
     readonly key?: string;
     /**
     * A string containing the value for this tag. You can specify a maximum of 256 characters for a tag value.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appsync_api#value CcApi#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_api#value CcApi#value}
     */
     readonly value?: string;
 }

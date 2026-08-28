@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datapipeline_pipeline
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datapipeline_pipeline
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,49 +9,49 @@ export interface CcPipelineProps extends cdktn.TerraformMetaArguments {
     /**
     * Indicates whether to validate and start the pipeline or stop an active pipeline. By default, the value is set to true.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datapipeline_pipeline#activate CcPipeline#activate}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datapipeline_pipeline#activate CcPipeline#activate}
     */
     readonly activate?: boolean | cdktn.IResolvable;
     /**
     * A description of the pipeline.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datapipeline_pipeline#description CcPipeline#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datapipeline_pipeline#description CcPipeline#description}
     */
     readonly description?: string;
     /**
     * The name of the pipeline.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datapipeline_pipeline#name CcPipeline#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datapipeline_pipeline#name CcPipeline#name}
     */
     readonly name: string;
     /**
     * The parameter objects used with the pipeline.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datapipeline_pipeline#parameter_objects CcPipeline#parameter_objects}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datapipeline_pipeline#parameter_objects CcPipeline#parameter_objects}
     */
     readonly parameterObjects?: CcPipeline.ParameterObjectProperty[] | cdktn.IResolvable;
     /**
     * The parameter values used with the pipeline.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datapipeline_pipeline#parameter_values CcPipeline#parameter_values}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datapipeline_pipeline#parameter_values CcPipeline#parameter_values}
     */
     readonly parameterValues?: CcPipeline.ParameterValueProperty[] | cdktn.IResolvable;
     /**
     * The objects that define the pipeline. These objects overwrite the existing pipeline definition. Not all objects, fields, and values can be updated. For information about restrictions, see Editing Your Pipeline in the AWS Data Pipeline Developer Guide.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datapipeline_pipeline#pipeline_objects CcPipeline#pipeline_objects}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datapipeline_pipeline#pipeline_objects CcPipeline#pipeline_objects}
     */
     readonly pipelineObjects?: CcPipeline.PipelineObjectProperty[] | cdktn.IResolvable;
     /**
     * A list of arbitrary tags (key-value pairs) to associate with the pipeline, which you can use to control permissions. For more information, see Controlling Access to Pipelines and Resources in the AWS Data Pipeline Developer Guide.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datapipeline_pipeline#pipeline_tags CcPipeline#pipeline_tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datapipeline_pipeline#pipeline_tags CcPipeline#pipeline_tags}
     */
     readonly pipelineTags?: CcPipeline.PipelineTagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datapipeline_pipeline awscc_datapipeline_pipeline}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datapipeline_pipeline awscc_datapipeline_pipeline}
 */
 export class CcPipeline extends cdktn.TerraformResource {
 
@@ -67,7 +67,7 @@ export class CcPipeline extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcPipeline resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcPipeline to import
-    * @param importFromId The id of the existing CcPipeline that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datapipeline_pipeline#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcPipeline that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datapipeline_pipeline#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcPipeline to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -79,7 +79,7 @@ export class CcPipeline extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datapipeline_pipeline awscc_datapipeline_pipeline} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datapipeline_pipeline awscc_datapipeline_pipeline} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -89,7 +89,8 @@ export class CcPipeline extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_datapipeline_pipeline',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -539,13 +540,13 @@ export interface ParameterAttributeProperty {
     /**
     * The field identifier.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datapipeline_pipeline#key CcPipeline#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datapipeline_pipeline#key CcPipeline#key}
     */
     readonly key?: string;
     /**
     * The field value, expressed as a String.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datapipeline_pipeline#string_value CcPipeline#string_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datapipeline_pipeline#string_value CcPipeline#string_value}
     */
     readonly stringValue?: string;
 }
@@ -655,13 +656,13 @@ export interface ParameterObjectProperty {
     /**
     * The attributes of the parameter object.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datapipeline_pipeline#attributes CcPipeline#attributes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datapipeline_pipeline#attributes CcPipeline#attributes}
     */
     readonly attributes?: ParameterAttributeProperty[] | cdktn.IResolvable;
     /**
     * The ID of the parameter object.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datapipeline_pipeline#id CcPipeline#id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datapipeline_pipeline#id CcPipeline#id}
     *
     * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
     * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -774,7 +775,7 @@ export interface ParameterValueProperty {
     /**
     * The ID of the parameter value.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datapipeline_pipeline#id CcPipeline#id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datapipeline_pipeline#id CcPipeline#id}
     *
     * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
     * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -783,7 +784,7 @@ export interface ParameterValueProperty {
     /**
     * The field value, expressed as a String.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datapipeline_pipeline#string_value CcPipeline#string_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datapipeline_pipeline#string_value CcPipeline#string_value}
     */
     readonly stringValue?: string;
 }
@@ -893,19 +894,19 @@ export interface FieldProperty {
     /**
     * Specifies the name of a field for a particular object. To view valid values for a particular field, see Pipeline Object Reference in the AWS Data Pipeline Developer Guide.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datapipeline_pipeline#key CcPipeline#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datapipeline_pipeline#key CcPipeline#key}
     */
     readonly key?: string;
     /**
     * A field value that you specify as an identifier of another object in the same pipeline definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datapipeline_pipeline#ref_value CcPipeline#ref_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datapipeline_pipeline#ref_value CcPipeline#ref_value}
     */
     readonly refValue?: string;
     /**
     * A field value that you specify as a string. To view valid values for a particular field, see Pipeline Object Reference in the AWS Data Pipeline Developer Guide.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datapipeline_pipeline#string_value CcPipeline#string_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datapipeline_pipeline#string_value CcPipeline#string_value}
     */
     readonly stringValue?: string;
 }
@@ -1037,13 +1038,13 @@ export interface PipelineObjectProperty {
     /**
     * Key-value pairs that define the properties of the object.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datapipeline_pipeline#fields CcPipeline#fields}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datapipeline_pipeline#fields CcPipeline#fields}
     */
     readonly fields?: FieldProperty[] | cdktn.IResolvable;
     /**
     * The ID of the object.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datapipeline_pipeline#id CcPipeline#id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datapipeline_pipeline#id CcPipeline#id}
     *
     * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
     * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1052,7 +1053,7 @@ export interface PipelineObjectProperty {
     /**
     * The name of the object.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datapipeline_pipeline#name CcPipeline#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datapipeline_pipeline#name CcPipeline#name}
     */
     readonly name?: string;
 }
@@ -1184,13 +1185,13 @@ export interface PipelineTagProperty {
     /**
     * The key name of a tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datapipeline_pipeline#key CcPipeline#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datapipeline_pipeline#key CcPipeline#key}
     */
     readonly key?: string;
     /**
     * The value to associate with the key name.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datapipeline_pipeline#value CcPipeline#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datapipeline_pipeline#value CcPipeline#value}
     */
     readonly value?: string;
 }

@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_function
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_function
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,43 +9,43 @@ export interface CcFunctionProps extends cdktn.TerraformMetaArguments {
     /**
     * A flag that determines whether to automatically publish the function to the ``LIVE`` stage when it?s created. To automatically publish to the ``LIVE`` stage, set this property to ``true``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_function#auto_publish CcFunction#auto_publish}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_function#auto_publish CcFunction#auto_publish}
     */
     readonly autoPublish?: boolean | cdktn.IResolvable;
     /**
     * The function code. For more information about writing a CloudFront function, see [Writing function code for CloudFront Functions](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/writing-function-code.html) in the *Amazon CloudFront Developer Guide*.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_function#function_code CcFunction#function_code}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_function#function_code CcFunction#function_code}
     */
     readonly functionCode: string;
     /**
     * Contains configuration information about a CloudFront function.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_function#function_config CcFunction#function_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_function#function_config CcFunction#function_config}
     */
     readonly functionConfig: CcFunction.FunctionConfigProperty;
     /**
     * Contains metadata about a CloudFront function.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_function#function_metadata CcFunction#function_metadata}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_function#function_metadata CcFunction#function_metadata}
     */
     readonly functionMetadata?: CcFunction.FunctionMetadataProperty;
     /**
     * A name to identify the function.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_function#name CcFunction#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_function#name CcFunction#name}
     */
     readonly name: string;
     /**
     * A complex type that contains zero or more ``Tag`` elements.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_function#tags CcFunction#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_function#tags CcFunction#tags}
     */
     readonly tags?: CcFunction.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_function awscc_cloudfront_function}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_function awscc_cloudfront_function}
 */
 export class CcFunction extends cdktn.TerraformResource {
 
@@ -61,7 +61,7 @@ export class CcFunction extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcFunction resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcFunction to import
-    * @param importFromId The id of the existing CcFunction that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_function#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcFunction that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_function#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcFunction to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -73,7 +73,7 @@ export class CcFunction extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_function awscc_cloudfront_function} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_function awscc_cloudfront_function} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -83,7 +83,8 @@ export class CcFunction extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_cloudfront_function',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -404,7 +405,7 @@ export interface KeyValueStoreAssociationProperty {
     /**
     * The Amazon Resource Name (ARN) of the key value store association.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_function#key_value_store_arn CcFunction#key_value_store_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_function#key_value_store_arn CcFunction#key_value_store_arn}
     */
     readonly keyValueStoreArn?: string;
 }
@@ -492,19 +493,19 @@ export interface FunctionConfigProperty {
     /**
     * A comment to describe the function. The comment cannot be longer than 128 characters.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_function#comment CcFunction#comment}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_function#comment CcFunction#comment}
     */
     readonly comment: string;
     /**
     * The configuration for the key value store associations.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_function#key_value_store_associations CcFunction#key_value_store_associations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_function#key_value_store_associations CcFunction#key_value_store_associations}
     */
     readonly keyValueStoreAssociations?: KeyValueStoreAssociationProperty[] | cdktn.IResolvable;
     /**
     * The function's runtime environment version.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_function#runtime CcFunction#runtime}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_function#runtime CcFunction#runtime}
     */
     readonly runtime: string;
 }
@@ -652,14 +653,14 @@ export interface TagProperty {
     * A string that contains ``Tag`` key.
     *  The string length should be between 1 and 128 characters. Valid characters include ``a-z``, ``A-Z``, ``0-9``, space, and the special characters ``_ - . : / = + @``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_function#key CcFunction#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_function#key CcFunction#key}
     */
     readonly key?: string;
     /**
     * A string that contains an optional ``Tag`` value.
     *  The string length should be between 0 and 256 characters. Valid characters include ``a-z``, ``A-Z``, ``0-9``, space, and the special characters ``_ - . : / = + @``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_function#value CcFunction#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_function#value CcFunction#value}
     */
     readonly value?: string;
 }

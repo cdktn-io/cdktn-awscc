@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kendra_index
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kendra_index
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,63 +9,63 @@ export interface CcIndexProps extends cdktn.TerraformMetaArguments {
     /**
     * Capacity units
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kendra_index#capacity_units CcIndex#capacity_units}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kendra_index#capacity_units CcIndex#capacity_units}
     */
     readonly capacityUnits?: CcIndex.CapacityUnitsConfigurationProperty;
     /**
     * A description for the index
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kendra_index#description CcIndex#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kendra_index#description CcIndex#description}
     */
     readonly description?: string;
     /**
     * Document metadata configurations
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kendra_index#document_metadata_configurations CcIndex#document_metadata_configurations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kendra_index#document_metadata_configurations CcIndex#document_metadata_configurations}
     */
     readonly documentMetadataConfigurations?: CcIndex.DocumentMetadataConfigurationProperty[] | cdktn.IResolvable;
     /**
     * Edition of index
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kendra_index#edition CcIndex#edition}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kendra_index#edition CcIndex#edition}
     */
     readonly edition: string;
     /**
     * Name of index
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kendra_index#name CcIndex#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kendra_index#name CcIndex#name}
     */
     readonly name: string;
     /**
     * Role Arn
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kendra_index#role_arn CcIndex#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kendra_index#role_arn CcIndex#role_arn}
     */
     readonly roleArn: string;
     /**
     * Server side encryption configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kendra_index#server_side_encryption_configuration CcIndex#server_side_encryption_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kendra_index#server_side_encryption_configuration CcIndex#server_side_encryption_configuration}
     */
     readonly serverSideEncryptionConfiguration?: CcIndex.ServerSideEncryptionConfigurationProperty;
     /**
     * Tags for labeling the index
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kendra_index#tags CcIndex#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kendra_index#tags CcIndex#tags}
     */
     readonly tags?: CcIndex.TagProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kendra_index#user_context_policy CcIndex#user_context_policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kendra_index#user_context_policy CcIndex#user_context_policy}
     */
     readonly userContextPolicy?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kendra_index#user_token_configurations CcIndex#user_token_configurations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kendra_index#user_token_configurations CcIndex#user_token_configurations}
     */
     readonly userTokenConfigurations?: CcIndex.UserTokenConfigurationProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kendra_index awscc_kendra_index}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kendra_index awscc_kendra_index}
 */
 export class CcIndex extends cdktn.TerraformResource {
 
@@ -81,7 +81,7 @@ export class CcIndex extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcIndex resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcIndex to import
-    * @param importFromId The id of the existing CcIndex that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kendra_index#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcIndex that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kendra_index#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcIndex to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -93,7 +93,7 @@ export class CcIndex extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kendra_index awscc_kendra_index} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kendra_index awscc_kendra_index} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -103,7 +103,8 @@ export class CcIndex extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_kendra_index',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -833,11 +834,11 @@ export function ccIndexUserTokenConfigurationPropertyToHclTerraform(struct?: CcI
 export namespace CcIndex {
 export interface CapacityUnitsConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kendra_index#query_capacity_units CcIndex#query_capacity_units}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kendra_index#query_capacity_units CcIndex#query_capacity_units}
     */
     readonly queryCapacityUnits?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kendra_index#storage_capacity_units CcIndex#storage_capacity_units}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kendra_index#storage_capacity_units CcIndex#storage_capacity_units}
     */
     readonly storageCapacityUnits?: number;
 }
@@ -923,11 +924,11 @@ export class CapacityUnitsConfigurationPropertyOutputReference extends cdktn.Com
 }
 export interface ValueImportanceItemProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kendra_index#key CcIndex#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kendra_index#key CcIndex#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kendra_index#value CcIndex#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kendra_index#value CcIndex#value}
     */
     readonly value?: number;
 }
@@ -1035,23 +1036,23 @@ export class ValueImportanceItemPropertyList extends cdktn.ComplexList {
 }
 export interface RelevanceProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kendra_index#duration CcIndex#duration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kendra_index#duration CcIndex#duration}
     */
     readonly duration?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kendra_index#freshness CcIndex#freshness}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kendra_index#freshness CcIndex#freshness}
     */
     readonly freshness?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kendra_index#importance CcIndex#importance}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kendra_index#importance CcIndex#importance}
     */
     readonly importance?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kendra_index#rank_order CcIndex#rank_order}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kendra_index#rank_order CcIndex#rank_order}
     */
     readonly rankOrder?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kendra_index#value_importance_items CcIndex#value_importance_items}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kendra_index#value_importance_items CcIndex#value_importance_items}
     */
     readonly valueImportanceItems?: ValueImportanceItemProperty[] | cdktn.IResolvable;
 }
@@ -1203,19 +1204,19 @@ export class RelevancePropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface SearchProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kendra_index#displayable CcIndex#displayable}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kendra_index#displayable CcIndex#displayable}
     */
     readonly displayable?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kendra_index#facetable CcIndex#facetable}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kendra_index#facetable CcIndex#facetable}
     */
     readonly facetable?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kendra_index#searchable CcIndex#searchable}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kendra_index#searchable CcIndex#searchable}
     */
     readonly searchable?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kendra_index#sortable CcIndex#sortable}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kendra_index#sortable CcIndex#sortable}
     */
     readonly sortable?: boolean | cdktn.IResolvable;
 }
@@ -1345,19 +1346,19 @@ export class SearchPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface DocumentMetadataConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kendra_index#name CcIndex#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kendra_index#name CcIndex#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kendra_index#relevance CcIndex#relevance}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kendra_index#relevance CcIndex#relevance}
     */
     readonly relevance?: RelevanceProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kendra_index#search CcIndex#search}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kendra_index#search CcIndex#search}
     */
     readonly search?: SearchProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kendra_index#type CcIndex#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kendra_index#type CcIndex#type}
     */
     readonly type?: string;
 }
@@ -1509,7 +1510,7 @@ export class DocumentMetadataConfigurationPropertyList extends cdktn.ComplexList
 }
 export interface ServerSideEncryptionConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kendra_index#kms_key_id CcIndex#kms_key_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kendra_index#kms_key_id CcIndex#kms_key_id}
     */
     readonly kmsKeyId?: string;
 }
@@ -1575,13 +1576,13 @@ export interface TagProperty {
     /**
     * A string used to identify this tag
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kendra_index#key CcIndex#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kendra_index#key CcIndex#key}
     */
     readonly key?: string;
     /**
     * A string containing the value for the tag
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kendra_index#value CcIndex#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kendra_index#value CcIndex#value}
     */
     readonly value?: string;
 }
@@ -1689,11 +1690,11 @@ export class TagPropertyList extends cdktn.ComplexList {
 }
 export interface JsonTokenTypeConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kendra_index#group_attribute_field CcIndex#group_attribute_field}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kendra_index#group_attribute_field CcIndex#group_attribute_field}
     */
     readonly groupAttributeField?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kendra_index#user_name_attribute_field CcIndex#user_name_attribute_field}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kendra_index#user_name_attribute_field CcIndex#user_name_attribute_field}
     */
     readonly userNameAttributeField?: string;
 }
@@ -1779,33 +1780,33 @@ export class JsonTokenTypeConfigurationPropertyOutputReference extends cdktn.Com
 }
 export interface JwtTokenTypeConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kendra_index#claim_regex CcIndex#claim_regex}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kendra_index#claim_regex CcIndex#claim_regex}
     */
     readonly claimRegex?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kendra_index#group_attribute_field CcIndex#group_attribute_field}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kendra_index#group_attribute_field CcIndex#group_attribute_field}
     */
     readonly groupAttributeField?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kendra_index#issuer CcIndex#issuer}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kendra_index#issuer CcIndex#issuer}
     */
     readonly issuer?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kendra_index#key_location CcIndex#key_location}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kendra_index#key_location CcIndex#key_location}
     */
     readonly keyLocation?: string;
     /**
     * Role Arn
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kendra_index#secret_manager_arn CcIndex#secret_manager_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kendra_index#secret_manager_arn CcIndex#secret_manager_arn}
     */
     readonly secretManagerArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kendra_index#url CcIndex#url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kendra_index#url CcIndex#url}
     */
     readonly url?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kendra_index#user_name_attribute_field CcIndex#user_name_attribute_field}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kendra_index#user_name_attribute_field CcIndex#user_name_attribute_field}
     */
     readonly userNameAttributeField?: string;
 }
@@ -2001,11 +2002,11 @@ export class JwtTokenTypeConfigurationPropertyOutputReference extends cdktn.Comp
 }
 export interface UserTokenConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kendra_index#json_token_type_configuration CcIndex#json_token_type_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kendra_index#json_token_type_configuration CcIndex#json_token_type_configuration}
     */
     readonly jsonTokenTypeConfiguration?: JsonTokenTypeConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kendra_index#jwt_token_type_configuration CcIndex#jwt_token_type_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kendra_index#jwt_token_type_configuration CcIndex#jwt_token_type_configuration}
     */
     readonly jwtTokenTypeConfiguration?: JwtTokenTypeConfigurationProperty;
 }

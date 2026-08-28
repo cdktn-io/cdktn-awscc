@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_wireless_device
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_wireless_device
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,61 +9,61 @@ export interface CcWirelessDeviceProps extends cdktn.TerraformMetaArguments {
     /**
     * Wireless device description
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_wireless_device#description CcWirelessDevice#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_wireless_device#description CcWirelessDevice#description}
     */
     readonly description?: string;
     /**
     * Wireless device destination name
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_wireless_device#destination_name CcWirelessDevice#destination_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_wireless_device#destination_name CcWirelessDevice#destination_name}
     */
     readonly destinationName: string;
     /**
     * The date and time when the most recent uplink was received.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_wireless_device#last_uplink_received_at CcWirelessDevice#last_uplink_received_at}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_wireless_device#last_uplink_received_at CcWirelessDevice#last_uplink_received_at}
     */
     readonly lastUplinkReceivedAt?: string;
     /**
     * The combination of Package, Station and Model which represents the version of the LoRaWAN Wireless Device.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_wireless_device#lo_ra_wan CcWirelessDevice#lo_ra_wan}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_wireless_device#lo_ra_wan CcWirelessDevice#lo_ra_wan}
     */
     readonly loRaWan?: CcWirelessDevice.LoRaWANDeviceProperty;
     /**
     * Wireless device name
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_wireless_device#name CcWirelessDevice#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_wireless_device#name CcWirelessDevice#name}
     */
     readonly name?: string;
     /**
     * FPort values for the GNSS, stream, and ClockSync functions of the positioning information.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_wireless_device#positioning CcWirelessDevice#positioning}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_wireless_device#positioning CcWirelessDevice#positioning}
     */
     readonly positioning?: string;
     /**
     * A list of key-value pairs that contain metadata for the device. Currently not supported, will not create if tags are passed.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_wireless_device#tags CcWirelessDevice#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_wireless_device#tags CcWirelessDevice#tags}
     */
     readonly tags?: CcWirelessDevice.TagProperty[] | cdktn.IResolvable;
     /**
     * Thing arn. Passed into update to associate Thing with Wireless device.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_wireless_device#thing_arn CcWirelessDevice#thing_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_wireless_device#thing_arn CcWirelessDevice#thing_arn}
     */
     readonly thingArn?: string;
     /**
     * Wireless device type, currently only Sidewalk and LoRa
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_wireless_device#type CcWirelessDevice#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_wireless_device#type CcWirelessDevice#type}
     */
     readonly type: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_wireless_device awscc_iotwireless_wireless_device}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_wireless_device awscc_iotwireless_wireless_device}
 */
 export class CcWirelessDevice extends cdktn.TerraformResource {
 
@@ -79,7 +79,7 @@ export class CcWirelessDevice extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcWirelessDevice resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcWirelessDevice to import
-    * @param importFromId The id of the existing CcWirelessDevice that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_wireless_device#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcWirelessDevice that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_wireless_device#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcWirelessDevice to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -91,7 +91,7 @@ export class CcWirelessDevice extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_wireless_device awscc_iotwireless_wireless_device} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_wireless_device awscc_iotwireless_wireless_device} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -101,7 +101,8 @@ export class CcWirelessDevice extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_iotwireless_wireless_device',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -801,11 +802,11 @@ export function ccWirelessDeviceTagPropertyToHclTerraform(struct?: CcWirelessDev
 export namespace CcWirelessDevice {
 export interface SessionKeysAbpV10xProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_wireless_device#app_s_key CcWirelessDevice#app_s_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_wireless_device#app_s_key CcWirelessDevice#app_s_key}
     */
     readonly appSKey?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_wireless_device#nwk_s_key CcWirelessDevice#nwk_s_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_wireless_device#nwk_s_key CcWirelessDevice#nwk_s_key}
     */
     readonly nwkSKey?: string;
 }
@@ -891,11 +892,11 @@ export class SessionKeysAbpV10xPropertyOutputReference extends cdktn.ComplexObje
 }
 export interface AbpV10xProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_wireless_device#dev_addr CcWirelessDevice#dev_addr}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_wireless_device#dev_addr CcWirelessDevice#dev_addr}
     */
     readonly devAddr?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_wireless_device#session_keys CcWirelessDevice#session_keys}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_wireless_device#session_keys CcWirelessDevice#session_keys}
     */
     readonly sessionKeys?: SessionKeysAbpV10xProperty;
 }
@@ -981,19 +982,19 @@ export class AbpV10xPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface SessionKeysAbpV11Property {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_wireless_device#app_s_key CcWirelessDevice#app_s_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_wireless_device#app_s_key CcWirelessDevice#app_s_key}
     */
     readonly appSKey?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_wireless_device#f_nwk_s_int_key CcWirelessDevice#f_nwk_s_int_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_wireless_device#f_nwk_s_int_key CcWirelessDevice#f_nwk_s_int_key}
     */
     readonly fNwkSIntKey?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_wireless_device#nwk_s_enc_key CcWirelessDevice#nwk_s_enc_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_wireless_device#nwk_s_enc_key CcWirelessDevice#nwk_s_enc_key}
     */
     readonly nwkSEncKey?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_wireless_device#s_nwk_s_int_key CcWirelessDevice#s_nwk_s_int_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_wireless_device#s_nwk_s_int_key CcWirelessDevice#s_nwk_s_int_key}
     */
     readonly sNwkSIntKey?: string;
 }
@@ -1123,11 +1124,11 @@ export class SessionKeysAbpV11PropertyOutputReference extends cdktn.ComplexObjec
 }
 export interface AbpV11Property {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_wireless_device#dev_addr CcWirelessDevice#dev_addr}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_wireless_device#dev_addr CcWirelessDevice#dev_addr}
     */
     readonly devAddr?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_wireless_device#session_keys CcWirelessDevice#session_keys}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_wireless_device#session_keys CcWirelessDevice#session_keys}
     */
     readonly sessionKeys?: SessionKeysAbpV11Property;
 }
@@ -1215,19 +1216,19 @@ export interface ApplicationProperty {
     /**
     * The name of the position data destination that describes the AWS IoT rule that processes the device's position data for use by AWS IoT Core for LoRaWAN.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_wireless_device#destination_name CcWirelessDevice#destination_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_wireless_device#destination_name CcWirelessDevice#destination_name}
     */
     readonly destinationName?: string;
     /**
     * The Fport value.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_wireless_device#f_port CcWirelessDevice#f_port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_wireless_device#f_port CcWirelessDevice#f_port}
     */
     readonly fPort?: number;
     /**
     * Application type, which can be specified to obtain real-time position information of your LoRaWAN device.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_wireless_device#type CcWirelessDevice#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_wireless_device#type CcWirelessDevice#type}
     */
     readonly type?: string;
 }
@@ -1359,7 +1360,7 @@ export interface FPortsProperty {
     /**
     * A list of optional LoRaWAN application information, which can be used for geolocation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_wireless_device#applications CcWirelessDevice#applications}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_wireless_device#applications CcWirelessDevice#applications}
     */
     readonly applications?: ApplicationProperty[] | cdktn.IResolvable;
 }
@@ -1423,11 +1424,11 @@ export class FPortsPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface OtaaV10xProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_wireless_device#app_eui CcWirelessDevice#app_eui}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_wireless_device#app_eui CcWirelessDevice#app_eui}
     */
     readonly appEui?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_wireless_device#app_key CcWirelessDevice#app_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_wireless_device#app_key CcWirelessDevice#app_key}
     */
     readonly appKey?: string;
 }
@@ -1513,15 +1514,15 @@ export class OtaaV10xPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface OtaaV11Property {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_wireless_device#app_key CcWirelessDevice#app_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_wireless_device#app_key CcWirelessDevice#app_key}
     */
     readonly appKey?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_wireless_device#join_eui CcWirelessDevice#join_eui}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_wireless_device#join_eui CcWirelessDevice#join_eui}
     */
     readonly joinEui?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_wireless_device#nwk_key CcWirelessDevice#nwk_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_wireless_device#nwk_key CcWirelessDevice#nwk_key}
     */
     readonly nwkKey?: string;
 }
@@ -1629,35 +1630,35 @@ export class OtaaV11PropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface LoRaWANDeviceProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_wireless_device#abp_v10_x CcWirelessDevice#abp_v10_x}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_wireless_device#abp_v10_x CcWirelessDevice#abp_v10_x}
     */
     readonly abpV10X?: AbpV10xProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_wireless_device#abp_v11 CcWirelessDevice#abp_v11}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_wireless_device#abp_v11 CcWirelessDevice#abp_v11}
     */
     readonly abpV11?: AbpV11Property;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_wireless_device#dev_eui CcWirelessDevice#dev_eui}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_wireless_device#dev_eui CcWirelessDevice#dev_eui}
     */
     readonly devEui?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_wireless_device#device_profile_id CcWirelessDevice#device_profile_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_wireless_device#device_profile_id CcWirelessDevice#device_profile_id}
     */
     readonly deviceProfileId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_wireless_device#f_ports CcWirelessDevice#f_ports}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_wireless_device#f_ports CcWirelessDevice#f_ports}
     */
     readonly fPorts?: FPortsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_wireless_device#otaa_v10_x CcWirelessDevice#otaa_v10_x}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_wireless_device#otaa_v10_x CcWirelessDevice#otaa_v10_x}
     */
     readonly otaaV10X?: OtaaV10xProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_wireless_device#otaa_v11 CcWirelessDevice#otaa_v11}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_wireless_device#otaa_v11 CcWirelessDevice#otaa_v11}
     */
     readonly otaaV11?: OtaaV11Property;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_wireless_device#service_profile_id CcWirelessDevice#service_profile_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_wireless_device#service_profile_id CcWirelessDevice#service_profile_id}
     */
     readonly serviceProfileId?: string;
 }
@@ -1875,11 +1876,11 @@ export class LoRaWANDevicePropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_wireless_device#key CcWirelessDevice#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_wireless_device#key CcWirelessDevice#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_wireless_device#value CcWirelessDevice#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_wireless_device#value CcWirelessDevice#value}
     */
     readonly value?: string;
 }
