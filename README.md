@@ -111,7 +111,7 @@ cd cdktn-awscc
 pnpm test                                              # fast contract, < 5 min
 RUN_FULL=1 pnpm test                                   # + full-schema regeneration, determinism, tsc
 PATH="/opt/homebrew/bin:$PATH" NODE_OPTIONS=--max-old-space-size=16384 \
-  RUN_FULL_JSII=1 pnpm test:full-jsii                  # jsii + jsii-pacmak over the whole tree, ~90 min
+  RUN_FULL_JSII=1 pnpm test:full-jsii                  # jsii + jsii-pacmak over the whole tree, ~80 s on an M-series Mac (jsii ~30-50 s + pacmak ~30 s); 16 GB heap
 ```
 
 `--max-old-space-size=16384` (16 GB) is needed because `jsii` compiling all 276 submodules /
