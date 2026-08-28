@@ -20,7 +20,7 @@ Adaptations made beyond copying (all mechanical, no behaviour change):
 
 **Iteration 3 refresh of `scope-map.json`** (CONTRACT.md "Iteration 3 — scope map"): re-fetched from
 `aws/aws-cdk` **main** at commit `6808bb7e04d64a903a73ad56a7879c75019a5908` (2026-08-28) via
-`gh api repos/aws/aws-cdk/contents/packages/aws-cdk-lib/scripts/scope-map.json --jq .content | base64 -d`,
+`gh api "repos/aws/aws-cdk/contents/packages/aws-cdk-lib/scripts/scope-map.json?ref=6808bb7e04d64a903a73ad56a7879c75019a5908" --jq .content | base64 -d`,
 **not** from the local `~/cdk/aws-cdk` checkout the other spec2cdk rows below are pinned to (that
 checkout is at `a9e6639d…`, the scope map's own previous commit) — this one file is therefore
 ahead of the rest of the vendored tree by design: 302 entries (was 292), **+**

@@ -814,7 +814,7 @@ and the raised baseline.
 commit `6808bb7e04d64a903a73ad56a7879c75019a5908` (2026-08-28), fetched with
 
 ```
-gh api repos/aws/aws-cdk/contents/packages/aws-cdk-lib/scripts/scope-map.json --jq .content | base64 -d
+gh api "repos/aws/aws-cdk/contents/packages/aws-cdk-lib/scripts/scope-map.json?ref=6808bb7e04d64a903a73ad56a7879c75019a5908" --jq .content | base64 -d
 ```
 
 302 entries (was 292 at `a9e6639d`): **+** `aws-artifact`, `aws-backupsearch`, `aws-cognitosync`,
