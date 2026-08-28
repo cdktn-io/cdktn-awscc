@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_amazonmq"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.AmazonMQ"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.amazonmq"
+    }
+  }
+}

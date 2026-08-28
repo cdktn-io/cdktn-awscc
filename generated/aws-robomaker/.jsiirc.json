@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_robomaker"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.RoboMaker"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.robomaker"
+    }
+  }
+}

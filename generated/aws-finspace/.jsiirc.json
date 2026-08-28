@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_finspace"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.FinSpace"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.finspace"
+    }
+  }
+}

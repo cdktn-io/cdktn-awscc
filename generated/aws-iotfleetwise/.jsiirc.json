@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_iotfleetwise"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.IoTFleetWise"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.iotfleetwise"
+    }
+  }
+}

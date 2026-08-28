@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_odb"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.ODB"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.odb"
+    }
+  }
+}

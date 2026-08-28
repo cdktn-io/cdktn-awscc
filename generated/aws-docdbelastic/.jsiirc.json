@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_docdbelastic"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.DocDBElastic"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.docdbelastic"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_forecast"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.Forecast"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.forecast"
+    }
+  }
+}

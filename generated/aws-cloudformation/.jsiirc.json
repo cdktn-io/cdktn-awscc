@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_cloudformation"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.CloudFormation"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.cloudformation"
+    }
+  }
+}

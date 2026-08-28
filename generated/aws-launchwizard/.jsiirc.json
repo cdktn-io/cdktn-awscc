@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_launchwizard"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.LaunchWizard"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.launchwizard"
+    }
+  }
+}

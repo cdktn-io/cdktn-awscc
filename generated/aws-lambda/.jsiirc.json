@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_lambda"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.Lambda"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.lambda"
+    }
+  }
+}

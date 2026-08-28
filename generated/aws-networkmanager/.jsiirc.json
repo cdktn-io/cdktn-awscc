@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_networkmanager"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.NetworkManager"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.networkmanager"
+    }
+  }
+}

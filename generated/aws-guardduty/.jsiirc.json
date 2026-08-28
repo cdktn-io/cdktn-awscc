@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_guardduty"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.GuardDuty"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.guardduty"
+    }
+  }
+}

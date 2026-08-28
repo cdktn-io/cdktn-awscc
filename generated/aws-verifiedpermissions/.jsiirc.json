@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_verifiedpermissions"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.VerifiedPermissions"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.verifiedpermissions"
+    }
+  }
+}

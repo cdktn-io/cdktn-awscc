@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_accountaccess"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.Accountaccess"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.accountaccess"
+    }
+  }
+}

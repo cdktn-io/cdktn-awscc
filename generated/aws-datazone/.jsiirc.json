@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_datazone"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.DataZone"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.datazone"
+    }
+  }
+}

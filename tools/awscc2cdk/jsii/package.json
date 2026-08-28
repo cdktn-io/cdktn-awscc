@@ -1,0 +1,51 @@
+{
+  "name": "@cdktn/awscc",
+  "version": "0.0.0",
+  "description": "awscc bindings in the aws-cdk-lib L1 shape (Cloud Control API resources, Cc-prefixed classes, aws-cdk-lib-shaped submodules)",
+  "license": "Apache-2.0",
+  "stability": "experimental",
+  "author": {
+    "name": "cdktn",
+    "organization": true
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cdktn-io/cdktn-awscc.git"
+  },
+  "main": "generated/index.js",
+  "types": "generated/index.d.ts",
+  "jsii": {
+    "outdir": "dist",
+    "targets": {
+      "python": {
+        "distName": "cdktn-awscc",
+        "module": "cdktn_awscc"
+      },
+      "java": {
+        "package": "io.cdktn.awscc",
+        "maven": {
+          "groupId": "io.cdktn",
+          "artifactId": "cdktn-awscc"
+        }
+      },
+      "dotnet": {
+        "namespace": "Io.Cdktn.AwsCc",
+        "packageId": "Io.Cdktn.AwsCc"
+      },
+      "go": {
+        "moduleName": "github.com/cdktn-io/cdktn-awscc-go"
+      }
+    }
+  },
+  "peerDependencies": {
+    "cdktn": "^0.24.0",
+    "constructs": "^10.7.0"
+  },
+  "devDependencies": {
+    "cdktn": "0.24.0",
+    "constructs": "10.7.0",
+    "jsii": "~5.9.53",
+    "jsii-pacmak": "^1.140.0",
+    "typescript": "~5.9.3"
+  }
+}

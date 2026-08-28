@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_scheduler"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.Scheduler"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.scheduler"
+    }
+  }
+}

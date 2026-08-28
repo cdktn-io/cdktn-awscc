@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_kinesis"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.Kinesis"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.kinesis"
+    }
+  }
+}

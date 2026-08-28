@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_groundstation"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.GroundStation"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.groundstation"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_appstream"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.AppStream"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.appstream"
+    }
+  }
+}

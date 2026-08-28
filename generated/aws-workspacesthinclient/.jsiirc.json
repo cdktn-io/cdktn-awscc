@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_workspacesthinclient"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.WorkSpacesThinClient"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.workspacesthinclient"
+    }
+  }
+}

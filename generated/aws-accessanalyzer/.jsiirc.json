@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_accessanalyzer"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.AccessAnalyzer"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.accessanalyzer"
+    }
+  }
+}

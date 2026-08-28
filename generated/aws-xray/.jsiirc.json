@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_xray"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.XRay"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.xray"
+    }
+  }
+}

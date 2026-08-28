@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_batch"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.Batch"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.batch"
+    }
+  }
+}

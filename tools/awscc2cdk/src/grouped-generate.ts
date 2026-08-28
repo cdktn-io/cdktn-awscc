@@ -11,9 +11,10 @@
  * order-independent), and `src/grouped/emitter/*` (the actual TypeScript text, split into a
  * namespace-body region and a top-level region — see `src/grouped/namespace-context.ts`).
  */
+import * as crypto from "node:crypto";
 import * as fs from "node:fs";
 import * as path from "node:path";
-import { CodeMaker } from "codemaker";
+import { CodeMaker, toPascalCase } from "codemaker";
 import type { SpecDatabase } from "@aws-cdk/service-spec-types";
 import type { ProviderSchema, Schema } from "@cdktn/commons";
 import type { FQPN } from "@cdktn/provider-schema";
@@ -22,6 +23,7 @@ import * as naming from "./naming";
 import { parseResourceAttributes } from "./grouped/resource-parser";
 import { resolveDefinitionName } from "./grouped/cfn-recovery";
 import { jsiircFor } from "./grouped/jsiirc";
+import { effectiveScopeMap } from "./scope-map";
 import { ResourceModel, Struct } from "./grouped/models";
 import { ResourceEmitter } from "./grouped/emitter/resource-emitter";
 import { StructEmitter } from "./grouped/emitter/struct-emitter";
@@ -33,6 +35,12 @@ export interface GenerateGroupedOptions {
   readonly fqpn?: string;
   readonly modules?: string[];
   readonly resources?: string[];
+  /**
+   * Write the whole-tree artifacts: `MANIFEST.sha256`, `scope-map.effective.json`,
+   * `package.exports.json` (CONTRACT.md "Iteration 3 — full emission"). Default `false`, so a
+   * filtered run (mini fixture, single module) emits exactly what it did before iteration 3.
+   */
+  readonly manifest?: boolean;
 }
 
 export interface GenerationStats {
@@ -51,6 +59,9 @@ export interface GenerateGroupedResult {
 
 interface PlannedResource {
   readonly awsccName: string;
+  /** "" when the resource is unmatched in the pinned CFN spec (see `fallbackPlan` below) — never
+   * looked up in the spec database, only used to key CFN-recovery attempts (which correctly find
+   * nothing for an empty type). */
   readonly cfnType: string;
   readonly moduleDir: string;
   readonly moduleSymbol: string;
@@ -59,6 +70,25 @@ interface PlannedResource {
 }
 
 const cmp = (a: string, b: string): number => (a < b ? -1 : a > b ? 1 : 0);
+
+/**
+ * Plan §2 step 4's fallback, made explicit (CONTRACT.md "Iteration 3 — full emission"): an awscc
+ * resource the pinned CFN spec does not know is *emitted*, never skipped, under a name derived from
+ * the awscc resource name alone — module `aws-<awscc service token>`, class `Cc` + PascalCase of
+ * the awscc name minus the service token. This keeps package contents independent of how far the
+ * pinned spec lags. `undefined` only for a malformed awscc resource name (no `awscc_<svc>_<rest>`
+ * shape) — not observed in practice.
+ */
+function fallbackPlan(awsccName: string): { readonly moduleDir: string; readonly cfnResourceName: string } | undefined {
+  const PREFIX = "awscc_";
+  if (!awsccName.startsWith(PREFIX)) return undefined;
+  const body = awsccName.slice(PREFIX.length);
+  const idx = body.indexOf("_");
+  if (idx < 0) return undefined;
+  const service = body.slice(0, idx);
+  const rest = body.slice(idx + 1);
+  return { moduleDir: `aws-${service}`, cfnResourceName: toPascalCase(rest) };
+}
 
 /** Plans which awscc resources to emit, grouped by module — pure, order-independent (sorted by
  * awscc resource name up front, so the result never depends on `resource_schemas` key order). */
@@ -75,17 +105,37 @@ function planResources(
   for (const awsccName of allNames) {
     if (options?.resources && !options.resources.includes(awsccName)) continue;
     const cfnType = cfnTypeFor(awsccName, db);
-    if (!cfnType) continue;
-    const moduleName = naming.moduleNameFor(cfnType);
-    if (!moduleName) continue;
-    if (options?.modules && !options.modules.includes(moduleName.dir)) continue;
-    const cfnResourceName = cfnType.split("::").pop() as string;
+
+    let moduleDir: string;
+    let suffix: string | undefined;
+    let cfnResourceName: string;
+    let effectiveCfnType: string;
+
+    if (cfnType) {
+      // `moduleForCfnType` (via `moduleNameFor`) auto-extends for any well-formed CFN type
+      // (src/scope-map.ts), so this never actually returns undefined for a matched resource.
+      const moduleName = naming.moduleNameFor(cfnType);
+      if (!moduleName) continue;
+      moduleDir = moduleName.dir;
+      suffix = moduleName.suffix;
+      cfnResourceName = cfnType.split("::").pop() as string;
+      effectiveCfnType = cfnType;
+    } else {
+      const fallback = fallbackPlan(awsccName);
+      if (!fallback) continue;
+      moduleDir = fallback.moduleDir;
+      suffix = undefined;
+      cfnResourceName = fallback.cfnResourceName;
+      effectiveCfnType = "";
+    }
+
+    if (options?.modules && !options.modules.includes(moduleDir)) continue;
     planned.push({
       awsccName,
-      cfnType,
-      moduleDir: moduleName.dir,
-      moduleSymbol: moduleName.symbol,
-      suffix: moduleName.suffix,
+      cfnType: effectiveCfnType,
+      moduleDir,
+      moduleSymbol: moduleDir.replace(/-/g, "_"),
+      suffix,
       cfnResourceName,
     });
   }
@@ -179,7 +229,14 @@ function emitResourceFile(
 
   const className = naming.className(planned.cfnResourceName, planned.suffix);
   const configStructName = naming.propsName(planned.cfnResourceName, planned.suffix);
-  const fileBase = naming.fileNameFor(className);
+  // `naming.fileNameFor` is a pure class-name -> file-name mapper; it has no reason to know that
+  // `index.ts` is reserved for the module barrel this file is about to be emitted alongside. Four
+  // resources across awscc 1.98.0 kebab-case to exactly `index` (`AWS::Kendra::Index`,
+  // `AWS::QBusiness::Index`, `AWS::ResourceExplorer2::Index`, `AWS::S3Vectors::Index` — every CFN
+  // service's own `*Index` resource), so the disambiguation belongs here, at the one call site that
+  // knows about the barrel.
+  const kebabName = naming.fileNameFor(className);
+  const fileBase = kebabName === "index" ? "index-resource" : kebabName;
 
   const resourceModel = new ResourceModel({
     terraformType: planned.awsccName,
@@ -301,6 +358,32 @@ export async function generateGroupedWithStats(
   if (moduleDirs.length > 0) {
     fs.writeFileSync(path.join(outDir, "index.ts"), `${rootLines.join("\n")}\n`);
     files.push("index.ts");
+  }
+
+  if (options?.manifest) {
+    // Whole-tree artifacts (CONTRACT.md "Iteration 3 — full emission"): gated behind `manifest` so
+    // a filtered run (mini fixture, single module) emits exactly what it did before iteration 3.
+    const matchedCfnTypes = planned.map((p) => p.cfnType).filter((t) => t.length > 0);
+    fs.writeFileSync(
+      path.join(outDir, "scope-map.effective.json"),
+      `${JSON.stringify(effectiveScopeMap(matchedCfnTypes), null, 2)}\n`,
+    );
+    files.push("scope-map.effective.json");
+
+    const exportsMap: Record<string, unknown> = { ".": { types: "./index.d.ts", default: "./index.js" } };
+    for (const moduleDir of moduleDirs) {
+      exportsMap[`./${moduleDir}`] = { types: `./${moduleDir}/index.d.ts`, default: `./${moduleDir}/index.js` };
+    }
+    fs.writeFileSync(path.join(outDir, "package.exports.json"), `${JSON.stringify(exportsMap, null, 2)}\n`);
+    files.push("package.exports.json");
+
+    // MANIFEST.sha256 covers everything written so far, sorted by path, itself excluded.
+    const manifestLines = [...files].sort(cmp).map((rel) => {
+      const hash = crypto.createHash("sha256").update(fs.readFileSync(path.join(outDir, rel))).digest("hex");
+      return `${hash}  ${rel}`;
+    });
+    fs.writeFileSync(path.join(outDir, "MANIFEST.sha256"), `${manifestLines.join("\n")}\n`);
+    files.push("MANIFEST.sha256");
   }
 
   files.sort(cmp);

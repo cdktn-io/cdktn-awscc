@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_rds"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.RDS"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.rds"
+    }
+  }
+}

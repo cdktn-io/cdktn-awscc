@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_bcmdataexports"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.BCMDataExports"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.bcmdataexports"
+    }
+  }
+}

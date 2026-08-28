@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_identitystore"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.IdentityStore"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.identitystore"
+    }
+  }
+}

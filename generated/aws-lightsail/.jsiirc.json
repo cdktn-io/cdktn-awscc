@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_lightsail"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.Lightsail"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.lightsail"
+    }
+  }
+}

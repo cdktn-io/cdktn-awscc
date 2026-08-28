@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_servicecatalog"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.Servicecatalog"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.servicecatalog"
+    }
+  }
+}

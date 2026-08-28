@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_bedrockmantle"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.BedrockMantle"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.bedrockmantle"
+    }
+  }
+}

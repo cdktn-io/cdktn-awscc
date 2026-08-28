@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_ivs"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.Ivs"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.ivs"
+    }
+  }
+}

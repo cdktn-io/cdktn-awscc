@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_securitylake"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.SecurityLake"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.securitylake"
+    }
+  }
+}

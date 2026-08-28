@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_certificatemanager"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.CertificateManager"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.certificatemanager"
+    }
+  }
+}

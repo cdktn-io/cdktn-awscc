@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_devopsguru"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.DevOpsGuru"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.devopsguru"
+    }
+  }
+}

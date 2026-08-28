@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_chime"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.Chime"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.chime"
+    }
+  }
+}

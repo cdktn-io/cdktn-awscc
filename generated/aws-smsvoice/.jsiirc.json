@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_smsvoice"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.SMSVOICE"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.smsvoice"
+    }
+  }
+}

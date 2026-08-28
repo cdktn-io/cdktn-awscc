@@ -88,3 +88,42 @@ export function breaksGeneratorOwnedName(name: string): boolean {
 export function breaksJsii(name: string): boolean {
   return isReservedByJsii(name) || breaksGeneratorOwnedName(name);
 }
+
+/**
+ * Iteration 3, finding 1 (CONTRACT.md "Iteration 3 — findings … 1. `breaks-jsii` is measured
+ * post-suffix"): the two kinds of identifier this generator actually emits for a name candidate.
+ * `resourceClass` -> `Cc<base>`; `propertyType` -> `<base>Property`.
+ */
+export type EmittedKind = "resourceClass" | "propertyType";
+
+/** The identifier the generator actually emits for `base`, given its kind. */
+export function emittedIdentifier(base: string, kind: EmittedKind): string {
+  return kind === "resourceClass" ? `Cc${base}` : `${base}Property`;
+}
+
+/** A doubled property-type suffix (`FooProperty` -> `FooPropertyProperty`) is ambiguous; a base
+ * merely ending in a bare `List`/`Map`/`OutputReference` is NOT included here — post-suffix that
+ * becomes `...ListProperty` etc., which collides with nothing (this is exactly the iteration-2
+ * misattribution finding 1 corrects). */
+const DOUBLED_PROPERTY_SUFFIXES = ["PropertyOutputReference", "PropertyList", "PropertyMap", "Property", "Props"];
+
+/**
+ * Post-suffix breaks-jsii evidence: whether the identifier the generator actually emits for `base`
+ * (see `emittedIdentifier`) is rejected, checked in the order CONTRACT.md finding 1 specifies:
+ * jsii's own per-language reserved-word lists, then a `cdktn.TerraformResource`/
+ * `TerraformMetaArguments` member collision, then (for a nested type only) a doubled
+ * generator-owned suffix on the *base*. `isReservedByJsii` and `breaksGeneratorOwnedName` above are
+ * unchanged — they answer "is this bare name legal"; this is the emitted-identifier entry point the
+ * naming spike (`spike-naming.ts`) uses instead of `breaksJsii` for resource-class and
+ * property-type candidates.
+ */
+export function breaksJsiiEmitted(base: string, kind: EmittedKind): boolean {
+  const emitted = emittedIdentifier(base, kind);
+  if (isReservedByJsii(emitted)) return true;
+  const decapitalized = emitted.charAt(0).toLowerCase() + emitted.slice(1);
+  if (terraformResourceMembers().has(emitted) || terraformResourceMembers().has(decapitalized)) return true;
+  if (kind === "propertyType") {
+    return DOUBLED_PROPERTY_SUFFIXES.some((suffix) => base !== suffix && base.endsWith(suffix));
+  }
+  return false;
+}

@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_opensearch"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.Opensearch"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.opensearch"
+    }
+  }
+}

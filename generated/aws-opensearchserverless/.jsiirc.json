@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_opensearchserverless"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.OpenSearchServerless"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.opensearchserverless"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_elementalinference"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.ElementalInference"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.elementalinference"
+    }
+  }
+}

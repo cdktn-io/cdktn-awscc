@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_codegurureviewer"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.CodeGuruReviewer"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.codegurureviewer"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_fms"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.FMS"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.fms"
+    }
+  }
+}

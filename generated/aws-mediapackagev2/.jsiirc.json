@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_mediapackagev2"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.MediaPackageV2"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.mediapackagev2"
+    }
+  }
+}

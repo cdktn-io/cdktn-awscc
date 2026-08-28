@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_codeconnections"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.CodeConnections"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.codeconnections"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_resourcegroups"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.ResourceGroups"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.resourcegroups"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_signer"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.Signer"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.signer"
+    }
+  }
+}

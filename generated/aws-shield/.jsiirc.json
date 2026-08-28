@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_shield"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.Shield"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.shield"
+    }
+  }
+}

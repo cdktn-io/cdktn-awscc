@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_mwaa"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.MWAA"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.mwaa"
+    }
+  }
+}

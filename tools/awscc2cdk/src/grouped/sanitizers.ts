@@ -8,11 +8,13 @@
  * `src/vendored/spec2cdk/naming/conventions.ts` (upstream spec2cdk `lib/naming/conventions.ts`).
  *
  * That vendored file also imports `@cdklabs/typewriter` (a value import, for `qualifiedName`),
- * which is not a dependency of this package and is excluded from the TypeScript build
- * (iteration-2 debt (a), see CONTRACT.md and tsconfig.json). These three functions have no such
- * dependency — they only use `camelcase`, a real runtime dependency of this package — so they are
- * copied here verbatim (logic unchanged) to be compiled and actually run, by `spike-naming.ts` and
- * `grouped-generate.ts`. Do not edit `src/vendored/**`; edit this file instead.
+ * which was not a dependency of this package at iteration 2 and is excluded from the TypeScript
+ * build (iteration-2 debt (a), see CONTRACT.md and tsconfig.json). `@cdklabs/typewriter` became a
+ * devDependency in iteration 3 (needed to load `modulePartsFromNamespace` from that same vendored
+ * file for `src/scope-map.ts` / `src/grouped/jsiirc.ts`), but these three sanitizers only use
+ * `camelcase`, a real runtime dependency of this package, so they stay copied here verbatim (logic
+ * unchanged) to be compiled and actually run, by `spike-naming.ts` and `grouped-generate.ts`. Do
+ * not edit `src/vendored/**`; edit this file instead.
  */
 import camelcase from "camelcase";
 

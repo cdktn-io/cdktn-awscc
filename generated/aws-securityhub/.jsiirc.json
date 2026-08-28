@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_securityhub"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.SecurityHub"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.securityhub"
+    }
+  }
+}

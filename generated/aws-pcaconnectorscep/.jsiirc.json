@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_pcaconnectorscep"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.PCAConnectorSCEP"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.pcaconnectorscep"
+    }
+  }
+}

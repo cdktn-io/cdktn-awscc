@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_ssm"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.SSM"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.ssm"
+    }
+  }
+}

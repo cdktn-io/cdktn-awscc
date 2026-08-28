@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_greengrassv2"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.GreengrassV2"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.greengrassv2"
+    }
+  }
+}

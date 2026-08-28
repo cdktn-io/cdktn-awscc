@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_drs"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.Drs"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.drs"
+    }
+  }
+}

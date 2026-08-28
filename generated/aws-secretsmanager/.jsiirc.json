@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_secretsmanager"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.SecretsManager"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.secretsmanager"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_comprehend"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.Comprehend"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.comprehend"
+    }
+  }
+}

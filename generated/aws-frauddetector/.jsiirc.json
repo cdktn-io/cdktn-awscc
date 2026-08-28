@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_frauddetector"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.FraudDetector"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.frauddetector"
+    }
+  }
+}

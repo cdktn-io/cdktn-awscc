@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_athena"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.Athena"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.athena"
+    }
+  }
+}

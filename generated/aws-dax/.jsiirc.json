@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_dax"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.DAX"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.dax"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_globalaccelerator"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.GlobalAccelerator"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.globalaccelerator"
+    }
+  }
+}

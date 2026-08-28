@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_fsx"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.FSx"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.fsx"
+    }
+  }
+}

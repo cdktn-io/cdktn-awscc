@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_awsexternalanthropic"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.AWSExternalAnthropic"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.awsexternalanthropic"
+    }
+  }
+}

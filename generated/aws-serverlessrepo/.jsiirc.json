@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_serverlessrepo"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.Serverlessrepo"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.serverlessrepo"
+    }
+  }
+}

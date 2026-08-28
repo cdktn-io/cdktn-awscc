@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_iot"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.IoT"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.iot"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_cloudhsm"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.Cloudhsm"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.cloudhsm"
+    }
+  }
+}

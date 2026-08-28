@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_nimblestudio"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.NimbleStudio"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.nimblestudio"
+    }
+  }
+}

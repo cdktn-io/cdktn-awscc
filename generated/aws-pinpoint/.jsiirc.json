@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_pinpoint"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.Pinpoint"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.pinpoint"
+    }
+  }
+}

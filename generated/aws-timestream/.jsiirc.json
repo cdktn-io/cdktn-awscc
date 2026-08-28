@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_timestream"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.Timestream"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.timestream"
+    }
+  }
+}

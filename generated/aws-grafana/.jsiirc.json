@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_grafana"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.Grafana"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.grafana"
+    }
+  }
+}

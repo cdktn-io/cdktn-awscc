@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_paymentcryptography"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.PaymentCryptography"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.paymentcryptography"
+    }
+  }
+}

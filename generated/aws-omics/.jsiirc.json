@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_omics"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.Omics"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.omics"
+    }
+  }
+}

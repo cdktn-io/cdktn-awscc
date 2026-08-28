@@ -1,0 +1,1110 @@
+{
+  ".": {
+    "types": "./index.d.ts",
+    "default": "./index.js"
+  },
+  "./aws-accessanalyzer": {
+    "types": "./aws-accessanalyzer/index.d.ts",
+    "default": "./aws-accessanalyzer/index.js"
+  },
+  "./aws-accountaccess": {
+    "types": "./aws-accountaccess/index.d.ts",
+    "default": "./aws-accountaccess/index.js"
+  },
+  "./aws-acmpca": {
+    "types": "./aws-acmpca/index.d.ts",
+    "default": "./aws-acmpca/index.js"
+  },
+  "./aws-agentregistry": {
+    "types": "./aws-agentregistry/index.d.ts",
+    "default": "./aws-agentregistry/index.js"
+  },
+  "./aws-aiops": {
+    "types": "./aws-aiops/index.d.ts",
+    "default": "./aws-aiops/index.js"
+  },
+  "./aws-amazonmq": {
+    "types": "./aws-amazonmq/index.d.ts",
+    "default": "./aws-amazonmq/index.js"
+  },
+  "./aws-amplify": {
+    "types": "./aws-amplify/index.d.ts",
+    "default": "./aws-amplify/index.js"
+  },
+  "./aws-apigateway": {
+    "types": "./aws-apigateway/index.d.ts",
+    "default": "./aws-apigateway/index.js"
+  },
+  "./aws-apigatewayv2": {
+    "types": "./aws-apigatewayv2/index.d.ts",
+    "default": "./aws-apigatewayv2/index.js"
+  },
+  "./aws-appconfig": {
+    "types": "./aws-appconfig/index.d.ts",
+    "default": "./aws-appconfig/index.js"
+  },
+  "./aws-appflow": {
+    "types": "./aws-appflow/index.d.ts",
+    "default": "./aws-appflow/index.js"
+  },
+  "./aws-appintegrations": {
+    "types": "./aws-appintegrations/index.d.ts",
+    "default": "./aws-appintegrations/index.js"
+  },
+  "./aws-applicationautoscaling": {
+    "types": "./aws-applicationautoscaling/index.d.ts",
+    "default": "./aws-applicationautoscaling/index.js"
+  },
+  "./aws-applicationinsights": {
+    "types": "./aws-applicationinsights/index.d.ts",
+    "default": "./aws-applicationinsights/index.js"
+  },
+  "./aws-applicationsignals": {
+    "types": "./aws-applicationsignals/index.d.ts",
+    "default": "./aws-applicationsignals/index.js"
+  },
+  "./aws-apprunner": {
+    "types": "./aws-apprunner/index.d.ts",
+    "default": "./aws-apprunner/index.js"
+  },
+  "./aws-appstream": {
+    "types": "./aws-appstream/index.d.ts",
+    "default": "./aws-appstream/index.js"
+  },
+  "./aws-appsync": {
+    "types": "./aws-appsync/index.d.ts",
+    "default": "./aws-appsync/index.js"
+  },
+  "./aws-apptest": {
+    "types": "./aws-apptest/index.d.ts",
+    "default": "./aws-apptest/index.js"
+  },
+  "./aws-aps": {
+    "types": "./aws-aps/index.d.ts",
+    "default": "./aws-aps/index.js"
+  },
+  "./aws-arczonalshift": {
+    "types": "./aws-arczonalshift/index.d.ts",
+    "default": "./aws-arczonalshift/index.js"
+  },
+  "./aws-athena": {
+    "types": "./aws-athena/index.d.ts",
+    "default": "./aws-athena/index.js"
+  },
+  "./aws-auditmanager": {
+    "types": "./aws-auditmanager/index.d.ts",
+    "default": "./aws-auditmanager/index.js"
+  },
+  "./aws-autoscaling": {
+    "types": "./aws-autoscaling/index.d.ts",
+    "default": "./aws-autoscaling/index.js"
+  },
+  "./aws-awsexternalanthropic": {
+    "types": "./aws-awsexternalanthropic/index.d.ts",
+    "default": "./aws-awsexternalanthropic/index.js"
+  },
+  "./aws-b2bi": {
+    "types": "./aws-b2bi/index.d.ts",
+    "default": "./aws-b2bi/index.js"
+  },
+  "./aws-backup": {
+    "types": "./aws-backup/index.d.ts",
+    "default": "./aws-backup/index.js"
+  },
+  "./aws-backupgateway": {
+    "types": "./aws-backupgateway/index.d.ts",
+    "default": "./aws-backupgateway/index.js"
+  },
+  "./aws-batch": {
+    "types": "./aws-batch/index.d.ts",
+    "default": "./aws-batch/index.js"
+  },
+  "./aws-bcmdataexports": {
+    "types": "./aws-bcmdataexports/index.d.ts",
+    "default": "./aws-bcmdataexports/index.js"
+  },
+  "./aws-bcmpricingcalculator": {
+    "types": "./aws-bcmpricingcalculator/index.d.ts",
+    "default": "./aws-bcmpricingcalculator/index.js"
+  },
+  "./aws-bedrock": {
+    "types": "./aws-bedrock/index.d.ts",
+    "default": "./aws-bedrock/index.js"
+  },
+  "./aws-bedrockagentcore": {
+    "types": "./aws-bedrockagentcore/index.d.ts",
+    "default": "./aws-bedrockagentcore/index.js"
+  },
+  "./aws-bedrockmantle": {
+    "types": "./aws-bedrockmantle/index.d.ts",
+    "default": "./aws-bedrockmantle/index.js"
+  },
+  "./aws-billing": {
+    "types": "./aws-billing/index.d.ts",
+    "default": "./aws-billing/index.js"
+  },
+  "./aws-billingconductor": {
+    "types": "./aws-billingconductor/index.d.ts",
+    "default": "./aws-billingconductor/index.js"
+  },
+  "./aws-braket": {
+    "types": "./aws-braket/index.d.ts",
+    "default": "./aws-braket/index.js"
+  },
+  "./aws-budgets": {
+    "types": "./aws-budgets/index.d.ts",
+    "default": "./aws-budgets/index.js"
+  },
+  "./aws-cases": {
+    "types": "./aws-cases/index.d.ts",
+    "default": "./aws-cases/index.js"
+  },
+  "./aws-cassandra": {
+    "types": "./aws-cassandra/index.d.ts",
+    "default": "./aws-cassandra/index.js"
+  },
+  "./aws-ce": {
+    "types": "./aws-ce/index.d.ts",
+    "default": "./aws-ce/index.js"
+  },
+  "./aws-certificatemanager": {
+    "types": "./aws-certificatemanager/index.d.ts",
+    "default": "./aws-certificatemanager/index.js"
+  },
+  "./aws-chatbot": {
+    "types": "./aws-chatbot/index.d.ts",
+    "default": "./aws-chatbot/index.js"
+  },
+  "./aws-chime": {
+    "types": "./aws-chime/index.d.ts",
+    "default": "./aws-chime/index.js"
+  },
+  "./aws-cleanrooms": {
+    "types": "./aws-cleanrooms/index.d.ts",
+    "default": "./aws-cleanrooms/index.js"
+  },
+  "./aws-cleanroomsml": {
+    "types": "./aws-cleanroomsml/index.d.ts",
+    "default": "./aws-cleanroomsml/index.js"
+  },
+  "./aws-cloudformation": {
+    "types": "./aws-cloudformation/index.d.ts",
+    "default": "./aws-cloudformation/index.js"
+  },
+  "./aws-cloudfront": {
+    "types": "./aws-cloudfront/index.d.ts",
+    "default": "./aws-cloudfront/index.js"
+  },
+  "./aws-cloudhsm": {
+    "types": "./aws-cloudhsm/index.d.ts",
+    "default": "./aws-cloudhsm/index.js"
+  },
+  "./aws-cloudtrail": {
+    "types": "./aws-cloudtrail/index.d.ts",
+    "default": "./aws-cloudtrail/index.js"
+  },
+  "./aws-cloudwatch": {
+    "types": "./aws-cloudwatch/index.d.ts",
+    "default": "./aws-cloudwatch/index.js"
+  },
+  "./aws-codeartifact": {
+    "types": "./aws-codeartifact/index.d.ts",
+    "default": "./aws-codeartifact/index.js"
+  },
+  "./aws-codebuild": {
+    "types": "./aws-codebuild/index.d.ts",
+    "default": "./aws-codebuild/index.js"
+  },
+  "./aws-codeconnections": {
+    "types": "./aws-codeconnections/index.d.ts",
+    "default": "./aws-codeconnections/index.js"
+  },
+  "./aws-codedeploy": {
+    "types": "./aws-codedeploy/index.d.ts",
+    "default": "./aws-codedeploy/index.js"
+  },
+  "./aws-codeguruprofiler": {
+    "types": "./aws-codeguruprofiler/index.d.ts",
+    "default": "./aws-codeguruprofiler/index.js"
+  },
+  "./aws-codegurureviewer": {
+    "types": "./aws-codegurureviewer/index.d.ts",
+    "default": "./aws-codegurureviewer/index.js"
+  },
+  "./aws-codepipeline": {
+    "types": "./aws-codepipeline/index.d.ts",
+    "default": "./aws-codepipeline/index.js"
+  },
+  "./aws-codestarconnections": {
+    "types": "./aws-codestarconnections/index.d.ts",
+    "default": "./aws-codestarconnections/index.js"
+  },
+  "./aws-codestarnotifications": {
+    "types": "./aws-codestarnotifications/index.d.ts",
+    "default": "./aws-codestarnotifications/index.js"
+  },
+  "./aws-cognito": {
+    "types": "./aws-cognito/index.d.ts",
+    "default": "./aws-cognito/index.js"
+  },
+  "./aws-comprehend": {
+    "types": "./aws-comprehend/index.d.ts",
+    "default": "./aws-comprehend/index.js"
+  },
+  "./aws-computeoptimizer": {
+    "types": "./aws-computeoptimizer/index.d.ts",
+    "default": "./aws-computeoptimizer/index.js"
+  },
+  "./aws-config": {
+    "types": "./aws-config/index.d.ts",
+    "default": "./aws-config/index.js"
+  },
+  "./aws-connect": {
+    "types": "./aws-connect/index.d.ts",
+    "default": "./aws-connect/index.js"
+  },
+  "./aws-connectcampaigns": {
+    "types": "./aws-connectcampaigns/index.d.ts",
+    "default": "./aws-connectcampaigns/index.js"
+  },
+  "./aws-connectcampaignsv2": {
+    "types": "./aws-connectcampaignsv2/index.d.ts",
+    "default": "./aws-connectcampaignsv2/index.js"
+  },
+  "./aws-controltower": {
+    "types": "./aws-controltower/index.d.ts",
+    "default": "./aws-controltower/index.js"
+  },
+  "./aws-cur": {
+    "types": "./aws-cur/index.d.ts",
+    "default": "./aws-cur/index.js"
+  },
+  "./aws-customerprofiles": {
+    "types": "./aws-customerprofiles/index.d.ts",
+    "default": "./aws-customerprofiles/index.js"
+  },
+  "./aws-databrew": {
+    "types": "./aws-databrew/index.d.ts",
+    "default": "./aws-databrew/index.js"
+  },
+  "./aws-dataexchange": {
+    "types": "./aws-dataexchange/index.d.ts",
+    "default": "./aws-dataexchange/index.js"
+  },
+  "./aws-datapipeline": {
+    "types": "./aws-datapipeline/index.d.ts",
+    "default": "./aws-datapipeline/index.js"
+  },
+  "./aws-datasync": {
+    "types": "./aws-datasync/index.d.ts",
+    "default": "./aws-datasync/index.js"
+  },
+  "./aws-datazone": {
+    "types": "./aws-datazone/index.d.ts",
+    "default": "./aws-datazone/index.js"
+  },
+  "./aws-dax": {
+    "types": "./aws-dax/index.d.ts",
+    "default": "./aws-dax/index.js"
+  },
+  "./aws-deadline": {
+    "types": "./aws-deadline/index.d.ts",
+    "default": "./aws-deadline/index.js"
+  },
+  "./aws-detective": {
+    "types": "./aws-detective/index.d.ts",
+    "default": "./aws-detective/index.js"
+  },
+  "./aws-devopsagent": {
+    "types": "./aws-devopsagent/index.d.ts",
+    "default": "./aws-devopsagent/index.js"
+  },
+  "./aws-devopsguru": {
+    "types": "./aws-devopsguru/index.d.ts",
+    "default": "./aws-devopsguru/index.js"
+  },
+  "./aws-directconnect": {
+    "types": "./aws-directconnect/index.d.ts",
+    "default": "./aws-directconnect/index.js"
+  },
+  "./aws-directoryservice": {
+    "types": "./aws-directoryservice/index.d.ts",
+    "default": "./aws-directoryservice/index.js"
+  },
+  "./aws-dms": {
+    "types": "./aws-dms/index.d.ts",
+    "default": "./aws-dms/index.js"
+  },
+  "./aws-docdb": {
+    "types": "./aws-docdb/index.d.ts",
+    "default": "./aws-docdb/index.js"
+  },
+  "./aws-docdbelastic": {
+    "types": "./aws-docdbelastic/index.d.ts",
+    "default": "./aws-docdbelastic/index.js"
+  },
+  "./aws-drs": {
+    "types": "./aws-drs/index.d.ts",
+    "default": "./aws-drs/index.js"
+  },
+  "./aws-dsql": {
+    "types": "./aws-dsql/index.d.ts",
+    "default": "./aws-dsql/index.js"
+  },
+  "./aws-dynamodb": {
+    "types": "./aws-dynamodb/index.d.ts",
+    "default": "./aws-dynamodb/index.js"
+  },
+  "./aws-ec2": {
+    "types": "./aws-ec2/index.d.ts",
+    "default": "./aws-ec2/index.js"
+  },
+  "./aws-ecr": {
+    "types": "./aws-ecr/index.d.ts",
+    "default": "./aws-ecr/index.js"
+  },
+  "./aws-ecs": {
+    "types": "./aws-ecs/index.d.ts",
+    "default": "./aws-ecs/index.js"
+  },
+  "./aws-efs": {
+    "types": "./aws-efs/index.d.ts",
+    "default": "./aws-efs/index.js"
+  },
+  "./aws-eks": {
+    "types": "./aws-eks/index.d.ts",
+    "default": "./aws-eks/index.js"
+  },
+  "./aws-elasticache": {
+    "types": "./aws-elasticache/index.d.ts",
+    "default": "./aws-elasticache/index.js"
+  },
+  "./aws-elasticbeanstalk": {
+    "types": "./aws-elasticbeanstalk/index.d.ts",
+    "default": "./aws-elasticbeanstalk/index.js"
+  },
+  "./aws-elasticloadbalancing": {
+    "types": "./aws-elasticloadbalancing/index.d.ts",
+    "default": "./aws-elasticloadbalancing/index.js"
+  },
+  "./aws-elasticloadbalancingv2": {
+    "types": "./aws-elasticloadbalancingv2/index.d.ts",
+    "default": "./aws-elasticloadbalancingv2/index.js"
+  },
+  "./aws-elementalinference": {
+    "types": "./aws-elementalinference/index.d.ts",
+    "default": "./aws-elementalinference/index.js"
+  },
+  "./aws-emr": {
+    "types": "./aws-emr/index.d.ts",
+    "default": "./aws-emr/index.js"
+  },
+  "./aws-emrserverless": {
+    "types": "./aws-emrserverless/index.d.ts",
+    "default": "./aws-emrserverless/index.js"
+  },
+  "./aws-entityresolution": {
+    "types": "./aws-entityresolution/index.d.ts",
+    "default": "./aws-entityresolution/index.js"
+  },
+  "./aws-events": {
+    "types": "./aws-events/index.d.ts",
+    "default": "./aws-events/index.js"
+  },
+  "./aws-eventschemas": {
+    "types": "./aws-eventschemas/index.d.ts",
+    "default": "./aws-eventschemas/index.js"
+  },
+  "./aws-evidently": {
+    "types": "./aws-evidently/index.d.ts",
+    "default": "./aws-evidently/index.js"
+  },
+  "./aws-evs": {
+    "types": "./aws-evs/index.d.ts",
+    "default": "./aws-evs/index.js"
+  },
+  "./aws-finspace": {
+    "types": "./aws-finspace/index.d.ts",
+    "default": "./aws-finspace/index.js"
+  },
+  "./aws-fis": {
+    "types": "./aws-fis/index.d.ts",
+    "default": "./aws-fis/index.js"
+  },
+  "./aws-fms": {
+    "types": "./aws-fms/index.d.ts",
+    "default": "./aws-fms/index.js"
+  },
+  "./aws-forecast": {
+    "types": "./aws-forecast/index.d.ts",
+    "default": "./aws-forecast/index.js"
+  },
+  "./aws-frauddetector": {
+    "types": "./aws-frauddetector/index.d.ts",
+    "default": "./aws-frauddetector/index.js"
+  },
+  "./aws-fsx": {
+    "types": "./aws-fsx/index.d.ts",
+    "default": "./aws-fsx/index.js"
+  },
+  "./aws-gamelift": {
+    "types": "./aws-gamelift/index.d.ts",
+    "default": "./aws-gamelift/index.js"
+  },
+  "./aws-globalaccelerator": {
+    "types": "./aws-globalaccelerator/index.d.ts",
+    "default": "./aws-globalaccelerator/index.js"
+  },
+  "./aws-glue": {
+    "types": "./aws-glue/index.d.ts",
+    "default": "./aws-glue/index.js"
+  },
+  "./aws-grafana": {
+    "types": "./aws-grafana/index.d.ts",
+    "default": "./aws-grafana/index.js"
+  },
+  "./aws-greengrassv2": {
+    "types": "./aws-greengrassv2/index.d.ts",
+    "default": "./aws-greengrassv2/index.js"
+  },
+  "./aws-groundstation": {
+    "types": "./aws-groundstation/index.d.ts",
+    "default": "./aws-groundstation/index.js"
+  },
+  "./aws-guardduty": {
+    "types": "./aws-guardduty/index.d.ts",
+    "default": "./aws-guardduty/index.js"
+  },
+  "./aws-healthimaging": {
+    "types": "./aws-healthimaging/index.d.ts",
+    "default": "./aws-healthimaging/index.js"
+  },
+  "./aws-healthlake": {
+    "types": "./aws-healthlake/index.d.ts",
+    "default": "./aws-healthlake/index.js"
+  },
+  "./aws-iam": {
+    "types": "./aws-iam/index.d.ts",
+    "default": "./aws-iam/index.js"
+  },
+  "./aws-identitystore": {
+    "types": "./aws-identitystore/index.d.ts",
+    "default": "./aws-identitystore/index.js"
+  },
+  "./aws-imagebuilder": {
+    "types": "./aws-imagebuilder/index.d.ts",
+    "default": "./aws-imagebuilder/index.js"
+  },
+  "./aws-inspector": {
+    "types": "./aws-inspector/index.d.ts",
+    "default": "./aws-inspector/index.js"
+  },
+  "./aws-inspectorv2": {
+    "types": "./aws-inspectorv2/index.d.ts",
+    "default": "./aws-inspectorv2/index.js"
+  },
+  "./aws-interconnect": {
+    "types": "./aws-interconnect/index.d.ts",
+    "default": "./aws-interconnect/index.js"
+  },
+  "./aws-internetmonitor": {
+    "types": "./aws-internetmonitor/index.d.ts",
+    "default": "./aws-internetmonitor/index.js"
+  },
+  "./aws-invoicing": {
+    "types": "./aws-invoicing/index.d.ts",
+    "default": "./aws-invoicing/index.js"
+  },
+  "./aws-iot": {
+    "types": "./aws-iot/index.d.ts",
+    "default": "./aws-iot/index.js"
+  },
+  "./aws-iotanalytics": {
+    "types": "./aws-iotanalytics/index.d.ts",
+    "default": "./aws-iotanalytics/index.js"
+  },
+  "./aws-iotcoredeviceadvisor": {
+    "types": "./aws-iotcoredeviceadvisor/index.d.ts",
+    "default": "./aws-iotcoredeviceadvisor/index.js"
+  },
+  "./aws-iotevents": {
+    "types": "./aws-iotevents/index.d.ts",
+    "default": "./aws-iotevents/index.js"
+  },
+  "./aws-iotfleethub": {
+    "types": "./aws-iotfleethub/index.d.ts",
+    "default": "./aws-iotfleethub/index.js"
+  },
+  "./aws-iotfleetwise": {
+    "types": "./aws-iotfleetwise/index.d.ts",
+    "default": "./aws-iotfleetwise/index.js"
+  },
+  "./aws-iotsitewise": {
+    "types": "./aws-iotsitewise/index.d.ts",
+    "default": "./aws-iotsitewise/index.js"
+  },
+  "./aws-iottwinmaker": {
+    "types": "./aws-iottwinmaker/index.d.ts",
+    "default": "./aws-iottwinmaker/index.js"
+  },
+  "./aws-iotwireless": {
+    "types": "./aws-iotwireless/index.d.ts",
+    "default": "./aws-iotwireless/index.js"
+  },
+  "./aws-ivs": {
+    "types": "./aws-ivs/index.d.ts",
+    "default": "./aws-ivs/index.js"
+  },
+  "./aws-ivschat": {
+    "types": "./aws-ivschat/index.d.ts",
+    "default": "./aws-ivschat/index.js"
+  },
+  "./aws-kafkaconnect": {
+    "types": "./aws-kafkaconnect/index.d.ts",
+    "default": "./aws-kafkaconnect/index.js"
+  },
+  "./aws-kendra": {
+    "types": "./aws-kendra/index.d.ts",
+    "default": "./aws-kendra/index.js"
+  },
+  "./aws-kendraranking": {
+    "types": "./aws-kendraranking/index.d.ts",
+    "default": "./aws-kendraranking/index.js"
+  },
+  "./aws-kinesis": {
+    "types": "./aws-kinesis/index.d.ts",
+    "default": "./aws-kinesis/index.js"
+  },
+  "./aws-kinesisanalytics": {
+    "types": "./aws-kinesisanalytics/index.d.ts",
+    "default": "./aws-kinesisanalytics/index.js"
+  },
+  "./aws-kinesisfirehose": {
+    "types": "./aws-kinesisfirehose/index.d.ts",
+    "default": "./aws-kinesisfirehose/index.js"
+  },
+  "./aws-kinesisvideo": {
+    "types": "./aws-kinesisvideo/index.d.ts",
+    "default": "./aws-kinesisvideo/index.js"
+  },
+  "./aws-kms": {
+    "types": "./aws-kms/index.d.ts",
+    "default": "./aws-kms/index.js"
+  },
+  "./aws-lakeformation": {
+    "types": "./aws-lakeformation/index.d.ts",
+    "default": "./aws-lakeformation/index.js"
+  },
+  "./aws-lambda": {
+    "types": "./aws-lambda/index.d.ts",
+    "default": "./aws-lambda/index.js"
+  },
+  "./aws-launchwizard": {
+    "types": "./aws-launchwizard/index.d.ts",
+    "default": "./aws-launchwizard/index.js"
+  },
+  "./aws-lex": {
+    "types": "./aws-lex/index.d.ts",
+    "default": "./aws-lex/index.js"
+  },
+  "./aws-licensemanager": {
+    "types": "./aws-licensemanager/index.d.ts",
+    "default": "./aws-licensemanager/index.js"
+  },
+  "./aws-lightsail": {
+    "types": "./aws-lightsail/index.d.ts",
+    "default": "./aws-lightsail/index.js"
+  },
+  "./aws-location": {
+    "types": "./aws-location/index.d.ts",
+    "default": "./aws-location/index.js"
+  },
+  "./aws-logs": {
+    "types": "./aws-logs/index.d.ts",
+    "default": "./aws-logs/index.js"
+  },
+  "./aws-lookoutequipment": {
+    "types": "./aws-lookoutequipment/index.d.ts",
+    "default": "./aws-lookoutequipment/index.js"
+  },
+  "./aws-lookoutmetrics": {
+    "types": "./aws-lookoutmetrics/index.d.ts",
+    "default": "./aws-lookoutmetrics/index.js"
+  },
+  "./aws-lookoutvision": {
+    "types": "./aws-lookoutvision/index.d.ts",
+    "default": "./aws-lookoutvision/index.js"
+  },
+  "./aws-m2": {
+    "types": "./aws-m2/index.d.ts",
+    "default": "./aws-m2/index.js"
+  },
+  "./aws-macie": {
+    "types": "./aws-macie/index.d.ts",
+    "default": "./aws-macie/index.js"
+  },
+  "./aws-managedblockchain": {
+    "types": "./aws-managedblockchain/index.d.ts",
+    "default": "./aws-managedblockchain/index.js"
+  },
+  "./aws-mediaconnect": {
+    "types": "./aws-mediaconnect/index.d.ts",
+    "default": "./aws-mediaconnect/index.js"
+  },
+  "./aws-mediaconvert": {
+    "types": "./aws-mediaconvert/index.d.ts",
+    "default": "./aws-mediaconvert/index.js"
+  },
+  "./aws-medialive": {
+    "types": "./aws-medialive/index.d.ts",
+    "default": "./aws-medialive/index.js"
+  },
+  "./aws-mediapackage": {
+    "types": "./aws-mediapackage/index.d.ts",
+    "default": "./aws-mediapackage/index.js"
+  },
+  "./aws-mediapackagev2": {
+    "types": "./aws-mediapackagev2/index.d.ts",
+    "default": "./aws-mediapackagev2/index.js"
+  },
+  "./aws-mediatailor": {
+    "types": "./aws-mediatailor/index.d.ts",
+    "default": "./aws-mediatailor/index.js"
+  },
+  "./aws-memorydb": {
+    "types": "./aws-memorydb/index.d.ts",
+    "default": "./aws-memorydb/index.js"
+  },
+  "./aws-mpa": {
+    "types": "./aws-mpa/index.d.ts",
+    "default": "./aws-mpa/index.js"
+  },
+  "./aws-msk": {
+    "types": "./aws-msk/index.d.ts",
+    "default": "./aws-msk/index.js"
+  },
+  "./aws-mwaa": {
+    "types": "./aws-mwaa/index.d.ts",
+    "default": "./aws-mwaa/index.js"
+  },
+  "./aws-mwaaserverless": {
+    "types": "./aws-mwaaserverless/index.d.ts",
+    "default": "./aws-mwaaserverless/index.js"
+  },
+  "./aws-neptune": {
+    "types": "./aws-neptune/index.d.ts",
+    "default": "./aws-neptune/index.js"
+  },
+  "./aws-neptunegraph": {
+    "types": "./aws-neptunegraph/index.d.ts",
+    "default": "./aws-neptunegraph/index.js"
+  },
+  "./aws-networkfirewall": {
+    "types": "./aws-networkfirewall/index.d.ts",
+    "default": "./aws-networkfirewall/index.js"
+  },
+  "./aws-networkflowmonitor": {
+    "types": "./aws-networkflowmonitor/index.d.ts",
+    "default": "./aws-networkflowmonitor/index.js"
+  },
+  "./aws-networkmanager": {
+    "types": "./aws-networkmanager/index.d.ts",
+    "default": "./aws-networkmanager/index.js"
+  },
+  "./aws-nimblestudio": {
+    "types": "./aws-nimblestudio/index.d.ts",
+    "default": "./aws-nimblestudio/index.js"
+  },
+  "./aws-notifications": {
+    "types": "./aws-notifications/index.d.ts",
+    "default": "./aws-notifications/index.js"
+  },
+  "./aws-notificationscontacts": {
+    "types": "./aws-notificationscontacts/index.d.ts",
+    "default": "./aws-notificationscontacts/index.js"
+  },
+  "./aws-oam": {
+    "types": "./aws-oam/index.d.ts",
+    "default": "./aws-oam/index.js"
+  },
+  "./aws-observabilityadmin": {
+    "types": "./aws-observabilityadmin/index.d.ts",
+    "default": "./aws-observabilityadmin/index.js"
+  },
+  "./aws-odb": {
+    "types": "./aws-odb/index.d.ts",
+    "default": "./aws-odb/index.js"
+  },
+  "./aws-omics": {
+    "types": "./aws-omics/index.d.ts",
+    "default": "./aws-omics/index.js"
+  },
+  "./aws-opensearch": {
+    "types": "./aws-opensearch/index.d.ts",
+    "default": "./aws-opensearch/index.js"
+  },
+  "./aws-opensearchserverless": {
+    "types": "./aws-opensearchserverless/index.d.ts",
+    "default": "./aws-opensearchserverless/index.js"
+  },
+  "./aws-opensearchservice": {
+    "types": "./aws-opensearchservice/index.d.ts",
+    "default": "./aws-opensearchservice/index.js"
+  },
+  "./aws-opsworkscm": {
+    "types": "./aws-opsworkscm/index.d.ts",
+    "default": "./aws-opsworkscm/index.js"
+  },
+  "./aws-organizations": {
+    "types": "./aws-organizations/index.d.ts",
+    "default": "./aws-organizations/index.js"
+  },
+  "./aws-osis": {
+    "types": "./aws-osis/index.d.ts",
+    "default": "./aws-osis/index.js"
+  },
+  "./aws-outposts": {
+    "types": "./aws-outposts/index.d.ts",
+    "default": "./aws-outposts/index.js"
+  },
+  "./aws-panorama": {
+    "types": "./aws-panorama/index.d.ts",
+    "default": "./aws-panorama/index.js"
+  },
+  "./aws-paymentcryptography": {
+    "types": "./aws-paymentcryptography/index.d.ts",
+    "default": "./aws-paymentcryptography/index.js"
+  },
+  "./aws-pcaconnectorad": {
+    "types": "./aws-pcaconnectorad/index.d.ts",
+    "default": "./aws-pcaconnectorad/index.js"
+  },
+  "./aws-pcaconnectorscep": {
+    "types": "./aws-pcaconnectorscep/index.d.ts",
+    "default": "./aws-pcaconnectorscep/index.js"
+  },
+  "./aws-pcs": {
+    "types": "./aws-pcs/index.d.ts",
+    "default": "./aws-pcs/index.js"
+  },
+  "./aws-personalize": {
+    "types": "./aws-personalize/index.d.ts",
+    "default": "./aws-personalize/index.js"
+  },
+  "./aws-pinpoint": {
+    "types": "./aws-pinpoint/index.d.ts",
+    "default": "./aws-pinpoint/index.js"
+  },
+  "./aws-pipes": {
+    "types": "./aws-pipes/index.d.ts",
+    "default": "./aws-pipes/index.js"
+  },
+  "./aws-proton": {
+    "types": "./aws-proton/index.d.ts",
+    "default": "./aws-proton/index.js"
+  },
+  "./aws-qbusiness": {
+    "types": "./aws-qbusiness/index.d.ts",
+    "default": "./aws-qbusiness/index.js"
+  },
+  "./aws-qldb": {
+    "types": "./aws-qldb/index.d.ts",
+    "default": "./aws-qldb/index.js"
+  },
+  "./aws-quicksight": {
+    "types": "./aws-quicksight/index.d.ts",
+    "default": "./aws-quicksight/index.js"
+  },
+  "./aws-ram": {
+    "types": "./aws-ram/index.d.ts",
+    "default": "./aws-ram/index.js"
+  },
+  "./aws-rbin": {
+    "types": "./aws-rbin/index.d.ts",
+    "default": "./aws-rbin/index.js"
+  },
+  "./aws-rds": {
+    "types": "./aws-rds/index.d.ts",
+    "default": "./aws-rds/index.js"
+  },
+  "./aws-redshift": {
+    "types": "./aws-redshift/index.d.ts",
+    "default": "./aws-redshift/index.js"
+  },
+  "./aws-redshiftserverless": {
+    "types": "./aws-redshiftserverless/index.d.ts",
+    "default": "./aws-redshiftserverless/index.js"
+  },
+  "./aws-refactorspaces": {
+    "types": "./aws-refactorspaces/index.d.ts",
+    "default": "./aws-refactorspaces/index.js"
+  },
+  "./aws-rekognition": {
+    "types": "./aws-rekognition/index.d.ts",
+    "default": "./aws-rekognition/index.js"
+  },
+  "./aws-resiliencehub": {
+    "types": "./aws-resiliencehub/index.d.ts",
+    "default": "./aws-resiliencehub/index.js"
+  },
+  "./aws-resiliencehubv2": {
+    "types": "./aws-resiliencehubv2/index.d.ts",
+    "default": "./aws-resiliencehubv2/index.js"
+  },
+  "./aws-resourceexplorer2": {
+    "types": "./aws-resourceexplorer2/index.d.ts",
+    "default": "./aws-resourceexplorer2/index.js"
+  },
+  "./aws-resourcegroups": {
+    "types": "./aws-resourcegroups/index.d.ts",
+    "default": "./aws-resourcegroups/index.js"
+  },
+  "./aws-robomaker": {
+    "types": "./aws-robomaker/index.d.ts",
+    "default": "./aws-robomaker/index.js"
+  },
+  "./aws-rolesanywhere": {
+    "types": "./aws-rolesanywhere/index.d.ts",
+    "default": "./aws-rolesanywhere/index.js"
+  },
+  "./aws-route53": {
+    "types": "./aws-route53/index.d.ts",
+    "default": "./aws-route53/index.js"
+  },
+  "./aws-route53globalresolver": {
+    "types": "./aws-route53globalresolver/index.d.ts",
+    "default": "./aws-route53globalresolver/index.js"
+  },
+  "./aws-route53profiles": {
+    "types": "./aws-route53profiles/index.d.ts",
+    "default": "./aws-route53profiles/index.js"
+  },
+  "./aws-route53recoverycontrol": {
+    "types": "./aws-route53recoverycontrol/index.d.ts",
+    "default": "./aws-route53recoverycontrol/index.js"
+  },
+  "./aws-route53recoveryreadiness": {
+    "types": "./aws-route53recoveryreadiness/index.d.ts",
+    "default": "./aws-route53recoveryreadiness/index.js"
+  },
+  "./aws-route53resolver": {
+    "types": "./aws-route53resolver/index.d.ts",
+    "default": "./aws-route53resolver/index.js"
+  },
+  "./aws-rtbfabric": {
+    "types": "./aws-rtbfabric/index.d.ts",
+    "default": "./aws-rtbfabric/index.js"
+  },
+  "./aws-rum": {
+    "types": "./aws-rum/index.d.ts",
+    "default": "./aws-rum/index.js"
+  },
+  "./aws-s3": {
+    "types": "./aws-s3/index.d.ts",
+    "default": "./aws-s3/index.js"
+  },
+  "./aws-s3express": {
+    "types": "./aws-s3express/index.d.ts",
+    "default": "./aws-s3express/index.js"
+  },
+  "./aws-s3files": {
+    "types": "./aws-s3files/index.d.ts",
+    "default": "./aws-s3files/index.js"
+  },
+  "./aws-s3objectlambda": {
+    "types": "./aws-s3objectlambda/index.d.ts",
+    "default": "./aws-s3objectlambda/index.js"
+  },
+  "./aws-s3outposts": {
+    "types": "./aws-s3outposts/index.d.ts",
+    "default": "./aws-s3outposts/index.js"
+  },
+  "./aws-s3tables": {
+    "types": "./aws-s3tables/index.d.ts",
+    "default": "./aws-s3tables/index.js"
+  },
+  "./aws-s3vectors": {
+    "types": "./aws-s3vectors/index.d.ts",
+    "default": "./aws-s3vectors/index.js"
+  },
+  "./aws-sagemaker": {
+    "types": "./aws-sagemaker/index.d.ts",
+    "default": "./aws-sagemaker/index.js"
+  },
+  "./aws-scheduler": {
+    "types": "./aws-scheduler/index.d.ts",
+    "default": "./aws-scheduler/index.js"
+  },
+  "./aws-scn": {
+    "types": "./aws-scn/index.d.ts",
+    "default": "./aws-scn/index.js"
+  },
+  "./aws-secretsmanager": {
+    "types": "./aws-secretsmanager/index.d.ts",
+    "default": "./aws-secretsmanager/index.js"
+  },
+  "./aws-securityagent": {
+    "types": "./aws-securityagent/index.d.ts",
+    "default": "./aws-securityagent/index.js"
+  },
+  "./aws-securityhub": {
+    "types": "./aws-securityhub/index.d.ts",
+    "default": "./aws-securityhub/index.js"
+  },
+  "./aws-securitylake": {
+    "types": "./aws-securitylake/index.d.ts",
+    "default": "./aws-securitylake/index.js"
+  },
+  "./aws-serverlessrepo": {
+    "types": "./aws-serverlessrepo/index.d.ts",
+    "default": "./aws-serverlessrepo/index.js"
+  },
+  "./aws-servicecatalog": {
+    "types": "./aws-servicecatalog/index.d.ts",
+    "default": "./aws-servicecatalog/index.js"
+  },
+  "./aws-servicecatalogappregistry": {
+    "types": "./aws-servicecatalogappregistry/index.d.ts",
+    "default": "./aws-servicecatalogappregistry/index.js"
+  },
+  "./aws-servicediscovery": {
+    "types": "./aws-servicediscovery/index.d.ts",
+    "default": "./aws-servicediscovery/index.js"
+  },
+  "./aws-ses": {
+    "types": "./aws-ses/index.d.ts",
+    "default": "./aws-ses/index.js"
+  },
+  "./aws-shield": {
+    "types": "./aws-shield/index.d.ts",
+    "default": "./aws-shield/index.js"
+  },
+  "./aws-signer": {
+    "types": "./aws-signer/index.d.ts",
+    "default": "./aws-signer/index.js"
+  },
+  "./aws-simspaceweaver": {
+    "types": "./aws-simspaceweaver/index.d.ts",
+    "default": "./aws-simspaceweaver/index.js"
+  },
+  "./aws-smsvoice": {
+    "types": "./aws-smsvoice/index.d.ts",
+    "default": "./aws-smsvoice/index.js"
+  },
+  "./aws-sns": {
+    "types": "./aws-sns/index.d.ts",
+    "default": "./aws-sns/index.js"
+  },
+  "./aws-sqs": {
+    "types": "./aws-sqs/index.d.ts",
+    "default": "./aws-sqs/index.js"
+  },
+  "./aws-ssm": {
+    "types": "./aws-ssm/index.d.ts",
+    "default": "./aws-ssm/index.js"
+  },
+  "./aws-ssmcontacts": {
+    "types": "./aws-ssmcontacts/index.d.ts",
+    "default": "./aws-ssmcontacts/index.js"
+  },
+  "./aws-ssmguiconnect": {
+    "types": "./aws-ssmguiconnect/index.d.ts",
+    "default": "./aws-ssmguiconnect/index.js"
+  },
+  "./aws-ssmincidents": {
+    "types": "./aws-ssmincidents/index.d.ts",
+    "default": "./aws-ssmincidents/index.js"
+  },
+  "./aws-ssmquicksetup": {
+    "types": "./aws-ssmquicksetup/index.d.ts",
+    "default": "./aws-ssmquicksetup/index.js"
+  },
+  "./aws-sso": {
+    "types": "./aws-sso/index.d.ts",
+    "default": "./aws-sso/index.js"
+  },
+  "./aws-stepfunctions": {
+    "types": "./aws-stepfunctions/index.d.ts",
+    "default": "./aws-stepfunctions/index.js"
+  },
+  "./aws-storagegateway": {
+    "types": "./aws-storagegateway/index.d.ts",
+    "default": "./aws-storagegateway/index.js"
+  },
+  "./aws-supportapp": {
+    "types": "./aws-supportapp/index.d.ts",
+    "default": "./aws-supportapp/index.js"
+  },
+  "./aws-synthetics": {
+    "types": "./aws-synthetics/index.d.ts",
+    "default": "./aws-synthetics/index.js"
+  },
+  "./aws-systemsmanagersap": {
+    "types": "./aws-systemsmanagersap/index.d.ts",
+    "default": "./aws-systemsmanagersap/index.js"
+  },
+  "./aws-timestream": {
+    "types": "./aws-timestream/index.d.ts",
+    "default": "./aws-timestream/index.js"
+  },
+  "./aws-transcribe": {
+    "types": "./aws-transcribe/index.d.ts",
+    "default": "./aws-transcribe/index.js"
+  },
+  "./aws-transfer": {
+    "types": "./aws-transfer/index.d.ts",
+    "default": "./aws-transfer/index.js"
+  },
+  "./aws-uxc": {
+    "types": "./aws-uxc/index.d.ts",
+    "default": "./aws-uxc/index.js"
+  },
+  "./aws-verifiedpermissions": {
+    "types": "./aws-verifiedpermissions/index.d.ts",
+    "default": "./aws-verifiedpermissions/index.js"
+  },
+  "./aws-voiceid": {
+    "types": "./aws-voiceid/index.d.ts",
+    "default": "./aws-voiceid/index.js"
+  },
+  "./aws-vpclattice": {
+    "types": "./aws-vpclattice/index.d.ts",
+    "default": "./aws-vpclattice/index.js"
+  },
+  "./aws-wafv2": {
+    "types": "./aws-wafv2/index.d.ts",
+    "default": "./aws-wafv2/index.js"
+  },
+  "./aws-wellarchitected": {
+    "types": "./aws-wellarchitected/index.d.ts",
+    "default": "./aws-wellarchitected/index.js"
+  },
+  "./aws-wickr": {
+    "types": "./aws-wickr/index.d.ts",
+    "default": "./aws-wickr/index.js"
+  },
+  "./aws-wisdom": {
+    "types": "./aws-wisdom/index.d.ts",
+    "default": "./aws-wisdom/index.js"
+  },
+  "./aws-workspaces": {
+    "types": "./aws-workspaces/index.d.ts",
+    "default": "./aws-workspaces/index.js"
+  },
+  "./aws-workspacesinstances": {
+    "types": "./aws-workspacesinstances/index.d.ts",
+    "default": "./aws-workspacesinstances/index.js"
+  },
+  "./aws-workspacesthinclient": {
+    "types": "./aws-workspacesthinclient/index.d.ts",
+    "default": "./aws-workspacesthinclient/index.js"
+  },
+  "./aws-workspacesweb": {
+    "types": "./aws-workspacesweb/index.d.ts",
+    "default": "./aws-workspacesweb/index.js"
+  },
+  "./aws-xray": {
+    "types": "./aws-xray/index.d.ts",
+    "default": "./aws-xray/index.js"
+  }
+}

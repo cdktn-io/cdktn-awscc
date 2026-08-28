@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_mediatailor"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.MediaTailor"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.mediatailor"
+    }
+  }
+}

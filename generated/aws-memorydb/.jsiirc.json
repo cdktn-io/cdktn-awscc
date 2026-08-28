@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_memorydb"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.MemoryDB"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.memorydb"
+    }
+  }
+}

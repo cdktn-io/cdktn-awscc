@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_s3tables"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.S3Tables"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.s3tables"
+    }
+  }
+}

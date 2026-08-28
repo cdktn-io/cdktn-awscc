@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_codedeploy"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.CodeDeploy"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.codedeploy"
+    }
+  }
+}

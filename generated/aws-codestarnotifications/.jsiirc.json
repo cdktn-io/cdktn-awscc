@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_codestarnotifications"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.CodeStarNotifications"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.codestarnotifications"
+    }
+  }
+}

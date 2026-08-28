@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_deadline"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.Deadline"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.deadline"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_applicationinsights"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.ApplicationInsights"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.applicationinsights"
+    }
+  }
+}

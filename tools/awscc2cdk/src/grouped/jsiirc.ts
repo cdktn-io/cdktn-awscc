@@ -1,17 +1,20 @@
 /**
  * `.jsiirc.json` target block for one aws-cdk-lib-spelled submodule (plan §10, CONTRACT.md
- * "`.jsiirc.json` for `aws-ec2` is exactly …"). No `go` key — Go submodule naming is left to
- * jsii-pacmak's defaults from the root `jsii.targets.go.moduleName` (plan §10).
+ * "Iteration 3 — `.jsiirc.json` goes through `modulePartsFromNamespace`"). No `go` key — Go
+ * submodule naming is left to jsii-pacmak's defaults from the root `jsii.targets.go.moduleName`
+ * (plan §10, iteration-2 decision).
  *
- * The dotnet/java service segment is the CFN service part exactly as spelled in the module's
- * *primary* scope-map namespace (`src/vendored/scope-map.json`'s `scopes[0].namespace` — the same
- * one `spec2cdk`'s `module-topology.ts#namespaceToModuleDefinition` would pick), not derived from
- * any one resource's own CFN type: a merged-scope module (e.g. `aws-kinesisanalytics`, holding both
- * `AWS::KinesisAnalytics` and the suffixed `AWS::KinesisAnalyticsV2`) needs one canonical answer
- * for the whole module, and `scopes[0]` is what the vendored aws-cdk-lib tooling itself treats as
- * canonical.
+ * Iteration-2 derived the dotnet/java segment from `scopes[0].namespace.split('::')[1]`, which is
+ * wrong for every non-`AWS` family (`Alexa::ASK` -> `'ASK'`, fine by luck, but `AWS::Serverless`
+ * never became `SAM`) and can't apply a `targets` override correctly. This rewrite goes through the
+ * same computation spec2cdk's `namespaceToModuleDefinition()` performs
+ * (`src/vendored/spec2cdk/util/jsii.ts`, built on `modulePartsFromNamespace` from
+ * `src/vendored/spec2cdk/naming/conventions.ts` — copied verbatim; loadable at runtime because
+ * `@cdklabs/typewriter`, the one value-import dependency that file's *other* functions need, is now
+ * a devDependency, see VENDORED.md) with the plan §10 roots.
  */
 import scopeMapJson from "../vendored/scope-map.json";
+import { modulePartsFromNamespace } from "../vendored/spec2cdk/naming/conventions";
 
 export interface JsiircTargets {
   readonly targets: {
@@ -21,19 +24,110 @@ export interface JsiircTargets {
   };
 }
 
-interface ScopeMapFile {
-  [module: string]: { scopes?: { namespace: string }[] };
+export interface ModuleParts {
+  /** the scope-map key, e.g. 'aws-ec2' / 'core' */
+  readonly moduleDir: string;
+  /** moduleDir with '-' -> '_' */
+  readonly submoduleName: string;
+  /** scopes[0].namespace, verbatim (e.g. 'AWS::Serverless', not the 'AWS::SAM' spec2cdk derives
+   * moduleFamily/moduleBaseName from internally) */
+  readonly primaryNamespace: string;
+  /** 'AWS' | 'Alexa' | … */
+  readonly moduleFamily: string;
+  /** 'EC2' | 'ASK' | 'SAM' | … */
+  readonly moduleBaseName: string;
+}
+
+interface ScopeMapEntry {
+  readonly scopes?: { readonly namespace: string }[];
+  readonly targets?: { readonly dotnet?: { readonly namespace: string }; readonly java?: { readonly package: string } };
+}
+
+type ScopeMapFile = Record<string, ScopeMapEntry>;
+
+/** undefined when the module has no namespace at all (the scope map's `interfaces` entry). */
+export function modulePartsForModule(moduleDir: string): ModuleParts | undefined {
+  const primaryNamespace = (scopeMapJson as ScopeMapFile)[moduleDir]?.scopes?.[0]?.namespace;
+  if (!primaryNamespace) return undefined;
+  const { moduleFamily, moduleBaseName } = modulePartsFromNamespace(primaryNamespace);
+  return {
+    moduleDir,
+    submoduleName: moduleDir.replace(/-/g, "_"),
+    primaryNamespace,
+    moduleFamily,
+    moduleBaseName,
+  };
+}
+
+/** `Amazon.CDK.AWS.` / `Amazon.CDK.` -> `Io.Cdktn.AwsCc.`, longest match first. */
+function swapDotnetRoot(namespace: string): string {
+  if (namespace.startsWith("Amazon.CDK.AWS.")) return `Io.Cdktn.AwsCc.${namespace.slice("Amazon.CDK.AWS.".length)}`;
+  if (namespace.startsWith("Amazon.CDK.")) return `Io.Cdktn.AwsCc.${namespace.slice("Amazon.CDK.".length)}`;
+  return namespace;
+}
+
+/** `software.amazon.awscdk.` -> `io.cdktn.awscc.`. */
+function swapJavaRoot(pkg: string): string {
+  const prefix = "software.amazon.awscdk.";
+  return pkg.startsWith(prefix) ? `io.cdktn.awscc.${pkg.slice(prefix.length)}` : pkg;
+}
+
+/** aws-cdk-lib mirrors: `Amazon.CDK.AWS.EC2` (family dropped only for `AWS`) — plan §10 drops the
+ * family segment for us too, so `Io.Cdktn.AwsCc.EC2`, not `Io.Cdktn.AwsCc.AWS.EC2`. */
+function deriveDotnet(parts: ModuleParts): string {
+  return parts.moduleFamily === "AWS"
+    ? `Io.Cdktn.AwsCc.${parts.moduleBaseName}`
+    : `Io.Cdktn.AwsCc.${parts.moduleFamily}.${parts.moduleBaseName}`;
+}
+
+/** exactly `namespaceToModuleDefinition`'s `javaPackage`, with our root. */
+function deriveJava(parts: ModuleParts): string {
+  const lower = parts.moduleBaseName.toLowerCase();
+  return parts.moduleFamily === "AWS"
+    ? `io.cdktn.awscc.services.${lower}`
+    : `io.cdktn.awscc.${parts.moduleFamily.toLowerCase()}.${lower}`;
+}
+
+/** PascalCase a kebab-case module-directory fragment (`'foo-bar'` -> `'FooBar'`) — only used for
+ * the no-namespace fallback, where there is no CFN family/service to derive from. */
+function pascalCaseDir(s: string): string {
+  return s
+    .split(/-+/)
+    .filter(Boolean)
+    .map((p) => p.charAt(0).toUpperCase() + p.slice(1))
+    .join("");
 }
 
 export function jsiircFor(moduleDir: string): JsiircTargets {
   const symbol = moduleDir.replace(/-/g, "_");
-  const primaryNamespace = (scopeMapJson as ScopeMapFile)[moduleDir]?.scopes?.[0]?.namespace;
-  const servicePart = primaryNamespace ? primaryNamespace.split("::")[1] : moduleDir.replace(/^aws-/, "");
+  const entry = (scopeMapJson as ScopeMapFile)[moduleDir];
+  const parts = modulePartsForModule(moduleDir);
+
+  let dotnet: string;
+  let java: string;
+  if (parts) {
+    dotnet = deriveDotnet(parts);
+    java = deriveJava(parts);
+  } else {
+    // No namespace at all (the scope map's `interfaces` entry): fall back to the directory.
+    const withoutPrefix = moduleDir.replace(/^aws-/, "");
+    dotnet = `Io.Cdktn.AwsCc.${pascalCaseDir(withoutPrefix)}`;
+    java = `io.cdktn.awscc.services.${withoutPrefix.toLowerCase()}`;
+  }
+
+  // A scope-map `targets` override wins, with its aws-cdk-lib root swapped for ours.
+  const dotnetOverride = entry?.targets?.dotnet?.namespace;
+  const javaOverride = entry?.targets?.java?.package;
+  if (dotnetOverride !== undefined) dotnet = swapDotnetRoot(dotnetOverride);
+  if (javaOverride !== undefined) java = swapJavaRoot(javaOverride);
+
   return {
     targets: {
+      // python always follows the directory we emit, never the namespace: `core` is
+      // `cdktn_awscc.core`, not `…aws_cloudformation`.
       python: { module: `cdktn_awscc.${symbol}` },
-      dotnet: { namespace: `Io.Cdktn.AwsCc.${servicePart}` },
-      java: { package: `io.cdktn.awscc.services.${servicePart.toLowerCase()}` },
+      dotnet: { namespace: dotnet },
+      java: { package: java },
     },
   };
 }

@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_apigatewayv2"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.Apigatewayv2"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.apigatewayv2"
+    }
+  }
+}

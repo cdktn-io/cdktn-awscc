@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_aps"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.APS"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.aps"
+    }
+  }
+}

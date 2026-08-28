@@ -1,0 +1,183 @@
+// generated from terraform resource schema (awscc provider) — do not edit by hand
+// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/uxc_account_customization
+
+import { Construct } from 'constructs';
+import * as cdktn from 'cdktn';
+export interface CcAccountCustomizationProps extends cdktn.TerraformMetaArguments {
+    /**
+    * The color theme assigned to the account for visual identification in the AWS Console.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/uxc_account_customization#account_color CcAccountCustomization#account_color}
+    */
+    readonly accountColor?: string;
+    /**
+    * A list of AWS region identifiers visible to the account in the AWS Console.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/uxc_account_customization#visible_regions CcAccountCustomization#visible_regions}
+    */
+    readonly visibleRegions?: string[];
+    /**
+    * A list of AWS service identifiers visible to the account in the AWS Console.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/uxc_account_customization#visible_services CcAccountCustomization#visible_services}
+    */
+    readonly visibleServices?: string[];
+}
+
+/**
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/uxc_account_customization awscc_uxc_account_customization}
+*/
+export class CcAccountCustomization extends cdktn.TerraformResource {
+
+    // =================
+    // STATIC PROPERTIES
+    // =================
+    public static readonly tfResourceType = "awscc_uxc_account_customization";
+
+    // ==============
+    // STATIC Methods
+    // ==============
+    /**
+    * Generates CDKTN code for importing a CcAccountCustomization resource upon running "cdktn plan <stack-name>"
+    * @param scope The scope in which to define this construct
+    * @param importToId The construct id used in the generated config for the CcAccountCustomization to import
+    * @param importFromId The id of the existing CcAccountCustomization that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/uxc_account_customization#import import section} in the documentation of this resource for the id to use
+    * @param provider? Optional instance of the provider where the CcAccountCustomization to import is found
+    */
+    public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "awscc_uxc_account_customization", importId: importFromId, provider });
+      }
+
+    // ===========
+    // INITIALIZER
+    // ===========
+
+    /**
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/uxc_account_customization awscc_uxc_account_customization} Resource
+    *
+    * @param scope The scope in which to define this construct
+    * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+    * @param options CcAccountCustomizationProps = {}
+    */
+    public constructor(scope: Construct, id: string, config: CcAccountCustomizationProps = {}) {
+        super(scope, id, {
+            terraformResourceType: 'awscc_uxc_account_customization',
+            terraformGeneratorMetadata: {
+                providerName: 'awscc'
+            },
+            provider: config.provider,
+            dependsOn: config.dependsOn,
+            count: config.count,
+            lifecycle: config.lifecycle,
+            provisioners: config.provisioners,
+            connection: config.connection,
+            forEach: config.forEach
+        });
+        this._accountColor = config.accountColor;
+        this._visibleRegions = config.visibleRegions;
+        this._visibleServices = config.visibleServices;
+    }
+
+    // ==========
+    // ATTRIBUTES
+    // ==========
+
+    // account_color - computed: true, optional: true, required: false
+    private _accountColor?: string; 
+    public get accountColor() {
+        return this.getStringAttribute('account_color');
+    }
+    public set accountColor(value: string) {
+        this._accountColor = value;
+    }
+    public resetAccountColor() {
+        this._accountColor = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get accountColorInput() {
+        return this._accountColor;
+    }
+
+    // account_id - computed: true, optional: false, required: false
+    public get accountId() {
+        return this.getStringAttribute('account_id');
+    }
+
+    // id - computed: true, optional: false, required: false
+    public get id() {
+        return this.getStringAttribute('id');
+    }
+
+    // visible_regions - computed: true, optional: true, required: false
+    private _visibleRegions?: string[]; 
+    public get visibleRegions() {
+        return cdktn.Fn.tolist(this.getListAttribute('visible_regions'));
+    }
+    public set visibleRegions(value: string[]) {
+        this._visibleRegions = value;
+    }
+    public resetVisibleRegions() {
+        this._visibleRegions = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get visibleRegionsInput() {
+        return this._visibleRegions;
+    }
+
+    // visible_services - computed: true, optional: true, required: false
+    private _visibleServices?: string[]; 
+    public get visibleServices() {
+        return cdktn.Fn.tolist(this.getListAttribute('visible_services'));
+    }
+    public set visibleServices(value: string[]) {
+        this._visibleServices = value;
+    }
+    public resetVisibleServices() {
+        this._visibleServices = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get visibleServicesInput() {
+        return this._visibleServices;
+    }
+
+    // =========
+    // SYNTHESIS
+    // =========
+
+    protected synthesizeAttributes(): { [name: string]: any } {
+        return {
+            account_color: cdktn.stringToTerraform(this._accountColor),
+            visible_regions: cdktn.listMapper(cdktn.stringToTerraform, false)(this._visibleRegions),
+            visible_services: cdktn.listMapper(cdktn.stringToTerraform, false)(this._visibleServices),
+        };
+    }
+
+    protected synthesizeHclAttributes(): { [name: string]: any } {
+        const attrs = {
+            account_color: {
+                value: cdktn.stringToHclTerraform(this._accountColor),
+                isBlock: false,
+                type: "simple",
+                storageClassType: "string",
+            },
+            visible_regions: {
+                value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._visibleRegions),
+                isBlock: false,
+                type: "set",
+                storageClassType: "stringList",
+            },
+            visible_services: {
+                value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._visibleServices),
+                isBlock: false,
+                type: "set",
+                storageClassType: "stringList",
+            },
+        };
+
+        // remove undefined attributes
+        return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+    }
+}
+
+export namespace CcAccountCustomization {
+}

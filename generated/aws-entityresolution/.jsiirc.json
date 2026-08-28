@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_entityresolution"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.EntityResolution"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.entityresolution"
+    }
+  }
+}

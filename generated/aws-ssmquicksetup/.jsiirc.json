@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_ssmquicksetup"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.SSMQuickSetup"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.ssmquicksetup"
+    }
+  }
+}

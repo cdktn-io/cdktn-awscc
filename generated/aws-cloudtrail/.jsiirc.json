@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_cloudtrail"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.CloudTrail"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.cloudtrail"
+    }
+  }
+}

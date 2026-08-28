@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_datapipeline"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.DataPipeline"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.datapipeline"
+    }
+  }
+}

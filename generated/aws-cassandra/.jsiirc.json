@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_cassandra"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.Cassandra"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.cassandra"
+    }
+  }
+}

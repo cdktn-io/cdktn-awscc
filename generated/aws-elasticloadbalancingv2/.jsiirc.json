@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_elasticloadbalancingv2"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.ElasticLoadBalancingV2"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.elasticloadbalancingv2"
+    }
+  }
+}

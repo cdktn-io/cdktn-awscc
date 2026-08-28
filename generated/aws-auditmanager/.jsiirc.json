@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_auditmanager"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.AuditManager"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.auditmanager"
+    }
+  }
+}

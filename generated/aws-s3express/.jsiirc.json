@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_s3express"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.S3Express"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.s3express"
+    }
+  }
+}

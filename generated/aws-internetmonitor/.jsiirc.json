@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_internetmonitor"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.InternetMonitor"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.internetmonitor"
+    }
+  }
+}

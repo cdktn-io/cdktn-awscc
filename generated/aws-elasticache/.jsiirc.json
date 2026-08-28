@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_elasticache"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.ElastiCache"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.elasticache"
+    }
+  }
+}

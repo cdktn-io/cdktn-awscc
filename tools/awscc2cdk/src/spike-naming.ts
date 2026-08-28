@@ -13,7 +13,7 @@ import type { ProviderSchema } from "@cdktn/commons";
 import { toCamelCase, toPascalCase } from "codemaker";
 import { cfnTypeFor } from "./cfn-map";
 import { resolveDefinitionName } from "./grouped/cfn-recovery";
-import { breaksJsii } from "./grouped/jsii-evidence";
+import { breaksJsii, breaksJsiiEmitted, type EmittedKind } from "./grouped/jsii-evidence";
 import { propertyNameFromCloudFormation, santitizeFieldName, sanitizeTypeName } from "./grouped/sanitizers";
 
 const DEFAULT_FQPN = "registry.terraform.io/hashicorp/awscc";
@@ -154,19 +154,33 @@ function makeTypeCandidate(
   };
 }
 
-/** Same held-constant-input shape as `makeTypeCandidate`, for the resource class name itself. */
-function makeResourceCandidate(awscc: string, cfnType: string | undefined): SpikeCandidate {
+/**
+ * Same held-constant-input shape as `makeTypeCandidate`, for the resource class name itself.
+ * `raw`/`cdk` on the returned candidate are `Cfn`-prefixed for doc display (they mirror the actual
+ * aws-cdk-lib class name this generator's naming is compared against); `typeStyleBase`/
+ * `sanitizedBase` are the same two values *without* that prefix — the base names this generator
+ * would actually prefix with `Cc`, used for post-suffix breaks-jsii evidence (finding 1).
+ */
+function makeResourceCandidate(
+  awscc: string,
+  cfnType: string | undefined,
+): { candidate: SpikeCandidate; typeStyleBase: string; sanitizedBase: string } {
   const base = awsccBaseName(awscc);
   const cfnResourcePart = cfnType ? cfnType.split("::").pop()! : pascal(base.split("_").pop() ?? base);
   const typeStyleName = pascal(cfnResourcePart);
+  const sanitizedName = sanitizeTypeName(typeStyleName);
   return {
-    awscc,
-    cfnType,
-    kind: "resource",
-    path: [],
-    raw: `Cfn${typeStyleName}`,
-    cdk: `Cfn${sanitizeTypeName(typeStyleName)}`,
-    cdktnCurrent: toPascalCase(base),
+    candidate: {
+      awscc,
+      cfnType,
+      kind: "resource",
+      path: [],
+      raw: `Cfn${typeStyleName}`,
+      cdk: `Cfn${sanitizedName}`,
+      cdktnCurrent: toPascalCase(base),
+    },
+    typeStyleBase: typeStyleName,
+    sanitizedBase: sanitizedName,
   };
 }
 
@@ -174,6 +188,15 @@ interface SanitizerEvaluation {
   readonly before: string;
   readonly after: string;
   readonly context: { awscc: string; path: string[] };
+  /**
+   * Iteration 3, finding 1 (CONTRACT.md "breaks-jsii is measured post-suffix"): when set,
+   * breaks-jsii evidence is measured on the identifier the generator actually *emits* for this
+   * candidate (`Cc<base>` / `<base>Property`), not on the bare `before`/`after` strings — those are
+   * intermediate base names, never what reaches jsii. Unset for the field-name evaluations
+   * (`santitizeFieldName`, `propertyNameFromCloudFormation`): member names carry no such suffix, so
+   * the bare comparison already is the emitted form.
+   */
+  readonly emittedKind?: EmittedKind;
 }
 
 function bucketize(evaluations: SanitizerEvaluation[]): Omit<SanitizerBuckets, "decision"> {
@@ -189,8 +212,9 @@ function bucketize(evaluations: SanitizerEvaluation[]): Omit<SanitizerBuckets, "
       identical++;
       continue;
     }
-    const beforeBreaks = breaksJsii(e.before);
-    const afterBreaks = breaksJsii(e.after);
+    const check = (name: string) => (e.emittedKind ? breaksJsiiEmitted(name, e.emittedKind) : breaksJsii(name));
+    const beforeBreaks = check(e.before);
+    const afterBreaks = check(e.after);
     if (beforeBreaks && !afterBreaks) {
       breaks++;
       if (breaksExamples.length < 5) breaksExamples.push({ ...e.context, before: e.before, after: e.after, reason: "breaks-jsii" });
@@ -233,19 +257,20 @@ export function runNamingSpike(
 
   for (const awscc of awsccNames) {
     const cfnType = cfnTypeFor(awscc, db);
-    const resourceCandidate = makeResourceCandidate(awscc, cfnType);
+    const { candidate: resourceCandidate, typeStyleBase, sanitizedBase } = makeResourceCandidate(awscc, cfnType);
     candidates.push(resourceCandidate);
     typeNameEvals.push({
-      before: resourceCandidate.raw,
-      after: resourceCandidate.cdk,
+      before: typeStyleBase,
+      after: sanitizedBase,
       context: { awscc, path: [] },
+      emittedKind: "resourceClass",
     });
 
     const typeCandidates: SpikeCandidate[] = [];
     walkBlock(resourceSchemas[awscc].block, [], { awscc, cfnType, db }, typeCandidates);
     for (const c of typeCandidates) {
       candidates.push(c);
-      typeNameEvals.push({ before: c.raw, after: c.cdk, context: { awscc, path: c.path } });
+      typeNameEvals.push({ before: c.raw, after: c.cdk, context: { awscc, path: c.path }, emittedKind: "propertyType" });
 
       const leaf = c.path[c.path.length - 1];
       const camelLeaf = toCamelCase(leaf);
@@ -269,6 +294,7 @@ export function runNamingSpike(
         before: pascal(leaf),
         after: c.raw,
         context: { awscc, path: c.path },
+        emittedKind: "propertyType",
       });
     }
   }

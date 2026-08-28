@@ -18,6 +18,17 @@ Adaptations made beyond copying (all mechanical, no behaviour change):
   only ever used `naming.modulePartsFromNamespace`, which lives in `conventions.ts`, so this is
   not a behavioural change.
 
+**Iteration 3 refresh of `scope-map.json`** (CONTRACT.md "Iteration 3 — scope map"): re-fetched from
+`aws/aws-cdk` **main** at commit `6808bb7e04d64a903a73ad56a7879c75019a5908` (2026-08-28) via
+`gh api repos/aws/aws-cdk/contents/packages/aws-cdk-lib/scripts/scope-map.json --jq .content | base64 -d`,
+**not** from the local `~/cdk/aws-cdk` checkout the other spec2cdk rows below are pinned to (that
+checkout is at `a9e6639d…`, the scope map's own previous commit) — this one file is therefore
+ahead of the rest of the vendored tree by design: 302 entries (was 292), **+**
+`aws-artifact`, `aws-backupsearch`, `aws-cognitosync`, `aws-networkflowmonitor`, `aws-scn`,
+`aws-states`, `aws-storagegateway`, `aws-thinclient`, `aws-transcribe`, `aws-usernotifications`,
+`aws-wellarchitected`; **−** `aws-dataexchange`. The refresh changes no existing namespace's winning
+module, so iterations 1–2 stay green.
+
 Not vendored from the plan's spec2cdk list: `packages/aws-cdk-lib/scripts/scope-map.json` is
 present (as `src/vendored/scope-map.json`, unmodified) but its loader in this iteration is the
 new `src/scope-map.ts`, not spec2cdk's `module-topology.ts` `readModuleMap` (that reads/writes the
@@ -47,7 +58,7 @@ imported by any step 1/2 code.
 | src/vendored/cdktn/emitter/provider-functions-emitter.ts | /Users/vincentsmet/cdktn/cdk-terrain/packages/@cdktn/provider-generator/src/get/generator/emitter/provider-functions-emitter.ts | 358edc7c39b0b380ba89fd31881f0577fe9b6214 |
 | src/vendored/cdktn/emitter/resource-emitter.ts | /Users/vincentsmet/cdktn/cdk-terrain/packages/@cdktn/provider-generator/src/get/generator/emitter/resource-emitter.ts | 358edc7c39b0b380ba89fd31881f0577fe9b6214 |
 | src/vendored/cdktn/emitter/struct-emitter.ts | /Users/vincentsmet/cdktn/cdk-terrain/packages/@cdktn/provider-generator/src/get/generator/emitter/struct-emitter.ts | 358edc7c39b0b380ba89fd31881f0577fe9b6214 |
-| src/vendored/scope-map.json | /Users/vincentsmet/cdk/aws-cdk/packages/aws-cdk-lib/scripts/scope-map.json | a9e6639df5ed1cbed0f247d3d18bc3db1eaf5ee1 |
+| src/vendored/scope-map.json | /Users/vincentsmet/cdk/aws-cdk/packages/aws-cdk-lib/scripts/scope-map.json | 6808bb7e04d64a903a73ad56a7879c75019a5908 |
 | src/vendored/spec2cdk/naming/conventions.ts | /Users/vincentsmet/cdk/aws-cdk/tools/@aws-cdk/spec2cdk/lib/naming/conventions.ts | a9e6639df5ed1cbed0f247d3d18bc3db1eaf5ee1 |
 | src/vendored/spec2cdk/module-topology.ts | /Users/vincentsmet/cdk/aws-cdk/tools/@aws-cdk/spec2cdk/lib/module-topology.ts | a9e6639df5ed1cbed0f247d3d18bc3db1eaf5ee1 |
 | src/vendored/spec2cdk/util/jsii.ts | /Users/vincentsmet/cdk/aws-cdk/tools/@aws-cdk/spec2cdk/lib/util/jsii.ts | a9e6639df5ed1cbed0f247d3d18bc3db1eaf5ee1 |

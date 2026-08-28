@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_simspaceweaver"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.SimSpaceWeaver"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.simspaceweaver"
+    }
+  }
+}

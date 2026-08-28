@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_codebuild"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.CodeBuild"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.codebuild"
+    }
+  }
+}

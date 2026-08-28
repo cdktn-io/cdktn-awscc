@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_appsync"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.AppSync"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.appsync"
+    }
+  }
+}

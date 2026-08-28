@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_directoryservice"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.DirectoryService"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.directoryservice"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_dynamodb"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.DynamoDB"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.dynamodb"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_macie"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.Macie"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.macie"
+    }
+  }
+}

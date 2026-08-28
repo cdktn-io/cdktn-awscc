@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_personalize"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.Personalize"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.personalize"
+    }
+  }
+}

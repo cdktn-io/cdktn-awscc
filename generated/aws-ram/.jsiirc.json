@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_ram"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.RAM"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.ram"
+    }
+  }
+}

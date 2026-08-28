@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_neptunegraph"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.NeptuneGraph"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.neptunegraph"
+    }
+  }
+}

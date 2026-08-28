@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_sagemaker"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.Sagemaker"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.sagemaker"
+    }
+  }
+}

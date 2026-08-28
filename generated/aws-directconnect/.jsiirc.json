@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_directconnect"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.DirectConnect"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.directconnect"
+    }
+  }
+}

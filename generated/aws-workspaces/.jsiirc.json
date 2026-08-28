@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_workspaces"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.WorkSpaces"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.workspaces"
+    }
+  }
+}

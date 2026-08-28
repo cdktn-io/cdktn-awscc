@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_applicationsignals"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.ApplicationSignals"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.applicationsignals"
+    }
+  }
+}

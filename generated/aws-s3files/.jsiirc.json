@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_s3files"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.S3Files"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.s3files"
+    }
+  }
+}

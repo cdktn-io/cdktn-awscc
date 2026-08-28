@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_events"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.Events"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.events"
+    }
+  }
+}

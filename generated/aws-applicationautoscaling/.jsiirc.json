@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_applicationautoscaling"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.ApplicationAutoScaling"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.applicationautoscaling"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_efs"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.EFS"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.efs"
+    }
+  }
+}

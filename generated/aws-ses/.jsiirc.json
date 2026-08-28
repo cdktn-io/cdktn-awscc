@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_ses"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.SES"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.ses"
+    }
+  }
+}

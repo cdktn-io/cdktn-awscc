@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_notifications"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.Notifications"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.notifications"
+    }
+  }
+}

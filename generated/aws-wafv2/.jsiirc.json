@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_wafv2"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.WAFv2"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.wafv2"
+    }
+  }
+}

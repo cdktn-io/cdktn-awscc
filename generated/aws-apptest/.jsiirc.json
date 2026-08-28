@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_apptest"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.AppTest"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.apptest"
+    }
+  }
+}

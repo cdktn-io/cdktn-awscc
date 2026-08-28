@@ -1,12 +1,17 @@
 {
-  // "tools/awscc2cdk/src/vendored/spec2cdk/**" is excluded from the build: it is a byte-identical
-  // vendored copy (see src/vendored/VENDORED.md, checked by vendored.test.ts) of upstream spec2cdk
-  // files that import packages not on npm (`@aws-cdk/pkglint`) or not worth adding just for types
-  // (`@cdklabs/typewriter`). We never compile the vendored copy; the functions we actually use from
-  // it (propertyNameFromCloudFormation, sanitizeTypeName, santitizeFieldName,
-  // modulePartsFromNamespace, namespaceToModuleDefinition, ModuleDefinition) are re-implemented as
-  // adapted copies under src/naming.ts and src/grouped/, which this tsconfig does compile.
-  // Iteration-2 debt (a), CONTRACT.md "Iteration 2 — debt from iteration 1".
+  // "tools/awscc2cdk/src/vendored/spec2cdk/**" is listed in "exclude" so it is never a *root* file
+  // of this project (TypeScript's "exclude" only controls what "include"'s globs pick up on their
+  // own — it does not forbid an included file from *importing* an excluded one, and the compiler
+  // still type-checks whatever gets pulled in transitively). Iteration 2's three sanitizers
+  // (propertyNameFromCloudFormation, sanitizeTypeName, santitizeFieldName) are still re-implemented
+  // as adapted, dependency-free copies under src/grouped/sanitizers.ts rather than imported from
+  // here (CONTRACT.md "Iteration 2 — debt from iteration 1 (a)"), since `qualifiedName` in the same
+  // vendored file pulls in `@cdklabs/typewriter` as a real (non-type-only) import and iteration 2
+  // did not want that dependency for three copyable functions. Iteration 3 (`src/scope-map.ts`,
+  // `src/grouped/jsiirc.ts`) *does* import `modulePartsFromNamespace` from this vendored file
+  // directly — loadable because `@cdklabs/typewriter` is now a devDependency (added for exactly
+  // this) — so this file is compiled after all, transitively, despite being excluded as a root.
+  // See src/vendored/VENDORED.md.
   "compilerOptions": {
     "target": "ES2022",
     "lib": ["ES2022"],

@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_braket"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.Braket"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.braket"
+    }
+  }
+}

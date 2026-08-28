@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_iotevents"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.IoTEvents"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.iotevents"
+    }
+  }
+}

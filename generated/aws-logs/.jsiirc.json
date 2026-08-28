@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_logs"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.Logs"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.logs"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_observabilityadmin"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.ObservabilityAdmin"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.observabilityadmin"
+    }
+  }
+}

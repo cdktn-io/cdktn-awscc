@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_resiliencehubv2"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.ResilienceHubV2"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.resiliencehubv2"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_ivschat"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.IVSChat"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.ivschat"
+    }
+  }
+}

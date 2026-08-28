@@ -1,0 +1,533 @@
+// generated from terraform resource schema (awscc provider) — do not edit by hand
+// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ses_multi_region_endpoint
+
+import { Construct } from 'constructs';
+import * as cdktn from 'cdktn';
+export interface CcMultiRegionEndpointProps extends cdktn.TerraformMetaArguments {
+    /**
+    * Contains details of a multi-region endpoint (global-endpoint) being created.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ses_multi_region_endpoint#details CcMultiRegionEndpoint#details}
+    */
+    readonly details: CcMultiRegionEndpoint.DetailsProperty;
+    /**
+    * The name of the multi-region endpoint (global-endpoint).
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ses_multi_region_endpoint#endpoint_name CcMultiRegionEndpoint#endpoint_name}
+    */
+    readonly endpointName: string;
+    /**
+    * An Array of objects that define the tags (keys and values) to associate with the multi-region endpoint (global-endpoint).
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ses_multi_region_endpoint#tags CcMultiRegionEndpoint#tags}
+    */
+    readonly tags?: CcMultiRegionEndpoint.TagProperty[] | cdktn.IResolvable;
+}
+
+/**
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ses_multi_region_endpoint awscc_ses_multi_region_endpoint}
+*/
+export class CcMultiRegionEndpoint extends cdktn.TerraformResource {
+
+    // =================
+    // STATIC PROPERTIES
+    // =================
+    public static readonly tfResourceType = "awscc_ses_multi_region_endpoint";
+
+    // ==============
+    // STATIC Methods
+    // ==============
+    /**
+    * Generates CDKTN code for importing a CcMultiRegionEndpoint resource upon running "cdktn plan <stack-name>"
+    * @param scope The scope in which to define this construct
+    * @param importToId The construct id used in the generated config for the CcMultiRegionEndpoint to import
+    * @param importFromId The id of the existing CcMultiRegionEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ses_multi_region_endpoint#import import section} in the documentation of this resource for the id to use
+    * @param provider? Optional instance of the provider where the CcMultiRegionEndpoint to import is found
+    */
+    public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "awscc_ses_multi_region_endpoint", importId: importFromId, provider });
+      }
+
+    // ===========
+    // INITIALIZER
+    // ===========
+
+    /**
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ses_multi_region_endpoint awscc_ses_multi_region_endpoint} Resource
+    *
+    * @param scope The scope in which to define this construct
+    * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+    * @param options CcMultiRegionEndpointProps
+    */
+    public constructor(scope: Construct, id: string, config: CcMultiRegionEndpointProps) {
+        super(scope, id, {
+            terraformResourceType: 'awscc_ses_multi_region_endpoint',
+            terraformGeneratorMetadata: {
+                providerName: 'awscc'
+            },
+            provider: config.provider,
+            dependsOn: config.dependsOn,
+            count: config.count,
+            lifecycle: config.lifecycle,
+            provisioners: config.provisioners,
+            connection: config.connection,
+            forEach: config.forEach
+        });
+        this._details.internalValue = config.details;
+        this._endpointName = config.endpointName;
+        this._tags.internalValue = config.tags;
+    }
+
+    // ==========
+    // ATTRIBUTES
+    // ==========
+
+    // details - computed: false, optional: false, required: true
+    private _details = new CcMultiRegionEndpoint.DetailsPropertyOutputReference(this, "details");
+    public get details() {
+        return this._details;
+    }
+    public putDetails(value: CcMultiRegionEndpoint.DetailsProperty) {
+        this._details.internalValue = value;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get detailsInput() {
+        return this._details.internalValue;
+    }
+
+    // endpoint_name - computed: false, optional: false, required: true
+    private _endpointName?: string; 
+    public get endpointName() {
+        return this.getStringAttribute('endpoint_name');
+    }
+    public set endpointName(value: string) {
+        this._endpointName = value;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get endpointNameInput() {
+        return this._endpointName;
+    }
+
+    // id - computed: true, optional: false, required: false
+    public get id() {
+        return this.getStringAttribute('id');
+    }
+
+    // tags - computed: true, optional: true, required: false
+    private _tags = new CcMultiRegionEndpoint.TagPropertyList(this, "tags", true);
+    public get tags() {
+        return this._tags;
+    }
+    public putTags(value: CcMultiRegionEndpoint.TagProperty[] | cdktn.IResolvable) {
+        this._tags.internalValue = value;
+    }
+    public resetTags() {
+        this._tags.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get tagsInput() {
+        return this._tags.internalValue;
+    }
+
+    // =========
+    // SYNTHESIS
+    // =========
+
+    protected synthesizeAttributes(): { [name: string]: any } {
+        return {
+            details: ccMultiRegionEndpointDetailsPropertyToTerraform(this._details.internalValue),
+            endpoint_name: cdktn.stringToTerraform(this._endpointName),
+            tags: cdktn.listMapper(ccMultiRegionEndpointTagPropertyToTerraform, false)(this._tags.internalValue),
+        };
+    }
+
+    protected synthesizeHclAttributes(): { [name: string]: any } {
+        const attrs = {
+            details: {
+                value: ccMultiRegionEndpointDetailsPropertyToHclTerraform(this._details.internalValue),
+                isBlock: true,
+                type: "struct",
+                storageClassType: "CcMultiRegionEndpoint.DetailsProperty",
+            },
+            endpoint_name: {
+                value: cdktn.stringToHclTerraform(this._endpointName),
+                isBlock: false,
+                type: "simple",
+                storageClassType: "string",
+            },
+            tags: {
+                value: cdktn.listMapperHcl(ccMultiRegionEndpointTagPropertyToHclTerraform, false)(this._tags.internalValue),
+                isBlock: true,
+                type: "set",
+                storageClassType: "CcMultiRegionEndpoint.TagPropertyList",
+            },
+        };
+
+        // remove undefined attributes
+        return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+    }
+}
+
+export function ccMultiRegionEndpointRouteDetailsItemsPropertyToTerraform(struct?: CcMultiRegionEndpoint.RouteDetailsItemsProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        region: cdktn.stringToTerraform(struct!.region),
+    }
+}
+
+
+export function ccMultiRegionEndpointRouteDetailsItemsPropertyToHclTerraform(struct?: CcMultiRegionEndpoint.RouteDetailsItemsProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        region: {
+            value: cdktn.stringToHclTerraform(struct!.region),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
+export function ccMultiRegionEndpointDetailsPropertyToTerraform(struct?: CcMultiRegionEndpoint.DetailsProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        route_details: cdktn.listMapper(ccMultiRegionEndpointRouteDetailsItemsPropertyToTerraform, false)(struct!.routeDetails),
+    }
+}
+
+
+export function ccMultiRegionEndpointDetailsPropertyToHclTerraform(struct?: CcMultiRegionEndpoint.DetailsProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        route_details: {
+            value: cdktn.listMapperHcl(ccMultiRegionEndpointRouteDetailsItemsPropertyToHclTerraform, false)(struct!.routeDetails),
+            isBlock: true,
+            type: "set",
+            storageClassType: "RouteDetailsItemsPropertyList",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
+export function ccMultiRegionEndpointTagPropertyToTerraform(struct?: CcMultiRegionEndpoint.TagProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        key: cdktn.stringToTerraform(struct!.key),
+        value: cdktn.stringToTerraform(struct!.value),
+    }
+}
+
+
+export function ccMultiRegionEndpointTagPropertyToHclTerraform(struct?: CcMultiRegionEndpoint.TagProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        key: {
+            value: cdktn.stringToHclTerraform(struct!.key),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+        value: {
+            value: cdktn.stringToHclTerraform(struct!.value),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
+export namespace CcMultiRegionEndpoint {
+export interface RouteDetailsItemsProperty {
+    /**
+    * The name of an AWS-Region to be a secondary region for the multi-region endpoint (global-endpoint)
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ses_multi_region_endpoint#region CcMultiRegionEndpoint#region}
+    */
+    readonly region: string;
+}
+export class RouteDetailsItemsPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    * @param complexObjectIndex the index of this item in the list
+    * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+        super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+    }
+
+    public get internalValue(): RouteDetailsItemsProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._region !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.region = this._region;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: RouteDetailsItemsProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._region = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._region = value.region;
+        }
+    }
+
+    // region - computed: false, optional: false, required: true
+    private _region?: string; 
+    public get region() {
+        return this.getStringAttribute('region');
+    }
+    public set region(value: string) {
+        this._region = value;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get regionInput() {
+        return this._region;
+    }
+}
+
+export class RouteDetailsItemsPropertyList extends cdktn.ComplexList {
+    public internalValue? : RouteDetailsItemsProperty[] | cdktn.IResolvable
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+    */
+    constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+        super(terraformResource, terraformAttribute, wrapsSet);
+    }
+
+    /**
+    * @param index the index of the item to return
+    */
+    public get(index: number): RouteDetailsItemsPropertyOutputReference {
+        return new RouteDetailsItemsPropertyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+    }
+}
+export interface DetailsProperty {
+    /**
+    * A list of route configuration details. Must contain exactly one route configuration
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ses_multi_region_endpoint#route_details CcMultiRegionEndpoint#route_details}
+    */
+    readonly routeDetails: RouteDetailsItemsProperty[] | cdktn.IResolvable;
+}
+export class DetailsPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+        super(terraformResource, terraformAttribute, false);
+    }
+
+    public get internalValue(): DetailsProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._routeDetails?.internalValue !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.routeDetails = this._routeDetails?.internalValue;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: DetailsProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._routeDetails.internalValue = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._routeDetails.internalValue = value.routeDetails;
+        }
+    }
+
+    // route_details - computed: false, optional: false, required: true
+    private _routeDetails = new RouteDetailsItemsPropertyList(this, "route_details", true);
+    public get routeDetails() {
+        return this._routeDetails;
+    }
+    public putRouteDetails(value: RouteDetailsItemsProperty[] | cdktn.IResolvable) {
+        this._routeDetails.internalValue = value;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get routeDetailsInput() {
+        return this._routeDetails.internalValue;
+    }
+}
+export interface TagProperty {
+    /**
+    * One part of a key-value pair that defines a tag.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ses_multi_region_endpoint#key CcMultiRegionEndpoint#key}
+    */
+    readonly key?: string;
+    /**
+    * The optional part of a key-value pair that defines a tag.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ses_multi_region_endpoint#value CcMultiRegionEndpoint#value}
+    */
+    readonly value?: string;
+}
+export class TagPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    * @param complexObjectIndex the index of this item in the list
+    * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+        super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+    }
+
+    public get internalValue(): TagProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._key !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.key = this._key;
+        }
+        if (this._value !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.value = this._value;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: TagProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._key = undefined;
+            this._value = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._key = value.key;
+            this._value = value.value;
+        }
+    }
+
+    // key - computed: true, optional: true, required: false
+    private _key?: string; 
+    public get key() {
+        return this.getStringAttribute('key');
+    }
+    public set key(value: string) {
+        this._key = value;
+    }
+    public resetKey() {
+        this._key = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get keyInput() {
+        return this._key;
+    }
+
+    // value - computed: true, optional: true, required: false
+    private _value?: string; 
+    public get value() {
+        return this.getStringAttribute('value');
+    }
+    public set value(value: string) {
+        this._value = value;
+    }
+    public resetValue() {
+        this._value = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get valueInput() {
+        return this._value;
+    }
+}
+
+export class TagPropertyList extends cdktn.ComplexList {
+    public internalValue? : TagProperty[] | cdktn.IResolvable
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+    */
+    constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+        super(terraformResource, terraformAttribute, wrapsSet);
+    }
+
+    /**
+    * @param index the index of the item to return
+    */
+    public get(index: number): TagPropertyOutputReference {
+        return new TagPropertyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+    }
+}
+}

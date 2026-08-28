@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_lookoutmetrics"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.LookoutMetrics"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.lookoutmetrics"
+    }
+  }
+}

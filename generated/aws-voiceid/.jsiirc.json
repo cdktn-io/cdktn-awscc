@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_voiceid"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.VoiceID"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.voiceid"
+    }
+  }
+}

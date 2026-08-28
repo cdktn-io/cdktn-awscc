@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_devopsagent"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.DevOpsAgent"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.devopsagent"
+    }
+  }
+}

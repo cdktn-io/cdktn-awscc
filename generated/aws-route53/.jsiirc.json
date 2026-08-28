@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_route53"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.Route53"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.route53"
+    }
+  }
+}

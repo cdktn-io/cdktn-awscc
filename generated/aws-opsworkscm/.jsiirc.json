@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_opsworkscm"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.OpsWorksCM"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.opsworkscm"
+    }
+  }
+}

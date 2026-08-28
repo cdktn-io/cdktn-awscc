@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_iotcoredeviceadvisor"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.IoTCoreDeviceAdvisor"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.iotcoredeviceadvisor"
+    }
+  }
+}

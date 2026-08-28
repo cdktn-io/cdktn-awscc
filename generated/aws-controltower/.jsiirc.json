@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_controltower"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.ControlTower"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.controltower"
+    }
+  }
+}

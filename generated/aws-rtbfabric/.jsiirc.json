@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_rtbfabric"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.RTBFabric"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.rtbfabric"
+    }
+  }
+}

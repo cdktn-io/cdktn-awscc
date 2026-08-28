@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_codeartifact"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.CodeArtifact"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.codeartifact"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_mwaaserverless"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.MWAAServerless"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.mwaaserverless"
+    }
+  }
+}

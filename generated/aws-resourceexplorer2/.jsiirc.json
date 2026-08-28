@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_resourceexplorer2"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.ResourceExplorer2"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.resourceexplorer2"
+    }
+  }
+}

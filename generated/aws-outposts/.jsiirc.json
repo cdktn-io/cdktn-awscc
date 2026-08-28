@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_outposts"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.Outposts"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.outposts"
+    }
+  }
+}

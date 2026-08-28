@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_systemsmanagersap"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.SystemsManagerSAP"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.systemsmanagersap"
+    }
+  }
+}

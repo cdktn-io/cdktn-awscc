@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_networkflowmonitor"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.NetworkFlowMonitor"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.networkflowmonitor"
+    }
+  }
+}

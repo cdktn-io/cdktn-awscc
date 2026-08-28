@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_apprunner"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.AppRunner"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.apprunner"
+    }
+  }
+}

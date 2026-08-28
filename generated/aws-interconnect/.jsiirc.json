@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_interconnect"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.Interconnect"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.interconnect"
+    }
+  }
+}

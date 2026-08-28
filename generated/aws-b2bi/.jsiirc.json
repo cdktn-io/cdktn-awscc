@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_b2bi"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.B2BI"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.b2bi"
+    }
+  }
+}

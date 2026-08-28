@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_route53globalresolver"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.Route53GlobalResolver"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.route53globalresolver"
+    }
+  }
+}

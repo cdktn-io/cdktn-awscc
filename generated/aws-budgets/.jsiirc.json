@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_budgets"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.Budgets"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.budgets"
+    }
+  }
+}

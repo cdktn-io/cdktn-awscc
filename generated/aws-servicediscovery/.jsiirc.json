@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_servicediscovery"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.ServiceDiscovery"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.servicediscovery"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_managedblockchain"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.ManagedBlockchain"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.managedblockchain"
+    }
+  }
+}

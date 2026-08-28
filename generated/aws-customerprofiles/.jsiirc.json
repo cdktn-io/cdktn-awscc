@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_customerprofiles"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.CustomerProfiles"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.customerprofiles"
+    }
+  }
+}

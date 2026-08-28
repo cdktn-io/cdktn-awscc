@@ -25,16 +25,29 @@ export function propsName(cfnResourceName: string, suffix?: string): string {
 const PLAIN_IDENTIFIER = /^[A-Za-z_$][A-Za-z0-9_$]*$/;
 
 /**
+ * Prefixed when a PascalCased name would start with a digit: `'3dModel' -> 'N3dModel'`. Iteration 3
+ * finding 3 (CONTRACT.md "digit-leading identifiers get an uppercase repair"): a `_`-prefixed name
+ * (the iteration-2 rule) is a legal TypeScript identifier but not a legal jsii *type* name — jsii
+ * requires PascalCase, i.e. an uppercase first letter. `N` (mnemonic: numeric) is deterministic,
+ * one character, keeps the rest of the name intact, and yields the uppercase first letter jsii
+ * wants; it is never `_`.
+ */
+export const DIGIT_LEAD_PREFIX = "N";
+
+const DIGIT_START = /^[0-9]/;
+
+/**
  * `pascalCaseWords`/`fullPathBase` only capitalise word-initial letters; they never guarantee a
- * legal *leading character* for the identifier as a whole. A path segment that starts with a digit
- * (e.g. `3d_model`) would otherwise survive as `3dModel...`, which is not a valid TypeScript
- * identifier. Prefixing a single `_` is the same guard `sanitizeTypeName`'s `makeIdentifier`
- * applies (`src/grouped/sanitizers.ts`) — see CONTRACT.md "Iteration 2" for why this file doesn't
- * call that sanitizer directly. No occurrence in awscc 1.98.0 (0 digit-leading leaves across all
- * 8,590 nested-type candidates — see `docs/spike-naming.md`), so this is latent, not observed.
+ * legal, jsii-acceptable *leading character* for the identifier as a whole. A path segment that
+ * starts with a digit (e.g. `3d_model`) would otherwise survive as `3dModel...`, a legal TypeScript
+ * identifier but not a legal jsii type name. No occurrence in awscc 1.98.0 (0 digit-leading leaves
+ * across all 8,590 nested-type candidates — see `docs/spike-naming.md`), so this is latent, not
+ * observed.
  */
 function ensureIdentifierStart(s: string): string {
-  return PLAIN_IDENTIFIER.test(s.charAt(0)) || s.length === 0 ? s : `_${s}`;
+  if (s.length === 0) return s;
+  if (DIGIT_START.test(s)) return `${DIGIT_LEAD_PREFIX}${s}`;
+  return `${s.charAt(0).toUpperCase()}${s.slice(1)}`;
 }
 
 /** Splits on any run of non-identifier characters, capitalising the first letter of each piece. */

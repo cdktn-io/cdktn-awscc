@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_emr"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.EMR"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.emr"
+    }
+  }
+}

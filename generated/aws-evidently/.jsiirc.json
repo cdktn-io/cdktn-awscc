@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_evidently"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.Evidently"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.evidently"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_appflow"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.AppFlow"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.appflow"
+    }
+  }
+}

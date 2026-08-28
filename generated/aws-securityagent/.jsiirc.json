@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_securityagent"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.SecurityAgent"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.securityagent"
+    }
+  }
+}
