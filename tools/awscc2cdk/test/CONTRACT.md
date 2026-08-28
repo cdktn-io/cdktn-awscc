@@ -1047,3 +1047,201 @@ Measured on this machine while writing this contract, so the acceptance numbers 
 
 Not pre-validated (genuinely open work): whether jsii completes over 1,494 resources at all and at
 what heap, whether pacmak can build the wheel here, and what the python import numbers are.
+
+## Iteration 3b — the iteration-3 verifier's findings
+
+Scope: exactly the seven findings below. No lazification, no new features, no re-opening of any
+iteration-1/2/3 decision that is not listed here. New/changed test files:
+`iter3b.findings.test.ts` (new), `step2.cfnmap.test.ts`, `step3.naming.test.ts`,
+`step6.full-emit.test.ts`, `step6.full-jsii.test.ts`, `helpers/paths.ts` (additive).
+
+### Commands
+
+```
+cd cdktn-awscc
+pnpm test                                        # the contract (fast)
+RUN_FULL=1 pnpm test                             # + regeneration, determinism, tsc over generated/
+RUN_FULL_JSII=1 pnpm test:full-jsii              # + jsii, pacmak, the wheel, the staged require
+/opt/homebrew/bin/python3.14 scripts/bench_python_import.py    # the benchmark (never `python3`)
+```
+
+**Python on this machine is `/opt/homebrew/bin/python3.14`.** The system `python3` is 3.9 and cannot
+install the packages the benchmark needs. Every python invocation in this iteration — the benchmark
+and `fixtures/extract-fixture.py` — is written with that absolute path.
+
+### Finding 1 — the contract contradicted itself about unmapped namespaces (contract defect)
+
+`step2.cfnmap.test.ts` and `step3.naming.test.ts` asserted
+`moduleForCfnType('AWS::NotAService::Thing') === undefined` while `step5.scope-map.test.ts` and
+step 6 required auto-extension of exactly such a namespace. **Auto-extend is the rule** (it is what
+spec2cdk's `generateAll()` does, and step 6 depends on it): a well-formed `Family::Service::Resource`
+always resolves. Both `toBeUndefined()` assertions are **retired** and replaced with:
+
+* `moduleForCfnType('AWS::NotAService::Thing')` → `{ module: 'aws-notaservice' }`;
+* `autoExtendedNamespaces(['AWS::NotAService::Thing'])` → `['AWS::NotAService']`;
+* `effectiveScopeMap([...])['aws-notaservice']` →
+  `{ scopes: [{ namespace: 'AWS::NotAService' }], autoExtended: true }`;
+* `moduleNameFor('AWS::NotAService::Thing')` → `{ dir: 'aws-notaservice', symbol: 'aws_notaservice' }`.
+
+`moduleForCfnType` still returns `undefined` for a malformed type (fewer than two `::` segments) —
+that is the only `undefined` left, and it is unchanged.
+
+### Finding 2 — `timedRun` never measured RSS (test defect)
+
+`/usr/bin/time -l` writes its report to **stderr**; the helper read `execFileSync`'s return value,
+i.e. stdout, so `maxRssMB` was silently `0` on every successful run. The helper now uses
+`spawnSync` and scans `stdout + stderr`, on success and on failure alike. A self-check test in the
+default suite (`describe("timedRun")`) runs `node -e "process.exit(0)"` through it and requires
+`maxRssMB > 0`, so the helper can never regress to the silent zero.
+
+### Finding 3 — REAL DEFECT: the `exports` map did not resolve (code defect)
+
+`generated/package.exports.json` emitted targets relative to `generated/` (`"./index.js"`), but the
+published `package.json` sits **one level above** `generated/` with `main: "generated/index.js"`.
+Node stops consulting `main` the moment an `exports` field exists, so `require('@cdktn/awscc')`
+failed with `MODULE_NOT_FOUND` for a real consumer.
+
+**Staging model (decided, not negotiable for this iteration): the repo layout is kept.** The
+published package is `{ package.json, generated/** }`; `generated/` is *not* flattened into the
+package root at publish time. The generator therefore emits every target with the `./generated/`
+prefix, while the *keys* stay the subpaths a consumer types:
+
+```json
+{
+  ".":         { "types": "./generated/index.d.ts",         "default": "./generated/index.js" },
+  "./aws-ec2": { "types": "./generated/aws-ec2/index.d.ts", "default": "./generated/aws-ec2/index.js" }
+}
+```
+
+Asserted:
+
+* `step6.full-emit.test.ts` — `.` and `./aws-ec2` equal the two objects above verbatim; **every**
+  entry's `types` and `default` start with `./generated/` and name a file that exists in the
+  committed tree (checked against the `.ts` source).
+* `iter3b.findings.test.ts`, default suite, **no build needed** — a temp package is staged with
+  the *real* `package.exports.json` and the *real* `jsii/package.json`, plus a stub
+  `generated/<module>/index.js` + `index.d.ts` per key **laid out the way the package is laid out,
+  not the way the map points** (otherwise the test would just follow a wrong map). It is symlinked
+  into a consumer's `node_modules/@cdktn/awscc`, and then:
+  * `node -e "require('@cdktn/awscc')"` exits 0;
+  * `node -e "require('@cdktn/awscc/aws-ec2').CcVPC"` is a function;
+  * `tsc -p` with `module`/`moduleResolution` `node16` type-checks
+    `import { CcVPC } from "@cdktn/awscc/aws-ec2";` against the `.d.ts` subpath;
+  * `main`/`types` in `jsii/package.json` name the same two files as the `.` export.
+* `step6.full-jsii.test.ts`, `RUN_FULL_JSII=1` — the same two `require`s against the **real**
+  compiled stage, after jsii has emitted `.js`/`.d.ts`.
+
+### Finding 4 — `.jsiirc.json` ignored the auto-extended modules (code defect)
+
+`src/grouped/jsiirc.ts` read only `src/vendored/scope-map.json`, so each of the eight auto-extended
+modules had no namespace to derive from and fell through to the directory-name fallback:
+`Io.Cdktn.AwsCc.Cloudhsm` instead of `.CloudHSM`, `.Drs` instead of `.DRS`, and so on. The
+derivation must go through the **effective** map, i.e. `modulePartsFromNamespace(namespace)` with
+the CFN spec's own casing. Additive API (the vendored map stays the default, so every earlier test
+is untouched):
+
+```ts
+export function modulePartsForModule(moduleDir: string, scopeMap?: ScopeMapFile): ModuleParts | undefined;
+export function jsiircFor(moduleDir: string, scopeMap?: ScopeMapFile): JsiircTargets;
+```
+
+`grouped-generate.ts` passes the effective map it already builds. Expected values, computed by hand
+from `modulePartsFromNamespace` + the plan §10 roots and asserted verbatim — both from `jsiircFor`
+and from the committed `generated/<module>/.jsiirc.json`:
+
+| namespace | module | python | dotnet | java |
+|---|---|---|---|---|
+| `AWS::AccountAccess` | `aws-accountaccess` | `cdktn_awscc.aws_accountaccess` | `Io.Cdktn.AwsCc.AccountAccess` | `io.cdktn.awscc.services.accountaccess` |
+| `AWS::AgentRegistry` | `aws-agentregistry` | `cdktn_awscc.aws_agentregistry` | `Io.Cdktn.AwsCc.AgentRegistry` | `io.cdktn.awscc.services.agentregistry` |
+| `AWS::CloudHSM` | `aws-cloudhsm` | `cdktn_awscc.aws_cloudhsm` | `Io.Cdktn.AwsCc.CloudHSM` | `io.cdktn.awscc.services.cloudhsm` |
+| `AWS::DRS` | `aws-drs` | `cdktn_awscc.aws_drs` | `Io.Cdktn.AwsCc.DRS` | `io.cdktn.awscc.services.drs` |
+| `AWS::DataExchange` | `aws-dataexchange` | `cdktn_awscc.aws_dataexchange` | `Io.Cdktn.AwsCc.DataExchange` | `io.cdktn.awscc.services.dataexchange` |
+| `AWS::OpenSearch` | `aws-opensearch` | `cdktn_awscc.aws_opensearch` | `Io.Cdktn.AwsCc.OpenSearch` | `io.cdktn.awscc.services.opensearch` |
+| `AWS::ServerlessRepo` | `aws-serverlessrepo` | `cdktn_awscc.aws_serverlessrepo` | `Io.Cdktn.AwsCc.ServerlessRepo` | `io.cdktn.awscc.services.serverlessrepo` |
+| `AWS::Wickr` | `aws-wickr` | `cdktn_awscc.aws_wickr` | `Io.Cdktn.AwsCc.Wickr` | `io.cdktn.awscc.services.wickr` |
+
+`AWS::Wickr` is in the table because it *is* auto-extended; its value was already right by accident
+(the directory fallback happens to PascalCase to the same string). The java column was right for all
+eight by accident too — it lowercases — and is pinned anyway so the rule stays total. Also asserted:
+`modulePartsForModule(dir, effective).primaryNamespace / moduleFamily / moduleBaseName` equal the
+namespace, `AWS`, and the namespace's second segment; `jsiircFor(dir)` **without** a map still gives
+the iteration-3 answer for `aws-ec2`; and the dotnet namespace is unique across all 310 effective
+modules minus `core` (measured while writing this: 309 distinct values, no collision — in particular
+`Io.Cdktn.AwsCc.OpenSearch` does not collide with `aws-opensearchservice`'s
+`Io.Cdktn.AwsCc.OpenSearchService`).
+
+### Finding 5 — pacmak: assert on the wheel, and the escape hatch is gone
+
+With a modern python on `PATH`, `jsii-pacmak --targets python` exits 0 but its default `--clean`
+removes the loose source tree, so `dist/python/src/cdktn_awscc/aws_ec2/__init__.py` can never exist
+for a successful wheel build. The old test therefore could satisfy the wheel assertion **or** the
+loose-source assertion, never both, which is what pushed iteration 3 onto the `PACMAK_WHEEL=0`
+escape hatch. **`PACMAK_WHEEL` is removed** — there is no `--code-only` mode in the contract any
+more. The test now asserts on the artifact we actually ship:
+
+* exactly one `.whl` in `dist/python`, named `cdktn_awscc-…`;
+* `unzip -l <wheel>` lists `cdktn_awscc/aws_ec2/__init__.py` **and** `cdktn_awscc/__init__.py`;
+* `full-build-metrics.json`'s `pacmak_python.wheelBytes` is now in the `> 0` set, alongside
+  `seconds` and `fileCount`.
+
+### Finding 6 — the vendored scope map was a JSON round-trip
+
+`VENDORED.md` claimed `src/vendored/scope-map.json` was unmodified, but its keys had been
+re-serialised (in `aws-kinesisanalytics`, `deprecated` had moved ahead of `namespace`/`suffix`).
+Re-copy the bytes verbatim:
+
+```
+gh api "repos/aws/aws-cdk/contents/packages/aws-cdk-lib/scripts/scope-map.json?ref=6808bb7e04d64a903a73ad56a7879c75019a5908" \
+  --jq .content | base64 -d > cdktn-awscc/tools/awscc2cdk/src/vendored/scope-map.json
+```
+
+Recorded and asserted (both values measured from the re-fetched bytes while writing this contract):
+
+| | |
+|---|---|
+| sha256 | `24633aa19d9e1076f597c8af470e87d40c0f65bc509c624b2707bdab24dfa2d2` |
+| bytes | `32677` |
+
+`VENDORED.md` must carry that sha256 next to the `scope-map.json` row (asserted by substring), and
+the file must still contain upstream's key order for the `AWS::KinesisAnalyticsV2` scope
+(`namespace`, `suffix`, `deprecated`). Nothing about resolution changes — verified: iterations 1–3
+stay green on the verbatim bytes.
+
+### Finding 7 — the benchmark must fail fast, and eat the pipeline's own wheel
+
+* `scripts/bench_python_import.py` guards on `sys.version_info` **before** doing anything else and
+  exits non-zero with a readable message naming `/opt/homebrew/bin/python3.14` when run under
+  < 3.10. Asserted by source inspection *and* by actually running it under `/usr/bin/python3` (3.9
+  here; the check skips itself on a machine where that binary is new enough) — non-zero exit, a
+  message matching `/python 3\.10/i` containing `/opt/homebrew/bin/python3.14`, and **no**
+  `Traceback` (a guard, not an import blowing up).
+* The benchmarked wheel comes from the graded pipeline. `step6.full-jsii.test.ts` copies the wheel
+  it just asserted on to the stable path **`cdktn-awscc/dist/python/<wheel>`** (clearing any stale
+  `.whl` first); `dist/` is added to `cdktn-awscc/.gitignore`; the bench script installs from that
+  path. Asserted: the script references `dist/python`, `.gitignore` has a `dist/` line, and — if
+  `dist/python` exists at all — it holds exactly one `cdktn_awscc-*.whl`.
+* `docs/phase1-results.md` names `/opt/homebrew/bin/python3.14` and
+  `scripts/bench_python_import.py`, and its numbers must be re-measured from the wheel this
+  pipeline built (the iteration-3 write-up's numbers came from a hand-patched artifact, because of
+  finding 3 — they are not acceptable evidence and must be replaced, not annotated).
+
+### Contract validation (contract writer, 2026-08-28)
+
+Measured on this machine while writing this chapter, so every acceptance number is known-reachable:
+
+* `pnpm test` after these edits: **10 passed / 3 failed** suites, **29 failed / 160 passed** tests
+  (3 + 16 + 3 + 5 in `iter3b.findings.test.ts`, 1 exports test in `step6.full-emit.test.ts`, 1
+  metrics test in `step6.full-jsii.test.ts`), and every failure is one of findings 3, 4, 5, 6, 7 — no iteration-1/2/3 test regressed, and the two
+  finding-1 replacements pass against the current implementation as written;
+* rewriting `generated/package.exports.json` to the `./generated/` form makes all three finding-3
+  tests and the `step6.full-emit.test.ts` exports test pass (and the stub layout is built from the
+  package layout, so the test cannot follow a wrong map);
+* adding the optional `scopeMap` parameter to `modulePartsForModule`/`jsiircFor` makes all 17
+  finding-4 unit assertions pass; the committed-tree assertion still fails until `generated/` is
+  regenerated, which is the point;
+* dropping the re-fetched bytes in place makes both finding-6 file assertions pass and leaves
+  `step2`/`step5` fully green (50 tests, 0 failures);
+* the `timedRun` self-check passes with the `spawnSync` helper and reports a non-zero `maxRssMB`.
+
+Still genuinely open: whether `jsii-pacmak` builds the wheel end-to-end inside the graded test on
+this machine, and what the re-measured import numbers are.

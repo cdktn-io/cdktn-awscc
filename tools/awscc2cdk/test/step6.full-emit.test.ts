@@ -20,6 +20,7 @@ import {
   manifestPath,
   outDir,
   packageExportsPath,
+  packageRoot,
   toolRoot,
 } from "./helpers/paths";
 
@@ -112,8 +113,20 @@ describe("the committed generated/ tree", () => {
   it("has a package.exports.json with the root plus one entry per module", () => {
     const exports = JSON.parse(fs.readFileSync(packageExportsPath, "utf8"));
     expect(Object.keys(exports).sort()).toEqual([".", ...modules.map((m) => `./${m}`)].sort());
-    expect(JSON.stringify(exports["."])).toContain("./index.js");
-    expect(JSON.stringify(exports["./aws-ec2"])).toContain("./aws-ec2/index.js");
+    // Iteration 3b, finding 3: the exports map lives in a package.json one level *above*
+    // `generated/`, so every target is prefixed with `./generated/`.
+    expect(exports["."]).toEqual({ types: "./generated/index.d.ts", default: "./generated/index.js" });
+    expect(exports["./aws-ec2"]).toEqual({
+      types: "./generated/aws-ec2/index.d.ts",
+      default: "./generated/aws-ec2/index.js",
+    });
+    for (const [key, value] of Object.entries(exports as Record<string, any>)) {
+      expect([key, value.types.startsWith("./generated/")]).toEqual([key, true]);
+      expect([key, value.default.startsWith("./generated/")]).toEqual([key, true]);
+      // every target resolves to a file we actually emitted (checked against the .ts source)
+      const src = path.join(packageRoot, value.default.replace(/^\.\/generated\//, "generated/")).replace(/\.js$/, ".ts");
+      expect([key, fs.existsSync(src)]).toEqual([key, true]);
+    }
   });
 });
 

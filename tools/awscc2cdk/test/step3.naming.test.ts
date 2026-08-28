@@ -113,8 +113,13 @@ describe("moduleNameFor", () => {
     });
   });
 
-  it("returns undefined for an unmapped namespace", () => {
-    expect(naming.moduleNameFor("AWS::NotAService::Thing")).toBeUndefined();
+  it("auto-extends an unmapped namespace (iteration 3b, finding 1)", () => {
+    // Retired `toBeUndefined()`: `moduleForCfnType` auto-extends, so `moduleNameFor` does too.
+    // CONTRACT.md "Iteration 3b".
+    expect(naming.moduleNameFor("AWS::NotAService::Thing")).toEqual({
+      dir: "aws-notaservice",
+      symbol: "aws_notaservice",
+    });
   });
 });
 

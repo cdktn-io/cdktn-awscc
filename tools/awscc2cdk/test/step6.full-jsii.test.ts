@@ -9,7 +9,7 @@
  *
  * This file is read-only for the implementer.
  */
-import { execFileSync } from "node:child_process";
+import { spawnSync } from "node:child_process";
 import * as fs from "node:fs";
 import * as os from "node:os";
 import * as path from "node:path";
@@ -17,6 +17,7 @@ import { listFiles, tmpDir } from "./helpers/emit";
 import { num, readTables, tableWithHeaders } from "./helpers/md-table";
 import {
   benchScriptPath,
+  distPythonDir,
   fullBuildMetricsPath,
   generatedDir,
   jsiiManifestPath,
@@ -83,31 +84,38 @@ interface Metrics {
   pacmak_python: { seconds: number; wheelBytes: number; fileCount: number };
 }
 
-/** `/usr/bin/time -l` on macOS: "maximum resident set size" is printed in bytes. */
+/**
+ * `/usr/bin/time -l` on macOS prints its report — including "maximum resident set size", in bytes —
+ * on **stderr**, not stdout (iteration-3 finding 2: reading `execFileSync`'s return value, i.e.
+ * stdout only, made `maxRssMB` always 0). `spawnSync` gives us both streams on success and on
+ * failure, so the regex runs over `stdout + stderr` either way.
+ */
 function timedRun(cmd: string, args: string[], cwd: string): { code: number; seconds: number; maxRssMB: number; output: string } {
   const started = Date.now();
-  let code = 0;
-  let output = "";
-  try {
-    output = execFileSync("/usr/bin/time", ["-l", cmd, ...args], {
-      cwd,
-      encoding: "utf8",
-      stdio: ["ignore", "pipe", "pipe"],
-      maxBuffer: 512 * 1024 * 1024,
-      env: { ...process.env, NODE_OPTIONS: process.env.NODE_OPTIONS ?? "--max-old-space-size=16384" },
-    });
-  } catch (e: any) {
-    code = e.status ?? 1;
-    output = `${e.stdout ?? ""}${e.stderr ?? ""}`;
-  }
+  const run = spawnSync("/usr/bin/time", ["-l", cmd, ...args], {
+    cwd,
+    encoding: "utf8",
+    maxBuffer: 512 * 1024 * 1024,
+    env: { ...process.env, NODE_OPTIONS: process.env.NODE_OPTIONS ?? "--max-old-space-size=16384" },
+  });
+  const output = `${run.stdout ?? ""}${run.stderr ?? ""}`;
   const rss = /(\d+)\s+maximum resident set size/.exec(output);
   return {
-    code,
+    code: run.status ?? 1,
     seconds: (Date.now() - started) / 1000,
     maxRssMB: rss ? Number(rss[1]) / (1024 * 1024) : 0,
     output,
   };
 }
+
+/** self-check for the helper above: `maxRssMB` must be a real number, not the silent 0. */
+describe("timedRun", () => {
+  it("reads maximum resident set size off /usr/bin/time -l's stderr", () => {
+    const run = timedRun(process.execPath, ["-e", "process.exit(0)"], process.cwd());
+    expect(run.code).toBe(0);
+    expect(run.maxRssMB).toBeGreaterThan(0);
+  });
+});
 
 jsiiRun("jsii + jsii-pacmak over the whole provider (RUN_FULL_JSII=1)", () => {
   let stage: string;
@@ -155,27 +163,56 @@ jsiiRun("jsii + jsii-pacmak over the whole provider (RUN_FULL_JSII=1)", () => {
   }, 5400000);
 
   it("jsii-pacmak --targets python exits 0 and builds a wheel", () => {
-    // Escape hatch, auditable: PACMAK_WHEEL=0 downgrades to --code-only when this machine's pip
-    // cannot provision pacmak's venv (measured in iteration 2). Using it is a finding, not a fix.
-    const codeOnly = process.env.PACMAK_WHEEL === "0";
+    // Iteration-3 finding 5: pacmak's default `--clean` deletes the loose python source once the
+    // wheel is built, so the assertion belongs on the **wheel**, not on `dist/python/src/…`.
+    // There is no escape hatch: the wheel is what the benchmark installs and what we ship.
     const run = timedRun(
       path.join(packageRoot, "node_modules", ".bin", "jsii-pacmak"),
-      ["--targets", "python", ...(codeOnly ? ["--code-only"] : [])],
+      ["--targets", "python"],
       stage,
     );
     expect([run.code, run.output.slice(-4000)]).toEqual([0, run.output.slice(-4000)]);
 
     const pythonDir = path.join(stage, "dist", "python");
-    expect(fs.existsSync(path.join(pythonDir, "src", "cdktn_awscc", "aws_ec2", "__init__.py"))).toBe(true);
     const wheels = fs.existsSync(pythonDir) ? fs.readdirSync(pythonDir).filter((f) => f.endsWith(".whl")) : [];
-    if (!codeOnly) expect(wheels.length).toBe(1);
+    expect(wheels).toHaveLength(1);
+    const wheelPath = path.join(pythonDir, wheels[0]);
+    expect(wheels[0]).toMatch(/^cdktn_awscc-/);
+
+    const listing = spawnSync("unzip", ["-l", wheelPath], { encoding: "utf8" });
+    expect(listing.status).toBe(0);
+    expect(listing.stdout).toContain("cdktn_awscc/aws_ec2/__init__.py");
+    expect(listing.stdout).toContain("cdktn_awscc/__init__.py");
+
+    // Finding 7: park the graded build's own wheel where the benchmark reads it, so the numbers
+    // in docs/phase1-results.md come from this pipeline and not a hand-patched artifact.
+    fs.mkdirSync(distPythonDir, { recursive: true });
+    for (const stale of fs.readdirSync(distPythonDir).filter((f) => f.endsWith(".whl"))) {
+      fs.rmSync(path.join(distPythonDir, stale));
+    }
+    fs.copyFileSync(wheelPath, path.join(distPythonDir, wheels[0]));
 
     metrics.pacmak_python = {
       seconds: run.seconds,
-      wheelBytes: wheels.length === 1 ? fs.statSync(path.join(pythonDir, wheels[0])).size : 0,
+      wheelBytes: fs.statSync(wheelPath).size,
       fileCount: listFiles(pythonDir).length,
     };
   }, 5400000);
+
+  it("the staged package is requireable through its exports map", () => {
+    // Finding 3, on the real compiled tree this time: jsii has emitted .js/.d.ts next to the .ts,
+    // so `require('@cdktn/awscc')` and `require('@cdktn/awscc/aws-ec2')` must both resolve.
+    const consumer = tmpDir("awscc2cdk-consumer-");
+    fs.mkdirSync(path.join(consumer, "node_modules", "@cdktn"), { recursive: true });
+    fs.symlinkSync(stage, path.join(consumer, "node_modules", "@cdktn", "awscc"), "dir");
+    const run = spawnSync(
+      process.execPath,
+      ["-e", "if (typeof require('@cdktn/awscc/aws-ec2').CcVPC !== 'function') process.exit(3); require('@cdktn/awscc');"],
+      { cwd: consumer, encoding: "utf8" },
+    );
+    expect([run.status, `${run.stderr}`.slice(0, 4000)]).toEqual([0, `${run.stderr}`.slice(0, 4000)]);
+    fs.rmSync(consumer, { recursive: true, force: true });
+  }, 900000);
 });
 
 /* ------------------------------------------------------------------ the metrics file */
@@ -189,11 +226,11 @@ describe("test/out/full-build-metrics.json", () => {
       expect([k, m.jsii[k]]).toEqual([k, m.jsii[k]]);
       expect(m.jsii[k]).toBeGreaterThan(0);
     }
-    for (const k of ["seconds", "fileCount"]) {
+    for (const k of ["seconds", "fileCount", "wheelBytes"]) {
+      // wheelBytes joined the "> 0" set in iteration 3b: there is no --code-only fallback any more.
       expect([k, typeof m.pacmak_python?.[k]]).toEqual([k, "number"]);
       expect(m.pacmak_python[k]).toBeGreaterThan(0);
     }
-    expect(typeof m.pacmak_python.wheelBytes).toBe("number");
     expect(m.jsii.submodules).toBe(MODULE_DIRS);
   });
 });

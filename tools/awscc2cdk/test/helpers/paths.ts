@@ -52,3 +52,12 @@ export const benchScriptPath = path.join(repoRoot, "scripts", "bench_python_impo
 /** the vendored aws-cdk-lib scope map */
 export const scopeMapPath = path.join(toolRoot, "src", "vendored", "scope-map.json");
 export const vendoredDocPath = path.join(toolRoot, "src", "vendored", "VENDORED.md");
+
+/* ---- iteration 3b ---- */
+
+/** `cdktn-awscc/dist` — jsii's outdir; gitignored. */
+export const distDir = path.join(packageRoot, "dist");
+/** stable home of the wheel the graded pipeline built, consumed by `scripts/bench_python_import.py` */
+export const distPythonDir = path.join(distDir, "python");
+/** `cdktn-awscc/.gitignore` — must ignore `dist/` (iteration 3b, finding 7) */
+export const packageGitignorePath = path.join(packageRoot, ".gitignore");

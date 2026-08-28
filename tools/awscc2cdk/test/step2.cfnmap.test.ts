@@ -152,8 +152,15 @@ describe("moduleForCfnType via the vendored scope-map", () => {
     });
   });
 
-  it("returns undefined for an unmapped namespace", () => {
-    expect(scopeMap.moduleForCfnType("AWS::NotAService::Thing")).toBeUndefined();
+  it("auto-extends an unmapped namespace and reports it (iteration 3b, finding 1)", () => {
+    // spec2cdk's `generateAll()` rule: a well-formed CFN type always resolves to *some* module.
+    // The iteration-1 `toBeUndefined()` assertion is retired — see CONTRACT.md "Iteration 3b".
+    expect(scopeMap.moduleForCfnType("AWS::NotAService::Thing")).toEqual({ module: "aws-notaservice" });
+    expect(scopeMap.autoExtendedNamespaces(["AWS::NotAService::Thing"])).toEqual(["AWS::NotAService"]);
+    expect(scopeMap.effectiveScopeMap(["AWS::NotAService::Thing"])["aws-notaservice"]).toEqual({
+      scopes: [{ namespace: "AWS::NotAService" }],
+      autoExtended: true,
+    });
   });
 });
 
