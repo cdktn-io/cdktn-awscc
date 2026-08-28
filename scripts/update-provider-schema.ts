@@ -1,6 +1,11 @@
 /**
  * Fetches the hashicorp/awscc terraform provider schema (via the terraform/opentofu CLI,
- * `@cdktn/provider-schema`'s `readSchema()`) and writes it to `schemas/awscc.schema.json`.
+ * `@cdktn/provider-schema`'s `readSchema()`) and writes it to `<repo>/schemas/schema.json` — the
+ * sibling `schemas/` directory one level above `cdktn-awscc/` (gitignored), which is the single
+ * path every test helper (`tools/awscc2cdk/test/helpers/paths.ts#fullSchemaPath`) reads from.
+ * Iteration 1 wrote a second, package-local `schemas/` directory instead (a stale
+ * "awscc." + "schema.json" path under `cdktn-awscc/`); that path is retired
+ * (iteration-2 debt (b), see CONTRACT.md "Iteration 2 — debt from iteration 1").
  *
  * Not exercised by the test suite (network + a terraform-compatible CLI binary required); run it
  * manually or in CI to refresh the schema used to regenerate fixtures. Plan §5 step 1.
@@ -13,7 +18,7 @@ import * as path from "node:path";
 import { TerraformProviderConstraint } from "@cdktn/commons";
 import { readSchema } from "@cdktn/provider-schema";
 
-const OUT_PATH = path.join(__dirname, "..", "schemas", "awscc.schema.json");
+const OUT_PATH = path.join(__dirname, "..", "..", "schemas", "schema.json");
 
 async function main(): Promise<void> {
   const version = process.argv[2];

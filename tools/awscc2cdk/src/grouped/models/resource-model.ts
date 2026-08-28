@@ -1,0 +1,69 @@
+// Adapted from src/vendored/cdktn/models/resource-model.ts — see src/grouped/README.md.
+// Trimmed to managed resources only (awscc's terraform schema has no provider/data-source/
+// ephemeral-resource schemas to generate bindings for), and `className`/`configStructName` are
+// public so grouped-generate.ts can rename them (Cc-prefixed CFN name instead of the vendored
+// resource-parser's flat, provider-prefixed PascalCase) after parsing.
+import { FQPN, parseFQPN, ProviderName } from "@cdktn/provider-schema";
+import { Schema } from "@cdktn/commons";
+import { AttributeModel } from "./attribute-model";
+import { Struct, ConfigStruct } from "./struct";
+
+interface ResourceModelOptions {
+  terraformType: string;
+  className: string;
+  configStructName: string;
+  attributes: AttributeModel[];
+  structs: Struct[];
+  fqpn: FQPN;
+  schema: Schema;
+  providerVersion?: string;
+}
+
+export class ResourceModel {
+  public className: string;
+  public configStructName: string;
+  public terraformType: string;
+  public provider: ProviderName;
+  public fqpn: FQPN;
+  public providerVersion?: string;
+  public attributes: AttributeModel[];
+  public schema: Schema;
+  public readonly structs: Struct[];
+
+  constructor(options: ResourceModelOptions) {
+    this.className = options.className;
+    this.configStructName = options.configStructName;
+    this.terraformType = options.terraformType;
+    this.attributes = options.attributes;
+    this.schema = options.schema;
+    this.fqpn = options.fqpn;
+    this.provider = parseFQPN(options.fqpn).name;
+    this.providerVersion = options.providerVersion;
+    this.structs = options.structs;
+  }
+
+  /** The resource's own Props struct — always index 0 conceptually, kept separate from the
+   * nested-type structs so callers can address "everything but Props" without filtering. */
+  public get configStruct(): ConfigStruct {
+    return new ConfigStruct(this.configStructName, this.attributes);
+  }
+
+  public get synthesizableAttributes(): AttributeModel[] {
+    return this.configStruct.assignableAttributes;
+  }
+
+  public get parentClassName(): string {
+    return "TerraformResource";
+  }
+
+  public get terraformResourceType(): string {
+    return this.terraformType;
+  }
+
+  public get linkToDocs(): string {
+    const { hostname, namespace, name } = parseFQPN(this.fqpn);
+    const version = this.providerVersion || "latest";
+    const docName = this.terraformType.replace(new RegExp(`^${this.provider}_`, "i"), "");
+    return `https://${hostname}/providers/${namespace}/${name}/${version}/docs/resources/${docName}`;
+  }
+}

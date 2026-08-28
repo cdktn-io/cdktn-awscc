@@ -74,11 +74,27 @@ function buildCfnIndex(db: SpecDatabase): CfnIndex {
   return { byKey, allTypes };
 }
 
+/**
+ * Memoised per `SpecDatabase` instance (iteration-2 debt (c)): building the index walks every
+ * resource in the spec (1,747 of them), so doing it once per `db` rather than once per call is
+ * the difference between ~9s and <1s for 20k lookups against the same database.
+ */
+const CFN_INDEX_CACHE = new WeakMap<SpecDatabase, CfnIndex>();
+
+function cachedCfnIndex(db: SpecDatabase): CfnIndex {
+  let index = CFN_INDEX_CACHE.get(db);
+  if (!index) {
+    index = buildCfnIndex(db);
+    CFN_INDEX_CACHE.set(db, index);
+  }
+  return index;
+}
+
 /** 'awscc_ec2_vpc' -> 'AWS::EC2::VPC'; undefined when the spec has no counterpart. */
 export function cfnTypeFor(awsccName: string, db: SpecDatabase): string | undefined {
   const key = joinKeyForAwsccName(awsccName);
   if (key === undefined) return undefined;
-  const { byKey } = buildCfnIndex(db);
+  const { byKey } = cachedCfnIndex(db);
   const hits = byKey.get(key);
   if (!hits || hits.length !== 1) return undefined;
   return hits[0];
@@ -121,7 +137,7 @@ export function buildCfnMap(
   const resourceSchemas = schema.provider_schemas?.[fqpn]?.resource_schemas ?? {};
   const awsccNames = Object.keys(resourceSchemas);
 
-  const cfnIndex = buildCfnIndex(db);
+  const cfnIndex = cachedCfnIndex(db);
 
   // Group awscc names by join key too, so a key claimed by >1 awscc resource is caught as
   // ambiguous (order-independent: grouping-then-sorting never depends on iteration order).
