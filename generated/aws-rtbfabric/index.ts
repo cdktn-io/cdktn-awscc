@@ -1,3 +1,5 @@
+// Copyright (c) cdktn-io
+// SPDX-License-Identifier: MPL-2.0
 export * from './inbound-external-link';
 export * from './link';
 export * from './link-routing-rule';

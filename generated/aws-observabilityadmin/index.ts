@@ -1,3 +1,5 @@
+// Copyright (c) cdktn-io
+// SPDX-License-Identifier: MPL-2.0
 export * from './organization-centralization-rule';
 export * from './organization-telemetry-rule';
 export * from './s3-table-integration';

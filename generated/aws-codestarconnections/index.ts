@@ -1,3 +1,5 @@
+// Copyright (c) cdktn-io
+// SPDX-License-Identifier: MPL-2.0
 export * from './connection';
 export * from './repository-link';
 export * from './sync-configuration';

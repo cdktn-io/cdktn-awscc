@@ -1,3 +1,5 @@
+// Copyright (c) cdktn-io
+// SPDX-License-Identifier: MPL-2.0
 export * from './agent';
 export * from './agent-alias';
 export * from './application-inference-profile';

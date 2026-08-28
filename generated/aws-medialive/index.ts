@@ -1,3 +1,5 @@
+// Copyright (c) cdktn-io
+// SPDX-License-Identifier: MPL-2.0
 export * from './channel-placement-group';
 export * from './cloud-watch-alarm-template';
 export * from './cloud-watch-alarm-template-group';

@@ -142,3 +142,21 @@ runs `jsii-docgen` over a single module (`aws-ec2`) and writes `docs/api/aws-ec2
 over the full 276-module assembly is not a phase-1 deliverable (see `docs/phase1-results.md` for
 the size the one-module sample came out at); this script only ever builds and documents one
 submodule at a time.
+
+## License
+
+This package is [MPL-2.0](LICENSE), matching the rest of the cdktn-io provider family
+(`cdk-terrain`, `cdktn-provider-*`). It vendors and adapts code from two upstream projects, each
+under its own license:
+
+* **Apache-2.0**, from [aws/aws-cdk](https://github.com/aws/aws-cdk) (`tools/@aws-cdk/spec2cdk`,
+  `tools/@aws-cdk/lazify`, `packages/aws-cdk-lib/scripts/scope-map.json`) — vendored under
+  `tools/awscc2cdk/src/vendored/spec2cdk/`, `tools/lazify/`, and `tools/awscc2cdk/src/vendored/scope-map.json`.
+* **MPL-2.0**, from [cdktn-io/cdk-terrain](https://github.com/cdktn-io/cdk-terrain)
+  (`packages/@cdktn/provider-generator`) — vendored under `tools/awscc2cdk/src/vendored/cdktn/`,
+  with adapted derivatives under `tools/awscc2cdk/src/grouped/`.
+
+See [`NOTICE`](NOTICE) for the full attribution, which directories carry which license, and the
+reasoning behind the header on `generated/` (the emitted resource bindings). Every vendored or
+adapted source file carries a per-file `SPDX-License-Identifier` header identifying its own
+license; `tools/awscc2cdk/test/licensing.test.ts` asserts this stays true.

@@ -1,3 +1,5 @@
+// Copyright (c) cdktn-io
+// SPDX-License-Identifier: MPL-2.0
 export * as aws_accessanalyzer from './aws-accessanalyzer';
 export * as aws_accountaccess from './aws-accountaccess';
 export * as aws_acmpca from './aws-acmpca';

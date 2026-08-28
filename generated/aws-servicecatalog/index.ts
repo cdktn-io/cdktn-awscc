@@ -1,3 +1,5 @@
+// Copyright (c) cdktn-io
+// SPDX-License-Identifier: MPL-2.0
 export * from './accepted-portfolio-share';
 export * from './cloud-formation-product';
 export * from './cloud-formation-provisioned-product';

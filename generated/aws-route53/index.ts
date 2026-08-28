@@ -1,3 +1,5 @@
+// Copyright (c) cdktn-io
+// SPDX-License-Identifier: MPL-2.0
 export * from './cidr-collection';
 export * from './dnssec';
 export * from './health-check';

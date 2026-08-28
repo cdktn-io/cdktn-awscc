@@ -1,3 +1,5 @@
+// Copyright (c) cdktn-io
+// SPDX-License-Identifier: MPL-2.0
 export * from './access-grant';
 export * from './access-grants-instance';
 export * from './access-grants-location';

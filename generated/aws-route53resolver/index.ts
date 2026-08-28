@@ -1,3 +1,5 @@
+// Copyright (c) cdktn-io
+// SPDX-License-Identifier: MPL-2.0
 export * from './firewall-domain-list';
 export * from './firewall-rule-group';
 export * from './firewall-rule-group-association';

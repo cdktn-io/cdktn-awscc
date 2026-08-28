@@ -64,3 +64,16 @@ imported by any step 1/2 code.
 | src/vendored/spec2cdk/naming/conventions.ts | /Users/vincentsmet/cdk/aws-cdk/tools/@aws-cdk/spec2cdk/lib/naming/conventions.ts | a9e6639df5ed1cbed0f247d3d18bc3db1eaf5ee1 |
 | src/vendored/spec2cdk/module-topology.ts | /Users/vincentsmet/cdk/aws-cdk/tools/@aws-cdk/spec2cdk/lib/module-topology.ts | a9e6639df5ed1cbed0f247d3d18bc3db1eaf5ee1 |
 | src/vendored/spec2cdk/util/jsii.ts | /Users/vincentsmet/cdk/aws-cdk/tools/@aws-cdk/spec2cdk/lib/util/jsii.ts | a9e6639df5ed1cbed0f247d3d18bc3db1eaf5ee1 |
+| src/vendored/spec2cdk/LICENSE | /Users/vincentsmet/cdk/aws-cdk/tools/@aws-cdk/spec2cdk/LICENSE | a9e6639df5ed1cbed0f247d3d18bc3db1eaf5ee1 |
+
+## Licensing audit (this pass)
+
+All three `spec2cdk/**` `.ts` files above carry no per-file header upstream — the spec2cdk package
+license lives at its root (`LICENSE` + `NOTICE`, both Apache-2.0 / Amazon.com, Inc.), confirmed by
+diffing every file against its origin. Each file above now has a short Apache-2.0 provenance
+header added by cdktn-io (mirroring the header already on `tools/lazify`'s vendored files), and
+`spec2cdk/LICENSE` was added here as a byte-identical copy of the origin, matching the precedent
+already set by `tools/lazify/LICENSE`. `conventions.ts` and `module-topology.ts` are copied
+verbatim (diffed byte-for-byte against origin); `util/jsii.ts` carries the one documented import
+adaptation (`../naming` -> `../naming/conventions`, see above) and its header says so. See the
+root `NOTICE` for the package-wide license structure.

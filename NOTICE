@@ -1,0 +1,158 @@
+cdktn-awscc
+Copyright (c) 2026 cdktn-io
+
+This package is licensed as a whole under the Mozilla Public License, Version 2.0 (MPL-2.0) — see
+LICENSE. It vendors and adapts source from two upstream projects, each under its own license. This
+file explains the structure; the SPDX headers at the top of each individual source file are the
+authoritative statement for that file.
+
+## Why MPL-2.0 at the root
+
+cdktn-awscc is one of the cdktn-io "provider" family of packages (alongside cdktn-io/cdk-terrain
+itself and cdktn-io/cdktn-provider-*), all of which are MPL-2.0. The package's runtime core —
+the parser/model/emitter pipeline under tools/awscc2cdk/src/grouped/ and its unmodified
+counterpart under tools/awscc2cdk/src/vendored/cdktn/ — is an adaptation of
+cdktn-io/cdk-terrain's `@cdktn/provider-generator` (itself MPL-2.0, HashiCorp-originated), and the
+generated/ tree it produces (1,494 resource bindings across 276 modules — the actual shipped
+product) is a Terraform CDK provider binding in the same family as cdktn-provider-awscc. Root
+MPL-2.0 keeps this package's license consistent with the rest of the fleet.
+
+This is a free choice, not a legal requirement: MPL-2.0 §3.3 explicitly allows combining
+MPL-covered files with differently-licensed files into a "Larger Work" distributed under terms of
+your choosing, provided each MPL-covered *file* keeps its MPL notice and remains available under
+MPL-2.0. Apache-2.0 §4 imposes no restriction on the license of a combined/larger work either,
+provided attribution and modification notices are preserved. Both conditions are met here (see
+below) — so the choice of MPL-2.0 as the root/package license was cdktn-io's, made for fleet
+consistency with the org's other provider packages, not because either upstream license compelled
+it.
+
+**Flag for human review:** `package.json` previously declared `"license": "Apache-2.0"`; this pass
+changed it to `"MPL-2.0"` to match the reasoning above. That is a user-facing change (it affects
+what license text package registries display) and is worth a maintainer sign-off before release,
+even though nothing here required Apache-2.0 — the package's own prior declaration was itself just
+a placeholder from early scaffolding, not a considered decision either way.
+
+## Apache-2.0 portions — aws/aws-cdk
+
+Copyright 2018-2026 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+Licensed under the Apache License, Version 2.0.
+
+Vendored from https://github.com/aws/aws-cdk at commit `a9e6639df5ed1cbed0f247d3d18bc3db1eaf5ee1`
+(scope-map.json refreshed separately from `main` at `6808bb7e04d64a903a73ad56a7879c75019a5908` —
+see tools/awscc2cdk/src/vendored/VENDORED.md for why):
+
+* `tools/awscc2cdk/src/vendored/spec2cdk/` — `naming/conventions.ts`, `module-topology.ts`,
+  `util/jsii.ts` from `tools/@aws-cdk/spec2cdk/lib/`, plus a copy of that package's own `LICENSE`.
+  Upstream carries the Apache-2.0 license at the spec2cdk package root, not as per-file headers;
+  each vendored file here now has a short Apache-2.0 provenance header added by cdktn-io so the
+  file is self-identifying once moved outside that tree (Apache-2.0 does not require this — the
+  bundled LICENSE + this NOTICE already satisfy §4(a)/(d) — but it makes intent unambiguous at the
+  file level, matching the convention already used for tools/lazify/**). `naming/conventions.ts`
+  and `module-topology.ts` are byte-identical to origin. `util/jsii.ts` has one adaptation (an
+  import repointed from the `../naming` barrel to `../naming/conventions`, since only
+  `conventions.ts` is vendored — not a behavioural change) marked in its header per Apache-2.0
+  §4(b).
+* `tools/awscc2cdk/src/vendored/scope-map.json` — `packages/aws-cdk-lib/scripts/scope-map.json`,
+  copied unmodified (JSON has no header convention; see VENDORED.md for provenance).
+* `tools/lazify/` — the whole `tools/@aws-cdk/lazify` tool (`lib/index.ts`, `bin/lazify.ts`,
+  `bin/lazify`, `README.md`, `LICENSE`), copied byte-verbatim per tools/lazify/VENDORED.md, with a
+  provenance header prepended to the two `.ts` files (upstream itself carries no per-file header).
+  `tools/lazify/LICENSE` is upstream's own Apache-2.0 text, already present before this audit.
+* `tools/awscc2cdk/src/grouped/sanitizers.ts` — an adapted, dependency-free copy of the three
+  sanitizer functions (`propertyNameFromCloudFormation`, `sanitizeTypeName`, `santitizeFieldName`)
+  from `spec2cdk/lib/naming/conventions.ts`. Already carried a correct Apache-2.0 header with a
+  modification note before this audit; unchanged here.
+
+Apache-2.0 §4 requirements met: (a) LICENSE included at every vendoring root that needs one —
+tools/lazify/LICENSE (pre-existing) and the newly-added
+tools/awscc2cdk/src/vendored/spec2cdk/LICENSE; (b) modified files marked in their headers
+(`util/jsii.ts`, `sanitizers.ts`); (c)/(d) the Amazon.com, Inc. copyright and attribution notice is
+retained in every per-file header and repeated in this NOTICE.
+
+## MPL-2.0 portions — cdktn-io/cdk-terrain
+
+Copyright (c) 2020 HashiCorp, Inc. (fork of hashicorp/terraform-cdk).
+Licensed under the Mozilla Public License, Version 2.0.
+
+Vendored from https://github.com/cdktn-io/cdk-terrain at commit
+`358edc7c39b0b380ba89fd31881f0577fe9b6214`, `packages/@cdktn/provider-generator/src/**`:
+
+* `tools/awscc2cdk/src/vendored/cdktn/**` — copied, then adapted minimally (three import-path
+  fixes only, documented in tools/awscc2cdk/src/vendored/VENDORED.md); every file carries the
+  original `// Copyright (c) HashiCorp, Inc` / `// SPDX-License-Identifier: MPL-2.0` header, with
+  a modification note on the three files whose imports moved.
+* `tools/awscc2cdk/src/grouped/**` — a second, deliberately-diverging copy of the same upstream
+  (this is what actually generates the grouped/aws-cdk-lib-shaped output). Every file that
+  differs from its `vendored/cdktn/` counterpart carries the HashiCorp MPL-2.0 header plus an
+  "Adapted from src/vendored/cdktn/... — see src/grouped/README.md" modification note describing
+  what changed; files that are byte-identical to their vendored counterpart (`loop-detection.ts`,
+  `models/attribute-model.ts`, `models/scope.ts`, `models/supported-stored-classes.ts`, `util.ts`
+  — verified by diff) correctly carry the header with no modification note, since none is needed.
+  `cfn-recovery.ts`, `jsii-evidence.ts`, `jsiirc.ts`, `namespace-context.ts` are original cdktn-io
+  code (no upstream counterpart) and carry no third-party header; they fall under this package's
+  own MPL-2.0 root license.
+
+MPL-2.0 §3.1/§3.4 requirements met: every MPL-covered file keeps HashiCorp's copyright/SPDX notice
+in its own header (verbatim copies) or that notice plus a stated modification (adapted copies);
+none of that source text is removed or altered in a way that hides the modification.
+
+## `tools/awscc2cdk/src/naming.ts`
+
+Not a copy or adaptation of any upstream file — it is a from-scratch algorithm described in its
+own header as "inspired by ideas from" `spec2cdk/naming/conventions.ts`'s sanitizers (which live,
+adapted, in `sanitizers.ts` above) and cdk-terrain's `uniqueClassName` (which it deliberately
+replaces with a different, deterministic algorithm). No third-party copyright header applies;
+it is covered by this package's own MPL-2.0 root license like the rest of cdktn-io's original
+code.
+
+## `generated/` — the 1,494 emitted resource bindings
+
+Every `.ts` file under `generated/` (per-resource files and per-module/root `index.ts` barrels;
+not the `.jsiirc.json`, `MANIFEST.sha256`, `scope-map.effective.json` or `package.exports.json`
+metadata, which are plain data with no comment syntax or authorial content) now carries:
+
+    // Copyright (c) cdktn-io
+    // SPDX-License-Identifier: MPL-2.0
+
+**Reasoning, and why this is not "Copyright IBM Corp." / "Copyright (c) HashiCorp, Inc.":**
+cdktn-io/cdktn-provider-awscc (a sibling, hand-generated-by-cdktn provider package) stamps
+"Copyright IBM Corp. 2021, 2026 / SPDX-License-Identifier: MPL-2.0" on every generated file. That
+header is *not* emitted by cdk-terrain's provider-generator itself — confirmed by reading
+`tools/awscc2cdk/src/vendored/cdktn/provider-generator.ts`, which only ever writes
+`// generated from terraform resource schema`, no copyright line — it is stamped afterward by that
+repo's own `copywrite` tool (`.copywrite.hcl`, `license = "MPL-2.0"`), which applies the project's
+declared license/copyright header project-wide, generated output included, without distinguishing
+authored from generated files.
+
+Copying that IBM/HashiCorp attribution onto *our* generated/ tree would misattribute authorship:
+`generated/` here is the output of this package's own generator
+(`tools/awscc2cdk/src/grouped/**`), which is a heavily-adapted derivative of cdk-terrain's
+generator, not a copy of it (see `src/grouped/README.md` for what changed structurally: grouped,
+namespace-qualified, `Cc`-prefixed aws-cdk-lib-shaped output instead of cdk-terrain's flat
+per-resource-directory output). The emitted text — class/interface names, property lists, JSDoc —
+is newly authored by running that adapted tool over public schema data (the awscc Terraform
+provider schema, itself derived from AWS CloudFormation's public resource-type schemas); no
+upstream source text is copied into it. So the header identifies the actual author (cdktn-io) and
+the actual license the combined output is distributed under (this package's own MPL-2.0), while
+still following the *precedent* cdktn-provider-awscc set — that generated Terraform CDK bindings
+should carry a copyright + SPDX header at all, in that two-line `//` shape (matching the style
+already used throughout this codebase's hand-written MPL headers, rather than the `/** */` block
+form cdktn-provider-awscc's copywrite tool happens to emit).
+
+The header is emitted by `tools/awscc2cdk/src/grouped-generate.ts` (the only code path that writes
+to `generated/`; `src/legacy-generate.ts` — the unmodified-vendored-generator path used only by the
+step1 golden/parity test — is unchanged and untouched by this audit).
+
+## Modification-note convention
+
+Per Apache-2.0 §4(b) and MPL-2.0 §3.4(a), every adapted (not byte-identical) vendored file states
+what changed, either in its own header (short adaptations) or via a pointer to a longer writeup
+(`tools/awscc2cdk/src/vendored/VENDORED.md`, `tools/awscc2cdk/src/grouped/README.md`,
+`tools/lazify/VENDORED.md`) for adaptations too long to summarize in a header comment. Byte-
+identical vendored files carry the upstream header/notice with no modification note, since none
+occurred (verified by diffing against the pinned-commit origin — see the VENDORED.md tables).
+
+## Third-party dependencies
+
+Ordinary npm dependencies (jest, typescript, jsii, aws-cdk-lib, etc.) are not vendored — they are
+installed via `pnpm` and carry their own licenses under `node_modules/`, unrelated to this NOTICE.

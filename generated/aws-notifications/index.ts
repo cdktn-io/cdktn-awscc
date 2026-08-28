@@ -1,3 +1,5 @@
+// Copyright (c) cdktn-io
+// SPDX-License-Identifier: MPL-2.0
 export * from './channel-association';
 export * from './event-rule';
 export * from './managed-notification-account-contact-association';

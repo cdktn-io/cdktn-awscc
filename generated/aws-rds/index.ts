@@ -1,3 +1,5 @@
+// Copyright (c) cdktn-io
+// SPDX-License-Identifier: MPL-2.0
 export * from './custom-db-engine-version';
 export * from './db-cluster';
 export * from './db-cluster-parameter-group';

@@ -1,3 +1,5 @@
+// Copyright (c) cdktn-io
+// SPDX-License-Identifier: MPL-2.0
 export * from './api';
 export * from './api-gateway-managed-overrides';
 export * from './api-mapping';

@@ -1,3 +1,5 @@
+// Copyright (c) cdktn-io
+// SPDX-License-Identifier: MPL-2.0
 export * from './aggregation-authorization';
 export * from './config-rule';
 export * from './configuration-aggregator';

@@ -1,3 +1,5 @@
+// Copyright (c) cdktn-io
+// SPDX-License-Identifier: MPL-2.0
 export * from './cache-policy';
 export * from './cloud-front-origin-access-identity';
 export * from './connection-function';

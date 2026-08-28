@@ -1,3 +1,10 @@
+// Portions Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+// SPDX-License-Identifier: Apache-2.0
+// Vendored from aws/aws-cdk tools/@aws-cdk/spec2cdk/lib/naming/conventions.ts (Apache-2.0),
+// commit a9e6639df5ed1cbed0f247d3d18bc3db1eaf5ee1 — see ../../VENDORED.md. Upstream carries the
+// Apache-2.0 license/NOTICE at the spec2cdk package root (also mirrored alongside this file as
+// LICENSE), not as a per-file header, so none is removed here; this header is added by cdktn-io
+// so the file is self-identifying once vendored outside that tree. Copied verbatim, unmodified.
 import type { Metric, Resource, TypeDefinition } from '@aws-cdk/service-spec-types';
 import type { TypeDeclaration } from '@cdklabs/typewriter';
 import { ClassType } from '@cdklabs/typewriter';

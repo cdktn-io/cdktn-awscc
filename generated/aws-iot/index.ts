@@ -1,3 +1,5 @@
+// Copyright (c) cdktn-io
+// SPDX-License-Identifier: MPL-2.0
 export * from './account-audit-configuration';
 export * from './authorizer';
 export * from './billing-group';

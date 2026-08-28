@@ -1,3 +1,5 @@
+// Copyright (c) cdktn-io
+// SPDX-License-Identifier: MPL-2.0
 export * from './public-repository';
 export * from './pull-through-cache-rule';
 export * from './pull-time-update-exclusion';

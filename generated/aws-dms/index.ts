@@ -1,3 +1,5 @@
+// Copyright (c) cdktn-io
+// SPDX-License-Identifier: MPL-2.0
 export * from './certificate';
 export * from './data-migration';
 export * from './data-provider';

@@ -1,3 +1,5 @@
+// Copyright (c) cdktn-io
+// SPDX-License-Identifier: MPL-2.0
 export * from './calculated-attribute-definition';
 export * from './domain';
 export * from './domain-object-type';

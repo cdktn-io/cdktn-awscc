@@ -1,3 +1,5 @@
+// Copyright (c) cdktn-io
+// SPDX-License-Identifier: MPL-2.0
 export * from './cluster';
 export * from './cluster-parameter-group';
 export * from './cluster-subnet-group';

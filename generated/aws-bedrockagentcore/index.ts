@@ -1,3 +1,5 @@
+// Copyright (c) cdktn-io
+// SPDX-License-Identifier: MPL-2.0
 export * from './api-key-credential-provider';
 export * from './browser-custom';
 export * from './browser-profile';

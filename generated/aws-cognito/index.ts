@@ -1,3 +1,5 @@
+// Copyright (c) cdktn-io
+// SPDX-License-Identifier: MPL-2.0
 export * from './identity-pool';
 export * from './identity-pool-principal-tag';
 export * from './identity-pool-role-attachment';

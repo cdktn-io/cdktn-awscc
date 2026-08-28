@@ -1,3 +1,5 @@
+// Copyright (c) cdktn-io
+// SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
 // https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ce_anomaly_monitor
 

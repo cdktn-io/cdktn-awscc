@@ -31,6 +31,18 @@ import { withQualifier, withResourcePrefix } from "./grouped/namespace-context";
 
 const DEFAULT_FQPN = "registry.terraform.io/hashicorp/awscc";
 
+/**
+ * Licence header stamped on every `.ts` file this module writes to `generated/` (resource files
+ * and index.ts barrels). `generated/` content is newly-authored output of this package's own
+ * (adapted, not copied) generator run over public schema data — not a copy of any upstream
+ * source text — so it is attributed to cdktn-io under this package's own root license, not to
+ * HashiCorp/IBM (cdk-terrain's own emitter, `src/vendored/cdktn/provider-generator.ts`, emits no
+ * copyright line at all; the "Copyright IBM Corp." header on cdktn-provider-awscc's generated
+ * output is stamped by that repo's separate `copywrite` build step, not by the generator itself).
+ * See NOTICE, "`generated/` — the 1,494 emitted resource bindings", for the full reasoning.
+ */
+const GENERATED_LICENSE_HEADER = [`// Copyright (c) cdktn-io`, `// SPDX-License-Identifier: MPL-2.0`];
+
 export interface GenerateGroupedOptions {
   readonly fqpn?: string;
   readonly modules?: string[];
@@ -288,6 +300,7 @@ function emitResourceFile(
   const topLevel = renderVirtualFile(code, topFile);
 
   const header = [
+    ...GENERATED_LICENSE_HEADER,
     `// generated from terraform resource schema (awscc provider) — do not edit by hand`,
     `// https://registry.terraform.io/providers/hashicorp/awscc/${providerVersion ?? "latest"}/docs/resources/${planned.awsccName.replace(/^awscc_/, "")}`,
     ``,
@@ -354,7 +367,10 @@ export async function generateGroupedWithStats(
       byResource[p.awsccName] = { total: emitted.nestedTypes, recovered: emitted.recovered };
     }
     indexLines.sort(); // export order tracks the (already sorted) resource list; kept explicit
-    fs.writeFileSync(path.join(moduleAbsDir, "index.ts"), `${indexLines.join("\n")}\n`);
+    fs.writeFileSync(
+      path.join(moduleAbsDir, "index.ts"),
+      `${GENERATED_LICENSE_HEADER.join("\n")}\n${indexLines.join("\n")}\n`,
+    );
     files.push(`${moduleDir}/index.ts`);
 
     fs.writeFileSync(
@@ -367,7 +383,10 @@ export async function generateGroupedWithStats(
   }
 
   if (moduleDirs.length > 0) {
-    fs.writeFileSync(path.join(outDir, "index.ts"), `${rootLines.join("\n")}\n`);
+    fs.writeFileSync(
+      path.join(outDir, "index.ts"),
+      `${GENERATED_LICENSE_HEADER.join("\n")}\n${rootLines.join("\n")}\n`,
+    );
     files.push("index.ts");
   }
 

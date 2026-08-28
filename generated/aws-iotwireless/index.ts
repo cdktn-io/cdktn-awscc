@@ -1,3 +1,5 @@
+// Copyright (c) cdktn-io
+// SPDX-License-Identifier: MPL-2.0
 export * from './destination';
 export * from './device-profile';
 export * from './fuota-task';

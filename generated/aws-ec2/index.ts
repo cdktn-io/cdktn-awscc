@@ -1,3 +1,5 @@
+// Copyright (c) cdktn-io
+// SPDX-License-Identifier: MPL-2.0
 export * from './capacity-manager-data-export';
 export * from './capacity-reservation';
 export * from './capacity-reservation-fleet';
