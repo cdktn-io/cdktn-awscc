@@ -2,7 +2,7 @@
   "name": "@cdktn/awscc",
   "version": "0.0.0",
   "description": "awscc bindings in the aws-cdk-lib L1 shape (Cloud Control API resources, Cc-prefixed classes, aws-cdk-lib-shaped submodules)",
-  "license": "Apache-2.0",
+  "license": "MPL-2.0",
   "stability": "experimental",
   "author": {
     "name": "cdktn",

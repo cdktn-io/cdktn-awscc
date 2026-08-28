@@ -24,7 +24,13 @@ import { stagePackage } from "../src/stage";
 
 const PACKAGE_ROOT = path.resolve(__dirname, "..", "..", "..");
 const OUT_DIR = path.join(PACKAGE_ROOT, "dist");
-const STAGE_DIR = path.join(OUT_DIR, "stage");
+// Deliberately a sibling of OUT_DIR, not nested inside it: both build.yml and release.yml upload
+// `dist/` as a CI artifact (and release.yml downloads it into five separate publish jobs), and
+// actions/upload-artifact@v4 follows symlinks by default — staging the ~300 MB tree (including
+// node_modules, since stagePackage's package.json needs real deps to resolve) inside dist/ meant
+// every publish job downloaded the whole dependency tree along with the actual dist/js|python|...
+// outputs it needed. Keeping it out of dist/ is why it's also excluded in .gitignore separately.
+const STAGE_DIR = path.join(PACKAGE_ROOT, ".package-stage");
 
 function flag(name: string): string | undefined {
   const idx = process.argv.indexOf(`--${name}`);
@@ -100,6 +106,15 @@ async function main(): Promise<void> {
     STAGE_DIR,
     { QUIET: "1", TS_NODE_COMPILER_OPTIONS: '{"module":"commonjs","moduleResolution":"node"}' },
   );
+
+  // jsii writes tsconfig.json into the stage root to compile it, and (via its incremental build)
+  // tsconfig.tsbuildinfo alongside it; jsii-pacmak's JS target has no "files" allowlist to keep
+  // these out of the tarball (its npm pack picks up everything not in a default-ignore rule), so
+  // without this both ship as pure build leftovers with no value to a consumer — tsbuildinfo is a
+  // few hundred KB of pure noise, and tsconfig.json describes a compile that already happened.
+  for (const leftover of ["tsconfig.json", "tsconfig.tsbuildinfo"]) {
+    fs.rmSync(path.join(STAGE_DIR, leftover), { force: true });
+  }
 
   run(bin("jsii-pacmak"), ["--targets", ...targets, "--outdir", OUT_DIR], STAGE_DIR);
 

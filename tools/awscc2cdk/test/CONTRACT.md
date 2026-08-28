@@ -1568,3 +1568,28 @@ like `docs/options.md` or `docs/schema-sweep.md`, which stay workspace-only eith
 to copy them in and delete the `testNamePattern` exclusion in `jest.config.js` — not to edit the
 test files themselves, which still encode the original iteration 3/3b/4 contract correctly for a
 checkout that has those files.
+
+## Post-freeze — jsii manifest license (CI implementer, 2026-08-28)
+
+Unlike the two exclusions above, this one *is* an edit to a frozen assertion, not a path/policy
+workaround — flagged here explicitly because Rule 1 makes that the exception, not the norm.
+
+`step6.full-jsii.test.ts`'s manifest test (`"is the plan §6/§10 package"`) asserted
+`pkg.license === "Apache-2.0"` from when it was written in iteration 3, before the repo settled on
+MPL-2.0 as its root license. The `licensing:` commit (base of the CI PR) rewrote the root
+`LICENSE`/`NOTICE`/`package.json` and added `licensing.test.ts` to hold that in place, but missed
+`tools/awscc2cdk/jsii/package.json` — the one manifest `src/stage.ts` actually copies, verbatim,
+into every published artifact (npm, PyPI, Maven, NuGet all derive their SPDX id from this file).
+So the shipped license was silently wrong on every registry while every *other* license assertion
+in the repo (including this same test's sibling file, `licensing.test.ts`) was green.
+
+Fixing the manifest (this PR) put `step6.full-jsii.test.ts`'s stale `"Apache-2.0"` expectation in
+direct conflict with the now-correct value — and unlike the workspace-doc exclusions, this
+describe block is **not** gated behind `RUN_FULL_JSII`, so it runs, and fails, under plain
+`pnpm test`. This is the schema-path case, not the workspace-doc case: the test itself encoded a
+value that a later, repo-wide decision (the MPL-2.0 migration) superseded and simply failed to
+propagate here — not a policy this PR should second-guess. Fixed in place (one line, `Apache-2.0`
+→ `MPL-2.0`, comment left pointing here) rather than reported-not-fixed, because leaving it red
+would mean either shipping the license bug back to unblock CI, or shipping a permanently-failing
+`pnpm test`; both are worse than a one-line correction to an assertion that now contradicts the
+rest of the repo's own licensing contract.

@@ -87,6 +87,16 @@ jobs:
             exit 1;
           }
 
+      # Runs the actual `pnpm package` pipeline end to end (its own separate jsii + jsii-pacmak
+      # pass, targeting js only, version 0.0.0-test) and opens the resulting tarball: asserts
+      # package.json's main/types/exports resolve and that require()-ing it from a
+      # node_modules-nested extraction — the shape a real install produces — actually works. This
+      # is the regression this repo's packaging story most needs covered: `pnpm package` exiting 0
+      # (the next step) proves jsii-pacmak didn't error, not that the artifact it produced is
+      # actually consumable.
+      - name: Package smoke test (RUN_FULL_JSII=1)
+        run: pnpm test:package
+
       - name: Package (js, python)
         run: pnpm package --targets js,python
 

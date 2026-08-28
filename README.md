@@ -143,21 +143,25 @@ kept as a **documented fallback only** — it only lazifies the top-level barrel
 
 ## CI and releases
 
-Three workflows, all on `depot-ubuntu-24.04-8` (8 core / 32 GB — the same runner label the fleet's
-other heap-heavy providers use) with `NODE_OPTIONS=--max-old-space-size=16384`:
+Three workflows. The jsii/jsii-pacmak build+package work — the only part that needs real compute —
+runs on `depot-ubuntu-24.04-8` (8 core / 32 GB — the same runner label the fleet's other
+heap-heavy providers use) with `NODE_OPTIONS=--max-old-space-size=16384`; the IO-bound publish
+steps in `release.yml` (upload a prebuilt artifact, call a registry API) run on `ubuntu-latest`:
 
-* **`build.yml`** (every PR + push to `main`): `pnpm install --frozen-lockfile`, `pnpm build`,
-  `pnpm test`, `RUN_FULL=1 pnpm test`, a check that `pnpm generate` against the pinned schema
-  produces no diff against committed `generated/`, then `pnpm package --targets js,python`
-  (uploaded as the `dist` artifact).
+* **`build.yml`** (every PR + push to `main`, on the depot runner): `pnpm install --frozen-lockfile`,
+  `pnpm build`, `pnpm test`, `RUN_FULL=1 pnpm test`, a check that `pnpm generate` against the pinned
+  schema produces no diff against committed `generated/`, then `pnpm package --targets js,python`
+  (uploaded as the `dist` artifact) and a `RUN_FULL_JSII=1` run of `package.test.ts` — the one test
+  that actually opens the built tarball and `require()`s it.
 * **`release.yml`** (tag `v*`, or `workflow_dispatch` with an explicit version + optional dry run):
-  packages all five targets (`pnpm package` with `PACMAK_TARGETS=js,python,java,dotnet,go`), then
-  publishes npm (OIDC trusted publishing, `--provenance`, no token), PyPI (OIDC via
-  `pypa/gh-action-pypi-publish`, the `pypi` GitHub environment), Maven Central and NuGet
-  (credentials as secrets), and Go (`publib-golang` pushing `dist/go` to
-  `cdktn-io/cdktn-awscc-go`), plus a GitHub Release with the npm tarball, the wheel, and
-  `dist/metrics.json` attached. See `docs/oidc-setup.md` for the one-time manual setup every one of
-  those publishers needs before the first real tag.
+  a `build` job on the depot runner packages all five targets (`pnpm package` with
+  `PACMAK_TARGETS=js,python,java,dotnet,go`); every publish job after it — npm (OIDC trusted
+  publishing, `--provenance`, no token), PyPI (OIDC via `pypa/gh-action-pypi-publish`, the `pypi`
+  GitHub environment), Maven Central and NuGet (credentials as secrets), Go (`publib-golang`
+  pushing `dist/go` to `cdktn-io/cdktn-awscc-go`), and the GitHub Release (npm tarball, wheel,
+  `dist/metrics.json` attached) — downloads that one prebuilt artifact and runs on `ubuntu-latest`.
+  See `docs/oidc-setup.md` for the one-time manual setup every one of those publishers needs before
+  the first real tag.
 * **`upgrade.yml`** (weekly + `workflow_dispatch`): resolves the newest `hashicorp/awscc` version,
   regenerates against it if it moved, and opens a PR (not auto-merged — a version bump can change
   resource/module counts the test suite's magic numbers are pinned to, which is exactly the kind of

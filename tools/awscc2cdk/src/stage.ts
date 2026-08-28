@@ -37,6 +37,12 @@ export function stagePackage({ packageRoot, version, stageDir }: StageOptions): 
   const pkg = JSON.parse(fs.readFileSync(jsiiManifestPath, "utf8"));
   pkg.version = version;
   pkg.exports = JSON.parse(fs.readFileSync(packageExportsPath, "utf8"));
+  // The generator's exports map (generated/package.exports.json) only knows about the resource
+  // submodules it emits; it doesn't own "./package.json". Add it here, at the one place that
+  // actually writes the published package.json, so tools that resolve a package's own manifest
+  // via the standard `require("<pkg>/package.json")` / `import.meta.resolve` convention (bundlers,
+  // doc generators, version probes) don't hit ERR_PACKAGE_PATH_NOT_EXPORTED.
+  pkg.exports["./package.json"] = "./package.json";
   fs.writeFileSync(path.join(stageDir, "package.json"), JSON.stringify(pkg, null, 2) + "\n");
 
   for (const file of EXTRA_FILES) {

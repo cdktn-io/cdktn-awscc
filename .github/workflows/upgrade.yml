@@ -109,11 +109,14 @@ jobs:
             `${{ steps.latest.outputs.version }}` (`schemas/PROVIDER_VERSION`) and regenerates
             `generated/` from it (`pnpm schema:fetch && pnpm generate`).
 
-            `pnpm build` and `RUN_FULL=1 pnpm test` both passed against the regenerated tree before
-            this PR was opened; `build.yml` will run the same gates again on the PR itself. Not
-            auto-merged on purpose — a resource/module count change here is exactly the kind of
-            diff (CONTRACT.md's pinned counts, `test/step4.ec2-full.test.ts`'s `EC2_RESOURCES`,
-            shape-parity baseline) that's worth a human look before merging.
+            **No `pnpm build` / `pnpm test` gate ran before opening this PR, on purpose**: a version
+            bump that changes resource or module counts is *expected* to fail the suite's pinned
+            magic numbers (CONTRACT.md, `test/step4.ec2-full.test.ts`'s `EC2_RESOURCES`, the
+            shape-parity baseline, …) until a human updates them — that review is exactly why this
+            PR exists, not something to suppress. `build.yml` runs the real gates on this PR itself
+            (opened with a GitHub App token so the `pull_request` trigger actually fires) — check
+            its status before merging. Not auto-merged on purpose — a resource/module count change
+            here is exactly the kind of diff that's worth a human look.
           add-paths: |
             generated
             schemas/PROVIDER_VERSION
