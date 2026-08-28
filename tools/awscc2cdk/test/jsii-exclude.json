@@ -1,0 +1,4 @@
+{
+  "comment": "Auditable escape hatch, contract iteration 2. Only awscc_kinesisfirehose_delivery_stream and awscc_lex_bot may be listed, each with a reason; a listed resource is not generated at all. Adding an entry is a finding for the verifier, not a fix.",
+  "exclusions": []
+}

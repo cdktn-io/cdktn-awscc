@@ -1,0 +1,16 @@
+{
+  "note": "Ratchet baseline for step4.shape-parity.test.ts (plan §7 layer 4). Committed by the contract writer at all zeros: iteration 2 only has to not regress. The verifier — never the implementer — raises these numbers to the values reported by test/out/shape-parity.json once an iteration is accepted.",
+  "resources": {
+    "awscc_accessanalyzer_analyzer": { "propertyTypesCommon": 0 },
+    "awscc_apigateway_resource": { "propertyTypesCommon": 0 },
+    "awscc_cloudformation_stack": { "propertyTypesCommon": 0 },
+    "awscc_ec2_subnet": { "propertyTypesCommon": 0 },
+    "awscc_ec2_vpc": { "propertyTypesCommon": 0 },
+    "awscc_iotwireless_device_profile": { "propertyTypesCommon": 0 },
+    "awscc_kinesisanalyticsv2_application": { "propertyTypesCommon": 0 },
+    "awscc_kinesisfirehose_delivery_stream": { "propertyTypesCommon": 0 },
+    "awscc_lambda_function": { "propertyTypesCommon": 0 },
+    "awscc_lex_bot": { "propertyTypesCommon": 0 },
+    "awscc_s3_bucket": { "propertyTypesCommon": 0 }
+  }
+}
