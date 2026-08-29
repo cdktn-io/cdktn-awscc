@@ -31,6 +31,27 @@ const FROZEN_WORKSPACE_ARTIFACTS = [
   "bench_python_import\\.py",
 ];
 
+// Machine-local checks: the vendoring-hygiene tests assert that each manifest's *origin* path exists
+// (sibling checkouts of cdk-terrain / aws-cdk on the vendoring author's laptop) and the timedRun
+// self-check uses BSD `/usr/bin/time -l`. Neither can pass in CI or in any other clone, so they are
+// excluded only where they cannot run and still execute on a machine that has the origins.
+const fs = require("fs");
+const os = require("os");
+const path = require("path");
+const originsPresent =
+  fs.existsSync("/Users/vincentsmet/cdktn/cdk-terrain/packages/@cdktn/provider-generator") &&
+  fs.existsSync(path.join(os.homedir(), "cdk/aws-cdk/tools/@aws-cdk/lazify/lib/index.ts"));
+const MACHINE_LOCAL_CHECKS = [
+  ...(originsPresent
+    ? []
+    : [
+        "lists a vendored file that exists, an origin that exists, and a commit sha",
+        "names the origin commit and an origin that exists on this machine",
+        "is byte-verbatim upstream apart from that prepended header",
+      ]),
+  ...(process.platform === "darwin" ? [] : ["reads maximum resident set size off /usr/bin/time -l's stderr"]),
+];
+
 /** @type {import('ts-jest').JestConfigWithTsJest} */
 module.exports = {
   preset: "ts-jest",
@@ -38,7 +59,7 @@ module.exports = {
   roots: ["<rootDir>/tools/awscc2cdk/test"],
   testMatch: ["**/*.test.ts"],
   testTimeout: 120000,
-  testNamePattern: `^(?!.*(${FROZEN_WORKSPACE_ARTIFACTS.join("|")})).*$`,
+  testNamePattern: `^(?!.*(${[...FROZEN_WORKSPACE_ARTIFACTS, ...MACHINE_LOCAL_CHECKS].join("|")})).*$`,
   transform: {
     "^.+\\.tsx?$": [
       "ts-jest",
