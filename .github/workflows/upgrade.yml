@@ -29,6 +29,10 @@ jobs:
             echo "::error::could not resolve the latest hashicorp/awscc version from the registry API"
             exit 1
           fi
+          if ! printf '%s' "$version" | grep -Eq '^[0-9]+\.[0-9]+\.[0-9]+$'; then
+            echo "::error::unexpected version string from registry: '$version'"
+            exit 1
+          fi
           echo "version=$version" >> "$GITHUB_OUTPUT"
 
       # Generate a GitHub App token, not the default GITHUB_TOKEN: a PR opened with the default
@@ -42,6 +46,9 @@ jobs:
         with:
           app-id: ${{ secrets.PROJEN_APP_ID }}
           private-key: ${{ secrets.PROJEN_APP_PRIVATE_KEY }}
+          # scope the token to exactly what create-pull-request needs (push a branch, open a PR)
+          permission-contents: write
+          permission-pull-requests: write
 
       # The App token is NOT persisted into the workspace git config: the install/generate steps
       # below run third-party code, and only `create-pull-request` (which receives the token
@@ -63,7 +70,7 @@ jobs:
 
       - name: Setup Node.js
         if: steps.latest.outputs.version != steps.current.outputs.version
-        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444 # v5.0.0
         with:
           node-version-file: .nvmrc
           cache: pnpm
@@ -87,9 +94,12 @@ jobs:
 
       - name: Fetch new schema and regenerate
         if: steps.latest.outputs.version != steps.current.outputs.version
+        env:
+          # registry-sourced value: passed via env, never expanded into the script text
+          LATEST_VERSION: ${{ steps.latest.outputs.version }}
         run: |
-          pnpm schema:fetch "${{ steps.latest.outputs.version }}"
-          echo "${{ steps.latest.outputs.version }}" > schemas/PROVIDER_VERSION
+          pnpm schema:fetch "$LATEST_VERSION"
+          echo "$LATEST_VERSION" > schemas/PROVIDER_VERSION
           pnpm generate
 
       # No `pnpm build` / `pnpm test` gate here on purpose: a version bump that changes resource or
