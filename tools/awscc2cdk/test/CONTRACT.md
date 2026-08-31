@@ -1770,3 +1770,17 @@ and only the first has a leaf that collides with it. `dynamodb_global_table` sho
 against *every* recovered name in the resource and not just the group's own: the loser's fallback
 there collides with a different definition name (`ReadProvisionedThroughputSettings`) than the one
 its group is fighting over (`GlobalReadProvisionedThroughputSettings`).
+
+# Post-freeze — no tracked file may be git-binary (2026-08-31)
+
+`binary-sources.test.ts` (issue #6). `tools/awscc2cdk/src/grouped/cfn-attribute-map.ts` shipped
+with two literal NUL (0x00) bytes inside string literals (corrupted in de92a2b, fixed in 87d1330);
+git's binary heuristic classified the branch's primary new implementation file as binary, so
+`git diff --numstat` reported `- -` and no diff was reviewable. It passed two review passes
+because a NUL renders invisibly in most viewers, and nothing in CI looked at git's classification.
+
+The gate enumerates every tracked path (`git ls-files -z`, cwd = repo root) and asserts no file
+contains a 0x00 byte — every byte, not just the first 8000 git itself looks at. There is no
+allowlist and no extension filter: the repo tracks no binary-by-design assets, so adding one is
+exactly what should trip this and prompt an explicit exemption. Cost is ~2,175 files / ~78 MB read
+once (dominated by `generated/`), well under a second, so it stays in the plain `pnpm test` suite.
