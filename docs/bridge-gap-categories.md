@@ -16,7 +16,7 @@ since the RFC may reshape what the reference/intrinsic resolvers consume.
 | Artifact | Vehicle | Status |
 |---|---|---|
 | `CFN_PROPERTY_NAME_MAP` (CFN PascalCase property → tf attribute) | PR #3 | implemented, measured (size ~1–4%/target, load-only runtime cost, synth zero) |
-| `CFN_ATTRIBUTE_NAME_MAP` (CFN `Fn::GetAtt` name → tf attribute / dotted path) | PR #3 (this branch) | in flight — probe: 4,443 attrs, 31 naive-conversion failures, 386 dotted, ~396 nested |
+| `CFN_ATTRIBUTE_NAME_MAP` (CFN `Fn::GetAtt` name → tf attribute / dotted path) | PR #3 (this branch) | implemented (`de92a2b`, NUL fix `87d1330`) — full flag-on regen: **4,411 of 4,443** CFN attributes mapped across 1,306 resources (32 skipped: no tf counterpart), 370 dotted keys emitted, 364 path-valued entries; motivating probe: 31 GetAtt names defeat naive case conversion. Figures manually synced with the PR description — cdktn-awscc#7 proposes the checked-in coverage probe that makes this drift-proof |
 | Ref table (`Ref` → plan-time input attr, else computed `id`; composite ids `\|`-joined) | **PR #4** — prompt below | designed |
 | `CfnTypeIndex` (CFN type → tf type + `submodule.Class`) | **PR #4** (companion static; decided 2026-08-31: generated jsii index, not sidecar JSON / per-class static / bridge re-derivation) | designed |
 | Typed coercion map (entry values `{key, kind}`: json-stringified-document fields, list/set/map nesting modes) | **PR #5** — generative source is the `AttributeTypeModel`/`Struct` layer; TerraConstructs has nothing liftable (its coercions are hand-inlined per resource) | planned |
@@ -139,7 +139,7 @@ code; 28 of those in maintained L2s are the real drop-in blockers. Proposal, spl
 | PR | Content | Gate |
 |---|---|---|
 | #2 | go-case naming fix (`dedupeDefinitionNames`) | in review |
-| #3 | spelling oracles: property map + attribute map + these docs | attribute map in flight |
+| #3 | spelling oracles: property map + attribute map + these docs | both maps implemented; in review (gates proposed: cdktn-awscc#6 git-binary check, #7 coverage probe) |
 | #4 | Ref table + CfnTypeIndex (prompt above) | after seam RFC |
 | #5 | typed coercion map (`{key, kind}` values) | after seam RFC |
 | #6 | dependency fidelity through 1:N expansion (synthesis backend) | with decomposition work |
