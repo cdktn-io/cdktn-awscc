@@ -1,0 +1,593 @@
+<title>awscc2cdk Flow Atlas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+  :root {
+    color-scheme: light;
+    --ground: #f5f6f4;
+    --card: #fcfdfc;
+    --ink: #17211d;
+    --ink-2: #4b5a53;
+    --ink-3: #7a877f;
+    --hairline: #dfe4e0;
+    --hairline-strong: #c0cac3;
+    --accent: #0e6b60;          /* terraform / awscc world, and "recovered CFN name" outcome */
+    --accent-wash: #0e6b6014;
+    --cfn: #8f5f10;             /* CloudFormation world */
+    --cfn-wash: #8f5f1012;
+    --alt: #2a63b8;             /* full-path fallback outcome */
+    --alt-wash: #2a63b814;
+    --bad: #b3402e;             /* edge / last-resort / bypass */
+    --bad-wash: #b3402e12;
+    --code-bg: #edf1ee;
+    --shadow: 0 1px 2px rgba(23,33,29,.05), 0 4px 16px rgba(23,33,29,.05);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --ground: #101513;
+      --card: #171d1a;
+      --ink: #e6ebe8;
+      --ink-2: #9fb0a8;
+      --ink-3: #6e7d75;
+      --hairline: #27302b;
+      --hairline-strong: #3a463f;
+      --accent: #43c7b0;
+      --accent-wash: #43c7b01a;
+      --cfn: #d9a558;
+      --cfn-wash: #d9a55817;
+      --alt: #6fa3e8;
+      --alt-wash: #6fa3e81a;
+      --bad: #e07561;
+      --bad-wash: #e0756118;
+      --code-bg: #1d2420;
+      --shadow: 0 1px 2px rgba(0,0,0,.3), 0 4px 16px rgba(0,0,0,.25);
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --ground: #101513;
+    --card: #171d1a;
+    --ink: #e6ebe8;
+    --ink-2: #9fb0a8;
+    --ink-3: #6e7d75;
+    --hairline: #27302b;
+    --hairline-strong: #3a463f;
+    --accent: #43c7b0;
+    --accent-wash: #43c7b01a;
+    --cfn: #d9a558;
+    --cfn-wash: #d9a55817;
+    --alt: #6fa3e8;
+    --alt-wash: #6fa3e81a;
+    --bad: #e07561;
+    --bad-wash: #e0756118;
+    --code-bg: #1d2420;
+    --shadow: 0 1px 2px rgba(0,0,0,.3), 0 4px 16px rgba(0,0,0,.25);
+  }
+
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font: 16px/1.65 "IBM Plex Sans", system-ui, -apple-system, sans-serif;
+    padding: 0 24px 96px;
+  }
+  .col { max-width: 72ch; margin: 0 auto; }
+  .wide { max-width: 1080px; margin: 0 auto; }
+
+  h1, h2, h3 { font-family: "Archivo", "IBM Plex Sans", sans-serif; letter-spacing: -.015em; text-wrap: balance; }
+  h1 { font-size: clamp(34px, 5.5vw, 50px); line-height: 1.06; font-weight: 700; margin: 14px 0 18px; }
+  h2 { font-size: 26px; font-weight: 650; margin: 0 0 6px; }
+  h3 { font-size: 18px; font-weight: 600; margin: 32px 0 10px; }
+  p { margin: 0 0 16px; }
+  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  strong { font-weight: 600; }
+  .eyebrow {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 12px; font-weight: 500;
+    text-transform: uppercase; letter-spacing: .14em;
+    color: var(--accent);
+  }
+  header.page { padding: 60px 0 8px; }
+  .lede { font-size: 18.5px; line-height: 1.6; color: var(--ink-2); max-width: 64ch; }
+  .meta {
+    display: flex; flex-wrap: wrap; gap: 6px 22px;
+    font-family: "IBM Plex Mono", monospace; font-size: 12.5px; color: var(--ink-3);
+    margin-top: 20px; padding-top: 14px; border-top: 1px solid var(--hairline);
+  }
+
+  code, .mono { font-family: "IBM Plex Mono", monospace; font-size: .88em; }
+  p code, li code, td code, figcaption code {
+    background: var(--code-bg);
+    border: 1px solid var(--hairline);
+    border-radius: 4px; padding: .08em .34em;
+    white-space: nowrap;
+  }
+  pre.codeblock {
+    background: var(--card);
+    border: 1px solid var(--hairline);
+    border-radius: 10px;
+    padding: 18px 20px;
+    overflow-x: auto;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 13px; line-height: 1.62;
+    box-shadow: var(--shadow);
+    margin: 0 0 16px;
+  }
+  pre.codeblock code { background: none; border: none; padding: 0; white-space: pre; }
+  .c-com { color: var(--ink-3); }
+  .c-cfn { color: var(--cfn); font-weight: 600; }
+  .c-tf  { color: var(--accent); font-weight: 600; }
+  .c-bad { color: var(--bad); font-weight: 600; }
+
+  section { margin-top: 68px; }
+  .sec-head { display: flex; align-items: baseline; gap: 16px; margin-bottom: 14px; }
+  .sec-num {
+    font-family: "Archivo", sans-serif; font-weight: 700; font-size: 15px;
+    color: var(--accent); border: 1.5px solid var(--accent);
+    border-radius: 99px; min-width: 30px; height: 30px;
+    display: inline-flex; align-items: center; justify-content: center;
+    flex: none; position: relative; top: -2px;
+  }
+  .sec-sub { color: var(--ink-2); font-size: 15.5px; margin: 0 0 20px; }
+
+  figure.fig {
+    background: var(--card); border: 1px solid var(--hairline); border-radius: 14px;
+    box-shadow: var(--shadow);
+    padding: 22px 26px 16px; margin: 26px 0;
+  }
+  figure.fig svg { max-width: 100%; height: auto; display: block; margin: 0 auto; }
+  figure.fig figcaption { font-size: 13px; color: var(--ink-2); margin-top: 12px; border-top: 1px solid var(--hairline); padding-top: 10px; }
+  .svgwrap { overflow-x: auto; }
+
+  table { border-collapse: collapse; width: 100%; font-size: 13.5px; }
+  th, td { text-align: left; padding: 8px 14px 8px 0; border-bottom: 1px solid var(--hairline); vertical-align: top; }
+  th { font-family: "Archivo", sans-serif; font-size: 12px; font-weight: 650; text-transform: uppercase; letter-spacing: .07em; color: var(--ink-2); }
+  td.num, td .mono { font-family: "IBM Plex Mono", monospace; font-size: 12.5px; }
+  .tablewrap { overflow-x: auto; }
+
+  .chip { display: inline-block; font-family: "IBM Plex Mono", monospace; font-size: 10.5px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; padding: 1.5px 8px; border-radius: 99px; white-space: nowrap; }
+  .chip.rec  { color: var(--accent); background: var(--accent-wash); border: 1px solid color-mix(in srgb, var(--accent) 32%, transparent); }
+  .chip.leaf { color: var(--ink-2); background: var(--code-bg); border: 1px solid var(--hairline-strong); }
+  .chip.full { color: var(--alt); background: var(--alt-wash); border: 1px solid color-mix(in srgb, var(--alt) 32%, transparent); }
+  .chip.edge { color: var(--bad); background: var(--bad-wash); border: 1px solid color-mix(in srgb, var(--bad) 32%, transparent); }
+  .chip.cfn  { color: var(--cfn); background: var(--cfn-wash); border: 1px solid color-mix(in srgb, var(--cfn) 32%, transparent); }
+
+  .callout {
+    border-left: 3px solid var(--accent); background: var(--accent-wash);
+    border-radius: 0 10px 10px 0; padding: 14px 18px; margin: 22px 0; font-size: 15px;
+  }
+  .callout.warn { border-left-color: var(--bad); background: var(--bad-wash); }
+  .callout p:last-child { margin-bottom: 0; }
+  ul { padding-left: 22px; margin: 0 0 16px; }
+  li { margin-bottom: 7px; }
+
+  pre.mermaid {
+    background: var(--card); border: 1px solid var(--hairline); border-radius: 14px;
+    box-shadow: var(--shadow); padding: 18px; margin: 26px 0; overflow-x: auto;
+  }
+  footer { margin-top: 80px; padding-top: 18px; border-top: 1px solid var(--hairline); font-size: 12.5px; color: var(--ink-3); }
+  footer p { margin-bottom: 6px; }
+</style>
+
+<div class="col">
+  <header class="page">
+    <span class="eyebrow">cdktn · @cdktn/awscc generator · companion to “The CFN–awscc Seam”</span>
+    <h1>awscc2cdk Flow Atlas</h1>
+    <p class="lede">The data flows and sequences inside the <code>@cdktn/awscc</code> generator at the head of the PR&nbsp;#3 stack: how a terraform attribute path becomes a jsii type name (every case and edge case), how the CFN property-name map is built and emitted, and what actually happens at generation time and synth time.</p>
+    <div class="meta">
+      <span>PR #3 (feat/cfn-key-map @ 4f691fc)</span>
+      <span>PR #2 naming fix (fix/go-case-collisions @ c78033d)</span>
+      <span>awscc 1.98.0 · service-spec 0.1.206</span>
+    </div>
+  </header>
+
+  <section id="pipeline">
+    <div class="sec-head"><span class="sec-num">1</span><h2>The generation pipeline</h2></div>
+    <p class="sec-sub">One pass, two inputs: the terraform provider schema supplies shape and spelling; the CFN service spec supplies names. Everything downstream is a pure function of these.</p>
+  </section>
+</div>
+
+<div class="wide">
+  <figure class="fig">
+    <div class="svgwrap">
+    <svg viewBox="0 0 1020 470" role="img" aria-label="Generation data flow: schema.json and the service-spec database feed planResources; each planned resource flows through parseResourceAttributes, cfn-recovery, dedupeDefinitionNames and propertyTypeNamesForResource into the ResourceModel and emitters; an optional flag-gated branch builds the CFN property map." style="color: var(--ink); font-family: 'IBM Plex Mono', monospace;">
+      <defs>
+        <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+          <path d="M0,0 L10,5 L0,10 z" fill="currentColor"/>
+        </marker>
+      </defs>
+      <!-- inputs -->
+      <rect x="20" y="24" width="168" height="42" rx="7" fill="var(--accent-wash)" stroke="var(--accent)"/>
+      <text x="104" y="42" text-anchor="middle" font-size="12" font-weight="600" fill="var(--accent)">schemas/schema.json</text>
+      <text x="104" y="57" text-anchor="middle" font-size="10.5" fill="var(--ink-2)">awscc 1.98.0 · snake_case</text>
+
+      <rect x="20" y="84" width="168" height="42" rx="7" fill="var(--cfn-wash)" stroke="var(--cfn)"/>
+      <text x="104" y="102" text-anchor="middle" font-size="12" font-weight="600" fill="var(--cfn)">aws-service-spec DB</text>
+      <text x="104" y="117" text-anchor="middle" font-size="10.5" fill="var(--ink-2)">CFN types · PascalCase</text>
+
+      <rect x="20" y="144" width="168" height="36" rx="7" fill="none" stroke="var(--hairline-strong)"/>
+      <text x="104" y="166" text-anchor="middle" font-size="11.5" fill="var(--ink-2)">scope-map.json</text>
+
+      <!-- planResources -->
+      <rect x="300" y="64" width="180" height="62" rx="8" fill="var(--card)" stroke="currentColor"/>
+      <text x="390" y="89" text-anchor="middle" font-size="12.5" font-weight="600">planResources()</text>
+      <text x="390" y="106" text-anchor="middle" font-size="10.5" fill="var(--ink-2)">cfnTypeFor · normalizeKey</text>
+
+      <line x1="188" y1="45" x2="296" y2="80" stroke="currentColor" marker-end="url(#ar)"/>
+      <text x="240" y="50" text-anchor="middle" font-size="10" fill="var(--ink-2)">resource names</text>
+      <line x1="188" y1="105" x2="296" y2="98" stroke="currentColor" marker-end="url(#ar)"/>
+      <line x1="188" y1="162" x2="296" y2="116" stroke="currentColor" marker-end="url(#ar)"/>
+      <text x="243" y="146" text-anchor="middle" font-size="10" fill="var(--ink-2)">module dir</text>
+
+      <!-- fallback edge -->
+      <rect x="300" y="144" width="180" height="38" rx="8" fill="none" stroke="var(--bad)" stroke-dasharray="5 4"/>
+      <text x="390" y="160" text-anchor="middle" font-size="10.5" fill="var(--bad)">no CFN match → fallbackPlan</text>
+      <text x="390" y="174" text-anchor="middle" font-size="10.5" fill="var(--bad)">cfnType: "" (1 resource)</text>
+      <line x1="390" y1="126" x2="390" y2="140" stroke="var(--bad)" stroke-dasharray="5 4" marker-end="url(#ar)"/>
+
+      <!-- planned output -->
+      <line x1="480" y1="95" x2="580" y2="95" stroke="currentColor" marker-end="url(#ar)"/>
+      <rect x="584" y="64" width="200" height="62" rx="8" fill="var(--card)" stroke="currentColor"/>
+      <text x="684" y="89" text-anchor="middle" font-size="12" font-weight="600">PlannedResource</text>
+      <text x="684" y="106" text-anchor="middle" font-size="10.5" fill="var(--ink-2)">awsccName · cfnType · module</text>
+
+      <!-- drop to row 2 -->
+      <path d="M 784 95 L 900 95 L 900 240" fill="none" stroke="currentColor" marker-end="url(#ar)"/>
+      <text x="905" y="170" font-size="10.5" fill="var(--ink-2)">× 1,494</text>
+
+      <!-- row 2: per-resource pipeline (right to left flow drawn left to right) -->
+      <rect x="20" y="244" width="158" height="56" rx="8" fill="var(--card)" stroke="currentColor"/>
+      <text x="99" y="267" text-anchor="middle" font-size="11.5" font-weight="600">parseResource</text>
+      <text x="99" y="282" text-anchor="middle" font-size="11.5" font-weight="600">Attributes()</text>
+
+      <rect x="238" y="244" width="158" height="56" rx="8" fill="var(--card)" stroke="var(--cfn)"/>
+      <text x="317" y="262" text-anchor="middle" font-size="11.5" font-weight="600" fill="var(--cfn)">cfn-recovery</text>
+      <text x="317" y="277" text-anchor="middle" font-size="10.5" fill="var(--ink-2)">resolveDefinitionName</text>
+      <text x="317" y="291" text-anchor="middle" font-size="10.5" fill="var(--ink-2)">per struct path</text>
+
+      <rect x="456" y="244" width="158" height="56" rx="8" fill="var(--card)" stroke="currentColor"/>
+      <text x="535" y="262" text-anchor="middle" font-size="11.5" font-weight="600">dedupeDefinition</text>
+      <text x="535" y="277" text-anchor="middle" font-size="11.5" font-weight="600">Names()</text>
+      <text x="535" y="291" text-anchor="middle" font-size="10.5" fill="var(--ink-2)">1 keeper per recovered name</text>
+
+      <rect x="674" y="244" width="170" height="56" rx="8" fill="var(--card)" stroke="currentColor"/>
+      <text x="759" y="262" text-anchor="middle" font-size="11.5" font-weight="600">propertyTypeNames</text>
+      <text x="759" y="277" text-anchor="middle" font-size="11.5" font-weight="600">ForResource()</text>
+      <text x="759" y="291" text-anchor="middle" font-size="10.5" fill="var(--ink-2)">union-find, ci keys</text>
+
+      <line x1="900" y1="244" x2="900" y2="244" stroke="none"/>
+      <line x1="178" y1="272" x2="234" y2="272" stroke="currentColor" marker-end="url(#ar)"/>
+      <text x="206" y="264" text-anchor="middle" font-size="10" fill="var(--ink-2)">structs[path]</text>
+      <line x1="396" y1="272" x2="452" y2="272" stroke="currentColor" marker-end="url(#ar)"/>
+      <text x="424" y="264" text-anchor="middle" font-size="10" fill="var(--ink-2)">defName?</text>
+      <line x1="614" y1="272" x2="670" y2="272" stroke="currentColor" marker-end="url(#ar)"/>
+      <text x="642" y="264" text-anchor="middle" font-size="10" fill="var(--ink-2)">entries</text>
+
+      <!-- entry into row 2 from planned -->
+      <path d="M 900 240 L 900 226 L 99 226 L 99 240" fill="none" stroke="currentColor" marker-end="url(#ar)"/>
+
+      <!-- row 3: model + emit -->
+      <rect x="238" y="356" width="200" height="56" rx="8" fill="var(--card)" stroke="currentColor"/>
+      <text x="338" y="379" text-anchor="middle" font-size="12" font-weight="600">ResourceModel</text>
+      <text x="338" y="395" text-anchor="middle" font-size="10.5" fill="var(--ink-2)">struct.name = nameMap[path]</text>
+
+      <rect x="520" y="356" width="190" height="56" rx="8" fill="var(--card)" stroke="currentColor"/>
+      <text x="615" y="379" text-anchor="middle" font-size="12" font-weight="600">Struct/Resource Emitter</text>
+      <text x="615" y="395" text-anchor="middle" font-size="10.5" fill="var(--ink-2)">CodeMaker → virtual files</text>
+
+      <rect x="792" y="356" width="180" height="56" rx="8" fill="var(--accent-wash)" stroke="var(--accent)"/>
+      <text x="882" y="379" text-anchor="middle" font-size="12" font-weight="600" fill="var(--accent)">generated/*.ts</text>
+      <text x="882" y="395" text-anchor="middle" font-size="10.5" fill="var(--ink-2)">+ MANIFEST.sha256</text>
+
+      <path d="M 759 300 L 759 330 L 338 330 L 338 352" fill="none" stroke="currentColor" marker-end="url(#ar)"/>
+      <text x="548" y="324" text-anchor="middle" font-size="10" fill="var(--ink-2)">nameMap</text>
+      <line x1="438" y1="384" x2="516" y2="384" stroke="currentColor" marker-end="url(#ar)"/>
+      <line x1="710" y1="384" x2="788" y2="384" stroke="currentColor" marker-end="url(#ar)"/>
+
+      <!-- key map branch -->
+      <rect x="20" y="356" width="180" height="56" rx="8" fill="none" stroke="var(--alt)" stroke-dasharray="5 4"/>
+      <text x="110" y="376" text-anchor="middle" font-size="11" font-weight="600" fill="var(--alt)">buildResourceCfn</text>
+      <text x="110" y="390" text-anchor="middle" font-size="11" font-weight="600" fill="var(--alt)">PropertyMap()</text>
+      <text x="110" y="404" text-anchor="middle" font-size="10" fill="var(--ink-2)">flag: emitCfnPropertyMap</text>
+      <line x1="200" y1="384" x2="234" y2="384" stroke="var(--alt)" stroke-dasharray="5 4" marker-end="url(#ar)"/>
+      <path d="M 99 300 L 99 352" fill="none" stroke="var(--alt)" stroke-dasharray="5 4" marker-end="url(#ar)"/>
+      <text x="104" y="330" font-size="10" fill="var(--ink-2)">attributes + structs</text>
+    </svg>
+    </div>
+    <figcaption>Generation data flow. The <span style="color:var(--cfn)">amber</span> stages read the CFN spec; the dashed <span style="color:var(--alt)">blue</span> branch exists only when <code>emitCfnPropertyMap</code> is on (PR&nbsp;#3) — it reuses <code>cfn-recovery</code>'s walk via <code>resolvePropertiesAtPath</code>. The dashed red edge is the one awscc resource with no CFN spec entry (<code>awscc_datasync_storage_system</code>), which takes <code>fallbackPlan</code> and never gets a map.</figcaption>
+  </figure>
+</div>
+
+<div class="col">
+  <section id="worked-example">
+    <h3>Worked example: <code>awscc_ec2_vpc</code> end to end (flag on)</h3>
+    <p>The two inputs, side by side — note the spellings each side owns:</p>
+
+<pre class="codeblock"><code><span class="c-com">// schemas/schema.json → resource_schemas["awscc_ec2_vpc"].block.attributes  (terraform world)</span>
+<span class="c-tf">cidr_block  cidr_block_associations  default_network_acl  default_security_group</span>
+<span class="c-tf">enable_dns_hostnames  enable_dns_support  id  instance_tenancy  ipv_4_ipam_pool_id</span>
+<span class="c-tf">ipv_4_netmask_length  ipv_6_cidr_blocks  tags  vpc_encryption_control  vpc_id</span>
+<span class="c-com">// vpc_encryption_control is a nested_type with its own attributes:</span>
+<span class="c-tf">  egress_only_internet_gateway_exclusion  elastic_file_system_exclusion  mode  …</span>
+
+<span class="c-com">// @aws-cdk/aws-service-spec → resource "AWS::EC2::VPC"  (CFN world)</span>
+<span class="c-cfn">CidrBlock  EnableDnsHostnames  EnableDnsSupport  InstanceTenancy  Ipv4IpamPoolId</span>
+<span class="c-cfn">Ipv4NetmaskLength  Tags  VpcEncryptionControl</span>
+<span class="c-com">// TypeDefinition "VpcEncryptionControl":</span>
+<span class="c-cfn">  EgressOnlyInternetGatewayExclusion  ElasticFileSystemExclusion  Mode  VpcId  State  …</span></code></pre>
+
+    <p><strong>① <code>planResources()</code> — the resource-level join.</strong> <code>cfnTypeFor</code> pairs the two worlds with <code>normalizeKey</code> (<code>s.toLowerCase().replace(/[^a-z0-9]/g,"")</code>): <code>AWS::EC2::VPC</code> becomes the join key <code>ec2.vpc</code>, and <code>awscc_ec2_vpc</code> becomes <code>ec2.vpc</code> too — underscores and case are exactly the noise the two sides disagree on, so the key strips both. 1,493 of 1,494 awscc resources find their CFN type this way (the 85.5%-coverage matched set), each producing one:</p>
+
+<pre class="codeblock"><code><span class="c-com">// PlannedResource — the ×1,494 loop's unit of work</span>
+{ awsccName: <span class="c-tf">"awscc_ec2_vpc"</span>, cfnType: <span class="c-cfn">"AWS::EC2::VPC"</span>,
+  moduleDir: "aws-ec2", moduleSymbol: "aws_ec2", cfnResourceName: "VPC" }  <span class="c-com">// → class CcVPC</span></code></pre>
+
+    <p><strong>② The one that doesn't match — <code>fallbackPlan</code>.</strong> <code>awscc_datasync_storage_system</code> has no CFN spec entry (the type was retired from CloudFormation; the provider still ships it). <code>fallbackPlan</code> derives everything from the terraform name alone: strip <code>awscc_</code>, first segment is the service (<code>datasync</code> → module <code>aws-datasync</code>), the rest PascalCases to the class name (<code>storage_system</code> → <code>CcStorageSystem</code>) — and <code>cfnType</code> is set to <code>""</code>, which switches off everything CFN-joined downstream: no definition-name recovery (every nested type gets a path-derived name), and no <code>CFN_PROPERTY_NAME_MAP</code> even with the flag on (<code>buildResourceCfnPropertyMap</code> returns empty for <code>cfnType: ""</code>, and an empty map emits no static). The resource still generates fully — it just has no CFN spellings to offer.</p>
+
+    <p><strong>③ <code>parseResourceAttributes()</code> — shape extraction.</strong> Input: the resource's terraform schema block above. Output: the flat attribute list (camelCased prop names paired with their schema spellings) plus <code>structs[path]</code> — one <code>Struct</code> per nested object type, carrying a throwaway placeholder name and its real terraform attribute path from the resource root. The path is the join key everything later uses:</p>
+
+<pre class="codeblock"><code>Struct { name: "temp1" <span class="c-com">/* renamed later */</span>, path: [<span class="c-tf">"vpc_encryption_control"</span>],
+         attributes: [ egressOnlyInternetGatewayExclusion ↔ <span class="c-tf">egress_only_internet_gateway_exclusion</span>, … ] }</code></pre>
+
+    <p><strong>④ <code>cfn-recovery</code> — the type-level join.</strong> <code>resolveDefinitionName(db, "AWS::EC2::VPC", ["vpc_encryption_control"])</code> walks the CFN property tree matching each path segment by the same <code>normalizeKey</code>: <code>vpcencryptioncontrol</code> hits the CFN property <code>VpcEncryptionControl</code>, which is object-typed → the recovered definition name. After dedupe and allocation (§2) that becomes the emitted type <code>CcVPC.VpcEncryptionControlProperty</code> — the same name aws-cdk-lib derives, which is the shape-parity contract.</p>
+
+    <p><strong>⑤ Flag on — the property-level join.</strong> <code>buildResourceCfnPropertyMap</code> replays the same walk per level via <code>resolvePropertiesAtPath</code>, then joins <em>attributes</em> to <em>CFN property names</em> by <code>normalizeKey</code>: <code>ipv_4_ipam_pool_id</code> → key <code>ipv4ipampoolid</code> → <code>Ipv4IpamPoolId</code>. Six of the fourteen top-level attributes find no CFN counterpart and are skipped — the real "no CFN counterpart" exit, visible right here: <code>id</code>, <code>vpc_id</code>, <code>default_network_acl</code>, <code>default_security_group</code>, <code>cidr_block_associations</code>, <code>ipv_6_cidr_blocks</code> are awscc's read-only computed attributes, which CFN models as attributes, not Properties. The emitted static therefore maps exactly what has a CFN spelling and nothing else.</p>
+  </section>
+
+  <section id="naming">
+    <div class="sec-head"><span class="sec-num">2</span><h2>Naming: one path in, one grammar-conforming name out</h2></div>
+    <p class="sec-sub">Every nested type name ends in <code>Property</code> (the <code>NAME_GRAMMAR</code> contract). Three stages decide the base, and every comparison along the way is case-insensitive (<code>collisionKey</code>) — the Go/C# one-file-per-type constraint that PR&nbsp;#2 exists for.</p>
+  </section>
+</div>
+
+<div class="wide">
+  <figure class="fig">
+    <div class="svgwrap">
+    <svg viewBox="0 0 1020 560" role="img" aria-label="Naming decision flow in three stages: cfn-recovery proposes a definition name or not; dedupeDefinitionNames lets at most one occurrence keep each recovered name, at-risk occurrences first; propertyTypeNamesForResource clusters case-insensitive collisions, keeps recovered short names, re-derives fallbacks from the full path, and only as a last resort appends a numeric suffix." style="color: var(--ink); font-family: 'IBM Plex Mono', monospace;">
+      <defs>
+        <marker id="ar2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+          <path d="M0,0 L10,5 L0,10 z" fill="currentColor"/>
+        </marker>
+      </defs>
+
+      <!-- stage bands -->
+      <text x="18" y="34" font-size="11" fill="var(--ink-3)" letter-spacing="2">STAGE 1 · RECOVER</text>
+      <line x1="18" y1="42" x2="1002" y2="42" stroke="var(--hairline)"/>
+      <text x="18" y="200" font-size="11" fill="var(--ink-3)" letter-spacing="2">STAGE 2 · DEDUPE RECOVERED NAMES (the PR #2 revision)</text>
+      <line x1="18" y1="208" x2="1002" y2="208" stroke="var(--hairline)"/>
+      <text x="18" y="368" font-size="11" fill="var(--ink-3)" letter-spacing="2">STAGE 3 · ALLOCATE (union-find on collisionKey)</text>
+      <line x1="18" y1="376" x2="1002" y2="376" stroke="var(--hairline)"/>
+
+      <!-- stage 1 -->
+      <rect x="30" y="62" width="220" height="46" rx="8" fill="var(--card)" stroke="currentColor"/>
+      <text x="140" y="82" text-anchor="middle" font-size="12" font-weight="600">struct at path p</text>
+      <text x="140" y="97" text-anchor="middle" font-size="10.5" fill="var(--ink-2)">['additional_…', 'open_id_connect_config']</text>
+
+      <rect x="330" y="62" width="230" height="46" rx="8" fill="var(--card)" stroke="var(--cfn)"/>
+      <text x="445" y="82" text-anchor="middle" font-size="12" font-weight="600" fill="var(--cfn)">resolveDefinitionName(p)</text>
+      <text x="445" y="97" text-anchor="middle" font-size="10.5" fill="var(--ink-2)">walk CFN props by normalizeKey</text>
+      <line x1="250" y1="85" x2="326" y2="85" stroke="currentColor" marker-end="url(#ar2)"/>
+
+      <rect x="660" y="52" width="330" height="38" rx="8" fill="var(--cfn-wash)" stroke="var(--cfn)"/>
+      <text x="825" y="75" text-anchor="middle" font-size="11.5" fill="var(--cfn)">definitionName: "OpenIDConnectConfig"</text>
+      <rect x="660" y="112" width="330" height="38" rx="8" fill="none" stroke="var(--hairline-strong)"/>
+      <text x="825" y="135" text-anchor="middle" font-size="11.5" fill="var(--ink-2)">undefined → path-fallback candidate</text>
+      <line x1="560" y1="75" x2="656" y2="72" stroke="currentColor" marker-end="url(#ar2)"/>
+      <text x="606" y="64" text-anchor="middle" font-size="10" fill="var(--ink-2)">object-typed match</text>
+      <line x1="560" y1="96" x2="656" y2="128" stroke="currentColor" marker-end="url(#ar2)"/>
+      <text x="608" y="126" text-anchor="middle" font-size="10" fill="var(--ink-2)">primitive / diverged</text>
+
+      <!-- stage 2 -->
+      <rect x="30" y="228" width="330" height="64" rx="8" fill="var(--card)" stroke="currentColor"/>
+      <text x="195" y="250" text-anchor="middle" font-size="12" font-weight="600">dedupeDefinitionNames(entries)</text>
+      <text x="195" y="266" text-anchor="middle" font-size="10.5" fill="var(--ink-2)">claim collisionKey(defName), one keeper each;</text>
+      <text x="195" y="280" text-anchor="middle" font-size="10.5" fill="var(--ink-2)">at-risk occurrences served first, then path order</text>
+
+      <rect x="440" y="222" width="550" height="34" rx="8" fill="var(--accent-wash)" stroke="var(--accent)"/>
+      <text x="715" y="243" text-anchor="middle" font-size="11" fill="var(--accent)">keeper: top-level open_id_connect_config — its only fallback IS the colliding name</text>
+      <rect x="440" y="264" width="550" height="34" rx="8" fill="none" stroke="var(--hairline-strong)"/>
+      <text x="715" y="285" text-anchor="middle" font-size="11" fill="var(--ink-2)">cleared: nested occurrence → definitionName = undefined (falls back to its full path)</text>
+      <line x1="360" y1="244" x2="436" y2="239" stroke="currentColor" marker-end="url(#ar2)"/>
+      <line x1="360" y1="272" x2="436" y2="281" stroke="currentColor" marker-end="url(#ar2)"/>
+
+      <!-- stage 3 -->
+      <rect x="30" y="396" width="330" height="64" rx="8" fill="var(--card)" stroke="currentColor"/>
+      <text x="195" y="418" text-anchor="middle" font-size="12" font-weight="600">propertyTypeNamesForResource()</text>
+      <text x="195" y="434" text-anchor="middle" font-size="10.5" fill="var(--ink-2)">cluster if ci(short)==ci(short) OR ci(full)==ci(full);</text>
+      <text x="195" y="448" text-anchor="middle" font-size="10.5" fill="var(--ink-2)">recovered keep short · fallbacks re-derive full path</text>
+
+      <!-- outcomes -->
+      <rect x="420" y="392" width="275" height="40" rx="8" fill="var(--accent-wash)" stroke="var(--accent)"/>
+      <text x="557" y="409" text-anchor="middle" font-size="11.5" font-weight="600" fill="var(--accent)">&lt;DefinitionName&gt;Property</text>
+      <text x="557" y="424" text-anchor="middle" font-size="10" fill="var(--ink-2)">OpenIDConnectConfigProperty</text>
+
+      <rect x="420" y="442" width="275" height="40" rx="8" fill="var(--code-bg)" stroke="var(--hairline-strong)"/>
+      <text x="557" y="459" text-anchor="middle" font-size="11.5" font-weight="600" fill="var(--ink-2)">&lt;Leaf&gt;Property</text>
+      <text x="557" y="474" text-anchor="middle" font-size="10" fill="var(--ink-2)">no collision, no recovery — the common case</text>
+
+      <rect x="715" y="392" width="285" height="40" rx="8" fill="var(--alt-wash)" stroke="var(--alt)"/>
+      <text x="857" y="409" text-anchor="middle" font-size="11.5" font-weight="600" fill="var(--alt)">&lt;FullPath&gt;Property</text>
+      <text x="857" y="424" text-anchor="middle" font-size="10" fill="var(--ink-2)">AdditionalAuthenticationProvidersOpenIdConnectConfigProperty</text>
+
+      <rect x="715" y="442" width="285" height="40" rx="8" fill="none" stroke="var(--bad)" stroke-dasharray="5 4"/>
+      <text x="857" y="459" text-anchor="middle" font-size="11.5" font-weight="600" fill="var(--bad)">&lt;Name&gt;2, 3…  (last-resort net)</text>
+      <text x="857" y="474" text-anchor="middle" font-size="10" fill="var(--bad)">outside NAME_GRAMMAR — 0 in awscc 1.98.0</text>
+
+      <line x1="360" y1="412" x2="416" y2="412" stroke="currentColor" marker-end="url(#ar2)"/>
+      <line x1="360" y1="450" x2="416" y2="462" stroke="currentColor" marker-end="url(#ar2)"/>
+      <line x1="695" y1="412" x2="711" y2="412" stroke="currentColor" marker-end="url(#ar2)"/>
+      <line x1="695" y1="462" x2="711" y2="462" stroke="var(--bad)" stroke-dasharray="5 4" marker-end="url(#ar2)"/>
+      <text x="703" y="452" text-anchor="middle" font-size="9.5" fill="var(--bad)">still ci-equal</text>
+
+      <!-- inter-stage arrows -->
+      <path d="M 825 150 L 825 176 L 195 176 L 195 224" fill="none" stroke="currentColor" marker-end="url(#ar2)"/>
+      <path d="M 715 298 L 715 330 L 195 330 L 195 392" fill="none" stroke="currentColor" marker-end="url(#ar2)"/>
+      <text x="455" y="324" text-anchor="middle" font-size="10" fill="var(--ink-2)">deduped entries</text>
+    </svg>
+    </div>
+    <figcaption>The naming decision flow, shown on <code>awscc_appsync_graph_ql_api</code>'s real collision: CFN reuses the <code>OpenIDConnectConfig</code> TypeDefinition at two paths. Stage&nbsp;2 is the PR&nbsp;#2 revision — the first fix (d9dd03d) skipped it and let both occurrences reach stage&nbsp;3 carrying the same name, whose only remaining tie-break is the numeric suffix; that leaked 16 grammar-breaking <code>*Property2</code> names across 8 resources. With dedupe upstream, the suffix branch is unreachable for recovered names.</figcaption>
+  </figure>
+</div>
+
+<div class="col">
+  <h3>Case catalog</h3>
+  <div class="tablewrap"><table>
+    <tr><th>Case</th><th>Real example (awscc 1.98.0)</th><th>Outcome</th></tr>
+    <tr>
+      <td><span class="chip rec">recovered</span> unique CFN definition name</td>
+      <td><span class="mono">vpc_encryption_control</span> → def <span class="mono">VpcEncryptionControl</span></td>
+      <td><span class="mono">VpcEncryptionControlProperty</span> — matches aws-cdk-lib's own name (shape parity)</td>
+    </tr>
+    <tr>
+      <td><span class="chip leaf">leaf fallback</span> no CFN counterpart at path</td>
+      <td>terraform-only attribute, or awscc diverged from the spec</td>
+      <td>PascalCase of the leaf + <span class="mono">Property</span></td>
+    </tr>
+    <tr>
+      <td><span class="chip rec">recovered</span> name ≠ leaf (plurality baked into attribute)</td>
+      <td><span class="mono">destination_flow_config_list</span> → def <span class="mono">DestinationFlowConfig</span></td>
+      <td><span class="mono">DestinationFlowConfigProperty</span>, not <span class="mono">…ListProperty</span> — recovery wins over the leaf</td>
+    </tr>
+    <tr>
+      <td><span class="chip full">dedupe</span> one TypeDefinition reused at N paths</td>
+      <td><span class="mono">subject</span> and <span class="mono">csr_extensions.…​.directory_name</span> both recover <span class="mono">Subject</span> (<span class="mono">acmpca</span>)</td>
+      <td>at-risk top-level keeps <span class="mono">SubjectProperty</span>; the deep one is cleared → its full-path name</td>
+    </tr>
+    <tr>
+      <td><span class="chip full">ci collision</span> recovered vs fallback differing only in case</td>
+      <td>def <span class="mono">HAClusterPrometheusExporter</span> vs leaf <span class="mono">ha_cluster_prometheus_exporter</span> (<span class="mono">applicationinsights</span>)</td>
+      <td>recovered keeps short; fallback re-derives <span class="mono">Monitoring…HaClusterPrometheusExporterProperty</span> — Go/C# see distinct file names</td>
+    </tr>
+    <tr>
+      <td><span class="chip edge">edge</span> segment-boundary ambiguity</td>
+      <td><span class="mono">['a_b','c']</span> vs <span class="mono">['a','b_c']</span> — full paths PascalCase identically</td>
+      <td>numeric suffix, the only remaining tie-break; not present in 1.98.0, flagged by <span class="mono">iter5.go-case.test.ts</span> if a future schema hits it</td>
+    </tr>
+    <tr>
+      <td><span class="chip edge">edge</span> digit-leading segment</td>
+      <td><span class="mono">3d_model</span> (latent — 0 occurrences today)</td>
+      <td><span class="mono">N3dModel…</span> — <span class="mono">DIGIT_LEAD_PREFIX</span>, since jsii type names must start uppercase</td>
+    </tr>
+    <tr>
+      <td><span class="chip edge">edge</span> resource kebab-cases to <span class="mono">index</span></td>
+      <td><span class="mono">AWS::Kendra::Index</span> (+ 3 others)</td>
+      <td>file <span class="mono">index-resource.ts</span> — <span class="mono">index.ts</span> is the module barrel</td>
+    </tr>
+  </table></div>
+
+  <p><strong>How the catalog maps to the diagrams.</strong> Each row is one route through the two figures above. In the pipeline figure (§1), every row happens inside the same two boxes — <code>dedupeDefinitionNames</code> → <code>propertyTypeNamesForResource</code> — on the ×1,494 row; the catalog is that pair of boxes opened up. In the decision-flow figure (§2), a row's chip names the branch it takes: <span class="chip rec">recovered</span> rows exit stage&nbsp;1 on the amber edge and reach the teal terminal; <span class="chip leaf">leaf fallback</span> rows exit stage&nbsp;1 on the gray edge; <span class="chip full">dedupe</span> and <span class="chip full">ci collision</span> rows are the two ways into the blue full-path terminal (cleared in stage&nbsp;2, or re-derived in stage&nbsp;3's cluster); <span class="chip edge">edge</span> rows are the dashed red boxes and guards. The <strong>outcome column is the emitted TypeScript identifier</strong>: the nested-type interface declared inside the resource class's namespace in its generated module file — e.g. <code>CcVPC.VpcEncryptionControlProperty</code> in <code>generated/aws-ec2/vpc.ts</code>, or <code>CcApplication.MonitoringHaClusterPrometheusExporterProperty</code> in <code>generated/aws-applicationinsights/application.ts</code>. That one name then seeds everything derived from it in the same file: the exported mapper functions (<code>ccApplication…PropertyToTerraform</code>/<code>ToHclTerraform</code>), the <code>…PropertyOutputReference</code> class, and — via jsii-pacmak — the per-type file names in Go/C#, which is why case-insensitive uniqueness of this identifier is the whole ballgame.</p>
+
+  <div class="callout warn">
+    <p><strong>Why stage 2 exists (the reviewer's catch):</strong> d9dd03d's case-insensitive union-find fixed the Go build but sent same-named recovered pairs to the numeric-suffix tie-break — <code>OpenIdConnectConfigProperty2</code> and 15 siblings, all violating the grammar that every property type name ends in <code>Property</code>. Moving the case-insensitive comparison upstream into <code>dedupeDefinitionNames</code> clears the duplicate <em>before</em> allocation, so the loser falls back to its grammar-conforming full-path name instead. The at-risk-first ordering is the subtle part: the occurrence whose fallback would itself collide with the recovered spelling (a top-level attribute, whose full path <em>is</em> its leaf) is exactly the one that must keep the recovered name.</p>
+  </div>
+
+  <section id="keymap">
+    <div class="sec-head"><span class="sec-num">3</span><h2>The CFN property-name map (PR #3)</h2></div>
+    <p class="sec-sub">Flag on (<code>emitCfnPropertyMap</code>), each matched resource gets one flat, jsii-visible static: CFN PascalCase name → terraform attribute name, merged across the whole property tree.</p>
+
+    <pre class="codeblock"><code><span class="c-com">// generated (flag on) — lands in the .jsii assembly; the *ToTerraform functions do not</span>
+export class CcVPC extends cdktn.TerraformResource {
+  public static readonly tfResourceType = <span class="c-tf">"awscc_ec2_vpc"</span>;
+  public static readonly CFN_PROPERTY_NAME_MAP: { [cfnName: string]: string } = {
+    <span class="c-cfn">"EgressOnlyInternetGatewayExclusion"</span>: <span class="c-tf">"egress_only_internet_gateway_exclusion"</span>,  <span class="c-com">// nested</span>
+    <span class="c-cfn">"Ipv4IpamPoolId"</span>: <span class="c-tf">"ipv_4_ipam_pool_id"</span>,  <span class="c-com">// the non-derivable case</span>
+    …
+  };</code></pre>
+
+    <p>The build walks <em>levels</em> — the resource root (<code>path: []</code>) plus every struct — and joins each level's terraform attributes to the CFN properties at the same path. Both sides of the join use <code>normalizeKey</code> (strip underscores, lowercase), the same join logic <code>cfn-recovery</code> uses to recover definition names, now exposed as <code>resolvePropertiesAtPath</code>. Four exits keep the map honest rather than complete:</p>
+    <ul>
+      <li><strong>Unmatched resource</strong> (<code>cfnType: ""</code>, the <code>fallbackPlan</code> case) → empty map → <em>no static emitted at all</em>; output byte-identical to flag-off.</li>
+      <li><strong>Path isn't an object-typed CFN property</strong> (primitive, or awscc diverged) → level skipped.</li>
+      <li><strong>Attribute has no CFN counterpart at its level</strong> (7,309 across the schema) → entry skipped — absence in the map means "no CFN spelling exists," never a guess.</li>
+      <li><strong>Same CFN name seen twice</strong> → first-writer-wins, root-first — a determinism net the pre-study proved is never taken (0 conflicts in 30,674 pairs).</li>
+    </ul>
+  </section>
+
+  <section id="sequences">
+    <div class="sec-head"><span class="sec-num">4</span><h2>Sequences</h2></div>
+    <p class="sec-sub">Two moments matter: generation time (once per provider version, offline) and synth time (every consumer run). The map exists so a third actor — the Phase-2 bridge — can join at synth time without the mappers.</p>
+  </section>
+</div>
+
+<div class="wide">
+  <figure class="fig">
+    <pre class="mermaid">
+sequenceDiagram
+  autonumber
+  participant G as generate-all.ts
+  participant GG as grouped-generate
+  participant P as resource-parser
+  participant R as cfn-recovery
+  participant N as naming
+  participant M as cfn-property-map
+  participant E as emitters
+
+  G->>GG: generateGroupedWithStats(schema, opts)
+  GG->>GG: planResources() — cfnTypeFor / fallbackPlan
+  loop each of 1,494 planned resources
+    GG->>P: parseResourceAttributes(schema)
+    P-->>GG: attributes + structs[path]
+    loop each struct path
+      GG->>R: resolveDefinitionName(db, cfnType, path)
+      R-->>GG: CFN definition name | undefined
+    end
+    GG->>N: dedupeDefinitionNames(entries)
+    N-->>GG: one struct keeps each recovered name, duplicates cleared to path fallback
+    GG->>N: propertyTypeNamesForResource(entries)
+    N-->>GG: nameMap — grammar-conforming, order-independent
+    opt emitCfnPropertyMap (default off)
+      GG->>M: buildResourceCfnPropertyMap(db, cfnType, attrs, structs)
+      M->>R: resolvePropertiesAtPath(db, cfnType, level.path)
+      R-->>M: CFN properties at level
+      M-->>GG: flat map (may be empty → no static)
+    end
+    GG->>E: ResourceModel → StructEmitter + ResourceEmitter
+    E-->>GG: virtual files → generated/&lt;module&gt;/&lt;file&gt;.ts
+  end
+  GG-->>G: stats + MANIFEST.sha256
+    </pre>
+    <figcaption>Generation-time sequence at the PR&nbsp;#3 stack head. The <code>opt</code> block is the entire footprint of the key-map feature — with the flag off, the run is byte-identical to before the feature existed.</figcaption>
+  </figure>
+
+  <figure class="fig">
+    <pre class="mermaid">
+sequenceDiagram
+  autonumber
+  participant U as consumer / bridge
+  participant C as CcVPC instance
+  participant S as synthesizeAttributes()
+  participant F as ccXxxPropertyToTerraform
+  participant T as cdk.tf.json
+
+  U->>C: new CcVPC(scope, id, { ipv4IpamPoolId, vpcEncryptionControl })
+  C->>C: store camelCase values in private fields
+  U->>C: app.synth()
+  C->>S: collect attributes
+  alt plain struct value (the normal path)
+    S->>F: mapper(struct)
+    F-->>S: { egress_only_internet_gateway_exclusion: … } — keys from the schema, verbatim
+    S-->>T: snake_case attribute block
+  else IResolvable / Lazy value (the bypass)
+    S->>F: mapper(lazyValue)
+    F-->>S: returned UNMAPPED — isResolvable guard
+    S-->>T: resolves later, keys rendered AS WRITTEN — provider rejects camel/PascalCase
+  end
+  opt Phase-2 bridge, intrinsic-embedded PascalCase literal
+    U->>C: CcVPC.CFN_PROPERTY_NAME_MAP["Ipv4IpamPoolId"]
+    C-->>U: "ipv_4_ipam_pool_id" — recursive key rewrite, no mapper needed, any jsii language
+  end
+    </pre>
+    <figcaption>Synth-time sequence. The <code>else</code> branch is the confirmed cdktn gotcha (cdktn-planning#1): every generated mapper opens with <code>if (!canInspect(s) || isResolvable(s)) return s;</code>, so a <code>Lazy</code>-produced object's keys are never translated. The <code>opt</code> block is what PR&nbsp;#3 adds — a lookup that works where the mappers can't run (resolve time) and where they don't exist (every non-TypeScript jsii language).</figcaption>
+  </figure>
+</div>
+
+<div class="col">
+  <div class="callout">
+    <p><strong>Reading the atlas as one argument:</strong> §2 guarantees every emitted type name is deterministic, grammar-conforming, and case-insensitively unique per module (the Go/C# constraint, gated by <code>iter5.go-case.test.ts</code> on the committed tree). §3 rides the same CFN join to publish the one artifact the bridge needs at synth time. §4 shows why it must be a static on the class: the mapper functions in the left lane of the synth sequence exist only in the embedded JavaScript — the map is the only spelling oracle that survives into Python, Java, .NET, and Go.</p>
+  </div>
+
+  <footer>
+    <p>Code at the head of the PR #3 stack: <a href="https://github.com/cdktn-io/cdktn-awscc/pull/3">feat/cfn-key-map @ 4f691fc</a> (cfn-property-map.ts, cfn-recovery.ts walkToPath split, ResourceEmitter static) on <a href="https://github.com/cdktn-io/cdktn-awscc/pull/2">fix/go-case-collisions @ c78033d</a>, whose <code>dedupeDefinitionNames</code> revision supersedes d9dd03d's allocation-stage-only fix per the <a href="https://github.com/cdktn-io/cdktn-awscc/pull/2#discussion_r3891748035">review discussion</a> (no <code>*Property2</code> anywhere; verified on the restacked branch: 209 tests green, flag-off regeneration byte-identical).</p>
+    <p>Companion: <em>The CFN–awscc Seam</em> (coverage gap, casing round trips, mapper bypass). Sources: tools/awscc2cdk/src/{naming,grouped-generate}.ts, src/grouped/{cfn-recovery,cfn-property-map}.ts, src/grouped/emitter/resource-emitter.ts; probe evidence from the PR #2 review thread.</p>
+  </footer>
+</div>
