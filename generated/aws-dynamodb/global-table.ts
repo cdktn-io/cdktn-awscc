@@ -29,7 +29,7 @@ export interface CcGlobalTableProps extends cdktn.TerraformMetaArguments {
     /**
     * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#key_schema CcGlobalTable#key_schema}
     */
-    readonly keySchema?: CcGlobalTable.KeySchemaProperty2[] | cdktn.IResolvable;
+    readonly keySchema?: CcGlobalTable.KeySchemaProperty[] | cdktn.IResolvable;
     /**
     * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#local_secondary_indexes CcGlobalTable#local_secondary_indexes}
     */
@@ -41,11 +41,11 @@ export interface CcGlobalTableProps extends cdktn.TerraformMetaArguments {
     /**
     * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#read_on_demand_throughput_settings CcGlobalTable#read_on_demand_throughput_settings}
     */
-    readonly readOnDemandThroughputSettings?: CcGlobalTable.ReadOnDemandThroughputSettingsProperty2;
+    readonly readOnDemandThroughputSettings?: CcGlobalTable.ReadOnDemandThroughputSettingsProperty;
     /**
     * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#read_provisioned_throughput_settings CcGlobalTable#read_provisioned_throughput_settings}
     */
-    readonly readProvisionedThroughputSettings?: CcGlobalTable.ReadProvisionedThroughputSettingsProperty;
+    readonly readProvisionedThroughputSettings?: CcGlobalTable.GlobalReadProvisionedThroughputSettingsProperty;
     /**
     * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#replicas CcGlobalTable#replicas}
     */
@@ -69,15 +69,15 @@ export interface CcGlobalTableProps extends cdktn.TerraformMetaArguments {
     /**
     * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#warm_throughput CcGlobalTable#warm_throughput}
     */
-    readonly warmThroughput?: CcGlobalTable.WarmThroughputProperty2;
+    readonly warmThroughput?: CcGlobalTable.WarmThroughputProperty;
     /**
     * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#write_on_demand_throughput_settings CcGlobalTable#write_on_demand_throughput_settings}
     */
-    readonly writeOnDemandThroughputSettings?: CcGlobalTable.WriteOnDemandThroughputSettingsProperty2;
+    readonly writeOnDemandThroughputSettings?: CcGlobalTable.WriteOnDemandThroughputSettingsProperty;
     /**
     * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#write_provisioned_throughput_settings CcGlobalTable#write_provisioned_throughput_settings}
     */
-    readonly writeProvisionedThroughputSettings?: CcGlobalTable.WriteProvisionedThroughputSettingsProperty2;
+    readonly writeProvisionedThroughputSettings?: CcGlobalTable.WriteProvisionedThroughputSettingsProperty;
 }
 
 /**
@@ -245,11 +245,11 @@ export class CcGlobalTable extends cdktn.TerraformResource {
     }
 
     // key_schema - computed: true, optional: true, required: false
-    private _keySchema = new CcGlobalTable.KeySchemaProperty2List(this, "key_schema", false);
+    private _keySchema = new CcGlobalTable.KeySchemaPropertyList(this, "key_schema", false);
     public get keySchema() {
         return this._keySchema;
     }
-    public putKeySchema(value: CcGlobalTable.KeySchemaProperty2[] | cdktn.IResolvable) {
+    public putKeySchema(value: CcGlobalTable.KeySchemaProperty[] | cdktn.IResolvable) {
         this._keySchema.internalValue = value;
     }
     public resetKeySchema() {
@@ -293,11 +293,11 @@ export class CcGlobalTable extends cdktn.TerraformResource {
     }
 
     // read_on_demand_throughput_settings - computed: true, optional: true, required: false
-    private _readOnDemandThroughputSettings = new CcGlobalTable.ReadOnDemandThroughputSettingsProperty2OutputReference(this, "read_on_demand_throughput_settings");
+    private _readOnDemandThroughputSettings = new CcGlobalTable.ReadOnDemandThroughputSettingsPropertyOutputReference(this, "read_on_demand_throughput_settings");
     public get readOnDemandThroughputSettings() {
         return this._readOnDemandThroughputSettings;
     }
-    public putReadOnDemandThroughputSettings(value: CcGlobalTable.ReadOnDemandThroughputSettingsProperty2) {
+    public putReadOnDemandThroughputSettings(value: CcGlobalTable.ReadOnDemandThroughputSettingsProperty) {
         this._readOnDemandThroughputSettings.internalValue = value;
     }
     public resetReadOnDemandThroughputSettings() {
@@ -309,11 +309,11 @@ export class CcGlobalTable extends cdktn.TerraformResource {
     }
 
     // read_provisioned_throughput_settings - computed: true, optional: true, required: false
-    private _readProvisionedThroughputSettings = new CcGlobalTable.ReadProvisionedThroughputSettingsPropertyOutputReference(this, "read_provisioned_throughput_settings");
+    private _readProvisionedThroughputSettings = new CcGlobalTable.GlobalReadProvisionedThroughputSettingsPropertyOutputReference(this, "read_provisioned_throughput_settings");
     public get readProvisionedThroughputSettings() {
         return this._readProvisionedThroughputSettings;
     }
-    public putReadProvisionedThroughputSettings(value: CcGlobalTable.ReadProvisionedThroughputSettingsProperty) {
+    public putReadProvisionedThroughputSettings(value: CcGlobalTable.GlobalReadProvisionedThroughputSettingsProperty) {
         this._readProvisionedThroughputSettings.internalValue = value;
     }
     public resetReadProvisionedThroughputSettings() {
@@ -412,11 +412,11 @@ export class CcGlobalTable extends cdktn.TerraformResource {
     }
 
     // warm_throughput - computed: true, optional: true, required: false
-    private _warmThroughput = new CcGlobalTable.WarmThroughputProperty2OutputReference(this, "warm_throughput");
+    private _warmThroughput = new CcGlobalTable.WarmThroughputPropertyOutputReference(this, "warm_throughput");
     public get warmThroughput() {
         return this._warmThroughput;
     }
-    public putWarmThroughput(value: CcGlobalTable.WarmThroughputProperty2) {
+    public putWarmThroughput(value: CcGlobalTable.WarmThroughputProperty) {
         this._warmThroughput.internalValue = value;
     }
     public resetWarmThroughput() {
@@ -428,11 +428,11 @@ export class CcGlobalTable extends cdktn.TerraformResource {
     }
 
     // write_on_demand_throughput_settings - computed: true, optional: true, required: false
-    private _writeOnDemandThroughputSettings = new CcGlobalTable.WriteOnDemandThroughputSettingsProperty2OutputReference(this, "write_on_demand_throughput_settings");
+    private _writeOnDemandThroughputSettings = new CcGlobalTable.WriteOnDemandThroughputSettingsPropertyOutputReference(this, "write_on_demand_throughput_settings");
     public get writeOnDemandThroughputSettings() {
         return this._writeOnDemandThroughputSettings;
     }
-    public putWriteOnDemandThroughputSettings(value: CcGlobalTable.WriteOnDemandThroughputSettingsProperty2) {
+    public putWriteOnDemandThroughputSettings(value: CcGlobalTable.WriteOnDemandThroughputSettingsProperty) {
         this._writeOnDemandThroughputSettings.internalValue = value;
     }
     public resetWriteOnDemandThroughputSettings() {
@@ -444,11 +444,11 @@ export class CcGlobalTable extends cdktn.TerraformResource {
     }
 
     // write_provisioned_throughput_settings - computed: true, optional: true, required: false
-    private _writeProvisionedThroughputSettings = new CcGlobalTable.WriteProvisionedThroughputSettingsProperty2OutputReference(this, "write_provisioned_throughput_settings");
+    private _writeProvisionedThroughputSettings = new CcGlobalTable.WriteProvisionedThroughputSettingsPropertyOutputReference(this, "write_provisioned_throughput_settings");
     public get writeProvisionedThroughputSettings() {
         return this._writeProvisionedThroughputSettings;
     }
-    public putWriteProvisionedThroughputSettings(value: CcGlobalTable.WriteProvisionedThroughputSettingsProperty2) {
+    public putWriteProvisionedThroughputSettings(value: CcGlobalTable.WriteProvisionedThroughputSettingsProperty) {
         this._writeProvisionedThroughputSettings.internalValue = value;
     }
     public resetWriteProvisionedThroughputSettings() {
@@ -470,19 +470,19 @@ export class CcGlobalTable extends cdktn.TerraformResource {
             global_secondary_indexes: cdktn.listMapper(ccGlobalTableGlobalSecondaryIndexPropertyToTerraform, false)(this._globalSecondaryIndexes.internalValue),
             global_table_source_arn: cdktn.stringToTerraform(this._globalTableSourceArn),
             global_table_witnesses: cdktn.listMapper(ccGlobalTableGlobalTableWitnessPropertyToTerraform, false)(this._globalTableWitnesses.internalValue),
-            key_schema: cdktn.listMapper(ccGlobalTableKeySchemaProperty2ToTerraform, false)(this._keySchema.internalValue),
+            key_schema: cdktn.listMapper(ccGlobalTableKeySchemaPropertyToTerraform, false)(this._keySchema.internalValue),
             local_secondary_indexes: cdktn.listMapper(ccGlobalTableLocalSecondaryIndexPropertyToTerraform, false)(this._localSecondaryIndexes.internalValue),
             multi_region_consistency: cdktn.stringToTerraform(this._multiRegionConsistency),
-            read_on_demand_throughput_settings: ccGlobalTableReadOnDemandThroughputSettingsProperty2ToTerraform(this._readOnDemandThroughputSettings.internalValue),
-            read_provisioned_throughput_settings: ccGlobalTableReadProvisionedThroughputSettingsPropertyToTerraform(this._readProvisionedThroughputSettings.internalValue),
+            read_on_demand_throughput_settings: ccGlobalTableReadOnDemandThroughputSettingsPropertyToTerraform(this._readOnDemandThroughputSettings.internalValue),
+            read_provisioned_throughput_settings: ccGlobalTableGlobalReadProvisionedThroughputSettingsPropertyToTerraform(this._readProvisionedThroughputSettings.internalValue),
             replicas: cdktn.listMapper(ccGlobalTableReplicaSpecificationPropertyToTerraform, false)(this._replicas.internalValue),
             sse_specification: ccGlobalTableSSESpecificationPropertyToTerraform(this._sseSpecification.internalValue),
             stream_specification: ccGlobalTableStreamSpecificationPropertyToTerraform(this._streamSpecification.internalValue),
             table_name: cdktn.stringToTerraform(this._tableName),
             time_to_live_specification: ccGlobalTableTimeToLiveSpecificationPropertyToTerraform(this._timeToLiveSpecification.internalValue),
-            warm_throughput: ccGlobalTableWarmThroughputProperty2ToTerraform(this._warmThroughput.internalValue),
-            write_on_demand_throughput_settings: ccGlobalTableWriteOnDemandThroughputSettingsProperty2ToTerraform(this._writeOnDemandThroughputSettings.internalValue),
-            write_provisioned_throughput_settings: ccGlobalTableWriteProvisionedThroughputSettingsProperty2ToTerraform(this._writeProvisionedThroughputSettings.internalValue),
+            warm_throughput: ccGlobalTableWarmThroughputPropertyToTerraform(this._warmThroughput.internalValue),
+            write_on_demand_throughput_settings: ccGlobalTableWriteOnDemandThroughputSettingsPropertyToTerraform(this._writeOnDemandThroughputSettings.internalValue),
+            write_provisioned_throughput_settings: ccGlobalTableWriteProvisionedThroughputSettingsPropertyToTerraform(this._writeProvisionedThroughputSettings.internalValue),
         };
     }
 
@@ -519,10 +519,10 @@ export class CcGlobalTable extends cdktn.TerraformResource {
                 storageClassType: "CcGlobalTable.GlobalTableWitnessPropertyList",
             },
             key_schema: {
-                value: cdktn.listMapperHcl(ccGlobalTableKeySchemaProperty2ToHclTerraform, false)(this._keySchema.internalValue),
+                value: cdktn.listMapperHcl(ccGlobalTableKeySchemaPropertyToHclTerraform, false)(this._keySchema.internalValue),
                 isBlock: true,
                 type: "list",
-                storageClassType: "CcGlobalTable.KeySchemaProperty2List",
+                storageClassType: "CcGlobalTable.KeySchemaPropertyList",
             },
             local_secondary_indexes: {
                 value: cdktn.listMapperHcl(ccGlobalTableLocalSecondaryIndexPropertyToHclTerraform, false)(this._localSecondaryIndexes.internalValue),
@@ -537,16 +537,16 @@ export class CcGlobalTable extends cdktn.TerraformResource {
                 storageClassType: "string",
             },
             read_on_demand_throughput_settings: {
-                value: ccGlobalTableReadOnDemandThroughputSettingsProperty2ToHclTerraform(this._readOnDemandThroughputSettings.internalValue),
+                value: ccGlobalTableReadOnDemandThroughputSettingsPropertyToHclTerraform(this._readOnDemandThroughputSettings.internalValue),
                 isBlock: true,
                 type: "struct",
-                storageClassType: "CcGlobalTable.ReadOnDemandThroughputSettingsProperty2",
+                storageClassType: "CcGlobalTable.ReadOnDemandThroughputSettingsProperty",
             },
             read_provisioned_throughput_settings: {
-                value: ccGlobalTableReadProvisionedThroughputSettingsPropertyToHclTerraform(this._readProvisionedThroughputSettings.internalValue),
+                value: ccGlobalTableGlobalReadProvisionedThroughputSettingsPropertyToHclTerraform(this._readProvisionedThroughputSettings.internalValue),
                 isBlock: true,
                 type: "struct",
-                storageClassType: "CcGlobalTable.ReadProvisionedThroughputSettingsProperty",
+                storageClassType: "CcGlobalTable.GlobalReadProvisionedThroughputSettingsProperty",
             },
             replicas: {
                 value: cdktn.listMapperHcl(ccGlobalTableReplicaSpecificationPropertyToHclTerraform, false)(this._replicas.internalValue),
@@ -579,22 +579,22 @@ export class CcGlobalTable extends cdktn.TerraformResource {
                 storageClassType: "CcGlobalTable.TimeToLiveSpecificationProperty",
             },
             warm_throughput: {
-                value: ccGlobalTableWarmThroughputProperty2ToHclTerraform(this._warmThroughput.internalValue),
+                value: ccGlobalTableWarmThroughputPropertyToHclTerraform(this._warmThroughput.internalValue),
                 isBlock: true,
                 type: "struct",
-                storageClassType: "CcGlobalTable.WarmThroughputProperty2",
+                storageClassType: "CcGlobalTable.WarmThroughputProperty",
             },
             write_on_demand_throughput_settings: {
-                value: ccGlobalTableWriteOnDemandThroughputSettingsProperty2ToHclTerraform(this._writeOnDemandThroughputSettings.internalValue),
+                value: ccGlobalTableWriteOnDemandThroughputSettingsPropertyToHclTerraform(this._writeOnDemandThroughputSettings.internalValue),
                 isBlock: true,
                 type: "struct",
-                storageClassType: "CcGlobalTable.WriteOnDemandThroughputSettingsProperty2",
+                storageClassType: "CcGlobalTable.WriteOnDemandThroughputSettingsProperty",
             },
             write_provisioned_throughput_settings: {
-                value: ccGlobalTableWriteProvisionedThroughputSettingsProperty2ToHclTerraform(this._writeProvisionedThroughputSettings.internalValue),
+                value: ccGlobalTableWriteProvisionedThroughputSettingsPropertyToHclTerraform(this._writeProvisionedThroughputSettings.internalValue),
                 isBlock: true,
                 type: "struct",
-                storageClassType: "CcGlobalTable.WriteProvisionedThroughputSettingsProperty2",
+                storageClassType: "CcGlobalTable.WriteProvisionedThroughputSettingsProperty",
             },
         };
 
@@ -640,7 +640,7 @@ export function ccGlobalTableAttributeDefinitionPropertyToHclTerraform(struct?: 
 }
 
 
-export function ccGlobalTableKeySchemaPropertyToTerraform(struct?: CcGlobalTable.KeySchemaProperty | cdktn.IResolvable): any {
+export function ccGlobalTableGlobalSecondaryIndexesKeySchemaPropertyToTerraform(struct?: CcGlobalTable.GlobalSecondaryIndexesKeySchemaProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -652,7 +652,7 @@ export function ccGlobalTableKeySchemaPropertyToTerraform(struct?: CcGlobalTable
 }
 
 
-export function ccGlobalTableKeySchemaPropertyToHclTerraform(struct?: CcGlobalTable.KeySchemaProperty | cdktn.IResolvable): any {
+export function ccGlobalTableGlobalSecondaryIndexesKeySchemaPropertyToHclTerraform(struct?: CcGlobalTable.GlobalSecondaryIndexesKeySchemaProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -714,7 +714,7 @@ export function ccGlobalTableProjectionPropertyToHclTerraform(struct?: CcGlobalT
 }
 
 
-export function ccGlobalTableReadOnDemandThroughputSettingsPropertyToTerraform(struct?: CcGlobalTable.ReadOnDemandThroughputSettingsProperty | cdktn.IResolvable): any {
+export function ccGlobalTableGlobalSecondaryIndexesReadOnDemandThroughputSettingsPropertyToTerraform(struct?: CcGlobalTable.GlobalSecondaryIndexesReadOnDemandThroughputSettingsProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -725,7 +725,7 @@ export function ccGlobalTableReadOnDemandThroughputSettingsPropertyToTerraform(s
 }
 
 
-export function ccGlobalTableReadOnDemandThroughputSettingsPropertyToHclTerraform(struct?: CcGlobalTable.ReadOnDemandThroughputSettingsProperty | cdktn.IResolvable): any {
+export function ccGlobalTableGlobalSecondaryIndexesReadOnDemandThroughputSettingsPropertyToHclTerraform(struct?: CcGlobalTable.GlobalSecondaryIndexesReadOnDemandThroughputSettingsProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -744,7 +744,7 @@ export function ccGlobalTableReadOnDemandThroughputSettingsPropertyToHclTerrafor
 }
 
 
-export function ccGlobalTableGlobalReadProvisionedThroughputSettingsPropertyToTerraform(struct?: CcGlobalTable.GlobalReadProvisionedThroughputSettingsProperty | cdktn.IResolvable): any {
+export function ccGlobalTableGlobalSecondaryIndexesReadProvisionedThroughputSettingsPropertyToTerraform(struct?: CcGlobalTable.GlobalSecondaryIndexesReadProvisionedThroughputSettingsProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -755,7 +755,7 @@ export function ccGlobalTableGlobalReadProvisionedThroughputSettingsPropertyToTe
 }
 
 
-export function ccGlobalTableGlobalReadProvisionedThroughputSettingsPropertyToHclTerraform(struct?: CcGlobalTable.GlobalReadProvisionedThroughputSettingsProperty | cdktn.IResolvable): any {
+export function ccGlobalTableGlobalSecondaryIndexesReadProvisionedThroughputSettingsPropertyToHclTerraform(struct?: CcGlobalTable.GlobalSecondaryIndexesReadProvisionedThroughputSettingsProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -774,7 +774,7 @@ export function ccGlobalTableGlobalReadProvisionedThroughputSettingsPropertyToHc
 }
 
 
-export function ccGlobalTableWarmThroughputPropertyToTerraform(struct?: CcGlobalTable.WarmThroughputProperty | cdktn.IResolvable): any {
+export function ccGlobalTableGlobalSecondaryIndexesWarmThroughputPropertyToTerraform(struct?: CcGlobalTable.GlobalSecondaryIndexesWarmThroughputProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -786,7 +786,7 @@ export function ccGlobalTableWarmThroughputPropertyToTerraform(struct?: CcGlobal
 }
 
 
-export function ccGlobalTableWarmThroughputPropertyToHclTerraform(struct?: CcGlobalTable.WarmThroughputProperty | cdktn.IResolvable): any {
+export function ccGlobalTableGlobalSecondaryIndexesWarmThroughputPropertyToHclTerraform(struct?: CcGlobalTable.GlobalSecondaryIndexesWarmThroughputProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -811,7 +811,7 @@ export function ccGlobalTableWarmThroughputPropertyToHclTerraform(struct?: CcGlo
 }
 
 
-export function ccGlobalTableWriteOnDemandThroughputSettingsPropertyToTerraform(struct?: CcGlobalTable.WriteOnDemandThroughputSettingsProperty | cdktn.IResolvable): any {
+export function ccGlobalTableGlobalSecondaryIndexesWriteOnDemandThroughputSettingsPropertyToTerraform(struct?: CcGlobalTable.GlobalSecondaryIndexesWriteOnDemandThroughputSettingsProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -822,7 +822,7 @@ export function ccGlobalTableWriteOnDemandThroughputSettingsPropertyToTerraform(
 }
 
 
-export function ccGlobalTableWriteOnDemandThroughputSettingsPropertyToHclTerraform(struct?: CcGlobalTable.WriteOnDemandThroughputSettingsProperty | cdktn.IResolvable): any {
+export function ccGlobalTableGlobalSecondaryIndexesWriteOnDemandThroughputSettingsPropertyToHclTerraform(struct?: CcGlobalTable.GlobalSecondaryIndexesWriteOnDemandThroughputSettingsProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -943,7 +943,7 @@ export function ccGlobalTableCapacityAutoScalingSettingsPropertyToHclTerraform(s
 }
 
 
-export function ccGlobalTableWriteProvisionedThroughputSettingsPropertyToTerraform(struct?: CcGlobalTable.WriteProvisionedThroughputSettingsProperty | cdktn.IResolvable): any {
+export function ccGlobalTableGlobalSecondaryIndexesWriteProvisionedThroughputSettingsPropertyToTerraform(struct?: CcGlobalTable.GlobalSecondaryIndexesWriteProvisionedThroughputSettingsProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -954,7 +954,7 @@ export function ccGlobalTableWriteProvisionedThroughputSettingsPropertyToTerrafo
 }
 
 
-export function ccGlobalTableWriteProvisionedThroughputSettingsPropertyToHclTerraform(struct?: CcGlobalTable.WriteProvisionedThroughputSettingsProperty | cdktn.IResolvable): any {
+export function ccGlobalTableGlobalSecondaryIndexesWriteProvisionedThroughputSettingsPropertyToHclTerraform(struct?: CcGlobalTable.GlobalSecondaryIndexesWriteProvisionedThroughputSettingsProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -980,13 +980,13 @@ export function ccGlobalTableGlobalSecondaryIndexPropertyToTerraform(struct?: Cc
     }
     return {
         index_name: cdktn.stringToTerraform(struct!.indexName),
-        key_schema: cdktn.listMapper(ccGlobalTableKeySchemaPropertyToTerraform, false)(struct!.keySchema),
+        key_schema: cdktn.listMapper(ccGlobalTableGlobalSecondaryIndexesKeySchemaPropertyToTerraform, false)(struct!.keySchema),
         projection: ccGlobalTableProjectionPropertyToTerraform(struct!.projection),
-        read_on_demand_throughput_settings: ccGlobalTableReadOnDemandThroughputSettingsPropertyToTerraform(struct!.readOnDemandThroughputSettings),
-        read_provisioned_throughput_settings: ccGlobalTableGlobalReadProvisionedThroughputSettingsPropertyToTerraform(struct!.readProvisionedThroughputSettings),
-        warm_throughput: ccGlobalTableWarmThroughputPropertyToTerraform(struct!.warmThroughput),
-        write_on_demand_throughput_settings: ccGlobalTableWriteOnDemandThroughputSettingsPropertyToTerraform(struct!.writeOnDemandThroughputSettings),
-        write_provisioned_throughput_settings: ccGlobalTableWriteProvisionedThroughputSettingsPropertyToTerraform(struct!.writeProvisionedThroughputSettings),
+        read_on_demand_throughput_settings: ccGlobalTableGlobalSecondaryIndexesReadOnDemandThroughputSettingsPropertyToTerraform(struct!.readOnDemandThroughputSettings),
+        read_provisioned_throughput_settings: ccGlobalTableGlobalSecondaryIndexesReadProvisionedThroughputSettingsPropertyToTerraform(struct!.readProvisionedThroughputSettings),
+        warm_throughput: ccGlobalTableGlobalSecondaryIndexesWarmThroughputPropertyToTerraform(struct!.warmThroughput),
+        write_on_demand_throughput_settings: ccGlobalTableGlobalSecondaryIndexesWriteOnDemandThroughputSettingsPropertyToTerraform(struct!.writeOnDemandThroughputSettings),
+        write_provisioned_throughput_settings: ccGlobalTableGlobalSecondaryIndexesWriteProvisionedThroughputSettingsPropertyToTerraform(struct!.writeProvisionedThroughputSettings),
     }
 }
 
@@ -1004,10 +1004,10 @@ export function ccGlobalTableGlobalSecondaryIndexPropertyToHclTerraform(struct?:
             storageClassType: "string",
         },
         key_schema: {
-            value: cdktn.listMapperHcl(ccGlobalTableKeySchemaPropertyToHclTerraform, false)(struct!.keySchema),
+            value: cdktn.listMapperHcl(ccGlobalTableGlobalSecondaryIndexesKeySchemaPropertyToHclTerraform, false)(struct!.keySchema),
             isBlock: true,
             type: "list",
-            storageClassType: "KeySchemaPropertyList",
+            storageClassType: "GlobalSecondaryIndexesKeySchemaPropertyList",
         },
         projection: {
             value: ccGlobalTableProjectionPropertyToHclTerraform(struct!.projection),
@@ -1016,34 +1016,34 @@ export function ccGlobalTableGlobalSecondaryIndexPropertyToHclTerraform(struct?:
             storageClassType: "ProjectionProperty",
         },
         read_on_demand_throughput_settings: {
-            value: ccGlobalTableReadOnDemandThroughputSettingsPropertyToHclTerraform(struct!.readOnDemandThroughputSettings),
+            value: ccGlobalTableGlobalSecondaryIndexesReadOnDemandThroughputSettingsPropertyToHclTerraform(struct!.readOnDemandThroughputSettings),
             isBlock: true,
             type: "struct",
-            storageClassType: "ReadOnDemandThroughputSettingsProperty",
+            storageClassType: "GlobalSecondaryIndexesReadOnDemandThroughputSettingsProperty",
         },
         read_provisioned_throughput_settings: {
-            value: ccGlobalTableGlobalReadProvisionedThroughputSettingsPropertyToHclTerraform(struct!.readProvisionedThroughputSettings),
+            value: ccGlobalTableGlobalSecondaryIndexesReadProvisionedThroughputSettingsPropertyToHclTerraform(struct!.readProvisionedThroughputSettings),
             isBlock: true,
             type: "struct",
-            storageClassType: "GlobalReadProvisionedThroughputSettingsProperty",
+            storageClassType: "GlobalSecondaryIndexesReadProvisionedThroughputSettingsProperty",
         },
         warm_throughput: {
-            value: ccGlobalTableWarmThroughputPropertyToHclTerraform(struct!.warmThroughput),
+            value: ccGlobalTableGlobalSecondaryIndexesWarmThroughputPropertyToHclTerraform(struct!.warmThroughput),
             isBlock: true,
             type: "struct",
-            storageClassType: "WarmThroughputProperty",
+            storageClassType: "GlobalSecondaryIndexesWarmThroughputProperty",
         },
         write_on_demand_throughput_settings: {
-            value: ccGlobalTableWriteOnDemandThroughputSettingsPropertyToHclTerraform(struct!.writeOnDemandThroughputSettings),
+            value: ccGlobalTableGlobalSecondaryIndexesWriteOnDemandThroughputSettingsPropertyToHclTerraform(struct!.writeOnDemandThroughputSettings),
             isBlock: true,
             type: "struct",
-            storageClassType: "WriteOnDemandThroughputSettingsProperty",
+            storageClassType: "GlobalSecondaryIndexesWriteOnDemandThroughputSettingsProperty",
         },
         write_provisioned_throughput_settings: {
-            value: ccGlobalTableWriteProvisionedThroughputSettingsPropertyToHclTerraform(struct!.writeProvisionedThroughputSettings),
+            value: ccGlobalTableGlobalSecondaryIndexesWriteProvisionedThroughputSettingsPropertyToHclTerraform(struct!.writeProvisionedThroughputSettings),
             isBlock: true,
             type: "struct",
-            storageClassType: "WriteProvisionedThroughputSettingsProperty",
+            storageClassType: "GlobalSecondaryIndexesWriteProvisionedThroughputSettingsProperty",
         },
     };
 
@@ -1082,7 +1082,7 @@ export function ccGlobalTableGlobalTableWitnessPropertyToHclTerraform(struct?: C
 }
 
 
-export function ccGlobalTableKeySchemaProperty2ToTerraform(struct?: CcGlobalTable.KeySchemaProperty2 | cdktn.IResolvable): any {
+export function ccGlobalTableKeySchemaPropertyToTerraform(struct?: CcGlobalTable.KeySchemaProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -1094,7 +1094,7 @@ export function ccGlobalTableKeySchemaProperty2ToTerraform(struct?: CcGlobalTabl
 }
 
 
-export function ccGlobalTableKeySchemaProperty2ToHclTerraform(struct?: CcGlobalTable.KeySchemaProperty2 | cdktn.IResolvable): any {
+export function ccGlobalTableKeySchemaPropertyToHclTerraform(struct?: CcGlobalTable.KeySchemaProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -1237,7 +1237,7 @@ export function ccGlobalTableLocalSecondaryIndexPropertyToHclTerraform(struct?: 
 }
 
 
-export function ccGlobalTableReadOnDemandThroughputSettingsProperty2ToTerraform(struct?: CcGlobalTable.ReadOnDemandThroughputSettingsProperty2 | cdktn.IResolvable): any {
+export function ccGlobalTableReadOnDemandThroughputSettingsPropertyToTerraform(struct?: CcGlobalTable.ReadOnDemandThroughputSettingsProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -1248,7 +1248,7 @@ export function ccGlobalTableReadOnDemandThroughputSettingsProperty2ToTerraform(
 }
 
 
-export function ccGlobalTableReadOnDemandThroughputSettingsProperty2ToHclTerraform(struct?: CcGlobalTable.ReadOnDemandThroughputSettingsProperty2 | cdktn.IResolvable): any {
+export function ccGlobalTableReadOnDemandThroughputSettingsPropertyToHclTerraform(struct?: CcGlobalTable.ReadOnDemandThroughputSettingsProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -1267,7 +1267,7 @@ export function ccGlobalTableReadOnDemandThroughputSettingsProperty2ToHclTerrafo
 }
 
 
-export function ccGlobalTableReadProvisionedThroughputSettingsPropertyToTerraform(struct?: CcGlobalTable.ReadProvisionedThroughputSettingsProperty | cdktn.IResolvable): any {
+export function ccGlobalTableGlobalReadProvisionedThroughputSettingsPropertyToTerraform(struct?: CcGlobalTable.GlobalReadProvisionedThroughputSettingsProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -1278,7 +1278,7 @@ export function ccGlobalTableReadProvisionedThroughputSettingsPropertyToTerrafor
 }
 
 
-export function ccGlobalTableReadProvisionedThroughputSettingsPropertyToHclTerraform(struct?: CcGlobalTable.ReadProvisionedThroughputSettingsProperty | cdktn.IResolvable): any {
+export function ccGlobalTableGlobalReadProvisionedThroughputSettingsPropertyToHclTerraform(struct?: CcGlobalTable.GlobalReadProvisionedThroughputSettingsProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -1503,7 +1503,7 @@ export function ccGlobalTableReplicasGlobalSecondaryIndexesReadProvisionedThroug
 }
 
 
-export function ccGlobalTableReadProvisionedThroughputSettingsProperty2ToTerraform(struct?: CcGlobalTable.ReadProvisionedThroughputSettingsProperty2 | cdktn.IResolvable): any {
+export function ccGlobalTableReadProvisionedThroughputSettingsPropertyToTerraform(struct?: CcGlobalTable.ReadProvisionedThroughputSettingsProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -1515,7 +1515,7 @@ export function ccGlobalTableReadProvisionedThroughputSettingsProperty2ToTerrafo
 }
 
 
-export function ccGlobalTableReadProvisionedThroughputSettingsProperty2ToHclTerraform(struct?: CcGlobalTable.ReadProvisionedThroughputSettingsProperty2 | cdktn.IResolvable): any {
+export function ccGlobalTableReadProvisionedThroughputSettingsPropertyToHclTerraform(struct?: CcGlobalTable.ReadProvisionedThroughputSettingsProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -1549,7 +1549,7 @@ export function ccGlobalTableReplicaGlobalSecondaryIndexSpecificationPropertyToT
         contributor_insights_specification: ccGlobalTableReplicasGlobalSecondaryIndexesContributorInsightsSpecificationPropertyToTerraform(struct!.contributorInsightsSpecification),
         index_name: cdktn.stringToTerraform(struct!.indexName),
         read_on_demand_throughput_settings: ccGlobalTableReplicasGlobalSecondaryIndexesReadOnDemandThroughputSettingsPropertyToTerraform(struct!.readOnDemandThroughputSettings),
-        read_provisioned_throughput_settings: ccGlobalTableReadProvisionedThroughputSettingsProperty2ToTerraform(struct!.readProvisionedThroughputSettings),
+        read_provisioned_throughput_settings: ccGlobalTableReadProvisionedThroughputSettingsPropertyToTerraform(struct!.readProvisionedThroughputSettings),
     }
 }
 
@@ -1579,10 +1579,10 @@ export function ccGlobalTableReplicaGlobalSecondaryIndexSpecificationPropertyToH
             storageClassType: "ReplicasGlobalSecondaryIndexesReadOnDemandThroughputSettingsProperty",
         },
         read_provisioned_throughput_settings: {
-            value: ccGlobalTableReadProvisionedThroughputSettingsProperty2ToHclTerraform(struct!.readProvisionedThroughputSettings),
+            value: ccGlobalTableReadProvisionedThroughputSettingsPropertyToHclTerraform(struct!.readProvisionedThroughputSettings),
             isBlock: true,
             type: "struct",
-            storageClassType: "ReadProvisionedThroughputSettingsProperty2",
+            storageClassType: "ReadProvisionedThroughputSettingsProperty",
         },
     };
 
@@ -2260,7 +2260,7 @@ export function ccGlobalTableTimeToLiveSpecificationPropertyToHclTerraform(struc
 }
 
 
-export function ccGlobalTableWarmThroughputProperty2ToTerraform(struct?: CcGlobalTable.WarmThroughputProperty2 | cdktn.IResolvable): any {
+export function ccGlobalTableWarmThroughputPropertyToTerraform(struct?: CcGlobalTable.WarmThroughputProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -2272,7 +2272,7 @@ export function ccGlobalTableWarmThroughputProperty2ToTerraform(struct?: CcGloba
 }
 
 
-export function ccGlobalTableWarmThroughputProperty2ToHclTerraform(struct?: CcGlobalTable.WarmThroughputProperty2 | cdktn.IResolvable): any {
+export function ccGlobalTableWarmThroughputPropertyToHclTerraform(struct?: CcGlobalTable.WarmThroughputProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -2297,7 +2297,7 @@ export function ccGlobalTableWarmThroughputProperty2ToHclTerraform(struct?: CcGl
 }
 
 
-export function ccGlobalTableWriteOnDemandThroughputSettingsProperty2ToTerraform(struct?: CcGlobalTable.WriteOnDemandThroughputSettingsProperty2 | cdktn.IResolvable): any {
+export function ccGlobalTableWriteOnDemandThroughputSettingsPropertyToTerraform(struct?: CcGlobalTable.WriteOnDemandThroughputSettingsProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -2308,7 +2308,7 @@ export function ccGlobalTableWriteOnDemandThroughputSettingsProperty2ToTerraform
 }
 
 
-export function ccGlobalTableWriteOnDemandThroughputSettingsProperty2ToHclTerraform(struct?: CcGlobalTable.WriteOnDemandThroughputSettingsProperty2 | cdktn.IResolvable): any {
+export function ccGlobalTableWriteOnDemandThroughputSettingsPropertyToHclTerraform(struct?: CcGlobalTable.WriteOnDemandThroughputSettingsProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -2429,7 +2429,7 @@ export function ccGlobalTableWriteCapacityAutoScalingSettingsPropertyToHclTerraf
 }
 
 
-export function ccGlobalTableWriteProvisionedThroughputSettingsProperty2ToTerraform(struct?: CcGlobalTable.WriteProvisionedThroughputSettingsProperty2 | cdktn.IResolvable): any {
+export function ccGlobalTableWriteProvisionedThroughputSettingsPropertyToTerraform(struct?: CcGlobalTable.WriteProvisionedThroughputSettingsProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -2440,7 +2440,7 @@ export function ccGlobalTableWriteProvisionedThroughputSettingsProperty2ToTerraf
 }
 
 
-export function ccGlobalTableWriteProvisionedThroughputSettingsProperty2ToHclTerraform(struct?: CcGlobalTable.WriteProvisionedThroughputSettingsProperty2 | cdktn.IResolvable): any {
+export function ccGlobalTableWriteProvisionedThroughputSettingsPropertyToHclTerraform(struct?: CcGlobalTable.WriteProvisionedThroughputSettingsProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -2572,7 +2572,7 @@ export class AttributeDefinitionPropertyList extends cdktn.ComplexList {
         return new AttributeDefinitionPropertyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
     }
 }
-export interface KeySchemaProperty {
+export interface GlobalSecondaryIndexesKeySchemaProperty {
     /**
     * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#attribute_name CcGlobalTable#attribute_name}
     */
@@ -2582,7 +2582,7 @@ export interface KeySchemaProperty {
     */
     readonly keyType?: string;
 }
-export class KeySchemaPropertyOutputReference extends cdktn.ComplexObject {
+export class GlobalSecondaryIndexesKeySchemaPropertyOutputReference extends cdktn.ComplexObject {
     private isEmptyObject = false;
     private resolvableValue?: cdktn.IResolvable;
 
@@ -2596,7 +2596,7 @@ export class KeySchemaPropertyOutputReference extends cdktn.ComplexObject {
         super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
     }
 
-    public get internalValue(): KeySchemaProperty | cdktn.IResolvable | undefined {
+    public get internalValue(): GlobalSecondaryIndexesKeySchemaProperty | cdktn.IResolvable | undefined {
         if (this.resolvableValue) {
             return this.resolvableValue;
         }
@@ -2613,7 +2613,7 @@ export class KeySchemaPropertyOutputReference extends cdktn.ComplexObject {
         return hasAnyValues ? internalValueResult : undefined;
     }
 
-    public set internalValue(value: KeySchemaProperty | cdktn.IResolvable | undefined) {
+    public set internalValue(value: GlobalSecondaryIndexesKeySchemaProperty | cdktn.IResolvable | undefined) {
         if (value === undefined) {
             this.isEmptyObject = false;
             this.resolvableValue = undefined;
@@ -2665,8 +2665,8 @@ export class KeySchemaPropertyOutputReference extends cdktn.ComplexObject {
     }
 }
 
-export class KeySchemaPropertyList extends cdktn.ComplexList {
-    public internalValue? : KeySchemaProperty[] | cdktn.IResolvable
+export class GlobalSecondaryIndexesKeySchemaPropertyList extends cdktn.ComplexList {
+    public internalValue? : GlobalSecondaryIndexesKeySchemaProperty[] | cdktn.IResolvable
 
     /**
     * @param terraformResource The parent resource
@@ -2680,8 +2680,8 @@ export class KeySchemaPropertyList extends cdktn.ComplexList {
     /**
     * @param index the index of the item to return
     */
-    public get(index: number): KeySchemaPropertyOutputReference {
-        return new KeySchemaPropertyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+    public get(index: number): GlobalSecondaryIndexesKeySchemaPropertyOutputReference {
+        return new GlobalSecondaryIndexesKeySchemaPropertyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
     }
 }
 export interface ProjectionProperty {
@@ -2774,13 +2774,13 @@ export class ProjectionPropertyOutputReference extends cdktn.ComplexObject {
         return this._projectionType;
     }
 }
-export interface ReadOnDemandThroughputSettingsProperty {
+export interface GlobalSecondaryIndexesReadOnDemandThroughputSettingsProperty {
     /**
     * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#max_read_request_units CcGlobalTable#max_read_request_units}
     */
     readonly maxReadRequestUnits?: number;
 }
-export class ReadOnDemandThroughputSettingsPropertyOutputReference extends cdktn.ComplexObject {
+export class GlobalSecondaryIndexesReadOnDemandThroughputSettingsPropertyOutputReference extends cdktn.ComplexObject {
     private isEmptyObject = false;
     private resolvableValue?: cdktn.IResolvable;
 
@@ -2792,7 +2792,7 @@ export class ReadOnDemandThroughputSettingsPropertyOutputReference extends cdktn
         super(terraformResource, terraformAttribute, false);
     }
 
-    public get internalValue(): ReadOnDemandThroughputSettingsProperty | cdktn.IResolvable | undefined {
+    public get internalValue(): GlobalSecondaryIndexesReadOnDemandThroughputSettingsProperty | cdktn.IResolvable | undefined {
         if (this.resolvableValue) {
             return this.resolvableValue;
         }
@@ -2805,7 +2805,7 @@ export class ReadOnDemandThroughputSettingsPropertyOutputReference extends cdktn
         return hasAnyValues ? internalValueResult : undefined;
     }
 
-    public set internalValue(value: ReadOnDemandThroughputSettingsProperty | cdktn.IResolvable | undefined) {
+    public set internalValue(value: GlobalSecondaryIndexesReadOnDemandThroughputSettingsProperty | cdktn.IResolvable | undefined) {
         if (value === undefined) {
             this.isEmptyObject = false;
             this.resolvableValue = undefined;
@@ -2838,13 +2838,13 @@ export class ReadOnDemandThroughputSettingsPropertyOutputReference extends cdktn
         return this._maxReadRequestUnits;
     }
 }
-export interface GlobalReadProvisionedThroughputSettingsProperty {
+export interface GlobalSecondaryIndexesReadProvisionedThroughputSettingsProperty {
     /**
     * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#read_capacity_units CcGlobalTable#read_capacity_units}
     */
     readonly readCapacityUnits?: number;
 }
-export class GlobalReadProvisionedThroughputSettingsPropertyOutputReference extends cdktn.ComplexObject {
+export class GlobalSecondaryIndexesReadProvisionedThroughputSettingsPropertyOutputReference extends cdktn.ComplexObject {
     private isEmptyObject = false;
     private resolvableValue?: cdktn.IResolvable;
 
@@ -2856,7 +2856,7 @@ export class GlobalReadProvisionedThroughputSettingsPropertyOutputReference exte
         super(terraformResource, terraformAttribute, false);
     }
 
-    public get internalValue(): GlobalReadProvisionedThroughputSettingsProperty | cdktn.IResolvable | undefined {
+    public get internalValue(): GlobalSecondaryIndexesReadProvisionedThroughputSettingsProperty | cdktn.IResolvable | undefined {
         if (this.resolvableValue) {
             return this.resolvableValue;
         }
@@ -2869,7 +2869,7 @@ export class GlobalReadProvisionedThroughputSettingsPropertyOutputReference exte
         return hasAnyValues ? internalValueResult : undefined;
     }
 
-    public set internalValue(value: GlobalReadProvisionedThroughputSettingsProperty | cdktn.IResolvable | undefined) {
+    public set internalValue(value: GlobalSecondaryIndexesReadProvisionedThroughputSettingsProperty | cdktn.IResolvable | undefined) {
         if (value === undefined) {
             this.isEmptyObject = false;
             this.resolvableValue = undefined;
@@ -2902,7 +2902,7 @@ export class GlobalReadProvisionedThroughputSettingsPropertyOutputReference exte
         return this._readCapacityUnits;
     }
 }
-export interface WarmThroughputProperty {
+export interface GlobalSecondaryIndexesWarmThroughputProperty {
     /**
     * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#read_units_per_second CcGlobalTable#read_units_per_second}
     */
@@ -2912,7 +2912,7 @@ export interface WarmThroughputProperty {
     */
     readonly writeUnitsPerSecond?: number;
 }
-export class WarmThroughputPropertyOutputReference extends cdktn.ComplexObject {
+export class GlobalSecondaryIndexesWarmThroughputPropertyOutputReference extends cdktn.ComplexObject {
     private isEmptyObject = false;
     private resolvableValue?: cdktn.IResolvable;
 
@@ -2924,7 +2924,7 @@ export class WarmThroughputPropertyOutputReference extends cdktn.ComplexObject {
         super(terraformResource, terraformAttribute, false);
     }
 
-    public get internalValue(): WarmThroughputProperty | cdktn.IResolvable | undefined {
+    public get internalValue(): GlobalSecondaryIndexesWarmThroughputProperty | cdktn.IResolvable | undefined {
         if (this.resolvableValue) {
             return this.resolvableValue;
         }
@@ -2941,7 +2941,7 @@ export class WarmThroughputPropertyOutputReference extends cdktn.ComplexObject {
         return hasAnyValues ? internalValueResult : undefined;
     }
 
-    public set internalValue(value: WarmThroughputProperty | cdktn.IResolvable | undefined) {
+    public set internalValue(value: GlobalSecondaryIndexesWarmThroughputProperty | cdktn.IResolvable | undefined) {
         if (value === undefined) {
             this.isEmptyObject = false;
             this.resolvableValue = undefined;
@@ -2992,13 +2992,13 @@ export class WarmThroughputPropertyOutputReference extends cdktn.ComplexObject {
         return this._writeUnitsPerSecond;
     }
 }
-export interface WriteOnDemandThroughputSettingsProperty {
+export interface GlobalSecondaryIndexesWriteOnDemandThroughputSettingsProperty {
     /**
     * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#max_write_request_units CcGlobalTable#max_write_request_units}
     */
     readonly maxWriteRequestUnits?: number;
 }
-export class WriteOnDemandThroughputSettingsPropertyOutputReference extends cdktn.ComplexObject {
+export class GlobalSecondaryIndexesWriteOnDemandThroughputSettingsPropertyOutputReference extends cdktn.ComplexObject {
     private isEmptyObject = false;
     private resolvableValue?: cdktn.IResolvable;
 
@@ -3010,7 +3010,7 @@ export class WriteOnDemandThroughputSettingsPropertyOutputReference extends cdkt
         super(terraformResource, terraformAttribute, false);
     }
 
-    public get internalValue(): WriteOnDemandThroughputSettingsProperty | cdktn.IResolvable | undefined {
+    public get internalValue(): GlobalSecondaryIndexesWriteOnDemandThroughputSettingsProperty | cdktn.IResolvable | undefined {
         if (this.resolvableValue) {
             return this.resolvableValue;
         }
@@ -3023,7 +3023,7 @@ export class WriteOnDemandThroughputSettingsPropertyOutputReference extends cdkt
         return hasAnyValues ? internalValueResult : undefined;
     }
 
-    public set internalValue(value: WriteOnDemandThroughputSettingsProperty | cdktn.IResolvable | undefined) {
+    public set internalValue(value: GlobalSecondaryIndexesWriteOnDemandThroughputSettingsProperty | cdktn.IResolvable | undefined) {
         if (value === undefined) {
             this.isEmptyObject = false;
             this.resolvableValue = undefined;
@@ -3340,13 +3340,13 @@ export class CapacityAutoScalingSettingsPropertyOutputReference extends cdktn.Co
         return this._targetTrackingScalingPolicyConfiguration.internalValue;
     }
 }
-export interface WriteProvisionedThroughputSettingsProperty {
+export interface GlobalSecondaryIndexesWriteProvisionedThroughputSettingsProperty {
     /**
     * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#write_capacity_auto_scaling_settings CcGlobalTable#write_capacity_auto_scaling_settings}
     */
     readonly writeCapacityAutoScalingSettings?: CapacityAutoScalingSettingsProperty;
 }
-export class WriteProvisionedThroughputSettingsPropertyOutputReference extends cdktn.ComplexObject {
+export class GlobalSecondaryIndexesWriteProvisionedThroughputSettingsPropertyOutputReference extends cdktn.ComplexObject {
     private isEmptyObject = false;
     private resolvableValue?: cdktn.IResolvable;
 
@@ -3358,7 +3358,7 @@ export class WriteProvisionedThroughputSettingsPropertyOutputReference extends c
         super(terraformResource, terraformAttribute, false);
     }
 
-    public get internalValue(): WriteProvisionedThroughputSettingsProperty | cdktn.IResolvable | undefined {
+    public get internalValue(): GlobalSecondaryIndexesWriteProvisionedThroughputSettingsProperty | cdktn.IResolvable | undefined {
         if (this.resolvableValue) {
             return this.resolvableValue;
         }
@@ -3371,7 +3371,7 @@ export class WriteProvisionedThroughputSettingsPropertyOutputReference extends c
         return hasAnyValues ? internalValueResult : undefined;
     }
 
-    public set internalValue(value: WriteProvisionedThroughputSettingsProperty | cdktn.IResolvable | undefined) {
+    public set internalValue(value: GlobalSecondaryIndexesWriteProvisionedThroughputSettingsProperty | cdktn.IResolvable | undefined) {
         if (value === undefined) {
             this.isEmptyObject = false;
             this.resolvableValue = undefined;
@@ -3412,7 +3412,7 @@ export interface GlobalSecondaryIndexProperty {
     /**
     * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#key_schema CcGlobalTable#key_schema}
     */
-    readonly keySchema?: KeySchemaProperty[] | cdktn.IResolvable;
+    readonly keySchema?: GlobalSecondaryIndexesKeySchemaProperty[] | cdktn.IResolvable;
     /**
     * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#projection CcGlobalTable#projection}
     */
@@ -3420,23 +3420,23 @@ export interface GlobalSecondaryIndexProperty {
     /**
     * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#read_on_demand_throughput_settings CcGlobalTable#read_on_demand_throughput_settings}
     */
-    readonly readOnDemandThroughputSettings?: ReadOnDemandThroughputSettingsProperty;
+    readonly readOnDemandThroughputSettings?: GlobalSecondaryIndexesReadOnDemandThroughputSettingsProperty;
     /**
     * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#read_provisioned_throughput_settings CcGlobalTable#read_provisioned_throughput_settings}
     */
-    readonly readProvisionedThroughputSettings?: GlobalReadProvisionedThroughputSettingsProperty;
+    readonly readProvisionedThroughputSettings?: GlobalSecondaryIndexesReadProvisionedThroughputSettingsProperty;
     /**
     * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#warm_throughput CcGlobalTable#warm_throughput}
     */
-    readonly warmThroughput?: WarmThroughputProperty;
+    readonly warmThroughput?: GlobalSecondaryIndexesWarmThroughputProperty;
     /**
     * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#write_on_demand_throughput_settings CcGlobalTable#write_on_demand_throughput_settings}
     */
-    readonly writeOnDemandThroughputSettings?: WriteOnDemandThroughputSettingsProperty;
+    readonly writeOnDemandThroughputSettings?: GlobalSecondaryIndexesWriteOnDemandThroughputSettingsProperty;
     /**
     * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#write_provisioned_throughput_settings CcGlobalTable#write_provisioned_throughput_settings}
     */
-    readonly writeProvisionedThroughputSettings?: WriteProvisionedThroughputSettingsProperty;
+    readonly writeProvisionedThroughputSettings?: GlobalSecondaryIndexesWriteProvisionedThroughputSettingsProperty;
 }
 export class GlobalSecondaryIndexPropertyOutputReference extends cdktn.ComplexObject {
     private isEmptyObject = false;
@@ -3541,11 +3541,11 @@ export class GlobalSecondaryIndexPropertyOutputReference extends cdktn.ComplexOb
     }
 
     // key_schema - computed: true, optional: true, required: false
-    private _keySchema = new KeySchemaPropertyList(this, "key_schema", false);
+    private _keySchema = new GlobalSecondaryIndexesKeySchemaPropertyList(this, "key_schema", false);
     public get keySchema() {
         return this._keySchema;
     }
-    public putKeySchema(value: KeySchemaProperty[] | cdktn.IResolvable) {
+    public putKeySchema(value: GlobalSecondaryIndexesKeySchemaProperty[] | cdktn.IResolvable) {
         this._keySchema.internalValue = value;
     }
     public resetKeySchema() {
@@ -3573,11 +3573,11 @@ export class GlobalSecondaryIndexPropertyOutputReference extends cdktn.ComplexOb
     }
 
     // read_on_demand_throughput_settings - computed: true, optional: true, required: false
-    private _readOnDemandThroughputSettings = new ReadOnDemandThroughputSettingsPropertyOutputReference(this, "read_on_demand_throughput_settings");
+    private _readOnDemandThroughputSettings = new GlobalSecondaryIndexesReadOnDemandThroughputSettingsPropertyOutputReference(this, "read_on_demand_throughput_settings");
     public get readOnDemandThroughputSettings() {
         return this._readOnDemandThroughputSettings;
     }
-    public putReadOnDemandThroughputSettings(value: ReadOnDemandThroughputSettingsProperty) {
+    public putReadOnDemandThroughputSettings(value: GlobalSecondaryIndexesReadOnDemandThroughputSettingsProperty) {
         this._readOnDemandThroughputSettings.internalValue = value;
     }
     public resetReadOnDemandThroughputSettings() {
@@ -3589,11 +3589,11 @@ export class GlobalSecondaryIndexPropertyOutputReference extends cdktn.ComplexOb
     }
 
     // read_provisioned_throughput_settings - computed: true, optional: true, required: false
-    private _readProvisionedThroughputSettings = new GlobalReadProvisionedThroughputSettingsPropertyOutputReference(this, "read_provisioned_throughput_settings");
+    private _readProvisionedThroughputSettings = new GlobalSecondaryIndexesReadProvisionedThroughputSettingsPropertyOutputReference(this, "read_provisioned_throughput_settings");
     public get readProvisionedThroughputSettings() {
         return this._readProvisionedThroughputSettings;
     }
-    public putReadProvisionedThroughputSettings(value: GlobalReadProvisionedThroughputSettingsProperty) {
+    public putReadProvisionedThroughputSettings(value: GlobalSecondaryIndexesReadProvisionedThroughputSettingsProperty) {
         this._readProvisionedThroughputSettings.internalValue = value;
     }
     public resetReadProvisionedThroughputSettings() {
@@ -3605,11 +3605,11 @@ export class GlobalSecondaryIndexPropertyOutputReference extends cdktn.ComplexOb
     }
 
     // warm_throughput - computed: true, optional: true, required: false
-    private _warmThroughput = new WarmThroughputPropertyOutputReference(this, "warm_throughput");
+    private _warmThroughput = new GlobalSecondaryIndexesWarmThroughputPropertyOutputReference(this, "warm_throughput");
     public get warmThroughput() {
         return this._warmThroughput;
     }
-    public putWarmThroughput(value: WarmThroughputProperty) {
+    public putWarmThroughput(value: GlobalSecondaryIndexesWarmThroughputProperty) {
         this._warmThroughput.internalValue = value;
     }
     public resetWarmThroughput() {
@@ -3621,11 +3621,11 @@ export class GlobalSecondaryIndexPropertyOutputReference extends cdktn.ComplexOb
     }
 
     // write_on_demand_throughput_settings - computed: true, optional: true, required: false
-    private _writeOnDemandThroughputSettings = new WriteOnDemandThroughputSettingsPropertyOutputReference(this, "write_on_demand_throughput_settings");
+    private _writeOnDemandThroughputSettings = new GlobalSecondaryIndexesWriteOnDemandThroughputSettingsPropertyOutputReference(this, "write_on_demand_throughput_settings");
     public get writeOnDemandThroughputSettings() {
         return this._writeOnDemandThroughputSettings;
     }
-    public putWriteOnDemandThroughputSettings(value: WriteOnDemandThroughputSettingsProperty) {
+    public putWriteOnDemandThroughputSettings(value: GlobalSecondaryIndexesWriteOnDemandThroughputSettingsProperty) {
         this._writeOnDemandThroughputSettings.internalValue = value;
     }
     public resetWriteOnDemandThroughputSettings() {
@@ -3637,11 +3637,11 @@ export class GlobalSecondaryIndexPropertyOutputReference extends cdktn.ComplexOb
     }
 
     // write_provisioned_throughput_settings - computed: true, optional: true, required: false
-    private _writeProvisionedThroughputSettings = new WriteProvisionedThroughputSettingsPropertyOutputReference(this, "write_provisioned_throughput_settings");
+    private _writeProvisionedThroughputSettings = new GlobalSecondaryIndexesWriteProvisionedThroughputSettingsPropertyOutputReference(this, "write_provisioned_throughput_settings");
     public get writeProvisionedThroughputSettings() {
         return this._writeProvisionedThroughputSettings;
     }
-    public putWriteProvisionedThroughputSettings(value: WriteProvisionedThroughputSettingsProperty) {
+    public putWriteProvisionedThroughputSettings(value: GlobalSecondaryIndexesWriteProvisionedThroughputSettingsProperty) {
         this._writeProvisionedThroughputSettings.internalValue = value;
     }
     public resetWriteProvisionedThroughputSettings() {
@@ -3758,7 +3758,7 @@ export class GlobalTableWitnessPropertyList extends cdktn.ComplexList {
         return new GlobalTableWitnessPropertyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
     }
 }
-export interface KeySchemaProperty2 {
+export interface KeySchemaProperty {
     /**
     * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#attribute_name CcGlobalTable#attribute_name}
     */
@@ -3768,7 +3768,7 @@ export interface KeySchemaProperty2 {
     */
     readonly keyType?: string;
 }
-export class KeySchemaProperty2OutputReference extends cdktn.ComplexObject {
+export class KeySchemaPropertyOutputReference extends cdktn.ComplexObject {
     private isEmptyObject = false;
     private resolvableValue?: cdktn.IResolvable;
 
@@ -3782,7 +3782,7 @@ export class KeySchemaProperty2OutputReference extends cdktn.ComplexObject {
         super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
     }
 
-    public get internalValue(): KeySchemaProperty2 | cdktn.IResolvable | undefined {
+    public get internalValue(): KeySchemaProperty | cdktn.IResolvable | undefined {
         if (this.resolvableValue) {
             return this.resolvableValue;
         }
@@ -3799,7 +3799,7 @@ export class KeySchemaProperty2OutputReference extends cdktn.ComplexObject {
         return hasAnyValues ? internalValueResult : undefined;
     }
 
-    public set internalValue(value: KeySchemaProperty2 | cdktn.IResolvable | undefined) {
+    public set internalValue(value: KeySchemaProperty | cdktn.IResolvable | undefined) {
         if (value === undefined) {
             this.isEmptyObject = false;
             this.resolvableValue = undefined;
@@ -3851,8 +3851,8 @@ export class KeySchemaProperty2OutputReference extends cdktn.ComplexObject {
     }
 }
 
-export class KeySchemaProperty2List extends cdktn.ComplexList {
-    public internalValue? : KeySchemaProperty2[] | cdktn.IResolvable
+export class KeySchemaPropertyList extends cdktn.ComplexList {
+    public internalValue? : KeySchemaProperty[] | cdktn.IResolvable
 
     /**
     * @param terraformResource The parent resource
@@ -3866,8 +3866,8 @@ export class KeySchemaProperty2List extends cdktn.ComplexList {
     /**
     * @param index the index of the item to return
     */
-    public get(index: number): KeySchemaProperty2OutputReference {
-        return new KeySchemaProperty2OutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+    public get(index: number): KeySchemaPropertyOutputReference {
+        return new KeySchemaPropertyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
     }
 }
 export interface LocalSecondaryIndexesKeySchemaProperty {
@@ -4210,13 +4210,13 @@ export class LocalSecondaryIndexPropertyList extends cdktn.ComplexList {
         return new LocalSecondaryIndexPropertyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
     }
 }
-export interface ReadOnDemandThroughputSettingsProperty2 {
+export interface ReadOnDemandThroughputSettingsProperty {
     /**
     * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#max_read_request_units CcGlobalTable#max_read_request_units}
     */
     readonly maxReadRequestUnits?: number;
 }
-export class ReadOnDemandThroughputSettingsProperty2OutputReference extends cdktn.ComplexObject {
+export class ReadOnDemandThroughputSettingsPropertyOutputReference extends cdktn.ComplexObject {
     private isEmptyObject = false;
     private resolvableValue?: cdktn.IResolvable;
 
@@ -4228,7 +4228,7 @@ export class ReadOnDemandThroughputSettingsProperty2OutputReference extends cdkt
         super(terraformResource, terraformAttribute, false);
     }
 
-    public get internalValue(): ReadOnDemandThroughputSettingsProperty2 | cdktn.IResolvable | undefined {
+    public get internalValue(): ReadOnDemandThroughputSettingsProperty | cdktn.IResolvable | undefined {
         if (this.resolvableValue) {
             return this.resolvableValue;
         }
@@ -4241,7 +4241,7 @@ export class ReadOnDemandThroughputSettingsProperty2OutputReference extends cdkt
         return hasAnyValues ? internalValueResult : undefined;
     }
 
-    public set internalValue(value: ReadOnDemandThroughputSettingsProperty2 | cdktn.IResolvable | undefined) {
+    public set internalValue(value: ReadOnDemandThroughputSettingsProperty | cdktn.IResolvable | undefined) {
         if (value === undefined) {
             this.isEmptyObject = false;
             this.resolvableValue = undefined;
@@ -4274,13 +4274,13 @@ export class ReadOnDemandThroughputSettingsProperty2OutputReference extends cdkt
         return this._maxReadRequestUnits;
     }
 }
-export interface ReadProvisionedThroughputSettingsProperty {
+export interface GlobalReadProvisionedThroughputSettingsProperty {
     /**
     * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#read_capacity_units CcGlobalTable#read_capacity_units}
     */
     readonly readCapacityUnits?: number;
 }
-export class ReadProvisionedThroughputSettingsPropertyOutputReference extends cdktn.ComplexObject {
+export class GlobalReadProvisionedThroughputSettingsPropertyOutputReference extends cdktn.ComplexObject {
     private isEmptyObject = false;
     private resolvableValue?: cdktn.IResolvable;
 
@@ -4292,7 +4292,7 @@ export class ReadProvisionedThroughputSettingsPropertyOutputReference extends cd
         super(terraformResource, terraformAttribute, false);
     }
 
-    public get internalValue(): ReadProvisionedThroughputSettingsProperty | cdktn.IResolvable | undefined {
+    public get internalValue(): GlobalReadProvisionedThroughputSettingsProperty | cdktn.IResolvable | undefined {
         if (this.resolvableValue) {
             return this.resolvableValue;
         }
@@ -4305,7 +4305,7 @@ export class ReadProvisionedThroughputSettingsPropertyOutputReference extends cd
         return hasAnyValues ? internalValueResult : undefined;
     }
 
-    public set internalValue(value: ReadProvisionedThroughputSettingsProperty | cdktn.IResolvable | undefined) {
+    public set internalValue(value: GlobalReadProvisionedThroughputSettingsProperty | cdktn.IResolvable | undefined) {
         if (value === undefined) {
             this.isEmptyObject = false;
             this.resolvableValue = undefined;
@@ -4866,7 +4866,7 @@ export class ReplicasGlobalSecondaryIndexesReadProvisionedThroughputSettingsRead
         return this._targetTrackingScalingPolicyConfiguration.internalValue;
     }
 }
-export interface ReadProvisionedThroughputSettingsProperty2 {
+export interface ReadProvisionedThroughputSettingsProperty {
     /**
     * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#read_capacity_auto_scaling_settings CcGlobalTable#read_capacity_auto_scaling_settings}
     */
@@ -4876,7 +4876,7 @@ export interface ReadProvisionedThroughputSettingsProperty2 {
     */
     readonly readCapacityUnits?: number;
 }
-export class ReadProvisionedThroughputSettingsProperty2OutputReference extends cdktn.ComplexObject {
+export class ReadProvisionedThroughputSettingsPropertyOutputReference extends cdktn.ComplexObject {
     private isEmptyObject = false;
     private resolvableValue?: cdktn.IResolvable;
 
@@ -4888,7 +4888,7 @@ export class ReadProvisionedThroughputSettingsProperty2OutputReference extends c
         super(terraformResource, terraformAttribute, false);
     }
 
-    public get internalValue(): ReadProvisionedThroughputSettingsProperty2 | cdktn.IResolvable | undefined {
+    public get internalValue(): ReadProvisionedThroughputSettingsProperty | cdktn.IResolvable | undefined {
         if (this.resolvableValue) {
             return this.resolvableValue;
         }
@@ -4905,7 +4905,7 @@ export class ReadProvisionedThroughputSettingsProperty2OutputReference extends c
         return hasAnyValues ? internalValueResult : undefined;
     }
 
-    public set internalValue(value: ReadProvisionedThroughputSettingsProperty2 | cdktn.IResolvable | undefined) {
+    public set internalValue(value: ReadProvisionedThroughputSettingsProperty | cdktn.IResolvable | undefined) {
         if (value === undefined) {
             this.isEmptyObject = false;
             this.resolvableValue = undefined;
@@ -4972,7 +4972,7 @@ export interface ReplicaGlobalSecondaryIndexSpecificationProperty {
     /**
     * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#read_provisioned_throughput_settings CcGlobalTable#read_provisioned_throughput_settings}
     */
-    readonly readProvisionedThroughputSettings?: ReadProvisionedThroughputSettingsProperty2;
+    readonly readProvisionedThroughputSettings?: ReadProvisionedThroughputSettingsProperty;
 }
 export class ReplicaGlobalSecondaryIndexSpecificationPropertyOutputReference extends cdktn.ComplexObject {
     private isEmptyObject = false;
@@ -5085,11 +5085,11 @@ export class ReplicaGlobalSecondaryIndexSpecificationPropertyOutputReference ext
     }
 
     // read_provisioned_throughput_settings - computed: true, optional: true, required: false
-    private _readProvisionedThroughputSettings = new ReadProvisionedThroughputSettingsProperty2OutputReference(this, "read_provisioned_throughput_settings");
+    private _readProvisionedThroughputSettings = new ReadProvisionedThroughputSettingsPropertyOutputReference(this, "read_provisioned_throughput_settings");
     public get readProvisionedThroughputSettings() {
         return this._readProvisionedThroughputSettings;
     }
-    public putReadProvisionedThroughputSettings(value: ReadProvisionedThroughputSettingsProperty2) {
+    public putReadProvisionedThroughputSettings(value: ReadProvisionedThroughputSettingsProperty) {
         this._readProvisionedThroughputSettings.internalValue = value;
     }
     public resetReadProvisionedThroughputSettings() {
@@ -6909,7 +6909,7 @@ export class TimeToLiveSpecificationPropertyOutputReference extends cdktn.Comple
         return this._enabled;
     }
 }
-export interface WarmThroughputProperty2 {
+export interface WarmThroughputProperty {
     /**
     * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#read_units_per_second CcGlobalTable#read_units_per_second}
     */
@@ -6919,7 +6919,7 @@ export interface WarmThroughputProperty2 {
     */
     readonly writeUnitsPerSecond?: number;
 }
-export class WarmThroughputProperty2OutputReference extends cdktn.ComplexObject {
+export class WarmThroughputPropertyOutputReference extends cdktn.ComplexObject {
     private isEmptyObject = false;
     private resolvableValue?: cdktn.IResolvable;
 
@@ -6931,7 +6931,7 @@ export class WarmThroughputProperty2OutputReference extends cdktn.ComplexObject 
         super(terraformResource, terraformAttribute, false);
     }
 
-    public get internalValue(): WarmThroughputProperty2 | cdktn.IResolvable | undefined {
+    public get internalValue(): WarmThroughputProperty | cdktn.IResolvable | undefined {
         if (this.resolvableValue) {
             return this.resolvableValue;
         }
@@ -6948,7 +6948,7 @@ export class WarmThroughputProperty2OutputReference extends cdktn.ComplexObject 
         return hasAnyValues ? internalValueResult : undefined;
     }
 
-    public set internalValue(value: WarmThroughputProperty2 | cdktn.IResolvable | undefined) {
+    public set internalValue(value: WarmThroughputProperty | cdktn.IResolvable | undefined) {
         if (value === undefined) {
             this.isEmptyObject = false;
             this.resolvableValue = undefined;
@@ -6999,13 +6999,13 @@ export class WarmThroughputProperty2OutputReference extends cdktn.ComplexObject 
         return this._writeUnitsPerSecond;
     }
 }
-export interface WriteOnDemandThroughputSettingsProperty2 {
+export interface WriteOnDemandThroughputSettingsProperty {
     /**
     * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#max_write_request_units CcGlobalTable#max_write_request_units}
     */
     readonly maxWriteRequestUnits?: number;
 }
-export class WriteOnDemandThroughputSettingsProperty2OutputReference extends cdktn.ComplexObject {
+export class WriteOnDemandThroughputSettingsPropertyOutputReference extends cdktn.ComplexObject {
     private isEmptyObject = false;
     private resolvableValue?: cdktn.IResolvable;
 
@@ -7017,7 +7017,7 @@ export class WriteOnDemandThroughputSettingsProperty2OutputReference extends cdk
         super(terraformResource, terraformAttribute, false);
     }
 
-    public get internalValue(): WriteOnDemandThroughputSettingsProperty2 | cdktn.IResolvable | undefined {
+    public get internalValue(): WriteOnDemandThroughputSettingsProperty | cdktn.IResolvable | undefined {
         if (this.resolvableValue) {
             return this.resolvableValue;
         }
@@ -7030,7 +7030,7 @@ export class WriteOnDemandThroughputSettingsProperty2OutputReference extends cdk
         return hasAnyValues ? internalValueResult : undefined;
     }
 
-    public set internalValue(value: WriteOnDemandThroughputSettingsProperty2 | cdktn.IResolvable | undefined) {
+    public set internalValue(value: WriteOnDemandThroughputSettingsProperty | cdktn.IResolvable | undefined) {
         if (value === undefined) {
             this.isEmptyObject = false;
             this.resolvableValue = undefined;
@@ -7347,13 +7347,13 @@ export class WriteCapacityAutoScalingSettingsPropertyOutputReference extends cdk
         return this._targetTrackingScalingPolicyConfiguration.internalValue;
     }
 }
-export interface WriteProvisionedThroughputSettingsProperty2 {
+export interface WriteProvisionedThroughputSettingsProperty {
     /**
     * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#write_capacity_auto_scaling_settings CcGlobalTable#write_capacity_auto_scaling_settings}
     */
     readonly writeCapacityAutoScalingSettings?: WriteCapacityAutoScalingSettingsProperty;
 }
-export class WriteProvisionedThroughputSettingsProperty2OutputReference extends cdktn.ComplexObject {
+export class WriteProvisionedThroughputSettingsPropertyOutputReference extends cdktn.ComplexObject {
     private isEmptyObject = false;
     private resolvableValue?: cdktn.IResolvable;
 
@@ -7365,7 +7365,7 @@ export class WriteProvisionedThroughputSettingsProperty2OutputReference extends 
         super(terraformResource, terraformAttribute, false);
     }
 
-    public get internalValue(): WriteProvisionedThroughputSettingsProperty2 | cdktn.IResolvable | undefined {
+    public get internalValue(): WriteProvisionedThroughputSettingsProperty | cdktn.IResolvable | undefined {
         if (this.resolvableValue) {
             return this.resolvableValue;
         }
@@ -7378,7 +7378,7 @@ export class WriteProvisionedThroughputSettingsProperty2OutputReference extends 
         return hasAnyValues ? internalValueResult : undefined;
     }
 
-    public set internalValue(value: WriteProvisionedThroughputSettingsProperty2 | cdktn.IResolvable | undefined) {
+    public set internalValue(value: WriteProvisionedThroughputSettingsProperty | cdktn.IResolvable | undefined) {
         if (value === undefined) {
             this.isEmptyObject = false;
             this.resolvableValue = undefined;

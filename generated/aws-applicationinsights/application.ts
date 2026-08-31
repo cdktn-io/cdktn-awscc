@@ -1396,7 +1396,7 @@ export function ccApplicationAlarmsPropertyToHclTerraform(struct?: CcApplication
 }
 
 
-export function ccApplicationHaClusterPrometheusExporterPropertyToTerraform(struct?: CcApplication.HaClusterPrometheusExporterProperty | cdktn.IResolvable): any {
+export function ccApplicationComponentMonitoringSettingsDefaultOverwriteComponentConfigurationConfigurationDetailsHaClusterPrometheusExporterPropertyToTerraform(struct?: CcApplication.ComponentMonitoringSettingsDefaultOverwriteComponentConfigurationConfigurationDetailsHaClusterPrometheusExporterProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -1407,7 +1407,7 @@ export function ccApplicationHaClusterPrometheusExporterPropertyToTerraform(stru
 }
 
 
-export function ccApplicationHaClusterPrometheusExporterPropertyToHclTerraform(struct?: CcApplication.HaClusterPrometheusExporterProperty | cdktn.IResolvable): any {
+export function ccApplicationComponentMonitoringSettingsDefaultOverwriteComponentConfigurationConfigurationDetailsHaClusterPrometheusExporterPropertyToHclTerraform(struct?: CcApplication.ComponentMonitoringSettingsDefaultOverwriteComponentConfigurationConfigurationDetailsHaClusterPrometheusExporterProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -1426,7 +1426,7 @@ export function ccApplicationHaClusterPrometheusExporterPropertyToHclTerraform(s
 }
 
 
-export function ccApplicationHanaPrometheusExporterPropertyToTerraform(struct?: CcApplication.HanaPrometheusExporterProperty | cdktn.IResolvable): any {
+export function ccApplicationComponentMonitoringSettingsDefaultOverwriteComponentConfigurationConfigurationDetailsHanaPrometheusExporterPropertyToTerraform(struct?: CcApplication.ComponentMonitoringSettingsDefaultOverwriteComponentConfigurationConfigurationDetailsHanaPrometheusExporterProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -1441,7 +1441,7 @@ export function ccApplicationHanaPrometheusExporterPropertyToTerraform(struct?: 
 }
 
 
-export function ccApplicationHanaPrometheusExporterPropertyToHclTerraform(struct?: CcApplication.HanaPrometheusExporterProperty | cdktn.IResolvable): any {
+export function ccApplicationComponentMonitoringSettingsDefaultOverwriteComponentConfigurationConfigurationDetailsHanaPrometheusExporterPropertyToHclTerraform(struct?: CcApplication.ComponentMonitoringSettingsDefaultOverwriteComponentConfigurationConfigurationDetailsHanaPrometheusExporterProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -1484,7 +1484,7 @@ export function ccApplicationHanaPrometheusExporterPropertyToHclTerraform(struct
 }
 
 
-export function ccApplicationJmxPrometheusExporterPropertyToTerraform(struct?: CcApplication.JmxPrometheusExporterProperty | cdktn.IResolvable): any {
+export function ccApplicationComponentMonitoringSettingsDefaultOverwriteComponentConfigurationConfigurationDetailsJmxPrometheusExporterPropertyToTerraform(struct?: CcApplication.ComponentMonitoringSettingsDefaultOverwriteComponentConfigurationConfigurationDetailsJmxPrometheusExporterProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -1497,7 +1497,7 @@ export function ccApplicationJmxPrometheusExporterPropertyToTerraform(struct?: C
 }
 
 
-export function ccApplicationJmxPrometheusExporterPropertyToHclTerraform(struct?: CcApplication.JmxPrometheusExporterProperty | cdktn.IResolvable): any {
+export function ccApplicationComponentMonitoringSettingsDefaultOverwriteComponentConfigurationConfigurationDetailsJmxPrometheusExporterPropertyToHclTerraform(struct?: CcApplication.ComponentMonitoringSettingsDefaultOverwriteComponentConfigurationConfigurationDetailsJmxPrometheusExporterProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -1697,7 +1697,7 @@ export function ccApplicationComponentMonitoringSettingsDefaultOverwriteComponen
 }
 
 
-export function ccApplicationSqlServerPrometheusExporterPropertyToTerraform(struct?: CcApplication.SqlServerPrometheusExporterProperty | cdktn.IResolvable): any {
+export function ccApplicationComponentMonitoringSettingsDefaultOverwriteComponentConfigurationConfigurationDetailsSqlServerPrometheusExporterPropertyToTerraform(struct?: CcApplication.ComponentMonitoringSettingsDefaultOverwriteComponentConfigurationConfigurationDetailsSqlServerPrometheusExporterProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -1709,7 +1709,7 @@ export function ccApplicationSqlServerPrometheusExporterPropertyToTerraform(stru
 }
 
 
-export function ccApplicationSqlServerPrometheusExporterPropertyToHclTerraform(struct?: CcApplication.SqlServerPrometheusExporterProperty | cdktn.IResolvable): any {
+export function ccApplicationComponentMonitoringSettingsDefaultOverwriteComponentConfigurationConfigurationDetailsSqlServerPrometheusExporterPropertyToHclTerraform(struct?: CcApplication.ComponentMonitoringSettingsDefaultOverwriteComponentConfigurationConfigurationDetailsSqlServerPrometheusExporterProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -1793,13 +1793,13 @@ export function ccApplicationComponentMonitoringSettingsDefaultOverwriteComponen
     return {
         alarm_metrics: cdktn.listMapper(ccApplicationComponentMonitoringSettingsDefaultOverwriteComponentConfigurationConfigurationDetailsAlarmMetricsPropertyToTerraform, false)(struct!.alarmMetrics),
         alarms: cdktn.listMapper(ccApplicationAlarmsPropertyToTerraform, false)(struct!.alarms),
-        ha_cluster_prometheus_exporter: ccApplicationHaClusterPrometheusExporterPropertyToTerraform(struct!.haClusterPrometheusExporter),
-        hana_prometheus_exporter: ccApplicationHanaPrometheusExporterPropertyToTerraform(struct!.hanaPrometheusExporter),
-        jmx_prometheus_exporter: ccApplicationJmxPrometheusExporterPropertyToTerraform(struct!.jmxPrometheusExporter),
+        ha_cluster_prometheus_exporter: ccApplicationComponentMonitoringSettingsDefaultOverwriteComponentConfigurationConfigurationDetailsHaClusterPrometheusExporterPropertyToTerraform(struct!.haClusterPrometheusExporter),
+        hana_prometheus_exporter: ccApplicationComponentMonitoringSettingsDefaultOverwriteComponentConfigurationConfigurationDetailsHanaPrometheusExporterPropertyToTerraform(struct!.hanaPrometheusExporter),
+        jmx_prometheus_exporter: ccApplicationComponentMonitoringSettingsDefaultOverwriteComponentConfigurationConfigurationDetailsJmxPrometheusExporterPropertyToTerraform(struct!.jmxPrometheusExporter),
         logs: cdktn.listMapper(ccApplicationComponentMonitoringSettingsDefaultOverwriteComponentConfigurationConfigurationDetailsLogsPropertyToTerraform, false)(struct!.logs),
         net_weaver_prometheus_exporter: ccApplicationComponentMonitoringSettingsDefaultOverwriteComponentConfigurationConfigurationDetailsNetWeaverPrometheusExporterPropertyToTerraform(struct!.netWeaverPrometheusExporter),
         processes: cdktn.listMapper(ccApplicationComponentMonitoringSettingsDefaultOverwriteComponentConfigurationConfigurationDetailsProcessesPropertyToTerraform, false)(struct!.processes),
-        sql_server_prometheus_exporter: ccApplicationSqlServerPrometheusExporterPropertyToTerraform(struct!.sqlServerPrometheusExporter),
+        sql_server_prometheus_exporter: ccApplicationComponentMonitoringSettingsDefaultOverwriteComponentConfigurationConfigurationDetailsSqlServerPrometheusExporterPropertyToTerraform(struct!.sqlServerPrometheusExporter),
         windows_events: cdktn.listMapper(ccApplicationComponentMonitoringSettingsDefaultOverwriteComponentConfigurationConfigurationDetailsWindowsEventsPropertyToTerraform, false)(struct!.windowsEvents),
     }
 }
@@ -1824,22 +1824,22 @@ export function ccApplicationComponentMonitoringSettingsDefaultOverwriteComponen
             storageClassType: "AlarmsPropertyList",
         },
         ha_cluster_prometheus_exporter: {
-            value: ccApplicationHaClusterPrometheusExporterPropertyToHclTerraform(struct!.haClusterPrometheusExporter),
+            value: ccApplicationComponentMonitoringSettingsDefaultOverwriteComponentConfigurationConfigurationDetailsHaClusterPrometheusExporterPropertyToHclTerraform(struct!.haClusterPrometheusExporter),
             isBlock: true,
             type: "struct",
-            storageClassType: "HaClusterPrometheusExporterProperty",
+            storageClassType: "ComponentMonitoringSettingsDefaultOverwriteComponentConfigurationConfigurationDetailsHaClusterPrometheusExporterProperty",
         },
         hana_prometheus_exporter: {
-            value: ccApplicationHanaPrometheusExporterPropertyToHclTerraform(struct!.hanaPrometheusExporter),
+            value: ccApplicationComponentMonitoringSettingsDefaultOverwriteComponentConfigurationConfigurationDetailsHanaPrometheusExporterPropertyToHclTerraform(struct!.hanaPrometheusExporter),
             isBlock: true,
             type: "struct",
-            storageClassType: "HanaPrometheusExporterProperty",
+            storageClassType: "ComponentMonitoringSettingsDefaultOverwriteComponentConfigurationConfigurationDetailsHanaPrometheusExporterProperty",
         },
         jmx_prometheus_exporter: {
-            value: ccApplicationJmxPrometheusExporterPropertyToHclTerraform(struct!.jmxPrometheusExporter),
+            value: ccApplicationComponentMonitoringSettingsDefaultOverwriteComponentConfigurationConfigurationDetailsJmxPrometheusExporterPropertyToHclTerraform(struct!.jmxPrometheusExporter),
             isBlock: true,
             type: "struct",
-            storageClassType: "JmxPrometheusExporterProperty",
+            storageClassType: "ComponentMonitoringSettingsDefaultOverwriteComponentConfigurationConfigurationDetailsJmxPrometheusExporterProperty",
         },
         logs: {
             value: cdktn.listMapperHcl(ccApplicationComponentMonitoringSettingsDefaultOverwriteComponentConfigurationConfigurationDetailsLogsPropertyToHclTerraform, false)(struct!.logs),
@@ -1860,10 +1860,10 @@ export function ccApplicationComponentMonitoringSettingsDefaultOverwriteComponen
             storageClassType: "ComponentMonitoringSettingsDefaultOverwriteComponentConfigurationConfigurationDetailsProcessesPropertyList",
         },
         sql_server_prometheus_exporter: {
-            value: ccApplicationSqlServerPrometheusExporterPropertyToHclTerraform(struct!.sqlServerPrometheusExporter),
+            value: ccApplicationComponentMonitoringSettingsDefaultOverwriteComponentConfigurationConfigurationDetailsSqlServerPrometheusExporterPropertyToHclTerraform(struct!.sqlServerPrometheusExporter),
             isBlock: true,
             type: "struct",
-            storageClassType: "SqlServerPrometheusExporterProperty",
+            storageClassType: "ComponentMonitoringSettingsDefaultOverwriteComponentConfigurationConfigurationDetailsSqlServerPrometheusExporterProperty",
         },
         windows_events: {
             value: cdktn.listMapperHcl(ccApplicationComponentMonitoringSettingsDefaultOverwriteComponentConfigurationConfigurationDetailsWindowsEventsPropertyToHclTerraform, false)(struct!.windowsEvents),
@@ -5341,7 +5341,7 @@ export class AlarmsPropertyList extends cdktn.ComplexList {
         return new AlarmsPropertyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
     }
 }
-export interface HaClusterPrometheusExporterProperty {
+export interface ComponentMonitoringSettingsDefaultOverwriteComponentConfigurationConfigurationDetailsHaClusterPrometheusExporterProperty {
     /**
     * Prometheus exporter port.
     *
@@ -5349,7 +5349,7 @@ export interface HaClusterPrometheusExporterProperty {
     */
     readonly prometheusPort?: string;
 }
-export class HaClusterPrometheusExporterPropertyOutputReference extends cdktn.ComplexObject {
+export class ComponentMonitoringSettingsDefaultOverwriteComponentConfigurationConfigurationDetailsHaClusterPrometheusExporterPropertyOutputReference extends cdktn.ComplexObject {
     private isEmptyObject = false;
     private resolvableValue?: cdktn.IResolvable;
 
@@ -5361,7 +5361,7 @@ export class HaClusterPrometheusExporterPropertyOutputReference extends cdktn.Co
         super(terraformResource, terraformAttribute, false);
     }
 
-    public get internalValue(): HaClusterPrometheusExporterProperty | cdktn.IResolvable | undefined {
+    public get internalValue(): ComponentMonitoringSettingsDefaultOverwriteComponentConfigurationConfigurationDetailsHaClusterPrometheusExporterProperty | cdktn.IResolvable | undefined {
         if (this.resolvableValue) {
             return this.resolvableValue;
         }
@@ -5374,7 +5374,7 @@ export class HaClusterPrometheusExporterPropertyOutputReference extends cdktn.Co
         return hasAnyValues ? internalValueResult : undefined;
     }
 
-    public set internalValue(value: HaClusterPrometheusExporterProperty | cdktn.IResolvable | undefined) {
+    public set internalValue(value: ComponentMonitoringSettingsDefaultOverwriteComponentConfigurationConfigurationDetailsHaClusterPrometheusExporterProperty | cdktn.IResolvable | undefined) {
         if (value === undefined) {
             this.isEmptyObject = false;
             this.resolvableValue = undefined;
@@ -5407,7 +5407,7 @@ export class HaClusterPrometheusExporterPropertyOutputReference extends cdktn.Co
         return this._prometheusPort;
     }
 }
-export interface HanaPrometheusExporterProperty {
+export interface ComponentMonitoringSettingsDefaultOverwriteComponentConfigurationConfigurationDetailsHanaPrometheusExporterProperty {
     /**
     * A flag which indicates agreeing to install SAP HANA DB client.
     *
@@ -5442,7 +5442,7 @@ export interface HanaPrometheusExporterProperty {
     */
     readonly prometheusPort?: string;
 }
-export class HanaPrometheusExporterPropertyOutputReference extends cdktn.ComplexObject {
+export class ComponentMonitoringSettingsDefaultOverwriteComponentConfigurationConfigurationDetailsHanaPrometheusExporterPropertyOutputReference extends cdktn.ComplexObject {
     private isEmptyObject = false;
     private resolvableValue?: cdktn.IResolvable;
 
@@ -5454,7 +5454,7 @@ export class HanaPrometheusExporterPropertyOutputReference extends cdktn.Complex
         super(terraformResource, terraformAttribute, false);
     }
 
-    public get internalValue(): HanaPrometheusExporterProperty | cdktn.IResolvable | undefined {
+    public get internalValue(): ComponentMonitoringSettingsDefaultOverwriteComponentConfigurationConfigurationDetailsHanaPrometheusExporterProperty | cdktn.IResolvable | undefined {
         if (this.resolvableValue) {
             return this.resolvableValue;
         }
@@ -5483,7 +5483,7 @@ export class HanaPrometheusExporterPropertyOutputReference extends cdktn.Complex
         return hasAnyValues ? internalValueResult : undefined;
     }
 
-    public set internalValue(value: HanaPrometheusExporterProperty | cdktn.IResolvable | undefined) {
+    public set internalValue(value: ComponentMonitoringSettingsDefaultOverwriteComponentConfigurationConfigurationDetailsHanaPrometheusExporterProperty | cdktn.IResolvable | undefined) {
         if (value === undefined) {
             this.isEmptyObject = false;
             this.resolvableValue = undefined;
@@ -5588,7 +5588,7 @@ export class HanaPrometheusExporterPropertyOutputReference extends cdktn.Complex
         return this._prometheusPort;
     }
 }
-export interface JmxPrometheusExporterProperty {
+export interface ComponentMonitoringSettingsDefaultOverwriteComponentConfigurationConfigurationDetailsJmxPrometheusExporterProperty {
     /**
     * Java agent host port
     *
@@ -5608,7 +5608,7 @@ export interface JmxPrometheusExporterProperty {
     */
     readonly prometheusPort?: string;
 }
-export class JmxPrometheusExporterPropertyOutputReference extends cdktn.ComplexObject {
+export class ComponentMonitoringSettingsDefaultOverwriteComponentConfigurationConfigurationDetailsJmxPrometheusExporterPropertyOutputReference extends cdktn.ComplexObject {
     private isEmptyObject = false;
     private resolvableValue?: cdktn.IResolvable;
 
@@ -5620,7 +5620,7 @@ export class JmxPrometheusExporterPropertyOutputReference extends cdktn.ComplexO
         super(terraformResource, terraformAttribute, false);
     }
 
-    public get internalValue(): JmxPrometheusExporterProperty | cdktn.IResolvable | undefined {
+    public get internalValue(): ComponentMonitoringSettingsDefaultOverwriteComponentConfigurationConfigurationDetailsJmxPrometheusExporterProperty | cdktn.IResolvable | undefined {
         if (this.resolvableValue) {
             return this.resolvableValue;
         }
@@ -5641,7 +5641,7 @@ export class JmxPrometheusExporterPropertyOutputReference extends cdktn.ComplexO
         return hasAnyValues ? internalValueResult : undefined;
     }
 
-    public set internalValue(value: JmxPrometheusExporterProperty | cdktn.IResolvable | undefined) {
+    public set internalValue(value: ComponentMonitoringSettingsDefaultOverwriteComponentConfigurationConfigurationDetailsJmxPrometheusExporterProperty | cdktn.IResolvable | undefined) {
         if (value === undefined) {
             this.isEmptyObject = false;
             this.resolvableValue = undefined;
@@ -6236,7 +6236,7 @@ export class ComponentMonitoringSettingsDefaultOverwriteComponentConfigurationCo
         return new ComponentMonitoringSettingsDefaultOverwriteComponentConfigurationConfigurationDetailsProcessesPropertyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
     }
 }
-export interface SqlServerPrometheusExporterProperty {
+export interface ComponentMonitoringSettingsDefaultOverwriteComponentConfigurationConfigurationDetailsSqlServerPrometheusExporterProperty {
     /**
     * Prometheus exporter port.
     *
@@ -6250,7 +6250,7 @@ export interface SqlServerPrometheusExporterProperty {
     */
     readonly sqlSecretName?: string;
 }
-export class SqlServerPrometheusExporterPropertyOutputReference extends cdktn.ComplexObject {
+export class ComponentMonitoringSettingsDefaultOverwriteComponentConfigurationConfigurationDetailsSqlServerPrometheusExporterPropertyOutputReference extends cdktn.ComplexObject {
     private isEmptyObject = false;
     private resolvableValue?: cdktn.IResolvable;
 
@@ -6262,7 +6262,7 @@ export class SqlServerPrometheusExporterPropertyOutputReference extends cdktn.Co
         super(terraformResource, terraformAttribute, false);
     }
 
-    public get internalValue(): SqlServerPrometheusExporterProperty | cdktn.IResolvable | undefined {
+    public get internalValue(): ComponentMonitoringSettingsDefaultOverwriteComponentConfigurationConfigurationDetailsSqlServerPrometheusExporterProperty | cdktn.IResolvable | undefined {
         if (this.resolvableValue) {
             return this.resolvableValue;
         }
@@ -6279,7 +6279,7 @@ export class SqlServerPrometheusExporterPropertyOutputReference extends cdktn.Co
         return hasAnyValues ? internalValueResult : undefined;
     }
 
-    public set internalValue(value: SqlServerPrometheusExporterProperty | cdktn.IResolvable | undefined) {
+    public set internalValue(value: ComponentMonitoringSettingsDefaultOverwriteComponentConfigurationConfigurationDetailsSqlServerPrometheusExporterProperty | cdktn.IResolvable | undefined) {
         if (value === undefined) {
             this.isEmptyObject = false;
             this.resolvableValue = undefined;
@@ -6520,19 +6520,19 @@ export interface ComponentMonitoringSettingsDefaultOverwriteComponentConfigurati
     *
     * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#ha_cluster_prometheus_exporter CcApplication#ha_cluster_prometheus_exporter}
     */
-    readonly haClusterPrometheusExporter?: HaClusterPrometheusExporterProperty;
+    readonly haClusterPrometheusExporter?: ComponentMonitoringSettingsDefaultOverwriteComponentConfigurationConfigurationDetailsHaClusterPrometheusExporterProperty;
     /**
     * The HANA DB Prometheus Exporter settings.
     *
     * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#hana_prometheus_exporter CcApplication#hana_prometheus_exporter}
     */
-    readonly hanaPrometheusExporter?: HanaPrometheusExporterProperty;
+    readonly hanaPrometheusExporter?: ComponentMonitoringSettingsDefaultOverwriteComponentConfigurationConfigurationDetailsHanaPrometheusExporterProperty;
     /**
     * The JMX Prometheus Exporter settings.
     *
     * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#jmx_prometheus_exporter CcApplication#jmx_prometheus_exporter}
     */
-    readonly jmxPrometheusExporter?: JmxPrometheusExporterProperty;
+    readonly jmxPrometheusExporter?: ComponentMonitoringSettingsDefaultOverwriteComponentConfigurationConfigurationDetailsJmxPrometheusExporterProperty;
     /**
     * A list of logs to monitor for the component.
     *
@@ -6556,7 +6556,7 @@ export interface ComponentMonitoringSettingsDefaultOverwriteComponentConfigurati
     *
     * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#sql_server_prometheus_exporter CcApplication#sql_server_prometheus_exporter}
     */
-    readonly sqlServerPrometheusExporter?: SqlServerPrometheusExporterProperty;
+    readonly sqlServerPrometheusExporter?: ComponentMonitoringSettingsDefaultOverwriteComponentConfigurationConfigurationDetailsSqlServerPrometheusExporterProperty;
     /**
     * A list of Windows Events to log.
     *
@@ -6693,11 +6693,11 @@ export class ComponentMonitoringSettingsDefaultOverwriteComponentConfigurationCo
     }
 
     // ha_cluster_prometheus_exporter - computed: true, optional: true, required: false
-    private _haClusterPrometheusExporter = new HaClusterPrometheusExporterPropertyOutputReference(this, "ha_cluster_prometheus_exporter");
+    private _haClusterPrometheusExporter = new ComponentMonitoringSettingsDefaultOverwriteComponentConfigurationConfigurationDetailsHaClusterPrometheusExporterPropertyOutputReference(this, "ha_cluster_prometheus_exporter");
     public get haClusterPrometheusExporter() {
         return this._haClusterPrometheusExporter;
     }
-    public putHaClusterPrometheusExporter(value: HaClusterPrometheusExporterProperty) {
+    public putHaClusterPrometheusExporter(value: ComponentMonitoringSettingsDefaultOverwriteComponentConfigurationConfigurationDetailsHaClusterPrometheusExporterProperty) {
         this._haClusterPrometheusExporter.internalValue = value;
     }
     public resetHaClusterPrometheusExporter() {
@@ -6709,11 +6709,11 @@ export class ComponentMonitoringSettingsDefaultOverwriteComponentConfigurationCo
     }
 
     // hana_prometheus_exporter - computed: true, optional: true, required: false
-    private _hanaPrometheusExporter = new HanaPrometheusExporterPropertyOutputReference(this, "hana_prometheus_exporter");
+    private _hanaPrometheusExporter = new ComponentMonitoringSettingsDefaultOverwriteComponentConfigurationConfigurationDetailsHanaPrometheusExporterPropertyOutputReference(this, "hana_prometheus_exporter");
     public get hanaPrometheusExporter() {
         return this._hanaPrometheusExporter;
     }
-    public putHanaPrometheusExporter(value: HanaPrometheusExporterProperty) {
+    public putHanaPrometheusExporter(value: ComponentMonitoringSettingsDefaultOverwriteComponentConfigurationConfigurationDetailsHanaPrometheusExporterProperty) {
         this._hanaPrometheusExporter.internalValue = value;
     }
     public resetHanaPrometheusExporter() {
@@ -6725,11 +6725,11 @@ export class ComponentMonitoringSettingsDefaultOverwriteComponentConfigurationCo
     }
 
     // jmx_prometheus_exporter - computed: true, optional: true, required: false
-    private _jmxPrometheusExporter = new JmxPrometheusExporterPropertyOutputReference(this, "jmx_prometheus_exporter");
+    private _jmxPrometheusExporter = new ComponentMonitoringSettingsDefaultOverwriteComponentConfigurationConfigurationDetailsJmxPrometheusExporterPropertyOutputReference(this, "jmx_prometheus_exporter");
     public get jmxPrometheusExporter() {
         return this._jmxPrometheusExporter;
     }
-    public putJmxPrometheusExporter(value: JmxPrometheusExporterProperty) {
+    public putJmxPrometheusExporter(value: ComponentMonitoringSettingsDefaultOverwriteComponentConfigurationConfigurationDetailsJmxPrometheusExporterProperty) {
         this._jmxPrometheusExporter.internalValue = value;
     }
     public resetJmxPrometheusExporter() {
@@ -6789,11 +6789,11 @@ export class ComponentMonitoringSettingsDefaultOverwriteComponentConfigurationCo
     }
 
     // sql_server_prometheus_exporter - computed: true, optional: true, required: false
-    private _sqlServerPrometheusExporter = new SqlServerPrometheusExporterPropertyOutputReference(this, "sql_server_prometheus_exporter");
+    private _sqlServerPrometheusExporter = new ComponentMonitoringSettingsDefaultOverwriteComponentConfigurationConfigurationDetailsSqlServerPrometheusExporterPropertyOutputReference(this, "sql_server_prometheus_exporter");
     public get sqlServerPrometheusExporter() {
         return this._sqlServerPrometheusExporter;
     }
-    public putSqlServerPrometheusExporter(value: SqlServerPrometheusExporterProperty) {
+    public putSqlServerPrometheusExporter(value: ComponentMonitoringSettingsDefaultOverwriteComponentConfigurationConfigurationDetailsSqlServerPrometheusExporterProperty) {
         this._sqlServerPrometheusExporter.internalValue = value;
     }
     public resetSqlServerPrometheusExporter() {

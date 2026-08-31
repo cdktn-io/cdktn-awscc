@@ -47,7 +47,7 @@ export interface CcGraphQLApiProps extends cdktn.TerraformMetaArguments {
     *
     * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_graph_ql_api#lambda_authorizer_config CcGraphQLApi#lambda_authorizer_config}
     */
-    readonly lambdaAuthorizerConfig?: CcGraphQLApi.LambdaAuthorizerConfigProperty2;
+    readonly lambdaAuthorizerConfig?: CcGraphQLApi.LambdaAuthorizerConfigProperty;
     /**
     * The Amazon CloudWatch Logs configuration.
     *
@@ -71,7 +71,7 @@ export interface CcGraphQLApiProps extends cdktn.TerraformMetaArguments {
     *
     * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_graph_ql_api#open_id_connect_config CcGraphQLApi#open_id_connect_config}
     */
-    readonly openIdConnectConfig?: CcGraphQLApi.OpenIdConnectConfigProperty;
+    readonly openIdConnectConfig?: CcGraphQLApi.OpenIDConnectConfigProperty;
     /**
     * The owner contact information for an API resource.
     *
@@ -320,11 +320,11 @@ export class CcGraphQLApi extends cdktn.TerraformResource {
     }
 
     // lambda_authorizer_config - computed: true, optional: true, required: false
-    private _lambdaAuthorizerConfig = new CcGraphQLApi.LambdaAuthorizerConfigProperty2OutputReference(this, "lambda_authorizer_config");
+    private _lambdaAuthorizerConfig = new CcGraphQLApi.LambdaAuthorizerConfigPropertyOutputReference(this, "lambda_authorizer_config");
     public get lambdaAuthorizerConfig() {
         return this._lambdaAuthorizerConfig;
     }
-    public putLambdaAuthorizerConfig(value: CcGraphQLApi.LambdaAuthorizerConfigProperty2) {
+    public putLambdaAuthorizerConfig(value: CcGraphQLApi.LambdaAuthorizerConfigProperty) {
         this._lambdaAuthorizerConfig.internalValue = value;
     }
     public resetLambdaAuthorizerConfig() {
@@ -381,11 +381,11 @@ export class CcGraphQLApi extends cdktn.TerraformResource {
     }
 
     // open_id_connect_config - computed: true, optional: true, required: false
-    private _openIdConnectConfig = new CcGraphQLApi.OpenIdConnectConfigPropertyOutputReference(this, "open_id_connect_config");
+    private _openIdConnectConfig = new CcGraphQLApi.OpenIDConnectConfigPropertyOutputReference(this, "open_id_connect_config");
     public get openIdConnectConfig() {
         return this._openIdConnectConfig;
     }
-    public putOpenIdConnectConfig(value: CcGraphQLApi.OpenIdConnectConfigProperty) {
+    public putOpenIdConnectConfig(value: CcGraphQLApi.OpenIDConnectConfigProperty) {
         this._openIdConnectConfig.internalValue = value;
     }
     public resetOpenIdConnectConfig() {
@@ -530,11 +530,11 @@ export class CcGraphQLApi extends cdktn.TerraformResource {
             enhanced_metrics_config: ccGraphQLApiEnhancedMetricsConfigPropertyToTerraform(this._enhancedMetricsConfig.internalValue),
             environment_variables: cdktn.hashMapper(cdktn.stringToTerraform)(this._environmentVariables),
             introspection_config: cdktn.stringToTerraform(this._introspectionConfig),
-            lambda_authorizer_config: ccGraphQLApiLambdaAuthorizerConfigProperty2ToTerraform(this._lambdaAuthorizerConfig.internalValue),
+            lambda_authorizer_config: ccGraphQLApiLambdaAuthorizerConfigPropertyToTerraform(this._lambdaAuthorizerConfig.internalValue),
             log_config: ccGraphQLApiLogConfigPropertyToTerraform(this._logConfig.internalValue),
             merged_api_execution_role_arn: cdktn.stringToTerraform(this._mergedApiExecutionRoleArn),
             name: cdktn.stringToTerraform(this._name),
-            open_id_connect_config: ccGraphQLApiOpenIdConnectConfigPropertyToTerraform(this._openIdConnectConfig.internalValue),
+            open_id_connect_config: ccGraphQLApiOpenIDConnectConfigPropertyToTerraform(this._openIdConnectConfig.internalValue),
             owner_contact: cdktn.stringToTerraform(this._ownerContact),
             query_depth_limit: cdktn.numberToTerraform(this._queryDepthLimit),
             resolver_count_limit: cdktn.numberToTerraform(this._resolverCountLimit),
@@ -584,10 +584,10 @@ export class CcGraphQLApi extends cdktn.TerraformResource {
                 storageClassType: "string",
             },
             lambda_authorizer_config: {
-                value: ccGraphQLApiLambdaAuthorizerConfigProperty2ToHclTerraform(this._lambdaAuthorizerConfig.internalValue),
+                value: ccGraphQLApiLambdaAuthorizerConfigPropertyToHclTerraform(this._lambdaAuthorizerConfig.internalValue),
                 isBlock: true,
                 type: "struct",
-                storageClassType: "CcGraphQLApi.LambdaAuthorizerConfigProperty2",
+                storageClassType: "CcGraphQLApi.LambdaAuthorizerConfigProperty",
             },
             log_config: {
                 value: ccGraphQLApiLogConfigPropertyToHclTerraform(this._logConfig.internalValue),
@@ -608,10 +608,10 @@ export class CcGraphQLApi extends cdktn.TerraformResource {
                 storageClassType: "string",
             },
             open_id_connect_config: {
-                value: ccGraphQLApiOpenIdConnectConfigPropertyToHclTerraform(this._openIdConnectConfig.internalValue),
+                value: ccGraphQLApiOpenIDConnectConfigPropertyToHclTerraform(this._openIdConnectConfig.internalValue),
                 isBlock: true,
                 type: "struct",
-                storageClassType: "CcGraphQLApi.OpenIdConnectConfigProperty",
+                storageClassType: "CcGraphQLApi.OpenIDConnectConfigProperty",
             },
             owner_contact: {
                 value: cdktn.stringToHclTerraform(this._ownerContact),
@@ -662,7 +662,7 @@ export class CcGraphQLApi extends cdktn.TerraformResource {
     }
 }
 
-export function ccGraphQLApiLambdaAuthorizerConfigPropertyToTerraform(struct?: CcGraphQLApi.LambdaAuthorizerConfigProperty | cdktn.IResolvable): any {
+export function ccGraphQLApiAdditionalAuthenticationProvidersLambdaAuthorizerConfigPropertyToTerraform(struct?: CcGraphQLApi.AdditionalAuthenticationProvidersLambdaAuthorizerConfigProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -675,7 +675,7 @@ export function ccGraphQLApiLambdaAuthorizerConfigPropertyToTerraform(struct?: C
 }
 
 
-export function ccGraphQLApiLambdaAuthorizerConfigPropertyToHclTerraform(struct?: CcGraphQLApi.LambdaAuthorizerConfigProperty | cdktn.IResolvable): any {
+export function ccGraphQLApiAdditionalAuthenticationProvidersLambdaAuthorizerConfigPropertyToHclTerraform(struct?: CcGraphQLApi.AdditionalAuthenticationProvidersLambdaAuthorizerConfigProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -706,7 +706,7 @@ export function ccGraphQLApiLambdaAuthorizerConfigPropertyToHclTerraform(struct?
 }
 
 
-export function ccGraphQLApiOpenIDConnectConfigPropertyToTerraform(struct?: CcGraphQLApi.OpenIDConnectConfigProperty | cdktn.IResolvable): any {
+export function ccGraphQLApiAdditionalAuthenticationProvidersOpenIdConnectConfigPropertyToTerraform(struct?: CcGraphQLApi.AdditionalAuthenticationProvidersOpenIdConnectConfigProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -720,7 +720,7 @@ export function ccGraphQLApiOpenIDConnectConfigPropertyToTerraform(struct?: CcGr
 }
 
 
-export function ccGraphQLApiOpenIDConnectConfigPropertyToHclTerraform(struct?: CcGraphQLApi.OpenIDConnectConfigProperty | cdktn.IResolvable): any {
+export function ccGraphQLApiAdditionalAuthenticationProvidersOpenIdConnectConfigPropertyToHclTerraform(struct?: CcGraphQLApi.AdditionalAuthenticationProvidersOpenIdConnectConfigProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -808,8 +808,8 @@ export function ccGraphQLApiAdditionalAuthenticationProviderPropertyToTerraform(
     }
     return {
         authentication_type: cdktn.stringToTerraform(struct!.authenticationType),
-        lambda_authorizer_config: ccGraphQLApiLambdaAuthorizerConfigPropertyToTerraform(struct!.lambdaAuthorizerConfig),
-        open_id_connect_config: ccGraphQLApiOpenIDConnectConfigPropertyToTerraform(struct!.openIdConnectConfig),
+        lambda_authorizer_config: ccGraphQLApiAdditionalAuthenticationProvidersLambdaAuthorizerConfigPropertyToTerraform(struct!.lambdaAuthorizerConfig),
+        open_id_connect_config: ccGraphQLApiAdditionalAuthenticationProvidersOpenIdConnectConfigPropertyToTerraform(struct!.openIdConnectConfig),
         user_pool_config: ccGraphQLApiCognitoUserPoolConfigPropertyToTerraform(struct!.userPoolConfig),
     }
 }
@@ -828,16 +828,16 @@ export function ccGraphQLApiAdditionalAuthenticationProviderPropertyToHclTerrafo
             storageClassType: "string",
         },
         lambda_authorizer_config: {
-            value: ccGraphQLApiLambdaAuthorizerConfigPropertyToHclTerraform(struct!.lambdaAuthorizerConfig),
+            value: ccGraphQLApiAdditionalAuthenticationProvidersLambdaAuthorizerConfigPropertyToHclTerraform(struct!.lambdaAuthorizerConfig),
             isBlock: true,
             type: "struct",
-            storageClassType: "LambdaAuthorizerConfigProperty",
+            storageClassType: "AdditionalAuthenticationProvidersLambdaAuthorizerConfigProperty",
         },
         open_id_connect_config: {
-            value: ccGraphQLApiOpenIDConnectConfigPropertyToHclTerraform(struct!.openIdConnectConfig),
+            value: ccGraphQLApiAdditionalAuthenticationProvidersOpenIdConnectConfigPropertyToHclTerraform(struct!.openIdConnectConfig),
             isBlock: true,
             type: "struct",
-            storageClassType: "OpenIDConnectConfigProperty",
+            storageClassType: "AdditionalAuthenticationProvidersOpenIdConnectConfigProperty",
         },
         user_pool_config: {
             value: ccGraphQLApiCognitoUserPoolConfigPropertyToHclTerraform(struct!.userPoolConfig),
@@ -896,7 +896,7 @@ export function ccGraphQLApiEnhancedMetricsConfigPropertyToHclTerraform(struct?:
 }
 
 
-export function ccGraphQLApiLambdaAuthorizerConfigProperty2ToTerraform(struct?: CcGraphQLApi.LambdaAuthorizerConfigProperty2 | cdktn.IResolvable): any {
+export function ccGraphQLApiLambdaAuthorizerConfigPropertyToTerraform(struct?: CcGraphQLApi.LambdaAuthorizerConfigProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -909,7 +909,7 @@ export function ccGraphQLApiLambdaAuthorizerConfigProperty2ToTerraform(struct?: 
 }
 
 
-export function ccGraphQLApiLambdaAuthorizerConfigProperty2ToHclTerraform(struct?: CcGraphQLApi.LambdaAuthorizerConfigProperty2 | cdktn.IResolvable): any {
+export function ccGraphQLApiLambdaAuthorizerConfigPropertyToHclTerraform(struct?: CcGraphQLApi.LambdaAuthorizerConfigProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -984,7 +984,7 @@ export function ccGraphQLApiLogConfigPropertyToHclTerraform(struct?: CcGraphQLAp
 }
 
 
-export function ccGraphQLApiOpenIdConnectConfigPropertyToTerraform(struct?: CcGraphQLApi.OpenIdConnectConfigProperty | cdktn.IResolvable): any {
+export function ccGraphQLApiOpenIDConnectConfigPropertyToTerraform(struct?: CcGraphQLApi.OpenIDConnectConfigProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -998,7 +998,7 @@ export function ccGraphQLApiOpenIdConnectConfigPropertyToTerraform(struct?: CcGr
 }
 
 
-export function ccGraphQLApiOpenIdConnectConfigPropertyToHclTerraform(struct?: CcGraphQLApi.OpenIdConnectConfigProperty | cdktn.IResolvable): any {
+export function ccGraphQLApiOpenIDConnectConfigPropertyToHclTerraform(struct?: CcGraphQLApi.OpenIDConnectConfigProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -1124,7 +1124,7 @@ export function ccGraphQLApiUserPoolConfigPropertyToHclTerraform(struct?: CcGrap
 
 
 export namespace CcGraphQLApi {
-export interface LambdaAuthorizerConfigProperty {
+export interface AdditionalAuthenticationProvidersLambdaAuthorizerConfigProperty {
     /**
     * The number of seconds a response should be cached for.
     *
@@ -1144,7 +1144,7 @@ export interface LambdaAuthorizerConfigProperty {
     */
     readonly identityValidationExpression?: string;
 }
-export class LambdaAuthorizerConfigPropertyOutputReference extends cdktn.ComplexObject {
+export class AdditionalAuthenticationProvidersLambdaAuthorizerConfigPropertyOutputReference extends cdktn.ComplexObject {
     private isEmptyObject = false;
     private resolvableValue?: cdktn.IResolvable;
 
@@ -1156,7 +1156,7 @@ export class LambdaAuthorizerConfigPropertyOutputReference extends cdktn.Complex
         super(terraformResource, terraformAttribute, false);
     }
 
-    public get internalValue(): LambdaAuthorizerConfigProperty | cdktn.IResolvable | undefined {
+    public get internalValue(): AdditionalAuthenticationProvidersLambdaAuthorizerConfigProperty | cdktn.IResolvable | undefined {
         if (this.resolvableValue) {
             return this.resolvableValue;
         }
@@ -1177,7 +1177,7 @@ export class LambdaAuthorizerConfigPropertyOutputReference extends cdktn.Complex
         return hasAnyValues ? internalValueResult : undefined;
     }
 
-    public set internalValue(value: LambdaAuthorizerConfigProperty | cdktn.IResolvable | undefined) {
+    public set internalValue(value: AdditionalAuthenticationProvidersLambdaAuthorizerConfigProperty | cdktn.IResolvable | undefined) {
         if (value === undefined) {
             this.isEmptyObject = false;
             this.resolvableValue = undefined;
@@ -1246,7 +1246,7 @@ export class LambdaAuthorizerConfigPropertyOutputReference extends cdktn.Complex
         return this._identityValidationExpression;
     }
 }
-export interface OpenIDConnectConfigProperty {
+export interface AdditionalAuthenticationProvidersOpenIdConnectConfigProperty {
     /**
     * The number of milliseconds that a token is valid after being authenticated.
     *
@@ -1274,7 +1274,7 @@ export interface OpenIDConnectConfigProperty {
     */
     readonly issuer?: string;
 }
-export class OpenIDConnectConfigPropertyOutputReference extends cdktn.ComplexObject {
+export class AdditionalAuthenticationProvidersOpenIdConnectConfigPropertyOutputReference extends cdktn.ComplexObject {
     private isEmptyObject = false;
     private resolvableValue?: cdktn.IResolvable;
 
@@ -1286,7 +1286,7 @@ export class OpenIDConnectConfigPropertyOutputReference extends cdktn.ComplexObj
         super(terraformResource, terraformAttribute, false);
     }
 
-    public get internalValue(): OpenIDConnectConfigProperty | cdktn.IResolvable | undefined {
+    public get internalValue(): AdditionalAuthenticationProvidersOpenIdConnectConfigProperty | cdktn.IResolvable | undefined {
         if (this.resolvableValue) {
             return this.resolvableValue;
         }
@@ -1311,7 +1311,7 @@ export class OpenIDConnectConfigPropertyOutputReference extends cdktn.ComplexObj
         return hasAnyValues ? internalValueResult : undefined;
     }
 
-    public set internalValue(value: OpenIDConnectConfigProperty | cdktn.IResolvable | undefined) {
+    public set internalValue(value: AdditionalAuthenticationProvidersOpenIdConnectConfigProperty | cdktn.IResolvable | undefined) {
         if (value === undefined) {
             this.isEmptyObject = false;
             this.resolvableValue = undefined;
@@ -1530,11 +1530,11 @@ export interface AdditionalAuthenticationProviderProperty {
     /**
     * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_graph_ql_api#lambda_authorizer_config CcGraphQLApi#lambda_authorizer_config}
     */
-    readonly lambdaAuthorizerConfig?: LambdaAuthorizerConfigProperty;
+    readonly lambdaAuthorizerConfig?: AdditionalAuthenticationProvidersLambdaAuthorizerConfigProperty;
     /**
     * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_graph_ql_api#open_id_connect_config CcGraphQLApi#open_id_connect_config}
     */
-    readonly openIdConnectConfig?: OpenIDConnectConfigProperty;
+    readonly openIdConnectConfig?: AdditionalAuthenticationProvidersOpenIdConnectConfigProperty;
     /**
     * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_graph_ql_api#user_pool_config CcGraphQLApi#user_pool_config}
     */
@@ -1619,11 +1619,11 @@ export class AdditionalAuthenticationProviderPropertyOutputReference extends cdk
     }
 
     // lambda_authorizer_config - computed: true, optional: true, required: false
-    private _lambdaAuthorizerConfig = new LambdaAuthorizerConfigPropertyOutputReference(this, "lambda_authorizer_config");
+    private _lambdaAuthorizerConfig = new AdditionalAuthenticationProvidersLambdaAuthorizerConfigPropertyOutputReference(this, "lambda_authorizer_config");
     public get lambdaAuthorizerConfig() {
         return this._lambdaAuthorizerConfig;
     }
-    public putLambdaAuthorizerConfig(value: LambdaAuthorizerConfigProperty) {
+    public putLambdaAuthorizerConfig(value: AdditionalAuthenticationProvidersLambdaAuthorizerConfigProperty) {
         this._lambdaAuthorizerConfig.internalValue = value;
     }
     public resetLambdaAuthorizerConfig() {
@@ -1635,11 +1635,11 @@ export class AdditionalAuthenticationProviderPropertyOutputReference extends cdk
     }
 
     // open_id_connect_config - computed: true, optional: true, required: false
-    private _openIdConnectConfig = new OpenIDConnectConfigPropertyOutputReference(this, "open_id_connect_config");
+    private _openIdConnectConfig = new AdditionalAuthenticationProvidersOpenIdConnectConfigPropertyOutputReference(this, "open_id_connect_config");
     public get openIdConnectConfig() {
         return this._openIdConnectConfig;
     }
-    public putOpenIdConnectConfig(value: OpenIDConnectConfigProperty) {
+    public putOpenIdConnectConfig(value: AdditionalAuthenticationProvidersOpenIdConnectConfigProperty) {
         this._openIdConnectConfig.internalValue = value;
     }
     public resetOpenIdConnectConfig() {
@@ -1814,7 +1814,7 @@ export class EnhancedMetricsConfigPropertyOutputReference extends cdktn.ComplexO
         return this._resolverLevelMetricsBehavior;
     }
 }
-export interface LambdaAuthorizerConfigProperty2 {
+export interface LambdaAuthorizerConfigProperty {
     /**
     * The number of seconds a response should be cached for.
     *
@@ -1834,7 +1834,7 @@ export interface LambdaAuthorizerConfigProperty2 {
     */
     readonly identityValidationExpression?: string;
 }
-export class LambdaAuthorizerConfigProperty2OutputReference extends cdktn.ComplexObject {
+export class LambdaAuthorizerConfigPropertyOutputReference extends cdktn.ComplexObject {
     private isEmptyObject = false;
     private resolvableValue?: cdktn.IResolvable;
 
@@ -1846,7 +1846,7 @@ export class LambdaAuthorizerConfigProperty2OutputReference extends cdktn.Comple
         super(terraformResource, terraformAttribute, false);
     }
 
-    public get internalValue(): LambdaAuthorizerConfigProperty2 | cdktn.IResolvable | undefined {
+    public get internalValue(): LambdaAuthorizerConfigProperty | cdktn.IResolvable | undefined {
         if (this.resolvableValue) {
             return this.resolvableValue;
         }
@@ -1867,7 +1867,7 @@ export class LambdaAuthorizerConfigProperty2OutputReference extends cdktn.Comple
         return hasAnyValues ? internalValueResult : undefined;
     }
 
-    public set internalValue(value: LambdaAuthorizerConfigProperty2 | cdktn.IResolvable | undefined) {
+    public set internalValue(value: LambdaAuthorizerConfigProperty | cdktn.IResolvable | undefined) {
         if (value === undefined) {
             this.isEmptyObject = false;
             this.resolvableValue = undefined;
@@ -2058,7 +2058,7 @@ export class LogConfigPropertyOutputReference extends cdktn.ComplexObject {
         return this._fieldLogLevel;
     }
 }
-export interface OpenIdConnectConfigProperty {
+export interface OpenIDConnectConfigProperty {
     /**
     * The number of milliseconds that a token is valid after being authenticated.
     *
@@ -2086,7 +2086,7 @@ export interface OpenIdConnectConfigProperty {
     */
     readonly issuer?: string;
 }
-export class OpenIdConnectConfigPropertyOutputReference extends cdktn.ComplexObject {
+export class OpenIDConnectConfigPropertyOutputReference extends cdktn.ComplexObject {
     private isEmptyObject = false;
     private resolvableValue?: cdktn.IResolvable;
 
@@ -2098,7 +2098,7 @@ export class OpenIdConnectConfigPropertyOutputReference extends cdktn.ComplexObj
         super(terraformResource, terraformAttribute, false);
     }
 
-    public get internalValue(): OpenIdConnectConfigProperty | cdktn.IResolvable | undefined {
+    public get internalValue(): OpenIDConnectConfigProperty | cdktn.IResolvable | undefined {
         if (this.resolvableValue) {
             return this.resolvableValue;
         }
@@ -2123,7 +2123,7 @@ export class OpenIdConnectConfigPropertyOutputReference extends cdktn.ComplexObj
         return hasAnyValues ? internalValueResult : undefined;
     }
 
-    public set internalValue(value: OpenIdConnectConfigProperty | cdktn.IResolvable | undefined) {
+    public set internalValue(value: OpenIDConnectConfigProperty | cdktn.IResolvable | undefined) {
         if (value === undefined) {
             this.isEmptyObject = false;
             this.resolvableValue = undefined;

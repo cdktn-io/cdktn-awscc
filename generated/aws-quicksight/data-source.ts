@@ -19,7 +19,7 @@ export interface CcDataSourceProps extends cdktn.TerraformMetaArguments {
     *
     * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_source#alternate_data_source_parameters CcDataSource#alternate_data_source_parameters}
     */
-    readonly alternateDataSourceParameters?: CcDataSource.DataSourceParametersProperty[] | cdktn.IResolvable;
+    readonly alternateDataSourceParameters?: CcDataSource.AlternateDataSourceParametersProperty[] | cdktn.IResolvable;
     /**
     * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_source#aws_account_id CcDataSource#aws_account_id}
     */
@@ -42,7 +42,7 @@ export interface CcDataSourceProps extends cdktn.TerraformMetaArguments {
     *
     * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_source#data_source_parameters CcDataSource#data_source_parameters}
     */
-    readonly dataSourceParameters?: CcDataSource.DataSourceParametersProperty2;
+    readonly dataSourceParameters?: CcDataSource.DataSourceParametersProperty;
     /**
     * <p>Error information for the data source creation or update.</p>
     *
@@ -81,7 +81,7 @@ export interface CcDataSourceProps extends cdktn.TerraformMetaArguments {
     *
     * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_source#vpc_connection_properties CcDataSource#vpc_connection_properties}
     */
-    readonly vpcConnectionProperties?: CcDataSource.VpcConnectionPropertiesProperty2;
+    readonly vpcConnectionProperties?: CcDataSource.VpcConnectionPropertiesProperty;
 }
 
 /**
@@ -154,11 +154,11 @@ export class CcDataSource extends cdktn.TerraformResource {
     // ==========
 
     // alternate_data_source_parameters - computed: true, optional: true, required: false
-    private _alternateDataSourceParameters = new CcDataSource.DataSourceParametersPropertyList(this, "alternate_data_source_parameters", false);
+    private _alternateDataSourceParameters = new CcDataSource.AlternateDataSourceParametersPropertyList(this, "alternate_data_source_parameters", false);
     public get alternateDataSourceParameters() {
         return this._alternateDataSourceParameters;
     }
-    public putAlternateDataSourceParameters(value: CcDataSource.DataSourceParametersProperty[] | cdktn.IResolvable) {
+    public putAlternateDataSourceParameters(value: CcDataSource.AlternateDataSourceParametersProperty[] | cdktn.IResolvable) {
         this._alternateDataSourceParameters.internalValue = value;
     }
     public resetAlternateDataSourceParameters() {
@@ -228,11 +228,11 @@ export class CcDataSource extends cdktn.TerraformResource {
     }
 
     // data_source_parameters - computed: true, optional: true, required: false
-    private _dataSourceParameters = new CcDataSource.DataSourceParametersProperty2OutputReference(this, "data_source_parameters");
+    private _dataSourceParameters = new CcDataSource.DataSourceParametersPropertyOutputReference(this, "data_source_parameters");
     public get dataSourceParameters() {
         return this._dataSourceParameters;
     }
-    public putDataSourceParameters(value: CcDataSource.DataSourceParametersProperty2) {
+    public putDataSourceParameters(value: CcDataSource.DataSourceParametersProperty) {
         this._dataSourceParameters.internalValue = value;
     }
     public resetDataSourceParameters() {
@@ -365,11 +365,11 @@ export class CcDataSource extends cdktn.TerraformResource {
     }
 
     // vpc_connection_properties - computed: true, optional: true, required: false
-    private _vpcConnectionProperties = new CcDataSource.VpcConnectionPropertiesProperty2OutputReference(this, "vpc_connection_properties");
+    private _vpcConnectionProperties = new CcDataSource.VpcConnectionPropertiesPropertyOutputReference(this, "vpc_connection_properties");
     public get vpcConnectionProperties() {
         return this._vpcConnectionProperties;
     }
-    public putVpcConnectionProperties(value: CcDataSource.VpcConnectionPropertiesProperty2) {
+    public putVpcConnectionProperties(value: CcDataSource.VpcConnectionPropertiesProperty) {
         this._vpcConnectionProperties.internalValue = value;
     }
     public resetVpcConnectionProperties() {
@@ -386,11 +386,11 @@ export class CcDataSource extends cdktn.TerraformResource {
 
     protected synthesizeAttributes(): { [name: string]: any } {
         return {
-            alternate_data_source_parameters: cdktn.listMapper(ccDataSourceDataSourceParametersPropertyToTerraform, false)(this._alternateDataSourceParameters.internalValue),
+            alternate_data_source_parameters: cdktn.listMapper(ccDataSourceAlternateDataSourceParametersPropertyToTerraform, false)(this._alternateDataSourceParameters.internalValue),
             aws_account_id: cdktn.stringToTerraform(this._awsAccountId),
             credentials: ccDataSourceDataSourceCredentialsPropertyToTerraform(this._credentials.internalValue),
             data_source_id: cdktn.stringToTerraform(this._dataSourceId),
-            data_source_parameters: ccDataSourceDataSourceParametersProperty2ToTerraform(this._dataSourceParameters.internalValue),
+            data_source_parameters: ccDataSourceDataSourceParametersPropertyToTerraform(this._dataSourceParameters.internalValue),
             error_info: ccDataSourceDataSourceErrorInfoPropertyToTerraform(this._errorInfo.internalValue),
             folder_arns: cdktn.listMapper(cdktn.stringToTerraform, false)(this._folderArns),
             name: cdktn.stringToTerraform(this._name),
@@ -398,17 +398,17 @@ export class CcDataSource extends cdktn.TerraformResource {
             ssl_properties: ccDataSourceSslPropertiesPropertyToTerraform(this._sslProperties.internalValue),
             tags: cdktn.listMapper(ccDataSourceTagPropertyToTerraform, false)(this._tags.internalValue),
             type: cdktn.stringToTerraform(this._type),
-            vpc_connection_properties: ccDataSourceVpcConnectionPropertiesProperty2ToTerraform(this._vpcConnectionProperties.internalValue),
+            vpc_connection_properties: ccDataSourceVpcConnectionPropertiesPropertyToTerraform(this._vpcConnectionProperties.internalValue),
         };
     }
 
     protected synthesizeHclAttributes(): { [name: string]: any } {
         const attrs = {
             alternate_data_source_parameters: {
-                value: cdktn.listMapperHcl(ccDataSourceDataSourceParametersPropertyToHclTerraform, false)(this._alternateDataSourceParameters.internalValue),
+                value: cdktn.listMapperHcl(ccDataSourceAlternateDataSourceParametersPropertyToHclTerraform, false)(this._alternateDataSourceParameters.internalValue),
                 isBlock: true,
                 type: "list",
-                storageClassType: "CcDataSource.DataSourceParametersPropertyList",
+                storageClassType: "CcDataSource.AlternateDataSourceParametersPropertyList",
             },
             aws_account_id: {
                 value: cdktn.stringToHclTerraform(this._awsAccountId),
@@ -429,10 +429,10 @@ export class CcDataSource extends cdktn.TerraformResource {
                 storageClassType: "string",
             },
             data_source_parameters: {
-                value: ccDataSourceDataSourceParametersProperty2ToHclTerraform(this._dataSourceParameters.internalValue),
+                value: ccDataSourceDataSourceParametersPropertyToHclTerraform(this._dataSourceParameters.internalValue),
                 isBlock: true,
                 type: "struct",
-                storageClassType: "CcDataSource.DataSourceParametersProperty2",
+                storageClassType: "CcDataSource.DataSourceParametersProperty",
             },
             error_info: {
                 value: ccDataSourceDataSourceErrorInfoPropertyToHclTerraform(this._errorInfo.internalValue),
@@ -477,10 +477,10 @@ export class CcDataSource extends cdktn.TerraformResource {
                 storageClassType: "string",
             },
             vpc_connection_properties: {
-                value: ccDataSourceVpcConnectionPropertiesProperty2ToHclTerraform(this._vpcConnectionProperties.internalValue),
+                value: ccDataSourceVpcConnectionPropertiesPropertyToHclTerraform(this._vpcConnectionProperties.internalValue),
                 isBlock: true,
                 type: "struct",
-                storageClassType: "CcDataSource.VpcConnectionPropertiesProperty2",
+                storageClassType: "CcDataSource.VpcConnectionPropertiesProperty",
             },
         };
 
@@ -1269,7 +1269,7 @@ export function ccDataSourceS3TablesParametersPropertyToHclTerraform(struct?: Cc
 }
 
 
-export function ccDataSourceVpcConnectionPropertiesPropertyToTerraform(struct?: CcDataSource.VpcConnectionPropertiesProperty | cdktn.IResolvable): any {
+export function ccDataSourceAlternateDataSourceParametersSnowflakeParametersOAuthParametersIdentityProviderVpcConnectionPropertiesPropertyToTerraform(struct?: CcDataSource.AlternateDataSourceParametersSnowflakeParametersOAuthParametersIdentityProviderVpcConnectionPropertiesProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -1280,7 +1280,7 @@ export function ccDataSourceVpcConnectionPropertiesPropertyToTerraform(struct?: 
 }
 
 
-export function ccDataSourceVpcConnectionPropertiesPropertyToHclTerraform(struct?: CcDataSource.VpcConnectionPropertiesProperty | cdktn.IResolvable): any {
+export function ccDataSourceAlternateDataSourceParametersSnowflakeParametersOAuthParametersIdentityProviderVpcConnectionPropertiesPropertyToHclTerraform(struct?: CcDataSource.AlternateDataSourceParametersSnowflakeParametersOAuthParametersIdentityProviderVpcConnectionPropertiesProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -1306,7 +1306,7 @@ export function ccDataSourceOAuthParametersPropertyToTerraform(struct?: CcDataSo
     }
     return {
         identity_provider_resource_uri: cdktn.stringToTerraform(struct!.identityProviderResourceUri),
-        identity_provider_vpc_connection_properties: ccDataSourceVpcConnectionPropertiesPropertyToTerraform(struct!.identityProviderVpcConnectionProperties),
+        identity_provider_vpc_connection_properties: ccDataSourceAlternateDataSourceParametersSnowflakeParametersOAuthParametersIdentityProviderVpcConnectionPropertiesPropertyToTerraform(struct!.identityProviderVpcConnectionProperties),
         o_auth_scope: cdktn.stringToTerraform(struct!.oAuthScope),
         token_provider_url: cdktn.stringToTerraform(struct!.tokenProviderUrl),
     }
@@ -1326,10 +1326,10 @@ export function ccDataSourceOAuthParametersPropertyToHclTerraform(struct?: CcDat
             storageClassType: "string",
         },
         identity_provider_vpc_connection_properties: {
-            value: ccDataSourceVpcConnectionPropertiesPropertyToHclTerraform(struct!.identityProviderVpcConnectionProperties),
+            value: ccDataSourceAlternateDataSourceParametersSnowflakeParametersOAuthParametersIdentityProviderVpcConnectionPropertiesPropertyToHclTerraform(struct!.identityProviderVpcConnectionProperties),
             isBlock: true,
             type: "struct",
-            storageClassType: "VpcConnectionPropertiesProperty",
+            storageClassType: "AlternateDataSourceParametersSnowflakeParametersOAuthParametersIdentityProviderVpcConnectionPropertiesProperty",
         },
         o_auth_scope: {
             value: cdktn.stringToHclTerraform(struct!.oAuthScope),
@@ -1737,7 +1737,7 @@ export function ccDataSourceTrinoParametersPropertyToHclTerraform(struct?: CcDat
 }
 
 
-export function ccDataSourceDataSourceParametersPropertyToTerraform(struct?: CcDataSource.DataSourceParametersProperty | cdktn.IResolvable): any {
+export function ccDataSourceAlternateDataSourceParametersPropertyToTerraform(struct?: CcDataSource.AlternateDataSourceParametersProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -1768,7 +1768,7 @@ export function ccDataSourceDataSourceParametersPropertyToTerraform(struct?: CcD
 }
 
 
-export function ccDataSourceDataSourceParametersPropertyToHclTerraform(struct?: CcDataSource.DataSourceParametersProperty | cdktn.IResolvable): any {
+export function ccDataSourceAlternateDataSourceParametersPropertyToHclTerraform(struct?: CcDataSource.AlternateDataSourceParametersProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -3155,7 +3155,7 @@ export function ccDataSourceCredentialsCredentialPairAlternateDataSourceParamete
 }
 
 
-export function ccDataSourceAlternateDataSourceParametersPropertyToTerraform(struct?: CcDataSource.AlternateDataSourceParametersProperty | cdktn.IResolvable): any {
+export function ccDataSourceCredentialsCredentialPairAlternateDataSourceParametersPropertyToTerraform(struct?: CcDataSource.CredentialsCredentialPairAlternateDataSourceParametersProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -3186,7 +3186,7 @@ export function ccDataSourceAlternateDataSourceParametersPropertyToTerraform(str
 }
 
 
-export function ccDataSourceAlternateDataSourceParametersPropertyToHclTerraform(struct?: CcDataSource.AlternateDataSourceParametersProperty | cdktn.IResolvable): any {
+export function ccDataSourceCredentialsCredentialPairAlternateDataSourceParametersPropertyToHclTerraform(struct?: CcDataSource.CredentialsCredentialPairAlternateDataSourceParametersProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -3331,7 +3331,7 @@ export function ccDataSourceCredentialPairPropertyToTerraform(struct?: CcDataSou
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
     }
     return {
-        alternate_data_source_parameters: cdktn.listMapper(ccDataSourceAlternateDataSourceParametersPropertyToTerraform, false)(struct!.alternateDataSourceParameters),
+        alternate_data_source_parameters: cdktn.listMapper(ccDataSourceCredentialsCredentialPairAlternateDataSourceParametersPropertyToTerraform, false)(struct!.alternateDataSourceParameters),
         password: cdktn.stringToTerraform(struct!.password),
         username: cdktn.stringToTerraform(struct!.username),
     }
@@ -3345,10 +3345,10 @@ export function ccDataSourceCredentialPairPropertyToHclTerraform(struct?: CcData
     }
     const attrs = {
         alternate_data_source_parameters: {
-            value: cdktn.listMapperHcl(ccDataSourceAlternateDataSourceParametersPropertyToHclTerraform, false)(struct!.alternateDataSourceParameters),
+            value: cdktn.listMapperHcl(ccDataSourceCredentialsCredentialPairAlternateDataSourceParametersPropertyToHclTerraform, false)(struct!.alternateDataSourceParameters),
             isBlock: true,
             type: "list",
-            storageClassType: "AlternateDataSourceParametersPropertyList",
+            storageClassType: "CredentialsCredentialPairAlternateDataSourceParametersPropertyList",
         },
         password: {
             value: cdktn.stringToHclTerraform(struct!.password),
@@ -4712,7 +4712,7 @@ export function ccDataSourceDataSourceParametersTrinoParametersPropertyToHclTerr
 }
 
 
-export function ccDataSourceDataSourceParametersProperty2ToTerraform(struct?: CcDataSource.DataSourceParametersProperty2 | cdktn.IResolvable): any {
+export function ccDataSourceDataSourceParametersPropertyToTerraform(struct?: CcDataSource.DataSourceParametersProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -4743,7 +4743,7 @@ export function ccDataSourceDataSourceParametersProperty2ToTerraform(struct?: Cc
 }
 
 
-export function ccDataSourceDataSourceParametersProperty2ToHclTerraform(struct?: CcDataSource.DataSourceParametersProperty2 | cdktn.IResolvable): any {
+export function ccDataSourceDataSourceParametersPropertyToHclTerraform(struct?: CcDataSource.DataSourceParametersProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -5030,7 +5030,7 @@ export function ccDataSourceTagPropertyToHclTerraform(struct?: CcDataSource.TagP
 }
 
 
-export function ccDataSourceVpcConnectionPropertiesProperty2ToTerraform(struct?: CcDataSource.VpcConnectionPropertiesProperty2 | cdktn.IResolvable): any {
+export function ccDataSourceVpcConnectionPropertiesPropertyToTerraform(struct?: CcDataSource.VpcConnectionPropertiesProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -5041,7 +5041,7 @@ export function ccDataSourceVpcConnectionPropertiesProperty2ToTerraform(struct?:
 }
 
 
-export function ccDataSourceVpcConnectionPropertiesProperty2ToHclTerraform(struct?: CcDataSource.VpcConnectionPropertiesProperty2 | cdktn.IResolvable): any {
+export function ccDataSourceVpcConnectionPropertiesPropertyToHclTerraform(struct?: CcDataSource.VpcConnectionPropertiesProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -7154,7 +7154,7 @@ export class S3TablesParametersPropertyOutputReference extends cdktn.ComplexObje
         return this._tableBucketArn;
     }
 }
-export interface VpcConnectionPropertiesProperty {
+export interface AlternateDataSourceParametersSnowflakeParametersOAuthParametersIdentityProviderVpcConnectionPropertiesProperty {
     /**
     * <p>The Amazon Resource Name (ARN) for the VPC connection.</p>
     *
@@ -7162,7 +7162,7 @@ export interface VpcConnectionPropertiesProperty {
     */
     readonly vpcConnectionArn?: string;
 }
-export class VpcConnectionPropertiesPropertyOutputReference extends cdktn.ComplexObject {
+export class AlternateDataSourceParametersSnowflakeParametersOAuthParametersIdentityProviderVpcConnectionPropertiesPropertyOutputReference extends cdktn.ComplexObject {
     private isEmptyObject = false;
     private resolvableValue?: cdktn.IResolvable;
 
@@ -7174,7 +7174,7 @@ export class VpcConnectionPropertiesPropertyOutputReference extends cdktn.Comple
         super(terraformResource, terraformAttribute, false);
     }
 
-    public get internalValue(): VpcConnectionPropertiesProperty | cdktn.IResolvable | undefined {
+    public get internalValue(): AlternateDataSourceParametersSnowflakeParametersOAuthParametersIdentityProviderVpcConnectionPropertiesProperty | cdktn.IResolvable | undefined {
         if (this.resolvableValue) {
             return this.resolvableValue;
         }
@@ -7187,7 +7187,7 @@ export class VpcConnectionPropertiesPropertyOutputReference extends cdktn.Comple
         return hasAnyValues ? internalValueResult : undefined;
     }
 
-    public set internalValue(value: VpcConnectionPropertiesProperty | cdktn.IResolvable | undefined) {
+    public set internalValue(value: AlternateDataSourceParametersSnowflakeParametersOAuthParametersIdentityProviderVpcConnectionPropertiesProperty | cdktn.IResolvable | undefined) {
         if (value === undefined) {
             this.isEmptyObject = false;
             this.resolvableValue = undefined;
@@ -7230,7 +7230,7 @@ export interface OAuthParametersProperty {
     *
     * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_source#identity_provider_vpc_connection_properties CcDataSource#identity_provider_vpc_connection_properties}
     */
-    readonly identityProviderVpcConnectionProperties?: VpcConnectionPropertiesProperty;
+    readonly identityProviderVpcConnectionProperties?: AlternateDataSourceParametersSnowflakeParametersOAuthParametersIdentityProviderVpcConnectionPropertiesProperty;
     /**
     * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_source#o_auth_scope CcDataSource#o_auth_scope}
     */
@@ -7317,11 +7317,11 @@ export class OAuthParametersPropertyOutputReference extends cdktn.ComplexObject 
     }
 
     // identity_provider_vpc_connection_properties - computed: true, optional: true, required: false
-    private _identityProviderVpcConnectionProperties = new VpcConnectionPropertiesPropertyOutputReference(this, "identity_provider_vpc_connection_properties");
+    private _identityProviderVpcConnectionProperties = new AlternateDataSourceParametersSnowflakeParametersOAuthParametersIdentityProviderVpcConnectionPropertiesPropertyOutputReference(this, "identity_provider_vpc_connection_properties");
     public get identityProviderVpcConnectionProperties() {
         return this._identityProviderVpcConnectionProperties;
     }
-    public putIdentityProviderVpcConnectionProperties(value: VpcConnectionPropertiesProperty) {
+    public putIdentityProviderVpcConnectionProperties(value: AlternateDataSourceParametersSnowflakeParametersOAuthParametersIdentityProviderVpcConnectionPropertiesProperty) {
         this._identityProviderVpcConnectionProperties.internalValue = value;
     }
     public resetIdentityProviderVpcConnectionProperties() {
@@ -8460,7 +8460,7 @@ export class TrinoParametersPropertyOutputReference extends cdktn.ComplexObject 
         return this._port;
     }
 }
-export interface DataSourceParametersProperty {
+export interface AlternateDataSourceParametersProperty {
     /**
     * <p>The parameters for OpenSearch.</p>
     *
@@ -8587,7 +8587,7 @@ export interface DataSourceParametersProperty {
     */
     readonly trinoParameters?: TrinoParametersProperty;
 }
-export class DataSourceParametersPropertyOutputReference extends cdktn.ComplexObject {
+export class AlternateDataSourceParametersPropertyOutputReference extends cdktn.ComplexObject {
     private isEmptyObject = false;
     private resolvableValue?: cdktn.IResolvable;
 
@@ -8601,7 +8601,7 @@ export class DataSourceParametersPropertyOutputReference extends cdktn.ComplexOb
         super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
     }
 
-    public get internalValue(): DataSourceParametersProperty | cdktn.IResolvable | undefined {
+    public get internalValue(): AlternateDataSourceParametersProperty | cdktn.IResolvable | undefined {
         if (this.resolvableValue) {
             return this.resolvableValue;
         }
@@ -8694,7 +8694,7 @@ export class DataSourceParametersPropertyOutputReference extends cdktn.ComplexOb
         return hasAnyValues ? internalValueResult : undefined;
     }
 
-    public set internalValue(value: DataSourceParametersProperty | cdktn.IResolvable | undefined) {
+    public set internalValue(value: AlternateDataSourceParametersProperty | cdktn.IResolvable | undefined) {
         if (value === undefined) {
             this.isEmptyObject = false;
             this.resolvableValue = undefined;
@@ -9088,8 +9088,8 @@ export class DataSourceParametersPropertyOutputReference extends cdktn.ComplexOb
     }
 }
 
-export class DataSourceParametersPropertyList extends cdktn.ComplexList {
-    public internalValue? : DataSourceParametersProperty[] | cdktn.IResolvable
+export class AlternateDataSourceParametersPropertyList extends cdktn.ComplexList {
+    public internalValue? : AlternateDataSourceParametersProperty[] | cdktn.IResolvable
 
     /**
     * @param terraformResource The parent resource
@@ -9103,8 +9103,8 @@ export class DataSourceParametersPropertyList extends cdktn.ComplexList {
     /**
     * @param index the index of the item to return
     */
-    public get(index: number): DataSourceParametersPropertyOutputReference {
-        return new DataSourceParametersPropertyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+    public get(index: number): AlternateDataSourceParametersPropertyOutputReference {
+        return new AlternateDataSourceParametersPropertyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
     }
 }
 export interface CredentialsCredentialPairAlternateDataSourceParametersAmazonElasticsearchParametersProperty {
@@ -12506,7 +12506,7 @@ export class CredentialsCredentialPairAlternateDataSourceParametersTrinoParamete
         return this._port;
     }
 }
-export interface AlternateDataSourceParametersProperty {
+export interface CredentialsCredentialPairAlternateDataSourceParametersProperty {
     /**
     * <p>The parameters for OpenSearch.</p>
     *
@@ -12633,7 +12633,7 @@ export interface AlternateDataSourceParametersProperty {
     */
     readonly trinoParameters?: CredentialsCredentialPairAlternateDataSourceParametersTrinoParametersProperty;
 }
-export class AlternateDataSourceParametersPropertyOutputReference extends cdktn.ComplexObject {
+export class CredentialsCredentialPairAlternateDataSourceParametersPropertyOutputReference extends cdktn.ComplexObject {
     private isEmptyObject = false;
     private resolvableValue?: cdktn.IResolvable;
 
@@ -12647,7 +12647,7 @@ export class AlternateDataSourceParametersPropertyOutputReference extends cdktn.
         super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
     }
 
-    public get internalValue(): AlternateDataSourceParametersProperty | cdktn.IResolvable | undefined {
+    public get internalValue(): CredentialsCredentialPairAlternateDataSourceParametersProperty | cdktn.IResolvable | undefined {
         if (this.resolvableValue) {
             return this.resolvableValue;
         }
@@ -12740,7 +12740,7 @@ export class AlternateDataSourceParametersPropertyOutputReference extends cdktn.
         return hasAnyValues ? internalValueResult : undefined;
     }
 
-    public set internalValue(value: AlternateDataSourceParametersProperty | cdktn.IResolvable | undefined) {
+    public set internalValue(value: CredentialsCredentialPairAlternateDataSourceParametersProperty | cdktn.IResolvable | undefined) {
         if (value === undefined) {
             this.isEmptyObject = false;
             this.resolvableValue = undefined;
@@ -13134,8 +13134,8 @@ export class AlternateDataSourceParametersPropertyOutputReference extends cdktn.
     }
 }
 
-export class AlternateDataSourceParametersPropertyList extends cdktn.ComplexList {
-    public internalValue? : AlternateDataSourceParametersProperty[] | cdktn.IResolvable
+export class CredentialsCredentialPairAlternateDataSourceParametersPropertyList extends cdktn.ComplexList {
+    public internalValue? : CredentialsCredentialPairAlternateDataSourceParametersProperty[] | cdktn.IResolvable
 
     /**
     * @param terraformResource The parent resource
@@ -13149,8 +13149,8 @@ export class AlternateDataSourceParametersPropertyList extends cdktn.ComplexList
     /**
     * @param index the index of the item to return
     */
-    public get(index: number): AlternateDataSourceParametersPropertyOutputReference {
-        return new AlternateDataSourceParametersPropertyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+    public get(index: number): CredentialsCredentialPairAlternateDataSourceParametersPropertyOutputReference {
+        return new CredentialsCredentialPairAlternateDataSourceParametersPropertyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
     }
 }
 export interface CredentialPairProperty {
@@ -13167,7 +13167,7 @@ export interface CredentialPairProperty {
     *
     * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_data_source#alternate_data_source_parameters CcDataSource#alternate_data_source_parameters}
     */
-    readonly alternateDataSourceParameters?: AlternateDataSourceParametersProperty[] | cdktn.IResolvable;
+    readonly alternateDataSourceParameters?: CredentialsCredentialPairAlternateDataSourceParametersProperty[] | cdktn.IResolvable;
     /**
     * <p>Password.</p>
     *
@@ -13236,11 +13236,11 @@ export class CredentialPairPropertyOutputReference extends cdktn.ComplexObject {
     }
 
     // alternate_data_source_parameters - computed: true, optional: true, required: false
-    private _alternateDataSourceParameters = new AlternateDataSourceParametersPropertyList(this, "alternate_data_source_parameters", false);
+    private _alternateDataSourceParameters = new CredentialsCredentialPairAlternateDataSourceParametersPropertyList(this, "alternate_data_source_parameters", false);
     public get alternateDataSourceParameters() {
         return this._alternateDataSourceParameters;
     }
-    public putAlternateDataSourceParameters(value: AlternateDataSourceParametersProperty[] | cdktn.IResolvable) {
+    public putAlternateDataSourceParameters(value: CredentialsCredentialPairAlternateDataSourceParametersProperty[] | cdktn.IResolvable) {
         this._alternateDataSourceParameters.internalValue = value;
     }
     public resetAlternateDataSourceParameters() {
@@ -16949,7 +16949,7 @@ export class DataSourceParametersTrinoParametersPropertyOutputReference extends 
         return this._port;
     }
 }
-export interface DataSourceParametersProperty2 {
+export interface DataSourceParametersProperty {
     /**
     * <p>The parameters for OpenSearch.</p>
     *
@@ -17076,7 +17076,7 @@ export interface DataSourceParametersProperty2 {
     */
     readonly trinoParameters?: DataSourceParametersTrinoParametersProperty;
 }
-export class DataSourceParametersProperty2OutputReference extends cdktn.ComplexObject {
+export class DataSourceParametersPropertyOutputReference extends cdktn.ComplexObject {
     private isEmptyObject = false;
     private resolvableValue?: cdktn.IResolvable;
 
@@ -17088,7 +17088,7 @@ export class DataSourceParametersProperty2OutputReference extends cdktn.ComplexO
         super(terraformResource, terraformAttribute, false);
     }
 
-    public get internalValue(): DataSourceParametersProperty2 | cdktn.IResolvable | undefined {
+    public get internalValue(): DataSourceParametersProperty | cdktn.IResolvable | undefined {
         if (this.resolvableValue) {
             return this.resolvableValue;
         }
@@ -17181,7 +17181,7 @@ export class DataSourceParametersProperty2OutputReference extends cdktn.ComplexO
         return hasAnyValues ? internalValueResult : undefined;
     }
 
-    public set internalValue(value: DataSourceParametersProperty2 | cdktn.IResolvable | undefined) {
+    public set internalValue(value: DataSourceParametersProperty | cdktn.IResolvable | undefined) {
         if (value === undefined) {
             this.isEmptyObject = false;
             this.resolvableValue = undefined;
@@ -18004,7 +18004,7 @@ export class TagPropertyList extends cdktn.ComplexList {
         return new TagPropertyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
     }
 }
-export interface VpcConnectionPropertiesProperty2 {
+export interface VpcConnectionPropertiesProperty {
     /**
     * <p>The Amazon Resource Name (ARN) for the VPC connection.</p>
     *
@@ -18012,7 +18012,7 @@ export interface VpcConnectionPropertiesProperty2 {
     */
     readonly vpcConnectionArn?: string;
 }
-export class VpcConnectionPropertiesProperty2OutputReference extends cdktn.ComplexObject {
+export class VpcConnectionPropertiesPropertyOutputReference extends cdktn.ComplexObject {
     private isEmptyObject = false;
     private resolvableValue?: cdktn.IResolvable;
 
@@ -18024,7 +18024,7 @@ export class VpcConnectionPropertiesProperty2OutputReference extends cdktn.Compl
         super(terraformResource, terraformAttribute, false);
     }
 
-    public get internalValue(): VpcConnectionPropertiesProperty2 | cdktn.IResolvable | undefined {
+    public get internalValue(): VpcConnectionPropertiesProperty | cdktn.IResolvable | undefined {
         if (this.resolvableValue) {
             return this.resolvableValue;
         }
@@ -18037,7 +18037,7 @@ export class VpcConnectionPropertiesProperty2OutputReference extends cdktn.Compl
         return hasAnyValues ? internalValueResult : undefined;
     }
 
-    public set internalValue(value: VpcConnectionPropertiesProperty2 | cdktn.IResolvable | undefined) {
+    public set internalValue(value: VpcConnectionPropertiesProperty | cdktn.IResolvable | undefined) {
         if (value === undefined) {
             this.isEmptyObject = false;
             this.resolvableValue = undefined;

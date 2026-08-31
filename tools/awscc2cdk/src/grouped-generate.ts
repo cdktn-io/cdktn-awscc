@@ -24,7 +24,7 @@ import { parseResourceAttributes } from "./grouped/resource-parser";
 import { resolveDefinitionName } from "./grouped/cfn-recovery";
 import { jsiircFor } from "./grouped/jsiirc";
 import { effectiveScopeMap } from "./scope-map";
-import { ResourceModel, Struct } from "./grouped/models";
+import { ResourceModel } from "./grouped/models";
 import { ResourceEmitter } from "./grouped/emitter/resource-emitter";
 import { StructEmitter } from "./grouped/emitter/struct-emitter";
 import { withQualifier, withResourcePrefix } from "./grouped/namespace-context";
@@ -171,42 +171,6 @@ interface EmittedResource {
   readonly recovered: number;
 }
 
-/**
- * CFN can reuse one `TypeDefinition` at more than one property path (the same shared type used by
- * two different attributes, possibly nested completely differently at each — one a single embedded
- * object, the other a list of them). Our per-occurrence struct parser (`resource-parser.ts`) gives
- * each occurrence its own struct — correctly, since each occurrence needs its own nesting shape
- * (constructor signature, wrapper classes) — but that means two structs can recover the *same* CFN
- * definition name. `naming.ts#propertyTypeNamesForResource` (correctly, per its own contract) does
- * NOT collapse two entries that both carry a definition name into one, so left alone this produces
- * two `*Property` declarations that collide down to a `*Property2`, breaking the naming grammar
- * (`NAME_GRAMMAR.propertyInterface` etc. all end the pattern at `Property`, no trailing digit).
- *
- * The fix is at the naming layer, not the struct model: only the lexicographically-first occurrence
- * (by path) keeps its recovered definition name; every other occurrence's definition name is
- * cleared here so it falls back to `naming.ts`'s ordinary path-based fallback name instead, which
- * — since the two paths are different — cannot collide with the first occurrence's name. Each
- * struct stays its own distinct object with its own correct nesting shape; only the *name* of the
- * later occurrences changes, and only when this specific collision would otherwise occur.
- */
-function dedupeDefinitionNames(
-  structs: readonly Struct[],
-  definitionNames: ReadonlyMap<Struct, string | undefined>,
-): Map<Struct, string | undefined> {
-  const claimed = new Set<string>();
-  const result = new Map<Struct, string | undefined>();
-  for (const s of [...structs].sort((a, b) => cmp(a.path.join("."), b.path.join(".")))) {
-    const def = definitionNames.get(s);
-    if (def !== undefined && !claimed.has(def)) {
-      claimed.add(def);
-      result.set(s, def);
-    } else {
-      result.set(s, undefined);
-    }
-  }
-  return result;
-}
-
 function emitResourceFile(
   schemaJson: ProviderSchema,
   fqpn: string,
@@ -220,12 +184,15 @@ function emitResourceFile(
   const parsed = parseResourceAttributes(resourceSchema);
   const structs = parsed.structs;
 
-  const rawDefinitionNames = new Map<Struct, string | undefined>(
-    structs.map((s) => [s, resolveDefinitionName(db, planned.cfnType, s.path)] as const),
-  );
-  const definitionNames = dedupeDefinitionNames(structs, rawDefinitionNames);
-
-  const entries = structs.map((s) => ({ path: s.path, definitionName: definitionNames.get(s) }));
+  // `naming.dedupeDefinitionNames` keeps at most one occurrence of each recovered CFN definition
+  // name (CFN reuses one `TypeDefinition` at several property paths; our per-occurrence structs
+  // each recover it), so `propertyTypeNamesForResource` never has to break that tie with a
+  // grammar-breaking `'2'` suffix. See its own doc comment for which occurrence survives.
+  const rawEntries = structs.map((s) => ({
+    path: s.path,
+    definitionName: resolveDefinitionName(db, planned.cfnType, s.path),
+  }));
+  const entries = naming.dedupeDefinitionNames(rawEntries);
   const nameMap = naming.propertyTypeNamesForResource(entries);
   let recovered = 0;
   for (const e of entries) {

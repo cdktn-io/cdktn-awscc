@@ -94,17 +94,99 @@ interface ResolvedEntry {
 }
 
 /**
+ * Collision-detection key. Names are compared **case-insensitively** (iteration 5 finding: the Go
+ * target). jsii-pacmak's Go emitter writes one file per type, `<Class>_<NestedType>.go`, and
+ * `go build` rejects a package whose file names differ only in case ("case-insensitive file name
+ * collision") — as does the C# compiler for its PascalCase directories. Two names that are
+ * distinct to TypeScript, Python and Java (`HAClusterPrometheusExporterProperty` from a recovered
+ * CFN definition name, `HaClusterPrometheusExporterProperty` from the terraform leaf
+ * `ha_cluster_prometheus_exporter`) therefore have to be treated as *colliding* here. Same rule as
+ * the vendored cdktn parser's `uniqueBaseName`, which lowercases before comparing for exactly this
+ * reason; it was never carried into this file.
+ */
+function collisionKey(name: string): string {
+  return name.toLowerCase();
+}
+
+const cmpKey = (a: string, b: string): number => (a < b ? -1 : a > b ? 1 : 0);
+
+/**
+ * CFN can reuse one `TypeDefinition` at more than one property path (the same shared type used by
+ * two different attributes, possibly nested completely differently at each). The per-occurrence
+ * struct parser gives each occurrence its own struct — correctly, since each needs its own nesting
+ * shape — but that means two entries can carry the *same* recovered CFN definition name, and
+ * `propertyTypeNamesForResource` (per its own contract) never collapses two entries into one type.
+ * Left alone that ends in a `'2'` suffix, which no `NAME_GRAMMAR` pattern accepts.
+ *
+ * So the definition names are deduplicated *first*: at most one occurrence of each definition name
+ * survives, and every other occurrence's name is cleared so it falls back to a path-derived name.
+ * Two decisions make that collision-free in practice rather than only usually:
+ *
+ *  - **Which occurrences count as the same name** — `collisionKey`, i.e. case-insensitively, for
+ *    the same Go/C# reason `propertyTypeNamesForResource` compares that way. `HACluster` at one
+ *    path and `HaCluster` at another are one name here, not two.
+ *  - **Which occurrence keeps it** — the one that *needs* it. A cleared occurrence falls back to
+ *    its full attribute path, which is distinguishing exactly when the path has something to say
+ *    beyond its leaf; for a top-level attribute like `open_id_connect_config` the full path IS the
+ *    leaf, so its fallback (`OpenIdConnectConfigProperty`) is precisely the name that collides with
+ *    the recovered spelling (`OpenIDConnectConfigProperty`) and it has nothing else to fall back
+ *    to. Such an occurrence is "at risk" and is served first; the rest are ordered by path key.
+ *    Both inputs are the whole entry set, so the choice is order-independent.
+ *
+ * Each struct stays its own distinct type with its own correct nesting shape; only the *name* of
+ * the non-surviving occurrences changes, and only when the collision would otherwise occur.
+ */
+export function dedupeDefinitionNames(
+  entries: readonly PropertyTypePath[],
+): PropertyTypePath[] {
+  /** every recovered definition name in this resource, as the type name it would produce */
+  const recoveredNames = new Set(
+    entries
+      .filter((e) => e.definitionName !== undefined)
+      .map((e) => collisionKey(propertyTypeName(e.definitionName as string))),
+  );
+  const atRisk = (e: PropertyTypePath): boolean =>
+    recoveredNames.has(collisionKey(`${fullPathBase(e.path)}Property`));
+
+  const order = [...entries].sort(
+    (a, b) =>
+      Number(!atRisk(a)) - Number(!atRisk(b)) || cmpKey(a.path.join("."), b.path.join(".")),
+  );
+  const claimed = new Set<string>();
+  const kept = new Map<string, string | undefined>();
+  for (const e of order) {
+    const key = e.definitionName === undefined ? undefined : collisionKey(e.definitionName);
+    if (key !== undefined && !claimed.has(key)) {
+      claimed.add(key);
+      kept.set(e.path.join("."), e.definitionName);
+    } else {
+      kept.set(e.path.join("."), undefined);
+    }
+  }
+  return entries.map((e) => ({ path: e.path, definitionName: kept.get(e.path.join(".")) }));
+}
+
+/**
  * All nested-type names of ONE resource at once, keyed by `path.join('.')`. Deterministic and
  * order-independent — the fix for cdktn's order-dependent `uniqueClassName` (plan §3, risk 4).
  *
  * Two entries are put in the same collision cluster if EITHER their short names collide or their
- * full-path names collide (the latter catches paths that are only distinguishable in their
+ * full-path names collide — where "collide" means *case-insensitively* equal, see `collisionKey`
+ * (the latter catches paths that are only distinguishable in their
  * un-PascalCased, segment-boundary form, e.g. ['a_b','c'] vs ['a','b_c'] — see
  * step3.naming.test.ts "breaks a still-colliding tie…"). Every *fallback* entry in a colliding
  * cluster is re-derived from its full path; entries carrying a recovered CFN definition name keep
  * their short name. If names still collide after that, the entries are sorted by path key and
  * '2', '3', … are appended in that order — never first-seen order, so the result never depends on
  * input order.
+ *
+ * That last step is a **last-resort net**, not a routine outcome: a `'2'` suffix satisfies no
+ * `NAME_GRAMMAR` pattern (they all end at `Property`). It is reachable only for two *fallback*
+ * entries whose full paths PascalCase to the same name — ['a_b','c'] vs ['a','b_c'], see
+ * step3.naming.test.ts "breaks a still-colliding tie…" — which awscc 1.98.0 does not contain.
+ * Two entries carrying the same recovered CFN definition name, which used to reach it, no longer
+ * do: `dedupeDefinitionNames` clears all but one of them upstream. `iter5.go-case.test.ts` asserts
+ * the consequence over the committed tree — every emitted type name is inside the grammar.
  */
 export function propertyTypeNamesForResource(
   entries: readonly PropertyTypePath[],
@@ -132,7 +214,10 @@ export function propertyTypeNamesForResource(
   }
   for (let i = 0; i < items.length; i++) {
     for (let j = i + 1; j < items.length; j++) {
-      if (items[i].short === items[j].short || items[i].full === items[j].full) {
+      if (
+        collisionKey(items[i].short) === collisionKey(items[j].short) ||
+        collisionKey(items[i].full) === collisionKey(items[j].full)
+      ) {
         union(i, j);
       }
     }
@@ -161,9 +246,9 @@ export function propertyTypeNamesForResource(
     }));
     const bySubname = new Map<string, typeof assigned>();
     for (const a of assigned) {
-      const list = bySubname.get(a.name);
+      const list = bySubname.get(collisionKey(a.name));
       if (list) list.push(a);
-      else bySubname.set(a.name, [a]);
+      else bySubname.set(collisionKey(a.name), [a]);
     }
     for (const subgroup of bySubname.values()) {
       if (subgroup.length === 1) {

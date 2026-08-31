@@ -1072,7 +1072,7 @@ export function ccThemeVersionConfigurationTypographyPropertyToHclTerraform(stru
 }
 
 
-export function ccThemeUiColorPalettePropertyToTerraform(struct?: CcTheme.UiColorPaletteProperty): any {
+export function ccThemeVersionConfigurationUiColorPalettePropertyToTerraform(struct?: CcTheme.VersionConfigurationUiColorPaletteProperty): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -1082,7 +1082,7 @@ export function ccThemeUiColorPalettePropertyToTerraform(struct?: CcTheme.UiColo
 }
 
 
-export function ccThemeUiColorPalettePropertyToHclTerraform(struct?: CcTheme.UiColorPaletteProperty): any {
+export function ccThemeVersionConfigurationUiColorPalettePropertyToHclTerraform(struct?: CcTheme.VersionConfigurationUiColorPaletteProperty): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -3123,9 +3123,9 @@ export class VersionConfigurationTypographyPropertyOutputReference extends cdktn
         return this._fontFamilies;
     }
 }
-export interface UiColorPaletteProperty {
+export interface VersionConfigurationUiColorPaletteProperty {
 }
-export class UiColorPalettePropertyOutputReference extends cdktn.ComplexObject {
+export class VersionConfigurationUiColorPalettePropertyOutputReference extends cdktn.ComplexObject {
     private isEmptyObject = false;
 
     /**
@@ -3136,13 +3136,13 @@ export class UiColorPalettePropertyOutputReference extends cdktn.ComplexObject {
         super(terraformResource, terraformAttribute, false);
     }
 
-    public get internalValue(): UiColorPaletteProperty | undefined {
+    public get internalValue(): VersionConfigurationUiColorPaletteProperty | undefined {
         let hasAnyValues = this.isEmptyObject;
         const internalValueResult: any = {};
         return hasAnyValues ? internalValueResult : undefined;
     }
 
-    public set internalValue(value: UiColorPaletteProperty | undefined) {
+    public set internalValue(value: VersionConfigurationUiColorPaletteProperty | undefined) {
         if (value === undefined) {
             this.isEmptyObject = false;
         }
@@ -3278,7 +3278,7 @@ export class ConfigurationPropertyOutputReference extends cdktn.ComplexObject {
     }
 
     // ui_color_palette - computed: true, optional: false, required: false
-    private _uiColorPalette = new UiColorPalettePropertyOutputReference(this, "ui_color_palette");
+    private _uiColorPalette = new VersionConfigurationUiColorPalettePropertyOutputReference(this, "ui_color_palette");
     public get uiColorPalette() {
         return this._uiColorPalette;
     }

@@ -78,7 +78,7 @@ export interface CcTableProps extends cdktn.TerraformMetaArguments {
     *
     * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_table#on_demand_throughput CcTable#on_demand_throughput}
     */
-    readonly onDemandThroughput?: CcTable.OnDemandThroughputProperty2;
+    readonly onDemandThroughput?: CcTable.OnDemandThroughputProperty;
     /**
     * The settings used to enable point in time recovery.
     *
@@ -91,7 +91,7 @@ export interface CcTableProps extends cdktn.TerraformMetaArguments {
     *
     * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_table#provisioned_throughput CcTable#provisioned_throughput}
     */
-    readonly provisionedThroughput?: CcTable.ProvisionedThroughputProperty2;
+    readonly provisionedThroughput?: CcTable.ProvisionedThroughputProperty;
     /**
     * An AWS resource-based policy document in JSON format that will be attached to the table.
     *  When you attach a resource-based policy while creating a table, the policy application is *strongly consistent*.
@@ -145,7 +145,7 @@ export interface CcTableProps extends cdktn.TerraformMetaArguments {
     *
     * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_table#warm_throughput CcTable#warm_throughput}
     */
-    readonly warmThroughput?: CcTable.WarmThroughputProperty2;
+    readonly warmThroughput?: CcTable.WarmThroughputProperty;
 }
 
 /**
@@ -376,11 +376,11 @@ export class CcTable extends cdktn.TerraformResource {
     }
 
     // on_demand_throughput - computed: true, optional: true, required: false
-    private _onDemandThroughput = new CcTable.OnDemandThroughputProperty2OutputReference(this, "on_demand_throughput");
+    private _onDemandThroughput = new CcTable.OnDemandThroughputPropertyOutputReference(this, "on_demand_throughput");
     public get onDemandThroughput() {
         return this._onDemandThroughput;
     }
-    public putOnDemandThroughput(value: CcTable.OnDemandThroughputProperty2) {
+    public putOnDemandThroughput(value: CcTable.OnDemandThroughputProperty) {
         this._onDemandThroughput.internalValue = value;
     }
     public resetOnDemandThroughput() {
@@ -408,11 +408,11 @@ export class CcTable extends cdktn.TerraformResource {
     }
 
     // provisioned_throughput - computed: true, optional: true, required: false
-    private _provisionedThroughput = new CcTable.ProvisionedThroughputProperty2OutputReference(this, "provisioned_throughput");
+    private _provisionedThroughput = new CcTable.ProvisionedThroughputPropertyOutputReference(this, "provisioned_throughput");
     public get provisionedThroughput() {
         return this._provisionedThroughput;
     }
-    public putProvisionedThroughput(value: CcTable.ProvisionedThroughputProperty2) {
+    public putProvisionedThroughput(value: CcTable.ProvisionedThroughputProperty) {
         this._provisionedThroughput.internalValue = value;
     }
     public resetProvisionedThroughput() {
@@ -541,11 +541,11 @@ export class CcTable extends cdktn.TerraformResource {
     }
 
     // warm_throughput - computed: true, optional: true, required: false
-    private _warmThroughput = new CcTable.WarmThroughputProperty2OutputReference(this, "warm_throughput");
+    private _warmThroughput = new CcTable.WarmThroughputPropertyOutputReference(this, "warm_throughput");
     public get warmThroughput() {
         return this._warmThroughput;
     }
-    public putWarmThroughput(value: CcTable.WarmThroughputProperty2) {
+    public putWarmThroughput(value: CcTable.WarmThroughputProperty) {
         this._warmThroughput.internalValue = value;
     }
     public resetWarmThroughput() {
@@ -571,9 +571,9 @@ export class CcTable extends cdktn.TerraformResource {
             key_schema: cdktn.stringToTerraform(this._keySchema),
             kinesis_stream_specification: ccTableKinesisStreamSpecificationPropertyToTerraform(this._kinesisStreamSpecification.internalValue),
             local_secondary_indexes: cdktn.listMapper(ccTableLocalSecondaryIndexPropertyToTerraform, false)(this._localSecondaryIndexes.internalValue),
-            on_demand_throughput: ccTableOnDemandThroughputProperty2ToTerraform(this._onDemandThroughput.internalValue),
+            on_demand_throughput: ccTableOnDemandThroughputPropertyToTerraform(this._onDemandThroughput.internalValue),
             point_in_time_recovery_specification: ccTablePointInTimeRecoverySpecificationPropertyToTerraform(this._pointInTimeRecoverySpecification.internalValue),
-            provisioned_throughput: ccTableProvisionedThroughputProperty2ToTerraform(this._provisionedThroughput.internalValue),
+            provisioned_throughput: ccTableProvisionedThroughputPropertyToTerraform(this._provisionedThroughput.internalValue),
             resource_policy: ccTableResourcePolicyPropertyToTerraform(this._resourcePolicy.internalValue),
             sse_specification: ccTableSSESpecificationPropertyToTerraform(this._sseSpecification.internalValue),
             stream_specification: ccTableStreamSpecificationPropertyToTerraform(this._streamSpecification.internalValue),
@@ -581,7 +581,7 @@ export class CcTable extends cdktn.TerraformResource {
             table_name: cdktn.stringToTerraform(this._tableName),
             tags: cdktn.listMapper(ccTableTagsPropertyToTerraform, false)(this._tags.internalValue),
             time_to_live_specification: ccTableTimeToLiveSpecificationPropertyToTerraform(this._timeToLiveSpecification.internalValue),
-            warm_throughput: ccTableWarmThroughputProperty2ToTerraform(this._warmThroughput.internalValue),
+            warm_throughput: ccTableWarmThroughputPropertyToTerraform(this._warmThroughput.internalValue),
         };
     }
 
@@ -642,10 +642,10 @@ export class CcTable extends cdktn.TerraformResource {
                 storageClassType: "CcTable.LocalSecondaryIndexPropertyList",
             },
             on_demand_throughput: {
-                value: ccTableOnDemandThroughputProperty2ToHclTerraform(this._onDemandThroughput.internalValue),
+                value: ccTableOnDemandThroughputPropertyToHclTerraform(this._onDemandThroughput.internalValue),
                 isBlock: true,
                 type: "struct",
-                storageClassType: "CcTable.OnDemandThroughputProperty2",
+                storageClassType: "CcTable.OnDemandThroughputProperty",
             },
             point_in_time_recovery_specification: {
                 value: ccTablePointInTimeRecoverySpecificationPropertyToHclTerraform(this._pointInTimeRecoverySpecification.internalValue),
@@ -654,10 +654,10 @@ export class CcTable extends cdktn.TerraformResource {
                 storageClassType: "CcTable.PointInTimeRecoverySpecificationProperty",
             },
             provisioned_throughput: {
-                value: ccTableProvisionedThroughputProperty2ToHclTerraform(this._provisionedThroughput.internalValue),
+                value: ccTableProvisionedThroughputPropertyToHclTerraform(this._provisionedThroughput.internalValue),
                 isBlock: true,
                 type: "struct",
-                storageClassType: "CcTable.ProvisionedThroughputProperty2",
+                storageClassType: "CcTable.ProvisionedThroughputProperty",
             },
             resource_policy: {
                 value: ccTableResourcePolicyPropertyToHclTerraform(this._resourcePolicy.internalValue),
@@ -702,10 +702,10 @@ export class CcTable extends cdktn.TerraformResource {
                 storageClassType: "CcTable.TimeToLiveSpecificationProperty",
             },
             warm_throughput: {
-                value: ccTableWarmThroughputProperty2ToHclTerraform(this._warmThroughput.internalValue),
+                value: ccTableWarmThroughputPropertyToHclTerraform(this._warmThroughput.internalValue),
                 isBlock: true,
                 type: "struct",
-                storageClassType: "CcTable.WarmThroughputProperty2",
+                storageClassType: "CcTable.WarmThroughputProperty",
             },
         };
 
@@ -862,7 +862,7 @@ export function ccTableKeySchemaPropertyToHclTerraform(struct?: CcTable.KeySchem
 }
 
 
-export function ccTableOnDemandThroughputPropertyToTerraform(struct?: CcTable.OnDemandThroughputProperty | cdktn.IResolvable): any {
+export function ccTableGlobalSecondaryIndexesOnDemandThroughputPropertyToTerraform(struct?: CcTable.GlobalSecondaryIndexesOnDemandThroughputProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -874,7 +874,7 @@ export function ccTableOnDemandThroughputPropertyToTerraform(struct?: CcTable.On
 }
 
 
-export function ccTableOnDemandThroughputPropertyToHclTerraform(struct?: CcTable.OnDemandThroughputProperty | cdktn.IResolvable): any {
+export function ccTableGlobalSecondaryIndexesOnDemandThroughputPropertyToHclTerraform(struct?: CcTable.GlobalSecondaryIndexesOnDemandThroughputProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -936,7 +936,7 @@ export function ccTableProjectionPropertyToHclTerraform(struct?: CcTable.Project
 }
 
 
-export function ccTableProvisionedThroughputPropertyToTerraform(struct?: CcTable.ProvisionedThroughputProperty | cdktn.IResolvable): any {
+export function ccTableGlobalSecondaryIndexesProvisionedThroughputPropertyToTerraform(struct?: CcTable.GlobalSecondaryIndexesProvisionedThroughputProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -948,7 +948,7 @@ export function ccTableProvisionedThroughputPropertyToTerraform(struct?: CcTable
 }
 
 
-export function ccTableProvisionedThroughputPropertyToHclTerraform(struct?: CcTable.ProvisionedThroughputProperty | cdktn.IResolvable): any {
+export function ccTableGlobalSecondaryIndexesProvisionedThroughputPropertyToHclTerraform(struct?: CcTable.GlobalSecondaryIndexesProvisionedThroughputProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -973,7 +973,7 @@ export function ccTableProvisionedThroughputPropertyToHclTerraform(struct?: CcTa
 }
 
 
-export function ccTableWarmThroughputPropertyToTerraform(struct?: CcTable.WarmThroughputProperty | cdktn.IResolvable): any {
+export function ccTableGlobalSecondaryIndexesWarmThroughputPropertyToTerraform(struct?: CcTable.GlobalSecondaryIndexesWarmThroughputProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -985,7 +985,7 @@ export function ccTableWarmThroughputPropertyToTerraform(struct?: CcTable.WarmTh
 }
 
 
-export function ccTableWarmThroughputPropertyToHclTerraform(struct?: CcTable.WarmThroughputProperty | cdktn.IResolvable): any {
+export function ccTableGlobalSecondaryIndexesWarmThroughputPropertyToHclTerraform(struct?: CcTable.GlobalSecondaryIndexesWarmThroughputProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -1019,10 +1019,10 @@ export function ccTableGlobalSecondaryIndexPropertyToTerraform(struct?: CcTable.
         contributor_insights_specification: ccTableGlobalSecondaryIndexesContributorInsightsSpecificationPropertyToTerraform(struct!.contributorInsightsSpecification),
         index_name: cdktn.stringToTerraform(struct!.indexName),
         key_schema: cdktn.listMapper(ccTableKeySchemaPropertyToTerraform, false)(struct!.keySchema),
-        on_demand_throughput: ccTableOnDemandThroughputPropertyToTerraform(struct!.onDemandThroughput),
+        on_demand_throughput: ccTableGlobalSecondaryIndexesOnDemandThroughputPropertyToTerraform(struct!.onDemandThroughput),
         projection: ccTableProjectionPropertyToTerraform(struct!.projection),
-        provisioned_throughput: ccTableProvisionedThroughputPropertyToTerraform(struct!.provisionedThroughput),
-        warm_throughput: ccTableWarmThroughputPropertyToTerraform(struct!.warmThroughput),
+        provisioned_throughput: ccTableGlobalSecondaryIndexesProvisionedThroughputPropertyToTerraform(struct!.provisionedThroughput),
+        warm_throughput: ccTableGlobalSecondaryIndexesWarmThroughputPropertyToTerraform(struct!.warmThroughput),
     }
 }
 
@@ -1052,10 +1052,10 @@ export function ccTableGlobalSecondaryIndexPropertyToHclTerraform(struct?: CcTab
             storageClassType: "KeySchemaPropertyList",
         },
         on_demand_throughput: {
-            value: ccTableOnDemandThroughputPropertyToHclTerraform(struct!.onDemandThroughput),
+            value: ccTableGlobalSecondaryIndexesOnDemandThroughputPropertyToHclTerraform(struct!.onDemandThroughput),
             isBlock: true,
             type: "struct",
-            storageClassType: "OnDemandThroughputProperty",
+            storageClassType: "GlobalSecondaryIndexesOnDemandThroughputProperty",
         },
         projection: {
             value: ccTableProjectionPropertyToHclTerraform(struct!.projection),
@@ -1064,16 +1064,16 @@ export function ccTableGlobalSecondaryIndexPropertyToHclTerraform(struct?: CcTab
             storageClassType: "ProjectionProperty",
         },
         provisioned_throughput: {
-            value: ccTableProvisionedThroughputPropertyToHclTerraform(struct!.provisionedThroughput),
+            value: ccTableGlobalSecondaryIndexesProvisionedThroughputPropertyToHclTerraform(struct!.provisionedThroughput),
             isBlock: true,
             type: "struct",
-            storageClassType: "ProvisionedThroughputProperty",
+            storageClassType: "GlobalSecondaryIndexesProvisionedThroughputProperty",
         },
         warm_throughput: {
-            value: ccTableWarmThroughputPropertyToHclTerraform(struct!.warmThroughput),
+            value: ccTableGlobalSecondaryIndexesWarmThroughputPropertyToHclTerraform(struct!.warmThroughput),
             isBlock: true,
             type: "struct",
-            storageClassType: "WarmThroughputProperty",
+            storageClassType: "GlobalSecondaryIndexesWarmThroughputProperty",
         },
     };
 
@@ -1399,7 +1399,7 @@ export function ccTableLocalSecondaryIndexPropertyToHclTerraform(struct?: CcTabl
 }
 
 
-export function ccTableOnDemandThroughputProperty2ToTerraform(struct?: CcTable.OnDemandThroughputProperty2 | cdktn.IResolvable): any {
+export function ccTableOnDemandThroughputPropertyToTerraform(struct?: CcTable.OnDemandThroughputProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -1411,7 +1411,7 @@ export function ccTableOnDemandThroughputProperty2ToTerraform(struct?: CcTable.O
 }
 
 
-export function ccTableOnDemandThroughputProperty2ToHclTerraform(struct?: CcTable.OnDemandThroughputProperty2 | cdktn.IResolvable): any {
+export function ccTableOnDemandThroughputPropertyToHclTerraform(struct?: CcTable.OnDemandThroughputProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -1473,7 +1473,7 @@ export function ccTablePointInTimeRecoverySpecificationPropertyToHclTerraform(st
 }
 
 
-export function ccTableProvisionedThroughputProperty2ToTerraform(struct?: CcTable.ProvisionedThroughputProperty2 | cdktn.IResolvable): any {
+export function ccTableProvisionedThroughputPropertyToTerraform(struct?: CcTable.ProvisionedThroughputProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -1485,7 +1485,7 @@ export function ccTableProvisionedThroughputProperty2ToTerraform(struct?: CcTabl
 }
 
 
-export function ccTableProvisionedThroughputProperty2ToHclTerraform(struct?: CcTable.ProvisionedThroughputProperty2 | cdktn.IResolvable): any {
+export function ccTableProvisionedThroughputPropertyToHclTerraform(struct?: CcTable.ProvisionedThroughputProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -1769,7 +1769,7 @@ export function ccTableTimeToLiveSpecificationPropertyToHclTerraform(struct?: Cc
 }
 
 
-export function ccTableWarmThroughputProperty2ToTerraform(struct?: CcTable.WarmThroughputProperty2 | cdktn.IResolvable): any {
+export function ccTableWarmThroughputPropertyToTerraform(struct?: CcTable.WarmThroughputProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -1781,7 +1781,7 @@ export function ccTableWarmThroughputProperty2ToTerraform(struct?: CcTable.WarmT
 }
 
 
-export function ccTableWarmThroughputProperty2ToHclTerraform(struct?: CcTable.WarmThroughputProperty2 | cdktn.IResolvable): any {
+export function ccTableWarmThroughputPropertyToHclTerraform(struct?: CcTable.WarmThroughputProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -2235,7 +2235,7 @@ export class KeySchemaPropertyList extends cdktn.ComplexList {
         return new KeySchemaPropertyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
     }
 }
-export interface OnDemandThroughputProperty {
+export interface GlobalSecondaryIndexesOnDemandThroughputProperty {
     /**
     * Maximum number of read request units for the specified table.
     *  To specify a maximum ``OnDemandThroughput`` on your table, set the value of ``MaxReadRequestUnits`` as greater than or equal to 1. To remove the maximum ``OnDemandThroughput`` that is currently set on your table, set the value of ``MaxReadRequestUnits`` to -1.
@@ -2251,7 +2251,7 @@ export interface OnDemandThroughputProperty {
     */
     readonly maxWriteRequestUnits?: number;
 }
-export class OnDemandThroughputPropertyOutputReference extends cdktn.ComplexObject {
+export class GlobalSecondaryIndexesOnDemandThroughputPropertyOutputReference extends cdktn.ComplexObject {
     private isEmptyObject = false;
     private resolvableValue?: cdktn.IResolvable;
 
@@ -2263,7 +2263,7 @@ export class OnDemandThroughputPropertyOutputReference extends cdktn.ComplexObje
         super(terraformResource, terraformAttribute, false);
     }
 
-    public get internalValue(): OnDemandThroughputProperty | cdktn.IResolvable | undefined {
+    public get internalValue(): GlobalSecondaryIndexesOnDemandThroughputProperty | cdktn.IResolvable | undefined {
         if (this.resolvableValue) {
             return this.resolvableValue;
         }
@@ -2280,7 +2280,7 @@ export class OnDemandThroughputPropertyOutputReference extends cdktn.ComplexObje
         return hasAnyValues ? internalValueResult : undefined;
     }
 
-    public set internalValue(value: OnDemandThroughputProperty | cdktn.IResolvable | undefined) {
+    public set internalValue(value: GlobalSecondaryIndexesOnDemandThroughputProperty | cdktn.IResolvable | undefined) {
         if (value === undefined) {
             this.isEmptyObject = false;
             this.resolvableValue = undefined;
@@ -2431,7 +2431,7 @@ export class ProjectionPropertyOutputReference extends cdktn.ComplexObject {
         return this._projectionType;
     }
 }
-export interface ProvisionedThroughputProperty {
+export interface GlobalSecondaryIndexesProvisionedThroughputProperty {
     /**
     * The maximum number of strongly consistent reads consumed per second before DynamoDB returns a ``ThrottlingException``. For more information, see [Specifying Read and Write Requirements](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ProvisionedThroughput.html) in the *Amazon DynamoDB Developer Guide*.
     *  If read/write capacity mode is ``PAY_PER_REQUEST`` the value is set to 0.
@@ -2447,7 +2447,7 @@ export interface ProvisionedThroughputProperty {
     */
     readonly writeCapacityUnits?: number;
 }
-export class ProvisionedThroughputPropertyOutputReference extends cdktn.ComplexObject {
+export class GlobalSecondaryIndexesProvisionedThroughputPropertyOutputReference extends cdktn.ComplexObject {
     private isEmptyObject = false;
     private resolvableValue?: cdktn.IResolvable;
 
@@ -2459,7 +2459,7 @@ export class ProvisionedThroughputPropertyOutputReference extends cdktn.ComplexO
         super(terraformResource, terraformAttribute, false);
     }
 
-    public get internalValue(): ProvisionedThroughputProperty | cdktn.IResolvable | undefined {
+    public get internalValue(): GlobalSecondaryIndexesProvisionedThroughputProperty | cdktn.IResolvable | undefined {
         if (this.resolvableValue) {
             return this.resolvableValue;
         }
@@ -2476,7 +2476,7 @@ export class ProvisionedThroughputPropertyOutputReference extends cdktn.ComplexO
         return hasAnyValues ? internalValueResult : undefined;
     }
 
-    public set internalValue(value: ProvisionedThroughputProperty | cdktn.IResolvable | undefined) {
+    public set internalValue(value: GlobalSecondaryIndexesProvisionedThroughputProperty | cdktn.IResolvable | undefined) {
         if (value === undefined) {
             this.isEmptyObject = false;
             this.resolvableValue = undefined;
@@ -2527,7 +2527,7 @@ export class ProvisionedThroughputPropertyOutputReference extends cdktn.ComplexO
         return this._writeCapacityUnits;
     }
 }
-export interface WarmThroughputProperty {
+export interface GlobalSecondaryIndexesWarmThroughputProperty {
     /**
     * Represents the number of read operations your base table can instantaneously support.
     *
@@ -2541,7 +2541,7 @@ export interface WarmThroughputProperty {
     */
     readonly writeUnitsPerSecond?: number;
 }
-export class WarmThroughputPropertyOutputReference extends cdktn.ComplexObject {
+export class GlobalSecondaryIndexesWarmThroughputPropertyOutputReference extends cdktn.ComplexObject {
     private isEmptyObject = false;
     private resolvableValue?: cdktn.IResolvable;
 
@@ -2553,7 +2553,7 @@ export class WarmThroughputPropertyOutputReference extends cdktn.ComplexObject {
         super(terraformResource, terraformAttribute, false);
     }
 
-    public get internalValue(): WarmThroughputProperty | cdktn.IResolvable | undefined {
+    public get internalValue(): GlobalSecondaryIndexesWarmThroughputProperty | cdktn.IResolvable | undefined {
         if (this.resolvableValue) {
             return this.resolvableValue;
         }
@@ -2570,7 +2570,7 @@ export class WarmThroughputPropertyOutputReference extends cdktn.ComplexObject {
         return hasAnyValues ? internalValueResult : undefined;
     }
 
-    public set internalValue(value: WarmThroughputProperty | cdktn.IResolvable | undefined) {
+    public set internalValue(value: GlobalSecondaryIndexesWarmThroughputProperty | cdktn.IResolvable | undefined) {
         if (value === undefined) {
             this.isEmptyObject = false;
             this.resolvableValue = undefined;
@@ -2650,7 +2650,7 @@ export interface GlobalSecondaryIndexProperty {
     *
     * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_table#on_demand_throughput CcTable#on_demand_throughput}
     */
-    readonly onDemandThroughput?: OnDemandThroughputProperty;
+    readonly onDemandThroughput?: GlobalSecondaryIndexesOnDemandThroughputProperty;
     /**
     * Represents attributes that are copied (projected) from the table into the global secondary index. These are in addition to the primary key attributes and index key attributes, which are automatically projected.
     *
@@ -2663,13 +2663,13 @@ export interface GlobalSecondaryIndexProperty {
     *
     * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_table#provisioned_throughput CcTable#provisioned_throughput}
     */
-    readonly provisionedThroughput?: ProvisionedThroughputProperty;
+    readonly provisionedThroughput?: GlobalSecondaryIndexesProvisionedThroughputProperty;
     /**
     * Represents the warm throughput value (in read units per second and write units per second) for the specified secondary index. If you use this parameter, you must specify ``ReadUnitsPerSecond``, ``WriteUnitsPerSecond``, or both.
     *
     * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_table#warm_throughput CcTable#warm_throughput}
     */
-    readonly warmThroughput?: WarmThroughputProperty;
+    readonly warmThroughput?: GlobalSecondaryIndexesWarmThroughputProperty;
 }
 export class GlobalSecondaryIndexPropertyOutputReference extends cdktn.ComplexObject {
     private isEmptyObject = false;
@@ -2800,11 +2800,11 @@ export class GlobalSecondaryIndexPropertyOutputReference extends cdktn.ComplexOb
     }
 
     // on_demand_throughput - computed: true, optional: true, required: false
-    private _onDemandThroughput = new OnDemandThroughputPropertyOutputReference(this, "on_demand_throughput");
+    private _onDemandThroughput = new GlobalSecondaryIndexesOnDemandThroughputPropertyOutputReference(this, "on_demand_throughput");
     public get onDemandThroughput() {
         return this._onDemandThroughput;
     }
-    public putOnDemandThroughput(value: OnDemandThroughputProperty) {
+    public putOnDemandThroughput(value: GlobalSecondaryIndexesOnDemandThroughputProperty) {
         this._onDemandThroughput.internalValue = value;
     }
     public resetOnDemandThroughput() {
@@ -2832,11 +2832,11 @@ export class GlobalSecondaryIndexPropertyOutputReference extends cdktn.ComplexOb
     }
 
     // provisioned_throughput - computed: true, optional: true, required: false
-    private _provisionedThroughput = new ProvisionedThroughputPropertyOutputReference(this, "provisioned_throughput");
+    private _provisionedThroughput = new GlobalSecondaryIndexesProvisionedThroughputPropertyOutputReference(this, "provisioned_throughput");
     public get provisionedThroughput() {
         return this._provisionedThroughput;
     }
-    public putProvisionedThroughput(value: ProvisionedThroughputProperty) {
+    public putProvisionedThroughput(value: GlobalSecondaryIndexesProvisionedThroughputProperty) {
         this._provisionedThroughput.internalValue = value;
     }
     public resetProvisionedThroughput() {
@@ -2848,11 +2848,11 @@ export class GlobalSecondaryIndexPropertyOutputReference extends cdktn.ComplexOb
     }
 
     // warm_throughput - computed: true, optional: true, required: false
-    private _warmThroughput = new WarmThroughputPropertyOutputReference(this, "warm_throughput");
+    private _warmThroughput = new GlobalSecondaryIndexesWarmThroughputPropertyOutputReference(this, "warm_throughput");
     public get warmThroughput() {
         return this._warmThroughput;
     }
-    public putWarmThroughput(value: WarmThroughputProperty) {
+    public putWarmThroughput(value: GlobalSecondaryIndexesWarmThroughputProperty) {
         this._warmThroughput.internalValue = value;
     }
     public resetWarmThroughput() {
@@ -3780,7 +3780,7 @@ export class LocalSecondaryIndexPropertyList extends cdktn.ComplexList {
         return new LocalSecondaryIndexPropertyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
     }
 }
-export interface OnDemandThroughputProperty2 {
+export interface OnDemandThroughputProperty {
     /**
     * Maximum number of read request units for the specified table.
     *  To specify a maximum ``OnDemandThroughput`` on your table, set the value of ``MaxReadRequestUnits`` as greater than or equal to 1. To remove the maximum ``OnDemandThroughput`` that is currently set on your table, set the value of ``MaxReadRequestUnits`` to -1.
@@ -3796,7 +3796,7 @@ export interface OnDemandThroughputProperty2 {
     */
     readonly maxWriteRequestUnits?: number;
 }
-export class OnDemandThroughputProperty2OutputReference extends cdktn.ComplexObject {
+export class OnDemandThroughputPropertyOutputReference extends cdktn.ComplexObject {
     private isEmptyObject = false;
     private resolvableValue?: cdktn.IResolvable;
 
@@ -3808,7 +3808,7 @@ export class OnDemandThroughputProperty2OutputReference extends cdktn.ComplexObj
         super(terraformResource, terraformAttribute, false);
     }
 
-    public get internalValue(): OnDemandThroughputProperty2 | cdktn.IResolvable | undefined {
+    public get internalValue(): OnDemandThroughputProperty | cdktn.IResolvable | undefined {
         if (this.resolvableValue) {
             return this.resolvableValue;
         }
@@ -3825,7 +3825,7 @@ export class OnDemandThroughputProperty2OutputReference extends cdktn.ComplexObj
         return hasAnyValues ? internalValueResult : undefined;
     }
 
-    public set internalValue(value: OnDemandThroughputProperty2 | cdktn.IResolvable | undefined) {
+    public set internalValue(value: OnDemandThroughputProperty | cdktn.IResolvable | undefined) {
         if (value === undefined) {
             this.isEmptyObject = false;
             this.resolvableValue = undefined;
@@ -3970,7 +3970,7 @@ export class PointInTimeRecoverySpecificationPropertyOutputReference extends cdk
         return this._recoveryPeriodInDays;
     }
 }
-export interface ProvisionedThroughputProperty2 {
+export interface ProvisionedThroughputProperty {
     /**
     * The maximum number of strongly consistent reads consumed per second before DynamoDB returns a ``ThrottlingException``. For more information, see [Specifying Read and Write Requirements](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ProvisionedThroughput.html) in the *Amazon DynamoDB Developer Guide*.
     *  If read/write capacity mode is ``PAY_PER_REQUEST`` the value is set to 0.
@@ -3986,7 +3986,7 @@ export interface ProvisionedThroughputProperty2 {
     */
     readonly writeCapacityUnits?: number;
 }
-export class ProvisionedThroughputProperty2OutputReference extends cdktn.ComplexObject {
+export class ProvisionedThroughputPropertyOutputReference extends cdktn.ComplexObject {
     private isEmptyObject = false;
     private resolvableValue?: cdktn.IResolvable;
 
@@ -3998,7 +3998,7 @@ export class ProvisionedThroughputProperty2OutputReference extends cdktn.Complex
         super(terraformResource, terraformAttribute, false);
     }
 
-    public get internalValue(): ProvisionedThroughputProperty2 | cdktn.IResolvable | undefined {
+    public get internalValue(): ProvisionedThroughputProperty | cdktn.IResolvable | undefined {
         if (this.resolvableValue) {
             return this.resolvableValue;
         }
@@ -4015,7 +4015,7 @@ export class ProvisionedThroughputProperty2OutputReference extends cdktn.Complex
         return hasAnyValues ? internalValueResult : undefined;
     }
 
-    public set internalValue(value: ProvisionedThroughputProperty2 | cdktn.IResolvable | undefined) {
+    public set internalValue(value: ProvisionedThroughputProperty | cdktn.IResolvable | undefined) {
         if (value === undefined) {
             this.isEmptyObject = false;
             this.resolvableValue = undefined;
@@ -4775,7 +4775,7 @@ export class TimeToLiveSpecificationPropertyOutputReference extends cdktn.Comple
         return this._enabled;
     }
 }
-export interface WarmThroughputProperty2 {
+export interface WarmThroughputProperty {
     /**
     * Represents the number of read operations your base table can instantaneously support.
     *
@@ -4789,7 +4789,7 @@ export interface WarmThroughputProperty2 {
     */
     readonly writeUnitsPerSecond?: number;
 }
-export class WarmThroughputProperty2OutputReference extends cdktn.ComplexObject {
+export class WarmThroughputPropertyOutputReference extends cdktn.ComplexObject {
     private isEmptyObject = false;
     private resolvableValue?: cdktn.IResolvable;
 
@@ -4801,7 +4801,7 @@ export class WarmThroughputProperty2OutputReference extends cdktn.ComplexObject 
         super(terraformResource, terraformAttribute, false);
     }
 
-    public get internalValue(): WarmThroughputProperty2 | cdktn.IResolvable | undefined {
+    public get internalValue(): WarmThroughputProperty | cdktn.IResolvable | undefined {
         if (this.resolvableValue) {
             return this.resolvableValue;
         }
@@ -4818,7 +4818,7 @@ export class WarmThroughputProperty2OutputReference extends cdktn.ComplexObject 
         return hasAnyValues ? internalValueResult : undefined;
     }
 
-    public set internalValue(value: WarmThroughputProperty2 | cdktn.IResolvable | undefined) {
+    public set internalValue(value: WarmThroughputProperty | cdktn.IResolvable | undefined) {
         if (value === undefined) {
             this.isEmptyObject = false;
             this.resolvableValue = undefined;

@@ -6191,7 +6191,7 @@ export function ccBotBotLocalesIntentsSlotsValueElicitationSettingPromptSpecific
 }
 
 
-export function ccBotDtmfSpecificationPropertyToTerraform(struct?: CcBot.DtmfSpecificationProperty | cdktn.IResolvable): any {
+export function ccBotBotLocalesIntentsSlotsValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationDtmfSpecificationPropertyToTerraform(struct?: CcBot.BotLocalesIntentsSlotsValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationDtmfSpecificationProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -6205,7 +6205,7 @@ export function ccBotDtmfSpecificationPropertyToTerraform(struct?: CcBot.DtmfSpe
 }
 
 
-export function ccBotDtmfSpecificationPropertyToHclTerraform(struct?: CcBot.DtmfSpecificationProperty | cdktn.IResolvable): any {
+export function ccBotBotLocalesIntentsSlotsValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationDtmfSpecificationPropertyToHclTerraform(struct?: CcBot.BotLocalesIntentsSlotsValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationDtmfSpecificationProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -6242,20 +6242,20 @@ export function ccBotDtmfSpecificationPropertyToHclTerraform(struct?: CcBot.Dtmf
 }
 
 
-export function ccBotAudioAndDtmfInputSpecificationPropertyToTerraform(struct?: CcBot.AudioAndDtmfInputSpecificationProperty | cdktn.IResolvable): any {
+export function ccBotBotLocalesIntentsSlotsValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationPropertyToTerraform(struct?: CcBot.BotLocalesIntentsSlotsValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
     }
     return {
         audio_specification: ccBotBotLocalesIntentsSlotsValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationAudioSpecificationPropertyToTerraform(struct!.audioSpecification),
-        dtmf_specification: ccBotDtmfSpecificationPropertyToTerraform(struct!.dtmfSpecification),
+        dtmf_specification: ccBotBotLocalesIntentsSlotsValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationDtmfSpecificationPropertyToTerraform(struct!.dtmfSpecification),
         start_timeout_ms: cdktn.numberToTerraform(struct!.startTimeoutMs),
     }
 }
 
 
-export function ccBotAudioAndDtmfInputSpecificationPropertyToHclTerraform(struct?: CcBot.AudioAndDtmfInputSpecificationProperty | cdktn.IResolvable): any {
+export function ccBotBotLocalesIntentsSlotsValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationPropertyToHclTerraform(struct?: CcBot.BotLocalesIntentsSlotsValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -6268,10 +6268,10 @@ export function ccBotAudioAndDtmfInputSpecificationPropertyToHclTerraform(struct
             storageClassType: "BotLocalesIntentsSlotsValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationAudioSpecificationProperty",
         },
         dtmf_specification: {
-            value: ccBotDtmfSpecificationPropertyToHclTerraform(struct!.dtmfSpecification),
+            value: ccBotBotLocalesIntentsSlotsValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationDtmfSpecificationPropertyToHclTerraform(struct!.dtmfSpecification),
             isBlock: true,
             type: "struct",
-            storageClassType: "DtmfSpecificationProperty",
+            storageClassType: "BotLocalesIntentsSlotsValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationDtmfSpecificationProperty",
         },
         start_timeout_ms: {
             value: cdktn.numberToHclTerraform(struct!.startTimeoutMs),
@@ -6324,7 +6324,7 @@ export function ccBotPromptAttemptsSpecificationPropertyToTerraform(struct?: CcB
     return {
         allow_interrupt: cdktn.booleanToTerraform(struct!.allowInterrupt),
         allowed_input_types: ccBotBotLocalesIntentsSlotsValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAllowedInputTypesPropertyToTerraform(struct!.allowedInputTypes),
-        audio_and_dtmf_input_specification: ccBotAudioAndDtmfInputSpecificationPropertyToTerraform(struct!.audioAndDtmfInputSpecification),
+        audio_and_dtmf_input_specification: ccBotBotLocalesIntentsSlotsValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationPropertyToTerraform(struct!.audioAndDtmfInputSpecification),
         text_input_specification: ccBotBotLocalesIntentsSlotsValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationTextInputSpecificationPropertyToTerraform(struct!.textInputSpecification),
     }
 }
@@ -6349,10 +6349,10 @@ export function ccBotPromptAttemptsSpecificationPropertyToHclTerraform(struct?: 
             storageClassType: "BotLocalesIntentsSlotsValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAllowedInputTypesProperty",
         },
         audio_and_dtmf_input_specification: {
-            value: ccBotAudioAndDtmfInputSpecificationPropertyToHclTerraform(struct!.audioAndDtmfInputSpecification),
+            value: ccBotBotLocalesIntentsSlotsValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationPropertyToHclTerraform(struct!.audioAndDtmfInputSpecification),
             isBlock: true,
             type: "struct",
-            storageClassType: "AudioAndDtmfInputSpecificationProperty",
+            storageClassType: "BotLocalesIntentsSlotsValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationProperty",
         },
         text_input_specification: {
             value: ccBotBotLocalesIntentsSlotsValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationTextInputSpecificationPropertyToHclTerraform(struct!.textInputSpecification),
@@ -25293,7 +25293,7 @@ export class BotLocalesIntentsSlotsValueElicitationSettingPromptSpecificationPro
         return this._maxLengthMs;
     }
 }
-export interface DtmfSpecificationProperty {
+export interface BotLocalesIntentsSlotsValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationDtmfSpecificationProperty {
     /**
     * The DTMF character that clears the accumulated DTMF digits and immediately ends the input.
     *
@@ -25319,7 +25319,7 @@ export interface DtmfSpecificationProperty {
     */
     readonly maxLength?: number;
 }
-export class DtmfSpecificationPropertyOutputReference extends cdktn.ComplexObject {
+export class BotLocalesIntentsSlotsValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationDtmfSpecificationPropertyOutputReference extends cdktn.ComplexObject {
     private isEmptyObject = false;
     private resolvableValue?: cdktn.IResolvable;
 
@@ -25331,7 +25331,7 @@ export class DtmfSpecificationPropertyOutputReference extends cdktn.ComplexObjec
         super(terraformResource, terraformAttribute, false);
     }
 
-    public get internalValue(): DtmfSpecificationProperty | cdktn.IResolvable | undefined {
+    public get internalValue(): BotLocalesIntentsSlotsValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationDtmfSpecificationProperty | cdktn.IResolvable | undefined {
         if (this.resolvableValue) {
             return this.resolvableValue;
         }
@@ -25356,7 +25356,7 @@ export class DtmfSpecificationPropertyOutputReference extends cdktn.ComplexObjec
         return hasAnyValues ? internalValueResult : undefined;
     }
 
-    public set internalValue(value: DtmfSpecificationProperty | cdktn.IResolvable | undefined) {
+    public set internalValue(value: BotLocalesIntentsSlotsValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationDtmfSpecificationProperty | cdktn.IResolvable | undefined) {
         if (value === undefined) {
             this.isEmptyObject = false;
             this.resolvableValue = undefined;
@@ -25443,7 +25443,7 @@ export class DtmfSpecificationPropertyOutputReference extends cdktn.ComplexObjec
         return this._maxLength;
     }
 }
-export interface AudioAndDtmfInputSpecificationProperty {
+export interface BotLocalesIntentsSlotsValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationProperty {
     /**
     * Specifies the audio input specifications.
     *
@@ -25455,7 +25455,7 @@ export interface AudioAndDtmfInputSpecificationProperty {
     *
     * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#dtmf_specification CcBot#dtmf_specification}
     */
-    readonly dtmfSpecification?: DtmfSpecificationProperty;
+    readonly dtmfSpecification?: BotLocalesIntentsSlotsValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationDtmfSpecificationProperty;
     /**
     * Time for which a bot waits before assuming that the customer isn't going to speak or press a key. This timeout is shared between Audio and DTMF inputs.
     *
@@ -25463,7 +25463,7 @@ export interface AudioAndDtmfInputSpecificationProperty {
     */
     readonly startTimeoutMs?: number;
 }
-export class AudioAndDtmfInputSpecificationPropertyOutputReference extends cdktn.ComplexObject {
+export class BotLocalesIntentsSlotsValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationPropertyOutputReference extends cdktn.ComplexObject {
     private isEmptyObject = false;
     private resolvableValue?: cdktn.IResolvable;
 
@@ -25475,7 +25475,7 @@ export class AudioAndDtmfInputSpecificationPropertyOutputReference extends cdktn
         super(terraformResource, terraformAttribute, false);
     }
 
-    public get internalValue(): AudioAndDtmfInputSpecificationProperty | cdktn.IResolvable | undefined {
+    public get internalValue(): BotLocalesIntentsSlotsValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationProperty | cdktn.IResolvable | undefined {
         if (this.resolvableValue) {
             return this.resolvableValue;
         }
@@ -25496,7 +25496,7 @@ export class AudioAndDtmfInputSpecificationPropertyOutputReference extends cdktn
         return hasAnyValues ? internalValueResult : undefined;
     }
 
-    public set internalValue(value: AudioAndDtmfInputSpecificationProperty | cdktn.IResolvable | undefined) {
+    public set internalValue(value: BotLocalesIntentsSlotsValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationProperty | cdktn.IResolvable | undefined) {
         if (value === undefined) {
             this.isEmptyObject = false;
             this.resolvableValue = undefined;
@@ -25534,11 +25534,11 @@ export class AudioAndDtmfInputSpecificationPropertyOutputReference extends cdktn
     }
 
     // dtmf_specification - computed: true, optional: true, required: false
-    private _dtmfSpecification = new DtmfSpecificationPropertyOutputReference(this, "dtmf_specification");
+    private _dtmfSpecification = new BotLocalesIntentsSlotsValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationDtmfSpecificationPropertyOutputReference(this, "dtmf_specification");
     public get dtmfSpecification() {
         return this._dtmfSpecification;
     }
-    public putDtmfSpecification(value: DtmfSpecificationProperty) {
+    public putDtmfSpecification(value: BotLocalesIntentsSlotsValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationDtmfSpecificationProperty) {
         this._dtmfSpecification.internalValue = value;
     }
     public resetDtmfSpecification() {
@@ -25649,7 +25649,7 @@ export interface PromptAttemptsSpecificationProperty {
     *
     * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot#audio_and_dtmf_input_specification CcBot#audio_and_dtmf_input_specification}
     */
-    readonly audioAndDtmfInputSpecification?: AudioAndDtmfInputSpecificationProperty;
+    readonly audioAndDtmfInputSpecification?: BotLocalesIntentsSlotsValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationProperty;
     /**
     * Specifies the text input specifications.
     *
@@ -25751,11 +25751,11 @@ export class PromptAttemptsSpecificationPropertyOutputReference extends cdktn.Co
     }
 
     // audio_and_dtmf_input_specification - computed: true, optional: true, required: false
-    private _audioAndDtmfInputSpecification = new AudioAndDtmfInputSpecificationPropertyOutputReference(this, "audio_and_dtmf_input_specification");
+    private _audioAndDtmfInputSpecification = new BotLocalesIntentsSlotsValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationPropertyOutputReference(this, "audio_and_dtmf_input_specification");
     public get audioAndDtmfInputSpecification() {
         return this._audioAndDtmfInputSpecification;
     }
-    public putAudioAndDtmfInputSpecification(value: AudioAndDtmfInputSpecificationProperty) {
+    public putAudioAndDtmfInputSpecification(value: BotLocalesIntentsSlotsValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationProperty) {
         this._audioAndDtmfInputSpecification.internalValue = value;
     }
     public resetAudioAndDtmfInputSpecification() {

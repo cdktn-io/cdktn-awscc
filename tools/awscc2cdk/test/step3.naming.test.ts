@@ -13,6 +13,14 @@ beforeAll(async () => {
   naming = await import(path.join(toolRoot, "src", "naming"));
 });
 
+/** Every name a resource's nested types are given has to satisfy `NAME_GRAMMAR.propertyInterface`
+ * — which ends the pattern at `Property`, so a `'2'` disambiguation suffix fails it. */
+function expectGrammar(produced: Record<string, string>): void {
+  for (const name of Object.values(produced)) {
+    expect([name, naming.NAME_GRAMMAR.propertyInterface.test(name)]).toEqual([name, true]);
+  }
+}
+
 describe("className / propsName", () => {
   it("prefixes Cc and keeps CFN casing", () => {
     expect(naming.className("VPC")).toBe("CcVPC");
@@ -91,11 +99,94 @@ describe("propertyTypeNamesForResource", () => {
     expect(call([...entries].reverse())).toEqual(expected);
   });
 
+  it("treats names that differ only in case as colliding (iteration 5, Go target)", () => {
+    // awscc_applicationinsights_application: the recovered CFN definition name
+    // `HAClusterPrometheusExporter` and the terraform leaf `ha_cluster_prometheus_exporter` differ
+    // only in case, so pacmak-go wrote `CcApplication_HAClusterPrometheusExporterProperty.go` and
+    // `CcApplication_HaClusterPrometheusExporterProperty.go` into one package and `go build` died.
+    const entries = [
+      { path: ["monitoring", "ha_cluster_prometheus_exporter"] },
+      { path: ["exporter"], definitionName: "HAClusterPrometheusExporter" },
+    ];
+    const expected = {
+      "monitoring.ha_cluster_prometheus_exporter": "MonitoringHaClusterPrometheusExporterProperty",
+      exporter: "HAClusterPrometheusExporterProperty",
+    };
+    expect(call(entries)).toEqual(expected);
+    expect(call([...entries].reverse())).toEqual(expected);
+    expectGrammar(expected);
+  });
+
   it("produces names inside the nested-type grammar", () => {
-    const names: string[] = Object.values(
-      call([{ path: ["rules"] }, { path: ["lifecycle_configuration", "rules"] }]),
-    );
-    for (const n of names) expect(naming.NAME_GRAMMAR.propertyInterface.test(n)).toBe(true);
+    expectGrammar(call([{ path: ["rules"] }, { path: ["lifecycle_configuration", "rules"] }]));
+  });
+});
+
+describe("dedupeDefinitionNames", () => {
+  const dedupe = (entries: any[]) => naming.dedupeDefinitionNames(entries);
+  const names = (entries: any[]) => naming.propertyTypeNamesForResource(dedupe(entries));
+
+  it("leaves entries alone when no definition name is reused", () => {
+    const entries = [
+      { path: ["rule"], definitionName: "Rule" },
+      { path: ["b", "target"], definitionName: "Target" },
+    ];
+    // The result keeps the caller's entry order; only the definition names may change.
+    expect(dedupe(entries)).toEqual(entries);
+    expect(dedupe([...entries].reverse())).toEqual([...entries].reverse());
+  });
+
+  it("keeps one occurrence of a reused definition name and clears the rest", () => {
+    // awscc_appsync_graph_ql_api: CFN's single `OpenIDConnectConfig` TypeDefinition is reached at
+    // two attribute paths, so both occurrences recover the same name.
+    const entries = [
+      {
+        path: ["additional_authentication_providers", "open_id_connect_config"],
+        definitionName: "OpenIDConnectConfig",
+      },
+      { path: ["open_id_connect_config"], definitionName: "OpenIDConnectConfig" },
+    ];
+    // The top-level occurrence keeps it: its full attribute path is only its leaf, so the
+    // path-derived fallback it would otherwise get (`OpenIdConnectConfigProperty`) is exactly the
+    // name that case-collides. The nested occurrence has a path to fall back to.
+    const expected = {
+      open_id_connect_config: "OpenIDConnectConfigProperty",
+      "additional_authentication_providers.open_id_connect_config":
+        "AdditionalAuthenticationProvidersOpenIdConnectConfigProperty",
+    };
+    expect(names(entries)).toEqual(expected);
+    expect(names([...entries].reverse())).toEqual(expected);
+    expectGrammar(expected);
+  });
+
+  it("compares reused definition names case-insensitively (iteration 5, Go target)", () => {
+    // `HACluster` and `HaCluster` are one name to `go build`, so only one of them may survive —
+    // otherwise the loser reaches `propertyTypeNamesForResource` as a second recovered name and is
+    // driven out of the grammar with a `'2'` suffix.
+    const entries = [
+      { path: ["ha_cluster"], definitionName: "HACluster" },
+      { path: ["monitoring", "ha_cluster"], definitionName: "HaCluster" },
+    ];
+    const expected = {
+      ha_cluster: "HAClusterProperty",
+      "monitoring.ha_cluster": "MonitoringHaClusterProperty",
+    };
+    expect(names(entries)).toEqual(expected);
+    expect(names([...entries].reverse())).toEqual(expected);
+    expectGrammar(expected);
+  });
+
+  it("never leaves a digit-suffixed name behind for a reused definition name", () => {
+    const entries = [
+      { path: ["subject"], definitionName: "Subject" },
+      { path: ["csr_extensions", "access_location", "directory_name"], definitionName: "Subject" },
+      { path: ["vpc_config"], definitionName: "VpcConfig" },
+      { path: ["instance_groups", "override_vpc_config"], definitionName: "VpcConfig" },
+    ];
+    const produced = names(entries);
+    expect(Object.values(produced)).toEqual(expect.not.arrayContaining([expect.stringMatching(/[0-9]$/)]));
+    expectGrammar(produced);
+    expect(names([...entries].reverse())).toEqual(produced);
   });
 });
 

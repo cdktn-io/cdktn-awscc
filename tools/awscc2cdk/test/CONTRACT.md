@@ -332,6 +332,19 @@ export interface PropertyTypePath {
 }
 
 /**
+ * CFN reuses one `TypeDefinition` at several property paths, so two entries can carry the same
+ * `definitionName`. At most one of them may keep it; the others' `definitionName` is cleared so
+ * they take a path-derived name instead. Case-insensitive (`HACluster` and `HaCluster` are one
+ * name — see "Iteration 5 — Go target case collisions" below). The occurrence that keeps the name
+ * is the one whose full-path fallback would collide with it (typically the top-level attribute,
+ * whose full path is only its leaf), else the lowest path key. Order-independent; the returned
+ * array keeps the caller's entry order.
+ */
+export function dedupeDefinitionNames(
+  entries: readonly PropertyTypePath[],
+): PropertyTypePath[];
+
+/**
  * All nested-type names of ONE resource at once, keyed by `path.join('.')`.
  * Deterministic and order-independent — this is the fix for cdktn's order-dependent
  * `uniqueClassName` (plan §3, risk 4):
@@ -341,6 +354,12 @@ export interface PropertyTypePath {
  *      entries carrying a recovered CFN definition name keep the short name.
  *   3. if names still collide, the entries collide-sorted by path key keep the name, then '2', '3',
  *      … are appended in that sorted order.
+ * "Claimed by more than one entry" / "collide" means **case-insensitively** equal — see
+ * "Iteration 5 — Go target case collisions" below.
+ * Step 3 is a last-resort net, not a routine outcome: a '2' suffix satisfies no `NAME_GRAMMAR`
+ * pattern. It is reachable only for two *fallback* entries whose full paths PascalCase to the same
+ * name (['a_b','c'] vs ['a','b_c']), which awscc 1.98.0 does not contain — callers feed entries
+ * through `dedupeDefinitionNames` first, so no emitted name carries a digit suffix.
  */
 export function propertyTypeNamesForResource(
   entries: readonly PropertyTypePath[],
@@ -1593,3 +1612,161 @@ propagate here — not a policy this PR should second-guess. Fixed in place (one
 would mean either shipping the license bug back to unblock CI, or shipping a permanently-failing
 `pnpm test`; both are worse than a one-line correction to an assertion that now contradicts the
 rest of the repo's own licensing contract.
+
+# Iteration 5 — Go target case collisions (2026-08-31)
+
+Written after release dry-run `33354425298` (the first run with `PACMAK_TARGETS` including `go`)
+failed. `jsii`, `lazify` and pacmak's `js`, `python`, `java` and `dotnet` targets were all green;
+`go` was not:
+
+```
+Error: Command (go build -modfile local.go.mod ./...) failed with status 1:
+#STDERR> package .../cdktnawscc/awsapplicationinsights: case-insensitive file name collision:
+         "CcApplication_HAClusterPrometheusExporterProperty.go" and
+         "CcApplication_HaClusterPrometheusExporterProperty.go"
+#STDERR> package .../cdktnawscc/awsappsync: ... "CcGraphQLApi_OpenIDConnectConfigProperty.go" and
+         "CcGraphQLApi_OpenIdConnectConfigProperty.go"
+… awsathena, awscleanrooms, awslex, awsmsk, awsquicksight, awssagemaker
+```
+
+## The rule
+
+Two rules, both in `src/naming.ts`, both pure, deterministic and order-independent — every case is
+asserted with its input order reversed in `step3.naming.test.ts`.
+
+**1. `propertyTypeNamesForResource`'s collision detection is case-insensitive.** Two candidate
+names that differ only in case are one collision cluster, and the existing disambiguation —
+full-path re-derivation for fallback entries — resolves them exactly as it resolves an exact
+collision.
+
+**2. Reused CFN definition names are deduplicated first, by `dedupeDefinitionNames`.** CFN reaches
+one `TypeDefinition` at several property paths; our per-occurrence structs each recover the same
+name, and `propertyTypeNamesForResource` (per its contract) never collapses two entries into one
+type. At most one occurrence may keep the recovered name; the others have it cleared and take a
+path-derived name. Two decisions make that collision-free rather than only usually:
+
+- *Which occurrences count as the same name* — case-insensitively, for the same Go/C# reason as
+  rule 1, so `HACluster` at one path and `HaCluster` at another are one name, not two.
+- *Which occurrence keeps it* — the one that needs it. A cleared occurrence falls back to its full
+  attribute path, which distinguishes it exactly when the path says something beyond its leaf. For
+  a **top-level** attribute like `open_id_connect_config` the full path *is* the leaf, so its
+  fallback (`OpenIdConnectConfigProperty`) is precisely the name that case-collides with the
+  recovered spelling (`OpenIDConnectConfigProperty`) and it has nothing further to fall back to.
+  Such an occurrence is served first; the rest are ordered by path key.
+
+Rule 2 is what keeps the output inside `NAME_GRAMMAR`. `propertyTypeNamesForResource`'s trailing
+`'2'`, `'3'`, … suffix — which every grammar pattern rejects, since they all end at `Property` —
+is retained as a last-resort net for two *fallback* entries whose full paths PascalCase to the same
+name (`['a_b','c']` vs `['a','b_c']`), a shape awscc 1.98.0 does not contain. Before rule 2, a
+reused definition name reached it in 8 resources and produced 17 digit-suffixed types; after it,
+none do.
+
+This is the same rule the vendored cdktn parser applies in `Parser#uniqueBaseName`
+(`src/vendored/cdktn/resource-parser.ts`), for the same two languages, and it was simply never
+carried into `naming.ts` when this generator replaced `uniqueClassName`.
+
+Why it has to be a *naming* rule and not a pacmak flag: pacmak-go writes one file per type,
+`<Class>.go` / `<Class>_<NestedType>.go`, into a single package directory, and `go build` (and,
+for its PascalCase directories, the C# compiler) compares those names case-insensitively. The
+distinction that makes them legal in TypeScript, Python and Java is invisible there.
+
+## Acceptance
+
+1. `step3.naming.test.ts` — a `propertyTypeNamesForResource` case for a recovered CFN definition
+   name vs. a fallback that differs only in case (`HAClusterPrometheusExporter` vs. leaf
+   `ha_cluster_prometheus_exporter`: the fallback is re-derived from its full path, the definition
+   name is kept), and a `dedupeDefinitionNames` block — no reuse, a reused name (the AppSync
+   `OpenIDConnectConfig` shape), a reuse that differs only in case, and an assertion that no
+   reused name leaves a digit-suffixed one behind. Each is asserted with its input order reversed,
+   and every produced name is asserted against `NAME_GRAMMAR.propertyInterface`.
+2. `iter5.go-case.test.ts` — the permanent gate, and the thing that actually protects the Go
+   target: over the committed `generated/` tree, (a) no two exported types **within one module**
+   may have go base names (`<Type>` / `<Namespace>_<Type>`) that are equal case-insensitively, and
+   (b) every committed type name — each half of a `<Namespace>_<Type>` on its own — must match one
+   `NAME_GRAMMAR` pattern, which is what rules out a `'2'` suffix reaching the tree. Checked with
+   the TypeScript AST on the committed files, so it runs in ~2s under plain `pnpm test` and needs
+   neither a schema, a jsii run nor a Go toolchain. `build.yml` runs no pacmak, so without this
+   gate the Go target is unexercised until a release.
+3. Regenerating is expected to rename **13 nested types for rule 1** (across 8 modules) and
+   **17 for rule 2** (across 8 resources in 7 modules), each carrying its
+   `…PropertyOutputReference` companion, its `…PropertyList`/`…PropertyMap` wrapper where it has
+   one, and its `cc<Class><Name>PropertyToTerraform` / `…ToHclTerraform` mappers. This is a
+   public-API break, taken knowingly pre-1.0: the alternative is no Go artifact at all.
+
+## The exhaustive collision list (before the fix, awscc 1.98.0)
+
+`go build` stops at the first collision per package, so it named 8; the AST scan over `generated/`
+finds 13 (26 including the `…OutputReference` companions):
+
+| module | kept (recovered CFN name) | renamed to |
+|---|---|---|
+| `aws-applicationinsights` | `CcApplication.HAClusterPrometheusExporterProperty` | `ComponentMonitoringSettingsDefaultOverwriteComponentConfigurationConfigurationDetailsHaClusterPrometheusExporterProperty` |
+| `aws-applicationinsights` | `CcApplication.HANAPrometheusExporterProperty` | `ComponentMonitoringSettingsDefaultOverwriteComponentConfigurationConfigurationDetailsHanaPrometheusExporterProperty` |
+| `aws-applicationinsights` | `CcApplication.JMXPrometheusExporterProperty` | `ComponentMonitoringSettingsDefaultOverwriteComponentConfigurationConfigurationDetailsJmxPrometheusExporterProperty` |
+| `aws-applicationinsights` | `CcApplication.SQLServerPrometheusExporterProperty` | `ComponentMonitoringSettingsDefaultOverwriteComponentConfigurationConfigurationDetailsSqlServerPrometheusExporterProperty` |
+| `aws-appsync` | `CcGraphQLApi.OpenIDConnectConfigProperty` | `AdditionalAuthenticationProvidersOpenIdConnectConfigProperty` |
+| `aws-athena` | `CcWorkGroup.CloudWatchLoggingConfigurationProperty` | `WorkGroupConfigurationUpdatesMonitoringConfigurationCloudwatchLoggingConfigurationProperty` |
+| `aws-cleanrooms` | `CcCollaboration.MLMemberAbilitiesProperty` | `MembersMlMemberAbilitiesProperty` |
+| `aws-lex` | `CcBot.AudioAndDTMFInputSpecificationProperty` | `BotLocalesIntentsSlotsValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationProperty` |
+| `aws-lex` | `CcBot.DTMFSpecificationProperty` | `BotLocalesIntentsSlotsValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationDtmfSpecificationProperty` |
+| `aws-msk` | `CcCluster.CloudWatchLogsProperty` | `LoggingInfoBrokerLogsCloudwatchLogsProperty` |
+| `aws-quicksight` | `CcTheme.UIColorPaletteProperty` | `VersionConfigurationUiColorPaletteProperty` |
+| `aws-sagemaker` | `CcDomain.EFSFileSystemConfigProperty` | `DefaultUserSettingsCustomFileSystemConfigsEfsFileSystemConfigProperty` |
+| `aws-sagemaker` | `CcDomain.FSxLustreFileSystemConfigProperty` | `DefaultUserSettingsCustomFileSystemConfigsFsxLustreFileSystemConfigProperty` |
+
+Each `…Property` rename carries its `…PropertyOutputReference` companion and its
+`cc<Class><Name>PropertyToTerraform` / `…ToHclTerraform` mappers, hence 26 exported symbols over
+9 files (8 resource files + `MANIFEST.sha256`).
+
+In all 13 the surviving name is the recovered CFN definition name (the acronym-cased one, which is
+also what `aws-cdk-lib` calls it, so shape parity is unaffected) and the loser is a path-derived
+fallback, re-derived from its full attribute path. There is no "both sides carry a recovered
+definition name" case: two occurrences that recover the same CFN name never reach
+`propertyTypeNamesForResource` together, because `dedupeDefinitionNames` clears all but one of
+them first — `aws-appsync` included, where both paths resolve to the raw name `OpenIDConnectConfig`
+and the collision is the retained recovered name against the other occurrence's path-derived
+fallback, exactly like the other twelve. After the fix the scan reports **0** collision groups.
+
+## The digit-suffix list (rule 2, awscc 1.98.0)
+
+Independent of the Go target and older than it — these predate this iteration; the grammar
+assertion in `iter5.go-case.test.ts` is what surfaced them. In each, a reused CFN definition name
+was retained by the deeper occurrence, leaving the top-level one to fall back to its bare leaf and
+collide; rule 2 hands the name to the top-level occurrence and gives the deeper one a full-path
+name instead. `awscc_appsync_graph_ql_api` `OpenIdConnectConfigProperty2` is the type the
+review of this branch asked about.
+
+| resource | attribute path | before | after |
+|---|---|---|---|
+| `acmpca_certificate_authority` | `subject` | `SubjectProperty2` | `SubjectProperty` |
+| | `csr_extensions.…access_location.directory_name` | `SubjectProperty` | `DirectoryNameProperty` |
+| `amplify_app` | `basic_auth_config` | `BasicAuthConfigProperty2` | `BasicAuthConfigProperty` |
+| | `auto_branch_creation_config.basic_auth_config` | `BasicAuthConfigProperty` | `AutoBranchCreationConfigBasicAuthConfigProperty` |
+| `appsync_graph_ql_api` | `open_id_connect_config` | `OpenIdConnectConfigProperty2` | `OpenIDConnectConfigProperty` |
+| | `additional_authentication_providers.open_id_connect_config` | `OpenIDConnectConfigProperty` | `AdditionalAuthenticationProvidersOpenIdConnectConfigProperty` |
+| | `lambda_authorizer_config` | `LambdaAuthorizerConfigProperty2` | `LambdaAuthorizerConfigProperty` |
+| | `additional_authentication_providers.lambda_authorizer_config` | `LambdaAuthorizerConfigProperty` | `AdditionalAuthenticationProvidersLambdaAuthorizerConfigProperty` |
+| `dynamodb_global_table` | `key_schema`, `warm_throughput`, `read_on_demand_throughput_settings`, `write_on_demand_throughput_settings`, `write_provisioned_throughput_settings` | `…Property2` | `…Property` |
+| | the matching `global_secondary_indexes.*` | `…Property` | `GlobalSecondaryIndexes…Property` |
+| | `replicas.global_secondary_indexes.read_provisioned_throughput_settings` | `ReadProvisionedThroughputSettingsProperty2` | `ReadProvisionedThroughputSettingsProperty` |
+| | `read_provisioned_throughput_settings` | `ReadProvisionedThroughputSettingsProperty` | `GlobalReadProvisionedThroughputSettingsProperty` |
+| `dynamodb_table` | `on_demand_throughput`, `provisioned_throughput`, `warm_throughput` | `…Property2` | `…Property` |
+| | the matching `global_secondary_indexes.*` | `…Property` | `GlobalSecondaryIndexes…Property` |
+| `kinesisfirehose_delivery_stream` | `s3_destination_configuration` | `S3DestinationConfigurationProperty2` | `S3DestinationConfigurationProperty` |
+| | `amazon_open_search_serverless_destination_configuration.s3_configuration` | `S3DestinationConfigurationProperty` | `AmazonOpenSearchServerlessDestinationConfigurationS3ConfigurationProperty` |
+| `quicksight_data_source` | `data_source_parameters` | `DataSourceParametersProperty2` | `DataSourceParametersProperty` |
+| | `alternate_data_source_parameters` | `DataSourceParametersProperty` | `AlternateDataSourceParametersProperty` |
+| | `credentials.credential_pair.alternate_data_source_parameters` | `AlternateDataSourceParametersProperty` | `CredentialsCredentialPairAlternateDataSourceParametersProperty` |
+| | `vpc_connection_properties` | `VpcConnectionPropertiesProperty2` | `VpcConnectionPropertiesProperty` |
+| | `alternate_data_source_parameters.…identity_provider_vpc_connection_properties` | `VpcConnectionPropertiesProperty` | `AlternateDataSourceParametersSnowflakeParametersOAuthParametersIdentityProviderVpcConnectionPropertiesProperty` |
+| `sagemaker_cluster` | `vpc_config` | `VpcConfigProperty2` | `VpcConfigProperty` |
+| | `instance_groups.override_vpc_config` | `VpcConfigProperty` | `InstanceGroupsOverrideVpcConfigProperty` |
+| | `restricted_instance_groups.override_vpc_config` | `OverrideVpcConfigProperty` | `RestrictedInstanceGroupsOverrideVpcConfigProperty` |
+
+`quicksight_data_source` shows why the retention rule is "the occurrence whose fallback would
+collide" and not simply "the shallowest": `data_source_parameters` and
+`alternate_data_source_parameters` are **both** top-level and both recover `DataSourceParameters`,
+and only the first has a leaf that collides with it. `dynamodb_global_table` shows why the test is
+against *every* recovered name in the resource and not just the group's own: the loser's fallback
+there collides with a different definition name (`ReadProvisionedThroughputSettings`) than the one
+its group is fighting over (`GlobalReadProvisionedThroughputSettings`).

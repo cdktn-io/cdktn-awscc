@@ -826,7 +826,7 @@ export function ccCollaborationDataEncryptionMetadataPropertyToHclTerraform(stru
 }
 
 
-export function ccCollaborationMlMemberAbilitiesPropertyToTerraform(struct?: CcCollaboration.MlMemberAbilitiesProperty | cdktn.IResolvable): any {
+export function ccCollaborationMembersMlMemberAbilitiesPropertyToTerraform(struct?: CcCollaboration.MembersMlMemberAbilitiesProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -837,7 +837,7 @@ export function ccCollaborationMlMemberAbilitiesPropertyToTerraform(struct?: CcC
 }
 
 
-export function ccCollaborationMlMemberAbilitiesPropertyToHclTerraform(struct?: CcCollaboration.MlMemberAbilitiesProperty | cdktn.IResolvable): any {
+export function ccCollaborationMembersMlMemberAbilitiesPropertyToHclTerraform(struct?: CcCollaboration.MembersMlMemberAbilitiesProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -1103,7 +1103,7 @@ export function ccCollaborationMemberSpecificationPropertyToTerraform(struct?: C
         account_id: cdktn.stringToTerraform(struct!.accountId),
         display_name: cdktn.stringToTerraform(struct!.displayName),
         member_abilities: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.memberAbilities),
-        ml_member_abilities: ccCollaborationMlMemberAbilitiesPropertyToTerraform(struct!.mlMemberAbilities),
+        ml_member_abilities: ccCollaborationMembersMlMemberAbilitiesPropertyToTerraform(struct!.mlMemberAbilities),
         payment_configuration: ccCollaborationMembersPaymentConfigurationPropertyToTerraform(struct!.paymentConfiguration),
     }
 }
@@ -1134,10 +1134,10 @@ export function ccCollaborationMemberSpecificationPropertyToHclTerraform(struct?
             storageClassType: "stringList",
         },
         ml_member_abilities: {
-            value: ccCollaborationMlMemberAbilitiesPropertyToHclTerraform(struct!.mlMemberAbilities),
+            value: ccCollaborationMembersMlMemberAbilitiesPropertyToHclTerraform(struct!.mlMemberAbilities),
             isBlock: true,
             type: "struct",
-            storageClassType: "MlMemberAbilitiesProperty",
+            storageClassType: "MembersMlMemberAbilitiesProperty",
         },
         payment_configuration: {
             value: ccCollaborationMembersPaymentConfigurationPropertyToHclTerraform(struct!.paymentConfiguration),
@@ -1948,13 +1948,13 @@ export class DataEncryptionMetadataPropertyOutputReference extends cdktn.Complex
         return this._preserveNulls;
     }
 }
-export interface MlMemberAbilitiesProperty {
+export interface MembersMlMemberAbilitiesProperty {
     /**
     * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_collaboration#custom_ml_member_abilities CcCollaboration#custom_ml_member_abilities}
     */
     readonly customMlMemberAbilities?: string[];
 }
-export class MlMemberAbilitiesPropertyOutputReference extends cdktn.ComplexObject {
+export class MembersMlMemberAbilitiesPropertyOutputReference extends cdktn.ComplexObject {
     private isEmptyObject = false;
     private resolvableValue?: cdktn.IResolvable;
 
@@ -1966,7 +1966,7 @@ export class MlMemberAbilitiesPropertyOutputReference extends cdktn.ComplexObjec
         super(terraformResource, terraformAttribute, false);
     }
 
-    public get internalValue(): MlMemberAbilitiesProperty | cdktn.IResolvable | undefined {
+    public get internalValue(): MembersMlMemberAbilitiesProperty | cdktn.IResolvable | undefined {
         if (this.resolvableValue) {
             return this.resolvableValue;
         }
@@ -1979,7 +1979,7 @@ export class MlMemberAbilitiesPropertyOutputReference extends cdktn.ComplexObjec
         return hasAnyValues ? internalValueResult : undefined;
     }
 
-    public set internalValue(value: MlMemberAbilitiesProperty | cdktn.IResolvable | undefined) {
+    public set internalValue(value: MembersMlMemberAbilitiesProperty | cdktn.IResolvable | undefined) {
         if (value === undefined) {
             this.isEmptyObject = false;
             this.resolvableValue = undefined;
@@ -2580,7 +2580,7 @@ export interface MemberSpecificationProperty {
     /**
     * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_collaboration#ml_member_abilities CcCollaboration#ml_member_abilities}
     */
-    readonly mlMemberAbilities?: MlMemberAbilitiesProperty;
+    readonly mlMemberAbilities?: MembersMlMemberAbilitiesProperty;
     /**
     * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_collaboration#payment_configuration CcCollaboration#payment_configuration}
     */
@@ -2703,11 +2703,11 @@ export class MemberSpecificationPropertyOutputReference extends cdktn.ComplexObj
     }
 
     // ml_member_abilities - computed: true, optional: true, required: false
-    private _mlMemberAbilities = new MlMemberAbilitiesPropertyOutputReference(this, "ml_member_abilities");
+    private _mlMemberAbilities = new MembersMlMemberAbilitiesPropertyOutputReference(this, "ml_member_abilities");
     public get mlMemberAbilities() {
         return this._mlMemberAbilities;
     }
-    public putMlMemberAbilities(value: MlMemberAbilitiesProperty) {
+    public putMlMemberAbilities(value: MembersMlMemberAbilitiesProperty) {
         this._mlMemberAbilities.internalValue = value;
     }
     public resetMlMemberAbilities() {

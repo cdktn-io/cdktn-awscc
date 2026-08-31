@@ -1427,7 +1427,7 @@ export function ccClusterAuthorizerLogsPropertyToHclTerraform(struct?: CcCluster
 }
 
 
-export function ccClusterCloudwatchLogsPropertyToTerraform(struct?: CcCluster.CloudwatchLogsProperty | cdktn.IResolvable): any {
+export function ccClusterLoggingInfoBrokerLogsCloudwatchLogsPropertyToTerraform(struct?: CcCluster.LoggingInfoBrokerLogsCloudwatchLogsProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -1439,7 +1439,7 @@ export function ccClusterCloudwatchLogsPropertyToTerraform(struct?: CcCluster.Cl
 }
 
 
-export function ccClusterCloudwatchLogsPropertyToHclTerraform(struct?: CcCluster.CloudwatchLogsProperty | cdktn.IResolvable): any {
+export function ccClusterLoggingInfoBrokerLogsCloudwatchLogsPropertyToHclTerraform(struct?: CcCluster.LoggingInfoBrokerLogsCloudwatchLogsProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -1551,7 +1551,7 @@ export function ccClusterBrokerLogsPropertyToTerraform(struct?: CcCluster.Broker
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
     }
     return {
-        cloudwatch_logs: ccClusterCloudwatchLogsPropertyToTerraform(struct!.cloudwatchLogs),
+        cloudwatch_logs: ccClusterLoggingInfoBrokerLogsCloudwatchLogsPropertyToTerraform(struct!.cloudwatchLogs),
         firehose: ccClusterLoggingInfoBrokerLogsFirehosePropertyToTerraform(struct!.firehose),
         s3: ccClusterLoggingInfoBrokerLogsS3PropertyToTerraform(struct!.s3),
     }
@@ -1565,10 +1565,10 @@ export function ccClusterBrokerLogsPropertyToHclTerraform(struct?: CcCluster.Bro
     }
     const attrs = {
         cloudwatch_logs: {
-            value: ccClusterCloudwatchLogsPropertyToHclTerraform(struct!.cloudwatchLogs),
+            value: ccClusterLoggingInfoBrokerLogsCloudwatchLogsPropertyToHclTerraform(struct!.cloudwatchLogs),
             isBlock: true,
             type: "struct",
-            storageClassType: "CloudwatchLogsProperty",
+            storageClassType: "LoggingInfoBrokerLogsCloudwatchLogsProperty",
         },
         firehose: {
             value: ccClusterLoggingInfoBrokerLogsFirehosePropertyToHclTerraform(struct!.firehose),
@@ -4096,7 +4096,7 @@ export class AuthorizerLogsPropertyOutputReference extends cdktn.ComplexObject {
         return this._s3.internalValue;
     }
 }
-export interface CloudwatchLogsProperty {
+export interface LoggingInfoBrokerLogsCloudwatchLogsProperty {
     /**
     * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster#enabled CcCluster#enabled}
     */
@@ -4106,7 +4106,7 @@ export interface CloudwatchLogsProperty {
     */
     readonly logGroup?: string;
 }
-export class CloudwatchLogsPropertyOutputReference extends cdktn.ComplexObject {
+export class LoggingInfoBrokerLogsCloudwatchLogsPropertyOutputReference extends cdktn.ComplexObject {
     private isEmptyObject = false;
     private resolvableValue?: cdktn.IResolvable;
 
@@ -4118,7 +4118,7 @@ export class CloudwatchLogsPropertyOutputReference extends cdktn.ComplexObject {
         super(terraformResource, terraformAttribute, false);
     }
 
-    public get internalValue(): CloudwatchLogsProperty | cdktn.IResolvable | undefined {
+    public get internalValue(): LoggingInfoBrokerLogsCloudwatchLogsProperty | cdktn.IResolvable | undefined {
         if (this.resolvableValue) {
             return this.resolvableValue;
         }
@@ -4135,7 +4135,7 @@ export class CloudwatchLogsPropertyOutputReference extends cdktn.ComplexObject {
         return hasAnyValues ? internalValueResult : undefined;
     }
 
-    public set internalValue(value: CloudwatchLogsProperty | cdktn.IResolvable | undefined) {
+    public set internalValue(value: LoggingInfoBrokerLogsCloudwatchLogsProperty | cdktn.IResolvable | undefined) {
         if (value === undefined) {
             this.isEmptyObject = false;
             this.resolvableValue = undefined;
@@ -4396,7 +4396,7 @@ export interface BrokerLogsProperty {
     /**
     * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster#cloudwatch_logs CcCluster#cloudwatch_logs}
     */
-    readonly cloudwatchLogs?: CloudwatchLogsProperty;
+    readonly cloudwatchLogs?: LoggingInfoBrokerLogsCloudwatchLogsProperty;
     /**
     * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster#firehose CcCluster#firehose}
     */
@@ -4461,11 +4461,11 @@ export class BrokerLogsPropertyOutputReference extends cdktn.ComplexObject {
     }
 
     // cloudwatch_logs - computed: true, optional: true, required: false
-    private _cloudwatchLogs = new CloudwatchLogsPropertyOutputReference(this, "cloudwatch_logs");
+    private _cloudwatchLogs = new LoggingInfoBrokerLogsCloudwatchLogsPropertyOutputReference(this, "cloudwatch_logs");
     public get cloudwatchLogs() {
         return this._cloudwatchLogs;
     }
-    public putCloudwatchLogs(value: CloudwatchLogsProperty) {
+    public putCloudwatchLogs(value: LoggingInfoBrokerLogsCloudwatchLogsProperty) {
         this._cloudwatchLogs.internalValue = value;
     }
     public resetCloudwatchLogs() {
