@@ -9,6 +9,11 @@
  *
  * Not a "step" test (no numbered plan section covers this — it is the optional, pre-v0.1.0 change
  * the impact evaluation recommended), so it isn't prefixed `stepN.` like the plan-driven suites.
+ *
+ * The same flag also gates a second static, `CFN_ATTRIBUTE_NAME_MAP` (CFN `Fn::GetAtt` attribute
+ * name -> terraform attribute/attribute-path, `src/grouped/cfn-attribute-map.ts`) — its flag-on
+ * behaviour is covered by the sibling `cfn-attribute-map.test.ts`; the flag-off byte-identical
+ * check below covers both statics at once.
  */
 import { AWSCC_FQPN } from "./helpers/paths";
 import { loadGenerateGrouped, miniSchema, specDb, tmpDir, fileBytes } from "./helpers/emit";
@@ -43,6 +48,9 @@ describe("emitCfnPropertyMap (cdktn-planning#1)", () => {
 
     const vpcText = fs.readFileSync(path.join(outAbsent, "aws-ec2", "vpc.ts"), "utf8");
     expect(vpcText).not.toContain("CFN_PROPERTY_NAME_MAP");
+    // cdktn-planning#1 continued (src/grouped/cfn-attribute-map.ts): same flag, same guarantee —
+    // see cfn-attribute-map.test.ts for the flag-on behaviour.
+    expect(vpcText).not.toContain("CFN_ATTRIBUTE_NAME_MAP");
   });
 
   it("flag on: CcVPC.CFN_PROPERTY_NAME_MAP has the top-level Ipv4IpamPoolId entry and a nested VpcEncryptionControl entry", async () => {

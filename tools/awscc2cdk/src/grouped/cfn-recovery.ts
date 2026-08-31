@@ -118,3 +118,20 @@ export function resolvePropertiesAtPath(
 ): Record<string, { type: PropertyTypeRef }> | undefined {
   return walkToPath(db, cfnType, path)?.properties;
 }
+
+/**
+ * Resolves `cfnType`'s own `Fn::GetAtt` attribute names, verbatim (may contain dots — e.g.
+ * `CertificateAuthority.Data` — CFN's own struct-nesting notation for attribute names, distinct
+ * from a component-property path). For `src/grouped/cfn-attribute-map.ts` (cdktn-planning#1
+ * continued / RFC 002 reference-resolver context): unlike `resolvePropertiesAtPath`, this returns
+ * the resource's own attribute *names* directly rather than a properties object reached by walking
+ * a path — a dotted CFN attribute name is the attribute's own literal key, not something this
+ * function walks segment-by-segment (`cfn-attribute-map.ts` does that walk itself, over the
+ * *terraform* side, when the flattened name doesn't match). `undefined` only when `cfnType` has no
+ * matching CFN resource (unmatched awscc resource) — same condition `resolvePropertiesAtPath(db,
+ * cfnType, [])` returns `undefined` for.
+ */
+export function resolveResourceAttributeNames(db: SpecDatabase, cfnType: string): readonly string[] | undefined {
+  const resource = findResourceByCfnType(db, cfnType);
+  return resource ? Object.keys((resource as any).attributes ?? {}) : undefined;
+}

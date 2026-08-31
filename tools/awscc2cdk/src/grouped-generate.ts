@@ -23,6 +23,7 @@ import * as naming from "./naming";
 import { parseResourceAttributes } from "./grouped/resource-parser";
 import { resolveDefinitionName } from "./grouped/cfn-recovery";
 import { buildResourceCfnPropertyMap } from "./grouped/cfn-property-map";
+import { buildResourceCfnAttributeMap } from "./grouped/cfn-attribute-map";
 import { jsiircFor } from "./grouped/jsiirc";
 import { effectiveScopeMap } from "./scope-map";
 import { ResourceModel } from "./grouped/models";
@@ -55,11 +56,14 @@ export interface GenerateGroupedOptions {
    */
   readonly manifest?: boolean;
   /**
-   * cdktn-planning#1: emit a per-resource, jsii-visible `CFN_PROPERTY_NAME_MAP` static (CFN
-   * PascalCase property name -> terraform snake_case attribute name), for a Phase-2 bridge's
-   * `TerraformIntrinsicResolver` — see `src/grouped/cfn-property-map.ts`. Default `false`/absent,
-   * so the committed `generated/` tree and every baseline stay byte-identical until this is
-   * deliberately turned on.
+   * cdktn-planning#1: emit two per-resource, jsii-visible name-map statics for a Phase-2 bridge —
+   * `CFN_PROPERTY_NAME_MAP` (CFN PascalCase property name -> terraform snake_case attribute name,
+   * for a `TerraformIntrinsicResolver` — see `src/grouped/cfn-property-map.ts`) and
+   * `CFN_ATTRIBUTE_NAME_MAP` (CFN `Fn::GetAtt` attribute name -> terraform attribute/attribute-path,
+   * for RFC 002's reference-resolver seam — see `src/grouped/cfn-attribute-map.ts`). One flag gates
+   * both: they are the same feature's two halves (property-bag literals vs. `getAtt(...)` calls)
+   * and always ship together. Default `false`/absent, so the committed `generated/` tree and every
+   * baseline stay byte-identical until this is deliberately turned on.
    */
   readonly emitCfnPropertyMap?: boolean;
 }
@@ -230,6 +234,9 @@ function emitResourceFile(
   const cfnPropertyMap = emitCfnPropertyMap
     ? buildResourceCfnPropertyMap(db, planned.cfnType, parsed.attributes, structs)
     : undefined;
+  const cfnAttributeMap = emitCfnPropertyMap
+    ? buildResourceCfnAttributeMap(db, planned.cfnType, parsed.attributes, structs)
+    : undefined;
 
   const resourceModel = new ResourceModel({
     terraformType: planned.awsccName,
@@ -241,6 +248,7 @@ function emitResourceFile(
     schema: resourceSchema,
     providerVersion,
     cfnPropertyMap,
+    cfnAttributeMap,
   });
 
   const code = new CodeMaker();
