@@ -19,6 +19,14 @@ interface ResourceModelOptions {
   fqpn: FQPN;
   schema: Schema;
   providerVersion?: string;
+  /** cdktn-planning#1 (`GenerateGroupedOptions#emitCfnPropertyMap`): the resource's flat CFN
+   * PascalCase-name -> terraform snake_case-key map, or `undefined` when the flag is off or
+   * nothing matched — see `src/grouped/cfn-property-map.ts`. */
+  cfnPropertyMap?: Record<string, string>;
+  /** cdktn-planning#1 continued (same flag): the resource's CFN `Fn::GetAtt` attribute name ->
+   * terraform attribute (or attribute-path) map, or `undefined` when the flag is off or nothing
+   * matched — see `src/grouped/cfn-attribute-map.ts`. */
+  cfnAttributeMap?: Record<string, string>;
 }
 
 export class ResourceModel {
@@ -31,6 +39,8 @@ export class ResourceModel {
   public attributes: AttributeModel[];
   public schema: Schema;
   public readonly structs: Struct[];
+  public readonly cfnPropertyMap?: Record<string, string>;
+  public readonly cfnAttributeMap?: Record<string, string>;
 
   constructor(options: ResourceModelOptions) {
     this.className = options.className;
@@ -42,6 +52,8 @@ export class ResourceModel {
     this.provider = parseFQPN(options.fqpn).name;
     this.providerVersion = options.providerVersion;
     this.structs = options.structs;
+    this.cfnPropertyMap = options.cfnPropertyMap;
+    this.cfnAttributeMap = options.cfnAttributeMap;
   }
 
   /** The resource's own Props struct — always index 0 conceptually, kept separate from the

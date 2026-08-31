@@ -1,0 +1,112 @@
+// Copyright (c) cdktn-io
+// SPDX-License-Identifier: MPL-2.0
+/**
+ * Per-resource CFN `Fn::GetAtt` attribute name -> terraform attribute (or attribute-path) map —
+ * cdktn-planning#1 continued (see `cfn-property-map.ts` for the property-name half) / RFC 002's
+ * reference-resolver seam: a `{ Fn::GetAtt }` polyfill for an unmodified aws-cdk-lib
+ * `CfnResource.getAtt(...)` call needs to translate the literal CFN attribute name into the awscc
+ * terraform attribute that carries the same value — a mapping that, like the property map, is not
+ * mechanically derivable (`Ipv6CidrBlocks` -> `ipv_6_cidr_blocks`, not `ipv6_cidr_blocks`).
+ *
+ * Emission is opt-in, behind the same flag as the property map
+ * (`GenerateGroupedOptions#emitCfnPropertyMap`, default off) — see `grouped-generate.ts`.
+ */
+import type { SpecDatabase } from "@aws-cdk/service-spec-types";
+import { normalizeKey } from "../cfn-map";
+import { resolveResourceAttributeNames } from "./cfn-recovery";
+import type { AttributeModel } from "./models/attribute-model";
+import type { Struct } from "./models/struct";
+
+/**
+ * One flat map, keyed by the *verbatim* CFN attribute name (may contain dots — e.g.
+ * `CertificateAuthority.Data`, CFN's own struct-nesting notation for `Fn::GetAtt` names), valued
+ * by the corresponding terraform side:
+ *
+ * - a bare terraform attribute name (e.g. `certificate_authority_data`), when the CFN name
+ *   flattens (dots removed) onto one of the resource's own *top-level* terraform attributes; or
+ * - a dotted terraform attribute **path** (e.g. `vpc_encryption_control.vpc_id`), when the CFN
+ *   name is only reachable by walking the resource's nested terraform attribute tree one
+ *   dot-separated segment at a time. This is a path, not an attribute name — terraform attribute
+ *   names never themselves contain a dot — so a consumer must `.split('.')` the value and walk it,
+ *   the same way `cfn-recovery.ts` walks a terraform path down the CFN side.
+ *
+ * The flattened match is tried first, for every CFN attribute name, before the nested walk — not
+ * merged in afterwards. A CFN attribute name's dots are usually CFN's own struct-nesting notation,
+ * but some resources expose the *same* underlying value at both a flat and a dotted `Fn::GetAtt`
+ * name (EKS's `CertificateAuthorityData` alongside `CertificateAuthority.Data`, both -> terraform's
+ * single `certificate_authority_data`); trying the cheap flattened match first, independently per
+ * CFN name, resolves both spellings correctly without one falling back to a nested walk it doesn't
+ * need.
+ *
+ * Returns an empty object when `cfnType` is `""` (the awscc resource has no matching CFN resource
+ * — `grouped-generate.ts`'s fallback-plan case) or when the CFN resource has no attributes that
+ * find any terraform counterpart; callers skip emitting the static entirely in that case, so an
+ * unmatched (or attribute-less) resource's output is unaffected by the flag. Absence of a key is
+ * never a guess: a CFN attribute with no terraform counterpart found by either match is simply
+ * omitted, not approximated.
+ */
+export function buildResourceCfnAttributeMap(
+  db: SpecDatabase,
+  cfnType: string,
+  rootAttributes: readonly AttributeModel[],
+  structs: readonly Struct[],
+): Record<string, string> {
+  const result: Record<string, string> = {};
+  if (!cfnType) return result;
+
+  const cfnAttributeNames = resolveResourceAttributeNames(db, cfnType);
+  if (!cfnAttributeNames) return result;
+
+  const structByPath = new Map<string, Struct>();
+  for (const s of structs) structByPath.set(s.path.join("."), s);
+
+  for (const cfnAttributeName of cfnAttributeNames) {
+    const flatKey = normalizeKey(cfnAttributeName.replace(/\./g, ""));
+    const flatMatch = rootAttributes.find((a) => a.terraformName && normalizeKey(a.terraformName) === flatKey);
+    if (flatMatch) {
+      result[cfnAttributeName] = flatMatch.terraformName;
+      continue;
+    }
+
+    const walked = walkNestedPath(cfnAttributeName.split("."), rootAttributes, structByPath);
+    if (walked) {
+      result[cfnAttributeName] = walked.join(".");
+    }
+    // else: no terraform counterpart at any level for this CFN attribute — skip (per plan).
+  }
+
+  return result;
+}
+
+/**
+ * Walks `segments` (a CFN attribute name split on `.`) down the terraform attribute tree one
+ * segment at a time: matches each segment to a terraform attribute name by `normalizeKey` at the
+ * current level, then — for every segment but the last — descends into that attribute's nested
+ * struct (looked up by the terraform path walked so far) to resolve the next segment. Returns the
+ * matched terraform attribute names in order, or `undefined` the moment a segment fails to match,
+ * or a non-terminal segment's attribute has no nested struct for the walk to continue into (the
+ * terraform schema doesn't mirror the CFN definition's nesting at this point).
+ */
+function walkNestedPath(
+  segments: readonly string[],
+  rootAttributes: readonly AttributeModel[],
+  structByPath: ReadonlyMap<string, Struct>,
+): string[] | undefined {
+  let levelAttributes: readonly AttributeModel[] = rootAttributes;
+  const path: string[] = [];
+
+  for (let i = 0; i < segments.length; i++) {
+    const key = normalizeKey(segments[i]);
+    const match = levelAttributes.find((a) => a.terraformName && normalizeKey(a.terraformName) === key);
+    if (!match) return undefined;
+    path.push(match.terraformName);
+
+    if (i === segments.length - 1) break; // terminal segment: value found, nothing left to descend into
+
+    const struct = structByPath.get(path.join("."));
+    if (!struct) return undefined;
+    levelAttributes = struct.attributes;
+  }
+
+  return path;
+}

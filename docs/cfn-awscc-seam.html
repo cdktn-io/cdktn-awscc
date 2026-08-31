@@ -1,0 +1,550 @@
+<title>The CFN–awscc Seam</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+  :root {
+    color-scheme: light;
+    --ground: #f5f6f4;
+    --card: #fcfdfc;
+    --card-2: #eef1ee;
+    --ink: #17211d;
+    --ink-2: #4b5a53;
+    --ink-3: #7a877f;
+    --hairline: #dfe4e0;
+    --hairline-strong: #c8d0ca;
+    --accent: #0e6b60;          /* terraform / awscc world */
+    --accent-wash: #0e6b6014;
+    --cfn: #8f5f10;             /* CloudFormation world */
+    --cfn-wash: #8f5f1012;
+    --bad: #b3402e;
+    --series-1: #2a78d6;        /* engine bucket */
+    --series-2: #eb6834;        /* legacy bucket */
+    --series-3: #1baf7a;        /* active-service bucket */
+    --covered: #dbe0dc;         /* neutral "covered" segment */
+    --code-bg: #edf1ee;
+    --shadow: 0 1px 2px rgba(23,33,29,.05), 0 4px 16px rgba(23,33,29,.05);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --ground: #101513;
+      --card: #171d1a;
+      --card-2: #1d2420;
+      --ink: #e6ebe8;
+      --ink-2: #9fb0a8;
+      --ink-3: #6e7d75;
+      --hairline: #27302b;
+      --hairline-strong: #35413a;
+      --accent: #43c7b0;
+      --accent-wash: #43c7b01a;
+      --cfn: #d9a558;
+      --cfn-wash: #d9a55817;
+      --bad: #e07561;
+      --series-1: #3987e5;
+      --series-2: #d95926;
+      --series-3: #199e70;
+      --covered: #2b342f;
+      --code-bg: #1d2420;
+      --shadow: 0 1px 2px rgba(0,0,0,.3), 0 4px 16px rgba(0,0,0,.25);
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --ground: #101513;
+    --card: #171d1a;
+    --card-2: #1d2420;
+    --ink: #e6ebe8;
+    --ink-2: #9fb0a8;
+    --ink-3: #6e7d75;
+    --hairline: #27302b;
+    --hairline-strong: #35413a;
+    --accent: #43c7b0;
+    --accent-wash: #43c7b01a;
+    --cfn: #d9a558;
+    --cfn-wash: #d9a55817;
+    --bad: #e07561;
+    --series-1: #3987e5;
+    --series-2: #d95926;
+    --series-3: #199e70;
+    --covered: #2b342f;
+    --code-bg: #1d2420;
+    --shadow: 0 1px 2px rgba(0,0,0,.3), 0 4px 16px rgba(0,0,0,.25);
+  }
+
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font: 16px/1.65 "IBM Plex Sans", system-ui, -apple-system, sans-serif;
+    padding: 0 24px 96px;
+  }
+  .col { max-width: 70ch; margin: 0 auto; }
+  .wide { max-width: 1060px; margin: 0 auto; }
+
+  h1, h2, h3 { font-family: "Archivo", "IBM Plex Sans", sans-serif; letter-spacing: -.015em; text-wrap: balance; }
+  h1 { font-size: clamp(34px, 5.5vw, 52px); line-height: 1.06; font-weight: 700; margin: 14px 0 18px; }
+  h2 { font-size: 27px; font-weight: 650; margin: 0 0 6px; }
+  h3 { font-size: 18px; font-weight: 600; margin: 34px 0 10px; }
+  p { margin: 0 0 16px; }
+  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  strong { font-weight: 600; }
+
+  .eyebrow {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 12px; font-weight: 500;
+    text-transform: uppercase; letter-spacing: .14em;
+    color: var(--accent);
+  }
+  header.page { padding: 64px 0 8px; }
+  .lede { font-size: 19px; line-height: 1.6; color: var(--ink-2); max-width: 62ch; }
+  .meta {
+    display: flex; flex-wrap: wrap; gap: 6px 22px;
+    font-family: "IBM Plex Mono", monospace; font-size: 12.5px; color: var(--ink-3);
+    margin-top: 20px; padding-top: 14px; border-top: 1px solid var(--hairline);
+  }
+
+  code, .mono { font-family: "IBM Plex Mono", monospace; font-size: .88em; }
+  p code, li code, td code {
+    background: var(--code-bg);
+    border: 1px solid var(--hairline);
+    border-radius: 4px; padding: .08em .34em;
+    white-space: nowrap;
+  }
+  pre {
+    background: var(--card);
+    border: 1px solid var(--hairline);
+    border-radius: 10px;
+    padding: 18px 20px;
+    overflow-x: auto;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 13px; line-height: 1.62;
+    box-shadow: var(--shadow);
+    margin: 0 0 16px;
+  }
+  pre code { background: none; border: none; padding: 0; white-space: pre; }
+  .c-com { color: var(--ink-3); }
+  .c-cfn { color: var(--cfn); font-weight: 600; }
+  .c-tf  { color: var(--accent); font-weight: 600; }
+  .c-bad { color: var(--bad); font-weight: 600; }
+  .c-str { color: var(--ink-2); }
+
+  /* world tags */
+  .tag {
+    display: inline-block; font-family: "IBM Plex Mono", monospace;
+    font-size: 11px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase;
+    padding: 2px 8px; border-radius: 99px; vertical-align: 1px;
+  }
+  .tag.cfn { color: var(--cfn); background: var(--cfn-wash); border: 1px solid color-mix(in srgb, var(--cfn) 30%, transparent); }
+  .tag.tf  { color: var(--accent); background: var(--accent-wash); border: 1px solid color-mix(in srgb, var(--accent) 30%, transparent); }
+
+  section { margin-top: 72px; }
+  .sec-head { display: flex; align-items: baseline; gap: 16px; margin-bottom: 18px; }
+  .sec-num {
+    font-family: "Archivo", sans-serif; font-weight: 700; font-size: 15px;
+    color: var(--accent); border: 1.5px solid var(--accent);
+    border-radius: 99px; min-width: 30px; height: 30px;
+    display: inline-flex; align-items: center; justify-content: center;
+    flex: none; position: relative; top: -2px;
+  }
+  .sec-sub { color: var(--ink-2); font-size: 15.5px; margin: 0 0 22px; }
+
+  /* ---------- pipeline diagram ---------- */
+  .pipeline {
+    background: var(--card); border: 1px solid var(--hairline); border-radius: 14px;
+    box-shadow: var(--shadow);
+    padding: 26px 28px 22px; margin: 44px auto 0;
+    display: grid;
+    grid-template-columns: 1fr 34px 1.15fr 34px 1.35fr;
+    gap: 14px; align-items: stretch;
+  }
+  .pl-box {
+    border: 1px solid var(--hairline-strong); border-radius: 10px;
+    padding: 14px 16px; background: var(--ground);
+  }
+  .pl-box h4 { margin: 0 0 6px; font-family: "Archivo", sans-serif; font-size: 14.5px; font-weight: 650; }
+  .pl-box p { font-size: 12.5px; line-height: 1.5; color: var(--ink-2); margin: 0; }
+  .pl-box .mono { font-size: 11.5px; color: var(--ink-3); display: block; margin-top: 8px; }
+  .pl-arrow { display: flex; align-items: center; justify-content: center; color: var(--ink-3); font-size: 18px; }
+  .pl-targets { display: grid; gap: 12px; }
+  .pl-target { border-radius: 10px; padding: 12px 16px; border: 1px solid; }
+  .pl-target.cfn { border-color: color-mix(in srgb, var(--cfn) 35%, transparent); background: var(--cfn-wash); }
+  .pl-target.tf  { border-color: color-mix(in srgb, var(--accent) 35%, transparent); background: var(--accent-wash); }
+  .pl-target h4 { margin: 0 0 4px; font-family: "Archivo", sans-serif; font-size: 13.5px; font-weight: 650; }
+  .pl-target p { font-size: 12.5px; color: var(--ink-2); margin: 0; line-height: 1.5; }
+  .pl-caption { grid-column: 1 / -1; font-size: 12.5px; color: var(--ink-3); border-top: 1px solid var(--hairline); padding-top: 12px; margin-top: 6px; }
+  @media (max-width: 780px) {
+    .pipeline { grid-template-columns: 1fr; }
+    .pl-arrow { transform: rotate(90deg); }
+  }
+
+  /* ---------- stat row ---------- */
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin: 26px 0; }
+  .stat {
+    background: var(--card); border: 1px solid var(--hairline); border-radius: 10px;
+    padding: 14px 16px 12px; box-shadow: var(--shadow);
+  }
+  .stat .v { font-family: "Archivo", sans-serif; font-size: 30px; font-weight: 700; line-height: 1.1; }
+  .stat .v small { font-size: 16px; font-weight: 600; color: var(--ink-3); }
+  .stat .k { font-size: 12.5px; color: var(--ink-2); margin-top: 3px; line-height: 1.4; }
+
+  /* ---------- figures ---------- */
+  figure.fig {
+    background: var(--card); border: 1px solid var(--hairline); border-radius: 14px;
+    box-shadow: var(--shadow);
+    padding: 22px 26px 18px; margin: 28px 0;
+  }
+  figure.fig figcaption { font-family: "Archivo", sans-serif; font-weight: 650; font-size: 15px; margin-bottom: 2px; }
+  .fig-sub { font-size: 12.5px; color: var(--ink-2); margin: 0 0 18px; }
+
+  .bar { display: flex; height: 34px; border-radius: 6px; overflow: hidden; gap: 2px; background: var(--card); }
+  .seg { position: relative; min-width: 3px; cursor: default; transition: filter .12s; }
+  .seg:hover { filter: brightness(1.08); }
+  .seg:focus-visible { outline: 2px solid var(--ink); outline-offset: 1px; }
+  .zoomlink { border: none; border-left: 1px dashed var(--hairline-strong); border-right: 1px dashed var(--hairline-strong); height: 18px; margin: 0 0 0; }
+  .legend { display: flex; flex-wrap: wrap; gap: 8px 20px; margin-top: 14px; font-size: 13px; color: var(--ink-2); }
+  .legend .sw { display: inline-block; width: 11px; height: 11px; border-radius: 3px; margin-right: 7px; vertical-align: -1px; }
+  .legend b { color: var(--ink); font-weight: 600; }
+  .legend .n { font-family: "IBM Plex Mono", monospace; font-size: 12px; color: var(--ink-3); }
+
+  /* service bar list */
+  .rows { display: grid; grid-template-columns: max-content 1fr max-content; gap: 7px 12px; align-items: center; margin-top: 6px; }
+  .rows .lbl { font-family: "IBM Plex Mono", monospace; font-size: 12.5px; color: var(--ink); text-align: right; }
+  .rows .track { height: 15px; display: flex; align-items: center; }
+  .rows .fill { height: 15px; border-radius: 0 4px 4px 0; min-width: 3px; transition: filter .12s; }
+  .rows .fill:hover { filter: brightness(1.08); }
+  .rows .val { font-family: "IBM Plex Mono", monospace; font-size: 12px; color: var(--ink-2); font-variant-numeric: tabular-nums; }
+
+  details.tbl { margin-top: 16px; border-top: 1px solid var(--hairline); padding-top: 10px; }
+  details.tbl summary { font-size: 12.5px; color: var(--ink-3); cursor: pointer; }
+  details.tbl table { margin-top: 10px; }
+
+  table { border-collapse: collapse; width: 100%; font-size: 13.5px; }
+  th, td { text-align: left; padding: 8px 14px 8px 0; border-bottom: 1px solid var(--hairline); vertical-align: top; }
+  th { font-family: "Archivo", sans-serif; font-size: 12px; font-weight: 650; text-transform: uppercase; letter-spacing: .07em; color: var(--ink-2); }
+  td.num { font-variant-numeric: tabular-nums; font-family: "IBM Plex Mono", monospace; font-size: 12.5px; }
+  .tablewrap { overflow-x: auto; }
+
+  .callout {
+    border-left: 3px solid var(--accent); background: var(--accent-wash);
+    border-radius: 0 10px 10px 0; padding: 14px 18px; margin: 22px 0; font-size: 15px;
+  }
+  .callout.cfnside { border-left-color: var(--cfn); background: var(--cfn-wash); }
+  .callout p:last-child { margin-bottom: 0; }
+
+  ul { padding-left: 22px; margin: 0 0 16px; }
+  li { margin-bottom: 7px; }
+
+  .status { list-style: none; padding: 0; }
+  .status li { display: flex; gap: 12px; align-items: baseline; padding: 9px 0; border-bottom: 1px solid var(--hairline); margin: 0; }
+  .status .st { flex: none; font-family: "IBM Plex Mono", monospace; font-size: 11px; font-weight: 600; letter-spacing: .07em; text-transform: uppercase; padding: 2px 9px; border-radius: 99px; }
+  .st.done { color: var(--accent); background: var(--accent-wash); }
+  .st.wip { color: var(--cfn); background: var(--cfn-wash); }
+
+  #tip {
+    position: fixed; pointer-events: none; z-index: 10;
+    background: var(--ink); color: var(--ground);
+    font-family: "IBM Plex Mono", monospace; font-size: 12px;
+    padding: 6px 10px; border-radius: 6px; white-space: nowrap;
+    transform: translate(-50%, calc(-100% - 10px));
+    box-shadow: var(--shadow);
+  }
+  footer { margin-top: 80px; padding-top: 18px; border-top: 1px solid var(--hairline); font-size: 12.5px; color: var(--ink-3); }
+  footer p { margin-bottom: 6px; }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+
+<div class="col">
+  <header class="page">
+    <span class="eyebrow">cdktn · phase-2 bridge notes · 2026-08-31</span>
+    <h1>The CFN–awscc Seam</h1>
+    <p class="lede">One AWS CDK app, two synthesis targets: the CloudFormation template it was written for, or Terraform JSON built on <code>awscc_*</code> resources plus the cfncompat provider. This note measures the three places the seam actually binds — resource coverage, property-name casing, and nested values that dodge the generated mappers.</p>
+    <div class="meta">
+      <span>awscc&nbsp;1.98.0</span>
+      <span>@aws-cdk/aws-service-spec&nbsp;0.1.206</span>
+      <span>@cdktn/awscc generator (cdktn-awscc)</span>
+      <span>cfncompat&nbsp;0.3.0</span>
+    </div>
+  </header>
+</div>
+
+<div class="wide">
+  <div class="pipeline" role="img" aria-label="Pipeline: unmodified aws-cdk-lib L2 code flows through the Terrain synthesizer seams to either a CloudFormation template (default) or Terraform JSON on awscc plus cfncompat (new).">
+    <div class="pl-box">
+      <h4>AWS CDK L2 code</h4>
+      <p>Unmodified <code>aws-cdk-lib</code> constructs — including their internal <span class="tag cfn">PascalCase</span> property bags and intrinsics.</p>
+      <span class="mono">new kinesis.Stream(…)</span>
+    </div>
+    <div class="pl-arrow" aria-hidden="true">→</div>
+    <div class="pl-box">
+      <h4>The bridge (Terrain seams)</h4>
+      <p><code>IReferenceResolver</code> · <code>IIntrinsicResolver</code> · <code>IStackSynthesizer</code> + <code>AwsccL1Renderer</code> — RFC&nbsp;002. Property-key translation lives here, fed by a codegen-emitted map.</p>
+    </div>
+    <div class="pl-arrow" aria-hidden="true">→</div>
+    <div class="pl-targets">
+      <div class="pl-target cfn">
+        <h4>Default · CloudFormation template</h4>
+        <p><span class="tag cfn">PascalCase</span> properties, native <code>Fn::*</code> intrinsics, CFN engine deploys.</p>
+      </div>
+      <div class="pl-target tf">
+        <h4>New · Terraform JSON</h4>
+        <p><span class="tag tf">snake_case</span> <code>awscc_*</code> resources (Cloud Control API) + <code>provider::cfncompat::*</code> functions, data sources, and the custom-resource polyfill.</p>
+      </div>
+    </div>
+    <div class="pl-caption">Both targets consume the same construct tree. The CFN path is a lookup back into the spec the L1s were generated from; the Terraform path must cross naming worlds — that crossing is this note's subject.</div>
+  </div>
+</div>
+
+<div class="col">
+  <section id="gap">
+    <div class="sec-head"><span class="sec-num">1</span><h2>Where the 15% coverage gap lives</h2></div>
+    <p class="sec-sub">awscc 1.98.0 resources diffed against the 1,747 CFN resource types in <code>@aws-cdk/aws-service-spec</code> 0.1.206 — the exact spec aws-cdk-lib L1s are generated from.</p>
+
+    <div class="stats">
+      <div class="stat"><div class="v">1,747</div><div class="k">CFN resource types in the service spec</div></div>
+      <div class="stat"><div class="v">1,494</div><div class="k">awscc resources (Cloud Control)</div></div>
+      <div class="stat"><div class="v">1,493</div><div class="k">matched pairs (85.5% of CFN)</div></div>
+      <div class="stat"><div class="v">254 <small>/ 14.5%</small></div><div class="k">CFN types with no awscc resource</div></div>
+    </div>
+
+    <p>The gap is not one thing. It splits into three buckets with very different consequences for the bridge:</p>
+  </section>
+</div>
+
+<div class="wide">
+  <figure class="fig">
+    <figcaption>The 254 missing types, decomposed</figcaption>
+    <p class="fig-sub">Top bar: all 1,747 CFN types. Bottom bar: the 254-type gap at expanded scale.</p>
+    <div class="bar" aria-label="All CFN types: 1493 covered, 12 template-engine, 105 legacy services, 137 active-service gaps">
+      <div class="seg" tabindex="0" style="flex:1493; background:var(--covered)" data-tip="Covered by awscc — 1,493 (85.5%)"></div>
+      <div class="seg" tabindex="0" style="flex:12; background:var(--series-1)" data-tip="Template-engine constructs — 12"></div>
+      <div class="seg" tabindex="0" style="flex:105; background:var(--series-2)" data-tip="Legacy / closed services — 105"></div>
+      <div class="seg" tabindex="0" style="flex:137; background:var(--series-3)" data-tip="Gaps in active services — 137"></div>
+    </div>
+    <div class="zoomlink" style="margin-left:85.5%" aria-hidden="true"></div>
+    <div class="bar" aria-label="Gap only: 12 template-engine, 105 legacy, 137 active-service">
+      <div class="seg" tabindex="0" style="flex:12; background:var(--series-1)" data-tip="Template-engine constructs — 12 (4.7% of gap)"></div>
+      <div class="seg" tabindex="0" style="flex:105; background:var(--series-2)" data-tip="Legacy / closed services — 105 (41.3% of gap)"></div>
+      <div class="seg" tabindex="0" style="flex:137; background:var(--series-3)" data-tip="Gaps in active services — 137 (53.9% of gap)"></div>
+    </div>
+    <div class="legend">
+      <span><span class="sw" style="background:var(--covered)"></span><b>Covered</b> <span class="n">1,493</span></span>
+      <span><span class="sw" style="background:var(--series-1)"></span><b>Template-engine constructs</b> <span class="n">12</span></span>
+      <span><span class="sw" style="background:var(--series-2)"></span><b>Legacy / closed services</b> <span class="n">105</span></span>
+      <span><span class="sw" style="background:var(--series-3)"></span><b>Gaps in active services</b> <span class="n">137</span></span>
+    </div>
+    <details class="tbl"><summary>Table view</summary>
+      <table>
+        <tr><th>Bucket</th><th>Types</th><th>Share of CFN spec</th></tr>
+        <tr><td>Covered by awscc</td><td class="num">1,493</td><td class="num">85.5%</td></tr>
+        <tr><td>Template-engine constructs</td><td class="num">12</td><td class="num">0.7%</td></tr>
+        <tr><td>Legacy / closed services</td><td class="num">105</td><td class="num">6.0%</td></tr>
+        <tr><td>Gaps in active services</td><td class="num">137</td><td class="num">7.8%</td></tr>
+      </table>
+    </details>
+  </figure>
+</div>
+
+<div class="col">
+  <h3>Bucket 1 — template-engine constructs (12): not a gap for the bridge</h3>
+  <p>Seven <code>AWS::Serverless::*</code> types (the SAM transform) and five <code>AWS::CloudFormation::*</code> types (<code>CustomResource</code>, <code>WaitCondition</code>/<code>Handle</code>, <code>Macro</code>, <code>ChangeSet</code>). These are features of the CloudFormation <em>engine</em>, not provisionable cloud resources, so Cloud Control can never expose them. The bridge already owns them elsewhere: the custom-resource protocol is <code>cfncompat_custom_resource</code> (a faithful polyfill — Lambda/SNS service tokens, pre-signed S3 ResponseURL), while <code>Fn::Transform</code>/macros throw a clear synth-time error per RFC&nbsp;002.</p>
+
+  <h3>Bucket 2 — legacy and closed services (105): mostly noise</h3>
+  <p>29 services have <em>zero</em> awscc coverage, and nearly all are deprecated, superseded, or closed to new customers: WAF Classic and WAFRegional, OpsWorks, Greengrass&nbsp;v1 (v2 is covered), Pinpoint and PinpointEmail, App&nbsp;Mesh, Cloud9, CodeCommit, CodeStar, the pre-OpenSearch <code>Elasticsearch</code> domain, Kinesis&nbsp;Analytics&nbsp;v1, MediaStore, SimpleDB, Device Farm, IoT&nbsp;Things&nbsp;Graph, Alexa&nbsp;ASK. AWS stopped investing before these ever got registry provisioning support. A handful still have aws-cdk-lib L2s; apps that use those can't bridge, which is an acceptable, documentable exclusion.</p>
+
+  <h3>Bucket 3 — gaps in active services (137): the real edges</h3>
+  <p>The bucket that actually bounds the bridge. Three patterns inside it deserve different handling:</p>
+  <ul>
+    <li><strong>Heavyweight resources missing outright.</strong> <code>AWS::CloudFront::Distribution</code> is the sharpest: awscc ships it as a read-only <em>data source</em> but not a resource, so the entire CloudFront L2 surface can't bridge. Alongside it: <code>Cognito::UserPool</code>, <code>WAFv2::WebACL</code>/<code>RuleGroup</code>, <code>CodeBuild::Project</code>, <code>EKS::Nodegroup</code>, <code>FSx::FileSystem</code>, <code>EMR::Cluster</code>, <code>MediaLive::Channel</code>, <code>Glue::Table</code>/<code>Connection</code>, DocDB and DAX clusters, DMS replication instances.</li>
+    <li><strong>Pre-registry attachment & policy types.</strong> <code>IAM::Policy</code> (inline), <code>SQS::QueuePolicy</code>, <code>SNS::TopicPolicy</code>, <code>IAM::AccessKey</code>, <code>EC2::NetworkAclEntry</code>, <code>Route53::RecordSetGroup</code>, the RDS/ElastiCache/Redshift security-group trio. These use CFN's old resource model and never got Cloud Control semantics. They matter far beyond their count: every L2 <code>grant*()</code> call materializes a <code>QueuePolicy</code>/<code>TopicPolicy</code>, and RFC&nbsp;002 already plans 1:N decomposition for <code>IAM::Policy</code> — this list says that pattern needs to generalize.</li>
+    <li><strong>Sub-resource stragglers</strong> in otherwise-covered services: AppSync's <code>GraphQLSchema</code>/<code>ApiKey</code>, EC2's Client&nbsp;VPN family, Config's <code>ConfigurationRecorder</code>/<code>DeliveryChannel</code>, KinesisAnalyticsV2 outputs, LakeFormation permissions.</li>
+  </ul>
+  <p>One curiosity runs the other way: exactly one awscc resource (<code>awscc_datasync_storage_system</code>) no longer exists in the CFN spec — a retired type the provider still carries.</p>
+
+  <h3>Weighting the gap by actual L2 usage</h3>
+  <p>Raw counts overstate the problem: a missing type only breaks the <em>drop-in L2 bridge</em> if hand-written aws-cdk-lib L2 code actually constructs its L1. Measured against aws-cdk-lib&nbsp;2.267.0 (grep of every module's non-generated <code>lib/</code> for <code>new …Cfn&lt;X&gt;(</code>, including the lazified compile pattern <code>new(mod_1()).Cfn&lt;X&gt;(</code>):</p>
+  <div class="tablewrap"><table>
+    <tr><th>Of the 254 missing types…</th><th>Count</th><th>Meaning for the bridge</th></tr>
+    <tr><td><strong>Constructed by hand-written L2 code</strong></td><td class="num">37</td><td>bridging any app that uses these L2 paths fails — the real blocker list</td></tr>
+    <tr><td>L1-only (module exists, only the generated L1 mentions it)</td><td class="num">212</td><td>breaks only apps that instantiate the <code>Cfn*</code> L1 directly</td></tr>
+    <tr><td>No aws-cdk-lib module at all</td><td class="num">5</td><td>nothing to bridge</td></tr>
+  </table></div>
+  <p>And the 37 split again: <strong>9 belong to deprecated L2 surfaces</strong> (all seven App&nbsp;Mesh types, <code>CodeCommit::Repository</code>, the pre-OpenSearch <code>Elasticsearch::Domain</code>) where breaking is acceptable and documentable — leaving <strong>28 types in maintained L2s</strong> as the true drop-in blockers:</p>
+  <ul>
+    <li><strong>Widest blast radius:</strong> <code>SQS::QueuePolicy</code> and <code>SNS::TopicPolicy</code> — synthesized implicitly by nearly every <code>grant*()</code>/subscription pattern on queues and topics, not just by apps that "use" those modules.</li>
+    <li><strong>Whole-module blockers:</strong> <code>CloudFront::Distribution</code> (the entire CloudFront L2), <code>Cognito::UserPool</code>, <code>CodeBuild::Project</code>/<code>ReportGroup</code>/<code>SourceCredential</code>, <code>EKS::Nodegroup</code>, <code>FSx::FileSystem</code>, DocDB's cluster/instance/parameter-group trio.</li>
+    <li><strong>Feature-path blockers:</strong> EC2's Client-VPN family (4 types) plus <code>NetworkAclEntry</code> and <code>VPNGatewayRoutePropagation</code>, <code>ElasticLoadBalancingV2::ListenerCertificate</code>, <code>IAM::AccessKey</code>/<code>UserToGroupAddition</code>, <code>SES::ReceiptRule</code>, <code>ServiceDiscovery::HttpNamespace</code>/<code>Instance</code>, <code>Logs::Transformer</code>, <code>AppSync::ApiKey</code>/<code>GraphQLSchema</code>, <code>BedrockAgentCore::GatewayTarget</code>.</li>
+  </ul>
+</div>
+
+<div class="wide">
+  <figure class="fig">
+    <figcaption>Services with the most missing types</figcaption>
+    <p class="fig-sub">Top 12 services by missing-type count, colored by bucket. Legacy services dominate by count; active-service rows are the ones that constrain real apps.</p>
+    <div class="rows" id="svcRows"></div>
+    <div class="legend">
+      <span><span class="sw" style="background:var(--series-1)"></span><b>Template-engine</b></span>
+      <span><span class="sw" style="background:var(--series-2)"></span><b>Legacy / closed</b></span>
+      <span><span class="sw" style="background:var(--series-3)"></span><b>Active service</b></span>
+    </div>
+    <details class="tbl"><summary>Table view</summary>
+      <table id="svcTable"><tr><th>Service</th><th>Missing types</th><th>Bucket</th></tr></table>
+    </details>
+  </figure>
+</div>
+
+<div class="col">
+  <div class="callout">
+    <p><strong>Read for the bridge:</strong> the honest coverage number for unmodified L2 apps is far better than 85.5% — the engine bucket is already polyfilled, the legacy bucket is mostly dead L2 surface, and the L2-usage weighting narrows the real blocker list to <strong>28 maintained-L2 types</strong>, headed by the implicit <code>QueuePolicy</code>/<code>TopicPolicy</code> pair that <code>grant*()</code> patterns synthesize everywhere. Those 28 need per-resource decisions (decompose, map to the <code>aws</code> provider, or refuse loudly) before Phase&nbsp;2 promises drop-in behaviour; the other 212 missing types only matter to apps instantiating L1s directly. (WAFv2's <code>WebACL</code>/<code>RuleGroup</code> are L1-only by this measure — no maintained L2 constructs them — yet common enough in real apps to deserve a decision anyway.)</p>
+  </div>
+
+  <section id="casing">
+    <div class="sec-head"><span class="sec-num">2</span><h2>Three spellings, two safe round trips, one hard crossing</h2></div>
+    <p class="sec-sub">How PascalCase vs snake_case is handled by the two generators — and why the bridge can't compute its way across.</p>
+
+    <p>Every property has up to three spellings: the CFN registry's <span class="tag cfn">PascalCase</span>, the TypeScript prop's <code>camelCase</code>, and the awscc attribute's <span class="tag tf">snake_case</span>. Each generator is safe because it never <em>converts</em> at synth time — it looks up the spelling it recorded at codegen time:</p>
+
+    <div class="tablewrap"><table>
+      <tr><th>Generator</th><th>Codegen direction</th><th>Synth direction</th></tr>
+      <tr>
+        <td><strong>spec2cdk</strong> (CFN L1s, aws-cdk-lib)</td>
+        <td>Registry <span class="tag cfn">PascalCase</span> → <code>camelCase</code> via <code>propertyNameFromCloudFormation</code>, with hand-curated quirk rules (<code>ProviderARNs</code>→<code>providerArns</code>, <code>MBs</code>, <code>AZs</code>, <code>GetObject</code>…)</td>
+        <td><code>renderProperties</code> maps each prop back to the <em>original spec spelling</em> — a lookup, not a re-conversion. Template gets exact registry names.</td>
+      </tr>
+      <tr>
+        <td><strong>awscc2cdk</strong> (@cdktn/awscc)</td>
+        <td>awscc schema <span class="tag tf">snake_case</span> → <code>camelCase</code> via codemaker's <code>toCamelCase</code> — mechanical and safe, because snake_case marks every word boundary. (The quirky step happened upstream, when AWS's provider generator derived <code>ipv_4_ipam_pool_id</code> from <code>Ipv4IpamPoolId</code>.)</td>
+        <td><code>synthesizeAttributes()</code> and the struct mappers emit the <em>schema spelling verbatim</em> — again a lookup. The naming spike confirmed zero of spec2cdk's sanitizers are needed on this input.</td>
+      </tr>
+    </table></div>
+
+    <h3>The <code>ipv_4_*</code> counter-example</h3>
+    <p>The bridge is the one place that must cross from the CFN spelling to the awscc spelling with no recorded pair in hand — an inline literal in aws-cdk-lib carries only its PascalCase keys. That crossing cannot be computed in either direction:</p>
+
+<pre><code><span class="c-com">// CFN registry / aws-cdk-lib literal</span>
+<span class="c-cfn">Ipv4IpamPoolId</span>
+<span class="c-com">// what the awscc schema actually requires (AWS's own derivation)</span>
+<span class="c-tf">ipv_4_ipam_pool_id</span>     <span class="c-com">— schema.json: ipv_4_address, ipv_4_netmask_length, ipv_6_cidr_block, …</span>
+<span class="c-com">// what any naive PascalCase→snake_case gives — rejected by the provider</span>
+<span class="c-bad">ipv4_ipam_pool_id</span></code></pre>
+
+    <p>And the camelCase forms prove the deeper point — both worlds camelCase to the <em>same</em> string:</p>
+
+    <div class="tablewrap"><table>
+      <tr><th>CFN registry</th><th>aws-cdk-lib prop</th><th>@cdktn/awscc prop</th><th>awscc attribute</th></tr>
+      <tr><td class="num" style="color:var(--cfn)">Ipv4IpamPoolId</td><td class="num">ipv4IpamPoolId</td><td class="num">ipv4IpamPoolId</td><td class="num" style="color:var(--accent)">ipv_4_ipam_pool_id</td></tr>
+      <tr><td class="num" style="color:var(--cfn)">EncryptionType</td><td class="num">encryptionType</td><td class="num">encryptionType</td><td class="num" style="color:var(--accent)">encryption_type</td></tr>
+    </table></div>
+
+    <p>Identical camelCase, different snake_case: the underscore positions are information that only the awscc schema holds, and camelCase destroys it. So no string function recovers <code>ipv_4_ipam_pool_id</code> from either <code>Ipv4IpamPoolId</code> or <code>ipv4IpamPoolId</code> — <strong>the map must be emitted by codegen</strong>, and <code>@cdktn/awscc</code> is the only component that owns both spellings. That resolves RFC&nbsp;002 §9&nbsp;Q3: we don't wait for AWS to populate <code>cfnPropertyNames</code>; the generator exports its own per-resource CFN-name→attribute map.</p>
+
+    <h3>The direction the issue missed: PascalCase → camelCase is quirky too</h3>
+    <p>The generated struct mappers (<code>ccVPCVpcEncryptionControlPropertyToTerraform</code>, …) are exported today — but they take <strong>camelCase</strong> keys. An intrinsic-embedded literal from aws-cdk-lib arrives in <strong>PascalCase</strong>, and lowering the first letter is not a conversion either: <code>Ipv4</code>, <code>IPv6</code>, <code>LoRaWAN</code>, <code>ARNs</code> all break it (spec2cdk needs a hand-curated suffix table for exactly this). Keying the emitted map by the CFN PascalCase spelling makes the whole question disappear — one lookup instead of two conversions.</p>
+  </section>
+
+  <section id="nested">
+    <div class="sec-head"><span class="sec-num">3</span><h2>Nested values that dodge the mappers</h2></div>
+    <p class="sec-sub">How struct translation works at synth time — and the exact mechanism by which <code>Lazy</code> values and intrinsic arguments skip it.</p>
+
+    <p>In generated cdktn-style code, every nested struct gets a camelCase interface plus a mapper that rewrites one level of keys to the schema spelling; <code>synthesizeAttributes()</code> composes them over the resolved value tree at synth time. The escape hatch is in the mapper's very first line:</p>
+
+<pre><code><span class="c-com">// generated/aws-ec2/vpc.ts — every generated mapper opens with this guard</span>
+export function ccVPCVpcEncryptionControlPropertyToTerraform(struct?) {
+  if (!cdktn.canInspect(struct) || <span class="c-bad">cdktn.Tokenization.isResolvable(struct)</span>) {
+    <span class="c-bad">return struct;</span>  <span class="c-com">// an IResolvable passes through with its keys untouched</span>
+  }
+  return { <span class="c-tf">egress_only_internet_gateway_exclusion</span>: cdktn.stringToTerraform(struct!.egressOnlyInternetGatewayExclusion) };
+}</code></pre>
+
+    <p>Key mapping happens at <em>attribute-collection</em> time, but token resolution happens <em>later</em>. So any value that reaches a struct-typed slot as an <code>IResolvable</code> — a <code>Lazy.anyValue({ produce })</code>, or an object handed straight to a provider function — is returned verbatim by the guard, and when it finally resolves, its keys are rendered <strong>as written</strong>. Nothing converts them to snake_case. This is the gotcha confirmed in cdktn today, no CFN involved: the produced object lands in <code>*.tf.json</code> with camelCase (or PascalCase) keys and the provider rejects the plan.</p>
+
+    <p>The same shape reproduces one level up in the bridge, from real, unmodified aws-cdk-lib source:</p>
+
+<pre><code><span class="c-com">// aws-cdk-lib/aws-kinesis/lib/stream.ts:1005-1007 — parseEncryption()</span>
+streamEncryption: Fn.conditionIf(conditionName, Aws.NO_VALUE,
+  { <span class="c-cfn">EncryptionType</span>: <span class="c-str">'KMS'</span>, <span class="c-cfn">KeyId</span>: <span class="c-str">'alias/aws/kinesis'</span> })  <span class="c-com">// CFN PascalCase bag</span>
+
+<span class="c-com">// lowers to a cfncompat call — rendered verbatim, awscc_kinesis_stream rejects it:</span>
+provider::cfncompat::condition_if(cond, null, { <span class="c-bad">EncryptionType</span>, <span class="c-bad">KeyId</span> })
+<span class="c-com">// the schema wants:</span> { <span class="c-tf">encryption_type</span>, <span class="c-tf">key_id</span> }</code></pre>
+
+    <p>No codemod fixes this: the Phase-2 rewrite touches constructors, not literals, and no <code>Cc*</code> type is even in scope at that call site. It has to work automatically or the "byte-identical, zero-modification" promise fails.</p>
+
+    <h3>Today's pattern, and the systematic fix</h3>
+    <p>The working pattern today is to run the value through the resource's own exported mapper <em>before</em> it leaves typed land — typed input, and immune to schema renames:</p>
+
+<pre><code><span class="c-com">// WRONG — hand-written snake_case: untyped, silently breaks on schema renames</span>
+conditionIf(cond, null, { <span class="c-bad">encryption_type</span>: <span class="c-str">"KMS"</span>, <span class="c-bad">key_id</span>: <span class="c-str">"alias/aws/kinesis"</span> })
+
+<span class="c-com">// RIGHT — reuse the generated mapper: tsc checks the keys, codegen owns the renames</span>
+conditionIf(cond, null,
+  kinesisStreamStreamEncryptionToTerraform({ <span class="c-tf">encryptionType</span>: <span class="c-str">"KMS"</span>, <span class="c-tf">keyId</span>: <span class="c-str">"alias/aws/kinesis"</span> }))</code></pre>
+
+    <p>That works when a human writes the call. The bridge can't ask aws-cdk-lib to change, so the systematic version is the shared map from §2, applied in two places:</p>
+    <ul>
+      <li><strong><code>TerraformIntrinsicResolver</code>, recursively:</strong> while lowering an intrinsic, walk any embedded object literal and translate each key through the per-resource CFN-name→attribute map — the same shared export <code>AwsccL1Renderer</code> uses for the top-level <code>Properties</code> walk, never renderer-internal state.</li>
+      <li><strong>Resolve-time fallback:</strong> for <code>Lazy</code>-produced values, the mapper can't run early by definition — the still-open spike question (plan §8) is whether these literals are statically detectable at all, or whether the resolver must walk unknown object literals at resolve time.</li>
+    </ul>
+  </section>
+
+  <section id="status">
+    <div class="sec-head"><span class="sec-num">✓</span><h2>Where this leaves the bridge</h2></div>
+    <ul class="status">
+      <li><span class="st done">resolved</span><span>RFC&nbsp;002 §9&nbsp;Q3 — <code>cfnPropertyNames</code> not depended upon; the map is emitted by <code>@cdktn/awscc</code> codegen. AWS question kept as informational.</span></li>
+      <li><span class="st done">resolved</span><span>RFC&nbsp;002 §3 — <code>TerraformIntrinsicResolver</code> row now requires recursive key mapping over intrinsic-embedded property bags, via the shared generated map.</span></li>
+      <li><span class="st done">added</span><span>Plan §8 Phase-2 spike list — intrinsic-embedded property bags: static detectability vs. resolve-time walking.</span></li>
+      <li><span class="st done">prototyped</span><span>@cdktn/awscc — <code>emitCfnPropertyMap</code> generator flag (default off) emits <code>Cc*.CFN_PROPERTY_NAME_MAP</code> as a jsii static; 23,255 entries across 1,490 resources, +1.88% generated TS, ~+1.3% assembly (measured +1.37% on the aws-ec2 subset, extrapolated ~+1.4&nbsp;MB on the 108&nbsp;MB baseline). Pre-study: the PascalCase→snake_case mapping has <strong>zero conflicts</strong> globally — 11,453 distinct CFN names, each with exactly one snake_case spelling — so even a single package-wide map would be safe. Branch <code>feat/cfn-key-map</code>.</span></li>
+      <li><span class="st wip">decide</span><span>Per-resource policy for the 137 active-service gaps: decompose, fall back to the <code>aws</code> provider, or fail loudly at synth.</span></li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>Sources: <code>cdktn-awscc/schemas/schema.json</code> (awscc 1.98.0, pinned per CONTRACT.md) diffed against <code>@aws-cdk/aws-service-spec</code> 0.1.206; <code>docs/spike-naming.md</code>; <code>docs/planning-issue-1-impact.md</code>; <a href="https://github.com/open-constructs/cdktn-planning/issues/1">cdktn-planning#1</a>; terraform-provider-cfncompat RFC&nbsp;002 &amp; README (v0.3.0).</p>
+    <p>Matching method: CFN type ↔ awscc resource paired by underscore-stripped lowercase normalization (<code>AWS::EC2::VPC</code> ↔ <code>awscc_ec2_vpc</code>); 1,493 of 1,494 awscc resources matched.</p>
+  </footer>
+</div>
+
+<script>
+  const services = [
+    { s: "Pinpoint", n: 18, b: 2 }, { s: "Greengrass", n: 16, b: 2 }, { s: "WAFRegional", n: 11, b: 2 },
+    { s: "WAF", n: 7, b: 2 }, { s: "AppMesh", n: 7, b: 2 }, { s: "DeviceFarm", n: 7, b: 2 },
+    { s: "OpsWorks", n: 7, b: 2 }, { s: "Serverless (SAM)", n: 7, b: 1 }, { s: "EC2", n: 7, b: 3 },
+    { s: "Glue", n: 6, b: 3 }, { s: "SageMaker", n: 6, b: 3 }, { s: "CloudFormation", n: 5, b: 1 },
+  ];
+  const bucketName = { 1: "Template-engine", 2: "Legacy / closed", 3: "Active service" };
+  const rowsEl = document.getElementById("svcRows");
+  const tableEl = document.getElementById("svcTable");
+  const max = Math.max(...services.map(d => d.n));
+  for (const d of services) {
+    const lbl = document.createElement("div"); lbl.className = "lbl"; lbl.textContent = d.s;
+    const track = document.createElement("div"); track.className = "track";
+    const fill = document.createElement("div"); fill.className = "fill";
+    fill.style.width = (d.n / max * 100) + "%";
+    fill.style.background = `var(--series-${d.b})`;
+    fill.dataset.tip = `${d.s} — ${d.n} missing (${bucketName[d.b]})`;
+    fill.tabIndex = 0;
+    track.appendChild(fill);
+    const val = document.createElement("div"); val.className = "val"; val.textContent = d.n;
+    rowsEl.append(lbl, track, val);
+    const tr = document.createElement("tr");
+    tr.innerHTML = `<td>${d.s}</td><td class="num">${d.n}</td><td>${bucketName[d.b]}</td>`;
+    tableEl.appendChild(tr);
+  }
+
+  // shared tooltip for segments and bars
+  let tip = null;
+  function showTip(el, x, y) {
+    if (!tip) { tip = document.createElement("div"); tip.id = "tip"; document.body.appendChild(tip); }
+    tip.textContent = el.dataset.tip;
+    tip.style.left = x + "px"; tip.style.top = y + "px";
+    tip.hidden = false;
+  }
+  function hideTip() { if (tip) tip.hidden = true; }
+  document.addEventListener("mousemove", (e) => {
+    const t = e.target.closest("[data-tip]");
+    if (t) showTip(t, e.clientX, e.clientY); else hideTip();
+  });
+  document.addEventListener("focusin", (e) => {
+    const t = e.target.closest("[data-tip]");
+    if (t) { const r = t.getBoundingClientRect(); showTip(t, r.left + r.width / 2, r.top); }
+  });
+  document.addEventListener("focusout", hideTip);
+</script>

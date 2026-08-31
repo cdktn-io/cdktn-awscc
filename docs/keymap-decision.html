@@ -1,0 +1,199 @@
+<title>The Key-Map Decision</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+  :root {
+    color-scheme: light;
+    --ground: #f5f6f4; --card: #fcfdfc; --ink: #17211d; --ink-2: #4b5a53; --ink-3: #7a877f;
+    --hairline: #dfe4e0; --hairline-strong: #c0cac3;
+    --accent: #0e6b60; --accent-wash: #0e6b6014;
+    --cfn: #8f5f10; --cfn-wash: #8f5f1012;
+    --bad: #b3402e; --bad-wash: #b3402e12;
+    --code-bg: #edf1ee;
+    --shadow: 0 1px 2px rgba(23,33,29,.05), 0 4px 16px rgba(23,33,29,.05);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --ground: #101513; --card: #171d1a; --ink: #e6ebe8; --ink-2: #9fb0a8; --ink-3: #6e7d75;
+      --hairline: #27302b; --hairline-strong: #3a463f;
+      --accent: #43c7b0; --accent-wash: #43c7b01a;
+      --cfn: #d9a558; --cfn-wash: #d9a55817;
+      --bad: #e07561; --bad-wash: #e0756118;
+      --code-bg: #1d2420;
+      --shadow: 0 1px 2px rgba(0,0,0,.3), 0 4px 16px rgba(0,0,0,.25);
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --ground: #101513; --card: #171d1a; --ink: #e6ebe8; --ink-2: #9fb0a8; --ink-3: #6e7d75;
+    --hairline: #27302b; --hairline-strong: #3a463f;
+    --accent: #43c7b0; --accent-wash: #43c7b01a;
+    --cfn: #d9a558; --cfn-wash: #d9a55817;
+    --bad: #e07561; --bad-wash: #e0756118;
+    --code-bg: #1d2420;
+    --shadow: 0 1px 2px rgba(0,0,0,.3), 0 4px 16px rgba(0,0,0,.25);
+  }
+  body { background: var(--ground); color: var(--ink); font: 16px/1.65 "IBM Plex Sans", system-ui, sans-serif; padding: 0 24px 96px; }
+  .col { max-width: 72ch; margin: 0 auto; }
+  h1, h2, h3 { font-family: "Archivo", sans-serif; letter-spacing: -.015em; text-wrap: balance; }
+  h1 { font-size: clamp(32px, 5vw, 46px); line-height: 1.08; font-weight: 700; margin: 14px 0 18px; }
+  h2 { font-size: 24px; font-weight: 650; margin: 56px 0 12px; }
+  p { margin: 0 0 16px; }
+  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  strong { font-weight: 600; }
+  .eyebrow { font-family: "IBM Plex Mono", monospace; font-size: 12px; font-weight: 500; text-transform: uppercase; letter-spacing: .14em; color: var(--accent); }
+  header.page { padding: 60px 0 8px; }
+  .lede { font-size: 18px; line-height: 1.6; color: var(--ink-2); max-width: 62ch; }
+  .meta { display: flex; flex-wrap: wrap; gap: 6px 22px; font-family: "IBM Plex Mono", monospace; font-size: 12.5px; color: var(--ink-3); margin-top: 18px; padding-top: 14px; border-top: 1px solid var(--hairline); }
+  code { font-family: "IBM Plex Mono", monospace; font-size: .88em; }
+  p code, li code, td code { background: var(--code-bg); border: 1px solid var(--hairline); border-radius: 4px; padding: .08em .34em; white-space: nowrap; }
+  table { border-collapse: collapse; width: 100%; font-size: 13.5px; }
+  th, td { text-align: left; padding: 9px 14px 9px 0; border-bottom: 1px solid var(--hairline); vertical-align: top; }
+  th { font-family: "Archivo", sans-serif; font-size: 12px; font-weight: 650; text-transform: uppercase; letter-spacing: .07em; color: var(--ink-2); }
+  .tablewrap { overflow-x: auto; }
+  .chip { display: inline-block; font-family: "IBM Plex Mono", monospace; font-size: 10.5px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; padding: 1.5px 8px; border-radius: 99px; white-space: nowrap; }
+  .chip.ok { color: var(--accent); background: var(--accent-wash); border: 1px solid color-mix(in srgb, var(--accent) 32%, transparent); }
+  .chip.cost { color: var(--bad); background: var(--bad-wash); border: 1px solid color-mix(in srgb, var(--bad) 32%, transparent); }
+  .chip.pending { color: var(--cfn); background: var(--cfn-wash); border: 1px solid color-mix(in srgb, var(--cfn) 32%, transparent); }
+  .callout { border-left: 3px solid var(--accent); background: var(--accent-wash); border-radius: 0 10px 10px 0; padding: 14px 18px; margin: 22px 0; font-size: 15px; }
+  .callout.warn { border-left-color: var(--bad); background: var(--bad-wash); }
+  .callout p:last-child { margin-bottom: 0; }
+  ul { padding-left: 22px; margin: 0 0 16px; }
+  li { margin-bottom: 8px; }
+  figure.fig { background: var(--card); border: 1px solid var(--hairline); border-radius: 14px; box-shadow: var(--shadow); padding: 20px 24px 14px; margin: 24px 0; }
+  figure.fig svg { max-width: 100%; height: auto; display: block; margin: 0 auto; }
+  figure.fig figcaption { font-size: 13px; color: var(--ink-2); margin-top: 10px; border-top: 1px solid var(--hairline); padding-top: 10px; }
+  footer { margin-top: 72px; padding-top: 16px; border-top: 1px solid var(--hairline); font-size: 12.5px; color: var(--ink-3); }
+</style>
+
+<div class="col">
+  <header class="page">
+    <span class="eyebrow">cdktn · @cdktn/awscc · decision brief</span>
+    <h1>The Key-Map Decision</h1>
+    <p class="lede">Should <code>emitCfnPropertyMap</code> ship on? What the flag actually changes at each stage of the library's life — generation, publish, import, synth, and the Phase-2 bridge — with the costs on one side and the one thing only this feature can do on the other.</p>
+    <div class="meta">
+      <span>flag: emitCfnPropertyMap · default OFF</span>
+      <span>PR #3 @ 4f691fc</span>
+      <span>full builds measured 2026-08-31 (both states, go/python/js)</span>
+    </div>
+  </header>
+
+  <div class="callout warn">
+    <p><strong>First, the misconception to kill:</strong> the map is <em>not</em> an alternative to the case-converter mappers. With the flag on or off, <code>synthesizeAttributes()</code> translates properties through the generated <code>*ToTerraform</code> functions, exactly as today — the static is <strong>never read during synthesis</strong>. It is an additional, passive lookup table for <em>external</em> consumers: the Phase-2 bridge's intrinsic resolver, and any non-TypeScript code that needs the CFN↔terraform spelling pairs (which the mappers cannot provide, since jsii drops exported functions from every non-TS language).</p>
+  </div>
+
+  <h2>Impact by lifecycle stage</h2>
+  <figure class="fig">
+    <svg viewBox="0 0 960 150" role="img" aria-label="Lifecycle strip: generation, publish, import, synth, bridge — with the flag's cost or benefit at each stage." style="color: var(--ink); font-family: 'IBM Plex Mono', monospace;">
+      <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"/></marker></defs>
+      <g>
+        <rect x="15"  y="30" width="150" height="44" rx="8" fill="var(--card)" stroke="currentColor"/><text x="90"  y="56" text-anchor="middle" font-size="12.5" font-weight="600">generation</text>
+        <rect x="205" y="30" width="150" height="44" rx="8" fill="var(--card)" stroke="currentColor"/><text x="280" y="56" text-anchor="middle" font-size="12.5" font-weight="600">publish</text>
+        <rect x="395" y="30" width="150" height="44" rx="8" fill="var(--card)" stroke="currentColor"/><text x="470" y="56" text-anchor="middle" font-size="12.5" font-weight="600">import</text>
+        <rect x="585" y="30" width="150" height="44" rx="8" fill="var(--card)" stroke="currentColor"/><text x="660" y="56" text-anchor="middle" font-size="12.5" font-weight="600">synth</text>
+        <rect x="775" y="30" width="170" height="44" rx="8" fill="var(--accent-wash)" stroke="var(--accent)"/><text x="860" y="56" text-anchor="middle" font-size="12.5" font-weight="600" fill="var(--accent)">Phase-2 bridge</text>
+        <line x1="165" y1="52" x2="201" y2="52" stroke="currentColor" marker-end="url(#a)"/>
+        <line x1="355" y1="52" x2="391" y2="52" stroke="currentColor" marker-end="url(#a)"/>
+        <line x1="545" y1="52" x2="581" y2="52" stroke="currentColor" marker-end="url(#a)"/>
+        <line x1="735" y1="52" x2="771" y2="52" stroke="currentColor" marker-end="url(#a)"/>
+        <text x="90"  y="100" text-anchor="middle" font-size="10.5" fill="var(--ink-2)">+1 spec walk/resource</text>
+        <text x="90"  y="114" text-anchor="middle" font-size="10.5" fill="var(--ink-2)">(1.2 s baseline)</text>
+        <text x="280" y="100" text-anchor="middle" font-size="10.5" fill="var(--bad)">+size, all languages</text>
+        <text x="280" y="114" text-anchor="middle" font-size="10.5" fill="var(--ink-2)">Go most sensitive</text>
+        <text x="470" y="100" text-anchor="middle" font-size="10.5" fill="var(--bad)">statics parse at load</text>
+        <text x="470" y="114" text-anchor="middle" font-size="10.5" fill="var(--ink-2)">lazify: per module used</text>
+        <text x="660" y="100" text-anchor="middle" font-size="10.5" fill="var(--accent)">zero — never read</text>
+        <text x="660" y="114" text-anchor="middle" font-size="10.5" fill="var(--ink-2)">mappers unchanged</text>
+        <text x="860" y="100" text-anchor="middle" font-size="10.5" fill="var(--accent)">the enabling artifact</text>
+        <text x="860" y="114" text-anchor="middle" font-size="10.5" fill="var(--ink-2)">recursive key rewrite</text>
+      </g>
+    </svg>
+    <figcaption>Where the flag's cost and value actually land. Synthesis is untouched by construction — the map has no reader in the synth path; the costs are a publish-size and an import-parse cost, and the value concentrates entirely in the bridge stage.</figcaption>
+  </figure>
+
+  <h2>The cost ledger</h2>
+  <div class="tablewrap"><table>
+    <tr><th>Cost</th><th>Measured</th><th>Notes</th></tr>
+    <tr>
+      <td>Generated TypeScript</td>
+      <td><span class="chip cost">+1.88%</span> (+1.4 MB, 76.3→77.8 MB)</td>
+      <td>23,255 entries across 1,490 resources (~15.6/resource)</td>
+    </tr>
+    <tr>
+      <td>jsii assembly (full tree)</td>
+      <td><span class="chip cost">+0.99%</span> raw (113.33 → 114.46 MB); gzip <span class="chip cost">+3.1%</span> (4.88 → 5.03 MB)</td>
+      <td>+48 B/entry raw, +6.5 B/entry gzipped</td>
+    </tr>
+    <tr>
+      <td>Go module size</td>
+      <td>module <em>zip</em> (what the 500 MiB proxy limit governs) 83.6 → <span class="chip cost">84.2 MB (+0.7%)</span> — <strong>~16% of the limit; ~6× headroom</strong>. Source dir +1.4 MB (+0.27%), file count unchanged (statics live in existing files)</td>
+      <td>the raw <em>directory</em> du-measures ~505 MB in both states (exact bytes ~395 MB) — near the 500 MB figure only if you measure the wrong thing; the module-zip is the governed artifact. Per-package deltas were measured with mixed exact/du methods, so compare totals, not the awsec2 row</td>
+    </tr>
+    <tr>
+      <td>Python wheel / npm tgz</td>
+      <td>wheel 35.85 → <span class="chip cost">36.89 MB (+2.9%)</span>; tgz 18.51 → <span class="chip cost">19.33 MB (+4.4%)</span></td>
+      <td>unpacked: +0.8% python, +1.4% js. (Earlier 52.9 MB wheel baseline predates lazify/packaging changes; these two builds are directly comparable to each other.)</td>
+    </tr>
+    <tr>
+      <td>Import/load time &amp; memory</td>
+      <td>whole-library worst case (all 276 submodules forced): node require <span class="chip cost">+6.7 ms (+1.1%)</span>, RSS +1.6 MB, JS heap <span class="chip cost">+7.3 MB (+3.4%)</span>; python <code>import cdktn_awscc</code> +3.5 ms (+0.9%), <code>aws_ec2</code> +8.4 ms (+1.9%)</td>
+      <td>realistic apps pay almost none of this: the package is <strong>lazified</strong>, and touching 1 of 276 submodules showed <em>no measurable delta</em> (within process-startup noise) — the cost scales with mapped files actually imported</td>
+    </tr>
+    <tr>
+      <td>Synth time / synth memory</td>
+      <td><span class="chip ok">zero — verified</span>: 200-resource nested-struct benchmark, 5 runs/state: every load/construction/synth phase delta smaller than same-state run spread; peak RSS identical (93.5 MB)</td>
+      <td>CPU profiles confirm: no sample lands in a map static in either state — the maps are dead weight after module load, never read by <code>synthesizeAttributes()</code> or token resolution</td>
+    </tr>
+    <tr>
+      <td>Generation time</td>
+      <td>one extra spec-walk per resource level</td>
+      <td>full generate baseline is 1.2 s; immaterial</td>
+    </tr>
+    <tr>
+      <td>API commitment (semver)</td>
+      <td>—</td>
+      <td>once published, <code>CFN_PROPERTY_NAME_MAP</code> is public cross-language API: its keying (CFN PascalCase), shape (flat per-resource), and name are frozen; the open design questions (read-only attributes coverage, dual keying, per-resource vs one global map) become breaking changes after v1</td>
+    </tr>
+    <tr>
+      <td>Regen churn</td>
+      <td>—</td>
+      <td>every provider-schema bump diffs the maps alongside the code — more generated-diff noise per upgrade PR</td>
+    </tr>
+  </table></div>
+
+  <h2>The benefit ledger</h2>
+  <ul>
+    <li><strong>It is the only cross-language spelling oracle.</strong> The exported <code>*ToTerraform</code> mappers never enter the jsii assembly (verified: 7,789 in the JS, 0 in the assembly; none reachable from the published Python package) — a static is the only shape Python/Java/.NET/Go can see.</li>
+    <li><strong>It works where the mappers can't run.</strong> The mappers execute at synth-time attribute collection and pass <code>IResolvable</code>/<code>Lazy</code> values through untouched; a lookup table has no such timing — the bridge (or any resolver) can consult it at <em>resolve</em> time, on values the mappers never saw.</li>
+    <li><strong>It is what the byte-identical bridge promise needs.</strong> Unmodified aws-cdk-lib embeds CFN PascalCase property bags inside intrinsic calls; the codemod can't rewrite literals, and the translation isn't computable (<code>Ipv4IpamPoolId</code> → <code>ipv_4_ipam_pool_id</code>). Recursive lookup over this map is the mechanism RFC&nbsp;002 now specifies for <code>TerraformIntrinsicResolver</code>.</li>
+    <li><strong>Off costs nothing, on costs nothing at synth.</strong> Flag off is byte-identical to pre-feature output (contract-tested); flag on adds no reader to any hot path.</li>
+    <li><strong>The data is clean.</strong> Pre-study over the full schema: 30,674 pairs, zero conflicts globally and per-resource — the flat merged shape loses nothing, and a future consolidation (one global map) stays possible.</li>
+  </ul>
+
+  <h2>Alternatives if the size numbers disappoint</h2>
+  <div class="tablewrap"><table>
+    <tr><th>Alternative</th><th>Trade</th></tr>
+    <tr>
+      <td><strong>Sidecar JSON in the npm package only</strong> (a data file, excluded from jsii)</td>
+      <td>Near-zero cost for Go/Python/Java/.NET packages. Sufficient <em>if</em> the only consumer is the TypeScript-side bridge (<code>@cdktn/aws-cdk-terraform-provider</code> is TS); gives up the map for non-TS app authors hand-writing intrinsic literals — the audience the cdktn-planning#1 demo showed exists.</td>
+    </tr>
+    <tr>
+      <td><strong>Companion package</strong> (e.g. <code>@cdktn/awscc-cfn-names</code>, jsii-built, maps only)</td>
+      <td>Core packages stay at today's size in every language; bridge adds one dependency it already conceptually has. Costs a second release pipeline and version-lockstep discipline with the provider schema.</td>
+    </tr>
+    <tr>
+      <td><strong>Per-module opt-in</strong> (emit maps only for modules the bridge targets first)</td>
+      <td>Cheap start, but creates a "which resources have maps" matrix that leaks into the bridge's error handling.</td>
+    </tr>
+  </table></div>
+
+  <h2>Recommendation</h2>
+  <div class="callout">
+    <p><strong>Ship v0.1.0 with the flag off</strong> (it already is — and there is deliberately no CLI toggle in <code>generate-all.ts</code>, so it cannot flip on by accident). <strong>The measured numbers remove size as a blocker:</strong> every artifact grows ~1–4% (Go module zip +0.7%, at ~16% of the 500 MiB limit with ~6× headroom), runtime cost is confined to module load, scales with modules actually imported, and rounds to zero for realistic apps — synth is verifiably untouched. What remains is the <em>API-commitment</em> question, not a size question: enabling publishes the map's keying and shape as public cross-language API while the read-only-attributes and global-vs-per-resource design questions are still open. So: <strong>enable at Phase-2 kickoff in a coordinated release, after settling those two questions</strong> — or, if the bridge remains the sole consumer by then, take the sidecar-JSON route and keep the jsii surface unchanged.</p>
+  </div>
+
+  <footer>
+    <p>Companions: <em>The CFN–awscc Seam</em> (why the map must be generated) and <em>awscc2cdk Flow Atlas</em> (how it is built and emitted). Sources: cdktn-io/cdktn-awscc PR #3 (@4f691fc), pre-study scripts/cfn-property-map-prestudy.ts; full-build measurements 2026-08-31 on both flag states at 4f691fc (jsii 5.9.x + lazify + pacmak go/python/js; jsii compile 32 s / 6.1–6.5 GB peak RSS per state; runtime benches: repo's bench_js_require.mjs + a full-require variant forcing all 276 submodules, python wheel imports in fresh venvs, and a 200-resource nested-struct synth benchmark with per-phase timing, /usr/bin/time -l RSS, and --cpu-prof verification).</p>
+  </footer>
+</div>

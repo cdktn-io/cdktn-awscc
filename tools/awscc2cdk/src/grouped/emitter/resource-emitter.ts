@@ -56,6 +56,77 @@ export class ResourceEmitter {
 
   private emitStaticProperties(resource: ResourceModel) {
     this.code.line(`public static readonly tfResourceType = "${resource.terraformResourceType}";`);
+    this.emitCfnPropertyNameMap(resource);
+    this.emitCfnAttributeNameMap(resource);
+  }
+
+  /**
+   * cdktn-planning#1 (`GenerateGroupedOptions#emitCfnPropertyMap`, default off): a static,
+   * jsii-visible CFN PascalCase-name -> terraform snake_case-key map, for a Phase-2 bridge's
+   * `TerraformIntrinsicResolver` to translate PascalCase property-bag literals embedded in
+   * unmodified aws-cdk-lib intrinsic calls. A `public static readonly` field survives jsii the way
+   * the exported nested-struct `*ToTerraform` functions do not (jsii's assembler only visits
+   * class/interface/enum declarations — a top-level `export function`/`export const` is invisible
+   * to every non-TS/JS target language, i.e. to jsii-pacmak's Python/Java/.NET/Go output). Emitted
+   * only when the map has at least one entry — an unmatched awscc resource, or the flag being off,
+   * both leave the resource's emitted text byte-identical to before this feature existed. Keys are
+   * sorted so the emitted object literal (and therefore the whole file) stays deterministic and
+   * order-independent, matching every other emitter in this generator.
+   */
+  private emitCfnPropertyNameMap(resource: ResourceModel) {
+    const map = resource.cfnPropertyMap;
+    if (!map) return;
+    const keys = Object.keys(map).sort();
+    if (keys.length === 0) return;
+
+    const comment = sanitizedComment(this.code);
+    comment.line(`CFN PascalCase property name -> terraform attribute name, for this resource's whole`);
+    comment.line(`property tree (top level and nested structs merged). See cdktn-planning#1.`);
+    comment.end();
+    this.code.open(`public static readonly CFN_PROPERTY_NAME_MAP: { [cfnName: string]: string } = {`);
+    for (const key of keys) {
+      this.code.line(`${JSON.stringify(key)}: ${JSON.stringify(map[key])},`);
+    }
+    this.code.close(`};`);
+  }
+
+  /**
+   * cdktn-planning#1 continued (`GenerateGroupedOptions#emitCfnPropertyMap`, default off — same
+   * flag as `CFN_PROPERTY_NAME_MAP` above): a static, jsii-visible CFN `Fn::GetAtt` attribute name
+   * -> terraform attribute map, for RFC 002's reference-resolver seam to translate a literal
+   * `getAtt(...)` call name on an unmodified aws-cdk-lib `CfnResource` into the awscc terraform
+   * attribute that carries the same value.
+   *
+   * A CFN attribute name may itself contain dots (e.g. `CertificateAuthority.Data` — CFN's own
+   * struct-nesting notation for `Fn::GetAtt` names, keyed here verbatim, dots and all). Most
+   * values are a bare terraform attribute name; some are a dotted terraform attribute *path*
+   * (e.g. `vpc_encryption_control.vpc_id`) for a CFN attribute only reachable by walking the
+   * resource's nested terraform attribute tree — terraform attribute names never themselves
+   * contain a dot, so a consumer distinguishes the two only by whether it needs to `.split('.')`
+   * and walk, exactly the way `cfn-recovery.ts` walks a terraform path down the CFN side. See
+   * `src/grouped/cfn-attribute-map.ts` for the full matching rules.
+   *
+   * Emitted only when the map has at least one entry — an unmatched awscc resource, a resource
+   * with no `Fn::GetAtt` attributes, or the flag being off all leave the resource's emitted text
+   * byte-identical to before this feature existed. Keys are sorted for the same reason
+   * `CFN_PROPERTY_NAME_MAP`'s are: a deterministic, order-independent emitted object literal.
+   */
+  private emitCfnAttributeNameMap(resource: ResourceModel) {
+    const map = resource.cfnAttributeMap;
+    if (!map) return;
+    const keys = Object.keys(map).sort();
+    if (keys.length === 0) return;
+
+    const comment = sanitizedComment(this.code);
+    comment.line(`CFN Fn::GetAtt attribute name -> terraform attribute (or, for a dotted value,`);
+    comment.line(`terraform attribute *path* — split on '.' and walk it) for this resource. See`);
+    comment.line(`cdktn-planning#1 / RFC 002.`);
+    comment.end();
+    this.code.open(`public static readonly CFN_ATTRIBUTE_NAME_MAP: { [cfnAttributeName: string]: string } = {`);
+    for (const key of keys) {
+      this.code.line(`${JSON.stringify(key)}: ${JSON.stringify(map[key])},`);
+    }
+    this.code.close(`};`);
   }
 
   private emitStaticMethods(resource: ResourceModel) {
