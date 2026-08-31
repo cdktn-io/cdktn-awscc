@@ -41,7 +41,7 @@ export interface CcCertificateAuthorityProps extends cdktn.TerraformMetaArgument
     *
     * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#subject CcCertificateAuthority#subject}
     */
-    readonly subject: CcCertificateAuthority.SubjectProperty2;
+    readonly subject: CcCertificateAuthority.SubjectProperty;
     /**
     * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#tags CcCertificateAuthority#tags}
     */
@@ -215,11 +215,11 @@ export class CcCertificateAuthority extends cdktn.TerraformResource {
     }
 
     // subject - computed: false, optional: false, required: true
-    private _subject = new CcCertificateAuthority.SubjectProperty2OutputReference(this, "subject");
+    private _subject = new CcCertificateAuthority.SubjectPropertyOutputReference(this, "subject");
     public get subject() {
         return this._subject;
     }
-    public putSubject(value: CcCertificateAuthority.SubjectProperty2) {
+    public putSubject(value: CcCertificateAuthority.SubjectProperty) {
         this._subject.internalValue = value;
     }
     // Temporarily expose input value. Use with caution.
@@ -283,7 +283,7 @@ export class CcCertificateAuthority extends cdktn.TerraformResource {
             key_storage_security_standard: cdktn.stringToTerraform(this._keyStorageSecurityStandard),
             revocation_configuration: ccCertificateAuthorityRevocationConfigurationPropertyToTerraform(this._revocationConfiguration.internalValue),
             signing_algorithm: cdktn.stringToTerraform(this._signingAlgorithm),
-            subject: ccCertificateAuthoritySubjectProperty2ToTerraform(this._subject.internalValue),
+            subject: ccCertificateAuthoritySubjectPropertyToTerraform(this._subject.internalValue),
             tags: cdktn.listMapper(ccCertificateAuthorityTagPropertyToTerraform, false)(this._tags.internalValue),
             type: cdktn.stringToTerraform(this._type),
             usage_mode: cdktn.stringToTerraform(this._usageMode),
@@ -323,10 +323,10 @@ export class CcCertificateAuthority extends cdktn.TerraformResource {
                 storageClassType: "string",
             },
             subject: {
-                value: ccCertificateAuthoritySubjectProperty2ToHclTerraform(this._subject.internalValue),
+                value: ccCertificateAuthoritySubjectPropertyToHclTerraform(this._subject.internalValue),
                 isBlock: true,
                 type: "struct",
-                storageClassType: "CcCertificateAuthority.SubjectProperty2",
+                storageClassType: "CcCertificateAuthority.SubjectProperty",
             },
             tags: {
                 value: cdktn.listMapperHcl(ccCertificateAuthorityTagPropertyToHclTerraform, false)(this._tags.internalValue),
@@ -476,7 +476,7 @@ export function ccCertificateAuthorityCustomAttributePropertyToHclTerraform(stru
 }
 
 
-export function ccCertificateAuthoritySubjectPropertyToTerraform(struct?: CcCertificateAuthority.SubjectProperty | cdktn.IResolvable): any {
+export function ccCertificateAuthorityDirectoryNamePropertyToTerraform(struct?: CcCertificateAuthority.DirectoryNameProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -501,7 +501,7 @@ export function ccCertificateAuthoritySubjectPropertyToTerraform(struct?: CcCert
 }
 
 
-export function ccCertificateAuthoritySubjectPropertyToHclTerraform(struct?: CcCertificateAuthority.SubjectProperty | cdktn.IResolvable): any {
+export function ccCertificateAuthorityDirectoryNamePropertyToHclTerraform(struct?: CcCertificateAuthority.DirectoryNameProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -684,7 +684,7 @@ export function ccCertificateAuthorityGeneralNamePropertyToTerraform(struct?: Cc
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
     }
     return {
-        directory_name: ccCertificateAuthoritySubjectPropertyToTerraform(struct!.directoryName),
+        directory_name: ccCertificateAuthorityDirectoryNamePropertyToTerraform(struct!.directoryName),
         dns_name: cdktn.stringToTerraform(struct!.dnsName),
         edi_party_name: ccCertificateAuthorityEdiPartyNamePropertyToTerraform(struct!.ediPartyName),
         ip_address: cdktn.stringToTerraform(struct!.ipAddress),
@@ -703,10 +703,10 @@ export function ccCertificateAuthorityGeneralNamePropertyToHclTerraform(struct?:
     }
     const attrs = {
         directory_name: {
-            value: ccCertificateAuthoritySubjectPropertyToHclTerraform(struct!.directoryName),
+            value: ccCertificateAuthorityDirectoryNamePropertyToHclTerraform(struct!.directoryName),
             isBlock: true,
             type: "struct",
-            storageClassType: "SubjectProperty",
+            storageClassType: "DirectoryNameProperty",
         },
         dns_name: {
             value: cdktn.stringToHclTerraform(struct!.dnsName),
@@ -1088,7 +1088,7 @@ export function ccCertificateAuthorityCustomAttributesPropertyToHclTerraform(str
 }
 
 
-export function ccCertificateAuthoritySubjectProperty2ToTerraform(struct?: CcCertificateAuthority.SubjectProperty2 | cdktn.IResolvable): any {
+export function ccCertificateAuthoritySubjectPropertyToTerraform(struct?: CcCertificateAuthority.SubjectProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -1113,7 +1113,7 @@ export function ccCertificateAuthoritySubjectProperty2ToTerraform(struct?: CcCer
 }
 
 
-export function ccCertificateAuthoritySubjectProperty2ToHclTerraform(struct?: CcCertificateAuthority.SubjectProperty2 | cdktn.IResolvable): any {
+export function ccCertificateAuthoritySubjectPropertyToHclTerraform(struct?: CcCertificateAuthority.SubjectProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -1640,7 +1640,7 @@ export class CustomAttributePropertyList extends cdktn.ComplexList {
         return new CustomAttributePropertyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
     }
 }
-export interface SubjectProperty {
+export interface DirectoryNameProperty {
     /**
     * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#common_name CcCertificateAuthority#common_name}
     */
@@ -1704,7 +1704,7 @@ export interface SubjectProperty {
     */
     readonly title?: string;
 }
-export class SubjectPropertyOutputReference extends cdktn.ComplexObject {
+export class DirectoryNamePropertyOutputReference extends cdktn.ComplexObject {
     private isEmptyObject = false;
     private resolvableValue?: cdktn.IResolvable;
 
@@ -1716,7 +1716,7 @@ export class SubjectPropertyOutputReference extends cdktn.ComplexObject {
         super(terraformResource, terraformAttribute, false);
     }
 
-    public get internalValue(): SubjectProperty | cdktn.IResolvable | undefined {
+    public get internalValue(): DirectoryNameProperty | cdktn.IResolvable | undefined {
         if (this.resolvableValue) {
             return this.resolvableValue;
         }
@@ -1785,7 +1785,7 @@ export class SubjectPropertyOutputReference extends cdktn.ComplexObject {
         return hasAnyValues ? internalValueResult : undefined;
     }
 
-    public set internalValue(value: SubjectProperty | cdktn.IResolvable | undefined) {
+    public set internalValue(value: DirectoryNameProperty | cdktn.IResolvable | undefined) {
         if (value === undefined) {
             this.isEmptyObject = false;
             this.resolvableValue = undefined;
@@ -2258,7 +2258,7 @@ export interface GeneralNameProperty {
     *
     * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#directory_name CcCertificateAuthority#directory_name}
     */
-    readonly directoryName?: SubjectProperty;
+    readonly directoryName?: DirectoryNameProperty;
     /**
     * String that contains X.509 DnsName information.
     *
@@ -2387,11 +2387,11 @@ export class GeneralNamePropertyOutputReference extends cdktn.ComplexObject {
     }
 
     // directory_name - computed: true, optional: true, required: false
-    private _directoryName = new SubjectPropertyOutputReference(this, "directory_name");
+    private _directoryName = new DirectoryNamePropertyOutputReference(this, "directory_name");
     public get directoryName() {
         return this._directoryName;
     }
-    public putDirectoryName(value: SubjectProperty) {
+    public putDirectoryName(value: DirectoryNameProperty) {
         this._directoryName.internalValue = value;
     }
     public resetDirectoryName() {
@@ -3428,7 +3428,7 @@ export class CustomAttributesPropertyList extends cdktn.ComplexList {
         return new CustomAttributesPropertyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
     }
 }
-export interface SubjectProperty2 {
+export interface SubjectProperty {
     /**
     * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#common_name CcCertificateAuthority#common_name}
     */
@@ -3492,7 +3492,7 @@ export interface SubjectProperty2 {
     */
     readonly title?: string;
 }
-export class SubjectProperty2OutputReference extends cdktn.ComplexObject {
+export class SubjectPropertyOutputReference extends cdktn.ComplexObject {
     private isEmptyObject = false;
     private resolvableValue?: cdktn.IResolvable;
 
@@ -3504,7 +3504,7 @@ export class SubjectProperty2OutputReference extends cdktn.ComplexObject {
         super(terraformResource, terraformAttribute, false);
     }
 
-    public get internalValue(): SubjectProperty2 | cdktn.IResolvable | undefined {
+    public get internalValue(): SubjectProperty | cdktn.IResolvable | undefined {
         if (this.resolvableValue) {
             return this.resolvableValue;
         }
@@ -3573,7 +3573,7 @@ export class SubjectProperty2OutputReference extends cdktn.ComplexObject {
         return hasAnyValues ? internalValueResult : undefined;
     }
 
-    public set internalValue(value: SubjectProperty2 | cdktn.IResolvable | undefined) {
+    public set internalValue(value: SubjectProperty | cdktn.IResolvable | undefined) {
         if (value === undefined) {
             this.isEmptyObject = false;
             this.resolvableValue = undefined;

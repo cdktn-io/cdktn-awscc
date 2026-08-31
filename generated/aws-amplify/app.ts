@@ -17,7 +17,7 @@ export interface CcAppProps extends cdktn.TerraformMetaArguments {
     /**
     * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/amplify_app#basic_auth_config CcApp#basic_auth_config}
     */
-    readonly basicAuthConfig?: CcApp.BasicAuthConfigProperty2;
+    readonly basicAuthConfig?: CcApp.BasicAuthConfigProperty;
     /**
     * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/amplify_app#build_spec CcApp#build_spec}
     */
@@ -202,11 +202,11 @@ export class CcApp extends cdktn.TerraformResource {
     }
 
     // basic_auth_config - computed: true, optional: true, required: false
-    private _basicAuthConfig = new CcApp.BasicAuthConfigProperty2OutputReference(this, "basic_auth_config");
+    private _basicAuthConfig = new CcApp.BasicAuthConfigPropertyOutputReference(this, "basic_auth_config");
     public get basicAuthConfig() {
         return this._basicAuthConfig;
     }
-    public putBasicAuthConfig(value: CcApp.BasicAuthConfigProperty2) {
+    public putBasicAuthConfig(value: CcApp.BasicAuthConfigProperty) {
         this._basicAuthConfig.internalValue = value;
     }
     public resetBasicAuthConfig() {
@@ -472,7 +472,7 @@ export class CcApp extends cdktn.TerraformResource {
         return {
             access_token: cdktn.stringToTerraform(this._accessToken),
             auto_branch_creation_config: ccAppAutoBranchCreationConfigPropertyToTerraform(this._autoBranchCreationConfig.internalValue),
-            basic_auth_config: ccAppBasicAuthConfigProperty2ToTerraform(this._basicAuthConfig.internalValue),
+            basic_auth_config: ccAppBasicAuthConfigPropertyToTerraform(this._basicAuthConfig.internalValue),
             build_spec: cdktn.stringToTerraform(this._buildSpec),
             cache_config: ccAppCacheConfigPropertyToTerraform(this._cacheConfig.internalValue),
             compute_role_arn: cdktn.stringToTerraform(this._computeRoleArn),
@@ -506,10 +506,10 @@ export class CcApp extends cdktn.TerraformResource {
                 storageClassType: "CcApp.AutoBranchCreationConfigProperty",
             },
             basic_auth_config: {
-                value: ccAppBasicAuthConfigProperty2ToHclTerraform(this._basicAuthConfig.internalValue),
+                value: ccAppBasicAuthConfigPropertyToHclTerraform(this._basicAuthConfig.internalValue),
                 isBlock: true,
                 type: "struct",
-                storageClassType: "CcApp.BasicAuthConfigProperty2",
+                storageClassType: "CcApp.BasicAuthConfigProperty",
             },
             build_spec: {
                 value: cdktn.stringToHclTerraform(this._buildSpec),
@@ -608,7 +608,7 @@ export class CcApp extends cdktn.TerraformResource {
     }
 }
 
-export function ccAppBasicAuthConfigPropertyToTerraform(struct?: CcApp.BasicAuthConfigProperty | cdktn.IResolvable): any {
+export function ccAppAutoBranchCreationConfigBasicAuthConfigPropertyToTerraform(struct?: CcApp.AutoBranchCreationConfigBasicAuthConfigProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -621,7 +621,7 @@ export function ccAppBasicAuthConfigPropertyToTerraform(struct?: CcApp.BasicAuth
 }
 
 
-export function ccAppBasicAuthConfigPropertyToHclTerraform(struct?: CcApp.BasicAuthConfigProperty | cdktn.IResolvable): any {
+export function ccAppAutoBranchCreationConfigBasicAuthConfigPropertyToHclTerraform(struct?: CcApp.AutoBranchCreationConfigBasicAuthConfigProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -696,7 +696,7 @@ export function ccAppAutoBranchCreationConfigPropertyToTerraform(struct?: CcApp.
     }
     return {
         auto_branch_creation_patterns: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.autoBranchCreationPatterns),
-        basic_auth_config: ccAppBasicAuthConfigPropertyToTerraform(struct!.basicAuthConfig),
+        basic_auth_config: ccAppAutoBranchCreationConfigBasicAuthConfigPropertyToTerraform(struct!.basicAuthConfig),
         build_spec: cdktn.stringToTerraform(struct!.buildSpec),
         enable_auto_branch_creation: cdktn.booleanToTerraform(struct!.enableAutoBranchCreation),
         enable_auto_build: cdktn.booleanToTerraform(struct!.enableAutoBuild),
@@ -723,10 +723,10 @@ export function ccAppAutoBranchCreationConfigPropertyToHclTerraform(struct?: CcA
             storageClassType: "stringList",
         },
         basic_auth_config: {
-            value: ccAppBasicAuthConfigPropertyToHclTerraform(struct!.basicAuthConfig),
+            value: ccAppAutoBranchCreationConfigBasicAuthConfigPropertyToHclTerraform(struct!.basicAuthConfig),
             isBlock: true,
             type: "struct",
-            storageClassType: "BasicAuthConfigProperty",
+            storageClassType: "AutoBranchCreationConfigBasicAuthConfigProperty",
         },
         build_spec: {
             value: cdktn.stringToHclTerraform(struct!.buildSpec),
@@ -789,7 +789,7 @@ export function ccAppAutoBranchCreationConfigPropertyToHclTerraform(struct?: CcA
 }
 
 
-export function ccAppBasicAuthConfigProperty2ToTerraform(struct?: CcApp.BasicAuthConfigProperty2 | cdktn.IResolvable): any {
+export function ccAppBasicAuthConfigPropertyToTerraform(struct?: CcApp.BasicAuthConfigProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -802,7 +802,7 @@ export function ccAppBasicAuthConfigProperty2ToTerraform(struct?: CcApp.BasicAut
 }
 
 
-export function ccAppBasicAuthConfigProperty2ToHclTerraform(struct?: CcApp.BasicAuthConfigProperty2 | cdktn.IResolvable): any {
+export function ccAppBasicAuthConfigPropertyToHclTerraform(struct?: CcApp.BasicAuthConfigProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -1019,7 +1019,7 @@ export function ccAppTagPropertyToHclTerraform(struct?: CcApp.TagProperty | cdkt
 
 
 export namespace CcApp {
-export interface BasicAuthConfigProperty {
+export interface AutoBranchCreationConfigBasicAuthConfigProperty {
     /**
     * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/amplify_app#enable_basic_auth CcApp#enable_basic_auth}
     */
@@ -1033,7 +1033,7 @@ export interface BasicAuthConfigProperty {
     */
     readonly username?: string;
 }
-export class BasicAuthConfigPropertyOutputReference extends cdktn.ComplexObject {
+export class AutoBranchCreationConfigBasicAuthConfigPropertyOutputReference extends cdktn.ComplexObject {
     private isEmptyObject = false;
     private resolvableValue?: cdktn.IResolvable;
 
@@ -1045,7 +1045,7 @@ export class BasicAuthConfigPropertyOutputReference extends cdktn.ComplexObject 
         super(terraformResource, terraformAttribute, false);
     }
 
-    public get internalValue(): BasicAuthConfigProperty | cdktn.IResolvable | undefined {
+    public get internalValue(): AutoBranchCreationConfigBasicAuthConfigProperty | cdktn.IResolvable | undefined {
         if (this.resolvableValue) {
             return this.resolvableValue;
         }
@@ -1066,7 +1066,7 @@ export class BasicAuthConfigPropertyOutputReference extends cdktn.ComplexObject 
         return hasAnyValues ? internalValueResult : undefined;
     }
 
-    public set internalValue(value: BasicAuthConfigProperty | cdktn.IResolvable | undefined) {
+    public set internalValue(value: AutoBranchCreationConfigBasicAuthConfigProperty | cdktn.IResolvable | undefined) {
         if (value === undefined) {
             this.isEmptyObject = false;
             this.resolvableValue = undefined;
@@ -1255,7 +1255,7 @@ export interface AutoBranchCreationConfigProperty {
     /**
     * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/amplify_app#basic_auth_config CcApp#basic_auth_config}
     */
-    readonly basicAuthConfig?: BasicAuthConfigProperty;
+    readonly basicAuthConfig?: AutoBranchCreationConfigBasicAuthConfigProperty;
     /**
     * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/amplify_app#build_spec CcApp#build_spec}
     */
@@ -1412,11 +1412,11 @@ export class AutoBranchCreationConfigPropertyOutputReference extends cdktn.Compl
     }
 
     // basic_auth_config - computed: true, optional: true, required: false
-    private _basicAuthConfig = new BasicAuthConfigPropertyOutputReference(this, "basic_auth_config");
+    private _basicAuthConfig = new AutoBranchCreationConfigBasicAuthConfigPropertyOutputReference(this, "basic_auth_config");
     public get basicAuthConfig() {
         return this._basicAuthConfig;
     }
-    public putBasicAuthConfig(value: BasicAuthConfigProperty) {
+    public putBasicAuthConfig(value: AutoBranchCreationConfigBasicAuthConfigProperty) {
         this._basicAuthConfig.internalValue = value;
     }
     public resetBasicAuthConfig() {
@@ -1571,7 +1571,7 @@ export class AutoBranchCreationConfigPropertyOutputReference extends cdktn.Compl
         return this._stage;
     }
 }
-export interface BasicAuthConfigProperty2 {
+export interface BasicAuthConfigProperty {
     /**
     * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/amplify_app#enable_basic_auth CcApp#enable_basic_auth}
     */
@@ -1585,7 +1585,7 @@ export interface BasicAuthConfigProperty2 {
     */
     readonly username?: string;
 }
-export class BasicAuthConfigProperty2OutputReference extends cdktn.ComplexObject {
+export class BasicAuthConfigPropertyOutputReference extends cdktn.ComplexObject {
     private isEmptyObject = false;
     private resolvableValue?: cdktn.IResolvable;
 
@@ -1597,7 +1597,7 @@ export class BasicAuthConfigProperty2OutputReference extends cdktn.ComplexObject
         super(terraformResource, terraformAttribute, false);
     }
 
-    public get internalValue(): BasicAuthConfigProperty2 | cdktn.IResolvable | undefined {
+    public get internalValue(): BasicAuthConfigProperty | cdktn.IResolvable | undefined {
         if (this.resolvableValue) {
             return this.resolvableValue;
         }
@@ -1618,7 +1618,7 @@ export class BasicAuthConfigProperty2OutputReference extends cdktn.ComplexObject
         return hasAnyValues ? internalValueResult : undefined;
     }
 
-    public set internalValue(value: BasicAuthConfigProperty2 | cdktn.IResolvable | undefined) {
+    public set internalValue(value: BasicAuthConfigProperty | cdktn.IResolvable | undefined) {
         if (value === undefined) {
             this.isEmptyObject = false;
             this.resolvableValue = undefined;

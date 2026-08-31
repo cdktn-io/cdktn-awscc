@@ -19,7 +19,7 @@
 import * as fs from "node:fs";
 import * as path from "node:path";
 import * as ts from "typescript";
-import { generatedDir } from "./helpers/paths";
+import { generatedDir, toolRoot } from "./helpers/paths";
 
 /**
  * The base name pacmak-go derives for every exported type in one module: the type name for a
@@ -52,6 +52,11 @@ function goTypeBaseNames(moduleDir: string): { name: string; file: string }[] {
 }
 
 describe("Go target — case-insensitive type-name uniqueness", () => {
+  let naming: any;
+  beforeAll(async () => {
+    naming = await import(path.join(toolRoot, "src", "naming"));
+  });
+
   const modules = fs
     .readdirSync(generatedDir, { withFileTypes: true })
     .filter((e) => e.isDirectory())
@@ -78,5 +83,33 @@ describe("Go target — case-insensitive type-name uniqueness", () => {
     }
     // Empty, or `go build` fails the release with "case-insensitive file name collision".
     expect(collisions).toEqual([]);
+  });
+
+  /**
+   * The disambiguation that resolves a collision has to land back *inside* the naming grammar.
+   * `propertyTypeNamesForResource`'s last-resort `'2'`/`'3'` suffix does not: every
+   * `NAME_GRAMMAR` pattern ends at `Property` / `PropertyOutputReference` / …, no trailing digit.
+   * Reused CFN definition names — the one thing that used to reach that suffix on real awscc data
+   * — are cleared upstream by `naming.dedupeDefinitionNames`, so nothing in the tree needs it.
+   */
+  it("gives every committed type a name inside the naming grammar", () => {
+    const grammars = () => [
+      naming.NAME_GRAMMAR.resourceClass,
+      naming.NAME_GRAMMAR.propsInterface,
+      naming.NAME_GRAMMAR.propertyInterface,
+      naming.NAME_GRAMMAR.propertyOutputReference,
+      naming.NAME_GRAMMAR.propertyList,
+      naming.NAME_GRAMMAR.propertyMap,
+    ];
+    const offenders: string[] = [];
+    for (const mod of modules) {
+      for (const { name, file } of goTypeBaseNames(path.join(generatedDir, mod))) {
+        // `<Namespace>_<Type>` for a nested type — the grammar governs each half on its own.
+        for (const part of name.split("_")) {
+          if (!grammars().some((re) => re.test(part))) offenders.push(`${mod}/${file}: ${part}`);
+        }
+      }
+    }
+    expect(offenders).toEqual([]);
   });
 });

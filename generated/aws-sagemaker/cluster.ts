@@ -71,7 +71,7 @@ export interface CcClusterProps extends cdktn.TerraformMetaArguments {
     *
     * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#vpc_config CcCluster#vpc_config}
     */
-    readonly vpcConfig?: CcCluster.VpcConfigProperty2;
+    readonly vpcConfig?: CcCluster.VpcConfigProperty;
 }
 
 /**
@@ -327,11 +327,11 @@ export class CcCluster extends cdktn.TerraformResource {
     }
 
     // vpc_config - computed: true, optional: true, required: false
-    private _vpcConfig = new CcCluster.VpcConfigProperty2OutputReference(this, "vpc_config");
+    private _vpcConfig = new CcCluster.VpcConfigPropertyOutputReference(this, "vpc_config");
     public get vpcConfig() {
         return this._vpcConfig;
     }
-    public putVpcConfig(value: CcCluster.VpcConfigProperty2) {
+    public putVpcConfig(value: CcCluster.VpcConfigProperty) {
         this._vpcConfig.internalValue = value;
     }
     public resetVpcConfig() {
@@ -358,7 +358,7 @@ export class CcCluster extends cdktn.TerraformResource {
             restricted_instance_groups: cdktn.listMapper(ccClusterClusterRestrictedInstanceGroupPropertyToTerraform, false)(this._restrictedInstanceGroups.internalValue),
             tags: cdktn.listMapper(ccClusterTagPropertyToTerraform, false)(this._tags.internalValue),
             tiered_storage_config: ccClusterTieredStorageConfigPropertyToTerraform(this._tieredStorageConfig.internalValue),
-            vpc_config: ccClusterVpcConfigProperty2ToTerraform(this._vpcConfig.internalValue),
+            vpc_config: ccClusterVpcConfigPropertyToTerraform(this._vpcConfig.internalValue),
         };
     }
 
@@ -425,10 +425,10 @@ export class CcCluster extends cdktn.TerraformResource {
                 storageClassType: "CcCluster.TieredStorageConfigProperty",
             },
             vpc_config: {
-                value: ccClusterVpcConfigProperty2ToHclTerraform(this._vpcConfig.internalValue),
+                value: ccClusterVpcConfigPropertyToHclTerraform(this._vpcConfig.internalValue),
                 isBlock: true,
                 type: "struct",
-                storageClassType: "CcCluster.VpcConfigProperty2",
+                storageClassType: "CcCluster.VpcConfigProperty",
             },
         };
 
@@ -703,7 +703,7 @@ export function ccClusterClusterLifeCycleConfigPropertyToHclTerraform(struct?: C
 }
 
 
-export function ccClusterVpcConfigPropertyToTerraform(struct?: CcCluster.VpcConfigProperty | cdktn.IResolvable): any {
+export function ccClusterInstanceGroupsOverrideVpcConfigPropertyToTerraform(struct?: CcCluster.InstanceGroupsOverrideVpcConfigProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -715,7 +715,7 @@ export function ccClusterVpcConfigPropertyToTerraform(struct?: CcCluster.VpcConf
 }
 
 
-export function ccClusterVpcConfigPropertyToHclTerraform(struct?: CcCluster.VpcConfigProperty | cdktn.IResolvable): any {
+export function ccClusterInstanceGroupsOverrideVpcConfigPropertyToHclTerraform(struct?: CcCluster.InstanceGroupsOverrideVpcConfigProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -980,7 +980,7 @@ export function ccClusterClusterInstanceGroupPropertyToTerraform(struct?: CcClus
         life_cycle_config: ccClusterClusterLifeCycleConfigPropertyToTerraform(struct!.lifeCycleConfig),
         min_instance_count: cdktn.numberToTerraform(struct!.minInstanceCount),
         on_start_deep_health_checks: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.onStartDeepHealthChecks),
-        override_vpc_config: ccClusterVpcConfigPropertyToTerraform(struct!.overrideVpcConfig),
+        override_vpc_config: ccClusterInstanceGroupsOverrideVpcConfigPropertyToTerraform(struct!.overrideVpcConfig),
         scheduled_update_config: ccClusterScheduledUpdateConfigPropertyToTerraform(struct!.scheduledUpdateConfig),
         threads_per_core: cdktn.numberToTerraform(struct!.threadsPerCore),
         training_plan_arn: cdktn.stringToTerraform(struct!.trainingPlanArn),
@@ -1067,10 +1067,10 @@ export function ccClusterClusterInstanceGroupPropertyToHclTerraform(struct?: CcC
             storageClassType: "stringList",
         },
         override_vpc_config: {
-            value: ccClusterVpcConfigPropertyToHclTerraform(struct!.overrideVpcConfig),
+            value: ccClusterInstanceGroupsOverrideVpcConfigPropertyToHclTerraform(struct!.overrideVpcConfig),
             isBlock: true,
             type: "struct",
-            storageClassType: "VpcConfigProperty",
+            storageClassType: "InstanceGroupsOverrideVpcConfigProperty",
         },
         scheduled_update_config: {
             value: ccClusterScheduledUpdateConfigPropertyToHclTerraform(struct!.scheduledUpdateConfig),
@@ -1298,7 +1298,7 @@ export function ccClusterInstanceStorageConfigsPropertyToHclTerraform(struct?: C
 }
 
 
-export function ccClusterOverrideVpcConfigPropertyToTerraform(struct?: CcCluster.OverrideVpcConfigProperty | cdktn.IResolvable): any {
+export function ccClusterRestrictedInstanceGroupsOverrideVpcConfigPropertyToTerraform(struct?: CcCluster.RestrictedInstanceGroupsOverrideVpcConfigProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -1310,7 +1310,7 @@ export function ccClusterOverrideVpcConfigPropertyToTerraform(struct?: CcCluster
 }
 
 
-export function ccClusterOverrideVpcConfigPropertyToHclTerraform(struct?: CcCluster.OverrideVpcConfigProperty | cdktn.IResolvable): any {
+export function ccClusterRestrictedInstanceGroupsOverrideVpcConfigPropertyToHclTerraform(struct?: CcCluster.RestrictedInstanceGroupsOverrideVpcConfigProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -1349,7 +1349,7 @@ export function ccClusterClusterRestrictedInstanceGroupPropertyToTerraform(struc
         instance_storage_configs: cdktn.listMapper(ccClusterInstanceStorageConfigsPropertyToTerraform, false)(struct!.instanceStorageConfigs),
         instance_type: cdktn.stringToTerraform(struct!.instanceType),
         on_start_deep_health_checks: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.onStartDeepHealthChecks),
-        override_vpc_config: ccClusterOverrideVpcConfigPropertyToTerraform(struct!.overrideVpcConfig),
+        override_vpc_config: ccClusterRestrictedInstanceGroupsOverrideVpcConfigPropertyToTerraform(struct!.overrideVpcConfig),
         threads_per_core: cdktn.numberToTerraform(struct!.threadsPerCore),
         training_plan_arn: cdktn.stringToTerraform(struct!.trainingPlanArn),
     }
@@ -1411,10 +1411,10 @@ export function ccClusterClusterRestrictedInstanceGroupPropertyToHclTerraform(st
             storageClassType: "stringList",
         },
         override_vpc_config: {
-            value: ccClusterOverrideVpcConfigPropertyToHclTerraform(struct!.overrideVpcConfig),
+            value: ccClusterRestrictedInstanceGroupsOverrideVpcConfigPropertyToHclTerraform(struct!.overrideVpcConfig),
             isBlock: true,
             type: "struct",
-            storageClassType: "OverrideVpcConfigProperty",
+            storageClassType: "RestrictedInstanceGroupsOverrideVpcConfigProperty",
         },
         threads_per_core: {
             value: cdktn.numberToHclTerraform(struct!.threadsPerCore),
@@ -1509,7 +1509,7 @@ export function ccClusterTieredStorageConfigPropertyToHclTerraform(struct?: CcCl
 }
 
 
-export function ccClusterVpcConfigProperty2ToTerraform(struct?: CcCluster.VpcConfigProperty2 | cdktn.IResolvable): any {
+export function ccClusterVpcConfigPropertyToTerraform(struct?: CcCluster.VpcConfigProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -1521,7 +1521,7 @@ export function ccClusterVpcConfigProperty2ToTerraform(struct?: CcCluster.VpcCon
 }
 
 
-export function ccClusterVpcConfigProperty2ToHclTerraform(struct?: CcCluster.VpcConfigProperty2 | cdktn.IResolvable): any {
+export function ccClusterVpcConfigPropertyToHclTerraform(struct?: CcCluster.VpcConfigProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -2273,7 +2273,7 @@ export class ClusterLifeCycleConfigPropertyOutputReference extends cdktn.Complex
         return this._sourceS3Uri;
     }
 }
-export interface VpcConfigProperty {
+export interface InstanceGroupsOverrideVpcConfigProperty {
     /**
     * The VPC security group IDs, in the form sg-xxxxxxxx. Specify the security groups for the VPC that is specified in the Subnets field.
     *
@@ -2287,7 +2287,7 @@ export interface VpcConfigProperty {
     */
     readonly subnets?: string[];
 }
-export class VpcConfigPropertyOutputReference extends cdktn.ComplexObject {
+export class InstanceGroupsOverrideVpcConfigPropertyOutputReference extends cdktn.ComplexObject {
     private isEmptyObject = false;
     private resolvableValue?: cdktn.IResolvable;
 
@@ -2299,7 +2299,7 @@ export class VpcConfigPropertyOutputReference extends cdktn.ComplexObject {
         super(terraformResource, terraformAttribute, false);
     }
 
-    public get internalValue(): VpcConfigProperty | cdktn.IResolvable | undefined {
+    public get internalValue(): InstanceGroupsOverrideVpcConfigProperty | cdktn.IResolvable | undefined {
         if (this.resolvableValue) {
             return this.resolvableValue;
         }
@@ -2316,7 +2316,7 @@ export class VpcConfigPropertyOutputReference extends cdktn.ComplexObject {
         return hasAnyValues ? internalValueResult : undefined;
     }
 
-    public set internalValue(value: VpcConfigProperty | cdktn.IResolvable | undefined) {
+    public set internalValue(value: InstanceGroupsOverrideVpcConfigProperty | cdktn.IResolvable | undefined) {
         if (value === undefined) {
             this.isEmptyObject = false;
             this.resolvableValue = undefined;
@@ -3031,7 +3031,7 @@ export interface ClusterInstanceGroupProperty {
     *
     * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#override_vpc_config CcCluster#override_vpc_config}
     */
-    readonly overrideVpcConfig?: VpcConfigProperty;
+    readonly overrideVpcConfig?: InstanceGroupsOverrideVpcConfigProperty;
     /**
     * The configuration object of the schedule that SageMaker follows when updating the AMI.
     *
@@ -3378,11 +3378,11 @@ export class ClusterInstanceGroupPropertyOutputReference extends cdktn.ComplexOb
     }
 
     // override_vpc_config - computed: true, optional: true, required: false
-    private _overrideVpcConfig = new VpcConfigPropertyOutputReference(this, "override_vpc_config");
+    private _overrideVpcConfig = new InstanceGroupsOverrideVpcConfigPropertyOutputReference(this, "override_vpc_config");
     public get overrideVpcConfig() {
         return this._overrideVpcConfig;
     }
-    public putOverrideVpcConfig(value: VpcConfigProperty) {
+    public putOverrideVpcConfig(value: InstanceGroupsOverrideVpcConfigProperty) {
         this._overrideVpcConfig.internalValue = value;
     }
     public resetOverrideVpcConfig() {
@@ -3959,7 +3959,7 @@ export class InstanceStorageConfigsPropertyList extends cdktn.ComplexList {
         return new InstanceStorageConfigsPropertyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
     }
 }
-export interface OverrideVpcConfigProperty {
+export interface RestrictedInstanceGroupsOverrideVpcConfigProperty {
     /**
     * The VPC security group IDs, in the form sg-xxxxxxxx. Specify the security groups for the VPC that is specified in the Subnets field.
     *
@@ -3973,7 +3973,7 @@ export interface OverrideVpcConfigProperty {
     */
     readonly subnets?: string[];
 }
-export class OverrideVpcConfigPropertyOutputReference extends cdktn.ComplexObject {
+export class RestrictedInstanceGroupsOverrideVpcConfigPropertyOutputReference extends cdktn.ComplexObject {
     private isEmptyObject = false;
     private resolvableValue?: cdktn.IResolvable;
 
@@ -3985,7 +3985,7 @@ export class OverrideVpcConfigPropertyOutputReference extends cdktn.ComplexObjec
         super(terraformResource, terraformAttribute, false);
     }
 
-    public get internalValue(): OverrideVpcConfigProperty | cdktn.IResolvable | undefined {
+    public get internalValue(): RestrictedInstanceGroupsOverrideVpcConfigProperty | cdktn.IResolvable | undefined {
         if (this.resolvableValue) {
             return this.resolvableValue;
         }
@@ -4002,7 +4002,7 @@ export class OverrideVpcConfigPropertyOutputReference extends cdktn.ComplexObjec
         return hasAnyValues ? internalValueResult : undefined;
     }
 
-    public set internalValue(value: OverrideVpcConfigProperty | cdktn.IResolvable | undefined) {
+    public set internalValue(value: RestrictedInstanceGroupsOverrideVpcConfigProperty | cdktn.IResolvable | undefined) {
         if (value === undefined) {
             this.isEmptyObject = false;
             this.resolvableValue = undefined;
@@ -4107,7 +4107,7 @@ export interface ClusterRestrictedInstanceGroupProperty {
     *
     * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#override_vpc_config CcCluster#override_vpc_config}
     */
-    readonly overrideVpcConfig?: OverrideVpcConfigProperty;
+    readonly overrideVpcConfig?: RestrictedInstanceGroupsOverrideVpcConfigProperty;
     /**
     * The number you specified to TreadsPerCore in CreateCluster for enabling or disabling multithreading. For instance types that support multithreading, you can specify 1 for disabling multithreading and 2 for enabling multithreading.
     *
@@ -4354,11 +4354,11 @@ export class ClusterRestrictedInstanceGroupPropertyOutputReference extends cdktn
     }
 
     // override_vpc_config - computed: true, optional: true, required: false
-    private _overrideVpcConfig = new OverrideVpcConfigPropertyOutputReference(this, "override_vpc_config");
+    private _overrideVpcConfig = new RestrictedInstanceGroupsOverrideVpcConfigPropertyOutputReference(this, "override_vpc_config");
     public get overrideVpcConfig() {
         return this._overrideVpcConfig;
     }
-    public putOverrideVpcConfig(value: OverrideVpcConfigProperty) {
+    public putOverrideVpcConfig(value: RestrictedInstanceGroupsOverrideVpcConfigProperty) {
         this._overrideVpcConfig.internalValue = value;
     }
     public resetOverrideVpcConfig() {
@@ -4631,7 +4631,7 @@ export class TieredStorageConfigPropertyOutputReference extends cdktn.ComplexObj
         return this._mode;
     }
 }
-export interface VpcConfigProperty2 {
+export interface VpcConfigProperty {
     /**
     * The VPC security group IDs, in the form sg-xxxxxxxx. Specify the security groups for the VPC that is specified in the Subnets field.
     *
@@ -4645,7 +4645,7 @@ export interface VpcConfigProperty2 {
     */
     readonly subnets?: string[];
 }
-export class VpcConfigProperty2OutputReference extends cdktn.ComplexObject {
+export class VpcConfigPropertyOutputReference extends cdktn.ComplexObject {
     private isEmptyObject = false;
     private resolvableValue?: cdktn.IResolvable;
 
@@ -4657,7 +4657,7 @@ export class VpcConfigProperty2OutputReference extends cdktn.ComplexObject {
         super(terraformResource, terraformAttribute, false);
     }
 
-    public get internalValue(): VpcConfigProperty2 | cdktn.IResolvable | undefined {
+    public get internalValue(): VpcConfigProperty | cdktn.IResolvable | undefined {
         if (this.resolvableValue) {
             return this.resolvableValue;
         }
@@ -4674,7 +4674,7 @@ export class VpcConfigProperty2OutputReference extends cdktn.ComplexObject {
         return hasAnyValues ? internalValueResult : undefined;
     }
 
-    public set internalValue(value: VpcConfigProperty2 | cdktn.IResolvable | undefined) {
+    public set internalValue(value: VpcConfigProperty | cdktn.IResolvable | undefined) {
         if (value === undefined) {
             this.isEmptyObject = false;
             this.resolvableValue = undefined;

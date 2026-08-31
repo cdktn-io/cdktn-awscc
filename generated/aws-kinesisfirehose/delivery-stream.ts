@@ -65,7 +65,7 @@ export interface CcDeliveryStreamProps extends cdktn.TerraformMetaArguments {
     /**
     * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#s3_destination_configuration CcDeliveryStream#s3_destination_configuration}
     */
-    readonly s3DestinationConfiguration?: CcDeliveryStream.S3DestinationConfigurationProperty2;
+    readonly s3DestinationConfiguration?: CcDeliveryStream.S3DestinationConfigurationProperty;
     /**
     * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#snowflake_destination_configuration CcDeliveryStream#snowflake_destination_configuration}
     */
@@ -389,11 +389,11 @@ export class CcDeliveryStream extends cdktn.TerraformResource {
     }
 
     // s3_destination_configuration - computed: true, optional: true, required: false
-    private _s3DestinationConfiguration = new CcDeliveryStream.S3DestinationConfigurationProperty2OutputReference(this, "s3_destination_configuration");
+    private _s3DestinationConfiguration = new CcDeliveryStream.S3DestinationConfigurationPropertyOutputReference(this, "s3_destination_configuration");
     public get s3DestinationConfiguration() {
         return this._s3DestinationConfiguration;
     }
-    public putS3DestinationConfiguration(value: CcDeliveryStream.S3DestinationConfigurationProperty2) {
+    public putS3DestinationConfiguration(value: CcDeliveryStream.S3DestinationConfigurationProperty) {
         this._s3DestinationConfiguration.internalValue = value;
     }
     public resetS3DestinationConfiguration() {
@@ -472,7 +472,7 @@ export class CcDeliveryStream extends cdktn.TerraformResource {
             kinesis_stream_source_configuration: ccDeliveryStreamKinesisStreamSourceConfigurationPropertyToTerraform(this._kinesisStreamSourceConfiguration.internalValue),
             msk_source_configuration: ccDeliveryStreamMSKSourceConfigurationPropertyToTerraform(this._mskSourceConfiguration.internalValue),
             redshift_destination_configuration: ccDeliveryStreamRedshiftDestinationConfigurationPropertyToTerraform(this._redshiftDestinationConfiguration.internalValue),
-            s3_destination_configuration: ccDeliveryStreamS3DestinationConfigurationProperty2ToTerraform(this._s3DestinationConfiguration.internalValue),
+            s3_destination_configuration: ccDeliveryStreamS3DestinationConfigurationPropertyToTerraform(this._s3DestinationConfiguration.internalValue),
             snowflake_destination_configuration: ccDeliveryStreamSnowflakeDestinationConfigurationPropertyToTerraform(this._snowflakeDestinationConfiguration.internalValue),
             splunk_destination_configuration: ccDeliveryStreamSplunkDestinationConfigurationPropertyToTerraform(this._splunkDestinationConfiguration.internalValue),
             tags: cdktn.listMapper(ccDeliveryStreamTagPropertyToTerraform, false)(this._tags.internalValue),
@@ -566,10 +566,10 @@ export class CcDeliveryStream extends cdktn.TerraformResource {
                 storageClassType: "CcDeliveryStream.RedshiftDestinationConfigurationProperty",
             },
             s3_destination_configuration: {
-                value: ccDeliveryStreamS3DestinationConfigurationProperty2ToHclTerraform(this._s3DestinationConfiguration.internalValue),
+                value: ccDeliveryStreamS3DestinationConfigurationPropertyToHclTerraform(this._s3DestinationConfiguration.internalValue),
                 isBlock: true,
                 type: "struct",
-                storageClassType: "CcDeliveryStream.S3DestinationConfigurationProperty2",
+                storageClassType: "CcDeliveryStream.S3DestinationConfigurationProperty",
             },
             snowflake_destination_configuration: {
                 value: ccDeliveryStreamSnowflakeDestinationConfigurationPropertyToHclTerraform(this._snowflakeDestinationConfiguration.internalValue),
@@ -966,7 +966,7 @@ export function ccDeliveryStreamEncryptionConfigurationPropertyToHclTerraform(st
 }
 
 
-export function ccDeliveryStreamS3DestinationConfigurationPropertyToTerraform(struct?: CcDeliveryStream.S3DestinationConfigurationProperty | cdktn.IResolvable): any {
+export function ccDeliveryStreamAmazonOpenSearchServerlessDestinationConfigurationS3ConfigurationPropertyToTerraform(struct?: CcDeliveryStream.AmazonOpenSearchServerlessDestinationConfigurationS3ConfigurationProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -984,7 +984,7 @@ export function ccDeliveryStreamS3DestinationConfigurationPropertyToTerraform(st
 }
 
 
-export function ccDeliveryStreamS3DestinationConfigurationPropertyToHclTerraform(struct?: CcDeliveryStream.S3DestinationConfigurationProperty | cdktn.IResolvable): any {
+export function ccDeliveryStreamAmazonOpenSearchServerlessDestinationConfigurationS3ConfigurationPropertyToHclTerraform(struct?: CcDeliveryStream.AmazonOpenSearchServerlessDestinationConfigurationS3ConfigurationProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -1103,7 +1103,7 @@ export function ccDeliveryStreamAmazonOpenSearchServerlessDestinationConfigurati
         retry_options: ccDeliveryStreamAmazonOpenSearchServerlessRetryOptionsPropertyToTerraform(struct!.retryOptions),
         role_arn: cdktn.stringToTerraform(struct!.roleArn),
         s3_backup_mode: cdktn.stringToTerraform(struct!.s3BackupMode),
-        s3_configuration: ccDeliveryStreamS3DestinationConfigurationPropertyToTerraform(struct!.s3Configuration),
+        s3_configuration: ccDeliveryStreamAmazonOpenSearchServerlessDestinationConfigurationS3ConfigurationPropertyToTerraform(struct!.s3Configuration),
         vpc_configuration: ccDeliveryStreamVpcConfigurationPropertyToTerraform(struct!.vpcConfiguration),
     }
 }
@@ -1164,10 +1164,10 @@ export function ccDeliveryStreamAmazonOpenSearchServerlessDestinationConfigurati
             storageClassType: "string",
         },
         s3_configuration: {
-            value: ccDeliveryStreamS3DestinationConfigurationPropertyToHclTerraform(struct!.s3Configuration),
+            value: ccDeliveryStreamAmazonOpenSearchServerlessDestinationConfigurationS3ConfigurationPropertyToHclTerraform(struct!.s3Configuration),
             isBlock: true,
             type: "struct",
-            storageClassType: "S3DestinationConfigurationProperty",
+            storageClassType: "AmazonOpenSearchServerlessDestinationConfigurationS3ConfigurationProperty",
         },
         vpc_configuration: {
             value: ccDeliveryStreamVpcConfigurationPropertyToHclTerraform(struct!.vpcConfiguration),
@@ -6611,7 +6611,7 @@ export function ccDeliveryStreamS3DestinationConfigurationEncryptionConfiguratio
 }
 
 
-export function ccDeliveryStreamS3DestinationConfigurationProperty2ToTerraform(struct?: CcDeliveryStream.S3DestinationConfigurationProperty2 | cdktn.IResolvable): any {
+export function ccDeliveryStreamS3DestinationConfigurationPropertyToTerraform(struct?: CcDeliveryStream.S3DestinationConfigurationProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -6629,7 +6629,7 @@ export function ccDeliveryStreamS3DestinationConfigurationProperty2ToTerraform(s
 }
 
 
-export function ccDeliveryStreamS3DestinationConfigurationProperty2ToHclTerraform(struct?: CcDeliveryStream.S3DestinationConfigurationProperty2 | cdktn.IResolvable): any {
+export function ccDeliveryStreamS3DestinationConfigurationPropertyToHclTerraform(struct?: CcDeliveryStream.S3DestinationConfigurationProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -8988,7 +8988,7 @@ export class EncryptionConfigurationPropertyOutputReference extends cdktn.Comple
         return this._noEncryptionConfig;
     }
 }
-export interface S3DestinationConfigurationProperty {
+export interface AmazonOpenSearchServerlessDestinationConfigurationS3ConfigurationProperty {
     /**
     * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#bucket_arn CcDeliveryStream#bucket_arn}
     */
@@ -9022,7 +9022,7 @@ export interface S3DestinationConfigurationProperty {
     */
     readonly roleArn?: string;
 }
-export class S3DestinationConfigurationPropertyOutputReference extends cdktn.ComplexObject {
+export class AmazonOpenSearchServerlessDestinationConfigurationS3ConfigurationPropertyOutputReference extends cdktn.ComplexObject {
     private isEmptyObject = false;
     private resolvableValue?: cdktn.IResolvable;
 
@@ -9034,7 +9034,7 @@ export class S3DestinationConfigurationPropertyOutputReference extends cdktn.Com
         super(terraformResource, terraformAttribute, false);
     }
 
-    public get internalValue(): S3DestinationConfigurationProperty | cdktn.IResolvable | undefined {
+    public get internalValue(): AmazonOpenSearchServerlessDestinationConfigurationS3ConfigurationProperty | cdktn.IResolvable | undefined {
         if (this.resolvableValue) {
             return this.resolvableValue;
         }
@@ -9075,7 +9075,7 @@ export class S3DestinationConfigurationPropertyOutputReference extends cdktn.Com
         return hasAnyValues ? internalValueResult : undefined;
     }
 
-    public set internalValue(value: S3DestinationConfigurationProperty | cdktn.IResolvable | undefined) {
+    public set internalValue(value: AmazonOpenSearchServerlessDestinationConfigurationS3ConfigurationProperty | cdktn.IResolvable | undefined) {
         if (value === undefined) {
             this.isEmptyObject = false;
             this.resolvableValue = undefined;
@@ -9386,7 +9386,7 @@ export interface AmazonOpenSearchServerlessDestinationConfigurationProperty {
     /**
     * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#s3_configuration CcDeliveryStream#s3_configuration}
     */
-    readonly s3Configuration?: S3DestinationConfigurationProperty;
+    readonly s3Configuration?: AmazonOpenSearchServerlessDestinationConfigurationS3ConfigurationProperty;
     /**
     * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#vpc_configuration CcDeliveryStream#vpc_configuration}
     */
@@ -9617,11 +9617,11 @@ export class AmazonOpenSearchServerlessDestinationConfigurationPropertyOutputRef
     }
 
     // s3_configuration - computed: true, optional: true, required: false
-    private _s3Configuration = new S3DestinationConfigurationPropertyOutputReference(this, "s3_configuration");
+    private _s3Configuration = new AmazonOpenSearchServerlessDestinationConfigurationS3ConfigurationPropertyOutputReference(this, "s3_configuration");
     public get s3Configuration() {
         return this._s3Configuration;
     }
-    public putS3Configuration(value: S3DestinationConfigurationProperty) {
+    public putS3Configuration(value: AmazonOpenSearchServerlessDestinationConfigurationS3ConfigurationProperty) {
         this._s3Configuration.internalValue = value;
     }
     public resetS3Configuration() {
@@ -24404,7 +24404,7 @@ export class S3DestinationConfigurationEncryptionConfigurationPropertyOutputRefe
         return this._noEncryptionConfig;
     }
 }
-export interface S3DestinationConfigurationProperty2 {
+export interface S3DestinationConfigurationProperty {
     /**
     * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#bucket_arn CcDeliveryStream#bucket_arn}
     */
@@ -24438,7 +24438,7 @@ export interface S3DestinationConfigurationProperty2 {
     */
     readonly roleArn?: string;
 }
-export class S3DestinationConfigurationProperty2OutputReference extends cdktn.ComplexObject {
+export class S3DestinationConfigurationPropertyOutputReference extends cdktn.ComplexObject {
     private isEmptyObject = false;
     private resolvableValue?: cdktn.IResolvable;
 
@@ -24450,7 +24450,7 @@ export class S3DestinationConfigurationProperty2OutputReference extends cdktn.Co
         super(terraformResource, terraformAttribute, false);
     }
 
-    public get internalValue(): S3DestinationConfigurationProperty2 | cdktn.IResolvable | undefined {
+    public get internalValue(): S3DestinationConfigurationProperty | cdktn.IResolvable | undefined {
         if (this.resolvableValue) {
             return this.resolvableValue;
         }
@@ -24491,7 +24491,7 @@ export class S3DestinationConfigurationProperty2OutputReference extends cdktn.Co
         return hasAnyValues ? internalValueResult : undefined;
     }
 
-    public set internalValue(value: S3DestinationConfigurationProperty2 | cdktn.IResolvable | undefined) {
+    public set internalValue(value: S3DestinationConfigurationProperty | cdktn.IResolvable | undefined) {
         if (value === undefined) {
             this.isEmptyObject = false;
             this.resolvableValue = undefined;
