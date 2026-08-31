@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_security_profile
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_security_profile
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,55 +9,55 @@ export interface CcSecurityProfileProps extends cdktn.TerraformMetaArguments {
     /**
     * A list of metrics whose data is retained (stored). By default, data is retained for any metric used in the profile's behaviors, but it is also retained for any metric specified here.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_security_profile#additional_metrics_to_retain_v2 CcSecurityProfile#additional_metrics_to_retain_v2}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_security_profile#additional_metrics_to_retain_v2 CcSecurityProfile#additional_metrics_to_retain_v2}
     */
     readonly additionalMetricsToRetainV2?: CcSecurityProfile.MetricToRetainProperty[] | cdktn.IResolvable;
     /**
     * Specifies the destinations to which alerts are sent.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_security_profile#alert_targets CcSecurityProfile#alert_targets}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_security_profile#alert_targets CcSecurityProfile#alert_targets}
     */
     readonly alertTargets?: { [key: string]: CcSecurityProfile.AlertTargetProperty } | cdktn.IResolvable;
     /**
     * Specifies the behaviors that, when violated by a device (thing), cause an alert.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_security_profile#behaviors CcSecurityProfile#behaviors}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_security_profile#behaviors CcSecurityProfile#behaviors}
     */
     readonly behaviors?: CcSecurityProfile.BehaviorProperty[] | cdktn.IResolvable;
     /**
     * A structure containing the mqtt topic for metrics export.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_security_profile#metrics_export_config CcSecurityProfile#metrics_export_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_security_profile#metrics_export_config CcSecurityProfile#metrics_export_config}
     */
     readonly metricsExportConfig?: CcSecurityProfile.MetricsExportConfigProperty;
     /**
     * A description of the security profile.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_security_profile#security_profile_description CcSecurityProfile#security_profile_description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_security_profile#security_profile_description CcSecurityProfile#security_profile_description}
     */
     readonly securityProfileDescription?: string;
     /**
     * A unique identifier for the security profile.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_security_profile#security_profile_name CcSecurityProfile#security_profile_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_security_profile#security_profile_name CcSecurityProfile#security_profile_name}
     */
     readonly securityProfileName?: string;
     /**
     * Metadata that can be used to manage the security profile.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_security_profile#tags CcSecurityProfile#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_security_profile#tags CcSecurityProfile#tags}
     */
     readonly tags?: CcSecurityProfile.TagProperty[] | cdktn.IResolvable;
     /**
     * A set of target ARNs that the security profile is attached to.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_security_profile#target_arns CcSecurityProfile#target_arns}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_security_profile#target_arns CcSecurityProfile#target_arns}
     */
     readonly targetArns?: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_security_profile awscc_iot_security_profile}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_security_profile awscc_iot_security_profile}
 */
 export class CcSecurityProfile extends cdktn.TerraformResource {
 
@@ -73,7 +73,7 @@ export class CcSecurityProfile extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcSecurityProfile resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcSecurityProfile to import
-    * @param importFromId The id of the existing CcSecurityProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_security_profile#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcSecurityProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_security_profile#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcSecurityProfile to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -85,7 +85,7 @@ export class CcSecurityProfile extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_security_profile awscc_iot_security_profile} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_security_profile awscc_iot_security_profile} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -95,7 +95,8 @@ export class CcSecurityProfile extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_iot_security_profile',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -827,13 +828,13 @@ export interface MetricDimensionProperty {
     /**
     * A unique identifier for the dimension.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_security_profile#dimension_name CcSecurityProfile#dimension_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_security_profile#dimension_name CcSecurityProfile#dimension_name}
     */
     readonly dimensionName?: string;
     /**
     * Defines how the dimensionValues of a dimension are interpreted.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_security_profile#operator CcSecurityProfile#operator}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_security_profile#operator CcSecurityProfile#operator}
     */
     readonly operator?: string;
 }
@@ -921,19 +922,19 @@ export interface MetricToRetainProperty {
     /**
     * Flag to enable/disable metrics export for metric to be retained.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_security_profile#export_metric CcSecurityProfile#export_metric}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_security_profile#export_metric CcSecurityProfile#export_metric}
     */
     readonly exportMetric?: boolean | cdktn.IResolvable;
     /**
     * What is measured by the behavior.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_security_profile#metric CcSecurityProfile#metric}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_security_profile#metric CcSecurityProfile#metric}
     */
     readonly metric?: string;
     /**
     * The dimension of a metric.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_security_profile#metric_dimension CcSecurityProfile#metric_dimension}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_security_profile#metric_dimension CcSecurityProfile#metric_dimension}
     */
     readonly metricDimension?: MetricDimensionProperty;
 }
@@ -1065,13 +1066,13 @@ export interface AlertTargetProperty {
     /**
     * The ARN of the notification target to which alerts are sent.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_security_profile#alert_target_arn CcSecurityProfile#alert_target_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_security_profile#alert_target_arn CcSecurityProfile#alert_target_arn}
     */
     readonly alertTargetArn?: string;
     /**
     * The ARN of the role that grants permission to send alerts to the notification target.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_security_profile#role_arn CcSecurityProfile#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_security_profile#role_arn CcSecurityProfile#role_arn}
     */
     readonly roleArn?: string;
 }
@@ -1179,7 +1180,7 @@ export interface MachineLearningDetectionConfigProperty {
     /**
     * The sensitivity of anomalous behavior evaluation. Can be Low, Medium, or High.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_security_profile#confidence_level CcSecurityProfile#confidence_level}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_security_profile#confidence_level CcSecurityProfile#confidence_level}
     */
     readonly confidenceLevel?: string;
 }
@@ -1245,7 +1246,7 @@ export interface StatisticalThresholdProperty {
     /**
     * The percentile which resolves to a threshold value by which compliance with a behavior is determined
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_security_profile#statistic CcSecurityProfile#statistic}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_security_profile#statistic CcSecurityProfile#statistic}
     */
     readonly statistic?: string;
 }
@@ -1311,37 +1312,37 @@ export interface MetricValueProperty {
     /**
     * If the ComparisonOperator calls for a set of CIDRs, use this to specify that set to be compared with the metric.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_security_profile#cidrs CcSecurityProfile#cidrs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_security_profile#cidrs CcSecurityProfile#cidrs}
     */
     readonly cidrs?: string[];
     /**
     * If the ComparisonOperator calls for a numeric value, use this to specify that (integer) numeric value to be compared with the metric.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_security_profile#count CcSecurityProfile#count}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_security_profile#count CcSecurityProfile#count}
     */
     readonly count?: string;
     /**
     * The numeral value of a metric.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_security_profile#number CcSecurityProfile#number}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_security_profile#number CcSecurityProfile#number}
     */
     readonly number?: number;
     /**
     * The numeral values of a metric.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_security_profile#numbers CcSecurityProfile#numbers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_security_profile#numbers CcSecurityProfile#numbers}
     */
     readonly numbers?: number[];
     /**
     * If the ComparisonOperator calls for a set of ports, use this to specify that set to be compared with the metric.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_security_profile#ports CcSecurityProfile#ports}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_security_profile#ports CcSecurityProfile#ports}
     */
     readonly ports?: number[];
     /**
     * The string values of a metric.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_security_profile#strings CcSecurityProfile#strings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_security_profile#strings CcSecurityProfile#strings}
     */
     readonly strings?: string[];
 }
@@ -1517,43 +1518,43 @@ export interface BehaviorCriteriaProperty {
     /**
     * The operator that relates the thing measured (metric) to the criteria (containing a value or statisticalThreshold).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_security_profile#comparison_operator CcSecurityProfile#comparison_operator}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_security_profile#comparison_operator CcSecurityProfile#comparison_operator}
     */
     readonly comparisonOperator?: string;
     /**
     * If a device is in violation of the behavior for the specified number of consecutive datapoints, an alarm occurs. If not specified, the default is 1.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_security_profile#consecutive_datapoints_to_alarm CcSecurityProfile#consecutive_datapoints_to_alarm}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_security_profile#consecutive_datapoints_to_alarm CcSecurityProfile#consecutive_datapoints_to_alarm}
     */
     readonly consecutiveDatapointsToAlarm?: number;
     /**
     * If an alarm has occurred and the offending device is no longer in violation of the behavior for the specified number of consecutive datapoints, the alarm is cleared. If not specified, the default is 1.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_security_profile#consecutive_datapoints_to_clear CcSecurityProfile#consecutive_datapoints_to_clear}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_security_profile#consecutive_datapoints_to_clear CcSecurityProfile#consecutive_datapoints_to_clear}
     */
     readonly consecutiveDatapointsToClear?: number;
     /**
     * Use this to specify the time duration over which the behavior is evaluated.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_security_profile#duration_seconds CcSecurityProfile#duration_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_security_profile#duration_seconds CcSecurityProfile#duration_seconds}
     */
     readonly durationSeconds?: number;
     /**
     * The configuration of an ML Detect Security Profile.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_security_profile#ml_detection_config CcSecurityProfile#ml_detection_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_security_profile#ml_detection_config CcSecurityProfile#ml_detection_config}
     */
     readonly mlDetectionConfig?: MachineLearningDetectionConfigProperty;
     /**
     * A statistical ranking (percentile) which indicates a threshold value by which a behavior is determined to be in compliance or in violation of the behavior.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_security_profile#statistical_threshold CcSecurityProfile#statistical_threshold}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_security_profile#statistical_threshold CcSecurityProfile#statistical_threshold}
     */
     readonly statisticalThreshold?: StatisticalThresholdProperty;
     /**
     * The value to be compared with the metric.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_security_profile#value CcSecurityProfile#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_security_profile#value CcSecurityProfile#value}
     */
     readonly value?: MetricValueProperty;
 }
@@ -1751,13 +1752,13 @@ export interface BehaviorsMetricDimensionProperty {
     /**
     * A unique identifier for the dimension.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_security_profile#dimension_name CcSecurityProfile#dimension_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_security_profile#dimension_name CcSecurityProfile#dimension_name}
     */
     readonly dimensionName?: string;
     /**
     * Defines how the dimensionValues of a dimension are interpreted.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_security_profile#operator CcSecurityProfile#operator}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_security_profile#operator CcSecurityProfile#operator}
     */
     readonly operator?: string;
 }
@@ -1845,37 +1846,37 @@ export interface BehaviorProperty {
     /**
     * The criteria by which the behavior is determined to be normal.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_security_profile#criteria CcSecurityProfile#criteria}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_security_profile#criteria CcSecurityProfile#criteria}
     */
     readonly criteria?: BehaviorCriteriaProperty;
     /**
     * Flag to enable/disable metrics export for metric to be retained.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_security_profile#export_metric CcSecurityProfile#export_metric}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_security_profile#export_metric CcSecurityProfile#export_metric}
     */
     readonly exportMetric?: boolean | cdktn.IResolvable;
     /**
     * What is measured by the behavior.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_security_profile#metric CcSecurityProfile#metric}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_security_profile#metric CcSecurityProfile#metric}
     */
     readonly metric?: string;
     /**
     * The dimension of a metric.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_security_profile#metric_dimension CcSecurityProfile#metric_dimension}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_security_profile#metric_dimension CcSecurityProfile#metric_dimension}
     */
     readonly metricDimension?: BehaviorsMetricDimensionProperty;
     /**
     * The name for the behavior.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_security_profile#name CcSecurityProfile#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_security_profile#name CcSecurityProfile#name}
     */
     readonly name?: string;
     /**
     * Manage Detect alarm SNS notifications by setting behavior notification to on or suppressed. Detect will continue to performing device behavior evaluations. However, suppressed alarms wouldn't be forwarded for SNS notification.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_security_profile#suppress_alerts CcSecurityProfile#suppress_alerts}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_security_profile#suppress_alerts CcSecurityProfile#suppress_alerts}
     */
     readonly suppressAlerts?: boolean | cdktn.IResolvable;
 }
@@ -2073,13 +2074,13 @@ export interface MetricsExportConfigProperty {
     /**
     * The topic for metrics export.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_security_profile#mqtt_topic CcSecurityProfile#mqtt_topic}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_security_profile#mqtt_topic CcSecurityProfile#mqtt_topic}
     */
     readonly mqttTopic?: string;
     /**
     * The ARN of the role that grants permission to publish to mqtt topic.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_security_profile#role_arn CcSecurityProfile#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_security_profile#role_arn CcSecurityProfile#role_arn}
     */
     readonly roleArn?: string;
 }
@@ -2167,13 +2168,13 @@ export interface TagProperty {
     /**
     * The tag's key.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_security_profile#key CcSecurityProfile#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_security_profile#key CcSecurityProfile#key}
     */
     readonly key?: string;
     /**
     * The tag's value.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_security_profile#value CcSecurityProfile#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_security_profile#value CcSecurityProfile#value}
     */
     readonly value?: string;
 }

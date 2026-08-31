@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_game_session_queue
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_game_session_queue
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,61 +9,61 @@ export interface CcGameSessionQueueProps extends cdktn.TerraformMetaArguments {
     /**
     * Information that is added to all events that are related to this game session queue.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_game_session_queue#custom_event_data CcGameSessionQueue#custom_event_data}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_game_session_queue#custom_event_data CcGameSessionQueue#custom_event_data}
     */
     readonly customEventData?: string;
     /**
     * A list of fleets and/or fleet aliases that can be used to fulfill game session placement requests in the queue.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_game_session_queue#destinations CcGameSessionQueue#destinations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_game_session_queue#destinations CcGameSessionQueue#destinations}
     */
     readonly destinations?: CcGameSessionQueue.GameSessionQueueDestinationProperty[] | cdktn.IResolvable;
     /**
     * A list of locations where a queue is allowed to place new game sessions.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_game_session_queue#filter_configuration CcGameSessionQueue#filter_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_game_session_queue#filter_configuration CcGameSessionQueue#filter_configuration}
     */
     readonly filterConfiguration?: CcGameSessionQueue.FilterConfigurationProperty;
     /**
     * A descriptive label that is associated with game session queue. Queue names must be unique within each Region.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_game_session_queue#name CcGameSessionQueue#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_game_session_queue#name CcGameSessionQueue#name}
     */
     readonly name: string;
     /**
     * An SNS topic ARN that is set up to receive game session placement notifications.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_game_session_queue#notification_target CcGameSessionQueue#notification_target}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_game_session_queue#notification_target CcGameSessionQueue#notification_target}
     */
     readonly notificationTarget?: string;
     /**
     * A set of policies that act as a sliding cap on player latency.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_game_session_queue#player_latency_policies CcGameSessionQueue#player_latency_policies}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_game_session_queue#player_latency_policies CcGameSessionQueue#player_latency_policies}
     */
     readonly playerLatencyPolicies?: CcGameSessionQueue.PlayerLatencyPolicyProperty[] | cdktn.IResolvable;
     /**
     * Custom settings to use when prioritizing destinations and locations for game session placements.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_game_session_queue#priority_configuration CcGameSessionQueue#priority_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_game_session_queue#priority_configuration CcGameSessionQueue#priority_configuration}
     */
     readonly priorityConfiguration?: CcGameSessionQueue.PriorityConfigurationProperty;
     /**
     * An array of key-value pairs to apply to this resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_game_session_queue#tags CcGameSessionQueue#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_game_session_queue#tags CcGameSessionQueue#tags}
     */
     readonly tags?: CcGameSessionQueue.TagProperty[] | cdktn.IResolvable;
     /**
     * The maximum time, in seconds, that a new game session placement request remains in the queue.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_game_session_queue#timeout_in_seconds CcGameSessionQueue#timeout_in_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_game_session_queue#timeout_in_seconds CcGameSessionQueue#timeout_in_seconds}
     */
     readonly timeoutInSeconds?: number;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_game_session_queue awscc_gamelift_game_session_queue}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_game_session_queue awscc_gamelift_game_session_queue}
 */
 export class CcGameSessionQueue extends cdktn.TerraformResource {
 
@@ -79,7 +79,7 @@ export class CcGameSessionQueue extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcGameSessionQueue resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcGameSessionQueue to import
-    * @param importFromId The id of the existing CcGameSessionQueue that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_game_session_queue#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcGameSessionQueue that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_game_session_queue#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcGameSessionQueue to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -91,7 +91,7 @@ export class CcGameSessionQueue extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_game_session_queue awscc_gamelift_game_session_queue} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_game_session_queue awscc_gamelift_game_session_queue} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -101,7 +101,8 @@ export class CcGameSessionQueue extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_gamelift_game_session_queue',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -532,7 +533,7 @@ export function ccGameSessionQueueTagPropertyToHclTerraform(struct?: CcGameSessi
 export namespace CcGameSessionQueue {
 export interface GameSessionQueueDestinationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_game_session_queue#destination_arn CcGameSessionQueue#destination_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_game_session_queue#destination_arn CcGameSessionQueue#destination_arn}
     */
     readonly destinationArn?: string;
 }
@@ -620,7 +621,7 @@ export interface FilterConfigurationProperty {
     /**
     * A list of locations to allow game session placement in, in the form of AWS Region codes such as us-west-2.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_game_session_queue#allowed_locations CcGameSessionQueue#allowed_locations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_game_session_queue#allowed_locations CcGameSessionQueue#allowed_locations}
     */
     readonly allowedLocations?: string[];
 }
@@ -686,13 +687,13 @@ export interface PlayerLatencyPolicyProperty {
     /**
     * The maximum latency value that is allowed for any player, in milliseconds. All policies must have a value set for this property.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_game_session_queue#maximum_individual_player_latency_milliseconds CcGameSessionQueue#maximum_individual_player_latency_milliseconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_game_session_queue#maximum_individual_player_latency_milliseconds CcGameSessionQueue#maximum_individual_player_latency_milliseconds}
     */
     readonly maximumIndividualPlayerLatencyMilliseconds?: number;
     /**
     * The length of time, in seconds, that the policy is enforced while placing a new game session.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_game_session_queue#policy_duration_seconds CcGameSessionQueue#policy_duration_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_game_session_queue#policy_duration_seconds CcGameSessionQueue#policy_duration_seconds}
     */
     readonly policyDurationSeconds?: number;
 }
@@ -802,13 +803,13 @@ export interface PriorityConfigurationProperty {
     /**
     * The prioritization order to use for fleet locations, when the PriorityOrder property includes LOCATION.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_game_session_queue#location_order CcGameSessionQueue#location_order}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_game_session_queue#location_order CcGameSessionQueue#location_order}
     */
     readonly locationOrder?: string[];
     /**
     * The recommended sequence to use when prioritizing where to place new game sessions.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_game_session_queue#priority_order CcGameSessionQueue#priority_order}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_game_session_queue#priority_order CcGameSessionQueue#priority_order}
     */
     readonly priorityOrder?: string[];
 }
@@ -896,13 +897,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_game_session_queue#key CcGameSessionQueue#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_game_session_queue#key CcGameSessionQueue#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 1 to 256 Unicode characters in length.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_game_session_queue#value CcGameSessionQueue#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_game_session_queue#value CcGameSessionQueue#value}
     */
     readonly value?: string;
 }

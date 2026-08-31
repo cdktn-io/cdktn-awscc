@@ -96,13 +96,22 @@ emit into generated/<module>/<resource>.ts   (tools/awscc2cdk/src/grouped-genera
 ### Regenerating
 
 ```
+pnpm schema:fetch     # fetches the pinned awscc provider schema into schemas/schema.json (gitignored)
 pnpm generate
 ```
 
-runs the whole pipeline against `../schemas/schema.json` and rewrites `generated/` from scratch
-(so a stale resource that changed module never survives). It is the same code path the `RUN_FULL=1`
-test suite calls, so `pnpm generate && git diff --stat generated/` is the offline way to check the
-committed tree is current.
+`pnpm schema:fetch` needs a `terraform`- or `opentofu`-compatible binary on `PATH` and network
+access; it fetches the exact version recorded in the committed `schemas/PROVIDER_VERSION` (not
+"latest" — see `scripts/update-provider-schema.ts`), so a plain `pnpm schema:fetch` always
+reproduces what `generated/` was built from. `pnpm generate` then rewrites `generated/` from
+scratch against that schema (so a stale resource that changed module never survives). This is the
+same code path the `RUN_FULL=1` test suite calls, so `pnpm schema:fetch && pnpm generate && git
+diff --stat generated/` is the offline way to check the committed tree is current — `build.yml`
+runs exactly this as its "generated/ is current" gate.
+
+Bumping the pinned version is `upgrade.yml`'s job (weekly + on demand): it resolves the newest
+`hashicorp/awscc` version, regenerates against it, and opens a PR if anything changed, without
+touching `main` directly.
 
 ## Build gates
 
@@ -131,6 +140,39 @@ kept as a **documented fallback only** — it only lazifies the top-level barrel
 *inside* already-loaded modules, so it doesn't get the same win `lazify` does. No code wires it up;
 `lazify` is what actually runs. Numbers for the before/after difference are in
 `docs/phase1-results.md`, "JS load time".
+
+## CI and releases
+
+Three workflows. The jsii/jsii-pacmak build+package work — the only part that needs real compute —
+runs on `depot-ubuntu-24.04-8` (8 core / 32 GB — the same runner label the fleet's other
+heap-heavy providers use) with `NODE_OPTIONS=--max-old-space-size=16384`; the IO-bound publish
+steps in `release.yml` (upload a prebuilt artifact, call a registry API) run on `ubuntu-latest`:
+
+* **`build.yml`** (every PR + push to `main`, on the depot runner): `pnpm install --frozen-lockfile`,
+  `pnpm build`, `pnpm test`, `RUN_FULL=1 pnpm test`, a check that `pnpm generate` against the pinned
+  schema produces no diff against committed `generated/`, then `pnpm package --targets js,python`
+  (uploaded as the `dist` artifact) and a `RUN_FULL_JSII=1` run of `package.test.ts` — the one test
+  that actually opens the built tarball and `require()`s it.
+* **`release.yml`** (tag `v*`, or `workflow_dispatch` with an explicit version + optional dry run):
+  a `build` job on the depot runner packages all five targets (`pnpm package` with
+  `PACMAK_TARGETS=js,python,java,dotnet,go`); every publish job after it — npm (OIDC trusted
+  publishing, `--provenance`, no token), PyPI (OIDC via `pypa/gh-action-pypi-publish`, the `pypi`
+  GitHub environment), Maven Central and NuGet (credentials as secrets), Go (`publib-golang`
+  pushing `dist/go` to `cdktn-io/cdktn-awscc-go`), and the GitHub Release (npm tarball, wheel,
+  `dist/metrics.json` attached) — downloads that one prebuilt artifact and runs on `ubuntu-latest`.
+  See `docs/oidc-setup.md` for the one-time manual setup every one of those publishers needs before
+  the first real tag.
+* **`upgrade.yml`** (weekly + `workflow_dispatch`): resolves the newest `hashicorp/awscc` version,
+  regenerates against it if it moved, and opens a PR (not auto-merged — a version bump can change
+  resource/module counts the test suite's magic numbers are pinned to, which is exactly the kind of
+  diff worth a human looking at) rather than committing straight to `main`.
+
+`pnpm package [--version X.Y.Z] [--targets js,python]` (`tools/awscc2cdk/bin/package.ts`, env
+`PACKAGE_VERSION` / `PACMAK_TARGETS` overrides for CI) is what all three workflows share: stage
+`generated/` + `tools/awscc2cdk/jsii/package.json` (`src/stage.ts`, the same model
+`step6.full-jsii.test.ts` / `step7.lazify.test.ts` use for their own inline staging), `jsii`,
+`lazify`, then `jsii-pacmak` into `dist/{js,python,java,dotnet,go}` — the same pipeline described
+under "Build gates" above, just as a runnable command instead of a test.
 
 ## Generating the API doc sample
 

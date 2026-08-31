@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/robomaker_simulation_application
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/robomaker_simulation_application
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,55 +9,55 @@ export interface CcSimulationApplicationProps extends cdktn.TerraformMetaArgumen
     /**
     * The current revision id.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/robomaker_simulation_application#current_revision_id CcSimulationApplication#current_revision_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/robomaker_simulation_application#current_revision_id CcSimulationApplication#current_revision_id}
     */
     readonly currentRevisionId?: string;
     /**
     * The URI of the Docker image for the robot application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/robomaker_simulation_application#environment CcSimulationApplication#environment}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/robomaker_simulation_application#environment CcSimulationApplication#environment}
     */
     readonly environment?: string;
     /**
     * The name of the simulation application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/robomaker_simulation_application#name CcSimulationApplication#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/robomaker_simulation_application#name CcSimulationApplication#name}
     */
     readonly name?: string;
     /**
     * The rendering engine for the simulation application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/robomaker_simulation_application#rendering_engine CcSimulationApplication#rendering_engine}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/robomaker_simulation_application#rendering_engine CcSimulationApplication#rendering_engine}
     */
     readonly renderingEngine?: CcSimulationApplication.RenderingEngineProperty;
     /**
     * The robot software suite used by the simulation application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/robomaker_simulation_application#robot_software_suite CcSimulationApplication#robot_software_suite}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/robomaker_simulation_application#robot_software_suite CcSimulationApplication#robot_software_suite}
     */
     readonly robotSoftwareSuite: CcSimulationApplication.RobotSoftwareSuiteProperty;
     /**
     * The simulation software suite used by the simulation application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/robomaker_simulation_application#simulation_software_suite CcSimulationApplication#simulation_software_suite}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/robomaker_simulation_application#simulation_software_suite CcSimulationApplication#simulation_software_suite}
     */
     readonly simulationSoftwareSuite: CcSimulationApplication.SimulationSoftwareSuiteProperty;
     /**
     * The sources of the simulation application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/robomaker_simulation_application#sources CcSimulationApplication#sources}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/robomaker_simulation_application#sources CcSimulationApplication#sources}
     */
     readonly sources?: CcSimulationApplication.SourceConfigProperty[] | cdktn.IResolvable;
     /**
     * A key-value pair to associate with a resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/robomaker_simulation_application#tags CcSimulationApplication#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/robomaker_simulation_application#tags CcSimulationApplication#tags}
     */
     readonly tags?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/robomaker_simulation_application awscc_robomaker_simulation_application}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/robomaker_simulation_application awscc_robomaker_simulation_application}
 */
 export class CcSimulationApplication extends cdktn.TerraformResource {
 
@@ -73,7 +73,7 @@ export class CcSimulationApplication extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcSimulationApplication resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcSimulationApplication to import
-    * @param importFromId The id of the existing CcSimulationApplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/robomaker_simulation_application#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcSimulationApplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/robomaker_simulation_application#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcSimulationApplication to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -85,7 +85,7 @@ export class CcSimulationApplication extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/robomaker_simulation_application awscc_robomaker_simulation_application} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/robomaker_simulation_application awscc_robomaker_simulation_application} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -95,7 +95,8 @@ export class CcSimulationApplication extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_robomaker_simulation_application',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -485,13 +486,13 @@ export interface RenderingEngineProperty {
     /**
     * The name of the rendering engine.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/robomaker_simulation_application#name CcSimulationApplication#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/robomaker_simulation_application#name CcSimulationApplication#name}
     */
     readonly name?: string;
     /**
     * The version of the rendering engine.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/robomaker_simulation_application#version CcSimulationApplication#version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/robomaker_simulation_application#version CcSimulationApplication#version}
     */
     readonly version?: string;
 }
@@ -579,13 +580,13 @@ export interface RobotSoftwareSuiteProperty {
     /**
     * The name of the robot software suite.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/robomaker_simulation_application#name CcSimulationApplication#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/robomaker_simulation_application#name CcSimulationApplication#name}
     */
     readonly name: string;
     /**
     * The version of the robot software suite.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/robomaker_simulation_application#version CcSimulationApplication#version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/robomaker_simulation_application#version CcSimulationApplication#version}
     */
     readonly version?: string;
 }
@@ -670,13 +671,13 @@ export interface SimulationSoftwareSuiteProperty {
     /**
     * The name of the simulation software suite.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/robomaker_simulation_application#name CcSimulationApplication#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/robomaker_simulation_application#name CcSimulationApplication#name}
     */
     readonly name: string;
     /**
     * The version of the simulation software suite.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/robomaker_simulation_application#version CcSimulationApplication#version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/robomaker_simulation_application#version CcSimulationApplication#version}
     */
     readonly version?: string;
 }
@@ -761,19 +762,19 @@ export interface SourceConfigProperty {
     /**
     * The target processor architecture for the application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/robomaker_simulation_application#architecture CcSimulationApplication#architecture}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/robomaker_simulation_application#architecture CcSimulationApplication#architecture}
     */
     readonly architecture?: string;
     /**
     * The Amazon S3 bucket name.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/robomaker_simulation_application#s3_bucket CcSimulationApplication#s3_bucket}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/robomaker_simulation_application#s3_bucket CcSimulationApplication#s3_bucket}
     */
     readonly s3Bucket?: string;
     /**
     * The s3 object key.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/robomaker_simulation_application#s3_key CcSimulationApplication#s3_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/robomaker_simulation_application#s3_key CcSimulationApplication#s3_key}
     */
     readonly s3Key?: string;
 }

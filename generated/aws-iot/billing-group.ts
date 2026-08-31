@@ -1,29 +1,29 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_billing_group
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_billing_group
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcBillingGroupProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_billing_group#billing_group_name CcBillingGroup#billing_group_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_billing_group#billing_group_name CcBillingGroup#billing_group_name}
     */
     readonly billingGroupName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_billing_group#billing_group_properties CcBillingGroup#billing_group_properties}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_billing_group#billing_group_properties CcBillingGroup#billing_group_properties}
     */
     readonly billingGroupProperties?: CcBillingGroup.BillingGroupPropertiesProperty;
     /**
     * An array of key-value pairs to apply to this resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_billing_group#tags CcBillingGroup#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_billing_group#tags CcBillingGroup#tags}
     */
     readonly tags?: CcBillingGroup.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_billing_group awscc_iot_billing_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_billing_group awscc_iot_billing_group}
 */
 export class CcBillingGroup extends cdktn.TerraformResource {
 
@@ -39,7 +39,7 @@ export class CcBillingGroup extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcBillingGroup resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcBillingGroup to import
-    * @param importFromId The id of the existing CcBillingGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_billing_group#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcBillingGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_billing_group#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcBillingGroup to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -51,7 +51,7 @@ export class CcBillingGroup extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_billing_group awscc_iot_billing_group} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_billing_group awscc_iot_billing_group} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -61,7 +61,8 @@ export class CcBillingGroup extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_iot_billing_group',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -252,7 +253,7 @@ export function ccBillingGroupTagPropertyToHclTerraform(struct?: CcBillingGroup.
 export namespace CcBillingGroup {
 export interface BillingGroupPropertiesProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_billing_group#billing_group_description CcBillingGroup#billing_group_description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_billing_group#billing_group_description CcBillingGroup#billing_group_description}
     */
     readonly billingGroupDescription?: string;
 }
@@ -318,13 +319,13 @@ export interface TagProperty {
     /**
     * Tag key (1-128 chars). No 'aws:' prefix. Allows: [A-Za-z0-9 _.:/=+-]
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_billing_group#key CcBillingGroup#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_billing_group#key CcBillingGroup#key}
     */
     readonly key?: string;
     /**
     * Tag value (1-256 chars). No 'aws:' prefix. Allows: [A-Za-z0-9 _.:/=+-]
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_billing_group#value CcBillingGroup#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_billing_group#value CcBillingGroup#value}
     */
     readonly value?: string;
 }

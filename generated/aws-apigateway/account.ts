@@ -1,19 +1,19 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_account
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_account
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcAccountProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_account#cloudwatch_role_arn CcAccount#cloudwatch_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_account#cloudwatch_role_arn CcAccount#cloudwatch_role_arn}
     */
     readonly cloudwatchRoleArn?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_account awscc_apigateway_account}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_account awscc_apigateway_account}
 */
 export class CcAccount extends cdktn.TerraformResource {
 
@@ -29,7 +29,7 @@ export class CcAccount extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcAccount resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcAccount to import
-    * @param importFromId The id of the existing CcAccount that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_account#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcAccount that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_account#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcAccount to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -41,7 +41,7 @@ export class CcAccount extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_account awscc_apigateway_account} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_account awscc_apigateway_account} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -51,7 +51,8 @@ export class CcAccount extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_apigateway_account',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,

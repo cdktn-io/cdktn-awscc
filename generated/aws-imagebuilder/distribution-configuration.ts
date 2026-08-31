@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_distribution_configuration
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_distribution_configuration
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,31 +9,31 @@ export interface CcDistributionConfigurationProps extends cdktn.TerraformMetaArg
     /**
     * The description of the distribution configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_distribution_configuration#description CcDistributionConfiguration#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_distribution_configuration#description CcDistributionConfiguration#description}
     */
     readonly description?: string;
     /**
     * The distributions of the distribution configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_distribution_configuration#distributions CcDistributionConfiguration#distributions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_distribution_configuration#distributions CcDistributionConfiguration#distributions}
     */
     readonly distributions: CcDistributionConfiguration.DistributionProperty[] | cdktn.IResolvable;
     /**
     * The name of the distribution configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_distribution_configuration#name CcDistributionConfiguration#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_distribution_configuration#name CcDistributionConfiguration#name}
     */
     readonly name: string;
     /**
     * The tags associated with the component.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_distribution_configuration#tags CcDistributionConfiguration#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_distribution_configuration#tags CcDistributionConfiguration#tags}
     */
     readonly tags?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_distribution_configuration awscc_imagebuilder_distribution_configuration}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_distribution_configuration awscc_imagebuilder_distribution_configuration}
 */
 export class CcDistributionConfiguration extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CcDistributionConfiguration extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcDistributionConfiguration resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcDistributionConfiguration to import
-    * @param importFromId The id of the existing CcDistributionConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_distribution_configuration#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcDistributionConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_distribution_configuration#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcDistributionConfiguration to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CcDistributionConfiguration extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_distribution_configuration awscc_imagebuilder_distribution_configuration} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_distribution_configuration awscc_imagebuilder_distribution_configuration} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -71,7 +71,8 @@ export class CcDistributionConfiguration extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_imagebuilder_distribution_configuration',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -699,25 +700,25 @@ export interface LaunchPermissionConfigurationProperty {
     /**
     * The ARN for an Amazon Web Services Organization that you want to share your AMI with.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_distribution_configuration#organization_arns CcDistributionConfiguration#organization_arns}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_distribution_configuration#organization_arns CcDistributionConfiguration#organization_arns}
     */
     readonly organizationArns?: string[];
     /**
     * The ARN for an Organizations organizational unit (OU) that you want to share your AMI with.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_distribution_configuration#organizational_unit_arns CcDistributionConfiguration#organizational_unit_arns}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_distribution_configuration#organizational_unit_arns CcDistributionConfiguration#organizational_unit_arns}
     */
     readonly organizationalUnitArns?: string[];
     /**
     * The name of the group.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_distribution_configuration#user_groups CcDistributionConfiguration#user_groups}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_distribution_configuration#user_groups CcDistributionConfiguration#user_groups}
     */
     readonly userGroups?: string[];
     /**
     * The AWS account ID.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_distribution_configuration#user_ids CcDistributionConfiguration#user_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_distribution_configuration#user_ids CcDistributionConfiguration#user_ids}
     */
     readonly userIds?: string[];
 }
@@ -849,37 +850,37 @@ export interface AmiDistributionConfigurationProperty {
     /**
     * The tags to apply to AMIs distributed to this Region.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_distribution_configuration#ami_tags CcDistributionConfiguration#ami_tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_distribution_configuration#ami_tags CcDistributionConfiguration#ami_tags}
     */
     readonly amiTags?: { [key: string]: string };
     /**
     * The description of the AMI distribution configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_distribution_configuration#description CcDistributionConfiguration#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_distribution_configuration#description CcDistributionConfiguration#description}
     */
     readonly description?: string;
     /**
     * The KMS key identifier used to encrypt the distributed image.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_distribution_configuration#kms_key_id CcDistributionConfiguration#kms_key_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_distribution_configuration#kms_key_id CcDistributionConfiguration#kms_key_id}
     */
     readonly kmsKeyId?: string;
     /**
     * Launch permissions can be used to configure which AWS accounts can use the AMI to launch instances.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_distribution_configuration#launch_permission_configuration CcDistributionConfiguration#launch_permission_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_distribution_configuration#launch_permission_configuration CcDistributionConfiguration#launch_permission_configuration}
     */
     readonly launchPermissionConfiguration?: LaunchPermissionConfigurationProperty;
     /**
     * The name of the AMI distribution configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_distribution_configuration#name CcDistributionConfiguration#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_distribution_configuration#name CcDistributionConfiguration#name}
     */
     readonly name?: string;
     /**
     * The ID of accounts to which you want to distribute an image.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_distribution_configuration#target_account_ids CcDistributionConfiguration#target_account_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_distribution_configuration#target_account_ids CcDistributionConfiguration#target_account_ids}
     */
     readonly targetAccountIds?: string[];
 }
@@ -1055,13 +1056,13 @@ export interface TargetContainerRepositoryProperty {
     /**
     * The repository name of target container repository.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_distribution_configuration#repository_name CcDistributionConfiguration#repository_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_distribution_configuration#repository_name CcDistributionConfiguration#repository_name}
     */
     readonly repositoryName?: string;
     /**
     * The service of target container repository.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_distribution_configuration#service CcDistributionConfiguration#service}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_distribution_configuration#service CcDistributionConfiguration#service}
     */
     readonly service?: string;
 }
@@ -1149,19 +1150,19 @@ export interface ContainerDistributionConfigurationProperty {
     /**
     * Tags that are attached to the container distribution configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_distribution_configuration#container_tags CcDistributionConfiguration#container_tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_distribution_configuration#container_tags CcDistributionConfiguration#container_tags}
     */
     readonly containerTags?: string[];
     /**
     * The description of the container distribution configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_distribution_configuration#description CcDistributionConfiguration#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_distribution_configuration#description CcDistributionConfiguration#description}
     */
     readonly description?: string;
     /**
     * The destination repository for the container distribution configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_distribution_configuration#target_repository CcDistributionConfiguration#target_repository}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_distribution_configuration#target_repository CcDistributionConfiguration#target_repository}
     */
     readonly targetRepository?: TargetContainerRepositoryProperty;
 }
@@ -1271,19 +1272,19 @@ export interface FastLaunchLaunchTemplateSpecificationProperty {
     /**
     * The ID of the launch template to use for faster launching for a Windows AMI.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_distribution_configuration#launch_template_id CcDistributionConfiguration#launch_template_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_distribution_configuration#launch_template_id CcDistributionConfiguration#launch_template_id}
     */
     readonly launchTemplateId?: string;
     /**
     * The name of the launch template to use for faster launching for a Windows AMI.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_distribution_configuration#launch_template_name CcDistributionConfiguration#launch_template_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_distribution_configuration#launch_template_name CcDistributionConfiguration#launch_template_name}
     */
     readonly launchTemplateName?: string;
     /**
     * The version of the launch template to use for faster launching for a Windows AMI.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_distribution_configuration#launch_template_version CcDistributionConfiguration#launch_template_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_distribution_configuration#launch_template_version CcDistributionConfiguration#launch_template_version}
     */
     readonly launchTemplateVersion?: string;
 }
@@ -1393,7 +1394,7 @@ export interface FastLaunchSnapshotConfigurationProperty {
     /**
     * The number of pre-provisioned snapshots to keep on hand for a fast-launch enabled Windows AMI.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_distribution_configuration#target_resource_count CcDistributionConfiguration#target_resource_count}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_distribution_configuration#target_resource_count CcDistributionConfiguration#target_resource_count}
     */
     readonly targetResourceCount?: number;
 }
@@ -1459,31 +1460,31 @@ export interface FastLaunchConfigurationProperty {
     /**
     * The owner account ID for the fast-launch enabled Windows AMI.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_distribution_configuration#account_id CcDistributionConfiguration#account_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_distribution_configuration#account_id CcDistributionConfiguration#account_id}
     */
     readonly accountId?: string;
     /**
     * A Boolean that represents the current state of faster launching for the Windows AMI. Set to true to start using Windows faster launching, or false to stop using it.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_distribution_configuration#enabled CcDistributionConfiguration#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_distribution_configuration#enabled CcDistributionConfiguration#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
     * The launch template that the fast-launch enabled Windows AMI uses when it launches Windows instances to create pre-provisioned snapshots.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_distribution_configuration#launch_template CcDistributionConfiguration#launch_template}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_distribution_configuration#launch_template CcDistributionConfiguration#launch_template}
     */
     readonly launchTemplate?: FastLaunchLaunchTemplateSpecificationProperty;
     /**
     * The maximum number of parallel instances that are launched for creating resources.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_distribution_configuration#max_parallel_launches CcDistributionConfiguration#max_parallel_launches}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_distribution_configuration#max_parallel_launches CcDistributionConfiguration#max_parallel_launches}
     */
     readonly maxParallelLaunches?: number;
     /**
     * Configuration settings for managing the number of snapshots that are created from pre-provisioned instances for the Windows AMI when faster launching is enabled.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_distribution_configuration#snapshot_configuration CcDistributionConfiguration#snapshot_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_distribution_configuration#snapshot_configuration CcDistributionConfiguration#snapshot_configuration}
     */
     readonly snapshotConfiguration?: FastLaunchSnapshotConfigurationProperty;
 }
@@ -1659,19 +1660,19 @@ export interface LaunchTemplateConfigurationProperty {
     /**
     * The account ID that this configuration applies to.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_distribution_configuration#account_id CcDistributionConfiguration#account_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_distribution_configuration#account_id CcDistributionConfiguration#account_id}
     */
     readonly accountId?: string;
     /**
     * Identifies the EC2 launch template to use.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_distribution_configuration#launch_template_id CcDistributionConfiguration#launch_template_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_distribution_configuration#launch_template_id CcDistributionConfiguration#launch_template_id}
     */
     readonly launchTemplateId?: string;
     /**
     * Set the specified EC2 launch template as the default launch template for the specified account.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_distribution_configuration#set_default_version CcDistributionConfiguration#set_default_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_distribution_configuration#set_default_version CcDistributionConfiguration#set_default_version}
     */
     readonly setDefaultVersion?: boolean | cdktn.IResolvable;
 }
@@ -1803,19 +1804,19 @@ export interface SsmParameterConfigurationProperty {
     /**
     * The account ID for the AMI to update the parameter with.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_distribution_configuration#ami_account_id CcDistributionConfiguration#ami_account_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_distribution_configuration#ami_account_id CcDistributionConfiguration#ami_account_id}
     */
     readonly amiAccountId?: string;
     /**
     * The data type of the SSM parameter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_distribution_configuration#data_type CcDistributionConfiguration#data_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_distribution_configuration#data_type CcDistributionConfiguration#data_type}
     */
     readonly dataType?: string;
     /**
     * The name of the SSM parameter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_distribution_configuration#parameter_name CcDistributionConfiguration#parameter_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_distribution_configuration#parameter_name CcDistributionConfiguration#parameter_name}
     */
     readonly parameterName?: string;
 }
@@ -1947,43 +1948,43 @@ export interface DistributionProperty {
     /**
     * The specific AMI settings (for example, launch permissions, AMI tags).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_distribution_configuration#ami_distribution_configuration CcDistributionConfiguration#ami_distribution_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_distribution_configuration#ami_distribution_configuration CcDistributionConfiguration#ami_distribution_configuration}
     */
     readonly amiDistributionConfiguration?: AmiDistributionConfigurationProperty;
     /**
     * Container distribution settings for encryption, licensing, and sharing in a specific Region.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_distribution_configuration#container_distribution_configuration CcDistributionConfiguration#container_distribution_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_distribution_configuration#container_distribution_configuration CcDistributionConfiguration#container_distribution_configuration}
     */
     readonly containerDistributionConfiguration?: ContainerDistributionConfigurationProperty;
     /**
     * The Windows faster-launching configurations to use for AMI distribution.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_distribution_configuration#fast_launch_configurations CcDistributionConfiguration#fast_launch_configurations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_distribution_configuration#fast_launch_configurations CcDistributionConfiguration#fast_launch_configurations}
     */
     readonly fastLaunchConfigurations?: FastLaunchConfigurationProperty[] | cdktn.IResolvable;
     /**
     * A group of launchTemplateConfiguration settings that apply to image distribution.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_distribution_configuration#launch_template_configurations CcDistributionConfiguration#launch_template_configurations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_distribution_configuration#launch_template_configurations CcDistributionConfiguration#launch_template_configurations}
     */
     readonly launchTemplateConfigurations?: LaunchTemplateConfigurationProperty[] | cdktn.IResolvable;
     /**
     * The License Manager Configuration to associate with the AMI in the specified Region.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_distribution_configuration#license_configuration_arns CcDistributionConfiguration#license_configuration_arns}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_distribution_configuration#license_configuration_arns CcDistributionConfiguration#license_configuration_arns}
     */
     readonly licenseConfigurationArns?: string[];
     /**
     * region
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_distribution_configuration#region CcDistributionConfiguration#region}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_distribution_configuration#region CcDistributionConfiguration#region}
     */
     readonly region: string;
     /**
     * The SSM parameter configurations to use for AMI distribution.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_distribution_configuration#ssm_parameter_configurations CcDistributionConfiguration#ssm_parameter_configurations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_distribution_configuration#ssm_parameter_configurations CcDistributionConfiguration#ssm_parameter_configurations}
     */
     readonly ssmParameterConfigurations?: SsmParameterConfigurationProperty[] | cdktn.IResolvable;
 }

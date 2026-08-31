@@ -1,37 +1,37 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/oam_link
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/oam_link
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcLinkProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/oam_link#label_template CcLink#label_template}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/oam_link#label_template CcLink#label_template}
     */
     readonly labelTemplate?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/oam_link#link_configuration CcLink#link_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/oam_link#link_configuration CcLink#link_configuration}
     */
     readonly linkConfiguration?: CcLink.LinkConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/oam_link#resource_types CcLink#resource_types}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/oam_link#resource_types CcLink#resource_types}
     */
     readonly resourceTypes: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/oam_link#sink_identifier CcLink#sink_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/oam_link#sink_identifier CcLink#sink_identifier}
     */
     readonly sinkIdentifier: string;
     /**
     * Tags to apply to the link
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/oam_link#tags CcLink#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/oam_link#tags CcLink#tags}
     */
     readonly tags?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/oam_link awscc_oam_link}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/oam_link awscc_oam_link}
 */
 export class CcLink extends cdktn.TerraformResource {
 
@@ -47,7 +47,7 @@ export class CcLink extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcLink resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcLink to import
-    * @param importFromId The id of the existing CcLink that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/oam_link#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcLink that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/oam_link#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcLink to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -59,7 +59,7 @@ export class CcLink extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/oam_link awscc_oam_link} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/oam_link awscc_oam_link} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -69,7 +69,8 @@ export class CcLink extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_oam_link',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -332,7 +333,7 @@ export function ccLinkLinkConfigurationPropertyToHclTerraform(struct?: CcLink.Li
 export namespace CcLink {
 export interface LinkFilterProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/oam_link#filter CcLink#filter}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/oam_link#filter CcLink#filter}
     */
     readonly filter?: string;
 }
@@ -396,7 +397,7 @@ export class LinkFilterPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface MetricConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/oam_link#filter CcLink#filter}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/oam_link#filter CcLink#filter}
     */
     readonly filter?: string;
 }
@@ -460,11 +461,11 @@ export class MetricConfigurationPropertyOutputReference extends cdktn.ComplexObj
 }
 export interface LinkConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/oam_link#log_group_configuration CcLink#log_group_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/oam_link#log_group_configuration CcLink#log_group_configuration}
     */
     readonly logGroupConfiguration?: LinkFilterProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/oam_link#metric_configuration CcLink#metric_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/oam_link#metric_configuration CcLink#metric_configuration}
     */
     readonly metricConfiguration?: MetricConfigurationProperty;
 }

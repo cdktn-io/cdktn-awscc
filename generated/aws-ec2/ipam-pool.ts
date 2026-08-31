@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_ipam_pool
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_pool
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,101 +9,101 @@ export interface CcIPAMPoolProps extends cdktn.TerraformMetaArguments {
     /**
     * The address family of the address space in this pool. Either IPv4 or IPv6.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_ipam_pool#address_family CcIPAMPool#address_family}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_pool#address_family CcIPAMPool#address_family}
     */
     readonly addressFamily: string;
     /**
     * The default netmask length for allocations made from this pool. This value is used when the netmask length of an allocation isn't specified.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_ipam_pool#allocation_default_netmask_length CcIPAMPool#allocation_default_netmask_length}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_pool#allocation_default_netmask_length CcIPAMPool#allocation_default_netmask_length}
     */
     readonly allocationDefaultNetmaskLength?: number;
     /**
     * The maximum allowed netmask length for allocations made from this pool.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_ipam_pool#allocation_max_netmask_length CcIPAMPool#allocation_max_netmask_length}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_pool#allocation_max_netmask_length CcIPAMPool#allocation_max_netmask_length}
     */
     readonly allocationMaxNetmaskLength?: number;
     /**
     * The minimum allowed netmask length for allocations made from this pool.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_ipam_pool#allocation_min_netmask_length CcIPAMPool#allocation_min_netmask_length}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_pool#allocation_min_netmask_length CcIPAMPool#allocation_min_netmask_length}
     */
     readonly allocationMinNetmaskLength?: number;
     /**
     * When specified, an allocation will not be allowed unless a resource has a matching set of tags.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_ipam_pool#allocation_resource_tags CcIPAMPool#allocation_resource_tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_pool#allocation_resource_tags CcIPAMPool#allocation_resource_tags}
     */
     readonly allocationResourceTags?: CcIPAMPool.TagProperty[] | cdktn.IResolvable;
     /**
     * Determines what to do if IPAM discovers resources that haven't been assigned an allocation. If set to true, an allocation will be made automatically.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_ipam_pool#auto_import CcIPAMPool#auto_import}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_pool#auto_import CcIPAMPool#auto_import}
     */
     readonly autoImport?: boolean | cdktn.IResolvable;
     /**
     * Limits which service in Amazon Web Services that the pool can be used in.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_ipam_pool#aws_service CcIPAMPool#aws_service}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_pool#aws_service CcIPAMPool#aws_service}
     */
     readonly awsService?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_ipam_pool#description CcIPAMPool#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_pool#description CcIPAMPool#description}
     */
     readonly description?: string;
     /**
     * The Id of the scope this pool is a part of.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_ipam_pool#ipam_scope_id CcIPAMPool#ipam_scope_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_pool#ipam_scope_id CcIPAMPool#ipam_scope_id}
     */
     readonly ipamScopeId: string;
     /**
     * The region of this pool. If not set, this will default to "None" which will disable non-custom allocations. If the locale has been specified for the source pool, this value must match.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_ipam_pool#locale CcIPAMPool#locale}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_pool#locale CcIPAMPool#locale}
     */
     readonly locale?: string;
     /**
     * A list of cidrs representing the address space available for allocation in this pool.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_ipam_pool#provisioned_cidrs CcIPAMPool#provisioned_cidrs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_pool#provisioned_cidrs CcIPAMPool#provisioned_cidrs}
     */
     readonly provisionedCidrs?: CcIPAMPool.ProvisionedCidrProperty[] | cdktn.IResolvable;
     /**
     * The IP address source for pools in the public scope. Only used for provisioning IP address CIDRs to pools in the public scope. Default is `byoip`.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_ipam_pool#public_ip_source CcIPAMPool#public_ip_source}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_pool#public_ip_source CcIPAMPool#public_ip_source}
     */
     readonly publicIpSource?: string;
     /**
     * Determines whether or not address space from this pool is publicly advertised. Must be set if and only if the pool is IPv6.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_ipam_pool#publicly_advertisable CcIPAMPool#publicly_advertisable}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_pool#publicly_advertisable CcIPAMPool#publicly_advertisable}
     */
     readonly publiclyAdvertisable?: boolean | cdktn.IResolvable;
     /**
     * The Id of this pool's source. If set, all space provisioned in this pool must be free space provisioned in the parent pool.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_ipam_pool#source_ipam_pool_id CcIPAMPool#source_ipam_pool_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_pool#source_ipam_pool_id CcIPAMPool#source_ipam_pool_id}
     */
     readonly sourceIpamPoolId?: string;
     /**
     * The resource associated with this pool's space. Depending on the ResourceType, setting a SourceResource changes which space can be provisioned in this pool and which types of resources can receive allocations
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_ipam_pool#source_resource CcIPAMPool#source_resource}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_pool#source_resource CcIPAMPool#source_resource}
     */
     readonly sourceResource?: CcIPAMPool.SourceResourceProperty;
     /**
     * An array of key-value pairs to apply to this resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_ipam_pool#tags CcIPAMPool#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_pool#tags CcIPAMPool#tags}
     */
     readonly tags?: CcIPAMPool.TagsProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_ipam_pool awscc_ec2_ipam_pool}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_pool awscc_ec2_ipam_pool}
 */
 export class CcIPAMPool extends cdktn.TerraformResource {
 
@@ -119,7 +119,7 @@ export class CcIPAMPool extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcIPAMPool resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcIPAMPool to import
-    * @param importFromId The id of the existing CcIPAMPool that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_ipam_pool#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcIPAMPool that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_pool#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcIPAMPool to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -131,7 +131,7 @@ export class CcIPAMPool extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_ipam_pool awscc_ec2_ipam_pool} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_pool awscc_ec2_ipam_pool} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -141,7 +141,8 @@ export class CcIPAMPool extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_ec2_ipam_pool',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -758,13 +759,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_ipam_pool#key CcIPAMPool#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_pool#key CcIPAMPool#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 0 to 256 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_ipam_pool#value CcIPAMPool#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_pool#value CcIPAMPool#value}
     */
     readonly value?: string;
 }
@@ -874,7 +875,7 @@ export interface ProvisionedCidrProperty {
     /**
     * Represents a single IPv4 or IPv6 CIDR
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_ipam_pool#cidr CcIPAMPool#cidr}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_pool#cidr CcIPAMPool#cidr}
     */
     readonly cidr?: string;
 }
@@ -960,19 +961,19 @@ export class ProvisionedCidrPropertyList extends cdktn.ComplexList {
 }
 export interface SourceResourceProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_ipam_pool#resource_id CcIPAMPool#resource_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_pool#resource_id CcIPAMPool#resource_id}
     */
     readonly resourceId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_ipam_pool#resource_owner CcIPAMPool#resource_owner}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_pool#resource_owner CcIPAMPool#resource_owner}
     */
     readonly resourceOwner?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_ipam_pool#resource_region CcIPAMPool#resource_region}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_pool#resource_region CcIPAMPool#resource_region}
     */
     readonly resourceRegion?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_ipam_pool#resource_type CcIPAMPool#resource_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_pool#resource_type CcIPAMPool#resource_type}
     */
     readonly resourceType?: string;
 }
@@ -1104,13 +1105,13 @@ export interface TagsProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_ipam_pool#key CcIPAMPool#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_pool#key CcIPAMPool#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 0 to 256 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_ipam_pool#value CcIPAMPool#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_pool#value CcIPAMPool#value}
     */
     readonly value?: string;
 }

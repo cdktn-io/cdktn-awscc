@@ -1,35 +1,35 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/notifications_event_rule
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/notifications_event_rule
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcEventRuleProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/notifications_event_rule#event_pattern CcEventRule#event_pattern}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/notifications_event_rule#event_pattern CcEventRule#event_pattern}
     */
     readonly eventPattern?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/notifications_event_rule#event_type CcEventRule#event_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/notifications_event_rule#event_type CcEventRule#event_type}
     */
     readonly eventType: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/notifications_event_rule#notification_configuration_arn CcEventRule#notification_configuration_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/notifications_event_rule#notification_configuration_arn CcEventRule#notification_configuration_arn}
     */
     readonly notificationConfigurationArn: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/notifications_event_rule#regions CcEventRule#regions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/notifications_event_rule#regions CcEventRule#regions}
     */
     readonly regions: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/notifications_event_rule#source CcEventRule#source}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/notifications_event_rule#source CcEventRule#source}
     */
     readonly source: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/notifications_event_rule awscc_notifications_event_rule}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/notifications_event_rule awscc_notifications_event_rule}
 */
 export class CcEventRule extends cdktn.TerraformResource {
 
@@ -45,7 +45,7 @@ export class CcEventRule extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcEventRule resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcEventRule to import
-    * @param importFromId The id of the existing CcEventRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/notifications_event_rule#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcEventRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/notifications_event_rule#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcEventRule to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -57,7 +57,7 @@ export class CcEventRule extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/notifications_event_rule awscc_notifications_event_rule} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/notifications_event_rule awscc_notifications_event_rule} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -67,7 +67,8 @@ export class CcEventRule extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_notifications_event_rule',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,

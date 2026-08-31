@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicecatalog_stack_set_constraint
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalog_stack_set_constraint
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,61 +9,61 @@ export interface CcStackSetConstraintProps extends cdktn.TerraformMetaArguments 
     /**
     * The language code.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicecatalog_stack_set_constraint#accept_language CcStackSetConstraint#accept_language}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalog_stack_set_constraint#accept_language CcStackSetConstraint#accept_language}
     */
     readonly acceptLanguage?: string;
     /**
     * One or more AWS accounts that will have access to the provisioned product.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicecatalog_stack_set_constraint#account_list CcStackSetConstraint#account_list}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalog_stack_set_constraint#account_list CcStackSetConstraint#account_list}
     */
     readonly accountList: string[];
     /**
     * AdminRole ARN.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicecatalog_stack_set_constraint#admin_role CcStackSetConstraint#admin_role}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalog_stack_set_constraint#admin_role CcStackSetConstraint#admin_role}
     */
     readonly adminRole: string;
     /**
     * The description of the constraint.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicecatalog_stack_set_constraint#description CcStackSetConstraint#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalog_stack_set_constraint#description CcStackSetConstraint#description}
     */
     readonly description: string;
     /**
     * ExecutionRole name.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicecatalog_stack_set_constraint#execution_role CcStackSetConstraint#execution_role}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalog_stack_set_constraint#execution_role CcStackSetConstraint#execution_role}
     */
     readonly executionRole: string;
     /**
     * The portfolio identifier.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicecatalog_stack_set_constraint#portfolio_id CcStackSetConstraint#portfolio_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalog_stack_set_constraint#portfolio_id CcStackSetConstraint#portfolio_id}
     */
     readonly portfolioId: string;
     /**
     * The product identifier.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicecatalog_stack_set_constraint#product_id CcStackSetConstraint#product_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalog_stack_set_constraint#product_id CcStackSetConstraint#product_id}
     */
     readonly productId: string;
     /**
     * One or more AWS Regions where the provisioned product will be available.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicecatalog_stack_set_constraint#region_list CcStackSetConstraint#region_list}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalog_stack_set_constraint#region_list CcStackSetConstraint#region_list}
     */
     readonly regionList: string[];
     /**
     * Permission to create, update, and delete stack instances. Choose from ALLOWED and NOT_ALLOWED.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicecatalog_stack_set_constraint#stack_instance_control CcStackSetConstraint#stack_instance_control}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalog_stack_set_constraint#stack_instance_control CcStackSetConstraint#stack_instance_control}
     */
     readonly stackInstanceControl: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicecatalog_stack_set_constraint awscc_servicecatalog_stack_set_constraint}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalog_stack_set_constraint awscc_servicecatalog_stack_set_constraint}
 */
 export class CcStackSetConstraint extends cdktn.TerraformResource {
 
@@ -79,7 +79,7 @@ export class CcStackSetConstraint extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcStackSetConstraint resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcStackSetConstraint to import
-    * @param importFromId The id of the existing CcStackSetConstraint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicecatalog_stack_set_constraint#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcStackSetConstraint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalog_stack_set_constraint#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcStackSetConstraint to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -91,7 +91,7 @@ export class CcStackSetConstraint extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicecatalog_stack_set_constraint awscc_servicecatalog_stack_set_constraint} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalog_stack_set_constraint awscc_servicecatalog_stack_set_constraint} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -101,7 +101,8 @@ export class CcStackSetConstraint extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_servicecatalog_stack_set_constraint',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,

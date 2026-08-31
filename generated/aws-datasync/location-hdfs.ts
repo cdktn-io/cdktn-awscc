@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datasync_location_hdfs
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_hdfs
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,97 +9,97 @@ export interface CcLocationHDFSProps extends cdktn.TerraformMetaArguments {
     /**
     * ARN(s) of the agent(s) to use for an HDFS location.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datasync_location_hdfs#agent_arns CcLocationHDFS#agent_arns}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_hdfs#agent_arns CcLocationHDFS#agent_arns}
     */
     readonly agentArns: string[];
     /**
     * The authentication mode used to determine identity of user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datasync_location_hdfs#authentication_type CcLocationHDFS#authentication_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_hdfs#authentication_type CcLocationHDFS#authentication_type}
     */
     readonly authenticationType: string;
     /**
     * Size of chunks (blocks) in bytes that the data is divided into when stored in the HDFS cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datasync_location_hdfs#block_size CcLocationHDFS#block_size}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_hdfs#block_size CcLocationHDFS#block_size}
     */
     readonly blockSize?: number;
     /**
     * Specifies configuration information for a DataSync-managed secret, such as an authentication token or set of credentials that DataSync uses to access a specific transfer location, and a customer-managed AWS KMS key.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datasync_location_hdfs#cmk_secret_config CcLocationHDFS#cmk_secret_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_hdfs#cmk_secret_config CcLocationHDFS#cmk_secret_config}
     */
     readonly cmkSecretConfig?: CcLocationHDFS.CmkSecretConfigProperty;
     /**
     * Specifies configuration information for a customer-managed secret, such as an authentication token or set of credentials that DataSync uses to access a specific transfer location, and an IAM role that DataSync can assume and access the customer-managed secret.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datasync_location_hdfs#custom_secret_config CcLocationHDFS#custom_secret_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_hdfs#custom_secret_config CcLocationHDFS#custom_secret_config}
     */
     readonly customSecretConfig?: CcLocationHDFS.CustomSecretConfigProperty;
     /**
     * The Base64 string representation of the Keytab file.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datasync_location_hdfs#kerberos_keytab CcLocationHDFS#kerberos_keytab}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_hdfs#kerberos_keytab CcLocationHDFS#kerberos_keytab}
     */
     readonly kerberosKeytab?: string;
     /**
     * The string representation of the Krb5Conf file, or the presigned URL to access the Krb5.conf file within an S3 bucket.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datasync_location_hdfs#kerberos_krb_5_conf CcLocationHDFS#kerberos_krb_5_conf}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_hdfs#kerberos_krb_5_conf CcLocationHDFS#kerberos_krb_5_conf}
     */
     readonly kerberosKrb5Conf?: string;
     /**
     * The unique identity, or principal, to which Kerberos can assign tickets.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datasync_location_hdfs#kerberos_principal CcLocationHDFS#kerberos_principal}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_hdfs#kerberos_principal CcLocationHDFS#kerberos_principal}
     */
     readonly kerberosPrincipal?: string;
     /**
     * The identifier for the Key Management Server where the encryption keys that encrypt data inside HDFS clusters are stored.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datasync_location_hdfs#kms_key_provider_uri CcLocationHDFS#kms_key_provider_uri}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_hdfs#kms_key_provider_uri CcLocationHDFS#kms_key_provider_uri}
     */
     readonly kmsKeyProviderUri?: string;
     /**
     * An array of Name Node(s) of the HDFS location.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datasync_location_hdfs#name_nodes CcLocationHDFS#name_nodes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_hdfs#name_nodes CcLocationHDFS#name_nodes}
     */
     readonly nameNodes: CcLocationHDFS.NameNodeProperty[] | cdktn.IResolvable;
     /**
     * Configuration information for RPC Protection and Data Transfer Protection. These parameters can be set to AUTHENTICATION, INTEGRITY, or PRIVACY. The default value is PRIVACY.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datasync_location_hdfs#qop_configuration CcLocationHDFS#qop_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_hdfs#qop_configuration CcLocationHDFS#qop_configuration}
     */
     readonly qopConfiguration?: CcLocationHDFS.QopConfigurationProperty;
     /**
     * Number of copies of each block that exists inside the HDFS cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datasync_location_hdfs#replication_factor CcLocationHDFS#replication_factor}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_hdfs#replication_factor CcLocationHDFS#replication_factor}
     */
     readonly replicationFactor?: number;
     /**
     * The user name that has read and write permissions on the specified HDFS cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datasync_location_hdfs#simple_user CcLocationHDFS#simple_user}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_hdfs#simple_user CcLocationHDFS#simple_user}
     */
     readonly simpleUser?: string;
     /**
     * The subdirectory in HDFS that is used to read data from the HDFS source location or write data to the HDFS destination.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datasync_location_hdfs#subdirectory CcLocationHDFS#subdirectory}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_hdfs#subdirectory CcLocationHDFS#subdirectory}
     */
     readonly subdirectory?: string;
     /**
     * An array of key-value pairs to apply to this resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datasync_location_hdfs#tags CcLocationHDFS#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_hdfs#tags CcLocationHDFS#tags}
     */
     readonly tags?: CcLocationHDFS.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datasync_location_hdfs awscc_datasync_location_hdfs}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_hdfs awscc_datasync_location_hdfs}
 */
 export class CcLocationHDFS extends cdktn.TerraformResource {
 
@@ -115,7 +115,7 @@ export class CcLocationHDFS extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcLocationHDFS resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcLocationHDFS to import
-    * @param importFromId The id of the existing CcLocationHDFS that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datasync_location_hdfs#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcLocationHDFS that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_hdfs#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcLocationHDFS to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -127,7 +127,7 @@ export class CcLocationHDFS extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datasync_location_hdfs awscc_datasync_location_hdfs} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_hdfs awscc_datasync_location_hdfs} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -137,7 +137,8 @@ export class CcLocationHDFS extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_datasync_location_hdfs',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -747,7 +748,7 @@ export interface CmkSecretConfigProperty {
     /**
     * Specifies the ARN for the customer-managed AWS KMS key used to encrypt the secret specified for SecretArn. DataSync provides this key to AWS Secrets Manager.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datasync_location_hdfs#kms_key_arn CcLocationHDFS#kms_key_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_hdfs#kms_key_arn CcLocationHDFS#kms_key_arn}
     */
     readonly kmsKeyArn?: string;
 }
@@ -818,13 +819,13 @@ export interface CustomSecretConfigProperty {
     /**
     * Specifies the ARN for the AWS Identity and Access Management role that DataSync uses to access the secret specified for SecretArn.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datasync_location_hdfs#secret_access_role_arn CcLocationHDFS#secret_access_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_hdfs#secret_access_role_arn CcLocationHDFS#secret_access_role_arn}
     */
     readonly secretAccessRoleArn?: string;
     /**
     * Specifies the ARN for a customer created AWS Secrets Manager secret.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datasync_location_hdfs#secret_arn CcLocationHDFS#secret_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_hdfs#secret_arn CcLocationHDFS#secret_arn}
     */
     readonly secretArn?: string;
 }
@@ -945,13 +946,13 @@ export interface NameNodeProperty {
     /**
     * The DNS name or IP address of the Name Node in the customer's on premises HDFS cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datasync_location_hdfs#hostname CcLocationHDFS#hostname}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_hdfs#hostname CcLocationHDFS#hostname}
     */
     readonly hostname: string;
     /**
     * The port on which the Name Node is listening on for client requests.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datasync_location_hdfs#port CcLocationHDFS#port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_hdfs#port CcLocationHDFS#port}
     */
     readonly port: number;
 }
@@ -1055,13 +1056,13 @@ export interface QopConfigurationProperty {
     /**
     * Configuration for Data Transfer Protection.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datasync_location_hdfs#data_transfer_protection CcLocationHDFS#data_transfer_protection}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_hdfs#data_transfer_protection CcLocationHDFS#data_transfer_protection}
     */
     readonly dataTransferProtection?: string;
     /**
     * Configuration for RPC Protection.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datasync_location_hdfs#rpc_protection CcLocationHDFS#rpc_protection}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_hdfs#rpc_protection CcLocationHDFS#rpc_protection}
     */
     readonly rpcProtection?: string;
 }
@@ -1149,13 +1150,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datasync_location_hdfs#key CcLocationHDFS#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_hdfs#key CcLocationHDFS#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 0 to 256 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datasync_location_hdfs#value CcLocationHDFS#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_hdfs#value CcLocationHDFS#value}
     */
     readonly value?: string;
 }

@@ -1,87 +1,87 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/amplify_app
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/amplify_app
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcAppProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/amplify_app#access_token CcApp#access_token}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/amplify_app#access_token CcApp#access_token}
     */
     readonly accessToken?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/amplify_app#auto_branch_creation_config CcApp#auto_branch_creation_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/amplify_app#auto_branch_creation_config CcApp#auto_branch_creation_config}
     */
     readonly autoBranchCreationConfig?: CcApp.AutoBranchCreationConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/amplify_app#basic_auth_config CcApp#basic_auth_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/amplify_app#basic_auth_config CcApp#basic_auth_config}
     */
     readonly basicAuthConfig?: CcApp.BasicAuthConfigProperty2;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/amplify_app#build_spec CcApp#build_spec}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/amplify_app#build_spec CcApp#build_spec}
     */
     readonly buildSpec?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/amplify_app#cache_config CcApp#cache_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/amplify_app#cache_config CcApp#cache_config}
     */
     readonly cacheConfig?: CcApp.CacheConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/amplify_app#compute_role_arn CcApp#compute_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/amplify_app#compute_role_arn CcApp#compute_role_arn}
     */
     readonly computeRoleArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/amplify_app#custom_headers CcApp#custom_headers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/amplify_app#custom_headers CcApp#custom_headers}
     */
     readonly customHeaders?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/amplify_app#custom_rules CcApp#custom_rules}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/amplify_app#custom_rules CcApp#custom_rules}
     */
     readonly customRules?: CcApp.CustomRuleProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/amplify_app#description CcApp#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/amplify_app#description CcApp#description}
     */
     readonly description?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/amplify_app#enable_branch_auto_deletion CcApp#enable_branch_auto_deletion}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/amplify_app#enable_branch_auto_deletion CcApp#enable_branch_auto_deletion}
     */
     readonly enableBranchAutoDeletion?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/amplify_app#environment_variables CcApp#environment_variables}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/amplify_app#environment_variables CcApp#environment_variables}
     */
     readonly environmentVariables?: CcApp.EnvironmentVariablesProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/amplify_app#iam_service_role CcApp#iam_service_role}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/amplify_app#iam_service_role CcApp#iam_service_role}
     */
     readonly iamServiceRole?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/amplify_app#job_config CcApp#job_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/amplify_app#job_config CcApp#job_config}
     */
     readonly jobConfig?: CcApp.JobConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/amplify_app#name CcApp#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/amplify_app#name CcApp#name}
     */
     readonly name: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/amplify_app#oauth_token CcApp#oauth_token}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/amplify_app#oauth_token CcApp#oauth_token}
     */
     readonly oauthToken?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/amplify_app#platform CcApp#platform}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/amplify_app#platform CcApp#platform}
     */
     readonly platform?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/amplify_app#repository CcApp#repository}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/amplify_app#repository CcApp#repository}
     */
     readonly repository?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/amplify_app#tags CcApp#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/amplify_app#tags CcApp#tags}
     */
     readonly tags?: CcApp.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/amplify_app awscc_amplify_app}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/amplify_app awscc_amplify_app}
 */
 export class CcApp extends cdktn.TerraformResource {
 
@@ -97,7 +97,7 @@ export class CcApp extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcApp resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcApp to import
-    * @param importFromId The id of the existing CcApp that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/amplify_app#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcApp that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/amplify_app#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcApp to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -109,7 +109,7 @@ export class CcApp extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/amplify_app awscc_amplify_app} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/amplify_app awscc_amplify_app} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -119,7 +119,8 @@ export class CcApp extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_amplify_app',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -1020,15 +1021,15 @@ export function ccAppTagPropertyToHclTerraform(struct?: CcApp.TagProperty | cdkt
 export namespace CcApp {
 export interface BasicAuthConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/amplify_app#enable_basic_auth CcApp#enable_basic_auth}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/amplify_app#enable_basic_auth CcApp#enable_basic_auth}
     */
     readonly enableBasicAuth?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/amplify_app#password CcApp#password}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/amplify_app#password CcApp#password}
     */
     readonly password?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/amplify_app#username CcApp#username}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/amplify_app#username CcApp#username}
     */
     readonly username?: string;
 }
@@ -1136,11 +1137,11 @@ export class BasicAuthConfigPropertyOutputReference extends cdktn.ComplexObject 
 }
 export interface EnvironmentVariableProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/amplify_app#name CcApp#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/amplify_app#name CcApp#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/amplify_app#value CcApp#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/amplify_app#value CcApp#value}
     */
     readonly value?: string;
 }
@@ -1248,47 +1249,47 @@ export class EnvironmentVariablePropertyList extends cdktn.ComplexList {
 }
 export interface AutoBranchCreationConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/amplify_app#auto_branch_creation_patterns CcApp#auto_branch_creation_patterns}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/amplify_app#auto_branch_creation_patterns CcApp#auto_branch_creation_patterns}
     */
     readonly autoBranchCreationPatterns?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/amplify_app#basic_auth_config CcApp#basic_auth_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/amplify_app#basic_auth_config CcApp#basic_auth_config}
     */
     readonly basicAuthConfig?: BasicAuthConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/amplify_app#build_spec CcApp#build_spec}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/amplify_app#build_spec CcApp#build_spec}
     */
     readonly buildSpec?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/amplify_app#enable_auto_branch_creation CcApp#enable_auto_branch_creation}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/amplify_app#enable_auto_branch_creation CcApp#enable_auto_branch_creation}
     */
     readonly enableAutoBranchCreation?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/amplify_app#enable_auto_build CcApp#enable_auto_build}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/amplify_app#enable_auto_build CcApp#enable_auto_build}
     */
     readonly enableAutoBuild?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/amplify_app#enable_performance_mode CcApp#enable_performance_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/amplify_app#enable_performance_mode CcApp#enable_performance_mode}
     */
     readonly enablePerformanceMode?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/amplify_app#enable_pull_request_preview CcApp#enable_pull_request_preview}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/amplify_app#enable_pull_request_preview CcApp#enable_pull_request_preview}
     */
     readonly enablePullRequestPreview?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/amplify_app#environment_variables CcApp#environment_variables}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/amplify_app#environment_variables CcApp#environment_variables}
     */
     readonly environmentVariables?: EnvironmentVariableProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/amplify_app#framework CcApp#framework}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/amplify_app#framework CcApp#framework}
     */
     readonly framework?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/amplify_app#pull_request_environment_name CcApp#pull_request_environment_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/amplify_app#pull_request_environment_name CcApp#pull_request_environment_name}
     */
     readonly pullRequestEnvironmentName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/amplify_app#stage CcApp#stage}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/amplify_app#stage CcApp#stage}
     */
     readonly stage?: string;
 }
@@ -1572,15 +1573,15 @@ export class AutoBranchCreationConfigPropertyOutputReference extends cdktn.Compl
 }
 export interface BasicAuthConfigProperty2 {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/amplify_app#enable_basic_auth CcApp#enable_basic_auth}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/amplify_app#enable_basic_auth CcApp#enable_basic_auth}
     */
     readonly enableBasicAuth?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/amplify_app#password CcApp#password}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/amplify_app#password CcApp#password}
     */
     readonly password?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/amplify_app#username CcApp#username}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/amplify_app#username CcApp#username}
     */
     readonly username?: string;
 }
@@ -1688,7 +1689,7 @@ export class BasicAuthConfigProperty2OutputReference extends cdktn.ComplexObject
 }
 export interface CacheConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/amplify_app#type CcApp#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/amplify_app#type CcApp#type}
     */
     readonly type?: string;
 }
@@ -1752,19 +1753,19 @@ export class CacheConfigPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface CustomRuleProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/amplify_app#condition CcApp#condition}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/amplify_app#condition CcApp#condition}
     */
     readonly condition?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/amplify_app#source CcApp#source}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/amplify_app#source CcApp#source}
     */
     readonly source?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/amplify_app#status CcApp#status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/amplify_app#status CcApp#status}
     */
     readonly status?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/amplify_app#target CcApp#target}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/amplify_app#target CcApp#target}
     */
     readonly target?: string;
 }
@@ -1916,11 +1917,11 @@ export class CustomRulePropertyList extends cdktn.ComplexList {
 }
 export interface EnvironmentVariablesProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/amplify_app#name CcApp#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/amplify_app#name CcApp#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/amplify_app#value CcApp#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/amplify_app#value CcApp#value}
     */
     readonly value?: string;
 }
@@ -2028,7 +2029,7 @@ export class EnvironmentVariablesPropertyList extends cdktn.ComplexList {
 }
 export interface JobConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/amplify_app#build_compute_type CcApp#build_compute_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/amplify_app#build_compute_type CcApp#build_compute_type}
     */
     readonly buildComputeType?: string;
 }
@@ -2092,11 +2093,11 @@ export class JobConfigPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/amplify_app#key CcApp#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/amplify_app#key CcApp#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/amplify_app#value CcApp#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/amplify_app#value CcApp#value}
     */
     readonly value?: string;
 }

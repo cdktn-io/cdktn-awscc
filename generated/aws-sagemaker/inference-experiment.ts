@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_inference_experiment
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_inference_experiment
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,85 +9,85 @@ export interface CcInferenceExperimentProps extends cdktn.TerraformMetaArguments
     /**
     * The Amazon S3 location and configuration for storing inference request and response data.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_inference_experiment#data_storage_config CcInferenceExperiment#data_storage_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_inference_experiment#data_storage_config CcInferenceExperiment#data_storage_config}
     */
     readonly dataStorageConfig?: CcInferenceExperiment.DataStorageConfigProperty;
     /**
     * The description of the inference experiment.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_inference_experiment#description CcInferenceExperiment#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_inference_experiment#description CcInferenceExperiment#description}
     */
     readonly description?: string;
     /**
     * The desired state of the experiment after starting or stopping operation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_inference_experiment#desired_state CcInferenceExperiment#desired_state}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_inference_experiment#desired_state CcInferenceExperiment#desired_state}
     */
     readonly desiredState?: string;
     /**
     * The name of the endpoint used to run the inference experiment.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_inference_experiment#endpoint_name CcInferenceExperiment#endpoint_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_inference_experiment#endpoint_name CcInferenceExperiment#endpoint_name}
     */
     readonly endpointName: string;
     /**
     * The AWS Key Management Service (AWS KMS) key that Amazon SageMaker uses to encrypt data on the storage volume attached to the ML compute instance that hosts the endpoint.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_inference_experiment#kms_key CcInferenceExperiment#kms_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_inference_experiment#kms_key CcInferenceExperiment#kms_key}
     */
     readonly kmsKey?: string;
     /**
     * An array of ModelVariantConfig objects. Each ModelVariantConfig object in the array describes the infrastructure configuration for the corresponding variant.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_inference_experiment#model_variants CcInferenceExperiment#model_variants}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_inference_experiment#model_variants CcInferenceExperiment#model_variants}
     */
     readonly modelVariants: CcInferenceExperiment.ModelVariantConfigProperty[] | cdktn.IResolvable;
     /**
     * The name for the inference experiment.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_inference_experiment#name CcInferenceExperiment#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_inference_experiment#name CcInferenceExperiment#name}
     */
     readonly name: string;
     /**
     * The Amazon Resource Name (ARN) of an IAM role that Amazon SageMaker can assume to access model artifacts and container images, and manage Amazon SageMaker Inference endpoints for model deployment.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_inference_experiment#role_arn CcInferenceExperiment#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_inference_experiment#role_arn CcInferenceExperiment#role_arn}
     */
     readonly roleArn: string;
     /**
     * The duration for which you want the inference experiment to run.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_inference_experiment#schedule CcInferenceExperiment#schedule}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_inference_experiment#schedule CcInferenceExperiment#schedule}
     */
     readonly schedule?: CcInferenceExperiment.InferenceExperimentScheduleProperty;
     /**
     * The configuration of ShadowMode inference experiment type. Use this field to specify a production variant which takes all the inference requests, and a shadow variant to which Amazon SageMaker replicates a percentage of the inference requests. For the shadow variant also specify the percentage of requests that Amazon SageMaker replicates.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_inference_experiment#shadow_mode_config CcInferenceExperiment#shadow_mode_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_inference_experiment#shadow_mode_config CcInferenceExperiment#shadow_mode_config}
     */
     readonly shadowModeConfig?: CcInferenceExperiment.ShadowModeConfigProperty;
     /**
     * The error message or client-specified reason from the StopInferenceExperiment API, that explains the status of the inference experiment.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_inference_experiment#status_reason CcInferenceExperiment#status_reason}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_inference_experiment#status_reason CcInferenceExperiment#status_reason}
     */
     readonly statusReason?: string;
     /**
     * An array of key-value pairs to apply to this resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_inference_experiment#tags CcInferenceExperiment#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_inference_experiment#tags CcInferenceExperiment#tags}
     */
     readonly tags?: CcInferenceExperiment.TagProperty[] | cdktn.IResolvable;
     /**
     * The type of the inference experiment that you want to run.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_inference_experiment#type CcInferenceExperiment#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_inference_experiment#type CcInferenceExperiment#type}
     */
     readonly type: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_inference_experiment awscc_sagemaker_inference_experiment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_inference_experiment awscc_sagemaker_inference_experiment}
 */
 export class CcInferenceExperiment extends cdktn.TerraformResource {
 
@@ -103,7 +103,7 @@ export class CcInferenceExperiment extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcInferenceExperiment resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcInferenceExperiment to import
-    * @param importFromId The id of the existing CcInferenceExperiment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_inference_experiment#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcInferenceExperiment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_inference_experiment#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcInferenceExperiment to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -115,7 +115,7 @@ export class CcInferenceExperiment extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_inference_experiment awscc_sagemaker_inference_experiment} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_inference_experiment awscc_sagemaker_inference_experiment} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -125,7 +125,8 @@ export class CcInferenceExperiment extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_sagemaker_inference_experiment',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -860,13 +861,13 @@ export interface CaptureContentTypeHeaderProperty {
     /**
     * The list of all content type headers that SageMaker will treat as CSV and capture accordingly.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_inference_experiment#csv_content_types CcInferenceExperiment#csv_content_types}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_inference_experiment#csv_content_types CcInferenceExperiment#csv_content_types}
     */
     readonly csvContentTypes?: string[];
     /**
     * The list of all content type headers that SageMaker will treat as JSON and capture accordingly.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_inference_experiment#json_content_types CcInferenceExperiment#json_content_types}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_inference_experiment#json_content_types CcInferenceExperiment#json_content_types}
     */
     readonly jsonContentTypes?: string[];
 }
@@ -954,19 +955,19 @@ export interface DataStorageConfigProperty {
     /**
     * Configuration specifying how to treat different headers. If no headers are specified SageMaker will by default base64 encode when capturing the data.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_inference_experiment#content_type CcInferenceExperiment#content_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_inference_experiment#content_type CcInferenceExperiment#content_type}
     */
     readonly contentType?: CaptureContentTypeHeaderProperty;
     /**
     * The Amazon S3 bucket where the inference request and response data is stored.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_inference_experiment#destination CcInferenceExperiment#destination}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_inference_experiment#destination CcInferenceExperiment#destination}
     */
     readonly destination?: string;
     /**
     * The AWS Key Management Service key that Amazon SageMaker uses to encrypt captured data at rest using Amazon S3 server-side encryption.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_inference_experiment#kms_key CcInferenceExperiment#kms_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_inference_experiment#kms_key CcInferenceExperiment#kms_key}
     */
     readonly kmsKey?: string;
 }
@@ -1119,13 +1120,13 @@ export interface RealTimeInferenceConfigProperty {
     /**
     * The number of instances of the type specified by InstanceType.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_inference_experiment#instance_count CcInferenceExperiment#instance_count}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_inference_experiment#instance_count CcInferenceExperiment#instance_count}
     */
     readonly instanceCount: number;
     /**
     * The instance type the model is deployed to.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_inference_experiment#instance_type CcInferenceExperiment#instance_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_inference_experiment#instance_type CcInferenceExperiment#instance_type}
     */
     readonly instanceType: string;
 }
@@ -1207,13 +1208,13 @@ export interface ModelInfrastructureConfigProperty {
     /**
     * The type of the inference experiment that you want to run.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_inference_experiment#infrastructure_type CcInferenceExperiment#infrastructure_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_inference_experiment#infrastructure_type CcInferenceExperiment#infrastructure_type}
     */
     readonly infrastructureType: string;
     /**
     * The infrastructure configuration for deploying the model to a real-time inference endpoint.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_inference_experiment#real_time_inference_config CcInferenceExperiment#real_time_inference_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_inference_experiment#real_time_inference_config CcInferenceExperiment#real_time_inference_config}
     */
     readonly realTimeInferenceConfig: RealTimeInferenceConfigProperty;
 }
@@ -1295,19 +1296,19 @@ export interface ModelVariantConfigProperty {
     /**
     * The configuration for the infrastructure that the model will be deployed to.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_inference_experiment#infrastructure_config CcInferenceExperiment#infrastructure_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_inference_experiment#infrastructure_config CcInferenceExperiment#infrastructure_config}
     */
     readonly infrastructureConfig: ModelInfrastructureConfigProperty;
     /**
     * The name of the Amazon SageMaker Model entity.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_inference_experiment#model_name CcInferenceExperiment#model_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_inference_experiment#model_name CcInferenceExperiment#model_name}
     */
     readonly modelName: string;
     /**
     * The name of the variant.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_inference_experiment#variant_name CcInferenceExperiment#variant_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_inference_experiment#variant_name CcInferenceExperiment#variant_name}
     */
     readonly variantName: string;
 }
@@ -1430,13 +1431,13 @@ export interface InferenceExperimentScheduleProperty {
     /**
     * The timestamp at which the inference experiment ended or will end.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_inference_experiment#end_time CcInferenceExperiment#end_time}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_inference_experiment#end_time CcInferenceExperiment#end_time}
     */
     readonly endTime?: string;
     /**
     * The timestamp at which the inference experiment started or will start.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_inference_experiment#start_time CcInferenceExperiment#start_time}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_inference_experiment#start_time CcInferenceExperiment#start_time}
     */
     readonly startTime?: string;
 }
@@ -1524,13 +1525,13 @@ export interface ShadowModelVariantConfigProperty {
     /**
     * The percentage of inference requests that Amazon SageMaker replicates from the production variant to the shadow variant.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_inference_experiment#sampling_percentage CcInferenceExperiment#sampling_percentage}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_inference_experiment#sampling_percentage CcInferenceExperiment#sampling_percentage}
     */
     readonly samplingPercentage?: number;
     /**
     * The name of the shadow variant.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_inference_experiment#shadow_model_variant_name CcInferenceExperiment#shadow_model_variant_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_inference_experiment#shadow_model_variant_name CcInferenceExperiment#shadow_model_variant_name}
     */
     readonly shadowModelVariantName?: string;
 }
@@ -1640,13 +1641,13 @@ export interface ShadowModeConfigProperty {
     /**
     * List of shadow variant configurations.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_inference_experiment#shadow_model_variants CcInferenceExperiment#shadow_model_variants}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_inference_experiment#shadow_model_variants CcInferenceExperiment#shadow_model_variants}
     */
     readonly shadowModelVariants?: ShadowModelVariantConfigProperty[] | cdktn.IResolvable;
     /**
     * The name of the production variant, which takes all the inference requests.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_inference_experiment#source_model_variant_name CcInferenceExperiment#source_model_variant_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_inference_experiment#source_model_variant_name CcInferenceExperiment#source_model_variant_name}
     */
     readonly sourceModelVariantName?: string;
 }
@@ -1734,13 +1735,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 127 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_inference_experiment#key CcInferenceExperiment#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_inference_experiment#key CcInferenceExperiment#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 1 to 255 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_inference_experiment#value CcInferenceExperiment#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_inference_experiment#value CcInferenceExperiment#value}
     */
     readonly value?: string;
 }

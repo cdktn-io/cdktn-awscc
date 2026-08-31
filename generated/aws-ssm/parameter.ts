@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ssm_parameter
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_parameter
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,19 +9,19 @@ export interface CcParameterProps extends cdktn.TerraformMetaArguments {
     /**
     * A regular expression used to validate the parameter value. For example, for ``String`` types with values restricted to numbers, you can specify the following: ``AllowedPattern=^\d+$``
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ssm_parameter#allowed_pattern CcParameter#allowed_pattern}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_parameter#allowed_pattern CcParameter#allowed_pattern}
     */
     readonly allowedPattern?: string;
     /**
     * The data type of the parameter, such as ``text`` or ``aws:ec2:image``. The default is ``text``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ssm_parameter#data_type CcParameter#data_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_parameter#data_type CcParameter#data_type}
     */
     readonly dataType?: string;
     /**
     * Information about the parameter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ssm_parameter#description CcParameter#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_parameter#description CcParameter#description}
     */
     readonly description?: string;
     /**
@@ -29,46 +29,46 @@ export interface CcParameterProps extends cdktn.TerraformMetaArguments {
     *   The reported maximum length of 2048 characters for a parameter name includes 1037 characters that are reserved for internal use by SYS. The maximum length for a parameter name that you specify is 1011 characters.
     *  This count of 1011 characters includes the characters in the ARN that precede the name you specify. This ARN length will vary depending on your partition and Region. For example, the following 45 characters count toward the 1011 character maximum for a parameter created in the US East (Ohio) Region: ``arn:aws:ssm:us-east-2:111122223333:parameter/``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ssm_parameter#name CcParameter#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_parameter#name CcParameter#name}
     */
     readonly name?: string;
     /**
     * Information about the policies assigned to a parameter.
     *  [Assigning parameter policies](https://docs.aws.amazon.com/systems-manager/latest/userguide/parameter-store-policies.html) in the *User Guide*.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ssm_parameter#policies CcParameter#policies}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_parameter#policies CcParameter#policies}
     */
     readonly policies?: string;
     /**
     * Optional metadata that you assign to a resource in the form of an arbitrary set of tags (key-value pairs). Tags enable you to categorize a resource in different ways, such as by purpose, owner, or environment. For example, you might want to tag a SYS parameter to identify the type of resource to which it applies, the environment, or the type of configuration data referenced by the parameter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ssm_parameter#tags CcParameter#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_parameter#tags CcParameter#tags}
     */
     readonly tags?: { [key: string]: string };
     /**
     * The parameter tier.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ssm_parameter#tier CcParameter#tier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_parameter#tier CcParameter#tier}
     */
     readonly tier?: string;
     /**
     * The type of parameter.
     *   Parameters of type ``SecureString`` are not supported by CFNlong.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ssm_parameter#type CcParameter#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_parameter#type CcParameter#type}
     */
     readonly type: string;
     /**
     * The parameter value.
     *   If type is ``StringList``, the system returns a comma-separated string with no spaces between commas in the ``Value`` field.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ssm_parameter#value CcParameter#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_parameter#value CcParameter#value}
     */
     readonly value: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ssm_parameter awscc_ssm_parameter}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_parameter awscc_ssm_parameter}
 */
 export class CcParameter extends cdktn.TerraformResource {
 
@@ -84,7 +84,7 @@ export class CcParameter extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcParameter resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcParameter to import
-    * @param importFromId The id of the existing CcParameter that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ssm_parameter#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcParameter that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_parameter#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcParameter to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -96,7 +96,7 @@ export class CcParameter extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ssm_parameter awscc_ssm_parameter} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_parameter awscc_ssm_parameter} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -106,7 +106,8 @@ export class CcParameter extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_ssm_parameter',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,

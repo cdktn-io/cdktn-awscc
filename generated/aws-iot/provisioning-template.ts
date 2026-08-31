@@ -1,47 +1,47 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_provisioning_template
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_provisioning_template
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcProvisioningTemplateProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_provisioning_template#description CcProvisioningTemplate#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_provisioning_template#description CcProvisioningTemplate#description}
     */
     readonly description?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_provisioning_template#enabled CcProvisioningTemplate#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_provisioning_template#enabled CcProvisioningTemplate#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_provisioning_template#pre_provisioning_hook CcProvisioningTemplate#pre_provisioning_hook}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_provisioning_template#pre_provisioning_hook CcProvisioningTemplate#pre_provisioning_hook}
     */
     readonly preProvisioningHook?: CcProvisioningTemplate.ProvisioningHookProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_provisioning_template#provisioning_role_arn CcProvisioningTemplate#provisioning_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_provisioning_template#provisioning_role_arn CcProvisioningTemplate#provisioning_role_arn}
     */
     readonly provisioningRoleArn: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_provisioning_template#tags CcProvisioningTemplate#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_provisioning_template#tags CcProvisioningTemplate#tags}
     */
     readonly tags?: CcProvisioningTemplate.TagProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_provisioning_template#template_body CcProvisioningTemplate#template_body}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_provisioning_template#template_body CcProvisioningTemplate#template_body}
     */
     readonly templateBody: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_provisioning_template#template_name CcProvisioningTemplate#template_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_provisioning_template#template_name CcProvisioningTemplate#template_name}
     */
     readonly templateName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_provisioning_template#template_type CcProvisioningTemplate#template_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_provisioning_template#template_type CcProvisioningTemplate#template_type}
     */
     readonly templateType?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_provisioning_template awscc_iot_provisioning_template}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_provisioning_template awscc_iot_provisioning_template}
 */
 export class CcProvisioningTemplate extends cdktn.TerraformResource {
 
@@ -57,7 +57,7 @@ export class CcProvisioningTemplate extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcProvisioningTemplate resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcProvisioningTemplate to import
-    * @param importFromId The id of the existing CcProvisioningTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_provisioning_template#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcProvisioningTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_provisioning_template#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcProvisioningTemplate to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -69,7 +69,7 @@ export class CcProvisioningTemplate extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_provisioning_template awscc_iot_provisioning_template} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_provisioning_template awscc_iot_provisioning_template} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -79,7 +79,8 @@ export class CcProvisioningTemplate extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_iot_provisioning_template',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -386,11 +387,11 @@ export function ccProvisioningTemplateTagPropertyToHclTerraform(struct?: CcProvi
 export namespace CcProvisioningTemplate {
 export interface ProvisioningHookProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_provisioning_template#payload_version CcProvisioningTemplate#payload_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_provisioning_template#payload_version CcProvisioningTemplate#payload_version}
     */
     readonly payloadVersion?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_provisioning_template#target_arn CcProvisioningTemplate#target_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_provisioning_template#target_arn CcProvisioningTemplate#target_arn}
     */
     readonly targetArn?: string;
 }
@@ -476,11 +477,11 @@ export class ProvisioningHookPropertyOutputReference extends cdktn.ComplexObject
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_provisioning_template#key CcProvisioningTemplate#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_provisioning_template#key CcProvisioningTemplate#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_provisioning_template#value CcProvisioningTemplate#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_provisioning_template#value CcProvisioningTemplate#value}
     */
     readonly value?: string;
 }

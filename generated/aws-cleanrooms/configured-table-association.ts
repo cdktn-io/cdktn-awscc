@@ -1,45 +1,45 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_configured_table_association
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_configured_table_association
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcConfiguredTableAssociationProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_configured_table_association#configured_table_association_analysis_rules CcConfiguredTableAssociation#configured_table_association_analysis_rules}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_configured_table_association#configured_table_association_analysis_rules CcConfiguredTableAssociation#configured_table_association_analysis_rules}
     */
     readonly configuredTableAssociationAnalysisRules?: CcConfiguredTableAssociation.ConfiguredTableAssociationAnalysisRuleProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_configured_table_association#configured_table_identifier CcConfiguredTableAssociation#configured_table_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_configured_table_association#configured_table_identifier CcConfiguredTableAssociation#configured_table_identifier}
     */
     readonly configuredTableIdentifier: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_configured_table_association#description CcConfiguredTableAssociation#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_configured_table_association#description CcConfiguredTableAssociation#description}
     */
     readonly description?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_configured_table_association#membership_identifier CcConfiguredTableAssociation#membership_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_configured_table_association#membership_identifier CcConfiguredTableAssociation#membership_identifier}
     */
     readonly membershipIdentifier: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_configured_table_association#name CcConfiguredTableAssociation#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_configured_table_association#name CcConfiguredTableAssociation#name}
     */
     readonly name: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_configured_table_association#role_arn CcConfiguredTableAssociation#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_configured_table_association#role_arn CcConfiguredTableAssociation#role_arn}
     */
     readonly roleArn: string;
     /**
     * An arbitrary set of tags (key-value pairs) for this cleanrooms collaboration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_configured_table_association#tags CcConfiguredTableAssociation#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_configured_table_association#tags CcConfiguredTableAssociation#tags}
     */
     readonly tags?: CcConfiguredTableAssociation.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_configured_table_association awscc_cleanrooms_configured_table_association}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_configured_table_association awscc_cleanrooms_configured_table_association}
 */
 export class CcConfiguredTableAssociation extends cdktn.TerraformResource {
 
@@ -55,7 +55,7 @@ export class CcConfiguredTableAssociation extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcConfiguredTableAssociation resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcConfiguredTableAssociation to import
-    * @param importFromId The id of the existing CcConfiguredTableAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_configured_table_association#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcConfiguredTableAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_configured_table_association#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcConfiguredTableAssociation to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -67,7 +67,7 @@ export class CcConfiguredTableAssociation extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_configured_table_association awscc_cleanrooms_configured_table_association} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_configured_table_association awscc_cleanrooms_configured_table_association} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -77,7 +77,8 @@ export class CcConfiguredTableAssociation extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_cleanrooms_configured_table_association',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -544,11 +545,11 @@ export function ccConfiguredTableAssociationTagPropertyToHclTerraform(struct?: C
 export namespace CcConfiguredTableAssociation {
 export interface ConfiguredTableAssociationAnalysisRuleAggregationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_configured_table_association#allowed_additional_analyses CcConfiguredTableAssociation#allowed_additional_analyses}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_configured_table_association#allowed_additional_analyses CcConfiguredTableAssociation#allowed_additional_analyses}
     */
     readonly allowedAdditionalAnalyses?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_configured_table_association#allowed_result_receivers CcConfiguredTableAssociation#allowed_result_receivers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_configured_table_association#allowed_result_receivers CcConfiguredTableAssociation#allowed_result_receivers}
     */
     readonly allowedResultReceivers?: string[];
 }
@@ -634,11 +635,11 @@ export class ConfiguredTableAssociationAnalysisRuleAggregationPropertyOutputRefe
 }
 export interface ConfiguredTableAssociationAnalysisRuleCustomProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_configured_table_association#allowed_additional_analyses CcConfiguredTableAssociation#allowed_additional_analyses}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_configured_table_association#allowed_additional_analyses CcConfiguredTableAssociation#allowed_additional_analyses}
     */
     readonly allowedAdditionalAnalyses?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_configured_table_association#allowed_result_receivers CcConfiguredTableAssociation#allowed_result_receivers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_configured_table_association#allowed_result_receivers CcConfiguredTableAssociation#allowed_result_receivers}
     */
     readonly allowedResultReceivers?: string[];
 }
@@ -724,11 +725,11 @@ export class ConfiguredTableAssociationAnalysisRuleCustomPropertyOutputReference
 }
 export interface ConfiguredTableAssociationAnalysisRuleListProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_configured_table_association#allowed_additional_analyses CcConfiguredTableAssociation#allowed_additional_analyses}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_configured_table_association#allowed_additional_analyses CcConfiguredTableAssociation#allowed_additional_analyses}
     */
     readonly allowedAdditionalAnalyses?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_configured_table_association#allowed_result_receivers CcConfiguredTableAssociation#allowed_result_receivers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_configured_table_association#allowed_result_receivers CcConfiguredTableAssociation#allowed_result_receivers}
     */
     readonly allowedResultReceivers?: string[];
 }
@@ -814,15 +815,15 @@ export class ConfiguredTableAssociationAnalysisRuleListPropertyOutputReference e
 }
 export interface ConfiguredTableAssociationAnalysisRulePolicyV1Property {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_configured_table_association#aggregation CcConfiguredTableAssociation#aggregation}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_configured_table_association#aggregation CcConfiguredTableAssociation#aggregation}
     */
     readonly aggregation?: ConfiguredTableAssociationAnalysisRuleAggregationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_configured_table_association#custom CcConfiguredTableAssociation#custom}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_configured_table_association#custom CcConfiguredTableAssociation#custom}
     */
     readonly custom?: ConfiguredTableAssociationAnalysisRuleCustomProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_configured_table_association#list CcConfiguredTableAssociation#list}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_configured_table_association#list CcConfiguredTableAssociation#list}
     */
     readonly list?: ConfiguredTableAssociationAnalysisRuleListProperty;
 }
@@ -930,7 +931,7 @@ export class ConfiguredTableAssociationAnalysisRulePolicyV1PropertyOutputReferen
 }
 export interface ConfiguredTableAssociationAnalysisRulePolicyProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_configured_table_association#v1 CcConfiguredTableAssociation#v1}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_configured_table_association#v1 CcConfiguredTableAssociation#v1}
     */
     readonly v1?: ConfiguredTableAssociationAnalysisRulePolicyV1Property;
 }
@@ -994,11 +995,11 @@ export class ConfiguredTableAssociationAnalysisRulePolicyPropertyOutputReference
 }
 export interface ConfiguredTableAssociationAnalysisRuleProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_configured_table_association#policy CcConfiguredTableAssociation#policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_configured_table_association#policy CcConfiguredTableAssociation#policy}
     */
     readonly policy?: ConfiguredTableAssociationAnalysisRulePolicyProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_configured_table_association#type CcConfiguredTableAssociation#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_configured_table_association#type CcConfiguredTableAssociation#type}
     */
     readonly type?: string;
 }
@@ -1106,11 +1107,11 @@ export class ConfiguredTableAssociationAnalysisRulePropertyList extends cdktn.Co
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_configured_table_association#key CcConfiguredTableAssociation#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_configured_table_association#key CcConfiguredTableAssociation#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_configured_table_association#value CcConfiguredTableAssociation#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_configured_table_association#value CcConfiguredTableAssociation#value}
     */
     readonly value?: string;
 }

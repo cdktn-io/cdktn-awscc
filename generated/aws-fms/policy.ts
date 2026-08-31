@@ -1,83 +1,83 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fms_policy
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fms_policy
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcPolicyProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fms_policy#delete_all_policy_resources CcPolicy#delete_all_policy_resources}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fms_policy#delete_all_policy_resources CcPolicy#delete_all_policy_resources}
     */
     readonly deleteAllPolicyResources?: boolean | cdktn.IResolvable;
     /**
     * An FMS includeMap or excludeMap.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fms_policy#exclude_map CcPolicy#exclude_map}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fms_policy#exclude_map CcPolicy#exclude_map}
     */
     readonly excludeMap?: CcPolicy.IEMapProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fms_policy#exclude_resource_tags CcPolicy#exclude_resource_tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fms_policy#exclude_resource_tags CcPolicy#exclude_resource_tags}
     */
     readonly excludeResourceTags: boolean | cdktn.IResolvable;
     /**
     * An FMS includeMap or excludeMap.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fms_policy#include_map CcPolicy#include_map}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fms_policy#include_map CcPolicy#include_map}
     */
     readonly includeMap?: CcPolicy.IncludeMapProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fms_policy#policy_description CcPolicy#policy_description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fms_policy#policy_description CcPolicy#policy_description}
     */
     readonly policyDescription?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fms_policy#policy_name CcPolicy#policy_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fms_policy#policy_name CcPolicy#policy_name}
     */
     readonly policyName: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fms_policy#remediation_enabled CcPolicy#remediation_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fms_policy#remediation_enabled CcPolicy#remediation_enabled}
     */
     readonly remediationEnabled: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fms_policy#resource_set_ids CcPolicy#resource_set_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fms_policy#resource_set_ids CcPolicy#resource_set_ids}
     */
     readonly resourceSetIds?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fms_policy#resource_tag_logical_operator CcPolicy#resource_tag_logical_operator}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fms_policy#resource_tag_logical_operator CcPolicy#resource_tag_logical_operator}
     */
     readonly resourceTagLogicalOperator?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fms_policy#resource_tags CcPolicy#resource_tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fms_policy#resource_tags CcPolicy#resource_tags}
     */
     readonly resourceTags?: CcPolicy.ResourceTagProperty[] | cdktn.IResolvable;
     /**
     * An AWS resource type
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fms_policy#resource_type CcPolicy#resource_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fms_policy#resource_type CcPolicy#resource_type}
     */
     readonly resourceType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fms_policy#resource_type_list CcPolicy#resource_type_list}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fms_policy#resource_type_list CcPolicy#resource_type_list}
     */
     readonly resourceTypeList?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fms_policy#resources_clean_up CcPolicy#resources_clean_up}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fms_policy#resources_clean_up CcPolicy#resources_clean_up}
     */
     readonly resourcesCleanUp?: boolean | cdktn.IResolvable;
     /**
     * Firewall security service policy data.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fms_policy#security_service_policy_data CcPolicy#security_service_policy_data}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fms_policy#security_service_policy_data CcPolicy#security_service_policy_data}
     */
     readonly securityServicePolicyData: CcPolicy.SecurityServicePolicyDataProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fms_policy#tags CcPolicy#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fms_policy#tags CcPolicy#tags}
     */
     readonly tags?: CcPolicy.PolicyTagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fms_policy awscc_fms_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fms_policy awscc_fms_policy}
 */
 export class CcPolicy extends cdktn.TerraformResource {
 
@@ -93,7 +93,7 @@ export class CcPolicy extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcPolicy resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcPolicy to import
-    * @param importFromId The id of the existing CcPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fms_policy#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fms_policy#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcPolicy to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -105,7 +105,7 @@ export class CcPolicy extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fms_policy awscc_fms_policy} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fms_policy awscc_fms_policy} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -115,7 +115,8 @@ export class CcPolicy extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_fms_policy',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -1184,11 +1185,11 @@ export function ccPolicyPolicyTagPropertyToHclTerraform(struct?: CcPolicy.Policy
 export namespace CcPolicy {
 export interface IEMapProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fms_policy#account CcPolicy#account}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fms_policy#account CcPolicy#account}
     */
     readonly account?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fms_policy#orgunit CcPolicy#orgunit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fms_policy#orgunit CcPolicy#orgunit}
     */
     readonly orgunit?: string[];
 }
@@ -1274,11 +1275,11 @@ export class IEMapPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface IncludeMapProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fms_policy#account CcPolicy#account}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fms_policy#account CcPolicy#account}
     */
     readonly account?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fms_policy#orgunit CcPolicy#orgunit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fms_policy#orgunit CcPolicy#orgunit}
     */
     readonly orgunit?: string[];
 }
@@ -1364,11 +1365,11 @@ export class IncludeMapPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface ResourceTagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fms_policy#key CcPolicy#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fms_policy#key CcPolicy#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fms_policy#value CcPolicy#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fms_policy#value CcPolicy#value}
     */
     readonly value?: string;
 }
@@ -1478,13 +1479,13 @@ export interface IcmpTypeCodeProperty {
     /**
     * Code.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fms_policy#code CcPolicy#code}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fms_policy#code CcPolicy#code}
     */
     readonly code?: number;
     /**
     * Type.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fms_policy#type CcPolicy#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fms_policy#type CcPolicy#type}
     */
     readonly type?: number;
 }
@@ -1572,13 +1573,13 @@ export interface PortRangeProperty {
     /**
     * From Port.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fms_policy#from CcPolicy#from}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fms_policy#from CcPolicy#from}
     */
     readonly from?: number;
     /**
     * To Port.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fms_policy#to CcPolicy#to}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fms_policy#to CcPolicy#to}
     */
     readonly to?: number;
 }
@@ -1666,43 +1667,43 @@ export interface NetworkAclEntryProperty {
     /**
     * CIDR block.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fms_policy#cidr_block CcPolicy#cidr_block}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fms_policy#cidr_block CcPolicy#cidr_block}
     */
     readonly cidrBlock?: string;
     /**
     * Whether the entry is an egress entry.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fms_policy#egress CcPolicy#egress}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fms_policy#egress CcPolicy#egress}
     */
     readonly egress?: boolean | cdktn.IResolvable;
     /**
     * ICMP type and code.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fms_policy#icmp_type_code CcPolicy#icmp_type_code}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fms_policy#icmp_type_code CcPolicy#icmp_type_code}
     */
     readonly icmpTypeCode?: IcmpTypeCodeProperty;
     /**
     * IPv6 CIDR block.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fms_policy#ipv_6_cidr_block CcPolicy#ipv_6_cidr_block}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fms_policy#ipv_6_cidr_block CcPolicy#ipv_6_cidr_block}
     */
     readonly ipv6CidrBlock?: string;
     /**
     * Port range.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fms_policy#port_range CcPolicy#port_range}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fms_policy#port_range CcPolicy#port_range}
     */
     readonly portRange?: PortRangeProperty;
     /**
     * Protocol.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fms_policy#protocol CcPolicy#protocol}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fms_policy#protocol CcPolicy#protocol}
     */
     readonly protocol?: string;
     /**
     * Rule Action.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fms_policy#rule_action CcPolicy#rule_action}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fms_policy#rule_action CcPolicy#rule_action}
     */
     readonly ruleAction?: string;
 }
@@ -1922,13 +1923,13 @@ export interface SecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetw
     /**
     * Code.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fms_policy#code CcPolicy#code}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fms_policy#code CcPolicy#code}
     */
     readonly code?: number;
     /**
     * Type.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fms_policy#type CcPolicy#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fms_policy#type CcPolicy#type}
     */
     readonly type?: number;
 }
@@ -2016,13 +2017,13 @@ export interface SecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetw
     /**
     * From Port.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fms_policy#from CcPolicy#from}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fms_policy#from CcPolicy#from}
     */
     readonly from?: number;
     /**
     * To Port.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fms_policy#to CcPolicy#to}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fms_policy#to CcPolicy#to}
     */
     readonly to?: number;
 }
@@ -2110,43 +2111,43 @@ export interface LastEntriesProperty {
     /**
     * CIDR block.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fms_policy#cidr_block CcPolicy#cidr_block}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fms_policy#cidr_block CcPolicy#cidr_block}
     */
     readonly cidrBlock?: string;
     /**
     * Whether the entry is an egress entry.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fms_policy#egress CcPolicy#egress}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fms_policy#egress CcPolicy#egress}
     */
     readonly egress?: boolean | cdktn.IResolvable;
     /**
     * ICMP type and code.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fms_policy#icmp_type_code CcPolicy#icmp_type_code}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fms_policy#icmp_type_code CcPolicy#icmp_type_code}
     */
     readonly icmpTypeCode?: SecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntriesIcmpTypeCodeProperty;
     /**
     * IPv6 CIDR block.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fms_policy#ipv_6_cidr_block CcPolicy#ipv_6_cidr_block}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fms_policy#ipv_6_cidr_block CcPolicy#ipv_6_cidr_block}
     */
     readonly ipv6CidrBlock?: string;
     /**
     * Port range.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fms_policy#port_range CcPolicy#port_range}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fms_policy#port_range CcPolicy#port_range}
     */
     readonly portRange?: SecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntriesPortRangeProperty;
     /**
     * Protocol.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fms_policy#protocol CcPolicy#protocol}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fms_policy#protocol CcPolicy#protocol}
     */
     readonly protocol?: string;
     /**
     * Rule Action.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fms_policy#rule_action CcPolicy#rule_action}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fms_policy#rule_action CcPolicy#rule_action}
     */
     readonly ruleAction?: string;
 }
@@ -2366,21 +2367,21 @@ export interface NetworkAclEntrySetProperty {
     /**
     * NetworkAcl entry list.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fms_policy#first_entries CcPolicy#first_entries}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fms_policy#first_entries CcPolicy#first_entries}
     */
     readonly firstEntries?: NetworkAclEntryProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fms_policy#force_remediate_for_first_entries CcPolicy#force_remediate_for_first_entries}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fms_policy#force_remediate_for_first_entries CcPolicy#force_remediate_for_first_entries}
     */
     readonly forceRemediateForFirstEntries?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fms_policy#force_remediate_for_last_entries CcPolicy#force_remediate_for_last_entries}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fms_policy#force_remediate_for_last_entries CcPolicy#force_remediate_for_last_entries}
     */
     readonly forceRemediateForLastEntries?: boolean | cdktn.IResolvable;
     /**
     * NetworkAcl entry list.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fms_policy#last_entries CcPolicy#last_entries}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fms_policy#last_entries CcPolicy#last_entries}
     */
     readonly lastEntries?: LastEntriesProperty[] | cdktn.IResolvable;
 }
@@ -2512,7 +2513,7 @@ export interface NetworkAclCommonPolicyProperty {
     /**
     * Network ACL entry set.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fms_policy#network_acl_entry_set CcPolicy#network_acl_entry_set}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fms_policy#network_acl_entry_set CcPolicy#network_acl_entry_set}
     */
     readonly networkAclEntrySet?: NetworkAclEntrySetProperty;
 }
@@ -2578,7 +2579,7 @@ export interface NetworkFirewallPolicyProperty {
     /**
     * Firewall deployment mode.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fms_policy#firewall_deployment_model CcPolicy#firewall_deployment_model}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fms_policy#firewall_deployment_model CcPolicy#firewall_deployment_model}
     */
     readonly firewallDeploymentModel?: string;
 }
@@ -2644,7 +2645,7 @@ export interface ThirdPartyFirewallPolicyProperty {
     /**
     * Firewall deployment mode.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fms_policy#firewall_deployment_model CcPolicy#firewall_deployment_model}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fms_policy#firewall_deployment_model CcPolicy#firewall_deployment_model}
     */
     readonly firewallDeploymentModel?: string;
 }
@@ -2710,19 +2711,19 @@ export interface PolicyOptionProperty {
     /**
     * Network ACL common policy.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fms_policy#network_acl_common_policy CcPolicy#network_acl_common_policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fms_policy#network_acl_common_policy CcPolicy#network_acl_common_policy}
     */
     readonly networkAclCommonPolicy?: NetworkAclCommonPolicyProperty;
     /**
     * Network firewall policy.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fms_policy#network_firewall_policy CcPolicy#network_firewall_policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fms_policy#network_firewall_policy CcPolicy#network_firewall_policy}
     */
     readonly networkFirewallPolicy?: NetworkFirewallPolicyProperty;
     /**
     * Third party firewall policy.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fms_policy#third_party_firewall_policy CcPolicy#third_party_firewall_policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fms_policy#third_party_firewall_policy CcPolicy#third_party_firewall_policy}
     */
     readonly thirdPartyFirewallPolicy?: ThirdPartyFirewallPolicyProperty;
 }
@@ -2832,19 +2833,19 @@ export interface SecurityServicePolicyDataProperty {
     /**
     * Firewall managed service data.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fms_policy#managed_service_data CcPolicy#managed_service_data}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fms_policy#managed_service_data CcPolicy#managed_service_data}
     */
     readonly managedServiceData?: string;
     /**
     * Firewall policy option.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fms_policy#policy_option CcPolicy#policy_option}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fms_policy#policy_option CcPolicy#policy_option}
     */
     readonly policyOption?: PolicyOptionProperty;
     /**
     * Firewall policy type.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fms_policy#type CcPolicy#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fms_policy#type CcPolicy#type}
     */
     readonly type: string;
 }
@@ -2949,11 +2950,11 @@ export class SecurityServicePolicyDataPropertyOutputReference extends cdktn.Comp
 }
 export interface PolicyTagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fms_policy#key CcPolicy#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fms_policy#key CcPolicy#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fms_policy#value CcPolicy#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fms_policy#value CcPolicy#value}
     */
     readonly value?: string;
 }

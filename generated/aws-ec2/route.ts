@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_route
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_route
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -10,103 +10,103 @@ export interface CcRouteProps extends cdktn.TerraformMetaArguments {
     * The ID of the carrier gateway.
     *  You can only use this option when the VPC contains a subnet which is associated with a Wavelength Zone.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_route#carrier_gateway_id CcRoute#carrier_gateway_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_route#carrier_gateway_id CcRoute#carrier_gateway_id}
     */
     readonly carrierGatewayId?: string;
     /**
     * The Amazon Resource Name (ARN) of the core network.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_route#core_network_arn CcRoute#core_network_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_route#core_network_arn CcRoute#core_network_arn}
     */
     readonly coreNetworkArn?: string;
     /**
     * The IPv4 CIDR address block used for the destination match. Routing decisions are based on the most specific match. We modify the specified CIDR block to its canonical form; for example, if you specify ``100.68.0.18/18``, we modify it to ``100.68.0.0/18``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_route#destination_cidr_block CcRoute#destination_cidr_block}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_route#destination_cidr_block CcRoute#destination_cidr_block}
     */
     readonly destinationCidrBlock?: string;
     /**
     * The IPv6 CIDR block used for the destination match. Routing decisions are based on the most specific match.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_route#destination_ipv_6_cidr_block CcRoute#destination_ipv_6_cidr_block}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_route#destination_ipv_6_cidr_block CcRoute#destination_ipv_6_cidr_block}
     */
     readonly destinationIpv6CidrBlock?: string;
     /**
     * The ID of a prefix list used for the destination match.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_route#destination_prefix_list_id CcRoute#destination_prefix_list_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_route#destination_prefix_list_id CcRoute#destination_prefix_list_id}
     */
     readonly destinationPrefixListId?: string;
     /**
     * [IPv6 traffic only] The ID of an egress-only internet gateway.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_route#egress_only_internet_gateway_id CcRoute#egress_only_internet_gateway_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_route#egress_only_internet_gateway_id CcRoute#egress_only_internet_gateway_id}
     */
     readonly egressOnlyInternetGatewayId?: string;
     /**
     * The ID of an internet gateway or virtual private gateway attached to your VPC.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_route#gateway_id CcRoute#gateway_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_route#gateway_id CcRoute#gateway_id}
     */
     readonly gatewayId?: string;
     /**
     * The ID of a NAT instance in your VPC. The operation fails if you specify an instance ID unless exactly one network interface is attached.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_route#instance_id CcRoute#instance_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_route#instance_id CcRoute#instance_id}
     */
     readonly instanceId?: string;
     /**
     * The ID of the local gateway.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_route#local_gateway_id CcRoute#local_gateway_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_route#local_gateway_id CcRoute#local_gateway_id}
     */
     readonly localGatewayId?: string;
     /**
     * [IPv4 traffic only] The ID of a NAT gateway.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_route#nat_gateway_id CcRoute#nat_gateway_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_route#nat_gateway_id CcRoute#nat_gateway_id}
     */
     readonly natGatewayId?: string;
     /**
     * The ID of a network interface.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_route#network_interface_id CcRoute#network_interface_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_route#network_interface_id CcRoute#network_interface_id}
     */
     readonly networkInterfaceId?: string;
     /**
     * The Amazon Resource Name (ARN) of the ODB network.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_route#odb_network_arn CcRoute#odb_network_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_route#odb_network_arn CcRoute#odb_network_arn}
     */
     readonly odbNetworkArn?: string;
     /**
     * The ID of the route table for the route.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_route#route_table_id CcRoute#route_table_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_route#route_table_id CcRoute#route_table_id}
     */
     readonly routeTableId: string;
     /**
     * The ID of a transit gateway.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_route#transit_gateway_id CcRoute#transit_gateway_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_route#transit_gateway_id CcRoute#transit_gateway_id}
     */
     readonly transitGatewayId?: string;
     /**
     * The ID of a VPC endpoint. Supported for Gateway Load Balancer endpoints only.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_route#vpc_endpoint_id CcRoute#vpc_endpoint_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_route#vpc_endpoint_id CcRoute#vpc_endpoint_id}
     */
     readonly vpcEndpointId?: string;
     /**
     * The ID of a VPC peering connection.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_route#vpc_peering_connection_id CcRoute#vpc_peering_connection_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_route#vpc_peering_connection_id CcRoute#vpc_peering_connection_id}
     */
     readonly vpcPeeringConnectionId?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_route awscc_ec2_route}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_route awscc_ec2_route}
 */
 export class CcRoute extends cdktn.TerraformResource {
 
@@ -122,7 +122,7 @@ export class CcRoute extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcRoute resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcRoute to import
-    * @param importFromId The id of the existing CcRoute that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_route#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcRoute that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_route#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcRoute to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -134,7 +134,7 @@ export class CcRoute extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_route awscc_ec2_route} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_route awscc_ec2_route} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -144,7 +144,8 @@ export class CcRoute extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_ec2_route',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,

@@ -1,37 +1,37 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_privacy_budget_template
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_privacy_budget_template
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcPrivacyBudgetTemplateProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_privacy_budget_template#auto_refresh CcPrivacyBudgetTemplate#auto_refresh}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_privacy_budget_template#auto_refresh CcPrivacyBudgetTemplate#auto_refresh}
     */
     readonly autoRefresh: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_privacy_budget_template#membership_identifier CcPrivacyBudgetTemplate#membership_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_privacy_budget_template#membership_identifier CcPrivacyBudgetTemplate#membership_identifier}
     */
     readonly membershipIdentifier: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_privacy_budget_template#parameters CcPrivacyBudgetTemplate#parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_privacy_budget_template#parameters CcPrivacyBudgetTemplate#parameters}
     */
     readonly parameters: CcPrivacyBudgetTemplate.ParametersProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_privacy_budget_template#privacy_budget_type CcPrivacyBudgetTemplate#privacy_budget_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_privacy_budget_template#privacy_budget_type CcPrivacyBudgetTemplate#privacy_budget_type}
     */
     readonly privacyBudgetType: string;
     /**
     * An arbitrary set of tags (key-value pairs) for this cleanrooms privacy budget template.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_privacy_budget_template#tags CcPrivacyBudgetTemplate#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_privacy_budget_template#tags CcPrivacyBudgetTemplate#tags}
     */
     readonly tags?: CcPrivacyBudgetTemplate.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_privacy_budget_template awscc_cleanrooms_privacy_budget_template}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_privacy_budget_template awscc_cleanrooms_privacy_budget_template}
 */
 export class CcPrivacyBudgetTemplate extends cdktn.TerraformResource {
 
@@ -47,7 +47,7 @@ export class CcPrivacyBudgetTemplate extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcPrivacyBudgetTemplate resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcPrivacyBudgetTemplate to import
-    * @param importFromId The id of the existing CcPrivacyBudgetTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_privacy_budget_template#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcPrivacyBudgetTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_privacy_budget_template#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcPrivacyBudgetTemplate to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -59,7 +59,7 @@ export class CcPrivacyBudgetTemplate extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_privacy_budget_template awscc_cleanrooms_privacy_budget_template} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_privacy_budget_template awscc_cleanrooms_privacy_budget_template} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -69,7 +69,8 @@ export class CcPrivacyBudgetTemplate extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_cleanrooms_privacy_budget_template',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -376,15 +377,15 @@ export function ccPrivacyBudgetTemplateTagPropertyToHclTerraform(struct?: CcPriv
 export namespace CcPrivacyBudgetTemplate {
 export interface BudgetParameterProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_privacy_budget_template#auto_refresh CcPrivacyBudgetTemplate#auto_refresh}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_privacy_budget_template#auto_refresh CcPrivacyBudgetTemplate#auto_refresh}
     */
     readonly autoRefresh?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_privacy_budget_template#budget CcPrivacyBudgetTemplate#budget}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_privacy_budget_template#budget CcPrivacyBudgetTemplate#budget}
     */
     readonly budget?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_privacy_budget_template#type CcPrivacyBudgetTemplate#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_privacy_budget_template#type CcPrivacyBudgetTemplate#type}
     */
     readonly type?: string;
 }
@@ -514,19 +515,19 @@ export class BudgetParameterPropertyList extends cdktn.ComplexList {
 }
 export interface ParametersProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_privacy_budget_template#budget_parameters CcPrivacyBudgetTemplate#budget_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_privacy_budget_template#budget_parameters CcPrivacyBudgetTemplate#budget_parameters}
     */
     readonly budgetParameters?: BudgetParameterProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_privacy_budget_template#epsilon CcPrivacyBudgetTemplate#epsilon}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_privacy_budget_template#epsilon CcPrivacyBudgetTemplate#epsilon}
     */
     readonly epsilon?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_privacy_budget_template#resource_arn CcPrivacyBudgetTemplate#resource_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_privacy_budget_template#resource_arn CcPrivacyBudgetTemplate#resource_arn}
     */
     readonly resourceArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_privacy_budget_template#users_noise_per_query CcPrivacyBudgetTemplate#users_noise_per_query}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_privacy_budget_template#users_noise_per_query CcPrivacyBudgetTemplate#users_noise_per_query}
     */
     readonly usersNoisePerQuery?: number;
 }
@@ -656,11 +657,11 @@ export class ParametersPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_privacy_budget_template#key CcPrivacyBudgetTemplate#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_privacy_budget_template#key CcPrivacyBudgetTemplate#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_privacy_budget_template#value CcPrivacyBudgetTemplate#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_privacy_budget_template#value CcPrivacyBudgetTemplate#value}
     */
     readonly value?: string;
 }

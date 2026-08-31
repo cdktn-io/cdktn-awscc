@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ivs_ingest_configuration
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ivs_ingest_configuration
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,43 +9,43 @@ export interface CcIngestConfigurationProps extends cdktn.TerraformMetaArguments
     /**
     * Ingest Protocol.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ivs_ingest_configuration#ingest_protocol CcIngestConfiguration#ingest_protocol}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ivs_ingest_configuration#ingest_protocol CcIngestConfiguration#ingest_protocol}
     */
     readonly ingestProtocol?: string;
     /**
     * Whether ingest configuration allows insecure ingest.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ivs_ingest_configuration#insecure_ingest CcIngestConfiguration#insecure_ingest}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ivs_ingest_configuration#insecure_ingest CcIngestConfiguration#insecure_ingest}
     */
     readonly insecureIngest?: boolean | cdktn.IResolvable;
     /**
     * IngestConfiguration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ivs_ingest_configuration#name CcIngestConfiguration#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ivs_ingest_configuration#name CcIngestConfiguration#name}
     */
     readonly name?: string;
     /**
     * Stage ARN. A value other than an empty string indicates that stage is linked to IngestConfiguration. Default: "" (recording is disabled).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ivs_ingest_configuration#stage_arn CcIngestConfiguration#stage_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ivs_ingest_configuration#stage_arn CcIngestConfiguration#stage_arn}
     */
     readonly stageArn?: string;
     /**
     * A list of key-value pairs that contain metadata for the asset model.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ivs_ingest_configuration#tags CcIngestConfiguration#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ivs_ingest_configuration#tags CcIngestConfiguration#tags}
     */
     readonly tags?: CcIngestConfiguration.TagProperty[] | cdktn.IResolvable;
     /**
     * User defined indentifier for participant associated with IngestConfiguration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ivs_ingest_configuration#user_id CcIngestConfiguration#user_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ivs_ingest_configuration#user_id CcIngestConfiguration#user_id}
     */
     readonly userId?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ivs_ingest_configuration awscc_ivs_ingest_configuration}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ivs_ingest_configuration awscc_ivs_ingest_configuration}
 */
 export class CcIngestConfiguration extends cdktn.TerraformResource {
 
@@ -61,7 +61,7 @@ export class CcIngestConfiguration extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcIngestConfiguration resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcIngestConfiguration to import
-    * @param importFromId The id of the existing CcIngestConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ivs_ingest_configuration#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcIngestConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ivs_ingest_configuration#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcIngestConfiguration to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -73,7 +73,7 @@ export class CcIngestConfiguration extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ivs_ingest_configuration awscc_ivs_ingest_configuration} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ivs_ingest_configuration awscc_ivs_ingest_configuration} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -83,7 +83,8 @@ export class CcIngestConfiguration extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_ivs_ingest_configuration',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -328,13 +329,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ivs_ingest_configuration#key CcIngestConfiguration#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ivs_ingest_configuration#key CcIngestConfiguration#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 0 to 256 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ivs_ingest_configuration#value CcIngestConfiguration#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ivs_ingest_configuration#value CcIngestConfiguration#value}
     */
     readonly value?: string;
 }

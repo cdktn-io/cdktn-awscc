@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/neptunegraph_graph
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/neptunegraph_graph
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -11,7 +11,7 @@ export interface CcGraphProps extends cdktn.TerraformMetaArguments {
     * 
     * _Default_: If not specified, the default value is true.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/neptunegraph_graph#deletion_protection CcGraph#deletion_protection}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/neptunegraph_graph#deletion_protection CcGraph#deletion_protection}
     */
     readonly deletionProtection?: boolean | cdktn.IResolvable;
     /**
@@ -21,19 +21,19 @@ export interface CcGraphProps extends cdktn.TerraformMetaArguments {
     * 
     * _Important_: If you specify a name, you cannot perform updates that require replacement of this resource. You can perform updates that require no or some interruption. If you must replace the resource, specify a new name.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/neptunegraph_graph#graph_name CcGraph#graph_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/neptunegraph_graph#graph_name CcGraph#graph_name}
     */
     readonly graphName?: string;
     /**
     * The ARN of the KMS key used to encrypt data in the Neptune Analytics graph. If not specified, the graph is encrypted with an AWS managed key.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/neptunegraph_graph#kms_key_identifier CcGraph#kms_key_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/neptunegraph_graph#kms_key_identifier CcGraph#kms_key_identifier}
     */
     readonly kmsKeyIdentifier?: string;
     /**
     * Memory for the Graph.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/neptunegraph_graph#provisioned_memory CcGraph#provisioned_memory}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/neptunegraph_graph#provisioned_memory CcGraph#provisioned_memory}
     */
     readonly provisionedMemory: number;
     /**
@@ -45,7 +45,7 @@ export interface CcGraphProps extends cdktn.TerraformMetaArguments {
     * 
     * _Default_: If not specified, the default value is false.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/neptunegraph_graph#public_connectivity CcGraph#public_connectivity}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/neptunegraph_graph#public_connectivity CcGraph#public_connectivity}
     */
     readonly publicConnectivity?: boolean | cdktn.IResolvable;
     /**
@@ -55,25 +55,25 @@ export interface CcGraphProps extends cdktn.TerraformMetaArguments {
     * 
     * _Default_: If not specified, the default value is 1.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/neptunegraph_graph#replica_count CcGraph#replica_count}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/neptunegraph_graph#replica_count CcGraph#replica_count}
     */
     readonly replicaCount?: number;
     /**
     * The tags associated with this graph.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/neptunegraph_graph#tags CcGraph#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/neptunegraph_graph#tags CcGraph#tags}
     */
     readonly tags?: CcGraph.TagProperty[] | cdktn.IResolvable;
     /**
     * Vector Search Configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/neptunegraph_graph#vector_search_configuration CcGraph#vector_search_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/neptunegraph_graph#vector_search_configuration CcGraph#vector_search_configuration}
     */
     readonly vectorSearchConfiguration?: CcGraph.VectorSearchConfigurationProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/neptunegraph_graph awscc_neptunegraph_graph}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/neptunegraph_graph awscc_neptunegraph_graph}
 */
 export class CcGraph extends cdktn.TerraformResource {
 
@@ -89,7 +89,7 @@ export class CcGraph extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcGraph resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcGraph to import
-    * @param importFromId The id of the existing CcGraph that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/neptunegraph_graph#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcGraph that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/neptunegraph_graph#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcGraph to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -101,7 +101,7 @@ export class CcGraph extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/neptunegraph_graph awscc_neptunegraph_graph} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/neptunegraph_graph awscc_neptunegraph_graph} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -111,7 +111,8 @@ export class CcGraph extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_neptunegraph_graph',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -426,13 +427,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/neptunegraph_graph#key CcGraph#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/neptunegraph_graph#key CcGraph#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 0 to 256 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/neptunegraph_graph#value CcGraph#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/neptunegraph_graph#value CcGraph#value}
     */
     readonly value?: string;
 }
@@ -542,7 +543,7 @@ export interface VectorSearchConfigurationProperty {
     /**
     * The vector search dimension
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/neptunegraph_graph#vector_search_dimension CcGraph#vector_search_dimension}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/neptunegraph_graph#vector_search_dimension CcGraph#vector_search_dimension}
     */
     readonly vectorSearchDimension?: number;
 }

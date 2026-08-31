@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/elasticache_parameter_group
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_parameter_group
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,31 +9,31 @@ export interface CcParameterGroupProps extends cdktn.TerraformMetaArguments {
     /**
     * The name of the cache parameter group family that this cache parameter group is compatible with.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/elasticache_parameter_group#cache_parameter_group_family CcParameterGroup#cache_parameter_group_family}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_parameter_group#cache_parameter_group_family CcParameterGroup#cache_parameter_group_family}
     */
     readonly cacheParameterGroupFamily: string;
     /**
     * The description for this cache parameter group.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/elasticache_parameter_group#description CcParameterGroup#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_parameter_group#description CcParameterGroup#description}
     */
     readonly description: string;
     /**
     * A comma-delimited list of parameter name/value pairs. For more information see ModifyCacheParameterGroup in the Amazon ElastiCache API Reference Guide.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/elasticache_parameter_group#properties CcParameterGroup#properties}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_parameter_group#properties CcParameterGroup#properties}
     */
     readonly properties?: { [key: string]: string };
     /**
     * Tags are composed of a Key/Value pair. You can use tags to categorize and track each parameter group. The tag value null is permitted.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/elasticache_parameter_group#tags CcParameterGroup#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_parameter_group#tags CcParameterGroup#tags}
     */
     readonly tags?: CcParameterGroup.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/elasticache_parameter_group awscc_elasticache_parameter_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_parameter_group awscc_elasticache_parameter_group}
 */
 export class CcParameterGroup extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CcParameterGroup extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcParameterGroup resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcParameterGroup to import
-    * @param importFromId The id of the existing CcParameterGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/elasticache_parameter_group#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcParameterGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_parameter_group#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcParameterGroup to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CcParameterGroup extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/elasticache_parameter_group awscc_elasticache_parameter_group} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_parameter_group awscc_elasticache_parameter_group} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -71,7 +71,8 @@ export class CcParameterGroup extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_elasticache_parameter_group',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -245,11 +246,11 @@ export function ccParameterGroupTagPropertyToHclTerraform(struct?: CcParameterGr
 export namespace CcParameterGroup {
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/elasticache_parameter_group#key CcParameterGroup#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_parameter_group#key CcParameterGroup#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/elasticache_parameter_group#value CcParameterGroup#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_parameter_group#value CcParameterGroup#value}
     */
     readonly value?: string;
 }

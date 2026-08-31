@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iam_service_linked_role
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iam_service_linked_role
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,25 +9,25 @@ export interface CcServiceLinkedRoleProps extends cdktn.TerraformMetaArguments {
     /**
     * The service principal for the AWS service to which this role is attached.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iam_service_linked_role#aws_service_name CcServiceLinkedRole#aws_service_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iam_service_linked_role#aws_service_name CcServiceLinkedRole#aws_service_name}
     */
     readonly awsServiceName?: string;
     /**
     * A string that you provide, which is combined with the service-provided prefix to form the complete role name.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iam_service_linked_role#custom_suffix CcServiceLinkedRole#custom_suffix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iam_service_linked_role#custom_suffix CcServiceLinkedRole#custom_suffix}
     */
     readonly customSuffix?: string;
     /**
     * The description of the role.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iam_service_linked_role#description CcServiceLinkedRole#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iam_service_linked_role#description CcServiceLinkedRole#description}
     */
     readonly description?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iam_service_linked_role awscc_iam_service_linked_role}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iam_service_linked_role awscc_iam_service_linked_role}
 */
 export class CcServiceLinkedRole extends cdktn.TerraformResource {
 
@@ -43,7 +43,7 @@ export class CcServiceLinkedRole extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcServiceLinkedRole resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcServiceLinkedRole to import
-    * @param importFromId The id of the existing CcServiceLinkedRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iam_service_linked_role#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcServiceLinkedRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iam_service_linked_role#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcServiceLinkedRole to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -55,7 +55,7 @@ export class CcServiceLinkedRole extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iam_service_linked_role awscc_iam_service_linked_role} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iam_service_linked_role awscc_iam_service_linked_role} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -65,7 +65,8 @@ export class CcServiceLinkedRole extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_iam_service_linked_role',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,

@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigatewayv2_routing_rule
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_routing_rule
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,31 +9,31 @@ export interface CcRoutingRuleProps extends cdktn.TerraformMetaArguments {
     /**
     * The resulting action based on matching a routing rules condition. Only InvokeApi is supported.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigatewayv2_routing_rule#actions CcRoutingRule#actions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_routing_rule#actions CcRoutingRule#actions}
     */
     readonly actions: CcRoutingRule.ActionProperty[] | cdktn.IResolvable;
     /**
     * The conditions of the routing rule.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigatewayv2_routing_rule#conditions CcRoutingRule#conditions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_routing_rule#conditions CcRoutingRule#conditions}
     */
     readonly conditions: CcRoutingRule.ConditionProperty[] | cdktn.IResolvable;
     /**
     * The ARN of the domain name.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigatewayv2_routing_rule#domain_name_arn CcRoutingRule#domain_name_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_routing_rule#domain_name_arn CcRoutingRule#domain_name_arn}
     */
     readonly domainNameArn: string;
     /**
     * The order in which API Gateway evaluates a rule. Priority is evaluated from the lowest value to the highest value. Rules can't have the same priority. Priority values 1-1,000,000 are supported.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigatewayv2_routing_rule#priority CcRoutingRule#priority}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_routing_rule#priority CcRoutingRule#priority}
     */
     readonly priority: number;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigatewayv2_routing_rule awscc_apigatewayv2_routing_rule}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_routing_rule awscc_apigatewayv2_routing_rule}
 */
 export class CcRoutingRule extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CcRoutingRule extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcRoutingRule resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcRoutingRule to import
-    * @param importFromId The id of the existing CcRoutingRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigatewayv2_routing_rule#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcRoutingRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_routing_rule#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcRoutingRule to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CcRoutingRule extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigatewayv2_routing_rule awscc_apigatewayv2_routing_rule} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_routing_rule awscc_apigatewayv2_routing_rule} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -71,7 +71,8 @@ export class CcRoutingRule extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_apigatewayv2_routing_rule',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -417,19 +418,19 @@ export interface ActionInvokeApiProperty {
     /**
     * The API identifier of the target API.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigatewayv2_routing_rule#api_id CcRoutingRule#api_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_routing_rule#api_id CcRoutingRule#api_id}
     */
     readonly apiId: string;
     /**
     * The name of the target stage.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigatewayv2_routing_rule#stage CcRoutingRule#stage}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_routing_rule#stage CcRoutingRule#stage}
     */
     readonly stage: string;
     /**
     * The strip base path setting. When true, API Gateway strips the incoming matched base path when forwarding the request to the target API.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigatewayv2_routing_rule#strip_base_path CcRoutingRule#strip_base_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_routing_rule#strip_base_path CcRoutingRule#strip_base_path}
     */
     readonly stripBasePath?: boolean | cdktn.IResolvable;
 }
@@ -533,7 +534,7 @@ export interface ActionProperty {
     /**
     * Represents an InvokeApi action.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigatewayv2_routing_rule#invoke_api CcRoutingRule#invoke_api}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_routing_rule#invoke_api CcRoutingRule#invoke_api}
     */
     readonly invokeApi: ActionInvokeApiProperty;
 }
@@ -618,7 +619,7 @@ export interface MatchBasePathsProperty {
     /**
     * The string of the case sensitive base path to be matched.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigatewayv2_routing_rule#any_of CcRoutingRule#any_of}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_routing_rule#any_of CcRoutingRule#any_of}
     */
     readonly anyOf?: string[];
 }
@@ -684,13 +685,13 @@ export interface MatchHeaderValueProperty {
     /**
     * The case insensitive header name to be matched. The header name must be less than 40 characters and the only allowed characters are ``a-z``, ``A-Z``, ``0-9``, and the following special characters: ``*?-!#$%&'.^_`|~.``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigatewayv2_routing_rule#header CcRoutingRule#header}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_routing_rule#header CcRoutingRule#header}
     */
     readonly header?: string;
     /**
     * The case sensitive header glob value to be matched against entire header value. The header glob value must be less than 128 characters and the only allowed characters are ``a-z``, ``A-Z``, ``0-9``, and the following special characters: ``*?-!#$%&'.^_`|~``. Wildcard matching is supported for header glob values but must be for ``*prefix-match``, ``suffix-match*``, or ``*infix*-match``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigatewayv2_routing_rule#value_glob CcRoutingRule#value_glob}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_routing_rule#value_glob CcRoutingRule#value_glob}
     */
     readonly valueGlob?: string;
 }
@@ -800,7 +801,7 @@ export interface MatchHeadersProperty {
     /**
     * The header name and header value glob to be matched. The matchHeaders condition is matched if any of the header name and header value globs are matched.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigatewayv2_routing_rule#any_of CcRoutingRule#any_of}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_routing_rule#any_of CcRoutingRule#any_of}
     */
     readonly anyOf?: MatchHeaderValueProperty[] | cdktn.IResolvable;
 }
@@ -866,13 +867,13 @@ export interface ConditionProperty {
     /**
     * The base path to be matched.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigatewayv2_routing_rule#match_base_paths CcRoutingRule#match_base_paths}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_routing_rule#match_base_paths CcRoutingRule#match_base_paths}
     */
     readonly matchBasePaths?: MatchBasePathsProperty;
     /**
     * The headers to be matched.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigatewayv2_routing_rule#match_headers CcRoutingRule#match_headers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_routing_rule#match_headers CcRoutingRule#match_headers}
     */
     readonly matchHeaders?: MatchHeadersProperty;
 }

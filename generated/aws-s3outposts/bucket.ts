@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/s3outposts_bucket
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3outposts_bucket
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,31 +9,31 @@ export interface CcBucketProps extends cdktn.TerraformMetaArguments {
     /**
     * A name for the bucket.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/s3outposts_bucket#bucket_name CcBucket#bucket_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3outposts_bucket#bucket_name CcBucket#bucket_name}
     */
     readonly bucketName: string;
     /**
     * Rules that define how Amazon S3Outposts manages objects during their lifetime.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/s3outposts_bucket#lifecycle_configuration CcBucket#lifecycle_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3outposts_bucket#lifecycle_configuration CcBucket#lifecycle_configuration}
     */
     readonly lifecycleConfiguration?: CcBucket.LifecycleConfigurationProperty;
     /**
     * The id of the customer outpost on which the bucket resides.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/s3outposts_bucket#outpost_id CcBucket#outpost_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3outposts_bucket#outpost_id CcBucket#outpost_id}
     */
     readonly outpostId: string;
     /**
     * An arbitrary set of tags (key-value pairs) for this S3Outposts bucket.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/s3outposts_bucket#tags CcBucket#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3outposts_bucket#tags CcBucket#tags}
     */
     readonly tags?: CcBucket.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/s3outposts_bucket awscc_s3outposts_bucket}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3outposts_bucket awscc_s3outposts_bucket}
 */
 export class CcBucket extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CcBucket extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcBucket resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcBucket to import
-    * @param importFromId The id of the existing CcBucket that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/s3outposts_bucket#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcBucket that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3outposts_bucket#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcBucket to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CcBucket extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/s3outposts_bucket awscc_s3outposts_bucket} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3outposts_bucket awscc_s3outposts_bucket} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -71,7 +71,8 @@ export class CcBucket extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_s3outposts_bucket',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -527,7 +528,7 @@ export interface AbortIncompleteMultipartUploadProperty {
     /**
     * Specifies the number of days after which Amazon S3Outposts aborts an incomplete multipart upload.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/s3outposts_bucket#days_after_initiation CcBucket#days_after_initiation}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3outposts_bucket#days_after_initiation CcBucket#days_after_initiation}
     */
     readonly daysAfterInitiation?: number;
 }
@@ -591,11 +592,11 @@ export class AbortIncompleteMultipartUploadPropertyOutputReference extends cdktn
 }
 export interface FilterTagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/s3outposts_bucket#key CcBucket#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3outposts_bucket#key CcBucket#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/s3outposts_bucket#value CcBucket#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3outposts_bucket#value CcBucket#value}
     */
     readonly value?: string;
 }
@@ -705,13 +706,13 @@ export interface FilterAndOperatorProperty {
     /**
     * Prefix identifies one or more objects to which the rule applies.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/s3outposts_bucket#prefix CcBucket#prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3outposts_bucket#prefix CcBucket#prefix}
     */
     readonly prefix?: string;
     /**
     * All of these tags must exist in the object's tag set in order for the rule to apply.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/s3outposts_bucket#tags CcBucket#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3outposts_bucket#tags CcBucket#tags}
     */
     readonly tags?: FilterTagProperty[] | cdktn.IResolvable;
 }
@@ -797,11 +798,11 @@ export class FilterAndOperatorPropertyOutputReference extends cdktn.ComplexObjec
 }
 export interface LifecycleConfigurationRulesFilterTagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/s3outposts_bucket#key CcBucket#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3outposts_bucket#key CcBucket#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/s3outposts_bucket#value CcBucket#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3outposts_bucket#value CcBucket#value}
     */
     readonly value?: string;
 }
@@ -889,19 +890,19 @@ export interface FilterProperty {
     /**
     * The container for the AND condition for the lifecycle rule. A combination of Prefix and 1 or more Tags OR a minimum of 2 or more tags.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/s3outposts_bucket#and_operator CcBucket#and_operator}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3outposts_bucket#and_operator CcBucket#and_operator}
     */
     readonly andOperator?: FilterAndOperatorProperty;
     /**
     * Object key prefix that identifies one or more objects to which this rule applies.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/s3outposts_bucket#prefix CcBucket#prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3outposts_bucket#prefix CcBucket#prefix}
     */
     readonly prefix?: string;
     /**
     * Specifies a tag used to identify a subset of objects for an Amazon S3Outposts bucket.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/s3outposts_bucket#tag CcBucket#tag}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3outposts_bucket#tag CcBucket#tag}
     */
     readonly tag?: LifecycleConfigurationRulesFilterTagProperty;
 }
@@ -1011,38 +1012,38 @@ export interface RuleProperty {
     /**
     * Specifies a lifecycle rule that stops incomplete multipart uploads to an Amazon S3Outposts bucket.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/s3outposts_bucket#abort_incomplete_multipart_upload CcBucket#abort_incomplete_multipart_upload}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3outposts_bucket#abort_incomplete_multipart_upload CcBucket#abort_incomplete_multipart_upload}
     */
     readonly abortIncompleteMultipartUpload?: AbortIncompleteMultipartUploadProperty;
     /**
     * Indicates when objects are deleted from Amazon S3Outposts. The date value must be in ISO 8601 format. The time is always midnight UTC.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/s3outposts_bucket#expiration_date CcBucket#expiration_date}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3outposts_bucket#expiration_date CcBucket#expiration_date}
     */
     readonly expirationDate?: string;
     /**
     * Indicates the number of days after creation when objects are deleted from Amazon S3Outposts.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/s3outposts_bucket#expiration_in_days CcBucket#expiration_in_days}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3outposts_bucket#expiration_in_days CcBucket#expiration_in_days}
     */
     readonly expirationInDays?: number;
     /**
     * The container for the filter of the lifecycle rule.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/s3outposts_bucket#filter CcBucket#filter}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3outposts_bucket#filter CcBucket#filter}
     */
     readonly filter?: FilterProperty;
     /**
     * Unique identifier for the lifecycle rule. The value can't be longer than 255 characters.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/s3outposts_bucket#id CcBucket#id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3outposts_bucket#id CcBucket#id}
     *
     * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
     * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
     */
     readonly id?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/s3outposts_bucket#status CcBucket#status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3outposts_bucket#status CcBucket#status}
     */
     readonly status?: string;
 }
@@ -1240,7 +1241,7 @@ export interface LifecycleConfigurationProperty {
     /**
     * A list of lifecycle rules for individual objects in an Amazon S3Outposts bucket.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/s3outposts_bucket#rules CcBucket#rules}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3outposts_bucket#rules CcBucket#rules}
     */
     readonly rules?: RuleProperty[] | cdktn.IResolvable;
 }
@@ -1304,11 +1305,11 @@ export class LifecycleConfigurationPropertyOutputReference extends cdktn.Complex
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/s3outposts_bucket#key CcBucket#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3outposts_bucket#key CcBucket#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/s3outposts_bucket#value CcBucket#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3outposts_bucket#value CcBucket#value}
     */
     readonly value?: string;
 }

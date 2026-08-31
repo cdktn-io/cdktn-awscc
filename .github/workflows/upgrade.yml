@@ -1,0 +1,135 @@
+name: upgrade
+
+on:
+  schedule:
+    # weekly, Monday 04:17 UTC — off the hour, like the fleet's other provider-upgrade jobs
+    - cron: "17 4 * * 1"
+  workflow_dispatch: {}
+
+concurrency:
+  group: upgrade-${{ github.workflow }}
+  cancel-in-progress: false
+
+permissions: {}
+
+env:
+  NODE_OPTIONS: --max-old-space-size=16384
+
+jobs:
+  upgrade:
+    runs-on: depot-ubuntu-24.04-8
+    permissions:
+      contents: read
+    steps:
+      - name: Resolve latest awscc provider version
+        id: latest
+        run: |
+          version=$(curl -sf https://registry.terraform.io/v1/providers/hashicorp/awscc | jq -r .version)
+          if [ -z "$version" ] || [ "$version" = "null" ]; then
+            echo "::error::could not resolve the latest hashicorp/awscc version from the registry API"
+            exit 1
+          fi
+          if ! printf '%s' "$version" | grep -Eq '^[0-9]+\.[0-9]+\.[0-9]+$'; then
+            echo "::error::unexpected version string from registry: '$version'"
+            exit 1
+          fi
+          echo "version=$version" >> "$GITHUB_OUTPUT"
+
+      # Generate a GitHub App token, not the default GITHUB_TOKEN: a PR opened with the default
+      # token does not trigger build.yml's `pull_request` run (GitHub suppresses workflow runs
+      # triggered by the default token, to prevent recursive-trigger loops), so the resulting PR
+      # would carry no CI signal. gh-app-id / gh-app-private-key (aliased PROJEN_APP_ID /
+      # PROJEN_APP_PRIVATE_KEY) are already provisioned fleet-wide by the repository manager.
+      - name: Generate token
+        id: generate_token
+        uses: actions/create-github-app-token@fee1f7d63c2ff003460e3d139729b119787bc349 # v2.2.2
+        with:
+          app-id: ${{ secrets.PROJEN_APP_ID }}
+          private-key: ${{ secrets.PROJEN_APP_PRIVATE_KEY }}
+          # scope the token to exactly what create-pull-request needs (push a branch, open a PR)
+          permission-contents: write
+          permission-pull-requests: write
+
+      # The App token is NOT persisted into the workspace git config: the install/generate steps
+      # below run third-party code, and only `create-pull-request` (which receives the token
+      # explicitly) needs write access.
+      - name: Checkout
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+        with:
+          persist-credentials: false
+
+      - name: Current pinned version
+        id: current
+        run: echo "version=$(cat schemas/PROVIDER_VERSION)" >> "$GITHUB_OUTPUT"
+
+      - name: Setup pnpm
+        if: steps.latest.outputs.version != steps.current.outputs.version
+        uses: pnpm/action-setup@b906affcce14559ad1aafd4ab0e942779e9f58b1 # v4.3.0
+        with:
+          version: 11.17.0
+
+      - name: Setup Node.js
+        if: steps.latest.outputs.version != steps.current.outputs.version
+        uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444 # v5.0.0
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+
+      - name: Setup Terraform
+        if: steps.latest.outputs.version != steps.current.outputs.version
+        uses: hashicorp/setup-terraform@b9cd54a3c349d3f38e8881555d616ced269862dd # v3.1.2
+        with:
+          terraform_wrapper: false
+
+      - name: Install dependencies
+        if: steps.latest.outputs.version != steps.current.outputs.version
+        run: pnpm install --frozen-lockfile
+
+      - name: Cache awscc provider schema (new version)
+        if: steps.latest.outputs.version != steps.current.outputs.version
+        uses: actions/cache@0057852bfaa89a56745cba8c7296529d2fc39830 # v4.3.0
+        with:
+          path: schemas/schema.json
+          key: awscc-schema-${{ steps.latest.outputs.version }}
+
+      - name: Fetch new schema and regenerate
+        if: steps.latest.outputs.version != steps.current.outputs.version
+        env:
+          # registry-sourced value: passed via env, never expanded into the script text
+          LATEST_VERSION: ${{ steps.latest.outputs.version }}
+        run: |
+          pnpm schema:fetch "$LATEST_VERSION"
+          echo "$LATEST_VERSION" > schemas/PROVIDER_VERSION
+          pnpm generate
+
+      # No `pnpm build` / `pnpm test` gate here on purpose: a version bump that changes resource or
+      # module counts is *expected* to fail the suite's pinned magic numbers (CONTRACT.md,
+      # `step4.ec2-full.test.ts`'s EC2_RESOURCES, the shape-parity baseline, …) until a human
+      # updates them — that's the review this PR exists to prompt, not a reason to suppress it.
+      # `build.yml` runs the real gates on the PR itself (opened with the App token above, so the
+      # `pull_request` trigger actually fires) and is exactly where that failure should surface.
+      - name: Create Pull Request
+        if: steps.latest.outputs.version != steps.current.outputs.version
+        uses: peter-evans/create-pull-request@22a9089034f40e5a961c8808d113e2c98fb63676 # v7.0.11
+        with:
+          token: ${{ steps.generate_token.outputs.token }}
+          branch: auto/awscc-schema-upgrade
+          delete-branch: true
+          commit-message: "chore: upgrade awscc schema to ${{ steps.latest.outputs.version }}"
+          title: "chore: upgrade awscc schema to ${{ steps.latest.outputs.version }}"
+          body: |
+            Bumps the pinned awscc provider schema from `${{ steps.current.outputs.version }}` to
+            `${{ steps.latest.outputs.version }}` (`schemas/PROVIDER_VERSION`) and regenerates
+            `generated/` from it (`pnpm schema:fetch && pnpm generate`).
+
+            **No `pnpm build` / `pnpm test` gate ran before opening this PR, on purpose**: a version
+            bump that changes resource or module counts is *expected* to fail the suite's pinned
+            magic numbers (CONTRACT.md, `test/step4.ec2-full.test.ts`'s `EC2_RESOURCES`, the
+            shape-parity baseline, …) until a human updates them — that review is exactly why this
+            PR exists, not something to suppress. `build.yml` runs the real gates on this PR itself
+            (opened with a GitHub App token so the `pull_request` trigger actually fires) — check
+            its status before merging. Not auto-merged on purpose — a resource/module count change
+            here is exactly the kind of diff that's worth a human look.
+          add-paths: |
+            generated
+            schemas/PROVIDER_VERSION

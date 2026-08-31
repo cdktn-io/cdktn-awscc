@@ -1,0 +1,111 @@
+name: build
+
+on:
+  pull_request: {}
+  push:
+    branches: [main]
+  workflow_dispatch: {}
+
+concurrency:
+  group: build-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions: {}
+
+env:
+  # jsii compiling all 276 submodules / 1,494 resources at once peaks in the multi-gigabyte range
+  # (measured 5.3-6.5 GB RSS — see docs/phase1-results.md); depot-ubuntu-24.04-8 is the 8 core /
+  # 32 GB runner the fleet's other heap-heavy providers (e.g. aws, datadog) use for the same reason.
+  NODE_OPTIONS: --max-old-space-size=16384
+
+jobs:
+  build:
+    runs-on: depot-ubuntu-24.04-8
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+        with:
+          persist-credentials: false
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@b906affcce14559ad1aafd4ab0e942779e9f58b1 # v4.3.0
+        with:
+          version: 11.17.0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444 # v5.0.0
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+
+      - name: Setup Python (jsii-pacmak python target)
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
+        with:
+          python-version: "3.x"
+
+      - name: "Setup Terraform (schema fetch: @cdktn/provider-schema shells out to it)"
+        uses: hashicorp/setup-terraform@b9cd54a3c349d3f38e8881555d616ced269862dd # v3.1.2
+        with:
+          terraform_wrapper: false
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      # schemas/PROVIDER_VERSION pins the awscc provider version generated/ was built from (see
+      # scripts/update-provider-schema.ts); cache on its content so a schema that hasn't changed
+      # doesn't get re-fetched (and re-run `terraform init`) on every build. upgrade.yml is the only
+      # workflow that intentionally fetches a *newer* version than this pin.
+      - name: Cache awscc provider schema
+        id: cache-schema
+        uses: actions/cache@0057852bfaa89a56745cba8c7296529d2fc39830 # v4.3.0
+        with:
+          path: schemas/schema.json
+          key: awscc-schema-${{ hashFiles('schemas/PROVIDER_VERSION') }}
+
+      - name: Fetch awscc provider schema (pinned version)
+        if: steps.cache-schema.outputs.cache-hit != 'true'
+        run: pnpm schema:fetch
+
+      - name: Build (tsc)
+        run: pnpm build
+
+      - name: Test
+        run: pnpm test
+
+      - name: Test (full schema regeneration + determinism + tsc gate)
+        run: RUN_FULL=1 pnpm test
+
+      # Regenerates generated/ from the pinned schema and fails if that differs from what's
+      # committed — the offline version of this check is `pnpm generate && git diff --stat
+      # generated/` (README.md, "Regenerating"). Runs after the schema is on disk and after the
+      # RUN_FULL suite has already proved the generator is deterministic and type-checks.
+      - name: Check generated/ is current
+        run: |
+          pnpm generate
+          git diff --exit-code -- generated/ || {
+            echo "::error::generated/ is stale — run 'pnpm schema:fetch && pnpm generate' locally and commit the result.";
+            exit 1;
+          }
+
+      # Runs the actual `pnpm package` pipeline end to end (its own separate jsii + jsii-pacmak
+      # pass, targeting js only, version 0.0.0-test) and opens the resulting tarball: asserts
+      # package.json's main/types/exports resolve and that require()-ing it from a
+      # node_modules-nested extraction — the shape a real install produces — actually works. This
+      # is the regression this repo's packaging story most needs covered: `pnpm package` exiting 0
+      # (the next step) proves jsii-pacmak didn't error, not that the artifact it produced is
+      # actually consumable.
+      - name: Package smoke test (RUN_FULL_JSII=1)
+        run: pnpm test:package
+
+      - name: Package (js, python)
+        run: pnpm package --targets js,python
+
+      - name: Upload dist
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: dist
+          path: dist
+          retention-days: 7
+          if-no-files-found: error

@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehub_resiliency_policy
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehub_resiliency_policy
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,39 +9,39 @@ export interface CcResiliencyPolicyProps extends cdktn.TerraformMetaArguments {
     /**
     * Data Location Constraint of the Policy.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehub_resiliency_policy#data_location_constraint CcResiliencyPolicy#data_location_constraint}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehub_resiliency_policy#data_location_constraint CcResiliencyPolicy#data_location_constraint}
     */
     readonly dataLocationConstraint?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehub_resiliency_policy#policy CcResiliencyPolicy#policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehub_resiliency_policy#policy CcResiliencyPolicy#policy}
     */
     readonly policy: CcResiliencyPolicy.FailurePolicyProperty;
     /**
     * Description of Resiliency Policy.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehub_resiliency_policy#policy_description CcResiliencyPolicy#policy_description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehub_resiliency_policy#policy_description CcResiliencyPolicy#policy_description}
     */
     readonly policyDescription?: string;
     /**
     * Name of Resiliency Policy.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehub_resiliency_policy#policy_name CcResiliencyPolicy#policy_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehub_resiliency_policy#policy_name CcResiliencyPolicy#policy_name}
     */
     readonly policyName: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehub_resiliency_policy#tags CcResiliencyPolicy#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehub_resiliency_policy#tags CcResiliencyPolicy#tags}
     */
     readonly tags?: { [key: string]: string };
     /**
     * Resiliency Policy Tier.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehub_resiliency_policy#tier CcResiliencyPolicy#tier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehub_resiliency_policy#tier CcResiliencyPolicy#tier}
     */
     readonly tier: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehub_resiliency_policy awscc_resiliencehub_resiliency_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehub_resiliency_policy awscc_resiliencehub_resiliency_policy}
 */
 export class CcResiliencyPolicy extends cdktn.TerraformResource {
 
@@ -57,7 +57,7 @@ export class CcResiliencyPolicy extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcResiliencyPolicy resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcResiliencyPolicy to import
-    * @param importFromId The id of the existing CcResiliencyPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehub_resiliency_policy#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcResiliencyPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehub_resiliency_policy#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcResiliencyPolicy to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -69,7 +69,7 @@ export class CcResiliencyPolicy extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehub_resiliency_policy awscc_resiliencehub_resiliency_policy} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehub_resiliency_policy awscc_resiliencehub_resiliency_policy} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -79,7 +79,8 @@ export class CcResiliencyPolicy extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_resiliencehub_resiliency_policy',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -462,13 +463,13 @@ export interface AzProperty {
     /**
     * RPO in seconds.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehub_resiliency_policy#rpo_in_secs CcResiliencyPolicy#rpo_in_secs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehub_resiliency_policy#rpo_in_secs CcResiliencyPolicy#rpo_in_secs}
     */
     readonly rpoInSecs: number;
     /**
     * RTO in seconds.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehub_resiliency_policy#rto_in_secs CcResiliencyPolicy#rto_in_secs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehub_resiliency_policy#rto_in_secs CcResiliencyPolicy#rto_in_secs}
     */
     readonly rtoInSecs: number;
 }
@@ -550,13 +551,13 @@ export interface HardwareProperty {
     /**
     * RPO in seconds.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehub_resiliency_policy#rpo_in_secs CcResiliencyPolicy#rpo_in_secs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehub_resiliency_policy#rpo_in_secs CcResiliencyPolicy#rpo_in_secs}
     */
     readonly rpoInSecs: number;
     /**
     * RTO in seconds.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehub_resiliency_policy#rto_in_secs CcResiliencyPolicy#rto_in_secs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehub_resiliency_policy#rto_in_secs CcResiliencyPolicy#rto_in_secs}
     */
     readonly rtoInSecs: number;
 }
@@ -638,13 +639,13 @@ export interface RegionProperty {
     /**
     * RPO in seconds.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehub_resiliency_policy#rpo_in_secs CcResiliencyPolicy#rpo_in_secs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehub_resiliency_policy#rpo_in_secs CcResiliencyPolicy#rpo_in_secs}
     */
     readonly rpoInSecs?: number;
     /**
     * RTO in seconds.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehub_resiliency_policy#rto_in_secs CcResiliencyPolicy#rto_in_secs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehub_resiliency_policy#rto_in_secs CcResiliencyPolicy#rto_in_secs}
     */
     readonly rtoInSecs?: number;
 }
@@ -732,13 +733,13 @@ export interface SoftwareProperty {
     /**
     * RPO in seconds.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehub_resiliency_policy#rpo_in_secs CcResiliencyPolicy#rpo_in_secs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehub_resiliency_policy#rpo_in_secs CcResiliencyPolicy#rpo_in_secs}
     */
     readonly rpoInSecs: number;
     /**
     * RTO in seconds.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehub_resiliency_policy#rto_in_secs CcResiliencyPolicy#rto_in_secs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehub_resiliency_policy#rto_in_secs CcResiliencyPolicy#rto_in_secs}
     */
     readonly rtoInSecs: number;
 }
@@ -820,25 +821,25 @@ export interface FailurePolicyProperty {
     /**
     * Failure Policy.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehub_resiliency_policy#az CcResiliencyPolicy#az}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehub_resiliency_policy#az CcResiliencyPolicy#az}
     */
     readonly az: AzProperty;
     /**
     * Failure Policy.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehub_resiliency_policy#hardware CcResiliencyPolicy#hardware}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehub_resiliency_policy#hardware CcResiliencyPolicy#hardware}
     */
     readonly hardware: HardwareProperty;
     /**
     * Failure Policy.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehub_resiliency_policy#region CcResiliencyPolicy#region}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehub_resiliency_policy#region CcResiliencyPolicy#region}
     */
     readonly region?: RegionProperty;
     /**
     * Failure Policy.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/resiliencehub_resiliency_policy#software CcResiliencyPolicy#software}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/resiliencehub_resiliency_policy#software CcResiliencyPolicy#software}
     */
     readonly softwareAttribute: SoftwareProperty;
 }

@@ -1,23 +1,23 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_workspace_instance
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_workspace_instance
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcWorkspaceInstanceProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_workspace_instance#managed_instance CcWorkspaceInstance#managed_instance}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_workspace_instance#managed_instance CcWorkspaceInstance#managed_instance}
     */
     readonly managedInstance?: CcWorkspaceInstance.ManagedInstanceProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_workspace_instance#tags CcWorkspaceInstance#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_workspace_instance#tags CcWorkspaceInstance#tags}
     */
     readonly tags?: CcWorkspaceInstance.TagsProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_workspace_instance awscc_workspacesinstances_workspace_instance}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_workspace_instance awscc_workspacesinstances_workspace_instance}
 */
 export class CcWorkspaceInstance extends cdktn.TerraformResource {
 
@@ -33,7 +33,7 @@ export class CcWorkspaceInstance extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcWorkspaceInstance resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcWorkspaceInstance to import
-    * @param importFromId The id of the existing CcWorkspaceInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_workspace_instance#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcWorkspaceInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_workspace_instance#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcWorkspaceInstance to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -45,7 +45,7 @@ export class CcWorkspaceInstance extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_workspace_instance awscc_workspacesinstances_workspace_instance} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_workspace_instance awscc_workspacesinstances_workspace_instance} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -55,7 +55,8 @@ export class CcWorkspaceInstance extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_workspacesinstances_workspace_instance',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -1209,27 +1210,27 @@ export class Ec2ManagedInstancePropertyOutputReference extends cdktn.ComplexObje
 }
 export interface EbsBlockDeviceProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_workspace_instance#encrypted CcWorkspaceInstance#encrypted}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_workspace_instance#encrypted CcWorkspaceInstance#encrypted}
     */
     readonly encrypted?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_workspace_instance#iops CcWorkspaceInstance#iops}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_workspace_instance#iops CcWorkspaceInstance#iops}
     */
     readonly iops?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_workspace_instance#kms_key_id CcWorkspaceInstance#kms_key_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_workspace_instance#kms_key_id CcWorkspaceInstance#kms_key_id}
     */
     readonly kmsKeyId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_workspace_instance#throughput CcWorkspaceInstance#throughput}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_workspace_instance#throughput CcWorkspaceInstance#throughput}
     */
     readonly throughput?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_workspace_instance#volume_size CcWorkspaceInstance#volume_size}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_workspace_instance#volume_size CcWorkspaceInstance#volume_size}
     */
     readonly volumeSize?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_workspace_instance#volume_type CcWorkspaceInstance#volume_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_workspace_instance#volume_type CcWorkspaceInstance#volume_type}
     */
     readonly volumeType?: string;
 }
@@ -1403,19 +1404,19 @@ export class EbsBlockDevicePropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface BlockDeviceMappingProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_workspace_instance#device_name CcWorkspaceInstance#device_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_workspace_instance#device_name CcWorkspaceInstance#device_name}
     */
     readonly deviceName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_workspace_instance#ebs CcWorkspaceInstance#ebs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_workspace_instance#ebs CcWorkspaceInstance#ebs}
     */
     readonly ebs?: EbsBlockDeviceProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_workspace_instance#no_device CcWorkspaceInstance#no_device}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_workspace_instance#no_device CcWorkspaceInstance#no_device}
     */
     readonly noDevice?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_workspace_instance#virtual_name CcWorkspaceInstance#virtual_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_workspace_instance#virtual_name CcWorkspaceInstance#virtual_name}
     */
     readonly virtualName?: string;
 }
@@ -1567,11 +1568,11 @@ export class BlockDeviceMappingPropertyList extends cdktn.ComplexList {
 }
 export interface CapacityReservationTargetProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_workspace_instance#capacity_reservation_id CcWorkspaceInstance#capacity_reservation_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_workspace_instance#capacity_reservation_id CcWorkspaceInstance#capacity_reservation_id}
     */
     readonly capacityReservationId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_workspace_instance#capacity_reservation_resource_group_arn CcWorkspaceInstance#capacity_reservation_resource_group_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_workspace_instance#capacity_reservation_resource_group_arn CcWorkspaceInstance#capacity_reservation_resource_group_arn}
     */
     readonly capacityReservationResourceGroupArn?: string;
 }
@@ -1657,11 +1658,11 @@ export class CapacityReservationTargetPropertyOutputReference extends cdktn.Comp
 }
 export interface CapacityReservationSpecificationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_workspace_instance#capacity_reservation_preference CcWorkspaceInstance#capacity_reservation_preference}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_workspace_instance#capacity_reservation_preference CcWorkspaceInstance#capacity_reservation_preference}
     */
     readonly capacityReservationPreference?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_workspace_instance#capacity_reservation_target CcWorkspaceInstance#capacity_reservation_target}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_workspace_instance#capacity_reservation_target CcWorkspaceInstance#capacity_reservation_target}
     */
     readonly capacityReservationTarget?: CapacityReservationTargetProperty;
 }
@@ -1747,11 +1748,11 @@ export class CapacityReservationSpecificationPropertyOutputReference extends cdk
 }
 export interface CpuOptionsRequestProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_workspace_instance#core_count CcWorkspaceInstance#core_count}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_workspace_instance#core_count CcWorkspaceInstance#core_count}
     */
     readonly coreCount?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_workspace_instance#threads_per_core CcWorkspaceInstance#threads_per_core}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_workspace_instance#threads_per_core CcWorkspaceInstance#threads_per_core}
     */
     readonly threadsPerCore?: number;
 }
@@ -1837,7 +1838,7 @@ export class CpuOptionsRequestPropertyOutputReference extends cdktn.ComplexObjec
 }
 export interface CreditSpecificationRequestProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_workspace_instance#cpu_credits CcWorkspaceInstance#cpu_credits}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_workspace_instance#cpu_credits CcWorkspaceInstance#cpu_credits}
     */
     readonly cpuCredits?: string;
 }
@@ -1901,7 +1902,7 @@ export class CreditSpecificationRequestPropertyOutputReference extends cdktn.Com
 }
 export interface EnclaveOptionsRequestProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_workspace_instance#enabled CcWorkspaceInstance#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_workspace_instance#enabled CcWorkspaceInstance#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -1965,7 +1966,7 @@ export class EnclaveOptionsRequestPropertyOutputReference extends cdktn.ComplexO
 }
 export interface HibernationOptionsRequestProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_workspace_instance#configured CcWorkspaceInstance#configured}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_workspace_instance#configured CcWorkspaceInstance#configured}
     */
     readonly configured?: boolean | cdktn.IResolvable;
 }
@@ -2029,11 +2030,11 @@ export class HibernationOptionsRequestPropertyOutputReference extends cdktn.Comp
 }
 export interface IamInstanceProfileSpecificationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_workspace_instance#arn CcWorkspaceInstance#arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_workspace_instance#arn CcWorkspaceInstance#arn}
     */
     readonly arn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_workspace_instance#name CcWorkspaceInstance#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_workspace_instance#name CcWorkspaceInstance#name}
     */
     readonly name?: string;
 }
@@ -2119,7 +2120,7 @@ export class IamInstanceProfileSpecificationPropertyOutputReference extends cdkt
 }
 export interface LicenseConfigurationRequestProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_workspace_instance#license_configuration_arn CcWorkspaceInstance#license_configuration_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_workspace_instance#license_configuration_arn CcWorkspaceInstance#license_configuration_arn}
     */
     readonly licenseConfigurationArn?: string;
 }
@@ -2205,7 +2206,7 @@ export class LicenseConfigurationRequestPropertyList extends cdktn.ComplexList {
 }
 export interface InstanceMaintenanceOptionsRequestProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_workspace_instance#auto_recovery CcWorkspaceInstance#auto_recovery}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_workspace_instance#auto_recovery CcWorkspaceInstance#auto_recovery}
     */
     readonly autoRecovery?: string;
 }
@@ -2269,23 +2270,23 @@ export class InstanceMaintenanceOptionsRequestPropertyOutputReference extends cd
 }
 export interface InstanceMetadataOptionsRequestProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_workspace_instance#http_endpoint CcWorkspaceInstance#http_endpoint}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_workspace_instance#http_endpoint CcWorkspaceInstance#http_endpoint}
     */
     readonly httpEndpoint?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_workspace_instance#http_protocol_ipv_6 CcWorkspaceInstance#http_protocol_ipv_6}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_workspace_instance#http_protocol_ipv_6 CcWorkspaceInstance#http_protocol_ipv_6}
     */
     readonly httpProtocolIpv6?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_workspace_instance#http_put_response_hop_limit CcWorkspaceInstance#http_put_response_hop_limit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_workspace_instance#http_put_response_hop_limit CcWorkspaceInstance#http_put_response_hop_limit}
     */
     readonly httpPutResponseHopLimit?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_workspace_instance#http_tokens CcWorkspaceInstance#http_tokens}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_workspace_instance#http_tokens CcWorkspaceInstance#http_tokens}
     */
     readonly httpTokens?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_workspace_instance#instance_metadata_tags CcWorkspaceInstance#instance_metadata_tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_workspace_instance#instance_metadata_tags CcWorkspaceInstance#instance_metadata_tags}
     */
     readonly instanceMetadataTags?: string;
 }
@@ -2437,7 +2438,7 @@ export class InstanceMetadataOptionsRequestPropertyOutputReference extends cdktn
 }
 export interface RunInstancesMonitoringEnabledProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_workspace_instance#enabled CcWorkspaceInstance#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_workspace_instance#enabled CcWorkspaceInstance#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -2501,19 +2502,19 @@ export class RunInstancesMonitoringEnabledPropertyOutputReference extends cdktn.
 }
 export interface InstanceNetworkInterfaceSpecificationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_workspace_instance#description CcWorkspaceInstance#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_workspace_instance#description CcWorkspaceInstance#description}
     */
     readonly description?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_workspace_instance#device_index CcWorkspaceInstance#device_index}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_workspace_instance#device_index CcWorkspaceInstance#device_index}
     */
     readonly deviceIndex?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_workspace_instance#groups CcWorkspaceInstance#groups}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_workspace_instance#groups CcWorkspaceInstance#groups}
     */
     readonly groups?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_workspace_instance#subnet_id CcWorkspaceInstance#subnet_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_workspace_instance#subnet_id CcWorkspaceInstance#subnet_id}
     */
     readonly subnetId?: string;
 }
@@ -2665,7 +2666,7 @@ export class InstanceNetworkInterfaceSpecificationPropertyList extends cdktn.Com
 }
 export interface InstanceNetworkPerformanceOptionsRequestProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_workspace_instance#bandwidth_weighting CcWorkspaceInstance#bandwidth_weighting}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_workspace_instance#bandwidth_weighting CcWorkspaceInstance#bandwidth_weighting}
     */
     readonly bandwidthWeighting?: string;
 }
@@ -2729,23 +2730,23 @@ export class InstanceNetworkPerformanceOptionsRequestPropertyOutputReference ext
 }
 export interface PlacementProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_workspace_instance#availability_zone CcWorkspaceInstance#availability_zone}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_workspace_instance#availability_zone CcWorkspaceInstance#availability_zone}
     */
     readonly availabilityZone?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_workspace_instance#group_id CcWorkspaceInstance#group_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_workspace_instance#group_id CcWorkspaceInstance#group_id}
     */
     readonly groupId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_workspace_instance#group_name CcWorkspaceInstance#group_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_workspace_instance#group_name CcWorkspaceInstance#group_name}
     */
     readonly groupName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_workspace_instance#partition_number CcWorkspaceInstance#partition_number}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_workspace_instance#partition_number CcWorkspaceInstance#partition_number}
     */
     readonly partitionNumber?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_workspace_instance#tenancy CcWorkspaceInstance#tenancy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_workspace_instance#tenancy CcWorkspaceInstance#tenancy}
     */
     readonly tenancy?: string;
 }
@@ -2897,15 +2898,15 @@ export class PlacementPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface PrivateDnsNameOptionsRequestProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_workspace_instance#enable_resource_name_dns_a_record CcWorkspaceInstance#enable_resource_name_dns_a_record}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_workspace_instance#enable_resource_name_dns_a_record CcWorkspaceInstance#enable_resource_name_dns_a_record}
     */
     readonly enableResourceNameDnsARecord?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_workspace_instance#enable_resource_name_dns_aaaa_record CcWorkspaceInstance#enable_resource_name_dns_aaaa_record}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_workspace_instance#enable_resource_name_dns_aaaa_record CcWorkspaceInstance#enable_resource_name_dns_aaaa_record}
     */
     readonly enableResourceNameDnsAaaaRecord?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_workspace_instance#hostname_type CcWorkspaceInstance#hostname_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_workspace_instance#hostname_type CcWorkspaceInstance#hostname_type}
     */
     readonly hostnameType?: string;
 }
@@ -3013,11 +3014,11 @@ export class PrivateDnsNameOptionsRequestPropertyOutputReference extends cdktn.C
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_workspace_instance#key CcWorkspaceInstance#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_workspace_instance#key CcWorkspaceInstance#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_workspace_instance#value CcWorkspaceInstance#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_workspace_instance#value CcWorkspaceInstance#value}
     */
     readonly value?: string;
 }
@@ -3125,11 +3126,11 @@ export class TagPropertyList extends cdktn.ComplexList {
 }
 export interface TagSpecificationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_workspace_instance#resource_type CcWorkspaceInstance#resource_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_workspace_instance#resource_type CcWorkspaceInstance#resource_type}
     */
     readonly resourceType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_workspace_instance#tags CcWorkspaceInstance#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_workspace_instance#tags CcWorkspaceInstance#tags}
     */
     readonly tags?: TagProperty[] | cdktn.IResolvable;
 }
@@ -3237,103 +3238,103 @@ export class TagSpecificationPropertyList extends cdktn.ComplexList {
 }
 export interface ManagedInstanceProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_workspace_instance#block_device_mappings CcWorkspaceInstance#block_device_mappings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_workspace_instance#block_device_mappings CcWorkspaceInstance#block_device_mappings}
     */
     readonly blockDeviceMappings?: BlockDeviceMappingProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_workspace_instance#capacity_reservation_specification CcWorkspaceInstance#capacity_reservation_specification}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_workspace_instance#capacity_reservation_specification CcWorkspaceInstance#capacity_reservation_specification}
     */
     readonly capacityReservationSpecification?: CapacityReservationSpecificationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_workspace_instance#cpu_options CcWorkspaceInstance#cpu_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_workspace_instance#cpu_options CcWorkspaceInstance#cpu_options}
     */
     readonly cpuOptions?: CpuOptionsRequestProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_workspace_instance#credit_specification CcWorkspaceInstance#credit_specification}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_workspace_instance#credit_specification CcWorkspaceInstance#credit_specification}
     */
     readonly creditSpecification?: CreditSpecificationRequestProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_workspace_instance#disable_api_stop CcWorkspaceInstance#disable_api_stop}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_workspace_instance#disable_api_stop CcWorkspaceInstance#disable_api_stop}
     */
     readonly disableApiStop?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_workspace_instance#ebs_optimized CcWorkspaceInstance#ebs_optimized}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_workspace_instance#ebs_optimized CcWorkspaceInstance#ebs_optimized}
     */
     readonly ebsOptimized?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_workspace_instance#enable_primary_ipv_6 CcWorkspaceInstance#enable_primary_ipv_6}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_workspace_instance#enable_primary_ipv_6 CcWorkspaceInstance#enable_primary_ipv_6}
     */
     readonly enablePrimaryIpv6?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_workspace_instance#enclave_options CcWorkspaceInstance#enclave_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_workspace_instance#enclave_options CcWorkspaceInstance#enclave_options}
     */
     readonly enclaveOptions?: EnclaveOptionsRequestProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_workspace_instance#hibernation_options CcWorkspaceInstance#hibernation_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_workspace_instance#hibernation_options CcWorkspaceInstance#hibernation_options}
     */
     readonly hibernationOptions?: HibernationOptionsRequestProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_workspace_instance#iam_instance_profile CcWorkspaceInstance#iam_instance_profile}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_workspace_instance#iam_instance_profile CcWorkspaceInstance#iam_instance_profile}
     */
     readonly iamInstanceProfile?: IamInstanceProfileSpecificationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_workspace_instance#image_id CcWorkspaceInstance#image_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_workspace_instance#image_id CcWorkspaceInstance#image_id}
     */
     readonly imageId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_workspace_instance#instance_type CcWorkspaceInstance#instance_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_workspace_instance#instance_type CcWorkspaceInstance#instance_type}
     */
     readonly instanceType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_workspace_instance#ipv_6_address_count CcWorkspaceInstance#ipv_6_address_count}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_workspace_instance#ipv_6_address_count CcWorkspaceInstance#ipv_6_address_count}
     */
     readonly ipv6AddressCount?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_workspace_instance#key_name CcWorkspaceInstance#key_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_workspace_instance#key_name CcWorkspaceInstance#key_name}
     */
     readonly keyName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_workspace_instance#license_specifications CcWorkspaceInstance#license_specifications}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_workspace_instance#license_specifications CcWorkspaceInstance#license_specifications}
     */
     readonly licenseSpecifications?: LicenseConfigurationRequestProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_workspace_instance#maintenance_options CcWorkspaceInstance#maintenance_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_workspace_instance#maintenance_options CcWorkspaceInstance#maintenance_options}
     */
     readonly maintenanceOptions?: InstanceMaintenanceOptionsRequestProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_workspace_instance#metadata_options CcWorkspaceInstance#metadata_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_workspace_instance#metadata_options CcWorkspaceInstance#metadata_options}
     */
     readonly metadataOptions?: InstanceMetadataOptionsRequestProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_workspace_instance#monitoring CcWorkspaceInstance#monitoring}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_workspace_instance#monitoring CcWorkspaceInstance#monitoring}
     */
     readonly monitoring?: RunInstancesMonitoringEnabledProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_workspace_instance#network_interfaces CcWorkspaceInstance#network_interfaces}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_workspace_instance#network_interfaces CcWorkspaceInstance#network_interfaces}
     */
     readonly networkInterfaces?: InstanceNetworkInterfaceSpecificationProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_workspace_instance#network_performance_options CcWorkspaceInstance#network_performance_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_workspace_instance#network_performance_options CcWorkspaceInstance#network_performance_options}
     */
     readonly networkPerformanceOptions?: InstanceNetworkPerformanceOptionsRequestProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_workspace_instance#placement CcWorkspaceInstance#placement}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_workspace_instance#placement CcWorkspaceInstance#placement}
     */
     readonly placement?: PlacementProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_workspace_instance#private_dns_name_options CcWorkspaceInstance#private_dns_name_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_workspace_instance#private_dns_name_options CcWorkspaceInstance#private_dns_name_options}
     */
     readonly privateDnsNameOptions?: PrivateDnsNameOptionsRequestProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_workspace_instance#subnet_id CcWorkspaceInstance#subnet_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_workspace_instance#subnet_id CcWorkspaceInstance#subnet_id}
     */
     readonly subnetId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_workspace_instance#tag_specifications CcWorkspaceInstance#tag_specifications}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_workspace_instance#tag_specifications CcWorkspaceInstance#tag_specifications}
     */
     readonly tagSpecifications?: TagSpecificationProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_workspace_instance#user_data CcWorkspaceInstance#user_data}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_workspace_instance#user_data CcWorkspaceInstance#user_data}
     */
     readonly userData?: string;
 }
@@ -3925,11 +3926,11 @@ export class ManagedInstancePropertyOutputReference extends cdktn.ComplexObject 
 }
 export interface TagsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_workspace_instance#key CcWorkspaceInstance#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_workspace_instance#key CcWorkspaceInstance#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_workspace_instance#value CcWorkspaceInstance#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_workspace_instance#value CcWorkspaceInstance#value}
     */
     readonly value?: string;
 }

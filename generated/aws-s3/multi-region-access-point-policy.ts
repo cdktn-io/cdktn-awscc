@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/s3_multi_region_access_point_policy
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3_multi_region_access_point_policy
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,19 +9,19 @@ export interface CcMultiRegionAccessPointPolicyProps extends cdktn.TerraformMeta
     /**
     * The name of the Multi Region Access Point to apply policy
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/s3_multi_region_access_point_policy#mrap_name CcMultiRegionAccessPointPolicy#mrap_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3_multi_region_access_point_policy#mrap_name CcMultiRegionAccessPointPolicy#mrap_name}
     */
     readonly mrapName: string;
     /**
     * Policy document to apply to a Multi Region Access Point
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/s3_multi_region_access_point_policy#policy CcMultiRegionAccessPointPolicy#policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3_multi_region_access_point_policy#policy CcMultiRegionAccessPointPolicy#policy}
     */
     readonly policy: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/s3_multi_region_access_point_policy awscc_s3_multi_region_access_point_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3_multi_region_access_point_policy awscc_s3_multi_region_access_point_policy}
 */
 export class CcMultiRegionAccessPointPolicy extends cdktn.TerraformResource {
 
@@ -37,7 +37,7 @@ export class CcMultiRegionAccessPointPolicy extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcMultiRegionAccessPointPolicy resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcMultiRegionAccessPointPolicy to import
-    * @param importFromId The id of the existing CcMultiRegionAccessPointPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/s3_multi_region_access_point_policy#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcMultiRegionAccessPointPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3_multi_region_access_point_policy#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcMultiRegionAccessPointPolicy to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -49,7 +49,7 @@ export class CcMultiRegionAccessPointPolicy extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/s3_multi_region_access_point_policy awscc_s3_multi_region_access_point_policy} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3_multi_region_access_point_policy awscc_s3_multi_region_access_point_policy} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -59,7 +59,8 @@ export class CcMultiRegionAccessPointPolicy extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_s3_multi_region_access_point_policy',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,

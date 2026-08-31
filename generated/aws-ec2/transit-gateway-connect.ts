@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_transit_gateway_connect
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_transit_gateway_connect
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,25 +9,25 @@ export interface CcTransitGatewayConnectProps extends cdktn.TerraformMetaArgumen
     /**
     * The Connect attachment options.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_transit_gateway_connect#options CcTransitGatewayConnect#options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_transit_gateway_connect#options CcTransitGatewayConnect#options}
     */
     readonly options: CcTransitGatewayConnect.TransitGatewayConnectOptionsProperty;
     /**
     * The tags for the attachment.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_transit_gateway_connect#tags CcTransitGatewayConnect#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_transit_gateway_connect#tags CcTransitGatewayConnect#tags}
     */
     readonly tags?: CcTransitGatewayConnect.TagProperty[] | cdktn.IResolvable;
     /**
     * The ID of the attachment from which the Connect attachment was created.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_transit_gateway_connect#transport_transit_gateway_attachment_id CcTransitGatewayConnect#transport_transit_gateway_attachment_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_transit_gateway_connect#transport_transit_gateway_attachment_id CcTransitGatewayConnect#transport_transit_gateway_attachment_id}
     */
     readonly transportTransitGatewayAttachmentId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_transit_gateway_connect awscc_ec2_transit_gateway_connect}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_transit_gateway_connect awscc_ec2_transit_gateway_connect}
 */
 export class CcTransitGatewayConnect extends cdktn.TerraformResource {
 
@@ -43,7 +43,7 @@ export class CcTransitGatewayConnect extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcTransitGatewayConnect resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcTransitGatewayConnect to import
-    * @param importFromId The id of the existing CcTransitGatewayConnect that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_transit_gateway_connect#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcTransitGatewayConnect that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_transit_gateway_connect#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcTransitGatewayConnect to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -55,7 +55,7 @@ export class CcTransitGatewayConnect extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_transit_gateway_connect awscc_ec2_transit_gateway_connect} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_transit_gateway_connect awscc_ec2_transit_gateway_connect} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -65,7 +65,8 @@ export class CcTransitGatewayConnect extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_ec2_transit_gateway_connect',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -262,7 +263,7 @@ export interface TransitGatewayConnectOptionsProperty {
     /**
     * The tunnel protocol.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_transit_gateway_connect#protocol CcTransitGatewayConnect#protocol}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_transit_gateway_connect#protocol CcTransitGatewayConnect#protocol}
     */
     readonly protocol?: string;
 }
@@ -328,13 +329,13 @@ export interface TagProperty {
     /**
     * The key of the tag. Constraints: Tag keys are case-sensitive and accept a maximum of 127 Unicode characters. May not begin with aws:.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_transit_gateway_connect#key CcTransitGatewayConnect#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_transit_gateway_connect#key CcTransitGatewayConnect#key}
     */
     readonly key?: string;
     /**
     * The value of the tag. Constraints: Tag values are case-sensitive and accept a maximum of 255 Unicode characters.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_transit_gateway_connect#value CcTransitGatewayConnect#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_transit_gateway_connect#value CcTransitGatewayConnect#value}
     */
     readonly value?: string;
 }

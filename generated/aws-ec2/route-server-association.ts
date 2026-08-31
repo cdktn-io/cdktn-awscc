@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_route_server_association
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_route_server_association
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,19 +9,19 @@ export interface CcRouteServerAssociationProps extends cdktn.TerraformMetaArgume
     /**
     * Route Server ID
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_route_server_association#route_server_id CcRouteServerAssociation#route_server_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_route_server_association#route_server_id CcRouteServerAssociation#route_server_id}
     */
     readonly routeServerId: string;
     /**
     * VPC ID
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_route_server_association#vpc_id CcRouteServerAssociation#vpc_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_route_server_association#vpc_id CcRouteServerAssociation#vpc_id}
     */
     readonly vpcId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_route_server_association awscc_ec2_route_server_association}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_route_server_association awscc_ec2_route_server_association}
 */
 export class CcRouteServerAssociation extends cdktn.TerraformResource {
 
@@ -37,7 +37,7 @@ export class CcRouteServerAssociation extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcRouteServerAssociation resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcRouteServerAssociation to import
-    * @param importFromId The id of the existing CcRouteServerAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_route_server_association#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcRouteServerAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_route_server_association#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcRouteServerAssociation to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -49,7 +49,7 @@ export class CcRouteServerAssociation extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_route_server_association awscc_ec2_route_server_association} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_route_server_association awscc_ec2_route_server_association} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -59,7 +59,8 @@ export class CcRouteServerAssociation extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_ec2_route_server_association',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,

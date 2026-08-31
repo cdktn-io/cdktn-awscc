@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/organizations_account
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/organizations_account
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,37 +9,37 @@ export interface CcAccountProps extends cdktn.TerraformMetaArguments {
     /**
     * The friendly name of the member account.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/organizations_account#account_name CcAccount#account_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/organizations_account#account_name CcAccount#account_name}
     */
     readonly accountName: string;
     /**
     * The email address of the owner to assign to the new member account.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/organizations_account#email CcAccount#email}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/organizations_account#email CcAccount#email}
     */
     readonly email: string;
     /**
     * List of parent nodes for the member account. Currently only one parent at a time is supported. Default is root.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/organizations_account#parent_ids CcAccount#parent_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/organizations_account#parent_ids CcAccount#parent_ids}
     */
     readonly parentIds?: string[];
     /**
     * The name of an IAM role that AWS Organizations automatically preconfigures in the new member account. Default name is OrganizationAccountAccessRole if not specified.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/organizations_account#role_name CcAccount#role_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/organizations_account#role_name CcAccount#role_name}
     */
     readonly roleName?: string;
     /**
     * A list of tags that you want to attach to the newly created account. For each tag in the list, you must specify both a tag key and a value.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/organizations_account#tags CcAccount#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/organizations_account#tags CcAccount#tags}
     */
     readonly tags?: CcAccount.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/organizations_account awscc_organizations_account}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/organizations_account awscc_organizations_account}
 */
 export class CcAccount extends cdktn.TerraformResource {
 
@@ -55,7 +55,7 @@ export class CcAccount extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcAccount resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcAccount to import
-    * @param importFromId The id of the existing CcAccount that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/organizations_account#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcAccount that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/organizations_account#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcAccount to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -67,7 +67,7 @@ export class CcAccount extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/organizations_account awscc_organizations_account} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/organizations_account awscc_organizations_account} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -77,7 +77,8 @@ export class CcAccount extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_organizations_account',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -307,13 +308,13 @@ export interface TagProperty {
     /**
     * The key identifier, or name, of the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/organizations_account#key CcAccount#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/organizations_account#key CcAccount#key}
     */
     readonly key?: string;
     /**
     * The string value that's associated with the key of the tag. You can set the value of a tag to an empty string, but you can't set the value of a tag to null.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/organizations_account#value CcAccount#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/organizations_account#value CcAccount#value}
     */
     readonly value?: string;
 }

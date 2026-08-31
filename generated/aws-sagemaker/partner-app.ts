@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_partner_app
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_partner_app
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,85 +9,85 @@ export interface CcPartnerAppProps extends cdktn.TerraformMetaArguments {
     /**
     * The version of the PartnerApp.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_partner_app#app_version CcPartnerApp#app_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_partner_app#app_version CcPartnerApp#app_version}
     */
     readonly appVersion?: string;
     /**
     * A collection of settings that specify the maintenance schedule for the PartnerApp.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_partner_app#application_config CcPartnerApp#application_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_partner_app#application_config CcPartnerApp#application_config}
     */
     readonly applicationConfig?: CcPartnerApp.PartnerAppConfigProperty;
     /**
     * The Auth type of PartnerApp.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_partner_app#auth_type CcPartnerApp#auth_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_partner_app#auth_type CcPartnerApp#auth_type}
     */
     readonly authType: string;
     /**
     * The client token for the PartnerApp.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_partner_app#client_token CcPartnerApp#client_token}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_partner_app#client_token CcPartnerApp#client_token}
     */
     readonly clientToken?: string;
     /**
     * Enables automatic minor version upgrades for the PartnerApp.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_partner_app#enable_auto_minor_version_upgrade CcPartnerApp#enable_auto_minor_version_upgrade}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_partner_app#enable_auto_minor_version_upgrade CcPartnerApp#enable_auto_minor_version_upgrade}
     */
     readonly enableAutoMinorVersionUpgrade?: boolean | cdktn.IResolvable;
     /**
     * Enables IAM Session based Identity for PartnerApp.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_partner_app#enable_iam_session_based_identity CcPartnerApp#enable_iam_session_based_identity}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_partner_app#enable_iam_session_based_identity CcPartnerApp#enable_iam_session_based_identity}
     */
     readonly enableIamSessionBasedIdentity?: boolean | cdktn.IResolvable;
     /**
     * The execution role for the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_partner_app#execution_role_arn CcPartnerApp#execution_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_partner_app#execution_role_arn CcPartnerApp#execution_role_arn}
     */
     readonly executionRoleArn: string;
     /**
     * The AWS KMS customer managed key used to encrypt the data associated with the PartnerApp.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_partner_app#kms_key_id CcPartnerApp#kms_key_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_partner_app#kms_key_id CcPartnerApp#kms_key_id}
     */
     readonly kmsKeyId?: string;
     /**
     * A collection of settings that specify the maintenance schedule for the PartnerApp.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_partner_app#maintenance_config CcPartnerApp#maintenance_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_partner_app#maintenance_config CcPartnerApp#maintenance_config}
     */
     readonly maintenanceConfig?: CcPartnerApp.PartnerAppMaintenanceConfigProperty;
     /**
     * A name for the PartnerApp.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_partner_app#name CcPartnerApp#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_partner_app#name CcPartnerApp#name}
     */
     readonly name: string;
     /**
     * A list of tags to apply to the PartnerApp.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_partner_app#tags CcPartnerApp#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_partner_app#tags CcPartnerApp#tags}
     */
     readonly tags?: CcPartnerApp.TagProperty[] | cdktn.IResolvable;
     /**
     * The tier of the PartnerApp.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_partner_app#tier CcPartnerApp#tier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_partner_app#tier CcPartnerApp#tier}
     */
     readonly tier: string;
     /**
     * The type of PartnerApp.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_partner_app#type CcPartnerApp#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_partner_app#type CcPartnerApp#type}
     */
     readonly type: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_partner_app awscc_sagemaker_partner_app}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_partner_app awscc_sagemaker_partner_app}
 */
 export class CcPartnerApp extends cdktn.TerraformResource {
 
@@ -103,7 +103,7 @@ export class CcPartnerApp extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcPartnerApp resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcPartnerApp to import
-    * @param importFromId The id of the existing CcPartnerApp that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_partner_app#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcPartnerApp that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_partner_app#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcPartnerApp to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -115,7 +115,7 @@ export class CcPartnerApp extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_partner_app awscc_sagemaker_partner_app} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_partner_app awscc_sagemaker_partner_app} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -125,7 +125,8 @@ export class CcPartnerApp extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_sagemaker_partner_app',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -585,13 +586,13 @@ export interface PartnerAppConfigProperty {
     /**
     * A list of users with administrator privileges for the PartnerApp.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_partner_app#admin_users CcPartnerApp#admin_users}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_partner_app#admin_users CcPartnerApp#admin_users}
     */
     readonly adminUsers?: string[];
     /**
     * A list of arguments to pass to the PartnerApp.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_partner_app#arguments CcPartnerApp#arguments}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_partner_app#arguments CcPartnerApp#arguments}
     */
     readonly arguments?: { [key: string]: string };
 }
@@ -679,7 +680,7 @@ export interface PartnerAppMaintenanceConfigProperty {
     /**
     * The maintenance window start day and time for the PartnerApp.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_partner_app#maintenance_window_start CcPartnerApp#maintenance_window_start}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_partner_app#maintenance_window_start CcPartnerApp#maintenance_window_start}
     */
     readonly maintenanceWindowStart?: string;
 }
@@ -743,11 +744,11 @@ export class PartnerAppMaintenanceConfigPropertyOutputReference extends cdktn.Co
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_partner_app#key CcPartnerApp#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_partner_app#key CcPartnerApp#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_partner_app#value CcPartnerApp#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_partner_app#value CcPartnerApp#value}
     */
     readonly value?: string;
 }

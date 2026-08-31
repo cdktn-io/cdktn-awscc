@@ -1,35 +1,35 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ses_mail_manager_traffic_policy
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_traffic_policy
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcMailManagerTrafficPolicyProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ses_mail_manager_traffic_policy#default_action CcMailManagerTrafficPolicy#default_action}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_traffic_policy#default_action CcMailManagerTrafficPolicy#default_action}
     */
     readonly defaultAction: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ses_mail_manager_traffic_policy#max_message_size_bytes CcMailManagerTrafficPolicy#max_message_size_bytes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_traffic_policy#max_message_size_bytes CcMailManagerTrafficPolicy#max_message_size_bytes}
     */
     readonly maxMessageSizeBytes?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ses_mail_manager_traffic_policy#policy_statements CcMailManagerTrafficPolicy#policy_statements}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_traffic_policy#policy_statements CcMailManagerTrafficPolicy#policy_statements}
     */
     readonly policyStatements: CcMailManagerTrafficPolicy.PolicyStatementProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ses_mail_manager_traffic_policy#tags CcMailManagerTrafficPolicy#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_traffic_policy#tags CcMailManagerTrafficPolicy#tags}
     */
     readonly tags?: CcMailManagerTrafficPolicy.TagProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ses_mail_manager_traffic_policy#traffic_policy_name CcMailManagerTrafficPolicy#traffic_policy_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_traffic_policy#traffic_policy_name CcMailManagerTrafficPolicy#traffic_policy_name}
     */
     readonly trafficPolicyName?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ses_mail_manager_traffic_policy awscc_ses_mail_manager_traffic_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_traffic_policy awscc_ses_mail_manager_traffic_policy}
 */
 export class CcMailManagerTrafficPolicy extends cdktn.TerraformResource {
 
@@ -45,7 +45,7 @@ export class CcMailManagerTrafficPolicy extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcMailManagerTrafficPolicy resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcMailManagerTrafficPolicy to import
-    * @param importFromId The id of the existing CcMailManagerTrafficPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ses_mail_manager_traffic_policy#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcMailManagerTrafficPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_traffic_policy#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcMailManagerTrafficPolicy to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -57,7 +57,7 @@ export class CcMailManagerTrafficPolicy extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ses_mail_manager_traffic_policy awscc_ses_mail_manager_traffic_policy} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_traffic_policy awscc_ses_mail_manager_traffic_policy} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -67,7 +67,8 @@ export class CcMailManagerTrafficPolicy extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_ses_mail_manager_traffic_policy',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -853,11 +854,11 @@ export function ccMailManagerTrafficPolicyTagPropertyToHclTerraform(struct?: CcM
 export namespace CcMailManagerTrafficPolicy {
 export interface IngressAnalysisProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ses_mail_manager_traffic_policy#analyzer CcMailManagerTrafficPolicy#analyzer}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_traffic_policy#analyzer CcMailManagerTrafficPolicy#analyzer}
     */
     readonly analyzer?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ses_mail_manager_traffic_policy#result_field CcMailManagerTrafficPolicy#result_field}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_traffic_policy#result_field CcMailManagerTrafficPolicy#result_field}
     */
     readonly resultField?: string;
 }
@@ -943,11 +944,11 @@ export class IngressAnalysisPropertyOutputReference extends cdktn.ComplexObject 
 }
 export interface IngressIsInAddressListProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ses_mail_manager_traffic_policy#address_lists CcMailManagerTrafficPolicy#address_lists}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_traffic_policy#address_lists CcMailManagerTrafficPolicy#address_lists}
     */
     readonly addressLists?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ses_mail_manager_traffic_policy#attribute CcMailManagerTrafficPolicy#attribute}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_traffic_policy#attribute CcMailManagerTrafficPolicy#attribute}
     */
     readonly attribute?: string;
 }
@@ -1033,11 +1034,11 @@ export class IngressIsInAddressListPropertyOutputReference extends cdktn.Complex
 }
 export interface IngressBooleanToEvaluateProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ses_mail_manager_traffic_policy#analysis CcMailManagerTrafficPolicy#analysis}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_traffic_policy#analysis CcMailManagerTrafficPolicy#analysis}
     */
     readonly analysis?: IngressAnalysisProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ses_mail_manager_traffic_policy#is_in_address_list CcMailManagerTrafficPolicy#is_in_address_list}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_traffic_policy#is_in_address_list CcMailManagerTrafficPolicy#is_in_address_list}
     */
     readonly isInAddressList?: IngressIsInAddressListProperty;
 }
@@ -1123,11 +1124,11 @@ export class IngressBooleanToEvaluatePropertyOutputReference extends cdktn.Compl
 }
 export interface IngressBooleanExpressionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ses_mail_manager_traffic_policy#evaluate CcMailManagerTrafficPolicy#evaluate}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_traffic_policy#evaluate CcMailManagerTrafficPolicy#evaluate}
     */
     readonly evaluate?: IngressBooleanToEvaluateProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ses_mail_manager_traffic_policy#operator CcMailManagerTrafficPolicy#operator}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_traffic_policy#operator CcMailManagerTrafficPolicy#operator}
     */
     readonly operator?: string;
 }
@@ -1213,7 +1214,7 @@ export class IngressBooleanExpressionPropertyOutputReference extends cdktn.Compl
 }
 export interface IngressIpToEvaluateProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ses_mail_manager_traffic_policy#attribute CcMailManagerTrafficPolicy#attribute}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_traffic_policy#attribute CcMailManagerTrafficPolicy#attribute}
     */
     readonly attribute?: string;
 }
@@ -1277,15 +1278,15 @@ export class IngressIpToEvaluatePropertyOutputReference extends cdktn.ComplexObj
 }
 export interface IngressIpv4ExpressionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ses_mail_manager_traffic_policy#evaluate CcMailManagerTrafficPolicy#evaluate}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_traffic_policy#evaluate CcMailManagerTrafficPolicy#evaluate}
     */
     readonly evaluate?: IngressIpToEvaluateProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ses_mail_manager_traffic_policy#operator CcMailManagerTrafficPolicy#operator}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_traffic_policy#operator CcMailManagerTrafficPolicy#operator}
     */
     readonly operator?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ses_mail_manager_traffic_policy#values CcMailManagerTrafficPolicy#values}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_traffic_policy#values CcMailManagerTrafficPolicy#values}
     */
     readonly values?: string[];
 }
@@ -1393,7 +1394,7 @@ export class IngressIpv4ExpressionPropertyOutputReference extends cdktn.ComplexO
 }
 export interface IngressIpv6ToEvaluateProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ses_mail_manager_traffic_policy#attribute CcMailManagerTrafficPolicy#attribute}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_traffic_policy#attribute CcMailManagerTrafficPolicy#attribute}
     */
     readonly attribute?: string;
 }
@@ -1457,15 +1458,15 @@ export class IngressIpv6ToEvaluatePropertyOutputReference extends cdktn.ComplexO
 }
 export interface IngressIpv6ExpressionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ses_mail_manager_traffic_policy#evaluate CcMailManagerTrafficPolicy#evaluate}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_traffic_policy#evaluate CcMailManagerTrafficPolicy#evaluate}
     */
     readonly evaluate?: IngressIpv6ToEvaluateProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ses_mail_manager_traffic_policy#operator CcMailManagerTrafficPolicy#operator}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_traffic_policy#operator CcMailManagerTrafficPolicy#operator}
     */
     readonly operator?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ses_mail_manager_traffic_policy#values CcMailManagerTrafficPolicy#values}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_traffic_policy#values CcMailManagerTrafficPolicy#values}
     */
     readonly values?: string[];
 }
@@ -1573,11 +1574,11 @@ export class IngressIpv6ExpressionPropertyOutputReference extends cdktn.ComplexO
 }
 export interface AnalysisProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ses_mail_manager_traffic_policy#analyzer CcMailManagerTrafficPolicy#analyzer}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_traffic_policy#analyzer CcMailManagerTrafficPolicy#analyzer}
     */
     readonly analyzer?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ses_mail_manager_traffic_policy#result_field CcMailManagerTrafficPolicy#result_field}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_traffic_policy#result_field CcMailManagerTrafficPolicy#result_field}
     */
     readonly resultField?: string;
 }
@@ -1663,11 +1664,11 @@ export class AnalysisPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface IngressStringToEvaluateProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ses_mail_manager_traffic_policy#analysis CcMailManagerTrafficPolicy#analysis}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_traffic_policy#analysis CcMailManagerTrafficPolicy#analysis}
     */
     readonly analysis?: AnalysisProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ses_mail_manager_traffic_policy#attribute CcMailManagerTrafficPolicy#attribute}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_traffic_policy#attribute CcMailManagerTrafficPolicy#attribute}
     */
     readonly attribute?: string;
 }
@@ -1753,15 +1754,15 @@ export class IngressStringToEvaluatePropertyOutputReference extends cdktn.Comple
 }
 export interface IngressStringExpressionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ses_mail_manager_traffic_policy#evaluate CcMailManagerTrafficPolicy#evaluate}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_traffic_policy#evaluate CcMailManagerTrafficPolicy#evaluate}
     */
     readonly evaluate?: IngressStringToEvaluateProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ses_mail_manager_traffic_policy#operator CcMailManagerTrafficPolicy#operator}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_traffic_policy#operator CcMailManagerTrafficPolicy#operator}
     */
     readonly operator?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ses_mail_manager_traffic_policy#values CcMailManagerTrafficPolicy#values}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_traffic_policy#values CcMailManagerTrafficPolicy#values}
     */
     readonly values?: string[];
 }
@@ -1869,7 +1870,7 @@ export class IngressStringExpressionPropertyOutputReference extends cdktn.Comple
 }
 export interface IngressTlsProtocolToEvaluateProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ses_mail_manager_traffic_policy#attribute CcMailManagerTrafficPolicy#attribute}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_traffic_policy#attribute CcMailManagerTrafficPolicy#attribute}
     */
     readonly attribute?: string;
 }
@@ -1933,15 +1934,15 @@ export class IngressTlsProtocolToEvaluatePropertyOutputReference extends cdktn.C
 }
 export interface IngressTlsProtocolExpressionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ses_mail_manager_traffic_policy#evaluate CcMailManagerTrafficPolicy#evaluate}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_traffic_policy#evaluate CcMailManagerTrafficPolicy#evaluate}
     */
     readonly evaluate?: IngressTlsProtocolToEvaluateProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ses_mail_manager_traffic_policy#operator CcMailManagerTrafficPolicy#operator}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_traffic_policy#operator CcMailManagerTrafficPolicy#operator}
     */
     readonly operator?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ses_mail_manager_traffic_policy#value CcMailManagerTrafficPolicy#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_traffic_policy#value CcMailManagerTrafficPolicy#value}
     */
     readonly value?: string;
 }
@@ -2049,23 +2050,23 @@ export class IngressTlsProtocolExpressionPropertyOutputReference extends cdktn.C
 }
 export interface PolicyConditionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ses_mail_manager_traffic_policy#boolean_expression CcMailManagerTrafficPolicy#boolean_expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_traffic_policy#boolean_expression CcMailManagerTrafficPolicy#boolean_expression}
     */
     readonly booleanExpression?: IngressBooleanExpressionProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ses_mail_manager_traffic_policy#ip_expression CcMailManagerTrafficPolicy#ip_expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_traffic_policy#ip_expression CcMailManagerTrafficPolicy#ip_expression}
     */
     readonly ipExpression?: IngressIpv4ExpressionProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ses_mail_manager_traffic_policy#ipv_6_expression CcMailManagerTrafficPolicy#ipv_6_expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_traffic_policy#ipv_6_expression CcMailManagerTrafficPolicy#ipv_6_expression}
     */
     readonly ipv6Expression?: IngressIpv6ExpressionProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ses_mail_manager_traffic_policy#string_expression CcMailManagerTrafficPolicy#string_expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_traffic_policy#string_expression CcMailManagerTrafficPolicy#string_expression}
     */
     readonly stringExpression?: IngressStringExpressionProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ses_mail_manager_traffic_policy#tls_expression CcMailManagerTrafficPolicy#tls_expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_traffic_policy#tls_expression CcMailManagerTrafficPolicy#tls_expression}
     */
     readonly tlsExpression?: IngressTlsProtocolExpressionProperty;
 }
@@ -2239,11 +2240,11 @@ export class PolicyConditionPropertyList extends cdktn.ComplexList {
 }
 export interface PolicyStatementProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ses_mail_manager_traffic_policy#action CcMailManagerTrafficPolicy#action}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_traffic_policy#action CcMailManagerTrafficPolicy#action}
     */
     readonly action: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ses_mail_manager_traffic_policy#conditions CcMailManagerTrafficPolicy#conditions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_traffic_policy#conditions CcMailManagerTrafficPolicy#conditions}
     */
     readonly conditions: PolicyConditionProperty[] | cdktn.IResolvable;
 }
@@ -2345,11 +2346,11 @@ export class PolicyStatementPropertyList extends cdktn.ComplexList {
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ses_mail_manager_traffic_policy#key CcMailManagerTrafficPolicy#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_traffic_policy#key CcMailManagerTrafficPolicy#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ses_mail_manager_traffic_policy#value CcMailManagerTrafficPolicy#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_traffic_policy#value CcMailManagerTrafficPolicy#value}
     */
     readonly value?: string;
 }

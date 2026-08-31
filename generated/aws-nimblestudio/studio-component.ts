@@ -1,55 +1,55 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/nimblestudio_studio_component
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/nimblestudio_studio_component
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcStudioComponentProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/nimblestudio_studio_component#configuration CcStudioComponent#configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/nimblestudio_studio_component#configuration CcStudioComponent#configuration}
     */
     readonly configuration?: CcStudioComponent.StudioComponentConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/nimblestudio_studio_component#description CcStudioComponent#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/nimblestudio_studio_component#description CcStudioComponent#description}
     */
     readonly description?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/nimblestudio_studio_component#ec_2_security_group_ids CcStudioComponent#ec_2_security_group_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/nimblestudio_studio_component#ec_2_security_group_ids CcStudioComponent#ec_2_security_group_ids}
     */
     readonly ec2SecurityGroupIds?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/nimblestudio_studio_component#initialization_scripts CcStudioComponent#initialization_scripts}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/nimblestudio_studio_component#initialization_scripts CcStudioComponent#initialization_scripts}
     */
     readonly initializationScripts?: CcStudioComponent.StudioComponentInitializationScriptProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/nimblestudio_studio_component#name CcStudioComponent#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/nimblestudio_studio_component#name CcStudioComponent#name}
     */
     readonly name: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/nimblestudio_studio_component#script_parameters CcStudioComponent#script_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/nimblestudio_studio_component#script_parameters CcStudioComponent#script_parameters}
     */
     readonly scriptParameters?: CcStudioComponent.ScriptParameterKeyValueProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/nimblestudio_studio_component#studio_id CcStudioComponent#studio_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/nimblestudio_studio_component#studio_id CcStudioComponent#studio_id}
     */
     readonly studioId: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/nimblestudio_studio_component#subtype CcStudioComponent#subtype}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/nimblestudio_studio_component#subtype CcStudioComponent#subtype}
     */
     readonly subtype?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/nimblestudio_studio_component#tags CcStudioComponent#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/nimblestudio_studio_component#tags CcStudioComponent#tags}
     */
     readonly tags?: { [key: string]: string };
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/nimblestudio_studio_component#type CcStudioComponent#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/nimblestudio_studio_component#type CcStudioComponent#type}
     */
     readonly type: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/nimblestudio_studio_component awscc_nimblestudio_studio_component}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/nimblestudio_studio_component awscc_nimblestudio_studio_component}
 */
 export class CcStudioComponent extends cdktn.TerraformResource {
 
@@ -65,7 +65,7 @@ export class CcStudioComponent extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcStudioComponent resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcStudioComponent to import
-    * @param importFromId The id of the existing CcStudioComponent that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/nimblestudio_studio_component#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcStudioComponent that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/nimblestudio_studio_component#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcStudioComponent to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -77,7 +77,7 @@ export class CcStudioComponent extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/nimblestudio_studio_component awscc_nimblestudio_studio_component} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/nimblestudio_studio_component awscc_nimblestudio_studio_component} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -87,7 +87,8 @@ export class CcStudioComponent extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_nimblestudio_studio_component',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -710,11 +711,11 @@ export function ccStudioComponentScriptParameterKeyValuePropertyToHclTerraform(s
 export namespace CcStudioComponent {
 export interface ActiveDirectoryComputerAttributeProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/nimblestudio_studio_component#name CcStudioComponent#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/nimblestudio_studio_component#name CcStudioComponent#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/nimblestudio_studio_component#value CcStudioComponent#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/nimblestudio_studio_component#value CcStudioComponent#value}
     */
     readonly value?: string;
 }
@@ -822,15 +823,15 @@ export class ActiveDirectoryComputerAttributePropertyList extends cdktn.ComplexL
 }
 export interface ActiveDirectoryConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/nimblestudio_studio_component#computer_attributes CcStudioComponent#computer_attributes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/nimblestudio_studio_component#computer_attributes CcStudioComponent#computer_attributes}
     */
     readonly computerAttributes?: ActiveDirectoryComputerAttributeProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/nimblestudio_studio_component#directory_id CcStudioComponent#directory_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/nimblestudio_studio_component#directory_id CcStudioComponent#directory_id}
     */
     readonly directoryId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/nimblestudio_studio_component#organizational_unit_distinguished_name CcStudioComponent#organizational_unit_distinguished_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/nimblestudio_studio_component#organizational_unit_distinguished_name CcStudioComponent#organizational_unit_distinguished_name}
     */
     readonly organizationalUnitDistinguishedName?: string;
 }
@@ -938,11 +939,11 @@ export class ActiveDirectoryConfigurationPropertyOutputReference extends cdktn.C
 }
 export interface ComputeFarmConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/nimblestudio_studio_component#active_directory_user CcStudioComponent#active_directory_user}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/nimblestudio_studio_component#active_directory_user CcStudioComponent#active_directory_user}
     */
     readonly activeDirectoryUser?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/nimblestudio_studio_component#endpoint CcStudioComponent#endpoint}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/nimblestudio_studio_component#endpoint CcStudioComponent#endpoint}
     */
     readonly endpoint?: string;
 }
@@ -1028,7 +1029,7 @@ export class ComputeFarmConfigurationPropertyOutputReference extends cdktn.Compl
 }
 export interface LicenseServiceConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/nimblestudio_studio_component#endpoint CcStudioComponent#endpoint}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/nimblestudio_studio_component#endpoint CcStudioComponent#endpoint}
     */
     readonly endpoint?: string;
 }
@@ -1092,23 +1093,23 @@ export class LicenseServiceConfigurationPropertyOutputReference extends cdktn.Co
 }
 export interface SharedFileSystemConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/nimblestudio_studio_component#endpoint CcStudioComponent#endpoint}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/nimblestudio_studio_component#endpoint CcStudioComponent#endpoint}
     */
     readonly endpoint?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/nimblestudio_studio_component#file_system_id CcStudioComponent#file_system_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/nimblestudio_studio_component#file_system_id CcStudioComponent#file_system_id}
     */
     readonly fileSystemId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/nimblestudio_studio_component#linux_mount_point CcStudioComponent#linux_mount_point}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/nimblestudio_studio_component#linux_mount_point CcStudioComponent#linux_mount_point}
     */
     readonly linuxMountPoint?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/nimblestudio_studio_component#share_name CcStudioComponent#share_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/nimblestudio_studio_component#share_name CcStudioComponent#share_name}
     */
     readonly shareName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/nimblestudio_studio_component#windows_mount_drive CcStudioComponent#windows_mount_drive}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/nimblestudio_studio_component#windows_mount_drive CcStudioComponent#windows_mount_drive}
     */
     readonly windowsMountDrive?: string;
 }
@@ -1260,19 +1261,19 @@ export class SharedFileSystemConfigurationPropertyOutputReference extends cdktn.
 }
 export interface StudioComponentConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/nimblestudio_studio_component#active_directory_configuration CcStudioComponent#active_directory_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/nimblestudio_studio_component#active_directory_configuration CcStudioComponent#active_directory_configuration}
     */
     readonly activeDirectoryConfiguration?: ActiveDirectoryConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/nimblestudio_studio_component#compute_farm_configuration CcStudioComponent#compute_farm_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/nimblestudio_studio_component#compute_farm_configuration CcStudioComponent#compute_farm_configuration}
     */
     readonly computeFarmConfiguration?: ComputeFarmConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/nimblestudio_studio_component#license_service_configuration CcStudioComponent#license_service_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/nimblestudio_studio_component#license_service_configuration CcStudioComponent#license_service_configuration}
     */
     readonly licenseServiceConfiguration?: LicenseServiceConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/nimblestudio_studio_component#shared_file_system_configuration CcStudioComponent#shared_file_system_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/nimblestudio_studio_component#shared_file_system_configuration CcStudioComponent#shared_file_system_configuration}
     */
     readonly sharedFileSystemConfiguration?: SharedFileSystemConfigurationProperty;
 }
@@ -1402,19 +1403,19 @@ export class StudioComponentConfigurationPropertyOutputReference extends cdktn.C
 }
 export interface StudioComponentInitializationScriptProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/nimblestudio_studio_component#launch_profile_protocol_version CcStudioComponent#launch_profile_protocol_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/nimblestudio_studio_component#launch_profile_protocol_version CcStudioComponent#launch_profile_protocol_version}
     */
     readonly launchProfileProtocolVersion?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/nimblestudio_studio_component#platform CcStudioComponent#platform}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/nimblestudio_studio_component#platform CcStudioComponent#platform}
     */
     readonly platform?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/nimblestudio_studio_component#run_context CcStudioComponent#run_context}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/nimblestudio_studio_component#run_context CcStudioComponent#run_context}
     */
     readonly runContext?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/nimblestudio_studio_component#script CcStudioComponent#script}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/nimblestudio_studio_component#script CcStudioComponent#script}
     */
     readonly script?: string;
 }
@@ -1566,11 +1567,11 @@ export class StudioComponentInitializationScriptPropertyList extends cdktn.Compl
 }
 export interface ScriptParameterKeyValueProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/nimblestudio_studio_component#key CcStudioComponent#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/nimblestudio_studio_component#key CcStudioComponent#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/nimblestudio_studio_component#value CcStudioComponent#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/nimblestudio_studio_component#value CcStudioComponent#value}
     */
     readonly value?: string;
 }

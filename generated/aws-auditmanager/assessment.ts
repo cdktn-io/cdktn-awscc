@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/auditmanager_assessment
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/auditmanager_assessment
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,67 +9,67 @@ export interface CcAssessmentProps extends cdktn.TerraformMetaArguments {
     /**
     * The destination in which evidence reports are stored for the specified assessment.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/auditmanager_assessment#assessment_reports_destination CcAssessment#assessment_reports_destination}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/auditmanager_assessment#assessment_reports_destination CcAssessment#assessment_reports_destination}
     */
     readonly assessmentReportsDestination?: CcAssessment.AssessmentReportsDestinationProperty;
     /**
     * The AWS account associated with the assessment.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/auditmanager_assessment#aws_account CcAssessment#aws_account}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/auditmanager_assessment#aws_account CcAssessment#aws_account}
     */
     readonly awsAccount?: CcAssessment.AWSAccountProperty;
     /**
     * The list of delegations.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/auditmanager_assessment#delegations CcAssessment#delegations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/auditmanager_assessment#delegations CcAssessment#delegations}
     */
     readonly delegations?: CcAssessment.DelegationProperty[] | cdktn.IResolvable;
     /**
     * The description of the specified assessment.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/auditmanager_assessment#description CcAssessment#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/auditmanager_assessment#description CcAssessment#description}
     */
     readonly description?: string;
     /**
     * The identifier for the specified framework.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/auditmanager_assessment#framework_id CcAssessment#framework_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/auditmanager_assessment#framework_id CcAssessment#framework_id}
     */
     readonly frameworkId?: string;
     /**
     * The name of the related assessment.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/auditmanager_assessment#name CcAssessment#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/auditmanager_assessment#name CcAssessment#name}
     */
     readonly name?: string;
     /**
     * The list of roles for the specified assessment.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/auditmanager_assessment#roles CcAssessment#roles}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/auditmanager_assessment#roles CcAssessment#roles}
     */
     readonly roles?: CcAssessment.RoleProperty[] | cdktn.IResolvable;
     /**
     * The wrapper that contains the AWS accounts and AWS services in scope for the assessment.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/auditmanager_assessment#scope CcAssessment#scope}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/auditmanager_assessment#scope CcAssessment#scope}
     */
     readonly scope?: CcAssessment.ScopeProperty;
     /**
     * The status of the specified assessment. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/auditmanager_assessment#status CcAssessment#status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/auditmanager_assessment#status CcAssessment#status}
     */
     readonly status?: string;
     /**
     * The tags associated with the assessment.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/auditmanager_assessment#tags CcAssessment#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/auditmanager_assessment#tags CcAssessment#tags}
     */
     readonly tags?: CcAssessment.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/auditmanager_assessment awscc_auditmanager_assessment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/auditmanager_assessment awscc_auditmanager_assessment}
 */
 export class CcAssessment extends cdktn.TerraformResource {
 
@@ -85,7 +85,7 @@ export class CcAssessment extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcAssessment resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcAssessment to import
-    * @param importFromId The id of the existing CcAssessment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/auditmanager_assessment#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcAssessment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/auditmanager_assessment#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcAssessment to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -97,7 +97,7 @@ export class CcAssessment extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/auditmanager_assessment awscc_auditmanager_assessment} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/auditmanager_assessment awscc_auditmanager_assessment} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -107,7 +107,8 @@ export class CcAssessment extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_auditmanager_assessment',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -772,13 +773,13 @@ export interface AssessmentReportsDestinationProperty {
     /**
     * The URL of the specified Amazon S3 bucket.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/auditmanager_assessment#destination CcAssessment#destination}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/auditmanager_assessment#destination CcAssessment#destination}
     */
     readonly destination?: string;
     /**
     * The destination type, such as Amazon S3.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/auditmanager_assessment#destination_type CcAssessment#destination_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/auditmanager_assessment#destination_type CcAssessment#destination_type}
     */
     readonly destinationType?: string;
 }
@@ -866,13 +867,13 @@ export interface AWSAccountProperty {
     /**
     * The unique identifier for the email account.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/auditmanager_assessment#email_address CcAssessment#email_address}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/auditmanager_assessment#email_address CcAssessment#email_address}
     */
     readonly emailAddress?: string;
     /**
     * The identifier for the specified AWS account.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/auditmanager_assessment#id CcAssessment#id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/auditmanager_assessment#id CcAssessment#id}
     *
     * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
     * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -881,7 +882,7 @@ export interface AWSAccountProperty {
     /**
     * The name of the specified AWS account.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/auditmanager_assessment#name CcAssessment#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/auditmanager_assessment#name CcAssessment#name}
     */
     readonly name?: string;
 }
@@ -989,41 +990,41 @@ export class AWSAccountPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface DelegationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/auditmanager_assessment#assessment_id CcAssessment#assessment_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/auditmanager_assessment#assessment_id CcAssessment#assessment_id}
     */
     readonly assessmentId?: string;
     /**
     * The name of the related assessment.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/auditmanager_assessment#assessment_name CcAssessment#assessment_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/auditmanager_assessment#assessment_name CcAssessment#assessment_name}
     */
     readonly assessmentName?: string;
     /**
     * The comment related to the delegation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/auditmanager_assessment#comment CcAssessment#comment}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/auditmanager_assessment#comment CcAssessment#comment}
     */
     readonly comment?: string;
     /**
     * The identifier for the specified control set.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/auditmanager_assessment#control_set_id CcAssessment#control_set_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/auditmanager_assessment#control_set_id CcAssessment#control_set_id}
     */
     readonly controlSetId?: string;
     /**
     * The IAM user or role that performed the action.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/auditmanager_assessment#created_by CcAssessment#created_by}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/auditmanager_assessment#created_by CcAssessment#created_by}
     */
     readonly createdBy?: string;
     /**
     * The sequence of characters that identifies when the event occurred.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/auditmanager_assessment#creation_time CcAssessment#creation_time}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/auditmanager_assessment#creation_time CcAssessment#creation_time}
     */
     readonly creationTime?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/auditmanager_assessment#id CcAssessment#id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/auditmanager_assessment#id CcAssessment#id}
     *
     * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
     * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1032,25 +1033,25 @@ export interface DelegationProperty {
     /**
     * The sequence of characters that identifies when the event occurred.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/auditmanager_assessment#last_updated CcAssessment#last_updated}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/auditmanager_assessment#last_updated CcAssessment#last_updated}
     */
     readonly lastUpdated?: number;
     /**
     * The Amazon Resource Name (ARN) of the IAM user or role.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/auditmanager_assessment#role_arn CcAssessment#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/auditmanager_assessment#role_arn CcAssessment#role_arn}
     */
     readonly roleArn?: string;
     /**
     *  The IAM role type.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/auditmanager_assessment#role_type CcAssessment#role_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/auditmanager_assessment#role_type CcAssessment#role_type}
     */
     readonly roleType?: string;
     /**
     * The status of the delegation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/auditmanager_assessment#status CcAssessment#status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/auditmanager_assessment#status CcAssessment#status}
     */
     readonly status?: string;
 }
@@ -1358,13 +1359,13 @@ export interface RoleProperty {
     /**
     * The Amazon Resource Name (ARN) of the IAM user or role.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/auditmanager_assessment#role_arn CcAssessment#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/auditmanager_assessment#role_arn CcAssessment#role_arn}
     */
     readonly roleArn?: string;
     /**
     *  The IAM role type.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/auditmanager_assessment#role_type CcAssessment#role_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/auditmanager_assessment#role_type CcAssessment#role_type}
     */
     readonly roleType?: string;
 }
@@ -1474,13 +1475,13 @@ export interface AwsAccountsProperty {
     /**
     * The unique identifier for the email account.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/auditmanager_assessment#email_address CcAssessment#email_address}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/auditmanager_assessment#email_address CcAssessment#email_address}
     */
     readonly emailAddress?: string;
     /**
     * The identifier for the specified AWS account.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/auditmanager_assessment#id CcAssessment#id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/auditmanager_assessment#id CcAssessment#id}
     *
     * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
     * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1489,7 +1490,7 @@ export interface AwsAccountsProperty {
     /**
     * The name of the specified AWS account.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/auditmanager_assessment#name CcAssessment#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/auditmanager_assessment#name CcAssessment#name}
     */
     readonly name?: string;
 }
@@ -1621,7 +1622,7 @@ export interface AWSServiceProperty {
     /**
     * The name of the AWS service.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/auditmanager_assessment#service_name CcAssessment#service_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/auditmanager_assessment#service_name CcAssessment#service_name}
     */
     readonly serviceName?: string;
 }
@@ -1709,13 +1710,13 @@ export interface ScopeProperty {
     /**
     * The AWS accounts included in scope.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/auditmanager_assessment#aws_accounts CcAssessment#aws_accounts}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/auditmanager_assessment#aws_accounts CcAssessment#aws_accounts}
     */
     readonly awsAccounts?: AwsAccountsProperty[] | cdktn.IResolvable;
     /**
     * The AWS services included in scope.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/auditmanager_assessment#aws_services CcAssessment#aws_services}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/auditmanager_assessment#aws_services CcAssessment#aws_services}
     */
     readonly awsServices?: AWSServiceProperty[] | cdktn.IResolvable;
 }
@@ -1803,13 +1804,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 127 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/auditmanager_assessment#key CcAssessment#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/auditmanager_assessment#key CcAssessment#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 1 to 255 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/auditmanager_assessment#value CcAssessment#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/auditmanager_assessment#value CcAssessment#value}
     */
     readonly value?: string;
 }

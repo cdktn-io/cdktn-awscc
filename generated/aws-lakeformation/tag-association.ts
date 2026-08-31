@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lakeformation_tag_association
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lakeformation_tag_association
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,19 +9,19 @@ export interface CcTagAssociationProps extends cdktn.TerraformMetaArguments {
     /**
     * List of Lake Formation Tags to associate with the Lake Formation Resource
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lakeformation_tag_association#lf_tags CcTagAssociation#lf_tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lakeformation_tag_association#lf_tags CcTagAssociation#lf_tags}
     */
     readonly lfTags: CcTagAssociation.LFTagPairProperty[] | cdktn.IResolvable;
     /**
     * Resource to tag with the Lake Formation Tags
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lakeformation_tag_association#resource CcTagAssociation#resource}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lakeformation_tag_association#resource CcTagAssociation#resource}
     */
     readonly resource: CcTagAssociation.ResourceProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lakeformation_tag_association awscc_lakeformation_tag_association}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lakeformation_tag_association awscc_lakeformation_tag_association}
 */
 export class CcTagAssociation extends cdktn.TerraformResource {
 
@@ -37,7 +37,7 @@ export class CcTagAssociation extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcTagAssociation resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcTagAssociation to import
-    * @param importFromId The id of the existing CcTagAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lakeformation_tag_association#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcTagAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lakeformation_tag_association#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcTagAssociation to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -49,7 +49,7 @@ export class CcTagAssociation extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lakeformation_tag_association awscc_lakeformation_tag_association} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lakeformation_tag_association awscc_lakeformation_tag_association} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -59,7 +59,8 @@ export class CcTagAssociation extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_lakeformation_tag_association',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -387,15 +388,15 @@ export function ccTagAssociationResourcePropertyToHclTerraform(struct?: CcTagAss
 export namespace CcTagAssociation {
 export interface LFTagPairProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lakeformation_tag_association#catalog_id CcTagAssociation#catalog_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lakeformation_tag_association#catalog_id CcTagAssociation#catalog_id}
     */
     readonly catalogId: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lakeformation_tag_association#tag_key CcTagAssociation#tag_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lakeformation_tag_association#tag_key CcTagAssociation#tag_key}
     */
     readonly tagKey: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lakeformation_tag_association#tag_values CcTagAssociation#tag_values}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lakeformation_tag_association#tag_values CcTagAssociation#tag_values}
     */
     readonly tagValues: string[];
 }
@@ -516,11 +517,11 @@ export class LFTagPairPropertyList extends cdktn.ComplexList {
 }
 export interface DatabaseResourceProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lakeformation_tag_association#catalog_id CcTagAssociation#catalog_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lakeformation_tag_association#catalog_id CcTagAssociation#catalog_id}
     */
     readonly catalogId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lakeformation_tag_association#name CcTagAssociation#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lakeformation_tag_association#name CcTagAssociation#name}
     */
     readonly name?: string;
 }
@@ -606,19 +607,19 @@ export class DatabaseResourcePropertyOutputReference extends cdktn.ComplexObject
 }
 export interface TableResourceProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lakeformation_tag_association#catalog_id CcTagAssociation#catalog_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lakeformation_tag_association#catalog_id CcTagAssociation#catalog_id}
     */
     readonly catalogId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lakeformation_tag_association#database_name CcTagAssociation#database_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lakeformation_tag_association#database_name CcTagAssociation#database_name}
     */
     readonly databaseName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lakeformation_tag_association#name CcTagAssociation#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lakeformation_tag_association#name CcTagAssociation#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lakeformation_tag_association#table_wildcard CcTagAssociation#table_wildcard}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lakeformation_tag_association#table_wildcard CcTagAssociation#table_wildcard}
     */
     readonly tableWildcard?: string;
 }
@@ -748,19 +749,19 @@ export class TableResourcePropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface TableWithColumnsResourceProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lakeformation_tag_association#catalog_id CcTagAssociation#catalog_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lakeformation_tag_association#catalog_id CcTagAssociation#catalog_id}
     */
     readonly catalogId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lakeformation_tag_association#column_names CcTagAssociation#column_names}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lakeformation_tag_association#column_names CcTagAssociation#column_names}
     */
     readonly columnNames?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lakeformation_tag_association#database_name CcTagAssociation#database_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lakeformation_tag_association#database_name CcTagAssociation#database_name}
     */
     readonly databaseName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lakeformation_tag_association#name CcTagAssociation#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lakeformation_tag_association#name CcTagAssociation#name}
     */
     readonly name?: string;
 }
@@ -890,19 +891,19 @@ export class TableWithColumnsResourcePropertyOutputReference extends cdktn.Compl
 }
 export interface ResourceProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lakeformation_tag_association#catalog CcTagAssociation#catalog}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lakeformation_tag_association#catalog CcTagAssociation#catalog}
     */
     readonly catalog?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lakeformation_tag_association#database CcTagAssociation#database}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lakeformation_tag_association#database CcTagAssociation#database}
     */
     readonly database?: DatabaseResourceProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lakeformation_tag_association#table CcTagAssociation#table}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lakeformation_tag_association#table CcTagAssociation#table}
     */
     readonly table?: TableResourceProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lakeformation_tag_association#table_with_columns CcTagAssociation#table_with_columns}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lakeformation_tag_association#table_with_columns CcTagAssociation#table_with_columns}
     */
     readonly tableWithColumns?: TableWithColumnsResourceProperty;
 }

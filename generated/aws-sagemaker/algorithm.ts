@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_algorithm
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_algorithm
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,39 +9,39 @@ export interface CcAlgorithmProps extends cdktn.TerraformMetaArguments {
     /**
     * A description of the algorithm.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_algorithm#algorithm_description CcAlgorithm#algorithm_description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_algorithm#algorithm_description CcAlgorithm#algorithm_description}
     */
     readonly algorithmDescription?: string;
     /**
     * The name of the algorithm.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_algorithm#algorithm_name CcAlgorithm#algorithm_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_algorithm#algorithm_name CcAlgorithm#algorithm_name}
     */
     readonly algorithmName: string;
     /**
     * Whether to certify the algorithm so that it can be listed in AWS Marketplace.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_algorithm#certify_for_marketplace CcAlgorithm#certify_for_marketplace}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_algorithm#certify_for_marketplace CcAlgorithm#certify_for_marketplace}
     */
     readonly certifyForMarketplace?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_algorithm#inference_specification CcAlgorithm#inference_specification}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_algorithm#inference_specification CcAlgorithm#inference_specification}
     */
     readonly inferenceSpecification?: CcAlgorithm.InferenceSpecificationProperty;
     /**
     * An array of key-value pairs to apply to this resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_algorithm#tags CcAlgorithm#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_algorithm#tags CcAlgorithm#tags}
     */
     readonly tags?: CcAlgorithm.TagProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_algorithm#training_specification CcAlgorithm#training_specification}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_algorithm#training_specification CcAlgorithm#training_specification}
     */
     readonly trainingSpecification: CcAlgorithm.TrainingSpecificationProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_algorithm awscc_sagemaker_algorithm}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_algorithm awscc_sagemaker_algorithm}
 */
 export class CcAlgorithm extends cdktn.TerraformResource {
 
@@ -57,7 +57,7 @@ export class CcAlgorithm extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcAlgorithm resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcAlgorithm to import
-    * @param importFromId The id of the existing CcAlgorithm that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_algorithm#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcAlgorithm that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_algorithm#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcAlgorithm to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -69,7 +69,7 @@ export class CcAlgorithm extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_algorithm awscc_sagemaker_algorithm} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_algorithm awscc_sagemaker_algorithm} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -79,7 +79,8 @@ export class CcAlgorithm extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_sagemaker_algorithm',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -918,7 +919,7 @@ export function ccAlgorithmTrainingSpecificationPropertyToHclTerraform(struct?: 
 export namespace CcAlgorithm {
 export interface ModelInputProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_algorithm#data_input_config CcAlgorithm#data_input_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_algorithm#data_input_config CcAlgorithm#data_input_config}
     */
     readonly dataInputConfig?: string;
 }
@@ -982,39 +983,39 @@ export class ModelInputPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface ModelPackageContainerDefinitionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_algorithm#container_hostname CcAlgorithm#container_hostname}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_algorithm#container_hostname CcAlgorithm#container_hostname}
     */
     readonly containerHostname?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_algorithm#environment CcAlgorithm#environment}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_algorithm#environment CcAlgorithm#environment}
     */
     readonly environment?: { [key: string]: string };
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_algorithm#framework CcAlgorithm#framework}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_algorithm#framework CcAlgorithm#framework}
     */
     readonly framework?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_algorithm#framework_version CcAlgorithm#framework_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_algorithm#framework_version CcAlgorithm#framework_version}
     */
     readonly frameworkVersion?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_algorithm#image CcAlgorithm#image}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_algorithm#image CcAlgorithm#image}
     */
     readonly image?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_algorithm#image_digest CcAlgorithm#image_digest}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_algorithm#image_digest CcAlgorithm#image_digest}
     */
     readonly imageDigest?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_algorithm#is_checkpoint CcAlgorithm#is_checkpoint}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_algorithm#is_checkpoint CcAlgorithm#is_checkpoint}
     */
     readonly isCheckpoint?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_algorithm#model_input CcAlgorithm#model_input}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_algorithm#model_input CcAlgorithm#model_input}
     */
     readonly modelInput?: ModelInputProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_algorithm#nearest_model_name CcAlgorithm#nearest_model_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_algorithm#nearest_model_name CcAlgorithm#nearest_model_name}
     */
     readonly nearestModelName?: string;
 }
@@ -1276,23 +1277,23 @@ export class ModelPackageContainerDefinitionPropertyList extends cdktn.ComplexLi
 }
 export interface InferenceSpecificationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_algorithm#containers CcAlgorithm#containers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_algorithm#containers CcAlgorithm#containers}
     */
     readonly containers?: ModelPackageContainerDefinitionProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_algorithm#supported_content_types CcAlgorithm#supported_content_types}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_algorithm#supported_content_types CcAlgorithm#supported_content_types}
     */
     readonly supportedContentTypes?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_algorithm#supported_realtime_inference_instance_types CcAlgorithm#supported_realtime_inference_instance_types}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_algorithm#supported_realtime_inference_instance_types CcAlgorithm#supported_realtime_inference_instance_types}
     */
     readonly supportedRealtimeInferenceInstanceTypes?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_algorithm#supported_response_mime_types CcAlgorithm#supported_response_mime_types}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_algorithm#supported_response_mime_types CcAlgorithm#supported_response_mime_types}
     */
     readonly supportedResponseMimeTypes?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_algorithm#supported_transform_instance_types CcAlgorithm#supported_transform_instance_types}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_algorithm#supported_transform_instance_types CcAlgorithm#supported_transform_instance_types}
     */
     readonly supportedTransformInstanceTypes?: string[];
 }
@@ -1444,11 +1445,11 @@ export class InferenceSpecificationPropertyOutputReference extends cdktn.Complex
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_algorithm#key CcAlgorithm#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_algorithm#key CcAlgorithm#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_algorithm#value CcAlgorithm#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_algorithm#value CcAlgorithm#value}
     */
     readonly value?: string;
 }
@@ -1556,11 +1557,11 @@ export class TagPropertyList extends cdktn.ComplexList {
 }
 export interface MetricDefinitionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_algorithm#name CcAlgorithm#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_algorithm#name CcAlgorithm#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_algorithm#regex CcAlgorithm#regex}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_algorithm#regex CcAlgorithm#regex}
     */
     readonly regex?: string;
 }
@@ -1668,7 +1669,7 @@ export class MetricDefinitionPropertyList extends cdktn.ComplexList {
 }
 export interface CategoricalParameterRangeSpecificationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_algorithm#values CcAlgorithm#values}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_algorithm#values CcAlgorithm#values}
     */
     readonly values?: string[];
 }
@@ -1732,11 +1733,11 @@ export class CategoricalParameterRangeSpecificationPropertyOutputReference exten
 }
 export interface ContinuousParameterRangeSpecificationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_algorithm#max_value CcAlgorithm#max_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_algorithm#max_value CcAlgorithm#max_value}
     */
     readonly maxValue?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_algorithm#min_value CcAlgorithm#min_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_algorithm#min_value CcAlgorithm#min_value}
     */
     readonly minValue?: string;
 }
@@ -1822,11 +1823,11 @@ export class ContinuousParameterRangeSpecificationPropertyOutputReference extend
 }
 export interface IntegerParameterRangeSpecificationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_algorithm#max_value CcAlgorithm#max_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_algorithm#max_value CcAlgorithm#max_value}
     */
     readonly maxValue?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_algorithm#min_value CcAlgorithm#min_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_algorithm#min_value CcAlgorithm#min_value}
     */
     readonly minValue?: string;
 }
@@ -1912,15 +1913,15 @@ export class IntegerParameterRangeSpecificationPropertyOutputReference extends c
 }
 export interface ParameterRangeProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_algorithm#categorical_parameter_range_specification CcAlgorithm#categorical_parameter_range_specification}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_algorithm#categorical_parameter_range_specification CcAlgorithm#categorical_parameter_range_specification}
     */
     readonly categoricalParameterRangeSpecification?: CategoricalParameterRangeSpecificationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_algorithm#continuous_parameter_range_specification CcAlgorithm#continuous_parameter_range_specification}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_algorithm#continuous_parameter_range_specification CcAlgorithm#continuous_parameter_range_specification}
     */
     readonly continuousParameterRangeSpecification?: ContinuousParameterRangeSpecificationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_algorithm#integer_parameter_range_specification CcAlgorithm#integer_parameter_range_specification}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_algorithm#integer_parameter_range_specification CcAlgorithm#integer_parameter_range_specification}
     */
     readonly integerParameterRangeSpecification?: IntegerParameterRangeSpecificationProperty;
 }
@@ -2028,31 +2029,31 @@ export class ParameterRangePropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface HyperParameterSpecificationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_algorithm#default_value CcAlgorithm#default_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_algorithm#default_value CcAlgorithm#default_value}
     */
     readonly defaultValue?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_algorithm#description CcAlgorithm#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_algorithm#description CcAlgorithm#description}
     */
     readonly description?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_algorithm#is_required CcAlgorithm#is_required}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_algorithm#is_required CcAlgorithm#is_required}
     */
     readonly isRequired?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_algorithm#is_tunable CcAlgorithm#is_tunable}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_algorithm#is_tunable CcAlgorithm#is_tunable}
     */
     readonly isTunable?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_algorithm#name CcAlgorithm#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_algorithm#name CcAlgorithm#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_algorithm#range CcAlgorithm#range}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_algorithm#range CcAlgorithm#range}
     */
     readonly range?: ParameterRangeProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_algorithm#type CcAlgorithm#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_algorithm#type CcAlgorithm#type}
     */
     readonly type?: string;
 }
@@ -2270,11 +2271,11 @@ export class HyperParameterSpecificationPropertyList extends cdktn.ComplexList {
 }
 export interface HyperParameterTuningJobObjectiveProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_algorithm#metric_name CcAlgorithm#metric_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_algorithm#metric_name CcAlgorithm#metric_name}
     */
     readonly metricName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_algorithm#type CcAlgorithm#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_algorithm#type CcAlgorithm#type}
     */
     readonly type?: string;
 }
@@ -2382,27 +2383,27 @@ export class HyperParameterTuningJobObjectivePropertyList extends cdktn.ComplexL
 }
 export interface ChannelSpecificationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_algorithm#description CcAlgorithm#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_algorithm#description CcAlgorithm#description}
     */
     readonly description?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_algorithm#is_required CcAlgorithm#is_required}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_algorithm#is_required CcAlgorithm#is_required}
     */
     readonly isRequired?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_algorithm#name CcAlgorithm#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_algorithm#name CcAlgorithm#name}
     */
     readonly name: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_algorithm#supported_compression_types CcAlgorithm#supported_compression_types}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_algorithm#supported_compression_types CcAlgorithm#supported_compression_types}
     */
     readonly supportedCompressionTypes?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_algorithm#supported_content_types CcAlgorithm#supported_content_types}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_algorithm#supported_content_types CcAlgorithm#supported_content_types}
     */
     readonly supportedContentTypes: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_algorithm#supported_input_modes CcAlgorithm#supported_input_modes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_algorithm#supported_input_modes CcAlgorithm#supported_input_modes}
     */
     readonly supportedInputModes: string[];
 }
@@ -2589,35 +2590,35 @@ export class ChannelSpecificationPropertyList extends cdktn.ComplexList {
 }
 export interface TrainingSpecificationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_algorithm#metric_definitions CcAlgorithm#metric_definitions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_algorithm#metric_definitions CcAlgorithm#metric_definitions}
     */
     readonly metricDefinitions?: MetricDefinitionProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_algorithm#supported_hyper_parameters CcAlgorithm#supported_hyper_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_algorithm#supported_hyper_parameters CcAlgorithm#supported_hyper_parameters}
     */
     readonly supportedHyperParameters?: HyperParameterSpecificationProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_algorithm#supported_training_instance_types CcAlgorithm#supported_training_instance_types}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_algorithm#supported_training_instance_types CcAlgorithm#supported_training_instance_types}
     */
     readonly supportedTrainingInstanceTypes: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_algorithm#supported_tuning_job_objective_metrics CcAlgorithm#supported_tuning_job_objective_metrics}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_algorithm#supported_tuning_job_objective_metrics CcAlgorithm#supported_tuning_job_objective_metrics}
     */
     readonly supportedTuningJobObjectiveMetrics?: HyperParameterTuningJobObjectiveProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_algorithm#supports_distributed_training CcAlgorithm#supports_distributed_training}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_algorithm#supports_distributed_training CcAlgorithm#supports_distributed_training}
     */
     readonly supportsDistributedTraining?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_algorithm#training_channels CcAlgorithm#training_channels}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_algorithm#training_channels CcAlgorithm#training_channels}
     */
     readonly trainingChannels: ChannelSpecificationProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_algorithm#training_image CcAlgorithm#training_image}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_algorithm#training_image CcAlgorithm#training_image}
     */
     readonly trainingImage: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_algorithm#training_image_digest CcAlgorithm#training_image_digest}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_algorithm#training_image_digest CcAlgorithm#training_image_digest}
     */
     readonly trainingImageDigest?: string;
 }

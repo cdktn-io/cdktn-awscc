@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_type_activation
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_type_activation
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,43 +9,43 @@ export interface CcTypeActivationProps extends cdktn.TerraformMetaArguments {
     /**
     * Whether to automatically update the extension in this account and region when a new minor version is published by the extension publisher. Major versions released by the publisher must be manually updated.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_type_activation#auto_update CcTypeActivation#auto_update}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_type_activation#auto_update CcTypeActivation#auto_update}
     */
     readonly autoUpdate?: boolean | cdktn.IResolvable;
     /**
     * The Amazon Resource Name (ARN) of the IAM execution role to use to register the type. If your resource type calls AWS APIs in any of its handlers, you must create an IAM execution role that includes the necessary permissions to call those AWS APIs, and provision that execution role in your account. CloudFormation then assumes that execution role to provide your resource type with the appropriate credentials.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_type_activation#execution_role_arn CcTypeActivation#execution_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_type_activation#execution_role_arn CcTypeActivation#execution_role_arn}
     */
     readonly executionRoleArn?: string;
     /**
     * Specifies logging configuration information for a type.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_type_activation#logging_config CcTypeActivation#logging_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_type_activation#logging_config CcTypeActivation#logging_config}
     */
     readonly loggingConfig?: CcTypeActivation.LoggingConfigProperty;
     /**
     * The Major Version of the type you want to enable
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_type_activation#major_version CcTypeActivation#major_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_type_activation#major_version CcTypeActivation#major_version}
     */
     readonly majorVersion?: string;
     /**
     * The Amazon Resource Number (ARN) assigned to the public extension upon publication
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_type_activation#public_type_arn CcTypeActivation#public_type_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_type_activation#public_type_arn CcTypeActivation#public_type_arn}
     */
     readonly publicTypeArn?: string;
     /**
     * The reserved publisher id for this type, or the publisher id assigned by CloudFormation for publishing in this region.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_type_activation#publisher_id CcTypeActivation#publisher_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_type_activation#publisher_id CcTypeActivation#publisher_id}
     */
     readonly publisherId?: string;
     /**
     * The kind of extension
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_type_activation#type CcTypeActivation#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_type_activation#type CcTypeActivation#type}
     */
     readonly type?: string;
     /**
@@ -53,25 +53,25 @@ export interface CcTypeActivationProps extends cdktn.TerraformMetaArguments {
     * 
     * We recommend that type names adhere to the following pattern: company_or_organization::service::type.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_type_activation#type_name CcTypeActivation#type_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_type_activation#type_name CcTypeActivation#type_name}
     */
     readonly typeName?: string;
     /**
     * An alias to assign to the public extension in this account and region. If you specify an alias for the extension, you must then use the alias to refer to the extension in your templates.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_type_activation#type_name_alias CcTypeActivation#type_name_alias}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_type_activation#type_name_alias CcTypeActivation#type_name_alias}
     */
     readonly typeNameAlias?: string;
     /**
     * Manually updates a previously-enabled type to a new major or minor version, if available. You can also use this parameter to update the value of AutoUpdateEnabled
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_type_activation#version_bump CcTypeActivation#version_bump}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_type_activation#version_bump CcTypeActivation#version_bump}
     */
     readonly versionBump?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_type_activation awscc_cloudformation_type_activation}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_type_activation awscc_cloudformation_type_activation}
 */
 export class CcTypeActivation extends cdktn.TerraformResource {
 
@@ -87,7 +87,7 @@ export class CcTypeActivation extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcTypeActivation resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcTypeActivation to import
-    * @param importFromId The id of the existing CcTypeActivation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_type_activation#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcTypeActivation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_type_activation#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcTypeActivation to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -99,7 +99,7 @@ export class CcTypeActivation extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_type_activation awscc_cloudformation_type_activation} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_type_activation awscc_cloudformation_type_activation} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -109,7 +109,8 @@ export class CcTypeActivation extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_cloudformation_type_activation',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -435,13 +436,13 @@ export interface LoggingConfigProperty {
     /**
     * The Amazon CloudWatch log group to which CloudFormation sends error logging information when invoking the type's handlers.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_type_activation#log_group_name CcTypeActivation#log_group_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_type_activation#log_group_name CcTypeActivation#log_group_name}
     */
     readonly logGroupName?: string;
     /**
     * The ARN of the role that CloudFormation should assume when sending log entries to CloudWatch logs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_type_activation#log_role_arn CcTypeActivation#log_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_type_activation#log_role_arn CcTypeActivation#log_role_arn}
     */
     readonly logRoleArn?: string;
 }

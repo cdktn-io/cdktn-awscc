@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fis_experiment_template
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fis_experiment_template
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,53 +9,53 @@ export interface CcExperimentTemplateProps extends cdktn.TerraformMetaArguments 
     /**
     * The actions for the experiment.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fis_experiment_template#actions CcExperimentTemplate#actions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fis_experiment_template#actions CcExperimentTemplate#actions}
     */
     readonly actions?: { [key: string]: CcExperimentTemplate.ExperimentTemplateActionProperty } | cdktn.IResolvable;
     /**
     * A description for the experiment template.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fis_experiment_template#description CcExperimentTemplate#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fis_experiment_template#description CcExperimentTemplate#description}
     */
     readonly description: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fis_experiment_template#experiment_options CcExperimentTemplate#experiment_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fis_experiment_template#experiment_options CcExperimentTemplate#experiment_options}
     */
     readonly experimentOptions?: CcExperimentTemplate.ExperimentTemplateExperimentOptionsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fis_experiment_template#experiment_report_configuration CcExperimentTemplate#experiment_report_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fis_experiment_template#experiment_report_configuration CcExperimentTemplate#experiment_report_configuration}
     */
     readonly experimentReportConfiguration?: CcExperimentTemplate.ExperimentTemplateExperimentReportConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fis_experiment_template#log_configuration CcExperimentTemplate#log_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fis_experiment_template#log_configuration CcExperimentTemplate#log_configuration}
     */
     readonly logConfiguration?: CcExperimentTemplate.ExperimentTemplateLogConfigurationProperty;
     /**
     * The Amazon Resource Name (ARN) of an IAM role that grants the AWS FIS service permission to perform service actions on your behalf.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fis_experiment_template#role_arn CcExperimentTemplate#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fis_experiment_template#role_arn CcExperimentTemplate#role_arn}
     */
     readonly roleArn: string;
     /**
     * One or more stop conditions.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fis_experiment_template#stop_conditions CcExperimentTemplate#stop_conditions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fis_experiment_template#stop_conditions CcExperimentTemplate#stop_conditions}
     */
     readonly stopConditions: CcExperimentTemplate.ExperimentTemplateStopConditionProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fis_experiment_template#tags CcExperimentTemplate#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fis_experiment_template#tags CcExperimentTemplate#tags}
     */
     readonly tags?: { [key: string]: string };
     /**
     * The targets for the experiment.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fis_experiment_template#targets CcExperimentTemplate#targets}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fis_experiment_template#targets CcExperimentTemplate#targets}
     */
     readonly targets: { [key: string]: CcExperimentTemplate.ExperimentTemplateTargetProperty } | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fis_experiment_template awscc_fis_experiment_template}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fis_experiment_template awscc_fis_experiment_template}
 */
 export class CcExperimentTemplate extends cdktn.TerraformResource {
 
@@ -71,7 +71,7 @@ export class CcExperimentTemplate extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcExperimentTemplate resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcExperimentTemplate to import
-    * @param importFromId The id of the existing CcExperimentTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fis_experiment_template#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcExperimentTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fis_experiment_template#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcExperimentTemplate to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -83,7 +83,7 @@ export class CcExperimentTemplate extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fis_experiment_template awscc_fis_experiment_template} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fis_experiment_template awscc_fis_experiment_template} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -93,7 +93,8 @@ export class CcExperimentTemplate extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_fis_experiment_template',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -869,31 +870,31 @@ export interface ExperimentTemplateActionProperty {
     /**
     * The ID of the action.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fis_experiment_template#action_id CcExperimentTemplate#action_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fis_experiment_template#action_id CcExperimentTemplate#action_id}
     */
     readonly actionId?: string;
     /**
     * A description for the action.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fis_experiment_template#description CcExperimentTemplate#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fis_experiment_template#description CcExperimentTemplate#description}
     */
     readonly description?: string;
     /**
     * The parameters for the action, if applicable.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fis_experiment_template#parameters CcExperimentTemplate#parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fis_experiment_template#parameters CcExperimentTemplate#parameters}
     */
     readonly parameters?: { [key: string]: string };
     /**
     * The names of the actions that must be completed before the current action starts.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fis_experiment_template#start_after CcExperimentTemplate#start_after}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fis_experiment_template#start_after CcExperimentTemplate#start_after}
     */
     readonly startAfter?: string[];
     /**
     * One or more targets for the action.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fis_experiment_template#targets CcExperimentTemplate#targets}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fis_experiment_template#targets CcExperimentTemplate#targets}
     */
     readonly targets?: { [key: string]: string };
 }
@@ -1067,13 +1068,13 @@ export interface ExperimentTemplateExperimentOptionsProperty {
     /**
     * The account targeting setting for the experiment template.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fis_experiment_template#account_targeting CcExperimentTemplate#account_targeting}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fis_experiment_template#account_targeting CcExperimentTemplate#account_targeting}
     */
     readonly accountTargeting?: string;
     /**
     * The target resolution failure mode for the experiment template.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fis_experiment_template#empty_target_resolution_mode CcExperimentTemplate#empty_target_resolution_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fis_experiment_template#empty_target_resolution_mode CcExperimentTemplate#empty_target_resolution_mode}
     */
     readonly emptyTargetResolutionMode?: string;
 }
@@ -1159,7 +1160,7 @@ export class ExperimentTemplateExperimentOptionsPropertyOutputReference extends 
 }
 export interface CloudWatchDashboardProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fis_experiment_template#dashboard_identifier CcExperimentTemplate#dashboard_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fis_experiment_template#dashboard_identifier CcExperimentTemplate#dashboard_identifier}
     */
     readonly dashboardIdentifier?: string;
 }
@@ -1245,7 +1246,7 @@ export class CloudWatchDashboardPropertyList extends cdktn.ComplexList {
 }
 export interface DataSourcesProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fis_experiment_template#cloudwatch_dashboards CcExperimentTemplate#cloudwatch_dashboards}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fis_experiment_template#cloudwatch_dashboards CcExperimentTemplate#cloudwatch_dashboards}
     */
     readonly cloudwatchDashboards?: CloudWatchDashboardProperty[] | cdktn.IResolvable;
 }
@@ -1309,11 +1310,11 @@ export class DataSourcesPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface ExperimentReportS3ConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fis_experiment_template#bucket_name CcExperimentTemplate#bucket_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fis_experiment_template#bucket_name CcExperimentTemplate#bucket_name}
     */
     readonly bucketName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fis_experiment_template#prefix CcExperimentTemplate#prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fis_experiment_template#prefix CcExperimentTemplate#prefix}
     */
     readonly prefix?: string;
 }
@@ -1399,7 +1400,7 @@ export class ExperimentReportS3ConfigurationPropertyOutputReference extends cdkt
 }
 export interface OutputsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fis_experiment_template#experiment_report_s3_configuration CcExperimentTemplate#experiment_report_s3_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fis_experiment_template#experiment_report_s3_configuration CcExperimentTemplate#experiment_report_s3_configuration}
     */
     readonly experimentReportS3Configuration?: ExperimentReportS3ConfigurationProperty;
 }
@@ -1463,19 +1464,19 @@ export class OutputsPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface ExperimentTemplateExperimentReportConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fis_experiment_template#data_sources CcExperimentTemplate#data_sources}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fis_experiment_template#data_sources CcExperimentTemplate#data_sources}
     */
     readonly dataSources?: DataSourcesProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fis_experiment_template#outputs CcExperimentTemplate#outputs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fis_experiment_template#outputs CcExperimentTemplate#outputs}
     */
     readonly outputs?: OutputsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fis_experiment_template#post_experiment_duration CcExperimentTemplate#post_experiment_duration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fis_experiment_template#post_experiment_duration CcExperimentTemplate#post_experiment_duration}
     */
     readonly postExperimentDuration?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fis_experiment_template#pre_experiment_duration CcExperimentTemplate#pre_experiment_duration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fis_experiment_template#pre_experiment_duration CcExperimentTemplate#pre_experiment_duration}
     */
     readonly preExperimentDuration?: string;
 }
@@ -1605,7 +1606,7 @@ export class ExperimentTemplateExperimentReportConfigurationPropertyOutputRefere
 }
 export interface CloudWatchLogsConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fis_experiment_template#log_group_arn CcExperimentTemplate#log_group_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fis_experiment_template#log_group_arn CcExperimentTemplate#log_group_arn}
     */
     readonly logGroupArn?: string;
 }
@@ -1669,11 +1670,11 @@ export class CloudWatchLogsConfigurationPropertyOutputReference extends cdktn.Co
 }
 export interface S3ConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fis_experiment_template#bucket_name CcExperimentTemplate#bucket_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fis_experiment_template#bucket_name CcExperimentTemplate#bucket_name}
     */
     readonly bucketName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fis_experiment_template#prefix CcExperimentTemplate#prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fis_experiment_template#prefix CcExperimentTemplate#prefix}
     */
     readonly prefix?: string;
 }
@@ -1759,15 +1760,15 @@ export class S3ConfigurationPropertyOutputReference extends cdktn.ComplexObject 
 }
 export interface ExperimentTemplateLogConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fis_experiment_template#cloudwatch_logs_configuration CcExperimentTemplate#cloudwatch_logs_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fis_experiment_template#cloudwatch_logs_configuration CcExperimentTemplate#cloudwatch_logs_configuration}
     */
     readonly cloudwatchLogsConfiguration?: CloudWatchLogsConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fis_experiment_template#log_schema_version CcExperimentTemplate#log_schema_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fis_experiment_template#log_schema_version CcExperimentTemplate#log_schema_version}
     */
     readonly logSchemaVersion?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fis_experiment_template#s3_configuration CcExperimentTemplate#s3_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fis_experiment_template#s3_configuration CcExperimentTemplate#s3_configuration}
     */
     readonly s3Configuration?: S3ConfigurationProperty;
 }
@@ -1875,11 +1876,11 @@ export class ExperimentTemplateLogConfigurationPropertyOutputReference extends c
 }
 export interface ExperimentTemplateStopConditionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fis_experiment_template#source CcExperimentTemplate#source}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fis_experiment_template#source CcExperimentTemplate#source}
     */
     readonly source: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fis_experiment_template#value CcExperimentTemplate#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fis_experiment_template#value CcExperimentTemplate#value}
     */
     readonly value?: string;
 }
@@ -1986,13 +1987,13 @@ export interface ExperimentTemplateTargetFilterProperty {
     /**
     * The attribute path for the filter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fis_experiment_template#path CcExperimentTemplate#path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fis_experiment_template#path CcExperimentTemplate#path}
     */
     readonly path?: string;
     /**
     * The attribute values for the filter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fis_experiment_template#values CcExperimentTemplate#values}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fis_experiment_template#values CcExperimentTemplate#values}
     */
     readonly values?: string[];
 }
@@ -2100,33 +2101,33 @@ export class ExperimentTemplateTargetFilterPropertyList extends cdktn.ComplexLis
 }
 export interface ExperimentTemplateTargetProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fis_experiment_template#filters CcExperimentTemplate#filters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fis_experiment_template#filters CcExperimentTemplate#filters}
     */
     readonly filters?: ExperimentTemplateTargetFilterProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fis_experiment_template#parameters CcExperimentTemplate#parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fis_experiment_template#parameters CcExperimentTemplate#parameters}
     */
     readonly parameters?: { [key: string]: string };
     /**
     * The Amazon Resource Names (ARNs) of the target resources.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fis_experiment_template#resource_arns CcExperimentTemplate#resource_arns}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fis_experiment_template#resource_arns CcExperimentTemplate#resource_arns}
     */
     readonly resourceArns?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fis_experiment_template#resource_tags CcExperimentTemplate#resource_tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fis_experiment_template#resource_tags CcExperimentTemplate#resource_tags}
     */
     readonly resourceTags?: { [key: string]: string };
     /**
     * The AWS resource type. The resource type must be supported for the specified action.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fis_experiment_template#resource_type CcExperimentTemplate#resource_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fis_experiment_template#resource_type CcExperimentTemplate#resource_type}
     */
     readonly resourceType?: string;
     /**
     * Scopes the identified resources to a specific number of the resources at random, or a percentage of the resources.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fis_experiment_template#selection_mode CcExperimentTemplate#selection_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fis_experiment_template#selection_mode CcExperimentTemplate#selection_mode}
     */
     readonly selectionMode?: string;
 }

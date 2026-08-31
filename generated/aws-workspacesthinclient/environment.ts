@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesthinclient_environment
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesthinclient_environment
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,67 +9,67 @@ export interface CcEnvironmentProps extends cdktn.TerraformMetaArguments {
     /**
     * The ID of the software set to apply.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesthinclient_environment#desired_software_set_id CcEnvironment#desired_software_set_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesthinclient_environment#desired_software_set_id CcEnvironment#desired_software_set_id}
     */
     readonly desiredSoftwareSetId?: string;
     /**
     * The Amazon Resource Name (ARN) of the desktop to stream from Amazon WorkSpaces, WorkSpaces Web, or AppStream 2.0.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesthinclient_environment#desktop_arn CcEnvironment#desktop_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesthinclient_environment#desktop_arn CcEnvironment#desktop_arn}
     */
     readonly desktopArn: string;
     /**
     * The URL for the identity provider login (only for environments that use AppStream 2.0).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesthinclient_environment#desktop_endpoint CcEnvironment#desktop_endpoint}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesthinclient_environment#desktop_endpoint CcEnvironment#desktop_endpoint}
     */
     readonly desktopEndpoint?: string;
     /**
     * An array of key-value pairs to apply to the newly created devices for this environment.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesthinclient_environment#device_creation_tags CcEnvironment#device_creation_tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesthinclient_environment#device_creation_tags CcEnvironment#device_creation_tags}
     */
     readonly deviceCreationTags?: CcEnvironment.TagProperty[] | cdktn.IResolvable;
     /**
     * The Amazon Resource Name (ARN) of the AWS Key Management Service key used to encrypt the environment.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesthinclient_environment#kms_key_arn CcEnvironment#kms_key_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesthinclient_environment#kms_key_arn CcEnvironment#kms_key_arn}
     */
     readonly kmsKeyArn?: string;
     /**
     * A specification for a time window to apply software updates.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesthinclient_environment#maintenance_window CcEnvironment#maintenance_window}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesthinclient_environment#maintenance_window CcEnvironment#maintenance_window}
     */
     readonly maintenanceWindow?: CcEnvironment.MaintenanceWindowProperty;
     /**
     * The name of the environment.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesthinclient_environment#name CcEnvironment#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesthinclient_environment#name CcEnvironment#name}
     */
     readonly name?: string;
     /**
     * An option to define which software updates to apply.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesthinclient_environment#software_set_update_mode CcEnvironment#software_set_update_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesthinclient_environment#software_set_update_mode CcEnvironment#software_set_update_mode}
     */
     readonly softwareSetUpdateMode?: string;
     /**
     * An option to define if software updates should be applied within a maintenance window.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesthinclient_environment#software_set_update_schedule CcEnvironment#software_set_update_schedule}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesthinclient_environment#software_set_update_schedule CcEnvironment#software_set_update_schedule}
     */
     readonly softwareSetUpdateSchedule?: string;
     /**
     * An array of key-value pairs to apply to this resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesthinclient_environment#tags CcEnvironment#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesthinclient_environment#tags CcEnvironment#tags}
     */
     readonly tags?: CcEnvironment.TagsProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesthinclient_environment awscc_workspacesthinclient_environment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesthinclient_environment awscc_workspacesthinclient_environment}
 */
 export class CcEnvironment extends cdktn.TerraformResource {
 
@@ -85,7 +85,7 @@ export class CcEnvironment extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcEnvironment resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcEnvironment to import
-    * @param importFromId The id of the existing CcEnvironment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesthinclient_environment#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcEnvironment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesthinclient_environment#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcEnvironment to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -97,7 +97,7 @@ export class CcEnvironment extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesthinclient_environment awscc_workspacesthinclient_environment} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesthinclient_environment awscc_workspacesthinclient_environment} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -107,7 +107,8 @@ export class CcEnvironment extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_workspacesthinclient_environment',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -584,13 +585,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesthinclient_environment#key CcEnvironment#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesthinclient_environment#key CcEnvironment#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 1 to 256 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesthinclient_environment#value CcEnvironment#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesthinclient_environment#value CcEnvironment#value}
     */
     readonly value?: string;
 }
@@ -700,43 +701,43 @@ export interface MaintenanceWindowProperty {
     /**
     * The desired time zone maintenance window.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesthinclient_environment#apply_time_of CcEnvironment#apply_time_of}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesthinclient_environment#apply_time_of CcEnvironment#apply_time_of}
     */
     readonly applyTimeOf?: string;
     /**
     * The date of maintenance window.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesthinclient_environment#days_of_the_week CcEnvironment#days_of_the_week}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesthinclient_environment#days_of_the_week CcEnvironment#days_of_the_week}
     */
     readonly daysOfTheWeek?: string[];
     /**
     * The hour end time of maintenance window.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesthinclient_environment#end_time_hour CcEnvironment#end_time_hour}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesthinclient_environment#end_time_hour CcEnvironment#end_time_hour}
     */
     readonly endTimeHour?: number;
     /**
     * The minute end time of maintenance window.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesthinclient_environment#end_time_minute CcEnvironment#end_time_minute}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesthinclient_environment#end_time_minute CcEnvironment#end_time_minute}
     */
     readonly endTimeMinute?: number;
     /**
     * The hour start time of maintenance window.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesthinclient_environment#start_time_hour CcEnvironment#start_time_hour}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesthinclient_environment#start_time_hour CcEnvironment#start_time_hour}
     */
     readonly startTimeHour?: number;
     /**
     * The minute start time of maintenance window.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesthinclient_environment#start_time_minute CcEnvironment#start_time_minute}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesthinclient_environment#start_time_minute CcEnvironment#start_time_minute}
     */
     readonly startTimeMinute?: number;
     /**
     * The type of maintenance window.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesthinclient_environment#type CcEnvironment#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesthinclient_environment#type CcEnvironment#type}
     */
     readonly type?: string;
 }
@@ -934,13 +935,13 @@ export interface TagsProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesthinclient_environment#key CcEnvironment#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesthinclient_environment#key CcEnvironment#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 1 to 256 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesthinclient_environment#value CcEnvironment#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesthinclient_environment#value CcEnvironment#value}
     */
     readonly value?: string;
 }

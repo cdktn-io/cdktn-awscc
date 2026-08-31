@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_destination
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_destination
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,43 +9,43 @@ export interface CcDestinationProps extends cdktn.TerraformMetaArguments {
     /**
     * Destination description
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_destination#description CcDestination#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_destination#description CcDestination#description}
     */
     readonly description?: string;
     /**
     * Destination expression
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_destination#expression CcDestination#expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_destination#expression CcDestination#expression}
     */
     readonly expression: string;
     /**
     * Must be RuleName
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_destination#expression_type CcDestination#expression_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_destination#expression_type CcDestination#expression_type}
     */
     readonly expressionType: string;
     /**
     * Unique name of destination
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_destination#name CcDestination#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_destination#name CcDestination#name}
     */
     readonly name: string;
     /**
     * AWS role ARN that grants access
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_destination#role_arn CcDestination#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_destination#role_arn CcDestination#role_arn}
     */
     readonly roleArn?: string;
     /**
     * A list of key-value pairs that contain metadata for the destination.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_destination#tags CcDestination#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_destination#tags CcDestination#tags}
     */
     readonly tags?: CcDestination.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_destination awscc_iotwireless_destination}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_destination awscc_iotwireless_destination}
 */
 export class CcDestination extends cdktn.TerraformResource {
 
@@ -61,7 +61,7 @@ export class CcDestination extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcDestination resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcDestination to import
-    * @param importFromId The id of the existing CcDestination that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_destination#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcDestination that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_destination#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcDestination to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -73,7 +73,7 @@ export class CcDestination extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_destination awscc_iotwireless_destination} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_destination awscc_iotwireless_destination} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -83,7 +83,8 @@ export class CcDestination extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_iotwireless_destination',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -302,11 +303,11 @@ export function ccDestinationTagPropertyToHclTerraform(struct?: CcDestination.Ta
 export namespace CcDestination {
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_destination#key CcDestination#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_destination#key CcDestination#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_destination#value CcDestination#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_destination#value CcDestination#value}
     */
     readonly value?: string;
 }

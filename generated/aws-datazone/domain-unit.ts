@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_domain_unit
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_domain_unit
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,31 +9,31 @@ export interface CcDomainUnitProps extends cdktn.TerraformMetaArguments {
     /**
     * The description of the domain unit.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_domain_unit#description CcDomainUnit#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_domain_unit#description CcDomainUnit#description}
     */
     readonly description?: string;
     /**
     * The ID of the domain where you want to create a domain unit.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_domain_unit#domain_identifier CcDomainUnit#domain_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_domain_unit#domain_identifier CcDomainUnit#domain_identifier}
     */
     readonly domainIdentifier: string;
     /**
     * The name of the domain unit.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_domain_unit#name CcDomainUnit#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_domain_unit#name CcDomainUnit#name}
     */
     readonly name: string;
     /**
     * The ID of the parent domain unit.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_domain_unit#parent_domain_unit_identifier CcDomainUnit#parent_domain_unit_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_domain_unit#parent_domain_unit_identifier CcDomainUnit#parent_domain_unit_identifier}
     */
     readonly parentDomainUnitIdentifier: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_domain_unit awscc_datazone_domain_unit}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_domain_unit awscc_datazone_domain_unit}
 */
 export class CcDomainUnit extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CcDomainUnit extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcDomainUnit resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcDomainUnit to import
-    * @param importFromId The id of the existing CcDomainUnit that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_domain_unit#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcDomainUnit that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_domain_unit#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcDomainUnit to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CcDomainUnit extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_domain_unit awscc_datazone_domain_unit} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_domain_unit awscc_datazone_domain_unit} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -71,7 +71,8 @@ export class CcDomainUnit extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_datazone_domain_unit',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,

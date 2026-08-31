@@ -1,41 +1,41 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/verifiedpermissions_policy_store
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/verifiedpermissions_policy_store
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcPolicyStoreProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/verifiedpermissions_policy_store#deletion_protection CcPolicyStore#deletion_protection}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/verifiedpermissions_policy_store#deletion_protection CcPolicyStore#deletion_protection}
     */
     readonly deletionProtection?: CcPolicyStore.DeletionProtectionProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/verifiedpermissions_policy_store#description CcPolicyStore#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/verifiedpermissions_policy_store#description CcPolicyStore#description}
     */
     readonly description?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/verifiedpermissions_policy_store#encryption_settings CcPolicyStore#encryption_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/verifiedpermissions_policy_store#encryption_settings CcPolicyStore#encryption_settings}
     */
     readonly encryptionSettings?: CcPolicyStore.EncryptionSettingsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/verifiedpermissions_policy_store#schema CcPolicyStore#schema}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/verifiedpermissions_policy_store#schema CcPolicyStore#schema}
     */
     readonly schema?: CcPolicyStore.SchemaDefinitionProperty;
     /**
     * The tags to add to the policy store
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/verifiedpermissions_policy_store#tags CcPolicyStore#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/verifiedpermissions_policy_store#tags CcPolicyStore#tags}
     */
     readonly tags?: CcPolicyStore.TagProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/verifiedpermissions_policy_store#validation_settings CcPolicyStore#validation_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/verifiedpermissions_policy_store#validation_settings CcPolicyStore#validation_settings}
     */
     readonly validationSettings: CcPolicyStore.ValidationSettingsProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/verifiedpermissions_policy_store awscc_verifiedpermissions_policy_store}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/verifiedpermissions_policy_store awscc_verifiedpermissions_policy_store}
 */
 export class CcPolicyStore extends cdktn.TerraformResource {
 
@@ -51,7 +51,7 @@ export class CcPolicyStore extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcPolicyStore resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcPolicyStore to import
-    * @param importFromId The id of the existing CcPolicyStore that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/verifiedpermissions_policy_store#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcPolicyStore that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/verifiedpermissions_policy_store#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcPolicyStore to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -63,7 +63,7 @@ export class CcPolicyStore extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/verifiedpermissions_policy_store awscc_verifiedpermissions_policy_store} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/verifiedpermissions_policy_store awscc_verifiedpermissions_policy_store} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -73,7 +73,8 @@ export class CcPolicyStore extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_verifiedpermissions_policy_store',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -515,7 +516,7 @@ export function ccPolicyStoreValidationSettingsPropertyToHclTerraform(struct?: C
 export namespace CcPolicyStore {
 export interface DeletionProtectionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/verifiedpermissions_policy_store#mode CcPolicyStore#mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/verifiedpermissions_policy_store#mode CcPolicyStore#mode}
     */
     readonly mode?: string;
 }
@@ -579,11 +580,11 @@ export class DeletionProtectionPropertyOutputReference extends cdktn.ComplexObje
 }
 export interface KmsEncryptionSettingsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/verifiedpermissions_policy_store#encryption_context CcPolicyStore#encryption_context}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/verifiedpermissions_policy_store#encryption_context CcPolicyStore#encryption_context}
     */
     readonly encryptionContext?: { [key: string]: string };
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/verifiedpermissions_policy_store#key CcPolicyStore#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/verifiedpermissions_policy_store#key CcPolicyStore#key}
     */
     readonly key?: string;
 }
@@ -669,11 +670,11 @@ export class KmsEncryptionSettingsPropertyOutputReference extends cdktn.ComplexO
 }
 export interface EncryptionSettingsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/verifiedpermissions_policy_store#default CcPolicyStore#default}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/verifiedpermissions_policy_store#default CcPolicyStore#default}
     */
     readonly default?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/verifiedpermissions_policy_store#kms_encryption_settings CcPolicyStore#kms_encryption_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/verifiedpermissions_policy_store#kms_encryption_settings CcPolicyStore#kms_encryption_settings}
     */
     readonly kmsEncryptionSettings?: KmsEncryptionSettingsProperty;
 }
@@ -837,7 +838,7 @@ export class EncryptionStatePropertyOutputReference extends cdktn.ComplexObject 
 }
 export interface SchemaDefinitionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/verifiedpermissions_policy_store#cedar_json CcPolicyStore#cedar_json}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/verifiedpermissions_policy_store#cedar_json CcPolicyStore#cedar_json}
     */
     readonly cedarJson?: string;
 }
@@ -901,11 +902,11 @@ export class SchemaDefinitionPropertyOutputReference extends cdktn.ComplexObject
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/verifiedpermissions_policy_store#key CcPolicyStore#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/verifiedpermissions_policy_store#key CcPolicyStore#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/verifiedpermissions_policy_store#value CcPolicyStore#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/verifiedpermissions_policy_store#value CcPolicyStore#value}
     */
     readonly value?: string;
 }
@@ -1013,7 +1014,7 @@ export class TagPropertyList extends cdktn.ComplexList {
 }
 export interface ValidationSettingsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/verifiedpermissions_policy_store#mode CcPolicyStore#mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/verifiedpermissions_policy_store#mode CcPolicyStore#mode}
     */
     readonly mode: string;
 }

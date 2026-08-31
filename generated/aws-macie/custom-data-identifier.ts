@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/macie_custom_data_identifier
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/macie_custom_data_identifier
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,49 +9,49 @@ export interface CcCustomDataIdentifierProps extends cdktn.TerraformMetaArgument
     /**
     * Description of custom data identifier.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/macie_custom_data_identifier#description CcCustomDataIdentifier#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/macie_custom_data_identifier#description CcCustomDataIdentifier#description}
     */
     readonly description?: string;
     /**
     * Words to be ignored.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/macie_custom_data_identifier#ignore_words CcCustomDataIdentifier#ignore_words}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/macie_custom_data_identifier#ignore_words CcCustomDataIdentifier#ignore_words}
     */
     readonly ignoreWords?: string[];
     /**
     * Keywords to be matched against.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/macie_custom_data_identifier#keywords CcCustomDataIdentifier#keywords}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/macie_custom_data_identifier#keywords CcCustomDataIdentifier#keywords}
     */
     readonly keywords?: string[];
     /**
     * Maximum match distance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/macie_custom_data_identifier#maximum_match_distance CcCustomDataIdentifier#maximum_match_distance}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/macie_custom_data_identifier#maximum_match_distance CcCustomDataIdentifier#maximum_match_distance}
     */
     readonly maximumMatchDistance?: number;
     /**
     * Name of custom data identifier.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/macie_custom_data_identifier#name CcCustomDataIdentifier#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/macie_custom_data_identifier#name CcCustomDataIdentifier#name}
     */
     readonly name: string;
     /**
     * Regular expression for custom data identifier.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/macie_custom_data_identifier#regex CcCustomDataIdentifier#regex}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/macie_custom_data_identifier#regex CcCustomDataIdentifier#regex}
     */
     readonly regex: string;
     /**
     * A collection of tags associated with a resource
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/macie_custom_data_identifier#tags CcCustomDataIdentifier#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/macie_custom_data_identifier#tags CcCustomDataIdentifier#tags}
     */
     readonly tags?: CcCustomDataIdentifier.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/macie_custom_data_identifier awscc_macie_custom_data_identifier}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/macie_custom_data_identifier awscc_macie_custom_data_identifier}
 */
 export class CcCustomDataIdentifier extends cdktn.TerraformResource {
 
@@ -67,7 +67,7 @@ export class CcCustomDataIdentifier extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcCustomDataIdentifier resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcCustomDataIdentifier to import
-    * @param importFromId The id of the existing CcCustomDataIdentifier that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/macie_custom_data_identifier#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcCustomDataIdentifier that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/macie_custom_data_identifier#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcCustomDataIdentifier to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -79,7 +79,7 @@ export class CcCustomDataIdentifier extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/macie_custom_data_identifier awscc_macie_custom_data_identifier} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/macie_custom_data_identifier awscc_macie_custom_data_identifier} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -89,7 +89,8 @@ export class CcCustomDataIdentifier extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_macie_custom_data_identifier',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -342,13 +343,13 @@ export interface TagProperty {
     /**
     * The tag's key.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/macie_custom_data_identifier#key CcCustomDataIdentifier#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/macie_custom_data_identifier#key CcCustomDataIdentifier#key}
     */
     readonly key?: string;
     /**
     * The tag's value.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/macie_custom_data_identifier#value CcCustomDataIdentifier#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/macie_custom_data_identifier#value CcCustomDataIdentifier#value}
     */
     readonly value?: string;
 }

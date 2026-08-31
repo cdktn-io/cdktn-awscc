@@ -1,39 +1,39 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesweb_ip_access_settings
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_ip_access_settings
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcIpAccessSettingsProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesweb_ip_access_settings#additional_encryption_context CcIpAccessSettings#additional_encryption_context}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_ip_access_settings#additional_encryption_context CcIpAccessSettings#additional_encryption_context}
     */
     readonly additionalEncryptionContext?: { [key: string]: string };
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesweb_ip_access_settings#customer_managed_key CcIpAccessSettings#customer_managed_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_ip_access_settings#customer_managed_key CcIpAccessSettings#customer_managed_key}
     */
     readonly customerManagedKey?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesweb_ip_access_settings#description CcIpAccessSettings#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_ip_access_settings#description CcIpAccessSettings#description}
     */
     readonly description?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesweb_ip_access_settings#display_name CcIpAccessSettings#display_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_ip_access_settings#display_name CcIpAccessSettings#display_name}
     */
     readonly displayName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesweb_ip_access_settings#ip_rules CcIpAccessSettings#ip_rules}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_ip_access_settings#ip_rules CcIpAccessSettings#ip_rules}
     */
     readonly ipRules: CcIpAccessSettings.IpRuleProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesweb_ip_access_settings#tags CcIpAccessSettings#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_ip_access_settings#tags CcIpAccessSettings#tags}
     */
     readonly tags?: CcIpAccessSettings.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesweb_ip_access_settings awscc_workspacesweb_ip_access_settings}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_ip_access_settings awscc_workspacesweb_ip_access_settings}
 */
 export class CcIpAccessSettings extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CcIpAccessSettings extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcIpAccessSettings resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcIpAccessSettings to import
-    * @param importFromId The id of the existing CcIpAccessSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesweb_ip_access_settings#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcIpAccessSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_ip_access_settings#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcIpAccessSettings to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CcIpAccessSettings extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesweb_ip_access_settings awscc_workspacesweb_ip_access_settings} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_ip_access_settings awscc_workspacesweb_ip_access_settings} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -71,7 +71,8 @@ export class CcIpAccessSettings extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_workspacesweb_ip_access_settings',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -343,13 +344,13 @@ export function ccIpAccessSettingsTagPropertyToHclTerraform(struct?: CcIpAccessS
 export namespace CcIpAccessSettings {
 export interface IpRuleProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesweb_ip_access_settings#description CcIpAccessSettings#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_ip_access_settings#description CcIpAccessSettings#description}
     */
     readonly description?: string;
     /**
     * A single IP address or an IP address range in CIDR notation
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesweb_ip_access_settings#ip_range CcIpAccessSettings#ip_range}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_ip_access_settings#ip_range CcIpAccessSettings#ip_range}
     */
     readonly ipRange: string;
 }
@@ -454,11 +455,11 @@ export class IpRulePropertyList extends cdktn.ComplexList {
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesweb_ip_access_settings#key CcIpAccessSettings#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_ip_access_settings#key CcIpAccessSettings#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesweb_ip_access_settings#value CcIpAccessSettings#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_ip_access_settings#value CcIpAccessSettings#value}
     */
     readonly value?: string;
 }

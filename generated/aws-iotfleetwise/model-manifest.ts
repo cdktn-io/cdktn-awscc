@@ -1,39 +1,39 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotfleetwise_model_manifest
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_model_manifest
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcModelManifestProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotfleetwise_model_manifest#description CcModelManifest#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_model_manifest#description CcModelManifest#description}
     */
     readonly description?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotfleetwise_model_manifest#name CcModelManifest#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_model_manifest#name CcModelManifest#name}
     */
     readonly name: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotfleetwise_model_manifest#nodes CcModelManifest#nodes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_model_manifest#nodes CcModelManifest#nodes}
     */
     readonly nodes?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotfleetwise_model_manifest#signal_catalog_arn CcModelManifest#signal_catalog_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_model_manifest#signal_catalog_arn CcModelManifest#signal_catalog_arn}
     */
     readonly signalCatalogArn: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotfleetwise_model_manifest#status CcModelManifest#status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_model_manifest#status CcModelManifest#status}
     */
     readonly status?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotfleetwise_model_manifest#tags CcModelManifest#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_model_manifest#tags CcModelManifest#tags}
     */
     readonly tags?: CcModelManifest.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotfleetwise_model_manifest awscc_iotfleetwise_model_manifest}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_model_manifest awscc_iotfleetwise_model_manifest}
 */
 export class CcModelManifest extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CcModelManifest extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcModelManifest resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcModelManifest to import
-    * @param importFromId The id of the existing CcModelManifest that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotfleetwise_model_manifest#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcModelManifest that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_model_manifest#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcModelManifest to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CcModelManifest extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotfleetwise_model_manifest awscc_iotfleetwise_model_manifest} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_model_manifest awscc_iotfleetwise_model_manifest} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -71,7 +71,8 @@ export class CcModelManifest extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_iotfleetwise_model_manifest',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -303,11 +304,11 @@ export function ccModelManifestTagPropertyToHclTerraform(struct?: CcModelManifes
 export namespace CcModelManifest {
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotfleetwise_model_manifest#key CcModelManifest#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_model_manifest#key CcModelManifest#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotfleetwise_model_manifest#value CcModelManifest#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_model_manifest#value CcModelManifest#value}
     */
     readonly value?: string;
 }

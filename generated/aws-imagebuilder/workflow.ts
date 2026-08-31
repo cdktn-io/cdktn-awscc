@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_workflow
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_workflow
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,61 +9,61 @@ export interface CcWorkflowProps extends cdktn.TerraformMetaArguments {
     /**
     * The change description of the workflow.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_workflow#change_description CcWorkflow#change_description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_workflow#change_description CcWorkflow#change_description}
     */
     readonly changeDescription?: string;
     /**
     * The data of the workflow.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_workflow#data CcWorkflow#data}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_workflow#data CcWorkflow#data}
     */
     readonly data?: string;
     /**
     * The description of the workflow.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_workflow#description CcWorkflow#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_workflow#description CcWorkflow#description}
     */
     readonly description?: string;
     /**
     * The KMS key identifier used to encrypt the workflow.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_workflow#kms_key_id CcWorkflow#kms_key_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_workflow#kms_key_id CcWorkflow#kms_key_id}
     */
     readonly kmsKeyId?: string;
     /**
     * The name of the workflow.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_workflow#name CcWorkflow#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_workflow#name CcWorkflow#name}
     */
     readonly name: string;
     /**
     * The tags associated with the workflow.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_workflow#tags CcWorkflow#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_workflow#tags CcWorkflow#tags}
     */
     readonly tags?: { [key: string]: string };
     /**
     * The type of the workflow denotes whether the workflow is used to build, test, or distribute.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_workflow#type CcWorkflow#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_workflow#type CcWorkflow#type}
     */
     readonly type: string;
     /**
     * The uri of the workflow.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_workflow#uri CcWorkflow#uri}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_workflow#uri CcWorkflow#uri}
     */
     readonly uri?: string;
     /**
     * The version of the workflow.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_workflow#version CcWorkflow#version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_workflow#version CcWorkflow#version}
     */
     readonly version: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_workflow awscc_imagebuilder_workflow}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_workflow awscc_imagebuilder_workflow}
 */
 export class CcWorkflow extends cdktn.TerraformResource {
 
@@ -79,7 +79,7 @@ export class CcWorkflow extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcWorkflow resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcWorkflow to import
-    * @param importFromId The id of the existing CcWorkflow that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_workflow#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcWorkflow that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_workflow#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcWorkflow to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -91,7 +91,7 @@ export class CcWorkflow extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_workflow awscc_imagebuilder_workflow} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_workflow awscc_imagebuilder_workflow} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -101,7 +101,8 @@ export class CcWorkflow extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_imagebuilder_workflow',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,

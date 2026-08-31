@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/redshift_snapshot_schedule
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_snapshot_schedule
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,31 +9,31 @@ export interface CcSnapshotScheduleProps extends cdktn.TerraformMetaArguments {
     /**
     * The definition of the snapshot schedule. The definition is made up of schedule expressions, for example "cron(30 12 *)" or "rate(12 hours)".
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/redshift_snapshot_schedule#schedule_definitions CcSnapshotSchedule#schedule_definitions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_snapshot_schedule#schedule_definitions CcSnapshotSchedule#schedule_definitions}
     */
     readonly scheduleDefinitions: string[];
     /**
     * The description of the snapshot schedule.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/redshift_snapshot_schedule#schedule_description CcSnapshotSchedule#schedule_description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_snapshot_schedule#schedule_description CcSnapshotSchedule#schedule_description}
     */
     readonly scheduleDescription?: string;
     /**
     * A unique identifier for the snapshot schedule. Only alphanumeric characters are allowed.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/redshift_snapshot_schedule#schedule_identifier CcSnapshotSchedule#schedule_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_snapshot_schedule#schedule_identifier CcSnapshotSchedule#schedule_identifier}
     */
     readonly scheduleIdentifier: string;
     /**
     * An optional set of tags for the snapshot schedule.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/redshift_snapshot_schedule#tags CcSnapshotSchedule#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_snapshot_schedule#tags CcSnapshotSchedule#tags}
     */
     readonly tags?: CcSnapshotSchedule.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/redshift_snapshot_schedule awscc_redshift_snapshot_schedule}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_snapshot_schedule awscc_redshift_snapshot_schedule}
 */
 export class CcSnapshotSchedule extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CcSnapshotSchedule extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcSnapshotSchedule resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcSnapshotSchedule to import
-    * @param importFromId The id of the existing CcSnapshotSchedule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/redshift_snapshot_schedule#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcSnapshotSchedule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_snapshot_schedule#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcSnapshotSchedule to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CcSnapshotSchedule extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/redshift_snapshot_schedule awscc_redshift_snapshot_schedule} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_snapshot_schedule awscc_redshift_snapshot_schedule} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -71,7 +71,8 @@ export class CcSnapshotSchedule extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_redshift_snapshot_schedule',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -252,13 +253,13 @@ export interface TagProperty {
     /**
     * The key, or name, for the resource tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/redshift_snapshot_schedule#key CcSnapshotSchedule#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_snapshot_schedule#key CcSnapshotSchedule#key}
     */
     readonly key?: string;
     /**
     * The value for the resource tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/redshift_snapshot_schedule#value CcSnapshotSchedule#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_snapshot_schedule#value CcSnapshotSchedule#value}
     */
     readonly value?: string;
 }

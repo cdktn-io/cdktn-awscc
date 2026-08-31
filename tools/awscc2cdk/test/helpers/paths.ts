@@ -4,14 +4,29 @@ import * as path from "node:path";
 export const toolRoot = path.resolve(__dirname, "..", "..");
 /** cdktn-awscc */
 export const packageRoot = path.resolve(toolRoot, "..", "..");
-/** cdktn-grouped-resources */
+/**
+ * `cdktn-grouped-resources`, the frozen PoC workspace `cdktn-awscc/` was subtree-split out of —
+ * still correct for a `~/cdktn/cdktn-grouped-resources`-style checkout, but a standalone clone of
+ * `cdktn-io/cdktn-awscc` (what CI, and every other contributor, actually has) has nothing at this
+ * path. Only used by the small set of paths below that point at that workspace's `docs/` and
+ * `scripts/`, which are intentionally not part of this repo (see the workspace's own README,
+ * "Publishing to cdktn-io/cdktn-awscc" — "the evidence docs in this workspace's docs/ are
+ * intentionally not part of that repo"). Those paths — and only those — stay broken outside that
+ * one workspace checkout; the suites that hard-depend on them are excluded from `pnpm test` in
+ * `jest.config.js` (see the comment there) rather than silently left red. `fullSchemaPath` below
+ * is deliberately **not** derived from `repoRoot`: the schema is fetched fresh in every checkout
+ * (`pnpm schema:fetch` / CI), so it lives inside `packageRoot` instead, where a standalone clone
+ * can actually write it.
+ */
 export const repoRoot = path.resolve(packageRoot, "..");
 export const testRoot = path.resolve(toolRoot, "test");
 export const fixturesDir = path.join(testRoot, "fixtures");
 export const miniSchemaPath = path.join(fixturesDir, "awscc-mini.schema.json");
 export const goldenDir = path.join(fixturesDir, "golden");
 export const outDir = path.join(testRoot, "out");
-export const fullSchemaPath = path.join(repoRoot, "schemas", "schema.json");
+/** fetched by `pnpm schema:fetch` (`scripts/update-provider-schema.ts`) into the package itself —
+ * gitignored, not a sibling-workspace path — so a standalone clone is self-contained. */
+export const fullSchemaPath = path.join(packageRoot, "schemas", "schema.json");
 export const AWSCC_FQPN = "registry.terraform.io/hashicorp/awscc";
 
 /* ---- iteration 2 ---- */

@@ -20,9 +20,12 @@
     "test:jsii": "RUN_JSII=1 jest tools/awscc2cdk/test/step4.jsii.test.ts",
     "test:pacmak": "RUN_JSII=1 RUN_PACMAK=1 jest tools/awscc2cdk/test/step4.jsii.test.ts",
     "generate": "ts-node --transpile-only tools/awscc2cdk/bin/generate-all.ts",
+    "schema:fetch": "ts-node --transpile-only scripts/update-provider-schema.ts",
     "test:full-jsii": "RUN_FULL_JSII=1 jest tools/awscc2cdk/test/step6.full-jsii.test.ts",
+    "test:package": "RUN_FULL_JSII=1 jest tools/awscc2cdk/test/package.test.ts",
     "lazify": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"commonjs\",\"moduleResolution\":\"node\"}' ts-node --transpile-only tools/lazify/bin/lazify.ts",
-    "docgen": "ts-node --transpile-only tools/awscc2cdk/bin/docgen.ts aws-ec2 # runs jsii-docgen over the staged module"
+    "docgen": "ts-node --transpile-only tools/awscc2cdk/bin/docgen.ts aws-ec2 # runs jsii-docgen over the staged module",
+    "package": "ts-node --transpile-only tools/awscc2cdk/bin/package.ts"
   },
   "dependencies": {
     "@aws-cdk/aws-service-spec": "0.1.206",
@@ -45,6 +48,7 @@
     "jsii": "~5.9.53",
     "jsii-docgen": "^10.12.5",
     "jsii-pacmak": "^1.140.0",
+    "publib": "0.2.1061",
     "ts-jest": "^29.2.5",
     "ts-node": "10.9.2",
     "typescript": "~5.9.3"

@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/supportapp_slack_workspace_configuration
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/supportapp_slack_workspace_configuration
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,19 +9,19 @@ export interface CcSlackWorkspaceConfigurationProps extends cdktn.TerraformMetaA
     /**
     * The team ID in Slack, which uniquely identifies a workspace.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/supportapp_slack_workspace_configuration#team_id CcSlackWorkspaceConfiguration#team_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/supportapp_slack_workspace_configuration#team_id CcSlackWorkspaceConfiguration#team_id}
     */
     readonly teamId: string;
     /**
     * An identifier used to update an existing Slack workspace configuration in AWS CloudFormation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/supportapp_slack_workspace_configuration#version_id CcSlackWorkspaceConfiguration#version_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/supportapp_slack_workspace_configuration#version_id CcSlackWorkspaceConfiguration#version_id}
     */
     readonly versionId?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/supportapp_slack_workspace_configuration awscc_supportapp_slack_workspace_configuration}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/supportapp_slack_workspace_configuration awscc_supportapp_slack_workspace_configuration}
 */
 export class CcSlackWorkspaceConfiguration extends cdktn.TerraformResource {
 
@@ -37,7 +37,7 @@ export class CcSlackWorkspaceConfiguration extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcSlackWorkspaceConfiguration resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcSlackWorkspaceConfiguration to import
-    * @param importFromId The id of the existing CcSlackWorkspaceConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/supportapp_slack_workspace_configuration#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcSlackWorkspaceConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/supportapp_slack_workspace_configuration#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcSlackWorkspaceConfiguration to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -49,7 +49,7 @@ export class CcSlackWorkspaceConfiguration extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/supportapp_slack_workspace_configuration awscc_supportapp_slack_workspace_configuration} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/supportapp_slack_workspace_configuration awscc_supportapp_slack_workspace_configuration} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -59,7 +59,8 @@ export class CcSlackWorkspaceConfiguration extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_supportapp_slack_workspace_configuration',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,

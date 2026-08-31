@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_traffic_mirror_session
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_traffic_mirror_session
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,61 +9,61 @@ export interface CcTrafficMirrorSessionProps extends cdktn.TerraformMetaArgument
     /**
     * The description of the Traffic Mirror session.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_traffic_mirror_session#description CcTrafficMirrorSession#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_traffic_mirror_session#description CcTrafficMirrorSession#description}
     */
     readonly description?: string;
     /**
     * The ID of the source network interface.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_traffic_mirror_session#network_interface_id CcTrafficMirrorSession#network_interface_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_traffic_mirror_session#network_interface_id CcTrafficMirrorSession#network_interface_id}
     */
     readonly networkInterfaceId: string;
     /**
     * The ID of the account that owns the Traffic Mirror session.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_traffic_mirror_session#owner_id CcTrafficMirrorSession#owner_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_traffic_mirror_session#owner_id CcTrafficMirrorSession#owner_id}
     */
     readonly ownerId?: string;
     /**
     * The number of bytes in each packet to mirror.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_traffic_mirror_session#packet_length CcTrafficMirrorSession#packet_length}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_traffic_mirror_session#packet_length CcTrafficMirrorSession#packet_length}
     */
     readonly packetLength?: number;
     /**
     * The session number determines the order in which sessions are evaluated when an interface is used by multiple sessions. The first session with a matching filter is the one that mirrors the packets.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_traffic_mirror_session#session_number CcTrafficMirrorSession#session_number}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_traffic_mirror_session#session_number CcTrafficMirrorSession#session_number}
     */
     readonly sessionNumber: number;
     /**
     * The tags assigned to the Traffic Mirror session.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_traffic_mirror_session#tags CcTrafficMirrorSession#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_traffic_mirror_session#tags CcTrafficMirrorSession#tags}
     */
     readonly tags?: CcTrafficMirrorSession.TagProperty[] | cdktn.IResolvable;
     /**
     * The ID of a Traffic Mirror filter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_traffic_mirror_session#traffic_mirror_filter_id CcTrafficMirrorSession#traffic_mirror_filter_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_traffic_mirror_session#traffic_mirror_filter_id CcTrafficMirrorSession#traffic_mirror_filter_id}
     */
     readonly trafficMirrorFilterId: string;
     /**
     * The ID of a Traffic Mirror target.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_traffic_mirror_session#traffic_mirror_target_id CcTrafficMirrorSession#traffic_mirror_target_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_traffic_mirror_session#traffic_mirror_target_id CcTrafficMirrorSession#traffic_mirror_target_id}
     */
     readonly trafficMirrorTargetId: string;
     /**
     * The VXLAN ID for the Traffic Mirror session.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_traffic_mirror_session#virtual_network_id CcTrafficMirrorSession#virtual_network_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_traffic_mirror_session#virtual_network_id CcTrafficMirrorSession#virtual_network_id}
     */
     readonly virtualNetworkId?: number;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_traffic_mirror_session awscc_ec2_traffic_mirror_session}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_traffic_mirror_session awscc_ec2_traffic_mirror_session}
 */
 export class CcTrafficMirrorSession extends cdktn.TerraformResource {
 
@@ -79,7 +79,7 @@ export class CcTrafficMirrorSession extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcTrafficMirrorSession resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcTrafficMirrorSession to import
-    * @param importFromId The id of the existing CcTrafficMirrorSession that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_traffic_mirror_session#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcTrafficMirrorSession that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_traffic_mirror_session#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcTrafficMirrorSession to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -91,7 +91,7 @@ export class CcTrafficMirrorSession extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_traffic_mirror_session awscc_ec2_traffic_mirror_session} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_traffic_mirror_session awscc_ec2_traffic_mirror_session} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -101,7 +101,8 @@ export class CcTrafficMirrorSession extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_ec2_traffic_mirror_session',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -389,11 +390,11 @@ export function ccTrafficMirrorSessionTagPropertyToHclTerraform(struct?: CcTraff
 export namespace CcTrafficMirrorSession {
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_traffic_mirror_session#key CcTrafficMirrorSession#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_traffic_mirror_session#key CcTrafficMirrorSession#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_traffic_mirror_session#value CcTrafficMirrorSession#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_traffic_mirror_session#value CcTrafficMirrorSession#value}
     */
     readonly value?: string;
 }

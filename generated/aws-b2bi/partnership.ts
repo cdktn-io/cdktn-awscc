@@ -1,43 +1,43 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_partnership
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_partnership
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcPartnershipProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_partnership#capabilities CcPartnership#capabilities}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_partnership#capabilities CcPartnership#capabilities}
     */
     readonly capabilities: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_partnership#capability_options CcPartnership#capability_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_partnership#capability_options CcPartnership#capability_options}
     */
     readonly capabilityOptions?: CcPartnership.CapabilityOptionsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_partnership#email CcPartnership#email}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_partnership#email CcPartnership#email}
     */
     readonly email: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_partnership#name CcPartnership#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_partnership#name CcPartnership#name}
     */
     readonly name: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_partnership#phone CcPartnership#phone}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_partnership#phone CcPartnership#phone}
     */
     readonly phone?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_partnership#profile_id CcPartnership#profile_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_partnership#profile_id CcPartnership#profile_id}
     */
     readonly profileId: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_partnership#tags CcPartnership#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_partnership#tags CcPartnership#tags}
     */
     readonly tags?: CcPartnership.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_partnership awscc_b2bi_partnership}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_partnership awscc_b2bi_partnership}
 */
 export class CcPartnership extends cdktn.TerraformResource {
 
@@ -53,7 +53,7 @@ export class CcPartnership extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcPartnership resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcPartnership to import
-    * @param importFromId The id of the existing CcPartnership that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_partnership#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcPartnership that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_partnership#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcPartnership to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -65,7 +65,7 @@ export class CcPartnership extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_partnership awscc_b2bi_partnership} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_partnership awscc_b2bi_partnership} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -75,7 +75,8 @@ export class CcPartnership extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_b2bi_partnership',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -849,11 +850,11 @@ export function ccPartnershipTagPropertyToHclTerraform(struct?: CcPartnership.Ta
 export namespace CcPartnership {
 export interface X12AcknowledgmentOptionsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_partnership#functional_acknowledgment CcPartnership#functional_acknowledgment}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_partnership#functional_acknowledgment CcPartnership#functional_acknowledgment}
     */
     readonly functionalAcknowledgment?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_partnership#technical_acknowledgment CcPartnership#technical_acknowledgment}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_partnership#technical_acknowledgment CcPartnership#technical_acknowledgment}
     */
     readonly technicalAcknowledgment?: string;
 }
@@ -939,7 +940,7 @@ export class X12AcknowledgmentOptionsPropertyOutputReference extends cdktn.Compl
 }
 export interface X12InboundEdiOptionsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_partnership#acknowledgment_options CcPartnership#acknowledgment_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_partnership#acknowledgment_options CcPartnership#acknowledgment_options}
     */
     readonly acknowledgmentOptions?: X12AcknowledgmentOptionsProperty;
 }
@@ -1003,7 +1004,7 @@ export class X12InboundEdiOptionsPropertyOutputReference extends cdktn.ComplexOb
 }
 export interface InboundEdiOptionsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_partnership#x12 CcPartnership#x12}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_partnership#x12 CcPartnership#x12}
     */
     readonly x12?: X12InboundEdiOptionsProperty;
 }
@@ -1067,15 +1068,15 @@ export class InboundEdiOptionsPropertyOutputReference extends cdktn.ComplexObjec
 }
 export interface X12ControlNumbersProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_partnership#starting_functional_group_control_number CcPartnership#starting_functional_group_control_number}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_partnership#starting_functional_group_control_number CcPartnership#starting_functional_group_control_number}
     */
     readonly startingFunctionalGroupControlNumber?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_partnership#starting_interchange_control_number CcPartnership#starting_interchange_control_number}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_partnership#starting_interchange_control_number CcPartnership#starting_interchange_control_number}
     */
     readonly startingInterchangeControlNumber?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_partnership#starting_transaction_set_control_number CcPartnership#starting_transaction_set_control_number}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_partnership#starting_transaction_set_control_number CcPartnership#starting_transaction_set_control_number}
     */
     readonly startingTransactionSetControlNumber?: number;
 }
@@ -1183,15 +1184,15 @@ export class X12ControlNumbersPropertyOutputReference extends cdktn.ComplexObjec
 }
 export interface X12DelimitersProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_partnership#component_separator CcPartnership#component_separator}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_partnership#component_separator CcPartnership#component_separator}
     */
     readonly componentSeparator?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_partnership#data_element_separator CcPartnership#data_element_separator}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_partnership#data_element_separator CcPartnership#data_element_separator}
     */
     readonly dataElementSeparator?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_partnership#segment_terminator CcPartnership#segment_terminator}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_partnership#segment_terminator CcPartnership#segment_terminator}
     */
     readonly segmentTerminator?: string;
 }
@@ -1299,15 +1300,15 @@ export class X12DelimitersPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface X12FunctionalGroupHeadersProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_partnership#application_receiver_code CcPartnership#application_receiver_code}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_partnership#application_receiver_code CcPartnership#application_receiver_code}
     */
     readonly applicationReceiverCode?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_partnership#application_sender_code CcPartnership#application_sender_code}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_partnership#application_sender_code CcPartnership#application_sender_code}
     */
     readonly applicationSenderCode?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_partnership#responsible_agency_code CcPartnership#responsible_agency_code}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_partnership#responsible_agency_code CcPartnership#responsible_agency_code}
     */
     readonly responsibleAgencyCode?: string;
 }
@@ -1415,31 +1416,31 @@ export class X12FunctionalGroupHeadersPropertyOutputReference extends cdktn.Comp
 }
 export interface X12InterchangeControlHeadersProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_partnership#acknowledgment_requested_code CcPartnership#acknowledgment_requested_code}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_partnership#acknowledgment_requested_code CcPartnership#acknowledgment_requested_code}
     */
     readonly acknowledgmentRequestedCode?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_partnership#receiver_id CcPartnership#receiver_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_partnership#receiver_id CcPartnership#receiver_id}
     */
     readonly receiverId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_partnership#receiver_id_qualifier CcPartnership#receiver_id_qualifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_partnership#receiver_id_qualifier CcPartnership#receiver_id_qualifier}
     */
     readonly receiverIdQualifier?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_partnership#repetition_separator CcPartnership#repetition_separator}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_partnership#repetition_separator CcPartnership#repetition_separator}
     */
     readonly repetitionSeparator?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_partnership#sender_id CcPartnership#sender_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_partnership#sender_id CcPartnership#sender_id}
     */
     readonly senderId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_partnership#sender_id_qualifier CcPartnership#sender_id_qualifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_partnership#sender_id_qualifier CcPartnership#sender_id_qualifier}
     */
     readonly senderIdQualifier?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_partnership#usage_indicator_code CcPartnership#usage_indicator_code}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_partnership#usage_indicator_code CcPartnership#usage_indicator_code}
     */
     readonly usageIndicatorCode?: string;
 }
@@ -1635,27 +1636,27 @@ export class X12InterchangeControlHeadersPropertyOutputReference extends cdktn.C
 }
 export interface X12OutboundEdiHeadersProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_partnership#control_numbers CcPartnership#control_numbers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_partnership#control_numbers CcPartnership#control_numbers}
     */
     readonly controlNumbers?: X12ControlNumbersProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_partnership#delimiters CcPartnership#delimiters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_partnership#delimiters CcPartnership#delimiters}
     */
     readonly delimiters?: X12DelimitersProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_partnership#functional_group_headers CcPartnership#functional_group_headers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_partnership#functional_group_headers CcPartnership#functional_group_headers}
     */
     readonly functionalGroupHeaders?: X12FunctionalGroupHeadersProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_partnership#gs_05_time_format CcPartnership#gs_05_time_format}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_partnership#gs_05_time_format CcPartnership#gs_05_time_format}
     */
     readonly gs05TimeFormat?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_partnership#interchange_control_headers CcPartnership#interchange_control_headers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_partnership#interchange_control_headers CcPartnership#interchange_control_headers}
     */
     readonly interchangeControlHeaders?: X12InterchangeControlHeadersProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_partnership#validate_edi CcPartnership#validate_edi}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_partnership#validate_edi CcPartnership#validate_edi}
     */
     readonly validateEdi?: boolean | cdktn.IResolvable;
 }
@@ -1829,15 +1830,15 @@ export class X12OutboundEdiHeadersPropertyOutputReference extends cdktn.ComplexO
 }
 export interface WrapOptionsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_partnership#line_length CcPartnership#line_length}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_partnership#line_length CcPartnership#line_length}
     */
     readonly lineLength?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_partnership#line_terminator CcPartnership#line_terminator}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_partnership#line_terminator CcPartnership#line_terminator}
     */
     readonly lineTerminator?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_partnership#wrap_by CcPartnership#wrap_by}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_partnership#wrap_by CcPartnership#wrap_by}
     */
     readonly wrapBy?: string;
 }
@@ -1945,11 +1946,11 @@ export class WrapOptionsPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface X12EnvelopeProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_partnership#common CcPartnership#common}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_partnership#common CcPartnership#common}
     */
     readonly common?: X12OutboundEdiHeadersProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_partnership#wrap_options CcPartnership#wrap_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_partnership#wrap_options CcPartnership#wrap_options}
     */
     readonly wrapOptions?: WrapOptionsProperty;
 }
@@ -2035,7 +2036,7 @@ export class X12EnvelopePropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface OutboundEdiOptionsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_partnership#x12 CcPartnership#x12}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_partnership#x12 CcPartnership#x12}
     */
     readonly x12?: X12EnvelopeProperty;
 }
@@ -2099,11 +2100,11 @@ export class OutboundEdiOptionsPropertyOutputReference extends cdktn.ComplexObje
 }
 export interface CapabilityOptionsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_partnership#inbound_edi CcPartnership#inbound_edi}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_partnership#inbound_edi CcPartnership#inbound_edi}
     */
     readonly inboundEdi?: InboundEdiOptionsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_partnership#outbound_edi CcPartnership#outbound_edi}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_partnership#outbound_edi CcPartnership#outbound_edi}
     */
     readonly outboundEdi?: OutboundEdiOptionsProperty;
 }
@@ -2189,11 +2190,11 @@ export class CapabilityOptionsPropertyOutputReference extends cdktn.ComplexObjec
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_partnership#key CcPartnership#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_partnership#key CcPartnership#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_partnership#value CcPartnership#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_partnership#value CcPartnership#value}
     */
     readonly value?: string;
 }

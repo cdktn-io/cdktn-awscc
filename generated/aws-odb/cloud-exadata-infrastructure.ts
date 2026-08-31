@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/odb_cloud_exadata_infrastructure
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_exadata_infrastructure
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,73 +9,73 @@ export interface CcCloudExadataInfrastructureProps extends cdktn.TerraformMetaAr
     /**
     * The name of the Availability Zone (AZ) where the Exadata infrastructure is located.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/odb_cloud_exadata_infrastructure#availability_zone CcCloudExadataInfrastructure#availability_zone}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_exadata_infrastructure#availability_zone CcCloudExadataInfrastructure#availability_zone}
     */
     readonly availabilityZone?: string;
     /**
     * The AZ ID of the AZ where the Exadata infrastructure is located.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/odb_cloud_exadata_infrastructure#availability_zone_id CcCloudExadataInfrastructure#availability_zone_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_exadata_infrastructure#availability_zone_id CcCloudExadataInfrastructure#availability_zone_id}
     */
     readonly availabilityZoneId?: string;
     /**
     * The number of database servers for the Exadata infrastructure.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/odb_cloud_exadata_infrastructure#compute_count CcCloudExadataInfrastructure#compute_count}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_exadata_infrastructure#compute_count CcCloudExadataInfrastructure#compute_count}
     */
     readonly computeCount?: number;
     /**
     * The email addresses of contacts to receive notification from Oracle about maintenance updates for the Exadata infrastructure.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/odb_cloud_exadata_infrastructure#customer_contacts_to_send_to_oci CcCloudExadataInfrastructure#customer_contacts_to_send_to_oci}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_exadata_infrastructure#customer_contacts_to_send_to_oci CcCloudExadataInfrastructure#customer_contacts_to_send_to_oci}
     */
     readonly customerContactsToSendToOci?: CcCloudExadataInfrastructure.CustomerContactProperty[] | cdktn.IResolvable;
     /**
     * The database server model type of the Exadata infrastructure. For the list of valid model names, use the ListDbSystemShapes operation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/odb_cloud_exadata_infrastructure#database_server_type CcCloudExadataInfrastructure#database_server_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_exadata_infrastructure#database_server_type CcCloudExadataInfrastructure#database_server_type}
     */
     readonly databaseServerType?: string;
     /**
     * The user-friendly name for the Exadata infrastructure.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/odb_cloud_exadata_infrastructure#display_name CcCloudExadataInfrastructure#display_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_exadata_infrastructure#display_name CcCloudExadataInfrastructure#display_name}
     */
     readonly displayName?: string;
     /**
     * The scheduling details for the maintenance window. Patching and system updates take place during the maintenance window.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/odb_cloud_exadata_infrastructure#maintenance_window CcCloudExadataInfrastructure#maintenance_window}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_exadata_infrastructure#maintenance_window CcCloudExadataInfrastructure#maintenance_window}
     */
     readonly maintenanceWindow?: CcCloudExadataInfrastructure.MaintenanceWindowProperty;
     /**
     * The model name of the Exadata infrastructure.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/odb_cloud_exadata_infrastructure#shape CcCloudExadataInfrastructure#shape}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_exadata_infrastructure#shape CcCloudExadataInfrastructure#shape}
     */
     readonly shape?: string;
     /**
     * The number of storage servers that are activated for the Exadata infrastructure.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/odb_cloud_exadata_infrastructure#storage_count CcCloudExadataInfrastructure#storage_count}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_exadata_infrastructure#storage_count CcCloudExadataInfrastructure#storage_count}
     */
     readonly storageCount?: number;
     /**
     * The storage server model type of the Exadata infrastructure. For the list of valid model names, use the ListDbSystemShapes operation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/odb_cloud_exadata_infrastructure#storage_server_type CcCloudExadataInfrastructure#storage_server_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_exadata_infrastructure#storage_server_type CcCloudExadataInfrastructure#storage_server_type}
     */
     readonly storageServerType?: string;
     /**
     * Tags to assign to the Exadata Infrastructure.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/odb_cloud_exadata_infrastructure#tags CcCloudExadataInfrastructure#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_exadata_infrastructure#tags CcCloudExadataInfrastructure#tags}
     */
     readonly tags?: CcCloudExadataInfrastructure.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/odb_cloud_exadata_infrastructure awscc_odb_cloud_exadata_infrastructure}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_exadata_infrastructure awscc_odb_cloud_exadata_infrastructure}
 */
 export class CcCloudExadataInfrastructure extends cdktn.TerraformResource {
 
@@ -91,7 +91,7 @@ export class CcCloudExadataInfrastructure extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcCloudExadataInfrastructure resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcCloudExadataInfrastructure to import
-    * @param importFromId The id of the existing CcCloudExadataInfrastructure that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/odb_cloud_exadata_infrastructure#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcCloudExadataInfrastructure that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_exadata_infrastructure#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcCloudExadataInfrastructure to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -103,7 +103,7 @@ export class CcCloudExadataInfrastructure extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/odb_cloud_exadata_infrastructure awscc_odb_cloud_exadata_infrastructure} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_exadata_infrastructure awscc_odb_cloud_exadata_infrastructure} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -113,7 +113,8 @@ export class CcCloudExadataInfrastructure extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_odb_cloud_exadata_infrastructure',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -679,7 +680,7 @@ export interface CustomerContactProperty {
     /**
     * The email address of the contact.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/odb_cloud_exadata_infrastructure#email CcCloudExadataInfrastructure#email}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_exadata_infrastructure#email CcCloudExadataInfrastructure#email}
     */
     readonly email?: string;
 }
@@ -767,55 +768,55 @@ export interface MaintenanceWindowProperty {
     /**
     * The timeout duration for custom actions in minutes.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/odb_cloud_exadata_infrastructure#custom_action_timeout_in_mins CcCloudExadataInfrastructure#custom_action_timeout_in_mins}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_exadata_infrastructure#custom_action_timeout_in_mins CcCloudExadataInfrastructure#custom_action_timeout_in_mins}
     */
     readonly customActionTimeoutInMins?: number;
     /**
     * The days of the week when maintenance can be performed.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/odb_cloud_exadata_infrastructure#days_of_week CcCloudExadataInfrastructure#days_of_week}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_exadata_infrastructure#days_of_week CcCloudExadataInfrastructure#days_of_week}
     */
     readonly daysOfWeek?: string[];
     /**
     * The hours of the day when maintenance can be performed.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/odb_cloud_exadata_infrastructure#hours_of_day CcCloudExadataInfrastructure#hours_of_day}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_exadata_infrastructure#hours_of_day CcCloudExadataInfrastructure#hours_of_day}
     */
     readonly hoursOfDay?: number[];
     /**
     * Indicates whether custom action timeout is enabled.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/odb_cloud_exadata_infrastructure#is_custom_action_timeout_enabled CcCloudExadataInfrastructure#is_custom_action_timeout_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_exadata_infrastructure#is_custom_action_timeout_enabled CcCloudExadataInfrastructure#is_custom_action_timeout_enabled}
     */
     readonly isCustomActionTimeoutEnabled?: boolean | cdktn.IResolvable;
     /**
     * The lead time in weeks before the maintenance window.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/odb_cloud_exadata_infrastructure#lead_time_in_weeks CcCloudExadataInfrastructure#lead_time_in_weeks}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_exadata_infrastructure#lead_time_in_weeks CcCloudExadataInfrastructure#lead_time_in_weeks}
     */
     readonly leadTimeInWeeks?: number;
     /**
     * The months when maintenance can be performed.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/odb_cloud_exadata_infrastructure#months CcCloudExadataInfrastructure#months}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_exadata_infrastructure#months CcCloudExadataInfrastructure#months}
     */
     readonly months?: string[];
     /**
     * The patching mode for the maintenance window.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/odb_cloud_exadata_infrastructure#patching_mode CcCloudExadataInfrastructure#patching_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_exadata_infrastructure#patching_mode CcCloudExadataInfrastructure#patching_mode}
     */
     readonly patchingMode?: string;
     /**
     * The preference for the maintenance window scheduling.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/odb_cloud_exadata_infrastructure#preference CcCloudExadataInfrastructure#preference}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_exadata_infrastructure#preference CcCloudExadataInfrastructure#preference}
     */
     readonly preference?: string;
     /**
     * The weeks of the month when maintenance can be performed.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/odb_cloud_exadata_infrastructure#weeks_of_month CcCloudExadataInfrastructure#weeks_of_month}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_exadata_infrastructure#weeks_of_month CcCloudExadataInfrastructure#weeks_of_month}
     */
     readonly weeksOfMonth?: number[];
 }
@@ -1057,13 +1058,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that's 1 to 128 Unicode characters in length and can't be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., :, /, =, +, @, -, and ".
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/odb_cloud_exadata_infrastructure#key CcCloudExadataInfrastructure#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_exadata_infrastructure#key CcCloudExadataInfrastructure#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that's 1 to 256 characters in length. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/odb_cloud_exadata_infrastructure#value CcCloudExadataInfrastructure#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_exadata_infrastructure#value CcCloudExadataInfrastructure#value}
     */
     readonly value?: string;
 }

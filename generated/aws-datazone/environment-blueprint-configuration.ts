@@ -1,53 +1,53 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_environment_blueprint_configuration
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_environment_blueprint_configuration
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcEnvironmentBlueprintConfigurationProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_environment_blueprint_configuration#domain_identifier CcEnvironmentBlueprintConfiguration#domain_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_environment_blueprint_configuration#domain_identifier CcEnvironmentBlueprintConfiguration#domain_identifier}
     */
     readonly domainIdentifier: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_environment_blueprint_configuration#enabled_regions CcEnvironmentBlueprintConfiguration#enabled_regions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_environment_blueprint_configuration#enabled_regions CcEnvironmentBlueprintConfiguration#enabled_regions}
     */
     readonly enabledRegions: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_environment_blueprint_configuration#environment_blueprint_identifier CcEnvironmentBlueprintConfiguration#environment_blueprint_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_environment_blueprint_configuration#environment_blueprint_identifier CcEnvironmentBlueprintConfiguration#environment_blueprint_identifier}
     */
     readonly environmentBlueprintIdentifier: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_environment_blueprint_configuration#environment_role_permission_boundary CcEnvironmentBlueprintConfiguration#environment_role_permission_boundary}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_environment_blueprint_configuration#environment_role_permission_boundary CcEnvironmentBlueprintConfiguration#environment_role_permission_boundary}
     */
     readonly environmentRolePermissionBoundary?: string;
     /**
     * Region-agnostic environment blueprint parameters.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_environment_blueprint_configuration#global_parameters CcEnvironmentBlueprintConfiguration#global_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_environment_blueprint_configuration#global_parameters CcEnvironmentBlueprintConfiguration#global_parameters}
     */
     readonly globalParameters?: { [key: string]: string };
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_environment_blueprint_configuration#manage_access_role_arn CcEnvironmentBlueprintConfiguration#manage_access_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_environment_blueprint_configuration#manage_access_role_arn CcEnvironmentBlueprintConfiguration#manage_access_role_arn}
     */
     readonly manageAccessRoleArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_environment_blueprint_configuration#provisioning_configurations CcEnvironmentBlueprintConfiguration#provisioning_configurations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_environment_blueprint_configuration#provisioning_configurations CcEnvironmentBlueprintConfiguration#provisioning_configurations}
     */
     readonly provisioningConfigurations?: CcEnvironmentBlueprintConfiguration.ProvisioningConfigurationProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_environment_blueprint_configuration#provisioning_role_arn CcEnvironmentBlueprintConfiguration#provisioning_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_environment_blueprint_configuration#provisioning_role_arn CcEnvironmentBlueprintConfiguration#provisioning_role_arn}
     */
     readonly provisioningRoleArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_environment_blueprint_configuration#regional_parameters CcEnvironmentBlueprintConfiguration#regional_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_environment_blueprint_configuration#regional_parameters CcEnvironmentBlueprintConfiguration#regional_parameters}
     */
     readonly regionalParameters?: CcEnvironmentBlueprintConfiguration.RegionalParameterProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_environment_blueprint_configuration awscc_datazone_environment_blueprint_configuration}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_environment_blueprint_configuration awscc_datazone_environment_blueprint_configuration}
 */
 export class CcEnvironmentBlueprintConfiguration extends cdktn.TerraformResource {
 
@@ -63,7 +63,7 @@ export class CcEnvironmentBlueprintConfiguration extends cdktn.TerraformResource
     * Generates CDKTN code for importing a CcEnvironmentBlueprintConfiguration resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcEnvironmentBlueprintConfiguration to import
-    * @param importFromId The id of the existing CcEnvironmentBlueprintConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_environment_blueprint_configuration#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcEnvironmentBlueprintConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_environment_blueprint_configuration#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcEnvironmentBlueprintConfiguration to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -75,7 +75,7 @@ export class CcEnvironmentBlueprintConfiguration extends cdktn.TerraformResource
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_environment_blueprint_configuration awscc_datazone_environment_blueprint_configuration} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_environment_blueprint_configuration awscc_datazone_environment_blueprint_configuration} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -85,7 +85,8 @@ export class CcEnvironmentBlueprintConfiguration extends cdktn.TerraformResource
         super(scope, id, {
             terraformResourceType: 'awscc_datazone_environment_blueprint_configuration',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -458,11 +459,11 @@ export function ccEnvironmentBlueprintConfigurationRegionalParameterPropertyToHc
 export namespace CcEnvironmentBlueprintConfiguration {
 export interface LakeFormationConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_environment_blueprint_configuration#location_registration_exclude_s3_locations CcEnvironmentBlueprintConfiguration#location_registration_exclude_s3_locations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_environment_blueprint_configuration#location_registration_exclude_s3_locations CcEnvironmentBlueprintConfiguration#location_registration_exclude_s3_locations}
     */
     readonly locationRegistrationExcludeS3Locations?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_environment_blueprint_configuration#location_registration_role CcEnvironmentBlueprintConfiguration#location_registration_role}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_environment_blueprint_configuration#location_registration_role CcEnvironmentBlueprintConfiguration#location_registration_role}
     */
     readonly locationRegistrationRole?: string;
 }
@@ -548,7 +549,7 @@ export class LakeFormationConfigurationPropertyOutputReference extends cdktn.Com
 }
 export interface ProvisioningConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_environment_blueprint_configuration#lake_formation_configuration CcEnvironmentBlueprintConfiguration#lake_formation_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_environment_blueprint_configuration#lake_formation_configuration CcEnvironmentBlueprintConfiguration#lake_formation_configuration}
     */
     readonly lakeFormationConfiguration?: LakeFormationConfigurationProperty;
 }
@@ -634,11 +635,11 @@ export class ProvisioningConfigurationPropertyList extends cdktn.ComplexList {
 }
 export interface RegionalParameterProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_environment_blueprint_configuration#parameters CcEnvironmentBlueprintConfiguration#parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_environment_blueprint_configuration#parameters CcEnvironmentBlueprintConfiguration#parameters}
     */
     readonly parameters?: { [key: string]: string };
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_environment_blueprint_configuration#region CcEnvironmentBlueprintConfiguration#region}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_environment_blueprint_configuration#region CcEnvironmentBlueprintConfiguration#region}
     */
     readonly region?: string;
 }

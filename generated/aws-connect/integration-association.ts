@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_integration_association
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_integration_association
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,31 +9,31 @@ export interface CcIntegrationAssociationProps extends cdktn.TerraformMetaArgume
     /**
     * Amazon Connect instance identifier
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_integration_association#instance_id CcIntegrationAssociation#instance_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_integration_association#instance_id CcIntegrationAssociation#instance_id}
     */
     readonly instanceId: string;
     /**
     * ARN of Integration being associated with the instance
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_integration_association#integration_arn CcIntegrationAssociation#integration_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_integration_association#integration_arn CcIntegrationAssociation#integration_arn}
     */
     readonly integrationArn: string;
     /**
     * Specifies the integration type to be associated with the instance
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_integration_association#integration_type CcIntegrationAssociation#integration_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_integration_association#integration_type CcIntegrationAssociation#integration_type}
     */
     readonly integrationType: string;
     /**
     * The tags used to organize, track, or control access for this resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_integration_association#tags CcIntegrationAssociation#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_integration_association#tags CcIntegrationAssociation#tags}
     */
     readonly tags?: CcIntegrationAssociation.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_integration_association awscc_connect_integration_association}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_integration_association awscc_connect_integration_association}
 */
 export class CcIntegrationAssociation extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CcIntegrationAssociation extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcIntegrationAssociation resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcIntegrationAssociation to import
-    * @param importFromId The id of the existing CcIntegrationAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_integration_association#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcIntegrationAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_integration_association#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcIntegrationAssociation to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CcIntegrationAssociation extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_integration_association awscc_connect_integration_association} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_integration_association awscc_connect_integration_association} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -71,7 +71,8 @@ export class CcIntegrationAssociation extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_connect_integration_association',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -244,13 +245,13 @@ export interface TagProperty {
     /**
     * The key name of the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_integration_association#key CcIntegrationAssociation#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_integration_association#key CcIntegrationAssociation#key}
     */
     readonly key?: string;
     /**
     * The value for the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_integration_association#value CcIntegrationAssociation#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_integration_association#value CcIntegrationAssociation#value}
     */
     readonly value?: string;
 }

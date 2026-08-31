@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apprunner_service
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_service
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,59 +9,59 @@ export interface CcServiceProps extends cdktn.TerraformMetaArguments {
     /**
     * Autoscaling configuration ARN
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apprunner_service#auto_scaling_configuration_arn CcService#auto_scaling_configuration_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_service#auto_scaling_configuration_arn CcService#auto_scaling_configuration_arn}
     */
     readonly autoScalingConfigurationArn?: string;
     /**
     * Encryption configuration (KMS key)
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apprunner_service#encryption_configuration CcService#encryption_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_service#encryption_configuration CcService#encryption_configuration}
     */
     readonly encryptionConfiguration?: CcService.EncryptionConfigurationProperty;
     /**
     * Health check configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apprunner_service#health_check_configuration CcService#health_check_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_service#health_check_configuration CcService#health_check_configuration}
     */
     readonly healthCheckConfiguration?: CcService.HealthCheckConfigurationProperty;
     /**
     * Instance Configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apprunner_service#instance_configuration CcService#instance_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_service#instance_configuration CcService#instance_configuration}
     */
     readonly instanceConfiguration?: CcService.InstanceConfigurationProperty;
     /**
     * Network configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apprunner_service#network_configuration CcService#network_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_service#network_configuration CcService#network_configuration}
     */
     readonly networkConfiguration?: CcService.NetworkConfigurationProperty;
     /**
     * Service observability configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apprunner_service#observability_configuration CcService#observability_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_service#observability_configuration CcService#observability_configuration}
     */
     readonly observabilityConfiguration?: CcService.ServiceObservabilityConfigurationProperty;
     /**
     * The AppRunner Service Name.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apprunner_service#service_name CcService#service_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_service#service_name CcService#service_name}
     */
     readonly serviceName?: string;
     /**
     * Source Code configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apprunner_service#source_configuration CcService#source_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_service#source_configuration CcService#source_configuration}
     */
     readonly sourceConfiguration: CcService.SourceConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apprunner_service#tags CcService#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_service#tags CcService#tags}
     */
     readonly tags?: CcService.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apprunner_service awscc_apprunner_service}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_service awscc_apprunner_service}
 */
 export class CcService extends cdktn.TerraformResource {
 
@@ -77,7 +77,7 @@ export class CcService extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcService resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcService to import
-    * @param importFromId The id of the existing CcService that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apprunner_service#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcService that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_service#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcService to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -89,7 +89,7 @@ export class CcService extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apprunner_service awscc_apprunner_service} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_service awscc_apprunner_service} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -99,7 +99,8 @@ export class CcService extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_apprunner_service',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -1221,7 +1222,7 @@ export interface EncryptionConfigurationProperty {
     /**
     * The KMS Key
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apprunner_service#kms_key CcService#kms_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_service#kms_key CcService#kms_key}
     */
     readonly kmsKey?: string;
 }
@@ -1287,37 +1288,37 @@ export interface HealthCheckConfigurationProperty {
     /**
     * Health check Healthy Threshold
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apprunner_service#healthy_threshold CcService#healthy_threshold}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_service#healthy_threshold CcService#healthy_threshold}
     */
     readonly healthyThreshold?: number;
     /**
     * Health check Interval
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apprunner_service#interval CcService#interval}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_service#interval CcService#interval}
     */
     readonly interval?: number;
     /**
     * Health check Path
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apprunner_service#path CcService#path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_service#path CcService#path}
     */
     readonly path?: string;
     /**
     * Health Check Protocol
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apprunner_service#protocol CcService#protocol}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_service#protocol CcService#protocol}
     */
     readonly protocol?: string;
     /**
     * Health check Timeout
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apprunner_service#timeout CcService#timeout}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_service#timeout CcService#timeout}
     */
     readonly timeout?: number;
     /**
     * Health check Unhealthy Threshold
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apprunner_service#unhealthy_threshold CcService#unhealthy_threshold}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_service#unhealthy_threshold CcService#unhealthy_threshold}
     */
     readonly unhealthyThreshold?: number;
 }
@@ -1493,19 +1494,19 @@ export interface InstanceConfigurationProperty {
     /**
     * CPU
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apprunner_service#cpu CcService#cpu}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_service#cpu CcService#cpu}
     */
     readonly cpu?: string;
     /**
     * Instance Role Arn
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apprunner_service#instance_role_arn CcService#instance_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_service#instance_role_arn CcService#instance_role_arn}
     */
     readonly instanceRoleArn?: string;
     /**
     * Memory
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apprunner_service#memory CcService#memory}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_service#memory CcService#memory}
     */
     readonly memory?: string;
 }
@@ -1615,13 +1616,13 @@ export interface EgressConfigurationProperty {
     /**
     * Network egress type.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apprunner_service#egress_type CcService#egress_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_service#egress_type CcService#egress_type}
     */
     readonly egressType?: string;
     /**
     * The Amazon Resource Name (ARN) of the App Runner VpcConnector.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apprunner_service#vpc_connector_arn CcService#vpc_connector_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_service#vpc_connector_arn CcService#vpc_connector_arn}
     */
     readonly vpcConnectorArn?: string;
 }
@@ -1709,7 +1710,7 @@ export interface IngressConfigurationProperty {
     /**
     * It's set to true if the Apprunner service is publicly accessible. It's set to false otherwise.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apprunner_service#is_publicly_accessible CcService#is_publicly_accessible}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_service#is_publicly_accessible CcService#is_publicly_accessible}
     */
     readonly isPubliclyAccessible?: boolean | cdktn.IResolvable;
 }
@@ -1775,19 +1776,19 @@ export interface NetworkConfigurationProperty {
     /**
     * Network egress configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apprunner_service#egress_configuration CcService#egress_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_service#egress_configuration CcService#egress_configuration}
     */
     readonly egressConfiguration?: EgressConfigurationProperty;
     /**
     * Network ingress configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apprunner_service#ingress_configuration CcService#ingress_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_service#ingress_configuration CcService#ingress_configuration}
     */
     readonly ingressConfiguration?: IngressConfigurationProperty;
     /**
     * App Runner service endpoint IP address type
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apprunner_service#ip_address_type CcService#ip_address_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_service#ip_address_type CcService#ip_address_type}
     */
     readonly ipAddressType?: string;
 }
@@ -1897,13 +1898,13 @@ export interface ServiceObservabilityConfigurationProperty {
     /**
     * The Amazon Resource Name (ARN) of the App Runner ObservabilityConfiguration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apprunner_service#observability_configuration_arn CcService#observability_configuration_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_service#observability_configuration_arn CcService#observability_configuration_arn}
     */
     readonly observabilityConfigurationArn?: string;
     /**
     * Observability enabled
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apprunner_service#observability_enabled CcService#observability_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_service#observability_enabled CcService#observability_enabled}
     */
     readonly observabilityEnabled?: boolean | cdktn.IResolvable;
 }
@@ -1991,13 +1992,13 @@ export interface AuthenticationConfigurationProperty {
     /**
     * Access Role Arn
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apprunner_service#access_role_arn CcService#access_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_service#access_role_arn CcService#access_role_arn}
     */
     readonly accessRoleArn?: string;
     /**
     * Connection Arn
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apprunner_service#connection_arn CcService#connection_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_service#connection_arn CcService#connection_arn}
     */
     readonly connectionArn?: string;
 }
@@ -2083,11 +2084,11 @@ export class AuthenticationConfigurationPropertyOutputReference extends cdktn.Co
 }
 export interface KeyValuePairProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apprunner_service#name CcService#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_service#name CcService#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apprunner_service#value CcService#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_service#value CcService#value}
     */
     readonly value?: string;
 }
@@ -2195,11 +2196,11 @@ export class KeyValuePairPropertyList extends cdktn.ComplexList {
 }
 export interface SourceConfigurationCodeRepositoryCodeConfigurationCodeConfigurationValuesRuntimeEnvironmentVariablesProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apprunner_service#name CcService#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_service#name CcService#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apprunner_service#value CcService#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_service#value CcService#value}
     */
     readonly value?: string;
 }
@@ -2309,35 +2310,35 @@ export interface CodeConfigurationValuesProperty {
     /**
     * Build Command
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apprunner_service#build_command CcService#build_command}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_service#build_command CcService#build_command}
     */
     readonly buildCommand?: string;
     /**
     * Port
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apprunner_service#port CcService#port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_service#port CcService#port}
     */
     readonly port?: string;
     /**
     * Runtime
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apprunner_service#runtime CcService#runtime}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_service#runtime CcService#runtime}
     */
     readonly runtime?: string;
     /**
     * The secrets and parameters that get referenced by your service as environment variables
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apprunner_service#runtime_environment_secrets CcService#runtime_environment_secrets}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_service#runtime_environment_secrets CcService#runtime_environment_secrets}
     */
     readonly runtimeEnvironmentSecrets?: KeyValuePairProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apprunner_service#runtime_environment_variables CcService#runtime_environment_variables}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_service#runtime_environment_variables CcService#runtime_environment_variables}
     */
     readonly runtimeEnvironmentVariables?: SourceConfigurationCodeRepositoryCodeConfigurationCodeConfigurationValuesRuntimeEnvironmentVariablesProperty[] | cdktn.IResolvable;
     /**
     * Start Command
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apprunner_service#start_command CcService#start_command}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_service#start_command CcService#start_command}
     */
     readonly startCommand?: string;
 }
@@ -2513,13 +2514,13 @@ export interface CodeConfigurationProperty {
     /**
     * Code Configuration Values
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apprunner_service#code_configuration_values CcService#code_configuration_values}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_service#code_configuration_values CcService#code_configuration_values}
     */
     readonly codeConfigurationValues?: CodeConfigurationValuesProperty;
     /**
     * Configuration Source
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apprunner_service#configuration_source CcService#configuration_source}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_service#configuration_source CcService#configuration_source}
     */
     readonly configurationSource?: string;
 }
@@ -2607,13 +2608,13 @@ export interface SourceCodeVersionProperty {
     /**
     * Source Code Version Type
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apprunner_service#type CcService#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_service#type CcService#type}
     */
     readonly type?: string;
     /**
     * Source Code Version Value
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apprunner_service#value CcService#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_service#value CcService#value}
     */
     readonly value?: string;
 }
@@ -2701,25 +2702,25 @@ export interface CodeRepositoryProperty {
     /**
     * Code Configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apprunner_service#code_configuration CcService#code_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_service#code_configuration CcService#code_configuration}
     */
     readonly codeConfiguration?: CodeConfigurationProperty;
     /**
     * Repository Url
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apprunner_service#repository_url CcService#repository_url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_service#repository_url CcService#repository_url}
     */
     readonly repositoryUrl?: string;
     /**
     * Source Code Version
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apprunner_service#source_code_version CcService#source_code_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_service#source_code_version CcService#source_code_version}
     */
     readonly sourceCodeVersion?: SourceCodeVersionProperty;
     /**
     * Source Directory
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apprunner_service#source_directory CcService#source_directory}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_service#source_directory CcService#source_directory}
     */
     readonly sourceDirectory?: string;
 }
@@ -2849,11 +2850,11 @@ export class CodeRepositoryPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface RuntimeEnvironmentSecretsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apprunner_service#name CcService#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_service#name CcService#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apprunner_service#value CcService#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_service#value CcService#value}
     */
     readonly value?: string;
 }
@@ -2961,11 +2962,11 @@ export class RuntimeEnvironmentSecretsPropertyList extends cdktn.ComplexList {
 }
 export interface SourceConfigurationImageRepositoryImageConfigurationRuntimeEnvironmentVariablesProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apprunner_service#name CcService#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_service#name CcService#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apprunner_service#value CcService#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_service#value CcService#value}
     */
     readonly value?: string;
 }
@@ -3075,23 +3076,23 @@ export interface ImageConfigurationProperty {
     /**
     * Port
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apprunner_service#port CcService#port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_service#port CcService#port}
     */
     readonly port?: string;
     /**
     * The secrets and parameters that get referenced by your service as environment variables
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apprunner_service#runtime_environment_secrets CcService#runtime_environment_secrets}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_service#runtime_environment_secrets CcService#runtime_environment_secrets}
     */
     readonly runtimeEnvironmentSecrets?: RuntimeEnvironmentSecretsProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apprunner_service#runtime_environment_variables CcService#runtime_environment_variables}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_service#runtime_environment_variables CcService#runtime_environment_variables}
     */
     readonly runtimeEnvironmentVariables?: SourceConfigurationImageRepositoryImageConfigurationRuntimeEnvironmentVariablesProperty[] | cdktn.IResolvable;
     /**
     * Start Command
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apprunner_service#start_command CcService#start_command}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_service#start_command CcService#start_command}
     */
     readonly startCommand?: string;
 }
@@ -3223,19 +3224,19 @@ export interface ImageRepositoryProperty {
     /**
     * Image Configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apprunner_service#image_configuration CcService#image_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_service#image_configuration CcService#image_configuration}
     */
     readonly imageConfiguration?: ImageConfigurationProperty;
     /**
     * Image Identifier
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apprunner_service#image_identifier CcService#image_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_service#image_identifier CcService#image_identifier}
     */
     readonly imageIdentifier?: string;
     /**
     * Image Repository Type
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apprunner_service#image_repository_type CcService#image_repository_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_service#image_repository_type CcService#image_repository_type}
     */
     readonly imageRepositoryType?: string;
 }
@@ -3345,25 +3346,25 @@ export interface SourceConfigurationProperty {
     /**
     * Authentication Configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apprunner_service#authentication_configuration CcService#authentication_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_service#authentication_configuration CcService#authentication_configuration}
     */
     readonly authenticationConfiguration?: AuthenticationConfigurationProperty;
     /**
     * Auto Deployment enabled
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apprunner_service#auto_deployments_enabled CcService#auto_deployments_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_service#auto_deployments_enabled CcService#auto_deployments_enabled}
     */
     readonly autoDeploymentsEnabled?: boolean | cdktn.IResolvable;
     /**
     * Source Code Repository
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apprunner_service#code_repository CcService#code_repository}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_service#code_repository CcService#code_repository}
     */
     readonly codeRepository?: CodeRepositoryProperty;
     /**
     * Image Repository
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apprunner_service#image_repository CcService#image_repository}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_service#image_repository CcService#image_repository}
     */
     readonly imageRepository?: ImageRepositoryProperty;
 }
@@ -3493,11 +3494,11 @@ export class SourceConfigurationPropertyOutputReference extends cdktn.ComplexObj
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apprunner_service#key CcService#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_service#key CcService#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apprunner_service#value CcService#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_service#value CcService#value}
     */
     readonly value?: string;
 }

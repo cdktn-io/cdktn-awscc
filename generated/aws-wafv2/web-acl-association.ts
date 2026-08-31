@@ -1,23 +1,23 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/wafv2_web_acl_association
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wafv2_web_acl_association
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcWebACLAssociationProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/wafv2_web_acl_association#resource_arn CcWebACLAssociation#resource_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wafv2_web_acl_association#resource_arn CcWebACLAssociation#resource_arn}
     */
     readonly resourceArn: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/wafv2_web_acl_association#web_acl_arn CcWebACLAssociation#web_acl_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wafv2_web_acl_association#web_acl_arn CcWebACLAssociation#web_acl_arn}
     */
     readonly webAclArn: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/wafv2_web_acl_association awscc_wafv2_web_acl_association}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wafv2_web_acl_association awscc_wafv2_web_acl_association}
 */
 export class CcWebACLAssociation extends cdktn.TerraformResource {
 
@@ -33,7 +33,7 @@ export class CcWebACLAssociation extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcWebACLAssociation resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcWebACLAssociation to import
-    * @param importFromId The id of the existing CcWebACLAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/wafv2_web_acl_association#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcWebACLAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wafv2_web_acl_association#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcWebACLAssociation to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -45,7 +45,7 @@ export class CcWebACLAssociation extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/wafv2_web_acl_association awscc_wafv2_web_acl_association} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wafv2_web_acl_association awscc_wafv2_web_acl_association} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -55,7 +55,8 @@ export class CcWebACLAssociation extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_wafv2_web_acl_association',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,

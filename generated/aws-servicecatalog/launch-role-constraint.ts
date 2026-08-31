@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicecatalog_launch_role_constraint
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalog_launch_role_constraint
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,43 +9,43 @@ export interface CcLaunchRoleConstraintProps extends cdktn.TerraformMetaArgument
     /**
     * The language code for the constraint.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicecatalog_launch_role_constraint#accept_language CcLaunchRoleConstraint#accept_language}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalog_launch_role_constraint#accept_language CcLaunchRoleConstraint#accept_language}
     */
     readonly acceptLanguage?: string;
     /**
     * The description of the launch role constraint.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicecatalog_launch_role_constraint#description CcLaunchRoleConstraint#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalog_launch_role_constraint#description CcLaunchRoleConstraint#description}
     */
     readonly description?: string;
     /**
     * The local IAM role name to use in the launch constraint.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicecatalog_launch_role_constraint#local_role_name CcLaunchRoleConstraint#local_role_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalog_launch_role_constraint#local_role_name CcLaunchRoleConstraint#local_role_name}
     */
     readonly localRoleName?: string;
     /**
     * The ID of the portfolio to which this launch role constraint applies.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicecatalog_launch_role_constraint#portfolio_id CcLaunchRoleConstraint#portfolio_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalog_launch_role_constraint#portfolio_id CcLaunchRoleConstraint#portfolio_id}
     */
     readonly portfolioId: string;
     /**
     * The ID of the product to which this launch role constraint applies.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicecatalog_launch_role_constraint#product_id CcLaunchRoleConstraint#product_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalog_launch_role_constraint#product_id CcLaunchRoleConstraint#product_id}
     */
     readonly productId: string;
     /**
     * The ARN of the IAM role used for the launch constraint.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicecatalog_launch_role_constraint#role_arn CcLaunchRoleConstraint#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalog_launch_role_constraint#role_arn CcLaunchRoleConstraint#role_arn}
     */
     readonly roleArn?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicecatalog_launch_role_constraint awscc_servicecatalog_launch_role_constraint}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalog_launch_role_constraint awscc_servicecatalog_launch_role_constraint}
 */
 export class CcLaunchRoleConstraint extends cdktn.TerraformResource {
 
@@ -61,7 +61,7 @@ export class CcLaunchRoleConstraint extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcLaunchRoleConstraint resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcLaunchRoleConstraint to import
-    * @param importFromId The id of the existing CcLaunchRoleConstraint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicecatalog_launch_role_constraint#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcLaunchRoleConstraint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalog_launch_role_constraint#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcLaunchRoleConstraint to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -73,7 +73,7 @@ export class CcLaunchRoleConstraint extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicecatalog_launch_role_constraint awscc_servicecatalog_launch_role_constraint} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalog_launch_role_constraint awscc_servicecatalog_launch_role_constraint} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -83,7 +83,8 @@ export class CcLaunchRoleConstraint extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_servicecatalog_launch_role_constraint',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,

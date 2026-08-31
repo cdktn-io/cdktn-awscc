@@ -1,44 +1,44 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_usage_plan
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_usage_plan
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcUsagePlanProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_usage_plan#api_stages CcUsagePlan#api_stages}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_usage_plan#api_stages CcUsagePlan#api_stages}
     */
     readonly apiStages?: CcUsagePlan.ApiStageProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_usage_plan#description CcUsagePlan#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_usage_plan#description CcUsagePlan#description}
     */
     readonly description?: string;
     /**
     * ``QuotaSettings`` is a property of the [AWS::ApiGateway::UsagePlan](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-usageplan.html) resource that specifies a target for the maximum number of requests users can make to your REST APIs.
     *  In some cases clients can exceed the targets that you set. Don?t rely on usage plans to control costs. Consider using [](https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-managing-costs.html) to monitor costs and [](https://docs.aws.amazon.com/waf/latest/developerguide/waf-chapter.html) to manage API requests.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_usage_plan#quota CcUsagePlan#quota}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_usage_plan#quota CcUsagePlan#quota}
     */
     readonly quota?: CcUsagePlan.QuotaSettingsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_usage_plan#tags CcUsagePlan#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_usage_plan#tags CcUsagePlan#tags}
     */
     readonly tags?: CcUsagePlan.TagProperty[] | cdktn.IResolvable;
     /**
     * ``ThrottleSettings`` is a property of the [AWS::ApiGateway::UsagePlan](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-usageplan.html) resource that specifies the overall request rate (average requests per second) and burst capacity when users call your REST APIs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_usage_plan#throttle CcUsagePlan#throttle}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_usage_plan#throttle CcUsagePlan#throttle}
     */
     readonly throttle?: CcUsagePlan.ThrottleProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_usage_plan#usage_plan_name CcUsagePlan#usage_plan_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_usage_plan#usage_plan_name CcUsagePlan#usage_plan_name}
     */
     readonly usagePlanName?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_usage_plan awscc_apigateway_usage_plan}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_usage_plan awscc_apigateway_usage_plan}
 */
 export class CcUsagePlan extends cdktn.TerraformResource {
 
@@ -54,7 +54,7 @@ export class CcUsagePlan extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcUsagePlan resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcUsagePlan to import
-    * @param importFromId The id of the existing CcUsagePlan that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_usage_plan#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcUsagePlan that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_usage_plan#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcUsagePlan to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -66,7 +66,7 @@ export class CcUsagePlan extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_usage_plan awscc_apigateway_usage_plan} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_usage_plan awscc_apigateway_usage_plan} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -76,7 +76,8 @@ export class CcUsagePlan extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_apigateway_usage_plan',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -466,11 +467,11 @@ export function ccUsagePlanThrottlePropertyToHclTerraform(struct?: CcUsagePlan.T
 export namespace CcUsagePlan {
 export interface ThrottleSettingsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_usage_plan#burst_limit CcUsagePlan#burst_limit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_usage_plan#burst_limit CcUsagePlan#burst_limit}
     */
     readonly burstLimit?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_usage_plan#rate_limit CcUsagePlan#rate_limit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_usage_plan#rate_limit CcUsagePlan#rate_limit}
     */
     readonly rateLimit?: number;
 }
@@ -576,15 +577,15 @@ export class ThrottleSettingsPropertyMap extends cdktn.ComplexMap {
 }
 export interface ApiStageProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_usage_plan#api_id CcUsagePlan#api_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_usage_plan#api_id CcUsagePlan#api_id}
     */
     readonly apiId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_usage_plan#stage CcUsagePlan#stage}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_usage_plan#stage CcUsagePlan#stage}
     */
     readonly stage?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_usage_plan#throttle CcUsagePlan#throttle}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_usage_plan#throttle CcUsagePlan#throttle}
     */
     readonly throttle?: { [key: string]: ThrottleSettingsProperty } | cdktn.IResolvable;
 }
@@ -714,15 +715,15 @@ export class ApiStagePropertyList extends cdktn.ComplexList {
 }
 export interface QuotaSettingsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_usage_plan#limit CcUsagePlan#limit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_usage_plan#limit CcUsagePlan#limit}
     */
     readonly limit?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_usage_plan#offset CcUsagePlan#offset}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_usage_plan#offset CcUsagePlan#offset}
     */
     readonly offset?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_usage_plan#period CcUsagePlan#period}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_usage_plan#period CcUsagePlan#period}
     */
     readonly period?: string;
 }
@@ -832,13 +833,13 @@ export interface TagProperty {
     /**
     * A string you can use to assign a value. The combination of tag keys and values can help you organize and categorize your resources.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_usage_plan#key CcUsagePlan#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_usage_plan#key CcUsagePlan#key}
     */
     readonly key?: string;
     /**
     * The value for the specified tag key.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_usage_plan#value CcUsagePlan#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_usage_plan#value CcUsagePlan#value}
     */
     readonly value?: string;
 }
@@ -946,11 +947,11 @@ export class TagPropertyList extends cdktn.ComplexList {
 }
 export interface ThrottleProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_usage_plan#burst_limit CcUsagePlan#burst_limit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_usage_plan#burst_limit CcUsagePlan#burst_limit}
     */
     readonly burstLimit?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_usage_plan#rate_limit CcUsagePlan#rate_limit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_usage_plan#rate_limit CcUsagePlan#rate_limit}
     */
     readonly rateLimit?: number;
 }

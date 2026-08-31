@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/wafv2_regex_pattern_set
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wafv2_regex_pattern_set
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,33 +9,33 @@ export interface CcRegexPatternSetProps extends cdktn.TerraformMetaArguments {
     /**
     * Description of the entity.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/wafv2_regex_pattern_set#description CcRegexPatternSet#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wafv2_regex_pattern_set#description CcRegexPatternSet#description}
     */
     readonly description?: string;
     /**
     * Name of the RegexPatternSet.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/wafv2_regex_pattern_set#name CcRegexPatternSet#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wafv2_regex_pattern_set#name CcRegexPatternSet#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/wafv2_regex_pattern_set#regular_expression_list CcRegexPatternSet#regular_expression_list}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wafv2_regex_pattern_set#regular_expression_list CcRegexPatternSet#regular_expression_list}
     */
     readonly regularExpressionList: string[];
     /**
     * Use CLOUDFRONT for CloudFront RegexPatternSet, use REGIONAL for Application Load Balancer and API Gateway.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/wafv2_regex_pattern_set#scope CcRegexPatternSet#scope}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wafv2_regex_pattern_set#scope CcRegexPatternSet#scope}
     */
     readonly scope: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/wafv2_regex_pattern_set#tags CcRegexPatternSet#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wafv2_regex_pattern_set#tags CcRegexPatternSet#tags}
     */
     readonly tags?: CcRegexPatternSet.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/wafv2_regex_pattern_set awscc_wafv2_regex_pattern_set}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wafv2_regex_pattern_set awscc_wafv2_regex_pattern_set}
 */
 export class CcRegexPatternSet extends cdktn.TerraformResource {
 
@@ -51,7 +51,7 @@ export class CcRegexPatternSet extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcRegexPatternSet resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcRegexPatternSet to import
-    * @param importFromId The id of the existing CcRegexPatternSet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/wafv2_regex_pattern_set#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcRegexPatternSet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wafv2_regex_pattern_set#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcRegexPatternSet to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -63,7 +63,7 @@ export class CcRegexPatternSet extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/wafv2_regex_pattern_set awscc_wafv2_regex_pattern_set} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wafv2_regex_pattern_set awscc_wafv2_regex_pattern_set} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -73,7 +73,8 @@ export class CcRegexPatternSet extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_wafv2_regex_pattern_set',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -276,11 +277,11 @@ export function ccRegexPatternSetTagPropertyToHclTerraform(struct?: CcRegexPatte
 export namespace CcRegexPatternSet {
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/wafv2_regex_pattern_set#key CcRegexPatternSet#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wafv2_regex_pattern_set#key CcRegexPatternSet#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/wafv2_regex_pattern_set#value CcRegexPatternSet#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wafv2_regex_pattern_set#value CcRegexPatternSet#value}
     */
     readonly value?: string;
 }

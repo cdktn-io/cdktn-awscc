@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkmanager_site_to_site_vpn_attachment
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkmanager_site_to_site_vpn_attachment
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,49 +9,49 @@ export interface CcSiteToSiteVpnAttachmentProps extends cdktn.TerraformMetaArgum
     /**
     * The ID of a core network where you're creating a site-to-site VPN attachment.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkmanager_site_to_site_vpn_attachment#core_network_id CcSiteToSiteVpnAttachment#core_network_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkmanager_site_to_site_vpn_attachment#core_network_id CcSiteToSiteVpnAttachment#core_network_id}
     */
     readonly coreNetworkId: string;
     /**
     * The name of the network function group attachment.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkmanager_site_to_site_vpn_attachment#network_function_group_name CcSiteToSiteVpnAttachment#network_function_group_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkmanager_site_to_site_vpn_attachment#network_function_group_name CcSiteToSiteVpnAttachment#network_function_group_name}
     */
     readonly networkFunctionGroupName?: string;
     /**
     * The attachment to move from one network function group to another.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkmanager_site_to_site_vpn_attachment#proposed_network_function_group_change CcSiteToSiteVpnAttachment#proposed_network_function_group_change}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkmanager_site_to_site_vpn_attachment#proposed_network_function_group_change CcSiteToSiteVpnAttachment#proposed_network_function_group_change}
     */
     readonly proposedNetworkFunctionGroupChange?: CcSiteToSiteVpnAttachment.ProposedNetworkFunctionGroupChangeProperty;
     /**
     * The attachment to move from one segment to another.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkmanager_site_to_site_vpn_attachment#proposed_segment_change CcSiteToSiteVpnAttachment#proposed_segment_change}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkmanager_site_to_site_vpn_attachment#proposed_segment_change CcSiteToSiteVpnAttachment#proposed_segment_change}
     */
     readonly proposedSegmentChange?: CcSiteToSiteVpnAttachment.ProposedSegmentChangeProperty;
     /**
     * Routing policy label
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkmanager_site_to_site_vpn_attachment#routing_policy_label CcSiteToSiteVpnAttachment#routing_policy_label}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkmanager_site_to_site_vpn_attachment#routing_policy_label CcSiteToSiteVpnAttachment#routing_policy_label}
     */
     readonly routingPolicyLabel?: string;
     /**
     * Tags for the attachment.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkmanager_site_to_site_vpn_attachment#tags CcSiteToSiteVpnAttachment#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkmanager_site_to_site_vpn_attachment#tags CcSiteToSiteVpnAttachment#tags}
     */
     readonly tags?: CcSiteToSiteVpnAttachment.TagsProperty[] | cdktn.IResolvable;
     /**
     * The ARN of the site-to-site VPN attachment.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkmanager_site_to_site_vpn_attachment#vpn_connection_arn CcSiteToSiteVpnAttachment#vpn_connection_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkmanager_site_to_site_vpn_attachment#vpn_connection_arn CcSiteToSiteVpnAttachment#vpn_connection_arn}
     */
     readonly vpnConnectionArn: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkmanager_site_to_site_vpn_attachment awscc_networkmanager_site_to_site_vpn_attachment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkmanager_site_to_site_vpn_attachment awscc_networkmanager_site_to_site_vpn_attachment}
 */
 export class CcSiteToSiteVpnAttachment extends cdktn.TerraformResource {
 
@@ -67,7 +67,7 @@ export class CcSiteToSiteVpnAttachment extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcSiteToSiteVpnAttachment resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcSiteToSiteVpnAttachment to import
-    * @param importFromId The id of the existing CcSiteToSiteVpnAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkmanager_site_to_site_vpn_attachment#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcSiteToSiteVpnAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkmanager_site_to_site_vpn_attachment#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcSiteToSiteVpnAttachment to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -79,7 +79,7 @@ export class CcSiteToSiteVpnAttachment extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkmanager_site_to_site_vpn_attachment awscc_networkmanager_site_to_site_vpn_attachment} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkmanager_site_to_site_vpn_attachment awscc_networkmanager_site_to_site_vpn_attachment} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -89,7 +89,8 @@ export class CcSiteToSiteVpnAttachment extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_networkmanager_site_to_site_vpn_attachment',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -554,13 +555,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkmanager_site_to_site_vpn_attachment#key CcSiteToSiteVpnAttachment#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkmanager_site_to_site_vpn_attachment#key CcSiteToSiteVpnAttachment#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 0 to 256 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkmanager_site_to_site_vpn_attachment#value CcSiteToSiteVpnAttachment#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkmanager_site_to_site_vpn_attachment#value CcSiteToSiteVpnAttachment#value}
     */
     readonly value?: string;
 }
@@ -670,19 +671,19 @@ export interface ProposedNetworkFunctionGroupChangeProperty {
     /**
     * The rule number in the policy document that applies to this change.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkmanager_site_to_site_vpn_attachment#attachment_policy_rule_number CcSiteToSiteVpnAttachment#attachment_policy_rule_number}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkmanager_site_to_site_vpn_attachment#attachment_policy_rule_number CcSiteToSiteVpnAttachment#attachment_policy_rule_number}
     */
     readonly attachmentPolicyRuleNumber?: number;
     /**
     * The name of the network function group to change.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkmanager_site_to_site_vpn_attachment#network_function_group_name CcSiteToSiteVpnAttachment#network_function_group_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkmanager_site_to_site_vpn_attachment#network_function_group_name CcSiteToSiteVpnAttachment#network_function_group_name}
     */
     readonly networkFunctionGroupName?: string;
     /**
     * The key-value tags that changed for the network function group.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkmanager_site_to_site_vpn_attachment#tags CcSiteToSiteVpnAttachment#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkmanager_site_to_site_vpn_attachment#tags CcSiteToSiteVpnAttachment#tags}
     */
     readonly tags?: TagProperty[] | cdktn.IResolvable;
 }
@@ -792,13 +793,13 @@ export interface ProposedSegmentChangeTagsProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkmanager_site_to_site_vpn_attachment#key CcSiteToSiteVpnAttachment#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkmanager_site_to_site_vpn_attachment#key CcSiteToSiteVpnAttachment#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 0 to 256 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkmanager_site_to_site_vpn_attachment#value CcSiteToSiteVpnAttachment#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkmanager_site_to_site_vpn_attachment#value CcSiteToSiteVpnAttachment#value}
     */
     readonly value?: string;
 }
@@ -908,19 +909,19 @@ export interface ProposedSegmentChangeProperty {
     /**
     * The rule number in the policy document that applies to this change.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkmanager_site_to_site_vpn_attachment#attachment_policy_rule_number CcSiteToSiteVpnAttachment#attachment_policy_rule_number}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkmanager_site_to_site_vpn_attachment#attachment_policy_rule_number CcSiteToSiteVpnAttachment#attachment_policy_rule_number}
     */
     readonly attachmentPolicyRuleNumber?: number;
     /**
     * The name of the segment to change.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkmanager_site_to_site_vpn_attachment#segment_name CcSiteToSiteVpnAttachment#segment_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkmanager_site_to_site_vpn_attachment#segment_name CcSiteToSiteVpnAttachment#segment_name}
     */
     readonly segmentName?: string;
     /**
     * The key-value tags that changed for the segment.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkmanager_site_to_site_vpn_attachment#tags CcSiteToSiteVpnAttachment#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkmanager_site_to_site_vpn_attachment#tags CcSiteToSiteVpnAttachment#tags}
     */
     readonly tags?: ProposedSegmentChangeTagsProperty[] | cdktn.IResolvable;
 }
@@ -1030,13 +1031,13 @@ export interface TagsProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkmanager_site_to_site_vpn_attachment#key CcSiteToSiteVpnAttachment#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkmanager_site_to_site_vpn_attachment#key CcSiteToSiteVpnAttachment#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 0 to 256 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkmanager_site_to_site_vpn_attachment#value CcSiteToSiteVpnAttachment#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkmanager_site_to_site_vpn_attachment#value CcSiteToSiteVpnAttachment#value}
     */
     readonly value?: string;
 }

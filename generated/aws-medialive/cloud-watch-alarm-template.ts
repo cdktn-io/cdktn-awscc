@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/medialive_cloudwatch_alarm_template
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_cloudwatch_alarm_template
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,85 +9,85 @@ export interface CcCloudWatchAlarmTemplateProps extends cdktn.TerraformMetaArgum
     /**
     * The comparison operator used to compare the specified statistic and the threshold.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/medialive_cloudwatch_alarm_template#comparison_operator CcCloudWatchAlarmTemplate#comparison_operator}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_cloudwatch_alarm_template#comparison_operator CcCloudWatchAlarmTemplate#comparison_operator}
     */
     readonly comparisonOperator: string;
     /**
     * The number of datapoints within the evaluation period that must be breaching to trigger the alarm.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/medialive_cloudwatch_alarm_template#datapoints_to_alarm CcCloudWatchAlarmTemplate#datapoints_to_alarm}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_cloudwatch_alarm_template#datapoints_to_alarm CcCloudWatchAlarmTemplate#datapoints_to_alarm}
     */
     readonly datapointsToAlarm?: number;
     /**
     * A resource's optional description.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/medialive_cloudwatch_alarm_template#description CcCloudWatchAlarmTemplate#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_cloudwatch_alarm_template#description CcCloudWatchAlarmTemplate#description}
     */
     readonly description?: string;
     /**
     * The number of periods over which data is compared to the specified threshold.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/medialive_cloudwatch_alarm_template#evaluation_periods CcCloudWatchAlarmTemplate#evaluation_periods}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_cloudwatch_alarm_template#evaluation_periods CcCloudWatchAlarmTemplate#evaluation_periods}
     */
     readonly evaluationPeriods?: number;
     /**
     * A cloudwatch alarm template group's identifier. Can be either be its id or current name.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/medialive_cloudwatch_alarm_template#group_identifier CcCloudWatchAlarmTemplate#group_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_cloudwatch_alarm_template#group_identifier CcCloudWatchAlarmTemplate#group_identifier}
     */
     readonly groupIdentifier?: string;
     /**
     * The name of the metric associated with the alarm. Must be compatible with targetResourceType.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/medialive_cloudwatch_alarm_template#metric_name CcCloudWatchAlarmTemplate#metric_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_cloudwatch_alarm_template#metric_name CcCloudWatchAlarmTemplate#metric_name}
     */
     readonly metricName: string;
     /**
     * A resource's name. Names must be unique within the scope of a resource type in a specific region.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/medialive_cloudwatch_alarm_template#name CcCloudWatchAlarmTemplate#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_cloudwatch_alarm_template#name CcCloudWatchAlarmTemplate#name}
     */
     readonly name: string;
     /**
     * The period, in seconds, over which the specified statistic is applied.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/medialive_cloudwatch_alarm_template#period CcCloudWatchAlarmTemplate#period}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_cloudwatch_alarm_template#period CcCloudWatchAlarmTemplate#period}
     */
     readonly period?: number;
     /**
     * The statistic to apply to the alarm's metric data.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/medialive_cloudwatch_alarm_template#statistic CcCloudWatchAlarmTemplate#statistic}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_cloudwatch_alarm_template#statistic CcCloudWatchAlarmTemplate#statistic}
     */
     readonly statistic: string;
     /**
     * Represents the tags associated with a resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/medialive_cloudwatch_alarm_template#tags CcCloudWatchAlarmTemplate#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_cloudwatch_alarm_template#tags CcCloudWatchAlarmTemplate#tags}
     */
     readonly tags?: { [key: string]: string };
     /**
     * The resource type this template should dynamically generate cloudwatch metric alarms for.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/medialive_cloudwatch_alarm_template#target_resource_type CcCloudWatchAlarmTemplate#target_resource_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_cloudwatch_alarm_template#target_resource_type CcCloudWatchAlarmTemplate#target_resource_type}
     */
     readonly targetResourceType: string;
     /**
     * The threshold value to compare with the specified statistic.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/medialive_cloudwatch_alarm_template#threshold CcCloudWatchAlarmTemplate#threshold}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_cloudwatch_alarm_template#threshold CcCloudWatchAlarmTemplate#threshold}
     */
     readonly threshold?: number;
     /**
     * Specifies how missing data points are treated when evaluating the alarm's condition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/medialive_cloudwatch_alarm_template#treat_missing_data CcCloudWatchAlarmTemplate#treat_missing_data}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_cloudwatch_alarm_template#treat_missing_data CcCloudWatchAlarmTemplate#treat_missing_data}
     */
     readonly treatMissingData: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/medialive_cloudwatch_alarm_template awscc_medialive_cloudwatch_alarm_template}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_cloudwatch_alarm_template awscc_medialive_cloudwatch_alarm_template}
 */
 export class CcCloudWatchAlarmTemplate extends cdktn.TerraformResource {
 
@@ -103,7 +103,7 @@ export class CcCloudWatchAlarmTemplate extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcCloudWatchAlarmTemplate resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcCloudWatchAlarmTemplate to import
-    * @param importFromId The id of the existing CcCloudWatchAlarmTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/medialive_cloudwatch_alarm_template#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcCloudWatchAlarmTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_cloudwatch_alarm_template#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcCloudWatchAlarmTemplate to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -115,7 +115,7 @@ export class CcCloudWatchAlarmTemplate extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/medialive_cloudwatch_alarm_template awscc_medialive_cloudwatch_alarm_template} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_cloudwatch_alarm_template awscc_medialive_cloudwatch_alarm_template} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -125,7 +125,8 @@ export class CcCloudWatchAlarmTemplate extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_medialive_cloudwatch_alarm_template',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,

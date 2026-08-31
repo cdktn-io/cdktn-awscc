@@ -10,7 +10,7 @@
  */
 import * as fs from "node:fs";
 import * as path from "node:path";
-import { generatedDir, packageJsonPath, packageRoot, toolRoot } from "./helpers/paths";
+import { generatedDir, jsiiManifestPath, packageJsonPath, packageRoot, toolRoot } from "./helpers/paths";
 
 const vendoredCdktnDir = path.join(toolRoot, "src", "vendored", "cdktn");
 const vendoredSpec2cdkDir = path.join(toolRoot, "src", "vendored", "spec2cdk");
@@ -56,6 +56,15 @@ describe("root LICENSE / NOTICE", () => {
   it("package.json declares the same license as the root LICENSE file", () => {
     const pkg = JSON.parse(fs.readFileSync(packageJsonPath, "utf8"));
     expect(pkg.license).toBe("MPL-2.0");
+  });
+
+  it("the staged/published manifest (tools/awscc2cdk/jsii/package.json) declares the same license", () => {
+    // This is the file that actually ships: src/stage.ts copies it verbatim into every published
+    // artifact (npm package.json, PyPI METADATA, Maven POM, NuGet nuspec all derive their SPDX id
+    // from here), overwriting only `version`/`exports`. If this ever drifts from the root LICENSE,
+    // every registry ships the wrong license even though the root package.json is correct.
+    const manifest = JSON.parse(fs.readFileSync(jsiiManifestPath, "utf8"));
+    expect(manifest.license).toBe("MPL-2.0");
   });
 });
 

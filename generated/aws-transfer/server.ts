@@ -1,83 +1,83 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_server
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_server
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcServerProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_server#certificate CcServer#certificate}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_server#certificate CcServer#certificate}
     */
     readonly certificate?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_server#domain CcServer#domain}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_server#domain CcServer#domain}
     */
     readonly domain?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_server#endpoint_details CcServer#endpoint_details}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_server#endpoint_details CcServer#endpoint_details}
     */
     readonly endpointDetails?: CcServer.EndpointDetailsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_server#endpoint_type CcServer#endpoint_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_server#endpoint_type CcServer#endpoint_type}
     */
     readonly endpointType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_server#identity_provider_details CcServer#identity_provider_details}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_server#identity_provider_details CcServer#identity_provider_details}
     */
     readonly identityProviderDetails?: CcServer.IdentityProviderDetailsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_server#identity_provider_type CcServer#identity_provider_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_server#identity_provider_type CcServer#identity_provider_type}
     */
     readonly identityProviderType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_server#ip_address_type CcServer#ip_address_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_server#ip_address_type CcServer#ip_address_type}
     */
     readonly ipAddressType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_server#logging_role CcServer#logging_role}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_server#logging_role CcServer#logging_role}
     */
     readonly loggingRole?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_server#post_authentication_login_banner CcServer#post_authentication_login_banner}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_server#post_authentication_login_banner CcServer#post_authentication_login_banner}
     */
     readonly postAuthenticationLoginBanner?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_server#pre_authentication_login_banner CcServer#pre_authentication_login_banner}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_server#pre_authentication_login_banner CcServer#pre_authentication_login_banner}
     */
     readonly preAuthenticationLoginBanner?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_server#protocol_details CcServer#protocol_details}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_server#protocol_details CcServer#protocol_details}
     */
     readonly protocolDetails?: CcServer.ProtocolDetailsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_server#protocols CcServer#protocols}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_server#protocols CcServer#protocols}
     */
     readonly protocols?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_server#s3_storage_options CcServer#s3_storage_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_server#s3_storage_options CcServer#s3_storage_options}
     */
     readonly s3StorageOptions?: CcServer.S3StorageOptionsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_server#security_policy_name CcServer#security_policy_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_server#security_policy_name CcServer#security_policy_name}
     */
     readonly securityPolicyName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_server#structured_log_destinations CcServer#structured_log_destinations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_server#structured_log_destinations CcServer#structured_log_destinations}
     */
     readonly structuredLogDestinations?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_server#tags CcServer#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_server#tags CcServer#tags}
     */
     readonly tags?: CcServer.TagProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_server#workflow_details CcServer#workflow_details}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_server#workflow_details CcServer#workflow_details}
     */
     readonly workflowDetails?: CcServer.WorkflowDetailsProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_server awscc_transfer_server}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_server awscc_transfer_server}
 */
 export class CcServer extends cdktn.TerraformResource {
 
@@ -93,7 +93,7 @@ export class CcServer extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcServer resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcServer to import
-    * @param importFromId The id of the existing CcServer that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_server#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcServer that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_server#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcServer to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -105,7 +105,7 @@ export class CcServer extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_server awscc_transfer_server} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_server awscc_transfer_server} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -115,7 +115,8 @@ export class CcServer extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_transfer_server',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -930,23 +931,23 @@ export function ccServerWorkflowDetailsPropertyToHclTerraform(struct?: CcServer.
 export namespace CcServer {
 export interface EndpointDetailsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_server#address_allocation_ids CcServer#address_allocation_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_server#address_allocation_ids CcServer#address_allocation_ids}
     */
     readonly addressAllocationIds?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_server#security_group_ids CcServer#security_group_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_server#security_group_ids CcServer#security_group_ids}
     */
     readonly securityGroupIds?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_server#subnet_ids CcServer#subnet_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_server#subnet_ids CcServer#subnet_ids}
     */
     readonly subnetIds?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_server#vpc_endpoint_id CcServer#vpc_endpoint_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_server#vpc_endpoint_id CcServer#vpc_endpoint_id}
     */
     readonly vpcEndpointId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_server#vpc_id CcServer#vpc_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_server#vpc_id CcServer#vpc_id}
     */
     readonly vpcId?: string;
 }
@@ -1098,23 +1099,23 @@ export class EndpointDetailsPropertyOutputReference extends cdktn.ComplexObject 
 }
 export interface IdentityProviderDetailsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_server#directory_id CcServer#directory_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_server#directory_id CcServer#directory_id}
     */
     readonly directoryId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_server#function CcServer#function}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_server#function CcServer#function}
     */
     readonly function?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_server#invocation_role CcServer#invocation_role}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_server#invocation_role CcServer#invocation_role}
     */
     readonly invocationRole?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_server#sftp_authentication_methods CcServer#sftp_authentication_methods}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_server#sftp_authentication_methods CcServer#sftp_authentication_methods}
     */
     readonly sftpAuthenticationMethods?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_server#url CcServer#url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_server#url CcServer#url}
     */
     readonly url?: string;
 }
@@ -1266,19 +1267,19 @@ export class IdentityProviderDetailsPropertyOutputReference extends cdktn.Comple
 }
 export interface ProtocolDetailsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_server#as_2_transports CcServer#as_2_transports}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_server#as_2_transports CcServer#as_2_transports}
     */
     readonly as2Transports?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_server#passive_ip CcServer#passive_ip}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_server#passive_ip CcServer#passive_ip}
     */
     readonly passiveIp?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_server#set_stat_option CcServer#set_stat_option}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_server#set_stat_option CcServer#set_stat_option}
     */
     readonly setStatOption?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_server#tls_session_resumption_mode CcServer#tls_session_resumption_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_server#tls_session_resumption_mode CcServer#tls_session_resumption_mode}
     */
     readonly tlsSessionResumptionMode?: string;
 }
@@ -1410,7 +1411,7 @@ export interface S3StorageOptionsProperty {
     /**
     * Indicates whether optimization to directory listing on S3 servers is used. Disabled by default for compatibility.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_server#directory_listing_optimization CcServer#directory_listing_optimization}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_server#directory_listing_optimization CcServer#directory_listing_optimization}
     */
     readonly directoryListingOptimization?: string;
 }
@@ -1474,11 +1475,11 @@ export class S3StorageOptionsPropertyOutputReference extends cdktn.ComplexObject
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_server#key CcServer#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_server#key CcServer#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_server#value CcServer#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_server#value CcServer#value}
     */
     readonly value?: string;
 }
@@ -1586,11 +1587,11 @@ export class TagPropertyList extends cdktn.ComplexList {
 }
 export interface WorkflowDetailProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_server#execution_role CcServer#execution_role}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_server#execution_role CcServer#execution_role}
     */
     readonly executionRole?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_server#workflow_id CcServer#workflow_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_server#workflow_id CcServer#workflow_id}
     */
     readonly workflowId?: string;
 }
@@ -1698,11 +1699,11 @@ export class WorkflowDetailPropertyList extends cdktn.ComplexList {
 }
 export interface OnUploadProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_server#execution_role CcServer#execution_role}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_server#execution_role CcServer#execution_role}
     */
     readonly executionRole?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_server#workflow_id CcServer#workflow_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_server#workflow_id CcServer#workflow_id}
     */
     readonly workflowId?: string;
 }
@@ -1810,11 +1811,11 @@ export class OnUploadPropertyList extends cdktn.ComplexList {
 }
 export interface WorkflowDetailsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_server#on_partial_upload CcServer#on_partial_upload}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_server#on_partial_upload CcServer#on_partial_upload}
     */
     readonly onPartialUpload?: WorkflowDetailProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_server#on_upload CcServer#on_upload}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_server#on_upload CcServer#on_upload}
     */
     readonly onUpload?: OnUploadProperty[] | cdktn.IResolvable;
 }

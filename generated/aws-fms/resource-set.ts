@@ -1,35 +1,35 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fms_resource_set
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fms_resource_set
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcResourceSetProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fms_resource_set#description CcResourceSet#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fms_resource_set#description CcResourceSet#description}
     */
     readonly description?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fms_resource_set#name CcResourceSet#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fms_resource_set#name CcResourceSet#name}
     */
     readonly name: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fms_resource_set#resource_type_list CcResourceSet#resource_type_list}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fms_resource_set#resource_type_list CcResourceSet#resource_type_list}
     */
     readonly resourceTypeList: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fms_resource_set#resources CcResourceSet#resources}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fms_resource_set#resources CcResourceSet#resources}
     */
     readonly resources?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fms_resource_set#tags CcResourceSet#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fms_resource_set#tags CcResourceSet#tags}
     */
     readonly tags?: CcResourceSet.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fms_resource_set awscc_fms_resource_set}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fms_resource_set awscc_fms_resource_set}
 */
 export class CcResourceSet extends cdktn.TerraformResource {
 
@@ -45,7 +45,7 @@ export class CcResourceSet extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcResourceSet resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcResourceSet to import
-    * @param importFromId The id of the existing CcResourceSet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fms_resource_set#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcResourceSet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fms_resource_set#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcResourceSet to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -57,7 +57,7 @@ export class CcResourceSet extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fms_resource_set awscc_fms_resource_set} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fms_resource_set awscc_fms_resource_set} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -67,7 +67,8 @@ export class CcResourceSet extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_fms_resource_set',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -265,11 +266,11 @@ export function ccResourceSetTagPropertyToHclTerraform(struct?: CcResourceSet.Ta
 export namespace CcResourceSet {
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fms_resource_set#key CcResourceSet#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fms_resource_set#key CcResourceSet#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/fms_resource_set#value CcResourceSet#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/fms_resource_set#value CcResourceSet#value}
     */
     readonly value?: string;
 }

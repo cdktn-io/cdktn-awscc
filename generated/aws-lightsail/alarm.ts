@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lightsail_alarm
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_alarm
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,73 +9,73 @@ export interface CcAlarmProps extends cdktn.TerraformMetaArguments {
     /**
     * The name for the alarm. Specify the name of an existing alarm to update, and overwrite the previous configuration of the alarm.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lightsail_alarm#alarm_name CcAlarm#alarm_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_alarm#alarm_name CcAlarm#alarm_name}
     */
     readonly alarmName: string;
     /**
     * The arithmetic operation to use when comparing the specified statistic to the threshold. The specified statistic value is used as the first operand.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lightsail_alarm#comparison_operator CcAlarm#comparison_operator}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_alarm#comparison_operator CcAlarm#comparison_operator}
     */
     readonly comparisonOperator: string;
     /**
     * The contact protocols to use for the alarm, such as Email, SMS (text messaging), or both.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lightsail_alarm#contact_protocols CcAlarm#contact_protocols}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_alarm#contact_protocols CcAlarm#contact_protocols}
     */
     readonly contactProtocols?: string[];
     /**
     * The number of data points that must be not within the specified threshold to trigger the alarm. If you are setting an "M out of N" alarm, this value (datapointsToAlarm) is the M.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lightsail_alarm#datapoints_to_alarm CcAlarm#datapoints_to_alarm}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_alarm#datapoints_to_alarm CcAlarm#datapoints_to_alarm}
     */
     readonly datapointsToAlarm?: number;
     /**
     * The number of most recent periods over which data is compared to the specified threshold. If you are setting an "M out of N" alarm, this value (evaluationPeriods) is the N.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lightsail_alarm#evaluation_periods CcAlarm#evaluation_periods}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_alarm#evaluation_periods CcAlarm#evaluation_periods}
     */
     readonly evaluationPeriods: number;
     /**
     * The name of the metric to associate with the alarm.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lightsail_alarm#metric_name CcAlarm#metric_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_alarm#metric_name CcAlarm#metric_name}
     */
     readonly metricName: string;
     /**
     * The name of the Lightsail resource that the alarm monitors.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lightsail_alarm#monitored_resource_name CcAlarm#monitored_resource_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_alarm#monitored_resource_name CcAlarm#monitored_resource_name}
     */
     readonly monitoredResourceName: string;
     /**
     * Indicates whether the alarm is enabled. Notifications are enabled by default if you don't specify this parameter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lightsail_alarm#notification_enabled CcAlarm#notification_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_alarm#notification_enabled CcAlarm#notification_enabled}
     */
     readonly notificationEnabled?: boolean | cdktn.IResolvable;
     /**
     * The alarm states that trigger a notification.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lightsail_alarm#notification_triggers CcAlarm#notification_triggers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_alarm#notification_triggers CcAlarm#notification_triggers}
     */
     readonly notificationTriggers?: string[];
     /**
     * The value against which the specified statistic is compared.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lightsail_alarm#threshold CcAlarm#threshold}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_alarm#threshold CcAlarm#threshold}
     */
     readonly threshold: number;
     /**
     * Sets how this alarm will handle missing data points.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lightsail_alarm#treat_missing_data CcAlarm#treat_missing_data}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_alarm#treat_missing_data CcAlarm#treat_missing_data}
     */
     readonly treatMissingData?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lightsail_alarm awscc_lightsail_alarm}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_alarm awscc_lightsail_alarm}
 */
 export class CcAlarm extends cdktn.TerraformResource {
 
@@ -91,7 +91,7 @@ export class CcAlarm extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcAlarm resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcAlarm to import
-    * @param importFromId The id of the existing CcAlarm that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lightsail_alarm#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcAlarm that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_alarm#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcAlarm to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -103,7 +103,7 @@ export class CcAlarm extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lightsail_alarm awscc_lightsail_alarm} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_alarm awscc_lightsail_alarm} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -113,7 +113,8 @@ export class CcAlarm extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_lightsail_alarm',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,

@@ -1,33 +1,33 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_logging_configuration
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_logging_configuration
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcLoggingConfigurationProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_logging_configuration#enable_monitoring_dashboard CcLoggingConfiguration#enable_monitoring_dashboard}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_logging_configuration#enable_monitoring_dashboard CcLoggingConfiguration#enable_monitoring_dashboard}
     */
     readonly enableMonitoringDashboard?: boolean | cdktn.IResolvable;
     /**
     * A resource ARN.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_logging_configuration#firewall_arn CcLoggingConfiguration#firewall_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_logging_configuration#firewall_arn CcLoggingConfiguration#firewall_arn}
     */
     readonly firewallArn: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_logging_configuration#firewall_name CcLoggingConfiguration#firewall_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_logging_configuration#firewall_name CcLoggingConfiguration#firewall_name}
     */
     readonly firewallName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_logging_configuration#logging_configuration CcLoggingConfiguration#logging_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_logging_configuration#logging_configuration CcLoggingConfiguration#logging_configuration}
     */
     readonly loggingConfiguration: CcLoggingConfiguration.LoggingConfigurationProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_logging_configuration awscc_networkfirewall_logging_configuration}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_logging_configuration awscc_networkfirewall_logging_configuration}
 */
 export class CcLoggingConfiguration extends cdktn.TerraformResource {
 
@@ -43,7 +43,7 @@ export class CcLoggingConfiguration extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcLoggingConfiguration resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcLoggingConfiguration to import
-    * @param importFromId The id of the existing CcLoggingConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_logging_configuration#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcLoggingConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_logging_configuration#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcLoggingConfiguration to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -55,7 +55,7 @@ export class CcLoggingConfiguration extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_logging_configuration awscc_networkfirewall_logging_configuration} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_logging_configuration awscc_networkfirewall_logging_configuration} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -65,7 +65,8 @@ export class CcLoggingConfiguration extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_networkfirewall_logging_configuration',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -273,15 +274,15 @@ export interface LogDestinationConfigProperty {
     /**
     * A key-value pair to configure the logDestinations.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_logging_configuration#log_destination CcLoggingConfiguration#log_destination}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_logging_configuration#log_destination CcLoggingConfiguration#log_destination}
     */
     readonly logDestination: { [key: string]: string };
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_logging_configuration#log_destination_type CcLoggingConfiguration#log_destination_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_logging_configuration#log_destination_type CcLoggingConfiguration#log_destination_type}
     */
     readonly logDestinationType: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_logging_configuration#log_type CcLoggingConfiguration#log_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_logging_configuration#log_type CcLoggingConfiguration#log_type}
     */
     readonly logType: string;
 }
@@ -402,7 +403,7 @@ export class LogDestinationConfigPropertyList extends cdktn.ComplexList {
 }
 export interface LoggingConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_logging_configuration#log_destination_configs CcLoggingConfiguration#log_destination_configs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_logging_configuration#log_destination_configs CcLoggingConfiguration#log_destination_configs}
     */
     readonly logDestinationConfigs: LogDestinationConfigProperty[] | cdktn.IResolvable;
 }

@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appsync_channel_namespace
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_channel_namespace
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,53 +9,53 @@ export interface CcChannelNamespaceProps extends cdktn.TerraformMetaArguments {
     /**
     * AppSync Api Id that this Channel Namespace belongs to.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appsync_channel_namespace#api_id CcChannelNamespace#api_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_channel_namespace#api_id CcChannelNamespace#api_id}
     */
     readonly apiId: string;
     /**
     * String of APPSYNC_JS code to be used by the handlers.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appsync_channel_namespace#code_handlers CcChannelNamespace#code_handlers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_channel_namespace#code_handlers CcChannelNamespace#code_handlers}
     */
     readonly codeHandlers?: string;
     /**
     * The Amazon S3 endpoint where the code is located.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appsync_channel_namespace#code_s3_location CcChannelNamespace#code_s3_location}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_channel_namespace#code_s3_location CcChannelNamespace#code_s3_location}
     */
     readonly codeS3Location?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appsync_channel_namespace#handler_configs CcChannelNamespace#handler_configs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_channel_namespace#handler_configs CcChannelNamespace#handler_configs}
     */
     readonly handlerConfigs?: CcChannelNamespace.HandlerConfigsProperty;
     /**
     * Namespace indentifier.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appsync_channel_namespace#name CcChannelNamespace#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_channel_namespace#name CcChannelNamespace#name}
     */
     readonly name: string;
     /**
     * List of AuthModes supported for Publish operations.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appsync_channel_namespace#publish_auth_modes CcChannelNamespace#publish_auth_modes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_channel_namespace#publish_auth_modes CcChannelNamespace#publish_auth_modes}
     */
     readonly publishAuthModes?: CcChannelNamespace.AuthModeProperty[] | cdktn.IResolvable;
     /**
     * List of AuthModes supported for Subscribe operations.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appsync_channel_namespace#subscribe_auth_modes CcChannelNamespace#subscribe_auth_modes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_channel_namespace#subscribe_auth_modes CcChannelNamespace#subscribe_auth_modes}
     */
     readonly subscribeAuthModes?: CcChannelNamespace.SubscribeAuthModesProperty[] | cdktn.IResolvable;
     /**
     * An arbitrary set of tags (key-value pairs) for this AppSync API.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appsync_channel_namespace#tags CcChannelNamespace#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_channel_namespace#tags CcChannelNamespace#tags}
     */
     readonly tags?: CcChannelNamespace.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appsync_channel_namespace awscc_appsync_channel_namespace}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_channel_namespace awscc_appsync_channel_namespace}
 */
 export class CcChannelNamespace extends cdktn.TerraformResource {
 
@@ -71,7 +71,7 @@ export class CcChannelNamespace extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcChannelNamespace resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcChannelNamespace to import
-    * @param importFromId The id of the existing CcChannelNamespace that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appsync_channel_namespace#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcChannelNamespace that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_channel_namespace#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcChannelNamespace to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -83,7 +83,7 @@ export class CcChannelNamespace extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appsync_channel_namespace awscc_appsync_channel_namespace} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_channel_namespace awscc_appsync_channel_namespace} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -93,7 +93,8 @@ export class CcChannelNamespace extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_appsync_channel_namespace',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -670,7 +671,7 @@ export interface LambdaConfigProperty {
     /**
     * Invocation type for direct lambda integrations.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appsync_channel_namespace#invoke_type CcChannelNamespace#invoke_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_channel_namespace#invoke_type CcChannelNamespace#invoke_type}
     */
     readonly invokeType?: string;
 }
@@ -736,11 +737,11 @@ export interface IntegrationProperty {
     /**
     * Data source to invoke for this integration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appsync_channel_namespace#data_source_name CcChannelNamespace#data_source_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_channel_namespace#data_source_name CcChannelNamespace#data_source_name}
     */
     readonly dataSourceName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appsync_channel_namespace#lambda_config CcChannelNamespace#lambda_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_channel_namespace#lambda_config CcChannelNamespace#lambda_config}
     */
     readonly lambdaConfig?: LambdaConfigProperty;
 }
@@ -828,11 +829,11 @@ export interface HandlerConfigProperty {
     /**
     * Integration behavior for a handler configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appsync_channel_namespace#behavior CcChannelNamespace#behavior}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_channel_namespace#behavior CcChannelNamespace#behavior}
     */
     readonly behavior?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appsync_channel_namespace#integration CcChannelNamespace#integration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_channel_namespace#integration CcChannelNamespace#integration}
     */
     readonly integration?: IntegrationProperty;
 }
@@ -920,7 +921,7 @@ export interface HandlerConfigsOnSubscribeIntegrationLambdaConfigProperty {
     /**
     * Invocation type for direct lambda integrations.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appsync_channel_namespace#invoke_type CcChannelNamespace#invoke_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_channel_namespace#invoke_type CcChannelNamespace#invoke_type}
     */
     readonly invokeType?: string;
 }
@@ -986,11 +987,11 @@ export interface HandlerConfigsOnSubscribeIntegrationProperty {
     /**
     * Data source to invoke for this integration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appsync_channel_namespace#data_source_name CcChannelNamespace#data_source_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_channel_namespace#data_source_name CcChannelNamespace#data_source_name}
     */
     readonly dataSourceName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appsync_channel_namespace#lambda_config CcChannelNamespace#lambda_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_channel_namespace#lambda_config CcChannelNamespace#lambda_config}
     */
     readonly lambdaConfig?: HandlerConfigsOnSubscribeIntegrationLambdaConfigProperty;
 }
@@ -1078,11 +1079,11 @@ export interface OnSubscribeProperty {
     /**
     * Integration behavior for a handler configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appsync_channel_namespace#behavior CcChannelNamespace#behavior}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_channel_namespace#behavior CcChannelNamespace#behavior}
     */
     readonly behavior?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appsync_channel_namespace#integration CcChannelNamespace#integration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_channel_namespace#integration CcChannelNamespace#integration}
     */
     readonly integration?: HandlerConfigsOnSubscribeIntegrationProperty;
 }
@@ -1168,11 +1169,11 @@ export class OnSubscribePropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface HandlerConfigsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appsync_channel_namespace#on_publish CcChannelNamespace#on_publish}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_channel_namespace#on_publish CcChannelNamespace#on_publish}
     */
     readonly onPublish?: HandlerConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appsync_channel_namespace#on_subscribe CcChannelNamespace#on_subscribe}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_channel_namespace#on_subscribe CcChannelNamespace#on_subscribe}
     */
     readonly onSubscribe?: OnSubscribeProperty;
 }
@@ -1260,7 +1261,7 @@ export interface AuthModeProperty {
     /**
     * Security configuration for your AppSync API.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appsync_channel_namespace#auth_type CcChannelNamespace#auth_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_channel_namespace#auth_type CcChannelNamespace#auth_type}
     */
     readonly authType?: string;
 }
@@ -1348,7 +1349,7 @@ export interface SubscribeAuthModesProperty {
     /**
     * Security configuration for your AppSync API.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appsync_channel_namespace#auth_type CcChannelNamespace#auth_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_channel_namespace#auth_type CcChannelNamespace#auth_type}
     */
     readonly authType?: string;
 }
@@ -1436,13 +1437,13 @@ export interface TagProperty {
     /**
     * A string used to identify this tag. You can specify a maximum of 128 characters for a tag key.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appsync_channel_namespace#key CcChannelNamespace#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_channel_namespace#key CcChannelNamespace#key}
     */
     readonly key?: string;
     /**
     * A string containing the value for this tag. You can specify a maximum of 256 characters for a tag value.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/appsync_channel_namespace#value CcChannelNamespace#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_channel_namespace#value CcChannelNamespace#value}
     */
     readonly value?: string;
 }

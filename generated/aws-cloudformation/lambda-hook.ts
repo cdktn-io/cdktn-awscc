@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_lambda_hook
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_lambda_hook
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,67 +9,67 @@ export interface CcLambdaHookProps extends cdktn.TerraformMetaArguments {
     /**
     * The typename alias for the hook.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_lambda_hook#alias CcLambdaHook#alias}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_lambda_hook#alias CcLambdaHook#alias}
     */
     readonly alias: string;
     /**
     * Whether to automatically update the extension in this account and Region when a new minor version is published by the extension publisher.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_lambda_hook#auto_update CcLambdaHook#auto_update}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_lambda_hook#auto_update CcLambdaHook#auto_update}
     */
     readonly autoUpdate?: boolean | cdktn.IResolvable;
     /**
     * The execution role ARN assumed by Hooks to invoke Lambda.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_lambda_hook#execution_role CcLambdaHook#execution_role}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_lambda_hook#execution_role CcLambdaHook#execution_role}
     */
     readonly executionRole: string;
     /**
     * Attribute to specify CloudFormation behavior on hook failure.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_lambda_hook#failure_mode CcLambdaHook#failure_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_lambda_hook#failure_mode CcLambdaHook#failure_mode}
     */
     readonly failureMode: string;
     /**
     * Attribute to specify which stacks this hook applies to or should get invoked for
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_lambda_hook#hook_status CcLambdaHook#hook_status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_lambda_hook#hook_status CcLambdaHook#hook_status}
     */
     readonly hookStatus?: string;
     /**
     * Amazon Resource Name (ARN), Partial ARN, name, version, or alias of the Lambda function to invoke with this hook.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_lambda_hook#lambda_function CcLambdaHook#lambda_function}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_lambda_hook#lambda_function CcLambdaHook#lambda_function}
     */
     readonly lambdaFunction: string;
     /**
     * Contains logging configuration information for the hook.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_lambda_hook#logging_config CcLambdaHook#logging_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_lambda_hook#logging_config CcLambdaHook#logging_config}
     */
     readonly loggingConfig?: CcLambdaHook.LoggingConfigProperty;
     /**
     * Filters to allow hooks to target specific stack attributes
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_lambda_hook#stack_filters CcLambdaHook#stack_filters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_lambda_hook#stack_filters CcLambdaHook#stack_filters}
     */
     readonly stackFilters?: CcLambdaHook.StackFiltersProperty;
     /**
     * Attribute to specify which targets should invoke the hook
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_lambda_hook#target_filters CcLambdaHook#target_filters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_lambda_hook#target_filters CcLambdaHook#target_filters}
     */
     readonly targetFilters?: CcLambdaHook.TargetFiltersProperty;
     /**
     * Which operations should this Hook run against? Resource changes, stacks or change sets.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_lambda_hook#target_operations CcLambdaHook#target_operations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_lambda_hook#target_operations CcLambdaHook#target_operations}
     */
     readonly targetOperations: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_lambda_hook awscc_cloudformation_lambda_hook}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_lambda_hook awscc_cloudformation_lambda_hook}
 */
 export class CcLambdaHook extends cdktn.TerraformResource {
 
@@ -85,7 +85,7 @@ export class CcLambdaHook extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcLambdaHook resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcLambdaHook to import
-    * @param importFromId The id of the existing CcLambdaHook that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_lambda_hook#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcLambdaHook that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_lambda_hook#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcLambdaHook to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -97,7 +97,7 @@ export class CcLambdaHook extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_lambda_hook awscc_cloudformation_lambda_hook} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_lambda_hook awscc_cloudformation_lambda_hook} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -107,7 +107,8 @@ export class CcLambdaHook extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_cloudformation_lambda_hook',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -631,13 +632,13 @@ export interface LoggingConfigProperty {
     /**
     * The Amazon CloudWatch Logs group to which CloudFormation sends error logging information when invoking the extension's handlers.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_lambda_hook#log_group_name CcLambdaHook#log_group_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_lambda_hook#log_group_name CcLambdaHook#log_group_name}
     */
     readonly logGroupName?: string;
     /**
     * The ARN of the role that CloudFormation should assume when sending log entries to CloudWatch Logs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_lambda_hook#log_role_arn CcLambdaHook#log_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_lambda_hook#log_role_arn CcLambdaHook#log_role_arn}
     */
     readonly logRoleArn?: string;
 }
@@ -725,13 +726,13 @@ export interface StackNamesProperty {
     /**
     * List of stack names that the hook is going to be excluded from
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_lambda_hook#exclude CcLambdaHook#exclude}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_lambda_hook#exclude CcLambdaHook#exclude}
     */
     readonly exclude?: string[];
     /**
     * List of stack names that the hook is going to target
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_lambda_hook#include CcLambdaHook#include}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_lambda_hook#include CcLambdaHook#include}
     */
     readonly include?: string[];
 }
@@ -819,13 +820,13 @@ export interface StackRolesProperty {
     /**
     * List of stack roles that the hook is going to be excluded from
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_lambda_hook#exclude CcLambdaHook#exclude}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_lambda_hook#exclude CcLambdaHook#exclude}
     */
     readonly exclude?: string[];
     /**
     * List of stack roles that the hook is going to target
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_lambda_hook#include CcLambdaHook#include}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_lambda_hook#include CcLambdaHook#include}
     */
     readonly include?: string[];
 }
@@ -913,19 +914,19 @@ export interface StackFiltersProperty {
     /**
     * Attribute to specify the filtering behavior. ANY will make the Hook pass if one filter matches. ALL will make the Hook pass if all filters match
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_lambda_hook#filtering_criteria CcLambdaHook#filtering_criteria}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_lambda_hook#filtering_criteria CcLambdaHook#filtering_criteria}
     */
     readonly filteringCriteria?: string;
     /**
     * List of stack names as filters
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_lambda_hook#stack_names CcLambdaHook#stack_names}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_lambda_hook#stack_names CcLambdaHook#stack_names}
     */
     readonly stackNames?: StackNamesProperty;
     /**
     * List of stack roles that are performing the stack operations.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_lambda_hook#stack_roles CcLambdaHook#stack_roles}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_lambda_hook#stack_roles CcLambdaHook#stack_roles}
     */
     readonly stackRoles?: StackRolesProperty;
 }
@@ -1035,19 +1036,19 @@ export interface HookTargetProperty {
     /**
     * Target actions are the type of operation hooks will be executed at.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_lambda_hook#action CcLambdaHook#action}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_lambda_hook#action CcLambdaHook#action}
     */
     readonly action?: string;
     /**
     * Invocation points are the point in provisioning workflow where hooks will be executed.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_lambda_hook#invocation_point CcLambdaHook#invocation_point}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_lambda_hook#invocation_point CcLambdaHook#invocation_point}
     */
     readonly invocationPoint?: string;
     /**
     * Type name of hook target. Hook targets are the destination where hooks will be invoked against.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_lambda_hook#target_name CcLambdaHook#target_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_lambda_hook#target_name CcLambdaHook#target_name}
     */
     readonly targetName?: string;
 }
@@ -1179,25 +1180,25 @@ export interface TargetFiltersProperty {
     /**
     * List of actions that the hook is going to target
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_lambda_hook#actions CcLambdaHook#actions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_lambda_hook#actions CcLambdaHook#actions}
     */
     readonly actions?: string[];
     /**
     * List of invocation points that the hook is going to target
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_lambda_hook#invocation_points CcLambdaHook#invocation_points}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_lambda_hook#invocation_points CcLambdaHook#invocation_points}
     */
     readonly invocationPoints?: string[];
     /**
     * List of type names that the hook is going to target
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_lambda_hook#target_names CcLambdaHook#target_names}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_lambda_hook#target_names CcLambdaHook#target_names}
     */
     readonly targetNames?: string[];
     /**
     * List of hook targets
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_lambda_hook#targets CcLambdaHook#targets}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_lambda_hook#targets CcLambdaHook#targets}
     */
     readonly targets?: HookTargetProperty[] | cdktn.IResolvable;
 }

@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lightsail_disk_snapshot
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_disk_snapshot
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,25 +9,25 @@ export interface CcDiskSnapshotProps extends cdktn.TerraformMetaArguments {
     /**
     * The name of the source disk from which the snapshot was created.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lightsail_disk_snapshot#disk_name CcDiskSnapshot#disk_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_disk_snapshot#disk_name CcDiskSnapshot#disk_name}
     */
     readonly diskName: string;
     /**
     * The name of the disk snapshot (e.g., my-disk-snapshot).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lightsail_disk_snapshot#disk_snapshot_name CcDiskSnapshot#disk_snapshot_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_disk_snapshot#disk_snapshot_name CcDiskSnapshot#disk_snapshot_name}
     */
     readonly diskSnapshotName: string;
     /**
     * An array of key-value pairs to apply to this resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lightsail_disk_snapshot#tags CcDiskSnapshot#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_disk_snapshot#tags CcDiskSnapshot#tags}
     */
     readonly tags?: CcDiskSnapshot.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lightsail_disk_snapshot awscc_lightsail_disk_snapshot}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_disk_snapshot awscc_lightsail_disk_snapshot}
 */
 export class CcDiskSnapshot extends cdktn.TerraformResource {
 
@@ -43,7 +43,7 @@ export class CcDiskSnapshot extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcDiskSnapshot resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcDiskSnapshot to import
-    * @param importFromId The id of the existing CcDiskSnapshot that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lightsail_disk_snapshot#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcDiskSnapshot that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_disk_snapshot#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcDiskSnapshot to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -55,7 +55,7 @@ export class CcDiskSnapshot extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lightsail_disk_snapshot awscc_lightsail_disk_snapshot} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_disk_snapshot awscc_lightsail_disk_snapshot} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -65,7 +65,8 @@ export class CcDiskSnapshot extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_lightsail_disk_snapshot',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -322,13 +323,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lightsail_disk_snapshot#key CcDiskSnapshot#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_disk_snapshot#key CcDiskSnapshot#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 0 to 256 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lightsail_disk_snapshot#value CcDiskSnapshot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_disk_snapshot#value CcDiskSnapshot#value}
     */
     readonly value?: string;
 }

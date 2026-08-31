@@ -1,35 +1,35 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/guardduty_publishing_destination
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/guardduty_publishing_destination
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcPublishingDestinationProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/guardduty_publishing_destination#destination_properties CcPublishingDestination#destination_properties}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/guardduty_publishing_destination#destination_properties CcPublishingDestination#destination_properties}
     */
     readonly destinationProperties: CcPublishingDestination.CFNDestinationPropertiesProperty;
     /**
     * The type of resource for the publishing destination. Currently only Amazon S3 buckets are supported.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/guardduty_publishing_destination#destination_type CcPublishingDestination#destination_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/guardduty_publishing_destination#destination_type CcPublishingDestination#destination_type}
     */
     readonly destinationType: string;
     /**
     * The ID of the GuardDuty detector associated with the publishing destination.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/guardduty_publishing_destination#detector_id CcPublishingDestination#detector_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/guardduty_publishing_destination#detector_id CcPublishingDestination#detector_id}
     */
     readonly detectorId: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/guardduty_publishing_destination#tags CcPublishingDestination#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/guardduty_publishing_destination#tags CcPublishingDestination#tags}
     */
     readonly tags?: CcPublishingDestination.TagItemProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/guardduty_publishing_destination awscc_guardduty_publishing_destination}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/guardduty_publishing_destination awscc_guardduty_publishing_destination}
 */
 export class CcPublishingDestination extends cdktn.TerraformResource {
 
@@ -45,7 +45,7 @@ export class CcPublishingDestination extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcPublishingDestination resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcPublishingDestination to import
-    * @param importFromId The id of the existing CcPublishingDestination that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/guardduty_publishing_destination#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcPublishingDestination that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/guardduty_publishing_destination#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcPublishingDestination to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -57,7 +57,7 @@ export class CcPublishingDestination extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/guardduty_publishing_destination awscc_guardduty_publishing_destination} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/guardduty_publishing_destination awscc_guardduty_publishing_destination} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -67,7 +67,8 @@ export class CcPublishingDestination extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_guardduty_publishing_destination',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -287,13 +288,13 @@ export interface CFNDestinationPropertiesProperty {
     /**
     * The ARN of the resource to publish to.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/guardduty_publishing_destination#destination_arn CcPublishingDestination#destination_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/guardduty_publishing_destination#destination_arn CcPublishingDestination#destination_arn}
     */
     readonly destinationArn?: string;
     /**
     * The ARN of the KMS key to use for encryption.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/guardduty_publishing_destination#kms_key_arn CcPublishingDestination#kms_key_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/guardduty_publishing_destination#kms_key_arn CcPublishingDestination#kms_key_arn}
     */
     readonly kmsKeyArn?: string;
 }
@@ -379,11 +380,11 @@ export class CFNDestinationPropertiesPropertyOutputReference extends cdktn.Compl
 }
 export interface TagItemProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/guardduty_publishing_destination#key CcPublishingDestination#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/guardduty_publishing_destination#key CcPublishingDestination#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/guardduty_publishing_destination#value CcPublishingDestination#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/guardduty_publishing_destination#value CcPublishingDestination#value}
     */
     readonly value?: string;
 }

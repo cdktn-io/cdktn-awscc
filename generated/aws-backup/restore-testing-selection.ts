@@ -1,47 +1,47 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/backup_restore_testing_selection
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_restore_testing_selection
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcRestoreTestingSelectionProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/backup_restore_testing_selection#iam_role_arn CcRestoreTestingSelection#iam_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_restore_testing_selection#iam_role_arn CcRestoreTestingSelection#iam_role_arn}
     */
     readonly iamRoleArn: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/backup_restore_testing_selection#protected_resource_arns CcRestoreTestingSelection#protected_resource_arns}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_restore_testing_selection#protected_resource_arns CcRestoreTestingSelection#protected_resource_arns}
     */
     readonly protectedResourceArns?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/backup_restore_testing_selection#protected_resource_conditions CcRestoreTestingSelection#protected_resource_conditions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_restore_testing_selection#protected_resource_conditions CcRestoreTestingSelection#protected_resource_conditions}
     */
     readonly protectedResourceConditions?: CcRestoreTestingSelection.ProtectedResourceConditionsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/backup_restore_testing_selection#protected_resource_type CcRestoreTestingSelection#protected_resource_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_restore_testing_selection#protected_resource_type CcRestoreTestingSelection#protected_resource_type}
     */
     readonly protectedResourceType: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/backup_restore_testing_selection#restore_metadata_overrides CcRestoreTestingSelection#restore_metadata_overrides}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_restore_testing_selection#restore_metadata_overrides CcRestoreTestingSelection#restore_metadata_overrides}
     */
     readonly restoreMetadataOverrides?: { [key: string]: string };
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/backup_restore_testing_selection#restore_testing_plan_name CcRestoreTestingSelection#restore_testing_plan_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_restore_testing_selection#restore_testing_plan_name CcRestoreTestingSelection#restore_testing_plan_name}
     */
     readonly restoreTestingPlanName: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/backup_restore_testing_selection#restore_testing_selection_name CcRestoreTestingSelection#restore_testing_selection_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_restore_testing_selection#restore_testing_selection_name CcRestoreTestingSelection#restore_testing_selection_name}
     */
     readonly restoreTestingSelectionName: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/backup_restore_testing_selection#validation_window_hours CcRestoreTestingSelection#validation_window_hours}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_restore_testing_selection#validation_window_hours CcRestoreTestingSelection#validation_window_hours}
     */
     readonly validationWindowHours?: number;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/backup_restore_testing_selection awscc_backup_restore_testing_selection}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_restore_testing_selection awscc_backup_restore_testing_selection}
 */
 export class CcRestoreTestingSelection extends cdktn.TerraformResource {
 
@@ -57,7 +57,7 @@ export class CcRestoreTestingSelection extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcRestoreTestingSelection resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcRestoreTestingSelection to import
-    * @param importFromId The id of the existing CcRestoreTestingSelection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/backup_restore_testing_selection#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcRestoreTestingSelection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_restore_testing_selection#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcRestoreTestingSelection to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -69,7 +69,7 @@ export class CcRestoreTestingSelection extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/backup_restore_testing_selection awscc_backup_restore_testing_selection} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_restore_testing_selection awscc_backup_restore_testing_selection} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -79,7 +79,8 @@ export class CcRestoreTestingSelection extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_backup_restore_testing_selection',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -412,11 +413,11 @@ export function ccRestoreTestingSelectionProtectedResourceConditionsPropertyToHc
 export namespace CcRestoreTestingSelection {
 export interface KeyValueProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/backup_restore_testing_selection#key CcRestoreTestingSelection#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_restore_testing_selection#key CcRestoreTestingSelection#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/backup_restore_testing_selection#value CcRestoreTestingSelection#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_restore_testing_selection#value CcRestoreTestingSelection#value}
     */
     readonly value?: string;
 }
@@ -524,11 +525,11 @@ export class KeyValuePropertyList extends cdktn.ComplexList {
 }
 export interface StringNotEqualsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/backup_restore_testing_selection#key CcRestoreTestingSelection#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_restore_testing_selection#key CcRestoreTestingSelection#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/backup_restore_testing_selection#value CcRestoreTestingSelection#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_restore_testing_selection#value CcRestoreTestingSelection#value}
     */
     readonly value?: string;
 }
@@ -636,11 +637,11 @@ export class StringNotEqualsPropertyList extends cdktn.ComplexList {
 }
 export interface ProtectedResourceConditionsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/backup_restore_testing_selection#string_equals CcRestoreTestingSelection#string_equals}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_restore_testing_selection#string_equals CcRestoreTestingSelection#string_equals}
     */
     readonly stringEquals?: KeyValueProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/backup_restore_testing_selection#string_not_equals CcRestoreTestingSelection#string_not_equals}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_restore_testing_selection#string_not_equals CcRestoreTestingSelection#string_not_equals}
     */
     readonly stringNotEquals?: StringNotEqualsProperty[] | cdktn.IResolvable;
 }

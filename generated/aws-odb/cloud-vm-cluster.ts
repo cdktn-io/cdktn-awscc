@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/odb_cloud_vm_cluster
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_vm_cluster
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,139 +9,139 @@ export interface CcCloudVmClusterProps extends cdktn.TerraformMetaArguments {
     /**
     * The unique identifier of the Exadata infrastructure that this VM cluster belongs to.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/odb_cloud_vm_cluster#cloud_exadata_infrastructure_id CcCloudVmCluster#cloud_exadata_infrastructure_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_vm_cluster#cloud_exadata_infrastructure_id CcCloudVmCluster#cloud_exadata_infrastructure_id}
     */
     readonly cloudExadataInfrastructureId?: string;
     /**
     * The name of the Grid Infrastructure (GI) cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/odb_cloud_vm_cluster#cluster_name CcCloudVmCluster#cluster_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_vm_cluster#cluster_name CcCloudVmCluster#cluster_name}
     */
     readonly clusterName?: string;
     /**
     * The number of CPU cores enabled on the VM cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/odb_cloud_vm_cluster#cpu_core_count CcCloudVmCluster#cpu_core_count}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_vm_cluster#cpu_core_count CcCloudVmCluster#cpu_core_count}
     */
     readonly cpuCoreCount?: number;
     /**
     * The set of diagnostic collection options enabled for the VM cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/odb_cloud_vm_cluster#data_collection_options CcCloudVmCluster#data_collection_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_vm_cluster#data_collection_options CcCloudVmCluster#data_collection_options}
     */
     readonly dataCollectionOptions?: CcCloudVmCluster.DataCollectionOptionsProperty;
     /**
     * The size of the data disk group, in terabytes (TB), that's allocated for the VM cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/odb_cloud_vm_cluster#data_storage_size_in_t_bs CcCloudVmCluster#data_storage_size_in_t_bs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_vm_cluster#data_storage_size_in_t_bs CcCloudVmCluster#data_storage_size_in_t_bs}
     */
     readonly dataStorageSizeInTBs?: number;
     /**
     * The amount of local node storage, in gigabytes (GB), that's allocated for the VM cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/odb_cloud_vm_cluster#db_node_storage_size_in_g_bs CcCloudVmCluster#db_node_storage_size_in_g_bs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_vm_cluster#db_node_storage_size_in_g_bs CcCloudVmCluster#db_node_storage_size_in_g_bs}
     */
     readonly dbNodeStorageSizeInGBs?: number;
     /**
     * The DB nodes that are implicitly created and managed as part of this VM Cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/odb_cloud_vm_cluster#db_nodes CcCloudVmCluster#db_nodes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_vm_cluster#db_nodes CcCloudVmCluster#db_nodes}
     */
     readonly dbNodes?: CcCloudVmCluster.DbNodeProperty[] | cdktn.IResolvable;
     /**
     * The list of database servers for the VM cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/odb_cloud_vm_cluster#db_servers CcCloudVmCluster#db_servers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_vm_cluster#db_servers CcCloudVmCluster#db_servers}
     */
     readonly dbServers?: string[];
     /**
     * The user-friendly name for the VM cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/odb_cloud_vm_cluster#display_name CcCloudVmCluster#display_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_vm_cluster#display_name CcCloudVmCluster#display_name}
     */
     readonly displayName?: string;
     /**
     * The software version of the Oracle Grid Infrastructure (GI) for the VM cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/odb_cloud_vm_cluster#gi_version CcCloudVmCluster#gi_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_vm_cluster#gi_version CcCloudVmCluster#gi_version}
     */
     readonly giVersion?: string;
     /**
     * The host name for the VM cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/odb_cloud_vm_cluster#hostname CcCloudVmCluster#hostname}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_vm_cluster#hostname CcCloudVmCluster#hostname}
     */
     readonly hostname?: string;
     /**
     * The AWS Identity and Access Management (IAM) service roles associated with the VM cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/odb_cloud_vm_cluster#iam_roles CcCloudVmCluster#iam_roles}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_vm_cluster#iam_roles CcCloudVmCluster#iam_roles}
     */
     readonly iamRoles?: CcCloudVmCluster.IamRoleProperty[] | cdktn.IResolvable;
     /**
     * Indicates whether database backups to local Exadata storage is enabled for the VM cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/odb_cloud_vm_cluster#is_local_backup_enabled CcCloudVmCluster#is_local_backup_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_vm_cluster#is_local_backup_enabled CcCloudVmCluster#is_local_backup_enabled}
     */
     readonly isLocalBackupEnabled?: boolean | cdktn.IResolvable;
     /**
     * Indicates whether the VM cluster is configured with a sparse disk group.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/odb_cloud_vm_cluster#is_sparse_diskgroup_enabled CcCloudVmCluster#is_sparse_diskgroup_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_vm_cluster#is_sparse_diskgroup_enabled CcCloudVmCluster#is_sparse_diskgroup_enabled}
     */
     readonly isSparseDiskgroupEnabled?: boolean | cdktn.IResolvable;
     /**
     * The Oracle license model applied to the VM cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/odb_cloud_vm_cluster#license_model CcCloudVmCluster#license_model}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_vm_cluster#license_model CcCloudVmCluster#license_model}
     */
     readonly licenseModel?: string;
     /**
     * The amount of memory, in gigabytes (GB), that's allocated for the VM cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/odb_cloud_vm_cluster#memory_size_in_g_bs CcCloudVmCluster#memory_size_in_g_bs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_vm_cluster#memory_size_in_g_bs CcCloudVmCluster#memory_size_in_g_bs}
     */
     readonly memorySizeInGBs?: number;
     /**
     * The unique identifier of the ODB network for the VM cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/odb_cloud_vm_cluster#odb_network_id CcCloudVmCluster#odb_network_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_vm_cluster#odb_network_id CcCloudVmCluster#odb_network_id}
     */
     readonly odbNetworkId?: string;
     /**
     * Property description not available.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/odb_cloud_vm_cluster#scan_listener_port_tcp CcCloudVmCluster#scan_listener_port_tcp}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_vm_cluster#scan_listener_port_tcp CcCloudVmCluster#scan_listener_port_tcp}
     */
     readonly scanListenerPortTcp?: number;
     /**
     * The public key portion of one or more key pairs used for SSH access to the VM cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/odb_cloud_vm_cluster#ssh_public_keys CcCloudVmCluster#ssh_public_keys}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_vm_cluster#ssh_public_keys CcCloudVmCluster#ssh_public_keys}
     */
     readonly sshPublicKeys?: string[];
     /**
     * The operating system version of the image chosen for the VM cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/odb_cloud_vm_cluster#system_version CcCloudVmCluster#system_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_vm_cluster#system_version CcCloudVmCluster#system_version}
     */
     readonly systemVersion?: string;
     /**
     * Tags to assign to the Vm Cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/odb_cloud_vm_cluster#tags CcCloudVmCluster#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_vm_cluster#tags CcCloudVmCluster#tags}
     */
     readonly tags?: CcCloudVmCluster.TagsProperty[] | cdktn.IResolvable;
     /**
     * The time zone of the VM cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/odb_cloud_vm_cluster#time_zone CcCloudVmCluster#time_zone}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_vm_cluster#time_zone CcCloudVmCluster#time_zone}
     */
     readonly timeZone?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/odb_cloud_vm_cluster awscc_odb_cloud_vm_cluster}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_vm_cluster awscc_odb_cloud_vm_cluster}
 */
 export class CcCloudVmCluster extends cdktn.TerraformResource {
 
@@ -157,7 +157,7 @@ export class CcCloudVmCluster extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcCloudVmCluster resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcCloudVmCluster to import
-    * @param importFromId The id of the existing CcCloudVmCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/odb_cloud_vm_cluster#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcCloudVmCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_vm_cluster#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcCloudVmCluster to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -169,7 +169,7 @@ export class CcCloudVmCluster extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/odb_cloud_vm_cluster awscc_odb_cloud_vm_cluster} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_vm_cluster awscc_odb_cloud_vm_cluster} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -179,7 +179,8 @@ export class CcCloudVmCluster extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_odb_cloud_vm_cluster',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -1123,19 +1124,19 @@ export interface DataCollectionOptionsProperty {
     /**
     * Indicates whether diagnostic collection is enabled for the VM cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/odb_cloud_vm_cluster#is_diagnostics_events_enabled CcCloudVmCluster#is_diagnostics_events_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_vm_cluster#is_diagnostics_events_enabled CcCloudVmCluster#is_diagnostics_events_enabled}
     */
     readonly isDiagnosticsEventsEnabled?: boolean | cdktn.IResolvable;
     /**
     * Indicates whether health monitoring is enabled for the VM cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/odb_cloud_vm_cluster#is_health_monitoring_enabled CcCloudVmCluster#is_health_monitoring_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_vm_cluster#is_health_monitoring_enabled CcCloudVmCluster#is_health_monitoring_enabled}
     */
     readonly isHealthMonitoringEnabled?: boolean | cdktn.IResolvable;
     /**
     * Indicates whether incident logs are enabled for the cloud VM cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/odb_cloud_vm_cluster#is_incident_logs_enabled CcCloudVmCluster#is_incident_logs_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_vm_cluster#is_incident_logs_enabled CcCloudVmCluster#is_incident_logs_enabled}
     */
     readonly isIncidentLogsEnabled?: boolean | cdktn.IResolvable;
 }
@@ -1245,13 +1246,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that's 1 to 128 Unicode characters in length and can't be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., :, /, =, +, @, -, and ".
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/odb_cloud_vm_cluster#key CcCloudVmCluster#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_vm_cluster#key CcCloudVmCluster#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that's 1 to 256 characters in length. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/odb_cloud_vm_cluster#value CcCloudVmCluster#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_vm_cluster#value CcCloudVmCluster#value}
     */
     readonly value?: string;
 }
@@ -1361,95 +1362,95 @@ export interface DbNodeProperty {
     /**
     * The Oracle Cloud ID (OCID) of the backup IP address that's associated with the DB node.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/odb_cloud_vm_cluster#backup_ip_id CcCloudVmCluster#backup_ip_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_vm_cluster#backup_ip_id CcCloudVmCluster#backup_ip_id}
     */
     readonly backupIpId?: string;
     /**
     * The OCID of the second backup virtual network interface card (VNIC) for the DB node.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/odb_cloud_vm_cluster#backup_vnic_2_id CcCloudVmCluster#backup_vnic_2_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_vm_cluster#backup_vnic_2_id CcCloudVmCluster#backup_vnic_2_id}
     */
     readonly backupVnic2Id?: string;
     /**
     * The number of CPU cores enabled on the DB node.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/odb_cloud_vm_cluster#cpu_core_count CcCloudVmCluster#cpu_core_count}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_vm_cluster#cpu_core_count CcCloudVmCluster#cpu_core_count}
     */
     readonly cpuCoreCount?: number;
     /**
     * The Amazon Resource Name (ARN) of the DB node.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/odb_cloud_vm_cluster#db_node_arn CcCloudVmCluster#db_node_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_vm_cluster#db_node_arn CcCloudVmCluster#db_node_arn}
     */
     readonly dbNodeArn?: string;
     /**
     * The unique identifier of the DB node.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/odb_cloud_vm_cluster#db_node_id CcCloudVmCluster#db_node_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_vm_cluster#db_node_id CcCloudVmCluster#db_node_id}
     */
     readonly dbNodeId?: string;
     /**
     * The amount of local node storage, in gigabytes (GB), that's allocated on the DB node.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/odb_cloud_vm_cluster#db_node_storage_size_in_g_bs CcCloudVmCluster#db_node_storage_size_in_g_bs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_vm_cluster#db_node_storage_size_in_g_bs CcCloudVmCluster#db_node_storage_size_in_g_bs}
     */
     readonly dbNodeStorageSizeInGBs?: number;
     /**
     * The unique identifier of the database server that's associated with the DB node.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/odb_cloud_vm_cluster#db_server_id CcCloudVmCluster#db_server_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_vm_cluster#db_server_id CcCloudVmCluster#db_server_id}
     */
     readonly dbServerId?: string;
     /**
     * The OCID of the DB system.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/odb_cloud_vm_cluster#db_system_id CcCloudVmCluster#db_system_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_vm_cluster#db_system_id CcCloudVmCluster#db_system_id}
     */
     readonly dbSystemId?: string;
     /**
     * The OCID of the host IP address that's associated with the DB node.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/odb_cloud_vm_cluster#host_ip_id CcCloudVmCluster#host_ip_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_vm_cluster#host_ip_id CcCloudVmCluster#host_ip_id}
     */
     readonly hostIpId?: string;
     /**
     * The host name for the DB node.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/odb_cloud_vm_cluster#hostname CcCloudVmCluster#hostname}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_vm_cluster#hostname CcCloudVmCluster#hostname}
     */
     readonly hostname?: string;
     /**
     * The amount of memory, in gigabytes (GB), that allocated on the DB node.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/odb_cloud_vm_cluster#memory_size_in_g_bs CcCloudVmCluster#memory_size_in_g_bs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_vm_cluster#memory_size_in_g_bs CcCloudVmCluster#memory_size_in_g_bs}
     */
     readonly memorySizeInGBs?: number;
     /**
     * The OCID of the DB node.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/odb_cloud_vm_cluster#ocid CcCloudVmCluster#ocid}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_vm_cluster#ocid CcCloudVmCluster#ocid}
     */
     readonly ocid?: string;
     /**
     * The current status of the DB node.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/odb_cloud_vm_cluster#status CcCloudVmCluster#status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_vm_cluster#status CcCloudVmCluster#status}
     */
     readonly status?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/odb_cloud_vm_cluster#tags CcCloudVmCluster#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_vm_cluster#tags CcCloudVmCluster#tags}
     */
     readonly tags?: TagProperty[] | cdktn.IResolvable;
     /**
     * The OCID of the second VNIC.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/odb_cloud_vm_cluster#vnic_2_id CcCloudVmCluster#vnic_2_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_vm_cluster#vnic_2_id CcCloudVmCluster#vnic_2_id}
     */
     readonly vnic2Id?: string;
     /**
     * The OCID of the VNIC.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/odb_cloud_vm_cluster#vnic_id CcCloudVmCluster#vnic_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_vm_cluster#vnic_id CcCloudVmCluster#vnic_id}
     */
     readonly vnicId?: string;
 }
@@ -1867,19 +1868,19 @@ export interface IamRoleProperty {
     /**
     * The AWS integration configuration settings for the AWS Identity and Access Management (IAM) service role.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/odb_cloud_vm_cluster#aws_integration CcCloudVmCluster#aws_integration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_vm_cluster#aws_integration CcCloudVmCluster#aws_integration}
     */
     readonly awsIntegration?: string;
     /**
     * The Amazon Resource Name (ARN) of the AWS Identity and Access Management (IAM) service role.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/odb_cloud_vm_cluster#iam_role_arn CcCloudVmCluster#iam_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_vm_cluster#iam_role_arn CcCloudVmCluster#iam_role_arn}
     */
     readonly iamRoleArn?: string;
     /**
     * The current status of the AWS Identity and Access Management (IAM) service role.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/odb_cloud_vm_cluster#status CcCloudVmCluster#status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_vm_cluster#status CcCloudVmCluster#status}
     */
     readonly status?: string;
 }
@@ -2011,13 +2012,13 @@ export interface TagsProperty {
     /**
     * The key name of the tag. You can specify a value that's 1 to 128 Unicode characters in length and can't be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., :, /, =, +, @, -, and ".
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/odb_cloud_vm_cluster#key CcCloudVmCluster#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_vm_cluster#key CcCloudVmCluster#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that's 1 to 256 characters in length. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/odb_cloud_vm_cluster#value CcCloudVmCluster#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_vm_cluster#value CcCloudVmCluster#value}
     */
     readonly value?: string;
 }

@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/globalaccelerator_accelerator
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/globalaccelerator_accelerator
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,53 +9,53 @@ export interface CcAcceleratorProps extends cdktn.TerraformMetaArguments {
     /**
     * Indicates whether an accelerator is enabled. The value is true or false.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/globalaccelerator_accelerator#enabled CcAccelerator#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/globalaccelerator_accelerator#enabled CcAccelerator#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
     * Indicates whether flow logs are enabled for the accelerator.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/globalaccelerator_accelerator#flow_logs_enabled CcAccelerator#flow_logs_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/globalaccelerator_accelerator#flow_logs_enabled CcAccelerator#flow_logs_enabled}
     */
     readonly flowLogsEnabled?: boolean | cdktn.IResolvable;
     /**
     * The name of the Amazon S3 bucket for the flow logs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/globalaccelerator_accelerator#flow_logs_s3_bucket CcAccelerator#flow_logs_s3_bucket}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/globalaccelerator_accelerator#flow_logs_s3_bucket CcAccelerator#flow_logs_s3_bucket}
     */
     readonly flowLogsS3Bucket?: string;
     /**
     * The prefix for the location in the Amazon S3 bucket for the flow logs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/globalaccelerator_accelerator#flow_logs_s3_prefix CcAccelerator#flow_logs_s3_prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/globalaccelerator_accelerator#flow_logs_s3_prefix CcAccelerator#flow_logs_s3_prefix}
     */
     readonly flowLogsS3Prefix?: string;
     /**
     * IP Address type.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/globalaccelerator_accelerator#ip_address_type CcAccelerator#ip_address_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/globalaccelerator_accelerator#ip_address_type CcAccelerator#ip_address_type}
     */
     readonly ipAddressType?: string;
     /**
     * The IP addresses from BYOIP Prefix pool.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/globalaccelerator_accelerator#ip_addresses CcAccelerator#ip_addresses}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/globalaccelerator_accelerator#ip_addresses CcAccelerator#ip_addresses}
     */
     readonly ipAddresses?: string[];
     /**
     * Name of accelerator.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/globalaccelerator_accelerator#name CcAccelerator#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/globalaccelerator_accelerator#name CcAccelerator#name}
     */
     readonly name: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/globalaccelerator_accelerator#tags CcAccelerator#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/globalaccelerator_accelerator#tags CcAccelerator#tags}
     */
     readonly tags?: CcAccelerator.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/globalaccelerator_accelerator awscc_globalaccelerator_accelerator}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/globalaccelerator_accelerator awscc_globalaccelerator_accelerator}
 */
 export class CcAccelerator extends cdktn.TerraformResource {
 
@@ -71,7 +71,7 @@ export class CcAccelerator extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcAccelerator resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcAccelerator to import
-    * @param importFromId The id of the existing CcAccelerator that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/globalaccelerator_accelerator#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcAccelerator that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/globalaccelerator_accelerator#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcAccelerator to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -83,7 +83,7 @@ export class CcAccelerator extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/globalaccelerator_accelerator awscc_globalaccelerator_accelerator} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/globalaccelerator_accelerator awscc_globalaccelerator_accelerator} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -93,7 +93,8 @@ export class CcAccelerator extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_globalaccelerator_accelerator',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -388,13 +389,13 @@ export interface TagProperty {
     /**
     * Key of the tag. Value can be 1 to 127 characters.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/globalaccelerator_accelerator#key CcAccelerator#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/globalaccelerator_accelerator#key CcAccelerator#key}
     */
     readonly key?: string;
     /**
     * Value for the tag. Value can be 1 to 255 characters.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/globalaccelerator_accelerator#value CcAccelerator#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/globalaccelerator_accelerator#value CcAccelerator#value}
     */
     readonly value?: string;
 }

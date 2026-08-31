@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/s3outposts_access_point
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3outposts_access_point
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,31 +9,31 @@ export interface CcAccessPointProps extends cdktn.TerraformMetaArguments {
     /**
     * The Amazon Resource Name (ARN) of the bucket you want to associate this AccessPoint with.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/s3outposts_access_point#bucket CcAccessPoint#bucket}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3outposts_access_point#bucket CcAccessPoint#bucket}
     */
     readonly bucket: string;
     /**
     * A name for the AccessPoint.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/s3outposts_access_point#name CcAccessPoint#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3outposts_access_point#name CcAccessPoint#name}
     */
     readonly name: string;
     /**
     * The access point policy associated with this access point.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/s3outposts_access_point#policy CcAccessPoint#policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3outposts_access_point#policy CcAccessPoint#policy}
     */
     readonly policy?: string;
     /**
     * Virtual Private Cloud (VPC) from which requests can be made to the AccessPoint.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/s3outposts_access_point#vpc_configuration CcAccessPoint#vpc_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3outposts_access_point#vpc_configuration CcAccessPoint#vpc_configuration}
     */
     readonly vpcConfiguration: CcAccessPoint.VpcConfigurationProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/s3outposts_access_point awscc_s3outposts_access_point}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3outposts_access_point awscc_s3outposts_access_point}
 */
 export class CcAccessPoint extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CcAccessPoint extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcAccessPoint resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcAccessPoint to import
-    * @param importFromId The id of the existing CcAccessPoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/s3outposts_access_point#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcAccessPoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3outposts_access_point#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcAccessPoint to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CcAccessPoint extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/s3outposts_access_point awscc_s3outposts_access_point} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3outposts_access_point awscc_s3outposts_access_point} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -71,7 +71,8 @@ export class CcAccessPoint extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_s3outposts_access_point',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -237,7 +238,7 @@ export interface VpcConfigurationProperty {
     /**
     * Virtual Private Cloud (VPC) Id from which AccessPoint will allow requests.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/s3outposts_access_point#vpc_id CcAccessPoint#vpc_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3outposts_access_point#vpc_id CcAccessPoint#vpc_id}
     */
     readonly vpcId?: string;
 }

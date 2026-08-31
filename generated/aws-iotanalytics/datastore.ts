@@ -1,39 +1,39 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_datastore
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_datastore
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcDatastoreProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_datastore#datastore_name CcDatastore#datastore_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_datastore#datastore_name CcDatastore#datastore_name}
     */
     readonly datastoreName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_datastore#datastore_partitions CcDatastore#datastore_partitions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_datastore#datastore_partitions CcDatastore#datastore_partitions}
     */
     readonly datastorePartitions?: CcDatastore.DatastorePartitionsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_datastore#datastore_storage CcDatastore#datastore_storage}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_datastore#datastore_storage CcDatastore#datastore_storage}
     */
     readonly datastoreStorage?: CcDatastore.DatastoreStorageProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_datastore#file_format_configuration CcDatastore#file_format_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_datastore#file_format_configuration CcDatastore#file_format_configuration}
     */
     readonly fileFormatConfiguration?: CcDatastore.FileFormatConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_datastore#retention_period CcDatastore#retention_period}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_datastore#retention_period CcDatastore#retention_period}
     */
     readonly retentionPeriod?: CcDatastore.RetentionPeriodProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_datastore#tags CcDatastore#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_datastore#tags CcDatastore#tags}
     */
     readonly tags?: CcDatastore.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_datastore awscc_iotanalytics_datastore}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_datastore awscc_iotanalytics_datastore}
 */
 export class CcDatastore extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CcDatastore extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcDatastore resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcDatastore to import
-    * @param importFromId The id of the existing CcDatastore that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_datastore#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcDatastore that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_datastore#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcDatastore to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CcDatastore extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_datastore awscc_iotanalytics_datastore} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_datastore awscc_iotanalytics_datastore} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -71,7 +71,8 @@ export class CcDatastore extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_iotanalytics_datastore',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -759,7 +760,7 @@ export function ccDatastoreTagPropertyToHclTerraform(struct?: CcDatastore.TagPro
 export namespace CcDatastore {
 export interface PartitionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_datastore#attribute_name CcDatastore#attribute_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_datastore#attribute_name CcDatastore#attribute_name}
     */
     readonly attributeName?: string;
 }
@@ -823,11 +824,11 @@ export class PartitionPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface TimestampPartitionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_datastore#attribute_name CcDatastore#attribute_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_datastore#attribute_name CcDatastore#attribute_name}
     */
     readonly attributeName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_datastore#timestamp_format CcDatastore#timestamp_format}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_datastore#timestamp_format CcDatastore#timestamp_format}
     */
     readonly timestampFormat?: string;
 }
@@ -913,11 +914,11 @@ export class TimestampPartitionPropertyOutputReference extends cdktn.ComplexObje
 }
 export interface DatastorePartitionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_datastore#partition CcDatastore#partition}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_datastore#partition CcDatastore#partition}
     */
     readonly partition?: PartitionProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_datastore#timestamp_partition CcDatastore#timestamp_partition}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_datastore#timestamp_partition CcDatastore#timestamp_partition}
     */
     readonly timestampPartition?: TimestampPartitionProperty;
 }
@@ -1025,7 +1026,7 @@ export class DatastorePartitionPropertyList extends cdktn.ComplexList {
 }
 export interface DatastorePartitionsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_datastore#partitions CcDatastore#partitions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_datastore#partitions CcDatastore#partitions}
     */
     readonly partitions?: DatastorePartitionProperty[] | cdktn.IResolvable;
 }
@@ -1089,15 +1090,15 @@ export class DatastorePartitionsPropertyOutputReference extends cdktn.ComplexObj
 }
 export interface CustomerManagedS3Property {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_datastore#bucket CcDatastore#bucket}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_datastore#bucket CcDatastore#bucket}
     */
     readonly bucket?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_datastore#key_prefix CcDatastore#key_prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_datastore#key_prefix CcDatastore#key_prefix}
     */
     readonly keyPrefix?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_datastore#role_arn CcDatastore#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_datastore#role_arn CcDatastore#role_arn}
     */
     readonly roleArn?: string;
 }
@@ -1205,11 +1206,11 @@ export class CustomerManagedS3PropertyOutputReference extends cdktn.ComplexObjec
 }
 export interface CustomerManagedS3StorageProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_datastore#bucket CcDatastore#bucket}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_datastore#bucket CcDatastore#bucket}
     */
     readonly bucket?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_datastore#key_prefix CcDatastore#key_prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_datastore#key_prefix CcDatastore#key_prefix}
     */
     readonly keyPrefix?: string;
 }
@@ -1295,7 +1296,7 @@ export class CustomerManagedS3StoragePropertyOutputReference extends cdktn.Compl
 }
 export interface IotSiteWiseMultiLayerStorageProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_datastore#customer_managed_s3_storage CcDatastore#customer_managed_s3_storage}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_datastore#customer_managed_s3_storage CcDatastore#customer_managed_s3_storage}
     */
     readonly customerManagedS3Storage?: CustomerManagedS3StorageProperty;
 }
@@ -1359,15 +1360,15 @@ export class IotSiteWiseMultiLayerStoragePropertyOutputReference extends cdktn.C
 }
 export interface DatastoreStorageProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_datastore#customer_managed_s3 CcDatastore#customer_managed_s3}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_datastore#customer_managed_s3 CcDatastore#customer_managed_s3}
     */
     readonly customerManagedS3?: CustomerManagedS3Property;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_datastore#iot_site_wise_multi_layer_storage CcDatastore#iot_site_wise_multi_layer_storage}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_datastore#iot_site_wise_multi_layer_storage CcDatastore#iot_site_wise_multi_layer_storage}
     */
     readonly iotSiteWiseMultiLayerStorage?: IotSiteWiseMultiLayerStorageProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_datastore#service_managed_s3 CcDatastore#service_managed_s3}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_datastore#service_managed_s3 CcDatastore#service_managed_s3}
     */
     readonly serviceManagedS3?: string;
 }
@@ -1475,11 +1476,11 @@ export class DatastoreStoragePropertyOutputReference extends cdktn.ComplexObject
 }
 export interface ColumnProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_datastore#name CcDatastore#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_datastore#name CcDatastore#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_datastore#type CcDatastore#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_datastore#type CcDatastore#type}
     */
     readonly type?: string;
 }
@@ -1587,7 +1588,7 @@ export class ColumnPropertyList extends cdktn.ComplexList {
 }
 export interface SchemaDefinitionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_datastore#columns CcDatastore#columns}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_datastore#columns CcDatastore#columns}
     */
     readonly columns?: ColumnProperty[] | cdktn.IResolvable;
 }
@@ -1651,7 +1652,7 @@ export class SchemaDefinitionPropertyOutputReference extends cdktn.ComplexObject
 }
 export interface ParquetConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_datastore#schema_definition CcDatastore#schema_definition}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_datastore#schema_definition CcDatastore#schema_definition}
     */
     readonly schemaDefinition?: SchemaDefinitionProperty;
 }
@@ -1715,11 +1716,11 @@ export class ParquetConfigurationPropertyOutputReference extends cdktn.ComplexOb
 }
 export interface FileFormatConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_datastore#json_configuration CcDatastore#json_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_datastore#json_configuration CcDatastore#json_configuration}
     */
     readonly jsonConfiguration?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_datastore#parquet_configuration CcDatastore#parquet_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_datastore#parquet_configuration CcDatastore#parquet_configuration}
     */
     readonly parquetConfiguration?: ParquetConfigurationProperty;
 }
@@ -1805,11 +1806,11 @@ export class FileFormatConfigurationPropertyOutputReference extends cdktn.Comple
 }
 export interface RetentionPeriodProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_datastore#number_of_days CcDatastore#number_of_days}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_datastore#number_of_days CcDatastore#number_of_days}
     */
     readonly numberOfDays?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_datastore#unlimited CcDatastore#unlimited}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_datastore#unlimited CcDatastore#unlimited}
     */
     readonly unlimited?: boolean | cdktn.IResolvable;
 }
@@ -1895,11 +1896,11 @@ export class RetentionPeriodPropertyOutputReference extends cdktn.ComplexObject 
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_datastore#key CcDatastore#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_datastore#key CcDatastore#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotanalytics_datastore#value CcDatastore#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_datastore#value CcDatastore#value}
     */
     readonly value?: string;
 }

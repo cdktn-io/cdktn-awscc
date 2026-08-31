@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/emr_studio_session_mapping
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/emr_studio_session_mapping
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,31 +9,31 @@ export interface CcStudioSessionMappingProps extends cdktn.TerraformMetaArgument
     /**
     * The name of the user or group. For more information, see UserName and DisplayName in the AWS SSO Identity Store API Reference. Either IdentityName or IdentityId must be specified.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/emr_studio_session_mapping#identity_name CcStudioSessionMapping#identity_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/emr_studio_session_mapping#identity_name CcStudioSessionMapping#identity_name}
     */
     readonly identityName: string;
     /**
     * Specifies whether the identity to map to the Studio is a user or a group.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/emr_studio_session_mapping#identity_type CcStudioSessionMapping#identity_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/emr_studio_session_mapping#identity_type CcStudioSessionMapping#identity_type}
     */
     readonly identityType: string;
     /**
     * The Amazon Resource Name (ARN) for the session policy that will be applied to the user or group. Session policies refine Studio user permissions without the need to use multiple IAM user roles.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/emr_studio_session_mapping#session_policy_arn CcStudioSessionMapping#session_policy_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/emr_studio_session_mapping#session_policy_arn CcStudioSessionMapping#session_policy_arn}
     */
     readonly sessionPolicyArn: string;
     /**
     * The ID of the Amazon EMR Studio to which the user or group will be mapped.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/emr_studio_session_mapping#studio_id CcStudioSessionMapping#studio_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/emr_studio_session_mapping#studio_id CcStudioSessionMapping#studio_id}
     */
     readonly studioId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/emr_studio_session_mapping awscc_emr_studio_session_mapping}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/emr_studio_session_mapping awscc_emr_studio_session_mapping}
 */
 export class CcStudioSessionMapping extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CcStudioSessionMapping extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcStudioSessionMapping resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcStudioSessionMapping to import
-    * @param importFromId The id of the existing CcStudioSessionMapping that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/emr_studio_session_mapping#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcStudioSessionMapping that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/emr_studio_session_mapping#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcStudioSessionMapping to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CcStudioSessionMapping extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/emr_studio_session_mapping awscc_emr_studio_session_mapping} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/emr_studio_session_mapping awscc_emr_studio_session_mapping} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -71,7 +71,8 @@ export class CcStudioSessionMapping extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_emr_studio_session_mapping',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,

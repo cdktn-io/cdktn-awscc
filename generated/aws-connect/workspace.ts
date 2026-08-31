@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_workspace
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_workspace
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,67 +9,67 @@ export interface CcWorkspaceProps extends cdktn.TerraformMetaArguments {
     /**
     * The resource ARNs associated with the workspace
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_workspace#associations CcWorkspace#associations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_workspace#associations CcWorkspace#associations}
     */
     readonly associations?: string[];
     /**
     * The description of the workspace
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_workspace#description CcWorkspace#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_workspace#description CcWorkspace#description}
     */
     readonly description?: string;
     /**
     * The identifier of the Amazon Connect instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_workspace#instance_arn CcWorkspace#instance_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_workspace#instance_arn CcWorkspace#instance_arn}
     */
     readonly instanceArn: string;
     /**
     * The media items for the workspace
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_workspace#media CcWorkspace#media}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_workspace#media CcWorkspace#media}
     */
     readonly media?: CcWorkspace.MediaItemProperty[] | cdktn.IResolvable;
     /**
     * The name of the workspace.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_workspace#name CcWorkspace#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_workspace#name CcWorkspace#name}
     */
     readonly name: string;
     /**
     * The pages associated with the workspace
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_workspace#pages CcWorkspace#pages}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_workspace#pages CcWorkspace#pages}
     */
     readonly pages?: CcWorkspace.WorkspacePageProperty[] | cdktn.IResolvable;
     /**
     * An array of key-value pairs to apply to this resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_workspace#tags CcWorkspace#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_workspace#tags CcWorkspace#tags}
     */
     readonly tags?: CcWorkspace.TagProperty[] | cdktn.IResolvable;
     /**
     * The theme configuration for the workspace
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_workspace#theme CcWorkspace#theme}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_workspace#theme CcWorkspace#theme}
     */
     readonly theme?: CcWorkspace.WorkspaceThemeProperty;
     /**
     * The title of the workspace
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_workspace#title CcWorkspace#title}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_workspace#title CcWorkspace#title}
     */
     readonly title?: string;
     /**
     * The visibility of the workspace. Will always be set to ASSIGNED oninitial creation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_workspace#visibility CcWorkspace#visibility}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_workspace#visibility CcWorkspace#visibility}
     */
     readonly visibility?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_workspace awscc_connect_workspace}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_workspace awscc_connect_workspace}
 */
 export class CcWorkspace extends cdktn.TerraformResource {
 
@@ -85,7 +85,7 @@ export class CcWorkspace extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcWorkspace resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcWorkspace to import
-    * @param importFromId The id of the existing CcWorkspace that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_workspace#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcWorkspace that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_workspace#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcWorkspace to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -97,7 +97,7 @@ export class CcWorkspace extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_workspace awscc_connect_workspace} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_workspace awscc_connect_workspace} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -107,7 +107,8 @@ export class CcWorkspace extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_connect_workspace',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -1273,13 +1274,13 @@ export function ccWorkspaceWorkspaceThemePropertyToHclTerraform(struct?: CcWorks
 export namespace CcWorkspace {
 export interface MediaItemProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_workspace#source CcWorkspace#source}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_workspace#source CcWorkspace#source}
     */
     readonly source?: string;
     /**
     * The type of media
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_workspace#type CcWorkspace#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_workspace#type CcWorkspace#type}
     */
     readonly type?: string;
 }
@@ -1389,25 +1390,25 @@ export interface WorkspacePageProperty {
     /**
     * The input data for the page.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_workspace#input_data CcWorkspace#input_data}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_workspace#input_data CcWorkspace#input_data}
     */
     readonly inputData?: string;
     /**
     * The page identifier.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_workspace#page CcWorkspace#page}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_workspace#page CcWorkspace#page}
     */
     readonly page?: string;
     /**
     * The Amazon Resource Name (ARN) of the resource associated with the page.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_workspace#resource_arn CcWorkspace#resource_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_workspace#resource_arn CcWorkspace#resource_arn}
     */
     readonly resourceArn?: string;
     /**
     * The slug for the page.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_workspace#slug CcWorkspace#slug}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_workspace#slug CcWorkspace#slug}
     */
     readonly slug?: string;
 }
@@ -1561,13 +1562,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_workspace#key CcWorkspace#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_workspace#key CcWorkspace#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 0 to 256 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_workspace#value CcWorkspace#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_workspace#value CcWorkspace#value}
     */
     readonly value?: string;
 }
@@ -1675,15 +1676,15 @@ export class TagPropertyList extends cdktn.ComplexList {
 }
 export interface PaletteCanvasProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_workspace#active_background CcWorkspace#active_background}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_workspace#active_background CcWorkspace#active_background}
     */
     readonly activeBackground?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_workspace#container_background CcWorkspace#container_background}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_workspace#container_background CcWorkspace#container_background}
     */
     readonly containerBackground?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_workspace#page_background CcWorkspace#page_background}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_workspace#page_background CcWorkspace#page_background}
     */
     readonly pageBackground?: string;
 }
@@ -1791,19 +1792,19 @@ export class PaletteCanvasPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface PaletteHeaderProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_workspace#background CcWorkspace#background}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_workspace#background CcWorkspace#background}
     */
     readonly background?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_workspace#invert_actions_colors CcWorkspace#invert_actions_colors}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_workspace#invert_actions_colors CcWorkspace#invert_actions_colors}
     */
     readonly invertActionsColors?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_workspace#text CcWorkspace#text}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_workspace#text CcWorkspace#text}
     */
     readonly text?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_workspace#text_hover CcWorkspace#text_hover}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_workspace#text_hover CcWorkspace#text_hover}
     */
     readonly textHover?: string;
 }
@@ -1933,31 +1934,31 @@ export class PaletteHeaderPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface PaletteNavigationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_workspace#background CcWorkspace#background}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_workspace#background CcWorkspace#background}
     */
     readonly background?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_workspace#invert_actions_colors CcWorkspace#invert_actions_colors}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_workspace#invert_actions_colors CcWorkspace#invert_actions_colors}
     */
     readonly invertActionsColors?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_workspace#text CcWorkspace#text}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_workspace#text CcWorkspace#text}
     */
     readonly text?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_workspace#text_active CcWorkspace#text_active}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_workspace#text_active CcWorkspace#text_active}
     */
     readonly textActive?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_workspace#text_background_active CcWorkspace#text_background_active}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_workspace#text_background_active CcWorkspace#text_background_active}
     */
     readonly textBackgroundActive?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_workspace#text_background_hover CcWorkspace#text_background_hover}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_workspace#text_background_hover CcWorkspace#text_background_hover}
     */
     readonly textBackgroundHover?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_workspace#text_hover CcWorkspace#text_hover}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_workspace#text_hover CcWorkspace#text_hover}
     */
     readonly textHover?: string;
 }
@@ -2153,15 +2154,15 @@ export class PaletteNavigationPropertyOutputReference extends cdktn.ComplexObjec
 }
 export interface PalettePrimaryProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_workspace#active CcWorkspace#active}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_workspace#active CcWorkspace#active}
     */
     readonly active?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_workspace#contrast_text CcWorkspace#contrast_text}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_workspace#contrast_text CcWorkspace#contrast_text}
     */
     readonly contrastText?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_workspace#default CcWorkspace#default}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_workspace#default CcWorkspace#default}
     */
     readonly default?: string;
 }
@@ -2269,19 +2270,19 @@ export class PalettePrimaryPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface WorkspaceThemePaletteProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_workspace#canvas CcWorkspace#canvas}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_workspace#canvas CcWorkspace#canvas}
     */
     readonly canvas?: PaletteCanvasProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_workspace#header CcWorkspace#header}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_workspace#header CcWorkspace#header}
     */
     readonly header?: PaletteHeaderProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_workspace#navigation CcWorkspace#navigation}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_workspace#navigation CcWorkspace#navigation}
     */
     readonly navigation?: PaletteNavigationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_workspace#primary CcWorkspace#primary}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_workspace#primary CcWorkspace#primary}
     */
     readonly primary?: PalettePrimaryProperty;
 }
@@ -2411,7 +2412,7 @@ export class WorkspaceThemePalettePropertyOutputReference extends cdktn.ComplexO
 }
 export interface FontFamilyProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_workspace#default CcWorkspace#default}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_workspace#default CcWorkspace#default}
     */
     readonly default?: string;
 }
@@ -2475,7 +2476,7 @@ export class FontFamilyPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface WorkspaceThemeTypographyProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_workspace#font_family CcWorkspace#font_family}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_workspace#font_family CcWorkspace#font_family}
     */
     readonly fontFamily?: FontFamilyProperty;
 }
@@ -2539,11 +2540,11 @@ export class WorkspaceThemeTypographyPropertyOutputReference extends cdktn.Compl
 }
 export interface WorkspaceThemeConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_workspace#palette CcWorkspace#palette}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_workspace#palette CcWorkspace#palette}
     */
     readonly palette?: WorkspaceThemePaletteProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_workspace#typography CcWorkspace#typography}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_workspace#typography CcWorkspace#typography}
     */
     readonly typography?: WorkspaceThemeTypographyProperty;
 }
@@ -2629,15 +2630,15 @@ export class WorkspaceThemeConfigPropertyOutputReference extends cdktn.ComplexOb
 }
 export interface CanvasProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_workspace#active_background CcWorkspace#active_background}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_workspace#active_background CcWorkspace#active_background}
     */
     readonly activeBackground?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_workspace#container_background CcWorkspace#container_background}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_workspace#container_background CcWorkspace#container_background}
     */
     readonly containerBackground?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_workspace#page_background CcWorkspace#page_background}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_workspace#page_background CcWorkspace#page_background}
     */
     readonly pageBackground?: string;
 }
@@ -2745,19 +2746,19 @@ export class CanvasPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface HeaderProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_workspace#background CcWorkspace#background}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_workspace#background CcWorkspace#background}
     */
     readonly background?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_workspace#invert_actions_colors CcWorkspace#invert_actions_colors}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_workspace#invert_actions_colors CcWorkspace#invert_actions_colors}
     */
     readonly invertActionsColors?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_workspace#text CcWorkspace#text}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_workspace#text CcWorkspace#text}
     */
     readonly text?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_workspace#text_hover CcWorkspace#text_hover}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_workspace#text_hover CcWorkspace#text_hover}
     */
     readonly textHover?: string;
 }
@@ -2887,31 +2888,31 @@ export class HeaderPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface NavigationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_workspace#background CcWorkspace#background}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_workspace#background CcWorkspace#background}
     */
     readonly background?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_workspace#invert_actions_colors CcWorkspace#invert_actions_colors}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_workspace#invert_actions_colors CcWorkspace#invert_actions_colors}
     */
     readonly invertActionsColors?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_workspace#text CcWorkspace#text}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_workspace#text CcWorkspace#text}
     */
     readonly text?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_workspace#text_active CcWorkspace#text_active}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_workspace#text_active CcWorkspace#text_active}
     */
     readonly textActive?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_workspace#text_background_active CcWorkspace#text_background_active}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_workspace#text_background_active CcWorkspace#text_background_active}
     */
     readonly textBackgroundActive?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_workspace#text_background_hover CcWorkspace#text_background_hover}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_workspace#text_background_hover CcWorkspace#text_background_hover}
     */
     readonly textBackgroundHover?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_workspace#text_hover CcWorkspace#text_hover}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_workspace#text_hover CcWorkspace#text_hover}
     */
     readonly textHover?: string;
 }
@@ -3107,15 +3108,15 @@ export class NavigationPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface PrimaryProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_workspace#active CcWorkspace#active}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_workspace#active CcWorkspace#active}
     */
     readonly active?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_workspace#contrast_text CcWorkspace#contrast_text}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_workspace#contrast_text CcWorkspace#contrast_text}
     */
     readonly contrastText?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_workspace#default CcWorkspace#default}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_workspace#default CcWorkspace#default}
     */
     readonly default?: string;
 }
@@ -3223,19 +3224,19 @@ export class PrimaryPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface PaletteProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_workspace#canvas CcWorkspace#canvas}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_workspace#canvas CcWorkspace#canvas}
     */
     readonly canvas?: CanvasProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_workspace#header CcWorkspace#header}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_workspace#header CcWorkspace#header}
     */
     readonly header?: HeaderProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_workspace#navigation CcWorkspace#navigation}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_workspace#navigation CcWorkspace#navigation}
     */
     readonly navigation?: NavigationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_workspace#primary CcWorkspace#primary}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_workspace#primary CcWorkspace#primary}
     */
     readonly primary?: PrimaryProperty;
 }
@@ -3365,7 +3366,7 @@ export class PalettePropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface ThemeLightTypographyFontFamilyProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_workspace#default CcWorkspace#default}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_workspace#default CcWorkspace#default}
     */
     readonly default?: string;
 }
@@ -3429,7 +3430,7 @@ export class ThemeLightTypographyFontFamilyPropertyOutputReference extends cdktn
 }
 export interface TypographyProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_workspace#font_family CcWorkspace#font_family}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_workspace#font_family CcWorkspace#font_family}
     */
     readonly fontFamily?: ThemeLightTypographyFontFamilyProperty;
 }
@@ -3493,11 +3494,11 @@ export class TypographyPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface LightProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_workspace#palette CcWorkspace#palette}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_workspace#palette CcWorkspace#palette}
     */
     readonly palette?: PaletteProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_workspace#typography CcWorkspace#typography}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_workspace#typography CcWorkspace#typography}
     */
     readonly typography?: TypographyProperty;
 }
@@ -3583,11 +3584,11 @@ export class LightPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface WorkspaceThemeProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_workspace#dark CcWorkspace#dark}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_workspace#dark CcWorkspace#dark}
     */
     readonly dark?: WorkspaceThemeConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_workspace#light CcWorkspace#light}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_workspace#light CcWorkspace#light}
     */
     readonly light?: LightProperty;
 }

@@ -1,35 +1,35 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/config_configuration_aggregator
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/config_configuration_aggregator
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcConfigurationAggregatorProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/config_configuration_aggregator#account_aggregation_sources CcConfigurationAggregator#account_aggregation_sources}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/config_configuration_aggregator#account_aggregation_sources CcConfigurationAggregator#account_aggregation_sources}
     */
     readonly accountAggregationSources?: CcConfigurationAggregator.AccountAggregationSourceProperty[] | cdktn.IResolvable;
     /**
     * The name of the aggregator.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/config_configuration_aggregator#configuration_aggregator_name CcConfigurationAggregator#configuration_aggregator_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/config_configuration_aggregator#configuration_aggregator_name CcConfigurationAggregator#configuration_aggregator_name}
     */
     readonly configurationAggregatorName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/config_configuration_aggregator#organization_aggregation_source CcConfigurationAggregator#organization_aggregation_source}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/config_configuration_aggregator#organization_aggregation_source CcConfigurationAggregator#organization_aggregation_source}
     */
     readonly organizationAggregationSource?: CcConfigurationAggregator.OrganizationAggregationSourceProperty;
     /**
     * The tags for the configuration aggregator.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/config_configuration_aggregator#tags CcConfigurationAggregator#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/config_configuration_aggregator#tags CcConfigurationAggregator#tags}
     */
     readonly tags?: CcConfigurationAggregator.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/config_configuration_aggregator awscc_config_configuration_aggregator}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/config_configuration_aggregator awscc_config_configuration_aggregator}
 */
 export class CcConfigurationAggregator extends cdktn.TerraformResource {
 
@@ -45,7 +45,7 @@ export class CcConfigurationAggregator extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcConfigurationAggregator resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcConfigurationAggregator to import
-    * @param importFromId The id of the existing CcConfigurationAggregator that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/config_configuration_aggregator#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcConfigurationAggregator that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/config_configuration_aggregator#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcConfigurationAggregator to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -57,7 +57,7 @@ export class CcConfigurationAggregator extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/config_configuration_aggregator awscc_config_configuration_aggregator} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/config_configuration_aggregator awscc_config_configuration_aggregator} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -67,7 +67,8 @@ export class CcConfigurationAggregator extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_config_configuration_aggregator',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -335,15 +336,15 @@ export function ccConfigurationAggregatorTagPropertyToHclTerraform(struct?: CcCo
 export namespace CcConfigurationAggregator {
 export interface AccountAggregationSourceProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/config_configuration_aggregator#account_ids CcConfigurationAggregator#account_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/config_configuration_aggregator#account_ids CcConfigurationAggregator#account_ids}
     */
     readonly accountIds?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/config_configuration_aggregator#all_aws_regions CcConfigurationAggregator#all_aws_regions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/config_configuration_aggregator#all_aws_regions CcConfigurationAggregator#all_aws_regions}
     */
     readonly allAwsRegions?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/config_configuration_aggregator#aws_regions CcConfigurationAggregator#aws_regions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/config_configuration_aggregator#aws_regions CcConfigurationAggregator#aws_regions}
     */
     readonly awsRegions?: string[];
 }
@@ -473,15 +474,15 @@ export class AccountAggregationSourcePropertyList extends cdktn.ComplexList {
 }
 export interface OrganizationAggregationSourceProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/config_configuration_aggregator#all_aws_regions CcConfigurationAggregator#all_aws_regions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/config_configuration_aggregator#all_aws_regions CcConfigurationAggregator#all_aws_regions}
     */
     readonly allAwsRegions?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/config_configuration_aggregator#aws_regions CcConfigurationAggregator#aws_regions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/config_configuration_aggregator#aws_regions CcConfigurationAggregator#aws_regions}
     */
     readonly awsRegions?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/config_configuration_aggregator#role_arn CcConfigurationAggregator#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/config_configuration_aggregator#role_arn CcConfigurationAggregator#role_arn}
     */
     readonly roleArn?: string;
 }
@@ -591,13 +592,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 127 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/config_configuration_aggregator#key CcConfigurationAggregator#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/config_configuration_aggregator#key CcConfigurationAggregator#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 1 to 255 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/config_configuration_aggregator#value CcConfigurationAggregator#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/config_configuration_aggregator#value CcConfigurationAggregator#value}
     */
     readonly value?: string;
 }

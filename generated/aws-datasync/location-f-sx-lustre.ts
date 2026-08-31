@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datasync_location_fsx_lustre
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_fsx_lustre
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,31 +9,31 @@ export interface CcLocationFSxLustreProps extends cdktn.TerraformMetaArguments {
     /**
     * The Amazon Resource Name (ARN) for the FSx for Lustre file system.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datasync_location_fsx_lustre#fsx_filesystem_arn CcLocationFSxLustre#fsx_filesystem_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_fsx_lustre#fsx_filesystem_arn CcLocationFSxLustre#fsx_filesystem_arn}
     */
     readonly fsxFilesystemArn?: string;
     /**
     * The ARNs of the security groups that are to use to configure the FSx for Lustre file system.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datasync_location_fsx_lustre#security_group_arns CcLocationFSxLustre#security_group_arns}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_fsx_lustre#security_group_arns CcLocationFSxLustre#security_group_arns}
     */
     readonly securityGroupArns: string[];
     /**
     * A subdirectory in the location's path.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datasync_location_fsx_lustre#subdirectory CcLocationFSxLustre#subdirectory}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_fsx_lustre#subdirectory CcLocationFSxLustre#subdirectory}
     */
     readonly subdirectory?: string;
     /**
     * An array of key-value pairs to apply to this resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datasync_location_fsx_lustre#tags CcLocationFSxLustre#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_fsx_lustre#tags CcLocationFSxLustre#tags}
     */
     readonly tags?: CcLocationFSxLustre.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datasync_location_fsx_lustre awscc_datasync_location_fsx_lustre}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_fsx_lustre awscc_datasync_location_fsx_lustre}
 */
 export class CcLocationFSxLustre extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CcLocationFSxLustre extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcLocationFSxLustre resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcLocationFSxLustre to import
-    * @param importFromId The id of the existing CcLocationFSxLustre that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datasync_location_fsx_lustre#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcLocationFSxLustre that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_fsx_lustre#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcLocationFSxLustre to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CcLocationFSxLustre extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datasync_location_fsx_lustre awscc_datasync_location_fsx_lustre} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_fsx_lustre awscc_datasync_location_fsx_lustre} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -71,7 +71,8 @@ export class CcLocationFSxLustre extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_datasync_location_fsx_lustre',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -255,13 +256,13 @@ export interface TagProperty {
     /**
     * The key for an AWS resource tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datasync_location_fsx_lustre#key CcLocationFSxLustre#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_fsx_lustre#key CcLocationFSxLustre#key}
     */
     readonly key?: string;
     /**
     * The value for an AWS resource tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datasync_location_fsx_lustre#value CcLocationFSxLustre#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_fsx_lustre#value CcLocationFSxLustre#value}
     */
     readonly value?: string;
 }

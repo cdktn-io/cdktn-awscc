@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_mlflow_app
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_mlflow_app
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,43 +9,43 @@ export interface CcMlflowAppProps extends cdktn.TerraformMetaArguments {
     /**
     * The S3 URI for a general purpose bucket to use as the MLflow App artifact store.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_mlflow_app#artifact_store_uri CcMlflowApp#artifact_store_uri}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_mlflow_app#artifact_store_uri CcMlflowApp#artifact_store_uri}
     */
     readonly artifactStoreUri: string;
     /**
     * Whether to enable or disable automatic registration of new MLflow models to the SageMaker Model Registry.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_mlflow_app#model_registration_mode CcMlflowApp#model_registration_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_mlflow_app#model_registration_mode CcMlflowApp#model_registration_mode}
     */
     readonly modelRegistrationMode?: string;
     /**
     * The name of the MLflow App.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_mlflow_app#name CcMlflowApp#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_mlflow_app#name CcMlflowApp#name}
     */
     readonly name: string;
     /**
     * The Amazon Resource Name (ARN) for an IAM role in your account that the MLflow App uses to access the artifact store in Amazon S3.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_mlflow_app#role_arn CcMlflowApp#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_mlflow_app#role_arn CcMlflowApp#role_arn}
     */
     readonly roleArn: string;
     /**
     * Tags to associate with the MLflow App.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_mlflow_app#tags CcMlflowApp#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_mlflow_app#tags CcMlflowApp#tags}
     */
     readonly tags?: CcMlflowApp.TagProperty[] | cdktn.IResolvable;
     /**
     * The day and time of the week in Coordinated Universal Time (UTC) 24-hour standard time that weekly maintenance updates are scheduled. For example: Tue:03:30.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_mlflow_app#weekly_maintenance_window_start CcMlflowApp#weekly_maintenance_window_start}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_mlflow_app#weekly_maintenance_window_start CcMlflowApp#weekly_maintenance_window_start}
     */
     readonly weeklyMaintenanceWindowStart?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_mlflow_app awscc_sagemaker_mlflow_app}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_mlflow_app awscc_sagemaker_mlflow_app}
 */
 export class CcMlflowApp extends cdktn.TerraformResource {
 
@@ -61,7 +61,7 @@ export class CcMlflowApp extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcMlflowApp resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcMlflowApp to import
-    * @param importFromId The id of the existing CcMlflowApp that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_mlflow_app#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcMlflowApp that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_mlflow_app#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcMlflowApp to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -73,7 +73,7 @@ export class CcMlflowApp extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_mlflow_app awscc_sagemaker_mlflow_app} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_mlflow_app awscc_sagemaker_mlflow_app} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -83,7 +83,8 @@ export class CcMlflowApp extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_sagemaker_mlflow_app',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -327,11 +328,11 @@ export function ccMlflowAppTagPropertyToHclTerraform(struct?: CcMlflowApp.TagPro
 export namespace CcMlflowApp {
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_mlflow_app#key CcMlflowApp#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_mlflow_app#key CcMlflowApp#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_mlflow_app#value CcMlflowApp#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_mlflow_app#value CcMlflowApp#value}
     */
     readonly value?: string;
 }

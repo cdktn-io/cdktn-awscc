@@ -1,87 +1,87 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcDeliveryStreamProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#amazon_open_search_serverless_destination_configuration CcDeliveryStream#amazon_open_search_serverless_destination_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#amazon_open_search_serverless_destination_configuration CcDeliveryStream#amazon_open_search_serverless_destination_configuration}
     */
     readonly amazonOpenSearchServerlessDestinationConfiguration?: CcDeliveryStream.AmazonOpenSearchServerlessDestinationConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#amazonopensearchservice_destination_configuration CcDeliveryStream#amazonopensearchservice_destination_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#amazonopensearchservice_destination_configuration CcDeliveryStream#amazonopensearchservice_destination_configuration}
     */
     readonly amazonopensearchserviceDestinationConfiguration?: CcDeliveryStream.AmazonopensearchserviceDestinationConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#database_source_configuration CcDeliveryStream#database_source_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#database_source_configuration CcDeliveryStream#database_source_configuration}
     */
     readonly databaseSourceConfiguration?: CcDeliveryStream.DatabaseSourceConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#delivery_stream_encryption_configuration_input CcDeliveryStream#delivery_stream_encryption_configuration_input}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#delivery_stream_encryption_configuration_input CcDeliveryStream#delivery_stream_encryption_configuration_input}
     */
     readonly deliveryStreamEncryptionConfigurationInput?: CcDeliveryStream.DeliveryStreamEncryptionConfigurationInputProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#delivery_stream_name CcDeliveryStream#delivery_stream_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#delivery_stream_name CcDeliveryStream#delivery_stream_name}
     */
     readonly deliveryStreamName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#delivery_stream_type CcDeliveryStream#delivery_stream_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#delivery_stream_type CcDeliveryStream#delivery_stream_type}
     */
     readonly deliveryStreamType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#direct_put_source_configuration CcDeliveryStream#direct_put_source_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#direct_put_source_configuration CcDeliveryStream#direct_put_source_configuration}
     */
     readonly directPutSourceConfiguration?: CcDeliveryStream.DirectPutSourceConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#elasticsearch_destination_configuration CcDeliveryStream#elasticsearch_destination_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#elasticsearch_destination_configuration CcDeliveryStream#elasticsearch_destination_configuration}
     */
     readonly elasticsearchDestinationConfiguration?: CcDeliveryStream.ElasticsearchDestinationConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#extended_s3_destination_configuration CcDeliveryStream#extended_s3_destination_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#extended_s3_destination_configuration CcDeliveryStream#extended_s3_destination_configuration}
     */
     readonly extendedS3DestinationConfiguration?: CcDeliveryStream.ExtendedS3DestinationConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#http_endpoint_destination_configuration CcDeliveryStream#http_endpoint_destination_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#http_endpoint_destination_configuration CcDeliveryStream#http_endpoint_destination_configuration}
     */
     readonly httpEndpointDestinationConfiguration?: CcDeliveryStream.HttpEndpointDestinationConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#iceberg_destination_configuration CcDeliveryStream#iceberg_destination_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#iceberg_destination_configuration CcDeliveryStream#iceberg_destination_configuration}
     */
     readonly icebergDestinationConfiguration?: CcDeliveryStream.IcebergDestinationConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#kinesis_stream_source_configuration CcDeliveryStream#kinesis_stream_source_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#kinesis_stream_source_configuration CcDeliveryStream#kinesis_stream_source_configuration}
     */
     readonly kinesisStreamSourceConfiguration?: CcDeliveryStream.KinesisStreamSourceConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#msk_source_configuration CcDeliveryStream#msk_source_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#msk_source_configuration CcDeliveryStream#msk_source_configuration}
     */
     readonly mskSourceConfiguration?: CcDeliveryStream.MSKSourceConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#redshift_destination_configuration CcDeliveryStream#redshift_destination_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#redshift_destination_configuration CcDeliveryStream#redshift_destination_configuration}
     */
     readonly redshiftDestinationConfiguration?: CcDeliveryStream.RedshiftDestinationConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#s3_destination_configuration CcDeliveryStream#s3_destination_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#s3_destination_configuration CcDeliveryStream#s3_destination_configuration}
     */
     readonly s3DestinationConfiguration?: CcDeliveryStream.S3DestinationConfigurationProperty2;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#snowflake_destination_configuration CcDeliveryStream#snowflake_destination_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#snowflake_destination_configuration CcDeliveryStream#snowflake_destination_configuration}
     */
     readonly snowflakeDestinationConfiguration?: CcDeliveryStream.SnowflakeDestinationConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#splunk_destination_configuration CcDeliveryStream#splunk_destination_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#splunk_destination_configuration CcDeliveryStream#splunk_destination_configuration}
     */
     readonly splunkDestinationConfiguration?: CcDeliveryStream.SplunkDestinationConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#tags CcDeliveryStream#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#tags CcDeliveryStream#tags}
     */
     readonly tags?: CcDeliveryStream.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream awscc_kinesisfirehose_delivery_stream}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream awscc_kinesisfirehose_delivery_stream}
 */
 export class CcDeliveryStream extends cdktn.TerraformResource {
 
@@ -97,7 +97,7 @@ export class CcDeliveryStream extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcDeliveryStream resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcDeliveryStream to import
-    * @param importFromId The id of the existing CcDeliveryStream that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcDeliveryStream that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcDeliveryStream to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -109,7 +109,7 @@ export class CcDeliveryStream extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream awscc_kinesisfirehose_delivery_stream} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream awscc_kinesisfirehose_delivery_stream} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -119,7 +119,8 @@ export class CcDeliveryStream extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_kinesisfirehose_delivery_stream',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -8045,11 +8046,11 @@ export function ccDeliveryStreamTagPropertyToHclTerraform(struct?: CcDeliveryStr
 export namespace CcDeliveryStream {
 export interface AmazonOpenSearchServerlessBufferingHintsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#interval_in_seconds CcDeliveryStream#interval_in_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#interval_in_seconds CcDeliveryStream#interval_in_seconds}
     */
     readonly intervalInSeconds?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#size_in_m_bs CcDeliveryStream#size_in_m_bs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#size_in_m_bs CcDeliveryStream#size_in_m_bs}
     */
     readonly sizeInMBs?: number;
 }
@@ -8135,15 +8136,15 @@ export class AmazonOpenSearchServerlessBufferingHintsPropertyOutputReference ext
 }
 export interface CloudWatchLoggingOptionsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#enabled CcDeliveryStream#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#enabled CcDeliveryStream#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#log_group_name CcDeliveryStream#log_group_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#log_group_name CcDeliveryStream#log_group_name}
     */
     readonly logGroupName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#log_stream_name CcDeliveryStream#log_stream_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#log_stream_name CcDeliveryStream#log_stream_name}
     */
     readonly logStreamName?: string;
 }
@@ -8251,11 +8252,11 @@ export class CloudWatchLoggingOptionsPropertyOutputReference extends cdktn.Compl
 }
 export interface ProcessorParameterProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#parameter_name CcDeliveryStream#parameter_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#parameter_name CcDeliveryStream#parameter_name}
     */
     readonly parameterName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#parameter_value CcDeliveryStream#parameter_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#parameter_value CcDeliveryStream#parameter_value}
     */
     readonly parameterValue?: string;
 }
@@ -8363,11 +8364,11 @@ export class ProcessorParameterPropertyList extends cdktn.ComplexList {
 }
 export interface ProcessorProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#parameters CcDeliveryStream#parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#parameters CcDeliveryStream#parameters}
     */
     readonly parameters?: ProcessorParameterProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#type CcDeliveryStream#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#type CcDeliveryStream#type}
     */
     readonly type?: string;
 }
@@ -8475,11 +8476,11 @@ export class ProcessorPropertyList extends cdktn.ComplexList {
 }
 export interface ProcessingConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#enabled CcDeliveryStream#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#enabled CcDeliveryStream#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#processors CcDeliveryStream#processors}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#processors CcDeliveryStream#processors}
     */
     readonly processors?: ProcessorProperty[] | cdktn.IResolvable;
 }
@@ -8565,7 +8566,7 @@ export class ProcessingConfigurationPropertyOutputReference extends cdktn.Comple
 }
 export interface AmazonOpenSearchServerlessRetryOptionsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#duration_in_seconds CcDeliveryStream#duration_in_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#duration_in_seconds CcDeliveryStream#duration_in_seconds}
     */
     readonly durationInSeconds?: number;
 }
@@ -8629,11 +8630,11 @@ export class AmazonOpenSearchServerlessRetryOptionsPropertyOutputReference exten
 }
 export interface BufferingHintsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#interval_in_seconds CcDeliveryStream#interval_in_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#interval_in_seconds CcDeliveryStream#interval_in_seconds}
     */
     readonly intervalInSeconds?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#size_in_m_bs CcDeliveryStream#size_in_m_bs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#size_in_m_bs CcDeliveryStream#size_in_m_bs}
     */
     readonly sizeInMBs?: number;
 }
@@ -8719,15 +8720,15 @@ export class BufferingHintsPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface AmazonOpenSearchServerlessDestinationConfigurationS3ConfigurationCloudwatchLoggingOptionsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#enabled CcDeliveryStream#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#enabled CcDeliveryStream#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#log_group_name CcDeliveryStream#log_group_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#log_group_name CcDeliveryStream#log_group_name}
     */
     readonly logGroupName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#log_stream_name CcDeliveryStream#log_stream_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#log_stream_name CcDeliveryStream#log_stream_name}
     */
     readonly logStreamName?: string;
 }
@@ -8835,7 +8836,7 @@ export class AmazonOpenSearchServerlessDestinationConfigurationS3ConfigurationCl
 }
 export interface KMSEncryptionConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#awskms_key_arn CcDeliveryStream#awskms_key_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#awskms_key_arn CcDeliveryStream#awskms_key_arn}
     */
     readonly awskmsKeyArn?: string;
 }
@@ -8899,11 +8900,11 @@ export class KMSEncryptionConfigPropertyOutputReference extends cdktn.ComplexObj
 }
 export interface EncryptionConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#kms_encryption_config CcDeliveryStream#kms_encryption_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#kms_encryption_config CcDeliveryStream#kms_encryption_config}
     */
     readonly kmsEncryptionConfig?: KMSEncryptionConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#no_encryption_config CcDeliveryStream#no_encryption_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#no_encryption_config CcDeliveryStream#no_encryption_config}
     */
     readonly noEncryptionConfig?: string;
 }
@@ -8989,35 +8990,35 @@ export class EncryptionConfigurationPropertyOutputReference extends cdktn.Comple
 }
 export interface S3DestinationConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#bucket_arn CcDeliveryStream#bucket_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#bucket_arn CcDeliveryStream#bucket_arn}
     */
     readonly bucketArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#buffering_hints CcDeliveryStream#buffering_hints}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#buffering_hints CcDeliveryStream#buffering_hints}
     */
     readonly bufferingHints?: BufferingHintsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#cloudwatch_logging_options CcDeliveryStream#cloudwatch_logging_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#cloudwatch_logging_options CcDeliveryStream#cloudwatch_logging_options}
     */
     readonly cloudwatchLoggingOptions?: AmazonOpenSearchServerlessDestinationConfigurationS3ConfigurationCloudwatchLoggingOptionsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#compression_format CcDeliveryStream#compression_format}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#compression_format CcDeliveryStream#compression_format}
     */
     readonly compressionFormat?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#encryption_configuration CcDeliveryStream#encryption_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#encryption_configuration CcDeliveryStream#encryption_configuration}
     */
     readonly encryptionConfiguration?: EncryptionConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#error_output_prefix CcDeliveryStream#error_output_prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#error_output_prefix CcDeliveryStream#error_output_prefix}
     */
     readonly errorOutputPrefix?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#prefix CcDeliveryStream#prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#prefix CcDeliveryStream#prefix}
     */
     readonly prefix?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#role_arn CcDeliveryStream#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#role_arn CcDeliveryStream#role_arn}
     */
     readonly roleArn?: string;
 }
@@ -9235,15 +9236,15 @@ export class S3DestinationConfigurationPropertyOutputReference extends cdktn.Com
 }
 export interface VpcConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#role_arn CcDeliveryStream#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#role_arn CcDeliveryStream#role_arn}
     */
     readonly roleArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#security_group_ids CcDeliveryStream#security_group_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#security_group_ids CcDeliveryStream#security_group_ids}
     */
     readonly securityGroupIds?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#subnet_ids CcDeliveryStream#subnet_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#subnet_ids CcDeliveryStream#subnet_ids}
     */
     readonly subnetIds?: string[];
 }
@@ -9351,43 +9352,43 @@ export class VpcConfigurationPropertyOutputReference extends cdktn.ComplexObject
 }
 export interface AmazonOpenSearchServerlessDestinationConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#buffering_hints CcDeliveryStream#buffering_hints}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#buffering_hints CcDeliveryStream#buffering_hints}
     */
     readonly bufferingHints?: AmazonOpenSearchServerlessBufferingHintsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#cloudwatch_logging_options CcDeliveryStream#cloudwatch_logging_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#cloudwatch_logging_options CcDeliveryStream#cloudwatch_logging_options}
     */
     readonly cloudwatchLoggingOptions?: CloudWatchLoggingOptionsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#collection_endpoint CcDeliveryStream#collection_endpoint}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#collection_endpoint CcDeliveryStream#collection_endpoint}
     */
     readonly collectionEndpoint?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#index_name CcDeliveryStream#index_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#index_name CcDeliveryStream#index_name}
     */
     readonly indexName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#processing_configuration CcDeliveryStream#processing_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#processing_configuration CcDeliveryStream#processing_configuration}
     */
     readonly processingConfiguration?: ProcessingConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#retry_options CcDeliveryStream#retry_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#retry_options CcDeliveryStream#retry_options}
     */
     readonly retryOptions?: AmazonOpenSearchServerlessRetryOptionsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#role_arn CcDeliveryStream#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#role_arn CcDeliveryStream#role_arn}
     */
     readonly roleArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#s3_backup_mode CcDeliveryStream#s3_backup_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#s3_backup_mode CcDeliveryStream#s3_backup_mode}
     */
     readonly s3BackupMode?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#s3_configuration CcDeliveryStream#s3_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#s3_configuration CcDeliveryStream#s3_configuration}
     */
     readonly s3Configuration?: S3DestinationConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#vpc_configuration CcDeliveryStream#vpc_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#vpc_configuration CcDeliveryStream#vpc_configuration}
     */
     readonly vpcConfiguration?: VpcConfigurationProperty;
 }
@@ -9649,11 +9650,11 @@ export class AmazonOpenSearchServerlessDestinationConfigurationPropertyOutputRef
 }
 export interface AmazonopensearchserviceBufferingHintsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#interval_in_seconds CcDeliveryStream#interval_in_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#interval_in_seconds CcDeliveryStream#interval_in_seconds}
     */
     readonly intervalInSeconds?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#size_in_m_bs CcDeliveryStream#size_in_m_bs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#size_in_m_bs CcDeliveryStream#size_in_m_bs}
     */
     readonly sizeInMBs?: number;
 }
@@ -9739,15 +9740,15 @@ export class AmazonopensearchserviceBufferingHintsPropertyOutputReference extend
 }
 export interface AmazonopensearchserviceDestinationConfigurationCloudwatchLoggingOptionsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#enabled CcDeliveryStream#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#enabled CcDeliveryStream#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#log_group_name CcDeliveryStream#log_group_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#log_group_name CcDeliveryStream#log_group_name}
     */
     readonly logGroupName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#log_stream_name CcDeliveryStream#log_stream_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#log_stream_name CcDeliveryStream#log_stream_name}
     */
     readonly logStreamName?: string;
 }
@@ -9855,7 +9856,7 @@ export class AmazonopensearchserviceDestinationConfigurationCloudwatchLoggingOpt
 }
 export interface DocumentIdOptionsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#default_document_id_format CcDeliveryStream#default_document_id_format}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#default_document_id_format CcDeliveryStream#default_document_id_format}
     */
     readonly defaultDocumentIdFormat?: string;
 }
@@ -9919,11 +9920,11 @@ export class DocumentIdOptionsPropertyOutputReference extends cdktn.ComplexObjec
 }
 export interface AmazonopensearchserviceDestinationConfigurationProcessingConfigurationProcessorsParametersProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#parameter_name CcDeliveryStream#parameter_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#parameter_name CcDeliveryStream#parameter_name}
     */
     readonly parameterName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#parameter_value CcDeliveryStream#parameter_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#parameter_value CcDeliveryStream#parameter_value}
     */
     readonly parameterValue?: string;
 }
@@ -10031,11 +10032,11 @@ export class AmazonopensearchserviceDestinationConfigurationProcessingConfigurat
 }
 export interface AmazonopensearchserviceDestinationConfigurationProcessingConfigurationProcessorsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#parameters CcDeliveryStream#parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#parameters CcDeliveryStream#parameters}
     */
     readonly parameters?: AmazonopensearchserviceDestinationConfigurationProcessingConfigurationProcessorsParametersProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#type CcDeliveryStream#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#type CcDeliveryStream#type}
     */
     readonly type?: string;
 }
@@ -10143,11 +10144,11 @@ export class AmazonopensearchserviceDestinationConfigurationProcessingConfigurat
 }
 export interface AmazonopensearchserviceDestinationConfigurationProcessingConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#enabled CcDeliveryStream#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#enabled CcDeliveryStream#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#processors CcDeliveryStream#processors}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#processors CcDeliveryStream#processors}
     */
     readonly processors?: AmazonopensearchserviceDestinationConfigurationProcessingConfigurationProcessorsProperty[] | cdktn.IResolvable;
 }
@@ -10233,7 +10234,7 @@ export class AmazonopensearchserviceDestinationConfigurationProcessingConfigurat
 }
 export interface AmazonopensearchserviceRetryOptionsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#duration_in_seconds CcDeliveryStream#duration_in_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#duration_in_seconds CcDeliveryStream#duration_in_seconds}
     */
     readonly durationInSeconds?: number;
 }
@@ -10297,11 +10298,11 @@ export class AmazonopensearchserviceRetryOptionsPropertyOutputReference extends 
 }
 export interface AmazonopensearchserviceDestinationConfigurationS3ConfigurationBufferingHintsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#interval_in_seconds CcDeliveryStream#interval_in_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#interval_in_seconds CcDeliveryStream#interval_in_seconds}
     */
     readonly intervalInSeconds?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#size_in_m_bs CcDeliveryStream#size_in_m_bs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#size_in_m_bs CcDeliveryStream#size_in_m_bs}
     */
     readonly sizeInMBs?: number;
 }
@@ -10387,15 +10388,15 @@ export class AmazonopensearchserviceDestinationConfigurationS3ConfigurationBuffe
 }
 export interface AmazonopensearchserviceDestinationConfigurationS3ConfigurationCloudwatchLoggingOptionsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#enabled CcDeliveryStream#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#enabled CcDeliveryStream#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#log_group_name CcDeliveryStream#log_group_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#log_group_name CcDeliveryStream#log_group_name}
     */
     readonly logGroupName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#log_stream_name CcDeliveryStream#log_stream_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#log_stream_name CcDeliveryStream#log_stream_name}
     */
     readonly logStreamName?: string;
 }
@@ -10503,7 +10504,7 @@ export class AmazonopensearchserviceDestinationConfigurationS3ConfigurationCloud
 }
 export interface AmazonopensearchserviceDestinationConfigurationS3ConfigurationEncryptionConfigurationKmsEncryptionConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#awskms_key_arn CcDeliveryStream#awskms_key_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#awskms_key_arn CcDeliveryStream#awskms_key_arn}
     */
     readonly awskmsKeyArn?: string;
 }
@@ -10567,11 +10568,11 @@ export class AmazonopensearchserviceDestinationConfigurationS3ConfigurationEncry
 }
 export interface AmazonopensearchserviceDestinationConfigurationS3ConfigurationEncryptionConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#kms_encryption_config CcDeliveryStream#kms_encryption_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#kms_encryption_config CcDeliveryStream#kms_encryption_config}
     */
     readonly kmsEncryptionConfig?: AmazonopensearchserviceDestinationConfigurationS3ConfigurationEncryptionConfigurationKmsEncryptionConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#no_encryption_config CcDeliveryStream#no_encryption_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#no_encryption_config CcDeliveryStream#no_encryption_config}
     */
     readonly noEncryptionConfig?: string;
 }
@@ -10657,35 +10658,35 @@ export class AmazonopensearchserviceDestinationConfigurationS3ConfigurationEncry
 }
 export interface AmazonopensearchserviceDestinationConfigurationS3ConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#bucket_arn CcDeliveryStream#bucket_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#bucket_arn CcDeliveryStream#bucket_arn}
     */
     readonly bucketArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#buffering_hints CcDeliveryStream#buffering_hints}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#buffering_hints CcDeliveryStream#buffering_hints}
     */
     readonly bufferingHints?: AmazonopensearchserviceDestinationConfigurationS3ConfigurationBufferingHintsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#cloudwatch_logging_options CcDeliveryStream#cloudwatch_logging_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#cloudwatch_logging_options CcDeliveryStream#cloudwatch_logging_options}
     */
     readonly cloudwatchLoggingOptions?: AmazonopensearchserviceDestinationConfigurationS3ConfigurationCloudwatchLoggingOptionsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#compression_format CcDeliveryStream#compression_format}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#compression_format CcDeliveryStream#compression_format}
     */
     readonly compressionFormat?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#encryption_configuration CcDeliveryStream#encryption_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#encryption_configuration CcDeliveryStream#encryption_configuration}
     */
     readonly encryptionConfiguration?: AmazonopensearchserviceDestinationConfigurationS3ConfigurationEncryptionConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#error_output_prefix CcDeliveryStream#error_output_prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#error_output_prefix CcDeliveryStream#error_output_prefix}
     */
     readonly errorOutputPrefix?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#prefix CcDeliveryStream#prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#prefix CcDeliveryStream#prefix}
     */
     readonly prefix?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#role_arn CcDeliveryStream#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#role_arn CcDeliveryStream#role_arn}
     */
     readonly roleArn?: string;
 }
@@ -10903,15 +10904,15 @@ export class AmazonopensearchserviceDestinationConfigurationS3ConfigurationPrope
 }
 export interface AmazonopensearchserviceDestinationConfigurationVpcConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#role_arn CcDeliveryStream#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#role_arn CcDeliveryStream#role_arn}
     */
     readonly roleArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#security_group_ids CcDeliveryStream#security_group_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#security_group_ids CcDeliveryStream#security_group_ids}
     */
     readonly securityGroupIds?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#subnet_ids CcDeliveryStream#subnet_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#subnet_ids CcDeliveryStream#subnet_ids}
     */
     readonly subnetIds?: string[];
 }
@@ -11019,59 +11020,59 @@ export class AmazonopensearchserviceDestinationConfigurationVpcConfigurationProp
 }
 export interface AmazonopensearchserviceDestinationConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#buffering_hints CcDeliveryStream#buffering_hints}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#buffering_hints CcDeliveryStream#buffering_hints}
     */
     readonly bufferingHints?: AmazonopensearchserviceBufferingHintsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#cloudwatch_logging_options CcDeliveryStream#cloudwatch_logging_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#cloudwatch_logging_options CcDeliveryStream#cloudwatch_logging_options}
     */
     readonly cloudwatchLoggingOptions?: AmazonopensearchserviceDestinationConfigurationCloudwatchLoggingOptionsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#cluster_endpoint CcDeliveryStream#cluster_endpoint}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#cluster_endpoint CcDeliveryStream#cluster_endpoint}
     */
     readonly clusterEndpoint?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#document_id_options CcDeliveryStream#document_id_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#document_id_options CcDeliveryStream#document_id_options}
     */
     readonly documentIdOptions?: DocumentIdOptionsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#domain_arn CcDeliveryStream#domain_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#domain_arn CcDeliveryStream#domain_arn}
     */
     readonly domainArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#index_name CcDeliveryStream#index_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#index_name CcDeliveryStream#index_name}
     */
     readonly indexName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#index_rotation_period CcDeliveryStream#index_rotation_period}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#index_rotation_period CcDeliveryStream#index_rotation_period}
     */
     readonly indexRotationPeriod?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#processing_configuration CcDeliveryStream#processing_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#processing_configuration CcDeliveryStream#processing_configuration}
     */
     readonly processingConfiguration?: AmazonopensearchserviceDestinationConfigurationProcessingConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#retry_options CcDeliveryStream#retry_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#retry_options CcDeliveryStream#retry_options}
     */
     readonly retryOptions?: AmazonopensearchserviceRetryOptionsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#role_arn CcDeliveryStream#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#role_arn CcDeliveryStream#role_arn}
     */
     readonly roleArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#s3_backup_mode CcDeliveryStream#s3_backup_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#s3_backup_mode CcDeliveryStream#s3_backup_mode}
     */
     readonly s3BackupMode?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#s3_configuration CcDeliveryStream#s3_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#s3_configuration CcDeliveryStream#s3_configuration}
     */
     readonly s3Configuration?: AmazonopensearchserviceDestinationConfigurationS3ConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#type_name CcDeliveryStream#type_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#type_name CcDeliveryStream#type_name}
     */
     readonly typeName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#vpc_configuration CcDeliveryStream#vpc_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#vpc_configuration CcDeliveryStream#vpc_configuration}
     */
     readonly vpcConfiguration?: AmazonopensearchserviceDestinationConfigurationVpcConfigurationProperty;
 }
@@ -11421,11 +11422,11 @@ export class AmazonopensearchserviceDestinationConfigurationPropertyOutputRefere
 }
 export interface DatabaseColumnsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#exclude CcDeliveryStream#exclude}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#exclude CcDeliveryStream#exclude}
     */
     readonly exclude?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#include CcDeliveryStream#include}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#include CcDeliveryStream#include}
     */
     readonly include?: string[];
 }
@@ -11511,15 +11512,15 @@ export class DatabaseColumnsPropertyOutputReference extends cdktn.ComplexObject 
 }
 export interface SecretsManagerConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#enabled CcDeliveryStream#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#enabled CcDeliveryStream#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#role_arn CcDeliveryStream#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#role_arn CcDeliveryStream#role_arn}
     */
     readonly roleArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#secret_arn CcDeliveryStream#secret_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#secret_arn CcDeliveryStream#secret_arn}
     */
     readonly secretArn?: string;
 }
@@ -11627,7 +11628,7 @@ export class SecretsManagerConfigurationPropertyOutputReference extends cdktn.Co
 }
 export interface DatabaseSourceAuthenticationConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#secrets_manager_configuration CcDeliveryStream#secrets_manager_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#secrets_manager_configuration CcDeliveryStream#secrets_manager_configuration}
     */
     readonly secretsManagerConfiguration?: SecretsManagerConfigurationProperty;
 }
@@ -11691,7 +11692,7 @@ export class DatabaseSourceAuthenticationConfigurationPropertyOutputReference ex
 }
 export interface DatabaseSourceVPCConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#vpc_endpoint_service_name CcDeliveryStream#vpc_endpoint_service_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#vpc_endpoint_service_name CcDeliveryStream#vpc_endpoint_service_name}
     */
     readonly vpcEndpointServiceName?: string;
 }
@@ -11755,11 +11756,11 @@ export class DatabaseSourceVPCConfigurationPropertyOutputReference extends cdktn
 }
 export interface DatabasesProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#exclude CcDeliveryStream#exclude}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#exclude CcDeliveryStream#exclude}
     */
     readonly exclude?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#include CcDeliveryStream#include}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#include CcDeliveryStream#include}
     */
     readonly include?: string[];
 }
@@ -11845,11 +11846,11 @@ export class DatabasesPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface DatabaseTablesProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#exclude CcDeliveryStream#exclude}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#exclude CcDeliveryStream#exclude}
     */
     readonly exclude?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#include CcDeliveryStream#include}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#include CcDeliveryStream#include}
     */
     readonly include?: string[];
 }
@@ -11935,55 +11936,55 @@ export class DatabaseTablesPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface DatabaseSourceConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#columns CcDeliveryStream#columns}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#columns CcDeliveryStream#columns}
     */
     readonly columns?: DatabaseColumnsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#database_source_authentication_configuration CcDeliveryStream#database_source_authentication_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#database_source_authentication_configuration CcDeliveryStream#database_source_authentication_configuration}
     */
     readonly databaseSourceAuthenticationConfiguration?: DatabaseSourceAuthenticationConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#database_source_vpc_configuration CcDeliveryStream#database_source_vpc_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#database_source_vpc_configuration CcDeliveryStream#database_source_vpc_configuration}
     */
     readonly databaseSourceVpcConfiguration?: DatabaseSourceVPCConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#databases CcDeliveryStream#databases}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#databases CcDeliveryStream#databases}
     */
     readonly databases?: DatabasesProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#digest CcDeliveryStream#digest}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#digest CcDeliveryStream#digest}
     */
     readonly digest?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#endpoint CcDeliveryStream#endpoint}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#endpoint CcDeliveryStream#endpoint}
     */
     readonly endpoint?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#port CcDeliveryStream#port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#port CcDeliveryStream#port}
     */
     readonly port?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#public_certificate CcDeliveryStream#public_certificate}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#public_certificate CcDeliveryStream#public_certificate}
     */
     readonly publicCertificate?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#snapshot_watermark_table CcDeliveryStream#snapshot_watermark_table}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#snapshot_watermark_table CcDeliveryStream#snapshot_watermark_table}
     */
     readonly snapshotWatermarkTable?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#ssl_mode CcDeliveryStream#ssl_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#ssl_mode CcDeliveryStream#ssl_mode}
     */
     readonly sslMode?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#surrogate_keys CcDeliveryStream#surrogate_keys}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#surrogate_keys CcDeliveryStream#surrogate_keys}
     */
     readonly surrogateKeys?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#tables CcDeliveryStream#tables}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#tables CcDeliveryStream#tables}
     */
     readonly tables?: DatabaseTablesProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#type CcDeliveryStream#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#type CcDeliveryStream#type}
     */
     readonly type?: string;
 }
@@ -12311,11 +12312,11 @@ export class DatabaseSourceConfigurationPropertyOutputReference extends cdktn.Co
 }
 export interface DeliveryStreamEncryptionConfigurationInputProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#key_arn CcDeliveryStream#key_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#key_arn CcDeliveryStream#key_arn}
     */
     readonly keyArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#key_type CcDeliveryStream#key_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#key_type CcDeliveryStream#key_type}
     */
     readonly keyType?: string;
 }
@@ -12401,7 +12402,7 @@ export class DeliveryStreamEncryptionConfigurationInputPropertyOutputReference e
 }
 export interface DirectPutSourceConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#throughput_hint_in_m_bs CcDeliveryStream#throughput_hint_in_m_bs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#throughput_hint_in_m_bs CcDeliveryStream#throughput_hint_in_m_bs}
     */
     readonly throughputHintInMBs?: number;
 }
@@ -12465,11 +12466,11 @@ export class DirectPutSourceConfigurationPropertyOutputReference extends cdktn.C
 }
 export interface ElasticsearchBufferingHintsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#interval_in_seconds CcDeliveryStream#interval_in_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#interval_in_seconds CcDeliveryStream#interval_in_seconds}
     */
     readonly intervalInSeconds?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#size_in_m_bs CcDeliveryStream#size_in_m_bs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#size_in_m_bs CcDeliveryStream#size_in_m_bs}
     */
     readonly sizeInMBs?: number;
 }
@@ -12555,15 +12556,15 @@ export class ElasticsearchBufferingHintsPropertyOutputReference extends cdktn.Co
 }
 export interface ElasticsearchDestinationConfigurationCloudwatchLoggingOptionsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#enabled CcDeliveryStream#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#enabled CcDeliveryStream#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#log_group_name CcDeliveryStream#log_group_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#log_group_name CcDeliveryStream#log_group_name}
     */
     readonly logGroupName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#log_stream_name CcDeliveryStream#log_stream_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#log_stream_name CcDeliveryStream#log_stream_name}
     */
     readonly logStreamName?: string;
 }
@@ -12671,7 +12672,7 @@ export class ElasticsearchDestinationConfigurationCloudwatchLoggingOptionsProper
 }
 export interface ElasticsearchDestinationConfigurationDocumentIdOptionsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#default_document_id_format CcDeliveryStream#default_document_id_format}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#default_document_id_format CcDeliveryStream#default_document_id_format}
     */
     readonly defaultDocumentIdFormat?: string;
 }
@@ -12735,11 +12736,11 @@ export class ElasticsearchDestinationConfigurationDocumentIdOptionsPropertyOutpu
 }
 export interface ElasticsearchDestinationConfigurationProcessingConfigurationProcessorsParametersProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#parameter_name CcDeliveryStream#parameter_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#parameter_name CcDeliveryStream#parameter_name}
     */
     readonly parameterName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#parameter_value CcDeliveryStream#parameter_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#parameter_value CcDeliveryStream#parameter_value}
     */
     readonly parameterValue?: string;
 }
@@ -12847,11 +12848,11 @@ export class ElasticsearchDestinationConfigurationProcessingConfigurationProcess
 }
 export interface ElasticsearchDestinationConfigurationProcessingConfigurationProcessorsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#parameters CcDeliveryStream#parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#parameters CcDeliveryStream#parameters}
     */
     readonly parameters?: ElasticsearchDestinationConfigurationProcessingConfigurationProcessorsParametersProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#type CcDeliveryStream#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#type CcDeliveryStream#type}
     */
     readonly type?: string;
 }
@@ -12959,11 +12960,11 @@ export class ElasticsearchDestinationConfigurationProcessingConfigurationProcess
 }
 export interface ElasticsearchDestinationConfigurationProcessingConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#enabled CcDeliveryStream#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#enabled CcDeliveryStream#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#processors CcDeliveryStream#processors}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#processors CcDeliveryStream#processors}
     */
     readonly processors?: ElasticsearchDestinationConfigurationProcessingConfigurationProcessorsProperty[] | cdktn.IResolvable;
 }
@@ -13049,7 +13050,7 @@ export class ElasticsearchDestinationConfigurationProcessingConfigurationPropert
 }
 export interface ElasticsearchRetryOptionsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#duration_in_seconds CcDeliveryStream#duration_in_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#duration_in_seconds CcDeliveryStream#duration_in_seconds}
     */
     readonly durationInSeconds?: number;
 }
@@ -13113,11 +13114,11 @@ export class ElasticsearchRetryOptionsPropertyOutputReference extends cdktn.Comp
 }
 export interface ElasticsearchDestinationConfigurationS3ConfigurationBufferingHintsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#interval_in_seconds CcDeliveryStream#interval_in_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#interval_in_seconds CcDeliveryStream#interval_in_seconds}
     */
     readonly intervalInSeconds?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#size_in_m_bs CcDeliveryStream#size_in_m_bs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#size_in_m_bs CcDeliveryStream#size_in_m_bs}
     */
     readonly sizeInMBs?: number;
 }
@@ -13203,15 +13204,15 @@ export class ElasticsearchDestinationConfigurationS3ConfigurationBufferingHintsP
 }
 export interface ElasticsearchDestinationConfigurationS3ConfigurationCloudwatchLoggingOptionsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#enabled CcDeliveryStream#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#enabled CcDeliveryStream#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#log_group_name CcDeliveryStream#log_group_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#log_group_name CcDeliveryStream#log_group_name}
     */
     readonly logGroupName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#log_stream_name CcDeliveryStream#log_stream_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#log_stream_name CcDeliveryStream#log_stream_name}
     */
     readonly logStreamName?: string;
 }
@@ -13319,7 +13320,7 @@ export class ElasticsearchDestinationConfigurationS3ConfigurationCloudwatchLoggi
 }
 export interface ElasticsearchDestinationConfigurationS3ConfigurationEncryptionConfigurationKmsEncryptionConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#awskms_key_arn CcDeliveryStream#awskms_key_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#awskms_key_arn CcDeliveryStream#awskms_key_arn}
     */
     readonly awskmsKeyArn?: string;
 }
@@ -13383,11 +13384,11 @@ export class ElasticsearchDestinationConfigurationS3ConfigurationEncryptionConfi
 }
 export interface ElasticsearchDestinationConfigurationS3ConfigurationEncryptionConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#kms_encryption_config CcDeliveryStream#kms_encryption_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#kms_encryption_config CcDeliveryStream#kms_encryption_config}
     */
     readonly kmsEncryptionConfig?: ElasticsearchDestinationConfigurationS3ConfigurationEncryptionConfigurationKmsEncryptionConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#no_encryption_config CcDeliveryStream#no_encryption_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#no_encryption_config CcDeliveryStream#no_encryption_config}
     */
     readonly noEncryptionConfig?: string;
 }
@@ -13473,35 +13474,35 @@ export class ElasticsearchDestinationConfigurationS3ConfigurationEncryptionConfi
 }
 export interface ElasticsearchDestinationConfigurationS3ConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#bucket_arn CcDeliveryStream#bucket_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#bucket_arn CcDeliveryStream#bucket_arn}
     */
     readonly bucketArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#buffering_hints CcDeliveryStream#buffering_hints}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#buffering_hints CcDeliveryStream#buffering_hints}
     */
     readonly bufferingHints?: ElasticsearchDestinationConfigurationS3ConfigurationBufferingHintsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#cloudwatch_logging_options CcDeliveryStream#cloudwatch_logging_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#cloudwatch_logging_options CcDeliveryStream#cloudwatch_logging_options}
     */
     readonly cloudwatchLoggingOptions?: ElasticsearchDestinationConfigurationS3ConfigurationCloudwatchLoggingOptionsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#compression_format CcDeliveryStream#compression_format}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#compression_format CcDeliveryStream#compression_format}
     */
     readonly compressionFormat?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#encryption_configuration CcDeliveryStream#encryption_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#encryption_configuration CcDeliveryStream#encryption_configuration}
     */
     readonly encryptionConfiguration?: ElasticsearchDestinationConfigurationS3ConfigurationEncryptionConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#error_output_prefix CcDeliveryStream#error_output_prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#error_output_prefix CcDeliveryStream#error_output_prefix}
     */
     readonly errorOutputPrefix?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#prefix CcDeliveryStream#prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#prefix CcDeliveryStream#prefix}
     */
     readonly prefix?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#role_arn CcDeliveryStream#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#role_arn CcDeliveryStream#role_arn}
     */
     readonly roleArn?: string;
 }
@@ -13719,15 +13720,15 @@ export class ElasticsearchDestinationConfigurationS3ConfigurationPropertyOutputR
 }
 export interface ElasticsearchDestinationConfigurationVpcConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#role_arn CcDeliveryStream#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#role_arn CcDeliveryStream#role_arn}
     */
     readonly roleArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#security_group_ids CcDeliveryStream#security_group_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#security_group_ids CcDeliveryStream#security_group_ids}
     */
     readonly securityGroupIds?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#subnet_ids CcDeliveryStream#subnet_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#subnet_ids CcDeliveryStream#subnet_ids}
     */
     readonly subnetIds?: string[];
 }
@@ -13835,59 +13836,59 @@ export class ElasticsearchDestinationConfigurationVpcConfigurationPropertyOutput
 }
 export interface ElasticsearchDestinationConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#buffering_hints CcDeliveryStream#buffering_hints}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#buffering_hints CcDeliveryStream#buffering_hints}
     */
     readonly bufferingHints?: ElasticsearchBufferingHintsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#cloudwatch_logging_options CcDeliveryStream#cloudwatch_logging_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#cloudwatch_logging_options CcDeliveryStream#cloudwatch_logging_options}
     */
     readonly cloudwatchLoggingOptions?: ElasticsearchDestinationConfigurationCloudwatchLoggingOptionsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#cluster_endpoint CcDeliveryStream#cluster_endpoint}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#cluster_endpoint CcDeliveryStream#cluster_endpoint}
     */
     readonly clusterEndpoint?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#document_id_options CcDeliveryStream#document_id_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#document_id_options CcDeliveryStream#document_id_options}
     */
     readonly documentIdOptions?: ElasticsearchDestinationConfigurationDocumentIdOptionsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#domain_arn CcDeliveryStream#domain_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#domain_arn CcDeliveryStream#domain_arn}
     */
     readonly domainArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#index_name CcDeliveryStream#index_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#index_name CcDeliveryStream#index_name}
     */
     readonly indexName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#index_rotation_period CcDeliveryStream#index_rotation_period}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#index_rotation_period CcDeliveryStream#index_rotation_period}
     */
     readonly indexRotationPeriod?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#processing_configuration CcDeliveryStream#processing_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#processing_configuration CcDeliveryStream#processing_configuration}
     */
     readonly processingConfiguration?: ElasticsearchDestinationConfigurationProcessingConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#retry_options CcDeliveryStream#retry_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#retry_options CcDeliveryStream#retry_options}
     */
     readonly retryOptions?: ElasticsearchRetryOptionsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#role_arn CcDeliveryStream#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#role_arn CcDeliveryStream#role_arn}
     */
     readonly roleArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#s3_backup_mode CcDeliveryStream#s3_backup_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#s3_backup_mode CcDeliveryStream#s3_backup_mode}
     */
     readonly s3BackupMode?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#s3_configuration CcDeliveryStream#s3_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#s3_configuration CcDeliveryStream#s3_configuration}
     */
     readonly s3Configuration?: ElasticsearchDestinationConfigurationS3ConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#type_name CcDeliveryStream#type_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#type_name CcDeliveryStream#type_name}
     */
     readonly typeName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#vpc_configuration CcDeliveryStream#vpc_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#vpc_configuration CcDeliveryStream#vpc_configuration}
     */
     readonly vpcConfiguration?: ElasticsearchDestinationConfigurationVpcConfigurationProperty;
 }
@@ -14237,11 +14238,11 @@ export class ElasticsearchDestinationConfigurationPropertyOutputReference extend
 }
 export interface ExtendedS3DestinationConfigurationBufferingHintsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#interval_in_seconds CcDeliveryStream#interval_in_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#interval_in_seconds CcDeliveryStream#interval_in_seconds}
     */
     readonly intervalInSeconds?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#size_in_m_bs CcDeliveryStream#size_in_m_bs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#size_in_m_bs CcDeliveryStream#size_in_m_bs}
     */
     readonly sizeInMBs?: number;
 }
@@ -14327,15 +14328,15 @@ export class ExtendedS3DestinationConfigurationBufferingHintsPropertyOutputRefer
 }
 export interface ExtendedS3DestinationConfigurationCloudwatchLoggingOptionsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#enabled CcDeliveryStream#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#enabled CcDeliveryStream#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#log_group_name CcDeliveryStream#log_group_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#log_group_name CcDeliveryStream#log_group_name}
     */
     readonly logGroupName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#log_stream_name CcDeliveryStream#log_stream_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#log_stream_name CcDeliveryStream#log_stream_name}
     */
     readonly logStreamName?: string;
 }
@@ -14443,7 +14444,7 @@ export class ExtendedS3DestinationConfigurationCloudwatchLoggingOptionsPropertyO
 }
 export interface HiveJsonSerDeProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#timestamp_formats CcDeliveryStream#timestamp_formats}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#timestamp_formats CcDeliveryStream#timestamp_formats}
     */
     readonly timestampFormats?: string[];
 }
@@ -14507,15 +14508,15 @@ export class HiveJsonSerDePropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface OpenXJsonSerDeProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#case_insensitive CcDeliveryStream#case_insensitive}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#case_insensitive CcDeliveryStream#case_insensitive}
     */
     readonly caseInsensitive?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#column_to_json_key_mappings CcDeliveryStream#column_to_json_key_mappings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#column_to_json_key_mappings CcDeliveryStream#column_to_json_key_mappings}
     */
     readonly columnToJsonKeyMappings?: { [key: string]: string };
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#convert_dots_in_json_keys_to_underscores CcDeliveryStream#convert_dots_in_json_keys_to_underscores}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#convert_dots_in_json_keys_to_underscores CcDeliveryStream#convert_dots_in_json_keys_to_underscores}
     */
     readonly convertDotsInJsonKeysToUnderscores?: boolean | cdktn.IResolvable;
 }
@@ -14623,11 +14624,11 @@ export class OpenXJsonSerDePropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface DeserializerProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#hive_json_ser_de CcDeliveryStream#hive_json_ser_de}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#hive_json_ser_de CcDeliveryStream#hive_json_ser_de}
     */
     readonly hiveJsonSerDe?: HiveJsonSerDeProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#open_x_json_ser_de CcDeliveryStream#open_x_json_ser_de}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#open_x_json_ser_de CcDeliveryStream#open_x_json_ser_de}
     */
     readonly openXJsonSerDe?: OpenXJsonSerDeProperty;
 }
@@ -14713,7 +14714,7 @@ export class DeserializerPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface InputFormatConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#deserializer CcDeliveryStream#deserializer}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#deserializer CcDeliveryStream#deserializer}
     */
     readonly deserializer?: DeserializerProperty;
 }
@@ -14777,43 +14778,43 @@ export class InputFormatConfigurationPropertyOutputReference extends cdktn.Compl
 }
 export interface OrcSerDeProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#block_size_bytes CcDeliveryStream#block_size_bytes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#block_size_bytes CcDeliveryStream#block_size_bytes}
     */
     readonly blockSizeBytes?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#bloom_filter_columns CcDeliveryStream#bloom_filter_columns}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#bloom_filter_columns CcDeliveryStream#bloom_filter_columns}
     */
     readonly bloomFilterColumns?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#bloom_filter_false_positive_probability CcDeliveryStream#bloom_filter_false_positive_probability}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#bloom_filter_false_positive_probability CcDeliveryStream#bloom_filter_false_positive_probability}
     */
     readonly bloomFilterFalsePositiveProbability?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#compression CcDeliveryStream#compression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#compression CcDeliveryStream#compression}
     */
     readonly compression?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#dictionary_key_threshold CcDeliveryStream#dictionary_key_threshold}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#dictionary_key_threshold CcDeliveryStream#dictionary_key_threshold}
     */
     readonly dictionaryKeyThreshold?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#enable_padding CcDeliveryStream#enable_padding}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#enable_padding CcDeliveryStream#enable_padding}
     */
     readonly enablePadding?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#format_version CcDeliveryStream#format_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#format_version CcDeliveryStream#format_version}
     */
     readonly formatVersion?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#padding_tolerance CcDeliveryStream#padding_tolerance}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#padding_tolerance CcDeliveryStream#padding_tolerance}
     */
     readonly paddingTolerance?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#row_index_stride CcDeliveryStream#row_index_stride}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#row_index_stride CcDeliveryStream#row_index_stride}
     */
     readonly rowIndexStride?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#stripe_size_bytes CcDeliveryStream#stripe_size_bytes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#stripe_size_bytes CcDeliveryStream#stripe_size_bytes}
     */
     readonly stripeSizeBytes?: number;
 }
@@ -15075,27 +15076,27 @@ export class OrcSerDePropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface ParquetSerDeProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#block_size_bytes CcDeliveryStream#block_size_bytes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#block_size_bytes CcDeliveryStream#block_size_bytes}
     */
     readonly blockSizeBytes?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#compression CcDeliveryStream#compression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#compression CcDeliveryStream#compression}
     */
     readonly compression?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#enable_dictionary_compression CcDeliveryStream#enable_dictionary_compression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#enable_dictionary_compression CcDeliveryStream#enable_dictionary_compression}
     */
     readonly enableDictionaryCompression?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#max_padding_bytes CcDeliveryStream#max_padding_bytes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#max_padding_bytes CcDeliveryStream#max_padding_bytes}
     */
     readonly maxPaddingBytes?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#page_size_bytes CcDeliveryStream#page_size_bytes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#page_size_bytes CcDeliveryStream#page_size_bytes}
     */
     readonly pageSizeBytes?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#writer_version CcDeliveryStream#writer_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#writer_version CcDeliveryStream#writer_version}
     */
     readonly writerVersion?: string;
 }
@@ -15269,11 +15270,11 @@ export class ParquetSerDePropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface SerializerProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#orc_ser_de CcDeliveryStream#orc_ser_de}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#orc_ser_de CcDeliveryStream#orc_ser_de}
     */
     readonly orcSerDe?: OrcSerDeProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#parquet_ser_de CcDeliveryStream#parquet_ser_de}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#parquet_ser_de CcDeliveryStream#parquet_ser_de}
     */
     readonly parquetSerDe?: ParquetSerDeProperty;
 }
@@ -15359,7 +15360,7 @@ export class SerializerPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface OutputFormatConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#serializer CcDeliveryStream#serializer}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#serializer CcDeliveryStream#serializer}
     */
     readonly serializer?: SerializerProperty;
 }
@@ -15423,27 +15424,27 @@ export class OutputFormatConfigurationPropertyOutputReference extends cdktn.Comp
 }
 export interface SchemaConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#catalog_id CcDeliveryStream#catalog_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#catalog_id CcDeliveryStream#catalog_id}
     */
     readonly catalogId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#database_name CcDeliveryStream#database_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#database_name CcDeliveryStream#database_name}
     */
     readonly databaseName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#region CcDeliveryStream#region}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#region CcDeliveryStream#region}
     */
     readonly region?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#role_arn CcDeliveryStream#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#role_arn CcDeliveryStream#role_arn}
     */
     readonly roleArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#table_name CcDeliveryStream#table_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#table_name CcDeliveryStream#table_name}
     */
     readonly tableName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#version_id CcDeliveryStream#version_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#version_id CcDeliveryStream#version_id}
     */
     readonly versionId?: string;
 }
@@ -15617,19 +15618,19 @@ export class SchemaConfigurationPropertyOutputReference extends cdktn.ComplexObj
 }
 export interface DataFormatConversionConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#enabled CcDeliveryStream#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#enabled CcDeliveryStream#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#input_format_configuration CcDeliveryStream#input_format_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#input_format_configuration CcDeliveryStream#input_format_configuration}
     */
     readonly inputFormatConfiguration?: InputFormatConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#output_format_configuration CcDeliveryStream#output_format_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#output_format_configuration CcDeliveryStream#output_format_configuration}
     */
     readonly outputFormatConfiguration?: OutputFormatConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#schema_configuration CcDeliveryStream#schema_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#schema_configuration CcDeliveryStream#schema_configuration}
     */
     readonly schemaConfiguration?: SchemaConfigurationProperty;
 }
@@ -15759,7 +15760,7 @@ export class DataFormatConversionConfigurationPropertyOutputReference extends cd
 }
 export interface RetryOptionsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#duration_in_seconds CcDeliveryStream#duration_in_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#duration_in_seconds CcDeliveryStream#duration_in_seconds}
     */
     readonly durationInSeconds?: number;
 }
@@ -15823,11 +15824,11 @@ export class RetryOptionsPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface DynamicPartitioningConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#enabled CcDeliveryStream#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#enabled CcDeliveryStream#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#retry_options CcDeliveryStream#retry_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#retry_options CcDeliveryStream#retry_options}
     */
     readonly retryOptions?: RetryOptionsProperty;
 }
@@ -15913,7 +15914,7 @@ export class DynamicPartitioningConfigurationPropertyOutputReference extends cdk
 }
 export interface ExtendedS3DestinationConfigurationEncryptionConfigurationKmsEncryptionConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#awskms_key_arn CcDeliveryStream#awskms_key_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#awskms_key_arn CcDeliveryStream#awskms_key_arn}
     */
     readonly awskmsKeyArn?: string;
 }
@@ -15977,11 +15978,11 @@ export class ExtendedS3DestinationConfigurationEncryptionConfigurationKmsEncrypt
 }
 export interface ExtendedS3DestinationConfigurationEncryptionConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#kms_encryption_config CcDeliveryStream#kms_encryption_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#kms_encryption_config CcDeliveryStream#kms_encryption_config}
     */
     readonly kmsEncryptionConfig?: ExtendedS3DestinationConfigurationEncryptionConfigurationKmsEncryptionConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#no_encryption_config CcDeliveryStream#no_encryption_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#no_encryption_config CcDeliveryStream#no_encryption_config}
     */
     readonly noEncryptionConfig?: string;
 }
@@ -16067,11 +16068,11 @@ export class ExtendedS3DestinationConfigurationEncryptionConfigurationPropertyOu
 }
 export interface ExtendedS3DestinationConfigurationProcessingConfigurationProcessorsParametersProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#parameter_name CcDeliveryStream#parameter_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#parameter_name CcDeliveryStream#parameter_name}
     */
     readonly parameterName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#parameter_value CcDeliveryStream#parameter_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#parameter_value CcDeliveryStream#parameter_value}
     */
     readonly parameterValue?: string;
 }
@@ -16179,11 +16180,11 @@ export class ExtendedS3DestinationConfigurationProcessingConfigurationProcessors
 }
 export interface ExtendedS3DestinationConfigurationProcessingConfigurationProcessorsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#parameters CcDeliveryStream#parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#parameters CcDeliveryStream#parameters}
     */
     readonly parameters?: ExtendedS3DestinationConfigurationProcessingConfigurationProcessorsParametersProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#type CcDeliveryStream#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#type CcDeliveryStream#type}
     */
     readonly type?: string;
 }
@@ -16291,11 +16292,11 @@ export class ExtendedS3DestinationConfigurationProcessingConfigurationProcessors
 }
 export interface ExtendedS3DestinationConfigurationProcessingConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#enabled CcDeliveryStream#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#enabled CcDeliveryStream#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#processors CcDeliveryStream#processors}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#processors CcDeliveryStream#processors}
     */
     readonly processors?: ExtendedS3DestinationConfigurationProcessingConfigurationProcessorsProperty[] | cdktn.IResolvable;
 }
@@ -16381,11 +16382,11 @@ export class ExtendedS3DestinationConfigurationProcessingConfigurationPropertyOu
 }
 export interface ExtendedS3DestinationConfigurationS3BackupConfigurationBufferingHintsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#interval_in_seconds CcDeliveryStream#interval_in_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#interval_in_seconds CcDeliveryStream#interval_in_seconds}
     */
     readonly intervalInSeconds?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#size_in_m_bs CcDeliveryStream#size_in_m_bs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#size_in_m_bs CcDeliveryStream#size_in_m_bs}
     */
     readonly sizeInMBs?: number;
 }
@@ -16471,15 +16472,15 @@ export class ExtendedS3DestinationConfigurationS3BackupConfigurationBufferingHin
 }
 export interface ExtendedS3DestinationConfigurationS3BackupConfigurationCloudwatchLoggingOptionsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#enabled CcDeliveryStream#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#enabled CcDeliveryStream#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#log_group_name CcDeliveryStream#log_group_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#log_group_name CcDeliveryStream#log_group_name}
     */
     readonly logGroupName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#log_stream_name CcDeliveryStream#log_stream_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#log_stream_name CcDeliveryStream#log_stream_name}
     */
     readonly logStreamName?: string;
 }
@@ -16587,7 +16588,7 @@ export class ExtendedS3DestinationConfigurationS3BackupConfigurationCloudwatchLo
 }
 export interface ExtendedS3DestinationConfigurationS3BackupConfigurationEncryptionConfigurationKmsEncryptionConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#awskms_key_arn CcDeliveryStream#awskms_key_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#awskms_key_arn CcDeliveryStream#awskms_key_arn}
     */
     readonly awskmsKeyArn?: string;
 }
@@ -16651,11 +16652,11 @@ export class ExtendedS3DestinationConfigurationS3BackupConfigurationEncryptionCo
 }
 export interface ExtendedS3DestinationConfigurationS3BackupConfigurationEncryptionConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#kms_encryption_config CcDeliveryStream#kms_encryption_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#kms_encryption_config CcDeliveryStream#kms_encryption_config}
     */
     readonly kmsEncryptionConfig?: ExtendedS3DestinationConfigurationS3BackupConfigurationEncryptionConfigurationKmsEncryptionConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#no_encryption_config CcDeliveryStream#no_encryption_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#no_encryption_config CcDeliveryStream#no_encryption_config}
     */
     readonly noEncryptionConfig?: string;
 }
@@ -16741,35 +16742,35 @@ export class ExtendedS3DestinationConfigurationS3BackupConfigurationEncryptionCo
 }
 export interface ExtendedS3DestinationConfigurationS3BackupConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#bucket_arn CcDeliveryStream#bucket_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#bucket_arn CcDeliveryStream#bucket_arn}
     */
     readonly bucketArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#buffering_hints CcDeliveryStream#buffering_hints}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#buffering_hints CcDeliveryStream#buffering_hints}
     */
     readonly bufferingHints?: ExtendedS3DestinationConfigurationS3BackupConfigurationBufferingHintsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#cloudwatch_logging_options CcDeliveryStream#cloudwatch_logging_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#cloudwatch_logging_options CcDeliveryStream#cloudwatch_logging_options}
     */
     readonly cloudwatchLoggingOptions?: ExtendedS3DestinationConfigurationS3BackupConfigurationCloudwatchLoggingOptionsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#compression_format CcDeliveryStream#compression_format}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#compression_format CcDeliveryStream#compression_format}
     */
     readonly compressionFormat?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#encryption_configuration CcDeliveryStream#encryption_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#encryption_configuration CcDeliveryStream#encryption_configuration}
     */
     readonly encryptionConfiguration?: ExtendedS3DestinationConfigurationS3BackupConfigurationEncryptionConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#error_output_prefix CcDeliveryStream#error_output_prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#error_output_prefix CcDeliveryStream#error_output_prefix}
     */
     readonly errorOutputPrefix?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#prefix CcDeliveryStream#prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#prefix CcDeliveryStream#prefix}
     */
     readonly prefix?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#role_arn CcDeliveryStream#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#role_arn CcDeliveryStream#role_arn}
     */
     readonly roleArn?: string;
 }
@@ -16987,63 +16988,63 @@ export class ExtendedS3DestinationConfigurationS3BackupConfigurationPropertyOutp
 }
 export interface ExtendedS3DestinationConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#bucket_arn CcDeliveryStream#bucket_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#bucket_arn CcDeliveryStream#bucket_arn}
     */
     readonly bucketArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#buffering_hints CcDeliveryStream#buffering_hints}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#buffering_hints CcDeliveryStream#buffering_hints}
     */
     readonly bufferingHints?: ExtendedS3DestinationConfigurationBufferingHintsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#cloudwatch_logging_options CcDeliveryStream#cloudwatch_logging_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#cloudwatch_logging_options CcDeliveryStream#cloudwatch_logging_options}
     */
     readonly cloudwatchLoggingOptions?: ExtendedS3DestinationConfigurationCloudwatchLoggingOptionsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#compression_format CcDeliveryStream#compression_format}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#compression_format CcDeliveryStream#compression_format}
     */
     readonly compressionFormat?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#custom_time_zone CcDeliveryStream#custom_time_zone}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#custom_time_zone CcDeliveryStream#custom_time_zone}
     */
     readonly customTimeZone?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#data_format_conversion_configuration CcDeliveryStream#data_format_conversion_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#data_format_conversion_configuration CcDeliveryStream#data_format_conversion_configuration}
     */
     readonly dataFormatConversionConfiguration?: DataFormatConversionConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#dynamic_partitioning_configuration CcDeliveryStream#dynamic_partitioning_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#dynamic_partitioning_configuration CcDeliveryStream#dynamic_partitioning_configuration}
     */
     readonly dynamicPartitioningConfiguration?: DynamicPartitioningConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#encryption_configuration CcDeliveryStream#encryption_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#encryption_configuration CcDeliveryStream#encryption_configuration}
     */
     readonly encryptionConfiguration?: ExtendedS3DestinationConfigurationEncryptionConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#error_output_prefix CcDeliveryStream#error_output_prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#error_output_prefix CcDeliveryStream#error_output_prefix}
     */
     readonly errorOutputPrefix?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#file_extension CcDeliveryStream#file_extension}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#file_extension CcDeliveryStream#file_extension}
     */
     readonly fileExtension?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#prefix CcDeliveryStream#prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#prefix CcDeliveryStream#prefix}
     */
     readonly prefix?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#processing_configuration CcDeliveryStream#processing_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#processing_configuration CcDeliveryStream#processing_configuration}
     */
     readonly processingConfiguration?: ExtendedS3DestinationConfigurationProcessingConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#role_arn CcDeliveryStream#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#role_arn CcDeliveryStream#role_arn}
     */
     readonly roleArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#s3_backup_configuration CcDeliveryStream#s3_backup_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#s3_backup_configuration CcDeliveryStream#s3_backup_configuration}
     */
     readonly s3BackupConfiguration?: ExtendedS3DestinationConfigurationS3BackupConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#s3_backup_mode CcDeliveryStream#s3_backup_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#s3_backup_mode CcDeliveryStream#s3_backup_mode}
     */
     readonly s3BackupMode?: string;
 }
@@ -17415,11 +17416,11 @@ export class ExtendedS3DestinationConfigurationPropertyOutputReference extends c
 }
 export interface HttpEndpointDestinationConfigurationBufferingHintsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#interval_in_seconds CcDeliveryStream#interval_in_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#interval_in_seconds CcDeliveryStream#interval_in_seconds}
     */
     readonly intervalInSeconds?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#size_in_m_bs CcDeliveryStream#size_in_m_bs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#size_in_m_bs CcDeliveryStream#size_in_m_bs}
     */
     readonly sizeInMBs?: number;
 }
@@ -17505,15 +17506,15 @@ export class HttpEndpointDestinationConfigurationBufferingHintsPropertyOutputRef
 }
 export interface HttpEndpointDestinationConfigurationCloudwatchLoggingOptionsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#enabled CcDeliveryStream#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#enabled CcDeliveryStream#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#log_group_name CcDeliveryStream#log_group_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#log_group_name CcDeliveryStream#log_group_name}
     */
     readonly logGroupName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#log_stream_name CcDeliveryStream#log_stream_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#log_stream_name CcDeliveryStream#log_stream_name}
     */
     readonly logStreamName?: string;
 }
@@ -17621,15 +17622,15 @@ export class HttpEndpointDestinationConfigurationCloudwatchLoggingOptionsPropert
 }
 export interface HttpEndpointConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#access_key CcDeliveryStream#access_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#access_key CcDeliveryStream#access_key}
     */
     readonly accessKey?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#name CcDeliveryStream#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#name CcDeliveryStream#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#url CcDeliveryStream#url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#url CcDeliveryStream#url}
     */
     readonly url?: string;
 }
@@ -17737,11 +17738,11 @@ export class HttpEndpointConfigurationPropertyOutputReference extends cdktn.Comp
 }
 export interface HttpEndpointDestinationConfigurationProcessingConfigurationProcessorsParametersProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#parameter_name CcDeliveryStream#parameter_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#parameter_name CcDeliveryStream#parameter_name}
     */
     readonly parameterName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#parameter_value CcDeliveryStream#parameter_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#parameter_value CcDeliveryStream#parameter_value}
     */
     readonly parameterValue?: string;
 }
@@ -17849,11 +17850,11 @@ export class HttpEndpointDestinationConfigurationProcessingConfigurationProcesso
 }
 export interface HttpEndpointDestinationConfigurationProcessingConfigurationProcessorsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#parameters CcDeliveryStream#parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#parameters CcDeliveryStream#parameters}
     */
     readonly parameters?: HttpEndpointDestinationConfigurationProcessingConfigurationProcessorsParametersProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#type CcDeliveryStream#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#type CcDeliveryStream#type}
     */
     readonly type?: string;
 }
@@ -17961,11 +17962,11 @@ export class HttpEndpointDestinationConfigurationProcessingConfigurationProcesso
 }
 export interface HttpEndpointDestinationConfigurationProcessingConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#enabled CcDeliveryStream#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#enabled CcDeliveryStream#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#processors CcDeliveryStream#processors}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#processors CcDeliveryStream#processors}
     */
     readonly processors?: HttpEndpointDestinationConfigurationProcessingConfigurationProcessorsProperty[] | cdktn.IResolvable;
 }
@@ -18051,11 +18052,11 @@ export class HttpEndpointDestinationConfigurationProcessingConfigurationProperty
 }
 export interface HttpEndpointCommonAttributeProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#attribute_name CcDeliveryStream#attribute_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#attribute_name CcDeliveryStream#attribute_name}
     */
     readonly attributeName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#attribute_value CcDeliveryStream#attribute_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#attribute_value CcDeliveryStream#attribute_value}
     */
     readonly attributeValue?: string;
 }
@@ -18163,11 +18164,11 @@ export class HttpEndpointCommonAttributePropertyList extends cdktn.ComplexList {
 }
 export interface HttpEndpointRequestConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#common_attributes CcDeliveryStream#common_attributes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#common_attributes CcDeliveryStream#common_attributes}
     */
     readonly commonAttributes?: HttpEndpointCommonAttributeProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#content_encoding CcDeliveryStream#content_encoding}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#content_encoding CcDeliveryStream#content_encoding}
     */
     readonly contentEncoding?: string;
 }
@@ -18253,7 +18254,7 @@ export class HttpEndpointRequestConfigurationPropertyOutputReference extends cdk
 }
 export interface HttpEndpointDestinationConfigurationRetryOptionsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#duration_in_seconds CcDeliveryStream#duration_in_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#duration_in_seconds CcDeliveryStream#duration_in_seconds}
     */
     readonly durationInSeconds?: number;
 }
@@ -18317,11 +18318,11 @@ export class HttpEndpointDestinationConfigurationRetryOptionsPropertyOutputRefer
 }
 export interface HttpEndpointDestinationConfigurationS3ConfigurationBufferingHintsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#interval_in_seconds CcDeliveryStream#interval_in_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#interval_in_seconds CcDeliveryStream#interval_in_seconds}
     */
     readonly intervalInSeconds?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#size_in_m_bs CcDeliveryStream#size_in_m_bs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#size_in_m_bs CcDeliveryStream#size_in_m_bs}
     */
     readonly sizeInMBs?: number;
 }
@@ -18407,15 +18408,15 @@ export class HttpEndpointDestinationConfigurationS3ConfigurationBufferingHintsPr
 }
 export interface HttpEndpointDestinationConfigurationS3ConfigurationCloudwatchLoggingOptionsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#enabled CcDeliveryStream#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#enabled CcDeliveryStream#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#log_group_name CcDeliveryStream#log_group_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#log_group_name CcDeliveryStream#log_group_name}
     */
     readonly logGroupName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#log_stream_name CcDeliveryStream#log_stream_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#log_stream_name CcDeliveryStream#log_stream_name}
     */
     readonly logStreamName?: string;
 }
@@ -18523,7 +18524,7 @@ export class HttpEndpointDestinationConfigurationS3ConfigurationCloudwatchLoggin
 }
 export interface HttpEndpointDestinationConfigurationS3ConfigurationEncryptionConfigurationKmsEncryptionConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#awskms_key_arn CcDeliveryStream#awskms_key_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#awskms_key_arn CcDeliveryStream#awskms_key_arn}
     */
     readonly awskmsKeyArn?: string;
 }
@@ -18587,11 +18588,11 @@ export class HttpEndpointDestinationConfigurationS3ConfigurationEncryptionConfig
 }
 export interface HttpEndpointDestinationConfigurationS3ConfigurationEncryptionConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#kms_encryption_config CcDeliveryStream#kms_encryption_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#kms_encryption_config CcDeliveryStream#kms_encryption_config}
     */
     readonly kmsEncryptionConfig?: HttpEndpointDestinationConfigurationS3ConfigurationEncryptionConfigurationKmsEncryptionConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#no_encryption_config CcDeliveryStream#no_encryption_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#no_encryption_config CcDeliveryStream#no_encryption_config}
     */
     readonly noEncryptionConfig?: string;
 }
@@ -18677,35 +18678,35 @@ export class HttpEndpointDestinationConfigurationS3ConfigurationEncryptionConfig
 }
 export interface HttpEndpointDestinationConfigurationS3ConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#bucket_arn CcDeliveryStream#bucket_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#bucket_arn CcDeliveryStream#bucket_arn}
     */
     readonly bucketArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#buffering_hints CcDeliveryStream#buffering_hints}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#buffering_hints CcDeliveryStream#buffering_hints}
     */
     readonly bufferingHints?: HttpEndpointDestinationConfigurationS3ConfigurationBufferingHintsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#cloudwatch_logging_options CcDeliveryStream#cloudwatch_logging_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#cloudwatch_logging_options CcDeliveryStream#cloudwatch_logging_options}
     */
     readonly cloudwatchLoggingOptions?: HttpEndpointDestinationConfigurationS3ConfigurationCloudwatchLoggingOptionsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#compression_format CcDeliveryStream#compression_format}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#compression_format CcDeliveryStream#compression_format}
     */
     readonly compressionFormat?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#encryption_configuration CcDeliveryStream#encryption_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#encryption_configuration CcDeliveryStream#encryption_configuration}
     */
     readonly encryptionConfiguration?: HttpEndpointDestinationConfigurationS3ConfigurationEncryptionConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#error_output_prefix CcDeliveryStream#error_output_prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#error_output_prefix CcDeliveryStream#error_output_prefix}
     */
     readonly errorOutputPrefix?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#prefix CcDeliveryStream#prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#prefix CcDeliveryStream#prefix}
     */
     readonly prefix?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#role_arn CcDeliveryStream#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#role_arn CcDeliveryStream#role_arn}
     */
     readonly roleArn?: string;
 }
@@ -18923,15 +18924,15 @@ export class HttpEndpointDestinationConfigurationS3ConfigurationPropertyOutputRe
 }
 export interface HttpEndpointDestinationConfigurationSecretsManagerConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#enabled CcDeliveryStream#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#enabled CcDeliveryStream#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#role_arn CcDeliveryStream#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#role_arn CcDeliveryStream#role_arn}
     */
     readonly roleArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#secret_arn CcDeliveryStream#secret_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#secret_arn CcDeliveryStream#secret_arn}
     */
     readonly secretArn?: string;
 }
@@ -19039,43 +19040,43 @@ export class HttpEndpointDestinationConfigurationSecretsManagerConfigurationProp
 }
 export interface HttpEndpointDestinationConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#buffering_hints CcDeliveryStream#buffering_hints}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#buffering_hints CcDeliveryStream#buffering_hints}
     */
     readonly bufferingHints?: HttpEndpointDestinationConfigurationBufferingHintsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#cloudwatch_logging_options CcDeliveryStream#cloudwatch_logging_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#cloudwatch_logging_options CcDeliveryStream#cloudwatch_logging_options}
     */
     readonly cloudwatchLoggingOptions?: HttpEndpointDestinationConfigurationCloudwatchLoggingOptionsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#endpoint_configuration CcDeliveryStream#endpoint_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#endpoint_configuration CcDeliveryStream#endpoint_configuration}
     */
     readonly endpointConfiguration?: HttpEndpointConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#processing_configuration CcDeliveryStream#processing_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#processing_configuration CcDeliveryStream#processing_configuration}
     */
     readonly processingConfiguration?: HttpEndpointDestinationConfigurationProcessingConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#request_configuration CcDeliveryStream#request_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#request_configuration CcDeliveryStream#request_configuration}
     */
     readonly requestConfiguration?: HttpEndpointRequestConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#retry_options CcDeliveryStream#retry_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#retry_options CcDeliveryStream#retry_options}
     */
     readonly retryOptions?: HttpEndpointDestinationConfigurationRetryOptionsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#role_arn CcDeliveryStream#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#role_arn CcDeliveryStream#role_arn}
     */
     readonly roleArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#s3_backup_mode CcDeliveryStream#s3_backup_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#s3_backup_mode CcDeliveryStream#s3_backup_mode}
     */
     readonly s3BackupMode?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#s3_configuration CcDeliveryStream#s3_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#s3_configuration CcDeliveryStream#s3_configuration}
     */
     readonly s3Configuration?: HttpEndpointDestinationConfigurationS3ConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#secrets_manager_configuration CcDeliveryStream#secrets_manager_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#secrets_manager_configuration CcDeliveryStream#secrets_manager_configuration}
     */
     readonly secretsManagerConfiguration?: HttpEndpointDestinationConfigurationSecretsManagerConfigurationProperty;
 }
@@ -19337,11 +19338,11 @@ export class HttpEndpointDestinationConfigurationPropertyOutputReference extends
 }
 export interface IcebergDestinationConfigurationBufferingHintsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#interval_in_seconds CcDeliveryStream#interval_in_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#interval_in_seconds CcDeliveryStream#interval_in_seconds}
     */
     readonly intervalInSeconds?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#size_in_m_bs CcDeliveryStream#size_in_m_bs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#size_in_m_bs CcDeliveryStream#size_in_m_bs}
     */
     readonly sizeInMBs?: number;
 }
@@ -19427,11 +19428,11 @@ export class IcebergDestinationConfigurationBufferingHintsPropertyOutputReferenc
 }
 export interface CatalogConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#catalog_arn CcDeliveryStream#catalog_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#catalog_arn CcDeliveryStream#catalog_arn}
     */
     readonly catalogArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#warehouse_location CcDeliveryStream#warehouse_location}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#warehouse_location CcDeliveryStream#warehouse_location}
     */
     readonly warehouseLocation?: string;
 }
@@ -19517,15 +19518,15 @@ export class CatalogConfigurationPropertyOutputReference extends cdktn.ComplexOb
 }
 export interface IcebergDestinationConfigurationCloudwatchLoggingOptionsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#enabled CcDeliveryStream#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#enabled CcDeliveryStream#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#log_group_name CcDeliveryStream#log_group_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#log_group_name CcDeliveryStream#log_group_name}
     */
     readonly logGroupName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#log_stream_name CcDeliveryStream#log_stream_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#log_stream_name CcDeliveryStream#log_stream_name}
     */
     readonly logStreamName?: string;
 }
@@ -19633,7 +19634,7 @@ export class IcebergDestinationConfigurationCloudwatchLoggingOptionsPropertyOutp
 }
 export interface PartitionFieldProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#source_name CcDeliveryStream#source_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#source_name CcDeliveryStream#source_name}
     */
     readonly sourceName?: string;
 }
@@ -19719,7 +19720,7 @@ export class PartitionFieldPropertyList extends cdktn.ComplexList {
 }
 export interface PartitionSpecProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#identity CcDeliveryStream#identity}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#identity CcDeliveryStream#identity}
     */
     readonly identity?: PartitionFieldProperty[] | cdktn.IResolvable;
 }
@@ -19783,23 +19784,23 @@ export class PartitionSpecPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface DestinationTableConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#destination_database_name CcDeliveryStream#destination_database_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#destination_database_name CcDeliveryStream#destination_database_name}
     */
     readonly destinationDatabaseName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#destination_table_name CcDeliveryStream#destination_table_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#destination_table_name CcDeliveryStream#destination_table_name}
     */
     readonly destinationTableName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#partition_spec CcDeliveryStream#partition_spec}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#partition_spec CcDeliveryStream#partition_spec}
     */
     readonly partitionSpec?: PartitionSpecProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#s3_error_output_prefix CcDeliveryStream#s3_error_output_prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#s3_error_output_prefix CcDeliveryStream#s3_error_output_prefix}
     */
     readonly s3ErrorOutputPrefix?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#unique_keys CcDeliveryStream#unique_keys}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#unique_keys CcDeliveryStream#unique_keys}
     */
     readonly uniqueKeys?: string[];
 }
@@ -19973,11 +19974,11 @@ export class DestinationTableConfigurationPropertyList extends cdktn.ComplexList
 }
 export interface IcebergDestinationConfigurationProcessingConfigurationProcessorsParametersProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#parameter_name CcDeliveryStream#parameter_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#parameter_name CcDeliveryStream#parameter_name}
     */
     readonly parameterName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#parameter_value CcDeliveryStream#parameter_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#parameter_value CcDeliveryStream#parameter_value}
     */
     readonly parameterValue?: string;
 }
@@ -20085,11 +20086,11 @@ export class IcebergDestinationConfigurationProcessingConfigurationProcessorsPar
 }
 export interface IcebergDestinationConfigurationProcessingConfigurationProcessorsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#parameters CcDeliveryStream#parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#parameters CcDeliveryStream#parameters}
     */
     readonly parameters?: IcebergDestinationConfigurationProcessingConfigurationProcessorsParametersProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#type CcDeliveryStream#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#type CcDeliveryStream#type}
     */
     readonly type?: string;
 }
@@ -20197,11 +20198,11 @@ export class IcebergDestinationConfigurationProcessingConfigurationProcessorsPro
 }
 export interface IcebergDestinationConfigurationProcessingConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#enabled CcDeliveryStream#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#enabled CcDeliveryStream#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#processors CcDeliveryStream#processors}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#processors CcDeliveryStream#processors}
     */
     readonly processors?: IcebergDestinationConfigurationProcessingConfigurationProcessorsProperty[] | cdktn.IResolvable;
 }
@@ -20287,7 +20288,7 @@ export class IcebergDestinationConfigurationProcessingConfigurationPropertyOutpu
 }
 export interface IcebergDestinationConfigurationRetryOptionsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#duration_in_seconds CcDeliveryStream#duration_in_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#duration_in_seconds CcDeliveryStream#duration_in_seconds}
     */
     readonly durationInSeconds?: number;
 }
@@ -20351,11 +20352,11 @@ export class IcebergDestinationConfigurationRetryOptionsPropertyOutputReference 
 }
 export interface IcebergDestinationConfigurationS3ConfigurationBufferingHintsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#interval_in_seconds CcDeliveryStream#interval_in_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#interval_in_seconds CcDeliveryStream#interval_in_seconds}
     */
     readonly intervalInSeconds?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#size_in_m_bs CcDeliveryStream#size_in_m_bs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#size_in_m_bs CcDeliveryStream#size_in_m_bs}
     */
     readonly sizeInMBs?: number;
 }
@@ -20441,15 +20442,15 @@ export class IcebergDestinationConfigurationS3ConfigurationBufferingHintsPropert
 }
 export interface IcebergDestinationConfigurationS3ConfigurationCloudwatchLoggingOptionsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#enabled CcDeliveryStream#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#enabled CcDeliveryStream#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#log_group_name CcDeliveryStream#log_group_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#log_group_name CcDeliveryStream#log_group_name}
     */
     readonly logGroupName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#log_stream_name CcDeliveryStream#log_stream_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#log_stream_name CcDeliveryStream#log_stream_name}
     */
     readonly logStreamName?: string;
 }
@@ -20557,7 +20558,7 @@ export class IcebergDestinationConfigurationS3ConfigurationCloudwatchLoggingOpti
 }
 export interface IcebergDestinationConfigurationS3ConfigurationEncryptionConfigurationKmsEncryptionConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#awskms_key_arn CcDeliveryStream#awskms_key_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#awskms_key_arn CcDeliveryStream#awskms_key_arn}
     */
     readonly awskmsKeyArn?: string;
 }
@@ -20621,11 +20622,11 @@ export class IcebergDestinationConfigurationS3ConfigurationEncryptionConfigurati
 }
 export interface IcebergDestinationConfigurationS3ConfigurationEncryptionConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#kms_encryption_config CcDeliveryStream#kms_encryption_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#kms_encryption_config CcDeliveryStream#kms_encryption_config}
     */
     readonly kmsEncryptionConfig?: IcebergDestinationConfigurationS3ConfigurationEncryptionConfigurationKmsEncryptionConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#no_encryption_config CcDeliveryStream#no_encryption_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#no_encryption_config CcDeliveryStream#no_encryption_config}
     */
     readonly noEncryptionConfig?: string;
 }
@@ -20711,35 +20712,35 @@ export class IcebergDestinationConfigurationS3ConfigurationEncryptionConfigurati
 }
 export interface IcebergDestinationConfigurationS3ConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#bucket_arn CcDeliveryStream#bucket_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#bucket_arn CcDeliveryStream#bucket_arn}
     */
     readonly bucketArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#buffering_hints CcDeliveryStream#buffering_hints}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#buffering_hints CcDeliveryStream#buffering_hints}
     */
     readonly bufferingHints?: IcebergDestinationConfigurationS3ConfigurationBufferingHintsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#cloudwatch_logging_options CcDeliveryStream#cloudwatch_logging_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#cloudwatch_logging_options CcDeliveryStream#cloudwatch_logging_options}
     */
     readonly cloudwatchLoggingOptions?: IcebergDestinationConfigurationS3ConfigurationCloudwatchLoggingOptionsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#compression_format CcDeliveryStream#compression_format}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#compression_format CcDeliveryStream#compression_format}
     */
     readonly compressionFormat?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#encryption_configuration CcDeliveryStream#encryption_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#encryption_configuration CcDeliveryStream#encryption_configuration}
     */
     readonly encryptionConfiguration?: IcebergDestinationConfigurationS3ConfigurationEncryptionConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#error_output_prefix CcDeliveryStream#error_output_prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#error_output_prefix CcDeliveryStream#error_output_prefix}
     */
     readonly errorOutputPrefix?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#prefix CcDeliveryStream#prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#prefix CcDeliveryStream#prefix}
     */
     readonly prefix?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#role_arn CcDeliveryStream#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#role_arn CcDeliveryStream#role_arn}
     */
     readonly roleArn?: string;
 }
@@ -20957,7 +20958,7 @@ export class IcebergDestinationConfigurationS3ConfigurationPropertyOutputReferen
 }
 export interface SchemaEvolutionConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#enabled CcDeliveryStream#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#enabled CcDeliveryStream#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -21021,7 +21022,7 @@ export class SchemaEvolutionConfigurationPropertyOutputReference extends cdktn.C
 }
 export interface TableCreationConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#enabled CcDeliveryStream#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#enabled CcDeliveryStream#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -21085,51 +21086,51 @@ export class TableCreationConfigurationPropertyOutputReference extends cdktn.Com
 }
 export interface IcebergDestinationConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#append_only CcDeliveryStream#append_only}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#append_only CcDeliveryStream#append_only}
     */
     readonly appendOnly?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#buffering_hints CcDeliveryStream#buffering_hints}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#buffering_hints CcDeliveryStream#buffering_hints}
     */
     readonly bufferingHints?: IcebergDestinationConfigurationBufferingHintsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#catalog_configuration CcDeliveryStream#catalog_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#catalog_configuration CcDeliveryStream#catalog_configuration}
     */
     readonly catalogConfiguration?: CatalogConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#cloudwatch_logging_options CcDeliveryStream#cloudwatch_logging_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#cloudwatch_logging_options CcDeliveryStream#cloudwatch_logging_options}
     */
     readonly cloudwatchLoggingOptions?: IcebergDestinationConfigurationCloudwatchLoggingOptionsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#destination_table_configuration_list CcDeliveryStream#destination_table_configuration_list}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#destination_table_configuration_list CcDeliveryStream#destination_table_configuration_list}
     */
     readonly destinationTableConfigurationList?: DestinationTableConfigurationProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#processing_configuration CcDeliveryStream#processing_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#processing_configuration CcDeliveryStream#processing_configuration}
     */
     readonly processingConfiguration?: IcebergDestinationConfigurationProcessingConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#retry_options CcDeliveryStream#retry_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#retry_options CcDeliveryStream#retry_options}
     */
     readonly retryOptions?: IcebergDestinationConfigurationRetryOptionsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#role_arn CcDeliveryStream#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#role_arn CcDeliveryStream#role_arn}
     */
     readonly roleArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#s3_configuration CcDeliveryStream#s3_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#s3_configuration CcDeliveryStream#s3_configuration}
     */
     readonly s3Configuration?: IcebergDestinationConfigurationS3ConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#s_3_backup_mode CcDeliveryStream#s_3_backup_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#s_3_backup_mode CcDeliveryStream#s_3_backup_mode}
     */
     readonly s3BackupMode?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#schema_evolution_configuration CcDeliveryStream#schema_evolution_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#schema_evolution_configuration CcDeliveryStream#schema_evolution_configuration}
     */
     readonly schemaEvolutionConfiguration?: SchemaEvolutionConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#table_creation_configuration CcDeliveryStream#table_creation_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#table_creation_configuration CcDeliveryStream#table_creation_configuration}
     */
     readonly tableCreationConfiguration?: TableCreationConfigurationProperty;
 }
@@ -21435,11 +21436,11 @@ export class IcebergDestinationConfigurationPropertyOutputReference extends cdkt
 }
 export interface KinesisStreamSourceConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#kinesis_stream_arn CcDeliveryStream#kinesis_stream_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#kinesis_stream_arn CcDeliveryStream#kinesis_stream_arn}
     */
     readonly kinesisStreamArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#role_arn CcDeliveryStream#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#role_arn CcDeliveryStream#role_arn}
     */
     readonly roleArn?: string;
 }
@@ -21525,11 +21526,11 @@ export class KinesisStreamSourceConfigurationPropertyOutputReference extends cdk
 }
 export interface AuthenticationConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#connectivity CcDeliveryStream#connectivity}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#connectivity CcDeliveryStream#connectivity}
     */
     readonly connectivity?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#role_arn CcDeliveryStream#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#role_arn CcDeliveryStream#role_arn}
     */
     readonly roleArn?: string;
 }
@@ -21615,19 +21616,19 @@ export class AuthenticationConfigurationPropertyOutputReference extends cdktn.Co
 }
 export interface MSKSourceConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#authentication_configuration CcDeliveryStream#authentication_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#authentication_configuration CcDeliveryStream#authentication_configuration}
     */
     readonly authenticationConfiguration?: AuthenticationConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#msk_cluster_arn CcDeliveryStream#msk_cluster_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#msk_cluster_arn CcDeliveryStream#msk_cluster_arn}
     */
     readonly mskClusterArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#read_from_timestamp CcDeliveryStream#read_from_timestamp}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#read_from_timestamp CcDeliveryStream#read_from_timestamp}
     */
     readonly readFromTimestamp?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#topic_name CcDeliveryStream#topic_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#topic_name CcDeliveryStream#topic_name}
     */
     readonly topicName?: string;
 }
@@ -21757,15 +21758,15 @@ export class MSKSourceConfigurationPropertyOutputReference extends cdktn.Complex
 }
 export interface RedshiftDestinationConfigurationCloudwatchLoggingOptionsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#enabled CcDeliveryStream#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#enabled CcDeliveryStream#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#log_group_name CcDeliveryStream#log_group_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#log_group_name CcDeliveryStream#log_group_name}
     */
     readonly logGroupName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#log_stream_name CcDeliveryStream#log_stream_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#log_stream_name CcDeliveryStream#log_stream_name}
     */
     readonly logStreamName?: string;
 }
@@ -21873,15 +21874,15 @@ export class RedshiftDestinationConfigurationCloudwatchLoggingOptionsPropertyOut
 }
 export interface CopyCommandProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#copy_options CcDeliveryStream#copy_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#copy_options CcDeliveryStream#copy_options}
     */
     readonly copyOptions?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#data_table_columns CcDeliveryStream#data_table_columns}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#data_table_columns CcDeliveryStream#data_table_columns}
     */
     readonly dataTableColumns?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#data_table_name CcDeliveryStream#data_table_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#data_table_name CcDeliveryStream#data_table_name}
     */
     readonly dataTableName?: string;
 }
@@ -21989,11 +21990,11 @@ export class CopyCommandPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface RedshiftDestinationConfigurationProcessingConfigurationProcessorsParametersProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#parameter_name CcDeliveryStream#parameter_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#parameter_name CcDeliveryStream#parameter_name}
     */
     readonly parameterName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#parameter_value CcDeliveryStream#parameter_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#parameter_value CcDeliveryStream#parameter_value}
     */
     readonly parameterValue?: string;
 }
@@ -22101,11 +22102,11 @@ export class RedshiftDestinationConfigurationProcessingConfigurationProcessorsPa
 }
 export interface RedshiftDestinationConfigurationProcessingConfigurationProcessorsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#parameters CcDeliveryStream#parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#parameters CcDeliveryStream#parameters}
     */
     readonly parameters?: RedshiftDestinationConfigurationProcessingConfigurationProcessorsParametersProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#type CcDeliveryStream#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#type CcDeliveryStream#type}
     */
     readonly type?: string;
 }
@@ -22213,11 +22214,11 @@ export class RedshiftDestinationConfigurationProcessingConfigurationProcessorsPr
 }
 export interface RedshiftDestinationConfigurationProcessingConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#enabled CcDeliveryStream#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#enabled CcDeliveryStream#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#processors CcDeliveryStream#processors}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#processors CcDeliveryStream#processors}
     */
     readonly processors?: RedshiftDestinationConfigurationProcessingConfigurationProcessorsProperty[] | cdktn.IResolvable;
 }
@@ -22303,7 +22304,7 @@ export class RedshiftDestinationConfigurationProcessingConfigurationPropertyOutp
 }
 export interface RedshiftRetryOptionsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#duration_in_seconds CcDeliveryStream#duration_in_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#duration_in_seconds CcDeliveryStream#duration_in_seconds}
     */
     readonly durationInSeconds?: number;
 }
@@ -22367,11 +22368,11 @@ export class RedshiftRetryOptionsPropertyOutputReference extends cdktn.ComplexOb
 }
 export interface RedshiftDestinationConfigurationS3BackupConfigurationBufferingHintsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#interval_in_seconds CcDeliveryStream#interval_in_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#interval_in_seconds CcDeliveryStream#interval_in_seconds}
     */
     readonly intervalInSeconds?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#size_in_m_bs CcDeliveryStream#size_in_m_bs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#size_in_m_bs CcDeliveryStream#size_in_m_bs}
     */
     readonly sizeInMBs?: number;
 }
@@ -22457,15 +22458,15 @@ export class RedshiftDestinationConfigurationS3BackupConfigurationBufferingHints
 }
 export interface RedshiftDestinationConfigurationS3BackupConfigurationCloudwatchLoggingOptionsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#enabled CcDeliveryStream#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#enabled CcDeliveryStream#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#log_group_name CcDeliveryStream#log_group_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#log_group_name CcDeliveryStream#log_group_name}
     */
     readonly logGroupName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#log_stream_name CcDeliveryStream#log_stream_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#log_stream_name CcDeliveryStream#log_stream_name}
     */
     readonly logStreamName?: string;
 }
@@ -22573,7 +22574,7 @@ export class RedshiftDestinationConfigurationS3BackupConfigurationCloudwatchLogg
 }
 export interface RedshiftDestinationConfigurationS3BackupConfigurationEncryptionConfigurationKmsEncryptionConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#awskms_key_arn CcDeliveryStream#awskms_key_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#awskms_key_arn CcDeliveryStream#awskms_key_arn}
     */
     readonly awskmsKeyArn?: string;
 }
@@ -22637,11 +22638,11 @@ export class RedshiftDestinationConfigurationS3BackupConfigurationEncryptionConf
 }
 export interface RedshiftDestinationConfigurationS3BackupConfigurationEncryptionConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#kms_encryption_config CcDeliveryStream#kms_encryption_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#kms_encryption_config CcDeliveryStream#kms_encryption_config}
     */
     readonly kmsEncryptionConfig?: RedshiftDestinationConfigurationS3BackupConfigurationEncryptionConfigurationKmsEncryptionConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#no_encryption_config CcDeliveryStream#no_encryption_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#no_encryption_config CcDeliveryStream#no_encryption_config}
     */
     readonly noEncryptionConfig?: string;
 }
@@ -22727,35 +22728,35 @@ export class RedshiftDestinationConfigurationS3BackupConfigurationEncryptionConf
 }
 export interface RedshiftDestinationConfigurationS3BackupConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#bucket_arn CcDeliveryStream#bucket_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#bucket_arn CcDeliveryStream#bucket_arn}
     */
     readonly bucketArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#buffering_hints CcDeliveryStream#buffering_hints}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#buffering_hints CcDeliveryStream#buffering_hints}
     */
     readonly bufferingHints?: RedshiftDestinationConfigurationS3BackupConfigurationBufferingHintsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#cloudwatch_logging_options CcDeliveryStream#cloudwatch_logging_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#cloudwatch_logging_options CcDeliveryStream#cloudwatch_logging_options}
     */
     readonly cloudwatchLoggingOptions?: RedshiftDestinationConfigurationS3BackupConfigurationCloudwatchLoggingOptionsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#compression_format CcDeliveryStream#compression_format}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#compression_format CcDeliveryStream#compression_format}
     */
     readonly compressionFormat?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#encryption_configuration CcDeliveryStream#encryption_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#encryption_configuration CcDeliveryStream#encryption_configuration}
     */
     readonly encryptionConfiguration?: RedshiftDestinationConfigurationS3BackupConfigurationEncryptionConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#error_output_prefix CcDeliveryStream#error_output_prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#error_output_prefix CcDeliveryStream#error_output_prefix}
     */
     readonly errorOutputPrefix?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#prefix CcDeliveryStream#prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#prefix CcDeliveryStream#prefix}
     */
     readonly prefix?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#role_arn CcDeliveryStream#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#role_arn CcDeliveryStream#role_arn}
     */
     readonly roleArn?: string;
 }
@@ -22973,11 +22974,11 @@ export class RedshiftDestinationConfigurationS3BackupConfigurationPropertyOutput
 }
 export interface RedshiftDestinationConfigurationS3ConfigurationBufferingHintsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#interval_in_seconds CcDeliveryStream#interval_in_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#interval_in_seconds CcDeliveryStream#interval_in_seconds}
     */
     readonly intervalInSeconds?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#size_in_m_bs CcDeliveryStream#size_in_m_bs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#size_in_m_bs CcDeliveryStream#size_in_m_bs}
     */
     readonly sizeInMBs?: number;
 }
@@ -23063,15 +23064,15 @@ export class RedshiftDestinationConfigurationS3ConfigurationBufferingHintsProper
 }
 export interface RedshiftDestinationConfigurationS3ConfigurationCloudwatchLoggingOptionsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#enabled CcDeliveryStream#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#enabled CcDeliveryStream#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#log_group_name CcDeliveryStream#log_group_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#log_group_name CcDeliveryStream#log_group_name}
     */
     readonly logGroupName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#log_stream_name CcDeliveryStream#log_stream_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#log_stream_name CcDeliveryStream#log_stream_name}
     */
     readonly logStreamName?: string;
 }
@@ -23179,7 +23180,7 @@ export class RedshiftDestinationConfigurationS3ConfigurationCloudwatchLoggingOpt
 }
 export interface RedshiftDestinationConfigurationS3ConfigurationEncryptionConfigurationKmsEncryptionConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#awskms_key_arn CcDeliveryStream#awskms_key_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#awskms_key_arn CcDeliveryStream#awskms_key_arn}
     */
     readonly awskmsKeyArn?: string;
 }
@@ -23243,11 +23244,11 @@ export class RedshiftDestinationConfigurationS3ConfigurationEncryptionConfigurat
 }
 export interface RedshiftDestinationConfigurationS3ConfigurationEncryptionConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#kms_encryption_config CcDeliveryStream#kms_encryption_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#kms_encryption_config CcDeliveryStream#kms_encryption_config}
     */
     readonly kmsEncryptionConfig?: RedshiftDestinationConfigurationS3ConfigurationEncryptionConfigurationKmsEncryptionConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#no_encryption_config CcDeliveryStream#no_encryption_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#no_encryption_config CcDeliveryStream#no_encryption_config}
     */
     readonly noEncryptionConfig?: string;
 }
@@ -23333,35 +23334,35 @@ export class RedshiftDestinationConfigurationS3ConfigurationEncryptionConfigurat
 }
 export interface RedshiftDestinationConfigurationS3ConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#bucket_arn CcDeliveryStream#bucket_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#bucket_arn CcDeliveryStream#bucket_arn}
     */
     readonly bucketArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#buffering_hints CcDeliveryStream#buffering_hints}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#buffering_hints CcDeliveryStream#buffering_hints}
     */
     readonly bufferingHints?: RedshiftDestinationConfigurationS3ConfigurationBufferingHintsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#cloudwatch_logging_options CcDeliveryStream#cloudwatch_logging_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#cloudwatch_logging_options CcDeliveryStream#cloudwatch_logging_options}
     */
     readonly cloudwatchLoggingOptions?: RedshiftDestinationConfigurationS3ConfigurationCloudwatchLoggingOptionsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#compression_format CcDeliveryStream#compression_format}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#compression_format CcDeliveryStream#compression_format}
     */
     readonly compressionFormat?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#encryption_configuration CcDeliveryStream#encryption_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#encryption_configuration CcDeliveryStream#encryption_configuration}
     */
     readonly encryptionConfiguration?: RedshiftDestinationConfigurationS3ConfigurationEncryptionConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#error_output_prefix CcDeliveryStream#error_output_prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#error_output_prefix CcDeliveryStream#error_output_prefix}
     */
     readonly errorOutputPrefix?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#prefix CcDeliveryStream#prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#prefix CcDeliveryStream#prefix}
     */
     readonly prefix?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#role_arn CcDeliveryStream#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#role_arn CcDeliveryStream#role_arn}
     */
     readonly roleArn?: string;
 }
@@ -23579,15 +23580,15 @@ export class RedshiftDestinationConfigurationS3ConfigurationPropertyOutputRefere
 }
 export interface RedshiftDestinationConfigurationSecretsManagerConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#enabled CcDeliveryStream#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#enabled CcDeliveryStream#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#role_arn CcDeliveryStream#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#role_arn CcDeliveryStream#role_arn}
     */
     readonly roleArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#secret_arn CcDeliveryStream#secret_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#secret_arn CcDeliveryStream#secret_arn}
     */
     readonly secretArn?: string;
 }
@@ -23695,51 +23696,51 @@ export class RedshiftDestinationConfigurationSecretsManagerConfigurationProperty
 }
 export interface RedshiftDestinationConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#cloudwatch_logging_options CcDeliveryStream#cloudwatch_logging_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#cloudwatch_logging_options CcDeliveryStream#cloudwatch_logging_options}
     */
     readonly cloudwatchLoggingOptions?: RedshiftDestinationConfigurationCloudwatchLoggingOptionsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#cluster_jdbcurl CcDeliveryStream#cluster_jdbcurl}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#cluster_jdbcurl CcDeliveryStream#cluster_jdbcurl}
     */
     readonly clusterJdbcurl?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#copy_command CcDeliveryStream#copy_command}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#copy_command CcDeliveryStream#copy_command}
     */
     readonly copyCommand?: CopyCommandProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#password CcDeliveryStream#password}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#password CcDeliveryStream#password}
     */
     readonly password?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#processing_configuration CcDeliveryStream#processing_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#processing_configuration CcDeliveryStream#processing_configuration}
     */
     readonly processingConfiguration?: RedshiftDestinationConfigurationProcessingConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#retry_options CcDeliveryStream#retry_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#retry_options CcDeliveryStream#retry_options}
     */
     readonly retryOptions?: RedshiftRetryOptionsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#role_arn CcDeliveryStream#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#role_arn CcDeliveryStream#role_arn}
     */
     readonly roleArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#s3_backup_configuration CcDeliveryStream#s3_backup_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#s3_backup_configuration CcDeliveryStream#s3_backup_configuration}
     */
     readonly s3BackupConfiguration?: RedshiftDestinationConfigurationS3BackupConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#s3_backup_mode CcDeliveryStream#s3_backup_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#s3_backup_mode CcDeliveryStream#s3_backup_mode}
     */
     readonly s3BackupMode?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#s3_configuration CcDeliveryStream#s3_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#s3_configuration CcDeliveryStream#s3_configuration}
     */
     readonly s3Configuration?: RedshiftDestinationConfigurationS3ConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#secrets_manager_configuration CcDeliveryStream#secrets_manager_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#secrets_manager_configuration CcDeliveryStream#secrets_manager_configuration}
     */
     readonly secretsManagerConfiguration?: RedshiftDestinationConfigurationSecretsManagerConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#username CcDeliveryStream#username}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#username CcDeliveryStream#username}
     */
     readonly username?: string;
 }
@@ -24045,11 +24046,11 @@ export class RedshiftDestinationConfigurationPropertyOutputReference extends cdk
 }
 export interface S3DestinationConfigurationBufferingHintsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#interval_in_seconds CcDeliveryStream#interval_in_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#interval_in_seconds CcDeliveryStream#interval_in_seconds}
     */
     readonly intervalInSeconds?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#size_in_m_bs CcDeliveryStream#size_in_m_bs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#size_in_m_bs CcDeliveryStream#size_in_m_bs}
     */
     readonly sizeInMBs?: number;
 }
@@ -24135,15 +24136,15 @@ export class S3DestinationConfigurationBufferingHintsPropertyOutputReference ext
 }
 export interface S3DestinationConfigurationCloudwatchLoggingOptionsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#enabled CcDeliveryStream#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#enabled CcDeliveryStream#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#log_group_name CcDeliveryStream#log_group_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#log_group_name CcDeliveryStream#log_group_name}
     */
     readonly logGroupName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#log_stream_name CcDeliveryStream#log_stream_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#log_stream_name CcDeliveryStream#log_stream_name}
     */
     readonly logStreamName?: string;
 }
@@ -24251,7 +24252,7 @@ export class S3DestinationConfigurationCloudwatchLoggingOptionsPropertyOutputRef
 }
 export interface S3DestinationConfigurationEncryptionConfigurationKmsEncryptionConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#awskms_key_arn CcDeliveryStream#awskms_key_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#awskms_key_arn CcDeliveryStream#awskms_key_arn}
     */
     readonly awskmsKeyArn?: string;
 }
@@ -24315,11 +24316,11 @@ export class S3DestinationConfigurationEncryptionConfigurationKmsEncryptionConfi
 }
 export interface S3DestinationConfigurationEncryptionConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#kms_encryption_config CcDeliveryStream#kms_encryption_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#kms_encryption_config CcDeliveryStream#kms_encryption_config}
     */
     readonly kmsEncryptionConfig?: S3DestinationConfigurationEncryptionConfigurationKmsEncryptionConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#no_encryption_config CcDeliveryStream#no_encryption_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#no_encryption_config CcDeliveryStream#no_encryption_config}
     */
     readonly noEncryptionConfig?: string;
 }
@@ -24405,35 +24406,35 @@ export class S3DestinationConfigurationEncryptionConfigurationPropertyOutputRefe
 }
 export interface S3DestinationConfigurationProperty2 {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#bucket_arn CcDeliveryStream#bucket_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#bucket_arn CcDeliveryStream#bucket_arn}
     */
     readonly bucketArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#buffering_hints CcDeliveryStream#buffering_hints}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#buffering_hints CcDeliveryStream#buffering_hints}
     */
     readonly bufferingHints?: S3DestinationConfigurationBufferingHintsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#cloudwatch_logging_options CcDeliveryStream#cloudwatch_logging_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#cloudwatch_logging_options CcDeliveryStream#cloudwatch_logging_options}
     */
     readonly cloudwatchLoggingOptions?: S3DestinationConfigurationCloudwatchLoggingOptionsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#compression_format CcDeliveryStream#compression_format}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#compression_format CcDeliveryStream#compression_format}
     */
     readonly compressionFormat?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#encryption_configuration CcDeliveryStream#encryption_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#encryption_configuration CcDeliveryStream#encryption_configuration}
     */
     readonly encryptionConfiguration?: S3DestinationConfigurationEncryptionConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#error_output_prefix CcDeliveryStream#error_output_prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#error_output_prefix CcDeliveryStream#error_output_prefix}
     */
     readonly errorOutputPrefix?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#prefix CcDeliveryStream#prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#prefix CcDeliveryStream#prefix}
     */
     readonly prefix?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#role_arn CcDeliveryStream#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#role_arn CcDeliveryStream#role_arn}
     */
     readonly roleArn?: string;
 }
@@ -24651,11 +24652,11 @@ export class S3DestinationConfigurationProperty2OutputReference extends cdktn.Co
 }
 export interface SnowflakeBufferingHintsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#interval_in_seconds CcDeliveryStream#interval_in_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#interval_in_seconds CcDeliveryStream#interval_in_seconds}
     */
     readonly intervalInSeconds?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#size_in_m_bs CcDeliveryStream#size_in_m_bs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#size_in_m_bs CcDeliveryStream#size_in_m_bs}
     */
     readonly sizeInMBs?: number;
 }
@@ -24741,15 +24742,15 @@ export class SnowflakeBufferingHintsPropertyOutputReference extends cdktn.Comple
 }
 export interface SnowflakeDestinationConfigurationCloudwatchLoggingOptionsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#enabled CcDeliveryStream#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#enabled CcDeliveryStream#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#log_group_name CcDeliveryStream#log_group_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#log_group_name CcDeliveryStream#log_group_name}
     */
     readonly logGroupName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#log_stream_name CcDeliveryStream#log_stream_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#log_stream_name CcDeliveryStream#log_stream_name}
     */
     readonly logStreamName?: string;
 }
@@ -24857,11 +24858,11 @@ export class SnowflakeDestinationConfigurationCloudwatchLoggingOptionsPropertyOu
 }
 export interface SnowflakeDestinationConfigurationProcessingConfigurationProcessorsParametersProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#parameter_name CcDeliveryStream#parameter_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#parameter_name CcDeliveryStream#parameter_name}
     */
     readonly parameterName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#parameter_value CcDeliveryStream#parameter_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#parameter_value CcDeliveryStream#parameter_value}
     */
     readonly parameterValue?: string;
 }
@@ -24969,11 +24970,11 @@ export class SnowflakeDestinationConfigurationProcessingConfigurationProcessorsP
 }
 export interface SnowflakeDestinationConfigurationProcessingConfigurationProcessorsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#parameters CcDeliveryStream#parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#parameters CcDeliveryStream#parameters}
     */
     readonly parameters?: SnowflakeDestinationConfigurationProcessingConfigurationProcessorsParametersProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#type CcDeliveryStream#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#type CcDeliveryStream#type}
     */
     readonly type?: string;
 }
@@ -25081,11 +25082,11 @@ export class SnowflakeDestinationConfigurationProcessingConfigurationProcessorsP
 }
 export interface SnowflakeDestinationConfigurationProcessingConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#enabled CcDeliveryStream#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#enabled CcDeliveryStream#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#processors CcDeliveryStream#processors}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#processors CcDeliveryStream#processors}
     */
     readonly processors?: SnowflakeDestinationConfigurationProcessingConfigurationProcessorsProperty[] | cdktn.IResolvable;
 }
@@ -25171,7 +25172,7 @@ export class SnowflakeDestinationConfigurationProcessingConfigurationPropertyOut
 }
 export interface SnowflakeRetryOptionsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#duration_in_seconds CcDeliveryStream#duration_in_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#duration_in_seconds CcDeliveryStream#duration_in_seconds}
     */
     readonly durationInSeconds?: number;
 }
@@ -25235,11 +25236,11 @@ export class SnowflakeRetryOptionsPropertyOutputReference extends cdktn.ComplexO
 }
 export interface SnowflakeDestinationConfigurationS3ConfigurationBufferingHintsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#interval_in_seconds CcDeliveryStream#interval_in_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#interval_in_seconds CcDeliveryStream#interval_in_seconds}
     */
     readonly intervalInSeconds?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#size_in_m_bs CcDeliveryStream#size_in_m_bs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#size_in_m_bs CcDeliveryStream#size_in_m_bs}
     */
     readonly sizeInMBs?: number;
 }
@@ -25325,15 +25326,15 @@ export class SnowflakeDestinationConfigurationS3ConfigurationBufferingHintsPrope
 }
 export interface SnowflakeDestinationConfigurationS3ConfigurationCloudwatchLoggingOptionsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#enabled CcDeliveryStream#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#enabled CcDeliveryStream#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#log_group_name CcDeliveryStream#log_group_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#log_group_name CcDeliveryStream#log_group_name}
     */
     readonly logGroupName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#log_stream_name CcDeliveryStream#log_stream_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#log_stream_name CcDeliveryStream#log_stream_name}
     */
     readonly logStreamName?: string;
 }
@@ -25441,7 +25442,7 @@ export class SnowflakeDestinationConfigurationS3ConfigurationCloudwatchLoggingOp
 }
 export interface SnowflakeDestinationConfigurationS3ConfigurationEncryptionConfigurationKmsEncryptionConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#awskms_key_arn CcDeliveryStream#awskms_key_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#awskms_key_arn CcDeliveryStream#awskms_key_arn}
     */
     readonly awskmsKeyArn?: string;
 }
@@ -25505,11 +25506,11 @@ export class SnowflakeDestinationConfigurationS3ConfigurationEncryptionConfigura
 }
 export interface SnowflakeDestinationConfigurationS3ConfigurationEncryptionConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#kms_encryption_config CcDeliveryStream#kms_encryption_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#kms_encryption_config CcDeliveryStream#kms_encryption_config}
     */
     readonly kmsEncryptionConfig?: SnowflakeDestinationConfigurationS3ConfigurationEncryptionConfigurationKmsEncryptionConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#no_encryption_config CcDeliveryStream#no_encryption_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#no_encryption_config CcDeliveryStream#no_encryption_config}
     */
     readonly noEncryptionConfig?: string;
 }
@@ -25595,35 +25596,35 @@ export class SnowflakeDestinationConfigurationS3ConfigurationEncryptionConfigura
 }
 export interface SnowflakeDestinationConfigurationS3ConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#bucket_arn CcDeliveryStream#bucket_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#bucket_arn CcDeliveryStream#bucket_arn}
     */
     readonly bucketArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#buffering_hints CcDeliveryStream#buffering_hints}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#buffering_hints CcDeliveryStream#buffering_hints}
     */
     readonly bufferingHints?: SnowflakeDestinationConfigurationS3ConfigurationBufferingHintsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#cloudwatch_logging_options CcDeliveryStream#cloudwatch_logging_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#cloudwatch_logging_options CcDeliveryStream#cloudwatch_logging_options}
     */
     readonly cloudwatchLoggingOptions?: SnowflakeDestinationConfigurationS3ConfigurationCloudwatchLoggingOptionsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#compression_format CcDeliveryStream#compression_format}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#compression_format CcDeliveryStream#compression_format}
     */
     readonly compressionFormat?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#encryption_configuration CcDeliveryStream#encryption_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#encryption_configuration CcDeliveryStream#encryption_configuration}
     */
     readonly encryptionConfiguration?: SnowflakeDestinationConfigurationS3ConfigurationEncryptionConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#error_output_prefix CcDeliveryStream#error_output_prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#error_output_prefix CcDeliveryStream#error_output_prefix}
     */
     readonly errorOutputPrefix?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#prefix CcDeliveryStream#prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#prefix CcDeliveryStream#prefix}
     */
     readonly prefix?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#role_arn CcDeliveryStream#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#role_arn CcDeliveryStream#role_arn}
     */
     readonly roleArn?: string;
 }
@@ -25841,15 +25842,15 @@ export class SnowflakeDestinationConfigurationS3ConfigurationPropertyOutputRefer
 }
 export interface SnowflakeDestinationConfigurationSecretsManagerConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#enabled CcDeliveryStream#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#enabled CcDeliveryStream#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#role_arn CcDeliveryStream#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#role_arn CcDeliveryStream#role_arn}
     */
     readonly roleArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#secret_arn CcDeliveryStream#secret_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#secret_arn CcDeliveryStream#secret_arn}
     */
     readonly secretArn?: string;
 }
@@ -25957,11 +25958,11 @@ export class SnowflakeDestinationConfigurationSecretsManagerConfigurationPropert
 }
 export interface SnowflakeRoleConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#enabled CcDeliveryStream#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#enabled CcDeliveryStream#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#snowflake_role CcDeliveryStream#snowflake_role}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#snowflake_role CcDeliveryStream#snowflake_role}
     */
     readonly snowflakeRole?: string;
 }
@@ -26047,7 +26048,7 @@ export class SnowflakeRoleConfigurationPropertyOutputReference extends cdktn.Com
 }
 export interface SnowflakeVpcConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#private_link_vpce_id CcDeliveryStream#private_link_vpce_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#private_link_vpce_id CcDeliveryStream#private_link_vpce_id}
     */
     readonly privateLinkVpceId?: string;
 }
@@ -26111,83 +26112,83 @@ export class SnowflakeVpcConfigurationPropertyOutputReference extends cdktn.Comp
 }
 export interface SnowflakeDestinationConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#account_url CcDeliveryStream#account_url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#account_url CcDeliveryStream#account_url}
     */
     readonly accountUrl?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#buffering_hints CcDeliveryStream#buffering_hints}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#buffering_hints CcDeliveryStream#buffering_hints}
     */
     readonly bufferingHints?: SnowflakeBufferingHintsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#cloudwatch_logging_options CcDeliveryStream#cloudwatch_logging_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#cloudwatch_logging_options CcDeliveryStream#cloudwatch_logging_options}
     */
     readonly cloudwatchLoggingOptions?: SnowflakeDestinationConfigurationCloudwatchLoggingOptionsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#content_column_name CcDeliveryStream#content_column_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#content_column_name CcDeliveryStream#content_column_name}
     */
     readonly contentColumnName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#data_loading_option CcDeliveryStream#data_loading_option}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#data_loading_option CcDeliveryStream#data_loading_option}
     */
     readonly dataLoadingOption?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#database CcDeliveryStream#database}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#database CcDeliveryStream#database}
     */
     readonly database?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#key_passphrase CcDeliveryStream#key_passphrase}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#key_passphrase CcDeliveryStream#key_passphrase}
     */
     readonly keyPassphrase?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#meta_data_column_name CcDeliveryStream#meta_data_column_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#meta_data_column_name CcDeliveryStream#meta_data_column_name}
     */
     readonly metaDataColumnName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#private_key CcDeliveryStream#private_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#private_key CcDeliveryStream#private_key}
     */
     readonly privateKey?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#processing_configuration CcDeliveryStream#processing_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#processing_configuration CcDeliveryStream#processing_configuration}
     */
     readonly processingConfiguration?: SnowflakeDestinationConfigurationProcessingConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#retry_options CcDeliveryStream#retry_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#retry_options CcDeliveryStream#retry_options}
     */
     readonly retryOptions?: SnowflakeRetryOptionsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#role_arn CcDeliveryStream#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#role_arn CcDeliveryStream#role_arn}
     */
     readonly roleArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#s3_backup_mode CcDeliveryStream#s3_backup_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#s3_backup_mode CcDeliveryStream#s3_backup_mode}
     */
     readonly s3BackupMode?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#s3_configuration CcDeliveryStream#s3_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#s3_configuration CcDeliveryStream#s3_configuration}
     */
     readonly s3Configuration?: SnowflakeDestinationConfigurationS3ConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#schema CcDeliveryStream#schema}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#schema CcDeliveryStream#schema}
     */
     readonly schema?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#secrets_manager_configuration CcDeliveryStream#secrets_manager_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#secrets_manager_configuration CcDeliveryStream#secrets_manager_configuration}
     */
     readonly secretsManagerConfiguration?: SnowflakeDestinationConfigurationSecretsManagerConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#snowflake_role_configuration CcDeliveryStream#snowflake_role_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#snowflake_role_configuration CcDeliveryStream#snowflake_role_configuration}
     */
     readonly snowflakeRoleConfiguration?: SnowflakeRoleConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#snowflake_vpc_configuration CcDeliveryStream#snowflake_vpc_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#snowflake_vpc_configuration CcDeliveryStream#snowflake_vpc_configuration}
     */
     readonly snowflakeVpcConfiguration?: SnowflakeVpcConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#table CcDeliveryStream#table}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#table CcDeliveryStream#table}
     */
     readonly table?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#user CcDeliveryStream#user}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#user CcDeliveryStream#user}
     */
     readonly user?: string;
 }
@@ -26669,11 +26670,11 @@ export class SnowflakeDestinationConfigurationPropertyOutputReference extends cd
 }
 export interface SplunkBufferingHintsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#interval_in_seconds CcDeliveryStream#interval_in_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#interval_in_seconds CcDeliveryStream#interval_in_seconds}
     */
     readonly intervalInSeconds?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#size_in_m_bs CcDeliveryStream#size_in_m_bs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#size_in_m_bs CcDeliveryStream#size_in_m_bs}
     */
     readonly sizeInMBs?: number;
 }
@@ -26759,15 +26760,15 @@ export class SplunkBufferingHintsPropertyOutputReference extends cdktn.ComplexOb
 }
 export interface SplunkDestinationConfigurationCloudwatchLoggingOptionsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#enabled CcDeliveryStream#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#enabled CcDeliveryStream#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#log_group_name CcDeliveryStream#log_group_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#log_group_name CcDeliveryStream#log_group_name}
     */
     readonly logGroupName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#log_stream_name CcDeliveryStream#log_stream_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#log_stream_name CcDeliveryStream#log_stream_name}
     */
     readonly logStreamName?: string;
 }
@@ -26875,11 +26876,11 @@ export class SplunkDestinationConfigurationCloudwatchLoggingOptionsPropertyOutpu
 }
 export interface SplunkDestinationConfigurationProcessingConfigurationProcessorsParametersProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#parameter_name CcDeliveryStream#parameter_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#parameter_name CcDeliveryStream#parameter_name}
     */
     readonly parameterName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#parameter_value CcDeliveryStream#parameter_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#parameter_value CcDeliveryStream#parameter_value}
     */
     readonly parameterValue?: string;
 }
@@ -26987,11 +26988,11 @@ export class SplunkDestinationConfigurationProcessingConfigurationProcessorsPara
 }
 export interface SplunkDestinationConfigurationProcessingConfigurationProcessorsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#parameters CcDeliveryStream#parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#parameters CcDeliveryStream#parameters}
     */
     readonly parameters?: SplunkDestinationConfigurationProcessingConfigurationProcessorsParametersProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#type CcDeliveryStream#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#type CcDeliveryStream#type}
     */
     readonly type?: string;
 }
@@ -27099,11 +27100,11 @@ export class SplunkDestinationConfigurationProcessingConfigurationProcessorsProp
 }
 export interface SplunkDestinationConfigurationProcessingConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#enabled CcDeliveryStream#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#enabled CcDeliveryStream#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#processors CcDeliveryStream#processors}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#processors CcDeliveryStream#processors}
     */
     readonly processors?: SplunkDestinationConfigurationProcessingConfigurationProcessorsProperty[] | cdktn.IResolvable;
 }
@@ -27189,7 +27190,7 @@ export class SplunkDestinationConfigurationProcessingConfigurationPropertyOutput
 }
 export interface SplunkRetryOptionsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#duration_in_seconds CcDeliveryStream#duration_in_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#duration_in_seconds CcDeliveryStream#duration_in_seconds}
     */
     readonly durationInSeconds?: number;
 }
@@ -27253,11 +27254,11 @@ export class SplunkRetryOptionsPropertyOutputReference extends cdktn.ComplexObje
 }
 export interface SplunkDestinationConfigurationS3ConfigurationBufferingHintsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#interval_in_seconds CcDeliveryStream#interval_in_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#interval_in_seconds CcDeliveryStream#interval_in_seconds}
     */
     readonly intervalInSeconds?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#size_in_m_bs CcDeliveryStream#size_in_m_bs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#size_in_m_bs CcDeliveryStream#size_in_m_bs}
     */
     readonly sizeInMBs?: number;
 }
@@ -27343,15 +27344,15 @@ export class SplunkDestinationConfigurationS3ConfigurationBufferingHintsProperty
 }
 export interface SplunkDestinationConfigurationS3ConfigurationCloudwatchLoggingOptionsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#enabled CcDeliveryStream#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#enabled CcDeliveryStream#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#log_group_name CcDeliveryStream#log_group_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#log_group_name CcDeliveryStream#log_group_name}
     */
     readonly logGroupName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#log_stream_name CcDeliveryStream#log_stream_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#log_stream_name CcDeliveryStream#log_stream_name}
     */
     readonly logStreamName?: string;
 }
@@ -27459,7 +27460,7 @@ export class SplunkDestinationConfigurationS3ConfigurationCloudwatchLoggingOptio
 }
 export interface SplunkDestinationConfigurationS3ConfigurationEncryptionConfigurationKmsEncryptionConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#awskms_key_arn CcDeliveryStream#awskms_key_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#awskms_key_arn CcDeliveryStream#awskms_key_arn}
     */
     readonly awskmsKeyArn?: string;
 }
@@ -27523,11 +27524,11 @@ export class SplunkDestinationConfigurationS3ConfigurationEncryptionConfiguratio
 }
 export interface SplunkDestinationConfigurationS3ConfigurationEncryptionConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#kms_encryption_config CcDeliveryStream#kms_encryption_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#kms_encryption_config CcDeliveryStream#kms_encryption_config}
     */
     readonly kmsEncryptionConfig?: SplunkDestinationConfigurationS3ConfigurationEncryptionConfigurationKmsEncryptionConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#no_encryption_config CcDeliveryStream#no_encryption_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#no_encryption_config CcDeliveryStream#no_encryption_config}
     */
     readonly noEncryptionConfig?: string;
 }
@@ -27613,35 +27614,35 @@ export class SplunkDestinationConfigurationS3ConfigurationEncryptionConfiguratio
 }
 export interface SplunkDestinationConfigurationS3ConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#bucket_arn CcDeliveryStream#bucket_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#bucket_arn CcDeliveryStream#bucket_arn}
     */
     readonly bucketArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#buffering_hints CcDeliveryStream#buffering_hints}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#buffering_hints CcDeliveryStream#buffering_hints}
     */
     readonly bufferingHints?: SplunkDestinationConfigurationS3ConfigurationBufferingHintsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#cloudwatch_logging_options CcDeliveryStream#cloudwatch_logging_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#cloudwatch_logging_options CcDeliveryStream#cloudwatch_logging_options}
     */
     readonly cloudwatchLoggingOptions?: SplunkDestinationConfigurationS3ConfigurationCloudwatchLoggingOptionsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#compression_format CcDeliveryStream#compression_format}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#compression_format CcDeliveryStream#compression_format}
     */
     readonly compressionFormat?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#encryption_configuration CcDeliveryStream#encryption_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#encryption_configuration CcDeliveryStream#encryption_configuration}
     */
     readonly encryptionConfiguration?: SplunkDestinationConfigurationS3ConfigurationEncryptionConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#error_output_prefix CcDeliveryStream#error_output_prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#error_output_prefix CcDeliveryStream#error_output_prefix}
     */
     readonly errorOutputPrefix?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#prefix CcDeliveryStream#prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#prefix CcDeliveryStream#prefix}
     */
     readonly prefix?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#role_arn CcDeliveryStream#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#role_arn CcDeliveryStream#role_arn}
     */
     readonly roleArn?: string;
 }
@@ -27859,15 +27860,15 @@ export class SplunkDestinationConfigurationS3ConfigurationPropertyOutputReferenc
 }
 export interface SplunkDestinationConfigurationSecretsManagerConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#enabled CcDeliveryStream#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#enabled CcDeliveryStream#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#role_arn CcDeliveryStream#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#role_arn CcDeliveryStream#role_arn}
     */
     readonly roleArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#secret_arn CcDeliveryStream#secret_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#secret_arn CcDeliveryStream#secret_arn}
     */
     readonly secretArn?: string;
 }
@@ -27975,47 +27976,47 @@ export class SplunkDestinationConfigurationSecretsManagerConfigurationPropertyOu
 }
 export interface SplunkDestinationConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#buffering_hints CcDeliveryStream#buffering_hints}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#buffering_hints CcDeliveryStream#buffering_hints}
     */
     readonly bufferingHints?: SplunkBufferingHintsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#cloudwatch_logging_options CcDeliveryStream#cloudwatch_logging_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#cloudwatch_logging_options CcDeliveryStream#cloudwatch_logging_options}
     */
     readonly cloudwatchLoggingOptions?: SplunkDestinationConfigurationCloudwatchLoggingOptionsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#hec_acknowledgment_timeout_in_seconds CcDeliveryStream#hec_acknowledgment_timeout_in_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#hec_acknowledgment_timeout_in_seconds CcDeliveryStream#hec_acknowledgment_timeout_in_seconds}
     */
     readonly hecAcknowledgmentTimeoutInSeconds?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#hec_endpoint CcDeliveryStream#hec_endpoint}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#hec_endpoint CcDeliveryStream#hec_endpoint}
     */
     readonly hecEndpoint?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#hec_endpoint_type CcDeliveryStream#hec_endpoint_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#hec_endpoint_type CcDeliveryStream#hec_endpoint_type}
     */
     readonly hecEndpointType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#hec_token CcDeliveryStream#hec_token}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#hec_token CcDeliveryStream#hec_token}
     */
     readonly hecToken?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#processing_configuration CcDeliveryStream#processing_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#processing_configuration CcDeliveryStream#processing_configuration}
     */
     readonly processingConfiguration?: SplunkDestinationConfigurationProcessingConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#retry_options CcDeliveryStream#retry_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#retry_options CcDeliveryStream#retry_options}
     */
     readonly retryOptions?: SplunkRetryOptionsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#s3_backup_mode CcDeliveryStream#s3_backup_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#s3_backup_mode CcDeliveryStream#s3_backup_mode}
     */
     readonly s3BackupMode?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#s3_configuration CcDeliveryStream#s3_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#s3_configuration CcDeliveryStream#s3_configuration}
     */
     readonly s3Configuration?: SplunkDestinationConfigurationS3ConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#secrets_manager_configuration CcDeliveryStream#secrets_manager_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#secrets_manager_configuration CcDeliveryStream#secrets_manager_configuration}
     */
     readonly secretsManagerConfiguration?: SplunkDestinationConfigurationSecretsManagerConfigurationProperty;
 }
@@ -28299,11 +28300,11 @@ export class SplunkDestinationConfigurationPropertyOutputReference extends cdktn
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#key CcDeliveryStream#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#key CcDeliveryStream#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesisfirehose_delivery_stream#value CcDeliveryStream#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisfirehose_delivery_stream#value CcDeliveryStream#value}
     */
     readonly value?: string;
 }

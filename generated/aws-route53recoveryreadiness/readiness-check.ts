@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/route53recoveryreadiness_readiness_check
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53recoveryreadiness_readiness_check
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,25 +9,25 @@ export interface CcReadinessCheckProps extends cdktn.TerraformMetaArguments {
     /**
     * Name of the ReadinessCheck to create.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/route53recoveryreadiness_readiness_check#readiness_check_name CcReadinessCheck#readiness_check_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53recoveryreadiness_readiness_check#readiness_check_name CcReadinessCheck#readiness_check_name}
     */
     readonly readinessCheckName?: string;
     /**
     * The name of the resource set to check.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/route53recoveryreadiness_readiness_check#resource_set_name CcReadinessCheck#resource_set_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53recoveryreadiness_readiness_check#resource_set_name CcReadinessCheck#resource_set_name}
     */
     readonly resourceSetName?: string;
     /**
     * A collection of tags associated with a resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/route53recoveryreadiness_readiness_check#tags CcReadinessCheck#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53recoveryreadiness_readiness_check#tags CcReadinessCheck#tags}
     */
     readonly tags?: CcReadinessCheck.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/route53recoveryreadiness_readiness_check awscc_route53recoveryreadiness_readiness_check}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53recoveryreadiness_readiness_check awscc_route53recoveryreadiness_readiness_check}
 */
 export class CcReadinessCheck extends cdktn.TerraformResource {
 
@@ -43,7 +43,7 @@ export class CcReadinessCheck extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcReadinessCheck resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcReadinessCheck to import
-    * @param importFromId The id of the existing CcReadinessCheck that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/route53recoveryreadiness_readiness_check#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcReadinessCheck that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53recoveryreadiness_readiness_check#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcReadinessCheck to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -55,7 +55,7 @@ export class CcReadinessCheck extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/route53recoveryreadiness_readiness_check awscc_route53recoveryreadiness_readiness_check} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53recoveryreadiness_readiness_check awscc_route53recoveryreadiness_readiness_check} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -65,7 +65,8 @@ export class CcReadinessCheck extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_route53recoveryreadiness_readiness_check',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -221,11 +222,11 @@ export function ccReadinessCheckTagPropertyToHclTerraform(struct?: CcReadinessCh
 export namespace CcReadinessCheck {
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/route53recoveryreadiness_readiness_check#key CcReadinessCheck#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53recoveryreadiness_readiness_check#key CcReadinessCheck#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/route53recoveryreadiness_readiness_check#value CcReadinessCheck#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53recoveryreadiness_readiness_check#value CcReadinessCheck#value}
     */
     readonly value?: string;
 }

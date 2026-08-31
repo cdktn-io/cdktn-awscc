@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/emr_step
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/emr_step
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,43 +9,43 @@ export interface CcStepProps extends cdktn.TerraformMetaArguments {
     /**
     * This specifies what action to take when the cluster step fails. Possible values are CANCEL_AND_WAIT and CONTINUE.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/emr_step#action_on_failure CcStep#action_on_failure}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/emr_step#action_on_failure CcStep#action_on_failure}
     */
     readonly actionOnFailure: string;
     /**
     * The KMS key ARN to encrypt the logs published to the given Amazon S3 destination. When omitted, EMR falls back to cluster-level logging behavior.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/emr_step#encryption_key_arn CcStep#encryption_key_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/emr_step#encryption_key_arn CcStep#encryption_key_arn}
     */
     readonly encryptionKeyArn?: string;
     /**
     * The HadoopJarStepConfig property type specifies a job flow step consisting of a JAR file whose main function will be executed. The main function submits a job for the cluster to execute as a step on the master node, and then waits for the job to finish or fail before executing subsequent steps.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/emr_step#hadoop_jar_step CcStep#hadoop_jar_step}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/emr_step#hadoop_jar_step CcStep#hadoop_jar_step}
     */
     readonly hadoopJarStep: CcStep.HadoopJarStepConfigProperty;
     /**
     * A string that uniquely identifies the cluster (job flow).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/emr_step#job_flow_id CcStep#job_flow_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/emr_step#job_flow_id CcStep#job_flow_id}
     */
     readonly jobFlowId: string;
     /**
     * The Amazon S3 destination URI for log publishing. When omitted, EMR falls back to cluster-level logging behavior.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/emr_step#log_uri CcStep#log_uri}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/emr_step#log_uri CcStep#log_uri}
     */
     readonly logUri?: string;
     /**
     * The name of the cluster step.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/emr_step#name CcStep#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/emr_step#name CcStep#name}
     */
     readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/emr_step awscc_emr_step}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/emr_step awscc_emr_step}
 */
 export class CcStep extends cdktn.TerraformResource {
 
@@ -61,7 +61,7 @@ export class CcStep extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcStep resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcStep to import
-    * @param importFromId The id of the existing CcStep that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/emr_step#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcStep that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/emr_step#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcStep to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -73,7 +73,7 @@ export class CcStep extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/emr_step awscc_emr_step} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/emr_step awscc_emr_step} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -83,7 +83,8 @@ export class CcStep extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_emr_step',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -350,11 +351,11 @@ export function ccStepHadoopJarStepConfigPropertyToHclTerraform(struct?: CcStep.
 export namespace CcStep {
 export interface KeyValueProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/emr_step#key CcStep#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/emr_step#key CcStep#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/emr_step#value CcStep#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/emr_step#value CcStep#value}
     */
     readonly value?: string;
 }
@@ -462,19 +463,19 @@ export class KeyValuePropertyList extends cdktn.ComplexList {
 }
 export interface HadoopJarStepConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/emr_step#args CcStep#args}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/emr_step#args CcStep#args}
     */
     readonly args?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/emr_step#jar CcStep#jar}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/emr_step#jar CcStep#jar}
     */
     readonly jar: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/emr_step#main_class CcStep#main_class}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/emr_step#main_class CcStep#main_class}
     */
     readonly mainClass?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/emr_step#step_properties CcStep#step_properties}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/emr_step#step_properties CcStep#step_properties}
     */
     readonly stepProperties?: KeyValueProperty[] | cdktn.IResolvable;
 }

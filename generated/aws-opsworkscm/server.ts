@@ -1,99 +1,99 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opsworkscm_server
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opsworkscm_server
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcServerProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opsworkscm_server#associate_public_ip_address CcServer#associate_public_ip_address}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opsworkscm_server#associate_public_ip_address CcServer#associate_public_ip_address}
     */
     readonly associatePublicIpAddress?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opsworkscm_server#backup_id CcServer#backup_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opsworkscm_server#backup_id CcServer#backup_id}
     */
     readonly backupId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opsworkscm_server#backup_retention_count CcServer#backup_retention_count}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opsworkscm_server#backup_retention_count CcServer#backup_retention_count}
     */
     readonly backupRetentionCount?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opsworkscm_server#custom_certificate CcServer#custom_certificate}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opsworkscm_server#custom_certificate CcServer#custom_certificate}
     */
     readonly customCertificate?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opsworkscm_server#custom_domain CcServer#custom_domain}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opsworkscm_server#custom_domain CcServer#custom_domain}
     */
     readonly customDomain?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opsworkscm_server#custom_private_key CcServer#custom_private_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opsworkscm_server#custom_private_key CcServer#custom_private_key}
     */
     readonly customPrivateKey?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opsworkscm_server#disable_automated_backup CcServer#disable_automated_backup}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opsworkscm_server#disable_automated_backup CcServer#disable_automated_backup}
     */
     readonly disableAutomatedBackup?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opsworkscm_server#engine CcServer#engine}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opsworkscm_server#engine CcServer#engine}
     */
     readonly engine?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opsworkscm_server#engine_attributes CcServer#engine_attributes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opsworkscm_server#engine_attributes CcServer#engine_attributes}
     */
     readonly engineAttributes?: CcServer.EngineAttributeProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opsworkscm_server#engine_model CcServer#engine_model}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opsworkscm_server#engine_model CcServer#engine_model}
     */
     readonly engineModel?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opsworkscm_server#engine_version CcServer#engine_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opsworkscm_server#engine_version CcServer#engine_version}
     */
     readonly engineVersion?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opsworkscm_server#instance_profile_arn CcServer#instance_profile_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opsworkscm_server#instance_profile_arn CcServer#instance_profile_arn}
     */
     readonly instanceProfileArn: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opsworkscm_server#instance_type CcServer#instance_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opsworkscm_server#instance_type CcServer#instance_type}
     */
     readonly instanceType: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opsworkscm_server#key_pair CcServer#key_pair}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opsworkscm_server#key_pair CcServer#key_pair}
     */
     readonly keyPair?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opsworkscm_server#preferred_backup_window CcServer#preferred_backup_window}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opsworkscm_server#preferred_backup_window CcServer#preferred_backup_window}
     */
     readonly preferredBackupWindow?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opsworkscm_server#preferred_maintenance_window CcServer#preferred_maintenance_window}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opsworkscm_server#preferred_maintenance_window CcServer#preferred_maintenance_window}
     */
     readonly preferredMaintenanceWindow?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opsworkscm_server#security_group_ids CcServer#security_group_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opsworkscm_server#security_group_ids CcServer#security_group_ids}
     */
     readonly securityGroupIds?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opsworkscm_server#server_name CcServer#server_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opsworkscm_server#server_name CcServer#server_name}
     */
     readonly serverName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opsworkscm_server#service_role_arn CcServer#service_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opsworkscm_server#service_role_arn CcServer#service_role_arn}
     */
     readonly serviceRoleArn: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opsworkscm_server#subnet_ids CcServer#subnet_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opsworkscm_server#subnet_ids CcServer#subnet_ids}
     */
     readonly subnetIds?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opsworkscm_server#tags CcServer#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opsworkscm_server#tags CcServer#tags}
     */
     readonly tags?: CcServer.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opsworkscm_server awscc_opsworkscm_server}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opsworkscm_server awscc_opsworkscm_server}
 */
 export class CcServer extends cdktn.TerraformResource {
 
@@ -109,7 +109,7 @@ export class CcServer extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcServer resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcServer to import
-    * @param importFromId The id of the existing CcServer that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opsworkscm_server#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcServer that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opsworkscm_server#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcServer to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -121,7 +121,7 @@ export class CcServer extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opsworkscm_server awscc_opsworkscm_server} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opsworkscm_server awscc_opsworkscm_server} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -131,7 +131,8 @@ export class CcServer extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_opsworkscm_server',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -757,11 +758,11 @@ export function ccServerTagPropertyToHclTerraform(struct?: CcServer.TagProperty 
 export namespace CcServer {
 export interface EngineAttributeProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opsworkscm_server#name CcServer#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opsworkscm_server#name CcServer#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opsworkscm_server#value CcServer#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opsworkscm_server#value CcServer#value}
     */
     readonly value?: string;
 }
@@ -869,11 +870,11 @@ export class EngineAttributePropertyList extends cdktn.ComplexList {
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opsworkscm_server#key CcServer#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opsworkscm_server#key CcServer#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/opsworkscm_server#value CcServer#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opsworkscm_server#value CcServer#value}
     */
     readonly value?: string;
 }

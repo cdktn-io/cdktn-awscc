@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/chatbot_slack_channel_configuration
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/chatbot_slack_channel_configuration
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,67 +9,67 @@ export interface CcSlackChannelConfigurationProps extends cdktn.TerraformMetaArg
     /**
     * The name of the configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/chatbot_slack_channel_configuration#configuration_name CcSlackChannelConfiguration#configuration_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/chatbot_slack_channel_configuration#configuration_name CcSlackChannelConfiguration#configuration_name}
     */
     readonly configurationName: string;
     /**
     * ARNs of Custom Actions to associate with notifications in the provided chat channel.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/chatbot_slack_channel_configuration#customization_resource_arns CcSlackChannelConfiguration#customization_resource_arns}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/chatbot_slack_channel_configuration#customization_resource_arns CcSlackChannelConfiguration#customization_resource_arns}
     */
     readonly customizationResourceArns?: string[];
     /**
     * The list of IAM policy ARNs that are applied as channel guardrails. The AWS managed 'AdministratorAccess' policy is applied as a default if this is not set.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/chatbot_slack_channel_configuration#guardrail_policies CcSlackChannelConfiguration#guardrail_policies}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/chatbot_slack_channel_configuration#guardrail_policies CcSlackChannelConfiguration#guardrail_policies}
     */
     readonly guardrailPolicies?: string[];
     /**
     * The ARN of the IAM role that defines the permissions for AWS Chatbot
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/chatbot_slack_channel_configuration#iam_role_arn CcSlackChannelConfiguration#iam_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/chatbot_slack_channel_configuration#iam_role_arn CcSlackChannelConfiguration#iam_role_arn}
     */
     readonly iamRoleArn: string;
     /**
     * Specifies the logging level for this configuration:ERROR,INFO or NONE. This property affects the log entries pushed to Amazon CloudWatch logs
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/chatbot_slack_channel_configuration#logging_level CcSlackChannelConfiguration#logging_level}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/chatbot_slack_channel_configuration#logging_level CcSlackChannelConfiguration#logging_level}
     */
     readonly loggingLevel?: string;
     /**
     * The id of the Slack channel
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/chatbot_slack_channel_configuration#slack_channel_id CcSlackChannelConfiguration#slack_channel_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/chatbot_slack_channel_configuration#slack_channel_id CcSlackChannelConfiguration#slack_channel_id}
     */
     readonly slackChannelId: string;
     /**
     * The id of the Slack workspace
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/chatbot_slack_channel_configuration#slack_workspace_id CcSlackChannelConfiguration#slack_workspace_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/chatbot_slack_channel_configuration#slack_workspace_id CcSlackChannelConfiguration#slack_workspace_id}
     */
     readonly slackWorkspaceId: string;
     /**
     * ARNs of SNS topics which delivers notifications to AWS Chatbot, for example CloudWatch alarm notifications.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/chatbot_slack_channel_configuration#sns_topic_arns CcSlackChannelConfiguration#sns_topic_arns}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/chatbot_slack_channel_configuration#sns_topic_arns CcSlackChannelConfiguration#sns_topic_arns}
     */
     readonly snsTopicArns?: string[];
     /**
     * The tags to add to the configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/chatbot_slack_channel_configuration#tags CcSlackChannelConfiguration#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/chatbot_slack_channel_configuration#tags CcSlackChannelConfiguration#tags}
     */
     readonly tags?: CcSlackChannelConfiguration.TagProperty[] | cdktn.IResolvable;
     /**
     * Enables use of a user role requirement in your chat configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/chatbot_slack_channel_configuration#user_role_required CcSlackChannelConfiguration#user_role_required}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/chatbot_slack_channel_configuration#user_role_required CcSlackChannelConfiguration#user_role_required}
     */
     readonly userRoleRequired?: boolean | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/chatbot_slack_channel_configuration awscc_chatbot_slack_channel_configuration}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/chatbot_slack_channel_configuration awscc_chatbot_slack_channel_configuration}
 */
 export class CcSlackChannelConfiguration extends cdktn.TerraformResource {
 
@@ -85,7 +85,7 @@ export class CcSlackChannelConfiguration extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcSlackChannelConfiguration resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcSlackChannelConfiguration to import
-    * @param importFromId The id of the existing CcSlackChannelConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/chatbot_slack_channel_configuration#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcSlackChannelConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/chatbot_slack_channel_configuration#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcSlackChannelConfiguration to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -97,7 +97,7 @@ export class CcSlackChannelConfiguration extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/chatbot_slack_channel_configuration awscc_chatbot_slack_channel_configuration} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/chatbot_slack_channel_configuration awscc_chatbot_slack_channel_configuration} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -107,7 +107,8 @@ export class CcSlackChannelConfiguration extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_chatbot_slack_channel_configuration',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -419,11 +420,11 @@ export function ccSlackChannelConfigurationTagPropertyToHclTerraform(struct?: Cc
 export namespace CcSlackChannelConfiguration {
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/chatbot_slack_channel_configuration#key CcSlackChannelConfiguration#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/chatbot_slack_channel_configuration#key CcSlackChannelConfiguration#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/chatbot_slack_channel_configuration#value CcSlackChannelConfiguration#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/chatbot_slack_channel_configuration#value CcSlackChannelConfiguration#value}
     */
     readonly value?: string;
 }

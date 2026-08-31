@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_service_profile
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_service_profile
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,25 +9,25 @@ export interface CcServiceProfileProps extends cdktn.TerraformMetaArguments {
     /**
     * LoRaWAN supports all LoRa specific attributes for service profile for CreateServiceProfile operation
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_service_profile#lo_ra_wan CcServiceProfile#lo_ra_wan}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_service_profile#lo_ra_wan CcServiceProfile#lo_ra_wan}
     */
     readonly loRaWan?: CcServiceProfile.LoRaWANServiceProfileProperty;
     /**
     * Name of service profile
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_service_profile#name CcServiceProfile#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_service_profile#name CcServiceProfile#name}
     */
     readonly name?: string;
     /**
     * A list of key-value pairs that contain metadata for the service profile.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_service_profile#tags CcServiceProfile#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_service_profile#tags CcServiceProfile#tags}
     */
     readonly tags?: CcServiceProfile.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_service_profile awscc_iotwireless_service_profile}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_service_profile awscc_iotwireless_service_profile}
 */
 export class CcServiceProfile extends cdktn.TerraformResource {
 
@@ -43,7 +43,7 @@ export class CcServiceProfile extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcServiceProfile resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcServiceProfile to import
-    * @param importFromId The id of the existing CcServiceProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_service_profile#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcServiceProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_service_profile#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcServiceProfile to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -55,7 +55,7 @@ export class CcServiceProfile extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_service_profile awscc_iotwireless_service_profile} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_service_profile awscc_iotwireless_service_profile} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -65,7 +65,8 @@ export class CcServiceProfile extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_iotwireless_service_profile',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -270,15 +271,15 @@ export function ccServiceProfileTagPropertyToHclTerraform(struct?: CcServiceProf
 export namespace CcServiceProfile {
 export interface LoRaWANServiceProfileProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_service_profile#add_gw_metadata CcServiceProfile#add_gw_metadata}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_service_profile#add_gw_metadata CcServiceProfile#add_gw_metadata}
     */
     readonly addGwMetadata?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_service_profile#pr_allowed CcServiceProfile#pr_allowed}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_service_profile#pr_allowed CcServiceProfile#pr_allowed}
     */
     readonly prAllowed?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_service_profile#ra_allowed CcServiceProfile#ra_allowed}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_service_profile#ra_allowed CcServiceProfile#ra_allowed}
     */
     readonly raAllowed?: boolean | cdktn.IResolvable;
 }
@@ -466,11 +467,11 @@ export class LoRaWANServiceProfilePropertyOutputReference extends cdktn.ComplexO
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_service_profile#key CcServiceProfile#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_service_profile#key CcServiceProfile#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_service_profile#value CcServiceProfile#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_service_profile#value CcServiceProfile#value}
     */
     readonly value?: string;
 }

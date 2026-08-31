@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_job_template
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_job_template
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,77 +9,77 @@ export interface CcJobTemplateProps extends cdktn.TerraformMetaArguments {
     /**
     * The criteria that determine when and how a job abort takes place.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_job_template#abort_config CcJobTemplate#abort_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_job_template#abort_config CcJobTemplate#abort_config}
     */
     readonly abortConfig?: CcJobTemplate.AbortConfigProperty;
     /**
     * A description of the Job Template.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_job_template#description CcJobTemplate#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_job_template#description CcJobTemplate#description}
     */
     readonly description: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_job_template#destination_package_versions CcJobTemplate#destination_package_versions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_job_template#destination_package_versions CcJobTemplate#destination_package_versions}
     */
     readonly destinationPackageVersions?: string[];
     /**
     * The job document. Required if you don't specify a value for documentSource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_job_template#document CcJobTemplate#document}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_job_template#document CcJobTemplate#document}
     */
     readonly document?: string;
     /**
     * An S3 link to the job document to use in the template. Required if you don't specify a value for document.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_job_template#document_source CcJobTemplate#document_source}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_job_template#document_source CcJobTemplate#document_source}
     */
     readonly documentSource?: string;
     /**
     * Optional for copying a JobTemplate from a pre-existing Job configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_job_template#job_arn CcJobTemplate#job_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_job_template#job_arn CcJobTemplate#job_arn}
     */
     readonly jobArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_job_template#job_executions_retry_config CcJobTemplate#job_executions_retry_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_job_template#job_executions_retry_config CcJobTemplate#job_executions_retry_config}
     */
     readonly jobExecutionsRetryConfig?: CcJobTemplate.JobExecutionsRetryConfigProperty;
     /**
     * Allows you to create a staged rollout of a job.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_job_template#job_executions_rollout_config CcJobTemplate#job_executions_rollout_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_job_template#job_executions_rollout_config CcJobTemplate#job_executions_rollout_config}
     */
     readonly jobExecutionsRolloutConfig?: CcJobTemplate.JobExecutionsRolloutConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_job_template#job_template_id CcJobTemplate#job_template_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_job_template#job_template_id CcJobTemplate#job_template_id}
     */
     readonly jobTemplateId: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_job_template#maintenance_windows CcJobTemplate#maintenance_windows}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_job_template#maintenance_windows CcJobTemplate#maintenance_windows}
     */
     readonly maintenanceWindows?: CcJobTemplate.MaintenanceWindowProperty[] | cdktn.IResolvable;
     /**
     * Configuration for pre-signed S3 URLs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_job_template#presigned_url_config CcJobTemplate#presigned_url_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_job_template#presigned_url_config CcJobTemplate#presigned_url_config}
     */
     readonly presignedUrlConfig?: CcJobTemplate.PresignedUrlConfigProperty;
     /**
     * Metadata that can be used to manage the JobTemplate.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_job_template#tags CcJobTemplate#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_job_template#tags CcJobTemplate#tags}
     */
     readonly tags?: CcJobTemplate.TagProperty[] | cdktn.IResolvable;
     /**
     * Specifies the amount of time each device has to finish its execution of the job.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_job_template#timeout_config CcJobTemplate#timeout_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_job_template#timeout_config CcJobTemplate#timeout_config}
     */
     readonly timeoutConfig?: CcJobTemplate.TimeoutConfigProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_job_template awscc_iot_job_template}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_job_template awscc_iot_job_template}
 */
 export class CcJobTemplate extends cdktn.TerraformResource {
 
@@ -95,7 +95,7 @@ export class CcJobTemplate extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcJobTemplate resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcJobTemplate to import
-    * @param importFromId The id of the existing CcJobTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_job_template#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcJobTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_job_template#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcJobTemplate to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -107,7 +107,7 @@ export class CcJobTemplate extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_job_template awscc_iot_job_template} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_job_template awscc_iot_job_template} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -117,7 +117,8 @@ export class CcJobTemplate extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_iot_job_template',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -879,25 +880,25 @@ export interface AbortCriteriaProperty {
     /**
     * The type of job action to take to initiate the job abort.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_job_template#action CcJobTemplate#action}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_job_template#action CcJobTemplate#action}
     */
     readonly action?: string;
     /**
     * The type of job execution failures that can initiate a job abort.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_job_template#failure_type CcJobTemplate#failure_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_job_template#failure_type CcJobTemplate#failure_type}
     */
     readonly failureType?: string;
     /**
     * The minimum number of things which must receive job execution notifications before the job can be aborted.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_job_template#min_number_of_executed_things CcJobTemplate#min_number_of_executed_things}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_job_template#min_number_of_executed_things CcJobTemplate#min_number_of_executed_things}
     */
     readonly minNumberOfExecutedThings?: number;
     /**
     * The minimum percentage of job execution failures that must occur to initiate the job abort.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_job_template#threshold_percentage CcJobTemplate#threshold_percentage}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_job_template#threshold_percentage CcJobTemplate#threshold_percentage}
     */
     readonly thresholdPercentage?: number;
 }
@@ -1049,7 +1050,7 @@ export class AbortCriteriaPropertyList extends cdktn.ComplexList {
 }
 export interface AbortConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_job_template#criteria_list CcJobTemplate#criteria_list}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_job_template#criteria_list CcJobTemplate#criteria_list}
     */
     readonly criteriaList?: AbortCriteriaProperty[] | cdktn.IResolvable;
 }
@@ -1113,11 +1114,11 @@ export class AbortConfigPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface RetryCriteriaProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_job_template#failure_type CcJobTemplate#failure_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_job_template#failure_type CcJobTemplate#failure_type}
     */
     readonly failureType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_job_template#number_of_retries CcJobTemplate#number_of_retries}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_job_template#number_of_retries CcJobTemplate#number_of_retries}
     */
     readonly numberOfRetries?: number;
 }
@@ -1225,7 +1226,7 @@ export class RetryCriteriaPropertyList extends cdktn.ComplexList {
 }
 export interface JobExecutionsRetryConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_job_template#retry_criteria_list CcJobTemplate#retry_criteria_list}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_job_template#retry_criteria_list CcJobTemplate#retry_criteria_list}
     */
     readonly retryCriteriaList?: RetryCriteriaProperty[] | cdktn.IResolvable;
 }
@@ -1289,11 +1290,11 @@ export class JobExecutionsRetryConfigPropertyOutputReference extends cdktn.Compl
 }
 export interface RateIncreaseCriteriaProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_job_template#number_of_notified_things CcJobTemplate#number_of_notified_things}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_job_template#number_of_notified_things CcJobTemplate#number_of_notified_things}
     */
     readonly numberOfNotifiedThings?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_job_template#number_of_succeeded_things CcJobTemplate#number_of_succeeded_things}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_job_template#number_of_succeeded_things CcJobTemplate#number_of_succeeded_things}
     */
     readonly numberOfSucceededThings?: number;
 }
@@ -1381,19 +1382,19 @@ export interface ExponentialRolloutRateProperty {
     /**
     * The minimum number of things that will be notified of a pending job, per minute at the start of job rollout. This parameter allows you to define the initial rate of rollout.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_job_template#base_rate_per_minute CcJobTemplate#base_rate_per_minute}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_job_template#base_rate_per_minute CcJobTemplate#base_rate_per_minute}
     */
     readonly baseRatePerMinute?: number;
     /**
     * The exponential factor to increase the rate of rollout for a job.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_job_template#increment_factor CcJobTemplate#increment_factor}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_job_template#increment_factor CcJobTemplate#increment_factor}
     */
     readonly incrementFactor?: number;
     /**
     * The criteria to initiate the increase in rate of rollout for a job.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_job_template#rate_increase_criteria CcJobTemplate#rate_increase_criteria}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_job_template#rate_increase_criteria CcJobTemplate#rate_increase_criteria}
     */
     readonly rateIncreaseCriteria?: RateIncreaseCriteriaProperty;
 }
@@ -1503,13 +1504,13 @@ export interface JobExecutionsRolloutConfigProperty {
     /**
     * The rate of increase for a job rollout. This parameter allows you to define an exponential rate for a job rollout.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_job_template#exponential_rollout_rate CcJobTemplate#exponential_rollout_rate}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_job_template#exponential_rollout_rate CcJobTemplate#exponential_rollout_rate}
     */
     readonly exponentialRolloutRate?: ExponentialRolloutRateProperty;
     /**
     * The maximum number of things that will be notified of a pending job, per minute. This parameter allows you to create a staged rollout.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_job_template#maximum_per_minute CcJobTemplate#maximum_per_minute}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_job_template#maximum_per_minute CcJobTemplate#maximum_per_minute}
     */
     readonly maximumPerMinute?: number;
 }
@@ -1595,11 +1596,11 @@ export class JobExecutionsRolloutConfigPropertyOutputReference extends cdktn.Com
 }
 export interface MaintenanceWindowProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_job_template#duration_in_minutes CcJobTemplate#duration_in_minutes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_job_template#duration_in_minutes CcJobTemplate#duration_in_minutes}
     */
     readonly durationInMinutes?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_job_template#start_time CcJobTemplate#start_time}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_job_template#start_time CcJobTemplate#start_time}
     */
     readonly startTime?: string;
 }
@@ -1709,13 +1710,13 @@ export interface PresignedUrlConfigProperty {
     /**
     * How number (in seconds) pre-signed URLs are valid.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_job_template#expires_in_sec CcJobTemplate#expires_in_sec}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_job_template#expires_in_sec CcJobTemplate#expires_in_sec}
     */
     readonly expiresInSec?: number;
     /**
     * The ARN of an IAM role that grants grants permission to download files from the S3 bucket where the job data/updates are stored. The role must also grant permission for IoT to download the files.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_job_template#role_arn CcJobTemplate#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_job_template#role_arn CcJobTemplate#role_arn}
     */
     readonly roleArn?: string;
 }
@@ -1803,13 +1804,13 @@ export interface TagProperty {
     /**
     * The tag's key.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_job_template#key CcJobTemplate#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_job_template#key CcJobTemplate#key}
     */
     readonly key?: string;
     /**
     * The tag's value.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_job_template#value CcJobTemplate#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_job_template#value CcJobTemplate#value}
     */
     readonly value?: string;
 }
@@ -1919,7 +1920,7 @@ export interface TimeoutConfigProperty {
     /**
     * Specifies the amount of time, in minutes, this device has to finish execution of this job.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_job_template#in_progress_timeout_in_minutes CcJobTemplate#in_progress_timeout_in_minutes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_job_template#in_progress_timeout_in_minutes CcJobTemplate#in_progress_timeout_in_minutes}
     */
     readonly inProgressTimeoutInMinutes?: number;
 }

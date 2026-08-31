@@ -1,35 +1,35 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_capability
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_capability
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcCapabilityProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_capability#configuration CcCapability#configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_capability#configuration CcCapability#configuration}
     */
     readonly configuration: CcCapability.CapabilityConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_capability#instructions_documents CcCapability#instructions_documents}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_capability#instructions_documents CcCapability#instructions_documents}
     */
     readonly instructionsDocuments?: CcCapability.InstructionsDocumentsProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_capability#name CcCapability#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_capability#name CcCapability#name}
     */
     readonly name: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_capability#tags CcCapability#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_capability#tags CcCapability#tags}
     */
     readonly tags?: CcCapability.TagProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_capability#type CcCapability#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_capability#type CcCapability#type}
     */
     readonly type: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_capability awscc_b2bi_capability}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_capability awscc_b2bi_capability}
 */
 export class CcCapability extends cdktn.TerraformResource {
 
@@ -45,7 +45,7 @@ export class CcCapability extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcCapability resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcCapability to import
-    * @param importFromId The id of the existing CcCapability that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_capability#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcCapability that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_capability#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcCapability to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -57,7 +57,7 @@ export class CcCapability extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_capability awscc_b2bi_capability} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_capability awscc_b2bi_capability} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -67,7 +67,8 @@ export class CcCapability extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_b2bi_capability',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -543,11 +544,11 @@ export function ccCapabilityTagPropertyToHclTerraform(struct?: CcCapability.TagP
 export namespace CcCapability {
 export interface S3LocationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_capability#bucket_name CcCapability#bucket_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_capability#bucket_name CcCapability#bucket_name}
     */
     readonly bucketName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_capability#key CcCapability#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_capability#key CcCapability#key}
     */
     readonly key?: string;
 }
@@ -633,11 +634,11 @@ export class S3LocationPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface OutputLocationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_capability#bucket_name CcCapability#bucket_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_capability#bucket_name CcCapability#bucket_name}
     */
     readonly bucketName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_capability#key CcCapability#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_capability#key CcCapability#key}
     */
     readonly key?: string;
 }
@@ -723,11 +724,11 @@ export class OutputLocationPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface X12DetailsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_capability#transaction_set CcCapability#transaction_set}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_capability#transaction_set CcCapability#transaction_set}
     */
     readonly transactionSet?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_capability#version CcCapability#version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_capability#version CcCapability#version}
     */
     readonly version?: string;
 }
@@ -813,7 +814,7 @@ export class X12DetailsPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface EdiTypeProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_capability#x12_details CcCapability#x12_details}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_capability#x12_details CcCapability#x12_details}
     */
     readonly x12Details?: X12DetailsProperty;
 }
@@ -877,23 +878,23 @@ export class EdiTypePropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface EdiConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_capability#capability_direction CcCapability#capability_direction}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_capability#capability_direction CcCapability#capability_direction}
     */
     readonly capabilityDirection?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_capability#input_location CcCapability#input_location}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_capability#input_location CcCapability#input_location}
     */
     readonly inputLocation?: S3LocationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_capability#output_location CcCapability#output_location}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_capability#output_location CcCapability#output_location}
     */
     readonly outputLocation?: OutputLocationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_capability#transformer_id CcCapability#transformer_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_capability#transformer_id CcCapability#transformer_id}
     */
     readonly transformerId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_capability#type CcCapability#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_capability#type CcCapability#type}
     */
     readonly type?: EdiTypeProperty;
 }
@@ -1045,7 +1046,7 @@ export class EdiConfigurationPropertyOutputReference extends cdktn.ComplexObject
 }
 export interface CapabilityConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_capability#edi CcCapability#edi}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_capability#edi CcCapability#edi}
     */
     readonly edi?: EdiConfigurationProperty;
 }
@@ -1109,11 +1110,11 @@ export class CapabilityConfigurationPropertyOutputReference extends cdktn.Comple
 }
 export interface InstructionsDocumentsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_capability#bucket_name CcCapability#bucket_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_capability#bucket_name CcCapability#bucket_name}
     */
     readonly bucketName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_capability#key CcCapability#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_capability#key CcCapability#key}
     */
     readonly key?: string;
 }
@@ -1221,11 +1222,11 @@ export class InstructionsDocumentsPropertyList extends cdktn.ComplexList {
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_capability#key CcCapability#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_capability#key CcCapability#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_capability#value CcCapability#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_capability#value CcCapability#value}
     */
     readonly value?: string;
 }

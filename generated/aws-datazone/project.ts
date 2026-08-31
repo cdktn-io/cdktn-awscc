@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_project
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_project
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,79 +9,79 @@ export interface CcProjectProps extends cdktn.TerraformMetaArguments {
     /**
     * The description of the Amazon DataZone project.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_project#description CcProject#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_project#description CcProject#description}
     */
     readonly description?: string;
     /**
     * The ID of the Amazon DataZone domain in which this project is created.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_project#domain_identifier CcProject#domain_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_project#domain_identifier CcProject#domain_identifier}
     */
     readonly domainIdentifier: string;
     /**
     * The ID of the domain unit.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_project#domain_unit_id CcProject#domain_unit_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_project#domain_unit_id CcProject#domain_unit_id}
     */
     readonly domainUnitId?: string;
     /**
     * The glossary terms that can be used in this Amazon DataZone project.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_project#glossary_terms CcProject#glossary_terms}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_project#glossary_terms CcProject#glossary_terms}
     */
     readonly glossaryTerms?: string[];
     /**
     * The project membership assignments.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_project#membership_assignments CcProject#membership_assignments}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_project#membership_assignments CcProject#membership_assignments}
     */
     readonly membershipAssignments?: CcProject.ProjectMembershipAssignmentProperty[] | cdktn.IResolvable;
     /**
     * The name of the Amazon DataZone project.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_project#name CcProject#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_project#name CcProject#name}
     */
     readonly name: string;
     /**
     * The project category.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_project#project_category CcProject#project_category}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_project#project_category CcProject#project_category}
     */
     readonly projectCategory?: string;
     /**
     * The project execution role ARN.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_project#project_execution_role CcProject#project_execution_role}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_project#project_execution_role CcProject#project_execution_role}
     */
     readonly projectExecutionRole?: string;
     /**
     * The project profile ID.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_project#project_profile_id CcProject#project_profile_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_project#project_profile_id CcProject#project_profile_id}
     */
     readonly projectProfileId?: string;
     /**
     * The project profile version to which the project should be updated. You can only specify the following string for this parameter: latest.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_project#project_profile_version CcProject#project_profile_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_project#project_profile_version CcProject#project_profile_version}
     */
     readonly projectProfileVersion?: string;
     /**
     * The resource tags of the project.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_project#resource_tags CcProject#resource_tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_project#resource_tags CcProject#resource_tags}
     */
     readonly resourceTags?: CcProject.ResourceTagProperty[] | cdktn.IResolvable;
     /**
     * The user parameters of the project.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_project#user_parameters CcProject#user_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_project#user_parameters CcProject#user_parameters}
     */
     readonly userParameters?: CcProject.EnvironmentConfigurationUserParameterProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_project awscc_datazone_project}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_project awscc_datazone_project}
 */
 export class CcProject extends cdktn.TerraformResource {
 
@@ -97,7 +97,7 @@ export class CcProject extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcProject resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcProject to import
-    * @param importFromId The id of the existing CcProject that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_project#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcProject that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_project#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcProject to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -109,7 +109,7 @@ export class CcProject extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_project awscc_datazone_project} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_project awscc_datazone_project} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -119,7 +119,8 @@ export class CcProject extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_datazone_project',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -665,11 +666,11 @@ export function ccProjectEnvironmentConfigurationUserParameterPropertyToHclTerra
 export namespace CcProject {
 export interface MemberProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_project#group_identifier CcProject#group_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_project#group_identifier CcProject#group_identifier}
     */
     readonly groupIdentifier?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_project#user_identifier CcProject#user_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_project#user_identifier CcProject#user_identifier}
     */
     readonly userIdentifier?: string;
 }
@@ -755,13 +756,13 @@ export class MemberPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface ProjectMembershipAssignmentProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_project#designation CcProject#designation}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_project#designation CcProject#designation}
     */
     readonly designation?: string;
     /**
     * The member of the project.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_project#member CcProject#member}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_project#member CcProject#member}
     */
     readonly member?: MemberProperty;
 }
@@ -869,11 +870,11 @@ export class ProjectMembershipAssignmentPropertyList extends cdktn.ComplexList {
 }
 export interface ResourceTagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_project#key CcProject#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_project#key CcProject#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_project#value CcProject#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_project#value CcProject#value}
     */
     readonly value?: string;
 }
@@ -981,11 +982,11 @@ export class ResourceTagPropertyList extends cdktn.ComplexList {
 }
 export interface EnvironmentParameterProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_project#name CcProject#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_project#name CcProject#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_project#value CcProject#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_project#value CcProject#value}
     */
     readonly value?: string;
 }
@@ -1093,15 +1094,15 @@ export class EnvironmentParameterPropertyList extends cdktn.ComplexList {
 }
 export interface EnvironmentConfigurationUserParameterProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_project#environment_configuration_name CcProject#environment_configuration_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_project#environment_configuration_name CcProject#environment_configuration_name}
     */
     readonly environmentConfigurationName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_project#environment_id CcProject#environment_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_project#environment_id CcProject#environment_id}
     */
     readonly environmentId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datazone_project#environment_parameters CcProject#environment_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_project#environment_parameters CcProject#environment_parameters}
     */
     readonly environmentParameters?: EnvironmentParameterProperty[] | cdktn.IResolvable;
 }

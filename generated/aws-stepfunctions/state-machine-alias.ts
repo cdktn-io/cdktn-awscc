@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/stepfunctions_state_machine_alias
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/stepfunctions_state_machine_alias
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,35 +9,35 @@ export interface CcStateMachineAliasProps extends cdktn.TerraformMetaArguments {
     /**
     * The settings to enable gradual state machine deployments.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/stepfunctions_state_machine_alias#deployment_preference CcStateMachineAlias#deployment_preference}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/stepfunctions_state_machine_alias#deployment_preference CcStateMachineAlias#deployment_preference}
     */
     readonly deploymentPreference?: CcStateMachineAlias.DeploymentPreferenceProperty;
     /**
     * An optional description of the alias.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/stepfunctions_state_machine_alias#description CcStateMachineAlias#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/stepfunctions_state_machine_alias#description CcStateMachineAlias#description}
     */
     readonly description?: string;
     /**
     * The alias name.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/stepfunctions_state_machine_alias#name CcStateMachineAlias#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/stepfunctions_state_machine_alias#name CcStateMachineAlias#name}
     */
     readonly name?: string;
     /**
     * The routing configuration of the alias. One or two versions can be mapped to an alias to split StartExecution requests of the same state machine.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/stepfunctions_state_machine_alias#routing_configuration CcStateMachineAlias#routing_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/stepfunctions_state_machine_alias#routing_configuration CcStateMachineAlias#routing_configuration}
     */
     readonly routingConfiguration?: CcStateMachineAlias.RoutingConfigurationVersionProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/stepfunctions_state_machine_alias#state_machine_arn CcStateMachineAlias#state_machine_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/stepfunctions_state_machine_alias#state_machine_arn CcStateMachineAlias#state_machine_arn}
     */
     readonly stateMachineArn?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/stepfunctions_state_machine_alias awscc_stepfunctions_state_machine_alias}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/stepfunctions_state_machine_alias awscc_stepfunctions_state_machine_alias}
 */
 export class CcStateMachineAlias extends cdktn.TerraformResource {
 
@@ -53,7 +53,7 @@ export class CcStateMachineAlias extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcStateMachineAlias resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcStateMachineAlias to import
-    * @param importFromId The id of the existing CcStateMachineAlias that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/stepfunctions_state_machine_alias#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcStateMachineAlias that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/stepfunctions_state_machine_alias#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcStateMachineAlias to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -65,7 +65,7 @@ export class CcStateMachineAlias extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/stepfunctions_state_machine_alias awscc_stepfunctions_state_machine_alias} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/stepfunctions_state_machine_alias awscc_stepfunctions_state_machine_alias} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -75,7 +75,8 @@ export class CcStateMachineAlias extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_stepfunctions_state_machine_alias',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -339,29 +340,29 @@ export interface DeploymentPreferenceProperty {
     /**
     * A list of CloudWatch alarm names that will be monitored during the deployment. The deployment will fail and rollback if any alarms go into ALARM state.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/stepfunctions_state_machine_alias#alarms CcStateMachineAlias#alarms}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/stepfunctions_state_machine_alias#alarms CcStateMachineAlias#alarms}
     */
     readonly alarms?: string[];
     /**
     * The time in minutes between each traffic shifting increment.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/stepfunctions_state_machine_alias#interval CcStateMachineAlias#interval}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/stepfunctions_state_machine_alias#interval CcStateMachineAlias#interval}
     */
     readonly interval?: number;
     /**
     * The percentage of traffic to shift to the new version in each increment.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/stepfunctions_state_machine_alias#percentage CcStateMachineAlias#percentage}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/stepfunctions_state_machine_alias#percentage CcStateMachineAlias#percentage}
     */
     readonly percentage?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/stepfunctions_state_machine_alias#state_machine_version_arn CcStateMachineAlias#state_machine_version_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/stepfunctions_state_machine_alias#state_machine_version_arn CcStateMachineAlias#state_machine_version_arn}
     */
     readonly stateMachineVersionArn?: string;
     /**
     * The type of deployment to perform.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/stepfunctions_state_machine_alias#type CcStateMachineAlias#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/stepfunctions_state_machine_alias#type CcStateMachineAlias#type}
     */
     readonly type?: string;
 }
@@ -515,13 +516,13 @@ export interface RoutingConfigurationVersionProperty {
     /**
     * The Amazon Resource Name (ARN) that identifies one or two state machine versions defined in the routing configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/stepfunctions_state_machine_alias#state_machine_version_arn CcStateMachineAlias#state_machine_version_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/stepfunctions_state_machine_alias#state_machine_version_arn CcStateMachineAlias#state_machine_version_arn}
     */
     readonly stateMachineVersionArn?: string;
     /**
     * The percentage of traffic you want to route to the state machine version. The sum of the weights in the routing configuration must be equal to 100.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/stepfunctions_state_machine_alias#weight CcStateMachineAlias#weight}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/stepfunctions_state_machine_alias#weight CcStateMachineAlias#weight}
     */
     readonly weight?: number;
 }

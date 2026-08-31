@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ecr_repository_creation_template
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecr_repository_creation_template
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,67 +9,67 @@ export interface CcRepositoryCreationTemplateProps extends cdktn.TerraformMetaAr
     /**
     * A list of enumerable Strings representing the repository creation scenarios that this template will apply towards. The supported scenarios are PULL_THROUGH_CACHE, REPLICATION, and CREATE_ON_PUSH
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ecr_repository_creation_template#applied_for CcRepositoryCreationTemplate#applied_for}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecr_repository_creation_template#applied_for CcRepositoryCreationTemplate#applied_for}
     */
     readonly appliedFor: string[];
     /**
     * The ARN of the role to be assumed by Amazon ECR. Amazon ECR will assume your supplied role when the customRoleArn is specified. When this field isn't specified, Amazon ECR will use the service-linked role for the repository creation template.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ecr_repository_creation_template#custom_role_arn CcRepositoryCreationTemplate#custom_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecr_repository_creation_template#custom_role_arn CcRepositoryCreationTemplate#custom_role_arn}
     */
     readonly customRoleArn?: string;
     /**
     * The description associated with the repository creation template.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ecr_repository_creation_template#description CcRepositoryCreationTemplate#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecr_repository_creation_template#description CcRepositoryCreationTemplate#description}
     */
     readonly description?: string;
     /**
     * The encryption configuration associated with the repository creation template.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ecr_repository_creation_template#encryption_configuration CcRepositoryCreationTemplate#encryption_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecr_repository_creation_template#encryption_configuration CcRepositoryCreationTemplate#encryption_configuration}
     */
     readonly encryptionConfiguration?: CcRepositoryCreationTemplate.EncryptionConfigurationProperty;
     /**
     * The tag mutability setting for the repository. If this parameter is omitted, the default setting of ``MUTABLE`` will be used which will allow image tags to be overwritten. If ``IMMUTABLE`` is specified, all image tags within the repository will be immutable which will prevent them from being overwritten.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ecr_repository_creation_template#image_tag_mutability CcRepositoryCreationTemplate#image_tag_mutability}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecr_repository_creation_template#image_tag_mutability CcRepositoryCreationTemplate#image_tag_mutability}
     */
     readonly imageTagMutability?: string;
     /**
     * A list of filters that specify which image tags are excluded from the repository creation template's image tag mutability setting.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ecr_repository_creation_template#image_tag_mutability_exclusion_filters CcRepositoryCreationTemplate#image_tag_mutability_exclusion_filters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecr_repository_creation_template#image_tag_mutability_exclusion_filters CcRepositoryCreationTemplate#image_tag_mutability_exclusion_filters}
     */
     readonly imageTagMutabilityExclusionFilters?: CcRepositoryCreationTemplate.ImageTagMutabilityExclusionFilterProperty[] | cdktn.IResolvable;
     /**
     * The lifecycle policy to use for repositories created using the template.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ecr_repository_creation_template#lifecycle_policy CcRepositoryCreationTemplate#lifecycle_policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecr_repository_creation_template#lifecycle_policy CcRepositoryCreationTemplate#lifecycle_policy}
     */
     readonly lifecyclePolicy?: string;
     /**
     * The repository namespace prefix associated with the repository creation template.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ecr_repository_creation_template#prefix CcRepositoryCreationTemplate#prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecr_repository_creation_template#prefix CcRepositoryCreationTemplate#prefix}
     */
     readonly prefix: string;
     /**
     * The repository policy to apply to repositories created using the template. A repository policy is a permissions policy associated with a repository to control access permissions.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ecr_repository_creation_template#repository_policy CcRepositoryCreationTemplate#repository_policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecr_repository_creation_template#repository_policy CcRepositoryCreationTemplate#repository_policy}
     */
     readonly repositoryPolicy?: string;
     /**
     * The metadata to apply to the repository to help you categorize and organize. Each tag consists of a key and an optional value, both of which you define. Tag keys can have a maximum character length of 128 characters, and tag values can have a maximum length of 256 characters.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ecr_repository_creation_template#resource_tags CcRepositoryCreationTemplate#resource_tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecr_repository_creation_template#resource_tags CcRepositoryCreationTemplate#resource_tags}
     */
     readonly resourceTags?: CcRepositoryCreationTemplate.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ecr_repository_creation_template awscc_ecr_repository_creation_template}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecr_repository_creation_template awscc_ecr_repository_creation_template}
 */
 export class CcRepositoryCreationTemplate extends cdktn.TerraformResource {
 
@@ -85,7 +85,7 @@ export class CcRepositoryCreationTemplate extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcRepositoryCreationTemplate resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcRepositoryCreationTemplate to import
-    * @param importFromId The id of the existing CcRepositoryCreationTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ecr_repository_creation_template#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcRepositoryCreationTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecr_repository_creation_template#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcRepositoryCreationTemplate to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -97,7 +97,7 @@ export class CcRepositoryCreationTemplate extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ecr_repository_creation_template awscc_ecr_repository_creation_template} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecr_repository_creation_template awscc_ecr_repository_creation_template} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -107,7 +107,8 @@ export class CcRepositoryCreationTemplate extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_ecr_repository_creation_template',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -510,13 +511,13 @@ export interface EncryptionConfigurationProperty {
     *  If you use the ``AES256`` encryption type, Amazon ECR uses server-side encryption with Amazon S3-managed encryption keys which encrypts the images in the repository using an AES256 encryption algorithm.
     *  For more information, see [Amazon ECR encryption at rest](https://docs.aws.amazon.com/AmazonECR/latest/userguide/encryption-at-rest.html) in the *Amazon Elastic Container Registry User Guide*.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ecr_repository_creation_template#encryption_type CcRepositoryCreationTemplate#encryption_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecr_repository_creation_template#encryption_type CcRepositoryCreationTemplate#encryption_type}
     */
     readonly encryptionType?: string;
     /**
     * If you use the ``KMS`` encryption type, specify the KMS key to use for encryption. The alias, key ID, or full ARN of the KMS key can be specified. The key must exist in the same Region as the repository. If no key is specified, the default AWS managed KMS key for Amazon ECR will be used.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ecr_repository_creation_template#kms_key CcRepositoryCreationTemplate#kms_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecr_repository_creation_template#kms_key CcRepositoryCreationTemplate#kms_key}
     */
     readonly kmsKey?: string;
 }
@@ -602,11 +603,11 @@ export class EncryptionConfigurationPropertyOutputReference extends cdktn.Comple
 }
 export interface ImageTagMutabilityExclusionFilterProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ecr_repository_creation_template#image_tag_mutability_exclusion_filter_type CcRepositoryCreationTemplate#image_tag_mutability_exclusion_filter_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecr_repository_creation_template#image_tag_mutability_exclusion_filter_type CcRepositoryCreationTemplate#image_tag_mutability_exclusion_filter_type}
     */
     readonly imageTagMutabilityExclusionFilterType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ecr_repository_creation_template#image_tag_mutability_exclusion_filter_value CcRepositoryCreationTemplate#image_tag_mutability_exclusion_filter_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecr_repository_creation_template#image_tag_mutability_exclusion_filter_value CcRepositoryCreationTemplate#image_tag_mutability_exclusion_filter_value}
     */
     readonly imageTagMutabilityExclusionFilterValue?: string;
 }
@@ -716,13 +717,13 @@ export interface TagProperty {
     /**
     * One part of a key-value pair that make up a tag. A ``key`` is a general label that acts like a category for more specific tag values.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ecr_repository_creation_template#key CcRepositoryCreationTemplate#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecr_repository_creation_template#key CcRepositoryCreationTemplate#key}
     */
     readonly key?: string;
     /**
     * A ``value`` acts as a descriptor within a tag category (key).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ecr_repository_creation_template#value CcRepositoryCreationTemplate#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecr_repository_creation_template#value CcRepositoryCreationTemplate#value}
     */
     readonly value?: string;
 }

@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspaces_workspace_ip_group
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspaces_workspace_ip_group
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,31 +9,31 @@ export interface CcWorkspaceIpGroupProps extends cdktn.TerraformMetaArguments {
     /**
     * The description of the group.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspaces_workspace_ip_group#group_desc CcWorkspaceIpGroup#group_desc}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspaces_workspace_ip_group#group_desc CcWorkspaceIpGroup#group_desc}
     */
     readonly groupDesc?: string;
     /**
     * The name of the group.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspaces_workspace_ip_group#group_name CcWorkspaceIpGroup#group_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspaces_workspace_ip_group#group_name CcWorkspaceIpGroup#group_name}
     */
     readonly groupName: string;
     /**
     * The tags for the IP access control group.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspaces_workspace_ip_group#tags CcWorkspaceIpGroup#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspaces_workspace_ip_group#tags CcWorkspaceIpGroup#tags}
     */
     readonly tags?: CcWorkspaceIpGroup.TagProperty[] | cdktn.IResolvable;
     /**
     * The rules for the IP access control group.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspaces_workspace_ip_group#user_rules CcWorkspaceIpGroup#user_rules}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspaces_workspace_ip_group#user_rules CcWorkspaceIpGroup#user_rules}
     */
     readonly userRules?: CcWorkspaceIpGroup.IpRuleItemProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspaces_workspace_ip_group awscc_workspaces_workspace_ip_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspaces_workspace_ip_group awscc_workspaces_workspace_ip_group}
 */
 export class CcWorkspaceIpGroup extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CcWorkspaceIpGroup extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcWorkspaceIpGroup resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcWorkspaceIpGroup to import
-    * @param importFromId The id of the existing CcWorkspaceIpGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspaces_workspace_ip_group#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcWorkspaceIpGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspaces_workspace_ip_group#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcWorkspaceIpGroup to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CcWorkspaceIpGroup extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspaces_workspace_ip_group awscc_workspaces_workspace_ip_group} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspaces_workspace_ip_group awscc_workspaces_workspace_ip_group} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -71,7 +71,8 @@ export class CcWorkspaceIpGroup extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_workspaces_workspace_ip_group',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -292,13 +293,13 @@ export interface TagProperty {
     /**
     * The key of the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspaces_workspace_ip_group#key CcWorkspaceIpGroup#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspaces_workspace_ip_group#key CcWorkspaceIpGroup#key}
     */
     readonly key?: string;
     /**
     * The value of the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspaces_workspace_ip_group#value CcWorkspaceIpGroup#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspaces_workspace_ip_group#value CcWorkspaceIpGroup#value}
     */
     readonly value?: string;
 }
@@ -408,13 +409,13 @@ export interface IpRuleItemProperty {
     /**
     * The IP address range, in CIDR notation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspaces_workspace_ip_group#ip_rule CcWorkspaceIpGroup#ip_rule}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspaces_workspace_ip_group#ip_rule CcWorkspaceIpGroup#ip_rule}
     */
     readonly ipRule?: string;
     /**
     * The description of the rule.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspaces_workspace_ip_group#rule_desc CcWorkspaceIpGroup#rule_desc}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspaces_workspace_ip_group#rule_desc CcWorkspaceIpGroup#rule_desc}
     */
     readonly ruleDesc?: string;
 }

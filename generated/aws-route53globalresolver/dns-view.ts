@@ -1,47 +1,47 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/route53globalresolver_dns_view
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53globalresolver_dns_view
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcDnsViewProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/route53globalresolver_dns_view#client_token CcDnsView#client_token}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53globalresolver_dns_view#client_token CcDnsView#client_token}
     */
     readonly clientToken?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/route53globalresolver_dns_view#description CcDnsView#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53globalresolver_dns_view#description CcDnsView#description}
     */
     readonly description?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/route53globalresolver_dns_view#dnssec_validation CcDnsView#dnssec_validation}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53globalresolver_dns_view#dnssec_validation CcDnsView#dnssec_validation}
     */
     readonly dnssecValidation?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/route53globalresolver_dns_view#edns_client_subnet CcDnsView#edns_client_subnet}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53globalresolver_dns_view#edns_client_subnet CcDnsView#edns_client_subnet}
     */
     readonly ednsClientSubnet?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/route53globalresolver_dns_view#firewall_rules_fail_open CcDnsView#firewall_rules_fail_open}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53globalresolver_dns_view#firewall_rules_fail_open CcDnsView#firewall_rules_fail_open}
     */
     readonly firewallRulesFailOpen?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/route53globalresolver_dns_view#global_resolver_id CcDnsView#global_resolver_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53globalresolver_dns_view#global_resolver_id CcDnsView#global_resolver_id}
     */
     readonly globalResolverId: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/route53globalresolver_dns_view#name CcDnsView#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53globalresolver_dns_view#name CcDnsView#name}
     */
     readonly name: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/route53globalresolver_dns_view#tags CcDnsView#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53globalresolver_dns_view#tags CcDnsView#tags}
     */
     readonly tags?: CcDnsView.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/route53globalresolver_dns_view awscc_route53globalresolver_dns_view}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53globalresolver_dns_view awscc_route53globalresolver_dns_view}
 */
 export class CcDnsView extends cdktn.TerraformResource {
 
@@ -57,7 +57,7 @@ export class CcDnsView extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcDnsView resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcDnsView to import
-    * @param importFromId The id of the existing CcDnsView that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/route53globalresolver_dns_view#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcDnsView that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53globalresolver_dns_view#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcDnsView to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -69,7 +69,7 @@ export class CcDnsView extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/route53globalresolver_dns_view awscc_route53globalresolver_dns_view} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53globalresolver_dns_view awscc_route53globalresolver_dns_view} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -79,7 +79,8 @@ export class CcDnsView extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_route53globalresolver_dns_view',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -369,11 +370,11 @@ export function ccDnsViewTagPropertyToHclTerraform(struct?: CcDnsView.TagPropert
 export namespace CcDnsView {
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/route53globalresolver_dns_view#key CcDnsView#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53globalresolver_dns_view#key CcDnsView#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/route53globalresolver_dns_view#value CcDnsView#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53globalresolver_dns_view#value CcDnsView#value}
     */
     readonly value?: string;
 }

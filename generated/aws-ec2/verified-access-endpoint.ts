@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_verified_access_endpoint
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_endpoint
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,103 +9,103 @@ export interface CcVerifiedAccessEndpointProps extends cdktn.TerraformMetaArgume
     /**
     * The DNS name for users to reach your application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_verified_access_endpoint#application_domain CcVerifiedAccessEndpoint#application_domain}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_endpoint#application_domain CcVerifiedAccessEndpoint#application_domain}
     */
     readonly applicationDomain?: string;
     /**
     * The type of attachment used to provide connectivity between the AWS Verified Access endpoint and the application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_verified_access_endpoint#attachment_type CcVerifiedAccessEndpoint#attachment_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_endpoint#attachment_type CcVerifiedAccessEndpoint#attachment_type}
     */
     readonly attachmentType: string;
     /**
     * The options for cidr type endpoint.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_verified_access_endpoint#cidr_options CcVerifiedAccessEndpoint#cidr_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_endpoint#cidr_options CcVerifiedAccessEndpoint#cidr_options}
     */
     readonly cidrOptions?: CcVerifiedAccessEndpoint.CidrOptionsProperty;
     /**
     * A description for the AWS Verified Access endpoint.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_verified_access_endpoint#description CcVerifiedAccessEndpoint#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_endpoint#description CcVerifiedAccessEndpoint#description}
     */
     readonly description?: string;
     /**
     * The ARN of a public TLS/SSL certificate imported into or created with ACM.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_verified_access_endpoint#domain_certificate_arn CcVerifiedAccessEndpoint#domain_certificate_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_endpoint#domain_certificate_arn CcVerifiedAccessEndpoint#domain_certificate_arn}
     */
     readonly domainCertificateArn?: string;
     /**
     * A custom identifier that gets prepended to a DNS name that is generated for the endpoint.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_verified_access_endpoint#endpoint_domain_prefix CcVerifiedAccessEndpoint#endpoint_domain_prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_endpoint#endpoint_domain_prefix CcVerifiedAccessEndpoint#endpoint_domain_prefix}
     */
     readonly endpointDomainPrefix?: string;
     /**
     * The type of AWS Verified Access endpoint. Incoming application requests will be sent to an IP address, load balancer or a network interface depending on the endpoint type specified.The type of AWS Verified Access endpoint. Incoming application requests will be sent to an IP address, load balancer or a network interface depending on the endpoint type specified.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_verified_access_endpoint#endpoint_type CcVerifiedAccessEndpoint#endpoint_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_endpoint#endpoint_type CcVerifiedAccessEndpoint#endpoint_type}
     */
     readonly endpointType: string;
     /**
     * The load balancer details if creating the AWS Verified Access endpoint as load-balancer type.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_verified_access_endpoint#load_balancer_options CcVerifiedAccessEndpoint#load_balancer_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_endpoint#load_balancer_options CcVerifiedAccessEndpoint#load_balancer_options}
     */
     readonly loadBalancerOptions?: CcVerifiedAccessEndpoint.LoadBalancerOptionsProperty;
     /**
     * The options for network-interface type endpoint.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_verified_access_endpoint#network_interface_options CcVerifiedAccessEndpoint#network_interface_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_endpoint#network_interface_options CcVerifiedAccessEndpoint#network_interface_options}
     */
     readonly networkInterfaceOptions?: CcVerifiedAccessEndpoint.NetworkInterfaceOptionsProperty;
     /**
     * The AWS Verified Access policy document.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_verified_access_endpoint#policy_document CcVerifiedAccessEndpoint#policy_document}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_endpoint#policy_document CcVerifiedAccessEndpoint#policy_document}
     */
     readonly policyDocument?: string;
     /**
     * The status of the Verified Access policy.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_verified_access_endpoint#policy_enabled CcVerifiedAccessEndpoint#policy_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_endpoint#policy_enabled CcVerifiedAccessEndpoint#policy_enabled}
     */
     readonly policyEnabled?: boolean | cdktn.IResolvable;
     /**
     * The options for rds type endpoint.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_verified_access_endpoint#rds_options CcVerifiedAccessEndpoint#rds_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_endpoint#rds_options CcVerifiedAccessEndpoint#rds_options}
     */
     readonly rdsOptions?: CcVerifiedAccessEndpoint.RdsOptionsProperty;
     /**
     * The IDs of the security groups for the endpoint.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_verified_access_endpoint#security_group_ids CcVerifiedAccessEndpoint#security_group_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_endpoint#security_group_ids CcVerifiedAccessEndpoint#security_group_ids}
     */
     readonly securityGroupIds?: string[];
     /**
     * The configuration options for customer provided KMS encryption.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_verified_access_endpoint#sse_specification CcVerifiedAccessEndpoint#sse_specification}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_endpoint#sse_specification CcVerifiedAccessEndpoint#sse_specification}
     */
     readonly sseSpecification?: CcVerifiedAccessEndpoint.SseSpecificationProperty;
     /**
     * An array of key-value pairs to apply to this resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_verified_access_endpoint#tags CcVerifiedAccessEndpoint#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_endpoint#tags CcVerifiedAccessEndpoint#tags}
     */
     readonly tags?: CcVerifiedAccessEndpoint.TagProperty[] | cdktn.IResolvable;
     /**
     * The ID of the AWS Verified Access group.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_verified_access_endpoint#verified_access_group_id CcVerifiedAccessEndpoint#verified_access_group_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_endpoint#verified_access_group_id CcVerifiedAccessEndpoint#verified_access_group_id}
     */
     readonly verifiedAccessGroupId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_verified_access_endpoint awscc_ec2_verified_access_endpoint}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_endpoint awscc_ec2_verified_access_endpoint}
 */
 export class CcVerifiedAccessEndpoint extends cdktn.TerraformResource {
 
@@ -121,7 +121,7 @@ export class CcVerifiedAccessEndpoint extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcVerifiedAccessEndpoint resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcVerifiedAccessEndpoint to import
-    * @param importFromId The id of the existing CcVerifiedAccessEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_verified_access_endpoint#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcVerifiedAccessEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_endpoint#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcVerifiedAccessEndpoint to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -133,7 +133,7 @@ export class CcVerifiedAccessEndpoint extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_verified_access_endpoint awscc_ec2_verified_access_endpoint} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_endpoint awscc_ec2_verified_access_endpoint} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -143,7 +143,8 @@ export class CcVerifiedAccessEndpoint extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_ec2_verified_access_endpoint',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -1014,13 +1015,13 @@ export interface PortRangeProperty {
     /**
     * The first port in the range.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_verified_access_endpoint#from_port CcVerifiedAccessEndpoint#from_port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_endpoint#from_port CcVerifiedAccessEndpoint#from_port}
     */
     readonly fromPort?: number;
     /**
     * The last port in the range.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_verified_access_endpoint#to_port CcVerifiedAccessEndpoint#to_port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_endpoint#to_port CcVerifiedAccessEndpoint#to_port}
     */
     readonly toPort?: number;
 }
@@ -1130,25 +1131,25 @@ export interface CidrOptionsProperty {
     /**
     * The IP address range, in CIDR notation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_verified_access_endpoint#cidr CcVerifiedAccessEndpoint#cidr}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_endpoint#cidr CcVerifiedAccessEndpoint#cidr}
     */
     readonly cidr?: string;
     /**
     * The list of port range.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_verified_access_endpoint#port_ranges CcVerifiedAccessEndpoint#port_ranges}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_endpoint#port_ranges CcVerifiedAccessEndpoint#port_ranges}
     */
     readonly portRanges?: PortRangeProperty[] | cdktn.IResolvable;
     /**
     * The IP protocol.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_verified_access_endpoint#protocol CcVerifiedAccessEndpoint#protocol}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_endpoint#protocol CcVerifiedAccessEndpoint#protocol}
     */
     readonly protocol?: string;
     /**
     * The IDs of the subnets.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_verified_access_endpoint#subnet_ids CcVerifiedAccessEndpoint#subnet_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_endpoint#subnet_ids CcVerifiedAccessEndpoint#subnet_ids}
     */
     readonly subnetIds?: string[];
 }
@@ -1280,13 +1281,13 @@ export interface LoadBalancerOptionsPortRangesProperty {
     /**
     * The first port in the range.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_verified_access_endpoint#from_port CcVerifiedAccessEndpoint#from_port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_endpoint#from_port CcVerifiedAccessEndpoint#from_port}
     */
     readonly fromPort?: number;
     /**
     * The last port in the range.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_verified_access_endpoint#to_port CcVerifiedAccessEndpoint#to_port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_endpoint#to_port CcVerifiedAccessEndpoint#to_port}
     */
     readonly toPort?: number;
 }
@@ -1396,31 +1397,31 @@ export interface LoadBalancerOptionsProperty {
     /**
     * The ARN of the load balancer.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_verified_access_endpoint#load_balancer_arn CcVerifiedAccessEndpoint#load_balancer_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_endpoint#load_balancer_arn CcVerifiedAccessEndpoint#load_balancer_arn}
     */
     readonly loadBalancerArn?: string;
     /**
     * The IP port number.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_verified_access_endpoint#port CcVerifiedAccessEndpoint#port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_endpoint#port CcVerifiedAccessEndpoint#port}
     */
     readonly port?: number;
     /**
     * The list of port range.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_verified_access_endpoint#port_ranges CcVerifiedAccessEndpoint#port_ranges}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_endpoint#port_ranges CcVerifiedAccessEndpoint#port_ranges}
     */
     readonly portRanges?: LoadBalancerOptionsPortRangesProperty[] | cdktn.IResolvable;
     /**
     * The IP protocol.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_verified_access_endpoint#protocol CcVerifiedAccessEndpoint#protocol}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_endpoint#protocol CcVerifiedAccessEndpoint#protocol}
     */
     readonly protocol?: string;
     /**
     * The IDs of the subnets.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_verified_access_endpoint#subnet_ids CcVerifiedAccessEndpoint#subnet_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_endpoint#subnet_ids CcVerifiedAccessEndpoint#subnet_ids}
     */
     readonly subnetIds?: string[];
 }
@@ -1574,13 +1575,13 @@ export interface NetworkInterfaceOptionsPortRangesProperty {
     /**
     * The first port in the range.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_verified_access_endpoint#from_port CcVerifiedAccessEndpoint#from_port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_endpoint#from_port CcVerifiedAccessEndpoint#from_port}
     */
     readonly fromPort?: number;
     /**
     * The last port in the range.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_verified_access_endpoint#to_port CcVerifiedAccessEndpoint#to_port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_endpoint#to_port CcVerifiedAccessEndpoint#to_port}
     */
     readonly toPort?: number;
 }
@@ -1690,25 +1691,25 @@ export interface NetworkInterfaceOptionsProperty {
     /**
     * The ID of the network interface.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_verified_access_endpoint#network_interface_id CcVerifiedAccessEndpoint#network_interface_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_endpoint#network_interface_id CcVerifiedAccessEndpoint#network_interface_id}
     */
     readonly networkInterfaceId?: string;
     /**
     * The IP port number.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_verified_access_endpoint#port CcVerifiedAccessEndpoint#port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_endpoint#port CcVerifiedAccessEndpoint#port}
     */
     readonly port?: number;
     /**
     * The list of port ranges.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_verified_access_endpoint#port_ranges CcVerifiedAccessEndpoint#port_ranges}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_endpoint#port_ranges CcVerifiedAccessEndpoint#port_ranges}
     */
     readonly portRanges?: NetworkInterfaceOptionsPortRangesProperty[] | cdktn.IResolvable;
     /**
     * The IP protocol.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_verified_access_endpoint#protocol CcVerifiedAccessEndpoint#protocol}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_endpoint#protocol CcVerifiedAccessEndpoint#protocol}
     */
     readonly protocol?: string;
 }
@@ -1840,43 +1841,43 @@ export interface RdsOptionsProperty {
     /**
     * The IP port number.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_verified_access_endpoint#port CcVerifiedAccessEndpoint#port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_endpoint#port CcVerifiedAccessEndpoint#port}
     */
     readonly port?: number;
     /**
     * The IP protocol.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_verified_access_endpoint#protocol CcVerifiedAccessEndpoint#protocol}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_endpoint#protocol CcVerifiedAccessEndpoint#protocol}
     */
     readonly protocol?: string;
     /**
     * The ARN of the RDS DB cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_verified_access_endpoint#rds_db_cluster_arn CcVerifiedAccessEndpoint#rds_db_cluster_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_endpoint#rds_db_cluster_arn CcVerifiedAccessEndpoint#rds_db_cluster_arn}
     */
     readonly rdsDbClusterArn?: string;
     /**
     * The ARN of the RDS DB instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_verified_access_endpoint#rds_db_instance_arn CcVerifiedAccessEndpoint#rds_db_instance_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_endpoint#rds_db_instance_arn CcVerifiedAccessEndpoint#rds_db_instance_arn}
     */
     readonly rdsDbInstanceArn?: string;
     /**
     * The ARN of the RDS DB proxy.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_verified_access_endpoint#rds_db_proxy_arn CcVerifiedAccessEndpoint#rds_db_proxy_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_endpoint#rds_db_proxy_arn CcVerifiedAccessEndpoint#rds_db_proxy_arn}
     */
     readonly rdsDbProxyArn?: string;
     /**
     * The RDS endpoint.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_verified_access_endpoint#rds_endpoint CcVerifiedAccessEndpoint#rds_endpoint}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_endpoint#rds_endpoint CcVerifiedAccessEndpoint#rds_endpoint}
     */
     readonly rdsEndpoint?: string;
     /**
     * The IDs of the subnets.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_verified_access_endpoint#subnet_ids CcVerifiedAccessEndpoint#subnet_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_endpoint#subnet_ids CcVerifiedAccessEndpoint#subnet_ids}
     */
     readonly subnetIds?: string[];
 }
@@ -2074,13 +2075,13 @@ export interface SseSpecificationProperty {
     /**
     * Whether to encrypt the policy with the provided key or disable encryption
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_verified_access_endpoint#customer_managed_key_enabled CcVerifiedAccessEndpoint#customer_managed_key_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_endpoint#customer_managed_key_enabled CcVerifiedAccessEndpoint#customer_managed_key_enabled}
     */
     readonly customerManagedKeyEnabled?: boolean | cdktn.IResolvable;
     /**
     * KMS Key Arn used to encrypt the group policy
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_verified_access_endpoint#kms_key_arn CcVerifiedAccessEndpoint#kms_key_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_endpoint#kms_key_arn CcVerifiedAccessEndpoint#kms_key_arn}
     */
     readonly kmsKeyArn?: string;
 }
@@ -2168,13 +2169,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_verified_access_endpoint#key CcVerifiedAccessEndpoint#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_endpoint#key CcVerifiedAccessEndpoint#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 0 to 256 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_verified_access_endpoint#value CcVerifiedAccessEndpoint#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_endpoint#value CcVerifiedAccessEndpoint#value}
     */
     readonly value?: string;
 }

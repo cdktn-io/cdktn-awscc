@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_routing_profile
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_routing_profile
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,61 +9,61 @@ export interface CcRoutingProfileProps extends cdktn.TerraformMetaArguments {
     /**
     * Whether agents with this routing profile will have their routing order calculated based on longest idle time or time since their last inbound contact.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_routing_profile#agent_availability_timer CcRoutingProfile#agent_availability_timer}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_routing_profile#agent_availability_timer CcRoutingProfile#agent_availability_timer}
     */
     readonly agentAvailabilityTimer?: string;
     /**
     * The identifier of the default outbound queue for this routing profile.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_routing_profile#default_outbound_queue_arn CcRoutingProfile#default_outbound_queue_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_routing_profile#default_outbound_queue_arn CcRoutingProfile#default_outbound_queue_arn}
     */
     readonly defaultOutboundQueueArn: string;
     /**
     * The description of the routing profile.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_routing_profile#description CcRoutingProfile#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_routing_profile#description CcRoutingProfile#description}
     */
     readonly description: string;
     /**
     * The identifier of the Amazon Connect instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_routing_profile#instance_arn CcRoutingProfile#instance_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_routing_profile#instance_arn CcRoutingProfile#instance_arn}
     */
     readonly instanceArn: string;
     /**
     * The manual assignment queues to associate with this routing profile.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_routing_profile#manual_assignment_queue_configs CcRoutingProfile#manual_assignment_queue_configs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_routing_profile#manual_assignment_queue_configs CcRoutingProfile#manual_assignment_queue_configs}
     */
     readonly manualAssignmentQueueConfigs?: CcRoutingProfile.RoutingProfileManualAssignmentQueueConfigProperty[] | cdktn.IResolvable;
     /**
     * The channels agents can handle in the Contact Control Panel (CCP) for this routing profile.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_routing_profile#media_concurrencies CcRoutingProfile#media_concurrencies}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_routing_profile#media_concurrencies CcRoutingProfile#media_concurrencies}
     */
     readonly mediaConcurrencies: CcRoutingProfile.MediaConcurrencyProperty[] | cdktn.IResolvable;
     /**
     * The name of the routing profile.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_routing_profile#name CcRoutingProfile#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_routing_profile#name CcRoutingProfile#name}
     */
     readonly name: string;
     /**
     * The queues to associate with this routing profile.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_routing_profile#queue_configs CcRoutingProfile#queue_configs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_routing_profile#queue_configs CcRoutingProfile#queue_configs}
     */
     readonly queueConfigs?: CcRoutingProfile.RoutingProfileQueueConfigProperty[] | cdktn.IResolvable;
     /**
     * An array of key-value pairs to apply to this resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_routing_profile#tags CcRoutingProfile#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_routing_profile#tags CcRoutingProfile#tags}
     */
     readonly tags?: CcRoutingProfile.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_routing_profile awscc_connect_routing_profile}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_routing_profile awscc_connect_routing_profile}
 */
 export class CcRoutingProfile extends cdktn.TerraformResource {
 
@@ -79,7 +79,7 @@ export class CcRoutingProfile extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcRoutingProfile resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcRoutingProfile to import
-    * @param importFromId The id of the existing CcRoutingProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_routing_profile#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcRoutingProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_routing_profile#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcRoutingProfile to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -91,7 +91,7 @@ export class CcRoutingProfile extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_routing_profile awscc_connect_routing_profile} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_routing_profile awscc_connect_routing_profile} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -101,7 +101,8 @@ export class CcRoutingProfile extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_connect_routing_profile',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -610,13 +611,13 @@ export interface RoutingProfileQueueReferenceProperty {
     /**
     * The channels that agents can handle in the Contact Control Panel (CCP).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_routing_profile#channel CcRoutingProfile#channel}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_routing_profile#channel CcRoutingProfile#channel}
     */
     readonly channel?: string;
     /**
     * The Amazon Resource Name (ARN) for the queue.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_routing_profile#queue_arn CcRoutingProfile#queue_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_routing_profile#queue_arn CcRoutingProfile#queue_arn}
     */
     readonly queueArn?: string;
 }
@@ -704,7 +705,7 @@ export interface RoutingProfileManualAssignmentQueueConfigProperty {
     /**
     * Contains the channel and queue identifier for a routing profile.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_routing_profile#queue_reference CcRoutingProfile#queue_reference}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_routing_profile#queue_reference CcRoutingProfile#queue_reference}
     */
     readonly queueReference?: RoutingProfileQueueReferenceProperty;
 }
@@ -792,7 +793,7 @@ export interface CrossChannelBehaviorProperty {
     /**
     * Specifies the other channels that can be routed to an agent handling their current channel.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_routing_profile#behavior_type CcRoutingProfile#behavior_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_routing_profile#behavior_type CcRoutingProfile#behavior_type}
     */
     readonly behaviorType?: string;
 }
@@ -858,19 +859,19 @@ export interface MediaConcurrencyProperty {
     /**
     * The channels that agents can handle in the Contact Control Panel (CCP).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_routing_profile#channel CcRoutingProfile#channel}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_routing_profile#channel CcRoutingProfile#channel}
     */
     readonly channel: string;
     /**
     * The number of contacts an agent can have on a channel simultaneously.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_routing_profile#concurrency CcRoutingProfile#concurrency}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_routing_profile#concurrency CcRoutingProfile#concurrency}
     */
     readonly concurrency: number;
     /**
     * Defines the cross-channel routing behavior that allows an agent working on a contact in one channel to be offered a contact from a different channel.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_routing_profile#cross_channel_behavior CcRoutingProfile#cross_channel_behavior}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_routing_profile#cross_channel_behavior CcRoutingProfile#cross_channel_behavior}
     */
     readonly crossChannelBehavior?: CrossChannelBehaviorProperty;
 }
@@ -996,13 +997,13 @@ export interface QueueReferenceProperty {
     /**
     * The channels that agents can handle in the Contact Control Panel (CCP).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_routing_profile#channel CcRoutingProfile#channel}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_routing_profile#channel CcRoutingProfile#channel}
     */
     readonly channel?: string;
     /**
     * The Amazon Resource Name (ARN) for the queue.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_routing_profile#queue_arn CcRoutingProfile#queue_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_routing_profile#queue_arn CcRoutingProfile#queue_arn}
     */
     readonly queueArn?: string;
 }
@@ -1090,19 +1091,19 @@ export interface RoutingProfileQueueConfigProperty {
     /**
     * The delay, in seconds, a contact should wait in the queue before they are routed to an available agent.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_routing_profile#delay CcRoutingProfile#delay}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_routing_profile#delay CcRoutingProfile#delay}
     */
     readonly delay?: number;
     /**
     * The order in which contacts are to be handled for the queue.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_routing_profile#priority CcRoutingProfile#priority}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_routing_profile#priority CcRoutingProfile#priority}
     */
     readonly priority?: number;
     /**
     * Contains the channel and queue identifier for a routing profile.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_routing_profile#queue_reference CcRoutingProfile#queue_reference}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_routing_profile#queue_reference CcRoutingProfile#queue_reference}
     */
     readonly queueReference?: QueueReferenceProperty;
 }
@@ -1234,13 +1235,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_routing_profile#key CcRoutingProfile#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_routing_profile#key CcRoutingProfile#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 0 to 256 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/connect_routing_profile#value CcRoutingProfile#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_routing_profile#value CcRoutingProfile#value}
     */
     readonly value?: string;
 }

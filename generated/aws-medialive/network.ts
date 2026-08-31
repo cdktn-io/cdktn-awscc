@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/medialive_network
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_network
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,31 +9,31 @@ export interface CcNetworkProps extends cdktn.TerraformMetaArguments {
     /**
     * The list of IP address cidr pools for the network
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/medialive_network#ip_pools CcNetwork#ip_pools}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_network#ip_pools CcNetwork#ip_pools}
     */
     readonly ipPools: CcNetwork.IpPoolProperty[] | cdktn.IResolvable;
     /**
     * The user-specified name of the Network to be created.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/medialive_network#name CcNetwork#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_network#name CcNetwork#name}
     */
     readonly name: string;
     /**
     * The routes for the network
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/medialive_network#routes CcNetwork#routes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_network#routes CcNetwork#routes}
     */
     readonly routes?: CcNetwork.RouteProperty[] | cdktn.IResolvable;
     /**
     * A collection of key-value pairs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/medialive_network#tags CcNetwork#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_network#tags CcNetwork#tags}
     */
     readonly tags?: CcNetwork.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/medialive_network awscc_medialive_network}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_network awscc_medialive_network}
 */
 export class CcNetwork extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CcNetwork extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcNetwork resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcNetwork to import
-    * @param importFromId The id of the existing CcNetwork that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/medialive_network#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcNetwork that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_network#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcNetwork to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CcNetwork extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/medialive_network awscc_medialive_network} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_network awscc_medialive_network} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -71,7 +71,8 @@ export class CcNetwork extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_medialive_network',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -329,7 +330,7 @@ export interface IpPoolProperty {
     /**
     * IP address cidr pool
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/medialive_network#cidr CcNetwork#cidr}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_network#cidr CcNetwork#cidr}
     */
     readonly cidr?: string;
 }
@@ -417,13 +418,13 @@ export interface RouteProperty {
     /**
     * Ip address cidr
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/medialive_network#cidr CcNetwork#cidr}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_network#cidr CcNetwork#cidr}
     */
     readonly cidr?: string;
     /**
     * IP address for the route packet paths
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/medialive_network#gateway CcNetwork#gateway}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_network#gateway CcNetwork#gateway}
     */
     readonly gateway?: string;
 }
@@ -531,11 +532,11 @@ export class RoutePropertyList extends cdktn.ComplexList {
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/medialive_network#key CcNetwork#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_network#key CcNetwork#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/medialive_network#value CcNetwork#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_network#value CcNetwork#value}
     */
     readonly value?: string;
 }

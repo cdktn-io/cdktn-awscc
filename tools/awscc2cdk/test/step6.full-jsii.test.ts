@@ -42,7 +42,11 @@ describe("tools/awscc2cdk/jsii/package.json — the published @cdktn/awscc manif
   it("is the plan §6/§10 package", () => {
     expect(pkg.name).toBe("@cdktn/awscc");
     expect(pkg.private).toBeUndefined();
-    expect(pkg.license).toBe("Apache-2.0");
+    // Was "Apache-2.0" when this contract test was written (iteration 3); superseded by the
+    // whole-repo MPL-2.0 licensing pass (see CONTRACT.md, "Post-freeze — jsii manifest license",
+    // and root LICENSE/NOTICE/package.json + licensing.test.ts, which all assert MPL-2.0). This is
+    // the one field that migration missed, and it is the one that actually ships to every registry.
+    expect(pkg.license).toBe("MPL-2.0");
     expect(typeof pkg.version).toBe("string");
     expect(typeof pkg.description).toBe("string");
     expect(pkg.stability).toBe("experimental");

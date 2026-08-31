@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesis_stream
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesis_stream
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,61 +9,61 @@ export interface CcStreamProps extends cdktn.TerraformMetaArguments {
     /**
     * The final list of shard-level metrics
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesis_stream#desired_shard_level_metrics CcStream#desired_shard_level_metrics}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesis_stream#desired_shard_level_metrics CcStream#desired_shard_level_metrics}
     */
     readonly desiredShardLevelMetrics?: string[];
     /**
     * Maximum size of a data record in KiB allowed to be put into Kinesis stream.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesis_stream#max_record_size_in_ki_b CcStream#max_record_size_in_ki_b}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesis_stream#max_record_size_in_ki_b CcStream#max_record_size_in_ki_b}
     */
     readonly maxRecordSizeInKiB?: number;
     /**
     * The name of the Kinesis stream.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesis_stream#name CcStream#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesis_stream#name CcStream#name}
     */
     readonly name?: string;
     /**
     * The number of hours for the data records that are stored in shards to remain accessible.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesis_stream#retention_period_hours CcStream#retention_period_hours}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesis_stream#retention_period_hours CcStream#retention_period_hours}
     */
     readonly retentionPeriodHours?: number;
     /**
     * The number of shards that the stream uses. Required when StreamMode = PROVISIONED is passed.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesis_stream#shard_count CcStream#shard_count}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesis_stream#shard_count CcStream#shard_count}
     */
     readonly shardCount?: number;
     /**
     * When specified, enables or updates server-side encryption using an AWS KMS key for a specified stream.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesis_stream#stream_encryption CcStream#stream_encryption}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesis_stream#stream_encryption CcStream#stream_encryption}
     */
     readonly streamEncryption?: CcStream.StreamEncryptionProperty;
     /**
     * The mode in which the stream is running.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesis_stream#stream_mode_details CcStream#stream_mode_details}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesis_stream#stream_mode_details CcStream#stream_mode_details}
     */
     readonly streamModeDetails?: CcStream.StreamModeDetailsProperty;
     /**
     * An arbitrary set of tags (key-value pairs) to associate with the Kinesis stream.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesis_stream#tags CcStream#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesis_stream#tags CcStream#tags}
     */
     readonly tags?: CcStream.TagProperty[] | cdktn.IResolvable;
     /**
     * Target warm throughput in MiB/s for the stream. This property can ONLY be set when StreamMode is ON_DEMAND.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesis_stream#warm_throughput_mi_bps CcStream#warm_throughput_mi_bps}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesis_stream#warm_throughput_mi_bps CcStream#warm_throughput_mi_bps}
     */
     readonly warmThroughputMiBps?: number;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesis_stream awscc_kinesis_stream}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesis_stream awscc_kinesis_stream}
 */
 export class CcStream extends cdktn.TerraformResource {
 
@@ -79,7 +79,7 @@ export class CcStream extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcStream resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcStream to import
-    * @param importFromId The id of the existing CcStream that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesis_stream#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcStream that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesis_stream#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcStream to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -91,7 +91,7 @@ export class CcStream extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesis_stream awscc_kinesis_stream} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesis_stream awscc_kinesis_stream} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -101,7 +101,8 @@ export class CcStream extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_kinesis_stream',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -497,13 +498,13 @@ export interface StreamEncryptionProperty {
     /**
     * The encryption type to use. The only valid value is KMS. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesis_stream#encryption_type CcStream#encryption_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesis_stream#encryption_type CcStream#encryption_type}
     */
     readonly encryptionType?: string;
     /**
     * The GUID for the customer-managed AWS KMS key to use for encryption. This value can be a globally unique identifier, a fully specified Amazon Resource Name (ARN) to either an alias or a key, or an alias name prefixed by "alias/".You can also use a master key owned by Kinesis Data Streams by specifying the alias aws/kinesis.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesis_stream#key_id CcStream#key_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesis_stream#key_id CcStream#key_id}
     */
     readonly keyId?: string;
 }
@@ -591,7 +592,7 @@ export interface StreamModeDetailsProperty {
     /**
     * The mode of the stream
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesis_stream#stream_mode CcStream#stream_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesis_stream#stream_mode CcStream#stream_mode}
     */
     readonly streamMode?: string;
 }
@@ -657,13 +658,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesis_stream#key CcStream#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesis_stream#key CcStream#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 0 to 255 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/kinesis_stream#value CcStream#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesis_stream#value CcStream#value}
     */
     readonly value?: string;
 }

@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_agent
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_agent
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,127 +9,127 @@ export interface CcAgentProps extends cdktn.TerraformMetaArguments {
     /**
     * List of ActionGroups
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_agent#action_groups CcAgent#action_groups}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_agent#action_groups CcAgent#action_groups}
     */
     readonly actionGroups?: CcAgent.AgentActionGroupProperty[] | cdktn.IResolvable;
     /**
     * Agent collaboration state
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_agent#agent_collaboration CcAgent#agent_collaboration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_agent#agent_collaboration CcAgent#agent_collaboration}
     */
     readonly agentCollaboration?: string;
     /**
     * List of Agent Collaborators
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_agent#agent_collaborators CcAgent#agent_collaborators}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_agent#agent_collaborators CcAgent#agent_collaborators}
     */
     readonly agentCollaborators?: CcAgent.AgentCollaboratorProperty[] | cdktn.IResolvable;
     /**
     * Name for a resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_agent#agent_name CcAgent#agent_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_agent#agent_name CcAgent#agent_name}
     */
     readonly agentName: string;
     /**
     * ARN of a IAM role.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_agent#agent_resource_role_arn CcAgent#agent_resource_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_agent#agent_resource_role_arn CcAgent#agent_resource_role_arn}
     */
     readonly agentResourceRoleArn?: string;
     /**
     * Specifies whether to automatically prepare after creating or updating the agent.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_agent#auto_prepare CcAgent#auto_prepare}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_agent#auto_prepare CcAgent#auto_prepare}
     */
     readonly autoPrepare?: boolean | cdktn.IResolvable;
     /**
     * Structure for custom orchestration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_agent#custom_orchestration CcAgent#custom_orchestration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_agent#custom_orchestration CcAgent#custom_orchestration}
     */
     readonly customOrchestration?: CcAgent.CustomOrchestrationProperty;
     /**
     * A KMS key ARN
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_agent#customer_encryption_key_arn CcAgent#customer_encryption_key_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_agent#customer_encryption_key_arn CcAgent#customer_encryption_key_arn}
     */
     readonly customerEncryptionKeyArn?: string;
     /**
     * Description of the Resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_agent#description CcAgent#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_agent#description CcAgent#description}
     */
     readonly description?: string;
     /**
     * ARN or name of a Bedrock model.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_agent#foundation_model CcAgent#foundation_model}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_agent#foundation_model CcAgent#foundation_model}
     */
     readonly foundationModel?: string;
     /**
     * Configuration for a guardrail.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_agent#guardrail_configuration CcAgent#guardrail_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_agent#guardrail_configuration CcAgent#guardrail_configuration}
     */
     readonly guardrailConfiguration?: CcAgent.GuardrailConfigurationProperty;
     /**
     * Max Session Time.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_agent#idle_session_ttl_in_seconds CcAgent#idle_session_ttl_in_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_agent#idle_session_ttl_in_seconds CcAgent#idle_session_ttl_in_seconds}
     */
     readonly idleSessionTtlInSeconds?: number;
     /**
     * Instruction for the agent.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_agent#instruction CcAgent#instruction}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_agent#instruction CcAgent#instruction}
     */
     readonly instruction?: string;
     /**
     * List of Agent Knowledge Bases
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_agent#knowledge_bases CcAgent#knowledge_bases}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_agent#knowledge_bases CcAgent#knowledge_bases}
     */
     readonly knowledgeBases?: CcAgent.AgentKnowledgeBaseProperty[] | cdktn.IResolvable;
     /**
     * Configuration for memory storage
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_agent#memory_configuration CcAgent#memory_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_agent#memory_configuration CcAgent#memory_configuration}
     */
     readonly memoryConfiguration?: CcAgent.MemoryConfigurationProperty;
     /**
     * Types of orchestration strategy for agents
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_agent#orchestration_type CcAgent#orchestration_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_agent#orchestration_type CcAgent#orchestration_type}
     */
     readonly orchestrationType?: string;
     /**
     * Configuration for prompt override.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_agent#prompt_override_configuration CcAgent#prompt_override_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_agent#prompt_override_configuration CcAgent#prompt_override_configuration}
     */
     readonly promptOverrideConfiguration?: CcAgent.PromptOverrideConfigurationProperty;
     /**
     * Specifies whether to allow deleting agent while it is in use.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_agent#skip_resource_in_use_check_on_delete CcAgent#skip_resource_in_use_check_on_delete}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_agent#skip_resource_in_use_check_on_delete CcAgent#skip_resource_in_use_check_on_delete}
     */
     readonly skipResourceInUseCheckOnDelete?: boolean | cdktn.IResolvable;
     /**
     * A map of tag keys and values
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_agent#tags CcAgent#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_agent#tags CcAgent#tags}
     */
     readonly tags?: { [key: string]: string };
     /**
     * A map of tag keys and values
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_agent#test_alias_tags CcAgent#test_alias_tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_agent#test_alias_tags CcAgent#test_alias_tags}
     */
     readonly testAliasTags?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_agent awscc_bedrock_agent}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_agent awscc_bedrock_agent}
 */
 export class CcAgent extends cdktn.TerraformResource {
 
@@ -145,7 +145,7 @@ export class CcAgent extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcAgent resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcAgent to import
-    * @param importFromId The id of the existing CcAgent that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_agent#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcAgent that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_agent#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcAgent to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -157,7 +157,7 @@ export class CcAgent extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_agent awscc_bedrock_agent} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_agent awscc_bedrock_agent} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -167,7 +167,8 @@ export class CcAgent extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_bedrock_agent',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -1518,13 +1519,13 @@ export interface ActionGroupExecutorProperty {
     /**
     * Custom control of action execution
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_agent#custom_control CcAgent#custom_control}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_agent#custom_control CcAgent#custom_control}
     */
     readonly customControl?: string;
     /**
     * ARN of a Lambda.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_agent#lambda CcAgent#lambda}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_agent#lambda CcAgent#lambda}
     */
     readonly lambda?: string;
 }
@@ -1612,13 +1613,13 @@ export interface S3IdentifierProperty {
     /**
     * A bucket in S3.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_agent#s3_bucket_name CcAgent#s3_bucket_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_agent#s3_bucket_name CcAgent#s3_bucket_name}
     */
     readonly s3BucketName?: string;
     /**
     * A object key in S3.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_agent#s3_object_key CcAgent#s3_object_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_agent#s3_object_key CcAgent#s3_object_key}
     */
     readonly s3ObjectKey?: string;
 }
@@ -1706,13 +1707,13 @@ export interface APISchemaProperty {
     /**
     * String OpenAPI Payload
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_agent#payload CcAgent#payload}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_agent#payload CcAgent#payload}
     */
     readonly payload?: string;
     /**
     * The identifier for the S3 resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_agent#s3 CcAgent#s3}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_agent#s3 CcAgent#s3}
     */
     readonly s3?: S3IdentifierProperty;
 }
@@ -1800,19 +1801,19 @@ export interface ParameterDetailProperty {
     /**
     * Description of function parameter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_agent#description CcAgent#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_agent#description CcAgent#description}
     */
     readonly description?: string;
     /**
     * Information about if a parameter is required for function call. Default to false.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_agent#required CcAgent#required}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_agent#required CcAgent#required}
     */
     readonly required?: boolean | cdktn.IResolvable;
     /**
     * Parameter Type
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_agent#type CcAgent#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_agent#type CcAgent#type}
     */
     readonly type?: string;
 }
@@ -1942,25 +1943,25 @@ export interface FunctionProperty {
     /**
     * Description of function
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_agent#description CcAgent#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_agent#description CcAgent#description}
     */
     readonly description?: string;
     /**
     * Name for a resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_agent#name CcAgent#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_agent#name CcAgent#name}
     */
     readonly name?: string;
     /**
     * A map of parameter name and detail
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_agent#parameters CcAgent#parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_agent#parameters CcAgent#parameters}
     */
     readonly parameters?: { [key: string]: ParameterDetailProperty } | cdktn.IResolvable;
     /**
     * ENUM to check if action requires user confirmation
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_agent#require_confirmation CcAgent#require_confirmation}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_agent#require_confirmation CcAgent#require_confirmation}
     */
     readonly requireConfirmation?: string;
 }
@@ -2114,7 +2115,7 @@ export interface FunctionSchemaProperty {
     /**
     * List of Function definitions
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_agent#functions CcAgent#functions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_agent#functions CcAgent#functions}
     */
     readonly functions?: FunctionProperty[] | cdktn.IResolvable;
 }
@@ -2180,49 +2181,49 @@ export interface AgentActionGroupProperty {
     /**
     * Type of Executors for an Action Group
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_agent#action_group_executor CcAgent#action_group_executor}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_agent#action_group_executor CcAgent#action_group_executor}
     */
     readonly actionGroupExecutor?: ActionGroupExecutorProperty;
     /**
     * Name of the action group
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_agent#action_group_name CcAgent#action_group_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_agent#action_group_name CcAgent#action_group_name}
     */
     readonly actionGroupName?: string;
     /**
     * State of the action group
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_agent#action_group_state CcAgent#action_group_state}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_agent#action_group_state CcAgent#action_group_state}
     */
     readonly actionGroupState?: string;
     /**
     * Contains information about the API Schema for the Action Group
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_agent#api_schema CcAgent#api_schema}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_agent#api_schema CcAgent#api_schema}
     */
     readonly apiSchema?: APISchemaProperty;
     /**
     * Description of action group
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_agent#description CcAgent#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_agent#description CcAgent#description}
     */
     readonly description?: string;
     /**
     * Schema of Functions
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_agent#function_schema CcAgent#function_schema}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_agent#function_schema CcAgent#function_schema}
     */
     readonly functionSchema?: FunctionSchemaProperty;
     /**
     * Action Group Signature for a BuiltIn Action
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_agent#parent_action_group_signature CcAgent#parent_action_group_signature}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_agent#parent_action_group_signature CcAgent#parent_action_group_signature}
     */
     readonly parentActionGroupSignature?: string;
     /**
     * Specifies whether to allow deleting action group while it is in use.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_agent#skip_resource_in_use_check_on_delete CcAgent#skip_resource_in_use_check_on_delete}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_agent#skip_resource_in_use_check_on_delete CcAgent#skip_resource_in_use_check_on_delete}
     */
     readonly skipResourceInUseCheckOnDelete?: boolean | cdktn.IResolvable;
 }
@@ -2464,7 +2465,7 @@ export interface AgentDescriptorProperty {
     /**
     * Alias ARN for agent descriptor
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_agent#alias_arn CcAgent#alias_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_agent#alias_arn CcAgent#alias_arn}
     */
     readonly aliasArn?: string;
 }
@@ -2530,25 +2531,25 @@ export interface AgentCollaboratorProperty {
     /**
     * Agent descriptor for agent collaborator
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_agent#agent_descriptor CcAgent#agent_descriptor}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_agent#agent_descriptor CcAgent#agent_descriptor}
     */
     readonly agentDescriptor?: AgentDescriptorProperty;
     /**
     * Agent collaborator instruction
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_agent#collaboration_instruction CcAgent#collaboration_instruction}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_agent#collaboration_instruction CcAgent#collaboration_instruction}
     */
     readonly collaborationInstruction?: string;
     /**
     * Agent collaborator name
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_agent#collaborator_name CcAgent#collaborator_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_agent#collaborator_name CcAgent#collaborator_name}
     */
     readonly collaboratorName?: string;
     /**
     * Relay conversation history state
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_agent#relay_conversation_history CcAgent#relay_conversation_history}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_agent#relay_conversation_history CcAgent#relay_conversation_history}
     */
     readonly relayConversationHistory?: string;
 }
@@ -2702,7 +2703,7 @@ export interface OrchestrationExecutorProperty {
     /**
     * ARN of a Lambda.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_agent#lambda CcAgent#lambda}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_agent#lambda CcAgent#lambda}
     */
     readonly lambda?: string;
 }
@@ -2768,7 +2769,7 @@ export interface CustomOrchestrationProperty {
     /**
     * Types of executors for custom orchestration strategy
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_agent#executor CcAgent#executor}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_agent#executor CcAgent#executor}
     */
     readonly executor?: OrchestrationExecutorProperty;
 }
@@ -2834,13 +2835,13 @@ export interface GuardrailConfigurationProperty {
     /**
     * Identifier for the guardrail, could be the id or the arn
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_agent#guardrail_identifier CcAgent#guardrail_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_agent#guardrail_identifier CcAgent#guardrail_identifier}
     */
     readonly guardrailIdentifier?: string;
     /**
     * Version of the guardrail
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_agent#guardrail_version CcAgent#guardrail_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_agent#guardrail_version CcAgent#guardrail_version}
     */
     readonly guardrailVersion?: string;
 }
@@ -2928,19 +2929,19 @@ export interface AgentKnowledgeBaseProperty {
     /**
     * Description of the Resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_agent#description CcAgent#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_agent#description CcAgent#description}
     */
     readonly description?: string;
     /**
     * Identifier for a resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_agent#knowledge_base_id CcAgent#knowledge_base_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_agent#knowledge_base_id CcAgent#knowledge_base_id}
     */
     readonly knowledgeBaseId?: string;
     /**
     * State of the knowledge base; whether it is enabled or disabled
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_agent#knowledge_base_state CcAgent#knowledge_base_state}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_agent#knowledge_base_state CcAgent#knowledge_base_state}
     */
     readonly knowledgeBaseState?: string;
 }
@@ -3072,7 +3073,7 @@ export interface SessionSummaryConfigurationProperty {
     /**
     * Maximum number of Sessions to Summarize
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_agent#max_recent_sessions CcAgent#max_recent_sessions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_agent#max_recent_sessions CcAgent#max_recent_sessions}
     */
     readonly maxRecentSessions?: number;
 }
@@ -3138,19 +3139,19 @@ export interface MemoryConfigurationProperty {
     /**
     * Types of session storage persisted in memory
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_agent#enabled_memory_types CcAgent#enabled_memory_types}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_agent#enabled_memory_types CcAgent#enabled_memory_types}
     */
     readonly enabledMemoryTypes?: string[];
     /**
     * Configuration for Session Summarization
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_agent#session_summary_configuration CcAgent#session_summary_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_agent#session_summary_configuration CcAgent#session_summary_configuration}
     */
     readonly sessionSummaryConfiguration?: SessionSummaryConfigurationProperty;
     /**
     * Maximum number of days to store session details
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_agent#storage_days CcAgent#storage_days}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_agent#storage_days CcAgent#storage_days}
     */
     readonly storageDays?: number;
 }
@@ -3260,31 +3261,31 @@ export interface InferenceConfigurationProperty {
     /**
     * Maximum length of output
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_agent#maximum_length CcAgent#maximum_length}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_agent#maximum_length CcAgent#maximum_length}
     */
     readonly maximumLength?: number;
     /**
     * List of stop sequences
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_agent#stop_sequences CcAgent#stop_sequences}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_agent#stop_sequences CcAgent#stop_sequences}
     */
     readonly stopSequences?: string[];
     /**
     * Controls randomness, higher values increase diversity
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_agent#temperature CcAgent#temperature}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_agent#temperature CcAgent#temperature}
     */
     readonly temperature?: number;
     /**
     * Sample from the k most likely next tokens
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_agent#top_k CcAgent#top_k}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_agent#top_k CcAgent#top_k}
     */
     readonly topK?: number;
     /**
     * Cumulative probability cutoff for token selection
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_agent#top_p CcAgent#top_p}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_agent#top_p CcAgent#top_p}
     */
     readonly topP?: number;
 }
@@ -3438,49 +3439,49 @@ export interface PromptConfigurationProperty {
     /**
     * Additional Model Request Fields for Prompt Configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_agent#additional_model_request_fields CcAgent#additional_model_request_fields}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_agent#additional_model_request_fields CcAgent#additional_model_request_fields}
     */
     readonly additionalModelRequestFields?: string;
     /**
     * Base Prompt Template.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_agent#base_prompt_template CcAgent#base_prompt_template}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_agent#base_prompt_template CcAgent#base_prompt_template}
     */
     readonly basePromptTemplate?: string;
     /**
     * ARN or name of a Bedrock model.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_agent#foundation_model CcAgent#foundation_model}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_agent#foundation_model CcAgent#foundation_model}
     */
     readonly foundationModel?: string;
     /**
     * Configuration for inference in prompt configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_agent#inference_configuration CcAgent#inference_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_agent#inference_configuration CcAgent#inference_configuration}
     */
     readonly inferenceConfiguration?: InferenceConfigurationProperty;
     /**
     * Creation Mode for Prompt Configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_agent#parser_mode CcAgent#parser_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_agent#parser_mode CcAgent#parser_mode}
     */
     readonly parserMode?: string;
     /**
     * Creation Mode for Prompt Configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_agent#prompt_creation_mode CcAgent#prompt_creation_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_agent#prompt_creation_mode CcAgent#prompt_creation_mode}
     */
     readonly promptCreationMode?: string;
     /**
     * Prompt State.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_agent#prompt_state CcAgent#prompt_state}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_agent#prompt_state CcAgent#prompt_state}
     */
     readonly promptState?: string;
     /**
     * Prompt Type.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_agent#prompt_type CcAgent#prompt_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_agent#prompt_type CcAgent#prompt_type}
     */
     readonly promptType?: string;
 }
@@ -3722,13 +3723,13 @@ export interface PromptOverrideConfigurationProperty {
     /**
     * ARN of a Lambda.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_agent#override_lambda CcAgent#override_lambda}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_agent#override_lambda CcAgent#override_lambda}
     */
     readonly overrideLambda?: string;
     /**
     * List of BasePromptConfiguration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_agent#prompt_configurations CcAgent#prompt_configurations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_agent#prompt_configurations CcAgent#prompt_configurations}
     */
     readonly promptConfigurations?: PromptConfigurationProperty[] | cdktn.IResolvable;
 }

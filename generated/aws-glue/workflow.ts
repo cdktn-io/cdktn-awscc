@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_workflow
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_workflow
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,37 +9,37 @@ export interface CcWorkflowProps extends cdktn.TerraformMetaArguments {
     /**
     * A collection of properties to be used as part of each execution of the workflow
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_workflow#default_run_properties CcWorkflow#default_run_properties}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_workflow#default_run_properties CcWorkflow#default_run_properties}
     */
     readonly defaultRunProperties?: string;
     /**
     * A description of the workflow
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_workflow#description CcWorkflow#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_workflow#description CcWorkflow#description}
     */
     readonly description?: string;
     /**
     * You can use this parameter to prevent unwanted multiple updates to data, to control costs, or in some cases, to prevent exceeding the maximum number of concurrent runs of any of the component jobs. If you leave this parameter blank, there is no limit to the number of concurrent workflow runs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_workflow#max_concurrent_runs CcWorkflow#max_concurrent_runs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_workflow#max_concurrent_runs CcWorkflow#max_concurrent_runs}
     */
     readonly maxConcurrentRuns?: number;
     /**
     * The name of the workflow representing the flow
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_workflow#name CcWorkflow#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_workflow#name CcWorkflow#name}
     */
     readonly name?: string;
     /**
     * The tags to use with this workflow.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_workflow#tags CcWorkflow#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_workflow#tags CcWorkflow#tags}
     */
     readonly tags?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_workflow awscc_glue_workflow}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_workflow awscc_glue_workflow}
 */
 export class CcWorkflow extends cdktn.TerraformResource {
 
@@ -55,7 +55,7 @@ export class CcWorkflow extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcWorkflow resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcWorkflow to import
-    * @param importFromId The id of the existing CcWorkflow that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_workflow#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcWorkflow that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_workflow#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcWorkflow to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -67,7 +67,7 @@ export class CcWorkflow extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_workflow awscc_glue_workflow} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_workflow awscc_glue_workflow} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -77,7 +77,8 @@ export class CcWorkflow extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_glue_workflow',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,

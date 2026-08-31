@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_generated_template
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_generated_template
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,19 +9,19 @@ export interface CcGeneratedTemplateProps extends cdktn.TerraformMetaArguments {
     /**
     * The name assigned to the generated template.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_generated_template#generated_template_name CcGeneratedTemplate#generated_template_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_generated_template#generated_template_name CcGeneratedTemplate#generated_template_name}
     */
     readonly generatedTemplateName: string;
     /**
     * The configuration details of the generated template.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_generated_template#template_configuration CcGeneratedTemplate#template_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_generated_template#template_configuration CcGeneratedTemplate#template_configuration}
     */
     readonly templateConfiguration?: CcGeneratedTemplate.TemplateConfigurationProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_generated_template awscc_cloudformation_generated_template}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_generated_template awscc_cloudformation_generated_template}
 */
 export class CcGeneratedTemplate extends cdktn.TerraformResource {
 
@@ -37,7 +37,7 @@ export class CcGeneratedTemplate extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcGeneratedTemplate resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcGeneratedTemplate to import
-    * @param importFromId The id of the existing CcGeneratedTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_generated_template#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcGeneratedTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_generated_template#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcGeneratedTemplate to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -49,7 +49,7 @@ export class CcGeneratedTemplate extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_generated_template awscc_cloudformation_generated_template} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_generated_template awscc_cloudformation_generated_template} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -59,7 +59,8 @@ export class CcGeneratedTemplate extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_cloudformation_generated_template',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -285,13 +286,13 @@ export interface TemplateConfigurationProperty {
     /**
     * The DeletionPolicy assigned to resources in the generated template.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_generated_template#deletion_policy CcGeneratedTemplate#deletion_policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_generated_template#deletion_policy CcGeneratedTemplate#deletion_policy}
     */
     readonly deletionPolicy?: string;
     /**
     * The UpdateReplacePolicy assigned to resources in the generated template.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudformation_generated_template#update_replace_policy CcGeneratedTemplate#update_replace_policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudformation_generated_template#update_replace_policy CcGeneratedTemplate#update_replace_policy}
     */
     readonly updateReplacePolicy?: string;
 }

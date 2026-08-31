@@ -1,53 +1,53 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/vpclattice_resource_gateway
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/vpclattice_resource_gateway
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcResourceGatewayProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/vpclattice_resource_gateway#ip_address_type CcResourceGateway#ip_address_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/vpclattice_resource_gateway#ip_address_type CcResourceGateway#ip_address_type}
     */
     readonly ipAddressType?: string;
     /**
     * The number of IPv4 addresses to allocate per ENI for the resource gateway
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/vpclattice_resource_gateway#ipv_4_addresses_per_eni CcResourceGateway#ipv_4_addresses_per_eni}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/vpclattice_resource_gateway#ipv_4_addresses_per_eni CcResourceGateway#ipv_4_addresses_per_eni}
     */
     readonly ipv4AddressesPerEni?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/vpclattice_resource_gateway#name CcResourceGateway#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/vpclattice_resource_gateway#name CcResourceGateway#name}
     */
     readonly name: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/vpclattice_resource_gateway#resource_config_dns_resolution CcResourceGateway#resource_config_dns_resolution}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/vpclattice_resource_gateway#resource_config_dns_resolution CcResourceGateway#resource_config_dns_resolution}
     */
     readonly resourceConfigDnsResolution?: string;
     /**
     * The ID of one or more security groups to associate with the endpoint network interface.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/vpclattice_resource_gateway#security_group_ids CcResourceGateway#security_group_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/vpclattice_resource_gateway#security_group_ids CcResourceGateway#security_group_ids}
     */
     readonly securityGroupIds?: string[];
     /**
     * The ID of one or more subnets in which to create an endpoint network interface.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/vpclattice_resource_gateway#subnet_ids CcResourceGateway#subnet_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/vpclattice_resource_gateway#subnet_ids CcResourceGateway#subnet_ids}
     */
     readonly subnetIds: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/vpclattice_resource_gateway#tags CcResourceGateway#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/vpclattice_resource_gateway#tags CcResourceGateway#tags}
     */
     readonly tags?: CcResourceGateway.TagProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/vpclattice_resource_gateway#vpc_identifier CcResourceGateway#vpc_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/vpclattice_resource_gateway#vpc_identifier CcResourceGateway#vpc_identifier}
     */
     readonly vpcIdentifier: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/vpclattice_resource_gateway awscc_vpclattice_resource_gateway}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/vpclattice_resource_gateway awscc_vpclattice_resource_gateway}
 */
 export class CcResourceGateway extends cdktn.TerraformResource {
 
@@ -63,7 +63,7 @@ export class CcResourceGateway extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcResourceGateway resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcResourceGateway to import
-    * @param importFromId The id of the existing CcResourceGateway that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/vpclattice_resource_gateway#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcResourceGateway that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/vpclattice_resource_gateway#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcResourceGateway to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -75,7 +75,7 @@ export class CcResourceGateway extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/vpclattice_resource_gateway awscc_vpclattice_resource_gateway} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/vpclattice_resource_gateway awscc_vpclattice_resource_gateway} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -85,7 +85,8 @@ export class CcResourceGateway extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_vpclattice_resource_gateway',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -357,11 +358,11 @@ export function ccResourceGatewayTagPropertyToHclTerraform(struct?: CcResourceGa
 export namespace CcResourceGateway {
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/vpclattice_resource_gateway#key CcResourceGateway#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/vpclattice_resource_gateway#key CcResourceGateway#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/vpclattice_resource_gateway#value CcResourceGateway#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/vpclattice_resource_gateway#value CcResourceGateway#value}
     */
     readonly value?: string;
 }

@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_matchmaking_configuration
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_matchmaking_configuration
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,109 +9,109 @@ export interface CcMatchmakingConfigurationProps extends cdktn.TerraformMetaArgu
     /**
     * A flag that indicates whether a match that was created with this configuration must be accepted by the matched players
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_matchmaking_configuration#acceptance_required CcMatchmakingConfiguration#acceptance_required}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_matchmaking_configuration#acceptance_required CcMatchmakingConfiguration#acceptance_required}
     */
     readonly acceptanceRequired: boolean | cdktn.IResolvable;
     /**
     * The length of time (in seconds) to wait for players to accept a proposed match, if acceptance is required.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_matchmaking_configuration#acceptance_timeout_seconds CcMatchmakingConfiguration#acceptance_timeout_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_matchmaking_configuration#acceptance_timeout_seconds CcMatchmakingConfiguration#acceptance_timeout_seconds}
     */
     readonly acceptanceTimeoutSeconds?: number;
     /**
     * The number of player slots in a match to keep open for future players.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_matchmaking_configuration#additional_player_count CcMatchmakingConfiguration#additional_player_count}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_matchmaking_configuration#additional_player_count CcMatchmakingConfiguration#additional_player_count}
     */
     readonly additionalPlayerCount?: number;
     /**
     * The method used to backfill game sessions created with this matchmaking configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_matchmaking_configuration#backfill_mode CcMatchmakingConfiguration#backfill_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_matchmaking_configuration#backfill_mode CcMatchmakingConfiguration#backfill_mode}
     */
     readonly backfillMode?: string;
     /**
     * A time stamp indicating when this data object was created.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_matchmaking_configuration#creation_time CcMatchmakingConfiguration#creation_time}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_matchmaking_configuration#creation_time CcMatchmakingConfiguration#creation_time}
     */
     readonly creationTime?: string;
     /**
     * Information to attach to all events related to the matchmaking configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_matchmaking_configuration#custom_event_data CcMatchmakingConfiguration#custom_event_data}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_matchmaking_configuration#custom_event_data CcMatchmakingConfiguration#custom_event_data}
     */
     readonly customEventData?: string;
     /**
     * A descriptive label that is associated with matchmaking configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_matchmaking_configuration#description CcMatchmakingConfiguration#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_matchmaking_configuration#description CcMatchmakingConfiguration#description}
     */
     readonly description?: string;
     /**
     * Indicates whether this matchmaking configuration is being used with Amazon GameLift hosting or as a standalone matchmaking solution.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_matchmaking_configuration#flex_match_mode CcMatchmakingConfiguration#flex_match_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_matchmaking_configuration#flex_match_mode CcMatchmakingConfiguration#flex_match_mode}
     */
     readonly flexMatchMode?: string;
     /**
     * A set of custom properties for a game session, formatted as key:value pairs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_matchmaking_configuration#game_properties CcMatchmakingConfiguration#game_properties}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_matchmaking_configuration#game_properties CcMatchmakingConfiguration#game_properties}
     */
     readonly gameProperties?: CcMatchmakingConfiguration.GamePropertyProperty[] | cdktn.IResolvable;
     /**
     * A set of custom game session properties, formatted as a single string value.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_matchmaking_configuration#game_session_data CcMatchmakingConfiguration#game_session_data}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_matchmaking_configuration#game_session_data CcMatchmakingConfiguration#game_session_data}
     */
     readonly gameSessionData?: string;
     /**
     * The Amazon Resource Name (ARN) that is assigned to a Amazon GameLift game session queue resource and uniquely identifies it.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_matchmaking_configuration#game_session_queue_arns CcMatchmakingConfiguration#game_session_queue_arns}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_matchmaking_configuration#game_session_queue_arns CcMatchmakingConfiguration#game_session_queue_arns}
     */
     readonly gameSessionQueueArns?: string[];
     /**
     * A unique identifier for the matchmaking configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_matchmaking_configuration#name CcMatchmakingConfiguration#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_matchmaking_configuration#name CcMatchmakingConfiguration#name}
     */
     readonly name: string;
     /**
     * An SNS topic ARN that is set up to receive matchmaking notifications.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_matchmaking_configuration#notification_target CcMatchmakingConfiguration#notification_target}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_matchmaking_configuration#notification_target CcMatchmakingConfiguration#notification_target}
     */
     readonly notificationTarget?: string;
     /**
     * The maximum duration, in seconds, that a matchmaking ticket can remain in process before timing out.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_matchmaking_configuration#request_timeout_seconds CcMatchmakingConfiguration#request_timeout_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_matchmaking_configuration#request_timeout_seconds CcMatchmakingConfiguration#request_timeout_seconds}
     */
     readonly requestTimeoutSeconds: number;
     /**
     * The Amazon Resource Name (ARN) associated with the GameLift matchmaking rule set resource that this configuration uses.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_matchmaking_configuration#rule_set_arn CcMatchmakingConfiguration#rule_set_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_matchmaking_configuration#rule_set_arn CcMatchmakingConfiguration#rule_set_arn}
     */
     readonly ruleSetArn?: string;
     /**
     * A unique identifier for the matchmaking rule set to use with this configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_matchmaking_configuration#rule_set_name CcMatchmakingConfiguration#rule_set_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_matchmaking_configuration#rule_set_name CcMatchmakingConfiguration#rule_set_name}
     */
     readonly ruleSetName: string;
     /**
     * An array of key-value pairs to apply to this resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_matchmaking_configuration#tags CcMatchmakingConfiguration#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_matchmaking_configuration#tags CcMatchmakingConfiguration#tags}
     */
     readonly tags?: CcMatchmakingConfiguration.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_matchmaking_configuration awscc_gamelift_matchmaking_configuration}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_matchmaking_configuration awscc_gamelift_matchmaking_configuration}
 */
 export class CcMatchmakingConfiguration extends cdktn.TerraformResource {
 
@@ -127,7 +127,7 @@ export class CcMatchmakingConfiguration extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcMatchmakingConfiguration resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcMatchmakingConfiguration to import
-    * @param importFromId The id of the existing CcMatchmakingConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_matchmaking_configuration#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcMatchmakingConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_matchmaking_configuration#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcMatchmakingConfiguration to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -139,7 +139,7 @@ export class CcMatchmakingConfiguration extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_matchmaking_configuration awscc_gamelift_matchmaking_configuration} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_matchmaking_configuration awscc_gamelift_matchmaking_configuration} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -149,7 +149,8 @@ export class CcMatchmakingConfiguration extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_gamelift_matchmaking_configuration',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -668,13 +669,13 @@ export interface GamePropertyProperty {
     /**
     * The game property identifier.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_matchmaking_configuration#key CcMatchmakingConfiguration#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_matchmaking_configuration#key CcMatchmakingConfiguration#key}
     */
     readonly key?: string;
     /**
     * The game property value.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_matchmaking_configuration#value CcMatchmakingConfiguration#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_matchmaking_configuration#value CcMatchmakingConfiguration#value}
     */
     readonly value?: string;
 }
@@ -784,13 +785,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_matchmaking_configuration#key CcMatchmakingConfiguration#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_matchmaking_configuration#key CcMatchmakingConfiguration#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 0 to 256 Unicode characters in length.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_matchmaking_configuration#value CcMatchmakingConfiguration#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_matchmaking_configuration#value CcMatchmakingConfiguration#value}
     */
     readonly value?: string;
 }

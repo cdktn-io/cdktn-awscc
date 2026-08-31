@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_image_version
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_image_version
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,73 +9,73 @@ export interface CcImageVersionProps extends cdktn.TerraformMetaArguments {
     /**
     * The alias of the image version.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_image_version#alias CcImageVersion#alias}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_image_version#alias CcImageVersion#alias}
     */
     readonly alias?: string;
     /**
     * List of aliases for the image version.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_image_version#aliases CcImageVersion#aliases}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_image_version#aliases CcImageVersion#aliases}
     */
     readonly aliases?: string[];
     /**
     * The registry path of the container image on which this image version is based.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_image_version#base_image CcImageVersion#base_image}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_image_version#base_image CcImageVersion#base_image}
     */
     readonly baseImage: string;
     /**
     * Indicates Horovod compatibility.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_image_version#horovod CcImageVersion#horovod}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_image_version#horovod CcImageVersion#horovod}
     */
     readonly horovod?: boolean | cdktn.IResolvable;
     /**
     * The name of the image this version belongs to.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_image_version#image_name CcImageVersion#image_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_image_version#image_name CcImageVersion#image_name}
     */
     readonly imageName: string;
     /**
     * Indicates SageMaker job type compatibility.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_image_version#job_type CcImageVersion#job_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_image_version#job_type CcImageVersion#job_type}
     */
     readonly jobType?: string;
     /**
     * The machine learning framework vended in the image version.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_image_version#ml_framework CcImageVersion#ml_framework}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_image_version#ml_framework CcImageVersion#ml_framework}
     */
     readonly mlFramework?: string;
     /**
     * Indicates CPU or GPU compatibility.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_image_version#processor CcImageVersion#processor}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_image_version#processor CcImageVersion#processor}
     */
     readonly processor?: string;
     /**
     * The supported programming language and its version.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_image_version#programming_lang CcImageVersion#programming_lang}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_image_version#programming_lang CcImageVersion#programming_lang}
     */
     readonly programmingLang?: string;
     /**
     * The maintainer description of the image version.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_image_version#release_notes CcImageVersion#release_notes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_image_version#release_notes CcImageVersion#release_notes}
     */
     readonly releaseNotes?: string;
     /**
     * The availability of the image version specified by the maintainer.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_image_version#vendor_guidance CcImageVersion#vendor_guidance}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_image_version#vendor_guidance CcImageVersion#vendor_guidance}
     */
     readonly vendorGuidance?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_image_version awscc_sagemaker_image_version}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_image_version awscc_sagemaker_image_version}
 */
 export class CcImageVersion extends cdktn.TerraformResource {
 
@@ -91,7 +91,7 @@ export class CcImageVersion extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcImageVersion resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcImageVersion to import
-    * @param importFromId The id of the existing CcImageVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_image_version#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcImageVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_image_version#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcImageVersion to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -103,7 +103,7 @@ export class CcImageVersion extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_image_version awscc_sagemaker_image_version} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_image_version awscc_sagemaker_image_version} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -113,7 +113,8 @@ export class CcImageVersion extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_sagemaker_image_version',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,

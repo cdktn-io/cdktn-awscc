@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_gateway_rate_limit
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_gateway_rate_limit
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,37 +9,37 @@ export interface CcGatewayRateLimitProps extends cdktn.TerraformMetaArguments {
     /**
     * Optional human-readable description for this limit.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_gateway_rate_limit#description CcGatewayRateLimit#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_gateway_rate_limit#description CcGatewayRateLimit#description}
     */
     readonly description?: string;
     /**
     * Ordered list of dimension names defining the scope of this limit.
     * Unique per gateway — no two limits can share the same dimensionKeys.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_gateway_rate_limit#dimension_keys CcGatewayRateLimit#dimension_keys}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_gateway_rate_limit#dimension_keys CcGatewayRateLimit#dimension_keys}
     */
     readonly dimensionKeys: string[];
     /**
     * Rule entries mapping dimension values to rate configurations.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_gateway_rate_limit#entries CcGatewayRateLimit#entries}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_gateway_rate_limit#entries CcGatewayRateLimit#entries}
     */
     readonly entries: CcGatewayRateLimit.LimitEntryProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_gateway_rate_limit#gateway_identifier CcGatewayRateLimit#gateway_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_gateway_rate_limit#gateway_identifier CcGatewayRateLimit#gateway_identifier}
     */
     readonly gatewayIdentifier?: string;
     /**
     * Limit identifier. Optional on Create (system-generates if not provided by customer).
     * Always present in responses.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_gateway_rate_limit#rate_limit_id CcGatewayRateLimit#rate_limit_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_gateway_rate_limit#rate_limit_id CcGatewayRateLimit#rate_limit_id}
     */
     readonly rateLimitId?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_gateway_rate_limit awscc_bedrockagentcore_gateway_rate_limit}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_gateway_rate_limit awscc_bedrockagentcore_gateway_rate_limit}
 */
 export class CcGatewayRateLimit extends cdktn.TerraformResource {
 
@@ -55,7 +55,7 @@ export class CcGatewayRateLimit extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcGatewayRateLimit resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcGatewayRateLimit to import
-    * @param importFromId The id of the existing CcGatewayRateLimit that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_gateway_rate_limit#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcGatewayRateLimit that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_gateway_rate_limit#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcGatewayRateLimit to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -67,7 +67,7 @@ export class CcGatewayRateLimit extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_gateway_rate_limit awscc_bedrockagentcore_gateway_rate_limit} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_gateway_rate_limit awscc_bedrockagentcore_gateway_rate_limit} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -77,7 +77,8 @@ export class CcGatewayRateLimit extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_bedrockagentcore_gateway_rate_limit',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -412,11 +413,11 @@ export interface RateConfigProperty {
     /**
     * Time period for rate limiting
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_gateway_rate_limit#period CcGatewayRateLimit#period}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_gateway_rate_limit#period CcGatewayRateLimit#period}
     */
     readonly period?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_gateway_rate_limit#rate CcGatewayRateLimit#rate}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_gateway_rate_limit#rate CcGatewayRateLimit#rate}
     */
     readonly rate?: number;
 }
@@ -526,11 +527,11 @@ export interface RequestsProperty {
     /**
     * Time period for rate limiting
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_gateway_rate_limit#period CcGatewayRateLimit#period}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_gateway_rate_limit#period CcGatewayRateLimit#period}
     */
     readonly period?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_gateway_rate_limit#rate CcGatewayRateLimit#rate}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_gateway_rate_limit#rate CcGatewayRateLimit#rate}
     */
     readonly rate?: number;
 }
@@ -640,11 +641,11 @@ export interface TokensProperty {
     /**
     * Time period for rate limiting
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_gateway_rate_limit#period CcGatewayRateLimit#period}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_gateway_rate_limit#period CcGatewayRateLimit#period}
     */
     readonly period?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_gateway_rate_limit#rate CcGatewayRateLimit#rate}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_gateway_rate_limit#rate CcGatewayRateLimit#rate}
     */
     readonly rate?: number;
 }
@@ -754,25 +755,25 @@ export interface LimitEntryProperty {
     /**
     * Connection rate limits (per second only). Limited to 1 entry for now. — P2
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_gateway_rate_limit#connections CcGatewayRateLimit#connections}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_gateway_rate_limit#connections CcGatewayRateLimit#connections}
     */
     readonly connections?: RateConfigProperty[] | cdktn.IResolvable;
     /**
     * Map of dimension name to dimension value for a rule entry
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_gateway_rate_limit#dimensions CcGatewayRateLimit#dimensions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_gateway_rate_limit#dimensions CcGatewayRateLimit#dimensions}
     */
     readonly dimensions: { [key: string]: string };
     /**
     * Request rate limits (RPS or RPM). Limited to 1 entry for now.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_gateway_rate_limit#requests CcGatewayRateLimit#requests}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_gateway_rate_limit#requests CcGatewayRateLimit#requests}
     */
     readonly requests?: RequestsProperty[] | cdktn.IResolvable;
     /**
     * Token rate limits (TPM). Limited to 1 entry for now. — P1
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_gateway_rate_limit#tokens CcGatewayRateLimit#tokens}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_gateway_rate_limit#tokens CcGatewayRateLimit#tokens}
     */
     readonly tokens?: TokensProperty[] | cdktn.IResolvable;
 }

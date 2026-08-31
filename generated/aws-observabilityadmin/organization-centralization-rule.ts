@@ -1,29 +1,29 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/observabilityadmin_organization_centralization_rule
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/observabilityadmin_organization_centralization_rule
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcOrganizationCentralizationRuleProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/observabilityadmin_organization_centralization_rule#rule CcOrganizationCentralizationRule#rule}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/observabilityadmin_organization_centralization_rule#rule CcOrganizationCentralizationRule#rule}
     */
     readonly rule: CcOrganizationCentralizationRule.CentralizationRuleProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/observabilityadmin_organization_centralization_rule#rule_name CcOrganizationCentralizationRule#rule_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/observabilityadmin_organization_centralization_rule#rule_name CcOrganizationCentralizationRule#rule_name}
     */
     readonly ruleName: string;
     /**
     * An array of key-value pairs to apply to this resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/observabilityadmin_organization_centralization_rule#tags CcOrganizationCentralizationRule#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/observabilityadmin_organization_centralization_rule#tags CcOrganizationCentralizationRule#tags}
     */
     readonly tags?: CcOrganizationCentralizationRule.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/observabilityadmin_organization_centralization_rule awscc_observabilityadmin_organization_centralization_rule}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/observabilityadmin_organization_centralization_rule awscc_observabilityadmin_organization_centralization_rule}
 */
 export class CcOrganizationCentralizationRule extends cdktn.TerraformResource {
 
@@ -39,7 +39,7 @@ export class CcOrganizationCentralizationRule extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcOrganizationCentralizationRule resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcOrganizationCentralizationRule to import
-    * @param importFromId The id of the existing CcOrganizationCentralizationRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/observabilityadmin_organization_centralization_rule#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcOrganizationCentralizationRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/observabilityadmin_organization_centralization_rule#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcOrganizationCentralizationRule to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -51,7 +51,7 @@ export class CcOrganizationCentralizationRule extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/observabilityadmin_organization_centralization_rule awscc_observabilityadmin_organization_centralization_rule} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/observabilityadmin_organization_centralization_rule awscc_observabilityadmin_organization_centralization_rule} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -61,7 +61,8 @@ export class CcOrganizationCentralizationRule extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_observabilityadmin_organization_centralization_rule',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -639,11 +640,11 @@ export function ccOrganizationCentralizationRuleTagPropertyToHclTerraform(struct
 export namespace CcOrganizationCentralizationRule {
 export interface LogsBackupConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/observabilityadmin_organization_centralization_rule#kms_key_arn CcOrganizationCentralizationRule#kms_key_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/observabilityadmin_organization_centralization_rule#kms_key_arn CcOrganizationCentralizationRule#kms_key_arn}
     */
     readonly kmsKeyArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/observabilityadmin_organization_centralization_rule#region CcOrganizationCentralizationRule#region}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/observabilityadmin_organization_centralization_rule#region CcOrganizationCentralizationRule#region}
     */
     readonly region?: string;
 }
@@ -729,7 +730,7 @@ export class LogsBackupConfigurationPropertyOutputReference extends cdktn.Comple
 }
 export interface LogGroupNameConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/observabilityadmin_organization_centralization_rule#log_group_name_pattern CcOrganizationCentralizationRule#log_group_name_pattern}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/observabilityadmin_organization_centralization_rule#log_group_name_pattern CcOrganizationCentralizationRule#log_group_name_pattern}
     */
     readonly logGroupNamePattern?: string;
 }
@@ -793,15 +794,15 @@ export class LogGroupNameConfigurationPropertyOutputReference extends cdktn.Comp
 }
 export interface LogsEncryptionConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/observabilityadmin_organization_centralization_rule#encryption_conflict_resolution_strategy CcOrganizationCentralizationRule#encryption_conflict_resolution_strategy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/observabilityadmin_organization_centralization_rule#encryption_conflict_resolution_strategy CcOrganizationCentralizationRule#encryption_conflict_resolution_strategy}
     */
     readonly encryptionConflictResolutionStrategy?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/observabilityadmin_organization_centralization_rule#encryption_strategy CcOrganizationCentralizationRule#encryption_strategy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/observabilityadmin_organization_centralization_rule#encryption_strategy CcOrganizationCentralizationRule#encryption_strategy}
     */
     readonly encryptionStrategy?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/observabilityadmin_organization_centralization_rule#kms_key_arn CcOrganizationCentralizationRule#kms_key_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/observabilityadmin_organization_centralization_rule#kms_key_arn CcOrganizationCentralizationRule#kms_key_arn}
     */
     readonly kmsKeyArn?: string;
 }
@@ -909,15 +910,15 @@ export class LogsEncryptionConfigurationPropertyOutputReference extends cdktn.Co
 }
 export interface DestinationLogsConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/observabilityadmin_organization_centralization_rule#backup_configuration CcOrganizationCentralizationRule#backup_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/observabilityadmin_organization_centralization_rule#backup_configuration CcOrganizationCentralizationRule#backup_configuration}
     */
     readonly backupConfiguration?: LogsBackupConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/observabilityadmin_organization_centralization_rule#log_group_name_configuration CcOrganizationCentralizationRule#log_group_name_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/observabilityadmin_organization_centralization_rule#log_group_name_configuration CcOrganizationCentralizationRule#log_group_name_configuration}
     */
     readonly logGroupNameConfiguration?: LogGroupNameConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/observabilityadmin_organization_centralization_rule#logs_encryption_configuration CcOrganizationCentralizationRule#logs_encryption_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/observabilityadmin_organization_centralization_rule#logs_encryption_configuration CcOrganizationCentralizationRule#logs_encryption_configuration}
     */
     readonly logsEncryptionConfiguration?: LogsEncryptionConfigurationProperty;
 }
@@ -1025,7 +1026,7 @@ export class DestinationLogsConfigurationPropertyOutputReference extends cdktn.C
 }
 export interface MetricsBackupConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/observabilityadmin_organization_centralization_rule#region CcOrganizationCentralizationRule#region}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/observabilityadmin_organization_centralization_rule#region CcOrganizationCentralizationRule#region}
     */
     readonly region?: string;
 }
@@ -1089,7 +1090,7 @@ export class MetricsBackupConfigurationPropertyOutputReference extends cdktn.Com
 }
 export interface DestinationMetricsConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/observabilityadmin_organization_centralization_rule#backup_configuration CcOrganizationCentralizationRule#backup_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/observabilityadmin_organization_centralization_rule#backup_configuration CcOrganizationCentralizationRule#backup_configuration}
     */
     readonly backupConfiguration?: MetricsBackupConfigurationProperty;
 }
@@ -1153,19 +1154,19 @@ export class DestinationMetricsConfigurationPropertyOutputReference extends cdkt
 }
 export interface CentralizationRuleDestinationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/observabilityadmin_organization_centralization_rule#account CcOrganizationCentralizationRule#account}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/observabilityadmin_organization_centralization_rule#account CcOrganizationCentralizationRule#account}
     */
     readonly account?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/observabilityadmin_organization_centralization_rule#destination_logs_configuration CcOrganizationCentralizationRule#destination_logs_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/observabilityadmin_organization_centralization_rule#destination_logs_configuration CcOrganizationCentralizationRule#destination_logs_configuration}
     */
     readonly destinationLogsConfiguration?: DestinationLogsConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/observabilityadmin_organization_centralization_rule#destination_metrics_configuration CcOrganizationCentralizationRule#destination_metrics_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/observabilityadmin_organization_centralization_rule#destination_metrics_configuration CcOrganizationCentralizationRule#destination_metrics_configuration}
     */
     readonly destinationMetricsConfiguration?: DestinationMetricsConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/observabilityadmin_organization_centralization_rule#region CcOrganizationCentralizationRule#region}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/observabilityadmin_organization_centralization_rule#region CcOrganizationCentralizationRule#region}
     */
     readonly region: string;
 }
@@ -1292,15 +1293,15 @@ export class CentralizationRuleDestinationPropertyOutputReference extends cdktn.
 }
 export interface SourceLogsConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/observabilityadmin_organization_centralization_rule#data_source_selection_criteria CcOrganizationCentralizationRule#data_source_selection_criteria}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/observabilityadmin_organization_centralization_rule#data_source_selection_criteria CcOrganizationCentralizationRule#data_source_selection_criteria}
     */
     readonly dataSourceSelectionCriteria?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/observabilityadmin_organization_centralization_rule#encrypted_log_group_strategy CcOrganizationCentralizationRule#encrypted_log_group_strategy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/observabilityadmin_organization_centralization_rule#encrypted_log_group_strategy CcOrganizationCentralizationRule#encrypted_log_group_strategy}
     */
     readonly encryptedLogGroupStrategy?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/observabilityadmin_organization_centralization_rule#log_group_selection_criteria CcOrganizationCentralizationRule#log_group_selection_criteria}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/observabilityadmin_organization_centralization_rule#log_group_selection_criteria CcOrganizationCentralizationRule#log_group_selection_criteria}
     */
     readonly logGroupSelectionCriteria?: string;
 }
@@ -1408,7 +1409,7 @@ export class SourceLogsConfigurationPropertyOutputReference extends cdktn.Comple
 }
 export interface SourceMetricsConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/observabilityadmin_organization_centralization_rule#metrics_selection_criteria CcOrganizationCentralizationRule#metrics_selection_criteria}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/observabilityadmin_organization_centralization_rule#metrics_selection_criteria CcOrganizationCentralizationRule#metrics_selection_criteria}
     */
     readonly metricsSelectionCriteria?: string;
 }
@@ -1472,19 +1473,19 @@ export class SourceMetricsConfigurationPropertyOutputReference extends cdktn.Com
 }
 export interface CentralizationRuleSourceProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/observabilityadmin_organization_centralization_rule#regions CcOrganizationCentralizationRule#regions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/observabilityadmin_organization_centralization_rule#regions CcOrganizationCentralizationRule#regions}
     */
     readonly regions: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/observabilityadmin_organization_centralization_rule#scope CcOrganizationCentralizationRule#scope}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/observabilityadmin_organization_centralization_rule#scope CcOrganizationCentralizationRule#scope}
     */
     readonly scope?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/observabilityadmin_organization_centralization_rule#source_logs_configuration CcOrganizationCentralizationRule#source_logs_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/observabilityadmin_organization_centralization_rule#source_logs_configuration CcOrganizationCentralizationRule#source_logs_configuration}
     */
     readonly sourceLogsConfiguration?: SourceLogsConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/observabilityadmin_organization_centralization_rule#source_metrics_configuration CcOrganizationCentralizationRule#source_metrics_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/observabilityadmin_organization_centralization_rule#source_metrics_configuration CcOrganizationCentralizationRule#source_metrics_configuration}
     */
     readonly sourceMetricsConfiguration?: SourceMetricsConfigurationProperty;
 }
@@ -1611,11 +1612,11 @@ export class CentralizationRuleSourcePropertyOutputReference extends cdktn.Compl
 }
 export interface CentralizationRuleProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/observabilityadmin_organization_centralization_rule#destination CcOrganizationCentralizationRule#destination}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/observabilityadmin_organization_centralization_rule#destination CcOrganizationCentralizationRule#destination}
     */
     readonly destination: CentralizationRuleDestinationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/observabilityadmin_organization_centralization_rule#source CcOrganizationCentralizationRule#source}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/observabilityadmin_organization_centralization_rule#source CcOrganizationCentralizationRule#source}
     */
     readonly source: CentralizationRuleSourceProperty;
 }
@@ -1697,13 +1698,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/observabilityadmin_organization_centralization_rule#key CcOrganizationCentralizationRule#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/observabilityadmin_organization_centralization_rule#key CcOrganizationCentralizationRule#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 0 to 256 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/observabilityadmin_organization_centralization_rule#value CcOrganizationCentralizationRule#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/observabilityadmin_organization_centralization_rule#value CcOrganizationCentralizationRule#value}
     */
     readonly value?: string;
 }

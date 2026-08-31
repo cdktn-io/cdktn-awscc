@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_task_definition
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_task_definition
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,43 +9,43 @@ export interface CcTaskDefinitionProps extends cdktn.TerraformMetaArguments {
     /**
     * Whether to automatically create tasks using this task definition for all gateways with the specified current version. If false, the task must me created by calling CreateWirelessGatewayTask.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_task_definition#auto_create_tasks CcTaskDefinition#auto_create_tasks}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_task_definition#auto_create_tasks CcTaskDefinition#auto_create_tasks}
     */
     readonly autoCreateTasks: boolean | cdktn.IResolvable;
     /**
     * The list of task definitions.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_task_definition#lo_ra_wan_update_gateway_task_entry CcTaskDefinition#lo_ra_wan_update_gateway_task_entry}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_task_definition#lo_ra_wan_update_gateway_task_entry CcTaskDefinition#lo_ra_wan_update_gateway_task_entry}
     */
     readonly loRaWanUpdateGatewayTaskEntry?: CcTaskDefinition.LoRaWANUpdateGatewayTaskEntryProperty;
     /**
     * The name of the new resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_task_definition#name CcTaskDefinition#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_task_definition#name CcTaskDefinition#name}
     */
     readonly name?: string;
     /**
     * A list of key-value pairs that contain metadata for the destination.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_task_definition#tags CcTaskDefinition#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_task_definition#tags CcTaskDefinition#tags}
     */
     readonly tags?: CcTaskDefinition.TagProperty[] | cdktn.IResolvable;
     /**
     * A filter to list only the wireless gateway task definitions that use this task definition type
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_task_definition#task_definition_type CcTaskDefinition#task_definition_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_task_definition#task_definition_type CcTaskDefinition#task_definition_type}
     */
     readonly taskDefinitionType?: string;
     /**
     * Information about the gateways to update.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_task_definition#update CcTaskDefinition#update}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_task_definition#update CcTaskDefinition#update}
     */
     readonly update?: CcTaskDefinition.UpdateWirelessGatewayTaskCreateProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_task_definition awscc_iotwireless_task_definition}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_task_definition awscc_iotwireless_task_definition}
 */
 export class CcTaskDefinition extends cdktn.TerraformResource {
 
@@ -61,7 +61,7 @@ export class CcTaskDefinition extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcTaskDefinition resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcTaskDefinition to import
-    * @param importFromId The id of the existing CcTaskDefinition that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_task_definition#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcTaskDefinition that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_task_definition#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcTaskDefinition to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -73,7 +73,7 @@ export class CcTaskDefinition extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_task_definition awscc_iotwireless_task_definition} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_task_definition awscc_iotwireless_task_definition} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -83,7 +83,8 @@ export class CcTaskDefinition extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_iotwireless_task_definition',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -621,15 +622,15 @@ export function ccTaskDefinitionUpdateWirelessGatewayTaskCreatePropertyToHclTerr
 export namespace CcTaskDefinition {
 export interface LoRaWANGatewayVersionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_task_definition#model CcTaskDefinition#model}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_task_definition#model CcTaskDefinition#model}
     */
     readonly model?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_task_definition#package_version CcTaskDefinition#package_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_task_definition#package_version CcTaskDefinition#package_version}
     */
     readonly packageVersion?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_task_definition#station CcTaskDefinition#station}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_task_definition#station CcTaskDefinition#station}
     */
     readonly station?: string;
 }
@@ -737,15 +738,15 @@ export class LoRaWANGatewayVersionPropertyOutputReference extends cdktn.ComplexO
 }
 export interface LoRaWanUpdateGatewayTaskEntryUpdateVersionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_task_definition#model CcTaskDefinition#model}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_task_definition#model CcTaskDefinition#model}
     */
     readonly model?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_task_definition#package_version CcTaskDefinition#package_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_task_definition#package_version CcTaskDefinition#package_version}
     */
     readonly packageVersion?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_task_definition#station CcTaskDefinition#station}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_task_definition#station CcTaskDefinition#station}
     */
     readonly station?: string;
 }
@@ -853,11 +854,11 @@ export class LoRaWanUpdateGatewayTaskEntryUpdateVersionPropertyOutputReference e
 }
 export interface LoRaWANUpdateGatewayTaskEntryProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_task_definition#current_version CcTaskDefinition#current_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_task_definition#current_version CcTaskDefinition#current_version}
     */
     readonly currentVersion?: LoRaWANGatewayVersionProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_task_definition#update_version CcTaskDefinition#update_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_task_definition#update_version CcTaskDefinition#update_version}
     */
     readonly updateVersion?: LoRaWanUpdateGatewayTaskEntryUpdateVersionProperty;
 }
@@ -943,11 +944,11 @@ export class LoRaWANUpdateGatewayTaskEntryPropertyOutputReference extends cdktn.
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_task_definition#key CcTaskDefinition#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_task_definition#key CcTaskDefinition#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_task_definition#value CcTaskDefinition#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_task_definition#value CcTaskDefinition#value}
     */
     readonly value?: string;
 }
@@ -1055,15 +1056,15 @@ export class TagPropertyList extends cdktn.ComplexList {
 }
 export interface CurrentVersionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_task_definition#model CcTaskDefinition#model}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_task_definition#model CcTaskDefinition#model}
     */
     readonly model?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_task_definition#package_version CcTaskDefinition#package_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_task_definition#package_version CcTaskDefinition#package_version}
     */
     readonly packageVersion?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_task_definition#station CcTaskDefinition#station}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_task_definition#station CcTaskDefinition#station}
     */
     readonly station?: string;
 }
@@ -1171,15 +1172,15 @@ export class CurrentVersionPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface UpdateLoRaWanUpdateVersionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_task_definition#model CcTaskDefinition#model}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_task_definition#model CcTaskDefinition#model}
     */
     readonly model?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_task_definition#package_version CcTaskDefinition#package_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_task_definition#package_version CcTaskDefinition#package_version}
     */
     readonly packageVersion?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_task_definition#station CcTaskDefinition#station}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_task_definition#station CcTaskDefinition#station}
     */
     readonly station?: string;
 }
@@ -1287,19 +1288,19 @@ export class UpdateLoRaWanUpdateVersionPropertyOutputReference extends cdktn.Com
 }
 export interface LoRaWANUpdateGatewayTaskCreateProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_task_definition#current_version CcTaskDefinition#current_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_task_definition#current_version CcTaskDefinition#current_version}
     */
     readonly currentVersion?: CurrentVersionProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_task_definition#sig_key_crc CcTaskDefinition#sig_key_crc}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_task_definition#sig_key_crc CcTaskDefinition#sig_key_crc}
     */
     readonly sigKeyCrc?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_task_definition#update_signature CcTaskDefinition#update_signature}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_task_definition#update_signature CcTaskDefinition#update_signature}
     */
     readonly updateSignature?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_task_definition#update_version CcTaskDefinition#update_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_task_definition#update_version CcTaskDefinition#update_version}
     */
     readonly updateVersion?: UpdateLoRaWanUpdateVersionProperty;
 }
@@ -1429,15 +1430,15 @@ export class LoRaWANUpdateGatewayTaskCreatePropertyOutputReference extends cdktn
 }
 export interface UpdateWirelessGatewayTaskCreateProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_task_definition#lo_ra_wan CcTaskDefinition#lo_ra_wan}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_task_definition#lo_ra_wan CcTaskDefinition#lo_ra_wan}
     */
     readonly loRaWan?: LoRaWANUpdateGatewayTaskCreateProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_task_definition#update_data_role CcTaskDefinition#update_data_role}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_task_definition#update_data_role CcTaskDefinition#update_data_role}
     */
     readonly updateDataRole?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iotwireless_task_definition#update_data_source CcTaskDefinition#update_data_source}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_task_definition#update_data_source CcTaskDefinition#update_data_source}
     */
     readonly updateDataSource?: string;
 }

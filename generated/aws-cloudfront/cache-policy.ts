@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_cache_policy
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_cache_policy
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,13 +9,13 @@ export interface CcCachePolicyProps extends cdktn.TerraformMetaArguments {
     /**
     * The cache policy configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_cache_policy#cache_policy_config CcCachePolicy#cache_policy_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_cache_policy#cache_policy_config CcCachePolicy#cache_policy_config}
     */
     readonly cachePolicyConfig: CcCachePolicy.CachePolicyConfigProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_cache_policy awscc_cloudfront_cache_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_cache_policy awscc_cloudfront_cache_policy}
 */
 export class CcCachePolicy extends cdktn.TerraformResource {
 
@@ -31,7 +31,7 @@ export class CcCachePolicy extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcCachePolicy resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcCachePolicy to import
-    * @param importFromId The id of the existing CcCachePolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_cache_policy#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcCachePolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_cache_policy#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcCachePolicy to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -43,7 +43,7 @@ export class CcCachePolicy extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_cache_policy awscc_cloudfront_cache_policy} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_cache_policy awscc_cloudfront_cache_policy} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -53,7 +53,8 @@ export class CcCachePolicy extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_cloudfront_cache_policy',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -366,13 +367,13 @@ export interface CookiesConfigProperty {
     *   +  ``allExcept`` ? All cookies in viewer requests are included in the cache key and in requests that CloudFront sends to the origin, *except* for those that are listed in the ``CookieNames`` type, which are not included.
     *   +  ``all`` ? All cookies in viewer requests are included in the cache key and in requests that CloudFront sends to the origin.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_cache_policy#cookie_behavior CcCachePolicy#cookie_behavior}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_cache_policy#cookie_behavior CcCachePolicy#cookie_behavior}
     */
     readonly cookieBehavior: string;
     /**
     * Contains a list of cookie names.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_cache_policy#cookies CcCachePolicy#cookies}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_cache_policy#cookies CcCachePolicy#cookies}
     */
     readonly cookies?: string[];
 }
@@ -459,13 +460,13 @@ export interface HeadersConfigProperty {
     *   +  ``none`` ? No HTTP headers are included in the cache key or in requests that CloudFront sends to the origin. Even when this field is set to ``none``, any headers that are listed in an ``OriginRequestPolicy``*are* included in origin requests.
     *   +  ``whitelist`` ? Only the HTTP headers that are listed in the ``Headers`` type are included in the cache key and in requests that CloudFront sends to the origin.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_cache_policy#header_behavior CcCachePolicy#header_behavior}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_cache_policy#header_behavior CcCachePolicy#header_behavior}
     */
     readonly headerBehavior: string;
     /**
     * Contains a list of HTTP header names.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_cache_policy#headers CcCachePolicy#headers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_cache_policy#headers CcCachePolicy#headers}
     */
     readonly headers?: string[];
 }
@@ -554,13 +555,13 @@ export interface QueryStringsConfigProperty {
     *   +  ``allExcept`` ? All query strings in viewer requests are included in the cache key and in requests that CloudFront sends to the origin, *except* those that are listed in the ``QueryStringNames`` type, which are not included.
     *   +  ``all`` ? All query strings in viewer requests are included in the cache key and in requests that CloudFront sends to the origin.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_cache_policy#query_string_behavior CcCachePolicy#query_string_behavior}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_cache_policy#query_string_behavior CcCachePolicy#query_string_behavior}
     */
     readonly queryStringBehavior: string;
     /**
     * Contains a list of query string names.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_cache_policy#query_strings CcCachePolicy#query_strings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_cache_policy#query_strings CcCachePolicy#query_strings}
     */
     readonly queryStrings?: string[];
 }
@@ -645,7 +646,7 @@ export interface ParametersInCacheKeyAndForwardedToOriginProperty {
     /**
     * An object that determines whether any cookies in viewer requests (and if so, which cookies) are included in the cache key and in requests that CloudFront sends to the origin.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_cache_policy#cookies_config CcCachePolicy#cookies_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_cache_policy#cookies_config CcCachePolicy#cookies_config}
     */
     readonly cookiesConfig: CookiesConfigProperty;
     /**
@@ -659,7 +660,7 @@ export interface ParametersInCacheKeyAndForwardedToOriginProperty {
     *  If you set this value to ``true``, and this cache behavior also has an origin request policy attached, do not include the ``Accept-Encoding`` header in the origin request policy. CloudFront always includes the ``Accept-Encoding`` header in origin requests when the value of this field is ``true``, so including this header in an origin request policy has no effect.
     *  If both of these fields are ``false``, then CloudFront treats the ``Accept-Encoding`` header the same as any other HTTP header in the viewer request. By default, it's not included in the cache key and it's not included in origin requests. In this case, you can manually add ``Accept-Encoding`` to the headers whitelist like any other HTTP header.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_cache_policy#enable_accept_encoding_brotli CcCachePolicy#enable_accept_encoding_brotli}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_cache_policy#enable_accept_encoding_brotli CcCachePolicy#enable_accept_encoding_brotli}
     */
     readonly enableAcceptEncodingBrotli?: boolean | cdktn.IResolvable;
     /**
@@ -673,19 +674,19 @@ export interface ParametersInCacheKeyAndForwardedToOriginProperty {
     *  If you set this value to ``true``, and this cache behavior also has an origin request policy attached, do not include the ``Accept-Encoding`` header in the origin request policy. CloudFront always includes the ``Accept-Encoding`` header in origin requests when the value of this field is ``true``, so including this header in an origin request policy has no effect.
     *  If both of these fields are ``false``, then CloudFront treats the ``Accept-Encoding`` header the same as any other HTTP header in the viewer request. By default, it's not included in the cache key and it's not included in origin requests. In this case, you can manually add ``Accept-Encoding`` to the headers whitelist like any other HTTP header.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_cache_policy#enable_accept_encoding_gzip CcCachePolicy#enable_accept_encoding_gzip}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_cache_policy#enable_accept_encoding_gzip CcCachePolicy#enable_accept_encoding_gzip}
     */
     readonly enableAcceptEncodingGzip: boolean | cdktn.IResolvable;
     /**
     * An object that determines whether any HTTP headers (and if so, which headers) are included in the cache key and in requests that CloudFront sends to the origin.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_cache_policy#headers_config CcCachePolicy#headers_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_cache_policy#headers_config CcCachePolicy#headers_config}
     */
     readonly headersConfig: HeadersConfigProperty;
     /**
     * An object that determines whether any URL query strings in viewer requests (and if so, which query strings) are included in the cache key and in requests that CloudFront sends to the origin.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_cache_policy#query_strings_config CcCachePolicy#query_strings_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_cache_policy#query_strings_config CcCachePolicy#query_strings_config}
     */
     readonly queryStringsConfig: QueryStringsConfigProperty;
 }
@@ -827,39 +828,39 @@ export interface CachePolicyConfigProperty {
     /**
     * A comment to describe the cache policy. The comment cannot be longer than 128 characters.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_cache_policy#comment CcCachePolicy#comment}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_cache_policy#comment CcCachePolicy#comment}
     */
     readonly comment?: string;
     /**
     * The default amount of time, in seconds, that you want objects to stay in the CloudFront cache before CloudFront sends another request to the origin to see if the object has been updated. CloudFront uses this value as the object's time to live (TTL) only when the origin does *not* send ``Cache-Control`` or ``Expires`` headers with the object. For more information, see [Managing How Long Content Stays in an Edge Cache (Expiration)](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Expiration.html) in the *Amazon CloudFront Developer Guide*.
     *  The default value for this field is 86400 seconds (one day). If the value of ``MinTTL`` is more than 86400 seconds, then the default value for this field is the same as the value of ``MinTTL``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_cache_policy#default_ttl CcCachePolicy#default_ttl}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_cache_policy#default_ttl CcCachePolicy#default_ttl}
     */
     readonly defaultTtl: number;
     /**
     * The maximum amount of time, in seconds, that objects stay in the CloudFront cache before CloudFront sends another request to the origin to see if the object has been updated. CloudFront uses this value only when the origin sends ``Cache-Control`` or ``Expires`` headers with the object. For more information, see [Managing How Long Content Stays in an Edge Cache (Expiration)](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Expiration.html) in the *Amazon CloudFront Developer Guide*.
     *  The default value for this field is 31536000 seconds (one year). If the value of ``MinTTL`` or ``DefaultTTL`` is more than 31536000 seconds, then the default value for this field is the same as the value of ``DefaultTTL``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_cache_policy#max_ttl CcCachePolicy#max_ttl}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_cache_policy#max_ttl CcCachePolicy#max_ttl}
     */
     readonly maxTtl: number;
     /**
     * The minimum amount of time, in seconds, that you want objects to stay in the CloudFront cache before CloudFront sends another request to the origin to see if the object has been updated. For more information, see [Managing How Long Content Stays in an Edge Cache (Expiration)](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Expiration.html) in the *Amazon CloudFront Developer Guide*.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_cache_policy#min_ttl CcCachePolicy#min_ttl}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_cache_policy#min_ttl CcCachePolicy#min_ttl}
     */
     readonly minTtl: number;
     /**
     * A unique name to identify the cache policy.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_cache_policy#name CcCachePolicy#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_cache_policy#name CcCachePolicy#name}
     */
     readonly name: string;
     /**
     * The HTTP headers, cookies, and URL query strings to include in the cache key. The values included in the cache key are also included in requests that CloudFront sends to the origin.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudfront_cache_policy#parameters_in_cache_key_and_forwarded_to_origin CcCachePolicy#parameters_in_cache_key_and_forwarded_to_origin}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_cache_policy#parameters_in_cache_key_and_forwarded_to_origin CcCachePolicy#parameters_in_cache_key_and_forwarded_to_origin}
     */
     readonly parametersInCacheKeyAndForwardedToOrigin: ParametersInCacheKeyAndForwardedToOriginProperty;
 }

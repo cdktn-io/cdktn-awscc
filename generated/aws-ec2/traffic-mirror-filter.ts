@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_traffic_mirror_filter
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_traffic_mirror_filter
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,25 +9,25 @@ export interface CcTrafficMirrorFilterProps extends cdktn.TerraformMetaArguments
     /**
     * The description of a traffic mirror filter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_traffic_mirror_filter#description CcTrafficMirrorFilter#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_traffic_mirror_filter#description CcTrafficMirrorFilter#description}
     */
     readonly description?: string;
     /**
     * The network service that is associated with the traffic mirror filter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_traffic_mirror_filter#network_services CcTrafficMirrorFilter#network_services}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_traffic_mirror_filter#network_services CcTrafficMirrorFilter#network_services}
     */
     readonly networkServices?: string[];
     /**
     * The tags for a traffic mirror filter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_traffic_mirror_filter#tags CcTrafficMirrorFilter#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_traffic_mirror_filter#tags CcTrafficMirrorFilter#tags}
     */
     readonly tags?: CcTrafficMirrorFilter.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_traffic_mirror_filter awscc_ec2_traffic_mirror_filter}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_traffic_mirror_filter awscc_ec2_traffic_mirror_filter}
 */
 export class CcTrafficMirrorFilter extends cdktn.TerraformResource {
 
@@ -43,7 +43,7 @@ export class CcTrafficMirrorFilter extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcTrafficMirrorFilter resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcTrafficMirrorFilter to import
-    * @param importFromId The id of the existing CcTrafficMirrorFilter that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_traffic_mirror_filter#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcTrafficMirrorFilter that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_traffic_mirror_filter#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcTrafficMirrorFilter to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -55,7 +55,7 @@ export class CcTrafficMirrorFilter extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_traffic_mirror_filter awscc_ec2_traffic_mirror_filter} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_traffic_mirror_filter awscc_ec2_traffic_mirror_filter} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -65,7 +65,8 @@ export class CcTrafficMirrorFilter extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_ec2_traffic_mirror_filter',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -221,11 +222,11 @@ export function ccTrafficMirrorFilterTagPropertyToHclTerraform(struct?: CcTraffi
 export namespace CcTrafficMirrorFilter {
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_traffic_mirror_filter#key CcTrafficMirrorFilter#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_traffic_mirror_filter#key CcTrafficMirrorFilter#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_traffic_mirror_filter#value CcTrafficMirrorFilter#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_traffic_mirror_filter#value CcTrafficMirrorFilter#value}
     */
     readonly value?: string;
 }

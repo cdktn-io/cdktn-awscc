@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rds_db_cluster
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_cluster
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -11,14 +11,14 @@ export interface CcDBClusterProps extends cdktn.TerraformMetaArguments {
     *  Valid for Cluster Type: Multi-AZ DB clusters only
     *  This setting is required to create a Multi-AZ DB cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rds_db_cluster#allocated_storage CcDBCluster#allocated_storage}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_cluster#allocated_storage CcDBCluster#allocated_storage}
     */
     readonly allocatedStorage?: number;
     /**
     * Provides a list of the AWS Identity and Access Management (IAM) roles that are associated with the DB cluster. IAM roles that are associated with a DB cluster grant permission for the DB cluster to access other Amazon Web Services on your behalf.
     *  Valid for: Aurora DB clusters and Multi-AZ DB clusters
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rds_db_cluster#associated_roles CcDBCluster#associated_roles}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_cluster#associated_roles CcDBCluster#associated_roles}
     */
     readonly associatedRoles?: CcDBCluster.DBClusterRoleProperty[] | cdktn.IResolvable;
     /**
@@ -26,14 +26,14 @@ export interface CcDBClusterProps extends cdktn.TerraformMetaArguments {
     *  Valid for Cluster Type: Aurora DB clusters and Multi-AZ DB cluster.
     *  For more information about automatic minor version upgrades, see [Automatically upgrading the minor engine version](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_UpgradeDBInstance.Upgrading.html#USER_UpgradeDBInstance.Upgrading.AutoMinorVersionUpgrades).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rds_db_cluster#auto_minor_version_upgrade CcDBCluster#auto_minor_version_upgrade}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_cluster#auto_minor_version_upgrade CcDBCluster#auto_minor_version_upgrade}
     */
     readonly autoMinorVersionUpgrade?: boolean | cdktn.IResolvable;
     /**
     * A list of Availability Zones (AZs) where instances in the DB cluster can be created. For information on AWS Regions and Availability Zones, see [Choosing the Regions and Availability Zones](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Concepts.RegionsAndAvailabilityZones.html) in the *Amazon Aurora User Guide*. 
     *  Valid for: Aurora DB clusters only
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rds_db_cluster#availability_zones CcDBCluster#availability_zones}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_cluster#availability_zones CcDBCluster#availability_zones}
     */
     readonly availabilityZones?: string[];
     /**
@@ -43,7 +43,7 @@ export interface CcDBClusterProps extends cdktn.TerraformMetaArguments {
     *  Constraints:
     *   +  If specified, this value must be set to a number from 0 to 259,200 (72 hours).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rds_db_cluster#backtrack_window CcDBCluster#backtrack_window}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_cluster#backtrack_window CcDBCluster#backtrack_window}
     */
     readonly backtrackWindow?: number;
     /**
@@ -54,21 +54,21 @@ export interface CcDBClusterProps extends cdktn.TerraformMetaArguments {
     *   
     *  Valid for: Aurora DB clusters and Multi-AZ DB clusters
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rds_db_cluster#backup_retention_period CcDBCluster#backup_retention_period}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_cluster#backup_retention_period CcDBCluster#backup_retention_period}
     */
     readonly backupRetentionPeriod?: number;
     /**
     * Specifies the scalability mode of the Aurora DB cluster. When set to ``limitless``, the cluster operates as an Aurora Limitless Database, allowing you to create a DB shard group for horizontal scaling (sharding) capabilities. When set to ``standard`` (the default), the cluster uses normal DB instance creation.
     *  *Important:* Automated backup retention isn't supported with Aurora Limitless Database clusters. If you set this property to ``limitless``, you cannot set ``DeleteAutomatedBackups`` to ``false``. To create a backup, use manual snapshots instead.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rds_db_cluster#cluster_scalability_type CcDBCluster#cluster_scalability_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_cluster#cluster_scalability_type CcDBCluster#cluster_scalability_type}
     */
     readonly clusterScalabilityType?: string;
     /**
     * A value that indicates whether to copy all tags from the DB cluster to snapshots of the DB cluster. The default is not to copy them.
     *  Valid for: Aurora DB clusters and Multi-AZ DB clusters
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rds_db_cluster#copy_tags_to_snapshot CcDBCluster#copy_tags_to_snapshot}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_cluster#copy_tags_to_snapshot CcDBCluster#copy_tags_to_snapshot}
     */
     readonly copyTagsToSnapshot?: boolean | cdktn.IResolvable;
     /**
@@ -76,14 +76,14 @@ export interface CcDBClusterProps extends cdktn.TerraformMetaArguments {
     *  If you set this value to ``advanced``, you must also set the ``PerformanceInsightsEnabled`` parameter to ``true`` and the ``PerformanceInsightsRetentionPeriod`` parameter to 465.
     *  Valid for Cluster Type: Aurora DB clusters and Multi-AZ DB clusters
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rds_db_cluster#database_insights_mode CcDBCluster#database_insights_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_cluster#database_insights_mode CcDBCluster#database_insights_mode}
     */
     readonly databaseInsightsMode?: string;
     /**
     * The name of your database. If you don't provide a name, then Amazon RDS won't create a database in this DB cluster. For naming constraints, see [Naming Constraints](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_Limits.html#RDS_Limits.Constraints) in the *Amazon Aurora User Guide*. 
     *  Valid for: Aurora DB clusters and Multi-AZ DB clusters
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rds_db_cluster#database_name CcDBCluster#database_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_cluster#database_name CcDBCluster#database_name}
     */
     readonly databaseName?: string;
     /**
@@ -96,7 +96,7 @@ export interface CcDBClusterProps extends cdktn.TerraformMetaArguments {
     *  Example: ``my-cluster1``
     *  Valid for: Aurora DB clusters and Multi-AZ DB clusters
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rds_db_cluster#db_cluster_identifier CcDBCluster#db_cluster_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_cluster#db_cluster_identifier CcDBCluster#db_cluster_identifier}
     */
     readonly dbClusterIdentifier?: string;
     /**
@@ -105,7 +105,7 @@ export interface CcDBClusterProps extends cdktn.TerraformMetaArguments {
     *  This setting is required to create a Multi-AZ DB cluster.
     *  Valid for Cluster Type: Multi-AZ DB clusters only
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rds_db_cluster#db_cluster_instance_class CcDBCluster#db_cluster_instance_class}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_cluster#db_cluster_instance_class CcDBCluster#db_cluster_instance_class}
     */
     readonly dbClusterInstanceClass?: string;
     /**
@@ -116,7 +116,7 @@ export interface CcDBClusterProps extends cdktn.TerraformMetaArguments {
     *   ``aws rds describe-db-cluster-parameter-groups --query "DBClusterParameterGroups[].DBClusterParameterGroupName" --output text`` 
     *  Valid for: Aurora DB clusters and Multi-AZ DB clusters
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rds_db_cluster#db_cluster_parameter_group_name CcDBCluster#db_cluster_parameter_group_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_cluster#db_cluster_parameter_group_name CcDBCluster#db_cluster_parameter_group_name}
     */
     readonly dbClusterParameterGroupName?: string;
     /**
@@ -128,7 +128,7 @@ export interface CcDBClusterProps extends cdktn.TerraformMetaArguments {
     *   +  The DB parameter group must be in the same DB parameter group family as this DB cluster.
     *   +  The ``DBInstanceParameterGroupName`` parameter is valid in combination with the ``AllowMajorVersionUpgrade`` parameter for a major version upgrade only.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rds_db_cluster#db_instance_parameter_group_name CcDBCluster#db_instance_parameter_group_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_cluster#db_instance_parameter_group_name CcDBCluster#db_instance_parameter_group_name}
     */
     readonly dbInstanceParameterGroupName?: string;
     /**
@@ -136,26 +136,26 @@ export interface CcDBClusterProps extends cdktn.TerraformMetaArguments {
     *  If you are restoring a DB cluster to a point in time with ``RestoreType`` set to ``copy-on-write``, and don't specify a DB subnet group name, then the DB cluster is restored with a default DB subnet group.
     *  Valid for: Aurora DB clusters and Multi-AZ DB clusters
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rds_db_cluster#db_subnet_group_name CcDBCluster#db_subnet_group_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_cluster#db_subnet_group_name CcDBCluster#db_subnet_group_name}
     */
     readonly dbSubnetGroupName?: string;
     /**
     * Reserved for future use.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rds_db_cluster#db_system_id CcDBCluster#db_system_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_cluster#db_system_id CcDBCluster#db_system_id}
     */
     readonly dbSystemId?: string;
     /**
     * Specifies whether to remove automated backups immediately after the DB cluster is deleted. This parameter isn't case-sensitive. The default is to remove automated backups immediately after the DB cluster is deleted, unless the AWS Backup policy specifies a point-in-time restore rule.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rds_db_cluster#delete_automated_backups CcDBCluster#delete_automated_backups}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_cluster#delete_automated_backups CcDBCluster#delete_automated_backups}
     */
     readonly deleteAutomatedBackups?: boolean | cdktn.IResolvable;
     /**
     * A value that indicates whether the DB cluster has deletion protection enabled. The database can't be deleted when deletion protection is enabled. By default, deletion protection is disabled.
     *  Valid for: Aurora DB clusters and Multi-AZ DB clusters
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rds_db_cluster#deletion_protection CcDBCluster#deletion_protection}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_cluster#deletion_protection CcDBCluster#deletion_protection}
     */
     readonly deletionProtection?: boolean | cdktn.IResolvable;
     /**
@@ -164,14 +164,14 @@ export interface CcDBClusterProps extends cdktn.TerraformMetaArguments {
     *  For more information, see [Kerberos authentication](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/kerberos-authentication.html) in the *Amazon Aurora User Guide*.
     *  Valid for: Aurora DB clusters only
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rds_db_cluster#domain CcDBCluster#domain}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_cluster#domain CcDBCluster#domain}
     */
     readonly domain?: string;
     /**
     * Specifies the name of the IAM role to use when making API calls to the Directory Service.
     *  Valid for: Aurora DB clusters only
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rds_db_cluster#domain_iam_role_name CcDBCluster#domain_iam_role_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_cluster#domain_iam_role_name CcDBCluster#domain_iam_role_name}
     */
     readonly domainIamRoleName?: string;
     /**
@@ -182,7 +182,7 @@ export interface CcDBClusterProps extends cdktn.TerraformMetaArguments {
     *  Valid values: ``postgresql``
     *  Valid for: Aurora DB clusters and Multi-AZ DB clusters
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rds_db_cluster#enable_cloudwatch_logs_exports CcDBCluster#enable_cloudwatch_logs_exports}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_cluster#enable_cloudwatch_logs_exports CcDBCluster#enable_cloudwatch_logs_exports}
     */
     readonly enableCloudwatchLogsExports?: string[];
     /**
@@ -190,7 +190,7 @@ export interface CcDBClusterProps extends cdktn.TerraformMetaArguments {
     *  You can set this value only on Aurora DB clusters that are members of an Aurora global database. With this parameter enabled, a secondary cluster can forward writes to the current primary cluster, and the resulting changes are replicated back to this cluster. For the primary DB cluster of an Aurora global database, this value is used immediately if the primary is demoted by a global cluster API operation, but it does nothing until then.
     *  Valid for Cluster Type: Aurora DB clusters only
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rds_db_cluster#enable_global_write_forwarding CcDBCluster#enable_global_write_forwarding}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_cluster#enable_global_write_forwarding CcDBCluster#enable_global_write_forwarding}
     */
     readonly enableGlobalWriteForwarding?: boolean | cdktn.IResolvable;
     /**
@@ -199,7 +199,7 @@ export interface CcDBClusterProps extends cdktn.TerraformMetaArguments {
     *  For more information, see [Using RDS Data API](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/data-api.html) in the *Amazon Aurora User Guide*.
     *  Valid for Cluster Type: Aurora DB clusters only
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rds_db_cluster#enable_http_endpoint CcDBCluster#enable_http_endpoint}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_cluster#enable_http_endpoint CcDBCluster#enable_http_endpoint}
     */
     readonly enableHttpEndpoint?: boolean | cdktn.IResolvable;
     /**
@@ -207,14 +207,14 @@ export interface CcDBClusterProps extends cdktn.TerraformMetaArguments {
     *  For more information, see [IAM Database Authentication](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/UsingWithRDS.IAMDBAuth.html) in the *Amazon Aurora User Guide.*
     *  Valid for: Aurora DB clusters only
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rds_db_cluster#enable_iam_database_authentication CcDBCluster#enable_iam_database_authentication}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_cluster#enable_iam_database_authentication CcDBCluster#enable_iam_database_authentication}
     */
     readonly enableIamDatabaseAuthentication?: boolean | cdktn.IResolvable;
     /**
     * Specifies whether read replicas can forward write operations to the writer DB instance in the DB cluster. By default, write operations aren't allowed on reader DB instances.
     *  Valid for: Aurora DB clusters only
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rds_db_cluster#enable_local_write_forwarding CcDBCluster#enable_local_write_forwarding}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_cluster#enable_local_write_forwarding CcDBCluster#enable_local_write_forwarding}
     */
     readonly enableLocalWriteForwarding?: boolean | cdktn.IResolvable;
     /**
@@ -227,7 +227,7 @@ export interface CcDBClusterProps extends cdktn.TerraformMetaArguments {
     *   
     *  Valid for: Aurora DB clusters and Multi-AZ DB clusters
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rds_db_cluster#engine CcDBCluster#engine}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_cluster#engine CcDBCluster#engine}
     */
     readonly engine?: string;
     /**
@@ -241,7 +241,7 @@ export interface CcDBClusterProps extends cdktn.TerraformMetaArguments {
     *  Valid Values: ``open-source-rds-extended-support | open-source-rds-extended-support-disabled``
     *  Default: ``open-source-rds-extended-support``
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rds_db_cluster#engine_lifecycle_support CcDBCluster#engine_lifecycle_support}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_cluster#engine_lifecycle_support CcDBCluster#engine_lifecycle_support}
     */
     readonly engineLifecycleSupport?: string;
     /**
@@ -253,7 +253,7 @@ export interface CcDBClusterProps extends cdktn.TerraformMetaArguments {
     *   
     *  Valid for Cluster Type: Aurora DB clusters only
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rds_db_cluster#engine_mode CcDBCluster#engine_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_cluster#engine_mode CcDBCluster#engine_mode}
     */
     readonly engineMode?: string;
     /**
@@ -278,7 +278,7 @@ export interface CcDBClusterProps extends cdktn.TerraformMetaArguments {
     *  For information, see [Amazon RDS for PostgreSQL](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_PostgreSQL.html#PostgreSQL.Concepts) in the *Amazon RDS User Guide*.
     *  Valid for: Aurora DB clusters and Multi-AZ DB clusters
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rds_db_cluster#engine_version CcDBCluster#engine_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_cluster#engine_version CcDBCluster#engine_version}
     */
     readonly engineVersion?: string;
     /**
@@ -288,7 +288,7 @@ export interface CcDBClusterProps extends cdktn.TerraformMetaArguments {
     *   For information about Aurora global databases, see [Working with Amazon Aurora Global Databases](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-global-database.html) in the *Amazon Aurora User Guide*.
     *  Valid for: Aurora DB clusters only
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rds_db_cluster#global_cluster_identifier CcDBCluster#global_cluster_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_cluster#global_cluster_identifier CcDBCluster#global_cluster_identifier}
     */
     readonly globalClusterIdentifier?: string;
     /**
@@ -299,7 +299,7 @@ export interface CcDBClusterProps extends cdktn.TerraformMetaArguments {
     *  Constraints:
     *   +  Must be a multiple between .5 and 50 of the storage amount for the DB cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rds_db_cluster#iops CcDBCluster#iops}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_cluster#iops CcDBCluster#iops}
     */
     readonly iops?: number;
     /**
@@ -308,7 +308,7 @@ export interface CcDBClusterProps extends cdktn.TerraformMetaArguments {
     *  If you create a read replica of an encrypted DB cluster in another AWS Region, make sure to set ``KmsKeyId`` to a KMS key identifier that is valid in the destination AWS Region. This KMS key is used to encrypt the read replica in that AWS Region.
     *  Valid for: Aurora DB clusters and Multi-AZ DB clusters
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rds_db_cluster#kms_key_id CcDBCluster#kms_key_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_cluster#kms_key_id CcDBCluster#kms_key_id}
     */
     readonly kmsKeyId?: string;
     /**
@@ -318,7 +318,7 @@ export interface CcDBClusterProps extends cdktn.TerraformMetaArguments {
     *  Constraints:
     *   +  Can't manage the master user password with AWS Secrets Manager if ``MasterUserPassword`` is specified.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rds_db_cluster#manage_master_user_password CcDBCluster#manage_master_user_password}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_cluster#manage_master_user_password CcDBCluster#manage_master_user_password}
     */
     readonly manageMasterUserPassword?: boolean | cdktn.IResolvable;
     /**
@@ -330,7 +330,7 @@ export interface CcDBClusterProps extends cdktn.TerraformMetaArguments {
     *  Valid for Cluster Type: Aurora DB clusters and Multi-AZ DB clusters
     *  This option is only valid for RDS for MySQL, RDS for MariaDB, RDS for PostgreSQL, Aurora MySQL, and Aurora PostgreSQL engines.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rds_db_cluster#master_user_authentication_type CcDBCluster#master_user_authentication_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_cluster#master_user_authentication_type CcDBCluster#master_user_authentication_type}
     */
     readonly masterUserAuthenticationType?: string;
     /**
@@ -338,7 +338,7 @@ export interface CcDBClusterProps extends cdktn.TerraformMetaArguments {
     *   If you specify the ``SourceDBClusterIdentifier``, ``SnapshotIdentifier``, or ``GlobalClusterIdentifier`` property, don't specify this property. The value is inherited from the source DB cluster, the snapshot, or the primary DB cluster for the global database cluster, respectively.
     *   Valid for: Aurora DB clusters and Multi-AZ DB clusters
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rds_db_cluster#master_user_password CcDBCluster#master_user_password}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_cluster#master_user_password CcDBCluster#master_user_password}
     */
     readonly masterUserPassword?: string;
     /**
@@ -346,7 +346,7 @@ export interface CcDBClusterProps extends cdktn.TerraformMetaArguments {
     *   When you restore a DB cluster from a snapshot, Amazon RDS generates a new secret instead of reusing the secret specified in the ``SecretArn`` property. This ensures that the restored DB cluster is securely managed with a dedicated secret. To maintain consistent integration with your application, you might need to update resource configurations to reference the newly created secret.
     *   For more information, see [Password management with Secrets Manager](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-secrets-manager.html) in the *Amazon RDS User Guide* and [Password management with Secrets Manager](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/rds-secrets-manager.html) in the *Amazon Aurora User Guide.*
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rds_db_cluster#master_user_secret CcDBCluster#master_user_secret}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_cluster#master_user_secret CcDBCluster#master_user_secret}
     */
     readonly masterUserSecret?: CcDBCluster.MasterUserSecretProperty;
     /**
@@ -354,7 +354,7 @@ export interface CcDBClusterProps extends cdktn.TerraformMetaArguments {
     *   If you specify the ``SourceDBClusterIdentifier``, ``SnapshotIdentifier``, or ``GlobalClusterIdentifier`` property, don't specify this property. The value is inherited from the source DB cluster, the snapshot, or the primary DB cluster for the global database cluster, respectively.
     *   Valid for: Aurora DB clusters and Multi-AZ DB clusters
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rds_db_cluster#master_username CcDBCluster#master_username}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_cluster#master_username CcDBCluster#master_username}
     */
     readonly masterUsername?: string;
     /**
@@ -364,7 +364,7 @@ export interface CcDBClusterProps extends cdktn.TerraformMetaArguments {
     *  Valid Values: ``0 | 1 | 5 | 10 | 15 | 30 | 60``
     *  Default: ``0``
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rds_db_cluster#monitoring_interval CcDBCluster#monitoring_interval}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_cluster#monitoring_interval CcDBCluster#monitoring_interval}
     */
     readonly monitoringInterval?: number;
     /**
@@ -372,7 +372,7 @@ export interface CcDBClusterProps extends cdktn.TerraformMetaArguments {
     *  If ``MonitoringInterval`` is set to a value other than ``0``, supply a ``MonitoringRoleArn`` value.
     *  Valid for Cluster Type: Aurora DB clusters and Multi-AZ DB clusters
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rds_db_cluster#monitoring_role_arn CcDBCluster#monitoring_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_cluster#monitoring_role_arn CcDBCluster#monitoring_role_arn}
     */
     readonly monitoringRoleArn?: string;
     /**
@@ -385,7 +385,7 @@ export interface CcDBClusterProps extends cdktn.TerraformMetaArguments {
     *  For more information, see [Working with a DB instance in a VPC](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_VPC.WorkingWithRDSInstanceinaVPC.html) in the *Amazon Aurora User Guide.*
     *  Valid for: Aurora DB clusters only
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rds_db_cluster#network_type CcDBCluster#network_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_cluster#network_type CcDBCluster#network_type}
     */
     readonly networkType?: string;
     /**
@@ -393,7 +393,7 @@ export interface CcDBClusterProps extends cdktn.TerraformMetaArguments {
     *  For more information, see [Using Amazon Performance Insights](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PerfInsights.html) in the *Amazon RDS User Guide*.
     *  Valid for Cluster Type: Aurora DB clusters and Multi-AZ DB clusters
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rds_db_cluster#performance_insights_enabled CcDBCluster#performance_insights_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_cluster#performance_insights_enabled CcDBCluster#performance_insights_enabled}
     */
     readonly performanceInsightsEnabled?: boolean | cdktn.IResolvable;
     /**
@@ -402,7 +402,7 @@ export interface CcDBClusterProps extends cdktn.TerraformMetaArguments {
     *  If you don't specify a value for ``PerformanceInsightsKMSKeyId``, then Amazon RDS uses your default KMS key. There is a default KMS key for your AWS-account. Your AWS-account has a different default KMS key for each AWS-Region.
     *  Valid for Cluster Type: Aurora DB clusters and Multi-AZ DB clusters
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rds_db_cluster#performance_insights_kms_key_id CcDBCluster#performance_insights_kms_key_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_cluster#performance_insights_kms_key_id CcDBCluster#performance_insights_kms_key_id}
     */
     readonly performanceInsightsKmsKeyId?: string;
     /**
@@ -416,7 +416,7 @@ export interface CcDBClusterProps extends cdktn.TerraformMetaArguments {
     *  Default: ``7`` days
     *  If you specify a retention period that isn't valid, such as ``94``, Amazon RDS issues an error.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rds_db_cluster#performance_insights_retention_period CcDBCluster#performance_insights_retention_period}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_cluster#performance_insights_retention_period CcDBCluster#performance_insights_retention_period}
     */
     readonly performanceInsightsRetentionPeriod?: number;
     /**
@@ -428,7 +428,7 @@ export interface CcDBClusterProps extends cdktn.TerraformMetaArguments {
     *   The ``No interruption`` on update behavior only applies to DB clusters. If you are updating a DB instance, see [Port](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-port) for the AWS::RDS::DBInstance resource.
     *   Valid for: Aurora DB clusters and Multi-AZ DB clusters
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rds_db_cluster#port CcDBCluster#port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_cluster#port CcDBCluster#port}
     */
     readonly port?: number;
     /**
@@ -441,7 +441,7 @@ export interface CcDBClusterProps extends cdktn.TerraformMetaArguments {
     *   
     *  Valid for: Aurora DB clusters and Multi-AZ DB clusters
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rds_db_cluster#preferred_backup_window CcDBCluster#preferred_backup_window}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_cluster#preferred_backup_window CcDBCluster#preferred_backup_window}
     */
     readonly preferredBackupWindow?: string;
     /**
@@ -452,7 +452,7 @@ export interface CcDBClusterProps extends cdktn.TerraformMetaArguments {
     *  Constraints: Minimum 30-minute window.
     *  Valid for: Aurora DB clusters and Multi-AZ DB clusters
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rds_db_cluster#preferred_maintenance_window CcDBCluster#preferred_maintenance_window}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_cluster#preferred_maintenance_window CcDBCluster#preferred_maintenance_window}
     */
     readonly preferredMaintenanceWindow?: string;
     /**
@@ -465,14 +465,14 @@ export interface CcDBClusterProps extends cdktn.TerraformMetaArguments {
     *  If ``DBSubnetGroup`` is specified, ``PubliclyAccessible`` defaults to ``false`` unless the value of ``DBSubnetGroup`` is ``default``, in which case ``PubliclyAccessible`` defaults to ``true``.
     *  If ``PubliclyAccessible`` is true and the VPC that the ``DBSubnetGroup`` is in doesn't have an internet gateway attached to it, Amazon RDS returns an error.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rds_db_cluster#publicly_accessible CcDBCluster#publicly_accessible}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_cluster#publicly_accessible CcDBCluster#publicly_accessible}
     */
     readonly publiclyAccessible?: boolean | cdktn.IResolvable;
     /**
     * The Amazon Resource Name (ARN) of the source DB instance or DB cluster if this DB cluster is created as a read replica.
     *  Valid for: Aurora DB clusters only
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rds_db_cluster#replication_source_identifier CcDBCluster#replication_source_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_cluster#replication_source_identifier CcDBCluster#replication_source_identifier}
     */
     readonly replicationSourceIdentifier?: string;
     /**
@@ -488,7 +488,7 @@ export interface CcDBClusterProps extends cdktn.TerraformMetaArguments {
     *  Example: ``2015-03-07T23:45:00Z``
     *  Valid for: Aurora DB clusters and Multi-AZ DB clusters
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rds_db_cluster#restore_to_time CcDBCluster#restore_to_time}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_cluster#restore_to_time CcDBCluster#restore_to_time}
     */
     readonly restoreToTime?: string;
     /**
@@ -499,7 +499,7 @@ export interface CcDBClusterProps extends cdktn.TerraformMetaArguments {
     *  If you don't specify a ``RestoreType`` value, then the new DB cluster is restored as a full copy of the source DB cluster.
     *  Valid for: Aurora DB clusters and Multi-AZ DB clusters
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rds_db_cluster#restore_type CcDBCluster#restore_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_cluster#restore_type CcDBCluster#restore_type}
     */
     readonly restoreType?: string;
     /**
@@ -507,7 +507,7 @@ export interface CcDBClusterProps extends cdktn.TerraformMetaArguments {
     *  This property is only supported for Aurora Serverless v1. For Aurora Serverless v2, Use the ``ServerlessV2ScalingConfiguration`` property.
     *  Valid for: Aurora Serverless v1 DB clusters only
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rds_db_cluster#scaling_configuration CcDBCluster#scaling_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_cluster#scaling_configuration CcDBCluster#scaling_configuration}
     */
     readonly scalingConfiguration?: CcDBCluster.ScalingConfigurationProperty;
     /**
@@ -515,7 +515,7 @@ export interface CcDBClusterProps extends cdktn.TerraformMetaArguments {
     *  This property is only supported for Aurora Serverless v2. For Aurora Serverless v1, Use the ``ScalingConfiguration`` property.
     *  Valid for: Aurora Serverless v2 DB clusters only
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rds_db_cluster#serverless_v2_scaling_configuration CcDBCluster#serverless_v2_scaling_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_cluster#serverless_v2_scaling_configuration CcDBCluster#serverless_v2_scaling_configuration}
     */
     readonly serverlessV2ScalingConfiguration?: CcDBCluster.ServerlessV2ScalingConfigurationProperty;
     /**
@@ -538,7 +538,7 @@ export interface CcDBClusterProps extends cdktn.TerraformMetaArguments {
     *   
     *  Valid for: Aurora DB clusters and Multi-AZ DB clusters
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rds_db_cluster#snapshot_identifier CcDBCluster#snapshot_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_cluster#snapshot_identifier CcDBCluster#snapshot_identifier}
     */
     readonly snapshotIdentifier?: string;
     /**
@@ -549,20 +549,20 @@ export interface CcDBClusterProps extends cdktn.TerraformMetaArguments {
     *   
     *  Valid for: Aurora DB clusters and Multi-AZ DB clusters
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rds_db_cluster#source_db_cluster_identifier CcDBCluster#source_db_cluster_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_cluster#source_db_cluster_identifier CcDBCluster#source_db_cluster_identifier}
     */
     readonly sourceDbClusterIdentifier?: string;
     /**
     * The resource ID of the source DB cluster from which to restore.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rds_db_cluster#source_db_cluster_resource_id CcDBCluster#source_db_cluster_resource_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_cluster#source_db_cluster_resource_id CcDBCluster#source_db_cluster_resource_id}
     */
     readonly sourceDbClusterResourceId?: string;
     /**
     * The AWS Region which contains the source DB cluster when replicating a DB cluster. For example, ``us-east-1``. 
     *  Valid for: Aurora DB clusters only
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rds_db_cluster#source_region CcDBCluster#source_region}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_cluster#source_region CcDBCluster#source_region}
     */
     readonly sourceRegion?: string;
     /**
@@ -574,7 +574,7 @@ export interface CcDBClusterProps extends cdktn.TerraformMetaArguments {
     *   If you specify both the ``StorageEncrypted`` and ``SnapshotIdentifier`` properties without specifying the ``KmsKeyId`` property, then the restored DB cluster inherits the encryption settings from the DB snapshot that provide.
     *   Valid for: Aurora DB clusters and Multi-AZ DB clusters
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rds_db_cluster#storage_encrypted CcDBCluster#storage_encrypted}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_cluster#storage_encrypted CcDBCluster#storage_encrypted}
     */
     readonly storageEncrypted?: boolean | cdktn.IResolvable;
     /**
@@ -593,21 +593,21 @@ export interface CcDBClusterProps extends cdktn.TerraformMetaArguments {
     *   
     *   When you create an Aurora DB cluster with the storage type set to ``aurora-iopt1``, the storage type is returned in the response. The storage type isn't returned when you set it to ``aurora``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rds_db_cluster#storage_type CcDBCluster#storage_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_cluster#storage_type CcDBCluster#storage_type}
     */
     readonly storageType?: string;
     /**
     * Tags to assign to the DB cluster.
     *  Valid for Cluster Type: Aurora DB clusters and Multi-AZ DB clusters
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rds_db_cluster#tags CcDBCluster#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_cluster#tags CcDBCluster#tags}
     */
     readonly tags?: CcDBCluster.TagProperty[] | cdktn.IResolvable;
     /**
     * A value that indicates whether to restore the DB cluster to the latest restorable backup time. By default, the DB cluster is not restored to the latest restorable backup time. 
     *  Valid for: Aurora DB clusters and Multi-AZ DB clusters
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rds_db_cluster#use_latest_restorable_time CcDBCluster#use_latest_restorable_time}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_cluster#use_latest_restorable_time CcDBCluster#use_latest_restorable_time}
     */
     readonly useLatestRestorableTime?: boolean | cdktn.IResolvable;
     /**
@@ -615,13 +615,13 @@ export interface CcDBClusterProps extends cdktn.TerraformMetaArguments {
     *  If you plan to update the resource, don't specify VPC security groups in a shared VPC.
     *  Valid for: Aurora DB clusters and Multi-AZ DB clusters
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rds_db_cluster#vpc_security_group_ids CcDBCluster#vpc_security_group_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_cluster#vpc_security_group_ids CcDBCluster#vpc_security_group_ids}
     */
     readonly vpcSecurityGroupIds?: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rds_db_cluster awscc_rds_db_cluster}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_cluster awscc_rds_db_cluster}
 */
 export class CcDBCluster extends cdktn.TerraformResource {
 
@@ -637,7 +637,7 @@ export class CcDBCluster extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcDBCluster resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcDBCluster to import
-    * @param importFromId The id of the existing CcDBCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rds_db_cluster#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcDBCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_cluster#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcDBCluster to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -649,7 +649,7 @@ export class CcDBCluster extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rds_db_cluster awscc_rds_db_cluster} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_cluster awscc_rds_db_cluster} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -659,7 +659,8 @@ export class CcDBCluster extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_rds_db_cluster',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -2454,13 +2455,13 @@ export interface DBClusterRoleProperty {
     /**
     * The name of the feature associated with the AWS Identity and Access Management (IAM) role. IAM roles that are associated with a DB cluster grant permission for the DB cluster to access other AWS services on your behalf. For the list of supported feature names, see the ``SupportedFeatureNames`` description in [DBEngineVersion](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DBEngineVersion.html) in the *Amazon RDS API Reference*.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rds_db_cluster#feature_name CcDBCluster#feature_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_cluster#feature_name CcDBCluster#feature_name}
     */
     readonly featureName?: string;
     /**
     * The Amazon Resource Name (ARN) of the IAM role that is associated with the DB cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rds_db_cluster#role_arn CcDBCluster#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_cluster#role_arn CcDBCluster#role_arn}
     */
     readonly roleArn?: string;
 }
@@ -2608,7 +2609,7 @@ export interface MasterUserSecretProperty {
     /**
     * The AWS KMS key identifier that is used to encrypt the secret.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rds_db_cluster#kms_key_id CcDBCluster#kms_key_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_cluster#kms_key_id CcDBCluster#kms_key_id}
     */
     readonly kmsKeyId?: string;
 }
@@ -2713,7 +2714,7 @@ export interface ScalingConfigurationProperty {
     * Indicates whether to allow or disallow automatic pause for an Aurora DB cluster in ``serverless`` DB engine mode. A DB cluster can be paused only when it's idle (it has no connections).
     *   If a DB cluster is paused for more than seven days, the DB cluster might be backed up with a snapshot. In this case, the DB cluster is restored when there is a request to connect to it.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rds_db_cluster#auto_pause CcDBCluster#auto_pause}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_cluster#auto_pause CcDBCluster#auto_pause}
     */
     readonly autoPause?: boolean | cdktn.IResolvable;
     /**
@@ -2722,7 +2723,7 @@ export interface ScalingConfigurationProperty {
     *  For Aurora PostgreSQL, valid capacity values are ``2``, ``4``, ``8``, ``16``, ``32``, ``64``, ``192``, and ``384``.
     *  The maximum capacity must be greater than or equal to the minimum capacity.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rds_db_cluster#max_capacity CcDBCluster#max_capacity}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_cluster#max_capacity CcDBCluster#max_capacity}
     */
     readonly maxCapacity?: number;
     /**
@@ -2731,21 +2732,21 @@ export interface ScalingConfigurationProperty {
     *  For Aurora PostgreSQL, valid capacity values are ``2``, ``4``, ``8``, ``16``, ``32``, ``64``, ``192``, and ``384``.
     *  The minimum capacity must be less than or equal to the maximum capacity.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rds_db_cluster#min_capacity CcDBCluster#min_capacity}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_cluster#min_capacity CcDBCluster#min_capacity}
     */
     readonly minCapacity?: number;
     /**
     * The amount of time, in seconds, that Aurora Serverless v1 tries to find a scaling point to perform seamless scaling before enforcing the timeout action. The default is 300.
     *  Specify a value between 60 and 600 seconds.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rds_db_cluster#seconds_before_timeout CcDBCluster#seconds_before_timeout}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_cluster#seconds_before_timeout CcDBCluster#seconds_before_timeout}
     */
     readonly secondsBeforeTimeout?: number;
     /**
     * The time, in seconds, before an Aurora DB cluster in ``serverless`` mode is paused.
     *  Specify a value between 300 and 86,400 seconds.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rds_db_cluster#seconds_until_auto_pause CcDBCluster#seconds_until_auto_pause}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_cluster#seconds_until_auto_pause CcDBCluster#seconds_until_auto_pause}
     */
     readonly secondsUntilAutoPause?: number;
     /**
@@ -2755,7 +2756,7 @@ export interface ScalingConfigurationProperty {
     *   If you specify ``ForceApplyCapacityChange``, connections that prevent Aurora Serverless v1 from finding a scaling point might be dropped.
     *   For more information, see [Autoscaling for Aurora Serverless v1](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-serverless.how-it-works.html#aurora-serverless.how-it-works.auto-scaling) in the *Amazon Aurora User Guide*.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rds_db_cluster#timeout_action CcDBCluster#timeout_action}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_cluster#timeout_action CcDBCluster#timeout_action}
     */
     readonly timeoutAction?: string;
 }
@@ -2933,20 +2934,20 @@ export interface ServerlessV2ScalingConfigurationProperty {
     *  The maximum capacity must be higher than 0.5 ACUs. For more information, see [Choosing the maximum Aurora Serverless v2 capacity setting for a cluster](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-serverless-v2.setting-capacity.html#aurora-serverless-v2.max_capacity_considerations) in the *Amazon Aurora User Guide*.
     *  Aurora automatically sets certain parameters for Aurora Serverless V2 DB instances to values that depend on the maximum ACU value in the capacity range. When you update the maximum capacity value, the ``ParameterApplyStatus`` value for the DB instance changes to ``pending-reboot``. You can update the parameter values by rebooting the DB instance after changing the capacity range.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rds_db_cluster#max_capacity CcDBCluster#max_capacity}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_cluster#max_capacity CcDBCluster#max_capacity}
     */
     readonly maxCapacity?: number;
     /**
     * The minimum number of Aurora capacity units (ACUs) for a DB instance in an Aurora Serverless v2 cluster. You can specify ACU values in half-step increments, such as 8, 8.5, 9, and so on. For Aurora versions that support the Aurora Serverless v2 auto-pause feature, the smallest value that you can use is 0. For versions that don't support Aurora Serverless v2 auto-pause, the smallest value that you can use is 0.5.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rds_db_cluster#min_capacity CcDBCluster#min_capacity}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_cluster#min_capacity CcDBCluster#min_capacity}
     */
     readonly minCapacity?: number;
     /**
     * Specifies the number of seconds an Aurora Serverless v2 DB instance must be idle before Aurora attempts to automatically pause it. 
     *  Specify a value between 300 seconds (five minutes) and 86,400 seconds (one day). The default is 300 seconds.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rds_db_cluster#seconds_until_auto_pause CcDBCluster#seconds_until_auto_pause}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_cluster#seconds_until_auto_pause CcDBCluster#seconds_until_auto_pause}
     */
     readonly secondsUntilAutoPause?: number;
 }
@@ -3056,13 +3057,13 @@ export interface TagProperty {
     /**
     * A key is the required name of the tag. The string value can be from 1 to 128 Unicode characters in length and can't be prefixed with ``aws:`` or ``rds:``. The string can only contain only the set of Unicode letters, digits, white-space, '_', '.', ':', '/', '=', '+', '-', '@' (Java regex: "^([\\p{L}\\p{Z}\\p{N}_.:/=+\\-@]*)$").
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rds_db_cluster#key CcDBCluster#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_cluster#key CcDBCluster#key}
     */
     readonly key?: string;
     /**
     * A value is the optional value of the tag. The string value can be from 1 to 256 Unicode characters in length and can't be prefixed with ``aws:`` or ``rds:``. The string can only contain only the set of Unicode letters, digits, white-space, '_', '.', ':', '/', '=', '+', '-', '@' (Java regex: "^([\\p{L}\\p{Z}\\p{N}_.:/=+\\-@]*)$").
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/rds_db_cluster#value CcDBCluster#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_cluster#value CcDBCluster#value}
     */
     readonly value?: string;
 }

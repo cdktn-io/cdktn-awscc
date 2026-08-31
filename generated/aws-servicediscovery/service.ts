@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicediscovery_service
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicediscovery_service
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,61 +9,61 @@ export interface CcServiceProps extends cdktn.TerraformMetaArguments {
     /**
     * A description for the service.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicediscovery_service#description CcService#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicediscovery_service#description CcService#description}
     */
     readonly description?: string;
     /**
     * DNS-related configurations for the service.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicediscovery_service#dns_config CcService#dns_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicediscovery_service#dns_config CcService#dns_config}
     */
     readonly dnsConfig?: CcService.DnsConfigProperty;
     /**
     * Settings for health checks. Used when routing is DNS-based.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicediscovery_service#health_check_config CcService#health_check_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicediscovery_service#health_check_config CcService#health_check_config}
     */
     readonly healthCheckConfig?: CcService.HealthCheckConfigProperty;
     /**
     * Settings for custom health checks.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicediscovery_service#health_check_custom_config CcService#health_check_custom_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicediscovery_service#health_check_custom_config CcService#health_check_custom_config}
     */
     readonly healthCheckCustomConfig?: CcService.HealthCheckCustomConfigProperty;
     /**
     * The name of the service.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicediscovery_service#name CcService#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicediscovery_service#name CcService#name}
     */
     readonly name?: string;
     /**
     * The ID of the namespace in which the service is created.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicediscovery_service#namespace_id CcService#namespace_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicediscovery_service#namespace_id CcService#namespace_id}
     */
     readonly namespaceId?: string;
     /**
     * A string map that contains attributes and values for the service. You can specify a maximum of 30 key-value pairs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicediscovery_service#service_attributes CcService#service_attributes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicediscovery_service#service_attributes CcService#service_attributes}
     */
     readonly serviceAttributes?: { [key: string]: string };
     /**
     * An array of key-value pairs to associate with the service.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicediscovery_service#tags CcService#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicediscovery_service#tags CcService#tags}
     */
     readonly tags?: CcService.TagProperty[] | cdktn.IResolvable;
     /**
     * The type of service. Supported values are HTTP or DNS.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicediscovery_service#type CcService#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicediscovery_service#type CcService#type}
     */
     readonly type?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicediscovery_service awscc_servicediscovery_service}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicediscovery_service awscc_servicediscovery_service}
 */
 export class CcService extends cdktn.TerraformResource {
 
@@ -79,7 +79,7 @@ export class CcService extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcService resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcService to import
-    * @param importFromId The id of the existing CcService that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicediscovery_service#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcService that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicediscovery_service#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcService to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -91,7 +91,7 @@ export class CcService extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicediscovery_service awscc_servicediscovery_service} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicediscovery_service awscc_servicediscovery_service} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -101,7 +101,8 @@ export class CcService extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_servicediscovery_service',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -563,13 +564,13 @@ export interface DnsRecordProperty {
     /**
     * The time-to-live (TTL) for the DNS record.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicediscovery_service#ttl CcService#ttl}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicediscovery_service#ttl CcService#ttl}
     */
     readonly ttl?: number;
     /**
     * The DNS record type (e.g., A, AAAA, SRV).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicediscovery_service#type CcService#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicediscovery_service#type CcService#type}
     */
     readonly type?: string;
 }
@@ -679,19 +680,19 @@ export interface DnsConfigProperty {
     /**
     * A list of DNS records associated with the service.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicediscovery_service#dns_records CcService#dns_records}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicediscovery_service#dns_records CcService#dns_records}
     */
     readonly dnsRecords?: DnsRecordProperty[] | cdktn.IResolvable;
     /**
     * The ID of the namespace for the DNS configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicediscovery_service#namespace_id CcService#namespace_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicediscovery_service#namespace_id CcService#namespace_id}
     */
     readonly namespaceId?: string;
     /**
     * The routing policy to use for DNS queries.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicediscovery_service#routing_policy CcService#routing_policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicediscovery_service#routing_policy CcService#routing_policy}
     */
     readonly routingPolicy?: string;
 }
@@ -801,19 +802,19 @@ export interface HealthCheckConfigProperty {
     /**
     * The number of consecutive health check failures that must occur before declaring the service unhealthy.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicediscovery_service#failure_threshold CcService#failure_threshold}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicediscovery_service#failure_threshold CcService#failure_threshold}
     */
     readonly failureThreshold?: number;
     /**
     * The path to ping on the service for health checks.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicediscovery_service#resource_path CcService#resource_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicediscovery_service#resource_path CcService#resource_path}
     */
     readonly resourcePath?: string;
     /**
     * The type of health check (e.g., HTTP, HTTPS, TCP).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicediscovery_service#type CcService#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicediscovery_service#type CcService#type}
     */
     readonly type?: string;
 }
@@ -923,7 +924,7 @@ export interface HealthCheckCustomConfigProperty {
     /**
     * The number of consecutive health check failures required before the service is considered unhealthy.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicediscovery_service#failure_threshold CcService#failure_threshold}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicediscovery_service#failure_threshold CcService#failure_threshold}
     */
     readonly failureThreshold?: number;
 }
@@ -989,13 +990,13 @@ export interface TagProperty {
     /**
     * The key name of the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicediscovery_service#key CcService#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicediscovery_service#key CcService#key}
     */
     readonly key?: string;
     /**
     * The value of the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/servicediscovery_service#value CcService#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicediscovery_service#value CcService#value}
     */
     readonly value?: string;
 }

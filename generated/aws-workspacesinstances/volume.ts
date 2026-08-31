@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_volume
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_volume
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,61 +9,61 @@ export interface CcVolumeProps extends cdktn.TerraformMetaArguments {
     /**
     * The Availability Zone in which to create the volume
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_volume#availability_zone CcVolume#availability_zone}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_volume#availability_zone CcVolume#availability_zone}
     */
     readonly availabilityZone: string;
     /**
     * Indicates whether the volume should be encrypted
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_volume#encrypted CcVolume#encrypted}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_volume#encrypted CcVolume#encrypted}
     */
     readonly encrypted?: boolean | cdktn.IResolvable;
     /**
     * The number of I/O operations per second (IOPS)
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_volume#iops CcVolume#iops}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_volume#iops CcVolume#iops}
     */
     readonly iops?: number;
     /**
     * The identifier of the AWS Key Management Service (AWS KMS) customer master key (CMK) to use for Amazon EBS encryption
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_volume#kms_key_id CcVolume#kms_key_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_volume#kms_key_id CcVolume#kms_key_id}
     */
     readonly kmsKeyId?: string;
     /**
     * The size of the volume, in GiBs
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_volume#size_in_gb CcVolume#size_in_gb}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_volume#size_in_gb CcVolume#size_in_gb}
     */
     readonly sizeInGb?: number;
     /**
     * The snapshot from which to create the volume
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_volume#snapshot_id CcVolume#snapshot_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_volume#snapshot_id CcVolume#snapshot_id}
     */
     readonly snapshotId?: string;
     /**
     * The tags passed to EBS volume
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_volume#tag_specifications CcVolume#tag_specifications}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_volume#tag_specifications CcVolume#tag_specifications}
     */
     readonly tagSpecifications?: CcVolume.TagSpecificationProperty[] | cdktn.IResolvable;
     /**
     * The throughput to provision for a volume, with a maximum of 1,000 MiB/s
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_volume#throughput CcVolume#throughput}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_volume#throughput CcVolume#throughput}
     */
     readonly throughput?: number;
     /**
     * The volume type
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_volume#volume_type CcVolume#volume_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_volume#volume_type CcVolume#volume_type}
     */
     readonly volumeType?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_volume awscc_workspacesinstances_volume}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_volume awscc_workspacesinstances_volume}
 */
 export class CcVolume extends cdktn.TerraformResource {
 
@@ -79,7 +79,7 @@ export class CcVolume extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcVolume resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcVolume to import
-    * @param importFromId The id of the existing CcVolume that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_volume#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcVolume that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_volume#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcVolume to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -91,7 +91,7 @@ export class CcVolume extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_volume awscc_workspacesinstances_volume} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_volume awscc_workspacesinstances_volume} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -101,7 +101,8 @@ export class CcVolume extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_workspacesinstances_volume',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -437,13 +438,13 @@ export interface TagProperty {
     /**
     * The key name of the tag
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_volume#key CcVolume#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_volume#key CcVolume#key}
     */
     readonly key?: string;
     /**
     * The value for the tag
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_volume#value CcVolume#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_volume#value CcVolume#value}
     */
     readonly value?: string;
 }
@@ -551,13 +552,13 @@ export class TagPropertyList extends cdktn.ComplexList {
 }
 export interface TagSpecificationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_volume#resource_type CcVolume#resource_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_volume#resource_type CcVolume#resource_type}
     */
     readonly resourceType?: string;
     /**
     * The tags to apply to the resource
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesinstances_volume#tags CcVolume#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesinstances_volume#tags CcVolume#tags}
     */
     readonly tags?: TagProperty[] | cdktn.IResolvable;
 }

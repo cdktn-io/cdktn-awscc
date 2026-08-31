@@ -1,23 +1,23 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ses_mail_manager_addon_instance
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_addon_instance
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcMailManagerAddonInstanceProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ses_mail_manager_addon_instance#addon_subscription_id CcMailManagerAddonInstance#addon_subscription_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_addon_instance#addon_subscription_id CcMailManagerAddonInstance#addon_subscription_id}
     */
     readonly addonSubscriptionId: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ses_mail_manager_addon_instance#tags CcMailManagerAddonInstance#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_addon_instance#tags CcMailManagerAddonInstance#tags}
     */
     readonly tags?: CcMailManagerAddonInstance.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ses_mail_manager_addon_instance awscc_ses_mail_manager_addon_instance}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_addon_instance awscc_ses_mail_manager_addon_instance}
 */
 export class CcMailManagerAddonInstance extends cdktn.TerraformResource {
 
@@ -33,7 +33,7 @@ export class CcMailManagerAddonInstance extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcMailManagerAddonInstance resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcMailManagerAddonInstance to import
-    * @param importFromId The id of the existing CcMailManagerAddonInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ses_mail_manager_addon_instance#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcMailManagerAddonInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_addon_instance#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcMailManagerAddonInstance to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -45,7 +45,7 @@ export class CcMailManagerAddonInstance extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ses_mail_manager_addon_instance awscc_ses_mail_manager_addon_instance} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_addon_instance awscc_ses_mail_manager_addon_instance} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -55,7 +55,8 @@ export class CcMailManagerAddonInstance extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_ses_mail_manager_addon_instance',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -194,11 +195,11 @@ export function ccMailManagerAddonInstanceTagPropertyToHclTerraform(struct?: CcM
 export namespace CcMailManagerAddonInstance {
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ses_mail_manager_addon_instance#key CcMailManagerAddonInstance#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_addon_instance#key CcMailManagerAddonInstance#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ses_mail_manager_addon_instance#value CcMailManagerAddonInstance#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_addon_instance#value CcMailManagerAddonInstance#value}
     */
     readonly value?: string;
 }

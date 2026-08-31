@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_container_group_definition
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_container_group_definition
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,67 +9,67 @@ export interface CcContainerGroupDefinitionProps extends cdktn.TerraformMetaArgu
     /**
     * The scope of the container group
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_container_group_definition#container_group_type CcContainerGroupDefinition#container_group_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_container_group_definition#container_group_type CcContainerGroupDefinition#container_group_type}
     */
     readonly containerGroupType?: string;
     /**
     * Specifies the information required to run game servers with this container group
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_container_group_definition#game_server_container_definition CcContainerGroupDefinition#game_server_container_definition}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_container_group_definition#game_server_container_definition CcContainerGroupDefinition#game_server_container_definition}
     */
     readonly gameServerContainerDefinition?: CcContainerGroupDefinition.GameServerContainerDefinitionProperty;
     /**
     * A descriptive label for the container group definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_container_group_definition#name CcContainerGroupDefinition#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_container_group_definition#name CcContainerGroupDefinition#name}
     */
     readonly name: string;
     /**
     * The operating system of the container group
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_container_group_definition#operating_system CcContainerGroupDefinition#operating_system}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_container_group_definition#operating_system CcContainerGroupDefinition#operating_system}
     */
     readonly operatingSystem: string;
     /**
     * A specific ContainerGroupDefinition version to be updated
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_container_group_definition#source_version_number CcContainerGroupDefinition#source_version_number}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_container_group_definition#source_version_number CcContainerGroupDefinition#source_version_number}
     */
     readonly sourceVersionNumber?: number;
     /**
     * A collection of support container definitions that define the containers in this group.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_container_group_definition#support_container_definitions CcContainerGroupDefinition#support_container_definitions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_container_group_definition#support_container_definitions CcContainerGroupDefinition#support_container_definitions}
     */
     readonly supportContainerDefinitions?: CcContainerGroupDefinition.SupportContainerDefinitionProperty[] | cdktn.IResolvable;
     /**
     * An array of key-value pairs to apply to this resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_container_group_definition#tags CcContainerGroupDefinition#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_container_group_definition#tags CcContainerGroupDefinition#tags}
     */
     readonly tags?: CcContainerGroupDefinition.TagProperty[] | cdktn.IResolvable;
     /**
     * The total memory limit of container groups following this definition in MiB
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_container_group_definition#total_memory_limit_mebibytes CcContainerGroupDefinition#total_memory_limit_mebibytes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_container_group_definition#total_memory_limit_mebibytes CcContainerGroupDefinition#total_memory_limit_mebibytes}
     */
     readonly totalMemoryLimitMebibytes: number;
     /**
     * The total amount of virtual CPUs on the container group definition
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_container_group_definition#total_vcpu_limit CcContainerGroupDefinition#total_vcpu_limit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_container_group_definition#total_vcpu_limit CcContainerGroupDefinition#total_vcpu_limit}
     */
     readonly totalVcpuLimit: number;
     /**
     * The description of this version
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_container_group_definition#version_description CcContainerGroupDefinition#version_description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_container_group_definition#version_description CcContainerGroupDefinition#version_description}
     */
     readonly versionDescription?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_container_group_definition awscc_gamelift_container_group_definition}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_container_group_definition awscc_gamelift_container_group_definition}
 */
 export class CcContainerGroupDefinition extends cdktn.TerraformResource {
 
@@ -85,7 +85,7 @@ export class CcContainerGroupDefinition extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcContainerGroupDefinition resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcContainerGroupDefinition to import
-    * @param importFromId The id of the existing CcContainerGroupDefinition that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_container_group_definition#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcContainerGroupDefinition that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_container_group_definition#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcContainerGroupDefinition to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -97,7 +97,7 @@ export class CcContainerGroupDefinition extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_container_group_definition awscc_gamelift_container_group_definition} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_container_group_definition awscc_gamelift_container_group_definition} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -107,7 +107,8 @@ export class CcContainerGroupDefinition extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_gamelift_container_group_definition',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -1136,13 +1137,13 @@ export interface ContainerDependencyProperty {
     /**
     * The type of dependency.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_container_group_definition#condition CcContainerGroupDefinition#condition}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_container_group_definition#condition CcContainerGroupDefinition#condition}
     */
     readonly condition?: string;
     /**
     * A descriptive label for the container definition. The container being defined depends on this container's condition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_container_group_definition#container_name CcContainerGroupDefinition#container_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_container_group_definition#container_name CcContainerGroupDefinition#container_name}
     */
     readonly containerName?: string;
 }
@@ -1252,13 +1253,13 @@ export interface ContainerEnvironmentProperty {
     /**
     * The environment variable name.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_container_group_definition#name CcContainerGroupDefinition#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_container_group_definition#name CcContainerGroupDefinition#name}
     */
     readonly name?: string;
     /**
     * The environment variable value.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_container_group_definition#value CcContainerGroupDefinition#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_container_group_definition#value CcContainerGroupDefinition#value}
     */
     readonly value?: string;
 }
@@ -1368,7 +1369,7 @@ export interface LinuxCapabilitiesProperty {
     /**
     * The list of Linux capabilities to add to the container's default configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_container_group_definition#include CcContainerGroupDefinition#include}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_container_group_definition#include CcContainerGroupDefinition#include}
     */
     readonly include?: string[];
 }
@@ -1434,19 +1435,19 @@ export interface ContainerMountPointProperty {
     /**
     * The access permissions for the mounted path.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_container_group_definition#access_level CcContainerGroupDefinition#access_level}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_container_group_definition#access_level CcContainerGroupDefinition#access_level}
     */
     readonly accessLevel?: string;
     /**
     * The path inside the container where the mount is accessible.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_container_group_definition#container_path CcContainerGroupDefinition#container_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_container_group_definition#container_path CcContainerGroupDefinition#container_path}
     */
     readonly containerPath?: string;
     /**
     * The path on the host that will be mounted in the container.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_container_group_definition#instance_path CcContainerGroupDefinition#instance_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_container_group_definition#instance_path CcContainerGroupDefinition#instance_path}
     */
     readonly instancePath?: string;
 }
@@ -1578,19 +1579,19 @@ export interface ContainerPortRangeProperty {
     /**
     * A starting value for the range of allowed port numbers.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_container_group_definition#from_port CcContainerGroupDefinition#from_port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_container_group_definition#from_port CcContainerGroupDefinition#from_port}
     */
     readonly fromPort?: number;
     /**
     * Defines the protocol of these ports.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_container_group_definition#protocol CcContainerGroupDefinition#protocol}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_container_group_definition#protocol CcContainerGroupDefinition#protocol}
     */
     readonly protocol?: string;
     /**
     * An ending value for the range of allowed port numbers. Port numbers are end-inclusive. This value must be equal to or greater than FromPort.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_container_group_definition#to_port CcContainerGroupDefinition#to_port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_container_group_definition#to_port CcContainerGroupDefinition#to_port}
     */
     readonly toPort?: number;
 }
@@ -1722,7 +1723,7 @@ export interface PortConfigurationProperty {
     /**
     * Specifies one or more ranges of ports on a container.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_container_group_definition#container_port_ranges CcContainerGroupDefinition#container_port_ranges}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_container_group_definition#container_port_ranges CcContainerGroupDefinition#container_port_ranges}
     */
     readonly containerPortRanges?: ContainerPortRangeProperty[] | cdktn.IResolvable;
 }
@@ -1788,55 +1789,55 @@ export interface GameServerContainerDefinitionProperty {
     /**
     * A descriptive label for the container definition. Container definition names must be unique with a container group definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_container_group_definition#container_name CcContainerGroupDefinition#container_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_container_group_definition#container_name CcContainerGroupDefinition#container_name}
     */
     readonly containerName?: string;
     /**
     * A list of container dependencies that determines when this container starts up and shuts down. For container groups with multiple containers, dependencies let you define a startup/shutdown sequence across the containers.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_container_group_definition#depends_on CcContainerGroupDefinition#depends_on}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_container_group_definition#depends_on CcContainerGroupDefinition#depends_on}
     */
     readonly dependsOn?: ContainerDependencyProperty[] | cdktn.IResolvable;
     /**
     * The environment variables to pass to a container.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_container_group_definition#environment_override CcContainerGroupDefinition#environment_override}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_container_group_definition#environment_override CcContainerGroupDefinition#environment_override}
     */
     readonly environmentOverride?: ContainerEnvironmentProperty[] | cdktn.IResolvable;
     /**
     * Specifies the image URI of this container.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_container_group_definition#image_uri CcContainerGroupDefinition#image_uri}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_container_group_definition#image_uri CcContainerGroupDefinition#image_uri}
     */
     readonly imageUri?: string;
     /**
     * Linux-specific modifications applied to the default Docker container configuration, such as Linux capabilities.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_container_group_definition#linux_capabilities CcContainerGroupDefinition#linux_capabilities}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_container_group_definition#linux_capabilities CcContainerGroupDefinition#linux_capabilities}
     */
     readonly linuxCapabilities?: LinuxCapabilitiesProperty;
     /**
     * A list of mount point configurations to be used in a container.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_container_group_definition#mount_points CcContainerGroupDefinition#mount_points}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_container_group_definition#mount_points CcContainerGroupDefinition#mount_points}
     */
     readonly mountPoints?: ContainerMountPointProperty[] | cdktn.IResolvable;
     /**
     * Defines the ports on the container.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_container_group_definition#port_configuration CcContainerGroupDefinition#port_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_container_group_definition#port_configuration CcContainerGroupDefinition#port_configuration}
     */
     readonly portConfiguration?: PortConfigurationProperty;
     /**
     * The digest of the container image.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_container_group_definition#resolved_image_digest CcContainerGroupDefinition#resolved_image_digest}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_container_group_definition#resolved_image_digest CcContainerGroupDefinition#resolved_image_digest}
     */
     readonly resolvedImageDigest?: string;
     /**
     * The version of the server SDK used in this container group
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_container_group_definition#server_sdk_version CcContainerGroupDefinition#server_sdk_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_container_group_definition#server_sdk_version CcContainerGroupDefinition#server_sdk_version}
     */
     readonly serverSdkVersion?: string;
 }
@@ -2078,13 +2079,13 @@ export interface DependsOnProperty {
     /**
     * The type of dependency.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_container_group_definition#condition CcContainerGroupDefinition#condition}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_container_group_definition#condition CcContainerGroupDefinition#condition}
     */
     readonly condition?: string;
     /**
     * A descriptive label for the container definition. The container being defined depends on this container's condition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_container_group_definition#container_name CcContainerGroupDefinition#container_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_container_group_definition#container_name CcContainerGroupDefinition#container_name}
     */
     readonly containerName?: string;
 }
@@ -2194,13 +2195,13 @@ export interface EnvironmentOverrideProperty {
     /**
     * The environment variable name.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_container_group_definition#name CcContainerGroupDefinition#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_container_group_definition#name CcContainerGroupDefinition#name}
     */
     readonly name?: string;
     /**
     * The environment variable value.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_container_group_definition#value CcContainerGroupDefinition#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_container_group_definition#value CcContainerGroupDefinition#value}
     */
     readonly value?: string;
 }
@@ -2310,31 +2311,31 @@ export interface ContainerHealthCheckProperty {
     /**
     * A string array representing the command that the container runs to determine if it is healthy.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_container_group_definition#command CcContainerGroupDefinition#command}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_container_group_definition#command CcContainerGroupDefinition#command}
     */
     readonly command?: string[];
     /**
     * How often (in seconds) the health is checked.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_container_group_definition#interval CcContainerGroupDefinition#interval}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_container_group_definition#interval CcContainerGroupDefinition#interval}
     */
     readonly interval?: number;
     /**
     * How many times the process manager will retry the command after a timeout. (The first run of the command does not count as a retry.)
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_container_group_definition#retries CcContainerGroupDefinition#retries}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_container_group_definition#retries CcContainerGroupDefinition#retries}
     */
     readonly retries?: number;
     /**
     * The optional grace period (in seconds) to give a container time to boostrap before teh health check is declared failed.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_container_group_definition#start_period CcContainerGroupDefinition#start_period}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_container_group_definition#start_period CcContainerGroupDefinition#start_period}
     */
     readonly startPeriod?: number;
     /**
     * How many seconds the process manager allows the command to run before canceling it.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_container_group_definition#timeout CcContainerGroupDefinition#timeout}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_container_group_definition#timeout CcContainerGroupDefinition#timeout}
     */
     readonly timeout?: number;
 }
@@ -2488,7 +2489,7 @@ export interface SupportContainerDefinitionsLinuxCapabilitiesProperty {
     /**
     * The list of Linux capabilities to add to the container's default configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_container_group_definition#include CcContainerGroupDefinition#include}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_container_group_definition#include CcContainerGroupDefinition#include}
     */
     readonly include?: string[];
 }
@@ -2554,19 +2555,19 @@ export interface MountPointsProperty {
     /**
     * The access permissions for the mounted path.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_container_group_definition#access_level CcContainerGroupDefinition#access_level}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_container_group_definition#access_level CcContainerGroupDefinition#access_level}
     */
     readonly accessLevel?: string;
     /**
     * The path inside the container where the mount is accessible.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_container_group_definition#container_path CcContainerGroupDefinition#container_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_container_group_definition#container_path CcContainerGroupDefinition#container_path}
     */
     readonly containerPath?: string;
     /**
     * The path on the host that will be mounted in the container.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_container_group_definition#instance_path CcContainerGroupDefinition#instance_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_container_group_definition#instance_path CcContainerGroupDefinition#instance_path}
     */
     readonly instancePath?: string;
 }
@@ -2698,19 +2699,19 @@ export interface ContainerPortRangesProperty {
     /**
     * A starting value for the range of allowed port numbers.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_container_group_definition#from_port CcContainerGroupDefinition#from_port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_container_group_definition#from_port CcContainerGroupDefinition#from_port}
     */
     readonly fromPort?: number;
     /**
     * Defines the protocol of these ports.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_container_group_definition#protocol CcContainerGroupDefinition#protocol}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_container_group_definition#protocol CcContainerGroupDefinition#protocol}
     */
     readonly protocol?: string;
     /**
     * An ending value for the range of allowed port numbers. Port numbers are end-inclusive. This value must be equal to or greater than FromPort.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_container_group_definition#to_port CcContainerGroupDefinition#to_port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_container_group_definition#to_port CcContainerGroupDefinition#to_port}
     */
     readonly toPort?: number;
 }
@@ -2842,7 +2843,7 @@ export interface SupportContainerDefinitionsPortConfigurationProperty {
     /**
     * Specifies one or more ranges of ports on a container.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_container_group_definition#container_port_ranges CcContainerGroupDefinition#container_port_ranges}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_container_group_definition#container_port_ranges CcContainerGroupDefinition#container_port_ranges}
     */
     readonly containerPortRanges?: ContainerPortRangesProperty[] | cdktn.IResolvable;
 }
@@ -2908,73 +2909,73 @@ export interface SupportContainerDefinitionProperty {
     /**
     * A descriptive label for the container definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_container_group_definition#container_name CcContainerGroupDefinition#container_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_container_group_definition#container_name CcContainerGroupDefinition#container_name}
     */
     readonly containerName?: string;
     /**
     * A list of container dependencies that determines when this container starts up and shuts down. For container groups with multiple containers, dependencies let you define a startup/shutdown sequence across the containers.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_container_group_definition#depends_on CcContainerGroupDefinition#depends_on}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_container_group_definition#depends_on CcContainerGroupDefinition#depends_on}
     */
     readonly dependsOn?: DependsOnProperty[] | cdktn.IResolvable;
     /**
     * The environment variables to pass to a container.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_container_group_definition#environment_override CcContainerGroupDefinition#environment_override}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_container_group_definition#environment_override CcContainerGroupDefinition#environment_override}
     */
     readonly environmentOverride?: EnvironmentOverrideProperty[] | cdktn.IResolvable;
     /**
     * Specifies if the container is essential. If an essential container fails a health check, then all containers in the container group will be restarted. You must specify exactly 1 essential container in a container group.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_container_group_definition#essential CcContainerGroupDefinition#essential}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_container_group_definition#essential CcContainerGroupDefinition#essential}
     */
     readonly essential?: boolean | cdktn.IResolvable;
     /**
     * Specifies how the health of the containers will be checked.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_container_group_definition#health_check CcContainerGroupDefinition#health_check}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_container_group_definition#health_check CcContainerGroupDefinition#health_check}
     */
     readonly healthCheck?: ContainerHealthCheckProperty;
     /**
     * Specifies the image URI of this container.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_container_group_definition#image_uri CcContainerGroupDefinition#image_uri}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_container_group_definition#image_uri CcContainerGroupDefinition#image_uri}
     */
     readonly imageUri?: string;
     /**
     * Linux-specific modifications applied to the default Docker container configuration, such as Linux capabilities.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_container_group_definition#linux_capabilities CcContainerGroupDefinition#linux_capabilities}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_container_group_definition#linux_capabilities CcContainerGroupDefinition#linux_capabilities}
     */
     readonly linuxCapabilities?: SupportContainerDefinitionsLinuxCapabilitiesProperty;
     /**
     * The total memory limit of container groups following this definition in MiB
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_container_group_definition#memory_hard_limit_mebibytes CcContainerGroupDefinition#memory_hard_limit_mebibytes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_container_group_definition#memory_hard_limit_mebibytes CcContainerGroupDefinition#memory_hard_limit_mebibytes}
     */
     readonly memoryHardLimitMebibytes?: number;
     /**
     * A list of mount point configurations to be used in a container.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_container_group_definition#mount_points CcContainerGroupDefinition#mount_points}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_container_group_definition#mount_points CcContainerGroupDefinition#mount_points}
     */
     readonly mountPoints?: MountPointsProperty[] | cdktn.IResolvable;
     /**
     * Defines the ports on the container.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_container_group_definition#port_configuration CcContainerGroupDefinition#port_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_container_group_definition#port_configuration CcContainerGroupDefinition#port_configuration}
     */
     readonly portConfiguration?: SupportContainerDefinitionsPortConfigurationProperty;
     /**
     * The digest of the container image.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_container_group_definition#resolved_image_digest CcContainerGroupDefinition#resolved_image_digest}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_container_group_definition#resolved_image_digest CcContainerGroupDefinition#resolved_image_digest}
     */
     readonly resolvedImageDigest?: string;
     /**
     * The number of virtual CPUs to give to the support group
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_container_group_definition#vcpu CcContainerGroupDefinition#vcpu}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_container_group_definition#vcpu CcContainerGroupDefinition#vcpu}
     */
     readonly vcpu?: number;
 }
@@ -3304,13 +3305,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_container_group_definition#key CcContainerGroupDefinition#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_container_group_definition#key CcContainerGroupDefinition#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 0 to 256 Unicode characters in length.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/gamelift_container_group_definition#value CcContainerGroupDefinition#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_container_group_definition#value CcContainerGroupDefinition#value}
     */
     readonly value?: string;
 }

@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_deployment
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_deployment
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,31 +9,31 @@ export interface CcDeploymentProps extends cdktn.TerraformMetaArguments {
     /**
     * The ``DeploymentCanarySettings`` property type specifies settings for the canary deployment.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_deployment#deployment_canary_settings CcDeployment#deployment_canary_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_deployment#deployment_canary_settings CcDeployment#deployment_canary_settings}
     */
     readonly deploymentCanarySettings?: CcDeployment.DeploymentCanarySettingsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_deployment#description CcDeployment#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_deployment#description CcDeployment#description}
     */
     readonly description?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_deployment#rest_api_id CcDeployment#rest_api_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_deployment#rest_api_id CcDeployment#rest_api_id}
     */
     readonly restApiId: string;
     /**
     * The description of the Stage resource for the Deployment resource to create. To specify a stage description, you must also provide a stage name.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_deployment#stage_description CcDeployment#stage_description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_deployment#stage_description CcDeployment#stage_description}
     */
     readonly stageDescription?: CcDeployment.StageDescriptionProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_deployment#stage_name CcDeployment#stage_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_deployment#stage_name CcDeployment#stage_name}
     */
     readonly stageName?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_deployment awscc_apigateway_deployment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_deployment awscc_apigateway_deployment}
 */
 export class CcDeployment extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CcDeployment extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcDeployment resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcDeployment to import
-    * @param importFromId The id of the existing CcDeployment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_deployment#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcDeployment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_deployment#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcDeployment to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CcDeployment extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_deployment awscc_apigateway_deployment} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_deployment awscc_apigateway_deployment} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -71,7 +71,8 @@ export class CcDeployment extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_apigateway_deployment',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -646,15 +647,15 @@ export function ccDeploymentStageDescriptionPropertyToHclTerraform(struct?: CcDe
 export namespace CcDeployment {
 export interface DeploymentCanarySettingsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_deployment#percent_traffic CcDeployment#percent_traffic}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_deployment#percent_traffic CcDeployment#percent_traffic}
     */
     readonly percentTraffic?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_deployment#stage_variable_overrides CcDeployment#stage_variable_overrides}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_deployment#stage_variable_overrides CcDeployment#stage_variable_overrides}
     */
     readonly stageVariableOverrides?: { [key: string]: string };
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_deployment#use_stage_cache CcDeployment#use_stage_cache}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_deployment#use_stage_cache CcDeployment#use_stage_cache}
     */
     readonly useStageCache?: boolean | cdktn.IResolvable;
 }
@@ -762,11 +763,11 @@ export class DeploymentCanarySettingsPropertyOutputReference extends cdktn.Compl
 }
 export interface AccessLogSettingProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_deployment#destination_arn CcDeployment#destination_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_deployment#destination_arn CcDeployment#destination_arn}
     */
     readonly destinationArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_deployment#format CcDeployment#format}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_deployment#format CcDeployment#format}
     */
     readonly format?: string;
 }
@@ -852,15 +853,15 @@ export class AccessLogSettingPropertyOutputReference extends cdktn.ComplexObject
 }
 export interface CanarySettingProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_deployment#percent_traffic CcDeployment#percent_traffic}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_deployment#percent_traffic CcDeployment#percent_traffic}
     */
     readonly percentTraffic?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_deployment#stage_variable_overrides CcDeployment#stage_variable_overrides}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_deployment#stage_variable_overrides CcDeployment#stage_variable_overrides}
     */
     readonly stageVariableOverrides?: { [key: string]: string };
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_deployment#use_stage_cache CcDeployment#use_stage_cache}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_deployment#use_stage_cache CcDeployment#use_stage_cache}
     */
     readonly useStageCache?: boolean | cdktn.IResolvable;
 }
@@ -968,47 +969,47 @@ export class CanarySettingPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface MethodSettingProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_deployment#cache_data_encrypted CcDeployment#cache_data_encrypted}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_deployment#cache_data_encrypted CcDeployment#cache_data_encrypted}
     */
     readonly cacheDataEncrypted?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_deployment#cache_ttl_in_seconds CcDeployment#cache_ttl_in_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_deployment#cache_ttl_in_seconds CcDeployment#cache_ttl_in_seconds}
     */
     readonly cacheTtlInSeconds?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_deployment#caching_enabled CcDeployment#caching_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_deployment#caching_enabled CcDeployment#caching_enabled}
     */
     readonly cachingEnabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_deployment#data_trace_enabled CcDeployment#data_trace_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_deployment#data_trace_enabled CcDeployment#data_trace_enabled}
     */
     readonly dataTraceEnabled?: boolean | cdktn.IResolvable;
     /**
     * The HTTP method.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_deployment#http_method CcDeployment#http_method}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_deployment#http_method CcDeployment#http_method}
     */
     readonly httpMethod?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_deployment#logging_level CcDeployment#logging_level}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_deployment#logging_level CcDeployment#logging_level}
     */
     readonly loggingLevel?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_deployment#metrics_enabled CcDeployment#metrics_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_deployment#metrics_enabled CcDeployment#metrics_enabled}
     */
     readonly metricsEnabled?: boolean | cdktn.IResolvable;
     /**
     * The resource path for this method. Forward slashes (``/``) are encoded as ``~1`` and the initial slash must include a forward slash. For example, the path value ``/resource/subresource`` must be encoded as ``/~1resource~1subresource``. To specify the root path, use only a slash (``/``).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_deployment#resource_path CcDeployment#resource_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_deployment#resource_path CcDeployment#resource_path}
     */
     readonly resourcePath?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_deployment#throttling_burst_limit CcDeployment#throttling_burst_limit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_deployment#throttling_burst_limit CcDeployment#throttling_burst_limit}
     */
     readonly throttlingBurstLimit?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_deployment#throttling_rate_limit CcDeployment#throttling_rate_limit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_deployment#throttling_rate_limit CcDeployment#throttling_rate_limit}
     */
     readonly throttlingRateLimit?: number;
 }
@@ -1294,13 +1295,13 @@ export interface TagProperty {
     /**
     * A string you can use to assign a value. The combination of tag keys and values can help you organize and categorize your resources.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_deployment#key CcDeployment#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_deployment#key CcDeployment#key}
     */
     readonly key?: string;
     /**
     * The value for the specified tag key.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_deployment#value CcDeployment#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_deployment#value CcDeployment#value}
     */
     readonly value?: string;
 }
@@ -1410,114 +1411,114 @@ export interface StageDescriptionProperty {
     /**
     * Specifies settings for logging access in this stage.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_deployment#access_log_setting CcDeployment#access_log_setting}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_deployment#access_log_setting CcDeployment#access_log_setting}
     */
     readonly accessLogSetting?: AccessLogSettingProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_deployment#cache_cluster_enabled CcDeployment#cache_cluster_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_deployment#cache_cluster_enabled CcDeployment#cache_cluster_enabled}
     */
     readonly cacheClusterEnabled?: boolean | cdktn.IResolvable;
     /**
     * The size of the stage's cache cluster. For more information, see [cacheClusterSize](https://docs.aws.amazon.com/apigateway/latest/api/API_CreateStage.html#apigw-CreateStage-request-cacheClusterSize) in the *API Gateway API Reference*.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_deployment#cache_cluster_size CcDeployment#cache_cluster_size}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_deployment#cache_cluster_size CcDeployment#cache_cluster_size}
     */
     readonly cacheClusterSize?: string;
     /**
     * Indicates whether the cached responses are encrypted.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_deployment#cache_data_encrypted CcDeployment#cache_data_encrypted}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_deployment#cache_data_encrypted CcDeployment#cache_data_encrypted}
     */
     readonly cacheDataEncrypted?: boolean | cdktn.IResolvable;
     /**
     * The time-to-live (TTL) period, in seconds, that specifies how long API Gateway caches responses.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_deployment#cache_ttl_in_seconds CcDeployment#cache_ttl_in_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_deployment#cache_ttl_in_seconds CcDeployment#cache_ttl_in_seconds}
     */
     readonly cacheTtlInSeconds?: number;
     /**
     * Indicates whether responses are cached and returned for requests. You must enable a cache cluster on the stage to cache responses. For more information, see [Enable API Gateway Caching in a Stage to Enhance API Performance](https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-caching.html) in the *API Gateway Developer Guide*.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_deployment#caching_enabled CcDeployment#caching_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_deployment#caching_enabled CcDeployment#caching_enabled}
     */
     readonly cachingEnabled?: boolean | cdktn.IResolvable;
     /**
     * Specifies settings for the canary deployment in this stage.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_deployment#canary_setting CcDeployment#canary_setting}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_deployment#canary_setting CcDeployment#canary_setting}
     */
     readonly canarySetting?: CanarySettingProperty;
     /**
     * The identifier of the client certificate that API Gateway uses to call your integration endpoints in the stage.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_deployment#client_certificate_id CcDeployment#client_certificate_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_deployment#client_certificate_id CcDeployment#client_certificate_id}
     */
     readonly clientCertificateId?: string;
     /**
     * Indicates whether data trace logging is enabled for methods in the stage. API Gateway pushes these logs to Amazon CloudWatch Logs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_deployment#data_trace_enabled CcDeployment#data_trace_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_deployment#data_trace_enabled CcDeployment#data_trace_enabled}
     */
     readonly dataTraceEnabled?: boolean | cdktn.IResolvable;
     /**
     * A description of the purpose of the stage.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_deployment#description CcDeployment#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_deployment#description CcDeployment#description}
     */
     readonly description?: string;
     /**
     * The version identifier of the API documentation snapshot.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_deployment#documentation_version CcDeployment#documentation_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_deployment#documentation_version CcDeployment#documentation_version}
     */
     readonly documentationVersion?: string;
     /**
     * The logging level for this method. For valid values, see the ``loggingLevel`` property of the [MethodSetting](https://docs.aws.amazon.com/apigateway/latest/api/API_MethodSetting.html) resource in the *Amazon API Gateway API Reference*.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_deployment#logging_level CcDeployment#logging_level}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_deployment#logging_level CcDeployment#logging_level}
     */
     readonly loggingLevel?: string;
     /**
     * Configures settings for all of the stage's methods.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_deployment#method_settings CcDeployment#method_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_deployment#method_settings CcDeployment#method_settings}
     */
     readonly methodSettings?: MethodSettingProperty[] | cdktn.IResolvable;
     /**
     * Indicates whether Amazon CloudWatch metrics are enabled for methods in the stage.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_deployment#metrics_enabled CcDeployment#metrics_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_deployment#metrics_enabled CcDeployment#metrics_enabled}
     */
     readonly metricsEnabled?: boolean | cdktn.IResolvable;
     /**
     * An array of arbitrary tags (key-value pairs) to associate with the stage.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_deployment#tags CcDeployment#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_deployment#tags CcDeployment#tags}
     */
     readonly tags?: TagProperty[] | cdktn.IResolvable;
     /**
     * The target request burst rate limit. This allows more requests through for a period of time than the target rate limit. For more information, see [Manage API Request Throttling](https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-request-throttling.html) in the *API Gateway Developer Guide*.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_deployment#throttling_burst_limit CcDeployment#throttling_burst_limit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_deployment#throttling_burst_limit CcDeployment#throttling_burst_limit}
     */
     readonly throttlingBurstLimit?: number;
     /**
     * The target request steady-state rate limit. For more information, see [Manage API Request Throttling](https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-request-throttling.html) in the *API Gateway Developer Guide*.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_deployment#throttling_rate_limit CcDeployment#throttling_rate_limit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_deployment#throttling_rate_limit CcDeployment#throttling_rate_limit}
     */
     readonly throttlingRateLimit?: number;
     /**
     * Specifies whether active tracing with X-ray is enabled for this stage.
     *  For more information, see [Trace API Gateway API Execution with X-Ray](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-xray.html) in the *API Gateway Developer Guide*.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_deployment#tracing_enabled CcDeployment#tracing_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_deployment#tracing_enabled CcDeployment#tracing_enabled}
     */
     readonly tracingEnabled?: boolean | cdktn.IResolvable;
     /**
     * A map that defines the stage variables. Variable names must consist of alphanumeric characters, and the values must match the following regular expression: ``[A-Za-z0-9-._~:/?#&=,]+``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigateway_deployment#variables CcDeployment#variables}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_deployment#variables CcDeployment#variables}
     */
     readonly variables?: { [key: string]: string };
 }

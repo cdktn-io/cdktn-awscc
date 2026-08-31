@@ -1,27 +1,27 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_insights_access_scope
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_access_scope
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcNetworkInsightsAccessScopeProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_insights_access_scope#exclude_paths CcNetworkInsightsAccessScope#exclude_paths}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_access_scope#exclude_paths CcNetworkInsightsAccessScope#exclude_paths}
     */
     readonly excludePaths?: CcNetworkInsightsAccessScope.AccessScopePathRequestProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_insights_access_scope#match_paths CcNetworkInsightsAccessScope#match_paths}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_access_scope#match_paths CcNetworkInsightsAccessScope#match_paths}
     */
     readonly matchPaths?: CcNetworkInsightsAccessScope.MatchPathsProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_insights_access_scope#tags CcNetworkInsightsAccessScope#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_access_scope#tags CcNetworkInsightsAccessScope#tags}
     */
     readonly tags?: CcNetworkInsightsAccessScope.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_insights_access_scope awscc_ec2_network_insights_access_scope}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_access_scope awscc_ec2_network_insights_access_scope}
 */
 export class CcNetworkInsightsAccessScope extends cdktn.TerraformResource {
 
@@ -37,7 +37,7 @@ export class CcNetworkInsightsAccessScope extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcNetworkInsightsAccessScope resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcNetworkInsightsAccessScope to import
-    * @param importFromId The id of the existing CcNetworkInsightsAccessScope that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_insights_access_scope#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcNetworkInsightsAccessScope that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_access_scope#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcNetworkInsightsAccessScope to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -49,7 +49,7 @@ export class CcNetworkInsightsAccessScope extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_insights_access_scope awscc_ec2_network_insights_access_scope} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_access_scope awscc_ec2_network_insights_access_scope} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -59,7 +59,8 @@ export class CcNetworkInsightsAccessScope extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_ec2_network_insights_access_scope',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -1036,31 +1037,31 @@ export function ccNetworkInsightsAccessScopeTagPropertyToHclTerraform(struct?: C
 export namespace CcNetworkInsightsAccessScope {
 export interface PacketHeaderStatementRequestProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_insights_access_scope#destination_addresses CcNetworkInsightsAccessScope#destination_addresses}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_access_scope#destination_addresses CcNetworkInsightsAccessScope#destination_addresses}
     */
     readonly destinationAddresses?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_insights_access_scope#destination_ports CcNetworkInsightsAccessScope#destination_ports}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_access_scope#destination_ports CcNetworkInsightsAccessScope#destination_ports}
     */
     readonly destinationPorts?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_insights_access_scope#destination_prefix_lists CcNetworkInsightsAccessScope#destination_prefix_lists}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_access_scope#destination_prefix_lists CcNetworkInsightsAccessScope#destination_prefix_lists}
     */
     readonly destinationPrefixLists?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_insights_access_scope#protocols CcNetworkInsightsAccessScope#protocols}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_access_scope#protocols CcNetworkInsightsAccessScope#protocols}
     */
     readonly protocols?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_insights_access_scope#source_addresses CcNetworkInsightsAccessScope#source_addresses}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_access_scope#source_addresses CcNetworkInsightsAccessScope#source_addresses}
     */
     readonly sourceAddresses?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_insights_access_scope#source_ports CcNetworkInsightsAccessScope#source_ports}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_access_scope#source_ports CcNetworkInsightsAccessScope#source_ports}
     */
     readonly sourcePorts?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_insights_access_scope#source_prefix_lists CcNetworkInsightsAccessScope#source_prefix_lists}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_access_scope#source_prefix_lists CcNetworkInsightsAccessScope#source_prefix_lists}
     */
     readonly sourcePrefixLists?: string[];
 }
@@ -1256,11 +1257,11 @@ export class PacketHeaderStatementRequestPropertyOutputReference extends cdktn.C
 }
 export interface ResourceStatementRequestProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_insights_access_scope#resource_types CcNetworkInsightsAccessScope#resource_types}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_access_scope#resource_types CcNetworkInsightsAccessScope#resource_types}
     */
     readonly resourceTypes?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_insights_access_scope#resources CcNetworkInsightsAccessScope#resources}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_access_scope#resources CcNetworkInsightsAccessScope#resources}
     */
     readonly resources?: string[];
 }
@@ -1346,11 +1347,11 @@ export class ResourceStatementRequestPropertyOutputReference extends cdktn.Compl
 }
 export interface PathStatementRequestProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_insights_access_scope#packet_header_statement CcNetworkInsightsAccessScope#packet_header_statement}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_access_scope#packet_header_statement CcNetworkInsightsAccessScope#packet_header_statement}
     */
     readonly packetHeaderStatement?: PacketHeaderStatementRequestProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_insights_access_scope#resource_statement CcNetworkInsightsAccessScope#resource_statement}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_access_scope#resource_statement CcNetworkInsightsAccessScope#resource_statement}
     */
     readonly resourceStatement?: ResourceStatementRequestProperty;
 }
@@ -1436,31 +1437,31 @@ export class PathStatementRequestPropertyOutputReference extends cdktn.ComplexOb
 }
 export interface ExcludePathsSourcePacketHeaderStatementProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_insights_access_scope#destination_addresses CcNetworkInsightsAccessScope#destination_addresses}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_access_scope#destination_addresses CcNetworkInsightsAccessScope#destination_addresses}
     */
     readonly destinationAddresses?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_insights_access_scope#destination_ports CcNetworkInsightsAccessScope#destination_ports}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_access_scope#destination_ports CcNetworkInsightsAccessScope#destination_ports}
     */
     readonly destinationPorts?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_insights_access_scope#destination_prefix_lists CcNetworkInsightsAccessScope#destination_prefix_lists}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_access_scope#destination_prefix_lists CcNetworkInsightsAccessScope#destination_prefix_lists}
     */
     readonly destinationPrefixLists?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_insights_access_scope#protocols CcNetworkInsightsAccessScope#protocols}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_access_scope#protocols CcNetworkInsightsAccessScope#protocols}
     */
     readonly protocols?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_insights_access_scope#source_addresses CcNetworkInsightsAccessScope#source_addresses}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_access_scope#source_addresses CcNetworkInsightsAccessScope#source_addresses}
     */
     readonly sourceAddresses?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_insights_access_scope#source_ports CcNetworkInsightsAccessScope#source_ports}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_access_scope#source_ports CcNetworkInsightsAccessScope#source_ports}
     */
     readonly sourcePorts?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_insights_access_scope#source_prefix_lists CcNetworkInsightsAccessScope#source_prefix_lists}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_access_scope#source_prefix_lists CcNetworkInsightsAccessScope#source_prefix_lists}
     */
     readonly sourcePrefixLists?: string[];
 }
@@ -1656,11 +1657,11 @@ export class ExcludePathsSourcePacketHeaderStatementPropertyOutputReference exte
 }
 export interface ExcludePathsSourceResourceStatementProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_insights_access_scope#resource_types CcNetworkInsightsAccessScope#resource_types}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_access_scope#resource_types CcNetworkInsightsAccessScope#resource_types}
     */
     readonly resourceTypes?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_insights_access_scope#resources CcNetworkInsightsAccessScope#resources}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_access_scope#resources CcNetworkInsightsAccessScope#resources}
     */
     readonly resources?: string[];
 }
@@ -1746,11 +1747,11 @@ export class ExcludePathsSourceResourceStatementPropertyOutputReference extends 
 }
 export interface ExcludePathsSourceProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_insights_access_scope#packet_header_statement CcNetworkInsightsAccessScope#packet_header_statement}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_access_scope#packet_header_statement CcNetworkInsightsAccessScope#packet_header_statement}
     */
     readonly packetHeaderStatement?: ExcludePathsSourcePacketHeaderStatementProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_insights_access_scope#resource_statement CcNetworkInsightsAccessScope#resource_statement}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_access_scope#resource_statement CcNetworkInsightsAccessScope#resource_statement}
     */
     readonly resourceStatement?: ExcludePathsSourceResourceStatementProperty;
 }
@@ -1836,11 +1837,11 @@ export class ExcludePathsSourcePropertyOutputReference extends cdktn.ComplexObje
 }
 export interface ExcludePathsThroughResourcesResourceStatementProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_insights_access_scope#resource_types CcNetworkInsightsAccessScope#resource_types}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_access_scope#resource_types CcNetworkInsightsAccessScope#resource_types}
     */
     readonly resourceTypes?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_insights_access_scope#resources CcNetworkInsightsAccessScope#resources}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_access_scope#resources CcNetworkInsightsAccessScope#resources}
     */
     readonly resources?: string[];
 }
@@ -1926,7 +1927,7 @@ export class ExcludePathsThroughResourcesResourceStatementPropertyOutputReferenc
 }
 export interface ThroughResourcesStatementRequestProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_insights_access_scope#resource_statement CcNetworkInsightsAccessScope#resource_statement}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_access_scope#resource_statement CcNetworkInsightsAccessScope#resource_statement}
     */
     readonly resourceStatement?: ExcludePathsThroughResourcesResourceStatementProperty;
 }
@@ -2012,15 +2013,15 @@ export class ThroughResourcesStatementRequestPropertyList extends cdktn.ComplexL
 }
 export interface AccessScopePathRequestProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_insights_access_scope#destination CcNetworkInsightsAccessScope#destination}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_access_scope#destination CcNetworkInsightsAccessScope#destination}
     */
     readonly destination?: PathStatementRequestProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_insights_access_scope#source CcNetworkInsightsAccessScope#source}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_access_scope#source CcNetworkInsightsAccessScope#source}
     */
     readonly source?: ExcludePathsSourceProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_insights_access_scope#through_resources CcNetworkInsightsAccessScope#through_resources}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_access_scope#through_resources CcNetworkInsightsAccessScope#through_resources}
     */
     readonly throughResources?: ThroughResourcesStatementRequestProperty[] | cdktn.IResolvable;
 }
@@ -2150,31 +2151,31 @@ export class AccessScopePathRequestPropertyList extends cdktn.ComplexList {
 }
 export interface MatchPathsDestinationPacketHeaderStatementProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_insights_access_scope#destination_addresses CcNetworkInsightsAccessScope#destination_addresses}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_access_scope#destination_addresses CcNetworkInsightsAccessScope#destination_addresses}
     */
     readonly destinationAddresses?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_insights_access_scope#destination_ports CcNetworkInsightsAccessScope#destination_ports}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_access_scope#destination_ports CcNetworkInsightsAccessScope#destination_ports}
     */
     readonly destinationPorts?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_insights_access_scope#destination_prefix_lists CcNetworkInsightsAccessScope#destination_prefix_lists}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_access_scope#destination_prefix_lists CcNetworkInsightsAccessScope#destination_prefix_lists}
     */
     readonly destinationPrefixLists?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_insights_access_scope#protocols CcNetworkInsightsAccessScope#protocols}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_access_scope#protocols CcNetworkInsightsAccessScope#protocols}
     */
     readonly protocols?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_insights_access_scope#source_addresses CcNetworkInsightsAccessScope#source_addresses}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_access_scope#source_addresses CcNetworkInsightsAccessScope#source_addresses}
     */
     readonly sourceAddresses?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_insights_access_scope#source_ports CcNetworkInsightsAccessScope#source_ports}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_access_scope#source_ports CcNetworkInsightsAccessScope#source_ports}
     */
     readonly sourcePorts?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_insights_access_scope#source_prefix_lists CcNetworkInsightsAccessScope#source_prefix_lists}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_access_scope#source_prefix_lists CcNetworkInsightsAccessScope#source_prefix_lists}
     */
     readonly sourcePrefixLists?: string[];
 }
@@ -2370,11 +2371,11 @@ export class MatchPathsDestinationPacketHeaderStatementPropertyOutputReference e
 }
 export interface MatchPathsDestinationResourceStatementProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_insights_access_scope#resource_types CcNetworkInsightsAccessScope#resource_types}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_access_scope#resource_types CcNetworkInsightsAccessScope#resource_types}
     */
     readonly resourceTypes?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_insights_access_scope#resources CcNetworkInsightsAccessScope#resources}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_access_scope#resources CcNetworkInsightsAccessScope#resources}
     */
     readonly resources?: string[];
 }
@@ -2460,11 +2461,11 @@ export class MatchPathsDestinationResourceStatementPropertyOutputReference exten
 }
 export interface DestinationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_insights_access_scope#packet_header_statement CcNetworkInsightsAccessScope#packet_header_statement}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_access_scope#packet_header_statement CcNetworkInsightsAccessScope#packet_header_statement}
     */
     readonly packetHeaderStatement?: MatchPathsDestinationPacketHeaderStatementProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_insights_access_scope#resource_statement CcNetworkInsightsAccessScope#resource_statement}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_access_scope#resource_statement CcNetworkInsightsAccessScope#resource_statement}
     */
     readonly resourceStatement?: MatchPathsDestinationResourceStatementProperty;
 }
@@ -2550,31 +2551,31 @@ export class DestinationPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface MatchPathsSourcePacketHeaderStatementProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_insights_access_scope#destination_addresses CcNetworkInsightsAccessScope#destination_addresses}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_access_scope#destination_addresses CcNetworkInsightsAccessScope#destination_addresses}
     */
     readonly destinationAddresses?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_insights_access_scope#destination_ports CcNetworkInsightsAccessScope#destination_ports}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_access_scope#destination_ports CcNetworkInsightsAccessScope#destination_ports}
     */
     readonly destinationPorts?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_insights_access_scope#destination_prefix_lists CcNetworkInsightsAccessScope#destination_prefix_lists}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_access_scope#destination_prefix_lists CcNetworkInsightsAccessScope#destination_prefix_lists}
     */
     readonly destinationPrefixLists?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_insights_access_scope#protocols CcNetworkInsightsAccessScope#protocols}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_access_scope#protocols CcNetworkInsightsAccessScope#protocols}
     */
     readonly protocols?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_insights_access_scope#source_addresses CcNetworkInsightsAccessScope#source_addresses}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_access_scope#source_addresses CcNetworkInsightsAccessScope#source_addresses}
     */
     readonly sourceAddresses?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_insights_access_scope#source_ports CcNetworkInsightsAccessScope#source_ports}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_access_scope#source_ports CcNetworkInsightsAccessScope#source_ports}
     */
     readonly sourcePorts?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_insights_access_scope#source_prefix_lists CcNetworkInsightsAccessScope#source_prefix_lists}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_access_scope#source_prefix_lists CcNetworkInsightsAccessScope#source_prefix_lists}
     */
     readonly sourcePrefixLists?: string[];
 }
@@ -2770,11 +2771,11 @@ export class MatchPathsSourcePacketHeaderStatementPropertyOutputReference extend
 }
 export interface MatchPathsSourceResourceStatementProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_insights_access_scope#resource_types CcNetworkInsightsAccessScope#resource_types}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_access_scope#resource_types CcNetworkInsightsAccessScope#resource_types}
     */
     readonly resourceTypes?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_insights_access_scope#resources CcNetworkInsightsAccessScope#resources}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_access_scope#resources CcNetworkInsightsAccessScope#resources}
     */
     readonly resources?: string[];
 }
@@ -2860,11 +2861,11 @@ export class MatchPathsSourceResourceStatementPropertyOutputReference extends cd
 }
 export interface MatchPathsSourceProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_insights_access_scope#packet_header_statement CcNetworkInsightsAccessScope#packet_header_statement}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_access_scope#packet_header_statement CcNetworkInsightsAccessScope#packet_header_statement}
     */
     readonly packetHeaderStatement?: MatchPathsSourcePacketHeaderStatementProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_insights_access_scope#resource_statement CcNetworkInsightsAccessScope#resource_statement}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_access_scope#resource_statement CcNetworkInsightsAccessScope#resource_statement}
     */
     readonly resourceStatement?: MatchPathsSourceResourceStatementProperty;
 }
@@ -2950,11 +2951,11 @@ export class MatchPathsSourcePropertyOutputReference extends cdktn.ComplexObject
 }
 export interface MatchPathsThroughResourcesResourceStatementProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_insights_access_scope#resource_types CcNetworkInsightsAccessScope#resource_types}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_access_scope#resource_types CcNetworkInsightsAccessScope#resource_types}
     */
     readonly resourceTypes?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_insights_access_scope#resources CcNetworkInsightsAccessScope#resources}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_access_scope#resources CcNetworkInsightsAccessScope#resources}
     */
     readonly resources?: string[];
 }
@@ -3040,7 +3041,7 @@ export class MatchPathsThroughResourcesResourceStatementPropertyOutputReference 
 }
 export interface ThroughResourcesProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_insights_access_scope#resource_statement CcNetworkInsightsAccessScope#resource_statement}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_access_scope#resource_statement CcNetworkInsightsAccessScope#resource_statement}
     */
     readonly resourceStatement?: MatchPathsThroughResourcesResourceStatementProperty;
 }
@@ -3126,15 +3127,15 @@ export class ThroughResourcesPropertyList extends cdktn.ComplexList {
 }
 export interface MatchPathsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_insights_access_scope#destination CcNetworkInsightsAccessScope#destination}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_access_scope#destination CcNetworkInsightsAccessScope#destination}
     */
     readonly destination?: DestinationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_insights_access_scope#source CcNetworkInsightsAccessScope#source}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_access_scope#source CcNetworkInsightsAccessScope#source}
     */
     readonly source?: MatchPathsSourceProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_insights_access_scope#through_resources CcNetworkInsightsAccessScope#through_resources}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_access_scope#through_resources CcNetworkInsightsAccessScope#through_resources}
     */
     readonly throughResources?: ThroughResourcesProperty[] | cdktn.IResolvable;
 }
@@ -3264,11 +3265,11 @@ export class MatchPathsPropertyList extends cdktn.ComplexList {
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_insights_access_scope#key CcNetworkInsightsAccessScope#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_access_scope#key CcNetworkInsightsAccessScope#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_network_insights_access_scope#value CcNetworkInsightsAccessScope#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_access_scope#value CcNetworkInsightsAccessScope#value}
     */
     readonly value?: string;
 }

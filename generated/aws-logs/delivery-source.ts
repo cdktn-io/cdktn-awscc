@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/logs_delivery_source
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/logs_delivery_source
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,37 +9,37 @@ export interface CcDeliverySourceProps extends cdktn.TerraformMetaArguments {
     /**
     * A map of key-value pairs to configure the delivery source. Both keys and values must be between 1 and 255 characters in length.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/logs_delivery_source#delivery_source_configuration CcDeliverySource#delivery_source_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/logs_delivery_source#delivery_source_configuration CcDeliverySource#delivery_source_configuration}
     */
     readonly deliverySourceConfiguration?: { [key: string]: string };
     /**
     * The type of logs being delivered. Only mandatory when the resourceArn could match more than one. In such a case, the error message will contain all the possible options.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/logs_delivery_source#log_type CcDeliverySource#log_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/logs_delivery_source#log_type CcDeliverySource#log_type}
     */
     readonly logType?: string;
     /**
     * The unique name of the Log source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/logs_delivery_source#name CcDeliverySource#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/logs_delivery_source#name CcDeliverySource#name}
     */
     readonly name: string;
     /**
     * The ARN of the resource that will be sending the logs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/logs_delivery_source#resource_arn CcDeliverySource#resource_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/logs_delivery_source#resource_arn CcDeliverySource#resource_arn}
     */
     readonly resourceArn?: string;
     /**
     * The tags that have been assigned to this delivery source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/logs_delivery_source#tags CcDeliverySource#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/logs_delivery_source#tags CcDeliverySource#tags}
     */
     readonly tags?: CcDeliverySource.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/logs_delivery_source awscc_logs_delivery_source}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/logs_delivery_source awscc_logs_delivery_source}
 */
 export class CcDeliverySource extends cdktn.TerraformResource {
 
@@ -55,7 +55,7 @@ export class CcDeliverySource extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcDeliverySource resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcDeliverySource to import
-    * @param importFromId The id of the existing CcDeliverySource that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/logs_delivery_source#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcDeliverySource that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/logs_delivery_source#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcDeliverySource to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -67,7 +67,7 @@ export class CcDeliverySource extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/logs_delivery_source awscc_logs_delivery_source} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/logs_delivery_source awscc_logs_delivery_source} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -77,7 +77,8 @@ export class CcDeliverySource extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_logs_delivery_source',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -300,13 +301,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/logs_delivery_source#key CcDeliverySource#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/logs_delivery_source#key CcDeliverySource#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 0 to 256 Unicode
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/logs_delivery_source#value CcDeliverySource#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/logs_delivery_source#value CcDeliverySource#value}
     */
     readonly value?: string;
 }

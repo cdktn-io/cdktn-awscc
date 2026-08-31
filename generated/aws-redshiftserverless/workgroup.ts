@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/redshiftserverless_workgroup
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshiftserverless_workgroup
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,113 +9,113 @@ export interface CcWorkgroupProps extends cdktn.TerraformMetaArguments {
     /**
     * The base compute capacity of the workgroup in Redshift Processing Units (RPUs).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/redshiftserverless_workgroup#base_capacity CcWorkgroup#base_capacity}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshiftserverless_workgroup#base_capacity CcWorkgroup#base_capacity}
     */
     readonly baseCapacity?: number;
     /**
     * A list of parameters to set for finer control over a database. Available options are datestyle, enable_user_activity_logging, query_group, search_path, max_query_execution_time, and require_ssl.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/redshiftserverless_workgroup#config_parameters CcWorkgroup#config_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshiftserverless_workgroup#config_parameters CcWorkgroup#config_parameters}
     */
     readonly configParameters?: CcWorkgroup.ConfigParameterProperty[] | cdktn.IResolvable;
     /**
     * The value that specifies whether to enable enhanced virtual private cloud (VPC) routing, which forces Amazon Redshift Serverless to route traffic through your VPC.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/redshiftserverless_workgroup#enhanced_vpc_routing CcWorkgroup#enhanced_vpc_routing}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshiftserverless_workgroup#enhanced_vpc_routing CcWorkgroup#enhanced_vpc_routing}
     */
     readonly enhancedVpcRouting?: boolean | cdktn.IResolvable;
     /**
     * The max compute capacity of the workgroup in Redshift Processing Units (RPUs).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/redshiftserverless_workgroup#max_capacity CcWorkgroup#max_capacity}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshiftserverless_workgroup#max_capacity CcWorkgroup#max_capacity}
     */
     readonly maxCapacity?: number;
     /**
     * The namespace the workgroup is associated with.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/redshiftserverless_workgroup#namespace_name CcWorkgroup#namespace_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshiftserverless_workgroup#namespace_name CcWorkgroup#namespace_name}
     */
     readonly namespaceName?: string;
     /**
     * The custom port to use when connecting to a workgroup. Valid port ranges are 5431-5455 and 8191-8215. The default is 5439.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/redshiftserverless_workgroup#port CcWorkgroup#port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshiftserverless_workgroup#port CcWorkgroup#port}
     */
     readonly port?: number;
     /**
     * A property that represents the price performance target settings for the workgroup.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/redshiftserverless_workgroup#price_performance_target CcWorkgroup#price_performance_target}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshiftserverless_workgroup#price_performance_target CcWorkgroup#price_performance_target}
     */
     readonly pricePerformanceTarget?: CcWorkgroup.PerformanceTargetProperty;
     /**
     * A value that specifies whether the workgroup can be accessible from a public network.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/redshiftserverless_workgroup#publicly_accessible CcWorkgroup#publicly_accessible}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshiftserverless_workgroup#publicly_accessible CcWorkgroup#publicly_accessible}
     */
     readonly publiclyAccessible?: boolean | cdktn.IResolvable;
     /**
     * The identifier of the recovery point to restore the namespace from. When this resource is first created, the namespace is restored from this recovery point. On subsequent updates, a restore occurs only when RecoveryPointId changes from its previous value. If the value is unchanged or removed, no restore takes place and existing data is preserved.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/redshiftserverless_workgroup#recovery_point_id CcWorkgroup#recovery_point_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshiftserverless_workgroup#recovery_point_id CcWorkgroup#recovery_point_id}
     */
     readonly recoveryPointId?: string;
     /**
     * A list of security group IDs to associate with the workgroup.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/redshiftserverless_workgroup#security_group_ids CcWorkgroup#security_group_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshiftserverless_workgroup#security_group_ids CcWorkgroup#security_group_ids}
     */
     readonly securityGroupIds?: string[];
     /**
     * The Amazon Resource Name (ARN) of the snapshot to restore the namespace from. Specify either SnapshotArn or SnapshotName, but not both. When this resource is first created, the namespace is restored from this snapshot. On subsequent updates, a restore occurs only when SnapshotArn changes from its previous value. If the value is unchanged or removed, no restore takes place and existing data is preserved.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/redshiftserverless_workgroup#snapshot_arn CcWorkgroup#snapshot_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshiftserverless_workgroup#snapshot_arn CcWorkgroup#snapshot_arn}
     */
     readonly snapshotArn?: string;
     /**
     * The name of the snapshot to restore the namespace from. Because snapshot names are unique only within an account, also specify SnapshotOwnerAccount when restoring from a snapshot owned by a different account. Specify either SnapshotName or SnapshotArn, but not both. When this resource is first created, the namespace is restored from this snapshot. On subsequent updates, a restore occurs only when SnapshotName or SnapshotOwnerAccount changes from its previous value. If both values are unchanged or SnapshotName is removed, no restore takes place and existing data is preserved.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/redshiftserverless_workgroup#snapshot_name CcWorkgroup#snapshot_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshiftserverless_workgroup#snapshot_name CcWorkgroup#snapshot_name}
     */
     readonly snapshotName?: string;
     /**
     * The AWS account ID that owns the snapshot. Required when restoring from a snapshot shared by another account. Used in combination with SnapshotName. On updates, changing this value while SnapshotName is set triggers a restore from the newly referenced snapshot. If the value is unchanged, no restore takes place and existing data is preserved.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/redshiftserverless_workgroup#snapshot_owner_account CcWorkgroup#snapshot_owner_account}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshiftserverless_workgroup#snapshot_owner_account CcWorkgroup#snapshot_owner_account}
     */
     readonly snapshotOwnerAccount?: string;
     /**
     * A list of subnet IDs the workgroup is associated with.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/redshiftserverless_workgroup#subnet_ids CcWorkgroup#subnet_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshiftserverless_workgroup#subnet_ids CcWorkgroup#subnet_ids}
     */
     readonly subnetIds?: string[];
     /**
     * The map of the key-value pairs used to tag the workgroup.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/redshiftserverless_workgroup#tags CcWorkgroup#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshiftserverless_workgroup#tags CcWorkgroup#tags}
     */
     readonly tags?: CcWorkgroup.TagProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/redshiftserverless_workgroup#track_name CcWorkgroup#track_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshiftserverless_workgroup#track_name CcWorkgroup#track_name}
     */
     readonly trackName?: string;
     /**
     * Definition for workgroup resource
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/redshiftserverless_workgroup#workgroup CcWorkgroup#workgroup}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshiftserverless_workgroup#workgroup CcWorkgroup#workgroup}
     */
     readonly workgroup?: CcWorkgroup.WorkgroupProperty;
     /**
     * The name of the workgroup.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/redshiftserverless_workgroup#workgroup_name CcWorkgroup#workgroup_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshiftserverless_workgroup#workgroup_name CcWorkgroup#workgroup_name}
     */
     readonly workgroupName: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/redshiftserverless_workgroup awscc_redshiftserverless_workgroup}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshiftserverless_workgroup awscc_redshiftserverless_workgroup}
 */
 export class CcWorkgroup extends cdktn.TerraformResource {
 
@@ -131,7 +131,7 @@ export class CcWorkgroup extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcWorkgroup resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcWorkgroup to import
-    * @param importFromId The id of the existing CcWorkgroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/redshiftserverless_workgroup#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcWorkgroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshiftserverless_workgroup#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcWorkgroup to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -143,7 +143,7 @@ export class CcWorkgroup extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/redshiftserverless_workgroup awscc_redshiftserverless_workgroup} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshiftserverless_workgroup awscc_redshiftserverless_workgroup} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -153,7 +153,8 @@ export class CcWorkgroup extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_redshiftserverless_workgroup',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -955,11 +956,11 @@ export function ccWorkgroupWorkgroupPropertyToHclTerraform(struct?: CcWorkgroup.
 export namespace CcWorkgroup {
 export interface ConfigParameterProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/redshiftserverless_workgroup#parameter_key CcWorkgroup#parameter_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshiftserverless_workgroup#parameter_key CcWorkgroup#parameter_key}
     */
     readonly parameterKey?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/redshiftserverless_workgroup#parameter_value CcWorkgroup#parameter_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshiftserverless_workgroup#parameter_value CcWorkgroup#parameter_value}
     */
     readonly parameterValue?: string;
 }
@@ -1067,11 +1068,11 @@ export class ConfigParameterPropertyList extends cdktn.ComplexList {
 }
 export interface PerformanceTargetProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/redshiftserverless_workgroup#level CcWorkgroup#level}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshiftserverless_workgroup#level CcWorkgroup#level}
     */
     readonly level?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/redshiftserverless_workgroup#status CcWorkgroup#status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshiftserverless_workgroup#status CcWorkgroup#status}
     */
     readonly status?: string;
 }
@@ -1157,11 +1158,11 @@ export class PerformanceTargetPropertyOutputReference extends cdktn.ComplexObjec
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/redshiftserverless_workgroup#key CcWorkgroup#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshiftserverless_workgroup#key CcWorkgroup#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/redshiftserverless_workgroup#value CcWorkgroup#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshiftserverless_workgroup#value CcWorkgroup#value}
     */
     readonly value?: string;
 }
@@ -1328,19 +1329,19 @@ export class ConfigParametersPropertyList extends cdktn.ComplexList {
 }
 export interface NetworkInterfaceProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/redshiftserverless_workgroup#availability_zone CcWorkgroup#availability_zone}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshiftserverless_workgroup#availability_zone CcWorkgroup#availability_zone}
     */
     readonly availabilityZone?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/redshiftserverless_workgroup#network_interface_id CcWorkgroup#network_interface_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshiftserverless_workgroup#network_interface_id CcWorkgroup#network_interface_id}
     */
     readonly networkInterfaceId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/redshiftserverless_workgroup#private_ip_address CcWorkgroup#private_ip_address}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshiftserverless_workgroup#private_ip_address CcWorkgroup#private_ip_address}
     */
     readonly privateIpAddress?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/redshiftserverless_workgroup#subnet_id CcWorkgroup#subnet_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshiftserverless_workgroup#subnet_id CcWorkgroup#subnet_id}
     */
     readonly subnetId?: string;
 }
@@ -1492,15 +1493,15 @@ export class NetworkInterfacePropertyList extends cdktn.ComplexList {
 }
 export interface VpcEndpointProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/redshiftserverless_workgroup#network_interfaces CcWorkgroup#network_interfaces}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshiftserverless_workgroup#network_interfaces CcWorkgroup#network_interfaces}
     */
     readonly networkInterfaces?: NetworkInterfaceProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/redshiftserverless_workgroup#vpc_endpoint_id CcWorkgroup#vpc_endpoint_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshiftserverless_workgroup#vpc_endpoint_id CcWorkgroup#vpc_endpoint_id}
     */
     readonly vpcEndpointId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/redshiftserverless_workgroup#vpc_id CcWorkgroup#vpc_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshiftserverless_workgroup#vpc_id CcWorkgroup#vpc_id}
     */
     readonly vpcId?: string;
 }
@@ -1630,7 +1631,7 @@ export class VpcEndpointPropertyList extends cdktn.ComplexList {
 }
 export interface EndpointProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/redshiftserverless_workgroup#vpc_endpoints CcWorkgroup#vpc_endpoints}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshiftserverless_workgroup#vpc_endpoints CcWorkgroup#vpc_endpoints}
     */
     readonly vpcEndpoints?: VpcEndpointProperty[] | cdktn.IResolvable;
 }
@@ -1704,11 +1705,11 @@ export class EndpointPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface PricePerformanceTargetProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/redshiftserverless_workgroup#level CcWorkgroup#level}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshiftserverless_workgroup#level CcWorkgroup#level}
     */
     readonly level?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/redshiftserverless_workgroup#status CcWorkgroup#status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshiftserverless_workgroup#status CcWorkgroup#status}
     */
     readonly status?: string;
 }
@@ -1794,11 +1795,11 @@ export class PricePerformanceTargetPropertyOutputReference extends cdktn.Complex
 }
 export interface WorkgroupProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/redshiftserverless_workgroup#endpoint CcWorkgroup#endpoint}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshiftserverless_workgroup#endpoint CcWorkgroup#endpoint}
     */
     readonly endpoint?: EndpointProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/redshiftserverless_workgroup#price_performance_target CcWorkgroup#price_performance_target}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshiftserverless_workgroup#price_performance_target CcWorkgroup#price_performance_target}
     */
     readonly pricePerformanceTarget?: PricePerformanceTargetProperty;
 }

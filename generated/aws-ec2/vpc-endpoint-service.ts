@@ -1,53 +1,53 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_vpc_endpoint_service
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc_endpoint_service
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcVPCEndpointServiceProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_vpc_endpoint_service#acceptance_required CcVPCEndpointService#acceptance_required}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc_endpoint_service#acceptance_required CcVPCEndpointService#acceptance_required}
     */
     readonly acceptanceRequired?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_vpc_endpoint_service#contributor_insights_enabled CcVPCEndpointService#contributor_insights_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc_endpoint_service#contributor_insights_enabled CcVPCEndpointService#contributor_insights_enabled}
     */
     readonly contributorInsightsEnabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_vpc_endpoint_service#gateway_load_balancer_arns CcVPCEndpointService#gateway_load_balancer_arns}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc_endpoint_service#gateway_load_balancer_arns CcVPCEndpointService#gateway_load_balancer_arns}
     */
     readonly gatewayLoadBalancerArns?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_vpc_endpoint_service#network_load_balancer_arns CcVPCEndpointService#network_load_balancer_arns}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc_endpoint_service#network_load_balancer_arns CcVPCEndpointService#network_load_balancer_arns}
     */
     readonly networkLoadBalancerArns?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_vpc_endpoint_service#payer_responsibility CcVPCEndpointService#payer_responsibility}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc_endpoint_service#payer_responsibility CcVPCEndpointService#payer_responsibility}
     */
     readonly payerResponsibility?: string;
     /**
     * Specify which Ip Address types are supported for VPC endpoint service.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_vpc_endpoint_service#supported_ip_address_types CcVPCEndpointService#supported_ip_address_types}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc_endpoint_service#supported_ip_address_types CcVPCEndpointService#supported_ip_address_types}
     */
     readonly supportedIpAddressTypes?: string[];
     /**
     * The Regions from which service consumers can access the service.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_vpc_endpoint_service#supported_regions CcVPCEndpointService#supported_regions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc_endpoint_service#supported_regions CcVPCEndpointService#supported_regions}
     */
     readonly supportedRegions?: string[];
     /**
     * The tags to add to the VPC endpoint service.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_vpc_endpoint_service#tags CcVPCEndpointService#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc_endpoint_service#tags CcVPCEndpointService#tags}
     */
     readonly tags?: CcVPCEndpointService.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_vpc_endpoint_service awscc_ec2_vpc_endpoint_service}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc_endpoint_service awscc_ec2_vpc_endpoint_service}
 */
 export class CcVPCEndpointService extends cdktn.TerraformResource {
 
@@ -63,7 +63,7 @@ export class CcVPCEndpointService extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcVPCEndpointService resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcVPCEndpointService to import
-    * @param importFromId The id of the existing CcVPCEndpointService that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_vpc_endpoint_service#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcVPCEndpointService that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc_endpoint_service#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcVPCEndpointService to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -75,7 +75,7 @@ export class CcVPCEndpointService extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_vpc_endpoint_service awscc_ec2_vpc_endpoint_service} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc_endpoint_service awscc_ec2_vpc_endpoint_service} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -85,7 +85,8 @@ export class CcVPCEndpointService extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_ec2_vpc_endpoint_service',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -361,11 +362,11 @@ export function ccVPCEndpointServiceTagPropertyToHclTerraform(struct?: CcVPCEndp
 export namespace CcVPCEndpointService {
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_vpc_endpoint_service#key CcVPCEndpointService#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc_endpoint_service#key CcVPCEndpointService#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_vpc_endpoint_service#value CcVPCEndpointService#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc_endpoint_service#value CcVPCEndpointService#value}
     */
     readonly value?: string;
 }

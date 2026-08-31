@@ -1,63 +1,63 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_transformer
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_transformer
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcTransformerProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_transformer#edi_type CcTransformer#edi_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_transformer#edi_type CcTransformer#edi_type}
     */
     readonly ediType?: CcTransformer.EdiTypeProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_transformer#file_format CcTransformer#file_format}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_transformer#file_format CcTransformer#file_format}
     */
     readonly fileFormat?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_transformer#input_conversion CcTransformer#input_conversion}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_transformer#input_conversion CcTransformer#input_conversion}
     */
     readonly inputConversion?: CcTransformer.InputConversionProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_transformer#mapping CcTransformer#mapping}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_transformer#mapping CcTransformer#mapping}
     */
     readonly mapping?: CcTransformer.MappingProperty;
     /**
     * This shape is deprecated: This is a legacy trait. Please use input-conversion or output-conversion.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_transformer#mapping_template CcTransformer#mapping_template}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_transformer#mapping_template CcTransformer#mapping_template}
     */
     readonly mappingTemplate?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_transformer#name CcTransformer#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_transformer#name CcTransformer#name}
     */
     readonly name: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_transformer#output_conversion CcTransformer#output_conversion}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_transformer#output_conversion CcTransformer#output_conversion}
     */
     readonly outputConversion?: CcTransformer.OutputConversionProperty;
     /**
     * This shape is deprecated: This is a legacy trait. Please use input-conversion or output-conversion.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_transformer#sample_document CcTransformer#sample_document}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_transformer#sample_document CcTransformer#sample_document}
     */
     readonly sampleDocument?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_transformer#sample_documents CcTransformer#sample_documents}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_transformer#sample_documents CcTransformer#sample_documents}
     */
     readonly sampleDocuments?: CcTransformer.SampleDocumentsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_transformer#status CcTransformer#status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_transformer#status CcTransformer#status}
     */
     readonly status: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_transformer#tags CcTransformer#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_transformer#tags CcTransformer#tags}
     */
     readonly tags?: CcTransformer.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_transformer awscc_b2bi_transformer}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_transformer awscc_b2bi_transformer}
 */
 export class CcTransformer extends cdktn.TerraformResource {
 
@@ -73,7 +73,7 @@ export class CcTransformer extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcTransformer resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcTransformer to import
-    * @param importFromId The id of the existing CcTransformer that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_transformer#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcTransformer that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_transformer#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcTransformer to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -85,7 +85,7 @@ export class CcTransformer extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_transformer awscc_b2bi_transformer} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_transformer awscc_b2bi_transformer} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -95,7 +95,8 @@ export class CcTransformer extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_b2bi_transformer',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -1444,11 +1445,11 @@ export function ccTransformerTagPropertyToHclTerraform(struct?: CcTransformer.Ta
 export namespace CcTransformer {
 export interface X12DetailsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_transformer#transaction_set CcTransformer#transaction_set}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_transformer#transaction_set CcTransformer#transaction_set}
     */
     readonly transactionSet?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_transformer#version CcTransformer#version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_transformer#version CcTransformer#version}
     */
     readonly version?: string;
 }
@@ -1534,7 +1535,7 @@ export class X12DetailsPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface EdiTypeProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_transformer#x12_details CcTransformer#x12_details}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_transformer#x12_details CcTransformer#x12_details}
     */
     readonly x12Details?: X12DetailsProperty;
 }
@@ -1598,7 +1599,7 @@ export class EdiTypePropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface X12SplitOptionsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_transformer#split_by CcTransformer#split_by}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_transformer#split_by CcTransformer#split_by}
     */
     readonly splitBy?: string;
 }
@@ -1662,15 +1663,15 @@ export class X12SplitOptionsPropertyOutputReference extends cdktn.ComplexObject 
 }
 export interface X12CodeListValidationRuleProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_transformer#codes_to_add CcTransformer#codes_to_add}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_transformer#codes_to_add CcTransformer#codes_to_add}
     */
     readonly codesToAdd?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_transformer#codes_to_remove CcTransformer#codes_to_remove}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_transformer#codes_to_remove CcTransformer#codes_to_remove}
     */
     readonly codesToRemove?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_transformer#element_id CcTransformer#element_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_transformer#element_id CcTransformer#element_id}
     */
     readonly elementId?: string;
 }
@@ -1778,15 +1779,15 @@ export class X12CodeListValidationRulePropertyOutputReference extends cdktn.Comp
 }
 export interface X12ElementLengthValidationRuleProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_transformer#element_id CcTransformer#element_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_transformer#element_id CcTransformer#element_id}
     */
     readonly elementId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_transformer#max_length CcTransformer#max_length}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_transformer#max_length CcTransformer#max_length}
     */
     readonly maxLength?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_transformer#min_length CcTransformer#min_length}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_transformer#min_length CcTransformer#min_length}
     */
     readonly minLength?: number;
 }
@@ -1894,11 +1895,11 @@ export class X12ElementLengthValidationRulePropertyOutputReference extends cdktn
 }
 export interface X12ElementRequirementValidationRuleProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_transformer#element_position CcTransformer#element_position}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_transformer#element_position CcTransformer#element_position}
     */
     readonly elementPosition?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_transformer#requirement CcTransformer#requirement}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_transformer#requirement CcTransformer#requirement}
     */
     readonly requirement?: string;
 }
@@ -1984,15 +1985,15 @@ export class X12ElementRequirementValidationRulePropertyOutputReference extends 
 }
 export interface X12ValidationRuleProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_transformer#code_list_validation_rule CcTransformer#code_list_validation_rule}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_transformer#code_list_validation_rule CcTransformer#code_list_validation_rule}
     */
     readonly codeListValidationRule?: X12CodeListValidationRuleProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_transformer#element_length_validation_rule CcTransformer#element_length_validation_rule}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_transformer#element_length_validation_rule CcTransformer#element_length_validation_rule}
     */
     readonly elementLengthValidationRule?: X12ElementLengthValidationRuleProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_transformer#element_requirement_validation_rule CcTransformer#element_requirement_validation_rule}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_transformer#element_requirement_validation_rule CcTransformer#element_requirement_validation_rule}
     */
     readonly elementRequirementValidationRule?: X12ElementRequirementValidationRuleProperty;
 }
@@ -2122,7 +2123,7 @@ export class X12ValidationRulePropertyList extends cdktn.ComplexList {
 }
 export interface X12ValidationOptionsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_transformer#validation_rules CcTransformer#validation_rules}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_transformer#validation_rules CcTransformer#validation_rules}
     */
     readonly validationRules?: X12ValidationRuleProperty[] | cdktn.IResolvable;
 }
@@ -2186,11 +2187,11 @@ export class X12ValidationOptionsPropertyOutputReference extends cdktn.ComplexOb
 }
 export interface X12AdvancedOptionsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_transformer#split_options CcTransformer#split_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_transformer#split_options CcTransformer#split_options}
     */
     readonly splitOptions?: X12SplitOptionsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_transformer#validation_options CcTransformer#validation_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_transformer#validation_options CcTransformer#validation_options}
     */
     readonly validationOptions?: X12ValidationOptionsProperty;
 }
@@ -2276,7 +2277,7 @@ export class X12AdvancedOptionsPropertyOutputReference extends cdktn.ComplexObje
 }
 export interface AdvancedOptionsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_transformer#x12 CcTransformer#x12}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_transformer#x12 CcTransformer#x12}
     */
     readonly x12?: X12AdvancedOptionsProperty;
 }
@@ -2340,11 +2341,11 @@ export class AdvancedOptionsPropertyOutputReference extends cdktn.ComplexObject 
 }
 export interface InputConversionFormatOptionsX12Property {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_transformer#transaction_set CcTransformer#transaction_set}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_transformer#transaction_set CcTransformer#transaction_set}
     */
     readonly transactionSet?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_transformer#version CcTransformer#version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_transformer#version CcTransformer#version}
     */
     readonly version?: string;
 }
@@ -2430,7 +2431,7 @@ export class InputConversionFormatOptionsX12PropertyOutputReference extends cdkt
 }
 export interface FormatOptionsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_transformer#x12 CcTransformer#x12}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_transformer#x12 CcTransformer#x12}
     */
     readonly x12?: InputConversionFormatOptionsX12Property;
 }
@@ -2494,15 +2495,15 @@ export class FormatOptionsPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface InputConversionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_transformer#advanced_options CcTransformer#advanced_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_transformer#advanced_options CcTransformer#advanced_options}
     */
     readonly advancedOptions?: AdvancedOptionsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_transformer#format_options CcTransformer#format_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_transformer#format_options CcTransformer#format_options}
     */
     readonly formatOptions?: FormatOptionsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_transformer#from_format CcTransformer#from_format}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_transformer#from_format CcTransformer#from_format}
     */
     readonly fromFormat?: string;
 }
@@ -2610,11 +2611,11 @@ export class InputConversionPropertyOutputReference extends cdktn.ComplexObject 
 }
 export interface MappingProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_transformer#template CcTransformer#template}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_transformer#template CcTransformer#template}
     */
     readonly template?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_transformer#template_language CcTransformer#template_language}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_transformer#template_language CcTransformer#template_language}
     */
     readonly templateLanguage?: string;
 }
@@ -2700,7 +2701,7 @@ export class MappingPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface SplitOptionsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_transformer#split_by CcTransformer#split_by}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_transformer#split_by CcTransformer#split_by}
     */
     readonly splitBy?: string;
 }
@@ -2764,15 +2765,15 @@ export class SplitOptionsPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface CodeListValidationRuleProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_transformer#codes_to_add CcTransformer#codes_to_add}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_transformer#codes_to_add CcTransformer#codes_to_add}
     */
     readonly codesToAdd?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_transformer#codes_to_remove CcTransformer#codes_to_remove}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_transformer#codes_to_remove CcTransformer#codes_to_remove}
     */
     readonly codesToRemove?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_transformer#element_id CcTransformer#element_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_transformer#element_id CcTransformer#element_id}
     */
     readonly elementId?: string;
 }
@@ -2880,15 +2881,15 @@ export class CodeListValidationRulePropertyOutputReference extends cdktn.Complex
 }
 export interface ElementLengthValidationRuleProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_transformer#element_id CcTransformer#element_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_transformer#element_id CcTransformer#element_id}
     */
     readonly elementId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_transformer#max_length CcTransformer#max_length}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_transformer#max_length CcTransformer#max_length}
     */
     readonly maxLength?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_transformer#min_length CcTransformer#min_length}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_transformer#min_length CcTransformer#min_length}
     */
     readonly minLength?: number;
 }
@@ -2996,11 +2997,11 @@ export class ElementLengthValidationRulePropertyOutputReference extends cdktn.Co
 }
 export interface ElementRequirementValidationRuleProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_transformer#element_position CcTransformer#element_position}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_transformer#element_position CcTransformer#element_position}
     */
     readonly elementPosition?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_transformer#requirement CcTransformer#requirement}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_transformer#requirement CcTransformer#requirement}
     */
     readonly requirement?: string;
 }
@@ -3086,15 +3087,15 @@ export class ElementRequirementValidationRulePropertyOutputReference extends cdk
 }
 export interface ValidationRulesProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_transformer#code_list_validation_rule CcTransformer#code_list_validation_rule}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_transformer#code_list_validation_rule CcTransformer#code_list_validation_rule}
     */
     readonly codeListValidationRule?: CodeListValidationRuleProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_transformer#element_length_validation_rule CcTransformer#element_length_validation_rule}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_transformer#element_length_validation_rule CcTransformer#element_length_validation_rule}
     */
     readonly elementLengthValidationRule?: ElementLengthValidationRuleProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_transformer#element_requirement_validation_rule CcTransformer#element_requirement_validation_rule}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_transformer#element_requirement_validation_rule CcTransformer#element_requirement_validation_rule}
     */
     readonly elementRequirementValidationRule?: ElementRequirementValidationRuleProperty;
 }
@@ -3224,7 +3225,7 @@ export class ValidationRulesPropertyList extends cdktn.ComplexList {
 }
 export interface ValidationOptionsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_transformer#validation_rules CcTransformer#validation_rules}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_transformer#validation_rules CcTransformer#validation_rules}
     */
     readonly validationRules?: ValidationRulesProperty[] | cdktn.IResolvable;
 }
@@ -3288,11 +3289,11 @@ export class ValidationOptionsPropertyOutputReference extends cdktn.ComplexObjec
 }
 export interface OutputConversionAdvancedOptionsX12Property {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_transformer#split_options CcTransformer#split_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_transformer#split_options CcTransformer#split_options}
     */
     readonly splitOptions?: SplitOptionsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_transformer#validation_options CcTransformer#validation_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_transformer#validation_options CcTransformer#validation_options}
     */
     readonly validationOptions?: ValidationOptionsProperty;
 }
@@ -3378,7 +3379,7 @@ export class OutputConversionAdvancedOptionsX12PropertyOutputReference extends c
 }
 export interface OutputConversionAdvancedOptionsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_transformer#x12 CcTransformer#x12}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_transformer#x12 CcTransformer#x12}
     */
     readonly x12?: OutputConversionAdvancedOptionsX12Property;
 }
@@ -3442,11 +3443,11 @@ export class OutputConversionAdvancedOptionsPropertyOutputReference extends cdkt
 }
 export interface OutputConversionFormatOptionsX12Property {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_transformer#transaction_set CcTransformer#transaction_set}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_transformer#transaction_set CcTransformer#transaction_set}
     */
     readonly transactionSet?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_transformer#version CcTransformer#version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_transformer#version CcTransformer#version}
     */
     readonly version?: string;
 }
@@ -3532,7 +3533,7 @@ export class OutputConversionFormatOptionsX12PropertyOutputReference extends cdk
 }
 export interface OutputConversionFormatOptionsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_transformer#x12 CcTransformer#x12}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_transformer#x12 CcTransformer#x12}
     */
     readonly x12?: OutputConversionFormatOptionsX12Property;
 }
@@ -3596,15 +3597,15 @@ export class OutputConversionFormatOptionsPropertyOutputReference extends cdktn.
 }
 export interface OutputConversionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_transformer#advanced_options CcTransformer#advanced_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_transformer#advanced_options CcTransformer#advanced_options}
     */
     readonly advancedOptions?: OutputConversionAdvancedOptionsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_transformer#format_options CcTransformer#format_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_transformer#format_options CcTransformer#format_options}
     */
     readonly formatOptions?: OutputConversionFormatOptionsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_transformer#to_format CcTransformer#to_format}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_transformer#to_format CcTransformer#to_format}
     */
     readonly toFormat?: string;
 }
@@ -3712,11 +3713,11 @@ export class OutputConversionPropertyOutputReference extends cdktn.ComplexObject
 }
 export interface SampleDocumentKeysProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_transformer#input CcTransformer#input}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_transformer#input CcTransformer#input}
     */
     readonly input?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_transformer#output CcTransformer#output}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_transformer#output CcTransformer#output}
     */
     readonly output?: string;
 }
@@ -3824,11 +3825,11 @@ export class SampleDocumentKeysPropertyList extends cdktn.ComplexList {
 }
 export interface SampleDocumentsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_transformer#bucket_name CcTransformer#bucket_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_transformer#bucket_name CcTransformer#bucket_name}
     */
     readonly bucketName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_transformer#keys CcTransformer#keys}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_transformer#keys CcTransformer#keys}
     */
     readonly keys?: SampleDocumentKeysProperty[] | cdktn.IResolvable;
 }
@@ -3914,11 +3915,11 @@ export class SampleDocumentsPropertyOutputReference extends cdktn.ComplexObject 
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_transformer#key CcTransformer#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_transformer#key CcTransformer#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/b2bi_transformer#value CcTransformer#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/b2bi_transformer#value CcTransformer#value}
     */
     readonly value?: string;
 }

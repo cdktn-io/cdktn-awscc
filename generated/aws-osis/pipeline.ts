@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/osis_pipeline
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/osis_pipeline
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,71 +9,71 @@ export interface CcPipelineProps extends cdktn.TerraformMetaArguments {
     /**
     * Key-value pairs to configure buffering.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/osis_pipeline#buffer_options CcPipeline#buffer_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/osis_pipeline#buffer_options CcPipeline#buffer_options}
     */
     readonly bufferOptions?: CcPipeline.BufferOptionsProperty;
     /**
     * Key-value pairs to configure encryption at rest.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/osis_pipeline#encryption_at_rest_options CcPipeline#encryption_at_rest_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/osis_pipeline#encryption_at_rest_options CcPipeline#encryption_at_rest_options}
     */
     readonly encryptionAtRestOptions?: CcPipeline.EncryptionAtRestOptionsProperty;
     /**
     * Key-value pairs to configure log publishing.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/osis_pipeline#log_publishing_options CcPipeline#log_publishing_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/osis_pipeline#log_publishing_options CcPipeline#log_publishing_options}
     */
     readonly logPublishingOptions?: CcPipeline.LogPublishingOptionsProperty;
     /**
     * The maximum pipeline capacity, in Ingestion OpenSearch Compute Units (OCUs).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/osis_pipeline#max_units CcPipeline#max_units}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/osis_pipeline#max_units CcPipeline#max_units}
     */
     readonly maxUnits: number;
     /**
     * The minimum pipeline capacity, in Ingestion OpenSearch Compute Units (OCUs).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/osis_pipeline#min_units CcPipeline#min_units}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/osis_pipeline#min_units CcPipeline#min_units}
     */
     readonly minUnits: number;
     /**
     * The Data Prepper pipeline configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/osis_pipeline#pipeline_configuration_body CcPipeline#pipeline_configuration_body}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/osis_pipeline#pipeline_configuration_body CcPipeline#pipeline_configuration_body}
     */
     readonly pipelineConfigurationBody: string;
     /**
     * Name of the OpenSearch Ingestion Service pipeline to create. Pipeline names are unique across the pipelines owned by an account within an AWS Region.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/osis_pipeline#pipeline_name CcPipeline#pipeline_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/osis_pipeline#pipeline_name CcPipeline#pipeline_name}
     */
     readonly pipelineName: string;
     /**
     * The Pipeline Role (ARN) for the pipeline.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/osis_pipeline#pipeline_role_arn CcPipeline#pipeline_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/osis_pipeline#pipeline_role_arn CcPipeline#pipeline_role_arn}
     */
     readonly pipelineRoleArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/osis_pipeline#resource_policy CcPipeline#resource_policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/osis_pipeline#resource_policy CcPipeline#resource_policy}
     */
     readonly resourcePolicy?: CcPipeline.ResourcePolicyProperty;
     /**
     * An array of key-value pairs to apply to this resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/osis_pipeline#tags CcPipeline#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/osis_pipeline#tags CcPipeline#tags}
     */
     readonly tags?: CcPipeline.TagProperty[] | cdktn.IResolvable;
     /**
     * Container for the values required to configure VPC access for the pipeline. If you don't specify these values, OpenSearch Ingestion Service creates the pipeline with a public endpoint.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/osis_pipeline#vpc_options CcPipeline#vpc_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/osis_pipeline#vpc_options CcPipeline#vpc_options}
     */
     readonly vpcOptions?: CcPipeline.VpcOptionsProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/osis_pipeline awscc_osis_pipeline}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/osis_pipeline awscc_osis_pipeline}
 */
 export class CcPipeline extends cdktn.TerraformResource {
 
@@ -89,7 +89,7 @@ export class CcPipeline extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcPipeline resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcPipeline to import
-    * @param importFromId The id of the existing CcPipeline that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/osis_pipeline#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcPipeline that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/osis_pipeline#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcPipeline to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -101,7 +101,7 @@ export class CcPipeline extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/osis_pipeline awscc_osis_pipeline} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/osis_pipeline awscc_osis_pipeline} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -111,7 +111,8 @@ export class CcPipeline extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_osis_pipeline',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -773,7 +774,7 @@ export interface BufferOptionsProperty {
     /**
     * Whether persistent buffering should be enabled.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/osis_pipeline#persistent_buffer_enabled CcPipeline#persistent_buffer_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/osis_pipeline#persistent_buffer_enabled CcPipeline#persistent_buffer_enabled}
     */
     readonly persistentBufferEnabled?: boolean | cdktn.IResolvable;
 }
@@ -839,7 +840,7 @@ export interface EncryptionAtRestOptionsProperty {
     /**
     * The KMS key to use for encrypting data. By default an AWS owned key is used
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/osis_pipeline#kms_key_arn CcPipeline#kms_key_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/osis_pipeline#kms_key_arn CcPipeline#kms_key_arn}
     */
     readonly kmsKeyArn?: string;
 }
@@ -903,7 +904,7 @@ export class EncryptionAtRestOptionsPropertyOutputReference extends cdktn.Comple
 }
 export interface CloudWatchLogDestinationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/osis_pipeline#log_group CcPipeline#log_group}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/osis_pipeline#log_group CcPipeline#log_group}
     */
     readonly logGroup?: string;
 }
@@ -969,13 +970,13 @@ export interface LogPublishingOptionsProperty {
     /**
     * The destination for OpenSearch Ingestion Service logs sent to Amazon CloudWatch.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/osis_pipeline#cloudwatch_log_destination CcPipeline#cloudwatch_log_destination}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/osis_pipeline#cloudwatch_log_destination CcPipeline#cloudwatch_log_destination}
     */
     readonly cloudwatchLogDestination?: CloudWatchLogDestinationProperty;
     /**
     * Whether logs should be published.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/osis_pipeline#is_logging_enabled CcPipeline#is_logging_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/osis_pipeline#is_logging_enabled CcPipeline#is_logging_enabled}
     */
     readonly isLoggingEnabled?: boolean | cdktn.IResolvable;
 }
@@ -1061,7 +1062,7 @@ export class LogPublishingOptionsPropertyOutputReference extends cdktn.ComplexOb
 }
 export interface ResourcePolicyProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/osis_pipeline#policy CcPipeline#policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/osis_pipeline#policy CcPipeline#policy}
     */
     readonly policy?: string;
 }
@@ -1127,13 +1128,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/osis_pipeline#key CcPipeline#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/osis_pipeline#key CcPipeline#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 0 to 256 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/osis_pipeline#value CcPipeline#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/osis_pipeline#value CcPipeline#value}
     */
     readonly value?: string;
 }
@@ -1395,13 +1396,13 @@ export interface VpcAttachmentOptionsProperty {
     /**
     * Whether the pipeline should be attached to the provided VPC
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/osis_pipeline#attach_to_vpc CcPipeline#attach_to_vpc}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/osis_pipeline#attach_to_vpc CcPipeline#attach_to_vpc}
     */
     readonly attachToVpc?: boolean | cdktn.IResolvable;
     /**
     * The CIDR block to be reserved for OpenSearch Ingestion to create elastic network interfaces (ENIs).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/osis_pipeline#cidr_block CcPipeline#cidr_block}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/osis_pipeline#cidr_block CcPipeline#cidr_block}
     */
     readonly cidrBlock?: string;
 }
@@ -1489,25 +1490,25 @@ export interface VpcOptionsProperty {
     /**
     * A list of security groups associated with the VPC endpoint.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/osis_pipeline#security_group_ids CcPipeline#security_group_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/osis_pipeline#security_group_ids CcPipeline#security_group_ids}
     */
     readonly securityGroupIds?: string[];
     /**
     * A list of subnet IDs associated with the VPC endpoint.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/osis_pipeline#subnet_ids CcPipeline#subnet_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/osis_pipeline#subnet_ids CcPipeline#subnet_ids}
     */
     readonly subnetIds?: string[];
     /**
     * Options for attaching a VPC to the pipeline.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/osis_pipeline#vpc_attachment_options CcPipeline#vpc_attachment_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/osis_pipeline#vpc_attachment_options CcPipeline#vpc_attachment_options}
     */
     readonly vpcAttachmentOptions?: VpcAttachmentOptionsProperty;
     /**
     * Defines whether you or Amazon OpenSearch Ingestion service create and manage the VPC endpoint configured for the pipeline.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/osis_pipeline#vpc_endpoint_management CcPipeline#vpc_endpoint_management}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/osis_pipeline#vpc_endpoint_management CcPipeline#vpc_endpoint_management}
     */
     readonly vpcEndpointManagement?: string;
 }

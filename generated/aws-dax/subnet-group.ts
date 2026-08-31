@@ -1,27 +1,27 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dax_subnet_group
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dax_subnet_group
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcSubnetGroupProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dax_subnet_group#description CcSubnetGroup#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dax_subnet_group#description CcSubnetGroup#description}
     */
     readonly description?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dax_subnet_group#subnet_group_name CcSubnetGroup#subnet_group_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dax_subnet_group#subnet_group_name CcSubnetGroup#subnet_group_name}
     */
     readonly subnetGroupName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dax_subnet_group#subnet_ids CcSubnetGroup#subnet_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dax_subnet_group#subnet_ids CcSubnetGroup#subnet_ids}
     */
     readonly subnetIds: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dax_subnet_group awscc_dax_subnet_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dax_subnet_group awscc_dax_subnet_group}
 */
 export class CcSubnetGroup extends cdktn.TerraformResource {
 
@@ -37,7 +37,7 @@ export class CcSubnetGroup extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcSubnetGroup resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcSubnetGroup to import
-    * @param importFromId The id of the existing CcSubnetGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dax_subnet_group#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcSubnetGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dax_subnet_group#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcSubnetGroup to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -49,7 +49,7 @@ export class CcSubnetGroup extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/dax_subnet_group awscc_dax_subnet_group} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dax_subnet_group awscc_dax_subnet_group} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -59,7 +59,8 @@ export class CcSubnetGroup extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_dax_subnet_group',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,

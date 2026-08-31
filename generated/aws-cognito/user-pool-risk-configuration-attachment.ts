@@ -1,35 +1,35 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cognito_user_pool_risk_configuration_attachment
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_risk_configuration_attachment
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcUserPoolRiskConfigurationAttachmentProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cognito_user_pool_risk_configuration_attachment#account_takeover_risk_configuration CcUserPoolRiskConfigurationAttachment#account_takeover_risk_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_risk_configuration_attachment#account_takeover_risk_configuration CcUserPoolRiskConfigurationAttachment#account_takeover_risk_configuration}
     */
     readonly accountTakeoverRiskConfiguration?: CcUserPoolRiskConfigurationAttachment.AccountTakeoverRiskConfigurationTypeProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cognito_user_pool_risk_configuration_attachment#client_id CcUserPoolRiskConfigurationAttachment#client_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_risk_configuration_attachment#client_id CcUserPoolRiskConfigurationAttachment#client_id}
     */
     readonly clientId: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cognito_user_pool_risk_configuration_attachment#compromised_credentials_risk_configuration CcUserPoolRiskConfigurationAttachment#compromised_credentials_risk_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_risk_configuration_attachment#compromised_credentials_risk_configuration CcUserPoolRiskConfigurationAttachment#compromised_credentials_risk_configuration}
     */
     readonly compromisedCredentialsRiskConfiguration?: CcUserPoolRiskConfigurationAttachment.CompromisedCredentialsRiskConfigurationTypeProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cognito_user_pool_risk_configuration_attachment#risk_exception_configuration CcUserPoolRiskConfigurationAttachment#risk_exception_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_risk_configuration_attachment#risk_exception_configuration CcUserPoolRiskConfigurationAttachment#risk_exception_configuration}
     */
     readonly riskExceptionConfiguration?: CcUserPoolRiskConfigurationAttachment.RiskExceptionConfigurationTypeProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cognito_user_pool_risk_configuration_attachment#user_pool_id CcUserPoolRiskConfigurationAttachment#user_pool_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_risk_configuration_attachment#user_pool_id CcUserPoolRiskConfigurationAttachment#user_pool_id}
     */
     readonly userPoolId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cognito_user_pool_risk_configuration_attachment awscc_cognito_user_pool_risk_configuration_attachment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_risk_configuration_attachment awscc_cognito_user_pool_risk_configuration_attachment}
 */
 export class CcUserPoolRiskConfigurationAttachment extends cdktn.TerraformResource {
 
@@ -45,7 +45,7 @@ export class CcUserPoolRiskConfigurationAttachment extends cdktn.TerraformResour
     * Generates CDKTN code for importing a CcUserPoolRiskConfigurationAttachment resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcUserPoolRiskConfigurationAttachment to import
-    * @param importFromId The id of the existing CcUserPoolRiskConfigurationAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cognito_user_pool_risk_configuration_attachment#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcUserPoolRiskConfigurationAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_risk_configuration_attachment#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcUserPoolRiskConfigurationAttachment to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -57,7 +57,7 @@ export class CcUserPoolRiskConfigurationAttachment extends cdktn.TerraformResour
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cognito_user_pool_risk_configuration_attachment awscc_cognito_user_pool_risk_configuration_attachment} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_risk_configuration_attachment awscc_cognito_user_pool_risk_configuration_attachment} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -67,7 +67,8 @@ export class CcUserPoolRiskConfigurationAttachment extends cdktn.TerraformResour
         super(scope, id, {
             terraformResourceType: 'awscc_cognito_user_pool_risk_configuration_attachment',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -716,11 +717,11 @@ export function ccUserPoolRiskConfigurationAttachmentRiskExceptionConfigurationT
 export namespace CcUserPoolRiskConfigurationAttachment {
 export interface AccountTakeoverActionTypeProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cognito_user_pool_risk_configuration_attachment#event_action CcUserPoolRiskConfigurationAttachment#event_action}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_risk_configuration_attachment#event_action CcUserPoolRiskConfigurationAttachment#event_action}
     */
     readonly eventAction?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cognito_user_pool_risk_configuration_attachment#notify CcUserPoolRiskConfigurationAttachment#notify}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_risk_configuration_attachment#notify CcUserPoolRiskConfigurationAttachment#notify}
     */
     readonly notify?: boolean | cdktn.IResolvable;
 }
@@ -806,11 +807,11 @@ export class AccountTakeoverActionTypePropertyOutputReference extends cdktn.Comp
 }
 export interface LowActionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cognito_user_pool_risk_configuration_attachment#event_action CcUserPoolRiskConfigurationAttachment#event_action}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_risk_configuration_attachment#event_action CcUserPoolRiskConfigurationAttachment#event_action}
     */
     readonly eventAction?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cognito_user_pool_risk_configuration_attachment#notify CcUserPoolRiskConfigurationAttachment#notify}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_risk_configuration_attachment#notify CcUserPoolRiskConfigurationAttachment#notify}
     */
     readonly notify?: boolean | cdktn.IResolvable;
 }
@@ -896,11 +897,11 @@ export class LowActionPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface MediumActionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cognito_user_pool_risk_configuration_attachment#event_action CcUserPoolRiskConfigurationAttachment#event_action}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_risk_configuration_attachment#event_action CcUserPoolRiskConfigurationAttachment#event_action}
     */
     readonly eventAction?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cognito_user_pool_risk_configuration_attachment#notify CcUserPoolRiskConfigurationAttachment#notify}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_risk_configuration_attachment#notify CcUserPoolRiskConfigurationAttachment#notify}
     */
     readonly notify?: boolean | cdktn.IResolvable;
 }
@@ -986,15 +987,15 @@ export class MediumActionPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface AccountTakeoverActionsTypeProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cognito_user_pool_risk_configuration_attachment#high_action CcUserPoolRiskConfigurationAttachment#high_action}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_risk_configuration_attachment#high_action CcUserPoolRiskConfigurationAttachment#high_action}
     */
     readonly highAction?: AccountTakeoverActionTypeProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cognito_user_pool_risk_configuration_attachment#low_action CcUserPoolRiskConfigurationAttachment#low_action}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_risk_configuration_attachment#low_action CcUserPoolRiskConfigurationAttachment#low_action}
     */
     readonly lowAction?: LowActionProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cognito_user_pool_risk_configuration_attachment#medium_action CcUserPoolRiskConfigurationAttachment#medium_action}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_risk_configuration_attachment#medium_action CcUserPoolRiskConfigurationAttachment#medium_action}
     */
     readonly mediumAction?: MediumActionProperty;
 }
@@ -1102,15 +1103,15 @@ export class AccountTakeoverActionsTypePropertyOutputReference extends cdktn.Com
 }
 export interface NotifyEmailTypeProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cognito_user_pool_risk_configuration_attachment#html_body CcUserPoolRiskConfigurationAttachment#html_body}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_risk_configuration_attachment#html_body CcUserPoolRiskConfigurationAttachment#html_body}
     */
     readonly htmlBody?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cognito_user_pool_risk_configuration_attachment#subject CcUserPoolRiskConfigurationAttachment#subject}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_risk_configuration_attachment#subject CcUserPoolRiskConfigurationAttachment#subject}
     */
     readonly subject?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cognito_user_pool_risk_configuration_attachment#text_body CcUserPoolRiskConfigurationAttachment#text_body}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_risk_configuration_attachment#text_body CcUserPoolRiskConfigurationAttachment#text_body}
     */
     readonly textBody?: string;
 }
@@ -1218,15 +1219,15 @@ export class NotifyEmailTypePropertyOutputReference extends cdktn.ComplexObject 
 }
 export interface MfaEmailProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cognito_user_pool_risk_configuration_attachment#html_body CcUserPoolRiskConfigurationAttachment#html_body}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_risk_configuration_attachment#html_body CcUserPoolRiskConfigurationAttachment#html_body}
     */
     readonly htmlBody?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cognito_user_pool_risk_configuration_attachment#subject CcUserPoolRiskConfigurationAttachment#subject}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_risk_configuration_attachment#subject CcUserPoolRiskConfigurationAttachment#subject}
     */
     readonly subject?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cognito_user_pool_risk_configuration_attachment#text_body CcUserPoolRiskConfigurationAttachment#text_body}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_risk_configuration_attachment#text_body CcUserPoolRiskConfigurationAttachment#text_body}
     */
     readonly textBody?: string;
 }
@@ -1334,15 +1335,15 @@ export class MfaEmailPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface NoActionEmailProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cognito_user_pool_risk_configuration_attachment#html_body CcUserPoolRiskConfigurationAttachment#html_body}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_risk_configuration_attachment#html_body CcUserPoolRiskConfigurationAttachment#html_body}
     */
     readonly htmlBody?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cognito_user_pool_risk_configuration_attachment#subject CcUserPoolRiskConfigurationAttachment#subject}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_risk_configuration_attachment#subject CcUserPoolRiskConfigurationAttachment#subject}
     */
     readonly subject?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cognito_user_pool_risk_configuration_attachment#text_body CcUserPoolRiskConfigurationAttachment#text_body}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_risk_configuration_attachment#text_body CcUserPoolRiskConfigurationAttachment#text_body}
     */
     readonly textBody?: string;
 }
@@ -1450,27 +1451,27 @@ export class NoActionEmailPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface NotifyConfigurationTypeProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cognito_user_pool_risk_configuration_attachment#block_email CcUserPoolRiskConfigurationAttachment#block_email}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_risk_configuration_attachment#block_email CcUserPoolRiskConfigurationAttachment#block_email}
     */
     readonly blockEmail?: NotifyEmailTypeProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cognito_user_pool_risk_configuration_attachment#from CcUserPoolRiskConfigurationAttachment#from}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_risk_configuration_attachment#from CcUserPoolRiskConfigurationAttachment#from}
     */
     readonly from?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cognito_user_pool_risk_configuration_attachment#mfa_email CcUserPoolRiskConfigurationAttachment#mfa_email}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_risk_configuration_attachment#mfa_email CcUserPoolRiskConfigurationAttachment#mfa_email}
     */
     readonly mfaEmail?: MfaEmailProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cognito_user_pool_risk_configuration_attachment#no_action_email CcUserPoolRiskConfigurationAttachment#no_action_email}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_risk_configuration_attachment#no_action_email CcUserPoolRiskConfigurationAttachment#no_action_email}
     */
     readonly noActionEmail?: NoActionEmailProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cognito_user_pool_risk_configuration_attachment#reply_to CcUserPoolRiskConfigurationAttachment#reply_to}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_risk_configuration_attachment#reply_to CcUserPoolRiskConfigurationAttachment#reply_to}
     */
     readonly replyTo?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cognito_user_pool_risk_configuration_attachment#source_arn CcUserPoolRiskConfigurationAttachment#source_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_risk_configuration_attachment#source_arn CcUserPoolRiskConfigurationAttachment#source_arn}
     */
     readonly sourceArn?: string;
 }
@@ -1644,11 +1645,11 @@ export class NotifyConfigurationTypePropertyOutputReference extends cdktn.Comple
 }
 export interface AccountTakeoverRiskConfigurationTypeProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cognito_user_pool_risk_configuration_attachment#actions CcUserPoolRiskConfigurationAttachment#actions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_risk_configuration_attachment#actions CcUserPoolRiskConfigurationAttachment#actions}
     */
     readonly actions?: AccountTakeoverActionsTypeProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cognito_user_pool_risk_configuration_attachment#notify_configuration CcUserPoolRiskConfigurationAttachment#notify_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_risk_configuration_attachment#notify_configuration CcUserPoolRiskConfigurationAttachment#notify_configuration}
     */
     readonly notifyConfiguration?: NotifyConfigurationTypeProperty;
 }
@@ -1734,7 +1735,7 @@ export class AccountTakeoverRiskConfigurationTypePropertyOutputReference extends
 }
 export interface CompromisedCredentialsActionsTypeProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cognito_user_pool_risk_configuration_attachment#event_action CcUserPoolRiskConfigurationAttachment#event_action}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_risk_configuration_attachment#event_action CcUserPoolRiskConfigurationAttachment#event_action}
     */
     readonly eventAction?: string;
 }
@@ -1798,11 +1799,11 @@ export class CompromisedCredentialsActionsTypePropertyOutputReference extends cd
 }
 export interface CompromisedCredentialsRiskConfigurationTypeProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cognito_user_pool_risk_configuration_attachment#actions CcUserPoolRiskConfigurationAttachment#actions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_risk_configuration_attachment#actions CcUserPoolRiskConfigurationAttachment#actions}
     */
     readonly actions?: CompromisedCredentialsActionsTypeProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cognito_user_pool_risk_configuration_attachment#event_filter CcUserPoolRiskConfigurationAttachment#event_filter}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_risk_configuration_attachment#event_filter CcUserPoolRiskConfigurationAttachment#event_filter}
     */
     readonly eventFilter?: string[];
 }
@@ -1888,11 +1889,11 @@ export class CompromisedCredentialsRiskConfigurationTypePropertyOutputReference 
 }
 export interface RiskExceptionConfigurationTypeProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cognito_user_pool_risk_configuration_attachment#blocked_ip_range_list CcUserPoolRiskConfigurationAttachment#blocked_ip_range_list}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_risk_configuration_attachment#blocked_ip_range_list CcUserPoolRiskConfigurationAttachment#blocked_ip_range_list}
     */
     readonly blockedIpRangeList?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cognito_user_pool_risk_configuration_attachment#skipped_ip_range_list CcUserPoolRiskConfigurationAttachment#skipped_ip_range_list}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_risk_configuration_attachment#skipped_ip_range_list CcUserPoolRiskConfigurationAttachment#skipped_ip_range_list}
     */
     readonly skippedIpRangeList?: string[];
 }

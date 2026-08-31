@@ -1,27 +1,27 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/stepfunctions_state_machine_version
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/stepfunctions_state_machine_version
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcStateMachineVersionProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/stepfunctions_state_machine_version#description CcStateMachineVersion#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/stepfunctions_state_machine_version#description CcStateMachineVersion#description}
     */
     readonly description?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/stepfunctions_state_machine_version#state_machine_arn CcStateMachineVersion#state_machine_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/stepfunctions_state_machine_version#state_machine_arn CcStateMachineVersion#state_machine_arn}
     */
     readonly stateMachineArn: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/stepfunctions_state_machine_version#state_machine_revision_id CcStateMachineVersion#state_machine_revision_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/stepfunctions_state_machine_version#state_machine_revision_id CcStateMachineVersion#state_machine_revision_id}
     */
     readonly stateMachineRevisionId?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/stepfunctions_state_machine_version awscc_stepfunctions_state_machine_version}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/stepfunctions_state_machine_version awscc_stepfunctions_state_machine_version}
 */
 export class CcStateMachineVersion extends cdktn.TerraformResource {
 
@@ -37,7 +37,7 @@ export class CcStateMachineVersion extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcStateMachineVersion resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcStateMachineVersion to import
-    * @param importFromId The id of the existing CcStateMachineVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/stepfunctions_state_machine_version#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcStateMachineVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/stepfunctions_state_machine_version#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcStateMachineVersion to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -49,7 +49,7 @@ export class CcStateMachineVersion extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/stepfunctions_state_machine_version awscc_stepfunctions_state_machine_version} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/stepfunctions_state_machine_version awscc_stepfunctions_state_machine_version} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -59,7 +59,8 @@ export class CcStateMachineVersion extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_stepfunctions_state_machine_version',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,

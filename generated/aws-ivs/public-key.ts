@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ivs_public_key
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ivs_public_key
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,25 +9,25 @@ export interface CcPublicKeyProps extends cdktn.TerraformMetaArguments {
     /**
     * Name of the public key to be imported. The value does not need to be unique.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ivs_public_key#name CcPublicKey#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ivs_public_key#name CcPublicKey#name}
     */
     readonly name?: string;
     /**
     * The public portion of a customer-generated key pair. This field is required to create the AWS::IVS::PublicKey resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ivs_public_key#public_key_material CcPublicKey#public_key_material}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ivs_public_key#public_key_material CcPublicKey#public_key_material}
     */
     readonly publicKeyMaterial?: string;
     /**
     * A list of key-value pairs that contain metadata for the asset model.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ivs_public_key#tags CcPublicKey#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ivs_public_key#tags CcPublicKey#tags}
     */
     readonly tags?: CcPublicKey.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ivs_public_key awscc_ivs_public_key}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ivs_public_key awscc_ivs_public_key}
 */
 export class CcPublicKey extends cdktn.TerraformResource {
 
@@ -43,7 +43,7 @@ export class CcPublicKey extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcPublicKey resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcPublicKey to import
-    * @param importFromId The id of the existing CcPublicKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ivs_public_key#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcPublicKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ivs_public_key#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcPublicKey to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -55,7 +55,7 @@ export class CcPublicKey extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ivs_public_key awscc_ivs_public_key} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ivs_public_key awscc_ivs_public_key} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -65,7 +65,8 @@ export class CcPublicKey extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_ivs_public_key',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -226,11 +227,11 @@ export function ccPublicKeyTagPropertyToHclTerraform(struct?: CcPublicKey.TagPro
 export namespace CcPublicKey {
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ivs_public_key#key CcPublicKey#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ivs_public_key#key CcPublicKey#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ivs_public_key#value CcPublicKey#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ivs_public_key#value CcPublicKey#value}
     */
     readonly value?: string;
 }

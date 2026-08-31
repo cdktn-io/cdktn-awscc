@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/acmpca_certificate
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,19 +9,19 @@ export interface CcCertificateProps extends cdktn.TerraformMetaArguments {
     /**
     * Specifies X.509 certificate information to be included in the issued certificate. An ``APIPassthrough`` or ``APICSRPassthrough`` template variant must be selected, or else this parameter is ignored.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/acmpca_certificate#api_passthrough CcCertificate#api_passthrough}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate#api_passthrough CcCertificate#api_passthrough}
     */
     readonly apiPassthrough?: CcCertificate.ApiPassthroughProperty;
     /**
     * The Amazon Resource Name (ARN) for the private CA issues the certificate.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/acmpca_certificate#certificate_authority_arn CcCertificate#certificate_authority_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate#certificate_authority_arn CcCertificate#certificate_authority_arn}
     */
     readonly certificateAuthorityArn: string;
     /**
     * The certificate signing request (CSR) for the certificate.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/acmpca_certificate#certificate_signing_request CcCertificate#certificate_signing_request}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate#certificate_signing_request CcCertificate#certificate_signing_request}
     */
     readonly certificateSigningRequest: string;
     /**
@@ -29,19 +29,19 @@ export interface CcCertificateProps extends cdktn.TerraformMetaArguments {
     *  This parameter should not be confused with the ``SigningAlgorithm`` parameter used to sign a CSR in the ``CreateCertificateAuthority`` action.
     *   The specified signing algorithm family (RSA or ECDSA) must match the algorithm family of the CA's secret key.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/acmpca_certificate#signing_algorithm CcCertificate#signing_algorithm}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate#signing_algorithm CcCertificate#signing_algorithm}
     */
     readonly signingAlgorithm: string;
     /**
     * Specifies a custom configuration template to use when issuing a certificate. If this parameter is not provided, PCAshort defaults to the ``EndEntityCertificate/V1`` template. For more information about PCAshort templates, see [Using Templates](https://docs.aws.amazon.com/privateca/latest/userguide/UsingTemplates.html).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/acmpca_certificate#template_arn CcCertificate#template_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate#template_arn CcCertificate#template_arn}
     */
     readonly templateArn?: string;
     /**
     * The period of time during which the certificate will be valid.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/acmpca_certificate#validity CcCertificate#validity}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate#validity CcCertificate#validity}
     */
     readonly validity: CcCertificate.ValidityProperty;
     /**
@@ -50,13 +50,13 @@ export interface CcCertificateProps extends cdktn.TerraformMetaArguments {
     *  Unlike the ``Validity`` parameter, the ``ValidityNotBefore`` parameter is optional.
     *  The ``ValidityNotBefore`` value is expressed as an explicit date and time, using the ``Validity`` type value ``ABSOLUTE``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/acmpca_certificate#validity_not_before CcCertificate#validity_not_before}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate#validity_not_before CcCertificate#validity_not_before}
     */
     readonly validityNotBefore?: CcCertificate.ValidityNotBeforeProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/acmpca_certificate awscc_acmpca_certificate}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate awscc_acmpca_certificate}
 */
 export class CcCertificate extends cdktn.TerraformResource {
 
@@ -72,7 +72,7 @@ export class CcCertificate extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcCertificate resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcCertificate to import
-    * @param importFromId The id of the existing CcCertificate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/acmpca_certificate#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcCertificate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcCertificate to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -84,7 +84,7 @@ export class CcCertificate extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/acmpca_certificate awscc_acmpca_certificate} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate awscc_acmpca_certificate} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -94,7 +94,8 @@ export class CcCertificate extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_acmpca_certificate',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -1227,7 +1228,7 @@ export interface QualifierProperty {
     /**
     * Contains a pointer to a certification practice statement (CPS) published by the CA.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/acmpca_certificate#cps_uri CcCertificate#cps_uri}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate#cps_uri CcCertificate#cps_uri}
     */
     readonly cpsUri?: string;
 }
@@ -1293,13 +1294,13 @@ export interface PolicyQualifierInfoProperty {
     /**
     * Identifies the qualifier modifying a ``CertPolicyId``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/acmpca_certificate#policy_qualifier_id CcCertificate#policy_qualifier_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate#policy_qualifier_id CcCertificate#policy_qualifier_id}
     */
     readonly policyQualifierId?: string;
     /**
     * Defines the qualifier type. AWS Private CA supports the use of a URI for a CPS qualifier in this field.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/acmpca_certificate#qualifier CcCertificate#qualifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate#qualifier CcCertificate#qualifier}
     */
     readonly qualifier?: QualifierProperty;
 }
@@ -1409,13 +1410,13 @@ export interface PolicyInformationProperty {
     /**
     * Specifies the object identifier (OID) of the certificate policy under which the certificate was issued. For more information, see NIST's definition of [Object Identifier (OID)](https://docs.aws.amazon.com/https://csrc.nist.gov/glossary/term/Object_Identifier).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/acmpca_certificate#cert_policy_id CcCertificate#cert_policy_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate#cert_policy_id CcCertificate#cert_policy_id}
     */
     readonly certPolicyId?: string;
     /**
     * Modifies the given ``CertPolicyId`` with a qualifier. AWS Private CA supports the certification practice statement (CPS) qualifier.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/acmpca_certificate#policy_qualifiers CcCertificate#policy_qualifiers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate#policy_qualifiers CcCertificate#policy_qualifiers}
     */
     readonly policyQualifiers?: PolicyQualifierInfoProperty[] | cdktn.IResolvable;
 }
@@ -1525,19 +1526,19 @@ export interface CustomExtensionProperty {
     /**
     * Specifies the critical flag of the X.509 extension.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/acmpca_certificate#critical CcCertificate#critical}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate#critical CcCertificate#critical}
     */
     readonly critical?: boolean | cdktn.IResolvable;
     /**
     * Specifies the object identifier (OID) of the X.509 extension. For more information, see the [Global OID reference database.](https://docs.aws.amazon.com/https://oidref.com/2.5.29)
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/acmpca_certificate#object_identifier CcCertificate#object_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate#object_identifier CcCertificate#object_identifier}
     */
     readonly objectIdentifier?: string;
     /**
     * Specifies the base64-encoded value of the X.509 extension.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/acmpca_certificate#value CcCertificate#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate#value CcCertificate#value}
     */
     readonly value?: string;
 }
@@ -1669,13 +1670,13 @@ export interface ExtendedKeyUsageProperty {
     /**
     * Specifies a custom ``ExtendedKeyUsage`` with an object identifier (OID).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/acmpca_certificate#extended_key_usage_object_identifier CcCertificate#extended_key_usage_object_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate#extended_key_usage_object_identifier CcCertificate#extended_key_usage_object_identifier}
     */
     readonly extendedKeyUsageObjectIdentifier?: string;
     /**
     * Specifies a standard ``ExtendedKeyUsage`` as defined as in [RFC 5280](https://docs.aws.amazon.com/https://datatracker.ietf.org/doc/html/rfc5280#section-4.2.1.12).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/acmpca_certificate#extended_key_usage_type CcCertificate#extended_key_usage_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate#extended_key_usage_type CcCertificate#extended_key_usage_type}
     */
     readonly extendedKeyUsageType?: string;
 }
@@ -1785,55 +1786,55 @@ export interface KeyUsageProperty {
     /**
     * Key can be used to sign CRLs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/acmpca_certificate#crl_sign CcCertificate#crl_sign}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate#crl_sign CcCertificate#crl_sign}
     */
     readonly crlSign?: boolean | cdktn.IResolvable;
     /**
     * Key can be used to decipher data.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/acmpca_certificate#data_encipherment CcCertificate#data_encipherment}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate#data_encipherment CcCertificate#data_encipherment}
     */
     readonly dataEncipherment?: boolean | cdktn.IResolvable;
     /**
     * Key can be used only to decipher data.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/acmpca_certificate#decipher_only CcCertificate#decipher_only}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate#decipher_only CcCertificate#decipher_only}
     */
     readonly decipherOnly?: boolean | cdktn.IResolvable;
     /**
     * Key can be used for digital signing.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/acmpca_certificate#digital_signature CcCertificate#digital_signature}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate#digital_signature CcCertificate#digital_signature}
     */
     readonly digitalSignature?: boolean | cdktn.IResolvable;
     /**
     * Key can be used only to encipher data.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/acmpca_certificate#encipher_only CcCertificate#encipher_only}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate#encipher_only CcCertificate#encipher_only}
     */
     readonly encipherOnly?: boolean | cdktn.IResolvable;
     /**
     * Key can be used in a key-agreement protocol.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/acmpca_certificate#key_agreement CcCertificate#key_agreement}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate#key_agreement CcCertificate#key_agreement}
     */
     readonly keyAgreement?: boolean | cdktn.IResolvable;
     /**
     * Key can be used to sign certificates.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/acmpca_certificate#key_cert_sign CcCertificate#key_cert_sign}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate#key_cert_sign CcCertificate#key_cert_sign}
     */
     readonly keyCertSign?: boolean | cdktn.IResolvable;
     /**
     * Key can be used to encipher data.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/acmpca_certificate#key_encipherment CcCertificate#key_encipherment}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate#key_encipherment CcCertificate#key_encipherment}
     */
     readonly keyEncipherment?: boolean | cdktn.IResolvable;
     /**
     * Key can be used for non-repudiation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/acmpca_certificate#non_repudiation CcCertificate#non_repudiation}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate#non_repudiation CcCertificate#non_repudiation}
     */
     readonly nonRepudiation?: boolean | cdktn.IResolvable;
 }
@@ -2075,13 +2076,13 @@ export interface CustomAttributeProperty {
     /**
     * Specifies the object identifier (OID) of the attribute type of the relative distinguished name (RDN).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/acmpca_certificate#object_identifier CcCertificate#object_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate#object_identifier CcCertificate#object_identifier}
     */
     readonly objectIdentifier?: string;
     /**
     * Specifies the attribute value of relative distinguished name (RDN).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/acmpca_certificate#value CcCertificate#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate#value CcCertificate#value}
     */
     readonly value?: string;
 }
@@ -2192,92 +2193,92 @@ export interface SubjectProperty {
     * For CA and end-entity certificates in a private PKI, the common name (CN) can be any string within the length limit.
     *  Note: In publicly trusted certificates, the common name must be a fully qualified domain name (FQDN) associated with the certificate subject.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/acmpca_certificate#common_name CcCertificate#common_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate#common_name CcCertificate#common_name}
     */
     readonly commonName?: string;
     /**
     * Two-digit code that specifies the country in which the certificate subject located.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/acmpca_certificate#country CcCertificate#country}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate#country CcCertificate#country}
     */
     readonly country?: string;
     /**
     * Contains a sequence of one or more X.500 relative distinguished names (RDNs), each of which consists of an object identifier (OID) and a value. For more information, see NIST?s definition of [Object Identifier (OID)](https://docs.aws.amazon.com/https://csrc.nist.gov/glossary/term/Object_Identifier).
     *   Custom attributes cannot be used in combination with standard attributes.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/acmpca_certificate#custom_attributes CcCertificate#custom_attributes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate#custom_attributes CcCertificate#custom_attributes}
     */
     readonly customAttributes?: CustomAttributeProperty[] | cdktn.IResolvable;
     /**
     * Disambiguating information for the certificate subject.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/acmpca_certificate#distinguished_name_qualifier CcCertificate#distinguished_name_qualifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate#distinguished_name_qualifier CcCertificate#distinguished_name_qualifier}
     */
     readonly distinguishedNameQualifier?: string;
     /**
     * Typically a qualifier appended to the name of an individual. Examples include Jr. for junior, Sr. for senior, and III for third.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/acmpca_certificate#generation_qualifier CcCertificate#generation_qualifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate#generation_qualifier CcCertificate#generation_qualifier}
     */
     readonly generationQualifier?: string;
     /**
     * First name.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/acmpca_certificate#given_name CcCertificate#given_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate#given_name CcCertificate#given_name}
     */
     readonly givenName?: string;
     /**
     * Concatenation that typically contains the first letter of the *GivenName*, the first letter of the middle name if one exists, and the first letter of the *Surname*.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/acmpca_certificate#initials CcCertificate#initials}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate#initials CcCertificate#initials}
     */
     readonly initials?: string;
     /**
     * The locality (such as a city or town) in which the certificate subject is located.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/acmpca_certificate#locality CcCertificate#locality}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate#locality CcCertificate#locality}
     */
     readonly locality?: string;
     /**
     * Legal name of the organization with which the certificate subject is affiliated.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/acmpca_certificate#organization CcCertificate#organization}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate#organization CcCertificate#organization}
     */
     readonly organization?: string;
     /**
     * A subdivision or unit of the organization (such as sales or finance) with which the certificate subject is affiliated.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/acmpca_certificate#organizational_unit CcCertificate#organizational_unit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate#organizational_unit CcCertificate#organizational_unit}
     */
     readonly organizationalUnit?: string;
     /**
     * Typically a shortened version of a longer *GivenName*. For example, Jonathan is often shortened to John. Elizabeth is often shortened to Beth, Liz, or Eliza.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/acmpca_certificate#pseudonym CcCertificate#pseudonym}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate#pseudonym CcCertificate#pseudonym}
     */
     readonly pseudonym?: string;
     /**
     * The certificate serial number.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/acmpca_certificate#serial_number CcCertificate#serial_number}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate#serial_number CcCertificate#serial_number}
     */
     readonly serialNumber?: string;
     /**
     * State in which the subject of the certificate is located.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/acmpca_certificate#state CcCertificate#state}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate#state CcCertificate#state}
     */
     readonly state?: string;
     /**
     * Family name. In the US and the UK, for example, the surname of an individual is ordered last. In Asian cultures the surname is typically ordered first.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/acmpca_certificate#surname CcCertificate#surname}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate#surname CcCertificate#surname}
     */
     readonly surname?: string;
     /**
     * A title such as Mr. or Ms., which is pre-pended to the name to refer formally to the certificate subject.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/acmpca_certificate#title CcCertificate#title}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate#title CcCertificate#title}
     */
     readonly title?: string;
 }
@@ -2651,13 +2652,13 @@ export interface EdiPartyNameProperty {
     /**
     * Specifies the name assigner.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/acmpca_certificate#name_assigner CcCertificate#name_assigner}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate#name_assigner CcCertificate#name_assigner}
     */
     readonly nameAssigner?: string;
     /**
     * Specifies the party name.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/acmpca_certificate#party_name CcCertificate#party_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate#party_name CcCertificate#party_name}
     */
     readonly partyName?: string;
 }
@@ -2745,13 +2746,13 @@ export interface OtherNameProperty {
     /**
     * Specifies an OID.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/acmpca_certificate#type_id CcCertificate#type_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate#type_id CcCertificate#type_id}
     */
     readonly typeId?: string;
     /**
     * Specifies an OID value.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/acmpca_certificate#value CcCertificate#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate#value CcCertificate#value}
     */
     readonly value?: string;
 }
@@ -2839,49 +2840,49 @@ export interface GeneralNameProperty {
     /**
     * Contains information about the certificate subject. The certificate can be one issued by your private certificate authority (CA) or it can be your private CA certificate. The Subject field in the certificate identifies the entity that owns or controls the public key in the certificate. The entity can be a user, computer, device, or service. The Subject must contain an X.500 distinguished name (DN). A DN is a sequence of relative distinguished names (RDNs). The RDNs are separated by commas in the certificate. The DN must be unique for each entity, but your private CA can issue more than one certificate with the same DN to the same entity.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/acmpca_certificate#directory_name CcCertificate#directory_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate#directory_name CcCertificate#directory_name}
     */
     readonly directoryName?: SubjectProperty;
     /**
     * Represents ``GeneralName`` as a DNS name.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/acmpca_certificate#dns_name CcCertificate#dns_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate#dns_name CcCertificate#dns_name}
     */
     readonly dnsName?: string;
     /**
     * Represents ``GeneralName`` as an ``EdiPartyName`` object.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/acmpca_certificate#edi_party_name CcCertificate#edi_party_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate#edi_party_name CcCertificate#edi_party_name}
     */
     readonly ediPartyName?: EdiPartyNameProperty;
     /**
     * Represents ``GeneralName`` as an IPv4 or IPv6 address.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/acmpca_certificate#ip_address CcCertificate#ip_address}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate#ip_address CcCertificate#ip_address}
     */
     readonly ipAddress?: string;
     /**
     * Represents ``GeneralName`` using an ``OtherName`` object.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/acmpca_certificate#other_name CcCertificate#other_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate#other_name CcCertificate#other_name}
     */
     readonly otherName?: OtherNameProperty;
     /**
     * Represents ``GeneralName`` as an object identifier (OID).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/acmpca_certificate#registered_id CcCertificate#registered_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate#registered_id CcCertificate#registered_id}
     */
     readonly registeredId?: string;
     /**
     * Represents ``GeneralName`` as an [RFC 822](https://docs.aws.amazon.com/https://datatracker.ietf.org/doc/html/rfc822) email address.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/acmpca_certificate#rfc_822_name CcCertificate#rfc_822_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate#rfc_822_name CcCertificate#rfc_822_name}
     */
     readonly rfc822Name?: string;
     /**
     * Represents ``GeneralName`` as a URI.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/acmpca_certificate#uniform_resource_identifier CcCertificate#uniform_resource_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate#uniform_resource_identifier CcCertificate#uniform_resource_identifier}
     */
     readonly uniformResourceIdentifier?: string;
 }
@@ -3124,31 +3125,31 @@ export interface ExtensionsProperty {
     * Contains a sequence of one or more policy information terms, each of which consists of an object identifier (OID) and optional qualifiers. For more information, see NIST's definition of [Object Identifier (OID)](https://docs.aws.amazon.com/https://csrc.nist.gov/glossary/term/Object_Identifier).
     *  In an end-entity certificate, these terms indicate the policy under which the certificate was issued and the purposes for which it may be used. In a CA certificate, these terms limit the set of policies for certification paths that include this certificate.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/acmpca_certificate#certificate_policies CcCertificate#certificate_policies}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate#certificate_policies CcCertificate#certificate_policies}
     */
     readonly certificatePolicies?: PolicyInformationProperty[] | cdktn.IResolvable;
     /**
     * Contains a sequence of one or more X.509 extensions, each of which consists of an object identifier (OID), a base64-encoded value, and the critical flag. For more information, see the [Global OID reference database.](https://docs.aws.amazon.com/https://oidref.com/2.5.29)
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/acmpca_certificate#custom_extensions CcCertificate#custom_extensions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate#custom_extensions CcCertificate#custom_extensions}
     */
     readonly customExtensions?: CustomExtensionProperty[] | cdktn.IResolvable;
     /**
     * Specifies additional purposes for which the certified public key may be used other than basic purposes indicated in the ``KeyUsage`` extension.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/acmpca_certificate#extended_key_usage CcCertificate#extended_key_usage}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate#extended_key_usage CcCertificate#extended_key_usage}
     */
     readonly extendedKeyUsage?: ExtendedKeyUsageProperty[] | cdktn.IResolvable;
     /**
     * Defines one or more purposes for which the key contained in the certificate can be used. Default value for each option is false.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/acmpca_certificate#key_usage CcCertificate#key_usage}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate#key_usage CcCertificate#key_usage}
     */
     readonly keyUsage?: KeyUsageProperty;
     /**
     * The subject alternative name extension allows identities to be bound to the subject of the certificate. These identities may be included in addition to or in place of the identity in the subject field of the certificate.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/acmpca_certificate#subject_alternative_names CcCertificate#subject_alternative_names}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate#subject_alternative_names CcCertificate#subject_alternative_names}
     */
     readonly subjectAlternativeNames?: GeneralNameProperty[] | cdktn.IResolvable;
 }
@@ -3302,13 +3303,13 @@ export interface CustomAttributesProperty {
     /**
     * Specifies the object identifier (OID) of the attribute type of the relative distinguished name (RDN).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/acmpca_certificate#object_identifier CcCertificate#object_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate#object_identifier CcCertificate#object_identifier}
     */
     readonly objectIdentifier?: string;
     /**
     * Specifies the attribute value of relative distinguished name (RDN).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/acmpca_certificate#value CcCertificate#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate#value CcCertificate#value}
     */
     readonly value?: string;
 }
@@ -3419,92 +3420,92 @@ export interface ApiPassthroughSubjectProperty {
     * For CA and end-entity certificates in a private PKI, the common name (CN) can be any string within the length limit.
     *  Note: In publicly trusted certificates, the common name must be a fully qualified domain name (FQDN) associated with the certificate subject.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/acmpca_certificate#common_name CcCertificate#common_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate#common_name CcCertificate#common_name}
     */
     readonly commonName?: string;
     /**
     * Two-digit code that specifies the country in which the certificate subject located.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/acmpca_certificate#country CcCertificate#country}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate#country CcCertificate#country}
     */
     readonly country?: string;
     /**
     * Contains a sequence of one or more X.500 relative distinguished names (RDNs), each of which consists of an object identifier (OID) and a value. For more information, see NIST?s definition of [Object Identifier (OID)](https://docs.aws.amazon.com/https://csrc.nist.gov/glossary/term/Object_Identifier).
     *   Custom attributes cannot be used in combination with standard attributes.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/acmpca_certificate#custom_attributes CcCertificate#custom_attributes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate#custom_attributes CcCertificate#custom_attributes}
     */
     readonly customAttributes?: CustomAttributesProperty[] | cdktn.IResolvable;
     /**
     * Disambiguating information for the certificate subject.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/acmpca_certificate#distinguished_name_qualifier CcCertificate#distinguished_name_qualifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate#distinguished_name_qualifier CcCertificate#distinguished_name_qualifier}
     */
     readonly distinguishedNameQualifier?: string;
     /**
     * Typically a qualifier appended to the name of an individual. Examples include Jr. for junior, Sr. for senior, and III for third.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/acmpca_certificate#generation_qualifier CcCertificate#generation_qualifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate#generation_qualifier CcCertificate#generation_qualifier}
     */
     readonly generationQualifier?: string;
     /**
     * First name.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/acmpca_certificate#given_name CcCertificate#given_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate#given_name CcCertificate#given_name}
     */
     readonly givenName?: string;
     /**
     * Concatenation that typically contains the first letter of the *GivenName*, the first letter of the middle name if one exists, and the first letter of the *Surname*.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/acmpca_certificate#initials CcCertificate#initials}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate#initials CcCertificate#initials}
     */
     readonly initials?: string;
     /**
     * The locality (such as a city or town) in which the certificate subject is located.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/acmpca_certificate#locality CcCertificate#locality}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate#locality CcCertificate#locality}
     */
     readonly locality?: string;
     /**
     * Legal name of the organization with which the certificate subject is affiliated.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/acmpca_certificate#organization CcCertificate#organization}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate#organization CcCertificate#organization}
     */
     readonly organization?: string;
     /**
     * A subdivision or unit of the organization (such as sales or finance) with which the certificate subject is affiliated.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/acmpca_certificate#organizational_unit CcCertificate#organizational_unit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate#organizational_unit CcCertificate#organizational_unit}
     */
     readonly organizationalUnit?: string;
     /**
     * Typically a shortened version of a longer *GivenName*. For example, Jonathan is often shortened to John. Elizabeth is often shortened to Beth, Liz, or Eliza.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/acmpca_certificate#pseudonym CcCertificate#pseudonym}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate#pseudonym CcCertificate#pseudonym}
     */
     readonly pseudonym?: string;
     /**
     * The certificate serial number.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/acmpca_certificate#serial_number CcCertificate#serial_number}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate#serial_number CcCertificate#serial_number}
     */
     readonly serialNumber?: string;
     /**
     * State in which the subject of the certificate is located.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/acmpca_certificate#state CcCertificate#state}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate#state CcCertificate#state}
     */
     readonly state?: string;
     /**
     * Family name. In the US and the UK, for example, the surname of an individual is ordered last. In Asian cultures the surname is typically ordered first.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/acmpca_certificate#surname CcCertificate#surname}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate#surname CcCertificate#surname}
     */
     readonly surname?: string;
     /**
     * A title such as Mr. or Ms., which is pre-pended to the name to refer formally to the certificate subject.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/acmpca_certificate#title CcCertificate#title}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate#title CcCertificate#title}
     */
     readonly title?: string;
 }
@@ -3878,13 +3879,13 @@ export interface ApiPassthroughProperty {
     /**
     * Specifies X.509 extension information for a certificate.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/acmpca_certificate#extensions CcCertificate#extensions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate#extensions CcCertificate#extensions}
     */
     readonly extensions?: ExtensionsProperty;
     /**
     * Contains information about the certificate subject. The Subject field in the certificate identifies the entity that owns or controls the public key in the certificate. The entity can be a user, computer, device, or service. The Subject must contain an X.500 distinguished name (DN). A DN is a sequence of relative distinguished names (RDNs). The RDNs are separated by commas in the certificate.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/acmpca_certificate#subject CcCertificate#subject}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate#subject CcCertificate#subject}
     */
     readonly subject?: ApiPassthroughSubjectProperty;
 }
@@ -3972,13 +3973,13 @@ export interface ValidityProperty {
     /**
     * Specifies whether the ``Value`` parameter represents days, months, or years.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/acmpca_certificate#type CcCertificate#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate#type CcCertificate#type}
     */
     readonly type: string;
     /**
     * A long integer interpreted according to the value of ``Type``, below.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/acmpca_certificate#value CcCertificate#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate#value CcCertificate#value}
     */
     readonly value: number;
 }
@@ -4060,13 +4061,13 @@ export interface ValidityNotBeforeProperty {
     /**
     * Specifies whether the ``Value`` parameter represents days, months, or years.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/acmpca_certificate#type CcCertificate#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate#type CcCertificate#type}
     */
     readonly type?: string;
     /**
     * A long integer interpreted according to the value of ``Type``, below.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/acmpca_certificate#value CcCertificate#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate#value CcCertificate#value}
     */
     readonly value?: number;
 }

@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lightsail_load_balancer_tls_certificate
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_load_balancer_tls_certificate
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,43 +9,43 @@ export interface CcLoadBalancerTlsCertificateProps extends cdktn.TerraformMetaAr
     /**
     * An array of strings listing alternative domains and subdomains for your SSL/TLS certificate.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lightsail_load_balancer_tls_certificate#certificate_alternative_names CcLoadBalancerTlsCertificate#certificate_alternative_names}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_load_balancer_tls_certificate#certificate_alternative_names CcLoadBalancerTlsCertificate#certificate_alternative_names}
     */
     readonly certificateAlternativeNames?: string[];
     /**
     * The domain name (e.g., example.com ) for your SSL/TLS certificate.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lightsail_load_balancer_tls_certificate#certificate_domain_name CcLoadBalancerTlsCertificate#certificate_domain_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_load_balancer_tls_certificate#certificate_domain_name CcLoadBalancerTlsCertificate#certificate_domain_name}
     */
     readonly certificateDomainName: string;
     /**
     * The SSL/TLS certificate name.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lightsail_load_balancer_tls_certificate#certificate_name CcLoadBalancerTlsCertificate#certificate_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_load_balancer_tls_certificate#certificate_name CcLoadBalancerTlsCertificate#certificate_name}
     */
     readonly certificateName: string;
     /**
     * A Boolean value that indicates whether HTTPS redirection is enabled for the load balancer.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lightsail_load_balancer_tls_certificate#https_redirection_enabled CcLoadBalancerTlsCertificate#https_redirection_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_load_balancer_tls_certificate#https_redirection_enabled CcLoadBalancerTlsCertificate#https_redirection_enabled}
     */
     readonly httpsRedirectionEnabled?: boolean | cdktn.IResolvable;
     /**
     * When true, the SSL/TLS certificate is attached to the Lightsail load balancer.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lightsail_load_balancer_tls_certificate#is_attached CcLoadBalancerTlsCertificate#is_attached}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_load_balancer_tls_certificate#is_attached CcLoadBalancerTlsCertificate#is_attached}
     */
     readonly isAttached?: boolean | cdktn.IResolvable;
     /**
     * The name of your load balancer.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lightsail_load_balancer_tls_certificate#load_balancer_name CcLoadBalancerTlsCertificate#load_balancer_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_load_balancer_tls_certificate#load_balancer_name CcLoadBalancerTlsCertificate#load_balancer_name}
     */
     readonly loadBalancerName: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lightsail_load_balancer_tls_certificate awscc_lightsail_load_balancer_tls_certificate}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_load_balancer_tls_certificate awscc_lightsail_load_balancer_tls_certificate}
 */
 export class CcLoadBalancerTlsCertificate extends cdktn.TerraformResource {
 
@@ -61,7 +61,7 @@ export class CcLoadBalancerTlsCertificate extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcLoadBalancerTlsCertificate resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcLoadBalancerTlsCertificate to import
-    * @param importFromId The id of the existing CcLoadBalancerTlsCertificate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lightsail_load_balancer_tls_certificate#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcLoadBalancerTlsCertificate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_load_balancer_tls_certificate#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcLoadBalancerTlsCertificate to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -73,7 +73,7 @@ export class CcLoadBalancerTlsCertificate extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lightsail_load_balancer_tls_certificate awscc_lightsail_load_balancer_tls_certificate} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_load_balancer_tls_certificate awscc_lightsail_load_balancer_tls_certificate} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -83,7 +83,8 @@ export class CcLoadBalancerTlsCertificate extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_lightsail_load_balancer_tls_certificate',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,

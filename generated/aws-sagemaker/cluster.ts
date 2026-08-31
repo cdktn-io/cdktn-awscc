@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,73 +9,73 @@ export interface CcClusterProps extends cdktn.TerraformMetaArguments {
     /**
     * Configuration for cluster auto-scaling
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster#auto_scaling CcCluster#auto_scaling}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#auto_scaling CcCluster#auto_scaling}
     */
     readonly autoScaling?: CcCluster.ClusterAutoScalingConfigProperty;
     /**
     * The name of the HyperPod Cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster#cluster_name CcCluster#cluster_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#cluster_name CcCluster#cluster_name}
     */
     readonly clusterName?: string;
     /**
     * The cluster role for the autoscaler to assume.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster#cluster_role CcCluster#cluster_role}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#cluster_role CcCluster#cluster_role}
     */
     readonly clusterRole?: string;
     /**
     * The instance groups of the SageMaker HyperPod cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster#instance_groups CcCluster#instance_groups}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#instance_groups CcCluster#instance_groups}
     */
     readonly instanceGroups?: CcCluster.ClusterInstanceGroupProperty[] | cdktn.IResolvable;
     /**
     * Determines the scaling strategy for the SageMaker HyperPod cluster. When set to 'Continuous', enables continuous scaling which dynamically manages node provisioning. If the parameter is omitted, uses the standard scaling approach in previous release.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster#node_provisioning_mode CcCluster#node_provisioning_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#node_provisioning_mode CcCluster#node_provisioning_mode}
     */
     readonly nodeProvisioningMode?: string;
     /**
     * If node auto-recovery is set to true, faulty nodes will be replaced or rebooted when a failure is detected. If set to false, nodes will be labelled when a fault is detected.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster#node_recovery CcCluster#node_recovery}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#node_recovery CcCluster#node_recovery}
     */
     readonly nodeRecovery?: string;
     /**
     * Specifies parameter(s) specific to the orchestrator, e.g. specify the EKS cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster#orchestrator CcCluster#orchestrator}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#orchestrator CcCluster#orchestrator}
     */
     readonly orchestrator?: CcCluster.OrchestratorProperty;
     /**
     * The restricted instance groups of the SageMaker HyperPod cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster#restricted_instance_groups CcCluster#restricted_instance_groups}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#restricted_instance_groups CcCluster#restricted_instance_groups}
     */
     readonly restrictedInstanceGroups?: CcCluster.ClusterRestrictedInstanceGroupProperty[] | cdktn.IResolvable;
     /**
     * Custom tags for managing the SageMaker HyperPod cluster as an AWS resource. You can add tags to your cluster in the same way you add them in other AWS services that support tagging.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster#tags CcCluster#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#tags CcCluster#tags}
     */
     readonly tags?: CcCluster.TagProperty[] | cdktn.IResolvable;
     /**
     * Configuration for tiered storage in the SageMaker HyperPod cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster#tiered_storage_config CcCluster#tiered_storage_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#tiered_storage_config CcCluster#tiered_storage_config}
     */
     readonly tieredStorageConfig?: CcCluster.TieredStorageConfigProperty;
     /**
     * Specifies an Amazon Virtual Private Cloud (VPC) that your SageMaker jobs, hosted models, and compute resources have access to. You can control access to and from your resources by configuring a VPC.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster#vpc_config CcCluster#vpc_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#vpc_config CcCluster#vpc_config}
     */
     readonly vpcConfig?: CcCluster.VpcConfigProperty2;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster awscc_sagemaker_cluster}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster awscc_sagemaker_cluster}
 */
 export class CcCluster extends cdktn.TerraformResource {
 
@@ -91,7 +91,7 @@ export class CcCluster extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcCluster resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcCluster to import
-    * @param importFromId The id of the existing CcCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcCluster to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -103,7 +103,7 @@ export class CcCluster extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster awscc_sagemaker_cluster} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster awscc_sagemaker_cluster} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -113,7 +113,8 @@ export class CcCluster extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_sagemaker_cluster',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -1550,13 +1551,13 @@ export interface ClusterAutoScalingConfigProperty {
     /**
     * The type of auto-scaler to use
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster#auto_scaler_type CcCluster#auto_scaler_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#auto_scaler_type CcCluster#auto_scaler_type}
     */
     readonly autoScalerType?: string;
     /**
     * The auto-scaling mode for the cluster
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster#mode CcCluster#mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#mode CcCluster#mode}
     */
     readonly mode?: string;
 }
@@ -1644,13 +1645,13 @@ export interface ClusterCapacityRequirementsProperty {
     /**
     * Options for OnDemand capacity
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster#on_demand CcCluster#on_demand}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#on_demand CcCluster#on_demand}
     */
     readonly onDemand?: string;
     /**
     * Options for Spot capacity
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster#spot CcCluster#spot}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#spot CcCluster#spot}
     */
     readonly spot?: string;
 }
@@ -1736,17 +1737,17 @@ export class ClusterCapacityRequirementsPropertyOutputReference extends cdktn.Co
 }
 export interface ClusterEbsVolumeConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster#root_volume CcCluster#root_volume}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#root_volume CcCluster#root_volume}
     */
     readonly rootVolume?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster#volume_kms_key_id CcCluster#volume_kms_key_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#volume_kms_key_id CcCluster#volume_kms_key_id}
     */
     readonly volumeKmsKeyId?: string;
     /**
     * The size in gigabytes (GB) of the additional EBS volume to be attached to the instances in the SageMaker HyperPod cluster instance group. The additional EBS volume is attached to each instance within the SageMaker HyperPod cluster instance group and mounted to /opt/sagemaker.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster#volume_size_in_gb CcCluster#volume_size_in_gb}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#volume_size_in_gb CcCluster#volume_size_in_gb}
     */
     readonly volumeSizeInGb?: number;
 }
@@ -1856,7 +1857,7 @@ export interface ClusterInstanceStorageConfigProperty {
     /**
     * Defines the configuration for attaching additional Amazon Elastic Block Store (EBS) volumes to the instances in the SageMaker HyperPod cluster instance group. The additional EBS volume is attached to each instance within the SageMaker HyperPod cluster instance group and mounted to /opt/sagemaker.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster#ebs_volume_config CcCluster#ebs_volume_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#ebs_volume_config CcCluster#ebs_volume_config}
     */
     readonly ebsVolumeConfig?: ClusterEbsVolumeConfigProperty;
 }
@@ -1944,19 +1945,19 @@ export interface ClusterKubernetesTaintProperty {
     /**
     * The effect of the taint.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster#effect CcCluster#effect}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#effect CcCluster#effect}
     */
     readonly effect?: string;
     /**
     * The key of the taint.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster#key CcCluster#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#key CcCluster#key}
     */
     readonly key?: string;
     /**
     * The value of the taint.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster#value CcCluster#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#value CcCluster#value}
     */
     readonly value?: string;
 }
@@ -2088,13 +2089,13 @@ export interface ClusterKubernetesConfigProperty {
     /**
     * A map of Kubernetes labels to apply to cluster nodes.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster#labels CcCluster#labels}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#labels CcCluster#labels}
     */
     readonly labels?: { [key: string]: string };
     /**
     * A list of Kubernetes taints to apply to cluster nodes. Maximum of 50 taints.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster#taints CcCluster#taints}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#taints CcCluster#taints}
     */
     readonly taints?: ClusterKubernetesTaintProperty[] | cdktn.IResolvable;
 }
@@ -2182,13 +2183,13 @@ export interface ClusterLifeCycleConfigProperty {
     /**
     * The file name of the entrypoint script of lifecycle scripts under SourceS3Uri. This entrypoint script runs during cluster creation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster#on_create CcCluster#on_create}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#on_create CcCluster#on_create}
     */
     readonly onCreate?: string;
     /**
     * An Amazon S3 bucket path where your lifecycle scripts are stored.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster#source_s3_uri CcCluster#source_s3_uri}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#source_s3_uri CcCluster#source_s3_uri}
     */
     readonly sourceS3Uri?: string;
 }
@@ -2276,13 +2277,13 @@ export interface VpcConfigProperty {
     /**
     * The VPC security group IDs, in the form sg-xxxxxxxx. Specify the security groups for the VPC that is specified in the Subnets field.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster#security_group_ids CcCluster#security_group_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#security_group_ids CcCluster#security_group_ids}
     */
     readonly securityGroupIds?: string[];
     /**
     * The ID of the subnets in the VPC to which you want to connect your training job or model.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster#subnets CcCluster#subnets}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#subnets CcCluster#subnets}
     */
     readonly subnets?: string[];
 }
@@ -2370,7 +2371,7 @@ export interface AlarmDetailsProperty {
     /**
     * The name of the alarm.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster#alarm_name CcCluster#alarm_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#alarm_name CcCluster#alarm_name}
     */
     readonly alarmName?: string;
 }
@@ -2458,13 +2459,13 @@ export interface CapacitySizeConfigProperty {
     /**
     * Specifies whether SageMaker should process the update by amount or percentage of instances.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster#type CcCluster#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#type CcCluster#type}
     */
     readonly type?: string;
     /**
     * Specifies the amount or percentage of instances SageMaker updates at a time.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster#value CcCluster#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#value CcCluster#value}
     */
     readonly value?: number;
 }
@@ -2552,13 +2553,13 @@ export interface RollbackMaximumBatchSizeProperty {
     /**
     * Specifies whether SageMaker should process the update by amount or percentage of instances.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster#type CcCluster#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#type CcCluster#type}
     */
     readonly type?: string;
     /**
     * Specifies the amount or percentage of instances SageMaker updates at a time.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster#value CcCluster#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#value CcCluster#value}
     */
     readonly value?: number;
 }
@@ -2646,13 +2647,13 @@ export interface RollingUpdatePolicyProperty {
     /**
     * The configuration of the size measurements of the AMI update. Using this configuration, you can specify whether SageMaker should update your instance group by an amount or percentage of instances.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster#maximum_batch_size CcCluster#maximum_batch_size}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#maximum_batch_size CcCluster#maximum_batch_size}
     */
     readonly maximumBatchSize?: CapacitySizeConfigProperty;
     /**
     * The configuration of the size measurements of the AMI update. Using this configuration, you can specify whether SageMaker should update your instance group by an amount or percentage of instances.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster#rollback_maximum_batch_size CcCluster#rollback_maximum_batch_size}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#rollback_maximum_batch_size CcCluster#rollback_maximum_batch_size}
     */
     readonly rollbackMaximumBatchSize?: RollbackMaximumBatchSizeProperty;
 }
@@ -2740,19 +2741,19 @@ export interface DeploymentConfigProperty {
     /**
     * An array that contains the alarms that SageMaker monitors to know whether to roll back the AMI update.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster#auto_rollback_configuration CcCluster#auto_rollback_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#auto_rollback_configuration CcCluster#auto_rollback_configuration}
     */
     readonly autoRollbackConfiguration?: AlarmDetailsProperty[] | cdktn.IResolvable;
     /**
     * The policy that SageMaker uses when updating the AMI versions of the cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster#rolling_update_policy CcCluster#rolling_update_policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#rolling_update_policy CcCluster#rolling_update_policy}
     */
     readonly rollingUpdatePolicy?: RollingUpdatePolicyProperty;
     /**
     * The duration in seconds that SageMaker waits before updating more instances in the cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster#wait_interval_in_seconds CcCluster#wait_interval_in_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#wait_interval_in_seconds CcCluster#wait_interval_in_seconds}
     */
     readonly waitIntervalInSeconds?: number;
 }
@@ -2862,13 +2863,13 @@ export interface ScheduledUpdateConfigProperty {
     /**
     * The configuration to use when updating the AMI versions.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster#deployment_config CcCluster#deployment_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#deployment_config CcCluster#deployment_config}
     */
     readonly deploymentConfig?: DeploymentConfigProperty;
     /**
     * A cron expression that specifies the schedule that SageMaker follows when updating the AMI.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster#schedule_expression CcCluster#schedule_expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#schedule_expression CcCluster#schedule_expression}
     */
     readonly scheduleExpression?: string;
 }
@@ -2956,97 +2957,97 @@ export interface ClusterInstanceGroupProperty {
     /**
     * Specifies the capacity requirements configuration for an instance group
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster#capacity_requirements CcCluster#capacity_requirements}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#capacity_requirements CcCluster#capacity_requirements}
     */
     readonly capacityRequirements?: ClusterCapacityRequirementsProperty;
     /**
     * The number of instances that are currently in the instance group of a SageMaker HyperPod cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster#current_count CcCluster#current_count}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#current_count CcCluster#current_count}
     */
     readonly currentCount?: number;
     /**
     * The execution role for the instance group to assume.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster#execution_role CcCluster#execution_role}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#execution_role CcCluster#execution_role}
     */
     readonly executionRole?: string;
     /**
     * AMI Id to be used for launching EC2 instances - HyperPodPublicAmiId or CustomAmiId
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster#image_id CcCluster#image_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#image_id CcCluster#image_id}
     */
     readonly imageId?: string;
     /**
     * The number of instances you specified to add to the instance group of a SageMaker HyperPod cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster#instance_count CcCluster#instance_count}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#instance_count CcCluster#instance_count}
     */
     readonly instanceCount?: number;
     /**
     * The name of the instance group of a SageMaker HyperPod cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster#instance_group_name CcCluster#instance_group_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#instance_group_name CcCluster#instance_group_name}
     */
     readonly instanceGroupName?: string;
     /**
     * The instance storage configuration for the instance group.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster#instance_storage_configs CcCluster#instance_storage_configs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#instance_storage_configs CcCluster#instance_storage_configs}
     */
     readonly instanceStorageConfigs?: ClusterInstanceStorageConfigProperty[] | cdktn.IResolvable;
     /**
     * The instance type of the instance group of a SageMaker HyperPod cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster#instance_type CcCluster#instance_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#instance_type CcCluster#instance_type}
     */
     readonly instanceType?: string;
     /**
     * Kubernetes configuration for cluster nodes including labels and taints.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster#kubernetes_config CcCluster#kubernetes_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#kubernetes_config CcCluster#kubernetes_config}
     */
     readonly kubernetesConfig?: ClusterKubernetesConfigProperty;
     /**
     * The lifecycle configuration for a SageMaker HyperPod cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster#life_cycle_config CcCluster#life_cycle_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#life_cycle_config CcCluster#life_cycle_config}
     */
     readonly lifeCycleConfig?: ClusterLifeCycleConfigProperty;
     /**
     * The minimum number of instances required for the instance group to be InService. MinInstanceCount must be less than or equal to InstanceCount.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster#min_instance_count CcCluster#min_instance_count}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#min_instance_count CcCluster#min_instance_count}
     */
     readonly minInstanceCount?: number;
     /**
     * Nodes will undergo advanced stress test to detect and replace faulty instances, based on the type of deep health check(s) passed in.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster#on_start_deep_health_checks CcCluster#on_start_deep_health_checks}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#on_start_deep_health_checks CcCluster#on_start_deep_health_checks}
     */
     readonly onStartDeepHealthChecks?: string[];
     /**
     * Specifies an Amazon Virtual Private Cloud (VPC) that your SageMaker jobs, hosted models, and compute resources have access to. You can control access to and from your resources by configuring a VPC.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster#override_vpc_config CcCluster#override_vpc_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#override_vpc_config CcCluster#override_vpc_config}
     */
     readonly overrideVpcConfig?: VpcConfigProperty;
     /**
     * The configuration object of the schedule that SageMaker follows when updating the AMI.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster#scheduled_update_config CcCluster#scheduled_update_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#scheduled_update_config CcCluster#scheduled_update_config}
     */
     readonly scheduledUpdateConfig?: ScheduledUpdateConfigProperty;
     /**
     * The number you specified to TreadsPerCore in CreateCluster for enabling or disabling multithreading. For instance types that support multithreading, you can specify 1 for disabling multithreading and 2 for enabling multithreading.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster#threads_per_core CcCluster#threads_per_core}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#threads_per_core CcCluster#threads_per_core}
     */
     readonly threadsPerCore?: number;
     /**
     * The Amazon Resource Name (ARN) of the training plan to use for this cluster instance group. For more information about how to reserve GPU capacity for your SageMaker HyperPod clusters using Amazon SageMaker Training Plan, see CreateTrainingPlan.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster#training_plan_arn CcCluster#training_plan_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#training_plan_arn CcCluster#training_plan_arn}
     */
     readonly trainingPlanArn?: string;
 }
@@ -3464,7 +3465,7 @@ export interface ClusterOrchestratorEksConfigProperty {
     /**
     * The ARN of the EKS cluster, such as arn:aws:eks:us-west-2:123456789012:cluster/my-eks-cluster
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster#cluster_arn CcCluster#cluster_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#cluster_arn CcCluster#cluster_arn}
     */
     readonly clusterArn?: string;
 }
@@ -3530,7 +3531,7 @@ export interface OrchestratorProperty {
     /**
     * Specifies parameter(s) related to EKS as orchestrator, e.g. the EKS cluster nodes will attach to,
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster#eks CcCluster#eks}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#eks CcCluster#eks}
     */
     readonly eks?: ClusterOrchestratorEksConfigProperty;
 }
@@ -3596,13 +3597,13 @@ export interface FSxLustreConfigProperty {
     /**
     * The throughput capacity of the FSx for Lustre file system, measured in MB/s per TiB of storage.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster#per_unit_storage_throughput CcCluster#per_unit_storage_throughput}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#per_unit_storage_throughput CcCluster#per_unit_storage_throughput}
     */
     readonly perUnitStorageThroughput?: number;
     /**
     * The storage capacity of the FSx for Lustre file system, specified in gibibytes (GiB).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster#size_in_gi_b CcCluster#size_in_gi_b}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#size_in_gi_b CcCluster#size_in_gi_b}
     */
     readonly sizeInGiB?: number;
 }
@@ -3690,7 +3691,7 @@ export interface EnvironmentConfigProperty {
     /**
     * Configuration settings for an Amazon FSx for Lustre file system to be used with the cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster#fsx_lustre_config CcCluster#fsx_lustre_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#fsx_lustre_config CcCluster#fsx_lustre_config}
     */
     readonly fsxLustreConfig?: FSxLustreConfigProperty;
 }
@@ -3754,17 +3755,17 @@ export class EnvironmentConfigPropertyOutputReference extends cdktn.ComplexObjec
 }
 export interface EbsVolumeConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster#root_volume CcCluster#root_volume}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#root_volume CcCluster#root_volume}
     */
     readonly rootVolume?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster#volume_kms_key_id CcCluster#volume_kms_key_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#volume_kms_key_id CcCluster#volume_kms_key_id}
     */
     readonly volumeKmsKeyId?: string;
     /**
     * The size in gigabytes (GB) of the additional EBS volume to be attached to the instances in the SageMaker HyperPod cluster instance group. The additional EBS volume is attached to each instance within the SageMaker HyperPod cluster instance group and mounted to /opt/sagemaker.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster#volume_size_in_gb CcCluster#volume_size_in_gb}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#volume_size_in_gb CcCluster#volume_size_in_gb}
     */
     readonly volumeSizeInGb?: number;
 }
@@ -3874,7 +3875,7 @@ export interface InstanceStorageConfigsProperty {
     /**
     * Defines the configuration for attaching additional Amazon Elastic Block Store (EBS) volumes to the instances in the SageMaker HyperPod cluster instance group. The additional EBS volume is attached to each instance within the SageMaker HyperPod cluster instance group and mounted to /opt/sagemaker.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster#ebs_volume_config CcCluster#ebs_volume_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#ebs_volume_config CcCluster#ebs_volume_config}
     */
     readonly ebsVolumeConfig?: EbsVolumeConfigProperty;
 }
@@ -3962,13 +3963,13 @@ export interface OverrideVpcConfigProperty {
     /**
     * The VPC security group IDs, in the form sg-xxxxxxxx. Specify the security groups for the VPC that is specified in the Subnets field.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster#security_group_ids CcCluster#security_group_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#security_group_ids CcCluster#security_group_ids}
     */
     readonly securityGroupIds?: string[];
     /**
     * The ID of the subnets in the VPC to which you want to connect your training job or model.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster#subnets CcCluster#subnets}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#subnets CcCluster#subnets}
     */
     readonly subnets?: string[];
 }
@@ -4056,67 +4057,67 @@ export interface ClusterRestrictedInstanceGroupProperty {
     /**
     * The number of instances that are currently in the restricted instance group of a SageMaker HyperPod cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster#current_count CcCluster#current_count}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#current_count CcCluster#current_count}
     */
     readonly currentCount?: number;
     /**
     * The configuration for the restricted instance groups (RIG) environment.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster#environment_config CcCluster#environment_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#environment_config CcCluster#environment_config}
     */
     readonly environmentConfig?: EnvironmentConfigProperty;
     /**
     * The execution role for the instance group to assume.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster#execution_role CcCluster#execution_role}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#execution_role CcCluster#execution_role}
     */
     readonly executionRole?: string;
     /**
     * The number of instances you specified to add to the restricted instance group of a SageMaker HyperPod cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster#instance_count CcCluster#instance_count}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#instance_count CcCluster#instance_count}
     */
     readonly instanceCount?: number;
     /**
     * The name of the instance group of a SageMaker HyperPod cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster#instance_group_name CcCluster#instance_group_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#instance_group_name CcCluster#instance_group_name}
     */
     readonly instanceGroupName?: string;
     /**
     * The instance storage configuration for the instance group.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster#instance_storage_configs CcCluster#instance_storage_configs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#instance_storage_configs CcCluster#instance_storage_configs}
     */
     readonly instanceStorageConfigs?: InstanceStorageConfigsProperty[] | cdktn.IResolvable;
     /**
     * The instance type of the instance group of a SageMaker HyperPod cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster#instance_type CcCluster#instance_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#instance_type CcCluster#instance_type}
     */
     readonly instanceType?: string;
     /**
     * Nodes will undergo advanced stress test to detect and replace faulty instances, based on the type of deep health check(s) passed in.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster#on_start_deep_health_checks CcCluster#on_start_deep_health_checks}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#on_start_deep_health_checks CcCluster#on_start_deep_health_checks}
     */
     readonly onStartDeepHealthChecks?: string[];
     /**
     * Specifies an Amazon Virtual Private Cloud (VPC) that your SageMaker jobs, hosted models, and compute resources have access to. You can control access to and from your resources by configuring a VPC.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster#override_vpc_config CcCluster#override_vpc_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#override_vpc_config CcCluster#override_vpc_config}
     */
     readonly overrideVpcConfig?: OverrideVpcConfigProperty;
     /**
     * The number you specified to TreadsPerCore in CreateCluster for enabling or disabling multithreading. For instance types that support multithreading, you can specify 1 for disabling multithreading and 2 for enabling multithreading.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster#threads_per_core CcCluster#threads_per_core}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#threads_per_core CcCluster#threads_per_core}
     */
     readonly threadsPerCore?: number;
     /**
     * The Amazon Resource Name (ARN) of the training plan to use for this cluster restricted instance group. For more information about how to reserve GPU capacity for your SageMaker HyperPod clusters using Amazon SageMaker Training Plan, see CreateTrainingPlan.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster#training_plan_arn CcCluster#training_plan_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#training_plan_arn CcCluster#training_plan_arn}
     */
     readonly trainingPlanArn?: string;
 }
@@ -4424,13 +4425,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster#key CcCluster#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#key CcCluster#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 0 to 256 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster#value CcCluster#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#value CcCluster#value}
     */
     readonly value?: string;
 }
@@ -4540,13 +4541,13 @@ export interface TieredStorageConfigProperty {
     /**
     * The percentage of instance memory to allocate for tiered storage.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster#instance_memory_allocation_percentage CcCluster#instance_memory_allocation_percentage}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#instance_memory_allocation_percentage CcCluster#instance_memory_allocation_percentage}
     */
     readonly instanceMemoryAllocationPercentage?: number;
     /**
     * The mode of tiered storage.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster#mode CcCluster#mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#mode CcCluster#mode}
     */
     readonly mode?: string;
 }
@@ -4634,13 +4635,13 @@ export interface VpcConfigProperty2 {
     /**
     * The VPC security group IDs, in the form sg-xxxxxxxx. Specify the security groups for the VPC that is specified in the Subnets field.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster#security_group_ids CcCluster#security_group_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#security_group_ids CcCluster#security_group_ids}
     */
     readonly securityGroupIds?: string[];
     /**
     * The ID of the subnets in the VPC to which you want to connect your training job or model.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/sagemaker_cluster#subnets CcCluster#subnets}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_cluster#subnets CcCluster#subnets}
     */
     readonly subnets?: string[];
 }

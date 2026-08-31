@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transcribe_vocabulary_filter
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transcribe_vocabulary_filter
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,43 +9,43 @@ export interface CcVocabularyFilterProps extends cdktn.TerraformMetaArguments {
     /**
     * The Amazon Resource Name (ARN) of an IAM role that has permissions to access the Amazon S3 bucket that contains your input files.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transcribe_vocabulary_filter#data_access_role_arn CcVocabularyFilter#data_access_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transcribe_vocabulary_filter#data_access_role_arn CcVocabularyFilter#data_access_role_arn}
     */
     readonly dataAccessRoleArn?: string;
     /**
     * The language code that represents the language of the entries in your vocabulary filter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transcribe_vocabulary_filter#language_code CcVocabularyFilter#language_code}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transcribe_vocabulary_filter#language_code CcVocabularyFilter#language_code}
     */
     readonly languageCode: string;
     /**
     * Tags associated with the vocabulary filter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transcribe_vocabulary_filter#tags CcVocabularyFilter#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transcribe_vocabulary_filter#tags CcVocabularyFilter#tags}
     */
     readonly tags?: CcVocabularyFilter.TagProperty[] | cdktn.IResolvable;
     /**
     * The Amazon S3 location of the text file that contains your custom vocabulary filter terms.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transcribe_vocabulary_filter#vocabulary_filter_file_uri CcVocabularyFilter#vocabulary_filter_file_uri}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transcribe_vocabulary_filter#vocabulary_filter_file_uri CcVocabularyFilter#vocabulary_filter_file_uri}
     */
     readonly vocabularyFilterFileUri?: string;
     /**
     * A unique name, chosen by you, for your custom vocabulary filter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transcribe_vocabulary_filter#vocabulary_filter_name CcVocabularyFilter#vocabulary_filter_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transcribe_vocabulary_filter#vocabulary_filter_name CcVocabularyFilter#vocabulary_filter_name}
     */
     readonly vocabularyFilterName: string;
     /**
     * Use this parameter if you want to create your custom vocabulary filter by including all desired terms, as comma-separated values, within your request.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transcribe_vocabulary_filter#words CcVocabularyFilter#words}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transcribe_vocabulary_filter#words CcVocabularyFilter#words}
     */
     readonly words?: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transcribe_vocabulary_filter awscc_transcribe_vocabulary_filter}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transcribe_vocabulary_filter awscc_transcribe_vocabulary_filter}
 */
 export class CcVocabularyFilter extends cdktn.TerraformResource {
 
@@ -61,7 +61,7 @@ export class CcVocabularyFilter extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcVocabularyFilter resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcVocabularyFilter to import
-    * @param importFromId The id of the existing CcVocabularyFilter that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transcribe_vocabulary_filter#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcVocabularyFilter that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transcribe_vocabulary_filter#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcVocabularyFilter to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -73,7 +73,7 @@ export class CcVocabularyFilter extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transcribe_vocabulary_filter awscc_transcribe_vocabulary_filter} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transcribe_vocabulary_filter awscc_transcribe_vocabulary_filter} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -83,7 +83,8 @@ export class CcVocabularyFilter extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_transcribe_vocabulary_filter',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -307,13 +308,13 @@ export interface TagProperty {
     /**
     * The key of the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transcribe_vocabulary_filter#key CcVocabularyFilter#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transcribe_vocabulary_filter#key CcVocabularyFilter#key}
     */
     readonly key?: string;
     /**
     * The value of the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transcribe_vocabulary_filter#value CcVocabularyFilter#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transcribe_vocabulary_filter#value CcVocabularyFilter#value}
     */
     readonly value?: string;
 }

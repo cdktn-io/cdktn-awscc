@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datasync_agent
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_agent
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,43 +9,43 @@ export interface CcAgentProps extends cdktn.TerraformMetaArguments {
     /**
     * Activation key of the Agent.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datasync_agent#activation_key CcAgent#activation_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_agent#activation_key CcAgent#activation_key}
     */
     readonly activationKey?: string;
     /**
     * The name configured for the agent. Text reference used to identify the agent in the console.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datasync_agent#agent_name CcAgent#agent_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_agent#agent_name CcAgent#agent_name}
     */
     readonly agentName?: string;
     /**
     * The ARNs of the security group used to protect your data transfer task subnets.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datasync_agent#security_group_arns CcAgent#security_group_arns}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_agent#security_group_arns CcAgent#security_group_arns}
     */
     readonly securityGroupArns?: string[];
     /**
     * The ARNs of the subnets in which DataSync will create elastic network interfaces for each data transfer task.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datasync_agent#subnet_arns CcAgent#subnet_arns}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_agent#subnet_arns CcAgent#subnet_arns}
     */
     readonly subnetArns?: string[];
     /**
     * An array of key-value pairs to apply to this resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datasync_agent#tags CcAgent#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_agent#tags CcAgent#tags}
     */
     readonly tags?: CcAgent.TagProperty[] | cdktn.IResolvable;
     /**
     * The ID of the VPC endpoint that the agent has access to.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datasync_agent#vpc_endpoint_id CcAgent#vpc_endpoint_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_agent#vpc_endpoint_id CcAgent#vpc_endpoint_id}
     */
     readonly vpcEndpointId?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datasync_agent awscc_datasync_agent}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_agent awscc_datasync_agent}
 */
 export class CcAgent extends cdktn.TerraformResource {
 
@@ -61,7 +61,7 @@ export class CcAgent extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcAgent resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcAgent to import
-    * @param importFromId The id of the existing CcAgent that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datasync_agent#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcAgent that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_agent#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcAgent to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -73,7 +73,7 @@ export class CcAgent extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datasync_agent awscc_datasync_agent} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_agent awscc_datasync_agent} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -83,7 +83,8 @@ export class CcAgent extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_datasync_agent',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -318,13 +319,13 @@ export interface TagProperty {
     /**
     * The key for an AWS resource tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datasync_agent#key CcAgent#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_agent#key CcAgent#key}
     */
     readonly key?: string;
     /**
     * The value for an AWS resource tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datasync_agent#value CcAgent#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_agent#value CcAgent#value}
     */
     readonly value?: string;
 }

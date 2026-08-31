@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_image_recipe
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_image_recipe
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,73 +9,73 @@ export interface CcImageRecipeProps extends cdktn.TerraformMetaArguments {
     /**
     * Specify additional settings and launch scripts for your build instances.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_image_recipe#additional_instance_configuration CcImageRecipe#additional_instance_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_image_recipe#additional_instance_configuration CcImageRecipe#additional_instance_configuration}
     */
     readonly additionalInstanceConfiguration?: CcImageRecipe.AdditionalInstanceConfigurationProperty;
     /**
     * The tags to apply to the AMI created by this image recipe.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_image_recipe#ami_tags CcImageRecipe#ami_tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_image_recipe#ami_tags CcImageRecipe#ami_tags}
     */
     readonly amiTags?: { [key: string]: string };
     /**
     * The AMI watermark names to attach to the output AMI from this recipe. AMI watermarks are lineage markers that automatically propagate to derivative AMIs when the source AMI is copied or distributed.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_image_recipe#ami_watermarks CcImageRecipe#ami_watermarks}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_image_recipe#ami_watermarks CcImageRecipe#ami_watermarks}
     */
     readonly amiWatermarks?: string[];
     /**
     * The block device mappings to apply when creating images from this recipe.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_image_recipe#block_device_mappings CcImageRecipe#block_device_mappings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_image_recipe#block_device_mappings CcImageRecipe#block_device_mappings}
     */
     readonly blockDeviceMappings?: CcImageRecipe.InstanceBlockDeviceMappingProperty[] | cdktn.IResolvable;
     /**
     * The components of the image recipe.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_image_recipe#components CcImageRecipe#components}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_image_recipe#components CcImageRecipe#components}
     */
     readonly components?: CcImageRecipe.ComponentConfigurationProperty[] | cdktn.IResolvable;
     /**
     * The description of the image recipe.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_image_recipe#description CcImageRecipe#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_image_recipe#description CcImageRecipe#description}
     */
     readonly description?: string;
     /**
     * The name of the image recipe.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_image_recipe#name CcImageRecipe#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_image_recipe#name CcImageRecipe#name}
     */
     readonly name: string;
     /**
     * The parent image of the image recipe.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_image_recipe#parent_image CcImageRecipe#parent_image}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_image_recipe#parent_image CcImageRecipe#parent_image}
     */
     readonly parentImage: string;
     /**
     * The tags of the image recipe.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_image_recipe#tags CcImageRecipe#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_image_recipe#tags CcImageRecipe#tags}
     */
     readonly tags?: { [key: string]: string };
     /**
     * The version of the image recipe.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_image_recipe#version CcImageRecipe#version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_image_recipe#version CcImageRecipe#version}
     */
     readonly version: string;
     /**
     * The working directory to be used during build and test workflows.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_image_recipe#working_directory CcImageRecipe#working_directory}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_image_recipe#working_directory CcImageRecipe#working_directory}
     */
     readonly workingDirectory?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_image_recipe awscc_imagebuilder_image_recipe}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_image_recipe awscc_imagebuilder_image_recipe}
 */
 export class CcImageRecipe extends cdktn.TerraformResource {
 
@@ -91,7 +91,7 @@ export class CcImageRecipe extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcImageRecipe resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcImageRecipe to import
-    * @param importFromId The id of the existing CcImageRecipe that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_image_recipe#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcImageRecipe that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_image_recipe#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcImageRecipe to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -103,7 +103,7 @@ export class CcImageRecipe extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_image_recipe awscc_imagebuilder_image_recipe} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_image_recipe awscc_imagebuilder_image_recipe} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -113,7 +113,8 @@ export class CcImageRecipe extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_imagebuilder_image_recipe',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -715,7 +716,7 @@ export interface SystemsManagerAgentProperty {
     /**
     * Controls whether the SSM agent is removed from your final build image, prior to creating the new AMI. If this is set to true, then the agent is removed from the final image. If it's set to false, then the agent is left in, so that it is included in the new AMI. The default value is false.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_image_recipe#uninstall_after_build CcImageRecipe#uninstall_after_build}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_image_recipe#uninstall_after_build CcImageRecipe#uninstall_after_build}
     */
     readonly uninstallAfterBuild?: boolean | cdktn.IResolvable;
 }
@@ -781,13 +782,13 @@ export interface AdditionalInstanceConfigurationProperty {
     /**
     * Contains settings for the SSM agent on your build instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_image_recipe#systems_manager_agent CcImageRecipe#systems_manager_agent}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_image_recipe#systems_manager_agent CcImageRecipe#systems_manager_agent}
     */
     readonly systemsManagerAgent?: SystemsManagerAgentProperty;
     /**
     * Use this property to provide commands or a command script to run when you launch your build instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_image_recipe#user_data_override CcImageRecipe#user_data_override}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_image_recipe#user_data_override CcImageRecipe#user_data_override}
     */
     readonly userDataOverride?: string;
 }
@@ -875,49 +876,49 @@ export interface EbsInstanceBlockDeviceSpecificationProperty {
     /**
     * Use to configure delete on termination of the associated device.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_image_recipe#delete_on_termination CcImageRecipe#delete_on_termination}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_image_recipe#delete_on_termination CcImageRecipe#delete_on_termination}
     */
     readonly deleteOnTermination?: boolean | cdktn.IResolvable;
     /**
     * Use to configure device encryption.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_image_recipe#encrypted CcImageRecipe#encrypted}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_image_recipe#encrypted CcImageRecipe#encrypted}
     */
     readonly encrypted?: boolean | cdktn.IResolvable;
     /**
     * Use to configure device IOPS.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_image_recipe#iops CcImageRecipe#iops}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_image_recipe#iops CcImageRecipe#iops}
     */
     readonly iops?: number;
     /**
     * Use to configure the KMS key to use when encrypting the device.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_image_recipe#kms_key_id CcImageRecipe#kms_key_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_image_recipe#kms_key_id CcImageRecipe#kms_key_id}
     */
     readonly kmsKeyId?: string;
     /**
     * The snapshot that defines the device contents.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_image_recipe#snapshot_id CcImageRecipe#snapshot_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_image_recipe#snapshot_id CcImageRecipe#snapshot_id}
     */
     readonly snapshotId?: string;
     /**
     * For GP3 volumes only - The throughput in MiB/s that the volume supports.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_image_recipe#throughput CcImageRecipe#throughput}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_image_recipe#throughput CcImageRecipe#throughput}
     */
     readonly throughput?: number;
     /**
     * Use to override the device's volume size.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_image_recipe#volume_size CcImageRecipe#volume_size}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_image_recipe#volume_size CcImageRecipe#volume_size}
     */
     readonly volumeSize?: number;
     /**
     * Use to override the device's volume type.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_image_recipe#volume_type CcImageRecipe#volume_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_image_recipe#volume_type CcImageRecipe#volume_type}
     */
     readonly volumeType?: string;
 }
@@ -1137,25 +1138,25 @@ export interface InstanceBlockDeviceMappingProperty {
     /**
     * The device to which these mappings apply.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_image_recipe#device_name CcImageRecipe#device_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_image_recipe#device_name CcImageRecipe#device_name}
     */
     readonly deviceName?: string;
     /**
     * Use to manage Amazon EBS-specific configuration for this mapping.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_image_recipe#ebs CcImageRecipe#ebs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_image_recipe#ebs CcImageRecipe#ebs}
     */
     readonly ebs?: EbsInstanceBlockDeviceSpecificationProperty;
     /**
     * Use to remove a mapping from the parent image.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_image_recipe#no_device CcImageRecipe#no_device}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_image_recipe#no_device CcImageRecipe#no_device}
     */
     readonly noDevice?: string;
     /**
     * Use to manage instance ephemeral devices.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_image_recipe#virtual_name CcImageRecipe#virtual_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_image_recipe#virtual_name CcImageRecipe#virtual_name}
     */
     readonly virtualName?: string;
 }
@@ -1309,13 +1310,13 @@ export interface ComponentParameterProperty {
     /**
     * The name of the component parameter to set.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_image_recipe#name CcImageRecipe#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_image_recipe#name CcImageRecipe#name}
     */
     readonly name?: string;
     /**
     * Sets the value for the named component parameter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_image_recipe#value CcImageRecipe#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_image_recipe#value CcImageRecipe#value}
     */
     readonly value?: string[];
 }
@@ -1425,13 +1426,13 @@ export interface ComponentConfigurationProperty {
     /**
     * The Amazon Resource Name (ARN) of the component.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_image_recipe#component_arn CcImageRecipe#component_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_image_recipe#component_arn CcImageRecipe#component_arn}
     */
     readonly componentArn?: string;
     /**
     * A group of parameter settings that are used to configure the component for a specific recipe.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/imagebuilder_image_recipe#parameters CcImageRecipe#parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_image_recipe#parameters CcImageRecipe#parameters}
     */
     readonly parameters?: ComponentParameterProperty[] | cdktn.IResolvable;
 }

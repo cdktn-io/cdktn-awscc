@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_blueprint
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_blueprint
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,31 +9,31 @@ export interface CcBlueprintProps extends cdktn.TerraformMetaArguments {
     /**
     * Specifies a path in Amazon S3 where the blueprint is published.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_blueprint#blueprint_location CcBlueprint#blueprint_location}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_blueprint#blueprint_location CcBlueprint#blueprint_location}
     */
     readonly blueprintLocation: string;
     /**
     * A description of the blueprint.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_blueprint#description CcBlueprint#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_blueprint#description CcBlueprint#description}
     */
     readonly description?: string;
     /**
     * The name of the blueprint.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_blueprint#name CcBlueprint#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_blueprint#name CcBlueprint#name}
     */
     readonly name: string;
     /**
     * The tags to be applied to this blueprint.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_blueprint#tags CcBlueprint#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_blueprint#tags CcBlueprint#tags}
     */
     readonly tags?: CcBlueprint.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_blueprint awscc_glue_blueprint}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_blueprint awscc_glue_blueprint}
 */
 export class CcBlueprint extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CcBlueprint extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcBlueprint resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcBlueprint to import
-    * @param importFromId The id of the existing CcBlueprint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_blueprint#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcBlueprint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_blueprint#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcBlueprint to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CcBlueprint extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_blueprint awscc_glue_blueprint} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_blueprint awscc_glue_blueprint} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -71,7 +71,8 @@ export class CcBlueprint extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_glue_blueprint',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -267,13 +268,13 @@ export interface TagProperty {
     /**
     * The key name of the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_blueprint#key CcBlueprint#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_blueprint#key CcBlueprint#key}
     */
     readonly key?: string;
     /**
     * The value for the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/glue_blueprint#value CcBlueprint#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_blueprint#value CcBlueprint#value}
     */
     readonly value?: string;
 }

@@ -1,23 +1,23 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/msk_batch_scram_secret
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_batch_scram_secret
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcBatchScramSecretProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/msk_batch_scram_secret#cluster_arn CcBatchScramSecret#cluster_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_batch_scram_secret#cluster_arn CcBatchScramSecret#cluster_arn}
     */
     readonly clusterArn: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/msk_batch_scram_secret#secret_arn_list CcBatchScramSecret#secret_arn_list}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_batch_scram_secret#secret_arn_list CcBatchScramSecret#secret_arn_list}
     */
     readonly secretArnList?: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/msk_batch_scram_secret awscc_msk_batch_scram_secret}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_batch_scram_secret awscc_msk_batch_scram_secret}
 */
 export class CcBatchScramSecret extends cdktn.TerraformResource {
 
@@ -33,7 +33,7 @@ export class CcBatchScramSecret extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcBatchScramSecret resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcBatchScramSecret to import
-    * @param importFromId The id of the existing CcBatchScramSecret that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/msk_batch_scram_secret#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcBatchScramSecret that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_batch_scram_secret#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcBatchScramSecret to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -45,7 +45,7 @@ export class CcBatchScramSecret extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/msk_batch_scram_secret awscc_msk_batch_scram_secret} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_batch_scram_secret awscc_msk_batch_scram_secret} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -55,7 +55,8 @@ export class CcBatchScramSecret extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_msk_batch_scram_secret',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,

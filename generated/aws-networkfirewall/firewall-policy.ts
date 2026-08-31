@@ -1,31 +1,31 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_firewall_policy
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_firewall_policy
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcFirewallPolicyProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_firewall_policy#description CcFirewallPolicy#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_firewall_policy#description CcFirewallPolicy#description}
     */
     readonly description?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_firewall_policy#firewall_policy CcFirewallPolicy#firewall_policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_firewall_policy#firewall_policy CcFirewallPolicy#firewall_policy}
     */
     readonly firewallPolicy: CcFirewallPolicy.FirewallPolicyProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_firewall_policy#firewall_policy_name CcFirewallPolicy#firewall_policy_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_firewall_policy#firewall_policy_name CcFirewallPolicy#firewall_policy_name}
     */
     readonly firewallPolicyName: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_firewall_policy#tags CcFirewallPolicy#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_firewall_policy#tags CcFirewallPolicy#tags}
     */
     readonly tags?: CcFirewallPolicy.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_firewall_policy awscc_networkfirewall_firewall_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_firewall_policy awscc_networkfirewall_firewall_policy}
 */
 export class CcFirewallPolicy extends cdktn.TerraformResource {
 
@@ -41,7 +41,7 @@ export class CcFirewallPolicy extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcFirewallPolicy resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcFirewallPolicy to import
-    * @param importFromId The id of the existing CcFirewallPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_firewall_policy#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcFirewallPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_firewall_policy#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcFirewallPolicy to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -53,7 +53,7 @@ export class CcFirewallPolicy extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_firewall_policy awscc_networkfirewall_firewall_policy} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_firewall_policy awscc_networkfirewall_firewall_policy} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -63,7 +63,8 @@ export class CcFirewallPolicy extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_networkfirewall_firewall_policy',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -714,7 +715,7 @@ export function ccFirewallPolicyTagPropertyToHclTerraform(struct?: CcFirewallPol
 export namespace CcFirewallPolicy {
 export interface IPSetProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_firewall_policy#definition CcFirewallPolicy#definition}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_firewall_policy#definition CcFirewallPolicy#definition}
     */
     readonly definition?: string[];
 }
@@ -798,7 +799,7 @@ export class IPSetPropertyMap extends cdktn.ComplexMap {
 }
 export interface PolicyVariablesProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_firewall_policy#rule_variables CcFirewallPolicy#rule_variables}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_firewall_policy#rule_variables CcFirewallPolicy#rule_variables}
     */
     readonly ruleVariables?: { [key: string]: IPSetProperty } | cdktn.IResolvable;
 }
@@ -862,7 +863,7 @@ export class PolicyVariablesPropertyOutputReference extends cdktn.ComplexObject 
 }
 export interface FlowTimeoutsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_firewall_policy#tcp_idle_timeout_seconds CcFirewallPolicy#tcp_idle_timeout_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_firewall_policy#tcp_idle_timeout_seconds CcFirewallPolicy#tcp_idle_timeout_seconds}
     */
     readonly tcpIdleTimeoutSeconds?: number;
 }
@@ -926,15 +927,15 @@ export class FlowTimeoutsPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface StatefulEngineOptionsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_firewall_policy#flow_timeouts CcFirewallPolicy#flow_timeouts}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_firewall_policy#flow_timeouts CcFirewallPolicy#flow_timeouts}
     */
     readonly flowTimeouts?: FlowTimeoutsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_firewall_policy#rule_order CcFirewallPolicy#rule_order}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_firewall_policy#rule_order CcFirewallPolicy#rule_order}
     */
     readonly ruleOrder?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_firewall_policy#stream_exception_policy CcFirewallPolicy#stream_exception_policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_firewall_policy#stream_exception_policy CcFirewallPolicy#stream_exception_policy}
     */
     readonly streamExceptionPolicy?: string;
 }
@@ -1042,7 +1043,7 @@ export class StatefulEngineOptionsPropertyOutputReference extends cdktn.ComplexO
 }
 export interface StatefulRuleGroupOverrideProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_firewall_policy#action CcFirewallPolicy#action}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_firewall_policy#action CcFirewallPolicy#action}
     */
     readonly action?: string;
 }
@@ -1106,21 +1107,21 @@ export class StatefulRuleGroupOverridePropertyOutputReference extends cdktn.Comp
 }
 export interface StatefulRuleGroupReferenceProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_firewall_policy#deep_threat_inspection CcFirewallPolicy#deep_threat_inspection}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_firewall_policy#deep_threat_inspection CcFirewallPolicy#deep_threat_inspection}
     */
     readonly deepThreatInspection?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_firewall_policy#override CcFirewallPolicy#override}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_firewall_policy#override CcFirewallPolicy#override}
     */
     readonly override?: StatefulRuleGroupOverrideProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_firewall_policy#priority CcFirewallPolicy#priority}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_firewall_policy#priority CcFirewallPolicy#priority}
     */
     readonly priority?: number;
     /**
     * A resource ARN.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_firewall_policy#resource_arn CcFirewallPolicy#resource_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_firewall_policy#resource_arn CcFirewallPolicy#resource_arn}
     */
     readonly resourceArn?: string;
 }
@@ -1272,7 +1273,7 @@ export class StatefulRuleGroupReferencePropertyList extends cdktn.ComplexList {
 }
 export interface DimensionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_firewall_policy#value CcFirewallPolicy#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_firewall_policy#value CcFirewallPolicy#value}
     */
     readonly value?: string;
 }
@@ -1358,7 +1359,7 @@ export class DimensionPropertyList extends cdktn.ComplexList {
 }
 export interface PublishMetricActionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_firewall_policy#dimensions CcFirewallPolicy#dimensions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_firewall_policy#dimensions CcFirewallPolicy#dimensions}
     */
     readonly dimensions?: DimensionProperty[] | cdktn.IResolvable;
 }
@@ -1422,7 +1423,7 @@ export class PublishMetricActionPropertyOutputReference extends cdktn.ComplexObj
 }
 export interface ActionDefinitionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_firewall_policy#publish_metric_action CcFirewallPolicy#publish_metric_action}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_firewall_policy#publish_metric_action CcFirewallPolicy#publish_metric_action}
     */
     readonly publishMetricAction?: PublishMetricActionProperty;
 }
@@ -1486,11 +1487,11 @@ export class ActionDefinitionPropertyOutputReference extends cdktn.ComplexObject
 }
 export interface CustomActionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_firewall_policy#action_definition CcFirewallPolicy#action_definition}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_firewall_policy#action_definition CcFirewallPolicy#action_definition}
     */
     readonly actionDefinition?: ActionDefinitionProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_firewall_policy#action_name CcFirewallPolicy#action_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_firewall_policy#action_name CcFirewallPolicy#action_name}
     */
     readonly actionName?: string;
 }
@@ -1598,13 +1599,13 @@ export class CustomActionPropertyList extends cdktn.ComplexList {
 }
 export interface StatelessRuleGroupReferenceProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_firewall_policy#priority CcFirewallPolicy#priority}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_firewall_policy#priority CcFirewallPolicy#priority}
     */
     readonly priority?: number;
     /**
     * A resource ARN.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_firewall_policy#resource_arn CcFirewallPolicy#resource_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_firewall_policy#resource_arn CcFirewallPolicy#resource_arn}
     */
     readonly resourceArn?: string;
 }
@@ -1712,45 +1713,45 @@ export class StatelessRuleGroupReferencePropertyList extends cdktn.ComplexList {
 }
 export interface FirewallPolicyProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_firewall_policy#enable_tls_session_holding CcFirewallPolicy#enable_tls_session_holding}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_firewall_policy#enable_tls_session_holding CcFirewallPolicy#enable_tls_session_holding}
     */
     readonly enableTlsSessionHolding?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_firewall_policy#policy_variables CcFirewallPolicy#policy_variables}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_firewall_policy#policy_variables CcFirewallPolicy#policy_variables}
     */
     readonly policyVariables?: PolicyVariablesProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_firewall_policy#stateful_default_actions CcFirewallPolicy#stateful_default_actions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_firewall_policy#stateful_default_actions CcFirewallPolicy#stateful_default_actions}
     */
     readonly statefulDefaultActions?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_firewall_policy#stateful_engine_options CcFirewallPolicy#stateful_engine_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_firewall_policy#stateful_engine_options CcFirewallPolicy#stateful_engine_options}
     */
     readonly statefulEngineOptions?: StatefulEngineOptionsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_firewall_policy#stateful_rule_group_references CcFirewallPolicy#stateful_rule_group_references}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_firewall_policy#stateful_rule_group_references CcFirewallPolicy#stateful_rule_group_references}
     */
     readonly statefulRuleGroupReferences?: StatefulRuleGroupReferenceProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_firewall_policy#stateless_custom_actions CcFirewallPolicy#stateless_custom_actions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_firewall_policy#stateless_custom_actions CcFirewallPolicy#stateless_custom_actions}
     */
     readonly statelessCustomActions?: CustomActionProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_firewall_policy#stateless_default_actions CcFirewallPolicy#stateless_default_actions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_firewall_policy#stateless_default_actions CcFirewallPolicy#stateless_default_actions}
     */
     readonly statelessDefaultActions: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_firewall_policy#stateless_fragment_default_actions CcFirewallPolicy#stateless_fragment_default_actions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_firewall_policy#stateless_fragment_default_actions CcFirewallPolicy#stateless_fragment_default_actions}
     */
     readonly statelessFragmentDefaultActions: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_firewall_policy#stateless_rule_group_references CcFirewallPolicy#stateless_rule_group_references}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_firewall_policy#stateless_rule_group_references CcFirewallPolicy#stateless_rule_group_references}
     */
     readonly statelessRuleGroupReferences?: StatelessRuleGroupReferenceProperty[] | cdktn.IResolvable;
     /**
     * A resource ARN.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_firewall_policy#tls_inspection_configuration_arn CcFirewallPolicy#tls_inspection_configuration_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_firewall_policy#tls_inspection_configuration_arn CcFirewallPolicy#tls_inspection_configuration_arn}
     */
     readonly tlsInspectionConfigurationArn?: string;
 }
@@ -2006,11 +2007,11 @@ export class FirewallPolicyPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_firewall_policy#key CcFirewallPolicy#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_firewall_policy#key CcFirewallPolicy#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/networkfirewall_firewall_policy#value CcFirewallPolicy#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_firewall_policy#value CcFirewallPolicy#value}
     */
     readonly value?: string;
 }

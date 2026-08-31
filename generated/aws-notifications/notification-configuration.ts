@@ -1,33 +1,33 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/notifications_notification_configuration
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/notifications_notification_configuration
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcNotificationConfigurationProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/notifications_notification_configuration#aggregation_duration CcNotificationConfiguration#aggregation_duration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/notifications_notification_configuration#aggregation_duration CcNotificationConfiguration#aggregation_duration}
     */
     readonly aggregationDuration?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/notifications_notification_configuration#description CcNotificationConfiguration#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/notifications_notification_configuration#description CcNotificationConfiguration#description}
     */
     readonly description: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/notifications_notification_configuration#name CcNotificationConfiguration#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/notifications_notification_configuration#name CcNotificationConfiguration#name}
     */
     readonly name: string;
     /**
     * A list of tags that are attached to the role.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/notifications_notification_configuration#tags CcNotificationConfiguration#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/notifications_notification_configuration#tags CcNotificationConfiguration#tags}
     */
     readonly tags?: CcNotificationConfiguration.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/notifications_notification_configuration awscc_notifications_notification_configuration}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/notifications_notification_configuration awscc_notifications_notification_configuration}
 */
 export class CcNotificationConfiguration extends cdktn.TerraformResource {
 
@@ -43,7 +43,7 @@ export class CcNotificationConfiguration extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcNotificationConfiguration resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcNotificationConfiguration to import
-    * @param importFromId The id of the existing CcNotificationConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/notifications_notification_configuration#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcNotificationConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/notifications_notification_configuration#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcNotificationConfiguration to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -55,7 +55,7 @@ export class CcNotificationConfiguration extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/notifications_notification_configuration awscc_notifications_notification_configuration} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/notifications_notification_configuration awscc_notifications_notification_configuration} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -65,7 +65,8 @@ export class CcNotificationConfiguration extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_notifications_notification_configuration',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -249,11 +250,11 @@ export function ccNotificationConfigurationTagPropertyToHclTerraform(struct?: Cc
 export namespace CcNotificationConfiguration {
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/notifications_notification_configuration#key CcNotificationConfiguration#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/notifications_notification_configuration#key CcNotificationConfiguration#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/notifications_notification_configuration#value CcNotificationConfiguration#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/notifications_notification_configuration#value CcNotificationConfiguration#value}
     */
     readonly value?: string;
 }

@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/medialive_node
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_node
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,43 +9,43 @@ export interface CcNodeProps extends cdktn.TerraformMetaArguments {
     /**
     * The ID of the Cluster that the Node belongs to.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/medialive_node#cluster_id CcNode#cluster_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_node#cluster_id CcNode#cluster_id}
     */
     readonly clusterId: string;
     /**
     * The user-specified name of the Node.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/medialive_node#name CcNode#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_node#name CcNode#name}
     */
     readonly name?: string;
     /**
     * An array of interface mappings for the Node.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/medialive_node#node_interface_mappings CcNode#node_interface_mappings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_node#node_interface_mappings CcNode#node_interface_mappings}
     */
     readonly nodeInterfaceMappings?: CcNode.NodeInterfaceMappingProperty[] | cdktn.IResolvable;
     /**
     * The role of the Node in the Cluster. ACTIVE means the Node is available for encoding. BACKUP means the Node is a redundant Node and might get used if an ACTIVE Node fails.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/medialive_node#role CcNode#role}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_node#role CcNode#role}
     */
     readonly role?: string;
     /**
     * An array of SDI source mappings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/medialive_node#sdi_source_mappings CcNode#sdi_source_mappings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_node#sdi_source_mappings CcNode#sdi_source_mappings}
     */
     readonly sdiSourceMappings?: CcNode.SdiSourceMappingProperty[] | cdktn.IResolvable;
     /**
     * A collection of key-value pairs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/medialive_node#tags CcNode#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_node#tags CcNode#tags}
     */
     readonly tags?: CcNode.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/medialive_node awscc_medialive_node}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_node awscc_medialive_node}
 */
 export class CcNode extends cdktn.TerraformResource {
 
@@ -61,7 +61,7 @@ export class CcNode extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcNode resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcNode to import
-    * @param importFromId The id of the existing CcNode that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/medialive_node#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcNode that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_node#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcNode to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -73,7 +73,7 @@ export class CcNode extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/medialive_node awscc_medialive_node} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_node awscc_medialive_node} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -83,7 +83,8 @@ export class CcNode extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_medialive_node',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -423,19 +424,19 @@ export interface NodeInterfaceMappingProperty {
     /**
     * The logical name for this interface.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/medialive_node#logical_interface_name CcNode#logical_interface_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_node#logical_interface_name CcNode#logical_interface_name}
     */
     readonly logicalInterfaceName?: string;
     /**
     * The network interface mode.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/medialive_node#network_interface_mode CcNode#network_interface_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_node#network_interface_mode CcNode#network_interface_mode}
     */
     readonly networkInterfaceMode?: string;
     /**
     * The physical interface name.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/medialive_node#physical_interface_name CcNode#physical_interface_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_node#physical_interface_name CcNode#physical_interface_name}
     */
     readonly physicalInterfaceName?: string;
 }
@@ -567,19 +568,19 @@ export interface SdiSourceMappingProperty {
     /**
     * The card number.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/medialive_node#card_number CcNode#card_number}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_node#card_number CcNode#card_number}
     */
     readonly cardNumber?: number;
     /**
     * The channel number.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/medialive_node#channel_number CcNode#channel_number}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_node#channel_number CcNode#channel_number}
     */
     readonly channelNumber?: number;
     /**
     * The SDI source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/medialive_node#sdi_source CcNode#sdi_source}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_node#sdi_source CcNode#sdi_source}
     */
     readonly sdiSource?: string;
 }
@@ -711,13 +712,13 @@ export interface TagProperty {
     /**
     * The key name of the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/medialive_node#key CcNode#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_node#key CcNode#key}
     */
     readonly key?: string;
     /**
     * The value for the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/medialive_node#value CcNode#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_node#value CcNode#value}
     */
     readonly value?: string;
 }

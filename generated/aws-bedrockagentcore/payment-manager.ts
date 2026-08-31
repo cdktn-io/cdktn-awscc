@@ -1,47 +1,47 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_payment_manager
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_payment_manager
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcPaymentManagerProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_payment_manager#authorizer_configuration CcPaymentManager#authorizer_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_payment_manager#authorizer_configuration CcPaymentManager#authorizer_configuration}
     */
     readonly authorizerConfiguration?: CcPaymentManager.AuthorizerConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_payment_manager#authorizer_type CcPaymentManager#authorizer_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_payment_manager#authorizer_type CcPaymentManager#authorizer_type}
     */
     readonly authorizerType: string;
     /**
     * A description of the payment manager
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_payment_manager#description CcPaymentManager#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_payment_manager#description CcPaymentManager#description}
     */
     readonly description?: string;
     /**
     * The name of the payment manager
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_payment_manager#name CcPaymentManager#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_payment_manager#name CcPaymentManager#name}
     */
     readonly name: string;
     /**
     * The ARN of the IAM role for the payment manager
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_payment_manager#role_arn CcPaymentManager#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_payment_manager#role_arn CcPaymentManager#role_arn}
     */
     readonly roleArn: string;
     /**
     * Tags to assign to the payment manager
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_payment_manager#tags CcPaymentManager#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_payment_manager#tags CcPaymentManager#tags}
     */
     readonly tags?: CcPaymentManager.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_payment_manager awscc_bedrockagentcore_payment_manager}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_payment_manager awscc_bedrockagentcore_payment_manager}
 */
 export class CcPaymentManager extends cdktn.TerraformResource {
 
@@ -57,7 +57,7 @@ export class CcPaymentManager extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcPaymentManager resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcPaymentManager to import
-    * @param importFromId The id of the existing CcPaymentManager that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_payment_manager#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcPaymentManager that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_payment_manager#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcPaymentManager to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -69,7 +69,7 @@ export class CcPaymentManager extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_payment_manager awscc_bedrockagentcore_payment_manager} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_payment_manager awscc_bedrockagentcore_payment_manager} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -79,7 +79,8 @@ export class CcPaymentManager extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_bedrockagentcore_payment_manager',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -551,11 +552,11 @@ export function ccPaymentManagerWorkloadIdentityDetailsPropertyToHclTerraform(st
 export namespace CcPaymentManager {
 export interface ClaimMatchValueTypeProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_payment_manager#match_value_string CcPaymentManager#match_value_string}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_payment_manager#match_value_string CcPaymentManager#match_value_string}
     */
     readonly matchValueString?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_payment_manager#match_value_string_list CcPaymentManager#match_value_string_list}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_payment_manager#match_value_string_list CcPaymentManager#match_value_string_list}
     */
     readonly matchValueStringList?: string[];
 }
@@ -641,11 +642,11 @@ export class ClaimMatchValueTypePropertyOutputReference extends cdktn.ComplexObj
 }
 export interface AuthorizingClaimMatchValueTypeProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_payment_manager#claim_match_operator CcPaymentManager#claim_match_operator}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_payment_manager#claim_match_operator CcPaymentManager#claim_match_operator}
     */
     readonly claimMatchOperator?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_payment_manager#claim_match_value CcPaymentManager#claim_match_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_payment_manager#claim_match_value CcPaymentManager#claim_match_value}
     */
     readonly claimMatchValue?: ClaimMatchValueTypeProperty;
 }
@@ -731,15 +732,15 @@ export class AuthorizingClaimMatchValueTypePropertyOutputReference extends cdktn
 }
 export interface CustomClaimValidationTypeProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_payment_manager#authorizing_claim_match_value CcPaymentManager#authorizing_claim_match_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_payment_manager#authorizing_claim_match_value CcPaymentManager#authorizing_claim_match_value}
     */
     readonly authorizingClaimMatchValue?: AuthorizingClaimMatchValueTypeProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_payment_manager#inbound_token_claim_name CcPaymentManager#inbound_token_claim_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_payment_manager#inbound_token_claim_name CcPaymentManager#inbound_token_claim_name}
     */
     readonly inboundTokenClaimName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_payment_manager#inbound_token_claim_value_type CcPaymentManager#inbound_token_claim_value_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_payment_manager#inbound_token_claim_value_type CcPaymentManager#inbound_token_claim_value_type}
     */
     readonly inboundTokenClaimValueType?: string;
 }
@@ -869,23 +870,23 @@ export class CustomClaimValidationTypePropertyList extends cdktn.ComplexList {
 }
 export interface CustomJWTAuthorizerConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_payment_manager#allowed_audience CcPaymentManager#allowed_audience}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_payment_manager#allowed_audience CcPaymentManager#allowed_audience}
     */
     readonly allowedAudience?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_payment_manager#allowed_clients CcPaymentManager#allowed_clients}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_payment_manager#allowed_clients CcPaymentManager#allowed_clients}
     */
     readonly allowedClients?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_payment_manager#allowed_scopes CcPaymentManager#allowed_scopes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_payment_manager#allowed_scopes CcPaymentManager#allowed_scopes}
     */
     readonly allowedScopes?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_payment_manager#custom_claims CcPaymentManager#custom_claims}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_payment_manager#custom_claims CcPaymentManager#custom_claims}
     */
     readonly customClaims?: CustomClaimValidationTypeProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_payment_manager#discovery_url CcPaymentManager#discovery_url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_payment_manager#discovery_url CcPaymentManager#discovery_url}
     */
     readonly discoveryUrl?: string;
 }
@@ -1037,7 +1038,7 @@ export class CustomJWTAuthorizerConfigurationPropertyOutputReference extends cdk
 }
 export interface AuthorizerConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_payment_manager#custom_jwt_authorizer CcPaymentManager#custom_jwt_authorizer}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_payment_manager#custom_jwt_authorizer CcPaymentManager#custom_jwt_authorizer}
     */
     readonly customJwtAuthorizer?: CustomJWTAuthorizerConfigurationProperty;
 }
@@ -1101,11 +1102,11 @@ export class AuthorizerConfigurationPropertyOutputReference extends cdktn.Comple
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_payment_manager#key CcPaymentManager#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_payment_manager#key CcPaymentManager#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_payment_manager#value CcPaymentManager#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_payment_manager#value CcPaymentManager#value}
     */
     readonly value?: string;
 }

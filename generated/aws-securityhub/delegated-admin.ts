@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/securityhub_delegated_admin
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_delegated_admin
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,13 +9,13 @@ export interface CcDelegatedAdminProps extends cdktn.TerraformMetaArguments {
     /**
     * The AWS-account identifier of the account to designate as the Security Hub CSPM administrator account.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/securityhub_delegated_admin#admin_account_id CcDelegatedAdmin#admin_account_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_delegated_admin#admin_account_id CcDelegatedAdmin#admin_account_id}
     */
     readonly adminAccountId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/securityhub_delegated_admin awscc_securityhub_delegated_admin}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_delegated_admin awscc_securityhub_delegated_admin}
 */
 export class CcDelegatedAdmin extends cdktn.TerraformResource {
 
@@ -31,7 +31,7 @@ export class CcDelegatedAdmin extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcDelegatedAdmin resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcDelegatedAdmin to import
-    * @param importFromId The id of the existing CcDelegatedAdmin that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/securityhub_delegated_admin#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcDelegatedAdmin that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_delegated_admin#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcDelegatedAdmin to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -43,7 +43,7 @@ export class CcDelegatedAdmin extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/securityhub_delegated_admin awscc_securityhub_delegated_admin} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_delegated_admin awscc_securityhub_delegated_admin} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -53,7 +53,8 @@ export class CcDelegatedAdmin extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_securityhub_delegated_admin',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,

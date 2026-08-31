@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datasync_location_fsx_ontap
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_fsx_ontap
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,37 +9,37 @@ export interface CcLocationFSxONTAPProps extends cdktn.TerraformMetaArguments {
     /**
     * Configuration settings for NFS or SMB protocol.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datasync_location_fsx_ontap#protocol CcLocationFSxONTAP#protocol}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_fsx_ontap#protocol CcLocationFSxONTAP#protocol}
     */
     readonly protocol?: CcLocationFSxONTAP.ProtocolProperty;
     /**
     * The ARNs of the security groups that are to use to configure the FSx ONTAP file system.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datasync_location_fsx_ontap#security_group_arns CcLocationFSxONTAP#security_group_arns}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_fsx_ontap#security_group_arns CcLocationFSxONTAP#security_group_arns}
     */
     readonly securityGroupArns: string[];
     /**
     * The Amazon Resource Name (ARN) for the FSx ONTAP SVM.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datasync_location_fsx_ontap#storage_virtual_machine_arn CcLocationFSxONTAP#storage_virtual_machine_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_fsx_ontap#storage_virtual_machine_arn CcLocationFSxONTAP#storage_virtual_machine_arn}
     */
     readonly storageVirtualMachineArn: string;
     /**
     * A subdirectory in the location's path.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datasync_location_fsx_ontap#subdirectory CcLocationFSxONTAP#subdirectory}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_fsx_ontap#subdirectory CcLocationFSxONTAP#subdirectory}
     */
     readonly subdirectory?: string;
     /**
     * An array of key-value pairs to apply to this resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datasync_location_fsx_ontap#tags CcLocationFSxONTAP#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_fsx_ontap#tags CcLocationFSxONTAP#tags}
     */
     readonly tags?: CcLocationFSxONTAP.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datasync_location_fsx_ontap awscc_datasync_location_fsx_ontap}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_fsx_ontap awscc_datasync_location_fsx_ontap}
 */
 export class CcLocationFSxONTAP extends cdktn.TerraformResource {
 
@@ -55,7 +55,7 @@ export class CcLocationFSxONTAP extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcLocationFSxONTAP resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcLocationFSxONTAP to import
-    * @param importFromId The id of the existing CcLocationFSxONTAP that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datasync_location_fsx_ontap#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcLocationFSxONTAP that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_fsx_ontap#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcLocationFSxONTAP to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -67,7 +67,7 @@ export class CcLocationFSxONTAP extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datasync_location_fsx_ontap awscc_datasync_location_fsx_ontap} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_fsx_ontap awscc_datasync_location_fsx_ontap} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -77,7 +77,8 @@ export class CcLocationFSxONTAP extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_datasync_location_fsx_ontap',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -567,7 +568,7 @@ export interface NfsMountOptionsProperty {
     /**
     * The specific NFS version that you want DataSync to use to mount your NFS share.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datasync_location_fsx_ontap#version CcLocationFSxONTAP#version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_fsx_ontap#version CcLocationFSxONTAP#version}
     */
     readonly version?: string;
 }
@@ -633,7 +634,7 @@ export interface NFSProperty {
     /**
     * The NFS mount options that DataSync can use to mount your NFS share.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datasync_location_fsx_ontap#mount_options CcLocationFSxONTAP#mount_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_fsx_ontap#mount_options CcLocationFSxONTAP#mount_options}
     */
     readonly mountOptions?: NfsMountOptionsProperty;
 }
@@ -699,7 +700,7 @@ export interface CmkSecretConfigProperty {
     /**
     * Specifies the ARN for the customer-managed AWS KMS key used to encrypt the secret specified for SecretArn. DataSync provides this key to AWS Secrets Manager.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datasync_location_fsx_ontap#kms_key_arn CcLocationFSxONTAP#kms_key_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_fsx_ontap#kms_key_arn CcLocationFSxONTAP#kms_key_arn}
     */
     readonly kmsKeyArn?: string;
 }
@@ -770,13 +771,13 @@ export interface CustomSecretConfigProperty {
     /**
     * Specifies the ARN for the AWS Identity and Access Management role that DataSync uses to access the secret specified for SecretArn.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datasync_location_fsx_ontap#secret_access_role_arn CcLocationFSxONTAP#secret_access_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_fsx_ontap#secret_access_role_arn CcLocationFSxONTAP#secret_access_role_arn}
     */
     readonly secretAccessRoleArn?: string;
     /**
     * Specifies the ARN for a customer created AWS Secrets Manager secret.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datasync_location_fsx_ontap#secret_arn CcLocationFSxONTAP#secret_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_fsx_ontap#secret_arn CcLocationFSxONTAP#secret_arn}
     */
     readonly secretArn?: string;
 }
@@ -897,7 +898,7 @@ export interface SmbMountOptionsProperty {
     /**
     * The specific SMB version that you want DataSync to use to mount your SMB share.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datasync_location_fsx_ontap#version CcLocationFSxONTAP#version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_fsx_ontap#version CcLocationFSxONTAP#version}
     */
     readonly version?: string;
 }
@@ -963,37 +964,37 @@ export interface SMBProperty {
     /**
     * Specifies configuration information for a DataSync-managed secret, such as an authentication token or set of credentials that DataSync uses to access a specific transfer location, and a customer-managed AWS KMS key.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datasync_location_fsx_ontap#cmk_secret_config CcLocationFSxONTAP#cmk_secret_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_fsx_ontap#cmk_secret_config CcLocationFSxONTAP#cmk_secret_config}
     */
     readonly cmkSecretConfig?: CmkSecretConfigProperty;
     /**
     * Specifies configuration information for a customer-managed secret, such as an authentication token or set of credentials that DataSync uses to access a specific transfer location, and an IAM role that DataSync can assume and access the customer-managed secret.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datasync_location_fsx_ontap#custom_secret_config CcLocationFSxONTAP#custom_secret_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_fsx_ontap#custom_secret_config CcLocationFSxONTAP#custom_secret_config}
     */
     readonly customSecretConfig?: CustomSecretConfigProperty;
     /**
     * The name of the Windows domain that the SMB server belongs to.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datasync_location_fsx_ontap#domain CcLocationFSxONTAP#domain}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_fsx_ontap#domain CcLocationFSxONTAP#domain}
     */
     readonly domain?: string;
     /**
     * The mount options used by DataSync to access the SMB server.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datasync_location_fsx_ontap#mount_options CcLocationFSxONTAP#mount_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_fsx_ontap#mount_options CcLocationFSxONTAP#mount_options}
     */
     readonly mountOptions?: SmbMountOptionsProperty;
     /**
     * The password of the user who can mount the share and has the permissions to access files and folders in the SMB share.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datasync_location_fsx_ontap#password CcLocationFSxONTAP#password}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_fsx_ontap#password CcLocationFSxONTAP#password}
     */
     readonly password?: string;
     /**
     * The user who can mount the share, has the permissions to access files and folders in the SMB share.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datasync_location_fsx_ontap#user CcLocationFSxONTAP#user}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_fsx_ontap#user CcLocationFSxONTAP#user}
     */
     readonly user?: string;
 }
@@ -1175,13 +1176,13 @@ export interface ProtocolProperty {
     /**
     * NFS protocol configuration for FSx ONTAP file system.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datasync_location_fsx_ontap#nfs CcLocationFSxONTAP#nfs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_fsx_ontap#nfs CcLocationFSxONTAP#nfs}
     */
     readonly nfs?: NFSProperty;
     /**
     * SMB protocol configuration for FSx ONTAP file system.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datasync_location_fsx_ontap#smb CcLocationFSxONTAP#smb}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_fsx_ontap#smb CcLocationFSxONTAP#smb}
     */
     readonly smb?: SMBProperty;
 }
@@ -1269,13 +1270,13 @@ export interface TagProperty {
     /**
     * The key for an AWS resource tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datasync_location_fsx_ontap#key CcLocationFSxONTAP#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_fsx_ontap#key CcLocationFSxONTAP#key}
     */
     readonly key?: string;
     /**
     * The value for an AWS resource tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/datasync_location_fsx_ontap#value CcLocationFSxONTAP#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_fsx_ontap#value CcLocationFSxONTAP#value}
     */
     readonly value?: string;
 }

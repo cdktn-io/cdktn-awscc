@@ -1,23 +1,23 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_thing
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_thing
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcThingProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_thing#attribute_payload CcThing#attribute_payload}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_thing#attribute_payload CcThing#attribute_payload}
     */
     readonly attributePayload?: CcThing.AttributePayloadProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_thing#thing_name CcThing#thing_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_thing#thing_name CcThing#thing_name}
     */
     readonly thingName?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_thing awscc_iot_thing}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_thing awscc_iot_thing}
 */
 export class CcThing extends cdktn.TerraformResource {
 
@@ -33,7 +33,7 @@ export class CcThing extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcThing resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcThing to import
-    * @param importFromId The id of the existing CcThing that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_thing#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcThing that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_thing#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcThing to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -45,7 +45,7 @@ export class CcThing extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_thing awscc_iot_thing} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_thing awscc_iot_thing} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -55,7 +55,8 @@ export class CcThing extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_iot_thing',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -185,7 +186,7 @@ export function ccThingAttributePayloadPropertyToHclTerraform(struct?: CcThing.A
 export namespace CcThing {
 export interface AttributePayloadProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/iot_thing#attributes CcThing#attributes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_thing#attributes CcThing#attributes}
     */
     readonly attributes?: { [key: string]: string };
 }

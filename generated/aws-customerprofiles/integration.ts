@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_integration
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_integration
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,53 +9,53 @@ export interface CcIntegrationProps extends cdktn.TerraformMetaArguments {
     /**
     * The unique name of the domain.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_integration#domain_name CcIntegration#domain_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_integration#domain_name CcIntegration#domain_name}
     */
     readonly domainName: string;
     /**
     * A list of unique names for active event triggers associated with the integration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_integration#event_trigger_names CcIntegration#event_trigger_names}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_integration#event_trigger_names CcIntegration#event_trigger_names}
     */
     readonly eventTriggerNames?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_integration#flow_definition CcIntegration#flow_definition}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_integration#flow_definition CcIntegration#flow_definition}
     */
     readonly flowDefinition?: CcIntegration.FlowDefinitionProperty;
     /**
     * The name of the ObjectType defined for the 3rd party data in Profile Service
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_integration#object_type_name CcIntegration#object_type_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_integration#object_type_name CcIntegration#object_type_name}
     */
     readonly objectTypeName?: string;
     /**
     * The mapping between 3rd party event types and ObjectType names
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_integration#object_type_names CcIntegration#object_type_names}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_integration#object_type_names CcIntegration#object_type_names}
     */
     readonly objectTypeNames?: CcIntegration.ObjectTypeMappingProperty[] | cdktn.IResolvable;
     /**
     * Scope of the integration, such as 'PROFILE' or 'DOMAIN'
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_integration#scope CcIntegration#scope}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_integration#scope CcIntegration#scope}
     */
     readonly scope?: string;
     /**
     * The tags (keys and values) associated with the integration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_integration#tags CcIntegration#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_integration#tags CcIntegration#tags}
     */
     readonly tags?: CcIntegration.TagProperty[] | cdktn.IResolvable;
     /**
     * The URI of the S3 bucket or any other type of data source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_integration#uri CcIntegration#uri}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_integration#uri CcIntegration#uri}
     */
     readonly uri?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_integration awscc_customerprofiles_integration}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_integration awscc_customerprofiles_integration}
 */
 export class CcIntegration extends cdktn.TerraformResource {
 
@@ -71,7 +71,7 @@ export class CcIntegration extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcIntegration resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcIntegration to import
-    * @param importFromId The id of the existing CcIntegration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_integration#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcIntegration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_integration#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcIntegration to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -83,7 +83,7 @@ export class CcIntegration extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_integration awscc_customerprofiles_integration} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_integration awscc_customerprofiles_integration} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -93,7 +93,8 @@ export class CcIntegration extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_customerprofiles_integration',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -1075,7 +1076,7 @@ export function ccIntegrationTagPropertyToHclTerraform(struct?: CcIntegration.Ta
 export namespace CcIntegration {
 export interface IncrementalPullConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_integration#datetime_type_field_name CcIntegration#datetime_type_field_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_integration#datetime_type_field_name CcIntegration#datetime_type_field_name}
     */
     readonly datetimeTypeFieldName?: string;
 }
@@ -1139,7 +1140,7 @@ export class IncrementalPullConfigPropertyOutputReference extends cdktn.ComplexO
 }
 export interface MarketoSourcePropertiesProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_integration#object CcIntegration#object}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_integration#object CcIntegration#object}
     */
     readonly object?: string;
 }
@@ -1203,11 +1204,11 @@ export class MarketoSourcePropertiesPropertyOutputReference extends cdktn.Comple
 }
 export interface S3SourcePropertiesProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_integration#bucket_name CcIntegration#bucket_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_integration#bucket_name CcIntegration#bucket_name}
     */
     readonly bucketName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_integration#bucket_prefix CcIntegration#bucket_prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_integration#bucket_prefix CcIntegration#bucket_prefix}
     */
     readonly bucketPrefix?: string;
 }
@@ -1293,15 +1294,15 @@ export class S3SourcePropertiesPropertyOutputReference extends cdktn.ComplexObje
 }
 export interface SalesforceSourcePropertiesProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_integration#enable_dynamic_field_update CcIntegration#enable_dynamic_field_update}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_integration#enable_dynamic_field_update CcIntegration#enable_dynamic_field_update}
     */
     readonly enableDynamicFieldUpdate?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_integration#include_deleted_records CcIntegration#include_deleted_records}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_integration#include_deleted_records CcIntegration#include_deleted_records}
     */
     readonly includeDeletedRecords?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_integration#object CcIntegration#object}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_integration#object CcIntegration#object}
     */
     readonly object?: string;
 }
@@ -1409,7 +1410,7 @@ export class SalesforceSourcePropertiesPropertyOutputReference extends cdktn.Com
 }
 export interface ServiceNowSourcePropertiesProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_integration#object CcIntegration#object}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_integration#object CcIntegration#object}
     */
     readonly object?: string;
 }
@@ -1473,7 +1474,7 @@ export class ServiceNowSourcePropertiesPropertyOutputReference extends cdktn.Com
 }
 export interface ZendeskSourcePropertiesProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_integration#object CcIntegration#object}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_integration#object CcIntegration#object}
     */
     readonly object?: string;
 }
@@ -1537,23 +1538,23 @@ export class ZendeskSourcePropertiesPropertyOutputReference extends cdktn.Comple
 }
 export interface SourceConnectorPropertiesProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_integration#marketo CcIntegration#marketo}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_integration#marketo CcIntegration#marketo}
     */
     readonly marketo?: MarketoSourcePropertiesProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_integration#s3 CcIntegration#s3}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_integration#s3 CcIntegration#s3}
     */
     readonly s3?: S3SourcePropertiesProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_integration#salesforce CcIntegration#salesforce}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_integration#salesforce CcIntegration#salesforce}
     */
     readonly salesforce?: SalesforceSourcePropertiesProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_integration#service_now CcIntegration#service_now}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_integration#service_now CcIntegration#service_now}
     */
     readonly serviceNow?: ServiceNowSourcePropertiesProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_integration#zendesk CcIntegration#zendesk}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_integration#zendesk CcIntegration#zendesk}
     */
     readonly zendesk?: ZendeskSourcePropertiesProperty;
 }
@@ -1705,19 +1706,19 @@ export class SourceConnectorPropertiesPropertyOutputReference extends cdktn.Comp
 }
 export interface SourceFlowConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_integration#connector_profile_name CcIntegration#connector_profile_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_integration#connector_profile_name CcIntegration#connector_profile_name}
     */
     readonly connectorProfileName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_integration#connector_type CcIntegration#connector_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_integration#connector_type CcIntegration#connector_type}
     */
     readonly connectorType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_integration#incremental_pull_config CcIntegration#incremental_pull_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_integration#incremental_pull_config CcIntegration#incremental_pull_config}
     */
     readonly incrementalPullConfig?: IncrementalPullConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_integration#source_connector_properties CcIntegration#source_connector_properties}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_integration#source_connector_properties CcIntegration#source_connector_properties}
     */
     readonly sourceConnectorProperties?: SourceConnectorPropertiesProperty;
 }
@@ -1847,23 +1848,23 @@ export class SourceFlowConfigPropertyOutputReference extends cdktn.ComplexObject
 }
 export interface ConnectorOperatorProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_integration#marketo CcIntegration#marketo}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_integration#marketo CcIntegration#marketo}
     */
     readonly marketo?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_integration#s3 CcIntegration#s3}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_integration#s3 CcIntegration#s3}
     */
     readonly s3?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_integration#salesforce CcIntegration#salesforce}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_integration#salesforce CcIntegration#salesforce}
     */
     readonly salesforce?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_integration#service_now CcIntegration#service_now}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_integration#service_now CcIntegration#service_now}
     */
     readonly serviceNow?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_integration#zendesk CcIntegration#zendesk}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_integration#zendesk CcIntegration#zendesk}
     */
     readonly zendesk?: string;
 }
@@ -2015,11 +2016,11 @@ export class ConnectorOperatorPropertyOutputReference extends cdktn.ComplexObjec
 }
 export interface TaskPropertiesMapProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_integration#operator_property_key CcIntegration#operator_property_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_integration#operator_property_key CcIntegration#operator_property_key}
     */
     readonly operatorPropertyKey?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_integration#property CcIntegration#property}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_integration#property CcIntegration#property}
     */
     readonly property?: string;
 }
@@ -2127,23 +2128,23 @@ export class TaskPropertiesMapPropertyList extends cdktn.ComplexList {
 }
 export interface TaskProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_integration#connector_operator CcIntegration#connector_operator}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_integration#connector_operator CcIntegration#connector_operator}
     */
     readonly connectorOperator?: ConnectorOperatorProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_integration#destination_field CcIntegration#destination_field}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_integration#destination_field CcIntegration#destination_field}
     */
     readonly destinationField?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_integration#source_fields CcIntegration#source_fields}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_integration#source_fields CcIntegration#source_fields}
     */
     readonly sourceFields?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_integration#task_properties CcIntegration#task_properties}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_integration#task_properties CcIntegration#task_properties}
     */
     readonly taskProperties?: TaskPropertiesMapProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_integration#task_type CcIntegration#task_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_integration#task_type CcIntegration#task_type}
     */
     readonly taskType?: string;
 }
@@ -2317,31 +2318,31 @@ export class TaskPropertyList extends cdktn.ComplexList {
 }
 export interface ScheduledTriggerPropertiesProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_integration#data_pull_mode CcIntegration#data_pull_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_integration#data_pull_mode CcIntegration#data_pull_mode}
     */
     readonly dataPullMode?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_integration#first_execution_from CcIntegration#first_execution_from}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_integration#first_execution_from CcIntegration#first_execution_from}
     */
     readonly firstExecutionFrom?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_integration#schedule_end_time CcIntegration#schedule_end_time}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_integration#schedule_end_time CcIntegration#schedule_end_time}
     */
     readonly scheduleEndTime?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_integration#schedule_expression CcIntegration#schedule_expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_integration#schedule_expression CcIntegration#schedule_expression}
     */
     readonly scheduleExpression?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_integration#schedule_offset CcIntegration#schedule_offset}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_integration#schedule_offset CcIntegration#schedule_offset}
     */
     readonly scheduleOffset?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_integration#schedule_start_time CcIntegration#schedule_start_time}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_integration#schedule_start_time CcIntegration#schedule_start_time}
     */
     readonly scheduleStartTime?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_integration#timezone CcIntegration#timezone}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_integration#timezone CcIntegration#timezone}
     */
     readonly timezone?: string;
 }
@@ -2537,7 +2538,7 @@ export class ScheduledTriggerPropertiesPropertyOutputReference extends cdktn.Com
 }
 export interface TriggerPropertiesProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_integration#scheduled CcIntegration#scheduled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_integration#scheduled CcIntegration#scheduled}
     */
     readonly scheduled?: ScheduledTriggerPropertiesProperty;
 }
@@ -2601,11 +2602,11 @@ export class TriggerPropertiesPropertyOutputReference extends cdktn.ComplexObjec
 }
 export interface TriggerConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_integration#trigger_properties CcIntegration#trigger_properties}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_integration#trigger_properties CcIntegration#trigger_properties}
     */
     readonly triggerProperties?: TriggerPropertiesProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_integration#trigger_type CcIntegration#trigger_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_integration#trigger_type CcIntegration#trigger_type}
     */
     readonly triggerType?: string;
 }
@@ -2691,27 +2692,27 @@ export class TriggerConfigPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface FlowDefinitionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_integration#description CcIntegration#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_integration#description CcIntegration#description}
     */
     readonly description?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_integration#flow_name CcIntegration#flow_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_integration#flow_name CcIntegration#flow_name}
     */
     readonly flowName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_integration#kms_arn CcIntegration#kms_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_integration#kms_arn CcIntegration#kms_arn}
     */
     readonly kmsArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_integration#source_flow_config CcIntegration#source_flow_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_integration#source_flow_config CcIntegration#source_flow_config}
     */
     readonly sourceFlowConfig?: SourceFlowConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_integration#tasks CcIntegration#tasks}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_integration#tasks CcIntegration#tasks}
     */
     readonly tasks?: TaskProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_integration#trigger_config CcIntegration#trigger_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_integration#trigger_config CcIntegration#trigger_config}
     */
     readonly triggerConfig?: TriggerConfigProperty;
 }
@@ -2885,11 +2886,11 @@ export class FlowDefinitionPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface ObjectTypeMappingProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_integration#key CcIntegration#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_integration#key CcIntegration#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_integration#value CcIntegration#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_integration#value CcIntegration#value}
     */
     readonly value?: string;
 }
@@ -2997,11 +2998,11 @@ export class ObjectTypeMappingPropertyList extends cdktn.ComplexList {
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_integration#key CcIntegration#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_integration#key CcIntegration#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_integration#value CcIntegration#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_integration#value CcIntegration#value}
     */
     readonly value?: string;
 }

@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,61 +9,61 @@ export interface CcDataAutomationProjectProps extends cdktn.TerraformMetaArgumen
     /**
     * Custom output configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#custom_output_configuration CcDataAutomationProject#custom_output_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#custom_output_configuration CcDataAutomationProject#custom_output_configuration}
     */
     readonly customOutputConfiguration?: CcDataAutomationProject.CustomOutputConfigurationProperty;
     /**
     * KMS encryption context
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#kms_encryption_context CcDataAutomationProject#kms_encryption_context}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#kms_encryption_context CcDataAutomationProject#kms_encryption_context}
     */
     readonly kmsEncryptionContext?: { [key: string]: string };
     /**
     * KMS key identifier
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#kms_key_id CcDataAutomationProject#kms_key_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#kms_key_id CcDataAutomationProject#kms_key_id}
     */
     readonly kmsKeyId?: string;
     /**
     * Override configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#override_configuration CcDataAutomationProject#override_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#override_configuration CcDataAutomationProject#override_configuration}
     */
     readonly overrideConfiguration?: CcDataAutomationProject.OverrideConfigurationProperty;
     /**
     * Description of the DataAutomationProject
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#project_description CcDataAutomationProject#project_description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#project_description CcDataAutomationProject#project_description}
     */
     readonly projectDescription?: string;
     /**
     * Name of the DataAutomationProject
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#project_name CcDataAutomationProject#project_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#project_name CcDataAutomationProject#project_name}
     */
     readonly projectName: string;
     /**
     * Type of the DataAutomationProject - Sync or Async
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#project_type CcDataAutomationProject#project_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#project_type CcDataAutomationProject#project_type}
     */
     readonly projectType?: string;
     /**
     * Standard output configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#standard_output_configuration CcDataAutomationProject#standard_output_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#standard_output_configuration CcDataAutomationProject#standard_output_configuration}
     */
     readonly standardOutputConfiguration?: CcDataAutomationProject.StandardOutputConfigurationProperty;
     /**
     * List of Tags
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#tags CcDataAutomationProject#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#tags CcDataAutomationProject#tags}
     */
     readonly tags?: CcDataAutomationProject.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project awscc_bedrock_data_automation_project}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project awscc_bedrock_data_automation_project}
 */
 export class CcDataAutomationProject extends cdktn.TerraformResource {
 
@@ -79,7 +79,7 @@ export class CcDataAutomationProject extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcDataAutomationProject resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcDataAutomationProject to import
-    * @param importFromId The id of the existing CcDataAutomationProject that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcDataAutomationProject that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcDataAutomationProject to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -91,7 +91,7 @@ export class CcDataAutomationProject extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project awscc_bedrock_data_automation_project} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project awscc_bedrock_data_automation_project} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -101,7 +101,8 @@ export class CcDataAutomationProject extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_bedrock_data_automation_project',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -2233,19 +2234,19 @@ export interface BlueprintItemProperty {
     /**
     * ARN of a Blueprint
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#blueprint_arn CcDataAutomationProject#blueprint_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#blueprint_arn CcDataAutomationProject#blueprint_arn}
     */
     readonly blueprintArn?: string;
     /**
     * Stage of the Blueprint
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#blueprint_stage CcDataAutomationProject#blueprint_stage}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#blueprint_stage CcDataAutomationProject#blueprint_stage}
     */
     readonly blueprintStage?: string;
     /**
     * Blueprint Version
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#blueprint_version CcDataAutomationProject#blueprint_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#blueprint_version CcDataAutomationProject#blueprint_version}
     */
     readonly blueprintVersion?: string;
 }
@@ -2375,7 +2376,7 @@ export class BlueprintItemPropertyList extends cdktn.ComplexList {
 }
 export interface CustomOutputConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#blueprints CcDataAutomationProject#blueprints}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#blueprints CcDataAutomationProject#blueprints}
     */
     readonly blueprints?: BlueprintItemProperty[] | cdktn.IResolvable;
 }
@@ -2439,15 +2440,15 @@ export class CustomOutputConfigurationPropertyOutputReference extends cdktn.Comp
 }
 export interface AudioLanguageConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#generative_output_language CcDataAutomationProject#generative_output_language}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#generative_output_language CcDataAutomationProject#generative_output_language}
     */
     readonly generativeOutputLanguage?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#identify_multiple_languages CcDataAutomationProject#identify_multiple_languages}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#identify_multiple_languages CcDataAutomationProject#identify_multiple_languages}
     */
     readonly identifyMultipleLanguages?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#input_languages CcDataAutomationProject#input_languages}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#input_languages CcDataAutomationProject#input_languages}
     */
     readonly inputLanguages?: string[];
 }
@@ -2555,7 +2556,7 @@ export class AudioLanguageConfigurationPropertyOutputReference extends cdktn.Com
 }
 export interface ModalityProcessingConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#state CcDataAutomationProject#state}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#state CcDataAutomationProject#state}
     */
     readonly state?: string;
 }
@@ -2619,11 +2620,11 @@ export class ModalityProcessingConfigurationPropertyOutputReference extends cdkt
 }
 export interface PIIEntitiesConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#pii_entity_types CcDataAutomationProject#pii_entity_types}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#pii_entity_types CcDataAutomationProject#pii_entity_types}
     */
     readonly piiEntityTypes?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#redaction_mask_mode CcDataAutomationProject#redaction_mask_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#redaction_mask_mode CcDataAutomationProject#redaction_mask_mode}
     */
     readonly redactionMaskMode?: string;
 }
@@ -2709,15 +2710,15 @@ export class PIIEntitiesConfigurationPropertyOutputReference extends cdktn.Compl
 }
 export interface SensitiveDataConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#detection_mode CcDataAutomationProject#detection_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#detection_mode CcDataAutomationProject#detection_mode}
     */
     readonly detectionMode?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#detection_scope CcDataAutomationProject#detection_scope}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#detection_scope CcDataAutomationProject#detection_scope}
     */
     readonly detectionScope?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#pii_entities_configuration CcDataAutomationProject#pii_entities_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#pii_entities_configuration CcDataAutomationProject#pii_entities_configuration}
     */
     readonly piiEntitiesConfiguration?: PIIEntitiesConfigurationProperty;
 }
@@ -2825,15 +2826,15 @@ export class SensitiveDataConfigurationPropertyOutputReference extends cdktn.Com
 }
 export interface AudioOverrideConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#language_configuration CcDataAutomationProject#language_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#language_configuration CcDataAutomationProject#language_configuration}
     */
     readonly languageConfiguration?: AudioLanguageConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#modality_processing CcDataAutomationProject#modality_processing}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#modality_processing CcDataAutomationProject#modality_processing}
     */
     readonly modalityProcessing?: ModalityProcessingConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#sensitive_data_configuration CcDataAutomationProject#sensitive_data_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#sensitive_data_configuration CcDataAutomationProject#sensitive_data_configuration}
     */
     readonly sensitiveDataConfiguration?: SensitiveDataConfigurationProperty;
 }
@@ -2941,7 +2942,7 @@ export class AudioOverrideConfigurationPropertyOutputReference extends cdktn.Com
 }
 export interface OverrideConfigurationDocumentModalityProcessingProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#state CcDataAutomationProject#state}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#state CcDataAutomationProject#state}
     */
     readonly state?: string;
 }
@@ -3005,11 +3006,11 @@ export class OverrideConfigurationDocumentModalityProcessingPropertyOutputRefere
 }
 export interface OverrideConfigurationDocumentSensitiveDataConfigurationPiiEntitiesConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#pii_entity_types CcDataAutomationProject#pii_entity_types}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#pii_entity_types CcDataAutomationProject#pii_entity_types}
     */
     readonly piiEntityTypes?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#redaction_mask_mode CcDataAutomationProject#redaction_mask_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#redaction_mask_mode CcDataAutomationProject#redaction_mask_mode}
     */
     readonly redactionMaskMode?: string;
 }
@@ -3095,15 +3096,15 @@ export class OverrideConfigurationDocumentSensitiveDataConfigurationPiiEntitiesC
 }
 export interface OverrideConfigurationDocumentSensitiveDataConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#detection_mode CcDataAutomationProject#detection_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#detection_mode CcDataAutomationProject#detection_mode}
     */
     readonly detectionMode?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#detection_scope CcDataAutomationProject#detection_scope}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#detection_scope CcDataAutomationProject#detection_scope}
     */
     readonly detectionScope?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#pii_entities_configuration CcDataAutomationProject#pii_entities_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#pii_entities_configuration CcDataAutomationProject#pii_entities_configuration}
     */
     readonly piiEntitiesConfiguration?: OverrideConfigurationDocumentSensitiveDataConfigurationPiiEntitiesConfigurationProperty;
 }
@@ -3211,7 +3212,7 @@ export class OverrideConfigurationDocumentSensitiveDataConfigurationPropertyOutp
 }
 export interface SplitterConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#state CcDataAutomationProject#state}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#state CcDataAutomationProject#state}
     */
     readonly state?: string;
 }
@@ -3275,15 +3276,15 @@ export class SplitterConfigurationPropertyOutputReference extends cdktn.ComplexO
 }
 export interface DocumentOverrideConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#modality_processing CcDataAutomationProject#modality_processing}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#modality_processing CcDataAutomationProject#modality_processing}
     */
     readonly modalityProcessing?: OverrideConfigurationDocumentModalityProcessingProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#sensitive_data_configuration CcDataAutomationProject#sensitive_data_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#sensitive_data_configuration CcDataAutomationProject#sensitive_data_configuration}
     */
     readonly sensitiveDataConfiguration?: OverrideConfigurationDocumentSensitiveDataConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#splitter CcDataAutomationProject#splitter}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#splitter CcDataAutomationProject#splitter}
     */
     readonly splitter?: SplitterConfigurationProperty;
 }
@@ -3391,7 +3392,7 @@ export class DocumentOverrideConfigurationPropertyOutputReference extends cdktn.
 }
 export interface OverrideConfigurationImageModalityProcessingProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#state CcDataAutomationProject#state}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#state CcDataAutomationProject#state}
     */
     readonly state?: string;
 }
@@ -3455,11 +3456,11 @@ export class OverrideConfigurationImageModalityProcessingPropertyOutputReference
 }
 export interface OverrideConfigurationImageSensitiveDataConfigurationPiiEntitiesConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#pii_entity_types CcDataAutomationProject#pii_entity_types}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#pii_entity_types CcDataAutomationProject#pii_entity_types}
     */
     readonly piiEntityTypes?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#redaction_mask_mode CcDataAutomationProject#redaction_mask_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#redaction_mask_mode CcDataAutomationProject#redaction_mask_mode}
     */
     readonly redactionMaskMode?: string;
 }
@@ -3545,15 +3546,15 @@ export class OverrideConfigurationImageSensitiveDataConfigurationPiiEntitiesConf
 }
 export interface OverrideConfigurationImageSensitiveDataConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#detection_mode CcDataAutomationProject#detection_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#detection_mode CcDataAutomationProject#detection_mode}
     */
     readonly detectionMode?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#detection_scope CcDataAutomationProject#detection_scope}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#detection_scope CcDataAutomationProject#detection_scope}
     */
     readonly detectionScope?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#pii_entities_configuration CcDataAutomationProject#pii_entities_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#pii_entities_configuration CcDataAutomationProject#pii_entities_configuration}
     */
     readonly piiEntitiesConfiguration?: OverrideConfigurationImageSensitiveDataConfigurationPiiEntitiesConfigurationProperty;
 }
@@ -3661,11 +3662,11 @@ export class OverrideConfigurationImageSensitiveDataConfigurationPropertyOutputR
 }
 export interface ImageOverrideConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#modality_processing CcDataAutomationProject#modality_processing}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#modality_processing CcDataAutomationProject#modality_processing}
     */
     readonly modalityProcessing?: OverrideConfigurationImageModalityProcessingProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#sensitive_data_configuration CcDataAutomationProject#sensitive_data_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#sensitive_data_configuration CcDataAutomationProject#sensitive_data_configuration}
     */
     readonly sensitiveDataConfiguration?: OverrideConfigurationImageSensitiveDataConfigurationProperty;
 }
@@ -3751,19 +3752,19 @@ export class ImageOverrideConfigurationPropertyOutputReference extends cdktn.Com
 }
 export interface ModalityRoutingConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#jpeg CcDataAutomationProject#jpeg}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#jpeg CcDataAutomationProject#jpeg}
     */
     readonly jpeg?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#mov CcDataAutomationProject#mov}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#mov CcDataAutomationProject#mov}
     */
     readonly mov?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#mp_4 CcDataAutomationProject#mp_4}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#mp_4 CcDataAutomationProject#mp_4}
     */
     readonly mp4?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#png CcDataAutomationProject#png}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#png CcDataAutomationProject#png}
     */
     readonly png?: string;
 }
@@ -3893,7 +3894,7 @@ export class ModalityRoutingConfigurationPropertyOutputReference extends cdktn.C
 }
 export interface OverrideConfigurationVideoModalityProcessingProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#state CcDataAutomationProject#state}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#state CcDataAutomationProject#state}
     */
     readonly state?: string;
 }
@@ -3957,11 +3958,11 @@ export class OverrideConfigurationVideoModalityProcessingPropertyOutputReference
 }
 export interface OverrideConfigurationVideoSensitiveDataConfigurationPiiEntitiesConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#pii_entity_types CcDataAutomationProject#pii_entity_types}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#pii_entity_types CcDataAutomationProject#pii_entity_types}
     */
     readonly piiEntityTypes?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#redaction_mask_mode CcDataAutomationProject#redaction_mask_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#redaction_mask_mode CcDataAutomationProject#redaction_mask_mode}
     */
     readonly redactionMaskMode?: string;
 }
@@ -4047,15 +4048,15 @@ export class OverrideConfigurationVideoSensitiveDataConfigurationPiiEntitiesConf
 }
 export interface OverrideConfigurationVideoSensitiveDataConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#detection_mode CcDataAutomationProject#detection_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#detection_mode CcDataAutomationProject#detection_mode}
     */
     readonly detectionMode?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#detection_scope CcDataAutomationProject#detection_scope}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#detection_scope CcDataAutomationProject#detection_scope}
     */
     readonly detectionScope?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#pii_entities_configuration CcDataAutomationProject#pii_entities_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#pii_entities_configuration CcDataAutomationProject#pii_entities_configuration}
     */
     readonly piiEntitiesConfiguration?: OverrideConfigurationVideoSensitiveDataConfigurationPiiEntitiesConfigurationProperty;
 }
@@ -4163,11 +4164,11 @@ export class OverrideConfigurationVideoSensitiveDataConfigurationPropertyOutputR
 }
 export interface VideoOverrideConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#modality_processing CcDataAutomationProject#modality_processing}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#modality_processing CcDataAutomationProject#modality_processing}
     */
     readonly modalityProcessing?: OverrideConfigurationVideoModalityProcessingProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#sensitive_data_configuration CcDataAutomationProject#sensitive_data_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#sensitive_data_configuration CcDataAutomationProject#sensitive_data_configuration}
     */
     readonly sensitiveDataConfiguration?: OverrideConfigurationVideoSensitiveDataConfigurationProperty;
 }
@@ -4253,25 +4254,25 @@ export class VideoOverrideConfigurationPropertyOutputReference extends cdktn.Com
 }
 export interface OverrideConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#audio CcDataAutomationProject#audio}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#audio CcDataAutomationProject#audio}
     */
     readonly audio?: AudioOverrideConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#document CcDataAutomationProject#document}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#document CcDataAutomationProject#document}
     */
     readonly document?: DocumentOverrideConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#image CcDataAutomationProject#image}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#image CcDataAutomationProject#image}
     */
     readonly image?: ImageOverrideConfigurationProperty;
     /**
     * Modality routing configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#modality_routing CcDataAutomationProject#modality_routing}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#modality_routing CcDataAutomationProject#modality_routing}
     */
     readonly modalityRouting?: ModalityRoutingConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#video CcDataAutomationProject#video}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#video CcDataAutomationProject#video}
     */
     readonly video?: VideoOverrideConfigurationProperty;
 }
@@ -4423,7 +4424,7 @@ export class OverrideConfigurationPropertyOutputReference extends cdktn.ComplexO
 }
 export interface ChannelLabelingConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#state CcDataAutomationProject#state}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#state CcDataAutomationProject#state}
     */
     readonly state?: string;
 }
@@ -4487,7 +4488,7 @@ export class ChannelLabelingConfigurationPropertyOutputReference extends cdktn.C
 }
 export interface SpeakerLabelingConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#state CcDataAutomationProject#state}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#state CcDataAutomationProject#state}
     */
     readonly state?: string;
 }
@@ -4551,11 +4552,11 @@ export class SpeakerLabelingConfigurationPropertyOutputReference extends cdktn.C
 }
 export interface TranscriptConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#channel_labeling CcDataAutomationProject#channel_labeling}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#channel_labeling CcDataAutomationProject#channel_labeling}
     */
     readonly channelLabeling?: ChannelLabelingConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#speaker_labeling CcDataAutomationProject#speaker_labeling}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#speaker_labeling CcDataAutomationProject#speaker_labeling}
     */
     readonly speakerLabeling?: SpeakerLabelingConfigurationProperty;
 }
@@ -4641,7 +4642,7 @@ export class TranscriptConfigurationPropertyOutputReference extends cdktn.Comple
 }
 export interface AudioExtractionCategoryTypeConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#transcript CcDataAutomationProject#transcript}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#transcript CcDataAutomationProject#transcript}
     */
     readonly transcript?: TranscriptConfigurationProperty;
 }
@@ -4705,15 +4706,15 @@ export class AudioExtractionCategoryTypeConfigurationPropertyOutputReference ext
 }
 export interface AudioExtractionCategoryProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#state CcDataAutomationProject#state}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#state CcDataAutomationProject#state}
     */
     readonly state?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#type_configuration CcDataAutomationProject#type_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#type_configuration CcDataAutomationProject#type_configuration}
     */
     readonly typeConfiguration?: AudioExtractionCategoryTypeConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#types CcDataAutomationProject#types}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#types CcDataAutomationProject#types}
     */
     readonly types?: string[];
 }
@@ -4821,7 +4822,7 @@ export class AudioExtractionCategoryPropertyOutputReference extends cdktn.Comple
 }
 export interface AudioStandardExtractionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#category CcDataAutomationProject#category}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#category CcDataAutomationProject#category}
     */
     readonly category?: AudioExtractionCategoryProperty;
 }
@@ -4885,11 +4886,11 @@ export class AudioStandardExtractionPropertyOutputReference extends cdktn.Comple
 }
 export interface AudioStandardGenerativeFieldProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#state CcDataAutomationProject#state}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#state CcDataAutomationProject#state}
     */
     readonly state?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#types CcDataAutomationProject#types}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#types CcDataAutomationProject#types}
     */
     readonly types?: string[];
 }
@@ -4975,11 +4976,11 @@ export class AudioStandardGenerativeFieldPropertyOutputReference extends cdktn.C
 }
 export interface AudioStandardOutputConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#extraction CcDataAutomationProject#extraction}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#extraction CcDataAutomationProject#extraction}
     */
     readonly extraction?: AudioStandardExtractionProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#generative_field CcDataAutomationProject#generative_field}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#generative_field CcDataAutomationProject#generative_field}
     */
     readonly generativeField?: AudioStandardGenerativeFieldProperty;
 }
@@ -5065,7 +5066,7 @@ export class AudioStandardOutputConfigurationPropertyOutputReference extends cdk
 }
 export interface DocumentBoundingBoxProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#state CcDataAutomationProject#state}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#state CcDataAutomationProject#state}
     */
     readonly state?: string;
 }
@@ -5129,7 +5130,7 @@ export class DocumentBoundingBoxPropertyOutputReference extends cdktn.ComplexObj
 }
 export interface DocumentExtractionGranularityProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#types CcDataAutomationProject#types}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#types CcDataAutomationProject#types}
     */
     readonly types?: string[];
 }
@@ -5193,11 +5194,11 @@ export class DocumentExtractionGranularityPropertyOutputReference extends cdktn.
 }
 export interface DocumentStandardExtractionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#bounding_box CcDataAutomationProject#bounding_box}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#bounding_box CcDataAutomationProject#bounding_box}
     */
     readonly boundingBox?: DocumentBoundingBoxProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#granularity CcDataAutomationProject#granularity}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#granularity CcDataAutomationProject#granularity}
     */
     readonly granularity?: DocumentExtractionGranularityProperty;
 }
@@ -5283,7 +5284,7 @@ export class DocumentStandardExtractionPropertyOutputReference extends cdktn.Com
 }
 export interface DocumentStandardGenerativeFieldProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#state CcDataAutomationProject#state}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#state CcDataAutomationProject#state}
     */
     readonly state?: string;
 }
@@ -5347,7 +5348,7 @@ export class DocumentStandardGenerativeFieldPropertyOutputReference extends cdkt
 }
 export interface DocumentOutputAdditionalFileFormatProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#state CcDataAutomationProject#state}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#state CcDataAutomationProject#state}
     */
     readonly state?: string;
 }
@@ -5411,7 +5412,7 @@ export class DocumentOutputAdditionalFileFormatPropertyOutputReference extends c
 }
 export interface DocumentOutputTextFormatProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#types CcDataAutomationProject#types}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#types CcDataAutomationProject#types}
     */
     readonly types?: string[];
 }
@@ -5475,11 +5476,11 @@ export class DocumentOutputTextFormatPropertyOutputReference extends cdktn.Compl
 }
 export interface DocumentOutputFormatProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#additional_file_format CcDataAutomationProject#additional_file_format}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#additional_file_format CcDataAutomationProject#additional_file_format}
     */
     readonly additionalFileFormat?: DocumentOutputAdditionalFileFormatProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#text_format CcDataAutomationProject#text_format}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#text_format CcDataAutomationProject#text_format}
     */
     readonly textFormat?: DocumentOutputTextFormatProperty;
 }
@@ -5565,15 +5566,15 @@ export class DocumentOutputFormatPropertyOutputReference extends cdktn.ComplexOb
 }
 export interface DocumentStandardOutputConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#extraction CcDataAutomationProject#extraction}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#extraction CcDataAutomationProject#extraction}
     */
     readonly extraction?: DocumentStandardExtractionProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#generative_field CcDataAutomationProject#generative_field}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#generative_field CcDataAutomationProject#generative_field}
     */
     readonly generativeField?: DocumentStandardGenerativeFieldProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#output_format CcDataAutomationProject#output_format}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#output_format CcDataAutomationProject#output_format}
     */
     readonly outputFormat?: DocumentOutputFormatProperty;
 }
@@ -5681,7 +5682,7 @@ export class DocumentStandardOutputConfigurationPropertyOutputReference extends 
 }
 export interface ImageBoundingBoxProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#state CcDataAutomationProject#state}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#state CcDataAutomationProject#state}
     */
     readonly state?: string;
 }
@@ -5745,11 +5746,11 @@ export class ImageBoundingBoxPropertyOutputReference extends cdktn.ComplexObject
 }
 export interface ImageExtractionCategoryProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#state CcDataAutomationProject#state}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#state CcDataAutomationProject#state}
     */
     readonly state?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#types CcDataAutomationProject#types}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#types CcDataAutomationProject#types}
     */
     readonly types?: string[];
 }
@@ -5835,11 +5836,11 @@ export class ImageExtractionCategoryPropertyOutputReference extends cdktn.Comple
 }
 export interface ImageStandardExtractionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#bounding_box CcDataAutomationProject#bounding_box}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#bounding_box CcDataAutomationProject#bounding_box}
     */
     readonly boundingBox?: ImageBoundingBoxProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#category CcDataAutomationProject#category}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#category CcDataAutomationProject#category}
     */
     readonly category?: ImageExtractionCategoryProperty;
 }
@@ -5925,11 +5926,11 @@ export class ImageStandardExtractionPropertyOutputReference extends cdktn.Comple
 }
 export interface ImageStandardGenerativeFieldProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#state CcDataAutomationProject#state}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#state CcDataAutomationProject#state}
     */
     readonly state?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#types CcDataAutomationProject#types}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#types CcDataAutomationProject#types}
     */
     readonly types?: string[];
 }
@@ -6015,11 +6016,11 @@ export class ImageStandardGenerativeFieldPropertyOutputReference extends cdktn.C
 }
 export interface ImageStandardOutputConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#extraction CcDataAutomationProject#extraction}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#extraction CcDataAutomationProject#extraction}
     */
     readonly extraction?: ImageStandardExtractionProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#generative_field CcDataAutomationProject#generative_field}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#generative_field CcDataAutomationProject#generative_field}
     */
     readonly generativeField?: ImageStandardGenerativeFieldProperty;
 }
@@ -6105,7 +6106,7 @@ export class ImageStandardOutputConfigurationPropertyOutputReference extends cdk
 }
 export interface VideoBoundingBoxProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#state CcDataAutomationProject#state}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#state CcDataAutomationProject#state}
     */
     readonly state?: string;
 }
@@ -6169,11 +6170,11 @@ export class VideoBoundingBoxPropertyOutputReference extends cdktn.ComplexObject
 }
 export interface VideoExtractionCategoryProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#state CcDataAutomationProject#state}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#state CcDataAutomationProject#state}
     */
     readonly state?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#types CcDataAutomationProject#types}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#types CcDataAutomationProject#types}
     */
     readonly types?: string[];
 }
@@ -6259,11 +6260,11 @@ export class VideoExtractionCategoryPropertyOutputReference extends cdktn.Comple
 }
 export interface VideoStandardExtractionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#bounding_box CcDataAutomationProject#bounding_box}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#bounding_box CcDataAutomationProject#bounding_box}
     */
     readonly boundingBox?: VideoBoundingBoxProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#category CcDataAutomationProject#category}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#category CcDataAutomationProject#category}
     */
     readonly category?: VideoExtractionCategoryProperty;
 }
@@ -6349,11 +6350,11 @@ export class VideoStandardExtractionPropertyOutputReference extends cdktn.Comple
 }
 export interface VideoStandardGenerativeFieldProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#state CcDataAutomationProject#state}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#state CcDataAutomationProject#state}
     */
     readonly state?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#types CcDataAutomationProject#types}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#types CcDataAutomationProject#types}
     */
     readonly types?: string[];
 }
@@ -6439,11 +6440,11 @@ export class VideoStandardGenerativeFieldPropertyOutputReference extends cdktn.C
 }
 export interface VideoStandardOutputConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#extraction CcDataAutomationProject#extraction}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#extraction CcDataAutomationProject#extraction}
     */
     readonly extraction?: VideoStandardExtractionProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#generative_field CcDataAutomationProject#generative_field}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#generative_field CcDataAutomationProject#generative_field}
     */
     readonly generativeField?: VideoStandardGenerativeFieldProperty;
 }
@@ -6529,19 +6530,19 @@ export class VideoStandardOutputConfigurationPropertyOutputReference extends cdk
 }
 export interface StandardOutputConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#audio CcDataAutomationProject#audio}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#audio CcDataAutomationProject#audio}
     */
     readonly audio?: AudioStandardOutputConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#document CcDataAutomationProject#document}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#document CcDataAutomationProject#document}
     */
     readonly document?: DocumentStandardOutputConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#image CcDataAutomationProject#image}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#image CcDataAutomationProject#image}
     */
     readonly image?: ImageStandardOutputConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#video CcDataAutomationProject#video}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#video CcDataAutomationProject#video}
     */
     readonly video?: VideoStandardOutputConfigurationProperty;
 }
@@ -6673,13 +6674,13 @@ export interface TagProperty {
     /**
     * Key for the tag
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#key CcDataAutomationProject#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#key CcDataAutomationProject#key}
     */
     readonly key?: string;
     /**
     * Value for the tag
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrock_data_automation_project#value CcDataAutomationProject#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_data_automation_project#value CcDataAutomationProject#value}
     */
     readonly value?: string;
 }

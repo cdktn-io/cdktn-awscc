@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/neptunegraph_private_graph_endpoint
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/neptunegraph_private_graph_endpoint
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,31 +9,31 @@ export interface CcPrivateGraphEndpointProps extends cdktn.TerraformMetaArgument
     /**
     * The auto-generated Graph Id assigned by the service.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/neptunegraph_private_graph_endpoint#graph_identifier CcPrivateGraphEndpoint#graph_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/neptunegraph_private_graph_endpoint#graph_identifier CcPrivateGraphEndpoint#graph_identifier}
     */
     readonly graphIdentifier: string;
     /**
     * The security group Ids associated with the VPC where you want the private graph endpoint to be created, ie, the graph will be reachable from within the VPC.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/neptunegraph_private_graph_endpoint#security_group_ids CcPrivateGraphEndpoint#security_group_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/neptunegraph_private_graph_endpoint#security_group_ids CcPrivateGraphEndpoint#security_group_ids}
     */
     readonly securityGroupIds?: string[];
     /**
     * The subnet Ids associated with the VPC where you want the private graph endpoint to be created, ie, the graph will be reachable from within the VPC.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/neptunegraph_private_graph_endpoint#subnet_ids CcPrivateGraphEndpoint#subnet_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/neptunegraph_private_graph_endpoint#subnet_ids CcPrivateGraphEndpoint#subnet_ids}
     */
     readonly subnetIds?: string[];
     /**
     * The VPC where you want the private graph endpoint to be created, ie, the graph will be reachable from within the VPC.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/neptunegraph_private_graph_endpoint#vpc_id CcPrivateGraphEndpoint#vpc_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/neptunegraph_private_graph_endpoint#vpc_id CcPrivateGraphEndpoint#vpc_id}
     */
     readonly vpcId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/neptunegraph_private_graph_endpoint awscc_neptunegraph_private_graph_endpoint}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/neptunegraph_private_graph_endpoint awscc_neptunegraph_private_graph_endpoint}
 */
 export class CcPrivateGraphEndpoint extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CcPrivateGraphEndpoint extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcPrivateGraphEndpoint resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcPrivateGraphEndpoint to import
-    * @param importFromId The id of the existing CcPrivateGraphEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/neptunegraph_private_graph_endpoint#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcPrivateGraphEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/neptunegraph_private_graph_endpoint#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcPrivateGraphEndpoint to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CcPrivateGraphEndpoint extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/neptunegraph_private_graph_endpoint awscc_neptunegraph_private_graph_endpoint} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/neptunegraph_private_graph_endpoint awscc_neptunegraph_private_graph_endpoint} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -71,7 +71,8 @@ export class CcPrivateGraphEndpoint extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_neptunegraph_private_graph_endpoint',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,

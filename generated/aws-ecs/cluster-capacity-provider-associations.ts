@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ecs_cluster_capacity_provider_associations
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_cluster_capacity_provider_associations
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,25 +9,25 @@ export interface CcClusterCapacityProviderAssociationsProps extends cdktn.Terraf
     /**
     * List of capacity providers to associate with the cluster
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ecs_cluster_capacity_provider_associations#capacity_providers CcClusterCapacityProviderAssociations#capacity_providers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_cluster_capacity_provider_associations#capacity_providers CcClusterCapacityProviderAssociations#capacity_providers}
     */
     readonly capacityProviders?: string[];
     /**
     * The name of the cluster
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ecs_cluster_capacity_provider_associations#cluster CcClusterCapacityProviderAssociations#cluster}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_cluster_capacity_provider_associations#cluster CcClusterCapacityProviderAssociations#cluster}
     */
     readonly cluster: string;
     /**
     * List of capacity providers to associate with the cluster
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ecs_cluster_capacity_provider_associations#default_capacity_provider_strategy CcClusterCapacityProviderAssociations#default_capacity_provider_strategy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_cluster_capacity_provider_associations#default_capacity_provider_strategy CcClusterCapacityProviderAssociations#default_capacity_provider_strategy}
     */
     readonly defaultCapacityProviderStrategy: CcClusterCapacityProviderAssociations.CapacityProviderStrategyProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ecs_cluster_capacity_provider_associations awscc_ecs_cluster_capacity_provider_associations}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_cluster_capacity_provider_associations awscc_ecs_cluster_capacity_provider_associations}
 */
 export class CcClusterCapacityProviderAssociations extends cdktn.TerraformResource {
 
@@ -43,7 +43,7 @@ export class CcClusterCapacityProviderAssociations extends cdktn.TerraformResour
     * Generates CDKTN code for importing a CcClusterCapacityProviderAssociations resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcClusterCapacityProviderAssociations to import
-    * @param importFromId The id of the existing CcClusterCapacityProviderAssociations that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ecs_cluster_capacity_provider_associations#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcClusterCapacityProviderAssociations that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_cluster_capacity_provider_associations#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcClusterCapacityProviderAssociations to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -55,7 +55,7 @@ export class CcClusterCapacityProviderAssociations extends cdktn.TerraformResour
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ecs_cluster_capacity_provider_associations awscc_ecs_cluster_capacity_provider_associations} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_cluster_capacity_provider_associations awscc_ecs_cluster_capacity_provider_associations} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -65,7 +65,8 @@ export class CcClusterCapacityProviderAssociations extends cdktn.TerraformResour
         super(scope, id, {
             terraformResourceType: 'awscc_ecs_cluster_capacity_provider_associations',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -217,17 +218,17 @@ export function ccClusterCapacityProviderAssociationsCapacityProviderStrategyPro
 export namespace CcClusterCapacityProviderAssociations {
 export interface CapacityProviderStrategyProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ecs_cluster_capacity_provider_associations#base CcClusterCapacityProviderAssociations#base}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_cluster_capacity_provider_associations#base CcClusterCapacityProviderAssociations#base}
     */
     readonly base?: number;
     /**
     * If using ec2 auto-scaling, the name of the associated capacity provider. Otherwise FARGATE, FARGATE_SPOT.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ecs_cluster_capacity_provider_associations#capacity_provider CcClusterCapacityProviderAssociations#capacity_provider}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_cluster_capacity_provider_associations#capacity_provider CcClusterCapacityProviderAssociations#capacity_provider}
     */
     readonly capacityProvider: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ecs_cluster_capacity_provider_associations#weight CcClusterCapacityProviderAssociations#weight}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_cluster_capacity_provider_associations#weight CcClusterCapacityProviderAssociations#weight}
     */
     readonly weight?: number;
 }

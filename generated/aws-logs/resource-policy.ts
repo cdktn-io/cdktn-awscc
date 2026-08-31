@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/logs_resource_policy
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/logs_resource_policy
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,19 +9,19 @@ export interface CcResourcePolicyProps extends cdktn.TerraformMetaArguments {
     /**
     * The policy document
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/logs_resource_policy#policy_document CcResourcePolicy#policy_document}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/logs_resource_policy#policy_document CcResourcePolicy#policy_document}
     */
     readonly policyDocument: string;
     /**
     * A name for resource policy
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/logs_resource_policy#policy_name CcResourcePolicy#policy_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/logs_resource_policy#policy_name CcResourcePolicy#policy_name}
     */
     readonly policyName: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/logs_resource_policy awscc_logs_resource_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/logs_resource_policy awscc_logs_resource_policy}
 */
 export class CcResourcePolicy extends cdktn.TerraformResource {
 
@@ -37,7 +37,7 @@ export class CcResourcePolicy extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcResourcePolicy resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcResourcePolicy to import
-    * @param importFromId The id of the existing CcResourcePolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/logs_resource_policy#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcResourcePolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/logs_resource_policy#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcResourcePolicy to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -49,7 +49,7 @@ export class CcResourcePolicy extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/logs_resource_policy awscc_logs_resource_policy} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/logs_resource_policy awscc_logs_resource_policy} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -59,7 +59,8 @@ export class CcResourcePolicy extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_logs_resource_policy',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,

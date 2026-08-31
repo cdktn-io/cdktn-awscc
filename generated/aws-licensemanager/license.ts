@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/licensemanager_license
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,67 +9,67 @@ export interface CcLicenseProps extends cdktn.TerraformMetaArguments {
     /**
     * Beneficiary of the license.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/licensemanager_license#beneficiary CcLicense#beneficiary}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license#beneficiary CcLicense#beneficiary}
     */
     readonly beneficiary: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/licensemanager_license#consumption_configuration CcLicense#consumption_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license#consumption_configuration CcLicense#consumption_configuration}
     */
     readonly consumptionConfiguration: CcLicense.ConsumptionConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/licensemanager_license#entitlements CcLicense#entitlements}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license#entitlements CcLicense#entitlements}
     */
     readonly entitlements: CcLicense.EntitlementProperty[] | cdktn.IResolvable;
     /**
     * Home region for the created license.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/licensemanager_license#home_region CcLicense#home_region}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license#home_region CcLicense#home_region}
     */
     readonly homeRegion: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/licensemanager_license#issuer CcLicense#issuer}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license#issuer CcLicense#issuer}
     */
     readonly issuer: CcLicense.IssuerDataProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/licensemanager_license#license_metadata CcLicense#license_metadata}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license#license_metadata CcLicense#license_metadata}
     */
     readonly licenseMetadata?: CcLicense.MetadataProperty[] | cdktn.IResolvable;
     /**
     * Name for the created license.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/licensemanager_license#license_name CcLicense#license_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license#license_name CcLicense#license_name}
     */
     readonly licenseName: string;
     /**
     * Product name for the created license.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/licensemanager_license#product_name CcLicense#product_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license#product_name CcLicense#product_name}
     */
     readonly productName: string;
     /**
     * ProductSKU of the license.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/licensemanager_license#product_sku CcLicense#product_sku}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license#product_sku CcLicense#product_sku}
     */
     readonly productSku: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/licensemanager_license#status CcLicense#status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license#status CcLicense#status}
     */
     readonly status?: string;
     /**
     * A list of tags to attach.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/licensemanager_license#tags CcLicense#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license#tags CcLicense#tags}
     */
     readonly tags?: CcLicense.TagProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/licensemanager_license#validity CcLicense#validity}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license#validity CcLicense#validity}
     */
     readonly validity: CcLicense.ValidityDateFormatProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/licensemanager_license awscc_licensemanager_license}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license awscc_licensemanager_license}
 */
 export class CcLicense extends cdktn.TerraformResource {
 
@@ -85,7 +85,7 @@ export class CcLicense extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcLicense resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcLicense to import
-    * @param importFromId The id of the existing CcLicense that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/licensemanager_license#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcLicense that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcLicense to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -97,7 +97,7 @@ export class CcLicense extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/licensemanager_license awscc_licensemanager_license} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license awscc_licensemanager_license} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -107,7 +107,8 @@ export class CcLicense extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_licensemanager_license',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -744,11 +745,11 @@ export function ccLicenseValidityDateFormatPropertyToHclTerraform(struct?: CcLic
 export namespace CcLicense {
 export interface BorrowConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/licensemanager_license#allow_early_check_in CcLicense#allow_early_check_in}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license#allow_early_check_in CcLicense#allow_early_check_in}
     */
     readonly allowEarlyCheckIn?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/licensemanager_license#max_time_to_live_in_minutes CcLicense#max_time_to_live_in_minutes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license#max_time_to_live_in_minutes CcLicense#max_time_to_live_in_minutes}
     */
     readonly maxTimeToLiveInMinutes?: number;
 }
@@ -834,7 +835,7 @@ export class BorrowConfigurationPropertyOutputReference extends cdktn.ComplexObj
 }
 export interface ProvisionalConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/licensemanager_license#max_time_to_live_in_minutes CcLicense#max_time_to_live_in_minutes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license#max_time_to_live_in_minutes CcLicense#max_time_to_live_in_minutes}
     */
     readonly maxTimeToLiveInMinutes?: number;
 }
@@ -898,15 +899,15 @@ export class ProvisionalConfigurationPropertyOutputReference extends cdktn.Compl
 }
 export interface ConsumptionConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/licensemanager_license#borrow_configuration CcLicense#borrow_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license#borrow_configuration CcLicense#borrow_configuration}
     */
     readonly borrowConfiguration?: BorrowConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/licensemanager_license#provisional_configuration CcLicense#provisional_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license#provisional_configuration CcLicense#provisional_configuration}
     */
     readonly provisionalConfiguration?: ProvisionalConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/licensemanager_license#renew_type CcLicense#renew_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license#renew_type CcLicense#renew_type}
     */
     readonly renewType?: string;
 }
@@ -1014,27 +1015,27 @@ export class ConsumptionConfigurationPropertyOutputReference extends cdktn.Compl
 }
 export interface EntitlementProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/licensemanager_license#allow_check_in CcLicense#allow_check_in}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license#allow_check_in CcLicense#allow_check_in}
     */
     readonly allowCheckIn?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/licensemanager_license#max_count CcLicense#max_count}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license#max_count CcLicense#max_count}
     */
     readonly maxCount?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/licensemanager_license#name CcLicense#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license#name CcLicense#name}
     */
     readonly name: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/licensemanager_license#overage CcLicense#overage}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license#overage CcLicense#overage}
     */
     readonly overage?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/licensemanager_license#unit CcLicense#unit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license#unit CcLicense#unit}
     */
     readonly unit: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/licensemanager_license#value CcLicense#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license#value CcLicense#value}
     */
     readonly value?: string;
 }
@@ -1224,11 +1225,11 @@ export class EntitlementPropertyList extends cdktn.ComplexList {
 }
 export interface IssuerDataProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/licensemanager_license#name CcLicense#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license#name CcLicense#name}
     */
     readonly name: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/licensemanager_license#sign_key CcLicense#sign_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license#sign_key CcLicense#sign_key}
     */
     readonly signKey?: string;
 }
@@ -1311,11 +1312,11 @@ export class IssuerDataPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface MetadataProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/licensemanager_license#name CcLicense#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license#name CcLicense#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/licensemanager_license#value CcLicense#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license#value CcLicense#value}
     */
     readonly value?: string;
 }
@@ -1425,13 +1426,13 @@ export interface TagProperty {
     /**
     * The key name of the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/licensemanager_license#key CcLicense#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license#key CcLicense#key}
     */
     readonly key?: string;
     /**
     * The value for the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/licensemanager_license#value CcLicense#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license#value CcLicense#value}
     */
     readonly value?: string;
 }
@@ -1541,13 +1542,13 @@ export interface ValidityDateFormatProperty {
     /**
     * Validity begin date for the license.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/licensemanager_license#begin CcLicense#begin}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license#begin CcLicense#begin}
     */
     readonly begin: string;
     /**
     * Validity begin date for the license.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/licensemanager_license#end CcLicense#end}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license#end CcLicense#end}
     */
     readonly end: string;
 }

@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/billingconductor_custom_line_item
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/billingconductor_custom_line_item
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,49 +9,49 @@ export interface CcCustomLineItemProps extends cdktn.TerraformMetaArguments {
     /**
     * The account which this custom line item will be charged to
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/billingconductor_custom_line_item#account_id CcCustomLineItem#account_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/billingconductor_custom_line_item#account_id CcCustomLineItem#account_id}
     */
     readonly accountId?: string;
     /**
     * Billing Group ARN
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/billingconductor_custom_line_item#billing_group_arn CcCustomLineItem#billing_group_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/billingconductor_custom_line_item#billing_group_arn CcCustomLineItem#billing_group_arn}
     */
     readonly billingGroupArn: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/billingconductor_custom_line_item#billing_period_range CcCustomLineItem#billing_period_range}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/billingconductor_custom_line_item#billing_period_range CcCustomLineItem#billing_period_range}
     */
     readonly billingPeriodRange?: CcCustomLineItem.BillingPeriodRangeProperty;
     /**
     * The display settings of the Custom Line Item.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/billingconductor_custom_line_item#computation_rule CcCustomLineItem#computation_rule}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/billingconductor_custom_line_item#computation_rule CcCustomLineItem#computation_rule}
     */
     readonly computationRule?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/billingconductor_custom_line_item#custom_line_item_charge_details CcCustomLineItem#custom_line_item_charge_details}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/billingconductor_custom_line_item#custom_line_item_charge_details CcCustomLineItem#custom_line_item_charge_details}
     */
     readonly customLineItemChargeDetails?: CcCustomLineItem.CustomLineItemChargeDetailsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/billingconductor_custom_line_item#description CcCustomLineItem#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/billingconductor_custom_line_item#description CcCustomLineItem#description}
     */
     readonly description?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/billingconductor_custom_line_item#name CcCustomLineItem#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/billingconductor_custom_line_item#name CcCustomLineItem#name}
     */
     readonly name: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/billingconductor_custom_line_item#presentation_details CcCustomLineItem#presentation_details}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/billingconductor_custom_line_item#presentation_details CcCustomLineItem#presentation_details}
     */
     readonly presentationDetails?: CcCustomLineItem.PresentationDetailsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/billingconductor_custom_line_item#tags CcCustomLineItem#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/billingconductor_custom_line_item#tags CcCustomLineItem#tags}
     */
     readonly tags?: CcCustomLineItem.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/billingconductor_custom_line_item awscc_billingconductor_custom_line_item}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/billingconductor_custom_line_item awscc_billingconductor_custom_line_item}
 */
 export class CcCustomLineItem extends cdktn.TerraformResource {
 
@@ -67,7 +67,7 @@ export class CcCustomLineItem extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcCustomLineItem resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcCustomLineItem to import
-    * @param importFromId The id of the existing CcCustomLineItem that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/billingconductor_custom_line_item#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcCustomLineItem that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/billingconductor_custom_line_item#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcCustomLineItem to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -79,7 +79,7 @@ export class CcCustomLineItem extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/billingconductor_custom_line_item awscc_billingconductor_custom_line_item} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/billingconductor_custom_line_item awscc_billingconductor_custom_line_item} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -89,7 +89,8 @@ export class CcCustomLineItem extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_billingconductor_custom_line_item',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -644,11 +645,11 @@ export function ccCustomLineItemTagPropertyToHclTerraform(struct?: CcCustomLineI
 export namespace CcCustomLineItem {
 export interface BillingPeriodRangeProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/billingconductor_custom_line_item#exclusive_end_billing_period CcCustomLineItem#exclusive_end_billing_period}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/billingconductor_custom_line_item#exclusive_end_billing_period CcCustomLineItem#exclusive_end_billing_period}
     */
     readonly exclusiveEndBillingPeriod?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/billingconductor_custom_line_item#inclusive_start_billing_period CcCustomLineItem#inclusive_start_billing_period}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/billingconductor_custom_line_item#inclusive_start_billing_period CcCustomLineItem#inclusive_start_billing_period}
     */
     readonly inclusiveStartBillingPeriod?: string;
 }
@@ -734,7 +735,7 @@ export class BillingPeriodRangePropertyOutputReference extends cdktn.ComplexObje
 }
 export interface CustomLineItemFlatChargeDetailsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/billingconductor_custom_line_item#charge_value CcCustomLineItem#charge_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/billingconductor_custom_line_item#charge_value CcCustomLineItem#charge_value}
     */
     readonly chargeValue?: number;
 }
@@ -798,19 +799,19 @@ export class CustomLineItemFlatChargeDetailsPropertyOutputReference extends cdkt
 }
 export interface LineItemFilterProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/billingconductor_custom_line_item#attribute CcCustomLineItem#attribute}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/billingconductor_custom_line_item#attribute CcCustomLineItem#attribute}
     */
     readonly attribute?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/billingconductor_custom_line_item#attribute_values CcCustomLineItem#attribute_values}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/billingconductor_custom_line_item#attribute_values CcCustomLineItem#attribute_values}
     */
     readonly attributeValues?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/billingconductor_custom_line_item#match_option CcCustomLineItem#match_option}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/billingconductor_custom_line_item#match_option CcCustomLineItem#match_option}
     */
     readonly matchOption?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/billingconductor_custom_line_item#values CcCustomLineItem#values}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/billingconductor_custom_line_item#values CcCustomLineItem#values}
     */
     readonly values?: string[];
 }
@@ -962,11 +963,11 @@ export class LineItemFilterPropertyList extends cdktn.ComplexList {
 }
 export interface CustomLineItemPercentageChargeDetailsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/billingconductor_custom_line_item#child_associated_resources CcCustomLineItem#child_associated_resources}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/billingconductor_custom_line_item#child_associated_resources CcCustomLineItem#child_associated_resources}
     */
     readonly childAssociatedResources?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/billingconductor_custom_line_item#percentage_value CcCustomLineItem#percentage_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/billingconductor_custom_line_item#percentage_value CcCustomLineItem#percentage_value}
     */
     readonly percentageValue?: number;
 }
@@ -1052,19 +1053,19 @@ export class CustomLineItemPercentageChargeDetailsPropertyOutputReference extend
 }
 export interface CustomLineItemChargeDetailsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/billingconductor_custom_line_item#flat CcCustomLineItem#flat}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/billingconductor_custom_line_item#flat CcCustomLineItem#flat}
     */
     readonly flat?: CustomLineItemFlatChargeDetailsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/billingconductor_custom_line_item#line_item_filters CcCustomLineItem#line_item_filters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/billingconductor_custom_line_item#line_item_filters CcCustomLineItem#line_item_filters}
     */
     readonly lineItemFilters?: LineItemFilterProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/billingconductor_custom_line_item#percentage CcCustomLineItem#percentage}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/billingconductor_custom_line_item#percentage CcCustomLineItem#percentage}
     */
     readonly percentage?: CustomLineItemPercentageChargeDetailsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/billingconductor_custom_line_item#type CcCustomLineItem#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/billingconductor_custom_line_item#type CcCustomLineItem#type}
     */
     readonly type?: string;
 }
@@ -1194,7 +1195,7 @@ export class CustomLineItemChargeDetailsPropertyOutputReference extends cdktn.Co
 }
 export interface PresentationDetailsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/billingconductor_custom_line_item#service CcCustomLineItem#service}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/billingconductor_custom_line_item#service CcCustomLineItem#service}
     */
     readonly service?: string;
 }
@@ -1258,11 +1259,11 @@ export class PresentationDetailsPropertyOutputReference extends cdktn.ComplexObj
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/billingconductor_custom_line_item#key CcCustomLineItem#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/billingconductor_custom_line_item#key CcCustomLineItem#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/billingconductor_custom_line_item#value CcCustomLineItem#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/billingconductor_custom_line_item#value CcCustomLineItem#value}
     */
     readonly value?: string;
 }

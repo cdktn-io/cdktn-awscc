@@ -1,63 +1,63 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_gateway
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_gateway
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcGatewayProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_gateway#authorizer_configuration CcGateway#authorizer_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_gateway#authorizer_configuration CcGateway#authorizer_configuration}
     */
     readonly authorizerConfiguration?: CcGateway.AuthorizerConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_gateway#authorizer_type CcGateway#authorizer_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_gateway#authorizer_type CcGateway#authorizer_type}
     */
     readonly authorizerType: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_gateway#description CcGateway#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_gateway#description CcGateway#description}
     */
     readonly description?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_gateway#exception_level CcGateway#exception_level}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_gateway#exception_level CcGateway#exception_level}
     */
     readonly exceptionLevel?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_gateway#interceptor_configurations CcGateway#interceptor_configurations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_gateway#interceptor_configurations CcGateway#interceptor_configurations}
     */
     readonly interceptorConfigurations?: CcGateway.GatewayInterceptorConfigurationProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_gateway#kms_key_arn CcGateway#kms_key_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_gateway#kms_key_arn CcGateway#kms_key_arn}
     */
     readonly kmsKeyArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_gateway#name CcGateway#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_gateway#name CcGateway#name}
     */
     readonly name: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_gateway#policy_engine_configuration CcGateway#policy_engine_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_gateway#policy_engine_configuration CcGateway#policy_engine_configuration}
     */
     readonly policyEngineConfiguration?: CcGateway.GatewayPolicyEngineConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_gateway#protocol_configuration CcGateway#protocol_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_gateway#protocol_configuration CcGateway#protocol_configuration}
     */
     readonly protocolConfiguration?: CcGateway.GatewayProtocolConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_gateway#protocol_type CcGateway#protocol_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_gateway#protocol_type CcGateway#protocol_type}
     */
     readonly protocolType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_gateway#role_arn CcGateway#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_gateway#role_arn CcGateway#role_arn}
     */
     readonly roleArn: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_gateway#tags CcGateway#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_gateway#tags CcGateway#tags}
     */
     readonly tags?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_gateway awscc_bedrockagentcore_gateway}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_gateway awscc_bedrockagentcore_gateway}
 */
 export class CcGateway extends cdktn.TerraformResource {
 
@@ -73,7 +73,7 @@ export class CcGateway extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcGateway resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcGateway to import
-    * @param importFromId The id of the existing CcGateway that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_gateway#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcGateway that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_gateway#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcGateway to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -85,7 +85,7 @@ export class CcGateway extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_gateway awscc_bedrockagentcore_gateway} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_gateway awscc_bedrockagentcore_gateway} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -95,7 +95,8 @@ export class CcGateway extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_bedrockagentcore_gateway',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -1209,11 +1210,11 @@ export function ccGatewayWorkloadIdentityDetailsPropertyToHclTerraform(struct?: 
 export namespace CcGateway {
 export interface ClaimMatchValueTypeProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_gateway#match_value_string CcGateway#match_value_string}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_gateway#match_value_string CcGateway#match_value_string}
     */
     readonly matchValueString?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_gateway#match_value_string_list CcGateway#match_value_string_list}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_gateway#match_value_string_list CcGateway#match_value_string_list}
     */
     readonly matchValueStringList?: string[];
 }
@@ -1299,11 +1300,11 @@ export class ClaimMatchValueTypePropertyOutputReference extends cdktn.ComplexObj
 }
 export interface AuthorizingClaimMatchValueTypeProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_gateway#claim_match_operator CcGateway#claim_match_operator}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_gateway#claim_match_operator CcGateway#claim_match_operator}
     */
     readonly claimMatchOperator?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_gateway#claim_match_value CcGateway#claim_match_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_gateway#claim_match_value CcGateway#claim_match_value}
     */
     readonly claimMatchValue?: ClaimMatchValueTypeProperty;
 }
@@ -1389,15 +1390,15 @@ export class AuthorizingClaimMatchValueTypePropertyOutputReference extends cdktn
 }
 export interface CustomClaimValidationTypeProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_gateway#authorizing_claim_match_value CcGateway#authorizing_claim_match_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_gateway#authorizing_claim_match_value CcGateway#authorizing_claim_match_value}
     */
     readonly authorizingClaimMatchValue?: AuthorizingClaimMatchValueTypeProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_gateway#inbound_token_claim_name CcGateway#inbound_token_claim_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_gateway#inbound_token_claim_name CcGateway#inbound_token_claim_name}
     */
     readonly inboundTokenClaimName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_gateway#inbound_token_claim_value_type CcGateway#inbound_token_claim_value_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_gateway#inbound_token_claim_value_type CcGateway#inbound_token_claim_value_type}
     */
     readonly inboundTokenClaimValueType?: string;
 }
@@ -1527,23 +1528,23 @@ export class CustomClaimValidationTypePropertyList extends cdktn.ComplexList {
 }
 export interface ManagedVpcResourceProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_gateway#endpoint_ip_address_type CcGateway#endpoint_ip_address_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_gateway#endpoint_ip_address_type CcGateway#endpoint_ip_address_type}
     */
     readonly endpointIpAddressType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_gateway#routing_domain CcGateway#routing_domain}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_gateway#routing_domain CcGateway#routing_domain}
     */
     readonly routingDomain?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_gateway#security_group_ids CcGateway#security_group_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_gateway#security_group_ids CcGateway#security_group_ids}
     */
     readonly securityGroupIds?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_gateway#subnet_ids CcGateway#subnet_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_gateway#subnet_ids CcGateway#subnet_ids}
     */
     readonly subnetIds?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_gateway#vpc_identifier CcGateway#vpc_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_gateway#vpc_identifier CcGateway#vpc_identifier}
     */
     readonly vpcIdentifier?: string;
 }
@@ -1695,7 +1696,7 @@ export class ManagedVpcResourcePropertyOutputReference extends cdktn.ComplexObje
 }
 export interface SelfManagedLatticeResourceProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_gateway#resource_configuration_identifier CcGateway#resource_configuration_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_gateway#resource_configuration_identifier CcGateway#resource_configuration_identifier}
     */
     readonly resourceConfigurationIdentifier?: string;
 }
@@ -1759,11 +1760,11 @@ export class SelfManagedLatticeResourcePropertyOutputReference extends cdktn.Com
 }
 export interface PrivateEndpointProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_gateway#managed_vpc_resource CcGateway#managed_vpc_resource}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_gateway#managed_vpc_resource CcGateway#managed_vpc_resource}
     */
     readonly managedVpcResource?: ManagedVpcResourceProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_gateway#self_managed_lattice_resource CcGateway#self_managed_lattice_resource}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_gateway#self_managed_lattice_resource CcGateway#self_managed_lattice_resource}
     */
     readonly selfManagedLatticeResource?: SelfManagedLatticeResourceProperty;
 }
@@ -1852,31 +1853,31 @@ export interface CustomJWTAuthorizerConfigurationProperty {
     * Maps an originalScope (from allowedScopes) to an advertisedScope
     * exposed in WWW-Authenticate / Protected Resource Metadata.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_gateway#advertised_scope_mapping CcGateway#advertised_scope_mapping}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_gateway#advertised_scope_mapping CcGateway#advertised_scope_mapping}
     */
     readonly advertisedScopeMapping?: { [key: string]: string };
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_gateway#allowed_audience CcGateway#allowed_audience}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_gateway#allowed_audience CcGateway#allowed_audience}
     */
     readonly allowedAudience?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_gateway#allowed_clients CcGateway#allowed_clients}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_gateway#allowed_clients CcGateway#allowed_clients}
     */
     readonly allowedClients?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_gateway#allowed_scopes CcGateway#allowed_scopes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_gateway#allowed_scopes CcGateway#allowed_scopes}
     */
     readonly allowedScopes?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_gateway#custom_claims CcGateway#custom_claims}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_gateway#custom_claims CcGateway#custom_claims}
     */
     readonly customClaims?: CustomClaimValidationTypeProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_gateway#discovery_url CcGateway#discovery_url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_gateway#discovery_url CcGateway#discovery_url}
     */
     readonly discoveryUrl?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_gateway#private_endpoint CcGateway#private_endpoint}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_gateway#private_endpoint CcGateway#private_endpoint}
     */
     readonly privateEndpoint?: PrivateEndpointProperty;
 }
@@ -2072,7 +2073,7 @@ export class CustomJWTAuthorizerConfigurationPropertyOutputReference extends cdk
 }
 export interface AuthorizerConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_gateway#custom_jwt_authorizer CcGateway#custom_jwt_authorizer}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_gateway#custom_jwt_authorizer CcGateway#custom_jwt_authorizer}
     */
     readonly customJwtAuthorizer?: CustomJWTAuthorizerConfigurationProperty;
 }
@@ -2136,7 +2137,7 @@ export class AuthorizerConfigurationPropertyOutputReference extends cdktn.Comple
 }
 export interface InterceptorPayloadExclusionSelectorProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_gateway#field CcGateway#field}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_gateway#field CcGateway#field}
     */
     readonly field?: string;
 }
@@ -2222,7 +2223,7 @@ export class InterceptorPayloadExclusionSelectorPropertyList extends cdktn.Compl
 }
 export interface InterceptorPayloadFilterProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_gateway#exclude CcGateway#exclude}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_gateway#exclude CcGateway#exclude}
     */
     readonly exclude?: InterceptorPayloadExclusionSelectorProperty[] | cdktn.IResolvable;
 }
@@ -2286,11 +2287,11 @@ export class InterceptorPayloadFilterPropertyOutputReference extends cdktn.Compl
 }
 export interface InterceptorInputConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_gateway#pass_request_headers CcGateway#pass_request_headers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_gateway#pass_request_headers CcGateway#pass_request_headers}
     */
     readonly passRequestHeaders?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_gateway#payload_filter CcGateway#payload_filter}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_gateway#payload_filter CcGateway#payload_filter}
     */
     readonly payloadFilter?: InterceptorPayloadFilterProperty;
 }
@@ -2376,7 +2377,7 @@ export class InterceptorInputConfigurationPropertyOutputReference extends cdktn.
 }
 export interface LambdaInterceptorConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_gateway#arn CcGateway#arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_gateway#arn CcGateway#arn}
     */
     readonly arn?: string;
 }
@@ -2440,7 +2441,7 @@ export class LambdaInterceptorConfigurationPropertyOutputReference extends cdktn
 }
 export interface InterceptorConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_gateway#lambda CcGateway#lambda}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_gateway#lambda CcGateway#lambda}
     */
     readonly lambda?: LambdaInterceptorConfigurationProperty;
 }
@@ -2504,15 +2505,15 @@ export class InterceptorConfigurationPropertyOutputReference extends cdktn.Compl
 }
 export interface GatewayInterceptorConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_gateway#input_configuration CcGateway#input_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_gateway#input_configuration CcGateway#input_configuration}
     */
     readonly inputConfiguration?: InterceptorInputConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_gateway#interception_points CcGateway#interception_points}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_gateway#interception_points CcGateway#interception_points}
     */
     readonly interceptionPoints?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_gateway#interceptor CcGateway#interceptor}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_gateway#interceptor CcGateway#interceptor}
     */
     readonly interceptor?: InterceptorConfigurationProperty;
 }
@@ -2642,11 +2643,11 @@ export class GatewayInterceptorConfigurationPropertyList extends cdktn.ComplexLi
 }
 export interface GatewayPolicyEngineConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_gateway#arn CcGateway#arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_gateway#arn CcGateway#arn}
     */
     readonly arn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_gateway#mode CcGateway#mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_gateway#mode CcGateway#mode}
     */
     readonly mode?: string;
 }
@@ -2732,7 +2733,7 @@ export class GatewayPolicyEngineConfigurationPropertyOutputReference extends cdk
 }
 export interface SessionConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_gateway#session_timeout_in_seconds CcGateway#session_timeout_in_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_gateway#session_timeout_in_seconds CcGateway#session_timeout_in_seconds}
     */
     readonly sessionTimeoutInSeconds?: number;
 }
@@ -2796,7 +2797,7 @@ export class SessionConfigurationPropertyOutputReference extends cdktn.ComplexOb
 }
 export interface StreamingConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_gateway#enable_response_streaming CcGateway#enable_response_streaming}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_gateway#enable_response_streaming CcGateway#enable_response_streaming}
     */
     readonly enableResponseStreaming?: boolean | cdktn.IResolvable;
 }
@@ -2860,23 +2861,23 @@ export class StreamingConfigurationPropertyOutputReference extends cdktn.Complex
 }
 export interface MCPGatewayConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_gateway#instructions CcGateway#instructions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_gateway#instructions CcGateway#instructions}
     */
     readonly instructions?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_gateway#search_type CcGateway#search_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_gateway#search_type CcGateway#search_type}
     */
     readonly searchType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_gateway#session_configuration CcGateway#session_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_gateway#session_configuration CcGateway#session_configuration}
     */
     readonly sessionConfiguration?: SessionConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_gateway#streaming_configuration CcGateway#streaming_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_gateway#streaming_configuration CcGateway#streaming_configuration}
     */
     readonly streamingConfiguration?: StreamingConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_gateway#supported_versions CcGateway#supported_versions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_gateway#supported_versions CcGateway#supported_versions}
     */
     readonly supportedVersions?: string[];
 }
@@ -3028,7 +3029,7 @@ export class MCPGatewayConfigurationPropertyOutputReference extends cdktn.Comple
 }
 export interface GatewayProtocolConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/bedrockagentcore_gateway#mcp CcGateway#mcp}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_gateway#mcp CcGateway#mcp}
     */
     readonly mcp?: MCPGatewayConfigurationProperty;
 }

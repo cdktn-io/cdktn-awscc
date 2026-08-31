@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_calculated_attribute_definition
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_calculated_attribute_definition
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,61 +9,61 @@ export interface CcCalculatedAttributeDefinitionProps extends cdktn.TerraformMet
     /**
     * Mathematical expression and a list of attribute items specified in that expression.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_calculated_attribute_definition#attribute_details CcCalculatedAttributeDefinition#attribute_details}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_calculated_attribute_definition#attribute_details CcCalculatedAttributeDefinition#attribute_details}
     */
     readonly attributeDetails: CcCalculatedAttributeDefinition.AttributeDetailsProperty;
     /**
     * The unique name of the calculated attribute.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_calculated_attribute_definition#calculated_attribute_name CcCalculatedAttributeDefinition#calculated_attribute_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_calculated_attribute_definition#calculated_attribute_name CcCalculatedAttributeDefinition#calculated_attribute_name}
     */
     readonly calculatedAttributeName: string;
     /**
     * The conditions including range, object count, and threshold for the calculated attribute.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_calculated_attribute_definition#conditions CcCalculatedAttributeDefinition#conditions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_calculated_attribute_definition#conditions CcCalculatedAttributeDefinition#conditions}
     */
     readonly conditions?: CcCalculatedAttributeDefinition.ConditionsProperty;
     /**
     * The description of the calculated attribute.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_calculated_attribute_definition#description CcCalculatedAttributeDefinition#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_calculated_attribute_definition#description CcCalculatedAttributeDefinition#description}
     */
     readonly description?: string;
     /**
     * The display name of the calculated attribute.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_calculated_attribute_definition#display_name CcCalculatedAttributeDefinition#display_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_calculated_attribute_definition#display_name CcCalculatedAttributeDefinition#display_name}
     */
     readonly displayName?: string;
     /**
     * The unique name of the domain.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_calculated_attribute_definition#domain_name CcCalculatedAttributeDefinition#domain_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_calculated_attribute_definition#domain_name CcCalculatedAttributeDefinition#domain_name}
     */
     readonly domainName: string;
     /**
     * The aggregation operation to perform for the calculated attribute.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_calculated_attribute_definition#statistic CcCalculatedAttributeDefinition#statistic}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_calculated_attribute_definition#statistic CcCalculatedAttributeDefinition#statistic}
     */
     readonly statistic: string;
     /**
     * An array of key-value pairs to apply to this resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_calculated_attribute_definition#tags CcCalculatedAttributeDefinition#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_calculated_attribute_definition#tags CcCalculatedAttributeDefinition#tags}
     */
     readonly tags?: CcCalculatedAttributeDefinition.TagProperty[] | cdktn.IResolvable;
     /**
     * Whether to use historical data for the calculated attribute.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_calculated_attribute_definition#use_historical_data CcCalculatedAttributeDefinition#use_historical_data}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_calculated_attribute_definition#use_historical_data CcCalculatedAttributeDefinition#use_historical_data}
     */
     readonly useHistoricalData?: boolean | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_calculated_attribute_definition awscc_customerprofiles_calculated_attribute_definition}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_calculated_attribute_definition awscc_customerprofiles_calculated_attribute_definition}
 */
 export class CcCalculatedAttributeDefinition extends cdktn.TerraformResource {
 
@@ -79,7 +79,7 @@ export class CcCalculatedAttributeDefinition extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcCalculatedAttributeDefinition resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcCalculatedAttributeDefinition to import
-    * @param importFromId The id of the existing CcCalculatedAttributeDefinition that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_calculated_attribute_definition#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcCalculatedAttributeDefinition that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_calculated_attribute_definition#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcCalculatedAttributeDefinition to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -91,7 +91,7 @@ export class CcCalculatedAttributeDefinition extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_calculated_attribute_definition awscc_customerprofiles_calculated_attribute_definition} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_calculated_attribute_definition awscc_customerprofiles_calculated_attribute_definition} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -101,7 +101,8 @@ export class CcCalculatedAttributeDefinition extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_customerprofiles_calculated_attribute_definition',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -671,7 +672,7 @@ export interface AttributeItemProperty {
     /**
     * The name of an attribute defined in a profile object type.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_calculated_attribute_definition#name CcCalculatedAttributeDefinition#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_calculated_attribute_definition#name CcCalculatedAttributeDefinition#name}
     */
     readonly name: string;
 }
@@ -756,13 +757,13 @@ export interface AttributeDetailsProperty {
     /**
     * A list of attribute items specified in the mathematical expression.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_calculated_attribute_definition#attributes CcCalculatedAttributeDefinition#attributes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_calculated_attribute_definition#attributes CcCalculatedAttributeDefinition#attributes}
     */
     readonly attributes: AttributeItemProperty[] | cdktn.IResolvable;
     /**
     * Mathematical expression that is performed on attribute items provided in the attribute list. Each element in the expression should follow the structure of "{ObjectTypeName.AttributeName}".
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_calculated_attribute_definition#expression CcCalculatedAttributeDefinition#expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_calculated_attribute_definition#expression CcCalculatedAttributeDefinition#expression}
     */
     readonly expression: string;
 }
@@ -844,13 +845,13 @@ export interface ValueRangeProperty {
     /**
     * The ending point for this range. Positive numbers indicate how many days in the past data should be included, and negative numbers indicate how many days in the future.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_calculated_attribute_definition#end CcCalculatedAttributeDefinition#end}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_calculated_attribute_definition#end CcCalculatedAttributeDefinition#end}
     */
     readonly end?: number;
     /**
     * The starting point for this range. Positive numbers indicate how many days in the past data should be included, and negative numbers indicate how many days in the future.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_calculated_attribute_definition#start CcCalculatedAttributeDefinition#start}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_calculated_attribute_definition#start CcCalculatedAttributeDefinition#start}
     */
     readonly start?: number;
 }
@@ -938,31 +939,31 @@ export interface RangeProperty {
     /**
     * The format the timestamp field in your JSON object is specified. This value should be one of EPOCHMILLI or ISO_8601. E.g. if your object type is MyType and source JSON is {"generatedAt": {"timestamp": "2001-07-04T12:08:56.235Z"}}, then TimestampFormat should be "ISO_8601".
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_calculated_attribute_definition#timestamp_format CcCalculatedAttributeDefinition#timestamp_format}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_calculated_attribute_definition#timestamp_format CcCalculatedAttributeDefinition#timestamp_format}
     */
     readonly timestampFormat?: string;
     /**
     * An expression specifying the field in your JSON object from which the date should be parsed. The expression should follow the structure of \"{ObjectTypeName.<Location of timestamp field in JSON pointer format>}\". E.g. if your object type is MyType and source JSON is {"generatedAt": {"timestamp": "1737587945945"}}, then TimestampSource should be "{MyType.generatedAt.timestamp}".
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_calculated_attribute_definition#timestamp_source CcCalculatedAttributeDefinition#timestamp_source}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_calculated_attribute_definition#timestamp_source CcCalculatedAttributeDefinition#timestamp_source}
     */
     readonly timestampSource?: string;
     /**
     * The unit of time.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_calculated_attribute_definition#unit CcCalculatedAttributeDefinition#unit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_calculated_attribute_definition#unit CcCalculatedAttributeDefinition#unit}
     */
     readonly unit?: string;
     /**
     * The amount of time of the specified unit.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_calculated_attribute_definition#value CcCalculatedAttributeDefinition#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_calculated_attribute_definition#value CcCalculatedAttributeDefinition#value}
     */
     readonly value?: number;
     /**
     * A structure specifying the endpoints of the relative time period over which data is included in the aggregation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_calculated_attribute_definition#value_range CcCalculatedAttributeDefinition#value_range}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_calculated_attribute_definition#value_range CcCalculatedAttributeDefinition#value_range}
     */
     readonly valueRange?: ValueRangeProperty;
 }
@@ -1116,13 +1117,13 @@ export interface ThresholdProperty {
     /**
     * The operator of the threshold.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_calculated_attribute_definition#operator CcCalculatedAttributeDefinition#operator}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_calculated_attribute_definition#operator CcCalculatedAttributeDefinition#operator}
     */
     readonly operator?: string;
     /**
     * The value of the threshold.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_calculated_attribute_definition#value CcCalculatedAttributeDefinition#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_calculated_attribute_definition#value CcCalculatedAttributeDefinition#value}
     */
     readonly value?: string;
 }
@@ -1210,19 +1211,19 @@ export interface ConditionsProperty {
     /**
     * The number of profile objects used for the calculated attribute.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_calculated_attribute_definition#object_count CcCalculatedAttributeDefinition#object_count}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_calculated_attribute_definition#object_count CcCalculatedAttributeDefinition#object_count}
     */
     readonly objectCount?: number;
     /**
     * The relative time period over which data is included in the aggregation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_calculated_attribute_definition#range CcCalculatedAttributeDefinition#range}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_calculated_attribute_definition#range CcCalculatedAttributeDefinition#range}
     */
     readonly range?: RangeProperty;
     /**
     * The threshold for the calculated attribute.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_calculated_attribute_definition#threshold CcCalculatedAttributeDefinition#threshold}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_calculated_attribute_definition#threshold CcCalculatedAttributeDefinition#threshold}
     */
     readonly threshold?: ThresholdProperty;
 }
@@ -1370,13 +1371,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_calculated_attribute_definition#key CcCalculatedAttributeDefinition#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_calculated_attribute_definition#key CcCalculatedAttributeDefinition#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 0 to 256 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/customerprofiles_calculated_attribute_definition#value CcCalculatedAttributeDefinition#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_calculated_attribute_definition#value CcCalculatedAttributeDefinition#value}
     */
     readonly value?: string;
 }

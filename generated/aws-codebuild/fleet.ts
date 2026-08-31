@@ -1,63 +1,63 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/codebuild_fleet
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/codebuild_fleet
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcFleetProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/codebuild_fleet#base_capacity CcFleet#base_capacity}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/codebuild_fleet#base_capacity CcFleet#base_capacity}
     */
     readonly baseCapacity?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/codebuild_fleet#compute_configuration CcFleet#compute_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/codebuild_fleet#compute_configuration CcFleet#compute_configuration}
     */
     readonly computeConfiguration?: CcFleet.ComputeConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/codebuild_fleet#compute_type CcFleet#compute_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/codebuild_fleet#compute_type CcFleet#compute_type}
     */
     readonly computeType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/codebuild_fleet#environment_type CcFleet#environment_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/codebuild_fleet#environment_type CcFleet#environment_type}
     */
     readonly environmentType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/codebuild_fleet#fleet_proxy_configuration CcFleet#fleet_proxy_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/codebuild_fleet#fleet_proxy_configuration CcFleet#fleet_proxy_configuration}
     */
     readonly fleetProxyConfiguration?: CcFleet.ProxyConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/codebuild_fleet#fleet_service_role CcFleet#fleet_service_role}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/codebuild_fleet#fleet_service_role CcFleet#fleet_service_role}
     */
     readonly fleetServiceRole?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/codebuild_fleet#fleet_vpc_config CcFleet#fleet_vpc_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/codebuild_fleet#fleet_vpc_config CcFleet#fleet_vpc_config}
     */
     readonly fleetVpcConfig?: CcFleet.VpcConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/codebuild_fleet#image_id CcFleet#image_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/codebuild_fleet#image_id CcFleet#image_id}
     */
     readonly imageId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/codebuild_fleet#name CcFleet#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/codebuild_fleet#name CcFleet#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/codebuild_fleet#overflow_behavior CcFleet#overflow_behavior}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/codebuild_fleet#overflow_behavior CcFleet#overflow_behavior}
     */
     readonly overflowBehavior?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/codebuild_fleet#scaling_configuration CcFleet#scaling_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/codebuild_fleet#scaling_configuration CcFleet#scaling_configuration}
     */
     readonly scalingConfiguration?: CcFleet.ScalingConfigurationInputProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/codebuild_fleet#tags CcFleet#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/codebuild_fleet#tags CcFleet#tags}
     */
     readonly tags?: CcFleet.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/codebuild_fleet awscc_codebuild_fleet}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/codebuild_fleet awscc_codebuild_fleet}
 */
 export class CcFleet extends cdktn.TerraformResource {
 
@@ -73,7 +73,7 @@ export class CcFleet extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcFleet resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcFleet to import
-    * @param importFromId The id of the existing CcFleet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/codebuild_fleet#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcFleet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/codebuild_fleet#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcFleet to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -85,7 +85,7 @@ export class CcFleet extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/codebuild_fleet awscc_codebuild_fleet} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/codebuild_fleet awscc_codebuild_fleet} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -95,7 +95,8 @@ export class CcFleet extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_codebuild_fleet',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -731,23 +732,23 @@ export function ccFleetTagPropertyToHclTerraform(struct?: CcFleet.TagProperty | 
 export namespace CcFleet {
 export interface ComputeConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/codebuild_fleet#disk CcFleet#disk}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/codebuild_fleet#disk CcFleet#disk}
     */
     readonly disk?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/codebuild_fleet#instance_type CcFleet#instance_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/codebuild_fleet#instance_type CcFleet#instance_type}
     */
     readonly instanceType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/codebuild_fleet#machine_type CcFleet#machine_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/codebuild_fleet#machine_type CcFleet#machine_type}
     */
     readonly machineType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/codebuild_fleet#memory CcFleet#memory}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/codebuild_fleet#memory CcFleet#memory}
     */
     readonly memory?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/codebuild_fleet#v_cpu CcFleet#v_cpu}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/codebuild_fleet#v_cpu CcFleet#v_cpu}
     */
     readonly vCpu?: number;
 }
@@ -899,15 +900,15 @@ export class ComputeConfigurationPropertyOutputReference extends cdktn.ComplexOb
 }
 export interface FleetProxyRuleProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/codebuild_fleet#effect CcFleet#effect}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/codebuild_fleet#effect CcFleet#effect}
     */
     readonly effect?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/codebuild_fleet#entities CcFleet#entities}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/codebuild_fleet#entities CcFleet#entities}
     */
     readonly entities?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/codebuild_fleet#type CcFleet#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/codebuild_fleet#type CcFleet#type}
     */
     readonly type?: string;
 }
@@ -1037,11 +1038,11 @@ export class FleetProxyRulePropertyList extends cdktn.ComplexList {
 }
 export interface ProxyConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/codebuild_fleet#default_behavior CcFleet#default_behavior}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/codebuild_fleet#default_behavior CcFleet#default_behavior}
     */
     readonly defaultBehavior?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/codebuild_fleet#ordered_proxy_rules CcFleet#ordered_proxy_rules}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/codebuild_fleet#ordered_proxy_rules CcFleet#ordered_proxy_rules}
     */
     readonly orderedProxyRules?: FleetProxyRuleProperty[] | cdktn.IResolvable;
 }
@@ -1127,15 +1128,15 @@ export class ProxyConfigurationPropertyOutputReference extends cdktn.ComplexObje
 }
 export interface VpcConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/codebuild_fleet#security_group_ids CcFleet#security_group_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/codebuild_fleet#security_group_ids CcFleet#security_group_ids}
     */
     readonly securityGroupIds?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/codebuild_fleet#subnets CcFleet#subnets}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/codebuild_fleet#subnets CcFleet#subnets}
     */
     readonly subnets?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/codebuild_fleet#vpc_id CcFleet#vpc_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/codebuild_fleet#vpc_id CcFleet#vpc_id}
     */
     readonly vpcId?: string;
 }
@@ -1243,11 +1244,11 @@ export class VpcConfigPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface TargetTrackingScalingConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/codebuild_fleet#metric_type CcFleet#metric_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/codebuild_fleet#metric_type CcFleet#metric_type}
     */
     readonly metricType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/codebuild_fleet#target_value CcFleet#target_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/codebuild_fleet#target_value CcFleet#target_value}
     */
     readonly targetValue?: number;
 }
@@ -1355,15 +1356,15 @@ export class TargetTrackingScalingConfigurationPropertyList extends cdktn.Comple
 }
 export interface ScalingConfigurationInputProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/codebuild_fleet#max_capacity CcFleet#max_capacity}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/codebuild_fleet#max_capacity CcFleet#max_capacity}
     */
     readonly maxCapacity?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/codebuild_fleet#scaling_type CcFleet#scaling_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/codebuild_fleet#scaling_type CcFleet#scaling_type}
     */
     readonly scalingType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/codebuild_fleet#target_tracking_scaling_configs CcFleet#target_tracking_scaling_configs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/codebuild_fleet#target_tracking_scaling_configs CcFleet#target_tracking_scaling_configs}
     */
     readonly targetTrackingScalingConfigs?: TargetTrackingScalingConfigurationProperty[] | cdktn.IResolvable;
 }
@@ -1473,13 +1474,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 127 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/codebuild_fleet#key CcFleet#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/codebuild_fleet#key CcFleet#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 0 to 255 Unicode characters in length. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/codebuild_fleet#value CcFleet#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/codebuild_fleet#value CcFleet#value}
     */
     readonly value?: string;
 }

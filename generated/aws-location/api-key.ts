@@ -1,51 +1,51 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/location_api_key
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/location_api_key
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcAPIKeyProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/location_api_key#description CcAPIKey#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/location_api_key#description CcAPIKey#description}
     */
     readonly description?: string;
     /**
     * The datetime value in ISO 8601 format. The timezone is always UTC. (YYYY-MM-DDThh:mm:ss.sssZ)
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/location_api_key#expire_time CcAPIKey#expire_time}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/location_api_key#expire_time CcAPIKey#expire_time}
     */
     readonly expireTime?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/location_api_key#force_delete CcAPIKey#force_delete}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/location_api_key#force_delete CcAPIKey#force_delete}
     */
     readonly forceDelete?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/location_api_key#force_update CcAPIKey#force_update}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/location_api_key#force_update CcAPIKey#force_update}
     */
     readonly forceUpdate?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/location_api_key#key_name CcAPIKey#key_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/location_api_key#key_name CcAPIKey#key_name}
     */
     readonly keyName: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/location_api_key#no_expiry CcAPIKey#no_expiry}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/location_api_key#no_expiry CcAPIKey#no_expiry}
     */
     readonly noExpiry?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/location_api_key#restrictions CcAPIKey#restrictions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/location_api_key#restrictions CcAPIKey#restrictions}
     */
     readonly restrictions: CcAPIKey.ApiKeyRestrictionsProperty;
     /**
     * An array of key-value pairs to apply to this resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/location_api_key#tags CcAPIKey#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/location_api_key#tags CcAPIKey#tags}
     */
     readonly tags?: CcAPIKey.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/location_api_key awscc_location_api_key}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/location_api_key awscc_location_api_key}
 */
 export class CcAPIKey extends cdktn.TerraformResource {
 
@@ -61,7 +61,7 @@ export class CcAPIKey extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcAPIKey resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcAPIKey to import
-    * @param importFromId The id of the existing CcAPIKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/location_api_key#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcAPIKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/location_api_key#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcAPIKey to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -73,7 +73,7 @@ export class CcAPIKey extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/location_api_key awscc_location_api_key} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/location_api_key awscc_location_api_key} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -83,7 +83,8 @@ export class CcAPIKey extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_location_api_key',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -493,11 +494,11 @@ export function ccAPIKeyTagPropertyToHclTerraform(struct?: CcAPIKey.TagProperty 
 export namespace CcAPIKey {
 export interface AndroidAppProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/location_api_key#certificate_fingerprint CcAPIKey#certificate_fingerprint}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/location_api_key#certificate_fingerprint CcAPIKey#certificate_fingerprint}
     */
     readonly certificateFingerprint?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/location_api_key#package CcAPIKey#package}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/location_api_key#package CcAPIKey#package}
     */
     readonly package?: string;
 }
@@ -605,7 +606,7 @@ export class AndroidAppPropertyList extends cdktn.ComplexList {
 }
 export interface AppleAppProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/location_api_key#bundle_id CcAPIKey#bundle_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/location_api_key#bundle_id CcAPIKey#bundle_id}
     */
     readonly bundleId?: string;
 }
@@ -691,23 +692,23 @@ export class AppleAppPropertyList extends cdktn.ComplexList {
 }
 export interface ApiKeyRestrictionsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/location_api_key#allow_actions CcAPIKey#allow_actions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/location_api_key#allow_actions CcAPIKey#allow_actions}
     */
     readonly allowActions: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/location_api_key#allow_android_apps CcAPIKey#allow_android_apps}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/location_api_key#allow_android_apps CcAPIKey#allow_android_apps}
     */
     readonly allowAndroidApps?: AndroidAppProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/location_api_key#allow_apple_apps CcAPIKey#allow_apple_apps}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/location_api_key#allow_apple_apps CcAPIKey#allow_apple_apps}
     */
     readonly allowAppleApps?: AppleAppProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/location_api_key#allow_referers CcAPIKey#allow_referers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/location_api_key#allow_referers CcAPIKey#allow_referers}
     */
     readonly allowReferers?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/location_api_key#allow_resources CcAPIKey#allow_resources}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/location_api_key#allow_resources CcAPIKey#allow_resources}
     */
     readonly allowResources: string[];
 }
@@ -855,13 +856,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/location_api_key#key CcAPIKey#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/location_api_key#key CcAPIKey#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 0 to 256 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/location_api_key#value CcAPIKey#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/location_api_key#value CcAPIKey#value}
     */
     readonly value?: string;
 }

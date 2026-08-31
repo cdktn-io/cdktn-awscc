@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/codestarconnections_sync_configuration
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/codestarconnections_sync_configuration
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,55 +9,55 @@ export interface CcSyncConfigurationProps extends cdktn.TerraformMetaArguments {
     /**
     * The name of the branch of the repository from which resources are to be synchronized,
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/codestarconnections_sync_configuration#branch CcSyncConfiguration#branch}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/codestarconnections_sync_configuration#branch CcSyncConfiguration#branch}
     */
     readonly branch: string;
     /**
     * The source provider repository path of the sync configuration file of the respective SyncType.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/codestarconnections_sync_configuration#config_file CcSyncConfiguration#config_file}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/codestarconnections_sync_configuration#config_file CcSyncConfiguration#config_file}
     */
     readonly configFile: string;
     /**
     * Whether to enable or disable publishing of deployment status to source providers.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/codestarconnections_sync_configuration#publish_deployment_status CcSyncConfiguration#publish_deployment_status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/codestarconnections_sync_configuration#publish_deployment_status CcSyncConfiguration#publish_deployment_status}
     */
     readonly publishDeploymentStatus?: string;
     /**
     * A UUID that uniquely identifies the RepositoryLink that the SyncConfig is associated with.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/codestarconnections_sync_configuration#repository_link_id CcSyncConfiguration#repository_link_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/codestarconnections_sync_configuration#repository_link_id CcSyncConfiguration#repository_link_id}
     */
     readonly repositoryLinkId: string;
     /**
     * The name of the resource that is being synchronized to the repository.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/codestarconnections_sync_configuration#resource_name CcSyncConfiguration#resource_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/codestarconnections_sync_configuration#resource_name CcSyncConfiguration#resource_name}
     */
     readonly resourceName: string;
     /**
     * The IAM Role that allows AWS to update CloudFormation stacks based on content in the specified repository.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/codestarconnections_sync_configuration#role_arn CcSyncConfiguration#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/codestarconnections_sync_configuration#role_arn CcSyncConfiguration#role_arn}
     */
     readonly roleArn: string;
     /**
     * The type of resource synchronization service that is to be configured, for example, CFN_STACK_SYNC.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/codestarconnections_sync_configuration#sync_type CcSyncConfiguration#sync_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/codestarconnections_sync_configuration#sync_type CcSyncConfiguration#sync_type}
     */
     readonly syncType: string;
     /**
     * When to trigger Git sync to begin the stack update.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/codestarconnections_sync_configuration#trigger_resource_update_on CcSyncConfiguration#trigger_resource_update_on}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/codestarconnections_sync_configuration#trigger_resource_update_on CcSyncConfiguration#trigger_resource_update_on}
     */
     readonly triggerResourceUpdateOn?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/codestarconnections_sync_configuration awscc_codestarconnections_sync_configuration}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/codestarconnections_sync_configuration awscc_codestarconnections_sync_configuration}
 */
 export class CcSyncConfiguration extends cdktn.TerraformResource {
 
@@ -73,7 +73,7 @@ export class CcSyncConfiguration extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcSyncConfiguration resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcSyncConfiguration to import
-    * @param importFromId The id of the existing CcSyncConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/codestarconnections_sync_configuration#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcSyncConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/codestarconnections_sync_configuration#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcSyncConfiguration to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -85,7 +85,7 @@ export class CcSyncConfiguration extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/codestarconnections_sync_configuration awscc_codestarconnections_sync_configuration} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/codestarconnections_sync_configuration awscc_codestarconnections_sync_configuration} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -95,7 +95,8 @@ export class CcSyncConfiguration extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_codestarconnections_sync_configuration',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,

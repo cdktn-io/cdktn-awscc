@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_web_app
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_web_app
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,41 +9,41 @@ export interface CcWebAppProps extends cdktn.TerraformMetaArguments {
     /**
     * The AccessEndpoint is the URL that you provide to your users for them to interact with the Transfer Family web app. You can specify a custom URL or use the default value.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_web_app#access_endpoint CcWebApp#access_endpoint}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_web_app#access_endpoint CcWebApp#access_endpoint}
     */
     readonly accessEndpoint?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_web_app#endpoint_details CcWebApp#endpoint_details}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_web_app#endpoint_details CcWebApp#endpoint_details}
     */
     readonly endpointDetails?: CcWebApp.EndpointDetailsProperty;
     /**
     * You can provide a structure that contains the details for the identity provider to use with your web app.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_web_app#identity_provider_details CcWebApp#identity_provider_details}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_web_app#identity_provider_details CcWebApp#identity_provider_details}
     */
     readonly identityProviderDetails: CcWebApp.IdentityProviderDetailsProperty;
     /**
     * Key-value pairs that can be used to group and search for web apps.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_web_app#tags CcWebApp#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_web_app#tags CcWebApp#tags}
     */
     readonly tags?: CcWebApp.TagProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_web_app#web_app_customization CcWebApp#web_app_customization}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_web_app#web_app_customization CcWebApp#web_app_customization}
     */
     readonly webAppCustomization?: CcWebApp.WebAppCustomizationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_web_app#web_app_endpoint_policy CcWebApp#web_app_endpoint_policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_web_app#web_app_endpoint_policy CcWebApp#web_app_endpoint_policy}
     */
     readonly webAppEndpointPolicy?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_web_app#web_app_units CcWebApp#web_app_units}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_web_app#web_app_units CcWebApp#web_app_units}
     */
     readonly webAppUnits?: CcWebApp.WebAppUnitsProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_web_app awscc_transfer_web_app}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_web_app awscc_transfer_web_app}
 */
 export class CcWebApp extends cdktn.TerraformResource {
 
@@ -59,7 +59,7 @@ export class CcWebApp extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcWebApp resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcWebApp to import
-    * @param importFromId The id of the existing CcWebApp that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_web_app#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcWebApp that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_web_app#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcWebApp to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -71,7 +71,7 @@ export class CcWebApp extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_web_app awscc_transfer_web_app} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_web_app awscc_transfer_web_app} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -81,7 +81,8 @@ export class CcWebApp extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_transfer_web_app',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -534,19 +535,19 @@ export interface VpcProperty {
     /**
     * The IP address type for the VPC endpoint used by the web app.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_web_app#ip_address_type CcWebApp#ip_address_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_web_app#ip_address_type CcWebApp#ip_address_type}
     */
     readonly ipAddressType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_web_app#security_group_ids CcWebApp#security_group_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_web_app#security_group_ids CcWebApp#security_group_ids}
     */
     readonly securityGroupIds?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_web_app#subnet_ids CcWebApp#subnet_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_web_app#subnet_ids CcWebApp#subnet_ids}
     */
     readonly subnetIds?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_web_app#vpc_id CcWebApp#vpc_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_web_app#vpc_id CcWebApp#vpc_id}
     */
     readonly vpcId?: string;
 }
@@ -678,7 +679,7 @@ export interface EndpointDetailsProperty {
     /**
     * You can provide a structure that contains the details for the VPC endpoint to use with your web app.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_web_app#vpc CcWebApp#vpc}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_web_app#vpc CcWebApp#vpc}
     */
     readonly vpc?: VpcProperty;
 }
@@ -744,13 +745,13 @@ export interface IdentityProviderDetailsProperty {
     /**
     * The Amazon Resource Name (ARN) for the IAM Identity Center used for the web app.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_web_app#instance_arn CcWebApp#instance_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_web_app#instance_arn CcWebApp#instance_arn}
     */
     readonly instanceArn?: string;
     /**
     * The IAM role in IAM Identity Center used for the web app.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_web_app#role CcWebApp#role}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_web_app#role CcWebApp#role}
     */
     readonly role?: string;
 }
@@ -841,11 +842,11 @@ export class IdentityProviderDetailsPropertyOutputReference extends cdktn.Comple
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_web_app#key CcWebApp#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_web_app#key CcWebApp#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_web_app#value CcWebApp#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_web_app#value CcWebApp#value}
     */
     readonly value?: string;
 }
@@ -955,19 +956,19 @@ export interface WebAppCustomizationProperty {
     /**
     * Specifies a favicon to display in the browser tab.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_web_app#favicon_file CcWebApp#favicon_file}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_web_app#favicon_file CcWebApp#favicon_file}
     */
     readonly faviconFile?: string;
     /**
     * Specifies a logo to display on the web app.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_web_app#logo_file CcWebApp#logo_file}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_web_app#logo_file CcWebApp#logo_file}
     */
     readonly logoFile?: string;
     /**
     * Specifies a title to display on the web app.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_web_app#title CcWebApp#title}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_web_app#title CcWebApp#title}
     */
     readonly title?: string;
 }
@@ -1075,7 +1076,7 @@ export class WebAppCustomizationPropertyOutputReference extends cdktn.ComplexObj
 }
 export interface WebAppUnitsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/transfer_web_app#provisioned CcWebApp#provisioned}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/transfer_web_app#provisioned CcWebApp#provisioned}
     */
     readonly provisioned?: number;
 }

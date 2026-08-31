@@ -1,43 +1,43 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_intermediate_table
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_intermediate_table
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcIntermediateTableProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_intermediate_table#analysis_rules CcIntermediateTable#analysis_rules}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_intermediate_table#analysis_rules CcIntermediateTable#analysis_rules}
     */
     readonly analysisRules?: CcIntermediateTable.IntermediateTableAnalysisRuleProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_intermediate_table#description CcIntermediateTable#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_intermediate_table#description CcIntermediateTable#description}
     */
     readonly description?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_intermediate_table#kms_key_arn CcIntermediateTable#kms_key_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_intermediate_table#kms_key_arn CcIntermediateTable#kms_key_arn}
     */
     readonly kmsKeyArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_intermediate_table#membership_identifier CcIntermediateTable#membership_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_intermediate_table#membership_identifier CcIntermediateTable#membership_identifier}
     */
     readonly membershipIdentifier: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_intermediate_table#name CcIntermediateTable#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_intermediate_table#name CcIntermediateTable#name}
     */
     readonly name: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_intermediate_table#population_analysis_configuration CcIntermediateTable#population_analysis_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_intermediate_table#population_analysis_configuration CcIntermediateTable#population_analysis_configuration}
     */
     readonly populationAnalysisConfiguration: CcIntermediateTable.PopulationAnalysisConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_intermediate_table#tags CcIntermediateTable#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_intermediate_table#tags CcIntermediateTable#tags}
     */
     readonly tags?: CcIntermediateTable.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_intermediate_table awscc_cleanrooms_intermediate_table}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_intermediate_table awscc_cleanrooms_intermediate_table}
 */
 export class CcIntermediateTable extends cdktn.TerraformResource {
 
@@ -53,7 +53,7 @@ export class CcIntermediateTable extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcIntermediateTable resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcIntermediateTable to import
-    * @param importFromId The id of the existing CcIntermediateTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_intermediate_table#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcIntermediateTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_intermediate_table#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcIntermediateTable to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -65,7 +65,7 @@ export class CcIntermediateTable extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_intermediate_table awscc_cleanrooms_intermediate_table} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_intermediate_table awscc_cleanrooms_intermediate_table} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -75,7 +75,8 @@ export class CcIntermediateTable extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_cleanrooms_intermediate_table',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -632,7 +633,7 @@ export function ccIntermediateTableTagPropertyToHclTerraform(struct?: CcIntermed
 export namespace CcIntermediateTable {
 export interface DifferentialPrivacyColumnProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_intermediate_table#name CcIntermediateTable#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_intermediate_table#name CcIntermediateTable#name}
     */
     readonly name?: string;
 }
@@ -718,7 +719,7 @@ export class DifferentialPrivacyColumnPropertyList extends cdktn.ComplexList {
 }
 export interface DifferentialPrivacyProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_intermediate_table#columns CcIntermediateTable#columns}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_intermediate_table#columns CcIntermediateTable#columns}
     */
     readonly columns?: DifferentialPrivacyColumnProperty[] | cdktn.IResolvable;
 }
@@ -782,27 +783,27 @@ export class DifferentialPrivacyPropertyOutputReference extends cdktn.ComplexObj
 }
 export interface IntermediateTableAnalysisRuleCustomProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_intermediate_table#additional_analyses CcIntermediateTable#additional_analyses}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_intermediate_table#additional_analyses CcIntermediateTable#additional_analyses}
     */
     readonly additionalAnalyses?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_intermediate_table#allowed_analyses CcIntermediateTable#allowed_analyses}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_intermediate_table#allowed_analyses CcIntermediateTable#allowed_analyses}
     */
     readonly allowedAnalyses?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_intermediate_table#allowed_analysis_providers CcIntermediateTable#allowed_analysis_providers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_intermediate_table#allowed_analysis_providers CcIntermediateTable#allowed_analysis_providers}
     */
     readonly allowedAnalysisProviders?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_intermediate_table#allowed_result_receivers CcIntermediateTable#allowed_result_receivers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_intermediate_table#allowed_result_receivers CcIntermediateTable#allowed_result_receivers}
     */
     readonly allowedResultReceivers?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_intermediate_table#differential_privacy CcIntermediateTable#differential_privacy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_intermediate_table#differential_privacy CcIntermediateTable#differential_privacy}
     */
     readonly differentialPrivacy?: DifferentialPrivacyProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_intermediate_table#disallowed_output_columns CcIntermediateTable#disallowed_output_columns}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_intermediate_table#disallowed_output_columns CcIntermediateTable#disallowed_output_columns}
     */
     readonly disallowedOutputColumns?: string[];
 }
@@ -976,7 +977,7 @@ export class IntermediateTableAnalysisRuleCustomPropertyOutputReference extends 
 }
 export interface IntermediateTableAnalysisRulePolicyV1Property {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_intermediate_table#custom CcIntermediateTable#custom}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_intermediate_table#custom CcIntermediateTable#custom}
     */
     readonly custom?: IntermediateTableAnalysisRuleCustomProperty;
 }
@@ -1040,7 +1041,7 @@ export class IntermediateTableAnalysisRulePolicyV1PropertyOutputReference extend
 }
 export interface IntermediateTableAnalysisRulePolicyProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_intermediate_table#v1 CcIntermediateTable#v1}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_intermediate_table#v1 CcIntermediateTable#v1}
     */
     readonly v1?: IntermediateTableAnalysisRulePolicyV1Property;
 }
@@ -1104,11 +1105,11 @@ export class IntermediateTableAnalysisRulePolicyPropertyOutputReference extends 
 }
 export interface IntermediateTableAnalysisRuleProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_intermediate_table#policy CcIntermediateTable#policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_intermediate_table#policy CcIntermediateTable#policy}
     */
     readonly policy?: IntermediateTableAnalysisRulePolicyProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_intermediate_table#type CcIntermediateTable#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_intermediate_table#type CcIntermediateTable#type}
     */
     readonly type?: string;
 }
@@ -1216,11 +1217,11 @@ export class IntermediateTableAnalysisRulePropertyList extends cdktn.ComplexList
 }
 export interface PopulationAnalysisSqlParametersProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_intermediate_table#analysis_template_arn CcIntermediateTable#analysis_template_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_intermediate_table#analysis_template_arn CcIntermediateTable#analysis_template_arn}
     */
     readonly analysisTemplateArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_intermediate_table#query_string CcIntermediateTable#query_string}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_intermediate_table#query_string CcIntermediateTable#query_string}
     */
     readonly queryString?: string;
 }
@@ -1306,7 +1307,7 @@ export class PopulationAnalysisSqlParametersPropertyOutputReference extends cdkt
 }
 export interface PopulationAnalysisConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_intermediate_table#sql_parameters CcIntermediateTable#sql_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_intermediate_table#sql_parameters CcIntermediateTable#sql_parameters}
     */
     readonly sqlParameters?: PopulationAnalysisSqlParametersProperty;
 }
@@ -1370,11 +1371,11 @@ export class PopulationAnalysisConfigurationPropertyOutputReference extends cdkt
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_intermediate_table#key CcIntermediateTable#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_intermediate_table#key CcIntermediateTable#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cleanrooms_intermediate_table#value CcIntermediateTable#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_intermediate_table#value CcIntermediateTable#value}
     */
     readonly value?: string;
 }

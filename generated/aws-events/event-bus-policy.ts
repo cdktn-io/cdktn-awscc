@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/events_event_bus_policy
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_event_bus_policy
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,43 +9,43 @@ export interface CcEventBusPolicyProps extends cdktn.TerraformMetaArguments {
     /**
     * The action that you are enabling the other account to perform.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/events_event_bus_policy#action CcEventBusPolicy#action}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_event_bus_policy#action CcEventBusPolicy#action}
     */
     readonly action?: string;
     /**
     * This parameter enables you to limit the permission to accounts that fulfill a certain condition, such as being a member of a certain AWS organization.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/events_event_bus_policy#condition CcEventBusPolicy#condition}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_event_bus_policy#condition CcEventBusPolicy#condition}
     */
     readonly condition?: CcEventBusPolicy.ConditionProperty;
     /**
     * The name of the event bus associated with the rule. If you omit this, the default event bus is used.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/events_event_bus_policy#event_bus_name CcEventBusPolicy#event_bus_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_event_bus_policy#event_bus_name CcEventBusPolicy#event_bus_name}
     */
     readonly eventBusName?: string;
     /**
     * The 12-digit AWS account ID that you are permitting to put events to your default event bus. Specify "*" to permit any account to put events to your default event bus.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/events_event_bus_policy#principal CcEventBusPolicy#principal}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_event_bus_policy#principal CcEventBusPolicy#principal}
     */
     readonly principal?: string;
     /**
     * A JSON string that describes the permission policy statement. You can include a Policy parameter in the request instead of using the StatementId, Action, Principal, or Condition parameters.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/events_event_bus_policy#statement CcEventBusPolicy#statement}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_event_bus_policy#statement CcEventBusPolicy#statement}
     */
     readonly statement?: string;
     /**
     * An identifier string for the external account that you are granting permissions to
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/events_event_bus_policy#statement_id CcEventBusPolicy#statement_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_event_bus_policy#statement_id CcEventBusPolicy#statement_id}
     */
     readonly statementId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/events_event_bus_policy awscc_events_event_bus_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_event_bus_policy awscc_events_event_bus_policy}
 */
 export class CcEventBusPolicy extends cdktn.TerraformResource {
 
@@ -61,7 +61,7 @@ export class CcEventBusPolicy extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcEventBusPolicy resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcEventBusPolicy to import
-    * @param importFromId The id of the existing CcEventBusPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/events_event_bus_policy#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcEventBusPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_event_bus_policy#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcEventBusPolicy to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -73,7 +73,7 @@ export class CcEventBusPolicy extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/events_event_bus_policy awscc_events_event_bus_policy} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_event_bus_policy awscc_events_event_bus_policy} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -83,7 +83,8 @@ export class CcEventBusPolicy extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_events_event_bus_policy',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -312,19 +313,19 @@ export interface ConditionProperty {
     /**
     * Specifies the value for the key. Currently, this must be the ID of the organization.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/events_event_bus_policy#key CcEventBusPolicy#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_event_bus_policy#key CcEventBusPolicy#key}
     */
     readonly key?: string;
     /**
     * Specifies the type of condition. Currently the only supported value is StringEquals.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/events_event_bus_policy#type CcEventBusPolicy#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_event_bus_policy#type CcEventBusPolicy#type}
     */
     readonly type?: string;
     /**
     * Specifies the key for the condition. Currently the only supported key is aws:PrincipalOrgID.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/events_event_bus_policy#value CcEventBusPolicy#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_event_bus_policy#value CcEventBusPolicy#value}
     */
     readonly value?: string;
 }

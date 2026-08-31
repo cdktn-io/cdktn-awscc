@@ -1,35 +1,35 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesweb_identity_provider
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_identity_provider
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcIdentityProviderProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesweb_identity_provider#identity_provider_details CcIdentityProvider#identity_provider_details}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_identity_provider#identity_provider_details CcIdentityProvider#identity_provider_details}
     */
     readonly identityProviderDetails: { [key: string]: string };
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesweb_identity_provider#identity_provider_name CcIdentityProvider#identity_provider_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_identity_provider#identity_provider_name CcIdentityProvider#identity_provider_name}
     */
     readonly identityProviderName: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesweb_identity_provider#identity_provider_type CcIdentityProvider#identity_provider_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_identity_provider#identity_provider_type CcIdentityProvider#identity_provider_type}
     */
     readonly identityProviderType: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesweb_identity_provider#portal_arn CcIdentityProvider#portal_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_identity_provider#portal_arn CcIdentityProvider#portal_arn}
     */
     readonly portalArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesweb_identity_provider#tags CcIdentityProvider#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_identity_provider#tags CcIdentityProvider#tags}
     */
     readonly tags?: CcIdentityProvider.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesweb_identity_provider awscc_workspacesweb_identity_provider}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_identity_provider awscc_workspacesweb_identity_provider}
 */
 export class CcIdentityProvider extends cdktn.TerraformResource {
 
@@ -45,7 +45,7 @@ export class CcIdentityProvider extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcIdentityProvider resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcIdentityProvider to import
-    * @param importFromId The id of the existing CcIdentityProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesweb_identity_provider#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcIdentityProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_identity_provider#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcIdentityProvider to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -57,7 +57,7 @@ export class CcIdentityProvider extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesweb_identity_provider awscc_workspacesweb_identity_provider} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_identity_provider awscc_workspacesweb_identity_provider} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -67,7 +67,8 @@ export class CcIdentityProvider extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_workspacesweb_identity_provider',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -262,11 +263,11 @@ export function ccIdentityProviderTagPropertyToHclTerraform(struct?: CcIdentityP
 export namespace CcIdentityProvider {
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesweb_identity_provider#key CcIdentityProvider#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_identity_provider#key CcIdentityProvider#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/workspacesweb_identity_provider#value CcIdentityProvider#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_identity_provider#value CcIdentityProvider#value}
     */
     readonly value?: string;
 }

@@ -1,35 +1,35 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudwatch_insight_rule
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudwatch_insight_rule
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcInsightRuleProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudwatch_insight_rule#apply_on_transformed_logs CcInsightRule#apply_on_transformed_logs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudwatch_insight_rule#apply_on_transformed_logs CcInsightRule#apply_on_transformed_logs}
     */
     readonly applyOnTransformedLogs?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudwatch_insight_rule#rule_body CcInsightRule#rule_body}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudwatch_insight_rule#rule_body CcInsightRule#rule_body}
     */
     readonly ruleBody: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudwatch_insight_rule#rule_name CcInsightRule#rule_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudwatch_insight_rule#rule_name CcInsightRule#rule_name}
     */
     readonly ruleName: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudwatch_insight_rule#rule_state CcInsightRule#rule_state}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudwatch_insight_rule#rule_state CcInsightRule#rule_state}
     */
     readonly ruleState: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudwatch_insight_rule#tags CcInsightRule#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudwatch_insight_rule#tags CcInsightRule#tags}
     */
     readonly tags?: CcInsightRule.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudwatch_insight_rule awscc_cloudwatch_insight_rule}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudwatch_insight_rule awscc_cloudwatch_insight_rule}
 */
 export class CcInsightRule extends cdktn.TerraformResource {
 
@@ -45,7 +45,7 @@ export class CcInsightRule extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcInsightRule resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcInsightRule to import
-    * @param importFromId The id of the existing CcInsightRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudwatch_insight_rule#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcInsightRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudwatch_insight_rule#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcInsightRule to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -57,7 +57,7 @@ export class CcInsightRule extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudwatch_insight_rule awscc_cloudwatch_insight_rule} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudwatch_insight_rule awscc_cloudwatch_insight_rule} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -67,7 +67,8 @@ export class CcInsightRule extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_cloudwatch_insight_rule',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -262,11 +263,11 @@ export function ccInsightRuleTagPropertyToHclTerraform(struct?: CcInsightRule.Ta
 export namespace CcInsightRule {
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudwatch_insight_rule#key CcInsightRule#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudwatch_insight_rule#key CcInsightRule#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/cloudwatch_insight_rule#value CcInsightRule#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudwatch_insight_rule#value CcInsightRule#value}
     */
     readonly value?: string;
 }

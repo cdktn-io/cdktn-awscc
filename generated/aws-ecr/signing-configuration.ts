@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ecr_signing_configuration
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecr_signing_configuration
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,13 +9,13 @@ export interface CcSigningConfigurationProps extends cdktn.TerraformMetaArgument
     /**
     * Array of signing rules that define which repositories should be signed and with which signing profiles.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ecr_signing_configuration#rules CcSigningConfiguration#rules}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecr_signing_configuration#rules CcSigningConfiguration#rules}
     */
     readonly rules: CcSigningConfiguration.RuleProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ecr_signing_configuration awscc_ecr_signing_configuration}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecr_signing_configuration awscc_ecr_signing_configuration}
 */
 export class CcSigningConfiguration extends cdktn.TerraformResource {
 
@@ -31,7 +31,7 @@ export class CcSigningConfiguration extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcSigningConfiguration resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcSigningConfiguration to import
-    * @param importFromId The id of the existing CcSigningConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ecr_signing_configuration#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcSigningConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecr_signing_configuration#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcSigningConfiguration to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -43,7 +43,7 @@ export class CcSigningConfiguration extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ecr_signing_configuration awscc_ecr_signing_configuration} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecr_signing_configuration awscc_ecr_signing_configuration} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -53,7 +53,8 @@ export class CcSigningConfiguration extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_ecr_signing_configuration',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -197,13 +198,13 @@ export interface RepositoryFilterProperty {
     /**
     * Repository name pattern (supports '*' wildcard).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ecr_signing_configuration#filter CcSigningConfiguration#filter}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecr_signing_configuration#filter CcSigningConfiguration#filter}
     */
     readonly filter?: string;
     /**
     * Type of repository filter
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ecr_signing_configuration#filter_type CcSigningConfiguration#filter_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecr_signing_configuration#filter_type CcSigningConfiguration#filter_type}
     */
     readonly filterType?: string;
 }
@@ -313,13 +314,13 @@ export interface RuleProperty {
     /**
     * Optional array of repository filters. If omitted, the rule matches all repositories. If provided, must contain at least one filter. Empty arrays are not allowed.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ecr_signing_configuration#repository_filters CcSigningConfiguration#repository_filters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecr_signing_configuration#repository_filters CcSigningConfiguration#repository_filters}
     */
     readonly repositoryFilters?: RepositoryFilterProperty[] | cdktn.IResolvable;
     /**
     * AWS Signer signing profile ARN to use for matched repositories.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ecr_signing_configuration#signing_profile_arn CcSigningConfiguration#signing_profile_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecr_signing_configuration#signing_profile_arn CcSigningConfiguration#signing_profile_arn}
     */
     readonly signingProfileArn: string;
 }

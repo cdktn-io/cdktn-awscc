@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lightsail_static_ip
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_static_ip
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,19 +9,19 @@ export interface CcStaticIpProps extends cdktn.TerraformMetaArguments {
     /**
     * The instance where the static IP is attached.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lightsail_static_ip#attached_to CcStaticIp#attached_to}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_static_ip#attached_to CcStaticIp#attached_to}
     */
     readonly attachedTo?: string;
     /**
     * The name of the static IP address.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lightsail_static_ip#static_ip_name CcStaticIp#static_ip_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_static_ip#static_ip_name CcStaticIp#static_ip_name}
     */
     readonly staticIpName: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lightsail_static_ip awscc_lightsail_static_ip}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_static_ip awscc_lightsail_static_ip}
 */
 export class CcStaticIp extends cdktn.TerraformResource {
 
@@ -37,7 +37,7 @@ export class CcStaticIp extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcStaticIp resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcStaticIp to import
-    * @param importFromId The id of the existing CcStaticIp that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lightsail_static_ip#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcStaticIp that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_static_ip#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcStaticIp to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -49,7 +49,7 @@ export class CcStaticIp extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/lightsail_static_ip awscc_lightsail_static_ip} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_static_ip awscc_lightsail_static_ip} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -59,7 +59,8 @@ export class CcStaticIp extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_lightsail_static_ip',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,

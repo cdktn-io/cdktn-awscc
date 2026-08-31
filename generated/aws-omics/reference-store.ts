@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/omics_reference_store
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/omics_reference_store
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,29 +9,29 @@ export interface CcReferenceStoreProps extends cdktn.TerraformMetaArguments {
     /**
     * A description for the store.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/omics_reference_store#description CcReferenceStore#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/omics_reference_store#description CcReferenceStore#description}
     */
     readonly description?: string;
     /**
     * A name for the store.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/omics_reference_store#name CcReferenceStore#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/omics_reference_store#name CcReferenceStore#name}
     */
     readonly name: string;
     /**
     * Server-side encryption (SSE) settings for a store.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/omics_reference_store#sse_config CcReferenceStore#sse_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/omics_reference_store#sse_config CcReferenceStore#sse_config}
     */
     readonly sseConfig?: CcReferenceStore.SseConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/omics_reference_store#tags CcReferenceStore#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/omics_reference_store#tags CcReferenceStore#tags}
     */
     readonly tags?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/omics_reference_store awscc_omics_reference_store}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/omics_reference_store awscc_omics_reference_store}
 */
 export class CcReferenceStore extends cdktn.TerraformResource {
 
@@ -47,7 +47,7 @@ export class CcReferenceStore extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcReferenceStore resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcReferenceStore to import
-    * @param importFromId The id of the existing CcReferenceStore that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/omics_reference_store#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcReferenceStore that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/omics_reference_store#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcReferenceStore to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -59,7 +59,7 @@ export class CcReferenceStore extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/omics_reference_store awscc_omics_reference_store} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/omics_reference_store awscc_omics_reference_store} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -69,7 +69,8 @@ export class CcReferenceStore extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_omics_reference_store',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -258,11 +259,11 @@ export interface SseConfigProperty {
     /**
     * An encryption key ARN.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/omics_reference_store#key_arn CcReferenceStore#key_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/omics_reference_store#key_arn CcReferenceStore#key_arn}
     */
     readonly keyArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/omics_reference_store#type CcReferenceStore#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/omics_reference_store#type CcReferenceStore#type}
     */
     readonly type?: string;
 }

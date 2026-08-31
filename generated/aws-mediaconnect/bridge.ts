@@ -1,53 +1,53 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_bridge
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_bridge
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcBridgeProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_bridge#egress_gateway_bridge CcBridge#egress_gateway_bridge}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_bridge#egress_gateway_bridge CcBridge#egress_gateway_bridge}
     */
     readonly egressGatewayBridge?: CcBridge.EgressGatewayBridgeProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_bridge#ingress_gateway_bridge CcBridge#ingress_gateway_bridge}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_bridge#ingress_gateway_bridge CcBridge#ingress_gateway_bridge}
     */
     readonly ingressGatewayBridge?: CcBridge.IngressGatewayBridgeProperty;
     /**
     * The name of the bridge.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_bridge#name CcBridge#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_bridge#name CcBridge#name}
     */
     readonly name: string;
     /**
     * The outputs on this bridge.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_bridge#outputs CcBridge#outputs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_bridge#outputs CcBridge#outputs}
     */
     readonly outputs?: CcBridge.BridgeOutputProperty[] | cdktn.IResolvable;
     /**
     * The placement Amazon Resource Number (ARN) of the bridge.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_bridge#placement_arn CcBridge#placement_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_bridge#placement_arn CcBridge#placement_arn}
     */
     readonly placementArn: string;
     /**
     * The settings for source failover.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_bridge#source_failover_config CcBridge#source_failover_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_bridge#source_failover_config CcBridge#source_failover_config}
     */
     readonly sourceFailoverConfig?: CcBridge.FailoverConfigProperty;
     /**
     * The sources on this bridge.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_bridge#sources CcBridge#sources}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_bridge#sources CcBridge#sources}
     */
     readonly sources: CcBridge.BridgeSourceProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_bridge awscc_mediaconnect_bridge}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_bridge awscc_mediaconnect_bridge}
 */
 export class CcBridge extends cdktn.TerraformResource {
 
@@ -63,7 +63,7 @@ export class CcBridge extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcBridge resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcBridge to import
-    * @param importFromId The id of the existing CcBridge that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_bridge#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcBridge that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_bridge#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcBridge to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -75,7 +75,7 @@ export class CcBridge extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_bridge awscc_mediaconnect_bridge} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_bridge awscc_mediaconnect_bridge} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -85,7 +85,8 @@ export class CcBridge extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_mediaconnect_bridge',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -740,7 +741,7 @@ export interface EgressGatewayBridgeProperty {
     /**
     * The maximum expected bitrate of the egress bridge.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_bridge#max_bitrate CcBridge#max_bitrate}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_bridge#max_bitrate CcBridge#max_bitrate}
     */
     readonly maxBitrate?: number;
 }
@@ -806,13 +807,13 @@ export interface IngressGatewayBridgeProperty {
     /**
     * The maximum expected bitrate of the ingress bridge.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_bridge#max_bitrate CcBridge#max_bitrate}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_bridge#max_bitrate CcBridge#max_bitrate}
     */
     readonly maxBitrate?: number;
     /**
     * The maximum number of outputs on the ingress bridge.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_bridge#max_outputs CcBridge#max_outputs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_bridge#max_outputs CcBridge#max_outputs}
     */
     readonly maxOutputs?: number;
 }
@@ -900,37 +901,37 @@ export interface BridgeNetworkOutputProperty {
     /**
     * The network output IP Address.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_bridge#ip_address CcBridge#ip_address}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_bridge#ip_address CcBridge#ip_address}
     */
     readonly ipAddress?: string;
     /**
     * The network output name.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_bridge#name CcBridge#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_bridge#name CcBridge#name}
     */
     readonly name?: string;
     /**
     * The network output's gateway network name.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_bridge#network_name CcBridge#network_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_bridge#network_name CcBridge#network_name}
     */
     readonly networkName?: string;
     /**
     * The network output port.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_bridge#port CcBridge#port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_bridge#port CcBridge#port}
     */
     readonly port?: number;
     /**
     * The network output protocol.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_bridge#protocol CcBridge#protocol}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_bridge#protocol CcBridge#protocol}
     */
     readonly protocol?: string;
     /**
     * The network output TTL.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_bridge#ttl CcBridge#ttl}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_bridge#ttl CcBridge#ttl}
     */
     readonly ttl?: number;
 }
@@ -1106,7 +1107,7 @@ export interface BridgeOutputProperty {
     /**
     * The output of the bridge. A network output is delivered to your premises.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_bridge#network_output CcBridge#network_output}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_bridge#network_output CcBridge#network_output}
     */
     readonly networkOutput?: BridgeNetworkOutputProperty;
 }
@@ -1194,7 +1195,7 @@ export interface SourcePriorityProperty {
     /**
     * The name of the source you choose as the primary source for this flow.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_bridge#primary_source CcBridge#primary_source}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_bridge#primary_source CcBridge#primary_source}
     */
     readonly primarySource?: string;
 }
@@ -1260,17 +1261,17 @@ export interface FailoverConfigProperty {
     /**
     * The type of failover you choose for this flow. FAILOVER allows switching between different streams.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_bridge#failover_mode CcBridge#failover_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_bridge#failover_mode CcBridge#failover_mode}
     */
     readonly failoverMode?: string;
     /**
     * The priority you want to assign to a source. You can have a primary stream and a backup stream or two equally prioritized streams.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_bridge#source_priority CcBridge#source_priority}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_bridge#source_priority CcBridge#source_priority}
     */
     readonly sourcePriority?: SourcePriorityProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_bridge#state CcBridge#state}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_bridge#state CcBridge#state}
     */
     readonly state?: string;
 }
@@ -1380,7 +1381,7 @@ export interface VpcInterfaceAttachmentProperty {
     /**
     * The name of the VPC interface to use for this resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_bridge#vpc_interface_name CcBridge#vpc_interface_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_bridge#vpc_interface_name CcBridge#vpc_interface_name}
     */
     readonly vpcInterfaceName?: string;
 }
@@ -1446,19 +1447,19 @@ export interface BridgeFlowSourceProperty {
     /**
     * The ARN of the cloud flow used as a source of this bridge.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_bridge#flow_arn CcBridge#flow_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_bridge#flow_arn CcBridge#flow_arn}
     */
     readonly flowArn?: string;
     /**
     * The name of the VPC interface attachment to use for this source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_bridge#flow_vpc_interface_attachment CcBridge#flow_vpc_interface_attachment}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_bridge#flow_vpc_interface_attachment CcBridge#flow_vpc_interface_attachment}
     */
     readonly flowVpcInterfaceAttachment?: VpcInterfaceAttachmentProperty;
     /**
     * The name of the flow source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_bridge#name CcBridge#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_bridge#name CcBridge#name}
     */
     readonly name?: string;
 }
@@ -1568,7 +1569,7 @@ export interface MulticastSourceSettingsProperty {
     /**
     * The IP address of the source for source-specific multicast (SSM).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_bridge#multicast_source_ip CcBridge#multicast_source_ip}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_bridge#multicast_source_ip CcBridge#multicast_source_ip}
     */
     readonly multicastSourceIp?: string;
 }
@@ -1634,37 +1635,37 @@ export interface BridgeNetworkSourceProperty {
     /**
     * The network source multicast IP.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_bridge#multicast_ip CcBridge#multicast_ip}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_bridge#multicast_ip CcBridge#multicast_ip}
     */
     readonly multicastIp?: string;
     /**
     * The settings related to the multicast source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_bridge#multicast_source_settings CcBridge#multicast_source_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_bridge#multicast_source_settings CcBridge#multicast_source_settings}
     */
     readonly multicastSourceSettings?: MulticastSourceSettingsProperty;
     /**
     * The name of the network source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_bridge#name CcBridge#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_bridge#name CcBridge#name}
     */
     readonly name?: string;
     /**
     * The network source's gateway network name.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_bridge#network_name CcBridge#network_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_bridge#network_name CcBridge#network_name}
     */
     readonly networkName?: string;
     /**
     * The network source port.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_bridge#port CcBridge#port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_bridge#port CcBridge#port}
     */
     readonly port?: number;
     /**
     * The network source protocol.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_bridge#protocol CcBridge#protocol}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_bridge#protocol CcBridge#protocol}
     */
     readonly protocol?: string;
 }
@@ -1840,13 +1841,13 @@ export interface BridgeSourceProperty {
     /**
     * The source of the bridge. A flow source originates in MediaConnect as an existing cloud flow.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_bridge#flow_source CcBridge#flow_source}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_bridge#flow_source CcBridge#flow_source}
     */
     readonly flowSource?: BridgeFlowSourceProperty;
     /**
     * The source of the bridge. A network source originates at your premises.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/mediaconnect_bridge#network_source CcBridge#network_source}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediaconnect_bridge#network_source CcBridge#network_source}
     */
     readonly networkSource?: BridgeNetworkSourceProperty;
 }

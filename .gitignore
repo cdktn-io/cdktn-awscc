@@ -2,3 +2,10 @@ node_modules/
 out/
 *.tsbuildinfo
 dist/
+# pnpm package's staging tree (tools/awscc2cdk/bin/package.ts) — deliberately a sibling of dist/,
+# not nested inside it, so the CI "upload dist" artifact never picks up the symlinked node_modules.
+.package-stage/
+# fetched by `pnpm schema:fetch` (scripts/update-provider-schema.ts); ~35 MB, never committed.
+# schemas/PROVIDER_VERSION (the pin `generated/` was built from) is deliberately NOT ignored here.
+schemas/schema.json
+schemas/.terraform*

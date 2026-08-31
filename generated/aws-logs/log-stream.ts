@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/logs_log_stream
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/logs_log_stream
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,19 +9,19 @@ export interface CcLogStreamProps extends cdktn.TerraformMetaArguments {
     /**
     * The name of the log group where the log stream is created.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/logs_log_stream#log_group_name CcLogStream#log_group_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/logs_log_stream#log_group_name CcLogStream#log_group_name}
     */
     readonly logGroupName: string;
     /**
     * The name of the log stream. The name must be unique wihtin the log group.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/logs_log_stream#log_stream_name CcLogStream#log_stream_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/logs_log_stream#log_stream_name CcLogStream#log_stream_name}
     */
     readonly logStreamName?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/logs_log_stream awscc_logs_log_stream}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/logs_log_stream awscc_logs_log_stream}
 */
 export class CcLogStream extends cdktn.TerraformResource {
 
@@ -37,7 +37,7 @@ export class CcLogStream extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcLogStream resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcLogStream to import
-    * @param importFromId The id of the existing CcLogStream that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/logs_log_stream#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcLogStream that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/logs_log_stream#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcLogStream to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -49,7 +49,7 @@ export class CcLogStream extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/logs_log_stream awscc_logs_log_stream} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/logs_log_stream awscc_logs_log_stream} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -59,7 +59,8 @@ export class CcLogStream extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_logs_log_stream',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,

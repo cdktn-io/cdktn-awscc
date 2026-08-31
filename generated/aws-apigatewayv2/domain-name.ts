@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigatewayv2_domain_name
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_domain_name
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,37 +9,37 @@ export interface CcDomainNameProps extends cdktn.TerraformMetaArguments {
     /**
     * The custom domain name for your API in Amazon API Gateway. Uppercase letters and the underscore (``_``) character are not supported.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigatewayv2_domain_name#domain_name CcDomainName#domain_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_domain_name#domain_name CcDomainName#domain_name}
     */
     readonly domainName: string;
     /**
     * The domain name configurations.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigatewayv2_domain_name#domain_name_configurations CcDomainName#domain_name_configurations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_domain_name#domain_name_configurations CcDomainName#domain_name_configurations}
     */
     readonly domainNameConfigurations?: CcDomainName.DomainNameConfigurationProperty[] | cdktn.IResolvable;
     /**
     * The mutual TLS authentication configuration for a custom domain name.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigatewayv2_domain_name#mutual_tls_authentication CcDomainName#mutual_tls_authentication}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_domain_name#mutual_tls_authentication CcDomainName#mutual_tls_authentication}
     */
     readonly mutualTlsAuthentication?: CcDomainName.MutualTlsAuthenticationProperty;
     /**
     * The routing mode API Gateway uses to route traffic to your APIs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigatewayv2_domain_name#routing_mode CcDomainName#routing_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_domain_name#routing_mode CcDomainName#routing_mode}
     */
     readonly routingMode?: string;
     /**
     * The collection of tags associated with a domain name.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigatewayv2_domain_name#tags CcDomainName#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_domain_name#tags CcDomainName#tags}
     */
     readonly tags?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigatewayv2_domain_name awscc_apigatewayv2_domain_name}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_domain_name awscc_apigatewayv2_domain_name}
 */
 export class CcDomainName extends cdktn.TerraformResource {
 
@@ -55,7 +55,7 @@ export class CcDomainName extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcDomainName resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcDomainName to import
-    * @param importFromId The id of the existing CcDomainName that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigatewayv2_domain_name#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcDomainName that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_domain_name#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcDomainName to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -67,7 +67,7 @@ export class CcDomainName extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigatewayv2_domain_name awscc_apigatewayv2_domain_name} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_domain_name awscc_apigatewayv2_domain_name} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -77,7 +77,8 @@ export class CcDomainName extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_apigatewayv2_domain_name',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -355,37 +356,37 @@ export interface DomainNameConfigurationProperty {
     /**
     * An AWS-managed certificate that will be used by the edge-optimized endpoint for this domain name. AWS Certificate Manager is the only supported source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigatewayv2_domain_name#certificate_arn CcDomainName#certificate_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_domain_name#certificate_arn CcDomainName#certificate_arn}
     */
     readonly certificateArn?: string;
     /**
     * The user-friendly name of the certificate that will be used by the edge-optimized endpoint for this domain name.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigatewayv2_domain_name#certificate_name CcDomainName#certificate_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_domain_name#certificate_name CcDomainName#certificate_name}
     */
     readonly certificateName?: string;
     /**
     * The endpoint type.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigatewayv2_domain_name#endpoint_type CcDomainName#endpoint_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_domain_name#endpoint_type CcDomainName#endpoint_type}
     */
     readonly endpointType?: string;
     /**
     * The IP address types that can invoke the domain name. Use ``ipv4`` to allow only IPv4 addresses to invoke your domain name, or use ``dualstack`` to allow both IPv4 and IPv6 addresses to invoke your domain name.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigatewayv2_domain_name#ip_address_type CcDomainName#ip_address_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_domain_name#ip_address_type CcDomainName#ip_address_type}
     */
     readonly ipAddressType?: string;
     /**
     * The Amazon resource name (ARN) for the public certificate issued by ACMlong. This ARN is used to validate custom domain ownership. It's required only if you configure mutual TLS and use either an ACM-imported or a private CA certificate ARN as the regionalCertificateArn.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigatewayv2_domain_name#ownership_verification_certificate_arn CcDomainName#ownership_verification_certificate_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_domain_name#ownership_verification_certificate_arn CcDomainName#ownership_verification_certificate_arn}
     */
     readonly ownershipVerificationCertificateArn?: string;
     /**
     * The Transport Layer Security (TLS) version of the security policy for this domain name. The valid values are ``TLS_1_0`` and ``TLS_1_2``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigatewayv2_domain_name#security_policy CcDomainName#security_policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_domain_name#security_policy CcDomainName#security_policy}
     */
     readonly securityPolicy?: string;
 }
@@ -583,13 +584,13 @@ export interface MutualTlsAuthenticationProperty {
     /**
     * An Amazon S3 URL that specifies the truststore for mutual TLS authentication, for example, ``s3://bucket-name/key-name``. The truststore can contain certificates from public or private certificate authorities. To update the truststore, upload a new version to S3, and then update your custom domain name to use the new version. To update the truststore, you must have permissions to access the S3 object.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigatewayv2_domain_name#truststore_uri CcDomainName#truststore_uri}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_domain_name#truststore_uri CcDomainName#truststore_uri}
     */
     readonly truststoreUri?: string;
     /**
     * The version of the S3 object that contains your truststore. To specify a version, you must have versioning enabled for the S3 bucket.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/apigatewayv2_domain_name#truststore_version CcDomainName#truststore_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_domain_name#truststore_version CcDomainName#truststore_version}
     */
     readonly truststoreVersion?: string;
 }

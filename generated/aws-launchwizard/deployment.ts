@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/launchwizard_deployment
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/launchwizard_deployment
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,37 +9,37 @@ export interface CcDeploymentProps extends cdktn.TerraformMetaArguments {
     /**
     * Workload deployment pattern name
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/launchwizard_deployment#deployment_pattern_name CcDeployment#deployment_pattern_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/launchwizard_deployment#deployment_pattern_name CcDeployment#deployment_pattern_name}
     */
     readonly deploymentPatternName: string;
     /**
     * Name of LaunchWizard deployment
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/launchwizard_deployment#name CcDeployment#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/launchwizard_deployment#name CcDeployment#name}
     */
     readonly name: string;
     /**
     * LaunchWizard deployment specifications
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/launchwizard_deployment#specifications CcDeployment#specifications}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/launchwizard_deployment#specifications CcDeployment#specifications}
     */
     readonly specifications?: { [key: string]: string };
     /**
     * Tags for LaunchWizard deployment
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/launchwizard_deployment#tags CcDeployment#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/launchwizard_deployment#tags CcDeployment#tags}
     */
     readonly tags?: CcDeployment.TagProperty[] | cdktn.IResolvable;
     /**
     * Workload Name for LaunchWizard deployment
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/launchwizard_deployment#workload_name CcDeployment#workload_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/launchwizard_deployment#workload_name CcDeployment#workload_name}
     */
     readonly workloadName: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/launchwizard_deployment awscc_launchwizard_deployment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/launchwizard_deployment awscc_launchwizard_deployment}
 */
 export class CcDeployment extends cdktn.TerraformResource {
 
@@ -55,7 +55,7 @@ export class CcDeployment extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcDeployment resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcDeployment to import
-    * @param importFromId The id of the existing CcDeployment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/launchwizard_deployment#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcDeployment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/launchwizard_deployment#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcDeployment to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -67,7 +67,7 @@ export class CcDeployment extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/launchwizard_deployment awscc_launchwizard_deployment} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/launchwizard_deployment awscc_launchwizard_deployment} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -77,7 +77,8 @@ export class CcDeployment extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_launchwizard_deployment',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -299,13 +300,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 127 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/launchwizard_deployment#key CcDeployment#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/launchwizard_deployment#key CcDeployment#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 0 to 255 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/launchwizard_deployment#value CcDeployment#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/launchwizard_deployment#value CcDeployment#value}
     */
     readonly value?: string;
 }

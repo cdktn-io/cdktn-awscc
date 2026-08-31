@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_ipam_prefix_list_resolver
+// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_prefix_list_resolver
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,35 +9,35 @@ export interface CcIPAMPrefixListResolverProps extends cdktn.TerraformMetaArgume
     /**
     * The address family of the address space in this Prefix List Resolver. Either IPv4 or IPv6.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_ipam_prefix_list_resolver#address_family CcIPAMPrefixListResolver#address_family}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_prefix_list_resolver#address_family CcIPAMPrefixListResolver#address_family}
     */
     readonly addressFamily: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_ipam_prefix_list_resolver#description CcIPAMPrefixListResolver#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_prefix_list_resolver#description CcIPAMPrefixListResolver#description}
     */
     readonly description?: string;
     /**
     * The Id of the IPAM this Prefix List Resolver is a part of.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_ipam_prefix_list_resolver#ipam_id CcIPAMPrefixListResolver#ipam_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_prefix_list_resolver#ipam_id CcIPAMPrefixListResolver#ipam_id}
     */
     readonly ipamId?: string;
     /**
     * Rules define the business logic for selecting CIDRs from IPAM.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_ipam_prefix_list_resolver#rules CcIPAMPrefixListResolver#rules}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_prefix_list_resolver#rules CcIPAMPrefixListResolver#rules}
     */
     readonly rules?: CcIPAMPrefixListResolver.IpamPrefixListResolverRuleProperty[] | cdktn.IResolvable;
     /**
     * An array of key-value pairs to apply to this resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_ipam_prefix_list_resolver#tags CcIPAMPrefixListResolver#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_prefix_list_resolver#tags CcIPAMPrefixListResolver#tags}
     */
     readonly tags?: CcIPAMPrefixListResolver.TagsProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_ipam_prefix_list_resolver awscc_ec2_ipam_prefix_list_resolver}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_prefix_list_resolver awscc_ec2_ipam_prefix_list_resolver}
 */
 export class CcIPAMPrefixListResolver extends cdktn.TerraformResource {
 
@@ -53,7 +53,7 @@ export class CcIPAMPrefixListResolver extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcIPAMPrefixListResolver resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcIPAMPrefixListResolver to import
-    * @param importFromId The id of the existing CcIPAMPrefixListResolver that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_ipam_prefix_list_resolver#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcIPAMPrefixListResolver that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_prefix_list_resolver#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcIPAMPrefixListResolver to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -65,7 +65,7 @@ export class CcIPAMPrefixListResolver extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_ipam_prefix_list_resolver awscc_ec2_ipam_prefix_list_resolver} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_prefix_list_resolver awscc_ec2_ipam_prefix_list_resolver} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -75,7 +75,8 @@ export class CcIPAMPrefixListResolver extends cdktn.TerraformResource {
         super(scope, id, {
             terraformResourceType: 'awscc_ec2_ipam_prefix_list_resolver',
             terraformGeneratorMetadata: {
-                providerName: 'awscc'
+                providerName: 'awscc',
+                providerVersion: '1.98.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -455,13 +456,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_ipam_prefix_list_resolver#key CcIPAMPrefixListResolver#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_prefix_list_resolver#key CcIPAMPrefixListResolver#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 0 to 256 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_ipam_prefix_list_resolver#value CcIPAMPrefixListResolver#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_prefix_list_resolver#value CcIPAMPrefixListResolver#value}
     */
     readonly value?: string;
 }
@@ -549,43 +550,43 @@ export interface IpamPrefixListResolverRuleConditionProperty {
     /**
     * Condition for the IPAM Resource CIDR rule type.  CIDR (like 10.24.34.0/23).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_ipam_prefix_list_resolver#cidr CcIPAMPrefixListResolver#cidr}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_prefix_list_resolver#cidr CcIPAMPrefixListResolver#cidr}
     */
     readonly cidr?: string;
     /**
     * Condition for the IPAM Pool CIDR rule type.  If not chosen, the resolver applies to all IPAM Pool CIDRs in the scope.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_ipam_prefix_list_resolver#ipam_pool_id CcIPAMPrefixListResolver#ipam_pool_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_prefix_list_resolver#ipam_pool_id CcIPAMPrefixListResolver#ipam_pool_id}
     */
     readonly ipamPoolId?: string;
     /**
     * Equals, Not equals, or Subnet Of.  The subnet-of operation only applies to cidr conditions.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_ipam_prefix_list_resolver#operation CcIPAMPrefixListResolver#operation}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_prefix_list_resolver#operation CcIPAMPrefixListResolver#operation}
     */
     readonly operation?: string;
     /**
     * Condition for the IPAM Resource CIDR rule type.  The unique ID of a resource (like vpc-1234567890abcdef0).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_ipam_prefix_list_resolver#resource_id CcIPAMPrefixListResolver#resource_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_prefix_list_resolver#resource_id CcIPAMPrefixListResolver#resource_id}
     */
     readonly resourceId?: string;
     /**
     * Condition for the IPAM Resource CIDR rule type.  Resource owner (like 111122223333).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_ipam_prefix_list_resolver#resource_owner CcIPAMPrefixListResolver#resource_owner}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_prefix_list_resolver#resource_owner CcIPAMPrefixListResolver#resource_owner}
     */
     readonly resourceOwner?: string;
     /**
     * Condition for the IPAM Resource CIDR rule type.  Resource region (like us-east-1).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_ipam_prefix_list_resolver#resource_region CcIPAMPrefixListResolver#resource_region}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_prefix_list_resolver#resource_region CcIPAMPrefixListResolver#resource_region}
     */
     readonly resourceRegion?: string;
     /**
     * Condition for the IPAM Resource CIDR rule type.  Resource Tag (like dev-vpc-1).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_ipam_prefix_list_resolver#resource_tag CcIPAMPrefixListResolver#resource_tag}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_prefix_list_resolver#resource_tag CcIPAMPrefixListResolver#resource_tag}
     */
     readonly resourceTag?: TagProperty;
 }
@@ -805,31 +806,31 @@ export interface IpamPrefixListResolverRuleProperty {
     /**
     * Two of the rule types allow you to add conditions to the rules. (1) For IPAM Pool CIDR rules, you can specify an ipamPoolId; if not specified, the rule will apply to all IPAM Pool CIDRs in the scope.  (2) For IPAM Resource CIDR rules, you can specify resourceId, resourceOwner, resourceRegion, cidr, or resourceTag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_ipam_prefix_list_resolver#conditions CcIPAMPrefixListResolver#conditions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_prefix_list_resolver#conditions CcIPAMPrefixListResolver#conditions}
     */
     readonly conditions?: IpamPrefixListResolverRuleConditionProperty[] | cdktn.IResolvable;
     /**
     * This rule will only match resources that are in this IPAM Scope.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_ipam_prefix_list_resolver#ipam_scope_id CcIPAMPrefixListResolver#ipam_scope_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_prefix_list_resolver#ipam_scope_id CcIPAMPrefixListResolver#ipam_scope_id}
     */
     readonly ipamScopeId?: string;
     /**
     * The resourceType property only applies to ipam-resource-cidr rules; this property specifies what type of resources this rule will apply to, such as VPCs or Subnets.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_ipam_prefix_list_resolver#resource_type CcIPAMPrefixListResolver#resource_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_prefix_list_resolver#resource_type CcIPAMPrefixListResolver#resource_type}
     */
     readonly resourceType?: string;
     /**
     * There are three rule types: (1) Static CIDR: A fixed list of CIDRs that don't change (like a manual list replicated across Regions). (2) IPAM pool CIDR: CIDRs from specific IPAM pools (like all CIDRs from your IPAM production pool).  (3) IPAM resource CIDR: CIDRs for AWS resources like VPCs, subnets, and EIPs within a specific IPAM scope.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_ipam_prefix_list_resolver#rule_type CcIPAMPrefixListResolver#rule_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_prefix_list_resolver#rule_type CcIPAMPrefixListResolver#rule_type}
     */
     readonly ruleType?: string;
     /**
     * A fixed CIDR that doesn't change
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_ipam_prefix_list_resolver#static_cidr CcIPAMPrefixListResolver#static_cidr}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_prefix_list_resolver#static_cidr CcIPAMPrefixListResolver#static_cidr}
     */
     readonly staticCidr?: string;
 }
@@ -1005,13 +1006,13 @@ export interface TagsProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_ipam_prefix_list_resolver#key CcIPAMPrefixListResolver#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_prefix_list_resolver#key CcIPAMPrefixListResolver#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 0 to 256 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/ec2_ipam_prefix_list_resolver#value CcIPAMPrefixListResolver#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_prefix_list_resolver#value CcIPAMPrefixListResolver#value}
     */
     readonly value?: string;
 }
