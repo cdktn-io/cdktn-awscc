@@ -58,18 +58,17 @@ function findResourceByCfnType(db: SpecDatabase, cfnType: string): { properties:
 }
 
 /**
- * Resolves the CFN `TypeDefinition` reached by walking `path` (terraform attribute names, e.g.
- * `['lifecycle_configuration', 'rules']`) down from `cfnType`'s own properties, matching each
- * segment to a CFN property key by `normalizeKey` (order-independent, join-key logic shared with
- * `cfn-map.ts`). Returns the CFN definition name at the end of the path, or `undefined` if the
- * path doesn't correspond to an object-typed CFN property (primitive, unmapped, or the awscc
- * schema diverged from the CFN spec at this point) — callers fall back to path-based naming.
+ * Walks `path` (terraform attribute names, e.g. `['lifecycle_configuration', 'rules']`) down from
+ * `cfnType`'s own properties, matching each segment to a CFN property key by `normalizeKey`
+ * (order-independent, join-key logic shared with `cfn-map.ts`). Shared by `resolveDefinitionName`
+ * (wants the `TypeDefinition` name at the end) and `resolvePropertiesAtPath` (wants the properties
+ * object at the end, e.g. for the CFN-name -> terraform-key map — plan §8/cdktn-planning#1).
  */
-export function resolveDefinitionName(
+function walkToPath(
   db: SpecDatabase,
   cfnType: string,
   path: readonly string[],
-): string | undefined {
+): { readonly properties: Record<string, { type: PropertyTypeRef }>; readonly def?: TypeDefinitionLike } | undefined {
   const resource = findResourceByCfnType(db, cfnType);
   if (!resource) return undefined;
 
@@ -85,5 +84,37 @@ export function resolveDefinitionName(
     properties = def.properties;
   }
 
-  return def?.name;
+  return { properties, def };
+}
+
+/**
+ * Resolves the CFN `TypeDefinition` reached by walking `path` down from `cfnType`'s own
+ * properties. Returns the CFN definition name at the end of the path, or `undefined` if the path
+ * doesn't correspond to an object-typed CFN property (primitive, unmapped, or the awscc schema
+ * diverged from the CFN spec at this point) — callers fall back to path-based naming.
+ */
+export function resolveDefinitionName(
+  db: SpecDatabase,
+  cfnType: string,
+  path: readonly string[],
+): string | undefined {
+  return walkToPath(db, cfnType, path)?.def?.name;
+}
+
+/**
+ * Resolves the CFN properties object reached by walking `path` down from `cfnType`'s own
+ * properties — i.e. the CFN-side sibling of a terraform struct's own attribute list at that same
+ * path. `path: []` returns the resource's own top-level `Properties` object. Used to build the
+ * per-resource CFN-name -> terraform-key map (`src/grouped/cfn-property-map.ts`,
+ * cdktn-planning#1): every attribute at a struct/path matches a key here by `normalizeKey`, same
+ * join logic `resolveDefinitionName` uses one level at a time. `undefined` under the same
+ * conditions `resolveDefinitionName` returns `undefined` for a non-empty path; for `path: []` it
+ * is `undefined` only when `cfnType` itself has no CFN resource (unmatched awscc resource).
+ */
+export function resolvePropertiesAtPath(
+  db: SpecDatabase,
+  cfnType: string,
+  path: readonly string[],
+): Record<string, { type: PropertyTypeRef }> | undefined {
+  return walkToPath(db, cfnType, path)?.properties;
 }

@@ -22,6 +22,7 @@ import { cfnTypeFor } from "./cfn-map";
 import * as naming from "./naming";
 import { parseResourceAttributes } from "./grouped/resource-parser";
 import { resolveDefinitionName } from "./grouped/cfn-recovery";
+import { buildResourceCfnPropertyMap } from "./grouped/cfn-property-map";
 import { jsiircFor } from "./grouped/jsiirc";
 import { effectiveScopeMap } from "./scope-map";
 import { ResourceModel } from "./grouped/models";
@@ -53,6 +54,14 @@ export interface GenerateGroupedOptions {
    * filtered run (mini fixture, single module) emits exactly what it did before iteration 3.
    */
   readonly manifest?: boolean;
+  /**
+   * cdktn-planning#1: emit a per-resource, jsii-visible `CFN_PROPERTY_NAME_MAP` static (CFN
+   * PascalCase property name -> terraform snake_case attribute name), for a Phase-2 bridge's
+   * `TerraformIntrinsicResolver` — see `src/grouped/cfn-property-map.ts`. Default `false`/absent,
+   * so the committed `generated/` tree and every baseline stay byte-identical until this is
+   * deliberately turned on.
+   */
+  readonly emitCfnPropertyMap?: boolean;
 }
 
 export interface GenerationStats {
@@ -178,6 +187,7 @@ function emitResourceFile(
   planned: PlannedResource,
   moduleAbsDir: string,
   providerVersion: string | undefined,
+  emitCfnPropertyMap: boolean,
 ): EmittedResource {
   const resourceSchema = (schemaJson as any).provider_schemas[fqpn].resource_schemas[planned.awsccName] as Schema;
 
@@ -217,6 +227,10 @@ function emitResourceFile(
   const kebabName = naming.fileNameFor(className);
   const fileBase = kebabName === "index" ? "index-resource" : kebabName;
 
+  const cfnPropertyMap = emitCfnPropertyMap
+    ? buildResourceCfnPropertyMap(db, planned.cfnType, parsed.attributes, structs)
+    : undefined;
+
   const resourceModel = new ResourceModel({
     terraformType: planned.awsccName,
     className,
@@ -226,6 +240,7 @@ function emitResourceFile(
     fqpn: fqpn as FQPN,
     schema: resourceSchema,
     providerVersion,
+    cfnPropertyMap,
   });
 
   const code = new CodeMaker();
@@ -325,7 +340,7 @@ export async function generateGroupedWithStats(
 
     const indexLines: string[] = [];
     for (const p of resourcesInModule) {
-      const emitted = emitResourceFile(schemaJson, fqpn, db, p, moduleAbsDir, providerVersion);
+      const emitted = emitResourceFile(schemaJson, fqpn, db, p, moduleAbsDir, providerVersion, !!options?.emitCfnPropertyMap);
       files.push(`${moduleDir}/${emitted.fileBase}.ts`);
       indexLines.push(`export * from './${emitted.fileBase}';`);
       nestedTypes += emitted.nestedTypes;
