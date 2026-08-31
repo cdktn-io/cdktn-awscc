@@ -75,7 +75,7 @@
     <div class="meta">
       <span>flag: emitCfnPropertyMap · default OFF</span>
       <span>PR #3 @ 4f691fc</span>
-      <span>full-build measurement run in progress</span>
+      <span>full builds measured 2026-08-31 (both states, go/python/js)</span>
     </div>
   </header>
 
@@ -121,29 +121,29 @@
       <td>23,255 entries across 1,490 resources (~15.6/resource)</td>
     </tr>
     <tr>
-      <td>jsii assembly</td>
-      <td><span class="chip cost">+1.37%</span> on the aws-ec2 subset; full tree ~+1.3% est.</td>
-      <td>full-tree exact number <span class="chip pending">measuring</span></td>
+      <td>jsii assembly (full tree)</td>
+      <td><span class="chip cost">+0.99%</span> raw (113.33 → 114.46 MB); gzip <span class="chip cost">+3.1%</span> (4.88 → 5.03 MB)</td>
+      <td>+48 B/entry raw, +6.5 B/entry gzipped</td>
     </tr>
     <tr>
       <td>Go module size</td>
-      <td><span class="chip pending">measuring</span> — dir bytes, zip proxy, headroom vs the 500 MiB module-zip limit</td>
-      <td>Go is the sensitive target: one file per type, largest textual expansion of any pacmak backend</td>
+      <td>module <em>zip</em> (what the 500 MiB proxy limit governs) 83.6 → <span class="chip cost">84.2 MB (+0.7%)</span> — <strong>~16% of the limit; ~6× headroom</strong>. Source dir +1.4 MB (+0.27%), file count unchanged (statics live in existing files)</td>
+      <td>the raw <em>directory</em> du-measures ~505 MB in both states (exact bytes ~395 MB) — near the 500 MB figure only if you measure the wrong thing; the module-zip is the governed artifact. Per-package deltas were measured with mixed exact/du methods, so compare totals, not the awsec2 row</td>
     </tr>
     <tr>
       <td>Python wheel / npm tgz</td>
-      <td><span class="chip pending">measuring</span> (baselines: 52.9 MB wheel, 108 MB assembly)</td>
-      <td>subset python source measured +1.24%</td>
+      <td>wheel 35.85 → <span class="chip cost">36.89 MB (+2.9%)</span>; tgz 18.51 → <span class="chip cost">19.33 MB (+4.4%)</span></td>
+      <td>unpacked: +0.8% python, +1.4% js. (Earlier 52.9 MB wheel baseline predates lazify/packaging changes; these two builds are directly comparable to each other.)</td>
     </tr>
     <tr>
-      <td>Import/load time &amp; RSS</td>
-      <td><span class="chip pending">measuring</span> (node require + python import, both states)</td>
-      <td>object-literal statics parse at module load — but the package is <strong>lazified</strong> (aws-cdk-lib-style deferred requires), so an app pays only for the resource modules it actually imports, never the whole 1,494</td>
+      <td>Import/load time &amp; memory</td>
+      <td>whole-library worst case (all 276 submodules forced): node require <span class="chip cost">+6.7 ms (+1.1%)</span>, RSS +1.6 MB, JS heap <span class="chip cost">+7.3 MB (+3.4%)</span>; python <code>import cdktn_awscc</code> +3.5 ms (+0.9%), <code>aws_ec2</code> +8.4 ms (+1.9%)</td>
+      <td>realistic apps pay almost none of this: the package is <strong>lazified</strong>, and touching 1 of 276 submodules showed <em>no measurable delta</em> (within process-startup noise) — the cost scales with mapped files actually imported</td>
     </tr>
     <tr>
       <td>Synth time / synth memory</td>
-      <td><span class="chip ok">zero by construction</span> — verification <span class="chip pending">measuring</span></td>
-      <td>no code path reads the static during <code>synthesizeAttributes()</code> or token resolution</td>
+      <td><span class="chip ok">zero — verified</span>: 200-resource nested-struct benchmark, 5 runs/state: every load/construction/synth phase delta smaller than same-state run spread; peak RSS identical (93.5 MB)</td>
+      <td>CPU profiles confirm: no sample lands in a map static in either state — the maps are dead weight after module load, never read by <code>synthesizeAttributes()</code> or token resolution</td>
     </tr>
     <tr>
       <td>Generation time</td>
@@ -190,10 +190,10 @@
 
   <h2>Recommendation</h2>
   <div class="callout">
-    <p><strong>Ship v0.1.0 with the flag off</strong> (it already is — and there is deliberately no CLI toggle in <code>generate-all.ts</code>, so it cannot flip on by accident). <strong>Decide at Phase-2 kickoff with the measured numbers in hand:</strong> if the full-build measurements confirm the ~1–2% shape everywhere and Go keeps comfortable headroom under its 500 MiB module-zip limit, enable it in a coordinated release and treat the map as public API from that day. If Go headroom is tight, take the sidecar-JSON or companion-package route — the bridge, the map's only load-bearing consumer, is TypeScript and doesn't need the jsii static form.</p>
+    <p><strong>Ship v0.1.0 with the flag off</strong> (it already is — and there is deliberately no CLI toggle in <code>generate-all.ts</code>, so it cannot flip on by accident). <strong>The measured numbers remove size as a blocker:</strong> every artifact grows ~1–4% (Go module zip +0.7%, at ~16% of the 500 MiB limit with ~6× headroom), runtime cost is confined to module load, scales with modules actually imported, and rounds to zero for realistic apps — synth is verifiably untouched. What remains is the <em>API-commitment</em> question, not a size question: enabling publishes the map's keying and shape as public cross-language API while the read-only-attributes and global-vs-per-resource design questions are still open. So: <strong>enable at Phase-2 kickoff in a coordinated release, after settling those two questions</strong> — or, if the bridge remains the sole consumer by then, take the sidecar-JSON route and keep the jsii surface unchanged.</p>
   </div>
 
   <footer>
-    <p>Companions: <em>The CFN–awscc Seam</em> (why the map must be generated) and <em>awscc2cdk Flow Atlas</em> (how it is built and emitted). Sources: cdktn-io/cdktn-awscc PR #3 (@4f691fc), pre-study scripts/cfn-property-map-prestudy.ts, subset measurements from the PR body; full-build flag-off/flag-on measurement workflow in progress — pending cells update when it completes.</p>
+    <p>Companions: <em>The CFN–awscc Seam</em> (why the map must be generated) and <em>awscc2cdk Flow Atlas</em> (how it is built and emitted). Sources: cdktn-io/cdktn-awscc PR #3 (@4f691fc), pre-study scripts/cfn-property-map-prestudy.ts; full-build measurements 2026-08-31 on both flag states at 4f691fc (jsii 5.9.x + lazify + pacmak go/python/js; jsii compile 32 s / 6.1–6.5 GB peak RSS per state; runtime benches: repo's bench_js_require.mjs + a full-require variant forcing all 276 submodules, python wheel imports in fresh venvs, and a 200-resource nested-struct synth benchmark with per-phase timing, /usr/bin/time -l RSS, and --cpu-prof verification).</p>
   </footer>
 </div>
