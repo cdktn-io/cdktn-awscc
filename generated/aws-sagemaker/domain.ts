@@ -1601,7 +1601,7 @@ export function ccDomainCodeEditorAppSettingsPropertyToHclTerraform(struct?: CcD
 }
 
 
-export function ccDomainEfsFileSystemConfigPropertyToTerraform(struct?: CcDomain.EfsFileSystemConfigProperty | cdktn.IResolvable): any {
+export function ccDomainDefaultUserSettingsCustomFileSystemConfigsEfsFileSystemConfigPropertyToTerraform(struct?: CcDomain.DefaultUserSettingsCustomFileSystemConfigsEfsFileSystemConfigProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -1613,7 +1613,7 @@ export function ccDomainEfsFileSystemConfigPropertyToTerraform(struct?: CcDomain
 }
 
 
-export function ccDomainEfsFileSystemConfigPropertyToHclTerraform(struct?: CcDomain.EfsFileSystemConfigProperty | cdktn.IResolvable): any {
+export function ccDomainDefaultUserSettingsCustomFileSystemConfigsEfsFileSystemConfigPropertyToHclTerraform(struct?: CcDomain.DefaultUserSettingsCustomFileSystemConfigsEfsFileSystemConfigProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -1638,7 +1638,7 @@ export function ccDomainEfsFileSystemConfigPropertyToHclTerraform(struct?: CcDom
 }
 
 
-export function ccDomainFsxLustreFileSystemConfigPropertyToTerraform(struct?: CcDomain.FsxLustreFileSystemConfigProperty | cdktn.IResolvable): any {
+export function ccDomainDefaultUserSettingsCustomFileSystemConfigsFsxLustreFileSystemConfigPropertyToTerraform(struct?: CcDomain.DefaultUserSettingsCustomFileSystemConfigsFsxLustreFileSystemConfigProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -1650,7 +1650,7 @@ export function ccDomainFsxLustreFileSystemConfigPropertyToTerraform(struct?: Cc
 }
 
 
-export function ccDomainFsxLustreFileSystemConfigPropertyToHclTerraform(struct?: CcDomain.FsxLustreFileSystemConfigProperty | cdktn.IResolvable): any {
+export function ccDomainDefaultUserSettingsCustomFileSystemConfigsFsxLustreFileSystemConfigPropertyToHclTerraform(struct?: CcDomain.DefaultUserSettingsCustomFileSystemConfigsFsxLustreFileSystemConfigProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -1718,8 +1718,8 @@ export function ccDomainCustomFileSystemConfigsPropertyToTerraform(struct?: CcDo
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
     }
     return {
-        efs_file_system_config: ccDomainEfsFileSystemConfigPropertyToTerraform(struct!.efsFileSystemConfig),
-        fsx_lustre_file_system_config: ccDomainFsxLustreFileSystemConfigPropertyToTerraform(struct!.fsxLustreFileSystemConfig),
+        efs_file_system_config: ccDomainDefaultUserSettingsCustomFileSystemConfigsEfsFileSystemConfigPropertyToTerraform(struct!.efsFileSystemConfig),
+        fsx_lustre_file_system_config: ccDomainDefaultUserSettingsCustomFileSystemConfigsFsxLustreFileSystemConfigPropertyToTerraform(struct!.fsxLustreFileSystemConfig),
         s3_file_system_config: ccDomainDefaultUserSettingsCustomFileSystemConfigsS3FileSystemConfigPropertyToTerraform(struct!.s3FileSystemConfig),
     }
 }
@@ -1732,16 +1732,16 @@ export function ccDomainCustomFileSystemConfigsPropertyToHclTerraform(struct?: C
     }
     const attrs = {
         efs_file_system_config: {
-            value: ccDomainEfsFileSystemConfigPropertyToHclTerraform(struct!.efsFileSystemConfig),
+            value: ccDomainDefaultUserSettingsCustomFileSystemConfigsEfsFileSystemConfigPropertyToHclTerraform(struct!.efsFileSystemConfig),
             isBlock: true,
             type: "struct",
-            storageClassType: "EfsFileSystemConfigProperty",
+            storageClassType: "DefaultUserSettingsCustomFileSystemConfigsEfsFileSystemConfigProperty",
         },
         fsx_lustre_file_system_config: {
-            value: ccDomainFsxLustreFileSystemConfigPropertyToHclTerraform(struct!.fsxLustreFileSystemConfig),
+            value: ccDomainDefaultUserSettingsCustomFileSystemConfigsFsxLustreFileSystemConfigPropertyToHclTerraform(struct!.fsxLustreFileSystemConfig),
             isBlock: true,
             type: "struct",
-            storageClassType: "FsxLustreFileSystemConfigProperty",
+            storageClassType: "DefaultUserSettingsCustomFileSystemConfigsFsxLustreFileSystemConfigProperty",
         },
         s3_file_system_config: {
             value: ccDomainDefaultUserSettingsCustomFileSystemConfigsS3FileSystemConfigPropertyToHclTerraform(struct!.s3FileSystemConfig),
@@ -6315,7 +6315,7 @@ export class CodeEditorAppSettingsPropertyOutputReference extends cdktn.ComplexO
         return this._lifecycleConfigArns;
     }
 }
-export interface EfsFileSystemConfigProperty {
+export interface DefaultUserSettingsCustomFileSystemConfigsEfsFileSystemConfigProperty {
     /**
     * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_domain#file_system_id CcDomain#file_system_id}
     */
@@ -6325,7 +6325,7 @@ export interface EfsFileSystemConfigProperty {
     */
     readonly fileSystemPath?: string;
 }
-export class EfsFileSystemConfigPropertyOutputReference extends cdktn.ComplexObject {
+export class DefaultUserSettingsCustomFileSystemConfigsEfsFileSystemConfigPropertyOutputReference extends cdktn.ComplexObject {
     private isEmptyObject = false;
     private resolvableValue?: cdktn.IResolvable;
 
@@ -6337,7 +6337,7 @@ export class EfsFileSystemConfigPropertyOutputReference extends cdktn.ComplexObj
         super(terraformResource, terraformAttribute, false);
     }
 
-    public get internalValue(): EfsFileSystemConfigProperty | cdktn.IResolvable | undefined {
+    public get internalValue(): DefaultUserSettingsCustomFileSystemConfigsEfsFileSystemConfigProperty | cdktn.IResolvable | undefined {
         if (this.resolvableValue) {
             return this.resolvableValue;
         }
@@ -6354,7 +6354,7 @@ export class EfsFileSystemConfigPropertyOutputReference extends cdktn.ComplexObj
         return hasAnyValues ? internalValueResult : undefined;
     }
 
-    public set internalValue(value: EfsFileSystemConfigProperty | cdktn.IResolvable | undefined) {
+    public set internalValue(value: DefaultUserSettingsCustomFileSystemConfigsEfsFileSystemConfigProperty | cdktn.IResolvable | undefined) {
         if (value === undefined) {
             this.isEmptyObject = false;
             this.resolvableValue = undefined;
@@ -6405,7 +6405,7 @@ export class EfsFileSystemConfigPropertyOutputReference extends cdktn.ComplexObj
         return this._fileSystemPath;
     }
 }
-export interface FsxLustreFileSystemConfigProperty {
+export interface DefaultUserSettingsCustomFileSystemConfigsFsxLustreFileSystemConfigProperty {
     /**
     * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_domain#file_system_id CcDomain#file_system_id}
     */
@@ -6415,7 +6415,7 @@ export interface FsxLustreFileSystemConfigProperty {
     */
     readonly fileSystemPath?: string;
 }
-export class FsxLustreFileSystemConfigPropertyOutputReference extends cdktn.ComplexObject {
+export class DefaultUserSettingsCustomFileSystemConfigsFsxLustreFileSystemConfigPropertyOutputReference extends cdktn.ComplexObject {
     private isEmptyObject = false;
     private resolvableValue?: cdktn.IResolvable;
 
@@ -6427,7 +6427,7 @@ export class FsxLustreFileSystemConfigPropertyOutputReference extends cdktn.Comp
         super(terraformResource, terraformAttribute, false);
     }
 
-    public get internalValue(): FsxLustreFileSystemConfigProperty | cdktn.IResolvable | undefined {
+    public get internalValue(): DefaultUserSettingsCustomFileSystemConfigsFsxLustreFileSystemConfigProperty | cdktn.IResolvable | undefined {
         if (this.resolvableValue) {
             return this.resolvableValue;
         }
@@ -6444,7 +6444,7 @@ export class FsxLustreFileSystemConfigPropertyOutputReference extends cdktn.Comp
         return hasAnyValues ? internalValueResult : undefined;
     }
 
-    public set internalValue(value: FsxLustreFileSystemConfigProperty | cdktn.IResolvable | undefined) {
+    public set internalValue(value: DefaultUserSettingsCustomFileSystemConfigsFsxLustreFileSystemConfigProperty | cdktn.IResolvable | undefined) {
         if (value === undefined) {
             this.isEmptyObject = false;
             this.resolvableValue = undefined;
@@ -6589,11 +6589,11 @@ export interface CustomFileSystemConfigsProperty {
     /**
     * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_domain#efs_file_system_config CcDomain#efs_file_system_config}
     */
-    readonly efsFileSystemConfig?: EfsFileSystemConfigProperty;
+    readonly efsFileSystemConfig?: DefaultUserSettingsCustomFileSystemConfigsEfsFileSystemConfigProperty;
     /**
     * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_domain#fsx_lustre_file_system_config CcDomain#fsx_lustre_file_system_config}
     */
-    readonly fsxLustreFileSystemConfig?: FsxLustreFileSystemConfigProperty;
+    readonly fsxLustreFileSystemConfig?: DefaultUserSettingsCustomFileSystemConfigsFsxLustreFileSystemConfigProperty;
     /**
     * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_domain#s3_file_system_config CcDomain#s3_file_system_config}
     */
@@ -6656,11 +6656,11 @@ export class CustomFileSystemConfigsPropertyOutputReference extends cdktn.Comple
     }
 
     // efs_file_system_config - computed: true, optional: true, required: false
-    private _efsFileSystemConfig = new EfsFileSystemConfigPropertyOutputReference(this, "efs_file_system_config");
+    private _efsFileSystemConfig = new DefaultUserSettingsCustomFileSystemConfigsEfsFileSystemConfigPropertyOutputReference(this, "efs_file_system_config");
     public get efsFileSystemConfig() {
         return this._efsFileSystemConfig;
     }
-    public putEfsFileSystemConfig(value: EfsFileSystemConfigProperty) {
+    public putEfsFileSystemConfig(value: DefaultUserSettingsCustomFileSystemConfigsEfsFileSystemConfigProperty) {
         this._efsFileSystemConfig.internalValue = value;
     }
     public resetEfsFileSystemConfig() {
@@ -6672,11 +6672,11 @@ export class CustomFileSystemConfigsPropertyOutputReference extends cdktn.Comple
     }
 
     // fsx_lustre_file_system_config - computed: true, optional: true, required: false
-    private _fsxLustreFileSystemConfig = new FsxLustreFileSystemConfigPropertyOutputReference(this, "fsx_lustre_file_system_config");
+    private _fsxLustreFileSystemConfig = new DefaultUserSettingsCustomFileSystemConfigsFsxLustreFileSystemConfigPropertyOutputReference(this, "fsx_lustre_file_system_config");
     public get fsxLustreFileSystemConfig() {
         return this._fsxLustreFileSystemConfig;
     }
-    public putFsxLustreFileSystemConfig(value: FsxLustreFileSystemConfigProperty) {
+    public putFsxLustreFileSystemConfig(value: DefaultUserSettingsCustomFileSystemConfigsFsxLustreFileSystemConfigProperty) {
         this._fsxLustreFileSystemConfig.internalValue = value;
     }
     public resetFsxLustreFileSystemConfig() {

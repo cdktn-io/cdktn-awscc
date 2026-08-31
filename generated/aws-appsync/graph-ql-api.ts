@@ -71,7 +71,7 @@ export interface CcGraphQLApiProps extends cdktn.TerraformMetaArguments {
     *
     * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_graph_ql_api#open_id_connect_config CcGraphQLApi#open_id_connect_config}
     */
-    readonly openIdConnectConfig?: CcGraphQLApi.OpenIdConnectConfigProperty;
+    readonly openIdConnectConfig?: CcGraphQLApi.OpenIdConnectConfigProperty2;
     /**
     * The owner contact information for an API resource.
     *
@@ -381,11 +381,11 @@ export class CcGraphQLApi extends cdktn.TerraformResource {
     }
 
     // open_id_connect_config - computed: true, optional: true, required: false
-    private _openIdConnectConfig = new CcGraphQLApi.OpenIdConnectConfigPropertyOutputReference(this, "open_id_connect_config");
+    private _openIdConnectConfig = new CcGraphQLApi.OpenIdConnectConfigProperty2OutputReference(this, "open_id_connect_config");
     public get openIdConnectConfig() {
         return this._openIdConnectConfig;
     }
-    public putOpenIdConnectConfig(value: CcGraphQLApi.OpenIdConnectConfigProperty) {
+    public putOpenIdConnectConfig(value: CcGraphQLApi.OpenIdConnectConfigProperty2) {
         this._openIdConnectConfig.internalValue = value;
     }
     public resetOpenIdConnectConfig() {
@@ -534,7 +534,7 @@ export class CcGraphQLApi extends cdktn.TerraformResource {
             log_config: ccGraphQLApiLogConfigPropertyToTerraform(this._logConfig.internalValue),
             merged_api_execution_role_arn: cdktn.stringToTerraform(this._mergedApiExecutionRoleArn),
             name: cdktn.stringToTerraform(this._name),
-            open_id_connect_config: ccGraphQLApiOpenIdConnectConfigPropertyToTerraform(this._openIdConnectConfig.internalValue),
+            open_id_connect_config: ccGraphQLApiOpenIdConnectConfigProperty2ToTerraform(this._openIdConnectConfig.internalValue),
             owner_contact: cdktn.stringToTerraform(this._ownerContact),
             query_depth_limit: cdktn.numberToTerraform(this._queryDepthLimit),
             resolver_count_limit: cdktn.numberToTerraform(this._resolverCountLimit),
@@ -608,10 +608,10 @@ export class CcGraphQLApi extends cdktn.TerraformResource {
                 storageClassType: "string",
             },
             open_id_connect_config: {
-                value: ccGraphQLApiOpenIdConnectConfigPropertyToHclTerraform(this._openIdConnectConfig.internalValue),
+                value: ccGraphQLApiOpenIdConnectConfigProperty2ToHclTerraform(this._openIdConnectConfig.internalValue),
                 isBlock: true,
                 type: "struct",
-                storageClassType: "CcGraphQLApi.OpenIdConnectConfigProperty",
+                storageClassType: "CcGraphQLApi.OpenIdConnectConfigProperty2",
             },
             owner_contact: {
                 value: cdktn.stringToHclTerraform(this._ownerContact),
@@ -984,7 +984,7 @@ export function ccGraphQLApiLogConfigPropertyToHclTerraform(struct?: CcGraphQLAp
 }
 
 
-export function ccGraphQLApiOpenIdConnectConfigPropertyToTerraform(struct?: CcGraphQLApi.OpenIdConnectConfigProperty | cdktn.IResolvable): any {
+export function ccGraphQLApiOpenIdConnectConfigProperty2ToTerraform(struct?: CcGraphQLApi.OpenIdConnectConfigProperty2 | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -998,7 +998,7 @@ export function ccGraphQLApiOpenIdConnectConfigPropertyToTerraform(struct?: CcGr
 }
 
 
-export function ccGraphQLApiOpenIdConnectConfigPropertyToHclTerraform(struct?: CcGraphQLApi.OpenIdConnectConfigProperty | cdktn.IResolvable): any {
+export function ccGraphQLApiOpenIdConnectConfigProperty2ToHclTerraform(struct?: CcGraphQLApi.OpenIdConnectConfigProperty2 | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -2058,7 +2058,7 @@ export class LogConfigPropertyOutputReference extends cdktn.ComplexObject {
         return this._fieldLogLevel;
     }
 }
-export interface OpenIdConnectConfigProperty {
+export interface OpenIdConnectConfigProperty2 {
     /**
     * The number of milliseconds that a token is valid after being authenticated.
     *
@@ -2086,7 +2086,7 @@ export interface OpenIdConnectConfigProperty {
     */
     readonly issuer?: string;
 }
-export class OpenIdConnectConfigPropertyOutputReference extends cdktn.ComplexObject {
+export class OpenIdConnectConfigProperty2OutputReference extends cdktn.ComplexObject {
     private isEmptyObject = false;
     private resolvableValue?: cdktn.IResolvable;
 
@@ -2098,7 +2098,7 @@ export class OpenIdConnectConfigPropertyOutputReference extends cdktn.ComplexObj
         super(terraformResource, terraformAttribute, false);
     }
 
-    public get internalValue(): OpenIdConnectConfigProperty | cdktn.IResolvable | undefined {
+    public get internalValue(): OpenIdConnectConfigProperty2 | cdktn.IResolvable | undefined {
         if (this.resolvableValue) {
             return this.resolvableValue;
         }
@@ -2123,7 +2123,7 @@ export class OpenIdConnectConfigPropertyOutputReference extends cdktn.ComplexObj
         return hasAnyValues ? internalValueResult : undefined;
     }
 
-    public set internalValue(value: OpenIdConnectConfigProperty | cdktn.IResolvable | undefined) {
+    public set internalValue(value: OpenIdConnectConfigProperty2 | cdktn.IResolvable | undefined) {
         if (value === undefined) {
             this.isEmptyObject = false;
             this.resolvableValue = undefined;

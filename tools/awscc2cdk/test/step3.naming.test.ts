@@ -91,6 +91,33 @@ describe("propertyTypeNamesForResource", () => {
     expect(call([...entries].reverse())).toEqual(expected);
   });
 
+  it("treats names that differ only in case as colliding (iteration 5, Go target)", () => {
+    // awscc_applicationinsights_application: the recovered CFN definition name
+    // `HAClusterPrometheusExporter` and the terraform leaf `ha_cluster_prometheus_exporter` differ
+    // only in case, so pacmak-go wrote `CcApplication_HAClusterPrometheusExporterProperty.go` and
+    // `CcApplication_HaClusterPrometheusExporterProperty.go` into one package and `go build` died.
+    const entries = [
+      { path: ["monitoring", "ha_cluster_prometheus_exporter"] },
+      { path: ["exporter"], definitionName: "HAClusterPrometheusExporter" },
+    ];
+    const expected = {
+      "monitoring.ha_cluster_prometheus_exporter": "MonitoringHaClusterPrometheusExporterProperty",
+      exporter: "HAClusterPrometheusExporterProperty",
+    };
+    expect(call(entries)).toEqual(expected);
+    expect(call([...entries].reverse())).toEqual(expected);
+  });
+
+  it("suffixes when two recovered definition names differ only in case", () => {
+    const entries = [
+      { path: ["a"], definitionName: "HACluster" },
+      { path: ["b"], definitionName: "HaCluster" },
+    ];
+    const expected = { a: "HAClusterProperty", b: "HaClusterProperty2" };
+    expect(call(entries)).toEqual(expected);
+    expect(call([...entries].reverse())).toEqual(expected);
+  });
+
   it("produces names inside the nested-type grammar", () => {
     const names: string[] = Object.values(
       call([{ path: ["rules"] }, { path: ["lifecycle_configuration", "rules"] }]),

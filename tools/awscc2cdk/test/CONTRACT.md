@@ -341,6 +341,8 @@ export interface PropertyTypePath {
  *      entries carrying a recovered CFN definition name keep the short name.
  *   3. if names still collide, the entries collide-sorted by path key keep the name, then '2', '3',
  *      … are appended in that sorted order.
+ * "Claimed by more than one entry" / "collide" means **case-insensitively** equal — see
+ * "Iteration 5 — Go target case collisions" below.
  */
 export function propertyTypeNamesForResource(
   entries: readonly PropertyTypePath[],
@@ -1593,3 +1595,86 @@ propagate here — not a policy this PR should second-guess. Fixed in place (one
 would mean either shipping the license bug back to unblock CI, or shipping a permanently-failing
 `pnpm test`; both are worse than a one-line correction to an assertion that now contradicts the
 rest of the repo's own licensing contract.
+
+# Iteration 5 — Go target case collisions (2026-08-31)
+
+Written after release dry-run `33354425298` (the first run with `PACMAK_TARGETS` including `go`)
+failed. `jsii`, `lazify` and pacmak's `js`, `python`, `java` and `dotnet` targets were all green;
+`go` was not:
+
+```
+Error: Command (go build -modfile local.go.mod ./...) failed with status 1:
+#STDERR> package .../cdktnawscc/awsapplicationinsights: case-insensitive file name collision:
+         "CcApplication_HAClusterPrometheusExporterProperty.go" and
+         "CcApplication_HaClusterPrometheusExporterProperty.go"
+#STDERR> package .../cdktnawscc/awsappsync: ... "CcGraphQLApi_OpenIDConnectConfigProperty.go" and
+         "CcGraphQLApi_OpenIdConnectConfigProperty.go"
+… awsathena, awscleanrooms, awslex, awsmsk, awsquicksight, awssagemaker
+```
+
+## The rule
+
+`propertyTypeNamesForResource`'s collision detection is **case-insensitive**. Two candidate names
+that differ only in case are one collision cluster, and the existing disambiguation — full-path
+re-derivation for fallback entries, then sorted-by-path-key `'2'`, `'3'`, … suffixes — resolves
+them exactly as it resolves an exact collision. Nothing else about the algorithm changes; it stays
+pure, deterministic and order-independent, and the reversed-input assertions in
+`step3.naming.test.ts` cover the new cases too.
+
+This is the same rule the vendored cdktn parser applies in `Parser#uniqueBaseName`
+(`src/vendored/cdktn/resource-parser.ts`), for the same two languages, and it was simply never
+carried into `naming.ts` when this generator replaced `uniqueClassName`.
+
+Why it has to be a *naming* rule and not a pacmak flag: pacmak-go writes one file per type,
+`<Class>.go` / `<Class>_<NestedType>.go`, into a single package directory, and `go build` (and,
+for its PascalCase directories, the C# compiler) compares those names case-insensitively. The
+distinction that makes them legal in TypeScript, Python and Java is invisible there.
+
+## Acceptance
+
+1. `step3.naming.test.ts` — two new cases in `propertyTypeNamesForResource`, each asserted with
+   the input order reversed: a recovered CFN definition name vs. a fallback that differs only in
+   case (`HAClusterPrometheusExporter` vs. leaf `ha_cluster_prometheus_exporter`; the fallback is
+   re-derived from its full path, the definition name is kept), and two recovered definition names
+   that differ only in case (sorted-key tie-break, `…Property` + `…Property2`).
+2. `iter5.go-case.test.ts` — the permanent gate, and the thing that actually protects the Go
+   target: over the committed `generated/` tree, no two exported types **within one module** may
+   have go base names (`<Type>` / `<Namespace>_<Type>`) that are equal case-insensitively.
+   Checked with the TypeScript AST on the committed files, so it runs in ~2s under plain
+   `pnpm test` and needs neither a schema, a jsii run nor a Go toolchain. `build.yml` runs no
+   pacmak, so without this gate the Go target is unexercised until a release.
+3. Regenerating is expected to **rename 13 nested types** across 8 modules (26 exported symbols
+   with their `…PropertyOutputReference` companions). This is a public-API break, taken knowingly
+   pre-1.0: the alternative is no Go artifact at all.
+
+## The exhaustive collision list (before the fix, awscc 1.98.0)
+
+`go build` stops at the first collision per package, so it named 8; the AST scan over `generated/`
+finds 13 (26 including the `…OutputReference` companions):
+
+| module | kept (recovered CFN name) | renamed to |
+|---|---|---|
+| `aws-applicationinsights` | `CcApplication.HAClusterPrometheusExporterProperty` | `ComponentMonitoringSettingsDefaultOverwriteComponentConfigurationConfigurationDetailsHaClusterPrometheusExporterProperty` |
+| `aws-applicationinsights` | `CcApplication.HANAPrometheusExporterProperty` | `ComponentMonitoringSettingsDefaultOverwriteComponentConfigurationConfigurationDetailsHanaPrometheusExporterProperty` |
+| `aws-applicationinsights` | `CcApplication.JMXPrometheusExporterProperty` | `ComponentMonitoringSettingsDefaultOverwriteComponentConfigurationConfigurationDetailsJmxPrometheusExporterProperty` |
+| `aws-applicationinsights` | `CcApplication.SQLServerPrometheusExporterProperty` | `ComponentMonitoringSettingsDefaultOverwriteComponentConfigurationConfigurationDetailsSqlServerPrometheusExporterProperty` |
+| `aws-appsync` | `CcGraphQLApi.OpenIDConnectConfigProperty` | `OpenIdConnectConfigProperty2` |
+| `aws-athena` | `CcWorkGroup.CloudWatchLoggingConfigurationProperty` | `WorkGroupConfigurationUpdatesMonitoringConfigurationCloudwatchLoggingConfigurationProperty` |
+| `aws-cleanrooms` | `CcCollaboration.MLMemberAbilitiesProperty` | `MembersMlMemberAbilitiesProperty` |
+| `aws-lex` | `CcBot.AudioAndDTMFInputSpecificationProperty` | `BotLocalesIntentsSlotsValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationProperty` |
+| `aws-lex` | `CcBot.DTMFSpecificationProperty` | `BotLocalesIntentsSlotsValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationDtmfSpecificationProperty` |
+| `aws-msk` | `CcCluster.CloudWatchLogsProperty` | `LoggingInfoBrokerLogsCloudwatchLogsProperty` |
+| `aws-quicksight` | `CcTheme.UIColorPaletteProperty` | `VersionConfigurationUiColorPaletteProperty` |
+| `aws-sagemaker` | `CcDomain.EFSFileSystemConfigProperty` | `DefaultUserSettingsCustomFileSystemConfigsEfsFileSystemConfigProperty` |
+| `aws-sagemaker` | `CcDomain.FSxLustreFileSystemConfigProperty` | `DefaultUserSettingsCustomFileSystemConfigsFsxLustreFileSystemConfigProperty` |
+
+Each `…Property` rename carries its `…PropertyOutputReference` companion and its
+`cc<Class><Name>PropertyToTerraform` / `…ToHclTerraform` mappers, hence 26 exported symbols over
+9 files (8 resource files + `MANIFEST.sha256`).
+
+In all 13 the surviving name is the recovered CFN definition name (the acronym-cased one, which is
+also what `aws-cdk-lib` calls it, so shape parity is unaffected). Twelve of the losers are
+path-derived fallbacks and are re-derived from their full attribute path (rule 2);
+`aws-appsync` is the one case where *both* sides carry a recovered definition name
+(`OpenIDConnectConfig` and `OpenIdConnectConfig`), so rule 3 applies and the higher path key gets
+the `2` suffix. After the fix the scan reports **0** collision groups.

@@ -1195,7 +1195,7 @@ export function ccWorkGroupWorkGroupConfigurationUpdatesManagedQueryResultsConfi
 }
 
 
-export function ccWorkGroupCloudwatchLoggingConfigurationPropertyToTerraform(struct?: CcWorkGroup.CloudwatchLoggingConfigurationProperty | cdktn.IResolvable): any {
+export function ccWorkGroupWorkGroupConfigurationUpdatesMonitoringConfigurationCloudwatchLoggingConfigurationPropertyToTerraform(struct?: CcWorkGroup.WorkGroupConfigurationUpdatesMonitoringConfigurationCloudwatchLoggingConfigurationProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -1209,7 +1209,7 @@ export function ccWorkGroupCloudwatchLoggingConfigurationPropertyToTerraform(str
 }
 
 
-export function ccWorkGroupCloudwatchLoggingConfigurationPropertyToHclTerraform(struct?: CcWorkGroup.CloudwatchLoggingConfigurationProperty | cdktn.IResolvable): any {
+export function ccWorkGroupWorkGroupConfigurationUpdatesMonitoringConfigurationCloudwatchLoggingConfigurationPropertyToHclTerraform(struct?: CcWorkGroup.WorkGroupConfigurationUpdatesMonitoringConfigurationCloudwatchLoggingConfigurationProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -1333,7 +1333,7 @@ export function ccWorkGroupWorkGroupConfigurationUpdatesMonitoringConfigurationP
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
     }
     return {
-        cloudwatch_logging_configuration: ccWorkGroupCloudwatchLoggingConfigurationPropertyToTerraform(struct!.cloudwatchLoggingConfiguration),
+        cloudwatch_logging_configuration: ccWorkGroupWorkGroupConfigurationUpdatesMonitoringConfigurationCloudwatchLoggingConfigurationPropertyToTerraform(struct!.cloudwatchLoggingConfiguration),
         managed_logging_configuration: ccWorkGroupWorkGroupConfigurationUpdatesMonitoringConfigurationManagedLoggingConfigurationPropertyToTerraform(struct!.managedLoggingConfiguration),
         s3_logging_configuration: ccWorkGroupWorkGroupConfigurationUpdatesMonitoringConfigurationS3LoggingConfigurationPropertyToTerraform(struct!.s3LoggingConfiguration),
     }
@@ -1347,10 +1347,10 @@ export function ccWorkGroupWorkGroupConfigurationUpdatesMonitoringConfigurationP
     }
     const attrs = {
         cloudwatch_logging_configuration: {
-            value: ccWorkGroupCloudwatchLoggingConfigurationPropertyToHclTerraform(struct!.cloudwatchLoggingConfiguration),
+            value: ccWorkGroupWorkGroupConfigurationUpdatesMonitoringConfigurationCloudwatchLoggingConfigurationPropertyToHclTerraform(struct!.cloudwatchLoggingConfiguration),
             isBlock: true,
             type: "struct",
-            storageClassType: "CloudwatchLoggingConfigurationProperty",
+            storageClassType: "WorkGroupConfigurationUpdatesMonitoringConfigurationCloudwatchLoggingConfigurationProperty",
         },
         managed_logging_configuration: {
             value: ccWorkGroupWorkGroupConfigurationUpdatesMonitoringConfigurationManagedLoggingConfigurationPropertyToHclTerraform(struct!.managedLoggingConfiguration),
@@ -4158,7 +4158,7 @@ export class WorkGroupConfigurationUpdatesManagedQueryResultsConfigurationProper
         return this._encryptionConfiguration.internalValue;
     }
 }
-export interface CloudwatchLoggingConfigurationProperty {
+export interface WorkGroupConfigurationUpdatesMonitoringConfigurationCloudwatchLoggingConfigurationProperty {
     /**
     * Enables CloudWatch logging.
     *
@@ -4184,7 +4184,7 @@ export interface CloudwatchLoggingConfigurationProperty {
     */
     readonly logTypes?: { [key: string]: string[] } | cdktn.IResolvable;
 }
-export class CloudwatchLoggingConfigurationPropertyOutputReference extends cdktn.ComplexObject {
+export class WorkGroupConfigurationUpdatesMonitoringConfigurationCloudwatchLoggingConfigurationPropertyOutputReference extends cdktn.ComplexObject {
     private isEmptyObject = false;
     private resolvableValue?: cdktn.IResolvable;
 
@@ -4196,7 +4196,7 @@ export class CloudwatchLoggingConfigurationPropertyOutputReference extends cdktn
         super(terraformResource, terraformAttribute, false);
     }
 
-    public get internalValue(): CloudwatchLoggingConfigurationProperty | cdktn.IResolvable | undefined {
+    public get internalValue(): WorkGroupConfigurationUpdatesMonitoringConfigurationCloudwatchLoggingConfigurationProperty | cdktn.IResolvable | undefined {
         if (this.resolvableValue) {
             return this.resolvableValue;
         }
@@ -4221,7 +4221,7 @@ export class CloudwatchLoggingConfigurationPropertyOutputReference extends cdktn
         return hasAnyValues ? internalValueResult : undefined;
     }
 
-    public set internalValue(value: CloudwatchLoggingConfigurationProperty | cdktn.IResolvable | undefined) {
+    public set internalValue(value: WorkGroupConfigurationUpdatesMonitoringConfigurationCloudwatchLoggingConfigurationProperty | cdktn.IResolvable | undefined) {
         if (value === undefined) {
             this.isEmptyObject = false;
             this.resolvableValue = undefined;
@@ -4530,7 +4530,7 @@ export interface WorkGroupConfigurationUpdatesMonitoringConfigurationProperty {
     *
     * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#cloudwatch_logging_configuration CcWorkGroup#cloudwatch_logging_configuration}
     */
-    readonly cloudwatchLoggingConfiguration?: CloudwatchLoggingConfigurationProperty;
+    readonly cloudwatchLoggingConfiguration?: WorkGroupConfigurationUpdatesMonitoringConfigurationCloudwatchLoggingConfigurationProperty;
     /**
     * Configuration settings for managed log persistence.
     *
@@ -4599,11 +4599,11 @@ export class WorkGroupConfigurationUpdatesMonitoringConfigurationPropertyOutputR
     }
 
     // cloudwatch_logging_configuration - computed: true, optional: true, required: false
-    private _cloudwatchLoggingConfiguration = new CloudwatchLoggingConfigurationPropertyOutputReference(this, "cloudwatch_logging_configuration");
+    private _cloudwatchLoggingConfiguration = new WorkGroupConfigurationUpdatesMonitoringConfigurationCloudwatchLoggingConfigurationPropertyOutputReference(this, "cloudwatch_logging_configuration");
     public get cloudwatchLoggingConfiguration() {
         return this._cloudwatchLoggingConfiguration;
     }
-    public putCloudwatchLoggingConfiguration(value: CloudwatchLoggingConfigurationProperty) {
+    public putCloudwatchLoggingConfiguration(value: WorkGroupConfigurationUpdatesMonitoringConfigurationCloudwatchLoggingConfigurationProperty) {
         this._cloudwatchLoggingConfiguration.internalValue = value;
     }
     public resetCloudwatchLoggingConfiguration() {

@@ -94,11 +94,27 @@ interface ResolvedEntry {
 }
 
 /**
+ * Collision-detection key. Names are compared **case-insensitively** (iteration 5 finding: the Go
+ * target). jsii-pacmak's Go emitter writes one file per type, `<Class>_<NestedType>.go`, and
+ * `go build` rejects a package whose file names differ only in case ("case-insensitive file name
+ * collision") — as does the C# compiler for its PascalCase directories. Two names that are
+ * distinct to TypeScript, Python and Java (`HAClusterPrometheusExporterProperty` from a recovered
+ * CFN definition name, `HaClusterPrometheusExporterProperty` from the terraform leaf
+ * `ha_cluster_prometheus_exporter`) therefore have to be treated as *colliding* here. Same rule as
+ * the vendored cdktn parser's `uniqueBaseName`, which lowercases before comparing for exactly this
+ * reason; it was never carried into this file.
+ */
+function collisionKey(name: string): string {
+  return name.toLowerCase();
+}
+
+/**
  * All nested-type names of ONE resource at once, keyed by `path.join('.')`. Deterministic and
  * order-independent — the fix for cdktn's order-dependent `uniqueClassName` (plan §3, risk 4).
  *
  * Two entries are put in the same collision cluster if EITHER their short names collide or their
- * full-path names collide (the latter catches paths that are only distinguishable in their
+ * full-path names collide — where "collide" means *case-insensitively* equal, see `collisionKey`
+ * (the latter catches paths that are only distinguishable in their
  * un-PascalCased, segment-boundary form, e.g. ['a_b','c'] vs ['a','b_c'] — see
  * step3.naming.test.ts "breaks a still-colliding tie…"). Every *fallback* entry in a colliding
  * cluster is re-derived from its full path; entries carrying a recovered CFN definition name keep
@@ -132,7 +148,10 @@ export function propertyTypeNamesForResource(
   }
   for (let i = 0; i < items.length; i++) {
     for (let j = i + 1; j < items.length; j++) {
-      if (items[i].short === items[j].short || items[i].full === items[j].full) {
+      if (
+        collisionKey(items[i].short) === collisionKey(items[j].short) ||
+        collisionKey(items[i].full) === collisionKey(items[j].full)
+      ) {
         union(i, j);
       }
     }
@@ -161,9 +180,9 @@ export function propertyTypeNamesForResource(
     }));
     const bySubname = new Map<string, typeof assigned>();
     for (const a of assigned) {
-      const list = bySubname.get(a.name);
+      const list = bySubname.get(collisionKey(a.name));
       if (list) list.push(a);
-      else bySubname.set(a.name, [a]);
+      else bySubname.set(collisionKey(a.name), [a]);
     }
     for (const subgroup of bySubname.values()) {
       if (subgroup.length === 1) {
