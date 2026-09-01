@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3tables_table_bucket
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3tables_table_bucket
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,49 +9,49 @@ export interface CcTableBucketProps extends cdktn.TerraformMetaArguments {
     /**
     * Specifies encryption settings for the table bucket
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3tables_table_bucket#encryption_configuration CcTableBucket#encryption_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3tables_table_bucket#encryption_configuration CcTableBucket#encryption_configuration}
     */
     readonly encryptionConfiguration?: CcTableBucket.EncryptionConfigurationProperty;
     /**
     * Settings governing the Metric configuration for the table bucket.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3tables_table_bucket#metrics_configuration CcTableBucket#metrics_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3tables_table_bucket#metrics_configuration CcTableBucket#metrics_configuration}
     */
     readonly metricsConfiguration?: CcTableBucket.MetricsConfigurationProperty;
     /**
     * Specifies replication configuration for the table bucket
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3tables_table_bucket#replication_configuration CcTableBucket#replication_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3tables_table_bucket#replication_configuration CcTableBucket#replication_configuration}
     */
     readonly replicationConfiguration?: CcTableBucket.ReplicationConfigurationProperty;
     /**
     * Specifies storage class settings for the table bucket
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3tables_table_bucket#storage_class_configuration CcTableBucket#storage_class_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3tables_table_bucket#storage_class_configuration CcTableBucket#storage_class_configuration}
     */
     readonly storageClassConfiguration?: CcTableBucket.StorageClassConfigurationProperty;
     /**
     * A name for the table bucket.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3tables_table_bucket#table_bucket_name CcTableBucket#table_bucket_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3tables_table_bucket#table_bucket_name CcTableBucket#table_bucket_name}
     */
     readonly tableBucketName: string;
     /**
     * User tags (key-value pairs) to associate with the table bucket.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3tables_table_bucket#tags CcTableBucket#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3tables_table_bucket#tags CcTableBucket#tags}
     */
     readonly tags?: CcTableBucket.TagProperty[] | cdktn.IResolvable;
     /**
     * Settings governing the Unreferenced File Removal maintenance action. Unreferenced file removal identifies and deletes all objects that are not referenced by any table snapshots.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3tables_table_bucket#unreferenced_file_removal CcTableBucket#unreferenced_file_removal}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3tables_table_bucket#unreferenced_file_removal CcTableBucket#unreferenced_file_removal}
     */
     readonly unreferencedFileRemoval?: CcTableBucket.UnreferencedFileRemovalProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3tables_table_bucket awscc_s3tables_table_bucket}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3tables_table_bucket awscc_s3tables_table_bucket}
 */
 export class CcTableBucket extends cdktn.TerraformResource {
 
@@ -67,7 +67,7 @@ export class CcTableBucket extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcTableBucket resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcTableBucket to import
-    * @param importFromId The id of the existing CcTableBucket that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3tables_table_bucket#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcTableBucket that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3tables_table_bucket#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcTableBucket to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -79,7 +79,7 @@ export class CcTableBucket extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3tables_table_bucket awscc_s3tables_table_bucket} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3tables_table_bucket awscc_s3tables_table_bucket} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -90,7 +90,7 @@ export class CcTableBucket extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_s3tables_table_bucket',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -579,13 +579,13 @@ export interface EncryptionConfigurationProperty {
     /**
     * ARN of the KMS key to use for encryption
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3tables_table_bucket#kms_key_arn CcTableBucket#kms_key_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3tables_table_bucket#kms_key_arn CcTableBucket#kms_key_arn}
     */
     readonly kmsKeyArn?: string;
     /**
     * Server-side encryption algorithm
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3tables_table_bucket#sse_algorithm CcTableBucket#sse_algorithm}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3tables_table_bucket#sse_algorithm CcTableBucket#sse_algorithm}
     */
     readonly sseAlgorithm?: string;
 }
@@ -673,7 +673,7 @@ export interface MetricsConfigurationProperty {
     /**
     * Indicates whether Metrics are enabled.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3tables_table_bucket#status CcTableBucket#status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3tables_table_bucket#status CcTableBucket#status}
     */
     readonly status?: string;
 }
@@ -739,7 +739,7 @@ export interface ReplicationDestinationProperty {
     /**
     * The ARN of the destination table bucket
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3tables_table_bucket#destination_table_bucket_arn CcTableBucket#destination_table_bucket_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3tables_table_bucket#destination_table_bucket_arn CcTableBucket#destination_table_bucket_arn}
     */
     readonly destinationTableBucketArn?: string;
 }
@@ -827,7 +827,7 @@ export interface ReplicationRuleProperty {
     /**
     * List of replication destinations
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3tables_table_bucket#destinations CcTableBucket#destinations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3tables_table_bucket#destinations CcTableBucket#destinations}
     */
     readonly destinations?: ReplicationDestinationProperty[] | cdktn.IResolvable;
 }
@@ -915,13 +915,13 @@ export interface ReplicationConfigurationProperty {
     /**
     * The ARN of the IAM role to use for replication
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3tables_table_bucket#role CcTableBucket#role}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3tables_table_bucket#role CcTableBucket#role}
     */
     readonly role?: string;
     /**
     * List of replication rules
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3tables_table_bucket#rules CcTableBucket#rules}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3tables_table_bucket#rules CcTableBucket#rules}
     */
     readonly rules?: ReplicationRuleProperty[] | cdktn.IResolvable;
 }
@@ -1009,7 +1009,7 @@ export interface StorageClassConfigurationProperty {
     /**
     * The storage class for the table bucket
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3tables_table_bucket#storage_class CcTableBucket#storage_class}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3tables_table_bucket#storage_class CcTableBucket#storage_class}
     */
     readonly storageClass?: string;
 }
@@ -1075,13 +1075,13 @@ export interface TagProperty {
     /**
     * Tag key must be between 1 to 128 characters in length. Tag key cannot start with 'aws:' and can only contain alphanumeric characters, spaces, _, ., /, =, +, -, and @.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3tables_table_bucket#key CcTableBucket#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3tables_table_bucket#key CcTableBucket#key}
     */
     readonly key?: string;
     /**
     * Tag value must be between 0 to 256 characters in length. Tag value can only contain alphanumeric characters, spaces, _, ., /, =, +, -, and @.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3tables_table_bucket#value CcTableBucket#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3tables_table_bucket#value CcTableBucket#value}
     */
     readonly value?: string;
 }
@@ -1191,19 +1191,19 @@ export interface UnreferencedFileRemovalProperty {
     /**
     * S3 permanently deletes noncurrent objects after the number of days specified by the NoncurrentDays property.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3tables_table_bucket#noncurrent_days CcTableBucket#noncurrent_days}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3tables_table_bucket#noncurrent_days CcTableBucket#noncurrent_days}
     */
     readonly noncurrentDays?: number;
     /**
     * Indicates whether the Unreferenced File Removal maintenance action is enabled.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3tables_table_bucket#status CcTableBucket#status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3tables_table_bucket#status CcTableBucket#status}
     */
     readonly status?: string;
     /**
     * For any object not referenced by your table and older than the UnreferencedDays property, S3 creates a delete marker and marks the object version as noncurrent.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3tables_table_bucket#unreferenced_days CcTableBucket#unreferenced_days}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3tables_table_bucket#unreferenced_days CcTableBucket#unreferenced_days}
     */
     readonly unreferencedDays?: number;
 }

@@ -1,45 +1,45 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qldb_stream
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qldb_stream
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcStreamProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qldb_stream#exclusive_end_time CcStream#exclusive_end_time}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qldb_stream#exclusive_end_time CcStream#exclusive_end_time}
     */
     readonly exclusiveEndTime?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qldb_stream#inclusive_start_time CcStream#inclusive_start_time}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qldb_stream#inclusive_start_time CcStream#inclusive_start_time}
     */
     readonly inclusiveStartTime: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qldb_stream#kinesis_configuration CcStream#kinesis_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qldb_stream#kinesis_configuration CcStream#kinesis_configuration}
     */
     readonly kinesisConfiguration: CcStream.KinesisConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qldb_stream#ledger_name CcStream#ledger_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qldb_stream#ledger_name CcStream#ledger_name}
     */
     readonly ledgerName: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qldb_stream#role_arn CcStream#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qldb_stream#role_arn CcStream#role_arn}
     */
     readonly roleArn: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qldb_stream#stream_name CcStream#stream_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qldb_stream#stream_name CcStream#stream_name}
     */
     readonly streamName: string;
     /**
     * An array of key-value pairs to apply to this resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qldb_stream#tags CcStream#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qldb_stream#tags CcStream#tags}
     */
     readonly tags?: CcStream.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qldb_stream awscc_qldb_stream}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qldb_stream awscc_qldb_stream}
 */
 export class CcStream extends cdktn.TerraformResource {
 
@@ -55,7 +55,7 @@ export class CcStream extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcStream resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcStream to import
-    * @param importFromId The id of the existing CcStream that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qldb_stream#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcStream that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qldb_stream#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcStream to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -67,7 +67,7 @@ export class CcStream extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qldb_stream awscc_qldb_stream} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qldb_stream awscc_qldb_stream} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -78,7 +78,7 @@ export class CcStream extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_qldb_stream',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -357,11 +357,11 @@ export function ccStreamTagPropertyToHclTerraform(struct?: CcStream.TagProperty 
 export namespace CcStream {
 export interface KinesisConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qldb_stream#aggregation_enabled CcStream#aggregation_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qldb_stream#aggregation_enabled CcStream#aggregation_enabled}
     */
     readonly aggregationEnabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qldb_stream#stream_arn CcStream#stream_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qldb_stream#stream_arn CcStream#stream_arn}
     */
     readonly streamArn?: string;
 }
@@ -449,13 +449,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 127 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qldb_stream#key CcStream#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qldb_stream#key CcStream#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 1 to 255 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qldb_stream#value CcStream#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qldb_stream#value CcStream#value}
     */
     readonly value?: string;
 }

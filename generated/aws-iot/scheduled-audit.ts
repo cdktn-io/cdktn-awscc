@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_scheduled_audit
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_scheduled_audit
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,43 +9,43 @@ export interface CcScheduledAuditProps extends cdktn.TerraformMetaArguments {
     /**
     * The day of the month on which the scheduled audit takes place. Can be 1 through 31 or LAST. This field is required if the frequency parameter is set to MONTHLY.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_scheduled_audit#day_of_month CcScheduledAudit#day_of_month}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_scheduled_audit#day_of_month CcScheduledAudit#day_of_month}
     */
     readonly dayOfMonth?: string;
     /**
     * The day of the week on which the scheduled audit takes place. Can be one of SUN, MON, TUE,WED, THU, FRI, or SAT. This field is required if the frequency parameter is set to WEEKLY or BIWEEKLY.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_scheduled_audit#day_of_week CcScheduledAudit#day_of_week}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_scheduled_audit#day_of_week CcScheduledAudit#day_of_week}
     */
     readonly dayOfWeek?: string;
     /**
     * How often the scheduled audit takes place. Can be one of DAILY, WEEKLY, BIWEEKLY, or MONTHLY.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_scheduled_audit#frequency CcScheduledAudit#frequency}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_scheduled_audit#frequency CcScheduledAudit#frequency}
     */
     readonly frequency: string;
     /**
     * The name you want to give to the scheduled audit.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_scheduled_audit#scheduled_audit_name CcScheduledAudit#scheduled_audit_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_scheduled_audit#scheduled_audit_name CcScheduledAudit#scheduled_audit_name}
     */
     readonly scheduledAuditName?: string;
     /**
     * An array of key-value pairs to apply to this resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_scheduled_audit#tags CcScheduledAudit#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_scheduled_audit#tags CcScheduledAudit#tags}
     */
     readonly tags?: CcScheduledAudit.TagProperty[] | cdktn.IResolvable;
     /**
     * Which checks are performed during the scheduled audit. Checks must be enabled for your account.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_scheduled_audit#target_check_names CcScheduledAudit#target_check_names}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_scheduled_audit#target_check_names CcScheduledAudit#target_check_names}
     */
     readonly targetCheckNames: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_scheduled_audit awscc_iot_scheduled_audit}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_scheduled_audit awscc_iot_scheduled_audit}
 */
 export class CcScheduledAudit extends cdktn.TerraformResource {
 
@@ -61,7 +61,7 @@ export class CcScheduledAudit extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcScheduledAudit resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcScheduledAudit to import
-    * @param importFromId The id of the existing CcScheduledAudit that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_scheduled_audit#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcScheduledAudit that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_scheduled_audit#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcScheduledAudit to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -73,7 +73,7 @@ export class CcScheduledAudit extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_scheduled_audit awscc_iot_scheduled_audit} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_scheduled_audit awscc_iot_scheduled_audit} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -84,7 +84,7 @@ export class CcScheduledAudit extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_iot_scheduled_audit',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -308,13 +308,13 @@ export interface TagProperty {
     /**
     * The tag's key.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_scheduled_audit#key CcScheduledAudit#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_scheduled_audit#key CcScheduledAudit#key}
     */
     readonly key?: string;
     /**
     * The tag's value.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_scheduled_audit#value CcScheduledAudit#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_scheduled_audit#value CcScheduledAudit#value}
     */
     readonly value?: string;
 }

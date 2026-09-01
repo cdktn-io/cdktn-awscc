@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_fsx_windows
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_location_fsx_windows
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,61 +9,61 @@ export interface CcLocationFSxWindowsProps extends cdktn.TerraformMetaArguments 
     /**
     * Specifies configuration information for a DataSync-managed secret, such as an authentication token or set of credentials that DataSync uses to access a specific transfer location, and a customer-managed AWS KMS key.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_fsx_windows#cmk_secret_config CcLocationFSxWindows#cmk_secret_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_location_fsx_windows#cmk_secret_config CcLocationFSxWindows#cmk_secret_config}
     */
     readonly cmkSecretConfig?: CcLocationFSxWindows.CmkSecretConfigProperty;
     /**
     * Specifies configuration information for a customer-managed secret, such as an authentication token or set of credentials that DataSync uses to access a specific transfer location, and an IAM role that DataSync can assume and access the customer-managed secret.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_fsx_windows#custom_secret_config CcLocationFSxWindows#custom_secret_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_location_fsx_windows#custom_secret_config CcLocationFSxWindows#custom_secret_config}
     */
     readonly customSecretConfig?: CcLocationFSxWindows.CustomSecretConfigProperty;
     /**
     * The name of the Windows domain that the FSx for Windows server belongs to.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_fsx_windows#domain CcLocationFSxWindows#domain}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_location_fsx_windows#domain CcLocationFSxWindows#domain}
     */
     readonly domain?: string;
     /**
     * The Amazon Resource Name (ARN) for the FSx for Windows file system.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_fsx_windows#fsx_filesystem_arn CcLocationFSxWindows#fsx_filesystem_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_location_fsx_windows#fsx_filesystem_arn CcLocationFSxWindows#fsx_filesystem_arn}
     */
     readonly fsxFilesystemArn?: string;
     /**
     * The password of the user who has the permissions to access files and folders in the FSx for Windows file system.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_fsx_windows#password CcLocationFSxWindows#password}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_location_fsx_windows#password CcLocationFSxWindows#password}
     */
     readonly password?: string;
     /**
     * The ARNs of the security groups that are to use to configure the FSx for Windows file system.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_fsx_windows#security_group_arns CcLocationFSxWindows#security_group_arns}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_location_fsx_windows#security_group_arns CcLocationFSxWindows#security_group_arns}
     */
     readonly securityGroupArns: string[];
     /**
     * A subdirectory in the location's path.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_fsx_windows#subdirectory CcLocationFSxWindows#subdirectory}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_location_fsx_windows#subdirectory CcLocationFSxWindows#subdirectory}
     */
     readonly subdirectory?: string;
     /**
     * An array of key-value pairs to apply to this resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_fsx_windows#tags CcLocationFSxWindows#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_location_fsx_windows#tags CcLocationFSxWindows#tags}
     */
     readonly tags?: CcLocationFSxWindows.TagProperty[] | cdktn.IResolvable;
     /**
     * The user who has the permissions to access files and folders in the FSx for Windows file system.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_fsx_windows#user CcLocationFSxWindows#user}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_location_fsx_windows#user CcLocationFSxWindows#user}
     */
     readonly user: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_fsx_windows awscc_datasync_location_fsx_windows}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_location_fsx_windows awscc_datasync_location_fsx_windows}
 */
 export class CcLocationFSxWindows extends cdktn.TerraformResource {
 
@@ -79,7 +79,7 @@ export class CcLocationFSxWindows extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcLocationFSxWindows resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcLocationFSxWindows to import
-    * @param importFromId The id of the existing CcLocationFSxWindows that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_fsx_windows#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcLocationFSxWindows that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_location_fsx_windows#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcLocationFSxWindows to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -91,7 +91,7 @@ export class CcLocationFSxWindows extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_fsx_windows awscc_datasync_location_fsx_windows} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_location_fsx_windows awscc_datasync_location_fsx_windows} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -102,7 +102,7 @@ export class CcLocationFSxWindows extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_datasync_location_fsx_windows',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -497,7 +497,7 @@ export interface CmkSecretConfigProperty {
     /**
     * Specifies the ARN for the customer-managed AWS KMS key used to encrypt the secret specified for SecretArn. DataSync provides this key to AWS Secrets Manager.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_fsx_windows#kms_key_arn CcLocationFSxWindows#kms_key_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_location_fsx_windows#kms_key_arn CcLocationFSxWindows#kms_key_arn}
     */
     readonly kmsKeyArn?: string;
 }
@@ -568,13 +568,13 @@ export interface CustomSecretConfigProperty {
     /**
     * Specifies the ARN for the AWS Identity and Access Management role that DataSync uses to access the secret specified for SecretArn.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_fsx_windows#secret_access_role_arn CcLocationFSxWindows#secret_access_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_location_fsx_windows#secret_access_role_arn CcLocationFSxWindows#secret_access_role_arn}
     */
     readonly secretAccessRoleArn?: string;
     /**
     * Specifies the ARN for a customer created AWS Secrets Manager secret.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_fsx_windows#secret_arn CcLocationFSxWindows#secret_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_location_fsx_windows#secret_arn CcLocationFSxWindows#secret_arn}
     */
     readonly secretArn?: string;
 }
@@ -695,13 +695,13 @@ export interface TagProperty {
     /**
     * The key for an AWS resource tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_fsx_windows#key CcLocationFSxWindows#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_location_fsx_windows#key CcLocationFSxWindows#key}
     */
     readonly key?: string;
     /**
     * The value for an AWS resource tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_fsx_windows#value CcLocationFSxWindows#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_location_fsx_windows#value CcLocationFSxWindows#value}
     */
     readonly value?: string;
 }

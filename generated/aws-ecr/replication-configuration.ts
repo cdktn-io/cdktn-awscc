@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecr_replication_configuration
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecr_replication_configuration
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,13 +9,13 @@ export interface CcReplicationConfigurationProps extends cdktn.TerraformMetaArgu
     /**
     * The replication configuration for a registry.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecr_replication_configuration#replication_configuration CcReplicationConfiguration#replication_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecr_replication_configuration#replication_configuration CcReplicationConfiguration#replication_configuration}
     */
     readonly replicationConfiguration: CcReplicationConfiguration.ReplicationConfigurationProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecr_replication_configuration awscc_ecr_replication_configuration}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecr_replication_configuration awscc_ecr_replication_configuration}
 */
 export class CcReplicationConfiguration extends cdktn.TerraformResource {
 
@@ -31,7 +31,7 @@ export class CcReplicationConfiguration extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcReplicationConfiguration resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcReplicationConfiguration to import
-    * @param importFromId The id of the existing CcReplicationConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecr_replication_configuration#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcReplicationConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecr_replication_configuration#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcReplicationConfiguration to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -43,7 +43,7 @@ export class CcReplicationConfiguration extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecr_replication_configuration awscc_ecr_replication_configuration} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecr_replication_configuration awscc_ecr_replication_configuration} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -54,7 +54,7 @@ export class CcReplicationConfiguration extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_ecr_replication_configuration',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -265,13 +265,13 @@ export interface ReplicationDestinationProperty {
     /**
     * The Region to replicate to.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecr_replication_configuration#region CcReplicationConfiguration#region}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecr_replication_configuration#region CcReplicationConfiguration#region}
     */
     readonly region: string;
     /**
     * The AWS account ID of the Amazon ECR private registry to replicate to. When configuring cross-Region replication within your own registry, specify your own account ID.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecr_replication_configuration#registry_id CcReplicationConfiguration#registry_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecr_replication_configuration#registry_id CcReplicationConfiguration#registry_id}
     */
     readonly registryId: string;
 }
@@ -375,13 +375,13 @@ export interface RepositoryFilterProperty {
     /**
     * The repository filter details. When the ``PREFIX_MATCH`` filter type is specified, this value is required and should be the repository name prefix to configure replication for.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecr_replication_configuration#filter CcReplicationConfiguration#filter}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecr_replication_configuration#filter CcReplicationConfiguration#filter}
     */
     readonly filter?: string;
     /**
     * The repository filter type. The only supported value is ``PREFIX_MATCH``, which is a repository name prefix specified with the ``filter`` parameter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecr_replication_configuration#filter_type CcReplicationConfiguration#filter_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecr_replication_configuration#filter_type CcReplicationConfiguration#filter_type}
     */
     readonly filterType?: string;
 }
@@ -491,13 +491,13 @@ export interface ReplicationRuleProperty {
     /**
     * An array of objects representing the destination for a replication rule.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecr_replication_configuration#destinations CcReplicationConfiguration#destinations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecr_replication_configuration#destinations CcReplicationConfiguration#destinations}
     */
     readonly destinations: ReplicationDestinationProperty[] | cdktn.IResolvable;
     /**
     * An array of objects representing the filters for a replication rule. Specifying a repository filter for a replication rule provides a method for controlling which repositories in a private registry are replicated.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecr_replication_configuration#repository_filters CcReplicationConfiguration#repository_filters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecr_replication_configuration#repository_filters CcReplicationConfiguration#repository_filters}
     */
     readonly repositoryFilters?: RepositoryFilterProperty[] | cdktn.IResolvable;
 }
@@ -604,7 +604,7 @@ export interface ReplicationConfigurationProperty {
     /**
     * An array of objects representing the replication destinations and repository filters for a replication configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecr_replication_configuration#rules CcReplicationConfiguration#rules}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecr_replication_configuration#rules CcReplicationConfiguration#rules}
     */
     readonly rules: ReplicationRuleProperty[] | cdktn.IResolvable;
 }

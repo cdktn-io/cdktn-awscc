@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_gateway
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_gateway
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,37 +9,37 @@ export interface CcGatewayProps extends cdktn.TerraformMetaArguments {
     /**
     * A list of gateway capability summaries that each contain a namespace and status.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_gateway#gateway_capability_summaries CcGateway#gateway_capability_summaries}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_gateway#gateway_capability_summaries CcGateway#gateway_capability_summaries}
     */
     readonly gatewayCapabilitySummaries?: CcGateway.GatewayCapabilitySummaryProperty[] | cdktn.IResolvable;
     /**
     * A unique, friendly name for the gateway.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_gateway#gateway_name CcGateway#gateway_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_gateway#gateway_name CcGateway#gateway_name}
     */
     readonly gatewayName: string;
     /**
     * The gateway's platform. You can only specify one platform in a gateway.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_gateway#gateway_platform CcGateway#gateway_platform}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_gateway#gateway_platform CcGateway#gateway_platform}
     */
     readonly gatewayPlatform: CcGateway.GatewayPlatformProperty;
     /**
     * The version of the gateway you want to create.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_gateway#gateway_version CcGateway#gateway_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_gateway#gateway_version CcGateway#gateway_version}
     */
     readonly gatewayVersion?: string;
     /**
     * A list of key-value pairs that contain metadata for the gateway.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_gateway#tags CcGateway#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_gateway#tags CcGateway#tags}
     */
     readonly tags?: CcGateway.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_gateway awscc_iotsitewise_gateway}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_gateway awscc_iotsitewise_gateway}
 */
 export class CcGateway extends cdktn.TerraformResource {
 
@@ -55,7 +55,7 @@ export class CcGateway extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcGateway resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcGateway to import
-    * @param importFromId The id of the existing CcGateway that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_gateway#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcGateway that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_gateway#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcGateway to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -67,7 +67,7 @@ export class CcGateway extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_gateway awscc_iotsitewise_gateway} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_gateway awscc_iotsitewise_gateway} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -78,7 +78,7 @@ export class CcGateway extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_iotsitewise_gateway',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -419,13 +419,13 @@ export interface GatewayCapabilitySummaryProperty {
     /**
     * The JSON document that defines the gateway capability's configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_gateway#capability_configuration CcGateway#capability_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_gateway#capability_configuration CcGateway#capability_configuration}
     */
     readonly capabilityConfiguration?: string;
     /**
     * The namespace of the capability configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_gateway#capability_namespace CcGateway#capability_namespace}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_gateway#capability_namespace CcGateway#capability_namespace}
     */
     readonly capabilityNamespace?: string;
 }
@@ -535,13 +535,13 @@ export interface GreengrassV2Property {
     /**
     * The operating system of the core device in AWS IoT Greengrass V2.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_gateway#core_device_operating_system CcGateway#core_device_operating_system}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_gateway#core_device_operating_system CcGateway#core_device_operating_system}
     */
     readonly coreDeviceOperatingSystem?: string;
     /**
     * The name of the CoreDevice in GreenGrass V2.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_gateway#core_device_thing_name CcGateway#core_device_thing_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_gateway#core_device_thing_name CcGateway#core_device_thing_name}
     */
     readonly coreDeviceThingName?: string;
 }
@@ -629,7 +629,7 @@ export interface SiemensIEProperty {
     /**
     * The name of the IoT Core Thing.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_gateway#iot_core_thing_name CcGateway#iot_core_thing_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_gateway#iot_core_thing_name CcGateway#iot_core_thing_name}
     */
     readonly iotCoreThingName?: string;
 }
@@ -695,13 +695,13 @@ export interface GatewayPlatformProperty {
     /**
     * A gateway that runs on AWS IoT Greengrass V2.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_gateway#greengrass_v2 CcGateway#greengrass_v2}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_gateway#greengrass_v2 CcGateway#greengrass_v2}
     */
     readonly greengrassV2?: GreengrassV2Property;
     /**
     * A gateway that runs on Siemens Industrial Edge.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_gateway#siemens_ie CcGateway#siemens_ie}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_gateway#siemens_ie CcGateway#siemens_ie}
     */
     readonly siemensIe?: SiemensIEProperty;
 }
@@ -787,11 +787,11 @@ export class GatewayPlatformPropertyOutputReference extends cdktn.ComplexObject 
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_gateway#key CcGateway#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_gateway#key CcGateway#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_gateway#value CcGateway#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_gateway#value CcGateway#value}
     */
     readonly value?: string;
 }

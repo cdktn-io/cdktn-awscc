@@ -1,27 +1,27 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_data_table_record
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_data_table_record
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcDataTableRecordProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_data_table_record#data_table_arn CcDataTableRecord#data_table_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_data_table_record#data_table_arn CcDataTableRecord#data_table_arn}
     */
     readonly dataTableArn: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_data_table_record#data_table_record CcDataTableRecord#data_table_record}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_data_table_record#data_table_record CcDataTableRecord#data_table_record}
     */
     readonly dataTableRecord: CcDataTableRecord.DataTableRecordProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_data_table_record#instance_arn CcDataTableRecord#instance_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_data_table_record#instance_arn CcDataTableRecord#instance_arn}
     */
     readonly instanceArn: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_data_table_record awscc_connect_data_table_record}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_data_table_record awscc_connect_data_table_record}
 */
 export class CcDataTableRecord extends cdktn.TerraformResource {
 
@@ -37,7 +37,7 @@ export class CcDataTableRecord extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcDataTableRecord resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcDataTableRecord to import
-    * @param importFromId The id of the existing CcDataTableRecord that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_data_table_record#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcDataTableRecord that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_data_table_record#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcDataTableRecord to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -49,7 +49,7 @@ export class CcDataTableRecord extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_data_table_record awscc_connect_data_table_record} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_data_table_record awscc_connect_data_table_record} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -60,7 +60,7 @@ export class CcDataTableRecord extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_connect_data_table_record',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -281,11 +281,11 @@ export function ccDataTableRecordDataTableRecordPropertyToHclTerraform(struct?: 
 export namespace CcDataTableRecord {
 export interface ValueProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_data_table_record#attribute_id CcDataTableRecord#attribute_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_data_table_record#attribute_id CcDataTableRecord#attribute_id}
     */
     readonly attributeId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_data_table_record#attribute_value CcDataTableRecord#attribute_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_data_table_record#attribute_value CcDataTableRecord#attribute_value}
     */
     readonly attributeValue?: string;
 }
@@ -393,11 +393,11 @@ export class ValuePropertyList extends cdktn.ComplexList {
 }
 export interface ValuesProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_data_table_record#attribute_id CcDataTableRecord#attribute_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_data_table_record#attribute_id CcDataTableRecord#attribute_id}
     */
     readonly attributeId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_data_table_record#attribute_value CcDataTableRecord#attribute_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_data_table_record#attribute_value CcDataTableRecord#attribute_value}
     */
     readonly attributeValue?: string;
 }
@@ -505,11 +505,11 @@ export class ValuesPropertyList extends cdktn.ComplexList {
 }
 export interface DataTableRecordProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_data_table_record#primary_values CcDataTableRecord#primary_values}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_data_table_record#primary_values CcDataTableRecord#primary_values}
     */
     readonly primaryValues?: ValueProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_data_table_record#values CcDataTableRecord#values}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_data_table_record#values CcDataTableRecord#values}
     */
     readonly values: ValuesProperty[] | cdktn.IResolvable;
 }

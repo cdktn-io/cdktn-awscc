@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/proton_service_template
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/proton_service_template
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,27 +9,27 @@ export interface CcServiceTemplateProps extends cdktn.TerraformMetaArguments {
     /**
     * <p>A description of the service template.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/proton_service_template#description CcServiceTemplate#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/proton_service_template#description CcServiceTemplate#description}
     */
     readonly description?: string;
     /**
     * <p>The name of the service template as displayed in the developer interface.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/proton_service_template#display_name CcServiceTemplate#display_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/proton_service_template#display_name CcServiceTemplate#display_name}
     */
     readonly displayName?: string;
     /**
     * <p>A customer provided encryption key that's used to encrypt data.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/proton_service_template#encryption_key CcServiceTemplate#encryption_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/proton_service_template#encryption_key CcServiceTemplate#encryption_key}
     */
     readonly encryptionKey?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/proton_service_template#name CcServiceTemplate#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/proton_service_template#name CcServiceTemplate#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/proton_service_template#pipeline_provisioning CcServiceTemplate#pipeline_provisioning}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/proton_service_template#pipeline_provisioning CcServiceTemplate#pipeline_provisioning}
     */
     readonly pipelineProvisioning?: string;
     /**
@@ -37,13 +37,13 @@ export interface CcServiceTemplateProps extends cdktn.TerraformMetaArguments {
     *          <p>For more information, see <a href="https://docs.aws.amazon.com/proton/latest/userguide/resources.html">Proton resources and tagging</a> in the
     *         <i>Proton User Guide</i>.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/proton_service_template#tags CcServiceTemplate#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/proton_service_template#tags CcServiceTemplate#tags}
     */
     readonly tags?: CcServiceTemplate.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/proton_service_template awscc_proton_service_template}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/proton_service_template awscc_proton_service_template}
 */
 export class CcServiceTemplate extends cdktn.TerraformResource {
 
@@ -59,7 +59,7 @@ export class CcServiceTemplate extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcServiceTemplate resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcServiceTemplate to import
-    * @param importFromId The id of the existing CcServiceTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/proton_service_template#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcServiceTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/proton_service_template#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcServiceTemplate to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -71,7 +71,7 @@ export class CcServiceTemplate extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/proton_service_template awscc_proton_service_template} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/proton_service_template awscc_proton_service_template} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -82,7 +82,7 @@ export class CcServiceTemplate extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_proton_service_template',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -312,13 +312,13 @@ export interface TagProperty {
     /**
     * <p>The key of the resource tag.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/proton_service_template#key CcServiceTemplate#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/proton_service_template#key CcServiceTemplate#key}
     */
     readonly key?: string;
     /**
     * <p>The value of the resource tag.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/proton_service_template#value CcServiceTemplate#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/proton_service_template#value CcServiceTemplate#value}
     */
     readonly value?: string;
 }

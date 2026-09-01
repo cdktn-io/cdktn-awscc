@@ -1,51 +1,51 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_ai_prompt
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_ai_prompt
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcAIPromptProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_ai_prompt#api_format CcAIPrompt#api_format}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_ai_prompt#api_format CcAIPrompt#api_format}
     */
     readonly apiFormat: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_ai_prompt#assistant_id CcAIPrompt#assistant_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_ai_prompt#assistant_id CcAIPrompt#assistant_id}
     */
     readonly assistantId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_ai_prompt#description CcAIPrompt#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_ai_prompt#description CcAIPrompt#description}
     */
     readonly description?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_ai_prompt#model_id CcAIPrompt#model_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_ai_prompt#model_id CcAIPrompt#model_id}
     */
     readonly modelId: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_ai_prompt#name CcAIPrompt#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_ai_prompt#name CcAIPrompt#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_ai_prompt#tags CcAIPrompt#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_ai_prompt#tags CcAIPrompt#tags}
     */
     readonly tags?: { [key: string]: string };
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_ai_prompt#template_configuration CcAIPrompt#template_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_ai_prompt#template_configuration CcAIPrompt#template_configuration}
     */
     readonly templateConfiguration: CcAIPrompt.AIPromptTemplateConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_ai_prompt#template_type CcAIPrompt#template_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_ai_prompt#template_type CcAIPrompt#template_type}
     */
     readonly templateType: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_ai_prompt#type CcAIPrompt#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_ai_prompt#type CcAIPrompt#type}
     */
     readonly type: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_ai_prompt awscc_wisdom_ai_prompt}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_ai_prompt awscc_wisdom_ai_prompt}
 */
 export class CcAIPrompt extends cdktn.TerraformResource {
 
@@ -61,7 +61,7 @@ export class CcAIPrompt extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcAIPrompt resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcAIPrompt to import
-    * @param importFromId The id of the existing CcAIPrompt that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_ai_prompt#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcAIPrompt that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_ai_prompt#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcAIPrompt to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -73,7 +73,7 @@ export class CcAIPrompt extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_ai_prompt awscc_wisdom_ai_prompt} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_ai_prompt awscc_wisdom_ai_prompt} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -84,7 +84,7 @@ export class CcAIPrompt extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_wisdom_ai_prompt',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -407,7 +407,7 @@ export function ccAIPromptAIPromptTemplateConfigurationPropertyToHclTerraform(st
 export namespace CcAIPrompt {
 export interface TextFullAIPromptEditTemplateConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_ai_prompt#text CcAIPrompt#text}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_ai_prompt#text CcAIPrompt#text}
     */
     readonly text?: string;
 }
@@ -471,7 +471,7 @@ export class TextFullAIPromptEditTemplateConfigurationPropertyOutputReference ex
 }
 export interface AIPromptTemplateConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_ai_prompt#text_full_ai_prompt_edit_template_configuration CcAIPrompt#text_full_ai_prompt_edit_template_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_ai_prompt#text_full_ai_prompt_edit_template_configuration CcAIPrompt#text_full_ai_prompt_edit_template_configuration}
     */
     readonly textFullAiPromptEditTemplateConfiguration?: TextFullAIPromptEditTemplateConfigurationProperty;
 }

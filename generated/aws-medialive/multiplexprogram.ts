@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_multiplexprogram
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_multiplexprogram
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,43 +9,43 @@ export interface CcMultiplexprogramProps extends cdktn.TerraformMetaArguments {
     /**
     * The ID of the multiplex that the program belongs to.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_multiplexprogram#multiplex_id CcMultiplexprogram#multiplex_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_multiplexprogram#multiplex_id CcMultiplexprogram#multiplex_id}
     */
     readonly multiplexId?: string;
     /**
     * The settings for this multiplex program.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_multiplexprogram#multiplex_program_settings CcMultiplexprogram#multiplex_program_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_multiplexprogram#multiplex_program_settings CcMultiplexprogram#multiplex_program_settings}
     */
     readonly multiplexProgramSettings?: CcMultiplexprogram.MultiplexProgramSettingsProperty;
     /**
     * The packet identifier map for this multiplex program.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_multiplexprogram#packet_identifiers_map CcMultiplexprogram#packet_identifiers_map}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_multiplexprogram#packet_identifiers_map CcMultiplexprogram#packet_identifiers_map}
     */
     readonly packetIdentifiersMap?: CcMultiplexprogram.MultiplexProgramPacketIdentifiersMapProperty;
     /**
     * Contains information about the current sources for the specified program in the specified multiplex. Keep in mind that each multiplex pipeline connects to both pipelines in a given source channel (the channel identified by the program). But only one of those channel pipelines is ever active at one time.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_multiplexprogram#pipeline_details CcMultiplexprogram#pipeline_details}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_multiplexprogram#pipeline_details CcMultiplexprogram#pipeline_details}
     */
     readonly pipelineDetails?: CcMultiplexprogram.MultiplexProgramPipelineDetailProperty[] | cdktn.IResolvable;
     /**
     * The settings for this multiplex program.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_multiplexprogram#preferred_channel_pipeline CcMultiplexprogram#preferred_channel_pipeline}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_multiplexprogram#preferred_channel_pipeline CcMultiplexprogram#preferred_channel_pipeline}
     */
     readonly preferredChannelPipeline?: string;
     /**
     * The name of the multiplex program.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_multiplexprogram#program_name CcMultiplexprogram#program_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_multiplexprogram#program_name CcMultiplexprogram#program_name}
     */
     readonly programName?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_multiplexprogram awscc_medialive_multiplexprogram}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_multiplexprogram awscc_medialive_multiplexprogram}
 */
 export class CcMultiplexprogram extends cdktn.TerraformResource {
 
@@ -61,7 +61,7 @@ export class CcMultiplexprogram extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcMultiplexprogram resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcMultiplexprogram to import
-    * @param importFromId The id of the existing CcMultiplexprogram that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_multiplexprogram#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcMultiplexprogram that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_multiplexprogram#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcMultiplexprogram to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -73,7 +73,7 @@ export class CcMultiplexprogram extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_multiplexprogram awscc_medialive_multiplexprogram} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_multiplexprogram awscc_medialive_multiplexprogram} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -84,7 +84,7 @@ export class CcMultiplexprogram extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_medialive_multiplexprogram',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -597,13 +597,13 @@ export interface MultiplexProgramServiceDescriptorProperty {
     /**
     * Name of the provider.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_multiplexprogram#provider_name CcMultiplexprogram#provider_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_multiplexprogram#provider_name CcMultiplexprogram#provider_name}
     */
     readonly providerName?: string;
     /**
     * Name of the service.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_multiplexprogram#service_name CcMultiplexprogram#service_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_multiplexprogram#service_name CcMultiplexprogram#service_name}
     */
     readonly serviceName?: string;
 }
@@ -691,19 +691,19 @@ export interface MultiplexStatmuxVideoSettingsProperty {
     /**
     * Maximum statmux bitrate.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_multiplexprogram#maximum_bitrate CcMultiplexprogram#maximum_bitrate}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_multiplexprogram#maximum_bitrate CcMultiplexprogram#maximum_bitrate}
     */
     readonly maximumBitrate?: number;
     /**
     * Minimum statmux bitrate.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_multiplexprogram#minimum_bitrate CcMultiplexprogram#minimum_bitrate}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_multiplexprogram#minimum_bitrate CcMultiplexprogram#minimum_bitrate}
     */
     readonly minimumBitrate?: number;
     /**
     * The purpose of the priority is to use a combination of the\nmultiplex rate control algorithm and the QVBR capability of the\nencoder to prioritize the video quality of some channels in a\nmultiplex over others.  Channels that have a higher priority will\nget higher video quality at the expense of the video quality of\nother channels in the multiplex with lower priority.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_multiplexprogram#priority CcMultiplexprogram#priority}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_multiplexprogram#priority CcMultiplexprogram#priority}
     */
     readonly priority?: number;
 }
@@ -814,14 +814,14 @@ export interface MultiplexVideoSettingsProperty {
     * The constant bitrate configuration for the video encode.
     * When this field is defined, StatmuxSettings must be undefined.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_multiplexprogram#constant_bitrate CcMultiplexprogram#constant_bitrate}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_multiplexprogram#constant_bitrate CcMultiplexprogram#constant_bitrate}
     */
     readonly constantBitrate?: number;
     /**
     * Statmux rate control settings.
     * When this field is defined, ConstantBitrate must be undefined.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_multiplexprogram#statmux_settings CcMultiplexprogram#statmux_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_multiplexprogram#statmux_settings CcMultiplexprogram#statmux_settings}
     */
     readonly statmuxSettings?: MultiplexStatmuxVideoSettingsProperty;
 }
@@ -914,25 +914,25 @@ export interface MultiplexProgramSettingsProperty {
     * it will only switch if the active pipeline becomes unhealthy.
     * 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_multiplexprogram#preferred_channel_pipeline CcMultiplexprogram#preferred_channel_pipeline}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_multiplexprogram#preferred_channel_pipeline CcMultiplexprogram#preferred_channel_pipeline}
     */
     readonly preferredChannelPipeline?: string;
     /**
     * Unique program number.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_multiplexprogram#program_number CcMultiplexprogram#program_number}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_multiplexprogram#program_number CcMultiplexprogram#program_number}
     */
     readonly programNumber?: number;
     /**
     * Transport stream service descriptor configuration for the Multiplex program.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_multiplexprogram#service_descriptor CcMultiplexprogram#service_descriptor}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_multiplexprogram#service_descriptor CcMultiplexprogram#service_descriptor}
     */
     readonly serviceDescriptor?: MultiplexProgramServiceDescriptorProperty;
     /**
     * Program video settings configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_multiplexprogram#video_settings CcMultiplexprogram#video_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_multiplexprogram#video_settings CcMultiplexprogram#video_settings}
     */
     readonly videoSettings?: MultiplexVideoSettingsProperty;
 }
@@ -1062,55 +1062,55 @@ export class MultiplexProgramSettingsPropertyOutputReference extends cdktn.Compl
 }
 export interface MultiplexProgramPacketIdentifiersMapProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_multiplexprogram#audio_pids CcMultiplexprogram#audio_pids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_multiplexprogram#audio_pids CcMultiplexprogram#audio_pids}
     */
     readonly audioPids?: number[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_multiplexprogram#dvb_sub_pids CcMultiplexprogram#dvb_sub_pids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_multiplexprogram#dvb_sub_pids CcMultiplexprogram#dvb_sub_pids}
     */
     readonly dvbSubPids?: number[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_multiplexprogram#dvb_teletext_pid CcMultiplexprogram#dvb_teletext_pid}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_multiplexprogram#dvb_teletext_pid CcMultiplexprogram#dvb_teletext_pid}
     */
     readonly dvbTeletextPid?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_multiplexprogram#etv_platform_pid CcMultiplexprogram#etv_platform_pid}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_multiplexprogram#etv_platform_pid CcMultiplexprogram#etv_platform_pid}
     */
     readonly etvPlatformPid?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_multiplexprogram#etv_signal_pid CcMultiplexprogram#etv_signal_pid}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_multiplexprogram#etv_signal_pid CcMultiplexprogram#etv_signal_pid}
     */
     readonly etvSignalPid?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_multiplexprogram#klv_data_pids CcMultiplexprogram#klv_data_pids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_multiplexprogram#klv_data_pids CcMultiplexprogram#klv_data_pids}
     */
     readonly klvDataPids?: number[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_multiplexprogram#pcr_pid CcMultiplexprogram#pcr_pid}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_multiplexprogram#pcr_pid CcMultiplexprogram#pcr_pid}
     */
     readonly pcrPid?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_multiplexprogram#pmt_pid CcMultiplexprogram#pmt_pid}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_multiplexprogram#pmt_pid CcMultiplexprogram#pmt_pid}
     */
     readonly pmtPid?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_multiplexprogram#private_metadata_pid CcMultiplexprogram#private_metadata_pid}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_multiplexprogram#private_metadata_pid CcMultiplexprogram#private_metadata_pid}
     */
     readonly privateMetadataPid?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_multiplexprogram#scte_27_pids CcMultiplexprogram#scte_27_pids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_multiplexprogram#scte_27_pids CcMultiplexprogram#scte_27_pids}
     */
     readonly scte27Pids?: number[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_multiplexprogram#scte_35_pid CcMultiplexprogram#scte_35_pid}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_multiplexprogram#scte_35_pid CcMultiplexprogram#scte_35_pid}
     */
     readonly scte35Pid?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_multiplexprogram#timed_metadata_pid CcMultiplexprogram#timed_metadata_pid}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_multiplexprogram#timed_metadata_pid CcMultiplexprogram#timed_metadata_pid}
     */
     readonly timedMetadataPid?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_multiplexprogram#video_pid CcMultiplexprogram#video_pid}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_multiplexprogram#video_pid CcMultiplexprogram#video_pid}
     */
     readonly videoPid?: number;
 }
@@ -1440,13 +1440,13 @@ export interface MultiplexProgramPipelineDetailProperty {
     /**
     * Identifies the channel pipeline that is currently active for the pipeline (identified by PipelineId) in the multiplex.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_multiplexprogram#active_channel_pipeline CcMultiplexprogram#active_channel_pipeline}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_multiplexprogram#active_channel_pipeline CcMultiplexprogram#active_channel_pipeline}
     */
     readonly activeChannelPipeline?: string;
     /**
     * Identifies a specific pipeline in the multiplex.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_multiplexprogram#pipeline_id CcMultiplexprogram#pipeline_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_multiplexprogram#pipeline_id CcMultiplexprogram#pipeline_id}
     */
     readonly pipelineId?: string;
 }

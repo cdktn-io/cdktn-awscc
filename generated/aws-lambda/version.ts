@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_version
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_version
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,43 +9,43 @@ export interface CcVersionProps extends cdktn.TerraformMetaArguments {
     /**
     * Only publish a version if the hash value matches the value that's specified. Use this option to avoid publishing a version if the function code has changed since you last updated it. Updates are not supported for this property.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_version#code_sha_256 CcVersion#code_sha_256}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_version#code_sha_256 CcVersion#code_sha_256}
     */
     readonly codeSha256?: string;
     /**
     * A description for the version to override the description in the function configuration. Updates are not supported for this property.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_version#description CcVersion#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_version#description CcVersion#description}
     */
     readonly description?: string;
     /**
     * The name of the Lambda function.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_version#function_name CcVersion#function_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_version#function_name CcVersion#function_name}
     */
     readonly functionName: string;
     /**
     * The scaling configuration to apply to the function, including minimum and maximum execution environment limits.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_version#function_scaling_config CcVersion#function_scaling_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_version#function_scaling_config CcVersion#function_scaling_config}
     */
     readonly functionScalingConfig?: CcVersion.FunctionScalingConfigProperty;
     /**
     * Specifies a provisioned concurrency configuration for a function's version. Updates are not supported for this property.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_version#provisioned_concurrency_config CcVersion#provisioned_concurrency_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_version#provisioned_concurrency_config CcVersion#provisioned_concurrency_config}
     */
     readonly provisionedConcurrencyConfig?: CcVersion.ProvisionedConcurrencyConfigurationProperty;
     /**
     * Specifies the runtime management configuration of a function. Displays runtimeVersionArn only for Manual.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_version#runtime_policy CcVersion#runtime_policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_version#runtime_policy CcVersion#runtime_policy}
     */
     readonly runtimePolicy?: CcVersion.RuntimePolicyProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_version awscc_lambda_version}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_version awscc_lambda_version}
 */
 export class CcVersion extends cdktn.TerraformResource {
 
@@ -61,7 +61,7 @@ export class CcVersion extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcVersion resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcVersion to import
-    * @param importFromId The id of the existing CcVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_version#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_version#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcVersion to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -73,7 +73,7 @@ export class CcVersion extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_version awscc_lambda_version} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_version awscc_lambda_version} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -84,7 +84,7 @@ export class CcVersion extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_lambda_version',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -383,13 +383,13 @@ export interface FunctionScalingConfigProperty {
     /**
     * The maximum number of execution environments that can be provisioned for the function.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_version#max_execution_environments CcVersion#max_execution_environments}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_version#max_execution_environments CcVersion#max_execution_environments}
     */
     readonly maxExecutionEnvironments?: number;
     /**
     * The minimum number of execution environments to maintain for the function.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_version#min_execution_environments CcVersion#min_execution_environments}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_version#min_execution_environments CcVersion#min_execution_environments}
     */
     readonly minExecutionEnvironments?: number;
 }
@@ -477,7 +477,7 @@ export interface ProvisionedConcurrencyConfigurationProperty {
     /**
     * The amount of provisioned concurrency to allocate for the version.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_version#provisioned_concurrent_executions CcVersion#provisioned_concurrent_executions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_version#provisioned_concurrent_executions CcVersion#provisioned_concurrent_executions}
     */
     readonly provisionedConcurrentExecutions?: number;
 }
@@ -543,13 +543,13 @@ export interface RuntimePolicyProperty {
     /**
     * The ARN of the runtime the function is configured to use. If the runtime update mode is manual, the ARN is returned, otherwise null is returned.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_version#runtime_version_arn CcVersion#runtime_version_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_version#runtime_version_arn CcVersion#runtime_version_arn}
     */
     readonly runtimeVersionArn?: string;
     /**
     * The runtime update mode.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_version#update_runtime_on CcVersion#update_runtime_on}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_version#update_runtime_on CcVersion#update_runtime_on}
     */
     readonly updateRuntimeOn?: string;
 }

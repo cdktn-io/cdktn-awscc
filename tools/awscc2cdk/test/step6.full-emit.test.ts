@@ -24,10 +24,15 @@ import {
   toolRoot,
 } from "./helpers/paths";
 
-/** 1493 matched + awscc_datasync_storage_system, which is emitted from its awscc name */
-const RESOURCE_FILES = 1494;
+/**
+ * 1527 matched + the 5 resources the pinned aws-service-spec does not know yet
+ * (awscc_datasync_storage_system, awscc_ec2_fpga_image, awscc_identitystore_user,
+ * awscc_lightsail_contact_method, awscc_supportauthz_support_permit), which are emitted from their
+ * awscc names.
+ */
+const RESOURCE_FILES = 1532;
 /** distinct module directories over the effective (auto-extended) scope map */
-const MODULE_DIRS = 276;
+const MODULE_DIRS = 283;
 const GENERATOR_FILES = ["index.ts", "MANIFEST.sha256", "scope-map.effective.json", "package.exports.json"];
 
 const full = process.env.RUN_FULL === "1" ? describe : describe.skip;

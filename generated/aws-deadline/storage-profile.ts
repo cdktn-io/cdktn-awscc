@@ -1,31 +1,31 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/deadline_storage_profile
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/deadline_storage_profile
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcStorageProfileProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/deadline_storage_profile#display_name CcStorageProfile#display_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/deadline_storage_profile#display_name CcStorageProfile#display_name}
     */
     readonly displayName: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/deadline_storage_profile#farm_id CcStorageProfile#farm_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/deadline_storage_profile#farm_id CcStorageProfile#farm_id}
     */
     readonly farmId: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/deadline_storage_profile#file_system_locations CcStorageProfile#file_system_locations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/deadline_storage_profile#file_system_locations CcStorageProfile#file_system_locations}
     */
     readonly fileSystemLocations?: CcStorageProfile.FileSystemLocationProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/deadline_storage_profile#os_family CcStorageProfile#os_family}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/deadline_storage_profile#os_family CcStorageProfile#os_family}
     */
     readonly osFamily: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/deadline_storage_profile awscc_deadline_storage_profile}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/deadline_storage_profile awscc_deadline_storage_profile}
 */
 export class CcStorageProfile extends cdktn.TerraformResource {
 
@@ -41,7 +41,7 @@ export class CcStorageProfile extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcStorageProfile resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcStorageProfile to import
-    * @param importFromId The id of the existing CcStorageProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/deadline_storage_profile#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcStorageProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/deadline_storage_profile#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcStorageProfile to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -53,7 +53,7 @@ export class CcStorageProfile extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/deadline_storage_profile awscc_deadline_storage_profile} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/deadline_storage_profile awscc_deadline_storage_profile} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -64,7 +64,7 @@ export class CcStorageProfile extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_deadline_storage_profile',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -242,15 +242,15 @@ export function ccStorageProfileFileSystemLocationPropertyToHclTerraform(struct?
 export namespace CcStorageProfile {
 export interface FileSystemLocationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/deadline_storage_profile#name CcStorageProfile#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/deadline_storage_profile#name CcStorageProfile#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/deadline_storage_profile#path CcStorageProfile#path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/deadline_storage_profile#path CcStorageProfile#path}
     */
     readonly path?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/deadline_storage_profile#type CcStorageProfile#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/deadline_storage_profile#type CcStorageProfile#type}
     */
     readonly type?: string;
 }

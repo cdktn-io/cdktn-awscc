@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_allocation
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_ipam_allocation
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,29 +9,29 @@ export interface CcIPAMAllocationProps extends cdktn.TerraformMetaArguments {
     /**
     * Represents an IPAM custom allocation of a single IPv4 or IPv6 CIDR
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_allocation#cidr CcIPAMAllocation#cidr}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_ipam_allocation#cidr CcIPAMAllocation#cidr}
     */
     readonly cidr?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_allocation#description CcIPAMAllocation#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_ipam_allocation#description CcIPAMAllocation#description}
     */
     readonly description?: string;
     /**
     * Id of the IPAM Pool.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_allocation#ipam_pool_id CcIPAMAllocation#ipam_pool_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_ipam_allocation#ipam_pool_id CcIPAMAllocation#ipam_pool_id}
     */
     readonly ipamPoolId: string;
     /**
     * The desired netmask length of the allocation. If set, IPAM will choose a block of free space with this size and return the CIDR representing it.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_allocation#netmask_length CcIPAMAllocation#netmask_length}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_ipam_allocation#netmask_length CcIPAMAllocation#netmask_length}
     */
     readonly netmaskLength?: number;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_allocation awscc_ec2_ipam_allocation}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_ipam_allocation awscc_ec2_ipam_allocation}
 */
 export class CcIPAMAllocation extends cdktn.TerraformResource {
 
@@ -47,7 +47,7 @@ export class CcIPAMAllocation extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcIPAMAllocation resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcIPAMAllocation to import
-    * @param importFromId The id of the existing CcIPAMAllocation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_allocation#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcIPAMAllocation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_ipam_allocation#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcIPAMAllocation to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -59,7 +59,7 @@ export class CcIPAMAllocation extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_allocation awscc_ec2_ipam_allocation} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_ipam_allocation awscc_ec2_ipam_allocation} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -70,7 +70,7 @@ export class CcIPAMAllocation extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_ec2_ipam_allocation',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,

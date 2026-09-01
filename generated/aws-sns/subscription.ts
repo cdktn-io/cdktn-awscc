@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sns_subscription
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sns_subscription
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,73 +9,73 @@ export interface CcSubscriptionProps extends cdktn.TerraformMetaArguments {
     /**
     * The delivery policy JSON assigned to the subscription. Enables the subscriber to define the message delivery retry strategy in the case of an HTTP/S endpoint subscribed to the topic.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sns_subscription#delivery_policy CcSubscription#delivery_policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sns_subscription#delivery_policy CcSubscription#delivery_policy}
     */
     readonly deliveryPolicy?: string;
     /**
     * The subscription's endpoint. The endpoint value depends on the protocol that you specify. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sns_subscription#endpoint CcSubscription#endpoint}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sns_subscription#endpoint CcSubscription#endpoint}
     */
     readonly endpoint?: string;
     /**
     * The filter policy JSON assigned to the subscription. Enables the subscriber to filter out unwanted messages.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sns_subscription#filter_policy CcSubscription#filter_policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sns_subscription#filter_policy CcSubscription#filter_policy}
     */
     readonly filterPolicy?: string;
     /**
     * This attribute lets you choose the filtering scope by using one of the following string value types: MessageAttributes (default) and MessageBody.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sns_subscription#filter_policy_scope CcSubscription#filter_policy_scope}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sns_subscription#filter_policy_scope CcSubscription#filter_policy_scope}
     */
     readonly filterPolicyScope?: string;
     /**
     * The subscription's protocol.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sns_subscription#protocol CcSubscription#protocol}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sns_subscription#protocol CcSubscription#protocol}
     */
     readonly protocol: string;
     /**
     * When set to true, enables raw message delivery. Raw messages don't contain any JSON formatting and can be sent to Amazon SQS and HTTP/S endpoints.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sns_subscription#raw_message_delivery CcSubscription#raw_message_delivery}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sns_subscription#raw_message_delivery CcSubscription#raw_message_delivery}
     */
     readonly rawMessageDelivery?: boolean | cdktn.IResolvable;
     /**
     * When specified, sends undeliverable messages to the specified Amazon SQS dead-letter queue. Messages that can't be delivered due to client errors are held in the dead-letter queue for further analysis or reprocessing.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sns_subscription#redrive_policy CcSubscription#redrive_policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sns_subscription#redrive_policy CcSubscription#redrive_policy}
     */
     readonly redrivePolicy?: string;
     /**
     * For cross-region subscriptions, the region in which the topic resides.If no region is specified, AWS CloudFormation uses the region of the caller as the default.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sns_subscription#region CcSubscription#region}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sns_subscription#region CcSubscription#region}
     */
     readonly region?: string;
     /**
     * Specifies whether Amazon SNS resends the notification to the subscription when a message's attribute changes.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sns_subscription#replay_policy CcSubscription#replay_policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sns_subscription#replay_policy CcSubscription#replay_policy}
     */
     readonly replayPolicy?: string;
     /**
     * This property applies only to Amazon Data Firehose delivery stream subscriptions.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sns_subscription#subscription_role_arn CcSubscription#subscription_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sns_subscription#subscription_role_arn CcSubscription#subscription_role_arn}
     */
     readonly subscriptionRoleArn?: string;
     /**
     * The ARN of the topic to subscribe to.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sns_subscription#topic_arn CcSubscription#topic_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sns_subscription#topic_arn CcSubscription#topic_arn}
     */
     readonly topicArn: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sns_subscription awscc_sns_subscription}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sns_subscription awscc_sns_subscription}
 */
 export class CcSubscription extends cdktn.TerraformResource {
 
@@ -91,7 +91,7 @@ export class CcSubscription extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcSubscription resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcSubscription to import
-    * @param importFromId The id of the existing CcSubscription that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sns_subscription#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcSubscription that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sns_subscription#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcSubscription to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -103,7 +103,7 @@ export class CcSubscription extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sns_subscription awscc_sns_subscription} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sns_subscription awscc_sns_subscription} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -114,7 +114,7 @@ export class CcSubscription extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_sns_subscription',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,

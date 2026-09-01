@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appflow_connector
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appflow_connector
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,31 +9,31 @@ export interface CcConnectorProps extends cdktn.TerraformMetaArguments {
     /**
     *  The name of the connector. The name is unique for each ConnectorRegistration in your AWS account.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appflow_connector#connector_label CcConnector#connector_label}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appflow_connector#connector_label CcConnector#connector_label}
     */
     readonly connectorLabel?: string;
     /**
     * Contains information about the configuration of the connector being registered.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appflow_connector#connector_provisioning_config CcConnector#connector_provisioning_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appflow_connector#connector_provisioning_config CcConnector#connector_provisioning_config}
     */
     readonly connectorProvisioningConfig: CcConnector.ConnectorProvisioningConfigProperty;
     /**
     * The provisioning type of the connector. Currently the only supported value is LAMBDA. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appflow_connector#connector_provisioning_type CcConnector#connector_provisioning_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appflow_connector#connector_provisioning_type CcConnector#connector_provisioning_type}
     */
     readonly connectorProvisioningType: string;
     /**
     * A description about the connector that's being registered.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appflow_connector#description CcConnector#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appflow_connector#description CcConnector#description}
     */
     readonly description?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appflow_connector awscc_appflow_connector}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appflow_connector awscc_appflow_connector}
 */
 export class CcConnector extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CcConnector extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcConnector resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcConnector to import
-    * @param importFromId The id of the existing CcConnector that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appflow_connector#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcConnector that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appflow_connector#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcConnector to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CcConnector extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appflow_connector awscc_appflow_connector} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appflow_connector awscc_appflow_connector} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -72,7 +72,7 @@ export class CcConnector extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_appflow_connector',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -271,7 +271,7 @@ export interface LambdaConnectorProvisioningConfigProperty {
     /**
     * Lambda ARN of the connector being registered.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appflow_connector#lambda_arn CcConnector#lambda_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appflow_connector#lambda_arn CcConnector#lambda_arn}
     */
     readonly lambdaArn?: string;
 }
@@ -337,7 +337,7 @@ export interface ConnectorProvisioningConfigProperty {
     /**
     * Contains information about the configuration of the lambda which is being registered as the connector.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appflow_connector#lambda CcConnector#lambda}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appflow_connector#lambda CcConnector#lambda}
     */
     readonly lambda?: LambdaConnectorProvisioningConfigProperty;
 }

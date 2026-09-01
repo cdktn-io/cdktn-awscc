@@ -1,47 +1,47 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_knowledge_base
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_knowledge_base
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcKnowledgeBaseProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_knowledge_base#description CcKnowledgeBase#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_knowledge_base#description CcKnowledgeBase#description}
     */
     readonly description?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_knowledge_base#knowledge_base_type CcKnowledgeBase#knowledge_base_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_knowledge_base#knowledge_base_type CcKnowledgeBase#knowledge_base_type}
     */
     readonly knowledgeBaseType: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_knowledge_base#name CcKnowledgeBase#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_knowledge_base#name CcKnowledgeBase#name}
     */
     readonly name: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_knowledge_base#rendering_configuration CcKnowledgeBase#rendering_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_knowledge_base#rendering_configuration CcKnowledgeBase#rendering_configuration}
     */
     readonly renderingConfiguration?: CcKnowledgeBase.RenderingConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_knowledge_base#server_side_encryption_configuration CcKnowledgeBase#server_side_encryption_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_knowledge_base#server_side_encryption_configuration CcKnowledgeBase#server_side_encryption_configuration}
     */
     readonly serverSideEncryptionConfiguration?: CcKnowledgeBase.ServerSideEncryptionConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_knowledge_base#source_configuration CcKnowledgeBase#source_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_knowledge_base#source_configuration CcKnowledgeBase#source_configuration}
     */
     readonly sourceConfiguration?: CcKnowledgeBase.SourceConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_knowledge_base#tags CcKnowledgeBase#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_knowledge_base#tags CcKnowledgeBase#tags}
     */
     readonly tags?: CcKnowledgeBase.TagProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_knowledge_base#vector_ingestion_configuration CcKnowledgeBase#vector_ingestion_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_knowledge_base#vector_ingestion_configuration CcKnowledgeBase#vector_ingestion_configuration}
     */
     readonly vectorIngestionConfiguration?: CcKnowledgeBase.VectorIngestionConfigurationProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_knowledge_base awscc_wisdom_knowledge_base}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_knowledge_base awscc_wisdom_knowledge_base}
 */
 export class CcKnowledgeBase extends cdktn.TerraformResource {
 
@@ -57,7 +57,7 @@ export class CcKnowledgeBase extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcKnowledgeBase resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcKnowledgeBase to import
-    * @param importFromId The id of the existing CcKnowledgeBase that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_knowledge_base#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcKnowledgeBase that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_knowledge_base#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcKnowledgeBase to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -69,7 +69,7 @@ export class CcKnowledgeBase extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_knowledge_base awscc_wisdom_knowledge_base} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_knowledge_base awscc_wisdom_knowledge_base} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -80,7 +80,7 @@ export class CcKnowledgeBase extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_wisdom_knowledge_base',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -1007,7 +1007,7 @@ export function ccKnowledgeBaseVectorIngestionConfigurationPropertyToHclTerrafor
 export namespace CcKnowledgeBase {
 export interface RenderingConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_knowledge_base#template_uri CcKnowledgeBase#template_uri}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_knowledge_base#template_uri CcKnowledgeBase#template_uri}
     */
     readonly templateUri?: string;
 }
@@ -1071,7 +1071,7 @@ export class RenderingConfigurationPropertyOutputReference extends cdktn.Complex
 }
 export interface ServerSideEncryptionConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_knowledge_base#kms_key_id CcKnowledgeBase#kms_key_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_knowledge_base#kms_key_id CcKnowledgeBase#kms_key_id}
     */
     readonly kmsKeyId?: string;
 }
@@ -1135,11 +1135,11 @@ export class ServerSideEncryptionConfigurationPropertyOutputReference extends cd
 }
 export interface AppIntegrationsConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_knowledge_base#app_integration_arn CcKnowledgeBase#app_integration_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_knowledge_base#app_integration_arn CcKnowledgeBase#app_integration_arn}
     */
     readonly appIntegrationArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_knowledge_base#object_fields CcKnowledgeBase#object_fields}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_knowledge_base#object_fields CcKnowledgeBase#object_fields}
     */
     readonly objectFields?: string[];
 }
@@ -1225,7 +1225,7 @@ export class AppIntegrationsConfigurationPropertyOutputReference extends cdktn.C
 }
 export interface CrawlerLimitsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_knowledge_base#rate_limit CcKnowledgeBase#rate_limit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_knowledge_base#rate_limit CcKnowledgeBase#rate_limit}
     */
     readonly rateLimit?: number;
 }
@@ -1289,7 +1289,7 @@ export class CrawlerLimitsPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface SeedUrlProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_knowledge_base#url CcKnowledgeBase#url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_knowledge_base#url CcKnowledgeBase#url}
     */
     readonly url?: string;
 }
@@ -1375,7 +1375,7 @@ export class SeedUrlPropertyList extends cdktn.ComplexList {
 }
 export interface UrlConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_knowledge_base#seed_urls CcKnowledgeBase#seed_urls}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_knowledge_base#seed_urls CcKnowledgeBase#seed_urls}
     */
     readonly seedUrls?: SeedUrlProperty[] | cdktn.IResolvable;
 }
@@ -1439,23 +1439,23 @@ export class UrlConfigurationPropertyOutputReference extends cdktn.ComplexObject
 }
 export interface WebCrawlerConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_knowledge_base#crawler_limits CcKnowledgeBase#crawler_limits}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_knowledge_base#crawler_limits CcKnowledgeBase#crawler_limits}
     */
     readonly crawlerLimits?: CrawlerLimitsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_knowledge_base#exclusion_filters CcKnowledgeBase#exclusion_filters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_knowledge_base#exclusion_filters CcKnowledgeBase#exclusion_filters}
     */
     readonly exclusionFilters?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_knowledge_base#inclusion_filters CcKnowledgeBase#inclusion_filters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_knowledge_base#inclusion_filters CcKnowledgeBase#inclusion_filters}
     */
     readonly inclusionFilters?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_knowledge_base#scope CcKnowledgeBase#scope}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_knowledge_base#scope CcKnowledgeBase#scope}
     */
     readonly scope?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_knowledge_base#url_configuration CcKnowledgeBase#url_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_knowledge_base#url_configuration CcKnowledgeBase#url_configuration}
     */
     readonly urlConfiguration?: UrlConfigurationProperty;
 }
@@ -1607,7 +1607,7 @@ export class WebCrawlerConfigurationPropertyOutputReference extends cdktn.Comple
 }
 export interface ManagedSourceConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_knowledge_base#web_crawler_configuration CcKnowledgeBase#web_crawler_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_knowledge_base#web_crawler_configuration CcKnowledgeBase#web_crawler_configuration}
     */
     readonly webCrawlerConfiguration?: WebCrawlerConfigurationProperty;
 }
@@ -1671,11 +1671,11 @@ export class ManagedSourceConfigurationPropertyOutputReference extends cdktn.Com
 }
 export interface SourceConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_knowledge_base#app_integrations CcKnowledgeBase#app_integrations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_knowledge_base#app_integrations CcKnowledgeBase#app_integrations}
     */
     readonly appIntegrations?: AppIntegrationsConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_knowledge_base#managed_source_configuration CcKnowledgeBase#managed_source_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_knowledge_base#managed_source_configuration CcKnowledgeBase#managed_source_configuration}
     */
     readonly managedSourceConfiguration?: ManagedSourceConfigurationProperty;
 }
@@ -1761,11 +1761,11 @@ export class SourceConfigurationPropertyOutputReference extends cdktn.ComplexObj
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_knowledge_base#key CcKnowledgeBase#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_knowledge_base#key CcKnowledgeBase#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_knowledge_base#value CcKnowledgeBase#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_knowledge_base#value CcKnowledgeBase#value}
     */
     readonly value?: string;
 }
@@ -1873,11 +1873,11 @@ export class TagPropertyList extends cdktn.ComplexList {
 }
 export interface FixedSizeChunkingConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_knowledge_base#max_tokens CcKnowledgeBase#max_tokens}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_knowledge_base#max_tokens CcKnowledgeBase#max_tokens}
     */
     readonly maxTokens?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_knowledge_base#overlap_percentage CcKnowledgeBase#overlap_percentage}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_knowledge_base#overlap_percentage CcKnowledgeBase#overlap_percentage}
     */
     readonly overlapPercentage?: number;
 }
@@ -1963,7 +1963,7 @@ export class FixedSizeChunkingConfigurationPropertyOutputReference extends cdktn
 }
 export interface HierarchicalChunkingLevelConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_knowledge_base#max_tokens CcKnowledgeBase#max_tokens}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_knowledge_base#max_tokens CcKnowledgeBase#max_tokens}
     */
     readonly maxTokens?: number;
 }
@@ -2049,11 +2049,11 @@ export class HierarchicalChunkingLevelConfigurationPropertyList extends cdktn.Co
 }
 export interface HierarchicalChunkingConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_knowledge_base#level_configurations CcKnowledgeBase#level_configurations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_knowledge_base#level_configurations CcKnowledgeBase#level_configurations}
     */
     readonly levelConfigurations?: HierarchicalChunkingLevelConfigurationProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_knowledge_base#overlap_tokens CcKnowledgeBase#overlap_tokens}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_knowledge_base#overlap_tokens CcKnowledgeBase#overlap_tokens}
     */
     readonly overlapTokens?: number;
 }
@@ -2139,15 +2139,15 @@ export class HierarchicalChunkingConfigurationPropertyOutputReference extends cd
 }
 export interface SemanticChunkingConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_knowledge_base#breakpoint_percentile_threshold CcKnowledgeBase#breakpoint_percentile_threshold}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_knowledge_base#breakpoint_percentile_threshold CcKnowledgeBase#breakpoint_percentile_threshold}
     */
     readonly breakpointPercentileThreshold?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_knowledge_base#buffer_size CcKnowledgeBase#buffer_size}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_knowledge_base#buffer_size CcKnowledgeBase#buffer_size}
     */
     readonly bufferSize?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_knowledge_base#max_tokens CcKnowledgeBase#max_tokens}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_knowledge_base#max_tokens CcKnowledgeBase#max_tokens}
     */
     readonly maxTokens?: number;
 }
@@ -2255,19 +2255,19 @@ export class SemanticChunkingConfigurationPropertyOutputReference extends cdktn.
 }
 export interface ChunkingConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_knowledge_base#chunking_strategy CcKnowledgeBase#chunking_strategy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_knowledge_base#chunking_strategy CcKnowledgeBase#chunking_strategy}
     */
     readonly chunkingStrategy?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_knowledge_base#fixed_size_chunking_configuration CcKnowledgeBase#fixed_size_chunking_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_knowledge_base#fixed_size_chunking_configuration CcKnowledgeBase#fixed_size_chunking_configuration}
     */
     readonly fixedSizeChunkingConfiguration?: FixedSizeChunkingConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_knowledge_base#hierarchical_chunking_configuration CcKnowledgeBase#hierarchical_chunking_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_knowledge_base#hierarchical_chunking_configuration CcKnowledgeBase#hierarchical_chunking_configuration}
     */
     readonly hierarchicalChunkingConfiguration?: HierarchicalChunkingConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_knowledge_base#semantic_chunking_configuration CcKnowledgeBase#semantic_chunking_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_knowledge_base#semantic_chunking_configuration CcKnowledgeBase#semantic_chunking_configuration}
     */
     readonly semanticChunkingConfiguration?: SemanticChunkingConfigurationProperty;
 }
@@ -2397,7 +2397,7 @@ export class ChunkingConfigurationPropertyOutputReference extends cdktn.ComplexO
 }
 export interface ParsingPromptProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_knowledge_base#parsing_prompt_text CcKnowledgeBase#parsing_prompt_text}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_knowledge_base#parsing_prompt_text CcKnowledgeBase#parsing_prompt_text}
     */
     readonly parsingPromptText?: string;
 }
@@ -2461,11 +2461,11 @@ export class ParsingPromptPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface BedrockFoundationModelConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_knowledge_base#model_arn CcKnowledgeBase#model_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_knowledge_base#model_arn CcKnowledgeBase#model_arn}
     */
     readonly modelArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_knowledge_base#parsing_prompt CcKnowledgeBase#parsing_prompt}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_knowledge_base#parsing_prompt CcKnowledgeBase#parsing_prompt}
     */
     readonly parsingPrompt?: ParsingPromptProperty;
 }
@@ -2551,11 +2551,11 @@ export class BedrockFoundationModelConfigurationPropertyOutputReference extends 
 }
 export interface ParsingConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_knowledge_base#bedrock_foundation_model_configuration CcKnowledgeBase#bedrock_foundation_model_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_knowledge_base#bedrock_foundation_model_configuration CcKnowledgeBase#bedrock_foundation_model_configuration}
     */
     readonly bedrockFoundationModelConfiguration?: BedrockFoundationModelConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_knowledge_base#parsing_strategy CcKnowledgeBase#parsing_strategy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_knowledge_base#parsing_strategy CcKnowledgeBase#parsing_strategy}
     */
     readonly parsingStrategy?: string;
 }
@@ -2641,11 +2641,11 @@ export class ParsingConfigurationPropertyOutputReference extends cdktn.ComplexOb
 }
 export interface VectorIngestionConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_knowledge_base#chunking_configuration CcKnowledgeBase#chunking_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_knowledge_base#chunking_configuration CcKnowledgeBase#chunking_configuration}
     */
     readonly chunkingConfiguration?: ChunkingConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_knowledge_base#parsing_configuration CcKnowledgeBase#parsing_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_knowledge_base#parsing_configuration CcKnowledgeBase#parsing_configuration}
     */
     readonly parsingConfiguration?: ParsingConfigurationProperty;
 }

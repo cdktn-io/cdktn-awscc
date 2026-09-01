@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_report_plan
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_report_plan
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,37 +9,37 @@ export interface CcReportPlanProps extends cdktn.TerraformMetaArguments {
     /**
     * A structure that contains information about where and how to deliver your reports, specifically your Amazon S3 bucket name, S3 key prefix, and the formats of your reports.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_report_plan#report_delivery_channel CcReportPlan#report_delivery_channel}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_report_plan#report_delivery_channel CcReportPlan#report_delivery_channel}
     */
     readonly reportDeliveryChannel: CcReportPlan.ReportDeliveryChannelProperty;
     /**
     * An optional description of the report plan with a maximum of 1,024 characters.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_report_plan#report_plan_description CcReportPlan#report_plan_description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_report_plan#report_plan_description CcReportPlan#report_plan_description}
     */
     readonly reportPlanDescription?: string;
     /**
     * The unique name of the report plan. The name must be between 1 and 256 characters, starting with a letter, and consisting of letters (a-z, A-Z), numbers (0-9), and underscores (_).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_report_plan#report_plan_name CcReportPlan#report_plan_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_report_plan#report_plan_name CcReportPlan#report_plan_name}
     */
     readonly reportPlanName?: string;
     /**
     * Metadata that you can assign to help organize the report plans that you create. Each tag is a key-value pair.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_report_plan#report_plan_tags CcReportPlan#report_plan_tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_report_plan#report_plan_tags CcReportPlan#report_plan_tags}
     */
     readonly reportPlanTags?: CcReportPlan.TagProperty[] | cdktn.IResolvable;
     /**
     * Identifies the report template for the report. Reports are built using a report template.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_report_plan#report_setting CcReportPlan#report_setting}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_report_plan#report_setting CcReportPlan#report_setting}
     */
     readonly reportSetting: CcReportPlan.ReportSettingProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_report_plan awscc_backup_report_plan}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_report_plan awscc_backup_report_plan}
 */
 export class CcReportPlan extends cdktn.TerraformResource {
 
@@ -55,7 +55,7 @@ export class CcReportPlan extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcReportPlan resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcReportPlan to import
-    * @param importFromId The id of the existing CcReportPlan that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_report_plan#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcReportPlan that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_report_plan#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcReportPlan to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -67,7 +67,7 @@ export class CcReportPlan extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_report_plan awscc_backup_report_plan} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_report_plan awscc_backup_report_plan} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -78,7 +78,7 @@ export class CcReportPlan extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_backup_report_plan',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -380,19 +380,19 @@ export interface ReportDeliveryChannelProperty {
     /**
     * A list of the format of your reports: CSV, JSON, or both. If not specified, the default format is CSV.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_report_plan#formats CcReportPlan#formats}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_report_plan#formats CcReportPlan#formats}
     */
     readonly formats?: string[];
     /**
     * The unique name of the S3 bucket that receives your reports.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_report_plan#s3_bucket_name CcReportPlan#s3_bucket_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_report_plan#s3_bucket_name CcReportPlan#s3_bucket_name}
     */
     readonly s3BucketName: string;
     /**
     * The prefix for where AWS Backup Audit Manager delivers your reports to Amazon S3. The prefix is this part of the following path: s3://your-bucket-name/prefix/Backup/us-west-2/year/month/day/report-name. If not specified, there is no prefix.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_report_plan#s3_key_prefix CcReportPlan#s3_key_prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_report_plan#s3_key_prefix CcReportPlan#s3_key_prefix}
     */
     readonly s3KeyPrefix?: string;
 }
@@ -499,13 +499,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_report_plan#key CcReportPlan#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_report_plan#key CcReportPlan#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 0 to 256 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_report_plan#value CcReportPlan#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_report_plan#value CcReportPlan#value}
     */
     readonly value?: string;
 }
@@ -615,31 +615,31 @@ export interface ReportSettingProperty {
     /**
     * The list of AWS accounts that a report covers.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_report_plan#accounts CcReportPlan#accounts}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_report_plan#accounts CcReportPlan#accounts}
     */
     readonly accounts?: string[];
     /**
     * The Amazon Resource Names (ARNs) of the frameworks a report covers.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_report_plan#framework_arns CcReportPlan#framework_arns}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_report_plan#framework_arns CcReportPlan#framework_arns}
     */
     readonly frameworkArns?: string[];
     /**
     * The list of AWS organization units that a report covers.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_report_plan#organization_units CcReportPlan#organization_units}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_report_plan#organization_units CcReportPlan#organization_units}
     */
     readonly organizationUnits?: string[];
     /**
     * The list of AWS regions that a report covers.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_report_plan#regions CcReportPlan#regions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_report_plan#regions CcReportPlan#regions}
     */
     readonly regions?: string[];
     /**
     * Identifies the report template for the report. Reports are built using a report template. The report templates are: `BACKUP_JOB_REPORT | COPY_JOB_REPORT | RESTORE_JOB_REPORT`
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_report_plan#report_template CcReportPlan#report_template}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_report_plan#report_template CcReportPlan#report_template}
     */
     readonly reportTemplate: string;
 }

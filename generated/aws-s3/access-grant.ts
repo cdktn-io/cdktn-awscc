@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3_access_grant
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3_access_grant
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,47 +9,47 @@ export interface CcAccessGrantProps extends cdktn.TerraformMetaArguments {
     /**
     * The configuration options of the grant location, which is the S3 path to the data to which you are granting access.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3_access_grant#access_grants_location_configuration CcAccessGrant#access_grants_location_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3_access_grant#access_grants_location_configuration CcAccessGrant#access_grants_location_configuration}
     */
     readonly accessGrantsLocationConfiguration?: CcAccessGrant.AccessGrantsLocationConfigurationProperty;
     /**
     * The custom S3 location to be accessed by the grantee
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3_access_grant#access_grants_location_id CcAccessGrant#access_grants_location_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3_access_grant#access_grants_location_id CcAccessGrant#access_grants_location_id}
     */
     readonly accessGrantsLocationId: string;
     /**
     * The ARN of the application grantees will use to access the location
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3_access_grant#application_arn CcAccessGrant#application_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3_access_grant#application_arn CcAccessGrant#application_arn}
     */
     readonly applicationArn?: string;
     /**
     * The principal who will be granted permission to access S3.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3_access_grant#grantee CcAccessGrant#grantee}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3_access_grant#grantee CcAccessGrant#grantee}
     */
     readonly grantee: CcAccessGrant.GranteeProperty;
     /**
     * The level of access to be afforded to the grantee
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3_access_grant#permission CcAccessGrant#permission}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3_access_grant#permission CcAccessGrant#permission}
     */
     readonly permission: string;
     /**
     * The type of S3SubPrefix.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3_access_grant#s3_prefix_type CcAccessGrant#s3_prefix_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3_access_grant#s3_prefix_type CcAccessGrant#s3_prefix_type}
     */
     readonly s3PrefixType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3_access_grant#tags CcAccessGrant#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3_access_grant#tags CcAccessGrant#tags}
     */
     readonly tags?: CcAccessGrant.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3_access_grant awscc_s3_access_grant}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3_access_grant awscc_s3_access_grant}
 */
 export class CcAccessGrant extends cdktn.TerraformResource {
 
@@ -65,7 +65,7 @@ export class CcAccessGrant extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcAccessGrant resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcAccessGrant to import
-    * @param importFromId The id of the existing CcAccessGrant that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3_access_grant#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcAccessGrant that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3_access_grant#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcAccessGrant to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -77,7 +77,7 @@ export class CcAccessGrant extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3_access_grant awscc_s3_access_grant} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3_access_grant awscc_s3_access_grant} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -88,7 +88,7 @@ export class CcAccessGrant extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_s3_access_grant',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -410,7 +410,7 @@ export interface AccessGrantsLocationConfigurationProperty {
     /**
     * The S3 sub prefix of a registered location in your S3 Access Grants instance
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3_access_grant#s3_sub_prefix CcAccessGrant#s3_sub_prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3_access_grant#s3_sub_prefix CcAccessGrant#s3_sub_prefix}
     */
     readonly s3SubPrefix?: string;
 }
@@ -476,13 +476,13 @@ export interface GranteeProperty {
     /**
     * The unique identifier of the Grantee
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3_access_grant#grantee_identifier CcAccessGrant#grantee_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3_access_grant#grantee_identifier CcAccessGrant#grantee_identifier}
     */
     readonly granteeIdentifier: string;
     /**
     * Configures the transfer acceleration state for an Amazon S3 bucket.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3_access_grant#grantee_type CcAccessGrant#grantee_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3_access_grant#grantee_type CcAccessGrant#grantee_type}
     */
     readonly granteeType: string;
 }
@@ -562,11 +562,11 @@ export class GranteePropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3_access_grant#key CcAccessGrant#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3_access_grant#key CcAccessGrant#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3_access_grant#value CcAccessGrant#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3_access_grant#value CcAccessGrant#value}
     */
     readonly value?: string;
 }

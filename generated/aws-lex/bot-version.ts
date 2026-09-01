@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot_version
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lex_bot_version
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,25 +9,25 @@ export interface CcBotVersionProps extends cdktn.TerraformMetaArguments {
     /**
     * Unique ID of resource
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot_version#bot_id CcBotVersion#bot_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lex_bot_version#bot_id CcBotVersion#bot_id}
     */
     readonly botId: string;
     /**
     * Specifies the locales that Amazon Lex adds to this version. You can choose the Draft version or any other previously published version for each locale.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot_version#bot_version_locale_specification CcBotVersion#bot_version_locale_specification}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lex_bot_version#bot_version_locale_specification CcBotVersion#bot_version_locale_specification}
     */
     readonly botVersionLocaleSpecification: CcBotVersion.BotVersionLocaleSpecificationProperty[] | cdktn.IResolvable;
     /**
     * A description of the version. Use the description to help identify the version in lists.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot_version#description CcBotVersion#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lex_bot_version#description CcBotVersion#description}
     */
     readonly description?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot_version awscc_lex_bot_version}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lex_bot_version awscc_lex_bot_version}
 */
 export class CcBotVersion extends cdktn.TerraformResource {
 
@@ -43,7 +43,7 @@ export class CcBotVersion extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcBotVersion resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcBotVersion to import
-    * @param importFromId The id of the existing CcBotVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot_version#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcBotVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lex_bot_version#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcBotVersion to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -55,7 +55,7 @@ export class CcBotVersion extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot_version awscc_lex_bot_version} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lex_bot_version awscc_lex_bot_version} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +66,7 @@ export class CcBotVersion extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_lex_bot_version',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -248,7 +248,7 @@ export interface BotVersionLocaleDetailsProperty {
     /**
     * The version of a bot.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot_version#source_bot_version CcBotVersion#source_bot_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lex_bot_version#source_bot_version CcBotVersion#source_bot_version}
     */
     readonly sourceBotVersion: string;
 }
@@ -311,13 +311,13 @@ export interface BotVersionLocaleSpecificationProperty {
     /**
     * The version of a bot used for a bot locale.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot_version#bot_version_locale_details CcBotVersion#bot_version_locale_details}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lex_bot_version#bot_version_locale_details CcBotVersion#bot_version_locale_details}
     */
     readonly botVersionLocaleDetails: BotVersionLocaleDetailsProperty;
     /**
     * The identifier of the language and locale that the bot will be used in.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lex_bot_version#locale_id CcBotVersion#locale_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lex_bot_version#locale_id CcBotVersion#locale_id}
     */
     readonly localeId: string;
 }

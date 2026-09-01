@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_database
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_database
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,25 +9,25 @@ export interface CcDatabaseProps extends cdktn.TerraformMetaArguments {
     /**
     * The AWS account ID for the account in which to create the catalog object.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_database#catalog_id CcDatabase#catalog_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_database#catalog_id CcDatabase#catalog_id}
     */
     readonly catalogId: string;
     /**
     * The metadata for the database.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_database#database_input CcDatabase#database_input}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_database#database_input CcDatabase#database_input}
     */
     readonly databaseInput: CcDatabase.DatabaseInputProperty;
     /**
     * The name of the database. For hive compatibility, this is folded to lowercase when it is store.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_database#database_name CcDatabase#database_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_database#database_name CcDatabase#database_name}
     */
     readonly databaseName?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_database awscc_glue_database}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_database awscc_glue_database}
 */
 export class CcDatabase extends cdktn.TerraformResource {
 
@@ -43,7 +43,7 @@ export class CcDatabase extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcDatabase resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcDatabase to import
-    * @param importFromId The id of the existing CcDatabase that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_database#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcDatabase that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_database#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcDatabase to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -55,7 +55,7 @@ export class CcDatabase extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_database awscc_glue_database} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_database awscc_glue_database} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +66,7 @@ export class CcDatabase extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_glue_database',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -396,7 +396,7 @@ export interface DataLakePrincipalProperty {
     /**
     * An identifier for the AWS Lake Formation principal.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_database#data_lake_principal_identifier CcDatabase#data_lake_principal_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_database#data_lake_principal_identifier CcDatabase#data_lake_principal_identifier}
     */
     readonly dataLakePrincipalIdentifier?: string;
 }
@@ -462,13 +462,13 @@ export interface PrincipalPrivilegesProperty {
     /**
     * The permissions that are granted to the principal.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_database#permissions CcDatabase#permissions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_database#permissions CcDatabase#permissions}
     */
     readonly permissions?: string[];
     /**
     * The principal who is granted permissions.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_database#principal CcDatabase#principal}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_database#principal CcDatabase#principal}
     */
     readonly principal?: DataLakePrincipalProperty;
 }
@@ -578,13 +578,13 @@ export interface FederatedDatabaseProperty {
     /**
     * The name of the connection to the external metastore.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_database#connection_name CcDatabase#connection_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_database#connection_name CcDatabase#connection_name}
     */
     readonly connectionName?: string;
     /**
     * A unique identifier for the federated database.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_database#identifier CcDatabase#identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_database#identifier CcDatabase#identifier}
     */
     readonly identifier?: string;
 }
@@ -672,19 +672,19 @@ export interface DatabaseIdentifierProperty {
     /**
     * The ID of the Data Catalog in which the database resides.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_database#catalog_id CcDatabase#catalog_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_database#catalog_id CcDatabase#catalog_id}
     */
     readonly catalogId?: string;
     /**
     * The name of the catalog database.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_database#database_name CcDatabase#database_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_database#database_name CcDatabase#database_name}
     */
     readonly databaseName?: string;
     /**
     * Region of the target database.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_database#region CcDatabase#region}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_database#region CcDatabase#region}
     */
     readonly region?: string;
 }
@@ -794,43 +794,43 @@ export interface DatabaseInputProperty {
     /**
     * Creates a set of default permissions on the table for principals. Used by AWS Lake Formation. Not used in the normal course of AWS Glue operations.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_database#create_table_default_permissions CcDatabase#create_table_default_permissions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_database#create_table_default_permissions CcDatabase#create_table_default_permissions}
     */
     readonly createTableDefaultPermissions?: PrincipalPrivilegesProperty[] | cdktn.IResolvable;
     /**
     * A description of the database.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_database#description CcDatabase#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_database#description CcDatabase#description}
     */
     readonly description?: string;
     /**
     * A FederatedDatabase structure that references an entity outside the AWS Glue Data Catalog.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_database#federated_database CcDatabase#federated_database}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_database#federated_database CcDatabase#federated_database}
     */
     readonly federatedDatabase?: FederatedDatabaseProperty;
     /**
     * The location of the database (for example, an HDFS path).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_database#location_uri CcDatabase#location_uri}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_database#location_uri CcDatabase#location_uri}
     */
     readonly locationUri?: string;
     /**
     * The name of the database. For hive compatibility, this is folded to lowercase when it is stored.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_database#name CcDatabase#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_database#name CcDatabase#name}
     */
     readonly name?: string;
     /**
     * These key-value pairs define parameters and properties of the database.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_database#parameters CcDatabase#parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_database#parameters CcDatabase#parameters}
     */
     readonly parameters?: string;
     /**
     * A DatabaseIdentifier structure that describes a target database for resource linking.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_database#target_database CcDatabase#target_database}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_database#target_database CcDatabase#target_database}
     */
     readonly targetDatabase?: DatabaseIdentifierProperty;
 }

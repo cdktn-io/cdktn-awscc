@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_graph_ql_api
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appsync_graph_ql_api
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,85 +9,85 @@ export interface CcGraphQLApiProps extends cdktn.TerraformMetaArguments {
     /**
     * A list of additional authentication providers for the GraphqlApi API.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_graph_ql_api#additional_authentication_providers CcGraphQLApi#additional_authentication_providers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appsync_graph_ql_api#additional_authentication_providers CcGraphQLApi#additional_authentication_providers}
     */
     readonly additionalAuthenticationProviders?: CcGraphQLApi.AdditionalAuthenticationProviderProperty[] | cdktn.IResolvable;
     /**
     * The value that indicates whether the GraphQL API is a standard API (GRAPHQL) or merged API (MERGED).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_graph_ql_api#api_type CcGraphQLApi#api_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appsync_graph_ql_api#api_type CcGraphQLApi#api_type}
     */
     readonly apiType?: string;
     /**
     * Security configuration for your GraphQL API
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_graph_ql_api#authentication_type CcGraphQLApi#authentication_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appsync_graph_ql_api#authentication_type CcGraphQLApi#authentication_type}
     */
     readonly authenticationType: string;
     /**
     * Enables and controls the enhanced metrics feature. Enhanced metrics emit granular data on API usage and performance such as AppSync request and error counts, latency, and cache hits/misses. All enhanced metric data is sent to your CloudWatch account, and you can configure the types of data that will be sent.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_graph_ql_api#enhanced_metrics_config CcGraphQLApi#enhanced_metrics_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appsync_graph_ql_api#enhanced_metrics_config CcGraphQLApi#enhanced_metrics_config}
     */
     readonly enhancedMetricsConfig?: CcGraphQLApi.EnhancedMetricsConfigProperty;
     /**
     * A map containing the list of resources with their properties and environment variables.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_graph_ql_api#environment_variables CcGraphQLApi#environment_variables}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appsync_graph_ql_api#environment_variables CcGraphQLApi#environment_variables}
     */
     readonly environmentVariables?: { [key: string]: string };
     /**
     * Sets the value of the GraphQL API to enable (ENABLED) or disable (DISABLED) introspection. If no value is provided, the introspection configuration will be set to ENABLED by default. This field will produce an error if the operation attempts to use the introspection feature while this field is disabled.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_graph_ql_api#introspection_config CcGraphQLApi#introspection_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appsync_graph_ql_api#introspection_config CcGraphQLApi#introspection_config}
     */
     readonly introspectionConfig?: string;
     /**
     * A LambdaAuthorizerConfig holds configuration on how to authorize AWS AppSync API access when using the AWS_LAMBDA authorizer mode. Be aware that an AWS AppSync API may have only one Lambda authorizer configured at a time.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_graph_ql_api#lambda_authorizer_config CcGraphQLApi#lambda_authorizer_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appsync_graph_ql_api#lambda_authorizer_config CcGraphQLApi#lambda_authorizer_config}
     */
     readonly lambdaAuthorizerConfig?: CcGraphQLApi.LambdaAuthorizerConfigProperty;
     /**
     * The Amazon CloudWatch Logs configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_graph_ql_api#log_config CcGraphQLApi#log_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appsync_graph_ql_api#log_config CcGraphQLApi#log_config}
     */
     readonly logConfig?: CcGraphQLApi.LogConfigProperty;
     /**
     * The AWS Identity and Access Management service role ARN for a merged API. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_graph_ql_api#merged_api_execution_role_arn CcGraphQLApi#merged_api_execution_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appsync_graph_ql_api#merged_api_execution_role_arn CcGraphQLApi#merged_api_execution_role_arn}
     */
     readonly mergedApiExecutionRoleArn?: string;
     /**
     * The API name
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_graph_ql_api#name CcGraphQLApi#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appsync_graph_ql_api#name CcGraphQLApi#name}
     */
     readonly name: string;
     /**
     * The OpenID Connect configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_graph_ql_api#open_id_connect_config CcGraphQLApi#open_id_connect_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appsync_graph_ql_api#open_id_connect_config CcGraphQLApi#open_id_connect_config}
     */
     readonly openIdConnectConfig?: CcGraphQLApi.OpenIDConnectConfigProperty;
     /**
     * The owner contact information for an API resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_graph_ql_api#owner_contact CcGraphQLApi#owner_contact}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appsync_graph_ql_api#owner_contact CcGraphQLApi#owner_contact}
     */
     readonly ownerContact?: string;
     /**
     * The maximum depth a query can have in a single request. Depth refers to the amount of nested levels allowed in the body of query.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_graph_ql_api#query_depth_limit CcGraphQLApi#query_depth_limit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appsync_graph_ql_api#query_depth_limit CcGraphQLApi#query_depth_limit}
     */
     readonly queryDepthLimit?: number;
     /**
     * The maximum number of resolvers that can be invoked in a single request.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_graph_ql_api#resolver_count_limit CcGraphQLApi#resolver_count_limit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appsync_graph_ql_api#resolver_count_limit CcGraphQLApi#resolver_count_limit}
     */
     readonly resolverCountLimit?: number;
     /**
@@ -95,7 +95,7 @@ export interface CcGraphQLApiProps extends cdktn.TerraformMetaArguments {
     * 
     * 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_graph_ql_api#tags CcGraphQLApi#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appsync_graph_ql_api#tags CcGraphQLApi#tags}
     */
     readonly tags?: CcGraphQLApi.TagProperty[] | cdktn.IResolvable;
     /**
@@ -103,13 +103,13 @@ export interface CcGraphQLApiProps extends cdktn.TerraformMetaArguments {
     * 
     * 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_graph_ql_api#user_pool_config CcGraphQLApi#user_pool_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appsync_graph_ql_api#user_pool_config CcGraphQLApi#user_pool_config}
     */
     readonly userPoolConfig?: CcGraphQLApi.UserPoolConfigProperty;
     /**
     * Sets the scope of the GraphQL API to public (GLOBAL) or private (PRIVATE). By default, the scope is set to Global if no value is provided.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_graph_ql_api#visibility CcGraphQLApi#visibility}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appsync_graph_ql_api#visibility CcGraphQLApi#visibility}
     */
     readonly visibility?: string;
     /**
@@ -117,13 +117,13 @@ export interface CcGraphQLApiProps extends cdktn.TerraformMetaArguments {
     * 
     * 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_graph_ql_api#xray_enabled CcGraphQLApi#xray_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appsync_graph_ql_api#xray_enabled CcGraphQLApi#xray_enabled}
     */
     readonly xrayEnabled?: boolean | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_graph_ql_api awscc_appsync_graph_ql_api}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appsync_graph_ql_api awscc_appsync_graph_ql_api}
 */
 export class CcGraphQLApi extends cdktn.TerraformResource {
 
@@ -139,7 +139,7 @@ export class CcGraphQLApi extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcGraphQLApi resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcGraphQLApi to import
-    * @param importFromId The id of the existing CcGraphQLApi that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_graph_ql_api#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcGraphQLApi that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appsync_graph_ql_api#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcGraphQLApi to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -151,7 +151,7 @@ export class CcGraphQLApi extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_graph_ql_api awscc_appsync_graph_ql_api} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appsync_graph_ql_api awscc_appsync_graph_ql_api} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -162,7 +162,7 @@ export class CcGraphQLApi extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_appsync_graph_ql_api',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -1128,19 +1128,19 @@ export interface AdditionalAuthenticationProvidersLambdaAuthorizerConfigProperty
     /**
     * The number of seconds a response should be cached for.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_graph_ql_api#authorizer_result_ttl_in_seconds CcGraphQLApi#authorizer_result_ttl_in_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appsync_graph_ql_api#authorizer_result_ttl_in_seconds CcGraphQLApi#authorizer_result_ttl_in_seconds}
     */
     readonly authorizerResultTtlInSeconds?: number;
     /**
     * The ARN of the Lambda function to be called for authorization.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_graph_ql_api#authorizer_uri CcGraphQLApi#authorizer_uri}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appsync_graph_ql_api#authorizer_uri CcGraphQLApi#authorizer_uri}
     */
     readonly authorizerUri?: string;
     /**
     * A regular expression for validation of tokens before the Lambda function is called.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_graph_ql_api#identity_validation_expression CcGraphQLApi#identity_validation_expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appsync_graph_ql_api#identity_validation_expression CcGraphQLApi#identity_validation_expression}
     */
     readonly identityValidationExpression?: string;
 }
@@ -1250,13 +1250,13 @@ export interface AdditionalAuthenticationProvidersOpenIdConnectConfigProperty {
     /**
     * The number of milliseconds that a token is valid after being authenticated.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_graph_ql_api#auth_ttl CcGraphQLApi#auth_ttl}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appsync_graph_ql_api#auth_ttl CcGraphQLApi#auth_ttl}
     */
     readonly authTtl?: number;
     /**
     * The client identifier of the Relying party at the OpenID identity provider.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_graph_ql_api#client_id CcGraphQLApi#client_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appsync_graph_ql_api#client_id CcGraphQLApi#client_id}
     */
     readonly clientId?: string;
     /**
@@ -1264,13 +1264,13 @@ export interface AdditionalAuthenticationProvidersOpenIdConnectConfigProperty {
     * 
     * 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_graph_ql_api#iat_ttl CcGraphQLApi#iat_ttl}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appsync_graph_ql_api#iat_ttl CcGraphQLApi#iat_ttl}
     */
     readonly iatTtl?: number;
     /**
     * The issuer for the OIDC configuration. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_graph_ql_api#issuer CcGraphQLApi#issuer}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appsync_graph_ql_api#issuer CcGraphQLApi#issuer}
     */
     readonly issuer?: string;
 }
@@ -1402,19 +1402,19 @@ export interface CognitoUserPoolConfigProperty {
     /**
     * A regular expression for validating the incoming Amazon Cognito user pool app client ID. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_graph_ql_api#app_id_client_regex CcGraphQLApi#app_id_client_regex}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appsync_graph_ql_api#app_id_client_regex CcGraphQLApi#app_id_client_regex}
     */
     readonly appIdClientRegex?: string;
     /**
     * The AWS Region in which the user pool was created.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_graph_ql_api#aws_region CcGraphQLApi#aws_region}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appsync_graph_ql_api#aws_region CcGraphQLApi#aws_region}
     */
     readonly awsRegion?: string;
     /**
     * The user pool ID
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_graph_ql_api#user_pool_id CcGraphQLApi#user_pool_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appsync_graph_ql_api#user_pool_id CcGraphQLApi#user_pool_id}
     */
     readonly userPoolId?: string;
 }
@@ -1524,19 +1524,19 @@ export interface AdditionalAuthenticationProviderProperty {
     /**
     * The authentication type for API key, AWS Identity and Access Management, OIDC, Amazon Cognito user pools, or AWS Lambda.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_graph_ql_api#authentication_type CcGraphQLApi#authentication_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appsync_graph_ql_api#authentication_type CcGraphQLApi#authentication_type}
     */
     readonly authenticationType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_graph_ql_api#lambda_authorizer_config CcGraphQLApi#lambda_authorizer_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appsync_graph_ql_api#lambda_authorizer_config CcGraphQLApi#lambda_authorizer_config}
     */
     readonly lambdaAuthorizerConfig?: AdditionalAuthenticationProvidersLambdaAuthorizerConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_graph_ql_api#open_id_connect_config CcGraphQLApi#open_id_connect_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appsync_graph_ql_api#open_id_connect_config CcGraphQLApi#open_id_connect_config}
     */
     readonly openIdConnectConfig?: AdditionalAuthenticationProvidersOpenIdConnectConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_graph_ql_api#user_pool_config CcGraphQLApi#user_pool_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appsync_graph_ql_api#user_pool_config CcGraphQLApi#user_pool_config}
     */
     readonly userPoolConfig?: CognitoUserPoolConfigProperty;
 }
@@ -1692,7 +1692,7 @@ export interface EnhancedMetricsConfigProperty {
     * 
     * 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_graph_ql_api#data_source_level_metrics_behavior CcGraphQLApi#data_source_level_metrics_behavior}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appsync_graph_ql_api#data_source_level_metrics_behavior CcGraphQLApi#data_source_level_metrics_behavior}
     */
     readonly dataSourceLevelMetricsBehavior?: string;
     /**
@@ -1700,7 +1700,7 @@ export interface EnhancedMetricsConfigProperty {
     * 
     * 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_graph_ql_api#operation_level_metrics_config CcGraphQLApi#operation_level_metrics_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appsync_graph_ql_api#operation_level_metrics_config CcGraphQLApi#operation_level_metrics_config}
     */
     readonly operationLevelMetricsConfig?: string;
     /**
@@ -1708,7 +1708,7 @@ export interface EnhancedMetricsConfigProperty {
     * 
     * 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_graph_ql_api#resolver_level_metrics_behavior CcGraphQLApi#resolver_level_metrics_behavior}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appsync_graph_ql_api#resolver_level_metrics_behavior CcGraphQLApi#resolver_level_metrics_behavior}
     */
     readonly resolverLevelMetricsBehavior?: string;
 }
@@ -1818,19 +1818,19 @@ export interface LambdaAuthorizerConfigProperty {
     /**
     * The number of seconds a response should be cached for.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_graph_ql_api#authorizer_result_ttl_in_seconds CcGraphQLApi#authorizer_result_ttl_in_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appsync_graph_ql_api#authorizer_result_ttl_in_seconds CcGraphQLApi#authorizer_result_ttl_in_seconds}
     */
     readonly authorizerResultTtlInSeconds?: number;
     /**
     * The ARN of the Lambda function to be called for authorization.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_graph_ql_api#authorizer_uri CcGraphQLApi#authorizer_uri}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appsync_graph_ql_api#authorizer_uri CcGraphQLApi#authorizer_uri}
     */
     readonly authorizerUri?: string;
     /**
     * A regular expression for validation of tokens before the Lambda function is called.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_graph_ql_api#identity_validation_expression CcGraphQLApi#identity_validation_expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appsync_graph_ql_api#identity_validation_expression CcGraphQLApi#identity_validation_expression}
     */
     readonly identityValidationExpression?: string;
 }
@@ -1940,19 +1940,19 @@ export interface LogConfigProperty {
     /**
     * The service role that AWS AppSync will assume to publish to Amazon CloudWatch Logs in your account.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_graph_ql_api#cloudwatch_logs_role_arn CcGraphQLApi#cloudwatch_logs_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appsync_graph_ql_api#cloudwatch_logs_role_arn CcGraphQLApi#cloudwatch_logs_role_arn}
     */
     readonly cloudwatchLogsRoleArn?: string;
     /**
     * Set to TRUE to exclude sections that contain information such as headers, context, and evaluated mapping templates, regardless of logging level.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_graph_ql_api#exclude_verbose_content CcGraphQLApi#exclude_verbose_content}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appsync_graph_ql_api#exclude_verbose_content CcGraphQLApi#exclude_verbose_content}
     */
     readonly excludeVerboseContent?: boolean | cdktn.IResolvable;
     /**
     * The field logging level. Values can be NONE, ERROR, INFO, DEBUG, or ALL.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_graph_ql_api#field_log_level CcGraphQLApi#field_log_level}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appsync_graph_ql_api#field_log_level CcGraphQLApi#field_log_level}
     */
     readonly fieldLogLevel?: string;
 }
@@ -2062,13 +2062,13 @@ export interface OpenIDConnectConfigProperty {
     /**
     * The number of milliseconds that a token is valid after being authenticated.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_graph_ql_api#auth_ttl CcGraphQLApi#auth_ttl}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appsync_graph_ql_api#auth_ttl CcGraphQLApi#auth_ttl}
     */
     readonly authTtl?: number;
     /**
     * The client identifier of the Relying party at the OpenID identity provider.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_graph_ql_api#client_id CcGraphQLApi#client_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appsync_graph_ql_api#client_id CcGraphQLApi#client_id}
     */
     readonly clientId?: string;
     /**
@@ -2076,13 +2076,13 @@ export interface OpenIDConnectConfigProperty {
     * 
     * 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_graph_ql_api#iat_ttl CcGraphQLApi#iat_ttl}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appsync_graph_ql_api#iat_ttl CcGraphQLApi#iat_ttl}
     */
     readonly iatTtl?: number;
     /**
     * The issuer for the OIDC configuration. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_graph_ql_api#issuer CcGraphQLApi#issuer}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appsync_graph_ql_api#issuer CcGraphQLApi#issuer}
     */
     readonly issuer?: string;
 }
@@ -2212,11 +2212,11 @@ export class OpenIDConnectConfigPropertyOutputReference extends cdktn.ComplexObj
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_graph_ql_api#key CcGraphQLApi#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appsync_graph_ql_api#key CcGraphQLApi#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_graph_ql_api#value CcGraphQLApi#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appsync_graph_ql_api#value CcGraphQLApi#value}
     */
     readonly value?: string;
 }
@@ -2326,25 +2326,25 @@ export interface UserPoolConfigProperty {
     /**
     * A regular expression for validating the incoming Amazon Cognito user pool app client ID.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_graph_ql_api#app_id_client_regex CcGraphQLApi#app_id_client_regex}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appsync_graph_ql_api#app_id_client_regex CcGraphQLApi#app_id_client_regex}
     */
     readonly appIdClientRegex?: string;
     /**
     * The AWS Region in which the user pool was created.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_graph_ql_api#aws_region CcGraphQLApi#aws_region}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appsync_graph_ql_api#aws_region CcGraphQLApi#aws_region}
     */
     readonly awsRegion?: string;
     /**
     * The action that you want your GraphQL API to take when a request that uses Amazon Cognito user pool authentication doesn't match the Amazon Cognito user pool configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_graph_ql_api#default_action CcGraphQLApi#default_action}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appsync_graph_ql_api#default_action CcGraphQLApi#default_action}
     */
     readonly defaultAction?: string;
     /**
     * The user pool ID.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_graph_ql_api#user_pool_id CcGraphQLApi#user_pool_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appsync_graph_ql_api#user_pool_id CcGraphQLApi#user_pool_id}
     */
     readonly userPoolId?: string;
 }

@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pcs_cluster
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/pcs_cluster
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,43 +9,43 @@ export interface CcClusterProps extends cdktn.TerraformMetaArguments {
     /**
     * The name that identifies the cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pcs_cluster#name CcCluster#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/pcs_cluster#name CcCluster#name}
     */
     readonly name?: string;
     /**
     * The networking configuration for the cluster's control plane.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pcs_cluster#networking CcCluster#networking}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/pcs_cluster#networking CcCluster#networking}
     */
     readonly networking: CcCluster.NetworkingProperty;
     /**
     * The cluster management and job scheduling software associated with the cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pcs_cluster#scheduler CcCluster#scheduler}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/pcs_cluster#scheduler CcCluster#scheduler}
     */
     readonly scheduler: CcCluster.SchedulerProperty;
     /**
     * The size of the cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pcs_cluster#size CcCluster#size}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/pcs_cluster#size CcCluster#size}
     */
     readonly size: string;
     /**
     * Additional options related to the Slurm scheduler.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pcs_cluster#slurm_configuration CcCluster#slurm_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/pcs_cluster#slurm_configuration CcCluster#slurm_configuration}
     */
     readonly slurmConfiguration?: CcCluster.SlurmConfigurationProperty;
     /**
     * 1 or more tags added to the resource. Each tag consists of a tag key and tag value. The tag value is optional and can be an empty string.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pcs_cluster#tags CcCluster#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/pcs_cluster#tags CcCluster#tags}
     */
     readonly tags?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pcs_cluster awscc_pcs_cluster}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/pcs_cluster awscc_pcs_cluster}
 */
 export class CcCluster extends cdktn.TerraformResource {
 
@@ -61,7 +61,7 @@ export class CcCluster extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcCluster resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcCluster to import
-    * @param importFromId The id of the existing CcCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pcs_cluster#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/pcs_cluster#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcCluster to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -73,7 +73,7 @@ export class CcCluster extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pcs_cluster awscc_pcs_cluster} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/pcs_cluster awscc_pcs_cluster} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -84,7 +84,7 @@ export class CcCluster extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_pcs_cluster',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -907,19 +907,19 @@ export interface NetworkingProperty {
     /**
     * The IP of the cluster (IPV4 or IPV6)
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pcs_cluster#network_type CcCluster#network_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/pcs_cluster#network_type CcCluster#network_type}
     */
     readonly networkType?: string;
     /**
     * The list of security group IDs associated with the Elastic Network Interface (ENI) created in subnets.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pcs_cluster#security_group_ids CcCluster#security_group_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/pcs_cluster#security_group_ids CcCluster#security_group_ids}
     */
     readonly securityGroupIds?: string[];
     /**
     * The list of subnet IDs where AWS PCS creates an Elastic Network Interface (ENI) to enable communication between managed controllers and AWS PCS resources. The subnet must have an available IP address, cannot reside in AWS Outposts, AWS Wavelength, or an AWS Local Zone. AWS PCS currently supports only 1 subnet in this list.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pcs_cluster#subnet_ids CcCluster#subnet_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/pcs_cluster#subnet_ids CcCluster#subnet_ids}
     */
     readonly subnetIds?: string[];
 }
@@ -1029,13 +1029,13 @@ export interface SchedulerProperty {
     /**
     * The software AWS PCS uses to manage cluster scaling and job scheduling.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pcs_cluster#type CcCluster#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/pcs_cluster#type CcCluster#type}
     */
     readonly type: string;
     /**
     * The version of the specified scheduling software that AWS PCS uses to manage cluster scaling and job scheduling.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pcs_cluster#version CcCluster#version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/pcs_cluster#version CcCluster#version}
     */
     readonly version: string;
 }
@@ -1117,13 +1117,13 @@ export interface AccountingProperty {
     /**
     * The default value for all purge settings for `slurmdbd.conf`. For more information, see the [slurmdbd.conf documentation at SchedMD](https://slurm.schedmd.com/slurmdbd.conf.html). The default value is `-1`. A value of `-1` means there is no purge time and records persist as long as the cluster exists.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pcs_cluster#default_purge_time_in_days CcCluster#default_purge_time_in_days}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/pcs_cluster#default_purge_time_in_days CcCluster#default_purge_time_in_days}
     */
     readonly defaultPurgeTimeInDays?: number;
     /**
     * The default value is `NONE`. A value of `STANDARD` means that Slurm accounting is enabled.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pcs_cluster#mode CcCluster#mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/pcs_cluster#mode CcCluster#mode}
     */
     readonly mode?: string;
 }
@@ -1211,13 +1211,13 @@ export interface AuthKeyProperty {
     /**
     * The Amazon Resource Name (ARN) of the the shared Slurm key.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pcs_cluster#secret_arn CcCluster#secret_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/pcs_cluster#secret_arn CcCluster#secret_arn}
     */
     readonly secretArn?: string;
     /**
     * The version of the shared Slurm key.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pcs_cluster#secret_version CcCluster#secret_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/pcs_cluster#secret_version CcCluster#secret_version}
     */
     readonly secretVersion?: string;
 }
@@ -1305,13 +1305,13 @@ export interface CgroupCustomSettingProperty {
     /**
     * The cgroup.conf parameter name.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pcs_cluster#parameter_name CcCluster#parameter_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/pcs_cluster#parameter_name CcCluster#parameter_name}
     */
     readonly parameterName?: string;
     /**
     * The value for the cgroup.conf parameter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pcs_cluster#parameter_value CcCluster#parameter_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/pcs_cluster#parameter_value CcCluster#parameter_value}
     */
     readonly parameterValue?: string;
 }
@@ -1421,13 +1421,13 @@ export interface JwtKeyProperty {
     /**
     * The Amazon Resource Name (ARN) of the JWT key secret.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pcs_cluster#secret_arn CcCluster#secret_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/pcs_cluster#secret_arn CcCluster#secret_arn}
     */
     readonly secretArn?: string;
     /**
     * The version of the JWT key secret.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pcs_cluster#secret_version CcCluster#secret_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/pcs_cluster#secret_version CcCluster#secret_version}
     */
     readonly secretVersion?: string;
 }
@@ -1515,7 +1515,7 @@ export interface JwtAuthProperty {
     /**
     * JWT key configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pcs_cluster#jwt_key CcCluster#jwt_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/pcs_cluster#jwt_key CcCluster#jwt_key}
     */
     readonly jwtKey?: JwtKeyProperty;
 }
@@ -1581,13 +1581,13 @@ export interface SlurmCustomSettingProperty {
     /**
     * AWS PCS supports configuration of the following Slurm parameters for clusters: Prolog, Epilog, and SelectTypeParameters.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pcs_cluster#parameter_name CcCluster#parameter_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/pcs_cluster#parameter_name CcCluster#parameter_name}
     */
     readonly parameterName?: string;
     /**
     * The value for the configured Slurm setting.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pcs_cluster#parameter_value CcCluster#parameter_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/pcs_cluster#parameter_value CcCluster#parameter_value}
     */
     readonly parameterValue?: string;
 }
@@ -1697,7 +1697,7 @@ export interface SlurmRestProperty {
     /**
     * The default value is `NONE`. A value of `STANDARD` means that Slurm Rest is enabled.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pcs_cluster#mode CcCluster#mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/pcs_cluster#mode CcCluster#mode}
     */
     readonly mode?: string;
 }
@@ -1763,13 +1763,13 @@ export interface SlurmdbdCustomSettingProperty {
     /**
     * The slurmdbd.conf parameter name.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pcs_cluster#parameter_name CcCluster#parameter_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/pcs_cluster#parameter_name CcCluster#parameter_name}
     */
     readonly parameterName?: string;
     /**
     * The value for the slurmdbd.conf parameter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pcs_cluster#parameter_value CcCluster#parameter_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/pcs_cluster#parameter_value CcCluster#parameter_value}
     */
     readonly parameterValue?: string;
 }
@@ -1879,49 +1879,49 @@ export interface SlurmConfigurationProperty {
     /**
     * The accounting configuration includes configurable settings for Slurm accounting.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pcs_cluster#accounting CcCluster#accounting}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/pcs_cluster#accounting CcCluster#accounting}
     */
     readonly accounting?: AccountingProperty;
     /**
     * The shared Slurm key for authentication, also known as the cluster secret.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pcs_cluster#auth_key CcCluster#auth_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/pcs_cluster#auth_key CcCluster#auth_key}
     */
     readonly authKey?: AuthKeyProperty;
     /**
     * Additional cgroup-specific configuration that directly maps to cgroup.conf settings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pcs_cluster#cgroup_custom_settings CcCluster#cgroup_custom_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/pcs_cluster#cgroup_custom_settings CcCluster#cgroup_custom_settings}
     */
     readonly cgroupCustomSettings?: CgroupCustomSettingProperty[] | cdktn.IResolvable;
     /**
     * JWT authentication configuration for Slurm.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pcs_cluster#jwt_auth CcCluster#jwt_auth}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/pcs_cluster#jwt_auth CcCluster#jwt_auth}
     */
     readonly jwtAuth?: JwtAuthProperty;
     /**
     * The time before an idle node is scaled down.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pcs_cluster#scale_down_idle_time_in_seconds CcCluster#scale_down_idle_time_in_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/pcs_cluster#scale_down_idle_time_in_seconds CcCluster#scale_down_idle_time_in_seconds}
     */
     readonly scaleDownIdleTimeInSeconds?: number;
     /**
     * Additional Slurm-specific configuration that directly maps to Slurm settings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pcs_cluster#slurm_custom_settings CcCluster#slurm_custom_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/pcs_cluster#slurm_custom_settings CcCluster#slurm_custom_settings}
     */
     readonly slurmCustomSettings?: SlurmCustomSettingProperty[] | cdktn.IResolvable;
     /**
     * The SlurmRest configuration includes configurable settings for Slurm Rest.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pcs_cluster#slurm_rest CcCluster#slurm_rest}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/pcs_cluster#slurm_rest CcCluster#slurm_rest}
     */
     readonly slurmRest?: SlurmRestProperty;
     /**
     * Additional slurmdbd-specific configuration that directly maps to slurmdbd.conf settings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/pcs_cluster#slurmdbd_custom_settings CcCluster#slurmdbd_custom_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/pcs_cluster#slurmdbd_custom_settings CcCluster#slurmdbd_custom_settings}
     */
     readonly slurmdbdCustomSettings?: SlurmdbdCustomSettingProperty[] | cdktn.IResolvable;
 }

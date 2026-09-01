@@ -1,31 +1,31 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_assistant_association
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_assistant_association
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcAssistantAssociationProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_assistant_association#assistant_id CcAssistantAssociation#assistant_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_assistant_association#assistant_id CcAssistantAssociation#assistant_id}
     */
     readonly assistantId: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_assistant_association#association CcAssistantAssociation#association}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_assistant_association#association CcAssistantAssociation#association}
     */
     readonly association: CcAssistantAssociation.AssociationDataProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_assistant_association#association_type CcAssistantAssociation#association_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_assistant_association#association_type CcAssistantAssociation#association_type}
     */
     readonly associationType: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_assistant_association#tags CcAssistantAssociation#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_assistant_association#tags CcAssistantAssociation#tags}
     */
     readonly tags?: CcAssistantAssociation.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_assistant_association awscc_wisdom_assistant_association}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_assistant_association awscc_wisdom_assistant_association}
 */
 export class CcAssistantAssociation extends cdktn.TerraformResource {
 
@@ -41,7 +41,7 @@ export class CcAssistantAssociation extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcAssistantAssociation resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcAssistantAssociation to import
-    * @param importFromId The id of the existing CcAssistantAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_assistant_association#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcAssistantAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_assistant_association#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcAssistantAssociation to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -53,7 +53,7 @@ export class CcAssistantAssociation extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_assistant_association awscc_wisdom_assistant_association} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_assistant_association awscc_wisdom_assistant_association} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -64,7 +64,7 @@ export class CcAssistantAssociation extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_wisdom_assistant_association',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -319,11 +319,11 @@ export function ccAssistantAssociationTagPropertyToHclTerraform(struct?: CcAssis
 export namespace CcAssistantAssociation {
 export interface ExternalBedrockKnowledgeBaseConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_assistant_association#access_role_arn CcAssistantAssociation#access_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_assistant_association#access_role_arn CcAssistantAssociation#access_role_arn}
     */
     readonly accessRoleArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_assistant_association#bedrock_knowledge_base_arn CcAssistantAssociation#bedrock_knowledge_base_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_assistant_association#bedrock_knowledge_base_arn CcAssistantAssociation#bedrock_knowledge_base_arn}
     */
     readonly bedrockKnowledgeBaseArn?: string;
 }
@@ -409,11 +409,11 @@ export class ExternalBedrockKnowledgeBaseConfigPropertyOutputReference extends c
 }
 export interface AssociationDataProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_assistant_association#external_bedrock_knowledge_base_config CcAssistantAssociation#external_bedrock_knowledge_base_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_assistant_association#external_bedrock_knowledge_base_config CcAssistantAssociation#external_bedrock_knowledge_base_config}
     */
     readonly externalBedrockKnowledgeBaseConfig?: ExternalBedrockKnowledgeBaseConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_assistant_association#knowledge_base_id CcAssistantAssociation#knowledge_base_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_assistant_association#knowledge_base_id CcAssistantAssociation#knowledge_base_id}
     */
     readonly knowledgeBaseId?: string;
 }
@@ -499,11 +499,11 @@ export class AssociationDataPropertyOutputReference extends cdktn.ComplexObject 
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_assistant_association#key CcAssistantAssociation#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_assistant_association#key CcAssistantAssociation#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_assistant_association#value CcAssistantAssociation#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_assistant_association#value CcAssistantAssociation#value}
     */
     readonly value?: string;
 }

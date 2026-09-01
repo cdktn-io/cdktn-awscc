@@ -1,25 +1,25 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securitylake_subscriber_notification
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securitylake_subscriber_notification
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcSubscriberNotificationProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securitylake_subscriber_notification#notification_configuration CcSubscriberNotification#notification_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securitylake_subscriber_notification#notification_configuration CcSubscriberNotification#notification_configuration}
     */
     readonly notificationConfiguration: CcSubscriberNotification.NotificationConfigurationProperty;
     /**
     * The ARN for the subscriber
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securitylake_subscriber_notification#subscriber_arn CcSubscriberNotification#subscriber_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securitylake_subscriber_notification#subscriber_arn CcSubscriberNotification#subscriber_arn}
     */
     readonly subscriberArn: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securitylake_subscriber_notification awscc_securitylake_subscriber_notification}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securitylake_subscriber_notification awscc_securitylake_subscriber_notification}
 */
 export class CcSubscriberNotification extends cdktn.TerraformResource {
 
@@ -35,7 +35,7 @@ export class CcSubscriberNotification extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcSubscriberNotification resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcSubscriberNotification to import
-    * @param importFromId The id of the existing CcSubscriberNotification that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securitylake_subscriber_notification#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcSubscriberNotification that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securitylake_subscriber_notification#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcSubscriberNotification to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -47,7 +47,7 @@ export class CcSubscriberNotification extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securitylake_subscriber_notification awscc_securitylake_subscriber_notification} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securitylake_subscriber_notification awscc_securitylake_subscriber_notification} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -58,7 +58,7 @@ export class CcSubscriberNotification extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_securitylake_subscriber_notification',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -244,31 +244,31 @@ export interface HttpsNotificationConfigurationProperty {
     /**
     * The key name for the notification subscription.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securitylake_subscriber_notification#authorization_api_key_name CcSubscriberNotification#authorization_api_key_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securitylake_subscriber_notification#authorization_api_key_name CcSubscriberNotification#authorization_api_key_name}
     */
     readonly authorizationApiKeyName?: string;
     /**
     * The key value for the notification subscription.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securitylake_subscriber_notification#authorization_api_key_value CcSubscriberNotification#authorization_api_key_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securitylake_subscriber_notification#authorization_api_key_value CcSubscriberNotification#authorization_api_key_value}
     */
     readonly authorizationApiKeyValue?: string;
     /**
     * The subscription endpoint in Security Lake.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securitylake_subscriber_notification#endpoint CcSubscriberNotification#endpoint}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securitylake_subscriber_notification#endpoint CcSubscriberNotification#endpoint}
     */
     readonly endpoint?: string;
     /**
     * The HTTPS method used for the notification subscription.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securitylake_subscriber_notification#http_method CcSubscriberNotification#http_method}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securitylake_subscriber_notification#http_method CcSubscriberNotification#http_method}
     */
     readonly httpMethod?: string;
     /**
     * The Amazon Resource Name (ARN) of the EventBridge API destinations IAM role that you created.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securitylake_subscriber_notification#target_role_arn CcSubscriberNotification#target_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securitylake_subscriber_notification#target_role_arn CcSubscriberNotification#target_role_arn}
     */
     readonly targetRoleArn?: string;
 }
@@ -422,13 +422,13 @@ export interface NotificationConfigurationProperty {
     /**
     * The configuration for HTTPS subscriber notification.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securitylake_subscriber_notification#https_notification_configuration CcSubscriberNotification#https_notification_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securitylake_subscriber_notification#https_notification_configuration CcSubscriberNotification#https_notification_configuration}
     */
     readonly httpsNotificationConfiguration?: HttpsNotificationConfigurationProperty;
     /**
     * The configurations for SQS subscriber notification. The members of this structure are context-dependent.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securitylake_subscriber_notification#sqs_notification_configuration CcSubscriberNotification#sqs_notification_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securitylake_subscriber_notification#sqs_notification_configuration CcSubscriberNotification#sqs_notification_configuration}
     */
     readonly sqsNotificationConfiguration?: string;
 }

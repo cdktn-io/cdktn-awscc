@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sso_assignment
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sso_assignment
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,43 +9,43 @@ export interface CcAssignmentProps extends cdktn.TerraformMetaArguments {
     /**
     * The sso instance that the permission set is owned.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sso_assignment#instance_arn CcAssignment#instance_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sso_assignment#instance_arn CcAssignment#instance_arn}
     */
     readonly instanceArn: string;
     /**
     * The permission set that the assignment will be assigned
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sso_assignment#permission_set_arn CcAssignment#permission_set_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sso_assignment#permission_set_arn CcAssignment#permission_set_arn}
     */
     readonly permissionSetArn: string;
     /**
     * The assignee's identifier, user id/group id
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sso_assignment#principal_id CcAssignment#principal_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sso_assignment#principal_id CcAssignment#principal_id}
     */
     readonly principalId: string;
     /**
     * The assignee's type, user/group
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sso_assignment#principal_type CcAssignment#principal_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sso_assignment#principal_type CcAssignment#principal_type}
     */
     readonly principalType: string;
     /**
     * The account id to be provisioned.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sso_assignment#target_id CcAssignment#target_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sso_assignment#target_id CcAssignment#target_id}
     */
     readonly targetId: string;
     /**
     * The type of resource to be provisioned to, only aws account now
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sso_assignment#target_type CcAssignment#target_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sso_assignment#target_type CcAssignment#target_type}
     */
     readonly targetType: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sso_assignment awscc_sso_assignment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sso_assignment awscc_sso_assignment}
 */
 export class CcAssignment extends cdktn.TerraformResource {
 
@@ -61,7 +61,7 @@ export class CcAssignment extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcAssignment resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcAssignment to import
-    * @param importFromId The id of the existing CcAssignment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sso_assignment#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcAssignment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sso_assignment#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcAssignment to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -73,7 +73,7 @@ export class CcAssignment extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sso_assignment awscc_sso_assignment} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sso_assignment awscc_sso_assignment} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -84,7 +84,7 @@ export class CcAssignment extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_sso_assignment',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,

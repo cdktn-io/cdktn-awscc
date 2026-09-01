@@ -1,31 +1,31 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_request_validator
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apigateway_request_validator
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcRequestValidatorProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_request_validator#name CcRequestValidator#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apigateway_request_validator#name CcRequestValidator#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_request_validator#rest_api_id CcRequestValidator#rest_api_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apigateway_request_validator#rest_api_id CcRequestValidator#rest_api_id}
     */
     readonly restApiId: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_request_validator#validate_request_body CcRequestValidator#validate_request_body}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apigateway_request_validator#validate_request_body CcRequestValidator#validate_request_body}
     */
     readonly validateRequestBody?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_request_validator#validate_request_parameters CcRequestValidator#validate_request_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apigateway_request_validator#validate_request_parameters CcRequestValidator#validate_request_parameters}
     */
     readonly validateRequestParameters?: boolean | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_request_validator awscc_apigateway_request_validator}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apigateway_request_validator awscc_apigateway_request_validator}
 */
 export class CcRequestValidator extends cdktn.TerraformResource {
 
@@ -41,7 +41,7 @@ export class CcRequestValidator extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcRequestValidator resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcRequestValidator to import
-    * @param importFromId The id of the existing CcRequestValidator that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_request_validator#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcRequestValidator that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apigateway_request_validator#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcRequestValidator to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -53,7 +53,7 @@ export class CcRequestValidator extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_request_validator awscc_apigateway_request_validator} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apigateway_request_validator awscc_apigateway_request_validator} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -64,7 +64,7 @@ export class CcRequestValidator extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_apigateway_request_validator',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,

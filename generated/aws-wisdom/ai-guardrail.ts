@@ -1,75 +1,75 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_ai_guardrail
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_ai_guardrail
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcAIGuardrailProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_ai_guardrail#assistant_id CcAIGuardrail#assistant_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_ai_guardrail#assistant_id CcAIGuardrail#assistant_id}
     */
     readonly assistantId: string;
     /**
     * Messaging for when violations are detected in text
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_ai_guardrail#blocked_input_messaging CcAIGuardrail#blocked_input_messaging}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_ai_guardrail#blocked_input_messaging CcAIGuardrail#blocked_input_messaging}
     */
     readonly blockedInputMessaging: string;
     /**
     * Messaging for when violations are detected in text
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_ai_guardrail#blocked_outputs_messaging CcAIGuardrail#blocked_outputs_messaging}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_ai_guardrail#blocked_outputs_messaging CcAIGuardrail#blocked_outputs_messaging}
     */
     readonly blockedOutputsMessaging: string;
     /**
     * Content policy config for a guardrail.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_ai_guardrail#content_policy_config CcAIGuardrail#content_policy_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_ai_guardrail#content_policy_config CcAIGuardrail#content_policy_config}
     */
     readonly contentPolicyConfig?: CcAIGuardrail.AIGuardrailContentPolicyConfigProperty;
     /**
     * Contextual grounding policy config for a guardrail.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_ai_guardrail#contextual_grounding_policy_config CcAIGuardrail#contextual_grounding_policy_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_ai_guardrail#contextual_grounding_policy_config CcAIGuardrail#contextual_grounding_policy_config}
     */
     readonly contextualGroundingPolicyConfig?: CcAIGuardrail.AIGuardrailContextualGroundingPolicyConfigProperty;
     /**
     * Description of the guardrail or its version
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_ai_guardrail#description CcAIGuardrail#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_ai_guardrail#description CcAIGuardrail#description}
     */
     readonly description?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_ai_guardrail#name CcAIGuardrail#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_ai_guardrail#name CcAIGuardrail#name}
     */
     readonly name?: string;
     /**
     * Sensitive information policy config for a guardrail.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_ai_guardrail#sensitive_information_policy_config CcAIGuardrail#sensitive_information_policy_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_ai_guardrail#sensitive_information_policy_config CcAIGuardrail#sensitive_information_policy_config}
     */
     readonly sensitiveInformationPolicyConfig?: CcAIGuardrail.AIGuardrailSensitiveInformationPolicyConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_ai_guardrail#tags CcAIGuardrail#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_ai_guardrail#tags CcAIGuardrail#tags}
     */
     readonly tags?: { [key: string]: string };
     /**
     * Topic policy config for a guardrail.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_ai_guardrail#topic_policy_config CcAIGuardrail#topic_policy_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_ai_guardrail#topic_policy_config CcAIGuardrail#topic_policy_config}
     */
     readonly topicPolicyConfig?: CcAIGuardrail.AIGuardrailTopicPolicyConfigProperty;
     /**
     * Word policy config for a guardrail.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_ai_guardrail#word_policy_config CcAIGuardrail#word_policy_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_ai_guardrail#word_policy_config CcAIGuardrail#word_policy_config}
     */
     readonly wordPolicyConfig?: CcAIGuardrail.AIGuardrailWordPolicyConfigProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_ai_guardrail awscc_wisdom_ai_guardrail}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_ai_guardrail awscc_wisdom_ai_guardrail}
 */
 export class CcAIGuardrail extends cdktn.TerraformResource {
 
@@ -85,7 +85,7 @@ export class CcAIGuardrail extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcAIGuardrail resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcAIGuardrail to import
-    * @param importFromId The id of the existing CcAIGuardrail that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_ai_guardrail#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcAIGuardrail that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_ai_guardrail#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcAIGuardrail to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -97,7 +97,7 @@ export class CcAIGuardrail extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_ai_guardrail awscc_wisdom_ai_guardrail} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_ai_guardrail awscc_wisdom_ai_guardrail} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -108,7 +108,7 @@ export class CcAIGuardrail extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_wisdom_ai_guardrail',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -871,19 +871,19 @@ export interface GuardrailContentFilterConfigProperty {
     /**
     * Strength for filters
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_ai_guardrail#input_strength CcAIGuardrail#input_strength}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_ai_guardrail#input_strength CcAIGuardrail#input_strength}
     */
     readonly inputStrength?: string;
     /**
     * Strength for filters
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_ai_guardrail#output_strength CcAIGuardrail#output_strength}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_ai_guardrail#output_strength CcAIGuardrail#output_strength}
     */
     readonly outputStrength?: string;
     /**
     * Type of text to text filter in content policy
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_ai_guardrail#type CcAIGuardrail#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_ai_guardrail#type CcAIGuardrail#type}
     */
     readonly type?: string;
 }
@@ -1015,7 +1015,7 @@ export interface AIGuardrailContentPolicyConfigProperty {
     /**
     * List of content filter configs in content policy.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_ai_guardrail#filters_config CcAIGuardrail#filters_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_ai_guardrail#filters_config CcAIGuardrail#filters_config}
     */
     readonly filtersConfig?: GuardrailContentFilterConfigProperty[] | cdktn.IResolvable;
 }
@@ -1081,13 +1081,13 @@ export interface GuardrailContextualGroundingFilterConfigProperty {
     /**
     * The threshold for this filter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_ai_guardrail#threshold CcAIGuardrail#threshold}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_ai_guardrail#threshold CcAIGuardrail#threshold}
     */
     readonly threshold?: number;
     /**
     * Type of contextual grounding filter
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_ai_guardrail#type CcAIGuardrail#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_ai_guardrail#type CcAIGuardrail#type}
     */
     readonly type?: string;
 }
@@ -1197,7 +1197,7 @@ export interface AIGuardrailContextualGroundingPolicyConfigProperty {
     /**
     * List of contextual grounding filter configs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_ai_guardrail#filters_config CcAIGuardrail#filters_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_ai_guardrail#filters_config CcAIGuardrail#filters_config}
     */
     readonly filtersConfig?: GuardrailContextualGroundingFilterConfigProperty[] | cdktn.IResolvable;
 }
@@ -1263,13 +1263,13 @@ export interface GuardrailPiiEntityConfigProperty {
     /**
     * Options for sensitive information action.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_ai_guardrail#action CcAIGuardrail#action}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_ai_guardrail#action CcAIGuardrail#action}
     */
     readonly action?: string;
     /**
     * The currently supported PII entities
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_ai_guardrail#type CcAIGuardrail#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_ai_guardrail#type CcAIGuardrail#type}
     */
     readonly type?: string;
 }
@@ -1379,25 +1379,25 @@ export interface GuardrailRegexConfigProperty {
     /**
     * Options for sensitive information action.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_ai_guardrail#action CcAIGuardrail#action}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_ai_guardrail#action CcAIGuardrail#action}
     */
     readonly action?: string;
     /**
     * The regex description.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_ai_guardrail#description CcAIGuardrail#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_ai_guardrail#description CcAIGuardrail#description}
     */
     readonly description?: string;
     /**
     * The regex name.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_ai_guardrail#name CcAIGuardrail#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_ai_guardrail#name CcAIGuardrail#name}
     */
     readonly name?: string;
     /**
     * The regex pattern.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_ai_guardrail#pattern CcAIGuardrail#pattern}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_ai_guardrail#pattern CcAIGuardrail#pattern}
     */
     readonly pattern?: string;
 }
@@ -1551,13 +1551,13 @@ export interface AIGuardrailSensitiveInformationPolicyConfigProperty {
     /**
     * List of entities.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_ai_guardrail#pii_entities_config CcAIGuardrail#pii_entities_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_ai_guardrail#pii_entities_config CcAIGuardrail#pii_entities_config}
     */
     readonly piiEntitiesConfig?: GuardrailPiiEntityConfigProperty[] | cdktn.IResolvable;
     /**
     * List of regex.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_ai_guardrail#regexes_config CcAIGuardrail#regexes_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_ai_guardrail#regexes_config CcAIGuardrail#regexes_config}
     */
     readonly regexesConfig?: GuardrailRegexConfigProperty[] | cdktn.IResolvable;
 }
@@ -1645,25 +1645,25 @@ export interface GuardrailTopicConfigProperty {
     /**
     * Definition of topic in topic policy
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_ai_guardrail#definition CcAIGuardrail#definition}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_ai_guardrail#definition CcAIGuardrail#definition}
     */
     readonly definition?: string;
     /**
     * List of text examples
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_ai_guardrail#examples CcAIGuardrail#examples}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_ai_guardrail#examples CcAIGuardrail#examples}
     */
     readonly examples?: string[];
     /**
     * Name of topic in topic policy
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_ai_guardrail#name CcAIGuardrail#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_ai_guardrail#name CcAIGuardrail#name}
     */
     readonly name?: string;
     /**
     * Type of topic in a policy
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_ai_guardrail#type CcAIGuardrail#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_ai_guardrail#type CcAIGuardrail#type}
     */
     readonly type?: string;
 }
@@ -1817,7 +1817,7 @@ export interface AIGuardrailTopicPolicyConfigProperty {
     /**
     * List of topic configs in topic policy.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_ai_guardrail#topics_config CcAIGuardrail#topics_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_ai_guardrail#topics_config CcAIGuardrail#topics_config}
     */
     readonly topicsConfig?: GuardrailTopicConfigProperty[] | cdktn.IResolvable;
 }
@@ -1883,7 +1883,7 @@ export interface GuardrailManagedWordsConfigProperty {
     /**
     * Options for managed words.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_ai_guardrail#type CcAIGuardrail#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_ai_guardrail#type CcAIGuardrail#type}
     */
     readonly type?: string;
 }
@@ -1971,7 +1971,7 @@ export interface GuardrailWordConfigProperty {
     /**
     * The custom word text.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_ai_guardrail#text CcAIGuardrail#text}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_ai_guardrail#text CcAIGuardrail#text}
     */
     readonly text?: string;
 }
@@ -2059,13 +2059,13 @@ export interface AIGuardrailWordPolicyConfigProperty {
     /**
     * A config for the list of managed words.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_ai_guardrail#managed_word_lists_config CcAIGuardrail#managed_word_lists_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_ai_guardrail#managed_word_lists_config CcAIGuardrail#managed_word_lists_config}
     */
     readonly managedWordListsConfig?: GuardrailManagedWordsConfigProperty[] | cdktn.IResolvable;
     /**
     * List of custom word configs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_ai_guardrail#words_config CcAIGuardrail#words_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_ai_guardrail#words_config CcAIGuardrail#words_config}
     */
     readonly wordsConfig?: GuardrailWordConfigProperty[] | cdktn.IResolvable;
 }

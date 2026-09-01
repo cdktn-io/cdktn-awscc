@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_event_invoke_config
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_event_invoke_config
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,37 +9,37 @@ export interface CcEventInvokeConfigProps extends cdktn.TerraformMetaArguments {
     /**
     * A destination for events after they have been sent to a function for processing.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_event_invoke_config#destination_config CcEventInvokeConfig#destination_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_event_invoke_config#destination_config CcEventInvokeConfig#destination_config}
     */
     readonly destinationConfig?: CcEventInvokeConfig.DestinationConfigProperty;
     /**
     * The name of the Lambda function.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_event_invoke_config#function_name CcEventInvokeConfig#function_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_event_invoke_config#function_name CcEventInvokeConfig#function_name}
     */
     readonly functionName: string;
     /**
     * The maximum age of a request that Lambda sends to a function for processing.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_event_invoke_config#maximum_event_age_in_seconds CcEventInvokeConfig#maximum_event_age_in_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_event_invoke_config#maximum_event_age_in_seconds CcEventInvokeConfig#maximum_event_age_in_seconds}
     */
     readonly maximumEventAgeInSeconds?: number;
     /**
     * The maximum number of times to retry when the function returns an error.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_event_invoke_config#maximum_retry_attempts CcEventInvokeConfig#maximum_retry_attempts}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_event_invoke_config#maximum_retry_attempts CcEventInvokeConfig#maximum_retry_attempts}
     */
     readonly maximumRetryAttempts?: number;
     /**
     * The identifier of a version or alias.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_event_invoke_config#qualifier CcEventInvokeConfig#qualifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_event_invoke_config#qualifier CcEventInvokeConfig#qualifier}
     */
     readonly qualifier: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_event_invoke_config awscc_lambda_event_invoke_config}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_event_invoke_config awscc_lambda_event_invoke_config}
 */
 export class CcEventInvokeConfig extends cdktn.TerraformResource {
 
@@ -55,7 +55,7 @@ export class CcEventInvokeConfig extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcEventInvokeConfig resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcEventInvokeConfig to import
-    * @param importFromId The id of the existing CcEventInvokeConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_event_invoke_config#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcEventInvokeConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_event_invoke_config#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcEventInvokeConfig to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -67,7 +67,7 @@ export class CcEventInvokeConfig extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_event_invoke_config awscc_lambda_event_invoke_config} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_event_invoke_config awscc_lambda_event_invoke_config} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -78,7 +78,7 @@ export class CcEventInvokeConfig extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_lambda_event_invoke_config',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -333,7 +333,7 @@ export interface OnFailureProperty {
     /**
     * The Amazon Resource Name (ARN) of the destination resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_event_invoke_config#destination CcEventInvokeConfig#destination}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_event_invoke_config#destination CcEventInvokeConfig#destination}
     */
     readonly destination?: string;
 }
@@ -399,7 +399,7 @@ export interface OnSuccessProperty {
     /**
     * The Amazon Resource Name (ARN) of the destination resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_event_invoke_config#destination CcEventInvokeConfig#destination}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_event_invoke_config#destination CcEventInvokeConfig#destination}
     */
     readonly destination?: string;
 }
@@ -465,13 +465,13 @@ export interface DestinationConfigProperty {
     /**
     * The destination configuration for failed invocations.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_event_invoke_config#on_failure CcEventInvokeConfig#on_failure}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_event_invoke_config#on_failure CcEventInvokeConfig#on_failure}
     */
     readonly onFailure?: OnFailureProperty;
     /**
     * The destination configuration for successful invocations.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_event_invoke_config#on_success CcEventInvokeConfig#on_success}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_event_invoke_config#on_success CcEventInvokeConfig#on_success}
     */
     readonly onSuccess?: OnSuccessProperty;
 }

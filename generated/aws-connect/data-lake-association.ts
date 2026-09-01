@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_data_lake_association
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_data_lake_association
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,25 +9,25 @@ export interface CcDataLakeAssociationProps extends cdktn.TerraformMetaArguments
     /**
     * The identifier of the analytics data set.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_data_lake_association#data_set_id CcDataLakeAssociation#data_set_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_data_lake_association#data_set_id CcDataLakeAssociation#data_set_id}
     */
     readonly dataSetId: string;
     /**
     * The identifier of the Amazon Connect instance
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_data_lake_association#instance_id CcDataLakeAssociation#instance_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_data_lake_association#instance_id CcDataLakeAssociation#instance_id}
     */
     readonly instanceId: string;
     /**
     * The identifier of the target account
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_data_lake_association#target_account_id CcDataLakeAssociation#target_account_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_data_lake_association#target_account_id CcDataLakeAssociation#target_account_id}
     */
     readonly targetAccountId?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_data_lake_association awscc_connect_data_lake_association}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_data_lake_association awscc_connect_data_lake_association}
 */
 export class CcDataLakeAssociation extends cdktn.TerraformResource {
 
@@ -43,7 +43,7 @@ export class CcDataLakeAssociation extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcDataLakeAssociation resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcDataLakeAssociation to import
-    * @param importFromId The id of the existing CcDataLakeAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_data_lake_association#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcDataLakeAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_data_lake_association#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcDataLakeAssociation to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -55,7 +55,7 @@ export class CcDataLakeAssociation extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_data_lake_association awscc_connect_data_lake_association} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_data_lake_association awscc_connect_data_lake_association} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +66,7 @@ export class CcDataLakeAssociation extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_connect_data_lake_association',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,

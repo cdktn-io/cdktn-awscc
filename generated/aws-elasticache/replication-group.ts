@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_replication_group
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_replication_group
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,163 +9,163 @@ export interface CcReplicationGroupProps extends cdktn.TerraformMetaArguments {
     /**
     * A flag that enables encryption at rest when set to true.AtRestEncryptionEnabled after the replication group is created. To enable encryption at rest on a replication group you must set AtRestEncryptionEnabled to true when you create the replication group.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_replication_group#at_rest_encryption_enabled CcReplicationGroup#at_rest_encryption_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_replication_group#at_rest_encryption_enabled CcReplicationGroup#at_rest_encryption_enabled}
     */
     readonly atRestEncryptionEnabled?: boolean | cdktn.IResolvable;
     /**
     * Reserved parameter. The password used to access a password protected server.AuthToken can be specified only on replication groups where TransitEncryptionEnabled is true. For more information.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_replication_group#auth_token CcReplicationGroup#auth_token}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_replication_group#auth_token CcReplicationGroup#auth_token}
     */
     readonly authToken?: string;
     /**
     * This parameter is currently disabled.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_replication_group#auto_minor_version_upgrade CcReplicationGroup#auto_minor_version_upgrade}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_replication_group#auto_minor_version_upgrade CcReplicationGroup#auto_minor_version_upgrade}
     */
     readonly autoMinorVersionUpgrade?: boolean | cdktn.IResolvable;
     /**
     * Specifies whether a read-only replica is automatically promoted to read/write primary if the existing primary fails. AutomaticFailoverEnabled must be enabled for Redis (cluster mode enabled) replication groups.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_replication_group#automatic_failover_enabled CcReplicationGroup#automatic_failover_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_replication_group#automatic_failover_enabled CcReplicationGroup#automatic_failover_enabled}
     */
     readonly automaticFailoverEnabled?: boolean | cdktn.IResolvable;
     /**
     * The compute and memory capacity of the nodes in the node group (shard).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_replication_group#cache_node_type CcReplicationGroup#cache_node_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_replication_group#cache_node_type CcReplicationGroup#cache_node_type}
     */
     readonly cacheNodeType?: string;
     /**
     * The name of the parameter group to associate with this replication group. If this argument is omitted, the default cache parameter group for the specified engine is used.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_replication_group#cache_parameter_group_name CcReplicationGroup#cache_parameter_group_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_replication_group#cache_parameter_group_name CcReplicationGroup#cache_parameter_group_name}
     */
     readonly cacheParameterGroupName?: string;
     /**
     * A list of cache security group names to associate with this replication group.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_replication_group#cache_security_group_names CcReplicationGroup#cache_security_group_names}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_replication_group#cache_security_group_names CcReplicationGroup#cache_security_group_names}
     */
     readonly cacheSecurityGroupNames?: string[];
     /**
     * The name of the cache subnet group to be used for the replication group.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_replication_group#cache_subnet_group_name CcReplicationGroup#cache_subnet_group_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_replication_group#cache_subnet_group_name CcReplicationGroup#cache_subnet_group_name}
     */
     readonly cacheSubnetGroupName?: string;
     /**
     * Enabled or Disabled. To modify cluster mode from Disabled to Enabled, you must first set the cluster mode to Compatible. Compatible mode allows your Redis OSS clients to connect using both cluster mode enabled and cluster mode disabled. After you migrate all Redis OSS clients to use cluster mode enabled, you can then complete cluster mode configuration and set the cluster mode to Enabled. For more information, see Modify cluster mode.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_replication_group#cluster_mode CcReplicationGroup#cluster_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_replication_group#cluster_mode CcReplicationGroup#cluster_mode}
     */
     readonly clusterMode?: string;
     /**
     * Enables data tiering. Data tiering is only supported for replication groups using the r6gd node type. This parameter must be set to true when using r6gd nodes.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_replication_group#data_tiering_enabled CcReplicationGroup#data_tiering_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_replication_group#data_tiering_enabled CcReplicationGroup#data_tiering_enabled}
     */
     readonly dataTieringEnabled?: boolean | cdktn.IResolvable;
     /**
     * The durability setting for the replication group. Valid values: default, async, sync, disabled. Enabling durability on an existing non-durable cluster or disabling durability on an existing durable cluster is not currently supported and will result in an error; specify the desired durability at create time. The resolved state is returned in EffectiveDurability.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_replication_group#durability CcReplicationGroup#durability}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_replication_group#durability CcReplicationGroup#durability}
     */
     readonly durability?: string;
     /**
     * The name of the cache engine to be used for the clusters in this replication group.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_replication_group#engine CcReplicationGroup#engine}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_replication_group#engine CcReplicationGroup#engine}
     */
     readonly engine?: string;
     /**
     * The version number of the cache engine to be used for the clusters in this replication group. To view the supported cache engine versions, use the DescribeCacheEngineVersions operation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_replication_group#engine_version CcReplicationGroup#engine_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_replication_group#engine_version CcReplicationGroup#engine_version}
     */
     readonly engineVersion?: string;
     /**
     * The name of the Global datastore
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_replication_group#global_replication_group_id CcReplicationGroup#global_replication_group_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_replication_group#global_replication_group_id CcReplicationGroup#global_replication_group_id}
     */
     readonly globalReplicationGroupId?: string;
     /**
     * The network type you choose when creating a replication group, either ipv4 | ipv6. IPv6 is supported for workloads using Redis OSS engine version 6.2 onward or Memcached engine version 1.6.6 on all instances built on the Nitro system.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_replication_group#ip_discovery CcReplicationGroup#ip_discovery}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_replication_group#ip_discovery CcReplicationGroup#ip_discovery}
     */
     readonly ipDiscovery?: string;
     /**
     * The ID of the KMS key used to encrypt the disk on the cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_replication_group#kms_key_id CcReplicationGroup#kms_key_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_replication_group#kms_key_id CcReplicationGroup#kms_key_id}
     */
     readonly kmsKeyId?: string;
     /**
     * Specifies the destination, format and type of the logs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_replication_group#log_delivery_configurations CcReplicationGroup#log_delivery_configurations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_replication_group#log_delivery_configurations CcReplicationGroup#log_delivery_configurations}
     */
     readonly logDeliveryConfigurations?: CcReplicationGroup.LogDeliveryConfigurationRequestProperty[] | cdktn.IResolvable;
     /**
     * A flag indicating if you have Multi-AZ enabled to enhance fault tolerance. For more information, see Minimizing Downtime: Multi-AZ.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_replication_group#multi_az_enabled CcReplicationGroup#multi_az_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_replication_group#multi_az_enabled CcReplicationGroup#multi_az_enabled}
     */
     readonly multiAzEnabled?: boolean | cdktn.IResolvable;
     /**
     * Must be either ipv4 | ipv6 | dual_stack. IPv6 is supported for workloads using Redis OSS engine version 6.2 onward or Memcached engine version 1.6.6 on all instances built on the Nitro system
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_replication_group#network_type CcReplicationGroup#network_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_replication_group#network_type CcReplicationGroup#network_type}
     */
     readonly networkType?: string;
     /**
     * NodeGroupConfiguration is a property of the AWS::ElastiCache::ReplicationGroup resource that configures an Amazon ElastiCache (ElastiCache) Redis cluster node group.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_replication_group#node_group_configuration CcReplicationGroup#node_group_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_replication_group#node_group_configuration CcReplicationGroup#node_group_configuration}
     */
     readonly nodeGroupConfiguration?: CcReplicationGroup.NodeGroupConfigurationProperty[] | cdktn.IResolvable;
     /**
     * The Amazon Resource Name (ARN) of the Amazon Simple Notification Service (SNS) topic to which notifications are sent.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_replication_group#notification_topic_arn CcReplicationGroup#notification_topic_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_replication_group#notification_topic_arn CcReplicationGroup#notification_topic_arn}
     */
     readonly notificationTopicArn?: string;
     /**
     * The number of clusters this replication group initially has.This parameter is not used if there is more than one node group (shard). You should use ReplicasPerNodeGroup instead.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_replication_group#num_cache_clusters CcReplicationGroup#num_cache_clusters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_replication_group#num_cache_clusters CcReplicationGroup#num_cache_clusters}
     */
     readonly numCacheClusters?: number;
     /**
     * An optional parameter that specifies the number of node groups (shards) for this Redis (cluster mode enabled) replication group. For Redis (cluster mode disabled) either omit this parameter or set it to 1.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_replication_group#num_node_groups CcReplicationGroup#num_node_groups}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_replication_group#num_node_groups CcReplicationGroup#num_node_groups}
     */
     readonly numNodeGroups?: number;
     /**
     * The port number on which each member of the replication group accepts connections.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_replication_group#port CcReplicationGroup#port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_replication_group#port CcReplicationGroup#port}
     */
     readonly port?: number;
     /**
     * A list of EC2 Availability Zones in which the replication group's clusters are created. The order of the Availability Zones in the list is the order in which clusters are allocated. The primary cluster is created in the first AZ in the list. This parameter is not used if there is more than one node group (shard). You should use NodeGroupConfiguration instead.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_replication_group#preferred_cache_cluster_a_zs CcReplicationGroup#preferred_cache_cluster_a_zs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_replication_group#preferred_cache_cluster_a_zs CcReplicationGroup#preferred_cache_cluster_a_zs}
     */
     readonly preferredCacheClusterAZs?: string[];
     /**
     * Specifies the weekly time range during which maintenance on the cluster is performed. It is specified as a range in the format ddd:hh24:mi-ddd:hh24:mi (24H Clock UTC). The minimum maintenance window is a 60 minute period.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_replication_group#preferred_maintenance_window CcReplicationGroup#preferred_maintenance_window}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_replication_group#preferred_maintenance_window CcReplicationGroup#preferred_maintenance_window}
     */
     readonly preferredMaintenanceWindow?: string;
     /**
     * The identifier of the cluster that serves as the primary for this replication group. This cluster must already exist and have a status of available.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_replication_group#primary_cluster_id CcReplicationGroup#primary_cluster_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_replication_group#primary_cluster_id CcReplicationGroup#primary_cluster_id}
     */
     readonly primaryClusterId?: string;
     /**
@@ -173,85 +173,85 @@ export interface CcReplicationGroupProps extends cdktn.TerraformMetaArguments {
     * 
     * **Note:** Using ReplicasPerNodeGroup with NodeGroupConfiguration results in resource replacement. For online scaling, use ReplicasPerNodeGroup alone.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_replication_group#replicas_per_node_group CcReplicationGroup#replicas_per_node_group}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_replication_group#replicas_per_node_group CcReplicationGroup#replicas_per_node_group}
     */
     readonly replicasPerNodeGroup?: number;
     /**
     * A user-created description for the replication group.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_replication_group#replication_group_description CcReplicationGroup#replication_group_description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_replication_group#replication_group_description CcReplicationGroup#replication_group_description}
     */
     readonly replicationGroupDescription: string;
     /**
     * The replication group identifier. This parameter is stored as a lowercase string.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_replication_group#replication_group_id CcReplicationGroup#replication_group_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_replication_group#replication_group_id CcReplicationGroup#replication_group_id}
     */
     readonly replicationGroupId?: string;
     /**
     * One or more Amazon VPC security groups associated with this replication group.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_replication_group#security_group_ids CcReplicationGroup#security_group_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_replication_group#security_group_ids CcReplicationGroup#security_group_ids}
     */
     readonly securityGroupIds?: string[];
     /**
     * A list of Amazon Resource Names (ARN) that uniquely identify the Redis RDB snapshot files stored in Amazon S3.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_replication_group#snapshot_arns CcReplicationGroup#snapshot_arns}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_replication_group#snapshot_arns CcReplicationGroup#snapshot_arns}
     */
     readonly snapshotArns?: string[];
     /**
     * The name of a snapshot from which to restore data into the new replication group. The snapshot status changes to restoring while the new replication group is being created.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_replication_group#snapshot_name CcReplicationGroup#snapshot_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_replication_group#snapshot_name CcReplicationGroup#snapshot_name}
     */
     readonly snapshotName?: string;
     /**
     * The number of days for which ElastiCache retains automatic snapshots before deleting them. For example, if you set SnapshotRetentionLimit to 5, a snapshot that was taken today is retained for 5 days before being deleted.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_replication_group#snapshot_retention_limit CcReplicationGroup#snapshot_retention_limit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_replication_group#snapshot_retention_limit CcReplicationGroup#snapshot_retention_limit}
     */
     readonly snapshotRetentionLimit?: number;
     /**
     * The daily time range (in UTC) during which ElastiCache begins taking a daily snapshot of your node group (shard).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_replication_group#snapshot_window CcReplicationGroup#snapshot_window}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_replication_group#snapshot_window CcReplicationGroup#snapshot_window}
     */
     readonly snapshotWindow?: string;
     /**
     * The cluster ID that is used as the daily snapshot source for the replication group. This parameter cannot be set for Redis (cluster mode enabled) replication groups.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_replication_group#snapshotting_cluster_id CcReplicationGroup#snapshotting_cluster_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_replication_group#snapshotting_cluster_id CcReplicationGroup#snapshotting_cluster_id}
     */
     readonly snapshottingClusterId?: string;
     /**
     * A list of cost allocation tags to be added to this resource. Tags are comma-separated key,value pairs (e.g. Key=myKey, Value=myKeyValue. You can include multiple tags as shown following: Key=myKey, Value=myKeyValue Key=mySecondKey, Value=mySecondKeyValue.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_replication_group#tags CcReplicationGroup#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_replication_group#tags CcReplicationGroup#tags}
     */
     readonly tags?: CcReplicationGroup.TagProperty[] | cdktn.IResolvable;
     /**
     * A flag that enables in-transit encryption when set to true.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_replication_group#transit_encryption_enabled CcReplicationGroup#transit_encryption_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_replication_group#transit_encryption_enabled CcReplicationGroup#transit_encryption_enabled}
     */
     readonly transitEncryptionEnabled?: boolean | cdktn.IResolvable;
     /**
     * A setting that allows you to migrate your clients to use in-transit encryption, with no downtime. When setting TransitEncryptionEnabled to true, you can set your TransitEncryptionMode to preferred in the same request, to allow both encrypted and unencrypted connections at the same time. Once you migrate all your Redis OSS clients to use encrypted connections you can modify the value to required to allow encrypted connections only. Setting TransitEncryptionMode to required is a two-step process that requires you to first set the TransitEncryptionMode to preferred, after that you can set TransitEncryptionMode to required. This process will not trigger the replacement of the replication group.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_replication_group#transit_encryption_mode CcReplicationGroup#transit_encryption_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_replication_group#transit_encryption_mode CcReplicationGroup#transit_encryption_mode}
     */
     readonly transitEncryptionMode?: string;
     /**
     * The ID of user group to associate with the replication group.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_replication_group#user_group_ids CcReplicationGroup#user_group_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_replication_group#user_group_ids CcReplicationGroup#user_group_ids}
     */
     readonly userGroupIds?: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_replication_group awscc_elasticache_replication_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_replication_group awscc_elasticache_replication_group}
 */
 export class CcReplicationGroup extends cdktn.TerraformResource {
 
@@ -267,7 +267,7 @@ export class CcReplicationGroup extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcReplicationGroup resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcReplicationGroup to import
-    * @param importFromId The id of the existing CcReplicationGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_replication_group#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcReplicationGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_replication_group#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcReplicationGroup to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -279,7 +279,7 @@ export class CcReplicationGroup extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_replication_group awscc_elasticache_replication_group} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_replication_group awscc_elasticache_replication_group} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -290,7 +290,7 @@ export class CcReplicationGroup extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_elasticache_replication_group',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -1685,7 +1685,7 @@ export interface CloudWatchLogsDestinationDetailsProperty {
     /**
     * The name of the CloudWatch Logs log group.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_replication_group#log_group CcReplicationGroup#log_group}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_replication_group#log_group CcReplicationGroup#log_group}
     */
     readonly logGroup?: string;
 }
@@ -1751,7 +1751,7 @@ export interface KinesisFirehoseDestinationDetailsProperty {
     /**
     * The name of the Kinesis Data Firehose delivery stream.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_replication_group#delivery_stream CcReplicationGroup#delivery_stream}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_replication_group#delivery_stream CcReplicationGroup#delivery_stream}
     */
     readonly deliveryStream?: string;
 }
@@ -1817,13 +1817,13 @@ export interface DestinationDetailsProperty {
     /**
     * The configuration details of the CloudWatch Logs destination. Note that this field is marked as required but only if CloudWatch Logs was chosen as the destination.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_replication_group#cloudwatch_logs_details CcReplicationGroup#cloudwatch_logs_details}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_replication_group#cloudwatch_logs_details CcReplicationGroup#cloudwatch_logs_details}
     */
     readonly cloudwatchLogsDetails?: CloudWatchLogsDestinationDetailsProperty;
     /**
     * The configuration details of the Kinesis Data Firehose destination. Note that this field is marked as required but only if Kinesis Data Firehose was chosen as the destination.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_replication_group#kinesis_firehose_details CcReplicationGroup#kinesis_firehose_details}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_replication_group#kinesis_firehose_details CcReplicationGroup#kinesis_firehose_details}
     */
     readonly kinesisFirehoseDetails?: KinesisFirehoseDestinationDetailsProperty;
 }
@@ -1911,25 +1911,25 @@ export interface LogDeliveryConfigurationRequestProperty {
     /**
     * Configuration details of either a CloudWatch Logs destination or Kinesis Data Firehose destination.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_replication_group#destination_details CcReplicationGroup#destination_details}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_replication_group#destination_details CcReplicationGroup#destination_details}
     */
     readonly destinationDetails?: DestinationDetailsProperty;
     /**
     * Specify either CloudWatch Logs or Kinesis Data Firehose as the destination type. Valid values are either cloudwatch-logs or kinesis-firehose.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_replication_group#destination_type CcReplicationGroup#destination_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_replication_group#destination_type CcReplicationGroup#destination_type}
     */
     readonly destinationType?: string;
     /**
     * Valid values are either json or text.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_replication_group#log_format CcReplicationGroup#log_format}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_replication_group#log_format CcReplicationGroup#log_format}
     */
     readonly logFormat?: string;
     /**
     * Valid value is either slow-log, which refers to slow-log or engine-log.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_replication_group#log_type CcReplicationGroup#log_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_replication_group#log_type CcReplicationGroup#log_type}
     */
     readonly logType?: string;
 }
@@ -2083,31 +2083,31 @@ export interface NodeGroupConfigurationProperty {
     /**
     * Either the ElastiCache for Redis supplied 4-digit id or a user supplied id for the node group these configuration values apply to.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_replication_group#node_group_id CcReplicationGroup#node_group_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_replication_group#node_group_id CcReplicationGroup#node_group_id}
     */
     readonly nodeGroupId?: string;
     /**
     * The Availability Zone where the primary node of this node group (shard) is launched.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_replication_group#primary_availability_zone CcReplicationGroup#primary_availability_zone}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_replication_group#primary_availability_zone CcReplicationGroup#primary_availability_zone}
     */
     readonly primaryAvailabilityZone?: string;
     /**
     * A list of Availability Zones to be used for the read replicas. The number of Availability Zones in this list must match the value of ReplicaCount or ReplicasPerNodeGroup if not specified.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_replication_group#replica_availability_zones CcReplicationGroup#replica_availability_zones}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_replication_group#replica_availability_zones CcReplicationGroup#replica_availability_zones}
     */
     readonly replicaAvailabilityZones?: string[];
     /**
     * The number of read replica nodes in this node group (shard).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_replication_group#replica_count CcReplicationGroup#replica_count}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_replication_group#replica_count CcReplicationGroup#replica_count}
     */
     readonly replicaCount?: number;
     /**
     * A string of comma-separated values where the first set of values are the slot numbers (zero based), and the second set of values are the keyspaces for each slot. The following example specifies three slots (numbered 0, 1, and 2): 0,1,2,0-4999,5000-9999,10000-16,383.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_replication_group#slots CcReplicationGroup#slots}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_replication_group#slots CcReplicationGroup#slots}
     */
     readonly slots?: string;
 }
@@ -2407,13 +2407,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_replication_group#key CcReplicationGroup#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_replication_group#key CcReplicationGroup#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 0 to 256 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_replication_group#value CcReplicationGroup#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_replication_group#value CcReplicationGroup#value}
     */
     readonly value?: string;
 }

@@ -1,27 +1,27 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appstream_application_entitlement_association
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appstream_application_entitlement_association
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcApplicationEntitlementAssociationProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appstream_application_entitlement_association#application_identifier CcApplicationEntitlementAssociation#application_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appstream_application_entitlement_association#application_identifier CcApplicationEntitlementAssociation#application_identifier}
     */
     readonly applicationIdentifier: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appstream_application_entitlement_association#entitlement_name CcApplicationEntitlementAssociation#entitlement_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appstream_application_entitlement_association#entitlement_name CcApplicationEntitlementAssociation#entitlement_name}
     */
     readonly entitlementName: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appstream_application_entitlement_association#stack_name CcApplicationEntitlementAssociation#stack_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appstream_application_entitlement_association#stack_name CcApplicationEntitlementAssociation#stack_name}
     */
     readonly stackName: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appstream_application_entitlement_association awscc_appstream_application_entitlement_association}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appstream_application_entitlement_association awscc_appstream_application_entitlement_association}
 */
 export class CcApplicationEntitlementAssociation extends cdktn.TerraformResource {
 
@@ -37,7 +37,7 @@ export class CcApplicationEntitlementAssociation extends cdktn.TerraformResource
     * Generates CDKTN code for importing a CcApplicationEntitlementAssociation resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcApplicationEntitlementAssociation to import
-    * @param importFromId The id of the existing CcApplicationEntitlementAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appstream_application_entitlement_association#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcApplicationEntitlementAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appstream_application_entitlement_association#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcApplicationEntitlementAssociation to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -49,7 +49,7 @@ export class CcApplicationEntitlementAssociation extends cdktn.TerraformResource
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appstream_application_entitlement_association awscc_appstream_application_entitlement_association} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appstream_application_entitlement_association awscc_appstream_application_entitlement_association} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -60,7 +60,7 @@ export class CcApplicationEntitlementAssociation extends cdktn.TerraformResource
             terraformResourceType: 'awscc_appstream_application_entitlement_association',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,

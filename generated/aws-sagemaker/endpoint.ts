@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_endpoint
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_endpoint
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,43 +9,43 @@ export interface CcEndpointProps extends cdktn.TerraformMetaArguments {
     /**
     * Specifies deployment configuration for updating the SageMaker endpoint. Includes rollback and update policies.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_endpoint#deployment_config CcEndpoint#deployment_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_endpoint#deployment_config CcEndpoint#deployment_config}
     */
     readonly deploymentConfig?: CcEndpoint.DeploymentConfigProperty;
     /**
     * The name of the endpoint configuration for the SageMaker endpoint. This is a required property.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_endpoint#endpoint_config_name CcEndpoint#endpoint_config_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_endpoint#endpoint_config_name CcEndpoint#endpoint_config_name}
     */
     readonly endpointConfigName: string;
     /**
     * Specifies a list of variant properties that you want to exclude when updating an endpoint.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_endpoint#exclude_retained_variant_properties CcEndpoint#exclude_retained_variant_properties}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_endpoint#exclude_retained_variant_properties CcEndpoint#exclude_retained_variant_properties}
     */
     readonly excludeRetainedVariantProperties?: CcEndpoint.VariantPropertyProperty[] | cdktn.IResolvable;
     /**
     * When set to true, retains all variant properties for an endpoint when it is updated.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_endpoint#retain_all_variant_properties CcEndpoint#retain_all_variant_properties}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_endpoint#retain_all_variant_properties CcEndpoint#retain_all_variant_properties}
     */
     readonly retainAllVariantProperties?: boolean | cdktn.IResolvable;
     /**
     * When set to true, retains the deployment configuration during endpoint updates.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_endpoint#retain_deployment_config CcEndpoint#retain_deployment_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_endpoint#retain_deployment_config CcEndpoint#retain_deployment_config}
     */
     readonly retainDeploymentConfig?: boolean | cdktn.IResolvable;
     /**
     * An array of key-value pairs to apply to this resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_endpoint#tags CcEndpoint#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_endpoint#tags CcEndpoint#tags}
     */
     readonly tags?: CcEndpoint.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_endpoint awscc_sagemaker_endpoint}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_endpoint awscc_sagemaker_endpoint}
 */
 export class CcEndpoint extends cdktn.TerraformResource {
 
@@ -61,7 +61,7 @@ export class CcEndpoint extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcEndpoint resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcEndpoint to import
-    * @param importFromId The id of the existing CcEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_endpoint#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_endpoint#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcEndpoint to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -73,7 +73,7 @@ export class CcEndpoint extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_endpoint awscc_sagemaker_endpoint} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_endpoint awscc_sagemaker_endpoint} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -84,7 +84,7 @@ export class CcEndpoint extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_sagemaker_endpoint',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -744,7 +744,7 @@ export interface AlarmProperty {
     /**
     * The name of the CloudWatch alarm.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_endpoint#alarm_name CcEndpoint#alarm_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_endpoint#alarm_name CcEndpoint#alarm_name}
     */
     readonly alarmName?: string;
 }
@@ -832,7 +832,7 @@ export interface AutoRollbackConfigProperty {
     /**
     * List of CloudWatch alarms to monitor during the deployment. If any alarm goes off, the deployment is rolled back.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_endpoint#alarms CcEndpoint#alarms}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_endpoint#alarms CcEndpoint#alarms}
     */
     readonly alarms?: AlarmProperty[] | cdktn.IResolvable;
 }
@@ -898,13 +898,13 @@ export interface CapacitySizeProperty {
     /**
     * Specifies whether the `Value` is an instance count or a capacity unit.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_endpoint#type CcEndpoint#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_endpoint#type CcEndpoint#type}
     */
     readonly type?: string;
     /**
     * The value representing either the number of instances or the number of capacity units.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_endpoint#value CcEndpoint#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_endpoint#value CcEndpoint#value}
     */
     readonly value?: number;
 }
@@ -992,13 +992,13 @@ export interface LinearStepSizeProperty {
     /**
     * Specifies whether the `Value` is an instance count or a capacity unit.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_endpoint#type CcEndpoint#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_endpoint#type CcEndpoint#type}
     */
     readonly type?: string;
     /**
     * The value representing either the number of instances or the number of capacity units.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_endpoint#value CcEndpoint#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_endpoint#value CcEndpoint#value}
     */
     readonly value?: number;
 }
@@ -1086,25 +1086,25 @@ export interface TrafficRoutingConfigProperty {
     /**
     * Specifies the size of the canary traffic in a canary deployment.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_endpoint#canary_size CcEndpoint#canary_size}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_endpoint#canary_size CcEndpoint#canary_size}
     */
     readonly canarySize?: CapacitySizeProperty;
     /**
     * Specifies the step size for linear traffic routing.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_endpoint#linear_step_size CcEndpoint#linear_step_size}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_endpoint#linear_step_size CcEndpoint#linear_step_size}
     */
     readonly linearStepSize?: LinearStepSizeProperty;
     /**
     * Specifies the type of traffic routing (e.g., 'AllAtOnce', 'Canary', 'Linear').
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_endpoint#type CcEndpoint#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_endpoint#type CcEndpoint#type}
     */
     readonly type?: string;
     /**
     * Specifies the wait interval between traffic shifts, in seconds.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_endpoint#wait_interval_in_seconds CcEndpoint#wait_interval_in_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_endpoint#wait_interval_in_seconds CcEndpoint#wait_interval_in_seconds}
     */
     readonly waitIntervalInSeconds?: number;
 }
@@ -1236,19 +1236,19 @@ export interface BlueGreenUpdatePolicyProperty {
     /**
     * The maximum time allowed for the blue/green update, in seconds.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_endpoint#maximum_execution_timeout_in_seconds CcEndpoint#maximum_execution_timeout_in_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_endpoint#maximum_execution_timeout_in_seconds CcEndpoint#maximum_execution_timeout_in_seconds}
     */
     readonly maximumExecutionTimeoutInSeconds?: number;
     /**
     * The wait time before terminating the old endpoint during a blue/green deployment.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_endpoint#termination_wait_in_seconds CcEndpoint#termination_wait_in_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_endpoint#termination_wait_in_seconds CcEndpoint#termination_wait_in_seconds}
     */
     readonly terminationWaitInSeconds?: number;
     /**
     * The traffic routing configuration for the blue/green deployment.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_endpoint#traffic_routing_configuration CcEndpoint#traffic_routing_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_endpoint#traffic_routing_configuration CcEndpoint#traffic_routing_configuration}
     */
     readonly trafficRoutingConfiguration?: TrafficRoutingConfigProperty;
 }
@@ -1358,13 +1358,13 @@ export interface MaximumBatchSizeProperty {
     /**
     * Specifies whether the `Value` is an instance count or a capacity unit.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_endpoint#type CcEndpoint#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_endpoint#type CcEndpoint#type}
     */
     readonly type?: string;
     /**
     * The value representing either the number of instances or the number of capacity units.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_endpoint#value CcEndpoint#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_endpoint#value CcEndpoint#value}
     */
     readonly value?: number;
 }
@@ -1452,13 +1452,13 @@ export interface RollbackMaximumBatchSizeProperty {
     /**
     * Specifies whether the `Value` is an instance count or a capacity unit.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_endpoint#type CcEndpoint#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_endpoint#type CcEndpoint#type}
     */
     readonly type?: string;
     /**
     * The value representing either the number of instances or the number of capacity units.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_endpoint#value CcEndpoint#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_endpoint#value CcEndpoint#value}
     */
     readonly value?: number;
 }
@@ -1546,25 +1546,25 @@ export interface RollingUpdatePolicyProperty {
     /**
     * Specifies the maximum batch size for each rolling update.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_endpoint#maximum_batch_size CcEndpoint#maximum_batch_size}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_endpoint#maximum_batch_size CcEndpoint#maximum_batch_size}
     */
     readonly maximumBatchSize?: MaximumBatchSizeProperty;
     /**
     * The maximum time allowed for the rolling update, in seconds.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_endpoint#maximum_execution_timeout_in_seconds CcEndpoint#maximum_execution_timeout_in_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_endpoint#maximum_execution_timeout_in_seconds CcEndpoint#maximum_execution_timeout_in_seconds}
     */
     readonly maximumExecutionTimeoutInSeconds?: number;
     /**
     * The maximum batch size for rollback during an update failure.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_endpoint#rollback_maximum_batch_size CcEndpoint#rollback_maximum_batch_size}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_endpoint#rollback_maximum_batch_size CcEndpoint#rollback_maximum_batch_size}
     */
     readonly rollbackMaximumBatchSize?: RollbackMaximumBatchSizeProperty;
     /**
     * The time to wait between steps during the rolling update, in seconds.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_endpoint#wait_interval_in_seconds CcEndpoint#wait_interval_in_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_endpoint#wait_interval_in_seconds CcEndpoint#wait_interval_in_seconds}
     */
     readonly waitIntervalInSeconds?: number;
 }
@@ -1696,19 +1696,19 @@ export interface DeploymentConfigProperty {
     /**
     * Configuration for automatic rollback if an error occurs during deployment.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_endpoint#auto_rollback_configuration CcEndpoint#auto_rollback_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_endpoint#auto_rollback_configuration CcEndpoint#auto_rollback_configuration}
     */
     readonly autoRollbackConfiguration?: AutoRollbackConfigProperty;
     /**
     * Configuration for blue-green update deployment policies.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_endpoint#blue_green_update_policy CcEndpoint#blue_green_update_policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_endpoint#blue_green_update_policy CcEndpoint#blue_green_update_policy}
     */
     readonly blueGreenUpdatePolicy?: BlueGreenUpdatePolicyProperty;
     /**
     * Configuration for rolling update deployment policies.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_endpoint#rolling_update_policy CcEndpoint#rolling_update_policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_endpoint#rolling_update_policy CcEndpoint#rolling_update_policy}
     */
     readonly rollingUpdatePolicy?: RollingUpdatePolicyProperty;
 }
@@ -1818,7 +1818,7 @@ export interface VariantPropertyProperty {
     /**
     * The type of variant property (e.g., 'DesiredInstanceCount', 'DesiredWeight', 'DataCaptureConfig').
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_endpoint#variant_property_type CcEndpoint#variant_property_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_endpoint#variant_property_type CcEndpoint#variant_property_type}
     */
     readonly variantPropertyType?: string;
 }
@@ -1906,13 +1906,13 @@ export interface TagProperty {
     /**
     * The key of the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_endpoint#key CcEndpoint#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_endpoint#key CcEndpoint#key}
     */
     readonly key?: string;
     /**
     * The value of the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_endpoint#value CcEndpoint#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_endpoint#value CcEndpoint#value}
     */
     readonly value?: string;
 }

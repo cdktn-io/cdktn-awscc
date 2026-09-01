@@ -1,53 +1,53 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_signal_map
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_signal_map
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcSignalMapProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_signal_map#cloudwatch_alarm_template_group_identifiers CcSignalMap#cloudwatch_alarm_template_group_identifiers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_signal_map#cloudwatch_alarm_template_group_identifiers CcSignalMap#cloudwatch_alarm_template_group_identifiers}
     */
     readonly cloudwatchAlarmTemplateGroupIdentifiers?: string[];
     /**
     * A resource's optional description.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_signal_map#description CcSignalMap#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_signal_map#description CcSignalMap#description}
     */
     readonly description?: string;
     /**
     * A top-level supported AWS resource ARN to discovery a signal map from.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_signal_map#discovery_entry_point_arn CcSignalMap#discovery_entry_point_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_signal_map#discovery_entry_point_arn CcSignalMap#discovery_entry_point_arn}
     */
     readonly discoveryEntryPointArn: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_signal_map#event_bridge_rule_template_group_identifiers CcSignalMap#event_bridge_rule_template_group_identifiers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_signal_map#event_bridge_rule_template_group_identifiers CcSignalMap#event_bridge_rule_template_group_identifiers}
     */
     readonly eventBridgeRuleTemplateGroupIdentifiers?: string[];
     /**
     * If true, will force a rediscovery of a signal map if an unchanged discoveryEntryPointArn is provided.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_signal_map#force_rediscovery CcSignalMap#force_rediscovery}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_signal_map#force_rediscovery CcSignalMap#force_rediscovery}
     */
     readonly forceRediscovery?: boolean | cdktn.IResolvable;
     /**
     * A resource's name. Names must be unique within the scope of a resource type in a specific region.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_signal_map#name CcSignalMap#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_signal_map#name CcSignalMap#name}
     */
     readonly name: string;
     /**
     * Represents the tags associated with a resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_signal_map#tags CcSignalMap#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_signal_map#tags CcSignalMap#tags}
     */
     readonly tags?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_signal_map awscc_medialive_signal_map}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_signal_map awscc_medialive_signal_map}
 */
 export class CcSignalMap extends cdktn.TerraformResource {
 
@@ -63,7 +63,7 @@ export class CcSignalMap extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcSignalMap resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcSignalMap to import
-    * @param importFromId The id of the existing CcSignalMap that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_signal_map#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcSignalMap that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_signal_map#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcSignalMap to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -75,7 +75,7 @@ export class CcSignalMap extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_signal_map awscc_medialive_signal_map} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_signal_map awscc_medialive_signal_map} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -86,7 +86,7 @@ export class CcSignalMap extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_medialive_signal_map',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,

@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,25 +9,25 @@ export interface CcInsightProps extends cdktn.TerraformMetaArguments {
     /**
     * One or more attributes used to filter the findings included in the insight
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#filters CcInsight#filters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#filters CcInsight#filters}
     */
     readonly filters: CcInsight.AwsSecurityFindingFiltersProperty;
     /**
     * The grouping attribute for the insight's findings
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#group_by_attribute CcInsight#group_by_attribute}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#group_by_attribute CcInsight#group_by_attribute}
     */
     readonly groupByAttribute: string;
     /**
     * The name of a Security Hub insight
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#name CcInsight#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#name CcInsight#name}
     */
     readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight awscc_securityhub_insight}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight awscc_securityhub_insight}
 */
 export class CcInsight extends cdktn.TerraformResource {
 
@@ -43,7 +43,7 @@ export class CcInsight extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcInsight resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcInsight to import
-    * @param importFromId The id of the existing CcInsight that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcInsight that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcInsight to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -55,7 +55,7 @@ export class CcInsight extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight awscc_securityhub_insight} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight awscc_securityhub_insight} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +66,7 @@ export class CcInsight extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_securityhub_insight',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -5303,13 +5303,13 @@ export interface StringFilterProperty {
     /**
     * The condition to apply to a string value when filtering Security Hub findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
     */
     readonly comparison?: string;
     /**
     * Non-empty string definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: string;
 }
@@ -5419,13 +5419,13 @@ export interface AwsAccountNameProperty {
     /**
     * The condition to apply to a string value when filtering Security Hub findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
     */
     readonly comparison?: string;
     /**
     * Non-empty string definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: string;
 }
@@ -5535,13 +5535,13 @@ export interface CompanyNameProperty {
     /**
     * The condition to apply to a string value when filtering Security Hub findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
     */
     readonly comparison?: string;
     /**
     * Non-empty string definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: string;
 }
@@ -5651,13 +5651,13 @@ export interface ComplianceAssociatedStandardsIdProperty {
     /**
     * The condition to apply to a string value when filtering Security Hub findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
     */
     readonly comparison?: string;
     /**
     * Non-empty string definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: string;
 }
@@ -5767,13 +5767,13 @@ export interface ComplianceSecurityControlIdProperty {
     /**
     * The condition to apply to a string value when filtering Security Hub findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
     */
     readonly comparison?: string;
     /**
     * Non-empty string definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: string;
 }
@@ -5883,13 +5883,13 @@ export interface ComplianceSecurityControlParametersNameProperty {
     /**
     * The condition to apply to a string value when filtering Security Hub findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
     */
     readonly comparison?: string;
     /**
     * Non-empty string definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: string;
 }
@@ -5999,13 +5999,13 @@ export interface ComplianceSecurityControlParametersValueProperty {
     /**
     * The condition to apply to a string value when filtering Security Hub findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
     */
     readonly comparison?: string;
     /**
     * Non-empty string definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: string;
 }
@@ -6115,13 +6115,13 @@ export interface ComplianceStatusProperty {
     /**
     * The condition to apply to a string value when filtering Security Hub findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
     */
     readonly comparison?: string;
     /**
     * Non-empty string definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: string;
 }
@@ -6231,19 +6231,19 @@ export interface NumberFilterProperty {
     /**
     * The equal-to condition to be applied to a single field when querying for findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#eq CcInsight#eq}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#eq CcInsight#eq}
     */
     readonly eq?: number;
     /**
     * The greater-than-equal condition to be applied to a single field when querying for findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#gte CcInsight#gte}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#gte CcInsight#gte}
     */
     readonly gte?: number;
     /**
     * The less-than-equal condition to be applied to a single field when querying for findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#lte CcInsight#lte}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#lte CcInsight#lte}
     */
     readonly lte?: number;
 }
@@ -6375,13 +6375,13 @@ export interface DateRangeProperty {
     /**
     * A date range unit for the date filter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#unit CcInsight#unit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#unit CcInsight#unit}
     */
     readonly unit?: string;
     /**
     * A date range value for the date filter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: number;
 }
@@ -6469,19 +6469,19 @@ export interface DateFilterProperty {
     /**
     * A date range for the date filter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#date_range CcInsight#date_range}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#date_range CcInsight#date_range}
     */
     readonly dateRange?: DateRangeProperty;
     /**
     * The date and time, in UTC and ISO 8601 format.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#end CcInsight#end}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#end CcInsight#end}
     */
     readonly end?: string;
     /**
     * The date and time, in UTC and ISO 8601 format.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#start CcInsight#start}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#start CcInsight#start}
     */
     readonly start?: string;
 }
@@ -6613,19 +6613,19 @@ export interface CriticalityProperty {
     /**
     * The equal-to condition to be applied to a single field when querying for findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#eq CcInsight#eq}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#eq CcInsight#eq}
     */
     readonly eq?: number;
     /**
     * The greater-than-equal condition to be applied to a single field when querying for findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#gte CcInsight#gte}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#gte CcInsight#gte}
     */
     readonly gte?: number;
     /**
     * The less-than-equal condition to be applied to a single field when querying for findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#lte CcInsight#lte}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#lte CcInsight#lte}
     */
     readonly lte?: number;
 }
@@ -6757,13 +6757,13 @@ export interface DescriptionProperty {
     /**
     * The condition to apply to a string value when filtering Security Hub findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
     */
     readonly comparison?: string;
     /**
     * Non-empty string definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: string;
 }
@@ -6873,19 +6873,19 @@ export interface FindingProviderFieldsConfidenceProperty {
     /**
     * The equal-to condition to be applied to a single field when querying for findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#eq CcInsight#eq}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#eq CcInsight#eq}
     */
     readonly eq?: number;
     /**
     * The greater-than-equal condition to be applied to a single field when querying for findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#gte CcInsight#gte}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#gte CcInsight#gte}
     */
     readonly gte?: number;
     /**
     * The less-than-equal condition to be applied to a single field when querying for findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#lte CcInsight#lte}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#lte CcInsight#lte}
     */
     readonly lte?: number;
 }
@@ -7017,19 +7017,19 @@ export interface FindingProviderFieldsCriticalityProperty {
     /**
     * The equal-to condition to be applied to a single field when querying for findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#eq CcInsight#eq}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#eq CcInsight#eq}
     */
     readonly eq?: number;
     /**
     * The greater-than-equal condition to be applied to a single field when querying for findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#gte CcInsight#gte}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#gte CcInsight#gte}
     */
     readonly gte?: number;
     /**
     * The less-than-equal condition to be applied to a single field when querying for findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#lte CcInsight#lte}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#lte CcInsight#lte}
     */
     readonly lte?: number;
 }
@@ -7161,13 +7161,13 @@ export interface FindingProviderFieldsRelatedFindingsIdProperty {
     /**
     * The condition to apply to a string value when filtering Security Hub findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
     */
     readonly comparison?: string;
     /**
     * Non-empty string definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: string;
 }
@@ -7277,13 +7277,13 @@ export interface FindingProviderFieldsRelatedFindingsProductArnProperty {
     /**
     * The condition to apply to a string value when filtering Security Hub findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
     */
     readonly comparison?: string;
     /**
     * Non-empty string definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: string;
 }
@@ -7393,13 +7393,13 @@ export interface FindingProviderFieldsSeverityLabelProperty {
     /**
     * The condition to apply to a string value when filtering Security Hub findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
     */
     readonly comparison?: string;
     /**
     * Non-empty string definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: string;
 }
@@ -7509,13 +7509,13 @@ export interface FindingProviderFieldsSeverityOriginalProperty {
     /**
     * The condition to apply to a string value when filtering Security Hub findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
     */
     readonly comparison?: string;
     /**
     * Non-empty string definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: string;
 }
@@ -7625,13 +7625,13 @@ export interface FindingProviderFieldsTypesProperty {
     /**
     * The condition to apply to a string value when filtering Security Hub findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
     */
     readonly comparison?: string;
     /**
     * Non-empty string definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: string;
 }
@@ -7741,13 +7741,13 @@ export interface FiltersFirstObservedAtDateRangeProperty {
     /**
     * A date range unit for the date filter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#unit CcInsight#unit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#unit CcInsight#unit}
     */
     readonly unit?: string;
     /**
     * A date range value for the date filter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: number;
 }
@@ -7835,19 +7835,19 @@ export interface FirstObservedAtProperty {
     /**
     * A date range for the date filter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#date_range CcInsight#date_range}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#date_range CcInsight#date_range}
     */
     readonly dateRange?: FiltersFirstObservedAtDateRangeProperty;
     /**
     * The date and time, in UTC and ISO 8601 format.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#end CcInsight#end}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#end CcInsight#end}
     */
     readonly end?: string;
     /**
     * The date and time, in UTC and ISO 8601 format.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#start CcInsight#start}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#start CcInsight#start}
     */
     readonly start?: string;
 }
@@ -7979,13 +7979,13 @@ export interface GeneratorIdProperty {
     /**
     * The condition to apply to a string value when filtering Security Hub findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
     */
     readonly comparison?: string;
     /**
     * Non-empty string definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: string;
 }
@@ -8095,13 +8095,13 @@ export interface IdProperty {
     /**
     * The condition to apply to a string value when filtering Security Hub findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
     */
     readonly comparison?: string;
     /**
     * Non-empty string definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: string;
 }
@@ -8211,7 +8211,7 @@ export interface KeywordFilterProperty {
     /**
     * A value for the keyword.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: string;
 }
@@ -8299,13 +8299,13 @@ export interface FiltersLastObservedAtDateRangeProperty {
     /**
     * A date range unit for the date filter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#unit CcInsight#unit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#unit CcInsight#unit}
     */
     readonly unit?: string;
     /**
     * A date range value for the date filter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: number;
 }
@@ -8393,19 +8393,19 @@ export interface LastObservedAtProperty {
     /**
     * A date range for the date filter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#date_range CcInsight#date_range}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#date_range CcInsight#date_range}
     */
     readonly dateRange?: FiltersLastObservedAtDateRangeProperty;
     /**
     * The date and time, in UTC and ISO 8601 format.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#end CcInsight#end}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#end CcInsight#end}
     */
     readonly end?: string;
     /**
     * The date and time, in UTC and ISO 8601 format.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#start CcInsight#start}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#start CcInsight#start}
     */
     readonly start?: string;
 }
@@ -8537,13 +8537,13 @@ export interface MalwareNameProperty {
     /**
     * The condition to apply to a string value when filtering Security Hub findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
     */
     readonly comparison?: string;
     /**
     * Non-empty string definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: string;
 }
@@ -8653,13 +8653,13 @@ export interface MalwarePathProperty {
     /**
     * The condition to apply to a string value when filtering Security Hub findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
     */
     readonly comparison?: string;
     /**
     * Non-empty string definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: string;
 }
@@ -8769,13 +8769,13 @@ export interface MalwareStateProperty {
     /**
     * The condition to apply to a string value when filtering Security Hub findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
     */
     readonly comparison?: string;
     /**
     * Non-empty string definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: string;
 }
@@ -8885,13 +8885,13 @@ export interface MalwareTypeProperty {
     /**
     * The condition to apply to a string value when filtering Security Hub findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
     */
     readonly comparison?: string;
     /**
     * Non-empty string definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: string;
 }
@@ -9001,13 +9001,13 @@ export interface NetworkDestinationDomainProperty {
     /**
     * The condition to apply to a string value when filtering Security Hub findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
     */
     readonly comparison?: string;
     /**
     * Non-empty string definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: string;
 }
@@ -9117,7 +9117,7 @@ export interface IpFilterProperty {
     /**
     * A finding's CIDR value.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#cidr CcInsight#cidr}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#cidr CcInsight#cidr}
     */
     readonly cidr?: string;
 }
@@ -9205,7 +9205,7 @@ export interface NetworkDestinationIpV6Property {
     /**
     * A finding's CIDR value.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#cidr CcInsight#cidr}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#cidr CcInsight#cidr}
     */
     readonly cidr?: string;
 }
@@ -9293,19 +9293,19 @@ export interface NetworkDestinationPortProperty {
     /**
     * The equal-to condition to be applied to a single field when querying for findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#eq CcInsight#eq}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#eq CcInsight#eq}
     */
     readonly eq?: number;
     /**
     * The greater-than-equal condition to be applied to a single field when querying for findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#gte CcInsight#gte}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#gte CcInsight#gte}
     */
     readonly gte?: number;
     /**
     * The less-than-equal condition to be applied to a single field when querying for findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#lte CcInsight#lte}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#lte CcInsight#lte}
     */
     readonly lte?: number;
 }
@@ -9437,13 +9437,13 @@ export interface NetworkDirectionProperty {
     /**
     * The condition to apply to a string value when filtering Security Hub findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
     */
     readonly comparison?: string;
     /**
     * Non-empty string definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: string;
 }
@@ -9553,13 +9553,13 @@ export interface NetworkProtocolProperty {
     /**
     * The condition to apply to a string value when filtering Security Hub findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
     */
     readonly comparison?: string;
     /**
     * Non-empty string definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: string;
 }
@@ -9669,13 +9669,13 @@ export interface NetworkSourceDomainProperty {
     /**
     * The condition to apply to a string value when filtering Security Hub findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
     */
     readonly comparison?: string;
     /**
     * Non-empty string definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: string;
 }
@@ -9785,7 +9785,7 @@ export interface NetworkSourceIpV4Property {
     /**
     * A finding's CIDR value.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#cidr CcInsight#cidr}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#cidr CcInsight#cidr}
     */
     readonly cidr?: string;
 }
@@ -9873,7 +9873,7 @@ export interface NetworkSourceIpV6Property {
     /**
     * A finding's CIDR value.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#cidr CcInsight#cidr}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#cidr CcInsight#cidr}
     */
     readonly cidr?: string;
 }
@@ -9961,13 +9961,13 @@ export interface NetworkSourceMacProperty {
     /**
     * The condition to apply to a string value when filtering Security Hub findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
     */
     readonly comparison?: string;
     /**
     * Non-empty string definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: string;
 }
@@ -10077,19 +10077,19 @@ export interface NetworkSourcePortProperty {
     /**
     * The equal-to condition to be applied to a single field when querying for findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#eq CcInsight#eq}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#eq CcInsight#eq}
     */
     readonly eq?: number;
     /**
     * The greater-than-equal condition to be applied to a single field when querying for findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#gte CcInsight#gte}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#gte CcInsight#gte}
     */
     readonly gte?: number;
     /**
     * The less-than-equal condition to be applied to a single field when querying for findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#lte CcInsight#lte}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#lte CcInsight#lte}
     */
     readonly lte?: number;
 }
@@ -10221,13 +10221,13 @@ export interface NoteTextProperty {
     /**
     * The condition to apply to a string value when filtering Security Hub findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
     */
     readonly comparison?: string;
     /**
     * Non-empty string definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: string;
 }
@@ -10337,13 +10337,13 @@ export interface FiltersNoteUpdatedAtDateRangeProperty {
     /**
     * A date range unit for the date filter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#unit CcInsight#unit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#unit CcInsight#unit}
     */
     readonly unit?: string;
     /**
     * A date range value for the date filter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: number;
 }
@@ -10431,19 +10431,19 @@ export interface NoteUpdatedAtProperty {
     /**
     * A date range for the date filter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#date_range CcInsight#date_range}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#date_range CcInsight#date_range}
     */
     readonly dateRange?: FiltersNoteUpdatedAtDateRangeProperty;
     /**
     * The date and time, in UTC and ISO 8601 format.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#end CcInsight#end}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#end CcInsight#end}
     */
     readonly end?: string;
     /**
     * The date and time, in UTC and ISO 8601 format.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#start CcInsight#start}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#start CcInsight#start}
     */
     readonly start?: string;
 }
@@ -10575,13 +10575,13 @@ export interface NoteUpdatedByProperty {
     /**
     * The condition to apply to a string value when filtering Security Hub findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
     */
     readonly comparison?: string;
     /**
     * Non-empty string definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: string;
 }
@@ -10691,13 +10691,13 @@ export interface FiltersProcessLaunchedAtDateRangeProperty {
     /**
     * A date range unit for the date filter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#unit CcInsight#unit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#unit CcInsight#unit}
     */
     readonly unit?: string;
     /**
     * A date range value for the date filter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: number;
 }
@@ -10785,19 +10785,19 @@ export interface ProcessLaunchedAtProperty {
     /**
     * A date range for the date filter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#date_range CcInsight#date_range}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#date_range CcInsight#date_range}
     */
     readonly dateRange?: FiltersProcessLaunchedAtDateRangeProperty;
     /**
     * The date and time, in UTC and ISO 8601 format.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#end CcInsight#end}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#end CcInsight#end}
     */
     readonly end?: string;
     /**
     * The date and time, in UTC and ISO 8601 format.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#start CcInsight#start}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#start CcInsight#start}
     */
     readonly start?: string;
 }
@@ -10929,13 +10929,13 @@ export interface ProcessNameProperty {
     /**
     * The condition to apply to a string value when filtering Security Hub findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
     */
     readonly comparison?: string;
     /**
     * Non-empty string definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: string;
 }
@@ -11045,19 +11045,19 @@ export interface ProcessParentPidProperty {
     /**
     * The equal-to condition to be applied to a single field when querying for findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#eq CcInsight#eq}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#eq CcInsight#eq}
     */
     readonly eq?: number;
     /**
     * The greater-than-equal condition to be applied to a single field when querying for findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#gte CcInsight#gte}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#gte CcInsight#gte}
     */
     readonly gte?: number;
     /**
     * The less-than-equal condition to be applied to a single field when querying for findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#lte CcInsight#lte}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#lte CcInsight#lte}
     */
     readonly lte?: number;
 }
@@ -11189,13 +11189,13 @@ export interface ProcessPathProperty {
     /**
     * The condition to apply to a string value when filtering Security Hub findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
     */
     readonly comparison?: string;
     /**
     * Non-empty string definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: string;
 }
@@ -11305,19 +11305,19 @@ export interface ProcessPidProperty {
     /**
     * The equal-to condition to be applied to a single field when querying for findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#eq CcInsight#eq}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#eq CcInsight#eq}
     */
     readonly eq?: number;
     /**
     * The greater-than-equal condition to be applied to a single field when querying for findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#gte CcInsight#gte}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#gte CcInsight#gte}
     */
     readonly gte?: number;
     /**
     * The less-than-equal condition to be applied to a single field when querying for findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#lte CcInsight#lte}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#lte CcInsight#lte}
     */
     readonly lte?: number;
 }
@@ -11449,13 +11449,13 @@ export interface FiltersProcessTerminatedAtDateRangeProperty {
     /**
     * A date range unit for the date filter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#unit CcInsight#unit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#unit CcInsight#unit}
     */
     readonly unit?: string;
     /**
     * A date range value for the date filter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: number;
 }
@@ -11543,19 +11543,19 @@ export interface ProcessTerminatedAtProperty {
     /**
     * A date range for the date filter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#date_range CcInsight#date_range}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#date_range CcInsight#date_range}
     */
     readonly dateRange?: FiltersProcessTerminatedAtDateRangeProperty;
     /**
     * The date and time, in UTC and ISO 8601 format.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#end CcInsight#end}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#end CcInsight#end}
     */
     readonly end?: string;
     /**
     * The date and time, in UTC and ISO 8601 format.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#start CcInsight#start}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#start CcInsight#start}
     */
     readonly start?: string;
 }
@@ -11687,13 +11687,13 @@ export interface ProductArnProperty {
     /**
     * The condition to apply to a string value when filtering Security Hub findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
     */
     readonly comparison?: string;
     /**
     * Non-empty string definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: string;
 }
@@ -11803,19 +11803,19 @@ export interface MapFilterProperty {
     /**
     * The condition to apply to the key value when filtering Security Hub findings with a map filter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
     */
     readonly comparison?: string;
     /**
     * Non-empty string definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#key CcInsight#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#key CcInsight#key}
     */
     readonly key?: string;
     /**
     * Non-empty string definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: string;
 }
@@ -11947,13 +11947,13 @@ export interface ProductNameProperty {
     /**
     * The condition to apply to a string value when filtering Security Hub findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
     */
     readonly comparison?: string;
     /**
     * Non-empty string definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: string;
 }
@@ -12063,13 +12063,13 @@ export interface RecommendationTextProperty {
     /**
     * The condition to apply to a string value when filtering Security Hub findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
     */
     readonly comparison?: string;
     /**
     * Non-empty string definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: string;
 }
@@ -12179,13 +12179,13 @@ export interface RecordStateProperty {
     /**
     * The condition to apply to a string value when filtering Security Hub findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
     */
     readonly comparison?: string;
     /**
     * Non-empty string definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: string;
 }
@@ -12295,13 +12295,13 @@ export interface RegionProperty {
     /**
     * The condition to apply to a string value when filtering Security Hub findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
     */
     readonly comparison?: string;
     /**
     * Non-empty string definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: string;
 }
@@ -12411,13 +12411,13 @@ export interface RelatedFindingsIdProperty {
     /**
     * The condition to apply to a string value when filtering Security Hub findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
     */
     readonly comparison?: string;
     /**
     * Non-empty string definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: string;
 }
@@ -12527,13 +12527,13 @@ export interface RelatedFindingsProductArnProperty {
     /**
     * The condition to apply to a string value when filtering Security Hub findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
     */
     readonly comparison?: string;
     /**
     * Non-empty string definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: string;
 }
@@ -12643,13 +12643,13 @@ export interface ResourceApplicationArnProperty {
     /**
     * The condition to apply to a string value when filtering Security Hub findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
     */
     readonly comparison?: string;
     /**
     * Non-empty string definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: string;
 }
@@ -12759,13 +12759,13 @@ export interface ResourceApplicationNameProperty {
     /**
     * The condition to apply to a string value when filtering Security Hub findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
     */
     readonly comparison?: string;
     /**
     * Non-empty string definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: string;
 }
@@ -12875,13 +12875,13 @@ export interface ResourceAwsEc2InstanceIamInstanceProfileArnProperty {
     /**
     * The condition to apply to a string value when filtering Security Hub findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
     */
     readonly comparison?: string;
     /**
     * Non-empty string definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: string;
 }
@@ -12991,13 +12991,13 @@ export interface ResourceAwsEc2InstanceImageIdProperty {
     /**
     * The condition to apply to a string value when filtering Security Hub findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
     */
     readonly comparison?: string;
     /**
     * Non-empty string definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: string;
 }
@@ -13107,7 +13107,7 @@ export interface ResourceAwsEc2InstanceIpV4AddressesProperty {
     /**
     * A finding's CIDR value.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#cidr CcInsight#cidr}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#cidr CcInsight#cidr}
     */
     readonly cidr?: string;
 }
@@ -13195,7 +13195,7 @@ export interface ResourceAwsEc2InstanceIpV6AddressesProperty {
     /**
     * A finding's CIDR value.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#cidr CcInsight#cidr}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#cidr CcInsight#cidr}
     */
     readonly cidr?: string;
 }
@@ -13283,13 +13283,13 @@ export interface ResourceAwsEc2InstanceKeyNameProperty {
     /**
     * The condition to apply to a string value when filtering Security Hub findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
     */
     readonly comparison?: string;
     /**
     * Non-empty string definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: string;
 }
@@ -13399,13 +13399,13 @@ export interface FiltersResourceAwsEc2InstanceLaunchedAtDateRangeProperty {
     /**
     * A date range unit for the date filter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#unit CcInsight#unit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#unit CcInsight#unit}
     */
     readonly unit?: string;
     /**
     * A date range value for the date filter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: number;
 }
@@ -13493,19 +13493,19 @@ export interface ResourceAwsEc2InstanceLaunchedAtProperty {
     /**
     * A date range for the date filter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#date_range CcInsight#date_range}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#date_range CcInsight#date_range}
     */
     readonly dateRange?: FiltersResourceAwsEc2InstanceLaunchedAtDateRangeProperty;
     /**
     * The date and time, in UTC and ISO 8601 format.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#end CcInsight#end}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#end CcInsight#end}
     */
     readonly end?: string;
     /**
     * The date and time, in UTC and ISO 8601 format.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#start CcInsight#start}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#start CcInsight#start}
     */
     readonly start?: string;
 }
@@ -13637,13 +13637,13 @@ export interface ResourceAwsEc2InstanceSubnetIdProperty {
     /**
     * The condition to apply to a string value when filtering Security Hub findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
     */
     readonly comparison?: string;
     /**
     * Non-empty string definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: string;
 }
@@ -13753,13 +13753,13 @@ export interface ResourceAwsEc2InstanceTypeProperty {
     /**
     * The condition to apply to a string value when filtering Security Hub findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
     */
     readonly comparison?: string;
     /**
     * Non-empty string definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: string;
 }
@@ -13869,13 +13869,13 @@ export interface ResourceAwsEc2InstanceVpcIdProperty {
     /**
     * The condition to apply to a string value when filtering Security Hub findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
     */
     readonly comparison?: string;
     /**
     * Non-empty string definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: string;
 }
@@ -13985,13 +13985,13 @@ export interface FiltersResourceAwsIamAccessKeyCreatedAtDateRangeProperty {
     /**
     * A date range unit for the date filter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#unit CcInsight#unit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#unit CcInsight#unit}
     */
     readonly unit?: string;
     /**
     * A date range value for the date filter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: number;
 }
@@ -14079,19 +14079,19 @@ export interface ResourceAwsIamAccessKeyCreatedAtProperty {
     /**
     * A date range for the date filter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#date_range CcInsight#date_range}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#date_range CcInsight#date_range}
     */
     readonly dateRange?: FiltersResourceAwsIamAccessKeyCreatedAtDateRangeProperty;
     /**
     * The date and time, in UTC and ISO 8601 format.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#end CcInsight#end}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#end CcInsight#end}
     */
     readonly end?: string;
     /**
     * The date and time, in UTC and ISO 8601 format.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#start CcInsight#start}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#start CcInsight#start}
     */
     readonly start?: string;
 }
@@ -14223,13 +14223,13 @@ export interface ResourceAwsIamAccessKeyPrincipalNameProperty {
     /**
     * The condition to apply to a string value when filtering Security Hub findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
     */
     readonly comparison?: string;
     /**
     * Non-empty string definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: string;
 }
@@ -14339,13 +14339,13 @@ export interface ResourceAwsIamAccessKeyStatusProperty {
     /**
     * The condition to apply to a string value when filtering Security Hub findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
     */
     readonly comparison?: string;
     /**
     * Non-empty string definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: string;
 }
@@ -14455,13 +14455,13 @@ export interface ResourceAwsIamAccessKeyUserNameProperty {
     /**
     * The condition to apply to a string value when filtering Security Hub findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
     */
     readonly comparison?: string;
     /**
     * Non-empty string definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: string;
 }
@@ -14571,13 +14571,13 @@ export interface ResourceAwsIamUserUserNameProperty {
     /**
     * The condition to apply to a string value when filtering Security Hub findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
     */
     readonly comparison?: string;
     /**
     * Non-empty string definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: string;
 }
@@ -14687,13 +14687,13 @@ export interface ResourceAwsS3BucketOwnerIdProperty {
     /**
     * The condition to apply to a string value when filtering Security Hub findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
     */
     readonly comparison?: string;
     /**
     * Non-empty string definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: string;
 }
@@ -14803,13 +14803,13 @@ export interface ResourceAwsS3BucketOwnerNameProperty {
     /**
     * The condition to apply to a string value when filtering Security Hub findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
     */
     readonly comparison?: string;
     /**
     * Non-empty string definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: string;
 }
@@ -14919,13 +14919,13 @@ export interface ResourceContainerImageIdProperty {
     /**
     * The condition to apply to a string value when filtering Security Hub findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
     */
     readonly comparison?: string;
     /**
     * Non-empty string definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: string;
 }
@@ -15035,13 +15035,13 @@ export interface ResourceContainerImageNameProperty {
     /**
     * The condition to apply to a string value when filtering Security Hub findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
     */
     readonly comparison?: string;
     /**
     * Non-empty string definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: string;
 }
@@ -15151,13 +15151,13 @@ export interface FiltersResourceContainerLaunchedAtDateRangeProperty {
     /**
     * A date range unit for the date filter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#unit CcInsight#unit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#unit CcInsight#unit}
     */
     readonly unit?: string;
     /**
     * A date range value for the date filter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: number;
 }
@@ -15245,19 +15245,19 @@ export interface ResourceContainerLaunchedAtProperty {
     /**
     * A date range for the date filter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#date_range CcInsight#date_range}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#date_range CcInsight#date_range}
     */
     readonly dateRange?: FiltersResourceContainerLaunchedAtDateRangeProperty;
     /**
     * The date and time, in UTC and ISO 8601 format.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#end CcInsight#end}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#end CcInsight#end}
     */
     readonly end?: string;
     /**
     * The date and time, in UTC and ISO 8601 format.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#start CcInsight#start}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#start CcInsight#start}
     */
     readonly start?: string;
 }
@@ -15389,13 +15389,13 @@ export interface ResourceContainerNameProperty {
     /**
     * The condition to apply to a string value when filtering Security Hub findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
     */
     readonly comparison?: string;
     /**
     * Non-empty string definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: string;
 }
@@ -15505,19 +15505,19 @@ export interface ResourceDetailsOtherProperty {
     /**
     * The condition to apply to the key value when filtering Security Hub findings with a map filter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
     */
     readonly comparison?: string;
     /**
     * Non-empty string definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#key CcInsight#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#key CcInsight#key}
     */
     readonly key?: string;
     /**
     * Non-empty string definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: string;
 }
@@ -15649,13 +15649,13 @@ export interface ResourceIdProperty {
     /**
     * The condition to apply to a string value when filtering Security Hub findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
     */
     readonly comparison?: string;
     /**
     * Non-empty string definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: string;
 }
@@ -15765,13 +15765,13 @@ export interface ResourcePartitionProperty {
     /**
     * The condition to apply to a string value when filtering Security Hub findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
     */
     readonly comparison?: string;
     /**
     * Non-empty string definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: string;
 }
@@ -15881,13 +15881,13 @@ export interface ResourceRegionProperty {
     /**
     * The condition to apply to a string value when filtering Security Hub findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
     */
     readonly comparison?: string;
     /**
     * Non-empty string definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: string;
 }
@@ -15997,19 +15997,19 @@ export interface ResourceTagsProperty {
     /**
     * The condition to apply to the key value when filtering Security Hub findings with a map filter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
     */
     readonly comparison?: string;
     /**
     * Non-empty string definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#key CcInsight#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#key CcInsight#key}
     */
     readonly key?: string;
     /**
     * Non-empty string definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: string;
 }
@@ -16141,13 +16141,13 @@ export interface ResourceTypeProperty {
     /**
     * The condition to apply to a string value when filtering Security Hub findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
     */
     readonly comparison?: string;
     /**
     * Non-empty string definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: string;
 }
@@ -16257,7 +16257,7 @@ export interface BooleanFilterProperty {
     /**
     * The value of the boolean.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: boolean | cdktn.IResolvable;
 }
@@ -16345,13 +16345,13 @@ export interface SeverityLabelProperty {
     /**
     * The condition to apply to a string value when filtering Security Hub findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
     */
     readonly comparison?: string;
     /**
     * Non-empty string definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: string;
 }
@@ -16461,19 +16461,19 @@ export interface SeverityNormalizedProperty {
     /**
     * The equal-to condition to be applied to a single field when querying for findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#eq CcInsight#eq}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#eq CcInsight#eq}
     */
     readonly eq?: number;
     /**
     * The greater-than-equal condition to be applied to a single field when querying for findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#gte CcInsight#gte}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#gte CcInsight#gte}
     */
     readonly gte?: number;
     /**
     * The less-than-equal condition to be applied to a single field when querying for findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#lte CcInsight#lte}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#lte CcInsight#lte}
     */
     readonly lte?: number;
 }
@@ -16605,19 +16605,19 @@ export interface SeverityProductProperty {
     /**
     * The equal-to condition to be applied to a single field when querying for findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#eq CcInsight#eq}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#eq CcInsight#eq}
     */
     readonly eq?: number;
     /**
     * The greater-than-equal condition to be applied to a single field when querying for findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#gte CcInsight#gte}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#gte CcInsight#gte}
     */
     readonly gte?: number;
     /**
     * The less-than-equal condition to be applied to a single field when querying for findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#lte CcInsight#lte}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#lte CcInsight#lte}
     */
     readonly lte?: number;
 }
@@ -16749,13 +16749,13 @@ export interface SourceUrlProperty {
     /**
     * The condition to apply to a string value when filtering Security Hub findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
     */
     readonly comparison?: string;
     /**
     * Non-empty string definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: string;
 }
@@ -16865,13 +16865,13 @@ export interface ThreatIntelIndicatorCategoryProperty {
     /**
     * The condition to apply to a string value when filtering Security Hub findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
     */
     readonly comparison?: string;
     /**
     * Non-empty string definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: string;
 }
@@ -16981,13 +16981,13 @@ export interface FiltersThreatIntelIndicatorLastObservedAtDateRangeProperty {
     /**
     * A date range unit for the date filter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#unit CcInsight#unit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#unit CcInsight#unit}
     */
     readonly unit?: string;
     /**
     * A date range value for the date filter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: number;
 }
@@ -17075,19 +17075,19 @@ export interface ThreatIntelIndicatorLastObservedAtProperty {
     /**
     * A date range for the date filter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#date_range CcInsight#date_range}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#date_range CcInsight#date_range}
     */
     readonly dateRange?: FiltersThreatIntelIndicatorLastObservedAtDateRangeProperty;
     /**
     * The date and time, in UTC and ISO 8601 format.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#end CcInsight#end}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#end CcInsight#end}
     */
     readonly end?: string;
     /**
     * The date and time, in UTC and ISO 8601 format.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#start CcInsight#start}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#start CcInsight#start}
     */
     readonly start?: string;
 }
@@ -17219,13 +17219,13 @@ export interface ThreatIntelIndicatorSourceProperty {
     /**
     * The condition to apply to a string value when filtering Security Hub findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
     */
     readonly comparison?: string;
     /**
     * Non-empty string definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: string;
 }
@@ -17335,13 +17335,13 @@ export interface ThreatIntelIndicatorSourceUrlProperty {
     /**
     * The condition to apply to a string value when filtering Security Hub findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
     */
     readonly comparison?: string;
     /**
     * Non-empty string definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: string;
 }
@@ -17451,13 +17451,13 @@ export interface ThreatIntelIndicatorTypeProperty {
     /**
     * The condition to apply to a string value when filtering Security Hub findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
     */
     readonly comparison?: string;
     /**
     * Non-empty string definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: string;
 }
@@ -17567,13 +17567,13 @@ export interface ThreatIntelIndicatorValueProperty {
     /**
     * The condition to apply to a string value when filtering Security Hub findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
     */
     readonly comparison?: string;
     /**
     * Non-empty string definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: string;
 }
@@ -17683,13 +17683,13 @@ export interface TitleProperty {
     /**
     * The condition to apply to a string value when filtering Security Hub findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
     */
     readonly comparison?: string;
     /**
     * Non-empty string definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: string;
 }
@@ -17799,13 +17799,13 @@ export interface TypeProperty {
     /**
     * The condition to apply to a string value when filtering Security Hub findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
     */
     readonly comparison?: string;
     /**
     * Non-empty string definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: string;
 }
@@ -17915,13 +17915,13 @@ export interface FiltersUpdatedAtDateRangeProperty {
     /**
     * A date range unit for the date filter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#unit CcInsight#unit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#unit CcInsight#unit}
     */
     readonly unit?: string;
     /**
     * A date range value for the date filter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: number;
 }
@@ -18009,19 +18009,19 @@ export interface UpdatedAtProperty {
     /**
     * A date range for the date filter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#date_range CcInsight#date_range}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#date_range CcInsight#date_range}
     */
     readonly dateRange?: FiltersUpdatedAtDateRangeProperty;
     /**
     * The date and time, in UTC and ISO 8601 format.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#end CcInsight#end}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#end CcInsight#end}
     */
     readonly end?: string;
     /**
     * The date and time, in UTC and ISO 8601 format.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#start CcInsight#start}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#start CcInsight#start}
     */
     readonly start?: string;
 }
@@ -18153,19 +18153,19 @@ export interface UserDefinedFieldsProperty {
     /**
     * The condition to apply to the key value when filtering Security Hub findings with a map filter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
     */
     readonly comparison?: string;
     /**
     * Non-empty string definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#key CcInsight#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#key CcInsight#key}
     */
     readonly key?: string;
     /**
     * Non-empty string definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: string;
 }
@@ -18297,13 +18297,13 @@ export interface VerificationStateProperty {
     /**
     * The condition to apply to a string value when filtering Security Hub findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
     */
     readonly comparison?: string;
     /**
     * Non-empty string definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: string;
 }
@@ -18413,13 +18413,13 @@ export interface VulnerabilitiesExploitAvailableProperty {
     /**
     * The condition to apply to a string value when filtering Security Hub findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
     */
     readonly comparison?: string;
     /**
     * Non-empty string definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: string;
 }
@@ -18529,13 +18529,13 @@ export interface VulnerabilitiesFixAvailableProperty {
     /**
     * The condition to apply to a string value when filtering Security Hub findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
     */
     readonly comparison?: string;
     /**
     * Non-empty string definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: string;
 }
@@ -18645,13 +18645,13 @@ export interface WorkflowStateProperty {
     /**
     * The condition to apply to a string value when filtering Security Hub findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
     */
     readonly comparison?: string;
     /**
     * Non-empty string definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: string;
 }
@@ -18761,13 +18761,13 @@ export interface WorkflowStatusProperty {
     /**
     * The condition to apply to a string value when filtering Security Hub findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#comparison CcInsight#comparison}
     */
     readonly comparison?: string;
     /**
     * Non-empty string definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#value CcInsight#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#value CcInsight#value}
     */
     readonly value?: string;
 }
@@ -18877,133 +18877,133 @@ export interface AwsSecurityFindingFiltersProperty {
     /**
     * The AWS account ID in which a finding is generated.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#aws_account_id CcInsight#aws_account_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#aws_account_id CcInsight#aws_account_id}
     */
     readonly awsAccountId?: StringFilterProperty[] | cdktn.IResolvable;
     /**
     * The name of the AWS account in which a finding is generated.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#aws_account_name CcInsight#aws_account_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#aws_account_name CcInsight#aws_account_name}
     */
     readonly awsAccountName?: AwsAccountNameProperty[] | cdktn.IResolvable;
     /**
     * The name of the findings provider (company) that owns the solution (product) that generates findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#company_name CcInsight#company_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#company_name CcInsight#company_name}
     */
     readonly companyName?: CompanyNameProperty[] | cdktn.IResolvable;
     /**
     * The unique identifier of a standard in which a control is enabled.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#compliance_associated_standards_id CcInsight#compliance_associated_standards_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#compliance_associated_standards_id CcInsight#compliance_associated_standards_id}
     */
     readonly complianceAssociatedStandardsId?: ComplianceAssociatedStandardsIdProperty[] | cdktn.IResolvable;
     /**
     * The unique identifier of a control across standards.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#compliance_security_control_id CcInsight#compliance_security_control_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#compliance_security_control_id CcInsight#compliance_security_control_id}
     */
     readonly complianceSecurityControlId?: ComplianceSecurityControlIdProperty[] | cdktn.IResolvable;
     /**
     * The name of a security control parameter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#compliance_security_control_parameters_name CcInsight#compliance_security_control_parameters_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#compliance_security_control_parameters_name CcInsight#compliance_security_control_parameters_name}
     */
     readonly complianceSecurityControlParametersName?: ComplianceSecurityControlParametersNameProperty[] | cdktn.IResolvable;
     /**
     * The current value of a security control parameter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#compliance_security_control_parameters_value CcInsight#compliance_security_control_parameters_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#compliance_security_control_parameters_value CcInsight#compliance_security_control_parameters_value}
     */
     readonly complianceSecurityControlParametersValue?: ComplianceSecurityControlParametersValueProperty[] | cdktn.IResolvable;
     /**
     * Exclusive to findings that are generated as the result of a check run against a specific rule in a supported standard.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#compliance_status CcInsight#compliance_status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#compliance_status CcInsight#compliance_status}
     */
     readonly complianceStatus?: ComplianceStatusProperty[] | cdktn.IResolvable;
     /**
     * A finding's confidence.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#confidence CcInsight#confidence}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#confidence CcInsight#confidence}
     */
     readonly confidence?: NumberFilterProperty[] | cdktn.IResolvable;
     /**
     * An ISO8601-formatted timestamp that indicates when the security findings provider captured the potential security issue that a finding captured.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#created_at CcInsight#created_at}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#created_at CcInsight#created_at}
     */
     readonly createdAt?: DateFilterProperty[] | cdktn.IResolvable;
     /**
     * The level of importance assigned to the resources associated with the finding.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#criticality CcInsight#criticality}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#criticality CcInsight#criticality}
     */
     readonly criticality?: CriticalityProperty[] | cdktn.IResolvable;
     /**
     * A finding's description.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#description CcInsight#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#description CcInsight#description}
     */
     readonly description?: DescriptionProperty[] | cdktn.IResolvable;
     /**
     * The finding provider value for the finding confidence.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#finding_provider_fields_confidence CcInsight#finding_provider_fields_confidence}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#finding_provider_fields_confidence CcInsight#finding_provider_fields_confidence}
     */
     readonly findingProviderFieldsConfidence?: FindingProviderFieldsConfidenceProperty[] | cdktn.IResolvable;
     /**
     * The finding provider value for the level of importance assigned to the resources associated with the findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#finding_provider_fields_criticality CcInsight#finding_provider_fields_criticality}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#finding_provider_fields_criticality CcInsight#finding_provider_fields_criticality}
     */
     readonly findingProviderFieldsCriticality?: FindingProviderFieldsCriticalityProperty[] | cdktn.IResolvable;
     /**
     * The finding identifier of a related finding that is identified by the finding provider.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#finding_provider_fields_related_findings_id CcInsight#finding_provider_fields_related_findings_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#finding_provider_fields_related_findings_id CcInsight#finding_provider_fields_related_findings_id}
     */
     readonly findingProviderFieldsRelatedFindingsId?: FindingProviderFieldsRelatedFindingsIdProperty[] | cdktn.IResolvable;
     /**
     * The ARN of the solution that generated a related finding that is identified by the finding provider.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#finding_provider_fields_related_findings_product_arn CcInsight#finding_provider_fields_related_findings_product_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#finding_provider_fields_related_findings_product_arn CcInsight#finding_provider_fields_related_findings_product_arn}
     */
     readonly findingProviderFieldsRelatedFindingsProductArn?: FindingProviderFieldsRelatedFindingsProductArnProperty[] | cdktn.IResolvable;
     /**
     * The finding provider value for the severity label.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#finding_provider_fields_severity_label CcInsight#finding_provider_fields_severity_label}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#finding_provider_fields_severity_label CcInsight#finding_provider_fields_severity_label}
     */
     readonly findingProviderFieldsSeverityLabel?: FindingProviderFieldsSeverityLabelProperty[] | cdktn.IResolvable;
     /**
     * The finding provider's original value for the severity.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#finding_provider_fields_severity_original CcInsight#finding_provider_fields_severity_original}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#finding_provider_fields_severity_original CcInsight#finding_provider_fields_severity_original}
     */
     readonly findingProviderFieldsSeverityOriginal?: FindingProviderFieldsSeverityOriginalProperty[] | cdktn.IResolvable;
     /**
     * One or more finding types that the finding provider assigned to the finding.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#finding_provider_fields_types CcInsight#finding_provider_fields_types}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#finding_provider_fields_types CcInsight#finding_provider_fields_types}
     */
     readonly findingProviderFieldsTypes?: FindingProviderFieldsTypesProperty[] | cdktn.IResolvable;
     /**
     * An ISO8601-formatted timestamp that indicates when the security findings provider first observed the potential security issue that a finding captured.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#first_observed_at CcInsight#first_observed_at}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#first_observed_at CcInsight#first_observed_at}
     */
     readonly firstObservedAt?: FirstObservedAtProperty[] | cdktn.IResolvable;
     /**
     * The identifier for the solution-specific component (a discrete unit of logic) that generated a finding.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#generator_id CcInsight#generator_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#generator_id CcInsight#generator_id}
     */
     readonly generatorId?: GeneratorIdProperty[] | cdktn.IResolvable;
     /**
     * The security findings provider-specific identifier for a finding.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#id CcInsight#id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#id CcInsight#id}
     *
     * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
     * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -19012,493 +19012,493 @@ export interface AwsSecurityFindingFiltersProperty {
     /**
     * A keyword for a finding.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#keyword CcInsight#keyword}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#keyword CcInsight#keyword}
     */
     readonly keyword?: KeywordFilterProperty[] | cdktn.IResolvable;
     /**
     * An ISO8601-formatted timestamp that indicates when the security findings provider most recently observed the potential security issue that a finding captured.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#last_observed_at CcInsight#last_observed_at}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#last_observed_at CcInsight#last_observed_at}
     */
     readonly lastObservedAt?: LastObservedAtProperty[] | cdktn.IResolvable;
     /**
     * The name of the malware that was observed.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#malware_name CcInsight#malware_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#malware_name CcInsight#malware_name}
     */
     readonly malwareName?: MalwareNameProperty[] | cdktn.IResolvable;
     /**
     * The filesystem path of the malware that was observed.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#malware_path CcInsight#malware_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#malware_path CcInsight#malware_path}
     */
     readonly malwarePath?: MalwarePathProperty[] | cdktn.IResolvable;
     /**
     * The state of the malware that was observed.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#malware_state CcInsight#malware_state}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#malware_state CcInsight#malware_state}
     */
     readonly malwareState?: MalwareStateProperty[] | cdktn.IResolvable;
     /**
     * The type of the malware that was observed.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#malware_type CcInsight#malware_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#malware_type CcInsight#malware_type}
     */
     readonly malwareType?: MalwareTypeProperty[] | cdktn.IResolvable;
     /**
     * The destination domain of network-related information about a finding.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#network_destination_domain CcInsight#network_destination_domain}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#network_destination_domain CcInsight#network_destination_domain}
     */
     readonly networkDestinationDomain?: NetworkDestinationDomainProperty[] | cdktn.IResolvable;
     /**
     * The destination IPv4 address of network-related information about a finding.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#network_destination_ip_v4 CcInsight#network_destination_ip_v4}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#network_destination_ip_v4 CcInsight#network_destination_ip_v4}
     */
     readonly networkDestinationIpV4?: IpFilterProperty[] | cdktn.IResolvable;
     /**
     * The destination IPv6 address of network-related information about a finding.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#network_destination_ip_v6 CcInsight#network_destination_ip_v6}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#network_destination_ip_v6 CcInsight#network_destination_ip_v6}
     */
     readonly networkDestinationIpV6?: NetworkDestinationIpV6Property[] | cdktn.IResolvable;
     /**
     * The destination port of network-related information about a finding.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#network_destination_port CcInsight#network_destination_port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#network_destination_port CcInsight#network_destination_port}
     */
     readonly networkDestinationPort?: NetworkDestinationPortProperty[] | cdktn.IResolvable;
     /**
     * Indicates the direction of network traffic associated with a finding.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#network_direction CcInsight#network_direction}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#network_direction CcInsight#network_direction}
     */
     readonly networkDirection?: NetworkDirectionProperty[] | cdktn.IResolvable;
     /**
     * The protocol of network-related information about a finding.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#network_protocol CcInsight#network_protocol}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#network_protocol CcInsight#network_protocol}
     */
     readonly networkProtocol?: NetworkProtocolProperty[] | cdktn.IResolvable;
     /**
     * The source domain of network-related information about a finding.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#network_source_domain CcInsight#network_source_domain}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#network_source_domain CcInsight#network_source_domain}
     */
     readonly networkSourceDomain?: NetworkSourceDomainProperty[] | cdktn.IResolvable;
     /**
     * The source IPv4 address of network-related information about a finding.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#network_source_ip_v4 CcInsight#network_source_ip_v4}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#network_source_ip_v4 CcInsight#network_source_ip_v4}
     */
     readonly networkSourceIpV4?: NetworkSourceIpV4Property[] | cdktn.IResolvable;
     /**
     * The source IPv6 address of network-related information about a finding.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#network_source_ip_v6 CcInsight#network_source_ip_v6}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#network_source_ip_v6 CcInsight#network_source_ip_v6}
     */
     readonly networkSourceIpV6?: NetworkSourceIpV6Property[] | cdktn.IResolvable;
     /**
     * The source media access control (MAC) address of network-related information about a finding.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#network_source_mac CcInsight#network_source_mac}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#network_source_mac CcInsight#network_source_mac}
     */
     readonly networkSourceMac?: NetworkSourceMacProperty[] | cdktn.IResolvable;
     /**
     * The source port of network-related information about a finding.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#network_source_port CcInsight#network_source_port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#network_source_port CcInsight#network_source_port}
     */
     readonly networkSourcePort?: NetworkSourcePortProperty[] | cdktn.IResolvable;
     /**
     * The text of a note.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#note_text CcInsight#note_text}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#note_text CcInsight#note_text}
     */
     readonly noteText?: NoteTextProperty[] | cdktn.IResolvable;
     /**
     * The timestamp of when the note was updated.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#note_updated_at CcInsight#note_updated_at}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#note_updated_at CcInsight#note_updated_at}
     */
     readonly noteUpdatedAt?: NoteUpdatedAtProperty[] | cdktn.IResolvable;
     /**
     * The principal that created a note.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#note_updated_by CcInsight#note_updated_by}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#note_updated_by CcInsight#note_updated_by}
     */
     readonly noteUpdatedBy?: NoteUpdatedByProperty[] | cdktn.IResolvable;
     /**
     * A timestamp that identifies when the process was launched.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#process_launched_at CcInsight#process_launched_at}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#process_launched_at CcInsight#process_launched_at}
     */
     readonly processLaunchedAt?: ProcessLaunchedAtProperty[] | cdktn.IResolvable;
     /**
     * The name of the process.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#process_name CcInsight#process_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#process_name CcInsight#process_name}
     */
     readonly processName?: ProcessNameProperty[] | cdktn.IResolvable;
     /**
     * The parent process ID.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#process_parent_pid CcInsight#process_parent_pid}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#process_parent_pid CcInsight#process_parent_pid}
     */
     readonly processParentPid?: ProcessParentPidProperty[] | cdktn.IResolvable;
     /**
     * The path to the process executable.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#process_path CcInsight#process_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#process_path CcInsight#process_path}
     */
     readonly processPath?: ProcessPathProperty[] | cdktn.IResolvable;
     /**
     * The process ID.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#process_pid CcInsight#process_pid}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#process_pid CcInsight#process_pid}
     */
     readonly processPid?: ProcessPidProperty[] | cdktn.IResolvable;
     /**
     * A timestamp that identifies when the process was terminated.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#process_terminated_at CcInsight#process_terminated_at}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#process_terminated_at CcInsight#process_terminated_at}
     */
     readonly processTerminatedAt?: ProcessTerminatedAtProperty[] | cdktn.IResolvable;
     /**
     * The ARN generated by Security Hub that uniquely identifies a third-party company (security findings provider) after this provider's product (solution that generates findings) is registered with Security Hub.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#product_arn CcInsight#product_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#product_arn CcInsight#product_arn}
     */
     readonly productArn?: ProductArnProperty[] | cdktn.IResolvable;
     /**
     * A data type where security findings providers can include additional solution-specific details that aren't part of the defined AwsSecurityFinding format.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#product_fields CcInsight#product_fields}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#product_fields CcInsight#product_fields}
     */
     readonly productFields?: MapFilterProperty[] | cdktn.IResolvable;
     /**
     * The name of the solution (product) that generates findings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#product_name CcInsight#product_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#product_name CcInsight#product_name}
     */
     readonly productName?: ProductNameProperty[] | cdktn.IResolvable;
     /**
     * The recommendation of what to do about the issue described in a finding.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#recommendation_text CcInsight#recommendation_text}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#recommendation_text CcInsight#recommendation_text}
     */
     readonly recommendationText?: RecommendationTextProperty[] | cdktn.IResolvable;
     /**
     * The updated record state for the finding.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#record_state CcInsight#record_state}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#record_state CcInsight#record_state}
     */
     readonly recordState?: RecordStateProperty[] | cdktn.IResolvable;
     /**
     * The Region from which the finding was generated.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#region CcInsight#region}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#region CcInsight#region}
     */
     readonly region?: RegionProperty[] | cdktn.IResolvable;
     /**
     * The solution-generated identifier for a related finding.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#related_findings_id CcInsight#related_findings_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#related_findings_id CcInsight#related_findings_id}
     */
     readonly relatedFindingsId?: RelatedFindingsIdProperty[] | cdktn.IResolvable;
     /**
     * The ARN of the solution that generated a related finding.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#related_findings_product_arn CcInsight#related_findings_product_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#related_findings_product_arn CcInsight#related_findings_product_arn}
     */
     readonly relatedFindingsProductArn?: RelatedFindingsProductArnProperty[] | cdktn.IResolvable;
     /**
     * The ARN of the application that is related to a finding.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#resource_application_arn CcInsight#resource_application_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#resource_application_arn CcInsight#resource_application_arn}
     */
     readonly resourceApplicationArn?: ResourceApplicationArnProperty[] | cdktn.IResolvable;
     /**
     * The name of the application that is related to a finding.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#resource_application_name CcInsight#resource_application_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#resource_application_name CcInsight#resource_application_name}
     */
     readonly resourceApplicationName?: ResourceApplicationNameProperty[] | cdktn.IResolvable;
     /**
     * The IAM profile ARN of the instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#resource_aws_ec_2_instance_iam_instance_profile_arn CcInsight#resource_aws_ec_2_instance_iam_instance_profile_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#resource_aws_ec_2_instance_iam_instance_profile_arn CcInsight#resource_aws_ec_2_instance_iam_instance_profile_arn}
     */
     readonly resourceAwsEc2InstanceIamInstanceProfileArn?: ResourceAwsEc2InstanceIamInstanceProfileArnProperty[] | cdktn.IResolvable;
     /**
     * The Amazon Machine Image (AMI) ID of the instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#resource_aws_ec_2_instance_image_id CcInsight#resource_aws_ec_2_instance_image_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#resource_aws_ec_2_instance_image_id CcInsight#resource_aws_ec_2_instance_image_id}
     */
     readonly resourceAwsEc2InstanceImageId?: ResourceAwsEc2InstanceImageIdProperty[] | cdktn.IResolvable;
     /**
     * The IPv4 addresses associated with the instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#resource_aws_ec_2_instance_ip_v4_addresses CcInsight#resource_aws_ec_2_instance_ip_v4_addresses}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#resource_aws_ec_2_instance_ip_v4_addresses CcInsight#resource_aws_ec_2_instance_ip_v4_addresses}
     */
     readonly resourceAwsEc2InstanceIpV4Addresses?: ResourceAwsEc2InstanceIpV4AddressesProperty[] | cdktn.IResolvable;
     /**
     * The IPv6 addresses associated with the instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#resource_aws_ec_2_instance_ip_v6_addresses CcInsight#resource_aws_ec_2_instance_ip_v6_addresses}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#resource_aws_ec_2_instance_ip_v6_addresses CcInsight#resource_aws_ec_2_instance_ip_v6_addresses}
     */
     readonly resourceAwsEc2InstanceIpV6Addresses?: ResourceAwsEc2InstanceIpV6AddressesProperty[] | cdktn.IResolvable;
     /**
     * The key name associated with the instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#resource_aws_ec_2_instance_key_name CcInsight#resource_aws_ec_2_instance_key_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#resource_aws_ec_2_instance_key_name CcInsight#resource_aws_ec_2_instance_key_name}
     */
     readonly resourceAwsEc2InstanceKeyName?: ResourceAwsEc2InstanceKeyNameProperty[] | cdktn.IResolvable;
     /**
     * The date and time the instance was launched.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#resource_aws_ec_2_instance_launched_at CcInsight#resource_aws_ec_2_instance_launched_at}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#resource_aws_ec_2_instance_launched_at CcInsight#resource_aws_ec_2_instance_launched_at}
     */
     readonly resourceAwsEc2InstanceLaunchedAt?: ResourceAwsEc2InstanceLaunchedAtProperty[] | cdktn.IResolvable;
     /**
     * The identifier of the subnet that the instance was launched in.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#resource_aws_ec_2_instance_subnet_id CcInsight#resource_aws_ec_2_instance_subnet_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#resource_aws_ec_2_instance_subnet_id CcInsight#resource_aws_ec_2_instance_subnet_id}
     */
     readonly resourceAwsEc2InstanceSubnetId?: ResourceAwsEc2InstanceSubnetIdProperty[] | cdktn.IResolvable;
     /**
     * The instance type of the instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#resource_aws_ec_2_instance_type CcInsight#resource_aws_ec_2_instance_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#resource_aws_ec_2_instance_type CcInsight#resource_aws_ec_2_instance_type}
     */
     readonly resourceAwsEc2InstanceType?: ResourceAwsEc2InstanceTypeProperty[] | cdktn.IResolvable;
     /**
     * The identifier of the VPC that the instance was launched in.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#resource_aws_ec_2_instance_vpc_id CcInsight#resource_aws_ec_2_instance_vpc_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#resource_aws_ec_2_instance_vpc_id CcInsight#resource_aws_ec_2_instance_vpc_id}
     */
     readonly resourceAwsEc2InstanceVpcId?: ResourceAwsEc2InstanceVpcIdProperty[] | cdktn.IResolvable;
     /**
     * The creation date/time of the IAM access key related to a finding.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#resource_aws_iam_access_key_created_at CcInsight#resource_aws_iam_access_key_created_at}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#resource_aws_iam_access_key_created_at CcInsight#resource_aws_iam_access_key_created_at}
     */
     readonly resourceAwsIamAccessKeyCreatedAt?: ResourceAwsIamAccessKeyCreatedAtProperty[] | cdktn.IResolvable;
     /**
     * The name of the principal that is associated with an IAM access key.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#resource_aws_iam_access_key_principal_name CcInsight#resource_aws_iam_access_key_principal_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#resource_aws_iam_access_key_principal_name CcInsight#resource_aws_iam_access_key_principal_name}
     */
     readonly resourceAwsIamAccessKeyPrincipalName?: ResourceAwsIamAccessKeyPrincipalNameProperty[] | cdktn.IResolvable;
     /**
     * The status of the IAM access key related to a finding.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#resource_aws_iam_access_key_status CcInsight#resource_aws_iam_access_key_status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#resource_aws_iam_access_key_status CcInsight#resource_aws_iam_access_key_status}
     */
     readonly resourceAwsIamAccessKeyStatus?: ResourceAwsIamAccessKeyStatusProperty[] | cdktn.IResolvable;
     /**
     * The user associated with the IAM access key related to a finding.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#resource_aws_iam_access_key_user_name CcInsight#resource_aws_iam_access_key_user_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#resource_aws_iam_access_key_user_name CcInsight#resource_aws_iam_access_key_user_name}
     */
     readonly resourceAwsIamAccessKeyUserName?: ResourceAwsIamAccessKeyUserNameProperty[] | cdktn.IResolvable;
     /**
     * The name of an IAM user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#resource_aws_iam_user_user_name CcInsight#resource_aws_iam_user_user_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#resource_aws_iam_user_user_name CcInsight#resource_aws_iam_user_user_name}
     */
     readonly resourceAwsIamUserUserName?: ResourceAwsIamUserUserNameProperty[] | cdktn.IResolvable;
     /**
     * The canonical user ID of the owner of the S3 bucket.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#resource_aws_s3_bucket_owner_id CcInsight#resource_aws_s3_bucket_owner_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#resource_aws_s3_bucket_owner_id CcInsight#resource_aws_s3_bucket_owner_id}
     */
     readonly resourceAwsS3BucketOwnerId?: ResourceAwsS3BucketOwnerIdProperty[] | cdktn.IResolvable;
     /**
     * The display name of the owner of the S3 bucket.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#resource_aws_s3_bucket_owner_name CcInsight#resource_aws_s3_bucket_owner_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#resource_aws_s3_bucket_owner_name CcInsight#resource_aws_s3_bucket_owner_name}
     */
     readonly resourceAwsS3BucketOwnerName?: ResourceAwsS3BucketOwnerNameProperty[] | cdktn.IResolvable;
     /**
     * The identifier of the image related to a finding.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#resource_container_image_id CcInsight#resource_container_image_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#resource_container_image_id CcInsight#resource_container_image_id}
     */
     readonly resourceContainerImageId?: ResourceContainerImageIdProperty[] | cdktn.IResolvable;
     /**
     * The name of the image related to a finding.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#resource_container_image_name CcInsight#resource_container_image_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#resource_container_image_name CcInsight#resource_container_image_name}
     */
     readonly resourceContainerImageName?: ResourceContainerImageNameProperty[] | cdktn.IResolvable;
     /**
     * A timestamp that identifies when the container was started.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#resource_container_launched_at CcInsight#resource_container_launched_at}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#resource_container_launched_at CcInsight#resource_container_launched_at}
     */
     readonly resourceContainerLaunchedAt?: ResourceContainerLaunchedAtProperty[] | cdktn.IResolvable;
     /**
     * The name of the container related to a finding.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#resource_container_name CcInsight#resource_container_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#resource_container_name CcInsight#resource_container_name}
     */
     readonly resourceContainerName?: ResourceContainerNameProperty[] | cdktn.IResolvable;
     /**
     * The details of a resource that doesn't have a specific subfield for the resource type defined.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#resource_details_other CcInsight#resource_details_other}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#resource_details_other CcInsight#resource_details_other}
     */
     readonly resourceDetailsOther?: ResourceDetailsOtherProperty[] | cdktn.IResolvable;
     /**
     * The canonical identifier for the given resource type.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#resource_id CcInsight#resource_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#resource_id CcInsight#resource_id}
     */
     readonly resourceId?: ResourceIdProperty[] | cdktn.IResolvable;
     /**
     * The canonical AWS partition name that the Region is assigned to.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#resource_partition CcInsight#resource_partition}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#resource_partition CcInsight#resource_partition}
     */
     readonly resourcePartition?: ResourcePartitionProperty[] | cdktn.IResolvable;
     /**
     * The canonical AWS external Region name where this resource is located.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#resource_region CcInsight#resource_region}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#resource_region CcInsight#resource_region}
     */
     readonly resourceRegion?: ResourceRegionProperty[] | cdktn.IResolvable;
     /**
     * A list of AWS tags associated with a resource at the time the finding was processed.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#resource_tags CcInsight#resource_tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#resource_tags CcInsight#resource_tags}
     */
     readonly resourceTags?: ResourceTagsProperty[] | cdktn.IResolvable;
     /**
     * Specifies the type of the resource that details are provided for.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#resource_type CcInsight#resource_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#resource_type CcInsight#resource_type}
     */
     readonly resourceType?: ResourceTypeProperty[] | cdktn.IResolvable;
     /**
     * Indicates whether or not sample findings are included in the filter results.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#sample CcInsight#sample}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#sample CcInsight#sample}
     */
     readonly sample?: BooleanFilterProperty[] | cdktn.IResolvable;
     /**
     * The label of a finding's severity.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#severity_label CcInsight#severity_label}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#severity_label CcInsight#severity_label}
     */
     readonly severityLabel?: SeverityLabelProperty[] | cdktn.IResolvable;
     /**
     * The normalized severity of a finding.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#severity_normalized CcInsight#severity_normalized}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#severity_normalized CcInsight#severity_normalized}
     */
     readonly severityNormalized?: SeverityNormalizedProperty[] | cdktn.IResolvable;
     /**
     * The native severity as defined by the security findings provider's solution that generated the finding.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#severity_product CcInsight#severity_product}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#severity_product CcInsight#severity_product}
     */
     readonly severityProduct?: SeverityProductProperty[] | cdktn.IResolvable;
     /**
     * A URL that links to a page about the current finding in the security findings provider's solution.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#source_url CcInsight#source_url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#source_url CcInsight#source_url}
     */
     readonly sourceUrl?: SourceUrlProperty[] | cdktn.IResolvable;
     /**
     * The category of a threat intelligence indicator.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#threat_intel_indicator_category CcInsight#threat_intel_indicator_category}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#threat_intel_indicator_category CcInsight#threat_intel_indicator_category}
     */
     readonly threatIntelIndicatorCategory?: ThreatIntelIndicatorCategoryProperty[] | cdktn.IResolvable;
     /**
     * A timestamp that identifies the last observation of a threat intelligence indicator.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#threat_intel_indicator_last_observed_at CcInsight#threat_intel_indicator_last_observed_at}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#threat_intel_indicator_last_observed_at CcInsight#threat_intel_indicator_last_observed_at}
     */
     readonly threatIntelIndicatorLastObservedAt?: ThreatIntelIndicatorLastObservedAtProperty[] | cdktn.IResolvable;
     /**
     * The source of the threat intelligence.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#threat_intel_indicator_source CcInsight#threat_intel_indicator_source}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#threat_intel_indicator_source CcInsight#threat_intel_indicator_source}
     */
     readonly threatIntelIndicatorSource?: ThreatIntelIndicatorSourceProperty[] | cdktn.IResolvable;
     /**
     * The URL for more details from the source of the threat intelligence.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#threat_intel_indicator_source_url CcInsight#threat_intel_indicator_source_url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#threat_intel_indicator_source_url CcInsight#threat_intel_indicator_source_url}
     */
     readonly threatIntelIndicatorSourceUrl?: ThreatIntelIndicatorSourceUrlProperty[] | cdktn.IResolvable;
     /**
     * The type of a threat intelligence indicator.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#threat_intel_indicator_type CcInsight#threat_intel_indicator_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#threat_intel_indicator_type CcInsight#threat_intel_indicator_type}
     */
     readonly threatIntelIndicatorType?: ThreatIntelIndicatorTypeProperty[] | cdktn.IResolvable;
     /**
     * The value of a threat intelligence indicator.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#threat_intel_indicator_value CcInsight#threat_intel_indicator_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#threat_intel_indicator_value CcInsight#threat_intel_indicator_value}
     */
     readonly threatIntelIndicatorValue?: ThreatIntelIndicatorValueProperty[] | cdktn.IResolvable;
     /**
     * A finding's title.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#title CcInsight#title}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#title CcInsight#title}
     */
     readonly title?: TitleProperty[] | cdktn.IResolvable;
     /**
     * A finding type in the format of namespace/category/classifier that classifies a finding.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#type CcInsight#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#type CcInsight#type}
     */
     readonly type?: TypeProperty[] | cdktn.IResolvable;
     /**
     * An ISO8601-formatted timestamp that indicates when the security findings provider last updated the finding record.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#updated_at CcInsight#updated_at}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#updated_at CcInsight#updated_at}
     */
     readonly updatedAt?: UpdatedAtProperty[] | cdktn.IResolvable;
     /**
     * A list of name/value string pairs associated with the finding.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#user_defined_fields CcInsight#user_defined_fields}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#user_defined_fields CcInsight#user_defined_fields}
     */
     readonly userDefinedFields?: UserDefinedFieldsProperty[] | cdktn.IResolvable;
     /**
     * The veracity of a finding.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#verification_state CcInsight#verification_state}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#verification_state CcInsight#verification_state}
     */
     readonly verificationState?: VerificationStateProperty[] | cdktn.IResolvable;
     /**
     * Indicates whether a software vulnerability in your environment has a known exploit.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#vulnerabilities_exploit_available CcInsight#vulnerabilities_exploit_available}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#vulnerabilities_exploit_available CcInsight#vulnerabilities_exploit_available}
     */
     readonly vulnerabilitiesExploitAvailable?: VulnerabilitiesExploitAvailableProperty[] | cdktn.IResolvable;
     /**
     * Indicates whether a vulnerability is fixed in a newer version of the affected software packages.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#vulnerabilities_fix_available CcInsight#vulnerabilities_fix_available}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#vulnerabilities_fix_available CcInsight#vulnerabilities_fix_available}
     */
     readonly vulnerabilitiesFixAvailable?: VulnerabilitiesFixAvailableProperty[] | cdktn.IResolvable;
     /**
     * The workflow state of a finding.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#workflow_state CcInsight#workflow_state}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#workflow_state CcInsight#workflow_state}
     */
     readonly workflowState?: WorkflowStateProperty[] | cdktn.IResolvable;
     /**
     * The status of the investigation into a finding.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_insight#workflow_status CcInsight#workflow_status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_insight#workflow_status CcInsight#workflow_status}
     */
     readonly workflowStatus?: WorkflowStatusProperty[] | cdktn.IResolvable;
 }

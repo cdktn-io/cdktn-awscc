@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rbin_rule
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rbin_rule
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,55 +9,55 @@ export interface CcRuleProps extends cdktn.TerraformMetaArguments {
     /**
     * The description of the retention rule.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rbin_rule#description CcRule#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rbin_rule#description CcRule#description}
     */
     readonly description?: string;
     /**
     * Information about the exclude resource tags used to identify resources that are excluded by the retention rule.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rbin_rule#exclude_resource_tags CcRule#exclude_resource_tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rbin_rule#exclude_resource_tags CcRule#exclude_resource_tags}
     */
     readonly excludeResourceTags?: CcRule.ResourceTagProperty[] | cdktn.IResolvable;
     /**
     * Information about the retention rule lock configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rbin_rule#lock_configuration CcRule#lock_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rbin_rule#lock_configuration CcRule#lock_configuration}
     */
     readonly lockConfiguration?: CcRule.UnlockDelayProperty;
     /**
     * Information about the resource tags used to identify resources that are retained by the retention rule.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rbin_rule#resource_tags CcRule#resource_tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rbin_rule#resource_tags CcRule#resource_tags}
     */
     readonly resourceTags?: CcRule.ResourceTagsProperty[] | cdktn.IResolvable;
     /**
     * The resource type retained by the retention rule.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rbin_rule#resource_type CcRule#resource_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rbin_rule#resource_type CcRule#resource_type}
     */
     readonly resourceType: string;
     /**
     * Information about the retention period for which the retention rule is to retain resources.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rbin_rule#retention_period CcRule#retention_period}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rbin_rule#retention_period CcRule#retention_period}
     */
     readonly retentionPeriod: CcRule.RetentionPeriodProperty;
     /**
     * The state of the retention rule. Only retention rules that are in the available state retain resources.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rbin_rule#status CcRule#status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rbin_rule#status CcRule#status}
     */
     readonly status?: string;
     /**
     * Information about the tags assigned to the retention rule.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rbin_rule#tags CcRule#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rbin_rule#tags CcRule#tags}
     */
     readonly tags?: CcRule.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rbin_rule awscc_rbin_rule}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rbin_rule awscc_rbin_rule}
 */
 export class CcRule extends cdktn.TerraformResource {
 
@@ -73,7 +73,7 @@ export class CcRule extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcRule resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcRule to import
-    * @param importFromId The id of the existing CcRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rbin_rule#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rbin_rule#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcRule to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -85,7 +85,7 @@ export class CcRule extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rbin_rule awscc_rbin_rule} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rbin_rule awscc_rbin_rule} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -96,7 +96,7 @@ export class CcRule extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_rbin_rule',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -526,13 +526,13 @@ export interface ResourceTagProperty {
     /**
     * The tag key of the resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rbin_rule#resource_tag_key CcRule#resource_tag_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rbin_rule#resource_tag_key CcRule#resource_tag_key}
     */
     readonly resourceTagKey?: string;
     /**
     * The tag value of the resource
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rbin_rule#resource_tag_value CcRule#resource_tag_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rbin_rule#resource_tag_value CcRule#resource_tag_value}
     */
     readonly resourceTagValue?: string;
 }
@@ -642,13 +642,13 @@ export interface UnlockDelayProperty {
     /**
     * The unit of time in which to measure the unlock delay. Currently, the unlock delay can be measure only in days.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rbin_rule#unlock_delay_unit CcRule#unlock_delay_unit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rbin_rule#unlock_delay_unit CcRule#unlock_delay_unit}
     */
     readonly unlockDelayUnit?: string;
     /**
     * The unlock delay period, measured in the unit specified for UnlockDelayUnit.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rbin_rule#unlock_delay_value CcRule#unlock_delay_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rbin_rule#unlock_delay_value CcRule#unlock_delay_value}
     */
     readonly unlockDelayValue?: number;
 }
@@ -736,13 +736,13 @@ export interface ResourceTagsProperty {
     /**
     * The tag key of the resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rbin_rule#resource_tag_key CcRule#resource_tag_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rbin_rule#resource_tag_key CcRule#resource_tag_key}
     */
     readonly resourceTagKey?: string;
     /**
     * The tag value of the resource
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rbin_rule#resource_tag_value CcRule#resource_tag_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rbin_rule#resource_tag_value CcRule#resource_tag_value}
     */
     readonly resourceTagValue?: string;
 }
@@ -852,13 +852,13 @@ export interface RetentionPeriodProperty {
     /**
     * The retention period unit of the rule
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rbin_rule#retention_period_unit CcRule#retention_period_unit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rbin_rule#retention_period_unit CcRule#retention_period_unit}
     */
     readonly retentionPeriodUnit: string;
     /**
     * The retention period value of the rule.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rbin_rule#retention_period_value CcRule#retention_period_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rbin_rule#retention_period_value CcRule#retention_period_value}
     */
     readonly retentionPeriodValue: number;
 }
@@ -940,13 +940,13 @@ export interface TagProperty {
     /**
     * A unique identifier for the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rbin_rule#key CcRule#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rbin_rule#key CcRule#key}
     */
     readonly key?: string;
     /**
     * String which you can use to describe or define the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rbin_rule#value CcRule#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rbin_rule#value CcRule#value}
     */
     readonly value?: string;
 }

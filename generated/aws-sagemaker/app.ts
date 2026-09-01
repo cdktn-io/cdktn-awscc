@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_app
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_app
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,49 +9,49 @@ export interface CcAppProps extends cdktn.TerraformMetaArguments {
     /**
     * The name of the app.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_app#app_name CcApp#app_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_app#app_name CcApp#app_name}
     */
     readonly appName: string;
     /**
     * The type of app.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_app#app_type CcApp#app_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_app#app_type CcApp#app_type}
     */
     readonly appType: string;
     /**
     * The domain ID.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_app#domain_id CcApp#domain_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_app#domain_id CcApp#domain_id}
     */
     readonly domainId: string;
     /**
     * Indicates whether the application is launched in recovery mode.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_app#recovery_mode CcApp#recovery_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_app#recovery_mode CcApp#recovery_mode}
     */
     readonly recoveryMode?: boolean | cdktn.IResolvable;
     /**
     * The instance type and the Amazon Resource Name (ARN) of the SageMaker image created on the instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_app#resource_spec CcApp#resource_spec}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_app#resource_spec CcApp#resource_spec}
     */
     readonly resourceSpec?: CcApp.ResourceSpecProperty;
     /**
     * A list of tags to apply to the app.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_app#tags CcApp#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_app#tags CcApp#tags}
     */
     readonly tags?: CcApp.TagProperty[] | cdktn.IResolvable;
     /**
     * The user profile name.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_app#user_profile_name CcApp#user_profile_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_app#user_profile_name CcApp#user_profile_name}
     */
     readonly userProfileName: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_app awscc_sagemaker_app}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_app awscc_sagemaker_app}
 */
 export class CcApp extends cdktn.TerraformResource {
 
@@ -67,7 +67,7 @@ export class CcApp extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcApp resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcApp to import
-    * @param importFromId The id of the existing CcApp that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_app#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcApp that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_app#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcApp to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -79,7 +79,7 @@ export class CcApp extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_app awscc_sagemaker_app} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_app awscc_sagemaker_app} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -90,7 +90,7 @@ export class CcApp extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_sagemaker_app',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -388,25 +388,25 @@ export interface ResourceSpecProperty {
     /**
     * The instance type that the image version runs on.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_app#instance_type CcApp#instance_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_app#instance_type CcApp#instance_type}
     */
     readonly instanceType?: string;
     /**
     * The Amazon Resource Name (ARN) of the Lifecycle Configuration to attach to the Resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_app#lifecycle_config_arn CcApp#lifecycle_config_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_app#lifecycle_config_arn CcApp#lifecycle_config_arn}
     */
     readonly lifecycleConfigArn?: string;
     /**
     * The ARN of the SageMaker image that the image version belongs to.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_app#sage_maker_image_arn CcApp#sage_maker_image_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_app#sage_maker_image_arn CcApp#sage_maker_image_arn}
     */
     readonly sageMakerImageArn?: string;
     /**
     * The ARN of the image version created on the instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_app#sage_maker_image_version_arn CcApp#sage_maker_image_version_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_app#sage_maker_image_version_arn CcApp#sage_maker_image_version_arn}
     */
     readonly sageMakerImageVersionArn?: string;
 }
@@ -536,11 +536,11 @@ export class ResourceSpecPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_app#key CcApp#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_app#key CcApp#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_app#value CcApp#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_app#value CcApp#value}
     */
     readonly value?: string;
 }

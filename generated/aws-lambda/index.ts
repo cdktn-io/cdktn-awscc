@@ -11,5 +11,6 @@ export * from './layer-version-permission';
 export * from './microvm-image';
 export * from './network-connector';
 export * from './permission';
+export * from './resource-policy';
 export * from './url';
 export * from './version';

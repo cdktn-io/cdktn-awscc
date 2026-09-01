@@ -1,47 +1,47 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_dataset
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotanalytics_dataset
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcDatasetProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_dataset#actions CcDataset#actions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotanalytics_dataset#actions CcDataset#actions}
     */
     readonly actions: CcDataset.ActionProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_dataset#content_delivery_rules CcDataset#content_delivery_rules}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotanalytics_dataset#content_delivery_rules CcDataset#content_delivery_rules}
     */
     readonly contentDeliveryRules?: CcDataset.DatasetContentDeliveryRuleProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_dataset#dataset_name CcDataset#dataset_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotanalytics_dataset#dataset_name CcDataset#dataset_name}
     */
     readonly datasetName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_dataset#late_data_rules CcDataset#late_data_rules}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotanalytics_dataset#late_data_rules CcDataset#late_data_rules}
     */
     readonly lateDataRules?: CcDataset.LateDataRuleProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_dataset#retention_period CcDataset#retention_period}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotanalytics_dataset#retention_period CcDataset#retention_period}
     */
     readonly retentionPeriod?: CcDataset.RetentionPeriodProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_dataset#tags CcDataset#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotanalytics_dataset#tags CcDataset#tags}
     */
     readonly tags?: CcDataset.TagProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_dataset#triggers CcDataset#triggers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotanalytics_dataset#triggers CcDataset#triggers}
     */
     readonly triggers?: CcDataset.TriggerProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_dataset#versioning_configuration CcDataset#versioning_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotanalytics_dataset#versioning_configuration CcDataset#versioning_configuration}
     */
     readonly versioningConfiguration?: CcDataset.VersioningConfigurationProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_dataset awscc_iotanalytics_dataset}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotanalytics_dataset awscc_iotanalytics_dataset}
 */
 export class CcDataset extends cdktn.TerraformResource {
 
@@ -57,7 +57,7 @@ export class CcDataset extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcDataset resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcDataset to import
-    * @param importFromId The id of the existing CcDataset that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_dataset#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcDataset that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotanalytics_dataset#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcDataset to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -69,7 +69,7 @@ export class CcDataset extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_dataset awscc_iotanalytics_dataset} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotanalytics_dataset awscc_iotanalytics_dataset} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -80,7 +80,7 @@ export class CcDataset extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_iotanalytics_dataset',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -1174,11 +1174,11 @@ export function ccDatasetVersioningConfigurationPropertyToHclTerraform(struct?: 
 export namespace CcDataset {
 export interface ResourceConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_dataset#compute_type CcDataset#compute_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotanalytics_dataset#compute_type CcDataset#compute_type}
     */
     readonly computeType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_dataset#volume_size_in_gb CcDataset#volume_size_in_gb}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotanalytics_dataset#volume_size_in_gb CcDataset#volume_size_in_gb}
     */
     readonly volumeSizeInGb?: number;
 }
@@ -1264,7 +1264,7 @@ export class ResourceConfigurationPropertyOutputReference extends cdktn.ComplexO
 }
 export interface DatasetContentVersionValueProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_dataset#dataset_name CcDataset#dataset_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotanalytics_dataset#dataset_name CcDataset#dataset_name}
     */
     readonly datasetName?: string;
 }
@@ -1328,7 +1328,7 @@ export class DatasetContentVersionValuePropertyOutputReference extends cdktn.Com
 }
 export interface OutputFileUriValueProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_dataset#file_name CcDataset#file_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotanalytics_dataset#file_name CcDataset#file_name}
     */
     readonly fileName?: string;
 }
@@ -1392,23 +1392,23 @@ export class OutputFileUriValuePropertyOutputReference extends cdktn.ComplexObje
 }
 export interface VariableProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_dataset#dataset_content_version_value CcDataset#dataset_content_version_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotanalytics_dataset#dataset_content_version_value CcDataset#dataset_content_version_value}
     */
     readonly datasetContentVersionValue?: DatasetContentVersionValueProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_dataset#double_value CcDataset#double_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotanalytics_dataset#double_value CcDataset#double_value}
     */
     readonly doubleValue?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_dataset#output_file_uri_value CcDataset#output_file_uri_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotanalytics_dataset#output_file_uri_value CcDataset#output_file_uri_value}
     */
     readonly outputFileUriValue?: OutputFileUriValueProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_dataset#string_value CcDataset#string_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotanalytics_dataset#string_value CcDataset#string_value}
     */
     readonly stringValue?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_dataset#variable_name CcDataset#variable_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotanalytics_dataset#variable_name CcDataset#variable_name}
     */
     readonly variableName?: string;
 }
@@ -1582,19 +1582,19 @@ export class VariablePropertyList extends cdktn.ComplexList {
 }
 export interface ContainerActionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_dataset#execution_role_arn CcDataset#execution_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotanalytics_dataset#execution_role_arn CcDataset#execution_role_arn}
     */
     readonly executionRoleArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_dataset#image CcDataset#image}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotanalytics_dataset#image CcDataset#image}
     */
     readonly image?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_dataset#resource_configuration CcDataset#resource_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotanalytics_dataset#resource_configuration CcDataset#resource_configuration}
     */
     readonly resourceConfiguration?: ResourceConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_dataset#variables CcDataset#variables}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotanalytics_dataset#variables CcDataset#variables}
     */
     readonly variables?: VariableProperty[] | cdktn.IResolvable;
 }
@@ -1724,11 +1724,11 @@ export class ContainerActionPropertyOutputReference extends cdktn.ComplexObject 
 }
 export interface DeltaTimeProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_dataset#offset_seconds CcDataset#offset_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotanalytics_dataset#offset_seconds CcDataset#offset_seconds}
     */
     readonly offsetSeconds?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_dataset#time_expression CcDataset#time_expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotanalytics_dataset#time_expression CcDataset#time_expression}
     */
     readonly timeExpression?: string;
 }
@@ -1814,7 +1814,7 @@ export class DeltaTimePropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface FilterProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_dataset#delta_time CcDataset#delta_time}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotanalytics_dataset#delta_time CcDataset#delta_time}
     */
     readonly deltaTime?: DeltaTimeProperty;
 }
@@ -1900,11 +1900,11 @@ export class FilterPropertyList extends cdktn.ComplexList {
 }
 export interface QueryActionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_dataset#filters CcDataset#filters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotanalytics_dataset#filters CcDataset#filters}
     */
     readonly filters?: FilterProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_dataset#sql_query CcDataset#sql_query}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotanalytics_dataset#sql_query CcDataset#sql_query}
     */
     readonly sqlQuery?: string;
 }
@@ -1990,15 +1990,15 @@ export class QueryActionPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface ActionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_dataset#action_name CcDataset#action_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotanalytics_dataset#action_name CcDataset#action_name}
     */
     readonly actionName: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_dataset#container_action CcDataset#container_action}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotanalytics_dataset#container_action CcDataset#container_action}
     */
     readonly containerAction?: ContainerActionProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_dataset#query_action CcDataset#query_action}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotanalytics_dataset#query_action CcDataset#query_action}
     */
     readonly queryAction?: QueryActionProperty;
 }
@@ -2125,11 +2125,11 @@ export class ActionPropertyList extends cdktn.ComplexList {
 }
 export interface IotEventsDestinationConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_dataset#input_name CcDataset#input_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotanalytics_dataset#input_name CcDataset#input_name}
     */
     readonly inputName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_dataset#role_arn CcDataset#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotanalytics_dataset#role_arn CcDataset#role_arn}
     */
     readonly roleArn?: string;
 }
@@ -2215,11 +2215,11 @@ export class IotEventsDestinationConfigurationPropertyOutputReference extends cd
 }
 export interface GlueConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_dataset#database_name CcDataset#database_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotanalytics_dataset#database_name CcDataset#database_name}
     */
     readonly databaseName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_dataset#table_name CcDataset#table_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotanalytics_dataset#table_name CcDataset#table_name}
     */
     readonly tableName?: string;
 }
@@ -2305,19 +2305,19 @@ export class GlueConfigurationPropertyOutputReference extends cdktn.ComplexObjec
 }
 export interface S3DestinationConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_dataset#bucket CcDataset#bucket}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotanalytics_dataset#bucket CcDataset#bucket}
     */
     readonly bucket?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_dataset#glue_configuration CcDataset#glue_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotanalytics_dataset#glue_configuration CcDataset#glue_configuration}
     */
     readonly glueConfiguration?: GlueConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_dataset#key CcDataset#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotanalytics_dataset#key CcDataset#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_dataset#role_arn CcDataset#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotanalytics_dataset#role_arn CcDataset#role_arn}
     */
     readonly roleArn?: string;
 }
@@ -2447,11 +2447,11 @@ export class S3DestinationConfigurationPropertyOutputReference extends cdktn.Com
 }
 export interface DatasetContentDeliveryRuleDestinationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_dataset#iot_events_destination_configuration CcDataset#iot_events_destination_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotanalytics_dataset#iot_events_destination_configuration CcDataset#iot_events_destination_configuration}
     */
     readonly iotEventsDestinationConfiguration?: IotEventsDestinationConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_dataset#s3_destination_configuration CcDataset#s3_destination_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotanalytics_dataset#s3_destination_configuration CcDataset#s3_destination_configuration}
     */
     readonly s3DestinationConfiguration?: S3DestinationConfigurationProperty;
 }
@@ -2537,11 +2537,11 @@ export class DatasetContentDeliveryRuleDestinationPropertyOutputReference extend
 }
 export interface DatasetContentDeliveryRuleProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_dataset#destination CcDataset#destination}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotanalytics_dataset#destination CcDataset#destination}
     */
     readonly destination?: DatasetContentDeliveryRuleDestinationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_dataset#entry_name CcDataset#entry_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotanalytics_dataset#entry_name CcDataset#entry_name}
     */
     readonly entryName?: string;
 }
@@ -2649,7 +2649,7 @@ export class DatasetContentDeliveryRulePropertyList extends cdktn.ComplexList {
 }
 export interface DeltaTimeSessionWindowConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_dataset#timeout_in_minutes CcDataset#timeout_in_minutes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotanalytics_dataset#timeout_in_minutes CcDataset#timeout_in_minutes}
     */
     readonly timeoutInMinutes?: number;
 }
@@ -2713,7 +2713,7 @@ export class DeltaTimeSessionWindowConfigurationPropertyOutputReference extends 
 }
 export interface LateDataRuleConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_dataset#delta_time_session_window_configuration CcDataset#delta_time_session_window_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotanalytics_dataset#delta_time_session_window_configuration CcDataset#delta_time_session_window_configuration}
     */
     readonly deltaTimeSessionWindowConfiguration?: DeltaTimeSessionWindowConfigurationProperty;
 }
@@ -2777,11 +2777,11 @@ export class LateDataRuleConfigurationPropertyOutputReference extends cdktn.Comp
 }
 export interface LateDataRuleProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_dataset#rule_configuration CcDataset#rule_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotanalytics_dataset#rule_configuration CcDataset#rule_configuration}
     */
     readonly ruleConfiguration?: LateDataRuleConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_dataset#rule_name CcDataset#rule_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotanalytics_dataset#rule_name CcDataset#rule_name}
     */
     readonly ruleName?: string;
 }
@@ -2889,11 +2889,11 @@ export class LateDataRulePropertyList extends cdktn.ComplexList {
 }
 export interface RetentionPeriodProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_dataset#number_of_days CcDataset#number_of_days}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotanalytics_dataset#number_of_days CcDataset#number_of_days}
     */
     readonly numberOfDays?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_dataset#unlimited CcDataset#unlimited}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotanalytics_dataset#unlimited CcDataset#unlimited}
     */
     readonly unlimited?: boolean | cdktn.IResolvable;
 }
@@ -2979,11 +2979,11 @@ export class RetentionPeriodPropertyOutputReference extends cdktn.ComplexObject 
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_dataset#key CcDataset#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotanalytics_dataset#key CcDataset#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_dataset#value CcDataset#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotanalytics_dataset#value CcDataset#value}
     */
     readonly value?: string;
 }
@@ -3091,7 +3091,7 @@ export class TagPropertyList extends cdktn.ComplexList {
 }
 export interface ScheduleProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_dataset#schedule_expression CcDataset#schedule_expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotanalytics_dataset#schedule_expression CcDataset#schedule_expression}
     */
     readonly scheduleExpression?: string;
 }
@@ -3155,7 +3155,7 @@ export class SchedulePropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface TriggeringDatasetProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_dataset#dataset_name CcDataset#dataset_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotanalytics_dataset#dataset_name CcDataset#dataset_name}
     */
     readonly datasetName?: string;
 }
@@ -3219,11 +3219,11 @@ export class TriggeringDatasetPropertyOutputReference extends cdktn.ComplexObjec
 }
 export interface TriggerProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_dataset#schedule CcDataset#schedule}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotanalytics_dataset#schedule CcDataset#schedule}
     */
     readonly schedule?: ScheduleProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_dataset#triggering_dataset CcDataset#triggering_dataset}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotanalytics_dataset#triggering_dataset CcDataset#triggering_dataset}
     */
     readonly triggeringDataset?: TriggeringDatasetProperty;
 }
@@ -3331,11 +3331,11 @@ export class TriggerPropertyList extends cdktn.ComplexList {
 }
 export interface VersioningConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_dataset#max_versions CcDataset#max_versions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotanalytics_dataset#max_versions CcDataset#max_versions}
     */
     readonly maxVersions?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_dataset#unlimited CcDataset#unlimited}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotanalytics_dataset#unlimited CcDataset#unlimited}
     */
     readonly unlimited?: boolean | cdktn.IResolvable;
 }

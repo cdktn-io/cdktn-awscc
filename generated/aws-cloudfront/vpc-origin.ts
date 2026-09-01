@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_vpc_origin
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudfront_vpc_origin
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,19 +9,19 @@ export interface CcVpcOriginProps extends cdktn.TerraformMetaArguments {
     /**
     * A complex type that contains zero or more ``Tag`` elements.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_vpc_origin#tags CcVpcOrigin#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudfront_vpc_origin#tags CcVpcOrigin#tags}
     */
     readonly tags?: CcVpcOrigin.TagProperty[] | cdktn.IResolvable;
     /**
     * The VPC origin endpoint configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_vpc_origin#vpc_origin_endpoint_config CcVpcOrigin#vpc_origin_endpoint_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudfront_vpc_origin#vpc_origin_endpoint_config CcVpcOrigin#vpc_origin_endpoint_config}
     */
     readonly vpcOriginEndpointConfig: CcVpcOrigin.VpcOriginEndpointConfigProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_vpc_origin awscc_cloudfront_vpc_origin}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudfront_vpc_origin awscc_cloudfront_vpc_origin}
 */
 export class CcVpcOrigin extends cdktn.TerraformResource {
 
@@ -37,7 +37,7 @@ export class CcVpcOrigin extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcVpcOrigin resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcVpcOrigin to import
-    * @param importFromId The id of the existing CcVpcOrigin that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_vpc_origin#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcVpcOrigin that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudfront_vpc_origin#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcVpcOrigin to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -49,7 +49,7 @@ export class CcVpcOrigin extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_vpc_origin awscc_cloudfront_vpc_origin} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudfront_vpc_origin awscc_cloudfront_vpc_origin} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -60,7 +60,7 @@ export class CcVpcOrigin extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_cloudfront_vpc_origin',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -289,14 +289,14 @@ export interface TagProperty {
     * A string that contains ``Tag`` key.
     *  The string length should be between 1 and 128 characters. Valid characters include ``a-z``, ``A-Z``, ``0-9``, space, and the special characters ``_ - . : / = + @``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_vpc_origin#key CcVpcOrigin#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudfront_vpc_origin#key CcVpcOrigin#key}
     */
     readonly key?: string;
     /**
     * A string that contains an optional ``Tag`` value.
     *  The string length should be between 0 and 256 characters. Valid characters include ``a-z``, ``A-Z``, ``0-9``, space, and the special characters ``_ - . : / = + @``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_vpc_origin#value CcVpcOrigin#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudfront_vpc_origin#value CcVpcOrigin#value}
     */
     readonly value?: string;
 }
@@ -406,42 +406,42 @@ export interface VpcOriginEndpointConfigProperty {
     /**
     * The ARN of the CloudFront VPC origin endpoint configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_vpc_origin#arn CcVpcOrigin#arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudfront_vpc_origin#arn CcVpcOrigin#arn}
     */
     readonly arn: string;
     /**
     * The HTTP port for the CloudFront VPC origin endpoint configuration. The default value is ``80``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_vpc_origin#http_port CcVpcOrigin#http_port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudfront_vpc_origin#http_port CcVpcOrigin#http_port}
     */
     readonly httpPort?: number;
     /**
     * The HTTPS port of the CloudFront VPC origin endpoint configuration. The default value is ``443``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_vpc_origin#https_port CcVpcOrigin#https_port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudfront_vpc_origin#https_port CcVpcOrigin#https_port}
     */
     readonly httpsPort?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_vpc_origin#ip_address_type CcVpcOrigin#ip_address_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudfront_vpc_origin#ip_address_type CcVpcOrigin#ip_address_type}
     */
     readonly ipAddressType?: string;
     /**
     * The name of the CloudFront VPC origin endpoint configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_vpc_origin#name CcVpcOrigin#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudfront_vpc_origin#name CcVpcOrigin#name}
     */
     readonly name: string;
     /**
     * The origin protocol policy for the CloudFront VPC origin endpoint configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_vpc_origin#origin_protocol_policy CcVpcOrigin#origin_protocol_policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudfront_vpc_origin#origin_protocol_policy CcVpcOrigin#origin_protocol_policy}
     */
     readonly originProtocolPolicy?: string;
     /**
     * Specifies the minimum SSL/TLS protocol that CloudFront uses when connecting to your origin over HTTPS. Valid values include ``SSLv3``, ``TLSv1``, ``TLSv1.1``, and ``TLSv1.2``.
     *  For more information, see [Minimum Origin SSL Protocol](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/DownloadDistValuesOrigin.html#DownloadDistValuesOriginSSLProtocols) in the *Amazon CloudFront Developer Guide*.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_vpc_origin#origin_ssl_protocols CcVpcOrigin#origin_ssl_protocols}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudfront_vpc_origin#origin_ssl_protocols CcVpcOrigin#origin_ssl_protocols}
     */
     readonly originSslProtocols?: string[];
 }

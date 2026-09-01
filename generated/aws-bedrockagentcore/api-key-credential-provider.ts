@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_api_key_credential_provider
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_api_key_credential_provider
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,37 +9,37 @@ export interface CcApiKeyCredentialProviderProps extends cdktn.TerraformMetaArgu
     /**
     * The API key to use for authentication
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_api_key_credential_provider#api_key CcApiKeyCredentialProvider#api_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_api_key_credential_provider#api_key CcApiKeyCredentialProvider#api_key}
     */
     readonly apiKey?: string;
     /**
     * Configuration for a customer-provided secret containing the API key
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_api_key_credential_provider#api_key_secret_config CcApiKeyCredentialProvider#api_key_secret_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_api_key_credential_provider#api_key_secret_config CcApiKeyCredentialProvider#api_key_secret_config}
     */
     readonly apiKeySecretConfig?: CcApiKeyCredentialProvider.SecretReferenceProperty;
     /**
     * The source of the API key secret. Use MANAGED for service-managed secrets or EXTERNAL for customer-provided secrets.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_api_key_credential_provider#api_key_secret_source CcApiKeyCredentialProvider#api_key_secret_source}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_api_key_credential_provider#api_key_secret_source CcApiKeyCredentialProvider#api_key_secret_source}
     */
     readonly apiKeySecretSource?: string;
     /**
     * The name of the API key credential provider
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_api_key_credential_provider#name CcApiKeyCredentialProvider#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_api_key_credential_provider#name CcApiKeyCredentialProvider#name}
     */
     readonly name: string;
     /**
     * Tags to assign to the API key credential provider
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_api_key_credential_provider#tags CcApiKeyCredentialProvider#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_api_key_credential_provider#tags CcApiKeyCredentialProvider#tags}
     */
     readonly tags?: CcApiKeyCredentialProvider.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_api_key_credential_provider awscc_bedrockagentcore_api_key_credential_provider}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_api_key_credential_provider awscc_bedrockagentcore_api_key_credential_provider}
 */
 export class CcApiKeyCredentialProvider extends cdktn.TerraformResource {
 
@@ -55,7 +55,7 @@ export class CcApiKeyCredentialProvider extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcApiKeyCredentialProvider resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcApiKeyCredentialProvider to import
-    * @param importFromId The id of the existing CcApiKeyCredentialProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_api_key_credential_provider#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcApiKeyCredentialProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_api_key_credential_provider#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcApiKeyCredentialProvider to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -67,7 +67,7 @@ export class CcApiKeyCredentialProvider extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_api_key_credential_provider awscc_bedrockagentcore_api_key_credential_provider} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_api_key_credential_provider awscc_bedrockagentcore_api_key_credential_provider} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -78,7 +78,7 @@ export class CcApiKeyCredentialProvider extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_bedrockagentcore_api_key_credential_provider',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -393,13 +393,13 @@ export interface SecretReferenceProperty {
     /**
     * The JSON key within the secret that contains the credential value
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_api_key_credential_provider#json_key CcApiKeyCredentialProvider#json_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_api_key_credential_provider#json_key CcApiKeyCredentialProvider#json_key}
     */
     readonly jsonKey?: string;
     /**
     * The ID or ARN of the secret in AWS Secrets Manager
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_api_key_credential_provider#secret_id CcApiKeyCredentialProvider#secret_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_api_key_credential_provider#secret_id CcApiKeyCredentialProvider#secret_id}
     */
     readonly secretId?: string;
 }
@@ -485,11 +485,11 @@ export class SecretReferencePropertyOutputReference extends cdktn.ComplexObject 
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_api_key_credential_provider#key CcApiKeyCredentialProvider#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_api_key_credential_provider#key CcApiKeyCredentialProvider#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_api_key_credential_provider#value CcApiKeyCredentialProvider#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_api_key_credential_provider#value CcApiKeyCredentialProvider#value}
     */
     readonly value?: string;
 }

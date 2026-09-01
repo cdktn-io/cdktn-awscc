@@ -1,77 +1,77 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_collaboration
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_collaboration
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcCollaborationProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_collaboration#allowed_result_regions CcCollaboration#allowed_result_regions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_collaboration#allowed_result_regions CcCollaboration#allowed_result_regions}
     */
     readonly allowedResultRegions?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_collaboration#analytics_engine CcCollaboration#analytics_engine}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_collaboration#analytics_engine CcCollaboration#analytics_engine}
     */
     readonly analyticsEngine?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_collaboration#auto_approved_change_types CcCollaboration#auto_approved_change_types}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_collaboration#auto_approved_change_types CcCollaboration#auto_approved_change_types}
     */
     readonly autoApprovedChangeTypes?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_collaboration#creator_display_name CcCollaboration#creator_display_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_collaboration#creator_display_name CcCollaboration#creator_display_name}
     */
     readonly creatorDisplayName: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_collaboration#creator_member_abilities CcCollaboration#creator_member_abilities}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_collaboration#creator_member_abilities CcCollaboration#creator_member_abilities}
     */
     readonly creatorMemberAbilities?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_collaboration#creator_ml_member_abilities CcCollaboration#creator_ml_member_abilities}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_collaboration#creator_ml_member_abilities CcCollaboration#creator_ml_member_abilities}
     */
     readonly creatorMlMemberAbilities?: CcCollaboration.MLMemberAbilitiesProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_collaboration#creator_payment_configuration CcCollaboration#creator_payment_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_collaboration#creator_payment_configuration CcCollaboration#creator_payment_configuration}
     */
     readonly creatorPaymentConfiguration?: CcCollaboration.PaymentConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_collaboration#data_encryption_metadata CcCollaboration#data_encryption_metadata}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_collaboration#data_encryption_metadata CcCollaboration#data_encryption_metadata}
     */
     readonly dataEncryptionMetadata?: CcCollaboration.DataEncryptionMetadataProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_collaboration#description CcCollaboration#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_collaboration#description CcCollaboration#description}
     */
     readonly description: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_collaboration#is_metrics_enabled CcCollaboration#is_metrics_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_collaboration#is_metrics_enabled CcCollaboration#is_metrics_enabled}
     */
     readonly isMetricsEnabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_collaboration#job_log_status CcCollaboration#job_log_status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_collaboration#job_log_status CcCollaboration#job_log_status}
     */
     readonly jobLogStatus?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_collaboration#members CcCollaboration#members}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_collaboration#members CcCollaboration#members}
     */
     readonly members?: CcCollaboration.MemberSpecificationProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_collaboration#name CcCollaboration#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_collaboration#name CcCollaboration#name}
     */
     readonly name: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_collaboration#query_log_status CcCollaboration#query_log_status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_collaboration#query_log_status CcCollaboration#query_log_status}
     */
     readonly queryLogStatus: string;
     /**
     * An arbitrary set of tags (key-value pairs) for this cleanrooms collaboration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_collaboration#tags CcCollaboration#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_collaboration#tags CcCollaboration#tags}
     */
     readonly tags?: CcCollaboration.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_collaboration awscc_cleanrooms_collaboration}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_collaboration awscc_cleanrooms_collaboration}
 */
 export class CcCollaboration extends cdktn.TerraformResource {
 
@@ -87,7 +87,7 @@ export class CcCollaboration extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcCollaboration resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcCollaboration to import
-    * @param importFromId The id of the existing CcCollaboration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_collaboration#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcCollaboration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_collaboration#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcCollaboration to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -99,7 +99,7 @@ export class CcCollaboration extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_collaboration awscc_cleanrooms_collaboration} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_collaboration awscc_cleanrooms_collaboration} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -110,7 +110,7 @@ export class CcCollaboration extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_cleanrooms_collaboration',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -1192,7 +1192,7 @@ export function ccCollaborationTagPropertyToHclTerraform(struct?: CcCollaboratio
 export namespace CcCollaboration {
 export interface MLMemberAbilitiesProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_collaboration#custom_ml_member_abilities CcCollaboration#custom_ml_member_abilities}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_collaboration#custom_ml_member_abilities CcCollaboration#custom_ml_member_abilities}
     */
     readonly customMlMemberAbilities?: string[];
 }
@@ -1256,7 +1256,7 @@ export class MLMemberAbilitiesPropertyOutputReference extends cdktn.ComplexObjec
 }
 export interface JobComputePaymentConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_collaboration#is_responsible CcCollaboration#is_responsible}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_collaboration#is_responsible CcCollaboration#is_responsible}
     */
     readonly isResponsible?: boolean | cdktn.IResolvable;
 }
@@ -1320,7 +1320,7 @@ export class JobComputePaymentConfigPropertyOutputReference extends cdktn.Comple
 }
 export interface ModelInferencePaymentConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_collaboration#is_responsible CcCollaboration#is_responsible}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_collaboration#is_responsible CcCollaboration#is_responsible}
     */
     readonly isResponsible?: boolean | cdktn.IResolvable;
 }
@@ -1384,7 +1384,7 @@ export class ModelInferencePaymentConfigPropertyOutputReference extends cdktn.Co
 }
 export interface ModelTrainingPaymentConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_collaboration#is_responsible CcCollaboration#is_responsible}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_collaboration#is_responsible CcCollaboration#is_responsible}
     */
     readonly isResponsible?: boolean | cdktn.IResolvable;
 }
@@ -1448,7 +1448,7 @@ export class ModelTrainingPaymentConfigPropertyOutputReference extends cdktn.Com
 }
 export interface SyntheticDataGenerationPaymentConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_collaboration#is_responsible CcCollaboration#is_responsible}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_collaboration#is_responsible CcCollaboration#is_responsible}
     */
     readonly isResponsible?: boolean | cdktn.IResolvable;
 }
@@ -1512,15 +1512,15 @@ export class SyntheticDataGenerationPaymentConfigPropertyOutputReference extends
 }
 export interface MLPaymentConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_collaboration#model_inference CcCollaboration#model_inference}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_collaboration#model_inference CcCollaboration#model_inference}
     */
     readonly modelInference?: ModelInferencePaymentConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_collaboration#model_training CcCollaboration#model_training}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_collaboration#model_training CcCollaboration#model_training}
     */
     readonly modelTraining?: ModelTrainingPaymentConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_collaboration#synthetic_data_generation CcCollaboration#synthetic_data_generation}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_collaboration#synthetic_data_generation CcCollaboration#synthetic_data_generation}
     */
     readonly syntheticDataGeneration?: SyntheticDataGenerationPaymentConfigProperty;
 }
@@ -1628,7 +1628,7 @@ export class MLPaymentConfigPropertyOutputReference extends cdktn.ComplexObject 
 }
 export interface QueryComputePaymentConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_collaboration#is_responsible CcCollaboration#is_responsible}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_collaboration#is_responsible CcCollaboration#is_responsible}
     */
     readonly isResponsible?: boolean | cdktn.IResolvable;
 }
@@ -1692,15 +1692,15 @@ export class QueryComputePaymentConfigPropertyOutputReference extends cdktn.Comp
 }
 export interface PaymentConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_collaboration#job_compute CcCollaboration#job_compute}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_collaboration#job_compute CcCollaboration#job_compute}
     */
     readonly jobCompute?: JobComputePaymentConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_collaboration#machine_learning CcCollaboration#machine_learning}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_collaboration#machine_learning CcCollaboration#machine_learning}
     */
     readonly machineLearning?: MLPaymentConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_collaboration#query_compute CcCollaboration#query_compute}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_collaboration#query_compute CcCollaboration#query_compute}
     */
     readonly queryCompute?: QueryComputePaymentConfigProperty;
 }
@@ -1808,19 +1808,19 @@ export class PaymentConfigurationPropertyOutputReference extends cdktn.ComplexOb
 }
 export interface DataEncryptionMetadataProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_collaboration#allow_cleartext CcCollaboration#allow_cleartext}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_collaboration#allow_cleartext CcCollaboration#allow_cleartext}
     */
     readonly allowCleartext?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_collaboration#allow_duplicates CcCollaboration#allow_duplicates}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_collaboration#allow_duplicates CcCollaboration#allow_duplicates}
     */
     readonly allowDuplicates?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_collaboration#allow_joins_on_columns_with_different_names CcCollaboration#allow_joins_on_columns_with_different_names}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_collaboration#allow_joins_on_columns_with_different_names CcCollaboration#allow_joins_on_columns_with_different_names}
     */
     readonly allowJoinsOnColumnsWithDifferentNames?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_collaboration#preserve_nulls CcCollaboration#preserve_nulls}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_collaboration#preserve_nulls CcCollaboration#preserve_nulls}
     */
     readonly preserveNulls?: boolean | cdktn.IResolvable;
 }
@@ -1950,7 +1950,7 @@ export class DataEncryptionMetadataPropertyOutputReference extends cdktn.Complex
 }
 export interface MembersMlMemberAbilitiesProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_collaboration#custom_ml_member_abilities CcCollaboration#custom_ml_member_abilities}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_collaboration#custom_ml_member_abilities CcCollaboration#custom_ml_member_abilities}
     */
     readonly customMlMemberAbilities?: string[];
 }
@@ -2014,7 +2014,7 @@ export class MembersMlMemberAbilitiesPropertyOutputReference extends cdktn.Compl
 }
 export interface JobComputeProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_collaboration#is_responsible CcCollaboration#is_responsible}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_collaboration#is_responsible CcCollaboration#is_responsible}
     */
     readonly isResponsible?: boolean | cdktn.IResolvable;
 }
@@ -2078,7 +2078,7 @@ export class JobComputePropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface ModelInferenceProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_collaboration#is_responsible CcCollaboration#is_responsible}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_collaboration#is_responsible CcCollaboration#is_responsible}
     */
     readonly isResponsible?: boolean | cdktn.IResolvable;
 }
@@ -2142,7 +2142,7 @@ export class ModelInferencePropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface ModelTrainingProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_collaboration#is_responsible CcCollaboration#is_responsible}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_collaboration#is_responsible CcCollaboration#is_responsible}
     */
     readonly isResponsible?: boolean | cdktn.IResolvable;
 }
@@ -2206,7 +2206,7 @@ export class ModelTrainingPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface SyntheticDataGenerationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_collaboration#is_responsible CcCollaboration#is_responsible}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_collaboration#is_responsible CcCollaboration#is_responsible}
     */
     readonly isResponsible?: boolean | cdktn.IResolvable;
 }
@@ -2270,15 +2270,15 @@ export class SyntheticDataGenerationPropertyOutputReference extends cdktn.Comple
 }
 export interface MachineLearningProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_collaboration#model_inference CcCollaboration#model_inference}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_collaboration#model_inference CcCollaboration#model_inference}
     */
     readonly modelInference?: ModelInferenceProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_collaboration#model_training CcCollaboration#model_training}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_collaboration#model_training CcCollaboration#model_training}
     */
     readonly modelTraining?: ModelTrainingProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_collaboration#synthetic_data_generation CcCollaboration#synthetic_data_generation}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_collaboration#synthetic_data_generation CcCollaboration#synthetic_data_generation}
     */
     readonly syntheticDataGeneration?: SyntheticDataGenerationProperty;
 }
@@ -2386,7 +2386,7 @@ export class MachineLearningPropertyOutputReference extends cdktn.ComplexObject 
 }
 export interface QueryComputeProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_collaboration#is_responsible CcCollaboration#is_responsible}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_collaboration#is_responsible CcCollaboration#is_responsible}
     */
     readonly isResponsible?: boolean | cdktn.IResolvable;
 }
@@ -2450,15 +2450,15 @@ export class QueryComputePropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface MembersPaymentConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_collaboration#job_compute CcCollaboration#job_compute}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_collaboration#job_compute CcCollaboration#job_compute}
     */
     readonly jobCompute?: JobComputeProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_collaboration#machine_learning CcCollaboration#machine_learning}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_collaboration#machine_learning CcCollaboration#machine_learning}
     */
     readonly machineLearning?: MachineLearningProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_collaboration#query_compute CcCollaboration#query_compute}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_collaboration#query_compute CcCollaboration#query_compute}
     */
     readonly queryCompute?: QueryComputeProperty;
 }
@@ -2566,23 +2566,23 @@ export class MembersPaymentConfigurationPropertyOutputReference extends cdktn.Co
 }
 export interface MemberSpecificationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_collaboration#account_id CcCollaboration#account_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_collaboration#account_id CcCollaboration#account_id}
     */
     readonly accountId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_collaboration#display_name CcCollaboration#display_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_collaboration#display_name CcCollaboration#display_name}
     */
     readonly displayName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_collaboration#member_abilities CcCollaboration#member_abilities}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_collaboration#member_abilities CcCollaboration#member_abilities}
     */
     readonly memberAbilities?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_collaboration#ml_member_abilities CcCollaboration#ml_member_abilities}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_collaboration#ml_member_abilities CcCollaboration#ml_member_abilities}
     */
     readonly mlMemberAbilities?: MembersMlMemberAbilitiesProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_collaboration#payment_configuration CcCollaboration#payment_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_collaboration#payment_configuration CcCollaboration#payment_configuration}
     */
     readonly paymentConfiguration?: MembersPaymentConfigurationProperty;
 }
@@ -2756,11 +2756,11 @@ export class MemberSpecificationPropertyList extends cdktn.ComplexList {
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_collaboration#key CcCollaboration#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_collaboration#key CcCollaboration#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_collaboration#value CcCollaboration#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_collaboration#value CcCollaboration#value}
     */
     readonly value?: string;
 }

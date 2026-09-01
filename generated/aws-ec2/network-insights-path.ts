@@ -1,51 +1,51 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_path
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_network_insights_path
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcNetworkInsightsPathProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_path#destination CcNetworkInsightsPath#destination}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_network_insights_path#destination CcNetworkInsightsPath#destination}
     */
     readonly destination?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_path#destination_ip CcNetworkInsightsPath#destination_ip}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_network_insights_path#destination_ip CcNetworkInsightsPath#destination_ip}
     */
     readonly destinationIp?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_path#destination_port CcNetworkInsightsPath#destination_port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_network_insights_path#destination_port CcNetworkInsightsPath#destination_port}
     */
     readonly destinationPort?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_path#filter_at_destination CcNetworkInsightsPath#filter_at_destination}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_network_insights_path#filter_at_destination CcNetworkInsightsPath#filter_at_destination}
     */
     readonly filterAtDestination?: CcNetworkInsightsPath.PathFilterProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_path#filter_at_source CcNetworkInsightsPath#filter_at_source}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_network_insights_path#filter_at_source CcNetworkInsightsPath#filter_at_source}
     */
     readonly filterAtSource?: CcNetworkInsightsPath.FilterAtSourceProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_path#protocol CcNetworkInsightsPath#protocol}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_network_insights_path#protocol CcNetworkInsightsPath#protocol}
     */
     readonly protocol: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_path#source CcNetworkInsightsPath#source}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_network_insights_path#source CcNetworkInsightsPath#source}
     */
     readonly source: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_path#source_ip CcNetworkInsightsPath#source_ip}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_network_insights_path#source_ip CcNetworkInsightsPath#source_ip}
     */
     readonly sourceIp?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_path#tags CcNetworkInsightsPath#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_network_insights_path#tags CcNetworkInsightsPath#tags}
     */
     readonly tags?: CcNetworkInsightsPath.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_path awscc_ec2_network_insights_path}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_network_insights_path awscc_ec2_network_insights_path}
 */
 export class CcNetworkInsightsPath extends cdktn.TerraformResource {
 
@@ -61,7 +61,7 @@ export class CcNetworkInsightsPath extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcNetworkInsightsPath resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcNetworkInsightsPath to import
-    * @param importFromId The id of the existing CcNetworkInsightsPath that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_path#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcNetworkInsightsPath that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_network_insights_path#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcNetworkInsightsPath to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -73,7 +73,7 @@ export class CcNetworkInsightsPath extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_path awscc_ec2_network_insights_path} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_network_insights_path awscc_ec2_network_insights_path} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -84,7 +84,7 @@ export class CcNetworkInsightsPath extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_ec2_network_insights_path',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -648,11 +648,11 @@ export function ccNetworkInsightsPathTagPropertyToHclTerraform(struct?: CcNetwor
 export namespace CcNetworkInsightsPath {
 export interface FilterPortRangeProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_path#from_port CcNetworkInsightsPath#from_port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_network_insights_path#from_port CcNetworkInsightsPath#from_port}
     */
     readonly fromPort?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_path#to_port CcNetworkInsightsPath#to_port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_network_insights_path#to_port CcNetworkInsightsPath#to_port}
     */
     readonly toPort?: number;
 }
@@ -738,11 +738,11 @@ export class FilterPortRangePropertyOutputReference extends cdktn.ComplexObject 
 }
 export interface FilterAtDestinationSourcePortRangeProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_path#from_port CcNetworkInsightsPath#from_port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_network_insights_path#from_port CcNetworkInsightsPath#from_port}
     */
     readonly fromPort?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_path#to_port CcNetworkInsightsPath#to_port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_network_insights_path#to_port CcNetworkInsightsPath#to_port}
     */
     readonly toPort?: number;
 }
@@ -828,19 +828,19 @@ export class FilterAtDestinationSourcePortRangePropertyOutputReference extends c
 }
 export interface PathFilterProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_path#destination_address CcNetworkInsightsPath#destination_address}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_network_insights_path#destination_address CcNetworkInsightsPath#destination_address}
     */
     readonly destinationAddress?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_path#destination_port_range CcNetworkInsightsPath#destination_port_range}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_network_insights_path#destination_port_range CcNetworkInsightsPath#destination_port_range}
     */
     readonly destinationPortRange?: FilterPortRangeProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_path#source_address CcNetworkInsightsPath#source_address}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_network_insights_path#source_address CcNetworkInsightsPath#source_address}
     */
     readonly sourceAddress?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_path#source_port_range CcNetworkInsightsPath#source_port_range}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_network_insights_path#source_port_range CcNetworkInsightsPath#source_port_range}
     */
     readonly sourcePortRange?: FilterAtDestinationSourcePortRangeProperty;
 }
@@ -970,11 +970,11 @@ export class PathFilterPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface DestinationPortRangeProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_path#from_port CcNetworkInsightsPath#from_port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_network_insights_path#from_port CcNetworkInsightsPath#from_port}
     */
     readonly fromPort?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_path#to_port CcNetworkInsightsPath#to_port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_network_insights_path#to_port CcNetworkInsightsPath#to_port}
     */
     readonly toPort?: number;
 }
@@ -1060,11 +1060,11 @@ export class DestinationPortRangePropertyOutputReference extends cdktn.ComplexOb
 }
 export interface FilterAtSourceSourcePortRangeProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_path#from_port CcNetworkInsightsPath#from_port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_network_insights_path#from_port CcNetworkInsightsPath#from_port}
     */
     readonly fromPort?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_path#to_port CcNetworkInsightsPath#to_port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_network_insights_path#to_port CcNetworkInsightsPath#to_port}
     */
     readonly toPort?: number;
 }
@@ -1150,19 +1150,19 @@ export class FilterAtSourceSourcePortRangePropertyOutputReference extends cdktn.
 }
 export interface FilterAtSourceProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_path#destination_address CcNetworkInsightsPath#destination_address}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_network_insights_path#destination_address CcNetworkInsightsPath#destination_address}
     */
     readonly destinationAddress?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_path#destination_port_range CcNetworkInsightsPath#destination_port_range}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_network_insights_path#destination_port_range CcNetworkInsightsPath#destination_port_range}
     */
     readonly destinationPortRange?: DestinationPortRangeProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_path#source_address CcNetworkInsightsPath#source_address}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_network_insights_path#source_address CcNetworkInsightsPath#source_address}
     */
     readonly sourceAddress?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_path#source_port_range CcNetworkInsightsPath#source_port_range}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_network_insights_path#source_port_range CcNetworkInsightsPath#source_port_range}
     */
     readonly sourcePortRange?: FilterAtSourceSourcePortRangeProperty;
 }
@@ -1292,11 +1292,11 @@ export class FilterAtSourcePropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_path#key CcNetworkInsightsPath#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_network_insights_path#key CcNetworkInsightsPath#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_path#value CcNetworkInsightsPath#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_network_insights_path#value CcNetworkInsightsPath#value}
     */
     readonly value?: string;
 }

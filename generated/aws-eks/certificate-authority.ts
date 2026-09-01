@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_certificate_authority
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/eks_certificate_authority
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,13 +9,13 @@ export interface CcCertificateAuthorityProps extends cdktn.TerraformMetaArgument
     /**
     * The name of the EKS cluster that the certificate authority belongs to.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_certificate_authority#cluster_name CcCertificateAuthority#cluster_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/eks_certificate_authority#cluster_name CcCertificateAuthority#cluster_name}
     */
     readonly clusterName: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_certificate_authority awscc_eks_certificate_authority}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/eks_certificate_authority awscc_eks_certificate_authority}
 */
 export class CcCertificateAuthority extends cdktn.TerraformResource {
 
@@ -31,7 +31,7 @@ export class CcCertificateAuthority extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcCertificateAuthority resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcCertificateAuthority to import
-    * @param importFromId The id of the existing CcCertificateAuthority that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_certificate_authority#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcCertificateAuthority that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/eks_certificate_authority#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcCertificateAuthority to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -43,7 +43,7 @@ export class CcCertificateAuthority extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_certificate_authority awscc_eks_certificate_authority} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/eks_certificate_authority awscc_eks_certificate_authority} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -54,7 +54,7 @@ export class CcCertificateAuthority extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_eks_certificate_authority',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,

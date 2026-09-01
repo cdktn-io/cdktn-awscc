@@ -1,27 +1,27 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcMailManagerRuleSetProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#rule_set_name CcMailManagerRuleSet#rule_set_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#rule_set_name CcMailManagerRuleSet#rule_set_name}
     */
     readonly ruleSetName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#rules CcMailManagerRuleSet#rules}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#rules CcMailManagerRuleSet#rules}
     */
     readonly rules: CcMailManagerRuleSet.RuleProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#tags CcMailManagerRuleSet#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#tags CcMailManagerRuleSet#tags}
     */
     readonly tags?: CcMailManagerRuleSet.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set awscc_ses_mail_manager_rule_set}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set awscc_ses_mail_manager_rule_set}
 */
 export class CcMailManagerRuleSet extends cdktn.TerraformResource {
 
@@ -37,7 +37,7 @@ export class CcMailManagerRuleSet extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcMailManagerRuleSet resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcMailManagerRuleSet to import
-    * @param importFromId The id of the existing CcMailManagerRuleSet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcMailManagerRuleSet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcMailManagerRuleSet to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -49,7 +49,7 @@ export class CcMailManagerRuleSet extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set awscc_ses_mail_manager_rule_set} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set awscc_ses_mail_manager_rule_set} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -60,7 +60,7 @@ export class CcMailManagerRuleSet extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_ses_mail_manager_rule_set',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -2212,11 +2212,11 @@ export function ccMailManagerRuleSetTagPropertyToHclTerraform(struct?: CcMailMan
 export namespace CcMailManagerRuleSet {
 export interface AddHeaderActionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#header_name CcMailManagerRuleSet#header_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#header_name CcMailManagerRuleSet#header_name}
     */
     readonly headerName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#header_value CcMailManagerRuleSet#header_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#header_value CcMailManagerRuleSet#header_value}
     */
     readonly headerValue?: string;
 }
@@ -2302,11 +2302,11 @@ export class AddHeaderActionPropertyOutputReference extends cdktn.ComplexObject 
 }
 export interface ArchiveActionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#action_failure_policy CcMailManagerRuleSet#action_failure_policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#action_failure_policy CcMailManagerRuleSet#action_failure_policy}
     */
     readonly actionFailurePolicy?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#target_archive CcMailManagerRuleSet#target_archive}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#target_archive CcMailManagerRuleSet#target_archive}
     */
     readonly targetArchive?: string;
 }
@@ -2392,31 +2392,31 @@ export class ArchiveActionPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface BounceActionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#action_failure_policy CcMailManagerRuleSet#action_failure_policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#action_failure_policy CcMailManagerRuleSet#action_failure_policy}
     */
     readonly actionFailurePolicy?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#diagnostic_message CcMailManagerRuleSet#diagnostic_message}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#diagnostic_message CcMailManagerRuleSet#diagnostic_message}
     */
     readonly diagnosticMessage?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#message CcMailManagerRuleSet#message}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#message CcMailManagerRuleSet#message}
     */
     readonly message?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#role_arn CcMailManagerRuleSet#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#role_arn CcMailManagerRuleSet#role_arn}
     */
     readonly roleArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#sender CcMailManagerRuleSet#sender}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#sender CcMailManagerRuleSet#sender}
     */
     readonly sender?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#smtp_reply_code CcMailManagerRuleSet#smtp_reply_code}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#smtp_reply_code CcMailManagerRuleSet#smtp_reply_code}
     */
     readonly smtpReplyCode?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#status_code CcMailManagerRuleSet#status_code}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#status_code CcMailManagerRuleSet#status_code}
     */
     readonly statusCode?: string;
 }
@@ -2612,15 +2612,15 @@ export class BounceActionPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface DeliverToMailboxActionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#action_failure_policy CcMailManagerRuleSet#action_failure_policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#action_failure_policy CcMailManagerRuleSet#action_failure_policy}
     */
     readonly actionFailurePolicy?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#mailbox_arn CcMailManagerRuleSet#mailbox_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#mailbox_arn CcMailManagerRuleSet#mailbox_arn}
     */
     readonly mailboxArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#role_arn CcMailManagerRuleSet#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#role_arn CcMailManagerRuleSet#role_arn}
     */
     readonly roleArn?: string;
 }
@@ -2728,19 +2728,19 @@ export class DeliverToMailboxActionPropertyOutputReference extends cdktn.Complex
 }
 export interface DeliverToQBusinessActionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#action_failure_policy CcMailManagerRuleSet#action_failure_policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#action_failure_policy CcMailManagerRuleSet#action_failure_policy}
     */
     readonly actionFailurePolicy?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#application_id CcMailManagerRuleSet#application_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#application_id CcMailManagerRuleSet#application_id}
     */
     readonly applicationId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#index_id CcMailManagerRuleSet#index_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#index_id CcMailManagerRuleSet#index_id}
     */
     readonly indexId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#role_arn CcMailManagerRuleSet#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#role_arn CcMailManagerRuleSet#role_arn}
     */
     readonly roleArn?: string;
 }
@@ -2870,23 +2870,23 @@ export class DeliverToQBusinessActionPropertyOutputReference extends cdktn.Compl
 }
 export interface InvokeLambdaActionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#action_failure_policy CcMailManagerRuleSet#action_failure_policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#action_failure_policy CcMailManagerRuleSet#action_failure_policy}
     */
     readonly actionFailurePolicy?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#function_arn CcMailManagerRuleSet#function_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#function_arn CcMailManagerRuleSet#function_arn}
     */
     readonly functionArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#invocation_type CcMailManagerRuleSet#invocation_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#invocation_type CcMailManagerRuleSet#invocation_type}
     */
     readonly invocationType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#retry_time_minutes CcMailManagerRuleSet#retry_time_minutes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#retry_time_minutes CcMailManagerRuleSet#retry_time_minutes}
     */
     readonly retryTimeMinutes?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#role_arn CcMailManagerRuleSet#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#role_arn CcMailManagerRuleSet#role_arn}
     */
     readonly roleArn?: string;
 }
@@ -3038,23 +3038,23 @@ export class InvokeLambdaActionPropertyOutputReference extends cdktn.ComplexObje
 }
 export interface SnsActionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#action_failure_policy CcMailManagerRuleSet#action_failure_policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#action_failure_policy CcMailManagerRuleSet#action_failure_policy}
     */
     readonly actionFailurePolicy?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#encoding CcMailManagerRuleSet#encoding}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#encoding CcMailManagerRuleSet#encoding}
     */
     readonly encoding?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#payload_type CcMailManagerRuleSet#payload_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#payload_type CcMailManagerRuleSet#payload_type}
     */
     readonly payloadType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#role_arn CcMailManagerRuleSet#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#role_arn CcMailManagerRuleSet#role_arn}
     */
     readonly roleArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#topic_arn CcMailManagerRuleSet#topic_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#topic_arn CcMailManagerRuleSet#topic_arn}
     */
     readonly topicArn?: string;
 }
@@ -3206,15 +3206,15 @@ export class SnsActionPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface RelayActionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#action_failure_policy CcMailManagerRuleSet#action_failure_policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#action_failure_policy CcMailManagerRuleSet#action_failure_policy}
     */
     readonly actionFailurePolicy?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#mail_from CcMailManagerRuleSet#mail_from}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#mail_from CcMailManagerRuleSet#mail_from}
     */
     readonly mailFrom?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#relay CcMailManagerRuleSet#relay}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#relay CcMailManagerRuleSet#relay}
     */
     readonly relay?: string;
 }
@@ -3322,7 +3322,7 @@ export class RelayActionPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface ReplaceRecipientActionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#replace_with CcMailManagerRuleSet#replace_with}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#replace_with CcMailManagerRuleSet#replace_with}
     */
     readonly replaceWith?: string[];
 }
@@ -3386,11 +3386,11 @@ export class ReplaceRecipientActionPropertyOutputReference extends cdktn.Complex
 }
 export interface SendActionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#action_failure_policy CcMailManagerRuleSet#action_failure_policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#action_failure_policy CcMailManagerRuleSet#action_failure_policy}
     */
     readonly actionFailurePolicy?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#role_arn CcMailManagerRuleSet#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#role_arn CcMailManagerRuleSet#role_arn}
     */
     readonly roleArn?: string;
 }
@@ -3476,23 +3476,23 @@ export class SendActionPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface S3ActionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#action_failure_policy CcMailManagerRuleSet#action_failure_policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#action_failure_policy CcMailManagerRuleSet#action_failure_policy}
     */
     readonly actionFailurePolicy?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#role_arn CcMailManagerRuleSet#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#role_arn CcMailManagerRuleSet#role_arn}
     */
     readonly roleArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#s3_bucket CcMailManagerRuleSet#s3_bucket}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#s3_bucket CcMailManagerRuleSet#s3_bucket}
     */
     readonly s3Bucket?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#s3_prefix CcMailManagerRuleSet#s3_prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#s3_prefix CcMailManagerRuleSet#s3_prefix}
     */
     readonly s3Prefix?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#s3_sse_kms_key_id CcMailManagerRuleSet#s3_sse_kms_key_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#s3_sse_kms_key_id CcMailManagerRuleSet#s3_sse_kms_key_id}
     */
     readonly s3SseKmsKeyId?: string;
 }
@@ -3644,51 +3644,51 @@ export class S3ActionPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface RuleActionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#add_header CcMailManagerRuleSet#add_header}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#add_header CcMailManagerRuleSet#add_header}
     */
     readonly addHeader?: AddHeaderActionProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#archive CcMailManagerRuleSet#archive}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#archive CcMailManagerRuleSet#archive}
     */
     readonly archive?: ArchiveActionProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#bounce CcMailManagerRuleSet#bounce}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#bounce CcMailManagerRuleSet#bounce}
     */
     readonly bounce?: BounceActionProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#deliver_to_mailbox CcMailManagerRuleSet#deliver_to_mailbox}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#deliver_to_mailbox CcMailManagerRuleSet#deliver_to_mailbox}
     */
     readonly deliverToMailbox?: DeliverToMailboxActionProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#deliver_to_q_business CcMailManagerRuleSet#deliver_to_q_business}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#deliver_to_q_business CcMailManagerRuleSet#deliver_to_q_business}
     */
     readonly deliverToQBusiness?: DeliverToQBusinessActionProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#drop CcMailManagerRuleSet#drop}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#drop CcMailManagerRuleSet#drop}
     */
     readonly drop?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#invoke_lambda CcMailManagerRuleSet#invoke_lambda}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#invoke_lambda CcMailManagerRuleSet#invoke_lambda}
     */
     readonly invokeLambda?: InvokeLambdaActionProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#publish_to_sns CcMailManagerRuleSet#publish_to_sns}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#publish_to_sns CcMailManagerRuleSet#publish_to_sns}
     */
     readonly publishToSns?: SnsActionProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#relay CcMailManagerRuleSet#relay}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#relay CcMailManagerRuleSet#relay}
     */
     readonly relay?: RelayActionProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#replace_recipient CcMailManagerRuleSet#replace_recipient}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#replace_recipient CcMailManagerRuleSet#replace_recipient}
     */
     readonly replaceRecipient?: ReplaceRecipientActionProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#send CcMailManagerRuleSet#send}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#send CcMailManagerRuleSet#send}
     */
     readonly send?: SendActionProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#write_to_s3 CcMailManagerRuleSet#write_to_s3}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#write_to_s3 CcMailManagerRuleSet#write_to_s3}
     */
     readonly writeToS3?: S3ActionProperty;
 }
@@ -4016,11 +4016,11 @@ export class RuleActionPropertyList extends cdktn.ComplexList {
 }
 export interface AnalysisProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#analyzer CcMailManagerRuleSet#analyzer}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#analyzer CcMailManagerRuleSet#analyzer}
     */
     readonly analyzer?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#result_field CcMailManagerRuleSet#result_field}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#result_field CcMailManagerRuleSet#result_field}
     */
     readonly resultField?: string;
 }
@@ -4106,11 +4106,11 @@ export class AnalysisPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface RuleIsInAddressListProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#address_lists CcMailManagerRuleSet#address_lists}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#address_lists CcMailManagerRuleSet#address_lists}
     */
     readonly addressLists?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#attribute CcMailManagerRuleSet#attribute}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#attribute CcMailManagerRuleSet#attribute}
     */
     readonly attribute?: string;
 }
@@ -4196,15 +4196,15 @@ export class RuleIsInAddressListPropertyOutputReference extends cdktn.ComplexObj
 }
 export interface RuleBooleanToEvaluateProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#analysis CcMailManagerRuleSet#analysis}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#analysis CcMailManagerRuleSet#analysis}
     */
     readonly analysis?: AnalysisProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#attribute CcMailManagerRuleSet#attribute}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#attribute CcMailManagerRuleSet#attribute}
     */
     readonly attribute?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#is_in_address_list CcMailManagerRuleSet#is_in_address_list}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#is_in_address_list CcMailManagerRuleSet#is_in_address_list}
     */
     readonly isInAddressList?: RuleIsInAddressListProperty;
 }
@@ -4312,11 +4312,11 @@ export class RuleBooleanToEvaluatePropertyOutputReference extends cdktn.ComplexO
 }
 export interface RuleBooleanExpressionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#evaluate CcMailManagerRuleSet#evaluate}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#evaluate CcMailManagerRuleSet#evaluate}
     */
     readonly evaluate?: RuleBooleanToEvaluateProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#operator CcMailManagerRuleSet#operator}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#operator CcMailManagerRuleSet#operator}
     */
     readonly operator?: string;
 }
@@ -4402,11 +4402,11 @@ export class RuleBooleanExpressionPropertyOutputReference extends cdktn.ComplexO
 }
 export interface RuleDmarcExpressionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#operator CcMailManagerRuleSet#operator}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#operator CcMailManagerRuleSet#operator}
     */
     readonly operator?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#values CcMailManagerRuleSet#values}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#values CcMailManagerRuleSet#values}
     */
     readonly values?: string[];
 }
@@ -4492,7 +4492,7 @@ export class RuleDmarcExpressionPropertyOutputReference extends cdktn.ComplexObj
 }
 export interface RuleIpToEvaluateProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#attribute CcMailManagerRuleSet#attribute}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#attribute CcMailManagerRuleSet#attribute}
     */
     readonly attribute?: string;
 }
@@ -4556,15 +4556,15 @@ export class RuleIpToEvaluatePropertyOutputReference extends cdktn.ComplexObject
 }
 export interface RuleIpExpressionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#evaluate CcMailManagerRuleSet#evaluate}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#evaluate CcMailManagerRuleSet#evaluate}
     */
     readonly evaluate?: RuleIpToEvaluateProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#operator CcMailManagerRuleSet#operator}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#operator CcMailManagerRuleSet#operator}
     */
     readonly operator?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#values CcMailManagerRuleSet#values}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#values CcMailManagerRuleSet#values}
     */
     readonly values?: string[];
 }
@@ -4672,7 +4672,7 @@ export class RuleIpExpressionPropertyOutputReference extends cdktn.ComplexObject
 }
 export interface RuleNumberToEvaluateProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#attribute CcMailManagerRuleSet#attribute}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#attribute CcMailManagerRuleSet#attribute}
     */
     readonly attribute?: string;
 }
@@ -4736,15 +4736,15 @@ export class RuleNumberToEvaluatePropertyOutputReference extends cdktn.ComplexOb
 }
 export interface RuleNumberExpressionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#evaluate CcMailManagerRuleSet#evaluate}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#evaluate CcMailManagerRuleSet#evaluate}
     */
     readonly evaluate?: RuleNumberToEvaluateProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#operator CcMailManagerRuleSet#operator}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#operator CcMailManagerRuleSet#operator}
     */
     readonly operator?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#value CcMailManagerRuleSet#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#value CcMailManagerRuleSet#value}
     */
     readonly value?: number;
 }
@@ -4852,11 +4852,11 @@ export class RuleNumberExpressionPropertyOutputReference extends cdktn.ComplexOb
 }
 export interface RulesConditionsStringExpressionEvaluateAnalysisProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#analyzer CcMailManagerRuleSet#analyzer}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#analyzer CcMailManagerRuleSet#analyzer}
     */
     readonly analyzer?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#result_field CcMailManagerRuleSet#result_field}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#result_field CcMailManagerRuleSet#result_field}
     */
     readonly resultField?: string;
 }
@@ -4942,19 +4942,19 @@ export class RulesConditionsStringExpressionEvaluateAnalysisPropertyOutputRefere
 }
 export interface RuleStringToEvaluateProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#analysis CcMailManagerRuleSet#analysis}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#analysis CcMailManagerRuleSet#analysis}
     */
     readonly analysis?: RulesConditionsStringExpressionEvaluateAnalysisProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#attribute CcMailManagerRuleSet#attribute}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#attribute CcMailManagerRuleSet#attribute}
     */
     readonly attribute?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#client_certificate_attribute CcMailManagerRuleSet#client_certificate_attribute}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#client_certificate_attribute CcMailManagerRuleSet#client_certificate_attribute}
     */
     readonly clientCertificateAttribute?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#mime_header_attribute CcMailManagerRuleSet#mime_header_attribute}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#mime_header_attribute CcMailManagerRuleSet#mime_header_attribute}
     */
     readonly mimeHeaderAttribute?: string;
 }
@@ -5084,15 +5084,15 @@ export class RuleStringToEvaluatePropertyOutputReference extends cdktn.ComplexOb
 }
 export interface RuleStringExpressionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#evaluate CcMailManagerRuleSet#evaluate}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#evaluate CcMailManagerRuleSet#evaluate}
     */
     readonly evaluate?: RuleStringToEvaluateProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#operator CcMailManagerRuleSet#operator}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#operator CcMailManagerRuleSet#operator}
     */
     readonly operator?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#values CcMailManagerRuleSet#values}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#values CcMailManagerRuleSet#values}
     */
     readonly values?: string[];
 }
@@ -5200,11 +5200,11 @@ export class RuleStringExpressionPropertyOutputReference extends cdktn.ComplexOb
 }
 export interface RulesConditionsVerdictExpressionEvaluateAnalysisProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#analyzer CcMailManagerRuleSet#analyzer}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#analyzer CcMailManagerRuleSet#analyzer}
     */
     readonly analyzer?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#result_field CcMailManagerRuleSet#result_field}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#result_field CcMailManagerRuleSet#result_field}
     */
     readonly resultField?: string;
 }
@@ -5290,11 +5290,11 @@ export class RulesConditionsVerdictExpressionEvaluateAnalysisPropertyOutputRefer
 }
 export interface RuleVerdictToEvaluateProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#analysis CcMailManagerRuleSet#analysis}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#analysis CcMailManagerRuleSet#analysis}
     */
     readonly analysis?: RulesConditionsVerdictExpressionEvaluateAnalysisProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#attribute CcMailManagerRuleSet#attribute}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#attribute CcMailManagerRuleSet#attribute}
     */
     readonly attribute?: string;
 }
@@ -5380,15 +5380,15 @@ export class RuleVerdictToEvaluatePropertyOutputReference extends cdktn.ComplexO
 }
 export interface RuleVerdictExpressionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#evaluate CcMailManagerRuleSet#evaluate}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#evaluate CcMailManagerRuleSet#evaluate}
     */
     readonly evaluate?: RuleVerdictToEvaluateProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#operator CcMailManagerRuleSet#operator}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#operator CcMailManagerRuleSet#operator}
     */
     readonly operator?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#values CcMailManagerRuleSet#values}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#values CcMailManagerRuleSet#values}
     */
     readonly values?: string[];
 }
@@ -5496,27 +5496,27 @@ export class RuleVerdictExpressionPropertyOutputReference extends cdktn.ComplexO
 }
 export interface RuleConditionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#boolean_expression CcMailManagerRuleSet#boolean_expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#boolean_expression CcMailManagerRuleSet#boolean_expression}
     */
     readonly booleanExpression?: RuleBooleanExpressionProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#dmarc_expression CcMailManagerRuleSet#dmarc_expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#dmarc_expression CcMailManagerRuleSet#dmarc_expression}
     */
     readonly dmarcExpression?: RuleDmarcExpressionProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#ip_expression CcMailManagerRuleSet#ip_expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#ip_expression CcMailManagerRuleSet#ip_expression}
     */
     readonly ipExpression?: RuleIpExpressionProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#number_expression CcMailManagerRuleSet#number_expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#number_expression CcMailManagerRuleSet#number_expression}
     */
     readonly numberExpression?: RuleNumberExpressionProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#string_expression CcMailManagerRuleSet#string_expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#string_expression CcMailManagerRuleSet#string_expression}
     */
     readonly stringExpression?: RuleStringExpressionProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#verdict_expression CcMailManagerRuleSet#verdict_expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#verdict_expression CcMailManagerRuleSet#verdict_expression}
     */
     readonly verdictExpression?: RuleVerdictExpressionProperty;
 }
@@ -5712,11 +5712,11 @@ export class RuleConditionPropertyList extends cdktn.ComplexList {
 }
 export interface RulesUnlessBooleanExpressionEvaluateAnalysisProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#analyzer CcMailManagerRuleSet#analyzer}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#analyzer CcMailManagerRuleSet#analyzer}
     */
     readonly analyzer?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#result_field CcMailManagerRuleSet#result_field}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#result_field CcMailManagerRuleSet#result_field}
     */
     readonly resultField?: string;
 }
@@ -5802,11 +5802,11 @@ export class RulesUnlessBooleanExpressionEvaluateAnalysisPropertyOutputReference
 }
 export interface IsInAddressListProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#address_lists CcMailManagerRuleSet#address_lists}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#address_lists CcMailManagerRuleSet#address_lists}
     */
     readonly addressLists?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#attribute CcMailManagerRuleSet#attribute}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#attribute CcMailManagerRuleSet#attribute}
     */
     readonly attribute?: string;
 }
@@ -5892,15 +5892,15 @@ export class IsInAddressListPropertyOutputReference extends cdktn.ComplexObject 
 }
 export interface RulesUnlessBooleanExpressionEvaluateProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#analysis CcMailManagerRuleSet#analysis}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#analysis CcMailManagerRuleSet#analysis}
     */
     readonly analysis?: RulesUnlessBooleanExpressionEvaluateAnalysisProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#attribute CcMailManagerRuleSet#attribute}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#attribute CcMailManagerRuleSet#attribute}
     */
     readonly attribute?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#is_in_address_list CcMailManagerRuleSet#is_in_address_list}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#is_in_address_list CcMailManagerRuleSet#is_in_address_list}
     */
     readonly isInAddressList?: IsInAddressListProperty;
 }
@@ -6008,11 +6008,11 @@ export class RulesUnlessBooleanExpressionEvaluatePropertyOutputReference extends
 }
 export interface BooleanExpressionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#evaluate CcMailManagerRuleSet#evaluate}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#evaluate CcMailManagerRuleSet#evaluate}
     */
     readonly evaluate?: RulesUnlessBooleanExpressionEvaluateProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#operator CcMailManagerRuleSet#operator}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#operator CcMailManagerRuleSet#operator}
     */
     readonly operator?: string;
 }
@@ -6098,11 +6098,11 @@ export class BooleanExpressionPropertyOutputReference extends cdktn.ComplexObjec
 }
 export interface DmarcExpressionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#operator CcMailManagerRuleSet#operator}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#operator CcMailManagerRuleSet#operator}
     */
     readonly operator?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#values CcMailManagerRuleSet#values}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#values CcMailManagerRuleSet#values}
     */
     readonly values?: string[];
 }
@@ -6188,7 +6188,7 @@ export class DmarcExpressionPropertyOutputReference extends cdktn.ComplexObject 
 }
 export interface RulesUnlessIpExpressionEvaluateProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#attribute CcMailManagerRuleSet#attribute}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#attribute CcMailManagerRuleSet#attribute}
     */
     readonly attribute?: string;
 }
@@ -6252,15 +6252,15 @@ export class RulesUnlessIpExpressionEvaluatePropertyOutputReference extends cdkt
 }
 export interface IpExpressionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#evaluate CcMailManagerRuleSet#evaluate}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#evaluate CcMailManagerRuleSet#evaluate}
     */
     readonly evaluate?: RulesUnlessIpExpressionEvaluateProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#operator CcMailManagerRuleSet#operator}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#operator CcMailManagerRuleSet#operator}
     */
     readonly operator?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#values CcMailManagerRuleSet#values}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#values CcMailManagerRuleSet#values}
     */
     readonly values?: string[];
 }
@@ -6368,7 +6368,7 @@ export class IpExpressionPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface RulesUnlessNumberExpressionEvaluateProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#attribute CcMailManagerRuleSet#attribute}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#attribute CcMailManagerRuleSet#attribute}
     */
     readonly attribute?: string;
 }
@@ -6432,15 +6432,15 @@ export class RulesUnlessNumberExpressionEvaluatePropertyOutputReference extends 
 }
 export interface NumberExpressionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#evaluate CcMailManagerRuleSet#evaluate}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#evaluate CcMailManagerRuleSet#evaluate}
     */
     readonly evaluate?: RulesUnlessNumberExpressionEvaluateProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#operator CcMailManagerRuleSet#operator}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#operator CcMailManagerRuleSet#operator}
     */
     readonly operator?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#value CcMailManagerRuleSet#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#value CcMailManagerRuleSet#value}
     */
     readonly value?: number;
 }
@@ -6548,11 +6548,11 @@ export class NumberExpressionPropertyOutputReference extends cdktn.ComplexObject
 }
 export interface RulesUnlessStringExpressionEvaluateAnalysisProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#analyzer CcMailManagerRuleSet#analyzer}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#analyzer CcMailManagerRuleSet#analyzer}
     */
     readonly analyzer?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#result_field CcMailManagerRuleSet#result_field}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#result_field CcMailManagerRuleSet#result_field}
     */
     readonly resultField?: string;
 }
@@ -6638,19 +6638,19 @@ export class RulesUnlessStringExpressionEvaluateAnalysisPropertyOutputReference 
 }
 export interface RulesUnlessStringExpressionEvaluateProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#analysis CcMailManagerRuleSet#analysis}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#analysis CcMailManagerRuleSet#analysis}
     */
     readonly analysis?: RulesUnlessStringExpressionEvaluateAnalysisProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#attribute CcMailManagerRuleSet#attribute}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#attribute CcMailManagerRuleSet#attribute}
     */
     readonly attribute?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#client_certificate_attribute CcMailManagerRuleSet#client_certificate_attribute}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#client_certificate_attribute CcMailManagerRuleSet#client_certificate_attribute}
     */
     readonly clientCertificateAttribute?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#mime_header_attribute CcMailManagerRuleSet#mime_header_attribute}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#mime_header_attribute CcMailManagerRuleSet#mime_header_attribute}
     */
     readonly mimeHeaderAttribute?: string;
 }
@@ -6780,15 +6780,15 @@ export class RulesUnlessStringExpressionEvaluatePropertyOutputReference extends 
 }
 export interface StringExpressionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#evaluate CcMailManagerRuleSet#evaluate}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#evaluate CcMailManagerRuleSet#evaluate}
     */
     readonly evaluate?: RulesUnlessStringExpressionEvaluateProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#operator CcMailManagerRuleSet#operator}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#operator CcMailManagerRuleSet#operator}
     */
     readonly operator?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#values CcMailManagerRuleSet#values}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#values CcMailManagerRuleSet#values}
     */
     readonly values?: string[];
 }
@@ -6896,11 +6896,11 @@ export class StringExpressionPropertyOutputReference extends cdktn.ComplexObject
 }
 export interface RulesUnlessVerdictExpressionEvaluateAnalysisProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#analyzer CcMailManagerRuleSet#analyzer}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#analyzer CcMailManagerRuleSet#analyzer}
     */
     readonly analyzer?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#result_field CcMailManagerRuleSet#result_field}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#result_field CcMailManagerRuleSet#result_field}
     */
     readonly resultField?: string;
 }
@@ -6986,11 +6986,11 @@ export class RulesUnlessVerdictExpressionEvaluateAnalysisPropertyOutputReference
 }
 export interface RulesUnlessVerdictExpressionEvaluateProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#analysis CcMailManagerRuleSet#analysis}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#analysis CcMailManagerRuleSet#analysis}
     */
     readonly analysis?: RulesUnlessVerdictExpressionEvaluateAnalysisProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#attribute CcMailManagerRuleSet#attribute}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#attribute CcMailManagerRuleSet#attribute}
     */
     readonly attribute?: string;
 }
@@ -7076,15 +7076,15 @@ export class RulesUnlessVerdictExpressionEvaluatePropertyOutputReference extends
 }
 export interface VerdictExpressionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#evaluate CcMailManagerRuleSet#evaluate}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#evaluate CcMailManagerRuleSet#evaluate}
     */
     readonly evaluate?: RulesUnlessVerdictExpressionEvaluateProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#operator CcMailManagerRuleSet#operator}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#operator CcMailManagerRuleSet#operator}
     */
     readonly operator?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#values CcMailManagerRuleSet#values}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#values CcMailManagerRuleSet#values}
     */
     readonly values?: string[];
 }
@@ -7192,27 +7192,27 @@ export class VerdictExpressionPropertyOutputReference extends cdktn.ComplexObjec
 }
 export interface UnlessProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#boolean_expression CcMailManagerRuleSet#boolean_expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#boolean_expression CcMailManagerRuleSet#boolean_expression}
     */
     readonly booleanExpression?: BooleanExpressionProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#dmarc_expression CcMailManagerRuleSet#dmarc_expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#dmarc_expression CcMailManagerRuleSet#dmarc_expression}
     */
     readonly dmarcExpression?: DmarcExpressionProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#ip_expression CcMailManagerRuleSet#ip_expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#ip_expression CcMailManagerRuleSet#ip_expression}
     */
     readonly ipExpression?: IpExpressionProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#number_expression CcMailManagerRuleSet#number_expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#number_expression CcMailManagerRuleSet#number_expression}
     */
     readonly numberExpression?: NumberExpressionProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#string_expression CcMailManagerRuleSet#string_expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#string_expression CcMailManagerRuleSet#string_expression}
     */
     readonly stringExpression?: StringExpressionProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#verdict_expression CcMailManagerRuleSet#verdict_expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#verdict_expression CcMailManagerRuleSet#verdict_expression}
     */
     readonly verdictExpression?: VerdictExpressionProperty;
 }
@@ -7408,19 +7408,19 @@ export class UnlessPropertyList extends cdktn.ComplexList {
 }
 export interface RuleProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#actions CcMailManagerRuleSet#actions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#actions CcMailManagerRuleSet#actions}
     */
     readonly actions: RuleActionProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#conditions CcMailManagerRuleSet#conditions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#conditions CcMailManagerRuleSet#conditions}
     */
     readonly conditions?: RuleConditionProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#name CcMailManagerRuleSet#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#name CcMailManagerRuleSet#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#unless CcMailManagerRuleSet#unless}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#unless CcMailManagerRuleSet#unless}
     */
     readonly unless?: UnlessProperty[] | cdktn.IResolvable;
 }
@@ -7569,11 +7569,11 @@ export class RulePropertyList extends cdktn.ComplexList {
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#key CcMailManagerRuleSet#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#key CcMailManagerRuleSet#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_rule_set#value CcMailManagerRuleSet#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_rule_set#value CcMailManagerRuleSet#value}
     */
     readonly value?: string;
 }

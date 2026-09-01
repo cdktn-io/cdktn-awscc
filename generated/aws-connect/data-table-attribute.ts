@@ -1,43 +1,43 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_data_table_attribute
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_data_table_attribute
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcDataTableAttributeProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_data_table_attribute#data_table_arn CcDataTableAttribute#data_table_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_data_table_attribute#data_table_arn CcDataTableAttribute#data_table_arn}
     */
     readonly dataTableArn: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_data_table_attribute#description CcDataTableAttribute#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_data_table_attribute#description CcDataTableAttribute#description}
     */
     readonly description?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_data_table_attribute#instance_arn CcDataTableAttribute#instance_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_data_table_attribute#instance_arn CcDataTableAttribute#instance_arn}
     */
     readonly instanceArn: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_data_table_attribute#name CcDataTableAttribute#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_data_table_attribute#name CcDataTableAttribute#name}
     */
     readonly name: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_data_table_attribute#primary CcDataTableAttribute#primary}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_data_table_attribute#primary CcDataTableAttribute#primary}
     */
     readonly primary?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_data_table_attribute#validation CcDataTableAttribute#validation}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_data_table_attribute#validation CcDataTableAttribute#validation}
     */
     readonly validation?: CcDataTableAttribute.ValidationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_data_table_attribute#value_type CcDataTableAttribute#value_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_data_table_attribute#value_type CcDataTableAttribute#value_type}
     */
     readonly valueType: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_data_table_attribute awscc_connect_data_table_attribute}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_data_table_attribute awscc_connect_data_table_attribute}
 */
 export class CcDataTableAttribute extends cdktn.TerraformResource {
 
@@ -53,7 +53,7 @@ export class CcDataTableAttribute extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcDataTableAttribute resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcDataTableAttribute to import
-    * @param importFromId The id of the existing CcDataTableAttribute that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_data_table_attribute#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcDataTableAttribute that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_data_table_attribute#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcDataTableAttribute to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -65,7 +65,7 @@ export class CcDataTableAttribute extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_data_table_attribute awscc_connect_data_table_attribute} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_data_table_attribute awscc_connect_data_table_attribute} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -76,7 +76,7 @@ export class CcDataTableAttribute extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_connect_data_table_attribute',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -484,11 +484,11 @@ export class LockVersionPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface EnumProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_data_table_attribute#strict CcDataTableAttribute#strict}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_data_table_attribute#strict CcDataTableAttribute#strict}
     */
     readonly strict?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_data_table_attribute#values CcDataTableAttribute#values}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_data_table_attribute#values CcDataTableAttribute#values}
     */
     readonly values?: string[];
 }
@@ -574,43 +574,43 @@ export class EnumPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface ValidationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_data_table_attribute#enum CcDataTableAttribute#enum}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_data_table_attribute#enum CcDataTableAttribute#enum}
     */
     readonly enum?: EnumProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_data_table_attribute#exclusive_maximum CcDataTableAttribute#exclusive_maximum}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_data_table_attribute#exclusive_maximum CcDataTableAttribute#exclusive_maximum}
     */
     readonly exclusiveMaximum?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_data_table_attribute#exclusive_minimum CcDataTableAttribute#exclusive_minimum}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_data_table_attribute#exclusive_minimum CcDataTableAttribute#exclusive_minimum}
     */
     readonly exclusiveMinimum?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_data_table_attribute#max_length CcDataTableAttribute#max_length}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_data_table_attribute#max_length CcDataTableAttribute#max_length}
     */
     readonly maxLength?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_data_table_attribute#max_values CcDataTableAttribute#max_values}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_data_table_attribute#max_values CcDataTableAttribute#max_values}
     */
     readonly maxValues?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_data_table_attribute#maximum CcDataTableAttribute#maximum}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_data_table_attribute#maximum CcDataTableAttribute#maximum}
     */
     readonly maximum?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_data_table_attribute#min_length CcDataTableAttribute#min_length}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_data_table_attribute#min_length CcDataTableAttribute#min_length}
     */
     readonly minLength?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_data_table_attribute#min_values CcDataTableAttribute#min_values}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_data_table_attribute#min_values CcDataTableAttribute#min_values}
     */
     readonly minValues?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_data_table_attribute#minimum CcDataTableAttribute#minimum}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_data_table_attribute#minimum CcDataTableAttribute#minimum}
     */
     readonly minimum?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_data_table_attribute#multiple_of CcDataTableAttribute#multiple_of}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_data_table_attribute#multiple_of CcDataTableAttribute#multiple_of}
     */
     readonly multipleOf?: number;
 }

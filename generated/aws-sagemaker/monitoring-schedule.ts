@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_monitoring_schedule
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_monitoring_schedule
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,49 +9,49 @@ export interface CcMonitoringScheduleProps extends cdktn.TerraformMetaArguments 
     /**
     * The name of the endpoint used to run the monitoring job.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_monitoring_schedule#endpoint_name CcMonitoringSchedule#endpoint_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_monitoring_schedule#endpoint_name CcMonitoringSchedule#endpoint_name}
     */
     readonly endpointName?: string;
     /**
     * Contains the reason a monitoring job failed, if it failed.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_monitoring_schedule#failure_reason CcMonitoringSchedule#failure_reason}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_monitoring_schedule#failure_reason CcMonitoringSchedule#failure_reason}
     */
     readonly failureReason?: string;
     /**
     * Describes metadata on the last execution to run, if there was one.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_monitoring_schedule#last_monitoring_execution_summary CcMonitoringSchedule#last_monitoring_execution_summary}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_monitoring_schedule#last_monitoring_execution_summary CcMonitoringSchedule#last_monitoring_execution_summary}
     */
     readonly lastMonitoringExecutionSummary?: CcMonitoringSchedule.MonitoringExecutionSummaryProperty;
     /**
     * The configuration object that specifies the monitoring schedule and defines the monitoring job.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_monitoring_schedule#monitoring_schedule_config CcMonitoringSchedule#monitoring_schedule_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_monitoring_schedule#monitoring_schedule_config CcMonitoringSchedule#monitoring_schedule_config}
     */
     readonly monitoringScheduleConfig: CcMonitoringSchedule.MonitoringScheduleConfigProperty;
     /**
     * The name of the monitoring schedule.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_monitoring_schedule#monitoring_schedule_name CcMonitoringSchedule#monitoring_schedule_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_monitoring_schedule#monitoring_schedule_name CcMonitoringSchedule#monitoring_schedule_name}
     */
     readonly monitoringScheduleName: string;
     /**
     * The status of a schedule job.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_monitoring_schedule#monitoring_schedule_status CcMonitoringSchedule#monitoring_schedule_status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_monitoring_schedule#monitoring_schedule_status CcMonitoringSchedule#monitoring_schedule_status}
     */
     readonly monitoringScheduleStatus?: string;
     /**
     * An array of key-value pairs to apply to this resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_monitoring_schedule#tags CcMonitoringSchedule#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_monitoring_schedule#tags CcMonitoringSchedule#tags}
     */
     readonly tags?: CcMonitoringSchedule.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_monitoring_schedule awscc_sagemaker_monitoring_schedule}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_monitoring_schedule awscc_sagemaker_monitoring_schedule}
 */
 export class CcMonitoringSchedule extends cdktn.TerraformResource {
 
@@ -67,7 +67,7 @@ export class CcMonitoringSchedule extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcMonitoringSchedule resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcMonitoringSchedule to import
-    * @param importFromId The id of the existing CcMonitoringSchedule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_monitoring_schedule#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcMonitoringSchedule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_monitoring_schedule#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcMonitoringSchedule to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -79,7 +79,7 @@ export class CcMonitoringSchedule extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_monitoring_schedule awscc_sagemaker_monitoring_schedule} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_monitoring_schedule awscc_sagemaker_monitoring_schedule} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -90,7 +90,7 @@ export class CcMonitoringSchedule extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_sagemaker_monitoring_schedule',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -1330,49 +1330,49 @@ export interface MonitoringExecutionSummaryProperty {
     /**
     * The time at which the monitoring job was created.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_monitoring_schedule#creation_time CcMonitoringSchedule#creation_time}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_monitoring_schedule#creation_time CcMonitoringSchedule#creation_time}
     */
     readonly creationTime?: string;
     /**
     * The name of the endpoint used to run the monitoring job.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_monitoring_schedule#endpoint_name CcMonitoringSchedule#endpoint_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_monitoring_schedule#endpoint_name CcMonitoringSchedule#endpoint_name}
     */
     readonly endpointName?: string;
     /**
     * Contains the reason a monitoring job failed, if it failed.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_monitoring_schedule#failure_reason CcMonitoringSchedule#failure_reason}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_monitoring_schedule#failure_reason CcMonitoringSchedule#failure_reason}
     */
     readonly failureReason?: string;
     /**
     * A timestamp that indicates the last time the monitoring job was modified.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_monitoring_schedule#last_modified_time CcMonitoringSchedule#last_modified_time}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_monitoring_schedule#last_modified_time CcMonitoringSchedule#last_modified_time}
     */
     readonly lastModifiedTime?: string;
     /**
     * The status of the monitoring job.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_monitoring_schedule#monitoring_execution_status CcMonitoringSchedule#monitoring_execution_status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_monitoring_schedule#monitoring_execution_status CcMonitoringSchedule#monitoring_execution_status}
     */
     readonly monitoringExecutionStatus?: string;
     /**
     * The name of the monitoring schedule.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_monitoring_schedule#monitoring_schedule_name CcMonitoringSchedule#monitoring_schedule_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_monitoring_schedule#monitoring_schedule_name CcMonitoringSchedule#monitoring_schedule_name}
     */
     readonly monitoringScheduleName?: string;
     /**
     * The Amazon Resource Name (ARN) of the monitoring job.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_monitoring_schedule#processing_job_arn CcMonitoringSchedule#processing_job_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_monitoring_schedule#processing_job_arn CcMonitoringSchedule#processing_job_arn}
     */
     readonly processingJobArn?: string;
     /**
     * The time the monitoring job was scheduled.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_monitoring_schedule#scheduled_time CcMonitoringSchedule#scheduled_time}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_monitoring_schedule#scheduled_time CcMonitoringSchedule#scheduled_time}
     */
     readonly scheduledTime?: string;
 }
@@ -1592,7 +1592,7 @@ export interface ConstraintsResourceProperty {
     /**
     * The Amazon S3 URI for baseline constraint file in Amazon S3 that the current monitoring job should validated against.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_monitoring_schedule#s3_uri CcMonitoringSchedule#s3_uri}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_monitoring_schedule#s3_uri CcMonitoringSchedule#s3_uri}
     */
     readonly s3Uri?: string;
 }
@@ -1658,7 +1658,7 @@ export interface StatisticsResourceProperty {
     /**
     * The Amazon S3 URI for the baseline statistics file in Amazon S3 that the current monitoring job should be validated against.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_monitoring_schedule#s3_uri CcMonitoringSchedule#s3_uri}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_monitoring_schedule#s3_uri CcMonitoringSchedule#s3_uri}
     */
     readonly s3Uri?: string;
 }
@@ -1724,13 +1724,13 @@ export interface BaselineConfigProperty {
     /**
     * The baseline constraints resource for a monitoring job.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_monitoring_schedule#constraints_resource CcMonitoringSchedule#constraints_resource}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_monitoring_schedule#constraints_resource CcMonitoringSchedule#constraints_resource}
     */
     readonly constraintsResource?: ConstraintsResourceProperty;
     /**
     * The baseline statistics resource for a monitoring job.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_monitoring_schedule#statistics_resource CcMonitoringSchedule#statistics_resource}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_monitoring_schedule#statistics_resource CcMonitoringSchedule#statistics_resource}
     */
     readonly statisticsResource?: StatisticsResourceProperty;
 }
@@ -1818,31 +1818,31 @@ export interface MonitoringAppSpecificationProperty {
     /**
     * An array of arguments for the container used to run the monitoring job.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_monitoring_schedule#container_arguments CcMonitoringSchedule#container_arguments}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_monitoring_schedule#container_arguments CcMonitoringSchedule#container_arguments}
     */
     readonly containerArguments?: string[];
     /**
     * Specifies the entrypoint for a container used to run the monitoring job.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_monitoring_schedule#container_entrypoint CcMonitoringSchedule#container_entrypoint}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_monitoring_schedule#container_entrypoint CcMonitoringSchedule#container_entrypoint}
     */
     readonly containerEntrypoint?: string[];
     /**
     * The container image to be run by the monitoring job.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_monitoring_schedule#image_uri CcMonitoringSchedule#image_uri}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_monitoring_schedule#image_uri CcMonitoringSchedule#image_uri}
     */
     readonly imageUri?: string;
     /**
     * An Amazon S3 URI to a script that is called after analysis has been performed. Applicable only for the built-in (first party) containers.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_monitoring_schedule#post_analytics_processor_source_uri CcMonitoringSchedule#post_analytics_processor_source_uri}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_monitoring_schedule#post_analytics_processor_source_uri CcMonitoringSchedule#post_analytics_processor_source_uri}
     */
     readonly postAnalyticsProcessorSourceUri?: string;
     /**
     * An Amazon S3 URI to a script that is called per row prior to running analysis. It can base64 decode the payload and convert it into a flatted json so that the built-in container can use the converted data. Applicable only for the built-in (first party) containers
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_monitoring_schedule#record_preprocessor_source_uri CcMonitoringSchedule#record_preprocessor_source_uri}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_monitoring_schedule#record_preprocessor_source_uri CcMonitoringSchedule#record_preprocessor_source_uri}
     */
     readonly recordPreprocessorSourceUri?: string;
 }
@@ -1996,7 +1996,7 @@ export interface CsvProperty {
     /**
     * A boolean flag indicating if given CSV has header
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_monitoring_schedule#header CcMonitoringSchedule#header}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_monitoring_schedule#header CcMonitoringSchedule#header}
     */
     readonly header?: boolean | cdktn.IResolvable;
 }
@@ -2062,7 +2062,7 @@ export interface JsonProperty {
     /**
     * A boolean flag indicating if it is JSON line format
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_monitoring_schedule#line CcMonitoringSchedule#line}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_monitoring_schedule#line CcMonitoringSchedule#line}
     */
     readonly line?: boolean | cdktn.IResolvable;
 }
@@ -2128,19 +2128,19 @@ export interface DatasetFormatProperty {
     /**
     * The CSV format
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_monitoring_schedule#csv CcMonitoringSchedule#csv}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_monitoring_schedule#csv CcMonitoringSchedule#csv}
     */
     readonly csv?: CsvProperty;
     /**
     * The Json format
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_monitoring_schedule#json CcMonitoringSchedule#json}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_monitoring_schedule#json CcMonitoringSchedule#json}
     */
     readonly json?: JsonProperty;
     /**
     * A flag indicating if the dataset format is Parquet
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_monitoring_schedule#parquet CcMonitoringSchedule#parquet}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_monitoring_schedule#parquet CcMonitoringSchedule#parquet}
     */
     readonly parquet?: boolean | cdktn.IResolvable;
 }
@@ -2250,37 +2250,37 @@ export interface BatchTransformInputProperty {
     /**
     * A URI that identifies the Amazon S3 storage location where Batch Transform Job captures data.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_monitoring_schedule#data_captured_destination_s3_uri CcMonitoringSchedule#data_captured_destination_s3_uri}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_monitoring_schedule#data_captured_destination_s3_uri CcMonitoringSchedule#data_captured_destination_s3_uri}
     */
     readonly dataCapturedDestinationS3Uri?: string;
     /**
     * The dataset format of the data to monitor
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_monitoring_schedule#dataset_format CcMonitoringSchedule#dataset_format}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_monitoring_schedule#dataset_format CcMonitoringSchedule#dataset_format}
     */
     readonly datasetFormat?: DatasetFormatProperty;
     /**
     * Indexes or names of the features to be excluded from analysis
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_monitoring_schedule#exclude_features_attribute CcMonitoringSchedule#exclude_features_attribute}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_monitoring_schedule#exclude_features_attribute CcMonitoringSchedule#exclude_features_attribute}
     */
     readonly excludeFeaturesAttribute?: string;
     /**
     * Path to the filesystem where the endpoint data is available to the container.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_monitoring_schedule#local_path CcMonitoringSchedule#local_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_monitoring_schedule#local_path CcMonitoringSchedule#local_path}
     */
     readonly localPath?: string;
     /**
     * Whether input data distributed in Amazon S3 is fully replicated or sharded by an S3 key. Defauts to FullyReplicated
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_monitoring_schedule#s3_data_distribution_type CcMonitoringSchedule#s3_data_distribution_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_monitoring_schedule#s3_data_distribution_type CcMonitoringSchedule#s3_data_distribution_type}
     */
     readonly s3DataDistributionType?: string;
     /**
     * Whether the Pipe or File is used as the input mode for transfering data for the monitoring job. Pipe mode is recommended for large datasets. File mode is useful for small files that fit in memory. Defaults to File.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_monitoring_schedule#s3_input_mode CcMonitoringSchedule#s3_input_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_monitoring_schedule#s3_input_mode CcMonitoringSchedule#s3_input_mode}
     */
     readonly s3InputMode?: string;
 }
@@ -2456,31 +2456,31 @@ export interface EndpointInputProperty {
     /**
     * The name of the endpoint used to run the monitoring job.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_monitoring_schedule#endpoint_name CcMonitoringSchedule#endpoint_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_monitoring_schedule#endpoint_name CcMonitoringSchedule#endpoint_name}
     */
     readonly endpointName?: string;
     /**
     * Indexes or names of the features to be excluded from analysis
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_monitoring_schedule#exclude_features_attribute CcMonitoringSchedule#exclude_features_attribute}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_monitoring_schedule#exclude_features_attribute CcMonitoringSchedule#exclude_features_attribute}
     */
     readonly excludeFeaturesAttribute?: string;
     /**
     * Path to the filesystem where the endpoint data is available to the container.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_monitoring_schedule#local_path CcMonitoringSchedule#local_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_monitoring_schedule#local_path CcMonitoringSchedule#local_path}
     */
     readonly localPath?: string;
     /**
     * Whether input data distributed in Amazon S3 is fully replicated or sharded by an S3 key. Defauts to FullyReplicated
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_monitoring_schedule#s3_data_distribution_type CcMonitoringSchedule#s3_data_distribution_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_monitoring_schedule#s3_data_distribution_type CcMonitoringSchedule#s3_data_distribution_type}
     */
     readonly s3DataDistributionType?: string;
     /**
     * Whether the Pipe or File is used as the input mode for transfering data for the monitoring job. Pipe mode is recommended for large datasets. File mode is useful for small files that fit in memory. Defaults to File.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_monitoring_schedule#s3_input_mode CcMonitoringSchedule#s3_input_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_monitoring_schedule#s3_input_mode CcMonitoringSchedule#s3_input_mode}
     */
     readonly s3InputMode?: string;
 }
@@ -2634,13 +2634,13 @@ export interface MonitoringInputProperty {
     /**
     * The batch transform input for a monitoring job.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_monitoring_schedule#batch_transform_input CcMonitoringSchedule#batch_transform_input}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_monitoring_schedule#batch_transform_input CcMonitoringSchedule#batch_transform_input}
     */
     readonly batchTransformInput?: BatchTransformInputProperty;
     /**
     * The endpoint for a monitoring job.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_monitoring_schedule#endpoint_input CcMonitoringSchedule#endpoint_input}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_monitoring_schedule#endpoint_input CcMonitoringSchedule#endpoint_input}
     */
     readonly endpointInput?: EndpointInputProperty;
 }
@@ -2750,19 +2750,19 @@ export interface S3OutputProperty {
     /**
     * The local path to the Amazon S3 storage location where Amazon SageMaker saves the results of a monitoring job. LocalPath is an absolute path for the output data.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_monitoring_schedule#local_path CcMonitoringSchedule#local_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_monitoring_schedule#local_path CcMonitoringSchedule#local_path}
     */
     readonly localPath?: string;
     /**
     * Whether to upload the results of the monitoring job continuously or after the job completes.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_monitoring_schedule#s3_upload_mode CcMonitoringSchedule#s3_upload_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_monitoring_schedule#s3_upload_mode CcMonitoringSchedule#s3_upload_mode}
     */
     readonly s3UploadMode?: string;
     /**
     * A URI that identifies the Amazon S3 storage location where Amazon SageMaker saves the results of a monitoring job.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_monitoring_schedule#s3_uri CcMonitoringSchedule#s3_uri}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_monitoring_schedule#s3_uri CcMonitoringSchedule#s3_uri}
     */
     readonly s3Uri?: string;
 }
@@ -2872,7 +2872,7 @@ export interface MonitoringOutputProperty {
     /**
     * Information about where and how to store the results of a monitoring job.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_monitoring_schedule#s3_output CcMonitoringSchedule#s3_output}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_monitoring_schedule#s3_output CcMonitoringSchedule#s3_output}
     */
     readonly s3Output?: S3OutputProperty;
 }
@@ -2960,13 +2960,13 @@ export interface MonitoringOutputConfigProperty {
     /**
     * The AWS Key Management Service (AWS KMS) key that Amazon SageMaker uses to encrypt the model artifacts at rest using Amazon S3 server-side encryption.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_monitoring_schedule#kms_key_id CcMonitoringSchedule#kms_key_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_monitoring_schedule#kms_key_id CcMonitoringSchedule#kms_key_id}
     */
     readonly kmsKeyId?: string;
     /**
     * Monitoring outputs for monitoring jobs. This is where the output of the periodic monitoring jobs is uploaded.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_monitoring_schedule#monitoring_outputs CcMonitoringSchedule#monitoring_outputs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_monitoring_schedule#monitoring_outputs CcMonitoringSchedule#monitoring_outputs}
     */
     readonly monitoringOutputs?: MonitoringOutputProperty[] | cdktn.IResolvable;
 }
@@ -3054,25 +3054,25 @@ export interface ClusterConfigProperty {
     /**
     * The number of ML compute instances to use in the model monitoring job. For distributed processing jobs, specify a value greater than 1. The default value is 1.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_monitoring_schedule#instance_count CcMonitoringSchedule#instance_count}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_monitoring_schedule#instance_count CcMonitoringSchedule#instance_count}
     */
     readonly instanceCount?: number;
     /**
     * The ML compute instance type for the processing job.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_monitoring_schedule#instance_type CcMonitoringSchedule#instance_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_monitoring_schedule#instance_type CcMonitoringSchedule#instance_type}
     */
     readonly instanceType?: string;
     /**
     * The AWS Key Management Service (AWS KMS) key that Amazon SageMaker uses to encrypt data on the storage volume attached to the ML compute instance(s) that run the model monitoring job.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_monitoring_schedule#volume_kms_key_id CcMonitoringSchedule#volume_kms_key_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_monitoring_schedule#volume_kms_key_id CcMonitoringSchedule#volume_kms_key_id}
     */
     readonly volumeKmsKeyId?: string;
     /**
     * The size of the ML storage volume, in gigabytes, that you want to provision. You must specify sufficient ML storage for your scenario.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_monitoring_schedule#volume_size_in_gb CcMonitoringSchedule#volume_size_in_gb}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_monitoring_schedule#volume_size_in_gb CcMonitoringSchedule#volume_size_in_gb}
     */
     readonly volumeSizeInGb?: number;
 }
@@ -3204,7 +3204,7 @@ export interface MonitoringResourcesProperty {
     /**
     * Configuration for the cluster used to run model monitoring jobs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_monitoring_schedule#cluster_config CcMonitoringSchedule#cluster_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_monitoring_schedule#cluster_config CcMonitoringSchedule#cluster_config}
     */
     readonly clusterConfig?: ClusterConfigProperty;
 }
@@ -3270,13 +3270,13 @@ export interface VpcConfigProperty {
     /**
     * The VPC security group IDs, in the form sg-xxxxxxxx. Specify the security groups for the VPC that is specified in the Subnets field.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_monitoring_schedule#security_group_ids CcMonitoringSchedule#security_group_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_monitoring_schedule#security_group_ids CcMonitoringSchedule#security_group_ids}
     */
     readonly securityGroupIds?: string[];
     /**
     * The ID of the subnets in the VPC to which you want to connect to your monitoring jobs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_monitoring_schedule#subnets CcMonitoringSchedule#subnets}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_monitoring_schedule#subnets CcMonitoringSchedule#subnets}
     */
     readonly subnets?: string[];
 }
@@ -3364,19 +3364,19 @@ export interface NetworkConfigProperty {
     /**
     * Whether to encrypt all communications between distributed processing jobs. Choose True to encrypt communications. Encryption provides greater security for distributed processing jobs, but the processing might take longer.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_monitoring_schedule#enable_inter_container_traffic_encryption CcMonitoringSchedule#enable_inter_container_traffic_encryption}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_monitoring_schedule#enable_inter_container_traffic_encryption CcMonitoringSchedule#enable_inter_container_traffic_encryption}
     */
     readonly enableInterContainerTrafficEncryption?: boolean | cdktn.IResolvable;
     /**
     * Whether to allow inbound and outbound network calls to and from the containers used for the processing job.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_monitoring_schedule#enable_network_isolation CcMonitoringSchedule#enable_network_isolation}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_monitoring_schedule#enable_network_isolation CcMonitoringSchedule#enable_network_isolation}
     */
     readonly enableNetworkIsolation?: boolean | cdktn.IResolvable;
     /**
     * Specifies a VPC that your training jobs and hosted models have access to. Control access to and from your training and model containers by configuring the VPC.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_monitoring_schedule#vpc_config CcMonitoringSchedule#vpc_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_monitoring_schedule#vpc_config CcMonitoringSchedule#vpc_config}
     */
     readonly vpcConfig?: VpcConfigProperty;
 }
@@ -3486,7 +3486,7 @@ export interface StoppingConditionProperty {
     /**
     * The maximum runtime allowed in seconds.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_monitoring_schedule#max_runtime_in_seconds CcMonitoringSchedule#max_runtime_in_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_monitoring_schedule#max_runtime_in_seconds CcMonitoringSchedule#max_runtime_in_seconds}
     */
     readonly maxRuntimeInSeconds?: number;
 }
@@ -3552,55 +3552,55 @@ export interface MonitoringJobDefinitionProperty {
     /**
     * Baseline configuration used to validate that the data conforms to the specified constraints and statistics.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_monitoring_schedule#baseline_config CcMonitoringSchedule#baseline_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_monitoring_schedule#baseline_config CcMonitoringSchedule#baseline_config}
     */
     readonly baselineConfig?: BaselineConfigProperty;
     /**
     * Sets the environment variables in the Docker container
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_monitoring_schedule#environment CcMonitoringSchedule#environment}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_monitoring_schedule#environment CcMonitoringSchedule#environment}
     */
     readonly environment?: { [key: string]: string };
     /**
     * Container image configuration object for the monitoring job.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_monitoring_schedule#monitoring_app_specification CcMonitoringSchedule#monitoring_app_specification}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_monitoring_schedule#monitoring_app_specification CcMonitoringSchedule#monitoring_app_specification}
     */
     readonly monitoringAppSpecification?: MonitoringAppSpecificationProperty;
     /**
     * The array of inputs for the monitoring job.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_monitoring_schedule#monitoring_inputs CcMonitoringSchedule#monitoring_inputs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_monitoring_schedule#monitoring_inputs CcMonitoringSchedule#monitoring_inputs}
     */
     readonly monitoringInputs?: MonitoringInputProperty[] | cdktn.IResolvable;
     /**
     * The output configuration for monitoring jobs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_monitoring_schedule#monitoring_output_config CcMonitoringSchedule#monitoring_output_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_monitoring_schedule#monitoring_output_config CcMonitoringSchedule#monitoring_output_config}
     */
     readonly monitoringOutputConfig?: MonitoringOutputConfigProperty;
     /**
     * Identifies the resources to deploy for a monitoring job.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_monitoring_schedule#monitoring_resources CcMonitoringSchedule#monitoring_resources}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_monitoring_schedule#monitoring_resources CcMonitoringSchedule#monitoring_resources}
     */
     readonly monitoringResources?: MonitoringResourcesProperty;
     /**
     * Networking options for a job, such as network traffic encryption between containers, whether to allow inbound and outbound network calls to and from containers, and the VPC subnets and security groups to use for VPC-enabled jobs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_monitoring_schedule#network_config CcMonitoringSchedule#network_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_monitoring_schedule#network_config CcMonitoringSchedule#network_config}
     */
     readonly networkConfig?: NetworkConfigProperty;
     /**
     * The Amazon Resource Name (ARN) of an IAM role that Amazon SageMaker can assume to perform tasks on your behalf.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_monitoring_schedule#role_arn CcMonitoringSchedule#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_monitoring_schedule#role_arn CcMonitoringSchedule#role_arn}
     */
     readonly roleArn?: string;
     /**
     * Specifies a time limit for how long the monitoring job is allowed to run.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_monitoring_schedule#stopping_condition CcMonitoringSchedule#stopping_condition}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_monitoring_schedule#stopping_condition CcMonitoringSchedule#stopping_condition}
     */
     readonly stoppingCondition?: StoppingConditionProperty;
 }
@@ -3842,19 +3842,19 @@ export interface ScheduleConfigProperty {
     /**
     * Data Analysis end time, e.g. PT0H
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_monitoring_schedule#data_analysis_end_time CcMonitoringSchedule#data_analysis_end_time}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_monitoring_schedule#data_analysis_end_time CcMonitoringSchedule#data_analysis_end_time}
     */
     readonly dataAnalysisEndTime?: string;
     /**
     * Data Analysis start time, e.g. -PT1H
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_monitoring_schedule#data_analysis_start_time CcMonitoringSchedule#data_analysis_start_time}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_monitoring_schedule#data_analysis_start_time CcMonitoringSchedule#data_analysis_start_time}
     */
     readonly dataAnalysisStartTime?: string;
     /**
     * A cron expression or 'NOW' that describes details about the monitoring schedule.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_monitoring_schedule#schedule_expression CcMonitoringSchedule#schedule_expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_monitoring_schedule#schedule_expression CcMonitoringSchedule#schedule_expression}
     */
     readonly scheduleExpression?: string;
 }
@@ -3964,25 +3964,25 @@ export interface MonitoringScheduleConfigProperty {
     /**
     * Defines the monitoring job.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_monitoring_schedule#monitoring_job_definition CcMonitoringSchedule#monitoring_job_definition}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_monitoring_schedule#monitoring_job_definition CcMonitoringSchedule#monitoring_job_definition}
     */
     readonly monitoringJobDefinition?: MonitoringJobDefinitionProperty;
     /**
     * Name of the job definition
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_monitoring_schedule#monitoring_job_definition_name CcMonitoringSchedule#monitoring_job_definition_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_monitoring_schedule#monitoring_job_definition_name CcMonitoringSchedule#monitoring_job_definition_name}
     */
     readonly monitoringJobDefinitionName?: string;
     /**
     * The type of monitoring job.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_monitoring_schedule#monitoring_type CcMonitoringSchedule#monitoring_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_monitoring_schedule#monitoring_type CcMonitoringSchedule#monitoring_type}
     */
     readonly monitoringType?: string;
     /**
     * Configuration details about the monitoring schedule.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_monitoring_schedule#schedule_config CcMonitoringSchedule#schedule_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_monitoring_schedule#schedule_config CcMonitoringSchedule#schedule_config}
     */
     readonly scheduleConfig?: ScheduleConfigProperty;
 }
@@ -4114,13 +4114,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 127 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_monitoring_schedule#key CcMonitoringSchedule#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_monitoring_schedule#key CcMonitoringSchedule#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 1 to 255 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_monitoring_schedule#value CcMonitoringSchedule#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_monitoring_schedule#value CcMonitoringSchedule#value}
     */
     readonly value?: string;
 }

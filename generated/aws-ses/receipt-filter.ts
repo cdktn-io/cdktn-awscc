@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_receipt_filter
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_receipt_filter
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,13 +9,13 @@ export interface CcReceiptFilterProps extends cdktn.TerraformMetaArguments {
     /**
     * A structure that describes the IP address filter to create, which consists of a name, an IP address range, and whether to allow or block mail from it.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_receipt_filter#filter CcReceiptFilter#filter}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_receipt_filter#filter CcReceiptFilter#filter}
     */
     readonly filter: CcReceiptFilter.FilterProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_receipt_filter awscc_ses_receipt_filter}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_receipt_filter awscc_ses_receipt_filter}
 */
 export class CcReceiptFilter extends cdktn.TerraformResource {
 
@@ -31,7 +31,7 @@ export class CcReceiptFilter extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcReceiptFilter resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcReceiptFilter to import
-    * @param importFromId The id of the existing CcReceiptFilter that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_receipt_filter#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcReceiptFilter that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_receipt_filter#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcReceiptFilter to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -43,7 +43,7 @@ export class CcReceiptFilter extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_receipt_filter awscc_ses_receipt_filter} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_receipt_filter awscc_ses_receipt_filter} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -54,7 +54,7 @@ export class CcReceiptFilter extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_ses_receipt_filter',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -198,13 +198,13 @@ export interface IpFilterProperty {
     /**
     * A single IP address or a range of IP addresses to block or allow, specified in CIDR notation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_receipt_filter#cidr CcReceiptFilter#cidr}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_receipt_filter#cidr CcReceiptFilter#cidr}
     */
     readonly cidr: string;
     /**
     * Indicates whether to block or allow incoming mail from the specified IP addresses.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_receipt_filter#policy CcReceiptFilter#policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_receipt_filter#policy CcReceiptFilter#policy}
     */
     readonly policy: string;
 }
@@ -286,13 +286,13 @@ export interface FilterProperty {
     /**
     * A structure that provides the IP addresses to block or allow, and whether to block or allow incoming mail from them.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_receipt_filter#ip_filter CcReceiptFilter#ip_filter}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_receipt_filter#ip_filter CcReceiptFilter#ip_filter}
     */
     readonly ipFilter: IpFilterProperty;
     /**
     * The name of the IP address filter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_receipt_filter#name CcReceiptFilter#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_receipt_filter#name CcReceiptFilter#name}
     */
     readonly name?: string;
 }

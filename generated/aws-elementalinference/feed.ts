@@ -1,27 +1,31 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elementalinference_feed
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elementalinference_feed
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcFeedProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elementalinference_feed#name CcFeed#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elementalinference_feed#access_role_arn CcFeed#access_role_arn}
+    */
+    readonly accessRoleArn?: string;
+    /**
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elementalinference_feed#name CcFeed#name}
     */
     readonly name: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elementalinference_feed#outputs CcFeed#outputs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elementalinference_feed#outputs CcFeed#outputs}
     */
     readonly outputs: CcFeed.GetOutputProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elementalinference_feed#tags CcFeed#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elementalinference_feed#tags CcFeed#tags}
     */
     readonly tags?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elementalinference_feed awscc_elementalinference_feed}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elementalinference_feed awscc_elementalinference_feed}
 */
 export class CcFeed extends cdktn.TerraformResource {
 
@@ -37,7 +41,7 @@ export class CcFeed extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcFeed resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcFeed to import
-    * @param importFromId The id of the existing CcFeed that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elementalinference_feed#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcFeed that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elementalinference_feed#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcFeed to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -49,7 +53,7 @@ export class CcFeed extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elementalinference_feed awscc_elementalinference_feed} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elementalinference_feed awscc_elementalinference_feed} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -60,7 +64,7 @@ export class CcFeed extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_elementalinference_feed',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -70,6 +74,7 @@ export class CcFeed extends cdktn.TerraformResource {
             connection: config.connection,
             forEach: config.forEach
         });
+        this._accessRoleArn = config.accessRoleArn;
         this._name = config.name;
         this._outputs.internalValue = config.outputs;
         this._tags = config.tags;
@@ -78,6 +83,22 @@ export class CcFeed extends cdktn.TerraformResource {
     // ==========
     // ATTRIBUTES
     // ==========
+
+    // access_role_arn - computed: true, optional: true, required: false
+    private _accessRoleArn?: string; 
+    public get accessRoleArn() {
+        return this.getStringAttribute('access_role_arn');
+    }
+    public set accessRoleArn(value: string) {
+        this._accessRoleArn = value;
+    }
+    public resetAccessRoleArn() {
+        this._accessRoleArn = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get accessRoleArnInput() {
+        return this._accessRoleArn;
+    }
 
     // arn - computed: true, optional: false, required: false
     public get arn() {
@@ -147,6 +168,7 @@ export class CcFeed extends cdktn.TerraformResource {
 
     protected synthesizeAttributes(): { [name: string]: any } {
         return {
+            access_role_arn: cdktn.stringToTerraform(this._accessRoleArn),
             name: cdktn.stringToTerraform(this._name),
             outputs: cdktn.listMapper(ccFeedGetOutputPropertyToTerraform, false)(this._outputs.internalValue),
             tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
@@ -155,6 +177,12 @@ export class CcFeed extends cdktn.TerraformResource {
 
     protected synthesizeHclAttributes(): { [name: string]: any } {
         const attrs = {
+            access_role_arn: {
+                value: cdktn.stringToHclTerraform(this._accessRoleArn),
+                isBlock: false,
+                type: "simple",
+                storageClassType: "string",
+            },
             name: {
                 value: cdktn.stringToHclTerraform(this._name),
                 isBlock: false,
@@ -180,6 +208,36 @@ export class CcFeed extends cdktn.TerraformResource {
     }
 }
 
+export function ccFeedDataSourceConfigurationPropertyToTerraform(struct?: CcFeed.DataSourceConfigurationProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        fixture_id: cdktn.stringToTerraform(struct!.fixtureId),
+    }
+}
+
+
+export function ccFeedDataSourceConfigurationPropertyToHclTerraform(struct?: CcFeed.DataSourceConfigurationProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        fixture_id: {
+            value: cdktn.stringToHclTerraform(struct!.fixtureId),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
 export function ccFeedClippingConfigPropertyToTerraform(struct?: CcFeed.ClippingConfigProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
@@ -187,6 +245,7 @@ export function ccFeedClippingConfigPropertyToTerraform(struct?: CcFeed.Clipping
     }
     return {
         callback_metadata: cdktn.stringToTerraform(struct!.callbackMetadata),
+        data_source_configuration: ccFeedDataSourceConfigurationPropertyToTerraform(struct!.dataSourceConfiguration),
     }
 }
 
@@ -202,6 +261,79 @@ export function ccFeedClippingConfigPropertyToHclTerraform(struct?: CcFeed.Clipp
             isBlock: false,
             type: "simple",
             storageClassType: "string",
+        },
+        data_source_configuration: {
+            value: ccFeedDataSourceConfigurationPropertyToHclTerraform(struct!.dataSourceConfiguration),
+            isBlock: true,
+            type: "struct",
+            storageClassType: "DataSourceConfigurationProperty",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
+export function ccFeedTemplateGroupsPropertyToTerraform(struct?: CcFeed.TemplateGroupsProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        name: cdktn.stringToTerraform(struct!.name),
+        template_uris: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.templateUris),
+    }
+}
+
+
+export function ccFeedTemplateGroupsPropertyToHclTerraform(struct?: CcFeed.TemplateGroupsProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        name: {
+            value: cdktn.stringToHclTerraform(struct!.name),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+        template_uris: {
+            value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.templateUris),
+            isBlock: false,
+            type: "list",
+            storageClassType: "stringList",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
+export function ccFeedCroppingPropertyToTerraform(struct?: CcFeed.CroppingProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        template_groups: cdktn.listMapper(ccFeedTemplateGroupsPropertyToTerraform, false)(struct!.templateGroups),
+    }
+}
+
+
+export function ccFeedCroppingPropertyToHclTerraform(struct?: CcFeed.CroppingProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        template_groups: {
+            value: cdktn.listMapperHcl(ccFeedTemplateGroupsPropertyToHclTerraform, false)(struct!.templateGroups),
+            isBlock: true,
+            type: "list",
+            storageClassType: "TemplateGroupsPropertyList",
         },
     };
 
@@ -305,7 +437,7 @@ export function ccFeedOutputConfigPropertyToTerraform(struct?: CcFeed.OutputConf
     }
     return {
         clipping: ccFeedClippingConfigPropertyToTerraform(struct!.clipping),
-        cropping: cdktn.stringToTerraform(struct!.cropping),
+        cropping: ccFeedCroppingPropertyToTerraform(struct!.cropping),
         subtitling: ccFeedSubtitlingConfigPropertyToTerraform(struct!.subtitling),
     }
 }
@@ -324,10 +456,10 @@ export function ccFeedOutputConfigPropertyToHclTerraform(struct?: CcFeed.OutputC
             storageClassType: "ClippingConfigProperty",
         },
         cropping: {
-            value: cdktn.stringToHclTerraform(struct!.cropping),
-            isBlock: false,
-            type: "simple",
-            storageClassType: "string",
+            value: ccFeedCroppingPropertyToHclTerraform(struct!.cropping),
+            isBlock: true,
+            type: "struct",
+            storageClassType: "CroppingProperty",
         },
         subtitling: {
             value: ccFeedSubtitlingConfigPropertyToHclTerraform(struct!.subtitling),
@@ -394,11 +526,79 @@ export function ccFeedGetOutputPropertyToHclTerraform(struct?: CcFeed.GetOutputP
 
 
 export namespace CcFeed {
+export interface DataSourceConfigurationProperty {
+    /**
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elementalinference_feed#fixture_id CcFeed#fixture_id}
+    */
+    readonly fixtureId?: string;
+}
+export class DataSourceConfigurationPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+        super(terraformResource, terraformAttribute, false);
+    }
+
+    public get internalValue(): DataSourceConfigurationProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._fixtureId !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.fixtureId = this._fixtureId;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: DataSourceConfigurationProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._fixtureId = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._fixtureId = value.fixtureId;
+        }
+    }
+
+    // fixture_id - computed: true, optional: true, required: false
+    private _fixtureId?: string; 
+    public get fixtureId() {
+        return this.getStringAttribute('fixture_id');
+    }
+    public set fixtureId(value: string) {
+        this._fixtureId = value;
+    }
+    public resetFixtureId() {
+        this._fixtureId = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get fixtureIdInput() {
+        return this._fixtureId;
+    }
+}
 export interface ClippingConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elementalinference_feed#callback_metadata CcFeed#callback_metadata}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elementalinference_feed#callback_metadata CcFeed#callback_metadata}
     */
     readonly callbackMetadata?: string;
+    /**
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elementalinference_feed#data_source_configuration CcFeed#data_source_configuration}
+    */
+    readonly dataSourceConfiguration?: DataSourceConfigurationProperty;
 }
 export class ClippingConfigPropertyOutputReference extends cdktn.ComplexObject {
     private isEmptyObject = false;
@@ -422,6 +622,10 @@ export class ClippingConfigPropertyOutputReference extends cdktn.ComplexObject {
             hasAnyValues = true;
             internalValueResult.callbackMetadata = this._callbackMetadata;
         }
+        if (this._dataSourceConfiguration?.internalValue !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.dataSourceConfiguration = this._dataSourceConfiguration?.internalValue;
+        }
         return hasAnyValues ? internalValueResult : undefined;
     }
 
@@ -430,6 +634,7 @@ export class ClippingConfigPropertyOutputReference extends cdktn.ComplexObject {
             this.isEmptyObject = false;
             this.resolvableValue = undefined;
             this._callbackMetadata = undefined;
+            this._dataSourceConfiguration.internalValue = undefined;
         }
         else if (cdktn.Tokenization.isResolvable(value)) {
             this.isEmptyObject = false;
@@ -439,6 +644,7 @@ export class ClippingConfigPropertyOutputReference extends cdktn.ComplexObject {
             this.isEmptyObject = Object.keys(value).length === 0;
             this.resolvableValue = undefined;
             this._callbackMetadata = value.callbackMetadata;
+            this._dataSourceConfiguration.internalValue = value.dataSourceConfiguration;
         }
     }
 
@@ -457,14 +663,206 @@ export class ClippingConfigPropertyOutputReference extends cdktn.ComplexObject {
     public get callbackMetadataInput() {
         return this._callbackMetadata;
     }
+
+    // data_source_configuration - computed: true, optional: true, required: false
+    private _dataSourceConfiguration = new DataSourceConfigurationPropertyOutputReference(this, "data_source_configuration");
+    public get dataSourceConfiguration() {
+        return this._dataSourceConfiguration;
+    }
+    public putDataSourceConfiguration(value: DataSourceConfigurationProperty) {
+        this._dataSourceConfiguration.internalValue = value;
+    }
+    public resetDataSourceConfiguration() {
+        this._dataSourceConfiguration.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get dataSourceConfigurationInput() {
+        return this._dataSourceConfiguration.internalValue;
+    }
+}
+export interface TemplateGroupsProperty {
+    /**
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elementalinference_feed#name CcFeed#name}
+    */
+    readonly name?: string;
+    /**
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elementalinference_feed#template_uris CcFeed#template_uris}
+    */
+    readonly templateUris?: string[];
+}
+export class TemplateGroupsPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    * @param complexObjectIndex the index of this item in the list
+    * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+        super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+    }
+
+    public get internalValue(): TemplateGroupsProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._name !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.name = this._name;
+        }
+        if (this._templateUris !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.templateUris = this._templateUris;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: TemplateGroupsProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._name = undefined;
+            this._templateUris = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._name = value.name;
+            this._templateUris = value.templateUris;
+        }
+    }
+
+    // name - computed: true, optional: true, required: false
+    private _name?: string; 
+    public get name() {
+        return this.getStringAttribute('name');
+    }
+    public set name(value: string) {
+        this._name = value;
+    }
+    public resetName() {
+        this._name = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get nameInput() {
+        return this._name;
+    }
+
+    // template_uris - computed: true, optional: true, required: false
+    private _templateUris?: string[]; 
+    public get templateUris() {
+        return this.getListAttribute('template_uris');
+    }
+    public set templateUris(value: string[]) {
+        this._templateUris = value;
+    }
+    public resetTemplateUris() {
+        this._templateUris = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get templateUrisInput() {
+        return this._templateUris;
+    }
+}
+
+export class TemplateGroupsPropertyList extends cdktn.ComplexList {
+    public internalValue? : TemplateGroupsProperty[] | cdktn.IResolvable
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+    */
+    constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+        super(terraformResource, terraformAttribute, wrapsSet);
+    }
+
+    /**
+    * @param index the index of the item to return
+    */
+    public get(index: number): TemplateGroupsPropertyOutputReference {
+        return new TemplateGroupsPropertyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+    }
+}
+export interface CroppingProperty {
+    /**
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elementalinference_feed#template_groups CcFeed#template_groups}
+    */
+    readonly templateGroups?: TemplateGroupsProperty[] | cdktn.IResolvable;
+}
+export class CroppingPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+        super(terraformResource, terraformAttribute, false);
+    }
+
+    public get internalValue(): CroppingProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._templateGroups?.internalValue !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.templateGroups = this._templateGroups?.internalValue;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: CroppingProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._templateGroups.internalValue = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._templateGroups.internalValue = value.templateGroups;
+        }
+    }
+
+    // template_groups - computed: true, optional: true, required: false
+    private _templateGroups = new TemplateGroupsPropertyList(this, "template_groups", false);
+    public get templateGroups() {
+        return this._templateGroups;
+    }
+    public putTemplateGroups(value: TemplateGroupsProperty[] | cdktn.IResolvable) {
+        this._templateGroups.internalValue = value;
+    }
+    public resetTemplateGroups() {
+        this._templateGroups.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get templateGroupsInput() {
+        return this._templateGroups.internalValue;
+    }
 }
 export interface AspectRatioProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elementalinference_feed#height CcFeed#height}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elementalinference_feed#height CcFeed#height}
     */
     readonly height?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elementalinference_feed#width CcFeed#width}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elementalinference_feed#width CcFeed#width}
     */
     readonly width?: number;
 }
@@ -550,19 +948,19 @@ export class AspectRatioPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface SubtitlingConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elementalinference_feed#aspect_ratio CcFeed#aspect_ratio}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elementalinference_feed#aspect_ratio CcFeed#aspect_ratio}
     */
     readonly aspectRatio?: AspectRatioProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elementalinference_feed#dictionary CcFeed#dictionary}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elementalinference_feed#dictionary CcFeed#dictionary}
     */
     readonly dictionary?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elementalinference_feed#language CcFeed#language}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elementalinference_feed#language CcFeed#language}
     */
     readonly language?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elementalinference_feed#profanity_filter CcFeed#profanity_filter}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elementalinference_feed#profanity_filter CcFeed#profanity_filter}
     */
     readonly profanityFilter?: string;
 }
@@ -692,15 +1090,15 @@ export class SubtitlingConfigPropertyOutputReference extends cdktn.ComplexObject
 }
 export interface OutputConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elementalinference_feed#clipping CcFeed#clipping}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elementalinference_feed#clipping CcFeed#clipping}
     */
     readonly clipping?: ClippingConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elementalinference_feed#cropping CcFeed#cropping}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elementalinference_feed#cropping CcFeed#cropping}
     */
-    readonly cropping?: string;
+    readonly cropping?: CroppingProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elementalinference_feed#subtitling CcFeed#subtitling}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elementalinference_feed#subtitling CcFeed#subtitling}
     */
     readonly subtitling?: SubtitlingConfigProperty;
 }
@@ -726,9 +1124,9 @@ export class OutputConfigPropertyOutputReference extends cdktn.ComplexObject {
             hasAnyValues = true;
             internalValueResult.clipping = this._clipping?.internalValue;
         }
-        if (this._cropping !== undefined) {
+        if (this._cropping?.internalValue !== undefined) {
             hasAnyValues = true;
-            internalValueResult.cropping = this._cropping;
+            internalValueResult.cropping = this._cropping?.internalValue;
         }
         if (this._subtitling?.internalValue !== undefined) {
             hasAnyValues = true;
@@ -742,7 +1140,7 @@ export class OutputConfigPropertyOutputReference extends cdktn.ComplexObject {
             this.isEmptyObject = false;
             this.resolvableValue = undefined;
             this._clipping.internalValue = undefined;
-            this._cropping = undefined;
+            this._cropping.internalValue = undefined;
             this._subtitling.internalValue = undefined;
         }
         else if (cdktn.Tokenization.isResolvable(value)) {
@@ -753,7 +1151,7 @@ export class OutputConfigPropertyOutputReference extends cdktn.ComplexObject {
             this.isEmptyObject = Object.keys(value).length === 0;
             this.resolvableValue = undefined;
             this._clipping.internalValue = value.clipping;
-            this._cropping = value.cropping;
+            this._cropping.internalValue = value.cropping;
             this._subtitling.internalValue = value.subtitling;
         }
     }
@@ -775,19 +1173,19 @@ export class OutputConfigPropertyOutputReference extends cdktn.ComplexObject {
     }
 
     // cropping - computed: true, optional: true, required: false
-    private _cropping?: string; 
+    private _cropping = new CroppingPropertyOutputReference(this, "cropping");
     public get cropping() {
-        return this.getStringAttribute('cropping');
+        return this._cropping;
     }
-    public set cropping(value: string) {
-        this._cropping = value;
+    public putCropping(value: CroppingProperty) {
+        this._cropping.internalValue = value;
     }
     public resetCropping() {
-        this._cropping = undefined;
+        this._cropping.internalValue = undefined;
     }
     // Temporarily expose input value. Use with caution.
     public get croppingInput() {
-        return this._cropping;
+        return this._cropping.internalValue;
     }
 
     // subtitling - computed: true, optional: true, required: false
@@ -808,19 +1206,19 @@ export class OutputConfigPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface GetOutputProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elementalinference_feed#description CcFeed#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elementalinference_feed#description CcFeed#description}
     */
     readonly description?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elementalinference_feed#name CcFeed#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elementalinference_feed#name CcFeed#name}
     */
     readonly name: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elementalinference_feed#output_config CcFeed#output_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elementalinference_feed#output_config CcFeed#output_config}
     */
     readonly outputConfig: OutputConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elementalinference_feed#status CcFeed#status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elementalinference_feed#status CcFeed#status}
     */
     readonly status: string;
 }

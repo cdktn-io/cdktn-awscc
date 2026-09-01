@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base_policy
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base_policy
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,19 +9,19 @@ export interface CcKnowledgeBasePolicyProps extends cdktn.TerraformMetaArguments
     /**
     * The unique identifier of the knowledge base
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base_policy#knowledge_base_id CcKnowledgeBasePolicy#knowledge_base_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base_policy#knowledge_base_id CcKnowledgeBasePolicy#knowledge_base_id}
     */
     readonly knowledgeBaseId: string;
     /**
     * The IAM policy document defining access permissions for the knowledge base
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base_policy#policy_document CcKnowledgeBasePolicy#policy_document}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base_policy#policy_document CcKnowledgeBasePolicy#policy_document}
     */
     readonly policyDocument: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base_policy awscc_bedrock_knowledge_base_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base_policy awscc_bedrock_knowledge_base_policy}
 */
 export class CcKnowledgeBasePolicy extends cdktn.TerraformResource {
 
@@ -37,7 +37,7 @@ export class CcKnowledgeBasePolicy extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcKnowledgeBasePolicy resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcKnowledgeBasePolicy to import
-    * @param importFromId The id of the existing CcKnowledgeBasePolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base_policy#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcKnowledgeBasePolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base_policy#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcKnowledgeBasePolicy to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -49,7 +49,7 @@ export class CcKnowledgeBasePolicy extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base_policy awscc_bedrock_knowledge_base_policy} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base_policy awscc_bedrock_knowledge_base_policy} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -60,7 +60,7 @@ export class CcKnowledgeBasePolicy extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_bedrock_knowledge_base_policy',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,

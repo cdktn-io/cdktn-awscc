@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_notification
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_notification
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,43 +9,43 @@ export interface CcNotificationProps extends cdktn.TerraformMetaArguments {
     /**
     * The content of the notification.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_notification#content CcNotification#content}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_notification#content CcNotification#content}
     */
     readonly content: CcNotification.NotificationContentProperty;
     /**
     * The time a notification will expire
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_notification#expires_at CcNotification#expires_at}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_notification#expires_at CcNotification#expires_at}
     */
     readonly expiresAt?: string;
     /**
     * The identifier of the Amazon Connect instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_notification#instance_arn CcNotification#instance_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_notification#instance_arn CcNotification#instance_arn}
     */
     readonly instanceArn: string;
     /**
     * The priority of the notification.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_notification#priority CcNotification#priority}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_notification#priority CcNotification#priority}
     */
     readonly priority?: string;
     /**
     * The recipients of the notification.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_notification#recipients CcNotification#recipients}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_notification#recipients CcNotification#recipients}
     */
     readonly recipients?: string[];
     /**
     * One or more tags.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_notification#tags CcNotification#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_notification#tags CcNotification#tags}
     */
     readonly tags?: CcNotification.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_notification awscc_connect_notification}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_notification awscc_connect_notification}
 */
 export class CcNotification extends cdktn.TerraformResource {
 
@@ -61,7 +61,7 @@ export class CcNotification extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcNotification resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcNotification to import
-    * @param importFromId The id of the existing CcNotification that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_notification#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcNotification that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_notification#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcNotification to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -73,7 +73,7 @@ export class CcNotification extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_notification awscc_connect_notification} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_notification awscc_connect_notification} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -84,7 +84,7 @@ export class CcNotification extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_connect_notification',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -418,67 +418,67 @@ export interface NotificationContentProperty {
     /**
     * Localized notification content
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_notification#de_de CcNotification#de_de}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_notification#de_de CcNotification#de_de}
     */
     readonly deDe?: string;
     /**
     * Localized notification content
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_notification#en_us CcNotification#en_us}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_notification#en_us CcNotification#en_us}
     */
     readonly enUs?: string;
     /**
     * Localized notification content
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_notification#es_es CcNotification#es_es}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_notification#es_es CcNotification#es_es}
     */
     readonly esEs?: string;
     /**
     * Localized notification content
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_notification#fr_fr CcNotification#fr_fr}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_notification#fr_fr CcNotification#fr_fr}
     */
     readonly frFr?: string;
     /**
     * Localized notification content
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_notification#id_id CcNotification#id_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_notification#id_id CcNotification#id_id}
     */
     readonly idId?: string;
     /**
     * Localized notification content
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_notification#it_it CcNotification#it_it}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_notification#it_it CcNotification#it_it}
     */
     readonly itIt?: string;
     /**
     * Localized notification content
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_notification#ja_jp CcNotification#ja_jp}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_notification#ja_jp CcNotification#ja_jp}
     */
     readonly jaJp?: string;
     /**
     * Localized notification content
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_notification#ko_kr CcNotification#ko_kr}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_notification#ko_kr CcNotification#ko_kr}
     */
     readonly koKr?: string;
     /**
     * Localized notification content
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_notification#pt_br CcNotification#pt_br}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_notification#pt_br CcNotification#pt_br}
     */
     readonly ptBr?: string;
     /**
     * Localized notification content
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_notification#zh_cn CcNotification#zh_cn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_notification#zh_cn CcNotification#zh_cn}
     */
     readonly zhCn?: string;
     /**
     * Localized notification content
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_notification#zh_tw CcNotification#zh_tw}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_notification#zh_tw CcNotification#zh_tw}
     */
     readonly zhTw?: string;
 }
@@ -764,13 +764,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_notification#key CcNotification#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_notification#key CcNotification#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 0 to 256 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_notification#value CcNotification#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_notification#value CcNotification#value}
     */
     readonly value?: string;
 }

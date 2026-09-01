@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_sdi_source
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_sdi_source
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,31 +9,31 @@ export interface CcSdiSourceProps extends cdktn.TerraformMetaArguments {
     /**
     * The current state of the SdiSource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_sdi_source#mode CcSdiSource#mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_sdi_source#mode CcSdiSource#mode}
     */
     readonly mode?: string;
     /**
     * The name of the SdiSource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_sdi_source#name CcSdiSource#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_sdi_source#name CcSdiSource#name}
     */
     readonly name: string;
     /**
     * A collection of key-value pairs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_sdi_source#tags CcSdiSource#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_sdi_source#tags CcSdiSource#tags}
     */
     readonly tags?: CcSdiSource.TagProperty[] | cdktn.IResolvable;
     /**
     * The interface mode of the SdiSource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_sdi_source#type CcSdiSource#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_sdi_source#type CcSdiSource#type}
     */
     readonly type: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_sdi_source awscc_medialive_sdi_source}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_sdi_source awscc_medialive_sdi_source}
 */
 export class CcSdiSource extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CcSdiSource extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcSdiSource resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcSdiSource to import
-    * @param importFromId The id of the existing CcSdiSource that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_sdi_source#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcSdiSource that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_sdi_source#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcSdiSource to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CcSdiSource extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_sdi_source awscc_medialive_sdi_source} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_sdi_source awscc_medialive_sdi_source} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -72,7 +72,7 @@ export class CcSdiSource extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_medialive_sdi_source',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -261,11 +261,11 @@ export function ccSdiSourceTagPropertyToHclTerraform(struct?: CcSdiSource.TagPro
 export namespace CcSdiSource {
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_sdi_source#key CcSdiSource#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_sdi_source#key CcSdiSource#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_sdi_source#value CcSdiSource#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_sdi_source#value CcSdiSource#value}
     */
     readonly value?: string;
 }

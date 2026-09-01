@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_logging
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_logging
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,31 +9,31 @@ export interface CcLoggingProps extends cdktn.TerraformMetaArguments {
     /**
     * Your 12-digit account ID (used as the primary identifier for the CloudFormation resource).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_logging#account_id CcLogging#account_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_logging#account_id CcLogging#account_id}
     */
     readonly accountId: string;
     /**
     * The log level to use. Valid values are: ERROR, WARN, INFO, DEBUG, or DISABLED.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_logging#default_log_level CcLogging#default_log_level}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_logging#default_log_level CcLogging#default_log_level}
     */
     readonly defaultLogLevel: string;
     /**
     * Configurations for event-based logging that specifies which event types to log and their logging settings. Overrides account-level logging for the specified event
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_logging#event_configurations CcLogging#event_configurations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_logging#event_configurations CcLogging#event_configurations}
     */
     readonly eventConfigurations?: CcLogging.EventConfigurationProperty[] | cdktn.IResolvable;
     /**
     * The ARN of the role that allows IoT to write to Cloudwatch logs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_logging#role_arn CcLogging#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_logging#role_arn CcLogging#role_arn}
     */
     readonly roleArn: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_logging awscc_iot_logging}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_logging awscc_iot_logging}
 */
 export class CcLogging extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CcLogging extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcLogging resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcLogging to import
-    * @param importFromId The id of the existing CcLogging that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_logging#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcLogging that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_logging#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcLogging to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CcLogging extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_logging awscc_iot_logging} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_logging awscc_iot_logging} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -72,7 +72,7 @@ export class CcLogging extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_iot_logging',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -247,19 +247,19 @@ export interface EventConfigurationProperty {
     /**
     * The type of event to log. These include event types like Connect, Publish, and Disconnect.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_logging#event_type CcLogging#event_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_logging#event_type CcLogging#event_type}
     */
     readonly eventType?: string;
     /**
     * CloudWatch Log Group for event-based logging. Specifies where log events should be sent. The log destination for event-based logging overrides default Log Group for the specified event type and applies to all resources associated with that event.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_logging#log_destination CcLogging#log_destination}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_logging#log_destination CcLogging#log_destination}
     */
     readonly logDestination?: string;
     /**
     * The logging level for the specified event type. Determines the verbosity of log messages generated for this event type.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_logging#log_level CcLogging#log_level}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_logging#log_level CcLogging#log_level}
     */
     readonly logLevel?: string;
 }

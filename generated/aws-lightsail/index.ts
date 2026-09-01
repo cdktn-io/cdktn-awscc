@@ -3,6 +3,7 @@
 export * from './alarm';
 export * from './bucket';
 export * from './certificate';
+export * from './contact-method';
 export * from './container';
 export * from './database';
 export * from './database-snapshot';

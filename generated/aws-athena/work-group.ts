@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,49 +9,49 @@ export interface CcWorkGroupProps extends cdktn.TerraformMetaArguments {
     /**
     * The workgroup description.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#description CcWorkGroup#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#description CcWorkGroup#description}
     */
     readonly description?: string;
     /**
     * The workGroup name.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#name CcWorkGroup#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#name CcWorkGroup#name}
     */
     readonly name: string;
     /**
     * The option to delete the workgroup and its contents even if the workgroup contains any named queries.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#recursive_delete_option CcWorkGroup#recursive_delete_option}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#recursive_delete_option CcWorkGroup#recursive_delete_option}
     */
     readonly recursiveDeleteOption?: boolean | cdktn.IResolvable;
     /**
     * The state of the workgroup: ENABLED or DISABLED.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#state CcWorkGroup#state}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#state CcWorkGroup#state}
     */
     readonly state?: string;
     /**
     * One or more tags, separated by commas, that you want to attach to the workgroup as you create it
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#tags CcWorkGroup#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#tags CcWorkGroup#tags}
     */
     readonly tags?: CcWorkGroup.TagProperty[] | cdktn.IResolvable;
     /**
     * The workgroup configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#work_group_configuration CcWorkGroup#work_group_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#work_group_configuration CcWorkGroup#work_group_configuration}
     */
     readonly workGroupConfiguration?: CcWorkGroup.WorkGroupConfigurationProperty;
     /**
     * The workgroup configuration update object
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#work_group_configuration_updates CcWorkGroup#work_group_configuration_updates}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#work_group_configuration_updates CcWorkGroup#work_group_configuration_updates}
     */
     readonly workGroupConfigurationUpdates?: CcWorkGroup.WorkGroupConfigurationUpdatesProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group awscc_athena_work_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group awscc_athena_work_group}
 */
 export class CcWorkGroup extends cdktn.TerraformResource {
 
@@ -67,7 +67,7 @@ export class CcWorkGroup extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcWorkGroup resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcWorkGroup to import
-    * @param importFromId The id of the existing CcWorkGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcWorkGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcWorkGroup to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -79,7 +79,7 @@ export class CcWorkGroup extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group awscc_athena_work_group} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group awscc_athena_work_group} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -90,7 +90,7 @@ export class CcWorkGroup extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_athena_work_group',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -1641,11 +1641,11 @@ export function ccWorkGroupWorkGroupConfigurationUpdatesPropertyToHclTerraform(s
 export namespace CcWorkGroup {
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#key CcWorkGroup#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#key CcWorkGroup#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#value CcWorkGroup#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#value CcWorkGroup#value}
     */
     readonly value?: string;
 }
@@ -1755,7 +1755,7 @@ export interface CustomerContentEncryptionConfigurationProperty {
     /**
     * For SSE-KMS and CSE-KMS, this is the KMS key ARN or ID. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#kms_key CcWorkGroup#kms_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#kms_key CcWorkGroup#kms_key}
     */
     readonly kmsKey?: string;
 }
@@ -1821,13 +1821,13 @@ export interface ClassificationProperty {
     /**
     * The name of the configuration classification.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#name CcWorkGroup#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#name CcWorkGroup#name}
     */
     readonly name?: string;
     /**
     * A set of properties specified within a configuration classification.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#properties CcWorkGroup#properties}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#properties CcWorkGroup#properties}
     */
     readonly properties?: { [key: string]: string };
 }
@@ -1937,37 +1937,37 @@ export interface EngineConfigurationProperty {
     /**
     * Contains additional notebook engine MAP<string, string> parameter mappings in the form of key-value pairs. To specify an Athena notebook that the Jupyter server will download and serve, specify a value for the StartSessionRequest$NotebookVersion field, and then add a key named NotebookId to AdditionalConfigs that has the value of the Athena notebook ID.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#additional_configs CcWorkGroup#additional_configs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#additional_configs CcWorkGroup#additional_configs}
     */
     readonly additionalConfigs?: { [key: string]: string };
     /**
     * The configuration classifications that can be specified for the engine.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#classifications CcWorkGroup#classifications}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#classifications CcWorkGroup#classifications}
     */
     readonly classifications?: ClassificationProperty[] | cdktn.IResolvable;
     /**
     * The number of DPUs to use for the coordinator. A coordinator is a special executor that orchestrates processing work and manages other executors in a notebook session. The default is 1.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#coordinator_dpu_size CcWorkGroup#coordinator_dpu_size}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#coordinator_dpu_size CcWorkGroup#coordinator_dpu_size}
     */
     readonly coordinatorDpuSize?: number;
     /**
     * The default number of DPUs to use for executors. An executor is the smallest unit of compute that a notebook session can request from Athena. The default is 1.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#default_executor_dpu_size CcWorkGroup#default_executor_dpu_size}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#default_executor_dpu_size CcWorkGroup#default_executor_dpu_size}
     */
     readonly defaultExecutorDpuSize?: number;
     /**
     * The maximum number of DPUs that can run concurrently.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#max_concurrent_dpus CcWorkGroup#max_concurrent_dpus}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#max_concurrent_dpus CcWorkGroup#max_concurrent_dpus}
     */
     readonly maxConcurrentDpus?: number;
     /**
     * Specifies custom jar files and Spark properties for use cases like cluster encryption, table formats, and general Spark tuning.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#spark_properties CcWorkGroup#spark_properties}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#spark_properties CcWorkGroup#spark_properties}
     */
     readonly sparkProperties?: { [key: string]: string };
 }
@@ -2143,7 +2143,7 @@ export interface EngineVersionProperty {
     /**
     * The engine version requested by the user. Possible values are determined by the output of ListEngineVersions, including Auto. The default is Auto.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#selected_engine_version CcWorkGroup#selected_engine_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#selected_engine_version CcWorkGroup#selected_engine_version}
     */
     readonly selectedEngineVersion?: string;
 }
@@ -2214,7 +2214,7 @@ export interface ManagedStorageEncryptionConfigurationProperty {
     /**
     * For SSE-KMS and CSE-KMS, this is the KMS key ARN or ID. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#kms_key CcWorkGroup#kms_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#kms_key CcWorkGroup#kms_key}
     */
     readonly kmsKey?: string;
 }
@@ -2278,13 +2278,13 @@ export class ManagedStorageEncryptionConfigurationPropertyOutputReference extend
 }
 export interface ManagedQueryResultsConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#enabled CcWorkGroup#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#enabled CcWorkGroup#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
     * Indicates the encryption configuration for Athena Managed Storage. If not setting this field, Managed Storage will encrypt the query results with Athena's encryption key
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#encryption_configuration CcWorkGroup#encryption_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#encryption_configuration CcWorkGroup#encryption_configuration}
     */
     readonly encryptionConfiguration?: ManagedStorageEncryptionConfigurationProperty;
 }
@@ -2372,25 +2372,25 @@ export interface CloudWatchLoggingConfigurationProperty {
     /**
     * Enables CloudWatch logging.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#enabled CcWorkGroup#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#enabled CcWorkGroup#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
     * The name of the log group in Amazon CloudWatch Logs where you want to publish your logs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#log_group CcWorkGroup#log_group}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#log_group CcWorkGroup#log_group}
     */
     readonly logGroup?: string;
     /**
     * Prefix for the CloudWatch log stream name.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#log_stream_name_prefix CcWorkGroup#log_stream_name_prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#log_stream_name_prefix CcWorkGroup#log_stream_name_prefix}
     */
     readonly logStreamNamePrefix?: string;
     /**
     * The types of logs that you want to publish to CloudWatch.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#log_types CcWorkGroup#log_types}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#log_types CcWorkGroup#log_types}
     */
     readonly logTypes?: { [key: string]: string[] } | cdktn.IResolvable;
 }
@@ -2522,13 +2522,13 @@ export interface ManagedLoggingConfigurationProperty {
     /**
     * Enables managed log persistence.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#enabled CcWorkGroup#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#enabled CcWorkGroup#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
     * The KMS key ARN to encrypt the logs stored in managed log persistence.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#kms_key CcWorkGroup#kms_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#kms_key CcWorkGroup#kms_key}
     */
     readonly kmsKey?: string;
 }
@@ -2616,19 +2616,19 @@ export interface S3LoggingConfigurationProperty {
     /**
     * Enables S3 log delivery.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#enabled CcWorkGroup#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#enabled CcWorkGroup#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
     * The KMS key ARN to encrypt the logs published to the given Amazon S3 destination.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#kms_key CcWorkGroup#kms_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#kms_key CcWorkGroup#kms_key}
     */
     readonly kmsKey?: string;
     /**
     * The Amazon S3 destination URI for log publishing.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#log_location CcWorkGroup#log_location}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#log_location CcWorkGroup#log_location}
     */
     readonly logLocation?: string;
 }
@@ -2738,19 +2738,19 @@ export interface MonitoringConfigurationProperty {
     /**
     * Configuration settings for delivering logs to Amazon CloudWatch log groups.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#cloudwatch_logging_configuration CcWorkGroup#cloudwatch_logging_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#cloudwatch_logging_configuration CcWorkGroup#cloudwatch_logging_configuration}
     */
     readonly cloudwatchLoggingConfiguration?: CloudWatchLoggingConfigurationProperty;
     /**
     * Configuration settings for managed log persistence.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#managed_logging_configuration CcWorkGroup#managed_logging_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#managed_logging_configuration CcWorkGroup#managed_logging_configuration}
     */
     readonly managedLoggingConfiguration?: ManagedLoggingConfigurationProperty;
     /**
     * Configuration settings for delivering logs to Amazon S3 buckets.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#s3_logging_configuration CcWorkGroup#s3_logging_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#s3_logging_configuration CcWorkGroup#s3_logging_configuration}
     */
     readonly s3LoggingConfiguration?: S3LoggingConfigurationProperty;
 }
@@ -2860,7 +2860,7 @@ export interface AclConfigurationProperty {
     /**
     * The Amazon S3 canned ACL that Athena should specify when storing query results. Currently the only supported canned ACL is BUCKET_OWNER_FULL_CONTROL
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#s3_acl_option CcWorkGroup#s3_acl_option}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#s3_acl_option CcWorkGroup#s3_acl_option}
     */
     readonly s3AclOption?: string;
 }
@@ -2926,13 +2926,13 @@ export interface EncryptionConfigurationProperty {
     /**
     * Indicates whether Amazon S3 server-side encryption with Amazon S3-managed keys (SSE-S3), server-side encryption with KMS-managed keys (SSE-KMS), or client-side encryption with KMS-managed keys (CSE-KMS) is used.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#encryption_option CcWorkGroup#encryption_option}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#encryption_option CcWorkGroup#encryption_option}
     */
     readonly encryptionOption?: string;
     /**
     * For SSE-KMS and CSE-KMS, this is the KMS key ARN or ID. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#kms_key CcWorkGroup#kms_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#kms_key CcWorkGroup#kms_key}
     */
     readonly kmsKey?: string;
 }
@@ -3020,25 +3020,25 @@ export interface ResultConfigurationProperty {
     /**
     * Indicates that an Amazon S3 canned ACL should be set to control ownership of stored query results
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#acl_configuration CcWorkGroup#acl_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#acl_configuration CcWorkGroup#acl_configuration}
     */
     readonly aclConfiguration?: AclConfigurationProperty;
     /**
     * If query results are encrypted in Amazon S3, indicates the encryption option used (for example, SSE-KMS or CSE-KMS) and key information.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#encryption_configuration CcWorkGroup#encryption_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#encryption_configuration CcWorkGroup#encryption_configuration}
     */
     readonly encryptionConfiguration?: EncryptionConfigurationProperty;
     /**
     * The AWS account ID of the owner of S3 bucket where query results are stored
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#expected_bucket_owner CcWorkGroup#expected_bucket_owner}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#expected_bucket_owner CcWorkGroup#expected_bucket_owner}
     */
     readonly expectedBucketOwner?: string;
     /**
     * The location in Amazon S3 where your query results are stored, such as s3://path/to/query/bucket/. To run the query, you must specify the query results location using one of the ways: either for individual queries using either this setting (client-side), or in the workgroup, using WorkGroupConfiguration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#output_location CcWorkGroup#output_location}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#output_location CcWorkGroup#output_location}
     */
     readonly outputLocation?: string;
 }
@@ -3170,74 +3170,74 @@ export interface WorkGroupConfigurationProperty {
     /**
     * Additional Configuration that are passed to Athena Spark Calculations running in this workgroup
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#additional_configuration CcWorkGroup#additional_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#additional_configuration CcWorkGroup#additional_configuration}
     */
     readonly additionalConfiguration?: string;
     /**
     * The upper data usage limit (cutoff) for the amount of bytes a single query in a workgroup is allowed to scan.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#bytes_scanned_cutoff_per_query CcWorkGroup#bytes_scanned_cutoff_per_query}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#bytes_scanned_cutoff_per_query CcWorkGroup#bytes_scanned_cutoff_per_query}
     */
     readonly bytesScannedCutoffPerQuery?: number;
     /**
     * Indicates the KMS key for encrypting notebook content.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#customer_content_encryption_configuration CcWorkGroup#customer_content_encryption_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#customer_content_encryption_configuration CcWorkGroup#customer_content_encryption_configuration}
     */
     readonly customerContentEncryptionConfiguration?: CustomerContentEncryptionConfigurationProperty;
     /**
     * If set to "true", the settings for the workgroup override client-side settings. If set to "false", client-side settings are used
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#enforce_work_group_configuration CcWorkGroup#enforce_work_group_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#enforce_work_group_configuration CcWorkGroup#enforce_work_group_configuration}
     */
     readonly enforceWorkGroupConfiguration?: boolean | cdktn.IResolvable;
     /**
     * The engine configuration for running queries.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#engine_configuration CcWorkGroup#engine_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#engine_configuration CcWorkGroup#engine_configuration}
     */
     readonly engineConfiguration?: EngineConfigurationProperty;
     /**
     * The Athena engine version for running queries.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#engine_version CcWorkGroup#engine_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#engine_version CcWorkGroup#engine_version}
     */
     readonly engineVersion?: EngineVersionProperty;
     /**
     * The ARN of the execution role used to access user resources for Spark sessions and Identity Center enabled workgroups. This property applies only to Spark enabled workgroups and Identity Center enabled workgroups.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#execution_role CcWorkGroup#execution_role}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#execution_role CcWorkGroup#execution_role}
     */
     readonly executionRole?: string;
     /**
     * The configuration for the managed query results and encryption option. ResultConfiguration and ManagedQueryResultsConfiguration cannot be set at the same time
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#managed_query_results_configuration CcWorkGroup#managed_query_results_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#managed_query_results_configuration CcWorkGroup#managed_query_results_configuration}
     */
     readonly managedQueryResultsConfiguration?: ManagedQueryResultsConfigurationProperty;
     /**
     * Contains the configuration settings for managed log persistence, delivering logs to Amazon S3 buckets, Amazon CloudWatch log groups etc.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#monitoring_configuration CcWorkGroup#monitoring_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#monitoring_configuration CcWorkGroup#monitoring_configuration}
     */
     readonly monitoringConfiguration?: MonitoringConfigurationProperty;
     /**
     * Indicates that the Amazon CloudWatch metrics are enabled for the workgroup.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#publish_cloudwatch_metrics_enabled CcWorkGroup#publish_cloudwatch_metrics_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#publish_cloudwatch_metrics_enabled CcWorkGroup#publish_cloudwatch_metrics_enabled}
     */
     readonly publishCloudwatchMetricsEnabled?: boolean | cdktn.IResolvable;
     /**
     * If set to true, allows members assigned to a workgroup to reference Amazon S3 Requester Pays buckets in queries. If set to false, workgroup members cannot query data from Requester Pays buckets, and queries that retrieve data from Requester Pays buckets cause an error. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#requester_pays_enabled CcWorkGroup#requester_pays_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#requester_pays_enabled CcWorkGroup#requester_pays_enabled}
     */
     readonly requesterPaysEnabled?: boolean | cdktn.IResolvable;
     /**
     * The location in Amazon S3 where query results are stored and the encryption option, if any, used for query results. These are known as "client-side settings". If workgroup settings override client-side settings, then the query uses the workgroup settings.
     * 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#result_configuration CcWorkGroup#result_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#result_configuration CcWorkGroup#result_configuration}
     */
     readonly resultConfiguration?: ResultConfigurationProperty;
 }
@@ -3545,7 +3545,7 @@ export interface WorkGroupConfigurationUpdatesCustomerContentEncryptionConfigura
     /**
     * For SSE-KMS and CSE-KMS, this is the KMS key ARN or ID. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#kms_key CcWorkGroup#kms_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#kms_key CcWorkGroup#kms_key}
     */
     readonly kmsKey?: string;
 }
@@ -3611,13 +3611,13 @@ export interface ClassificationsProperty {
     /**
     * The name of the configuration classification.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#name CcWorkGroup#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#name CcWorkGroup#name}
     */
     readonly name?: string;
     /**
     * A set of properties specified within a configuration classification.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#properties CcWorkGroup#properties}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#properties CcWorkGroup#properties}
     */
     readonly properties?: { [key: string]: string };
 }
@@ -3727,37 +3727,37 @@ export interface WorkGroupConfigurationUpdatesEngineConfigurationProperty {
     /**
     * Contains additional notebook engine MAP<string, string> parameter mappings in the form of key-value pairs. To specify an Athena notebook that the Jupyter server will download and serve, specify a value for the StartSessionRequest$NotebookVersion field, and then add a key named NotebookId to AdditionalConfigs that has the value of the Athena notebook ID.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#additional_configs CcWorkGroup#additional_configs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#additional_configs CcWorkGroup#additional_configs}
     */
     readonly additionalConfigs?: { [key: string]: string };
     /**
     * The configuration classifications that can be specified for the engine.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#classifications CcWorkGroup#classifications}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#classifications CcWorkGroup#classifications}
     */
     readonly classifications?: ClassificationsProperty[] | cdktn.IResolvable;
     /**
     * The number of DPUs to use for the coordinator. A coordinator is a special executor that orchestrates processing work and manages other executors in a notebook session. The default is 1.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#coordinator_dpu_size CcWorkGroup#coordinator_dpu_size}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#coordinator_dpu_size CcWorkGroup#coordinator_dpu_size}
     */
     readonly coordinatorDpuSize?: number;
     /**
     * The default number of DPUs to use for executors. An executor is the smallest unit of compute that a notebook session can request from Athena. The default is 1.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#default_executor_dpu_size CcWorkGroup#default_executor_dpu_size}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#default_executor_dpu_size CcWorkGroup#default_executor_dpu_size}
     */
     readonly defaultExecutorDpuSize?: number;
     /**
     * The maximum number of DPUs that can run concurrently.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#max_concurrent_dpus CcWorkGroup#max_concurrent_dpus}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#max_concurrent_dpus CcWorkGroup#max_concurrent_dpus}
     */
     readonly maxConcurrentDpus?: number;
     /**
     * Specifies custom jar files and Spark properties for use cases like cluster encryption, table formats, and general Spark tuning.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#spark_properties CcWorkGroup#spark_properties}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#spark_properties CcWorkGroup#spark_properties}
     */
     readonly sparkProperties?: { [key: string]: string };
 }
@@ -3933,7 +3933,7 @@ export interface WorkGroupConfigurationUpdatesEngineVersionProperty {
     /**
     * The engine version requested by the user. Possible values are determined by the output of ListEngineVersions, including Auto. The default is Auto.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#selected_engine_version CcWorkGroup#selected_engine_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#selected_engine_version CcWorkGroup#selected_engine_version}
     */
     readonly selectedEngineVersion?: string;
 }
@@ -4004,7 +4004,7 @@ export interface WorkGroupConfigurationUpdatesManagedQueryResultsConfigurationEn
     /**
     * For SSE-KMS and CSE-KMS, this is the KMS key ARN or ID. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#kms_key CcWorkGroup#kms_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#kms_key CcWorkGroup#kms_key}
     */
     readonly kmsKey?: string;
 }
@@ -4068,13 +4068,13 @@ export class WorkGroupConfigurationUpdatesManagedQueryResultsConfigurationEncryp
 }
 export interface WorkGroupConfigurationUpdatesManagedQueryResultsConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#enabled CcWorkGroup#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#enabled CcWorkGroup#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
     * Indicates the encryption configuration for Athena Managed Storage. If not setting this field, Managed Storage will encrypt the query results with Athena's encryption key
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#encryption_configuration CcWorkGroup#encryption_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#encryption_configuration CcWorkGroup#encryption_configuration}
     */
     readonly encryptionConfiguration?: WorkGroupConfigurationUpdatesManagedQueryResultsConfigurationEncryptionConfigurationProperty;
 }
@@ -4162,25 +4162,25 @@ export interface WorkGroupConfigurationUpdatesMonitoringConfigurationCloudwatchL
     /**
     * Enables CloudWatch logging.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#enabled CcWorkGroup#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#enabled CcWorkGroup#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
     * The name of the log group in Amazon CloudWatch Logs where you want to publish your logs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#log_group CcWorkGroup#log_group}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#log_group CcWorkGroup#log_group}
     */
     readonly logGroup?: string;
     /**
     * Prefix for the CloudWatch log stream name.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#log_stream_name_prefix CcWorkGroup#log_stream_name_prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#log_stream_name_prefix CcWorkGroup#log_stream_name_prefix}
     */
     readonly logStreamNamePrefix?: string;
     /**
     * The types of logs that you want to publish to CloudWatch.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#log_types CcWorkGroup#log_types}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#log_types CcWorkGroup#log_types}
     */
     readonly logTypes?: { [key: string]: string[] } | cdktn.IResolvable;
 }
@@ -4312,13 +4312,13 @@ export interface WorkGroupConfigurationUpdatesMonitoringConfigurationManagedLogg
     /**
     * Enables managed log persistence.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#enabled CcWorkGroup#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#enabled CcWorkGroup#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
     * The KMS key ARN to encrypt the logs stored in managed log persistence.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#kms_key CcWorkGroup#kms_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#kms_key CcWorkGroup#kms_key}
     */
     readonly kmsKey?: string;
 }
@@ -4406,19 +4406,19 @@ export interface WorkGroupConfigurationUpdatesMonitoringConfigurationS3LoggingCo
     /**
     * Enables S3 log delivery.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#enabled CcWorkGroup#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#enabled CcWorkGroup#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
     * The KMS key ARN to encrypt the logs published to the given Amazon S3 destination.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#kms_key CcWorkGroup#kms_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#kms_key CcWorkGroup#kms_key}
     */
     readonly kmsKey?: string;
     /**
     * The Amazon S3 destination URI for log publishing.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#log_location CcWorkGroup#log_location}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#log_location CcWorkGroup#log_location}
     */
     readonly logLocation?: string;
 }
@@ -4528,19 +4528,19 @@ export interface WorkGroupConfigurationUpdatesMonitoringConfigurationProperty {
     /**
     * Configuration settings for delivering logs to Amazon CloudWatch log groups.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#cloudwatch_logging_configuration CcWorkGroup#cloudwatch_logging_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#cloudwatch_logging_configuration CcWorkGroup#cloudwatch_logging_configuration}
     */
     readonly cloudwatchLoggingConfiguration?: WorkGroupConfigurationUpdatesMonitoringConfigurationCloudwatchLoggingConfigurationProperty;
     /**
     * Configuration settings for managed log persistence.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#managed_logging_configuration CcWorkGroup#managed_logging_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#managed_logging_configuration CcWorkGroup#managed_logging_configuration}
     */
     readonly managedLoggingConfiguration?: WorkGroupConfigurationUpdatesMonitoringConfigurationManagedLoggingConfigurationProperty;
     /**
     * Configuration settings for delivering logs to Amazon S3 buckets.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#s3_logging_configuration CcWorkGroup#s3_logging_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#s3_logging_configuration CcWorkGroup#s3_logging_configuration}
     */
     readonly s3LoggingConfiguration?: WorkGroupConfigurationUpdatesMonitoringConfigurationS3LoggingConfigurationProperty;
 }
@@ -4650,7 +4650,7 @@ export interface WorkGroupConfigurationUpdatesResultConfigurationUpdatesAclConfi
     /**
     * The Amazon S3 canned ACL that Athena should specify when storing query results. Currently the only supported canned ACL is BUCKET_OWNER_FULL_CONTROL
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#s3_acl_option CcWorkGroup#s3_acl_option}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#s3_acl_option CcWorkGroup#s3_acl_option}
     */
     readonly s3AclOption?: string;
 }
@@ -4716,13 +4716,13 @@ export interface WorkGroupConfigurationUpdatesResultConfigurationUpdatesEncrypti
     /**
     * Indicates whether Amazon S3 server-side encryption with Amazon S3-managed keys (SSE-S3), server-side encryption with KMS-managed keys (SSE-KMS), or client-side encryption with KMS-managed keys (CSE-KMS) is used.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#encryption_option CcWorkGroup#encryption_option}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#encryption_option CcWorkGroup#encryption_option}
     */
     readonly encryptionOption?: string;
     /**
     * For SSE-KMS and CSE-KMS, this is the KMS key ARN or ID. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#kms_key CcWorkGroup#kms_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#kms_key CcWorkGroup#kms_key}
     */
     readonly kmsKey?: string;
 }
@@ -4810,41 +4810,41 @@ export interface ResultConfigurationUpdatesProperty {
     /**
     * Indicates that an Amazon S3 canned ACL should be set to control ownership of stored query results
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#acl_configuration CcWorkGroup#acl_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#acl_configuration CcWorkGroup#acl_configuration}
     */
     readonly aclConfiguration?: WorkGroupConfigurationUpdatesResultConfigurationUpdatesAclConfigurationProperty;
     /**
     * If query results are encrypted in Amazon S3, indicates the encryption option used (for example, SSE-KMS or CSE-KMS) and key information.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#encryption_configuration CcWorkGroup#encryption_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#encryption_configuration CcWorkGroup#encryption_configuration}
     */
     readonly encryptionConfiguration?: WorkGroupConfigurationUpdatesResultConfigurationUpdatesEncryptionConfigurationProperty;
     /**
     * The AWS account ID of the owner of S3 bucket where query results are stored
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#expected_bucket_owner CcWorkGroup#expected_bucket_owner}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#expected_bucket_owner CcWorkGroup#expected_bucket_owner}
     */
     readonly expectedBucketOwner?: string;
     /**
     * The location in Amazon S3 where your query results are stored, such as s3://path/to/query/bucket/. To run the query, you must specify the query results location using one of the ways: either for individual queries using either this setting (client-side), or in the workgroup, using WorkGroupConfiguration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#output_location CcWorkGroup#output_location}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#output_location CcWorkGroup#output_location}
     */
     readonly outputLocation?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#remove_acl_configuration CcWorkGroup#remove_acl_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#remove_acl_configuration CcWorkGroup#remove_acl_configuration}
     */
     readonly removeAclConfiguration?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#remove_encryption_configuration CcWorkGroup#remove_encryption_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#remove_encryption_configuration CcWorkGroup#remove_encryption_configuration}
     */
     readonly removeEncryptionConfiguration?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#remove_expected_bucket_owner CcWorkGroup#remove_expected_bucket_owner}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#remove_expected_bucket_owner CcWorkGroup#remove_expected_bucket_owner}
     */
     readonly removeExpectedBucketOwner?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#remove_output_location CcWorkGroup#remove_output_location}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#remove_output_location CcWorkGroup#remove_output_location}
     */
     readonly removeOutputLocation?: boolean | cdktn.IResolvable;
 }
@@ -5064,83 +5064,83 @@ export interface WorkGroupConfigurationUpdatesProperty {
     /**
     * Additional Configuration that are passed to Athena Spark Calculations running in this workgroup
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#additional_configuration CcWorkGroup#additional_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#additional_configuration CcWorkGroup#additional_configuration}
     */
     readonly additionalConfiguration?: string;
     /**
     * The upper data usage limit (cutoff) for the amount of bytes a single query in a workgroup is allowed to scan.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#bytes_scanned_cutoff_per_query CcWorkGroup#bytes_scanned_cutoff_per_query}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#bytes_scanned_cutoff_per_query CcWorkGroup#bytes_scanned_cutoff_per_query}
     */
     readonly bytesScannedCutoffPerQuery?: number;
     /**
     * Indicates the KMS key for encrypting notebook content.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#customer_content_encryption_configuration CcWorkGroup#customer_content_encryption_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#customer_content_encryption_configuration CcWorkGroup#customer_content_encryption_configuration}
     */
     readonly customerContentEncryptionConfiguration?: WorkGroupConfigurationUpdatesCustomerContentEncryptionConfigurationProperty;
     /**
     * If set to "true", the settings for the workgroup override client-side settings. If set to "false", client-side settings are used
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#enforce_work_group_configuration CcWorkGroup#enforce_work_group_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#enforce_work_group_configuration CcWorkGroup#enforce_work_group_configuration}
     */
     readonly enforceWorkGroupConfiguration?: boolean | cdktn.IResolvable;
     /**
     * The engine configuration for running queries.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#engine_configuration CcWorkGroup#engine_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#engine_configuration CcWorkGroup#engine_configuration}
     */
     readonly engineConfiguration?: WorkGroupConfigurationUpdatesEngineConfigurationProperty;
     /**
     * The Athena engine version for running queries.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#engine_version CcWorkGroup#engine_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#engine_version CcWorkGroup#engine_version}
     */
     readonly engineVersion?: WorkGroupConfigurationUpdatesEngineVersionProperty;
     /**
     * The ARN of the execution role used to access user resources for Spark sessions and Identity Center enabled workgroups. This property applies only to Spark enabled workgroups and Identity Center enabled workgroups.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#execution_role CcWorkGroup#execution_role}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#execution_role CcWorkGroup#execution_role}
     */
     readonly executionRole?: string;
     /**
     * The configuration for the managed query results and encryption option. ResultConfiguration and ManagedQueryResultsConfiguration cannot be set at the same time
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#managed_query_results_configuration CcWorkGroup#managed_query_results_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#managed_query_results_configuration CcWorkGroup#managed_query_results_configuration}
     */
     readonly managedQueryResultsConfiguration?: WorkGroupConfigurationUpdatesManagedQueryResultsConfigurationProperty;
     /**
     * Contains the configuration settings for managed log persistence, delivering logs to Amazon S3 buckets, Amazon CloudWatch log groups etc.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#monitoring_configuration CcWorkGroup#monitoring_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#monitoring_configuration CcWorkGroup#monitoring_configuration}
     */
     readonly monitoringConfiguration?: WorkGroupConfigurationUpdatesMonitoringConfigurationProperty;
     /**
     * Indicates that the Amazon CloudWatch metrics are enabled for the workgroup.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#publish_cloudwatch_metrics_enabled CcWorkGroup#publish_cloudwatch_metrics_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#publish_cloudwatch_metrics_enabled CcWorkGroup#publish_cloudwatch_metrics_enabled}
     */
     readonly publishCloudwatchMetricsEnabled?: boolean | cdktn.IResolvable;
     /**
     * Indicates that the data usage control limit per query is removed.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#remove_bytes_scanned_cutoff_per_query CcWorkGroup#remove_bytes_scanned_cutoff_per_query}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#remove_bytes_scanned_cutoff_per_query CcWorkGroup#remove_bytes_scanned_cutoff_per_query}
     */
     readonly removeBytesScannedCutoffPerQuery?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#remove_customer_content_encryption_configuration CcWorkGroup#remove_customer_content_encryption_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#remove_customer_content_encryption_configuration CcWorkGroup#remove_customer_content_encryption_configuration}
     */
     readonly removeCustomerContentEncryptionConfiguration?: boolean | cdktn.IResolvable;
     /**
     * If set to true, allows members assigned to a workgroup to reference Amazon S3 Requester Pays buckets in queries. If set to false, workgroup members cannot query data from Requester Pays buckets, and queries that retrieve data from Requester Pays buckets cause an error. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#requester_pays_enabled CcWorkGroup#requester_pays_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#requester_pays_enabled CcWorkGroup#requester_pays_enabled}
     */
     readonly requesterPaysEnabled?: boolean | cdktn.IResolvable;
     /**
     * The result configuration information about the queries in this workgroup that will be updated. Includes the updated results location and an updated option for encrypting query results. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_work_group#result_configuration_updates CcWorkGroup#result_configuration_updates}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_work_group#result_configuration_updates CcWorkGroup#result_configuration_updates}
     */
     readonly resultConfigurationUpdates?: ResultConfigurationUpdatesProperty;
 }

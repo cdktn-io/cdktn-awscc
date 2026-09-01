@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_hub
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_hub
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,31 +9,31 @@ export interface CcHubProps extends cdktn.TerraformMetaArguments {
     /**
     * Whether to automatically enable new controls when they are added to standards that are enabled
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_hub#auto_enable_controls CcHub#auto_enable_controls}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_hub#auto_enable_controls CcHub#auto_enable_controls}
     */
     readonly autoEnableControls?: boolean | cdktn.IResolvable;
     /**
     * This field, used when enabling Security Hub, specifies whether the calling account has consolidated control findings turned on. If the value for this field is set to SECURITY_CONTROL, Security Hub generates a single finding for a control check even when the check applies to multiple enabled standards.  If the value for this field is set to STANDARD_CONTROL, Security Hub generates separate findings for a control check when the check applies to multiple enabled standards.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_hub#control_finding_generator CcHub#control_finding_generator}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_hub#control_finding_generator CcHub#control_finding_generator}
     */
     readonly controlFindingGenerator?: string;
     /**
     * Whether to enable the security standards that Security Hub has designated as automatically enabled.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_hub#enable_default_standards CcHub#enable_default_standards}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_hub#enable_default_standards CcHub#enable_default_standards}
     */
     readonly enableDefaultStandards?: boolean | cdktn.IResolvable;
     /**
     * A key-value pair to associate with a resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_hub#tags CcHub#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_hub#tags CcHub#tags}
     */
     readonly tags?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_hub awscc_securityhub_hub}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_hub awscc_securityhub_hub}
 */
 export class CcHub extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CcHub extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcHub resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcHub to import
-    * @param importFromId The id of the existing CcHub that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_hub#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcHub that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_hub#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcHub to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CcHub extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_hub awscc_securityhub_hub} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_hub awscc_securityhub_hub} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -72,7 +72,7 @@ export class CcHub extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_securityhub_hub',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,

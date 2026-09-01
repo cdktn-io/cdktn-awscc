@@ -1,23 +1,23 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_address_list
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_address_list
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcMailManagerAddressListProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_address_list#address_list_name CcMailManagerAddressList#address_list_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_address_list#address_list_name CcMailManagerAddressList#address_list_name}
     */
     readonly addressListName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_address_list#tags CcMailManagerAddressList#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_address_list#tags CcMailManagerAddressList#tags}
     */
     readonly tags?: CcMailManagerAddressList.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_address_list awscc_ses_mail_manager_address_list}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_address_list awscc_ses_mail_manager_address_list}
 */
 export class CcMailManagerAddressList extends cdktn.TerraformResource {
 
@@ -33,7 +33,7 @@ export class CcMailManagerAddressList extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcMailManagerAddressList resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcMailManagerAddressList to import
-    * @param importFromId The id of the existing CcMailManagerAddressList that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_address_list#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcMailManagerAddressList that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_address_list#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcMailManagerAddressList to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -45,7 +45,7 @@ export class CcMailManagerAddressList extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_address_list awscc_ses_mail_manager_address_list} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_address_list awscc_ses_mail_manager_address_list} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -56,7 +56,7 @@ export class CcMailManagerAddressList extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_ses_mail_manager_address_list',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -193,11 +193,11 @@ export function ccMailManagerAddressListTagPropertyToHclTerraform(struct?: CcMai
 export namespace CcMailManagerAddressList {
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_address_list#key CcMailManagerAddressList#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_address_list#key CcMailManagerAddressList#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_address_list#value CcMailManagerAddressList#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_address_list#value CcMailManagerAddressList#value}
     */
     readonly value?: string;
 }

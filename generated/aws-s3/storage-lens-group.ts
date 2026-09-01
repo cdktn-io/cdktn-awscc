@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3_storage_lens_group
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3_storage_lens_group
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,25 +9,25 @@ export interface CcStorageLensGroupProps extends cdktn.TerraformMetaArguments {
     /**
     * Sets the Storage Lens Group filter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3_storage_lens_group#filter CcStorageLensGroup#filter}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3_storage_lens_group#filter CcStorageLensGroup#filter}
     */
     readonly filter: CcStorageLensGroup.FilterProperty;
     /**
     * The name that identifies the Amazon S3 Storage Lens Group.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3_storage_lens_group#name CcStorageLensGroup#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3_storage_lens_group#name CcStorageLensGroup#name}
     */
     readonly name: string;
     /**
     * A set of tags (key-value pairs) for this Amazon S3 Storage Lens Group.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3_storage_lens_group#tags CcStorageLensGroup#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3_storage_lens_group#tags CcStorageLensGroup#tags}
     */
     readonly tags?: CcStorageLensGroup.TagsProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3_storage_lens_group awscc_s3_storage_lens_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3_storage_lens_group awscc_s3_storage_lens_group}
 */
 export class CcStorageLensGroup extends cdktn.TerraformResource {
 
@@ -43,7 +43,7 @@ export class CcStorageLensGroup extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcStorageLensGroup resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcStorageLensGroup to import
-    * @param importFromId The id of the existing CcStorageLensGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3_storage_lens_group#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcStorageLensGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3_storage_lens_group#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcStorageLensGroup to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -55,7 +55,7 @@ export class CcStorageLensGroup extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3_storage_lens_group awscc_s3_storage_lens_group} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3_storage_lens_group awscc_s3_storage_lens_group} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +66,7 @@ export class CcStorageLensGroup extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_s3_storage_lens_group',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -737,11 +737,11 @@ export function ccStorageLensGroupTagsPropertyToHclTerraform(struct?: CcStorageL
 export namespace CcStorageLensGroup {
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3_storage_lens_group#key CcStorageLensGroup#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3_storage_lens_group#key CcStorageLensGroup#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3_storage_lens_group#value CcStorageLensGroup#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3_storage_lens_group#value CcStorageLensGroup#value}
     */
     readonly value?: string;
 }
@@ -851,13 +851,13 @@ export interface MatchObjectAgeProperty {
     /**
     * Minimum object age to which the rule applies.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3_storage_lens_group#days_greater_than CcStorageLensGroup#days_greater_than}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3_storage_lens_group#days_greater_than CcStorageLensGroup#days_greater_than}
     */
     readonly daysGreaterThan?: number;
     /**
     * Maximum object age to which the rule applies.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3_storage_lens_group#days_less_than CcStorageLensGroup#days_less_than}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3_storage_lens_group#days_less_than CcStorageLensGroup#days_less_than}
     */
     readonly daysLessThan?: number;
 }
@@ -945,13 +945,13 @@ export interface MatchObjectSizeProperty {
     /**
     * Minimum object size to which the rule applies.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3_storage_lens_group#bytes_greater_than CcStorageLensGroup#bytes_greater_than}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3_storage_lens_group#bytes_greater_than CcStorageLensGroup#bytes_greater_than}
     */
     readonly bytesGreaterThan?: number;
     /**
     * Maximum object size to which the rule applies.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3_storage_lens_group#bytes_less_than CcStorageLensGroup#bytes_less_than}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3_storage_lens_group#bytes_less_than CcStorageLensGroup#bytes_less_than}
     */
     readonly bytesLessThan?: number;
 }
@@ -1039,31 +1039,31 @@ export interface AndProperty {
     /**
     * Filter to match any of the specified prefixes.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3_storage_lens_group#match_any_prefix CcStorageLensGroup#match_any_prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3_storage_lens_group#match_any_prefix CcStorageLensGroup#match_any_prefix}
     */
     readonly matchAnyPrefix?: string[];
     /**
     * Filter to match any of the specified suffixes.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3_storage_lens_group#match_any_suffix CcStorageLensGroup#match_any_suffix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3_storage_lens_group#match_any_suffix CcStorageLensGroup#match_any_suffix}
     */
     readonly matchAnySuffix?: string[];
     /**
     * Filter to match any of the specified object tags.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3_storage_lens_group#match_any_tag CcStorageLensGroup#match_any_tag}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3_storage_lens_group#match_any_tag CcStorageLensGroup#match_any_tag}
     */
     readonly matchAnyTag?: TagProperty[] | cdktn.IResolvable;
     /**
     * Filter to match all of the specified values for the minimum and maximum object age.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3_storage_lens_group#match_object_age CcStorageLensGroup#match_object_age}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3_storage_lens_group#match_object_age CcStorageLensGroup#match_object_age}
     */
     readonly matchObjectAge?: MatchObjectAgeProperty;
     /**
     * Filter to match all of the specified values for the minimum and maximum object size.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3_storage_lens_group#match_object_size CcStorageLensGroup#match_object_size}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3_storage_lens_group#match_object_size CcStorageLensGroup#match_object_size}
     */
     readonly matchObjectSize?: MatchObjectSizeProperty;
 }
@@ -1215,11 +1215,11 @@ export class AndPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface FilterMatchAnyTagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3_storage_lens_group#key CcStorageLensGroup#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3_storage_lens_group#key CcStorageLensGroup#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3_storage_lens_group#value CcStorageLensGroup#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3_storage_lens_group#value CcStorageLensGroup#value}
     */
     readonly value?: string;
 }
@@ -1329,13 +1329,13 @@ export interface FilterMatchObjectAgeProperty {
     /**
     * Minimum object age to which the rule applies.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3_storage_lens_group#days_greater_than CcStorageLensGroup#days_greater_than}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3_storage_lens_group#days_greater_than CcStorageLensGroup#days_greater_than}
     */
     readonly daysGreaterThan?: number;
     /**
     * Maximum object age to which the rule applies.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3_storage_lens_group#days_less_than CcStorageLensGroup#days_less_than}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3_storage_lens_group#days_less_than CcStorageLensGroup#days_less_than}
     */
     readonly daysLessThan?: number;
 }
@@ -1423,13 +1423,13 @@ export interface FilterMatchObjectSizeProperty {
     /**
     * Minimum object size to which the rule applies.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3_storage_lens_group#bytes_greater_than CcStorageLensGroup#bytes_greater_than}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3_storage_lens_group#bytes_greater_than CcStorageLensGroup#bytes_greater_than}
     */
     readonly bytesGreaterThan?: number;
     /**
     * Maximum object size to which the rule applies.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3_storage_lens_group#bytes_less_than CcStorageLensGroup#bytes_less_than}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3_storage_lens_group#bytes_less_than CcStorageLensGroup#bytes_less_than}
     */
     readonly bytesLessThan?: number;
 }
@@ -1515,11 +1515,11 @@ export class FilterMatchObjectSizePropertyOutputReference extends cdktn.ComplexO
 }
 export interface FilterOrMatchAnyTagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3_storage_lens_group#key CcStorageLensGroup#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3_storage_lens_group#key CcStorageLensGroup#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3_storage_lens_group#value CcStorageLensGroup#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3_storage_lens_group#value CcStorageLensGroup#value}
     */
     readonly value?: string;
 }
@@ -1629,13 +1629,13 @@ export interface FilterOrMatchObjectAgeProperty {
     /**
     * Minimum object age to which the rule applies.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3_storage_lens_group#days_greater_than CcStorageLensGroup#days_greater_than}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3_storage_lens_group#days_greater_than CcStorageLensGroup#days_greater_than}
     */
     readonly daysGreaterThan?: number;
     /**
     * Maximum object age to which the rule applies.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3_storage_lens_group#days_less_than CcStorageLensGroup#days_less_than}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3_storage_lens_group#days_less_than CcStorageLensGroup#days_less_than}
     */
     readonly daysLessThan?: number;
 }
@@ -1723,13 +1723,13 @@ export interface FilterOrMatchObjectSizeProperty {
     /**
     * Minimum object size to which the rule applies.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3_storage_lens_group#bytes_greater_than CcStorageLensGroup#bytes_greater_than}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3_storage_lens_group#bytes_greater_than CcStorageLensGroup#bytes_greater_than}
     */
     readonly bytesGreaterThan?: number;
     /**
     * Maximum object size to which the rule applies.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3_storage_lens_group#bytes_less_than CcStorageLensGroup#bytes_less_than}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3_storage_lens_group#bytes_less_than CcStorageLensGroup#bytes_less_than}
     */
     readonly bytesLessThan?: number;
 }
@@ -1817,31 +1817,31 @@ export interface OrProperty {
     /**
     * Filter to match any of the specified prefixes.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3_storage_lens_group#match_any_prefix CcStorageLensGroup#match_any_prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3_storage_lens_group#match_any_prefix CcStorageLensGroup#match_any_prefix}
     */
     readonly matchAnyPrefix?: string[];
     /**
     * Filter to match any of the specified suffixes.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3_storage_lens_group#match_any_suffix CcStorageLensGroup#match_any_suffix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3_storage_lens_group#match_any_suffix CcStorageLensGroup#match_any_suffix}
     */
     readonly matchAnySuffix?: string[];
     /**
     * Filter to match any of the specified object tags.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3_storage_lens_group#match_any_tag CcStorageLensGroup#match_any_tag}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3_storage_lens_group#match_any_tag CcStorageLensGroup#match_any_tag}
     */
     readonly matchAnyTag?: FilterOrMatchAnyTagProperty[] | cdktn.IResolvable;
     /**
     * Filter to match all of the specified values for the minimum and maximum object age.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3_storage_lens_group#match_object_age CcStorageLensGroup#match_object_age}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3_storage_lens_group#match_object_age CcStorageLensGroup#match_object_age}
     */
     readonly matchObjectAge?: FilterOrMatchObjectAgeProperty;
     /**
     * Filter to match all of the specified values for the minimum and maximum object size.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3_storage_lens_group#match_object_size CcStorageLensGroup#match_object_size}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3_storage_lens_group#match_object_size CcStorageLensGroup#match_object_size}
     */
     readonly matchObjectSize?: FilterOrMatchObjectSizeProperty;
 }
@@ -1995,43 +1995,43 @@ export interface FilterProperty {
     /**
     * The Storage Lens group will include objects that match all of the specified filter values.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3_storage_lens_group#and CcStorageLensGroup#and}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3_storage_lens_group#and CcStorageLensGroup#and}
     */
     readonly and?: AndProperty;
     /**
     * Filter to match any of the specified prefixes.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3_storage_lens_group#match_any_prefix CcStorageLensGroup#match_any_prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3_storage_lens_group#match_any_prefix CcStorageLensGroup#match_any_prefix}
     */
     readonly matchAnyPrefix?: string[];
     /**
     * Filter to match any of the specified suffixes.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3_storage_lens_group#match_any_suffix CcStorageLensGroup#match_any_suffix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3_storage_lens_group#match_any_suffix CcStorageLensGroup#match_any_suffix}
     */
     readonly matchAnySuffix?: string[];
     /**
     * Filter to match any of the specified object tags.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3_storage_lens_group#match_any_tag CcStorageLensGroup#match_any_tag}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3_storage_lens_group#match_any_tag CcStorageLensGroup#match_any_tag}
     */
     readonly matchAnyTag?: FilterMatchAnyTagProperty[] | cdktn.IResolvable;
     /**
     * Filter to match all of the specified values for the minimum and maximum object age.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3_storage_lens_group#match_object_age CcStorageLensGroup#match_object_age}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3_storage_lens_group#match_object_age CcStorageLensGroup#match_object_age}
     */
     readonly matchObjectAge?: FilterMatchObjectAgeProperty;
     /**
     * Filter to match all of the specified values for the minimum and maximum object size.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3_storage_lens_group#match_object_size CcStorageLensGroup#match_object_size}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3_storage_lens_group#match_object_size CcStorageLensGroup#match_object_size}
     */
     readonly matchObjectSize?: FilterMatchObjectSizeProperty;
     /**
     * The Storage Lens group will include objects that match any of the specified filter values.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3_storage_lens_group#or CcStorageLensGroup#or}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3_storage_lens_group#or CcStorageLensGroup#or}
     */
     readonly or?: OrProperty;
 }
@@ -2227,11 +2227,11 @@ export class FilterPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface TagsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3_storage_lens_group#key CcStorageLensGroup#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3_storage_lens_group#key CcStorageLensGroup#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3_storage_lens_group#value CcStorageLensGroup#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3_storage_lens_group#value CcStorageLensGroup#value}
     */
     readonly value?: string;
 }

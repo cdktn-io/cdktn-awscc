@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_transit_gateway_attachment
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_transit_gateway_attachment
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,29 +9,29 @@ export interface CcTransitGatewayAttachmentProps extends cdktn.TerraformMetaArgu
     /**
     * The options for the transit gateway vpc attachment.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_transit_gateway_attachment#options CcTransitGatewayAttachment#options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_transit_gateway_attachment#options CcTransitGatewayAttachment#options}
     */
     readonly options?: CcTransitGatewayAttachment.OptionsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_transit_gateway_attachment#subnet_ids CcTransitGatewayAttachment#subnet_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_transit_gateway_attachment#subnet_ids CcTransitGatewayAttachment#subnet_ids}
     */
     readonly subnetIds: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_transit_gateway_attachment#tags CcTransitGatewayAttachment#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_transit_gateway_attachment#tags CcTransitGatewayAttachment#tags}
     */
     readonly tags?: CcTransitGatewayAttachment.TagProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_transit_gateway_attachment#transit_gateway_id CcTransitGatewayAttachment#transit_gateway_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_transit_gateway_attachment#transit_gateway_id CcTransitGatewayAttachment#transit_gateway_id}
     */
     readonly transitGatewayId: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_transit_gateway_attachment#vpc_id CcTransitGatewayAttachment#vpc_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_transit_gateway_attachment#vpc_id CcTransitGatewayAttachment#vpc_id}
     */
     readonly vpcId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_transit_gateway_attachment awscc_ec2_transit_gateway_attachment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_transit_gateway_attachment awscc_ec2_transit_gateway_attachment}
 */
 export class CcTransitGatewayAttachment extends cdktn.TerraformResource {
 
@@ -47,7 +47,7 @@ export class CcTransitGatewayAttachment extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcTransitGatewayAttachment resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcTransitGatewayAttachment to import
-    * @param importFromId The id of the existing CcTransitGatewayAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_transit_gateway_attachment#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcTransitGatewayAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_transit_gateway_attachment#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcTransitGatewayAttachment to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -59,7 +59,7 @@ export class CcTransitGatewayAttachment extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_transit_gateway_attachment awscc_ec2_transit_gateway_attachment} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_transit_gateway_attachment awscc_ec2_transit_gateway_attachment} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -70,7 +70,7 @@ export class CcTransitGatewayAttachment extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_ec2_transit_gateway_attachment',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -318,25 +318,25 @@ export interface OptionsProperty {
     /**
     * Indicates whether to enable Ipv6 Support for Vpc Attachment. Valid Values: enable | disable
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_transit_gateway_attachment#appliance_mode_support CcTransitGatewayAttachment#appliance_mode_support}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_transit_gateway_attachment#appliance_mode_support CcTransitGatewayAttachment#appliance_mode_support}
     */
     readonly applianceModeSupport?: string;
     /**
     * Indicates whether to enable DNS Support for Vpc Attachment. Valid Values: enable | disable
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_transit_gateway_attachment#dns_support CcTransitGatewayAttachment#dns_support}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_transit_gateway_attachment#dns_support CcTransitGatewayAttachment#dns_support}
     */
     readonly dnsSupport?: string;
     /**
     * Indicates whether to enable Ipv6 Support for Vpc Attachment. Valid Values: enable | disable
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_transit_gateway_attachment#ipv_6_support CcTransitGatewayAttachment#ipv_6_support}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_transit_gateway_attachment#ipv_6_support CcTransitGatewayAttachment#ipv_6_support}
     */
     readonly ipv6Support?: string;
     /**
     * Indicates whether to enable Security Group referencing support for Vpc Attachment. Valid Values: enable | disable
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_transit_gateway_attachment#security_group_referencing_support CcTransitGatewayAttachment#security_group_referencing_support}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_transit_gateway_attachment#security_group_referencing_support CcTransitGatewayAttachment#security_group_referencing_support}
     */
     readonly securityGroupReferencingSupport?: string;
 }
@@ -466,11 +466,11 @@ export class OptionsPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_transit_gateway_attachment#key CcTransitGatewayAttachment#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_transit_gateway_attachment#key CcTransitGatewayAttachment#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_transit_gateway_attachment#value CcTransitGatewayAttachment#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_transit_gateway_attachment#value CcTransitGatewayAttachment#value}
     */
     readonly value?: string;
 }

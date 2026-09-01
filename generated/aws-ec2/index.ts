@@ -12,6 +12,7 @@ export * from './eip';
 export * from './eip-association';
 export * from './enclave-certificate-iam-role-association';
 export * from './flow-log';
+export * from './fpga-image';
 export * from './gateway-route-table-association';
 export * from './host';
 export * from './instance';

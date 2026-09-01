@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_function
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_function
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,13 +9,13 @@ export interface CcFunctionProps extends cdktn.TerraformMetaArguments {
     /**
     * The instruction set architecture that the function supports. Enter a string array with one of the valid values (arm64 or x86_64). The default value is ``x86_64``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_function#architectures CcFunction#architectures}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_function#architectures CcFunction#architectures}
     */
     readonly architectures?: string[];
     /**
     * Configuration for the capacity provider that manages compute resources for Lambda functions.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_function#capacity_provider_config CcFunction#capacity_provider_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_function#capacity_provider_config CcFunction#capacity_provider_config}
     */
     readonly capacityProviderConfig?: CcFunction.CapacityProviderConfigProperty;
     /**
@@ -24,75 +24,75 @@ export interface CcFunctionProps extends cdktn.TerraformMetaArguments {
     *   +  For .zip deployment packages, you can alternatively define the function code inline in the ``ZipFile`` property. This method works only for Node.js and Python functions.
     *   +  For container images, specify the URI of your container image in the ECR registry in the ``ImageUri`` property.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_function#code CcFunction#code}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_function#code CcFunction#code}
     */
     readonly code: CcFunction.CodeProperty;
     /**
     * To enable code signing for this function, specify the ARN of a code-signing configuration. A code-signing configuration includes a set of signing profiles, which define the trusted publishers for this function.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_function#code_signing_config_arn CcFunction#code_signing_config_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_function#code_signing_config_arn CcFunction#code_signing_config_arn}
     */
     readonly codeSigningConfigArn?: string;
     /**
     * A dead-letter queue configuration that specifies the queue or topic where Lambda sends asynchronous events when they fail processing. For more information, see [Dead-letter queues](https://docs.aws.amazon.com/lambda/latest/dg/invocation-async.html#invocation-dlq).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_function#dead_letter_config CcFunction#dead_letter_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_function#dead_letter_config CcFunction#dead_letter_config}
     */
     readonly deadLetterConfig?: CcFunction.DeadLetterConfigProperty;
     /**
     * A description of the function.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_function#description CcFunction#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_function#description CcFunction#description}
     */
     readonly description?: string;
     /**
     * Configuration settings for [durable functions](https://docs.aws.amazon.com/lambda/latest/dg/durable-functions.html), including execution timeout and retention period for execution history.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_function#durable_config CcFunction#durable_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_function#durable_config CcFunction#durable_config}
     */
     readonly durableConfig?: CcFunction.DurableConfigProperty;
     /**
     * Environment variables that are accessible from function code during execution.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_function#environment CcFunction#environment}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_function#environment CcFunction#environment}
     */
     readonly environment?: CcFunction.EnvironmentProperty;
     /**
     * The size of the function's ``/tmp`` directory in MB. The default value is 512, but it can be any whole number between 512 and 10,240 MB.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_function#ephemeral_storage CcFunction#ephemeral_storage}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_function#ephemeral_storage CcFunction#ephemeral_storage}
     */
     readonly ephemeralStorage?: CcFunction.EphemeralStorageProperty;
     /**
     * Connection settings for an Amazon EFS or Amazon S3 Files file system. To connect a function to a file system, a mount target must be available in every Availability Zone that your function connects to. If your template contains an [AWS::EFS::MountTarget](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-mounttarget.html) or [AWS::S3Files::MountTarget](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-s3files-mounttarget.html) resource, you must also specify a ``DependsOn`` attribute to ensure that the mount target is created or updated before the function.
     *  For more information about using the ``DependsOn`` attribute, see [DependsOn Attribute](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-attribute-dependson.html).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_function#file_system_configs CcFunction#file_system_configs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_function#file_system_configs CcFunction#file_system_configs}
     */
     readonly fileSystemConfigs?: CcFunction.FileSystemConfigProperty[] | cdktn.IResolvable;
     /**
     * The name of the Lambda function, up to 64 characters in length. If you don't specify a name, CFN generates one.
     *  If you specify a name, you cannot perform updates that require replacement of this resource. You can perform updates that require no or some interruption. If you must replace the resource, specify a new name.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_function#function_name CcFunction#function_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_function#function_name CcFunction#function_name}
     */
     readonly functionName?: string;
     /**
     * Configuration that defines the scaling behavior for a Lambda Managed Instances function, including the minimum and maximum number of execution environments that can be provisioned.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_function#function_scaling_config CcFunction#function_scaling_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_function#function_scaling_config CcFunction#function_scaling_config}
     */
     readonly functionScalingConfig?: CcFunction.FunctionScalingConfigProperty;
     /**
     * The name of the method within your code that Lambda calls to run your function. Handler is required if the deployment package is a .zip file archive. The format includes the file name. It can also include namespaces and other qualifiers, depending on the runtime. For more information, see [Lambda programming model](https://docs.aws.amazon.com/lambda/latest/dg/foundation-progmodel.html).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_function#handler CcFunction#handler}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_function#handler CcFunction#handler}
     */
     readonly handler?: string;
     /**
     * Configuration values that override the container image Dockerfile settings. For more information, see [Container image settings](https://docs.aws.amazon.com/lambda/latest/dg/images-create.html#images-parms).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_function#image_config CcFunction#image_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_function#image_config CcFunction#image_config}
     */
     readonly imageConfig?: CcFunction.ImageConfigProperty;
     /**
@@ -104,35 +104,35 @@ export interface CcFunctionProps extends cdktn.TerraformMetaArguments {
     *   
     *  If you don't provide a customer managed key, Lambda uses an [owned key](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#aws-owned-cmk) or an [](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#aws-managed-cmk).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_function#kms_key_arn CcFunction#kms_key_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_function#kms_key_arn CcFunction#kms_key_arn}
     */
     readonly kmsKeyArn?: string;
     /**
     * A list of [function layers](https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html) to add to the function's execution environment. Specify each layer by its ARN, including the version.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_function#layers CcFunction#layers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_function#layers CcFunction#layers}
     */
     readonly layers?: string[];
     /**
     * The function's Amazon CloudWatch Logs configuration settings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_function#logging_config CcFunction#logging_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_function#logging_config CcFunction#logging_config}
     */
     readonly loggingConfig?: CcFunction.LoggingConfigProperty;
     /**
     * The amount of [memory available to the function](https://docs.aws.amazon.com/lambda/latest/dg/configuration-function-common.html#configuration-memory-console) at runtime. Increasing the function memory also increases its CPU allocation. The default value is 128 MB. The value can be any multiple of 1 MB. Note that new AWS accounts have reduced concurrency and memory quotas. AWS raises these quotas automatically based on your usage. You can also request a quota increase.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_function#memory_size CcFunction#memory_size}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_function#memory_size CcFunction#memory_size}
     */
     readonly memorySize?: number;
     /**
     * The type of deployment package. Set to ``Image`` for container image and set ``Zip`` for .zip file archive.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_function#package_type CcFunction#package_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_function#package_type CcFunction#package_type}
     */
     readonly packageType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_function#publish_to_latest_published CcFunction#publish_to_latest_published}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_function#publish_to_latest_published CcFunction#publish_to_latest_published}
     */
     readonly publishToLatestPublished?: boolean | cdktn.IResolvable;
     /**
@@ -140,19 +140,19 @@ export interface CcFunctionProps extends cdktn.TerraformMetaArguments {
     *  When this value is set to ``Allow``and Lambda detects your function being invoked as part of a recursive loop, it doesn't take any action.
     *  When this value is set to ``Terminate`` and Lambda detects your function being invoked as part of a recursive loop, it stops your function being invoked and notifies you.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_function#recursive_loop CcFunction#recursive_loop}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_function#recursive_loop CcFunction#recursive_loop}
     */
     readonly recursiveLoop?: string;
     /**
     * The number of simultaneous executions to reserve for the function.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_function#reserved_concurrent_executions CcFunction#reserved_concurrent_executions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_function#reserved_concurrent_executions CcFunction#reserved_concurrent_executions}
     */
     readonly reservedConcurrentExecutions?: number;
     /**
     * The Amazon Resource Name (ARN) of the function's execution role.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_function#role CcFunction#role}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_function#role CcFunction#role}
     */
     readonly role: string;
     /**
@@ -160,56 +160,56 @@ export interface CcFunctionProps extends cdktn.TerraformMetaArguments {
     *  The following list includes deprecated runtimes. Lambda blocks creating new functions and updating existing functions shortly after each runtime is deprecated. For more information, see [Runtime use after deprecation](https://docs.aws.amazon.com/lambda/latest/dg/lambda-runtimes.html#runtime-deprecation-levels).
     *  For a list of all currently supported runtimes, see [Supported runtimes](https://docs.aws.amazon.com/lambda/latest/dg/lambda-runtimes.html#runtimes-supported).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_function#runtime CcFunction#runtime}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_function#runtime CcFunction#runtime}
     */
     readonly runtime?: string;
     /**
     * Sets the runtime management configuration for a function's version. For more information, see [Runtime updates](https://docs.aws.amazon.com/lambda/latest/dg/runtimes-update.html).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_function#runtime_management_config CcFunction#runtime_management_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_function#runtime_management_config CcFunction#runtime_management_config}
     */
     readonly runtimeManagementConfig?: CcFunction.RuntimeManagementConfigProperty;
     /**
     * The function's [SnapStart](https://docs.aws.amazon.com/lambda/latest/dg/snapstart.html) setting.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_function#snap_start CcFunction#snap_start}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_function#snap_start CcFunction#snap_start}
     */
     readonly snapStart?: CcFunction.SnapStartProperty;
     /**
     * A list of [tags](https://docs.aws.amazon.com/lambda/latest/dg/tagging.html) to apply to the function.
     *   You must have the ``lambda:TagResource``, ``lambda:UntagResource``, and ``lambda:ListTags`` permissions for your [principal](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_terms-and-concepts.html) to manage the CFN stack. If you don't have these permissions, there might be unexpected behavior with stack-level tags propagating to the resource during resource creation and update.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_function#tags CcFunction#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_function#tags CcFunction#tags}
     */
     readonly tags?: CcFunction.TagProperty[] | cdktn.IResolvable;
     /**
     * The function's tenant isolation configuration settings. Determines whether the Lambda function runs on a shared or dedicated infrastructure per unique tenant.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_function#tenancy_config CcFunction#tenancy_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_function#tenancy_config CcFunction#tenancy_config}
     */
     readonly tenancyConfig?: CcFunction.TenancyConfigProperty;
     /**
     * The amount of time (in seconds) that Lambda allows a function to run before stopping it. The default is 3 seconds. The maximum allowed value is 900 seconds. For more information, see [Lambda execution environment](https://docs.aws.amazon.com/lambda/latest/dg/runtimes-context.html).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_function#timeout CcFunction#timeout}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_function#timeout CcFunction#timeout}
     */
     readonly timeout?: number;
     /**
     * Set ``Mode`` to ``Active`` to sample and trace a subset of incoming requests with [X-Ray](https://docs.aws.amazon.com/lambda/latest/dg/services-xray.html).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_function#tracing_config CcFunction#tracing_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_function#tracing_config CcFunction#tracing_config}
     */
     readonly tracingConfig?: CcFunction.TracingConfigProperty;
     /**
     * For network connectivity to AWS resources in a VPC, specify a list of security groups and subnets in the VPC. When you connect a function to a VPC, it can access resources and the internet only through that VPC. For more information, see [Configuring a Lambda function to access resources in a VPC](https://docs.aws.amazon.com/lambda/latest/dg/configuration-vpc.html).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_function#vpc_config CcFunction#vpc_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_function#vpc_config CcFunction#vpc_config}
     */
     readonly vpcConfig?: CcFunction.VpcConfigProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_function awscc_lambda_function}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_function awscc_lambda_function}
 */
 export class CcFunction extends cdktn.TerraformResource {
 
@@ -225,7 +225,7 @@ export class CcFunction extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcFunction resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcFunction to import
-    * @param importFromId The id of the existing CcFunction that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_function#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcFunction that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_function#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcFunction to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -237,7 +237,7 @@ export class CcFunction extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_function awscc_lambda_function} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_function awscc_lambda_function} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -248,7 +248,7 @@ export class CcFunction extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_lambda_function',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -1712,19 +1712,19 @@ export interface LambdaManagedInstancesCapacityProviderConfigProperty {
     /**
     * The Amazon Resource Name (ARN) of the capacity provider.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_function#capacity_provider_arn CcFunction#capacity_provider_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_function#capacity_provider_arn CcFunction#capacity_provider_arn}
     */
     readonly capacityProviderArn?: string;
     /**
     * The amount of memory in GiB allocated per vCPU for execution environments.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_function#execution_environment_memory_gi_b_per_v_cpu CcFunction#execution_environment_memory_gi_b_per_v_cpu}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_function#execution_environment_memory_gi_b_per_v_cpu CcFunction#execution_environment_memory_gi_b_per_v_cpu}
     */
     readonly executionEnvironmentMemoryGiBPerVCpu?: number;
     /**
     * The maximum number of concurrent executions that can run on each execution environment.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_function#per_execution_environment_max_concurrency CcFunction#per_execution_environment_max_concurrency}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_function#per_execution_environment_max_concurrency CcFunction#per_execution_environment_max_concurrency}
     */
     readonly perExecutionEnvironmentMaxConcurrency?: number;
 }
@@ -1834,7 +1834,7 @@ export interface CapacityProviderConfigProperty {
     /**
     * Configuration for Lambda-managed instances used by the capacity provider.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_function#lambda_managed_instances_capacity_provider_config CcFunction#lambda_managed_instances_capacity_provider_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_function#lambda_managed_instances_capacity_provider_config CcFunction#lambda_managed_instances_capacity_provider_config}
     */
     readonly lambdaManagedInstancesCapacityProviderConfig?: LambdaManagedInstancesCapacityProviderConfigProperty;
 }
@@ -1900,35 +1900,35 @@ export interface CodeProperty {
     /**
     * URI of a [container image](https://docs.aws.amazon.com/lambda/latest/dg/lambda-images.html) in the Amazon ECR registry.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_function#image_uri CcFunction#image_uri}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_function#image_uri CcFunction#image_uri}
     */
     readonly imageUri?: string;
     /**
     * An Amazon S3 bucket in the same AWS-Region as your function. The bucket can be in a different AWS-account.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_function#s3_bucket CcFunction#s3_bucket}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_function#s3_bucket CcFunction#s3_bucket}
     */
     readonly s3Bucket?: string;
     /**
     * The Amazon S3 key of the deployment package.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_function#s3_key CcFunction#s3_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_function#s3_key CcFunction#s3_key}
     */
     readonly s3Key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_function#s3_object_storage_mode CcFunction#s3_object_storage_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_function#s3_object_storage_mode CcFunction#s3_object_storage_mode}
     */
     readonly s3ObjectStorageMode?: string;
     /**
     * For versioned objects, the version of the deployment package object to use.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_function#s3_object_version CcFunction#s3_object_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_function#s3_object_version CcFunction#s3_object_version}
     */
     readonly s3ObjectVersion?: string;
     /**
     * The ARN of the KMSlong (KMS) customer managed key that's used to encrypt your function's .zip deployment package. If you don't provide a customer managed key, Lambda uses an [owned key](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#aws-owned-cmk).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_function#source_kms_key_arn CcFunction#source_kms_key_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_function#source_kms_key_arn CcFunction#source_kms_key_arn}
     */
     readonly sourceKmsKeyArn?: string;
     /**
@@ -1938,7 +1938,7 @@ export interface CodeProperty {
     *    For JSON, you must escape quotes and special characters such as newline (``\n``) with a backslash.
     *  If you specify a function that interacts with an AWS CloudFormation custom resource, you don't have to write your own functions to send responses to the custom resource that invoked the function. AWS CloudFormation provides a response module ([cfn-response](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-lambda-function-code-cfnresponsemodule.html)) that simplifies sending responses. See [Using Lambda with CloudFormation](https://docs.aws.amazon.com/lambda/latest/dg/services-cloudformation.html) for details.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_function#zip_file CcFunction#zip_file}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_function#zip_file CcFunction#zip_file}
     */
     readonly zipFile?: string;
 }
@@ -2136,7 +2136,7 @@ export interface DeadLetterConfigProperty {
     /**
     * The Amazon Resource Name (ARN) of an Amazon SQS queue or Amazon SNS topic.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_function#target_arn CcFunction#target_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_function#target_arn CcFunction#target_arn}
     */
     readonly targetArn?: string;
 }
@@ -2202,13 +2202,13 @@ export interface DurableConfigProperty {
     /**
     * The maximum time (in seconds) that a durable execution can run before timing out. This timeout applies to the entire durable execution, not individual function invocations.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_function#execution_timeout CcFunction#execution_timeout}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_function#execution_timeout CcFunction#execution_timeout}
     */
     readonly executionTimeout?: number;
     /**
     * The number of days to retain execution history after a durable execution completes. After this period, execution history is no longer available through the GetDurableExecutionHistory API.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_function#retention_period_in_days CcFunction#retention_period_in_days}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_function#retention_period_in_days CcFunction#retention_period_in_days}
     */
     readonly retentionPeriodInDays?: number;
 }
@@ -2297,7 +2297,7 @@ export interface EnvironmentProperty {
     * Environment variable key-value pairs. For more information, see [Using Lambda environment variables](https://docs.aws.amazon.com/lambda/latest/dg/configuration-envvars.html).
     *  If the value of the environment variable is a time or a duration, enclose the value in quotes.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_function#variables CcFunction#variables}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_function#variables CcFunction#variables}
     */
     readonly variables?: { [key: string]: string };
 }
@@ -2363,7 +2363,7 @@ export interface EphemeralStorageProperty {
     /**
     * The size of the function's ``/tmp`` directory.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_function#size CcFunction#size}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_function#size CcFunction#size}
     */
     readonly size?: number;
 }
@@ -2429,13 +2429,13 @@ export interface FileSystemConfigProperty {
     /**
     * The Amazon Resource Name (ARN) of the Amazon EFS or Amazon S3 Files access point that provides access to the file system.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_function#arn CcFunction#arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_function#arn CcFunction#arn}
     */
     readonly arn?: string;
     /**
     * The path where the function can access the file system, starting with ``/mnt/``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_function#local_mount_path CcFunction#local_mount_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_function#local_mount_path CcFunction#local_mount_path}
     */
     readonly localMountPath?: string;
 }
@@ -2545,13 +2545,13 @@ export interface FunctionScalingConfigProperty {
     /**
     * The maximum number of execution environments that can be provisioned for the function.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_function#max_execution_environments CcFunction#max_execution_environments}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_function#max_execution_environments CcFunction#max_execution_environments}
     */
     readonly maxExecutionEnvironments?: number;
     /**
     * The minimum number of execution environments to maintain for the function.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_function#min_execution_environments CcFunction#min_execution_environments}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_function#min_execution_environments CcFunction#min_execution_environments}
     */
     readonly minExecutionEnvironments?: number;
 }
@@ -2639,19 +2639,19 @@ export interface ImageConfigProperty {
     /**
     * Specifies parameters that you want to pass in with ENTRYPOINT. You can specify a maximum of 1,500 parameters in the list.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_function#command CcFunction#command}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_function#command CcFunction#command}
     */
     readonly command?: string[];
     /**
     * Specifies the entry point to their application, which is typically the location of the runtime executable. You can specify a maximum of 1,500 string entries in the list.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_function#entry_point CcFunction#entry_point}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_function#entry_point CcFunction#entry_point}
     */
     readonly entryPoint?: string[];
     /**
     * Specifies the working directory. The length of the directory string cannot exceed 1,000 characters.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_function#working_directory CcFunction#working_directory}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_function#working_directory CcFunction#working_directory}
     */
     readonly workingDirectory?: string;
 }
@@ -2761,25 +2761,25 @@ export interface LoggingConfigProperty {
     /**
     * Set this property to filter the application logs for your function that Lambda sends to CloudWatch. Lambda only sends application logs at the selected level of detail and lower, where ``TRACE`` is the highest level and ``FATAL`` is the lowest.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_function#application_log_level CcFunction#application_log_level}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_function#application_log_level CcFunction#application_log_level}
     */
     readonly applicationLogLevel?: string;
     /**
     * The format in which Lambda sends your function's application and system logs to CloudWatch. Select between plain text and structured JSON.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_function#log_format CcFunction#log_format}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_function#log_format CcFunction#log_format}
     */
     readonly logFormat?: string;
     /**
     * The name of the Amazon CloudWatch log group the function sends logs to. By default, Lambda functions send logs to a default log group named ``/aws/lambda/<function name>``. To use a different log group, enter an existing log group or enter a new log group name.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_function#log_group CcFunction#log_group}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_function#log_group CcFunction#log_group}
     */
     readonly logGroup?: string;
     /**
     * Set this property to filter the system logs for your function that Lambda sends to CloudWatch. Lambda only sends system logs at the selected level of detail and lower, where ``DEBUG`` is the highest level and ``WARN`` is the lowest.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_function#system_log_level CcFunction#system_log_level}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_function#system_log_level CcFunction#system_log_level}
     */
     readonly systemLogLevel?: string;
 }
@@ -2912,7 +2912,7 @@ export interface RuntimeManagementConfigProperty {
     * The ARN of the runtime version you want the function to use.
     *   This is only required if you're using the *Manual* runtime update mode.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_function#runtime_version_arn CcFunction#runtime_version_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_function#runtime_version_arn CcFunction#runtime_version_arn}
     */
     readonly runtimeVersionArn?: string;
     /**
@@ -2923,7 +2923,7 @@ export interface RuntimeManagementConfigProperty {
     *   
     *  *Valid Values*: ``Auto`` | ``FunctionUpdate`` | ``Manual``
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_function#update_runtime_on CcFunction#update_runtime_on}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_function#update_runtime_on CcFunction#update_runtime_on}
     */
     readonly updateRuntimeOn?: string;
 }
@@ -3011,7 +3011,7 @@ export interface SnapStartProperty {
     /**
     * Set ``ApplyOn`` to ``PublishedVersions`` to create a snapshot of the initialized execution environment when you publish a function version.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_function#apply_on CcFunction#apply_on}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_function#apply_on CcFunction#apply_on}
     */
     readonly applyOn?: string;
 }
@@ -3115,13 +3115,13 @@ export interface TagProperty {
     /**
     * The key for this tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_function#key CcFunction#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_function#key CcFunction#key}
     */
     readonly key?: string;
     /**
     * The value for this tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_function#value CcFunction#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_function#value CcFunction#value}
     */
     readonly value?: string;
 }
@@ -3231,7 +3231,7 @@ export interface TenancyConfigProperty {
     /**
     * Tenant isolation mode allows for invocation to be sent to a corresponding execution environment dedicated to a specific tenant ID.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_function#tenant_isolation_mode CcFunction#tenant_isolation_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_function#tenant_isolation_mode CcFunction#tenant_isolation_mode}
     */
     readonly tenantIsolationMode?: string;
 }
@@ -3297,7 +3297,7 @@ export interface TracingConfigProperty {
     /**
     * The tracing mode.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_function#mode CcFunction#mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_function#mode CcFunction#mode}
     */
     readonly mode?: string;
 }
@@ -3363,19 +3363,19 @@ export interface VpcConfigProperty {
     /**
     * Allows outbound IPv6 traffic on VPC functions that are connected to dual-stack subnets.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_function#ipv_6_allowed_for_dual_stack CcFunction#ipv_6_allowed_for_dual_stack}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_function#ipv_6_allowed_for_dual_stack CcFunction#ipv_6_allowed_for_dual_stack}
     */
     readonly ipv6AllowedForDualStack?: boolean | cdktn.IResolvable;
     /**
     * A list of VPC security group IDs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_function#security_group_ids CcFunction#security_group_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_function#security_group_ids CcFunction#security_group_ids}
     */
     readonly securityGroupIds?: string[];
     /**
     * A list of VPC subnet IDs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_function#subnet_ids CcFunction#subnet_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_function#subnet_ids CcFunction#subnet_ids}
     */
     readonly subnetIds?: string[];
 }

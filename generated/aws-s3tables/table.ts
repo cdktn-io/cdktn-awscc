@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3tables_table
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3tables_table
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,67 +9,67 @@ export interface CcTableProps extends cdktn.TerraformMetaArguments {
     /**
     * Settings governing the Compaction maintenance action. Contains details about the compaction settings for an Iceberg table.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3tables_table#compaction CcTable#compaction}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3tables_table#compaction CcTable#compaction}
     */
     readonly compaction?: CcTable.CompactionProperty;
     /**
     * Contains details about the metadata for an Iceberg table. Specify either IcebergSchema (for simple flat schemas with primitive types only) or IcebergSchemaV2 (for schemas with nested types like struct, list, map), but not both.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3tables_table#iceberg_metadata CcTable#iceberg_metadata}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3tables_table#iceberg_metadata CcTable#iceberg_metadata}
     */
     readonly icebergMetadata?: CcTable.IcebergMetadataProperty;
     /**
     * The namespace that the table belongs to.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3tables_table#namespace CcTable#namespace}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3tables_table#namespace CcTable#namespace}
     */
     readonly namespace: string;
     /**
     * Format of the table.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3tables_table#open_table_format CcTable#open_table_format}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3tables_table#open_table_format CcTable#open_table_format}
     */
     readonly openTableFormat: string;
     /**
     * Contains details about the snapshot management settings for an Iceberg table. A snapshot is expired when it exceeds MinSnapshotsToKeep and MaxSnapshotAgeHours.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3tables_table#snapshot_management CcTable#snapshot_management}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3tables_table#snapshot_management CcTable#snapshot_management}
     */
     readonly snapshotManagement?: CcTable.SnapshotManagementProperty;
     /**
     * Specifies storage class settings for the table
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3tables_table#storage_class_configuration CcTable#storage_class_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3tables_table#storage_class_configuration CcTable#storage_class_configuration}
     */
     readonly storageClassConfiguration?: CcTable.StorageClassConfigurationProperty;
     /**
     * The Amazon Resource Name (ARN) of the specified table bucket.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3tables_table#table_bucket_arn CcTable#table_bucket_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3tables_table#table_bucket_arn CcTable#table_bucket_arn}
     */
     readonly tableBucketArn: string;
     /**
     * The name for the table.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3tables_table#table_name CcTable#table_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3tables_table#table_name CcTable#table_name}
     */
     readonly tableName: string;
     /**
     * User tags (key-value pairs) to associate with the table.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3tables_table#tags CcTable#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3tables_table#tags CcTable#tags}
     */
     readonly tags?: CcTable.TagProperty[] | cdktn.IResolvable;
     /**
     * Indicates that you don't want to specify a schema for the table. This property is mutually exclusive to 'IcebergMetadata', and its only possible value is 'Yes'.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3tables_table#without_metadata CcTable#without_metadata}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3tables_table#without_metadata CcTable#without_metadata}
     */
     readonly withoutMetadata?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3tables_table awscc_s3tables_table}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3tables_table awscc_s3tables_table}
 */
 export class CcTable extends cdktn.TerraformResource {
 
@@ -85,7 +85,7 @@ export class CcTable extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcTable resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcTable to import
-    * @param importFromId The id of the existing CcTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3tables_table#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3tables_table#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcTable to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -97,7 +97,7 @@ export class CcTable extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3tables_table awscc_s3tables_table} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3tables_table awscc_s3tables_table} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -108,7 +108,7 @@ export class CcTable extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_s3tables_table',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -967,13 +967,13 @@ export interface CompactionProperty {
     /**
     * Indicates whether the Compaction maintenance action is enabled.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3tables_table#status CcTable#status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3tables_table#status CcTable#status}
     */
     readonly status?: string;
     /**
     * The target file size for the table in MB.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3tables_table#target_file_size_mb CcTable#target_file_size_mb}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3tables_table#target_file_size_mb CcTable#target_file_size_mb}
     */
     readonly targetFileSizeMb?: number;
 }
@@ -1061,25 +1061,25 @@ export interface IcebergPartitionFieldProperty {
     /**
     * The partition field ID (auto-assigned starting from 1000 if not specified)
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3tables_table#field_id CcTable#field_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3tables_table#field_id CcTable#field_id}
     */
     readonly fieldId?: number;
     /**
     * The name of the partition field
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3tables_table#name CcTable#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3tables_table#name CcTable#name}
     */
     readonly name?: string;
     /**
     * The source column ID to partition on
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3tables_table#source_id CcTable#source_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3tables_table#source_id CcTable#source_id}
     */
     readonly sourceId?: number;
     /**
     * The partition transform function (identity, bucket[N], truncate[N], year, month, day, hour)
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3tables_table#transform CcTable#transform}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3tables_table#transform CcTable#transform}
     */
     readonly transform?: string;
 }
@@ -1233,13 +1233,13 @@ export interface IcebergPartitionSpecProperty {
     /**
     * List of partition fields
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3tables_table#fields CcTable#fields}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3tables_table#fields CcTable#fields}
     */
     readonly fields?: IcebergPartitionFieldProperty[] | cdktn.IResolvable;
     /**
     * The partition spec ID (defaults to 0 if not specified)
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3tables_table#spec_id CcTable#spec_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3tables_table#spec_id CcTable#spec_id}
     */
     readonly specId?: number;
 }
@@ -1327,7 +1327,7 @@ export interface SchemaFieldProperty {
     /**
     * The unique identifier for the field
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3tables_table#id CcTable#id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3tables_table#id CcTable#id}
     *
     * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
     * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1336,19 +1336,19 @@ export interface SchemaFieldProperty {
     /**
     * The name of the field
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3tables_table#name CcTable#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3tables_table#name CcTable#name}
     */
     readonly name?: string;
     /**
     * A Boolean value that specifies whether values are required for each row in this field
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3tables_table#required CcTable#required}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3tables_table#required CcTable#required}
     */
     readonly required?: boolean | cdktn.IResolvable;
     /**
     * The field type
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3tables_table#type CcTable#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3tables_table#type CcTable#type}
     */
     readonly type?: string;
 }
@@ -1502,7 +1502,7 @@ export interface IcebergSchemaProperty {
     /**
     * Contains details about the schema for an Iceberg table
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3tables_table#schema_field_list CcTable#schema_field_list}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3tables_table#schema_field_list CcTable#schema_field_list}
     */
     readonly schemaFieldList?: SchemaFieldProperty[] | cdktn.IResolvable;
 }
@@ -1568,13 +1568,13 @@ export interface SchemaV2FieldProperty {
     /**
     * Optional documentation for the field
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3tables_table#doc CcTable#doc}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3tables_table#doc CcTable#doc}
     */
     readonly doc?: string;
     /**
     * The unique identifier for the field
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3tables_table#id CcTable#id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3tables_table#id CcTable#id}
     *
     * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
     * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1583,19 +1583,19 @@ export interface SchemaV2FieldProperty {
     /**
     * The name of the field
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3tables_table#name CcTable#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3tables_table#name CcTable#name}
     */
     readonly name?: string;
     /**
     * A Boolean value that specifies whether values are required for each row in this field
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3tables_table#required CcTable#required}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3tables_table#required CcTable#required}
     */
     readonly required?: boolean | cdktn.IResolvable;
     /**
     * The field type. For primitive types, use a string (e.g., 'int', 'string', 'long'). For nested types, use an object (e.g., {'type': 'struct', 'fields': [...]} for struct, {'type': 'list', 'element-id': N, 'element': 'type'} for list, {'type': 'map', 'key-id': N, 'key': 'type', 'value-id': N, 'value': 'type'} for map).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3tables_table#type CcTable#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3tables_table#type CcTable#type}
     */
     readonly type?: string;
 }
@@ -1771,25 +1771,25 @@ export interface IcebergSchemaV2Property {
     /**
     * A list of field IDs that are used as the identifier fields for the table. Identifier fields uniquely identify a row in the table.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3tables_table#identifier_field_ids CcTable#identifier_field_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3tables_table#identifier_field_ids CcTable#identifier_field_ids}
     */
     readonly identifierFieldIds?: number[];
     /**
     * An optional unique identifier for the schema
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3tables_table#schema_id CcTable#schema_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3tables_table#schema_id CcTable#schema_id}
     */
     readonly schemaId?: number;
     /**
     * The schema fields for the table
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3tables_table#schema_v2_field_list CcTable#schema_v2_field_list}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3tables_table#schema_v2_field_list CcTable#schema_v2_field_list}
     */
     readonly schemaV2FieldList?: SchemaV2FieldProperty[] | cdktn.IResolvable;
     /**
     * The type of the top-level schema, which is always 'struct'
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3tables_table#schema_v2_field_type CcTable#schema_v2_field_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3tables_table#schema_v2_field_type CcTable#schema_v2_field_type}
     */
     readonly schemaV2FieldType?: string;
 }
@@ -1921,25 +1921,25 @@ export interface IcebergSortFieldProperty {
     /**
     * Sort direction (asc or desc)
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3tables_table#direction CcTable#direction}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3tables_table#direction CcTable#direction}
     */
     readonly direction?: string;
     /**
     * Null value ordering (nulls-first or nulls-last)
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3tables_table#null_order CcTable#null_order}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3tables_table#null_order CcTable#null_order}
     */
     readonly nullOrder?: string;
     /**
     * The source column ID to sort on
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3tables_table#source_id CcTable#source_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3tables_table#source_id CcTable#source_id}
     */
     readonly sourceId?: number;
     /**
     * The sort transform function
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3tables_table#transform CcTable#transform}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3tables_table#transform CcTable#transform}
     */
     readonly transform?: string;
 }
@@ -2093,13 +2093,13 @@ export interface IcebergSortOrderProperty {
     /**
     * List of sort fields
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3tables_table#fields CcTable#fields}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3tables_table#fields CcTable#fields}
     */
     readonly fields?: IcebergSortFieldProperty[] | cdktn.IResolvable;
     /**
     * The sort order ID (defaults to 1 if not specified, 0 is reserved for unsorted)
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3tables_table#order_id CcTable#order_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3tables_table#order_id CcTable#order_id}
     */
     readonly orderId?: number;
 }
@@ -2187,31 +2187,31 @@ export interface IcebergMetadataProperty {
     /**
     * Partition specification for an Iceberg table
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3tables_table#iceberg_partition_spec CcTable#iceberg_partition_spec}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3tables_table#iceberg_partition_spec CcTable#iceberg_partition_spec}
     */
     readonly icebergPartitionSpec?: IcebergPartitionSpecProperty;
     /**
     * Schema definition for flat tables with primitive types only. Mutually exclusive with IcebergSchemaV2.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3tables_table#iceberg_schema CcTable#iceberg_schema}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3tables_table#iceberg_schema CcTable#iceberg_schema}
     */
     readonly icebergSchema?: IcebergSchemaProperty;
     /**
     * Schema definition that supports Apache Iceberg nested types (struct, list, map) and primitive types. Mutually exclusive with IcebergSchema.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3tables_table#iceberg_schema_v2 CcTable#iceberg_schema_v2}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3tables_table#iceberg_schema_v2 CcTable#iceberg_schema_v2}
     */
     readonly icebergSchemaV2?: IcebergSchemaV2Property;
     /**
     * Sort order specification for an Iceberg table
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3tables_table#iceberg_sort_order CcTable#iceberg_sort_order}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3tables_table#iceberg_sort_order CcTable#iceberg_sort_order}
     */
     readonly icebergSortOrder?: IcebergSortOrderProperty;
     /**
     * Iceberg table properties (e.g., format-version, write.parquet.compression-codec)
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3tables_table#table_properties CcTable#table_properties}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3tables_table#table_properties CcTable#table_properties}
     */
     readonly tableProperties?: { [key: string]: string };
 }
@@ -2365,19 +2365,19 @@ export interface SnapshotManagementProperty {
     /**
     * The maximum age of a snapshot before it can be expired.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3tables_table#max_snapshot_age_hours CcTable#max_snapshot_age_hours}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3tables_table#max_snapshot_age_hours CcTable#max_snapshot_age_hours}
     */
     readonly maxSnapshotAgeHours?: number;
     /**
     * The minimum number of snapshots to keep.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3tables_table#min_snapshots_to_keep CcTable#min_snapshots_to_keep}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3tables_table#min_snapshots_to_keep CcTable#min_snapshots_to_keep}
     */
     readonly minSnapshotsToKeep?: number;
     /**
     * Indicates whether the SnapshotManagement maintenance action is enabled.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3tables_table#status CcTable#status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3tables_table#status CcTable#status}
     */
     readonly status?: string;
 }
@@ -2487,7 +2487,7 @@ export interface StorageClassConfigurationProperty {
     /**
     * The storage class for the table
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3tables_table#storage_class CcTable#storage_class}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3tables_table#storage_class CcTable#storage_class}
     */
     readonly storageClass?: string;
 }
@@ -2553,13 +2553,13 @@ export interface TagProperty {
     /**
     * Tag key must be between 1 to 128 characters in length. Tag key cannot start with 'aws:' and can only contain alphanumeric characters, spaces, _, ., /, =, +, -, and @.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3tables_table#key CcTable#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3tables_table#key CcTable#key}
     */
     readonly key?: string;
     /**
     * Tag value must be between 0 to 256 characters in length. Tag value can only contain alphanumeric characters, spaces, _, ., /, =, +, -, and @.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3tables_table#value CcTable#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3tables_table#value CcTable#value}
     */
     readonly value?: string;
 }

@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53resolver_resolver_rule_association
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53resolver_resolver_rule_association
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -10,25 +10,25 @@ export interface CcResolverRuleAssociationProps extends cdktn.TerraformMetaArgum
     * The name of an association between a Resolver rule and a VPC.
     *  The name can be up to 64 characters long and can contain letters (a-z, A-Z), numbers (0-9), hyphens (-), underscores (_), and spaces. The name cannot consist of only numbers.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53resolver_resolver_rule_association#name CcResolverRuleAssociation#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53resolver_resolver_rule_association#name CcResolverRuleAssociation#name}
     */
     readonly name?: string;
     /**
     * The ID of the Resolver rule that you associated with the VPC that is specified by ``VPCId``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53resolver_resolver_rule_association#resolver_rule_id CcResolverRuleAssociation#resolver_rule_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53resolver_resolver_rule_association#resolver_rule_id CcResolverRuleAssociation#resolver_rule_id}
     */
     readonly resolverRuleId: string;
     /**
     * The ID of the VPC that you associated the Resolver rule with.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53resolver_resolver_rule_association#vpc_id CcResolverRuleAssociation#vpc_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53resolver_resolver_rule_association#vpc_id CcResolverRuleAssociation#vpc_id}
     */
     readonly vpcId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53resolver_resolver_rule_association awscc_route53resolver_resolver_rule_association}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53resolver_resolver_rule_association awscc_route53resolver_resolver_rule_association}
 */
 export class CcResolverRuleAssociation extends cdktn.TerraformResource {
 
@@ -44,7 +44,7 @@ export class CcResolverRuleAssociation extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcResolverRuleAssociation resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcResolverRuleAssociation to import
-    * @param importFromId The id of the existing CcResolverRuleAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53resolver_resolver_rule_association#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcResolverRuleAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53resolver_resolver_rule_association#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcResolverRuleAssociation to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -56,7 +56,7 @@ export class CcResolverRuleAssociation extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53resolver_resolver_rule_association awscc_route53resolver_resolver_rule_association} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53resolver_resolver_rule_association awscc_route53resolver_resolver_rule_association} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -67,7 +67,7 @@ export class CcResolverRuleAssociation extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_route53resolver_resolver_rule_association',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,

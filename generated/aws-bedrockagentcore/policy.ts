@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_policy
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_policy
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,43 +9,43 @@ export interface CcPolicyProps extends cdktn.TerraformMetaArguments {
     /**
     * The definition structure for policies. Encapsulates different policy formats.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_policy#definition CcPolicy#definition}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_policy#definition CcPolicy#definition}
     */
     readonly definition: CcPolicy.PolicyDefinitionProperty;
     /**
     * A human-readable description of the policy's purpose and functionality.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_policy#description CcPolicy#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_policy#description CcPolicy#description}
     */
     readonly description?: string;
     /**
     * Whether the policy contributes to the enforce decision returned to Gateway. LOG_ONLY policies are still evaluated but their decisions are observed only, allowing customers to validate a policy against real traffic before promoting it.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_policy#enforcement_mode CcPolicy#enforcement_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_policy#enforcement_mode CcPolicy#enforcement_mode}
     */
     readonly enforcementMode?: string;
     /**
     * The customer-assigned immutable name for the policy. Must be unique within the policy engine.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_policy#name CcPolicy#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_policy#name CcPolicy#name}
     */
     readonly name: string;
     /**
     * The identifier of the policy engine which contains this policy.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_policy#policy_engine_id CcPolicy#policy_engine_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_policy#policy_engine_id CcPolicy#policy_engine_id}
     */
     readonly policyEngineId: string;
     /**
     * The validation mode for the policy. Determines how Cedar analyzer validation results are handled.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_policy#validation_mode CcPolicy#validation_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_policy#validation_mode CcPolicy#validation_mode}
     */
     readonly validationMode?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_policy awscc_bedrockagentcore_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_policy awscc_bedrockagentcore_policy}
 */
 export class CcPolicy extends cdktn.TerraformResource {
 
@@ -61,7 +61,7 @@ export class CcPolicy extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcPolicy resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcPolicy to import
-    * @param importFromId The id of the existing CcPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_policy#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_policy#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcPolicy to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -73,7 +73,7 @@ export class CcPolicy extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_policy awscc_bedrockagentcore_policy} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_policy awscc_bedrockagentcore_policy} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -84,7 +84,7 @@ export class CcPolicy extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_bedrockagentcore_policy',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -390,7 +390,7 @@ export interface CedarPolicyProperty {
     /**
     * The Cedar policy statement that defines the authorization logic.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_policy#statement CcPolicy#statement}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_policy#statement CcPolicy#statement}
     */
     readonly statement?: string;
 }
@@ -456,7 +456,7 @@ export interface PolicyStatementProperty {
     /**
     * The policy statement.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_policy#statement CcPolicy#statement}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_policy#statement CcPolicy#statement}
     */
     readonly statement?: string;
 }
@@ -522,13 +522,13 @@ export interface PolicyDefinitionProperty {
     /**
     * A Cedar policy statement within the AgentCore Policy system.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_policy#cedar CcPolicy#cedar}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_policy#cedar CcPolicy#cedar}
     */
     readonly cedar?: CedarPolicyProperty;
     /**
     * A policy statement within the AgentCore Policy system.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_policy#policy CcPolicy#policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_policy#policy CcPolicy#policy}
     */
     readonly policy?: PolicyStatementProperty;
 }

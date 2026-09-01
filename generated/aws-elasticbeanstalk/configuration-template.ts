@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticbeanstalk_configuration_template
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticbeanstalk_configuration_template
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,31 +9,31 @@ export interface CcConfigurationTemplateProps extends cdktn.TerraformMetaArgumen
     /**
     * The name of the Elastic Beanstalk application to associate with this configuration template. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticbeanstalk_configuration_template#application_name CcConfigurationTemplate#application_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticbeanstalk_configuration_template#application_name CcConfigurationTemplate#application_name}
     */
     readonly applicationName: string;
     /**
     * An optional description for this configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticbeanstalk_configuration_template#description CcConfigurationTemplate#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticbeanstalk_configuration_template#description CcConfigurationTemplate#description}
     */
     readonly description?: string;
     /**
     * The ID of an environment whose settings you want to use to create the configuration template. You must specify EnvironmentId if you don't specify PlatformArn, SolutionStackName, or SourceConfiguration. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticbeanstalk_configuration_template#environment_id CcConfigurationTemplate#environment_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticbeanstalk_configuration_template#environment_id CcConfigurationTemplate#environment_id}
     */
     readonly environmentId?: string;
     /**
     * Option values for the Elastic Beanstalk configuration, such as the instance type. If specified, these values override the values obtained from the solution stack or the source configuration template. For a complete list of Elastic Beanstalk configuration options, see [Option Values](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/command-options.html) in the AWS Elastic Beanstalk Developer Guide. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticbeanstalk_configuration_template#option_settings CcConfigurationTemplate#option_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticbeanstalk_configuration_template#option_settings CcConfigurationTemplate#option_settings}
     */
     readonly optionSettings?: CcConfigurationTemplate.ConfigurationOptionSettingProperty[] | cdktn.IResolvable;
     /**
     * The Amazon Resource Name (ARN) of the custom platform. For more information, see [Custom Platforms](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/custom-platforms.html) in the AWS Elastic Beanstalk Developer Guide. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticbeanstalk_configuration_template#platform_arn CcConfigurationTemplate#platform_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticbeanstalk_configuration_template#platform_arn CcConfigurationTemplate#platform_arn}
     */
     readonly platformArn?: string;
     /**
@@ -43,7 +43,7 @@ export interface CcConfigurationTemplateProps extends cdktn.TerraformMetaArgumen
     * 
     *  Use the ListAvailableSolutionStacks API to obtain a list of available solution stacks. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticbeanstalk_configuration_template#solution_stack_name CcConfigurationTemplate#solution_stack_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticbeanstalk_configuration_template#solution_stack_name CcConfigurationTemplate#solution_stack_name}
     */
     readonly solutionStackName?: string;
     /**
@@ -55,13 +55,13 @@ export interface CcConfigurationTemplateProps extends cdktn.TerraformMetaArgumen
     * 
     * Constraint: If both solution stack name and source configuration are specified, the solution stack of the source configuration template must match the specified solution stack name. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticbeanstalk_configuration_template#source_configuration CcConfigurationTemplate#source_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticbeanstalk_configuration_template#source_configuration CcConfigurationTemplate#source_configuration}
     */
     readonly sourceConfiguration?: CcConfigurationTemplate.SourceConfigurationProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticbeanstalk_configuration_template awscc_elasticbeanstalk_configuration_template}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticbeanstalk_configuration_template awscc_elasticbeanstalk_configuration_template}
 */
 export class CcConfigurationTemplate extends cdktn.TerraformResource {
 
@@ -77,7 +77,7 @@ export class CcConfigurationTemplate extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcConfigurationTemplate resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcConfigurationTemplate to import
-    * @param importFromId The id of the existing CcConfigurationTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticbeanstalk_configuration_template#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcConfigurationTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticbeanstalk_configuration_template#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcConfigurationTemplate to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -89,7 +89,7 @@ export class CcConfigurationTemplate extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticbeanstalk_configuration_template awscc_elasticbeanstalk_configuration_template} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticbeanstalk_configuration_template awscc_elasticbeanstalk_configuration_template} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -100,7 +100,7 @@ export class CcConfigurationTemplate extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_elasticbeanstalk_configuration_template',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -402,25 +402,25 @@ export interface ConfigurationOptionSettingProperty {
     /**
     * A unique namespace that identifies the option's associated AWS resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticbeanstalk_configuration_template#namespace CcConfigurationTemplate#namespace}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticbeanstalk_configuration_template#namespace CcConfigurationTemplate#namespace}
     */
     readonly namespace?: string;
     /**
     * The name of the configuration option.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticbeanstalk_configuration_template#option_name CcConfigurationTemplate#option_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticbeanstalk_configuration_template#option_name CcConfigurationTemplate#option_name}
     */
     readonly optionName?: string;
     /**
     * A unique resource name for the option setting. Use it for a time–based scaling configuration option. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticbeanstalk_configuration_template#resource_name CcConfigurationTemplate#resource_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticbeanstalk_configuration_template#resource_name CcConfigurationTemplate#resource_name}
     */
     readonly resourceName?: string;
     /**
     * The current value for the configuration option.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticbeanstalk_configuration_template#value CcConfigurationTemplate#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticbeanstalk_configuration_template#value CcConfigurationTemplate#value}
     */
     readonly value?: string;
 }
@@ -574,13 +574,13 @@ export interface SourceConfigurationProperty {
     /**
     * The name of the application associated with the configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticbeanstalk_configuration_template#application_name CcConfigurationTemplate#application_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticbeanstalk_configuration_template#application_name CcConfigurationTemplate#application_name}
     */
     readonly applicationName?: string;
     /**
     * The name of the configuration template.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticbeanstalk_configuration_template#template_name CcConfigurationTemplate#template_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticbeanstalk_configuration_template#template_name CcConfigurationTemplate#template_name}
     */
     readonly templateName?: string;
 }

@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ram_resource_share
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ram_resource_share
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,19 +9,19 @@ export interface CcResourceShareProps extends cdktn.TerraformMetaArguments {
     /**
     * Specifies whether principals outside your organization in AWS Organizations can be associated with a resource share. A value of `true` lets you share with individual AWS accounts that are not in your organization. A value of `false` only has meaning if your account is a member of an AWS Organization. The default value is `true`.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ram_resource_share#allow_external_principals CcResourceShare#allow_external_principals}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ram_resource_share#allow_external_principals CcResourceShare#allow_external_principals}
     */
     readonly allowExternalPrincipals?: boolean | cdktn.IResolvable;
     /**
     * Specifies the name of the resource share.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ram_resource_share#name CcResourceShare#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ram_resource_share#name CcResourceShare#name}
     */
     readonly name: string;
     /**
     * Specifies the [Amazon Resource Names (ARNs)](https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html) of the AWS RAM permission to associate with the resource share. If you do not specify an ARN for the permission, AWS RAM automatically attaches the default version of the permission for each resource type. You can associate only one permission with each resource type included in the resource share.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ram_resource_share#permission_arns CcResourceShare#permission_arns}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ram_resource_share#permission_arns CcResourceShare#permission_arns}
     */
     readonly permissionArns?: string[];
     /**
@@ -37,37 +37,37 @@ export interface CcResourceShareProps extends cdktn.TerraformMetaArguments {
     * 
     * - An ARN of an IAM user
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ram_resource_share#principals CcResourceShare#principals}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ram_resource_share#principals CcResourceShare#principals}
     */
     readonly principals?: string[];
     /**
     * Specifies a list of one or more ARNs of the resources to associate with the resource share.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ram_resource_share#resource_arns CcResourceShare#resource_arns}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ram_resource_share#resource_arns CcResourceShare#resource_arns}
     */
     readonly resourceArns?: string[];
     /**
     * Specifies the configuration for the resource share
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ram_resource_share#resource_share_configuration CcResourceShare#resource_share_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ram_resource_share#resource_share_configuration CcResourceShare#resource_share_configuration}
     */
     readonly resourceShareConfiguration?: CcResourceShare.ResourceShareConfigurationProperty;
     /**
     * Specifies from which source accounts the service principal has access to the resources in this resource share.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ram_resource_share#sources CcResourceShare#sources}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ram_resource_share#sources CcResourceShare#sources}
     */
     readonly sources?: string[];
     /**
     * Specifies one or more tags to attach to the resource share itself. It doesn't attach the tags to the resources associated with the resource share.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ram_resource_share#tags CcResourceShare#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ram_resource_share#tags CcResourceShare#tags}
     */
     readonly tags?: CcResourceShare.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ram_resource_share awscc_ram_resource_share}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ram_resource_share awscc_ram_resource_share}
 */
 export class CcResourceShare extends cdktn.TerraformResource {
 
@@ -83,7 +83,7 @@ export class CcResourceShare extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcResourceShare resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcResourceShare to import
-    * @param importFromId The id of the existing CcResourceShare that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ram_resource_share#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcResourceShare that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ram_resource_share#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcResourceShare to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -95,7 +95,7 @@ export class CcResourceShare extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ram_resource_share awscc_ram_resource_share} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ram_resource_share awscc_ram_resource_share} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -106,7 +106,7 @@ export class CcResourceShare extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_ram_resource_share',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -443,13 +443,13 @@ export interface ResourceShareConfigurationProperty {
     /**
     * The resource share restricts access to an account
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ram_resource_share#exclusive_account_access CcResourceShare#exclusive_account_access}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ram_resource_share#exclusive_account_access CcResourceShare#exclusive_account_access}
     */
     readonly exclusiveAccountAccess?: boolean | cdktn.IResolvable;
     /**
     * Specifies whether the consumer account retains access to the resource share after leaving the organization.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ram_resource_share#retain_sharing_on_account_leave_organization CcResourceShare#retain_sharing_on_account_leave_organization}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ram_resource_share#retain_sharing_on_account_leave_organization CcResourceShare#retain_sharing_on_account_leave_organization}
     */
     readonly retainSharingOnAccountLeaveOrganization?: boolean | cdktn.IResolvable;
 }
@@ -537,13 +537,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ram_resource_share#key CcResourceShare#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ram_resource_share#key CcResourceShare#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 0 to 256 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ram_resource_share#value CcResourceShare#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ram_resource_share#value CcResourceShare#value}
     */
     readonly value?: string;
 }

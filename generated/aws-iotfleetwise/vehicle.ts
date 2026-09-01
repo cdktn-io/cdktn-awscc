@@ -1,43 +1,43 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_vehicle
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_vehicle
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcVehicleProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_vehicle#association_behavior CcVehicle#association_behavior}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_vehicle#association_behavior CcVehicle#association_behavior}
     */
     readonly associationBehavior?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_vehicle#attributes CcVehicle#attributes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_vehicle#attributes CcVehicle#attributes}
     */
     readonly attributes?: { [key: string]: string };
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_vehicle#decoder_manifest_arn CcVehicle#decoder_manifest_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_vehicle#decoder_manifest_arn CcVehicle#decoder_manifest_arn}
     */
     readonly decoderManifestArn: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_vehicle#model_manifest_arn CcVehicle#model_manifest_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_vehicle#model_manifest_arn CcVehicle#model_manifest_arn}
     */
     readonly modelManifestArn: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_vehicle#name CcVehicle#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_vehicle#name CcVehicle#name}
     */
     readonly name: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_vehicle#state_templates CcVehicle#state_templates}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_vehicle#state_templates CcVehicle#state_templates}
     */
     readonly stateTemplates?: CcVehicle.StateTemplateAssociationProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_vehicle#tags CcVehicle#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_vehicle#tags CcVehicle#tags}
     */
     readonly tags?: CcVehicle.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_vehicle awscc_iotfleetwise_vehicle}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_vehicle awscc_iotfleetwise_vehicle}
 */
 export class CcVehicle extends cdktn.TerraformResource {
 
@@ -53,7 +53,7 @@ export class CcVehicle extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcVehicle resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcVehicle to import
-    * @param importFromId The id of the existing CcVehicle that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_vehicle#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcVehicle that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_vehicle#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcVehicle to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -65,7 +65,7 @@ export class CcVehicle extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_vehicle awscc_iotfleetwise_vehicle} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_vehicle awscc_iotfleetwise_vehicle} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -76,7 +76,7 @@ export class CcVehicle extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_iotfleetwise_vehicle',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -470,11 +470,11 @@ export function ccVehicleTagPropertyToHclTerraform(struct?: CcVehicle.TagPropert
 export namespace CcVehicle {
 export interface TimePeriodProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_vehicle#unit CcVehicle#unit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_vehicle#unit CcVehicle#unit}
     */
     readonly unit?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_vehicle#value CcVehicle#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_vehicle#value CcVehicle#value}
     */
     readonly value?: number;
 }
@@ -560,7 +560,7 @@ export class TimePeriodPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface PeriodicStateTemplateUpdateStrategyProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_vehicle#state_template_update_rate CcVehicle#state_template_update_rate}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_vehicle#state_template_update_rate CcVehicle#state_template_update_rate}
     */
     readonly stateTemplateUpdateRate?: TimePeriodProperty;
 }
@@ -624,11 +624,11 @@ export class PeriodicStateTemplateUpdateStrategyPropertyOutputReference extends 
 }
 export interface StateTemplateUpdateStrategyProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_vehicle#on_change CcVehicle#on_change}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_vehicle#on_change CcVehicle#on_change}
     */
     readonly onChange?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_vehicle#periodic CcVehicle#periodic}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_vehicle#periodic CcVehicle#periodic}
     */
     readonly periodic?: PeriodicStateTemplateUpdateStrategyProperty;
 }
@@ -714,11 +714,11 @@ export class StateTemplateUpdateStrategyPropertyOutputReference extends cdktn.Co
 }
 export interface StateTemplateAssociationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_vehicle#identifier CcVehicle#identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_vehicle#identifier CcVehicle#identifier}
     */
     readonly identifier?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_vehicle#state_template_update_strategy CcVehicle#state_template_update_strategy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_vehicle#state_template_update_strategy CcVehicle#state_template_update_strategy}
     */
     readonly stateTemplateUpdateStrategy?: StateTemplateUpdateStrategyProperty;
 }
@@ -826,11 +826,11 @@ export class StateTemplateAssociationPropertyList extends cdktn.ComplexList {
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_vehicle#key CcVehicle#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_vehicle#key CcVehicle#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_vehicle#value CcVehicle#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_vehicle#value CcVehicle#value}
     */
     readonly value?: string;
 }

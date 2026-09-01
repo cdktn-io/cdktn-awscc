@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_instance
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_verified_access_instance
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,49 +9,49 @@ export interface CcVerifiedAccessInstanceProps extends cdktn.TerraformMetaArgume
     /**
     * Introduce CidrEndpointsCustomSubDomain property to represent the domain (say, ava.my-company.com)
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_instance#cidr_endpoints_custom_sub_domain CcVerifiedAccessInstance#cidr_endpoints_custom_sub_domain}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_verified_access_instance#cidr_endpoints_custom_sub_domain CcVerifiedAccessInstance#cidr_endpoints_custom_sub_domain}
     */
     readonly cidrEndpointsCustomSubDomain?: string;
     /**
     * A description for the AWS Verified Access instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_instance#description CcVerifiedAccessInstance#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_verified_access_instance#description CcVerifiedAccessInstance#description}
     */
     readonly description?: string;
     /**
     * Indicates whether FIPS is enabled
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_instance#fips_enabled CcVerifiedAccessInstance#fips_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_verified_access_instance#fips_enabled CcVerifiedAccessInstance#fips_enabled}
     */
     readonly fipsEnabled?: boolean | cdktn.IResolvable;
     /**
     * The configuration options for AWS Verified Access instances.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_instance#logging_configurations CcVerifiedAccessInstance#logging_configurations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_verified_access_instance#logging_configurations CcVerifiedAccessInstance#logging_configurations}
     */
     readonly loggingConfigurations?: CcVerifiedAccessInstance.VerifiedAccessLogsProperty;
     /**
     * An array of key-value pairs to apply to this resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_instance#tags CcVerifiedAccessInstance#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_verified_access_instance#tags CcVerifiedAccessInstance#tags}
     */
     readonly tags?: CcVerifiedAccessInstance.TagProperty[] | cdktn.IResolvable;
     /**
     * The IDs of the AWS Verified Access trust providers.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_instance#verified_access_trust_provider_ids CcVerifiedAccessInstance#verified_access_trust_provider_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_verified_access_instance#verified_access_trust_provider_ids CcVerifiedAccessInstance#verified_access_trust_provider_ids}
     */
     readonly verifiedAccessTrustProviderIds?: string[];
     /**
     * AWS Verified Access trust providers.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_instance#verified_access_trust_providers CcVerifiedAccessInstance#verified_access_trust_providers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_verified_access_instance#verified_access_trust_providers CcVerifiedAccessInstance#verified_access_trust_providers}
     */
     readonly verifiedAccessTrustProviders?: CcVerifiedAccessInstance.VerifiedAccessTrustProviderProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_instance awscc_ec2_verified_access_instance}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_verified_access_instance awscc_ec2_verified_access_instance}
 */
 export class CcVerifiedAccessInstance extends cdktn.TerraformResource {
 
@@ -67,7 +67,7 @@ export class CcVerifiedAccessInstance extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcVerifiedAccessInstance resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcVerifiedAccessInstance to import
-    * @param importFromId The id of the existing CcVerifiedAccessInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_instance#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcVerifiedAccessInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_verified_access_instance#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcVerifiedAccessInstance to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -79,7 +79,7 @@ export class CcVerifiedAccessInstance extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_instance awscc_ec2_verified_access_instance} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_verified_access_instance awscc_ec2_verified_access_instance} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -90,7 +90,7 @@ export class CcVerifiedAccessInstance extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_ec2_verified_access_instance',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -600,13 +600,13 @@ export interface CloudWatchLogsProperty {
     /**
     * Indicates whether logging is enabled.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_instance#enabled CcVerifiedAccessInstance#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_verified_access_instance#enabled CcVerifiedAccessInstance#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
     * The ID of the CloudWatch Logs log group.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_instance#log_group CcVerifiedAccessInstance#log_group}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_verified_access_instance#log_group CcVerifiedAccessInstance#log_group}
     */
     readonly logGroup?: string;
 }
@@ -694,13 +694,13 @@ export interface KinesisDataFirehoseProperty {
     /**
     * The ID of the delivery stream.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_instance#delivery_stream CcVerifiedAccessInstance#delivery_stream}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_verified_access_instance#delivery_stream CcVerifiedAccessInstance#delivery_stream}
     */
     readonly deliveryStream?: string;
     /**
     * Indicates whether logging is enabled.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_instance#enabled CcVerifiedAccessInstance#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_verified_access_instance#enabled CcVerifiedAccessInstance#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -788,25 +788,25 @@ export interface S3Property {
     /**
     * The bucket name.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_instance#bucket_name CcVerifiedAccessInstance#bucket_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_verified_access_instance#bucket_name CcVerifiedAccessInstance#bucket_name}
     */
     readonly bucketName?: string;
     /**
     * The ID of the AWS account that owns the Amazon S3 bucket.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_instance#bucket_owner CcVerifiedAccessInstance#bucket_owner}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_verified_access_instance#bucket_owner CcVerifiedAccessInstance#bucket_owner}
     */
     readonly bucketOwner?: string;
     /**
     * Indicates whether logging is enabled.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_instance#enabled CcVerifiedAccessInstance#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_verified_access_instance#enabled CcVerifiedAccessInstance#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
     * The bucket prefix.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_instance#prefix CcVerifiedAccessInstance#prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_verified_access_instance#prefix CcVerifiedAccessInstance#prefix}
     */
     readonly prefix?: string;
 }
@@ -938,31 +938,31 @@ export interface VerifiedAccessLogsProperty {
     /**
     * Sends Verified Access logs to CloudWatch Logs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_instance#cloudwatch_logs CcVerifiedAccessInstance#cloudwatch_logs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_verified_access_instance#cloudwatch_logs CcVerifiedAccessInstance#cloudwatch_logs}
     */
     readonly cloudwatchLogs?: CloudWatchLogsProperty;
     /**
     * Include claims from trust providers in Verified Access logs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_instance#include_trust_context CcVerifiedAccessInstance#include_trust_context}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_verified_access_instance#include_trust_context CcVerifiedAccessInstance#include_trust_context}
     */
     readonly includeTrustContext?: boolean | cdktn.IResolvable;
     /**
     * Sends Verified Access logs to Kinesis.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_instance#kinesis_data_firehose CcVerifiedAccessInstance#kinesis_data_firehose}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_verified_access_instance#kinesis_data_firehose CcVerifiedAccessInstance#kinesis_data_firehose}
     */
     readonly kinesisDataFirehose?: KinesisDataFirehoseProperty;
     /**
     * Select log version for Verified Access logs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_instance#log_version CcVerifiedAccessInstance#log_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_verified_access_instance#log_version CcVerifiedAccessInstance#log_version}
     */
     readonly logVersion?: string;
     /**
     * Sends Verified Access logs to Amazon S3.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_instance#s3 CcVerifiedAccessInstance#s3}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_verified_access_instance#s3 CcVerifiedAccessInstance#s3}
     */
     readonly s3?: S3Property;
 }
@@ -1116,13 +1116,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_instance#key CcVerifiedAccessInstance#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_verified_access_instance#key CcVerifiedAccessInstance#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 0 to 256 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_instance#value CcVerifiedAccessInstance#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_verified_access_instance#value CcVerifiedAccessInstance#value}
     */
     readonly value?: string;
 }
@@ -1232,31 +1232,31 @@ export interface VerifiedAccessTrustProviderProperty {
     /**
     * The description of trust provider.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_instance#description CcVerifiedAccessInstance#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_verified_access_instance#description CcVerifiedAccessInstance#description}
     */
     readonly description?: string;
     /**
     * The type of device-based trust provider.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_instance#device_trust_provider_type CcVerifiedAccessInstance#device_trust_provider_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_verified_access_instance#device_trust_provider_type CcVerifiedAccessInstance#device_trust_provider_type}
     */
     readonly deviceTrustProviderType?: string;
     /**
     * The type of trust provider (user- or device-based).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_instance#trust_provider_type CcVerifiedAccessInstance#trust_provider_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_verified_access_instance#trust_provider_type CcVerifiedAccessInstance#trust_provider_type}
     */
     readonly trustProviderType?: string;
     /**
     * The type of user-based trust provider.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_instance#user_trust_provider_type CcVerifiedAccessInstance#user_trust_provider_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_verified_access_instance#user_trust_provider_type CcVerifiedAccessInstance#user_trust_provider_type}
     */
     readonly userTrustProviderType?: string;
     /**
     * The ID of the trust provider.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_instance#verified_access_trust_provider_id CcVerifiedAccessInstance#verified_access_trust_provider_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_verified_access_instance#verified_access_trust_provider_id CcVerifiedAccessInstance#verified_access_trust_provider_id}
     */
     readonly verifiedAccessTrustProviderId?: string;
 }

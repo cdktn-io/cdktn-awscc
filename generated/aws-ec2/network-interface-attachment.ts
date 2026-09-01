@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_interface_attachment
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_network_interface_attachment
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,43 +9,43 @@ export interface CcNetworkInterfaceAttachmentProps extends cdktn.TerraformMetaAr
     /**
     * Whether to delete the network interface when the instance terminates. By default, this value is set to ``true``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_interface_attachment#delete_on_termination CcNetworkInterfaceAttachment#delete_on_termination}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_network_interface_attachment#delete_on_termination CcNetworkInterfaceAttachment#delete_on_termination}
     */
     readonly deleteOnTermination?: boolean | cdktn.IResolvable;
     /**
     * The network interface's position in the attachment order. For example, the first attached network interface has a ``DeviceIndex`` of 0.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_interface_attachment#device_index CcNetworkInterfaceAttachment#device_index}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_network_interface_attachment#device_index CcNetworkInterfaceAttachment#device_index}
     */
     readonly deviceIndex: string;
     /**
     * The number of ENA queues created with the instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_interface_attachment#ena_queue_count CcNetworkInterfaceAttachment#ena_queue_count}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_network_interface_attachment#ena_queue_count CcNetworkInterfaceAttachment#ena_queue_count}
     */
     readonly enaQueueCount?: number;
     /**
     * Configures ENA Express for the network interface that this action attaches to the instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_interface_attachment#ena_srd_specification CcNetworkInterfaceAttachment#ena_srd_specification}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_network_interface_attachment#ena_srd_specification CcNetworkInterfaceAttachment#ena_srd_specification}
     */
     readonly enaSrdSpecification?: CcNetworkInterfaceAttachment.EnaSrdSpecificationProperty;
     /**
     * The ID of the instance to which you will attach the ENI.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_interface_attachment#instance_id CcNetworkInterfaceAttachment#instance_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_network_interface_attachment#instance_id CcNetworkInterfaceAttachment#instance_id}
     */
     readonly instanceId: string;
     /**
     * The ID of the ENI that you want to attach.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_interface_attachment#network_interface_id CcNetworkInterfaceAttachment#network_interface_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_network_interface_attachment#network_interface_id CcNetworkInterfaceAttachment#network_interface_id}
     */
     readonly networkInterfaceId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_interface_attachment awscc_ec2_network_interface_attachment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_network_interface_attachment awscc_ec2_network_interface_attachment}
 */
 export class CcNetworkInterfaceAttachment extends cdktn.TerraformResource {
 
@@ -61,7 +61,7 @@ export class CcNetworkInterfaceAttachment extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcNetworkInterfaceAttachment resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcNetworkInterfaceAttachment to import
-    * @param importFromId The id of the existing CcNetworkInterfaceAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_interface_attachment#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcNetworkInterfaceAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_network_interface_attachment#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcNetworkInterfaceAttachment to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -73,7 +73,7 @@ export class CcNetworkInterfaceAttachment extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_interface_attachment awscc_ec2_network_interface_attachment} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_network_interface_attachment awscc_ec2_network_interface_attachment} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -84,7 +84,7 @@ export class CcNetworkInterfaceAttachment extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_ec2_network_interface_attachment',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -333,7 +333,7 @@ export function ccNetworkInterfaceAttachmentEnaSrdSpecificationPropertyToHclTerr
 export namespace CcNetworkInterfaceAttachment {
 export interface EnaSrdUdpSpecificationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_interface_attachment#ena_srd_udp_enabled CcNetworkInterfaceAttachment#ena_srd_udp_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_network_interface_attachment#ena_srd_udp_enabled CcNetworkInterfaceAttachment#ena_srd_udp_enabled}
     */
     readonly enaSrdUdpEnabled?: boolean | cdktn.IResolvable;
 }
@@ -399,13 +399,13 @@ export interface EnaSrdSpecificationProperty {
     /**
     * Indicates whether ENA Express is enabled for the network interface.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_interface_attachment#ena_srd_enabled CcNetworkInterfaceAttachment#ena_srd_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_network_interface_attachment#ena_srd_enabled CcNetworkInterfaceAttachment#ena_srd_enabled}
     */
     readonly enaSrdEnabled?: boolean | cdktn.IResolvable;
     /**
     * Configures ENA Express for UDP network traffic.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_interface_attachment#ena_srd_udp_specification CcNetworkInterfaceAttachment#ena_srd_udp_specification}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_network_interface_attachment#ena_srd_udp_specification CcNetworkInterfaceAttachment#ena_srd_udp_specification}
     */
     readonly enaSrdUdpSpecification?: EnaSrdUdpSpecificationProperty;
 }

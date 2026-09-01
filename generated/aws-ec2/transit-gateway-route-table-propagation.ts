@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_transit_gateway_route_table_propagation
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_transit_gateway_route_table_propagation
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,19 +9,19 @@ export interface CcTransitGatewayRouteTablePropagationProps extends cdktn.Terraf
     /**
     * The ID of transit gateway attachment.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_transit_gateway_route_table_propagation#transit_gateway_attachment_id CcTransitGatewayRouteTablePropagation#transit_gateway_attachment_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_transit_gateway_route_table_propagation#transit_gateway_attachment_id CcTransitGatewayRouteTablePropagation#transit_gateway_attachment_id}
     */
     readonly transitGatewayAttachmentId: string;
     /**
     * The ID of transit gateway route table.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_transit_gateway_route_table_propagation#transit_gateway_route_table_id CcTransitGatewayRouteTablePropagation#transit_gateway_route_table_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_transit_gateway_route_table_propagation#transit_gateway_route_table_id CcTransitGatewayRouteTablePropagation#transit_gateway_route_table_id}
     */
     readonly transitGatewayRouteTableId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_transit_gateway_route_table_propagation awscc_ec2_transit_gateway_route_table_propagation}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_transit_gateway_route_table_propagation awscc_ec2_transit_gateway_route_table_propagation}
 */
 export class CcTransitGatewayRouteTablePropagation extends cdktn.TerraformResource {
 
@@ -37,7 +37,7 @@ export class CcTransitGatewayRouteTablePropagation extends cdktn.TerraformResour
     * Generates CDKTN code for importing a CcTransitGatewayRouteTablePropagation resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcTransitGatewayRouteTablePropagation to import
-    * @param importFromId The id of the existing CcTransitGatewayRouteTablePropagation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_transit_gateway_route_table_propagation#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcTransitGatewayRouteTablePropagation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_transit_gateway_route_table_propagation#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcTransitGatewayRouteTablePropagation to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -49,7 +49,7 @@ export class CcTransitGatewayRouteTablePropagation extends cdktn.TerraformResour
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_transit_gateway_route_table_propagation awscc_ec2_transit_gateway_route_table_propagation} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_transit_gateway_route_table_propagation awscc_ec2_transit_gateway_route_table_propagation} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -60,7 +60,7 @@ export class CcTransitGatewayRouteTablePropagation extends cdktn.TerraformResour
             terraformResourceType: 'awscc_ec2_transit_gateway_route_table_propagation',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,

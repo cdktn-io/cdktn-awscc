@@ -1,71 +1,71 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_transit_gateway
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_transit_gateway
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcTransitGatewayProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_transit_gateway#amazon_side_asn CcTransitGateway#amazon_side_asn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_transit_gateway#amazon_side_asn CcTransitGateway#amazon_side_asn}
     */
     readonly amazonSideAsn?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_transit_gateway#association_default_route_table_id CcTransitGateway#association_default_route_table_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_transit_gateway#association_default_route_table_id CcTransitGateway#association_default_route_table_id}
     */
     readonly associationDefaultRouteTableId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_transit_gateway#auto_accept_shared_attachments CcTransitGateway#auto_accept_shared_attachments}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_transit_gateway#auto_accept_shared_attachments CcTransitGateway#auto_accept_shared_attachments}
     */
     readonly autoAcceptSharedAttachments?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_transit_gateway#default_route_table_association CcTransitGateway#default_route_table_association}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_transit_gateway#default_route_table_association CcTransitGateway#default_route_table_association}
     */
     readonly defaultRouteTableAssociation?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_transit_gateway#default_route_table_propagation CcTransitGateway#default_route_table_propagation}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_transit_gateway#default_route_table_propagation CcTransitGateway#default_route_table_propagation}
     */
     readonly defaultRouteTablePropagation?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_transit_gateway#description CcTransitGateway#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_transit_gateway#description CcTransitGateway#description}
     */
     readonly description?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_transit_gateway#dns_support CcTransitGateway#dns_support}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_transit_gateway#dns_support CcTransitGateway#dns_support}
     */
     readonly dnsSupport?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_transit_gateway#encryption_support CcTransitGateway#encryption_support}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_transit_gateway#encryption_support CcTransitGateway#encryption_support}
     */
     readonly encryptionSupport?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_transit_gateway#multicast_support CcTransitGateway#multicast_support}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_transit_gateway#multicast_support CcTransitGateway#multicast_support}
     */
     readonly multicastSupport?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_transit_gateway#propagation_default_route_table_id CcTransitGateway#propagation_default_route_table_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_transit_gateway#propagation_default_route_table_id CcTransitGateway#propagation_default_route_table_id}
     */
     readonly propagationDefaultRouteTableId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_transit_gateway#security_group_referencing_support CcTransitGateway#security_group_referencing_support}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_transit_gateway#security_group_referencing_support CcTransitGateway#security_group_referencing_support}
     */
     readonly securityGroupReferencingSupport?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_transit_gateway#tags CcTransitGateway#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_transit_gateway#tags CcTransitGateway#tags}
     */
     readonly tags?: CcTransitGateway.TagProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_transit_gateway#transit_gateway_cidr_blocks CcTransitGateway#transit_gateway_cidr_blocks}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_transit_gateway#transit_gateway_cidr_blocks CcTransitGateway#transit_gateway_cidr_blocks}
     */
     readonly transitGatewayCidrBlocks?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_transit_gateway#vpn_ecmp_support CcTransitGateway#vpn_ecmp_support}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_transit_gateway#vpn_ecmp_support CcTransitGateway#vpn_ecmp_support}
     */
     readonly vpnEcmpSupport?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_transit_gateway awscc_ec2_transit_gateway}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_transit_gateway awscc_ec2_transit_gateway}
 */
 export class CcTransitGateway extends cdktn.TerraformResource {
 
@@ -81,7 +81,7 @@ export class CcTransitGateway extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcTransitGateway resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcTransitGateway to import
-    * @param importFromId The id of the existing CcTransitGateway that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_transit_gateway#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcTransitGateway that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_transit_gateway#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcTransitGateway to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -93,7 +93,7 @@ export class CcTransitGateway extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_transit_gateway awscc_ec2_transit_gateway} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_transit_gateway awscc_ec2_transit_gateway} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -104,7 +104,7 @@ export class CcTransitGateway extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_ec2_transit_gateway',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -534,11 +534,11 @@ export function ccTransitGatewayTagPropertyToHclTerraform(struct?: CcTransitGate
 export namespace CcTransitGateway {
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_transit_gateway#key CcTransitGateway#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_transit_gateway#key CcTransitGateway#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_transit_gateway#value CcTransitGateway#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_transit_gateway#value CcTransitGateway#value}
     */
     readonly value?: string;
 }

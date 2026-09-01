@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_layer_version_permission
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_layer_version_permission
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,31 +9,31 @@ export interface CcLayerVersionPermissionProps extends cdktn.TerraformMetaArgume
     /**
     * The API action that grants access to the layer.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_layer_version_permission#action CcLayerVersionPermission#action}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_layer_version_permission#action CcLayerVersionPermission#action}
     */
     readonly action: string;
     /**
     * The name or Amazon Resource Name (ARN) of the layer.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_layer_version_permission#layer_version_arn CcLayerVersionPermission#layer_version_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_layer_version_permission#layer_version_arn CcLayerVersionPermission#layer_version_arn}
     */
     readonly layerVersionArn: string;
     /**
     * With the principal set to *, grant permission to all accounts in the specified organization.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_layer_version_permission#organization_id CcLayerVersionPermission#organization_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_layer_version_permission#organization_id CcLayerVersionPermission#organization_id}
     */
     readonly organizationId?: string;
     /**
     * An account ID, or * to grant layer usage permission to all accounts in an organization, or all AWS accounts (if organizationId is not specified).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_layer_version_permission#principal CcLayerVersionPermission#principal}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_layer_version_permission#principal CcLayerVersionPermission#principal}
     */
     readonly principal: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_layer_version_permission awscc_lambda_layer_version_permission}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_layer_version_permission awscc_lambda_layer_version_permission}
 */
 export class CcLayerVersionPermission extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CcLayerVersionPermission extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcLayerVersionPermission resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcLayerVersionPermission to import
-    * @param importFromId The id of the existing CcLayerVersionPermission that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_layer_version_permission#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcLayerVersionPermission that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_layer_version_permission#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcLayerVersionPermission to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CcLayerVersionPermission extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lambda_layer_version_permission awscc_lambda_layer_version_permission} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lambda_layer_version_permission awscc_lambda_layer_version_permission} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -72,7 +72,7 @@ export class CcLayerVersionPermission extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_lambda_layer_version_permission',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,

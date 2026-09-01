@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/personalize_event_tracker
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/personalize_event_tracker
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,25 +9,25 @@ export interface CcEventTrackerProps extends cdktn.TerraformMetaArguments {
     /**
     * The Amazon Resource Name (ARN) of the dataset group that receives the event data.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/personalize_event_tracker#dataset_group_arn CcEventTracker#dataset_group_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/personalize_event_tracker#dataset_group_arn CcEventTracker#dataset_group_arn}
     */
     readonly datasetGroupArn: string;
     /**
     * The name for the event tracker.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/personalize_event_tracker#name CcEventTracker#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/personalize_event_tracker#name CcEventTracker#name}
     */
     readonly name: string;
     /**
     * A list of tags to apply to the event tracker.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/personalize_event_tracker#tags CcEventTracker#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/personalize_event_tracker#tags CcEventTracker#tags}
     */
     readonly tags?: CcEventTracker.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/personalize_event_tracker awscc_personalize_event_tracker}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/personalize_event_tracker awscc_personalize_event_tracker}
 */
 export class CcEventTracker extends cdktn.TerraformResource {
 
@@ -43,7 +43,7 @@ export class CcEventTracker extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcEventTracker resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcEventTracker to import
-    * @param importFromId The id of the existing CcEventTracker that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/personalize_event_tracker#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcEventTracker that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/personalize_event_tracker#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcEventTracker to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -55,7 +55,7 @@ export class CcEventTracker extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/personalize_event_tracker awscc_personalize_event_tracker} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/personalize_event_tracker awscc_personalize_event_tracker} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +66,7 @@ export class CcEventTracker extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_personalize_event_tracker',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -223,13 +223,13 @@ export interface TagProperty {
     /**
     * The key name of the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/personalize_event_tracker#key CcEventTracker#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/personalize_event_tracker#key CcEventTracker#key}
     */
     readonly key?: string;
     /**
     * The value for the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/personalize_event_tracker#value CcEventTracker#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/personalize_event_tracker#value CcEventTracker#value}
     */
     readonly value?: string;
 }

@@ -1,63 +1,63 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/comprehend_document_classifier
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/comprehend_document_classifier
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcDocumentClassifierProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/comprehend_document_classifier#data_access_role_arn CcDocumentClassifier#data_access_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/comprehend_document_classifier#data_access_role_arn CcDocumentClassifier#data_access_role_arn}
     */
     readonly dataAccessRoleArn: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/comprehend_document_classifier#document_classifier_name CcDocumentClassifier#document_classifier_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/comprehend_document_classifier#document_classifier_name CcDocumentClassifier#document_classifier_name}
     */
     readonly documentClassifierName: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/comprehend_document_classifier#input_data_config CcDocumentClassifier#input_data_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/comprehend_document_classifier#input_data_config CcDocumentClassifier#input_data_config}
     */
     readonly inputDataConfig: CcDocumentClassifier.DocumentClassifierInputDataConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/comprehend_document_classifier#language_code CcDocumentClassifier#language_code}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/comprehend_document_classifier#language_code CcDocumentClassifier#language_code}
     */
     readonly languageCode: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/comprehend_document_classifier#mode CcDocumentClassifier#mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/comprehend_document_classifier#mode CcDocumentClassifier#mode}
     */
     readonly mode?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/comprehend_document_classifier#model_kms_key_id CcDocumentClassifier#model_kms_key_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/comprehend_document_classifier#model_kms_key_id CcDocumentClassifier#model_kms_key_id}
     */
     readonly modelKmsKeyId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/comprehend_document_classifier#model_policy CcDocumentClassifier#model_policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/comprehend_document_classifier#model_policy CcDocumentClassifier#model_policy}
     */
     readonly modelPolicy?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/comprehend_document_classifier#output_data_config CcDocumentClassifier#output_data_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/comprehend_document_classifier#output_data_config CcDocumentClassifier#output_data_config}
     */
     readonly outputDataConfig?: CcDocumentClassifier.DocumentClassifierOutputDataConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/comprehend_document_classifier#tags CcDocumentClassifier#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/comprehend_document_classifier#tags CcDocumentClassifier#tags}
     */
     readonly tags?: CcDocumentClassifier.TagProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/comprehend_document_classifier#version_name CcDocumentClassifier#version_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/comprehend_document_classifier#version_name CcDocumentClassifier#version_name}
     */
     readonly versionName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/comprehend_document_classifier#volume_kms_key_id CcDocumentClassifier#volume_kms_key_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/comprehend_document_classifier#volume_kms_key_id CcDocumentClassifier#volume_kms_key_id}
     */
     readonly volumeKmsKeyId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/comprehend_document_classifier#vpc_config CcDocumentClassifier#vpc_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/comprehend_document_classifier#vpc_config CcDocumentClassifier#vpc_config}
     */
     readonly vpcConfig?: CcDocumentClassifier.VpcConfigProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/comprehend_document_classifier awscc_comprehend_document_classifier}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/comprehend_document_classifier awscc_comprehend_document_classifier}
 */
 export class CcDocumentClassifier extends cdktn.TerraformResource {
 
@@ -73,7 +73,7 @@ export class CcDocumentClassifier extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcDocumentClassifier resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcDocumentClassifier to import
-    * @param importFromId The id of the existing CcDocumentClassifier that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/comprehend_document_classifier#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcDocumentClassifier that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/comprehend_document_classifier#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcDocumentClassifier to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -85,7 +85,7 @@ export class CcDocumentClassifier extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/comprehend_document_classifier awscc_comprehend_document_classifier} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/comprehend_document_classifier awscc_comprehend_document_classifier} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -96,7 +96,7 @@ export class CcDocumentClassifier extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_comprehend_document_classifier',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -734,15 +734,15 @@ export function ccDocumentClassifierVpcConfigPropertyToHclTerraform(struct?: CcD
 export namespace CcDocumentClassifier {
 export interface AugmentedManifestsListItemProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/comprehend_document_classifier#attribute_names CcDocumentClassifier#attribute_names}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/comprehend_document_classifier#attribute_names CcDocumentClassifier#attribute_names}
     */
     readonly attributeNames?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/comprehend_document_classifier#s3_uri CcDocumentClassifier#s3_uri}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/comprehend_document_classifier#s3_uri CcDocumentClassifier#s3_uri}
     */
     readonly s3Uri?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/comprehend_document_classifier#split CcDocumentClassifier#split}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/comprehend_document_classifier#split CcDocumentClassifier#split}
     */
     readonly split?: string;
 }
@@ -872,15 +872,15 @@ export class AugmentedManifestsListItemPropertyList extends cdktn.ComplexList {
 }
 export interface DocumentReaderConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/comprehend_document_classifier#document_read_action CcDocumentClassifier#document_read_action}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/comprehend_document_classifier#document_read_action CcDocumentClassifier#document_read_action}
     */
     readonly documentReadAction?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/comprehend_document_classifier#document_read_mode CcDocumentClassifier#document_read_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/comprehend_document_classifier#document_read_mode CcDocumentClassifier#document_read_mode}
     */
     readonly documentReadMode?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/comprehend_document_classifier#feature_types CcDocumentClassifier#feature_types}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/comprehend_document_classifier#feature_types CcDocumentClassifier#feature_types}
     */
     readonly featureTypes?: string[];
 }
@@ -988,11 +988,11 @@ export class DocumentReaderConfigPropertyOutputReference extends cdktn.ComplexOb
 }
 export interface DocumentClassifierDocumentsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/comprehend_document_classifier#s3_uri CcDocumentClassifier#s3_uri}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/comprehend_document_classifier#s3_uri CcDocumentClassifier#s3_uri}
     */
     readonly s3Uri?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/comprehend_document_classifier#test_s3_uri CcDocumentClassifier#test_s3_uri}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/comprehend_document_classifier#test_s3_uri CcDocumentClassifier#test_s3_uri}
     */
     readonly testS3Uri?: string;
 }
@@ -1078,35 +1078,35 @@ export class DocumentClassifierDocumentsPropertyOutputReference extends cdktn.Co
 }
 export interface DocumentClassifierInputDataConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/comprehend_document_classifier#augmented_manifests CcDocumentClassifier#augmented_manifests}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/comprehend_document_classifier#augmented_manifests CcDocumentClassifier#augmented_manifests}
     */
     readonly augmentedManifests?: AugmentedManifestsListItemProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/comprehend_document_classifier#data_format CcDocumentClassifier#data_format}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/comprehend_document_classifier#data_format CcDocumentClassifier#data_format}
     */
     readonly dataFormat?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/comprehend_document_classifier#document_reader_config CcDocumentClassifier#document_reader_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/comprehend_document_classifier#document_reader_config CcDocumentClassifier#document_reader_config}
     */
     readonly documentReaderConfig?: DocumentReaderConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/comprehend_document_classifier#document_type CcDocumentClassifier#document_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/comprehend_document_classifier#document_type CcDocumentClassifier#document_type}
     */
     readonly documentType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/comprehend_document_classifier#documents CcDocumentClassifier#documents}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/comprehend_document_classifier#documents CcDocumentClassifier#documents}
     */
     readonly documents?: DocumentClassifierDocumentsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/comprehend_document_classifier#label_delimiter CcDocumentClassifier#label_delimiter}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/comprehend_document_classifier#label_delimiter CcDocumentClassifier#label_delimiter}
     */
     readonly labelDelimiter?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/comprehend_document_classifier#s3_uri CcDocumentClassifier#s3_uri}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/comprehend_document_classifier#s3_uri CcDocumentClassifier#s3_uri}
     */
     readonly s3Uri?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/comprehend_document_classifier#test_s3_uri CcDocumentClassifier#test_s3_uri}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/comprehend_document_classifier#test_s3_uri CcDocumentClassifier#test_s3_uri}
     */
     readonly testS3Uri?: string;
 }
@@ -1324,11 +1324,11 @@ export class DocumentClassifierInputDataConfigPropertyOutputReference extends cd
 }
 export interface DocumentClassifierOutputDataConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/comprehend_document_classifier#kms_key_id CcDocumentClassifier#kms_key_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/comprehend_document_classifier#kms_key_id CcDocumentClassifier#kms_key_id}
     */
     readonly kmsKeyId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/comprehend_document_classifier#s3_uri CcDocumentClassifier#s3_uri}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/comprehend_document_classifier#s3_uri CcDocumentClassifier#s3_uri}
     */
     readonly s3Uri?: string;
 }
@@ -1414,11 +1414,11 @@ export class DocumentClassifierOutputDataConfigPropertyOutputReference extends c
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/comprehend_document_classifier#key CcDocumentClassifier#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/comprehend_document_classifier#key CcDocumentClassifier#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/comprehend_document_classifier#value CcDocumentClassifier#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/comprehend_document_classifier#value CcDocumentClassifier#value}
     */
     readonly value?: string;
 }
@@ -1526,11 +1526,11 @@ export class TagPropertyList extends cdktn.ComplexList {
 }
 export interface VpcConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/comprehend_document_classifier#security_group_ids CcDocumentClassifier#security_group_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/comprehend_document_classifier#security_group_ids CcDocumentClassifier#security_group_ids}
     */
     readonly securityGroupIds?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/comprehend_document_classifier#subnets CcDocumentClassifier#subnets}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/comprehend_document_classifier#subnets CcDocumentClassifier#subnets}
     */
     readonly subnets?: string[];
 }

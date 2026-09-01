@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,35 +9,35 @@ export interface CcFilterProps extends cdktn.TerraformMetaArguments {
     /**
     * Findings filter description.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#description CcFilter#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#description CcFilter#description}
     */
     readonly description?: string;
     /**
     * Findings filter action.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#filter_action CcFilter#filter_action}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#filter_action CcFilter#filter_action}
     */
     readonly filterAction: string;
     /**
     * Findings filter criteria.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#filter_criteria CcFilter#filter_criteria}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#filter_criteria CcFilter#filter_criteria}
     */
     readonly filterCriteria: CcFilter.FilterCriteriaProperty;
     /**
     * Findings filter name.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#name CcFilter#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#name CcFilter#name}
     */
     readonly name: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#tags CcFilter#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#tags CcFilter#tags}
     */
     readonly tags?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter awscc_inspectorv2_filter}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter awscc_inspectorv2_filter}
 */
 export class CcFilter extends cdktn.TerraformResource {
 
@@ -53,7 +53,7 @@ export class CcFilter extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcFilter resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcFilter to import
-    * @param importFromId The id of the existing CcFilter that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcFilter that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcFilter to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -65,7 +65,7 @@ export class CcFilter extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter awscc_inspectorv2_filter} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter awscc_inspectorv2_filter} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -76,7 +76,7 @@ export class CcFilter extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_inspectorv2_filter',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -2450,11 +2450,11 @@ export function ccFilterFilterCriteriaPropertyToHclTerraform(struct?: CcFilter.F
 export namespace CcFilter {
 export interface StringFilterProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#comparison CcFilter#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#comparison CcFilter#comparison}
     */
     readonly comparison?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#value CcFilter#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#value CcFilter#value}
     */
     readonly value?: string;
 }
@@ -2562,11 +2562,11 @@ export class StringFilterPropertyList extends cdktn.ComplexList {
 }
 export interface CodeVulnerabilityDetectorNameProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#comparison CcFilter#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#comparison CcFilter#comparison}
     */
     readonly comparison?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#value CcFilter#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#value CcFilter#value}
     */
     readonly value?: string;
 }
@@ -2674,11 +2674,11 @@ export class CodeVulnerabilityDetectorNamePropertyList extends cdktn.ComplexList
 }
 export interface CodeVulnerabilityDetectorTagsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#comparison CcFilter#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#comparison CcFilter#comparison}
     */
     readonly comparison?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#value CcFilter#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#value CcFilter#value}
     */
     readonly value?: string;
 }
@@ -2786,11 +2786,11 @@ export class CodeVulnerabilityDetectorTagsPropertyList extends cdktn.ComplexList
 }
 export interface CodeVulnerabilityFilePathProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#comparison CcFilter#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#comparison CcFilter#comparison}
     */
     readonly comparison?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#value CcFilter#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#value CcFilter#value}
     */
     readonly value?: string;
 }
@@ -2898,11 +2898,11 @@ export class CodeVulnerabilityFilePathPropertyList extends cdktn.ComplexList {
 }
 export interface ComponentIdProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#comparison CcFilter#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#comparison CcFilter#comparison}
     */
     readonly comparison?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#value CcFilter#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#value CcFilter#value}
     */
     readonly value?: string;
 }
@@ -3010,11 +3010,11 @@ export class ComponentIdPropertyList extends cdktn.ComplexList {
 }
 export interface ComponentTypeProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#comparison CcFilter#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#comparison CcFilter#comparison}
     */
     readonly comparison?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#value CcFilter#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#value CcFilter#value}
     */
     readonly value?: string;
 }
@@ -3122,11 +3122,11 @@ export class ComponentTypePropertyList extends cdktn.ComplexList {
 }
 export interface Ec2InstanceImageIdProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#comparison CcFilter#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#comparison CcFilter#comparison}
     */
     readonly comparison?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#value CcFilter#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#value CcFilter#value}
     */
     readonly value?: string;
 }
@@ -3234,11 +3234,11 @@ export class Ec2InstanceImageIdPropertyList extends cdktn.ComplexList {
 }
 export interface Ec2InstanceSubnetIdProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#comparison CcFilter#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#comparison CcFilter#comparison}
     */
     readonly comparison?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#value CcFilter#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#value CcFilter#value}
     */
     readonly value?: string;
 }
@@ -3346,11 +3346,11 @@ export class Ec2InstanceSubnetIdPropertyList extends cdktn.ComplexList {
 }
 export interface Ec2InstanceVpcIdProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#comparison CcFilter#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#comparison CcFilter#comparison}
     */
     readonly comparison?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#value CcFilter#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#value CcFilter#value}
     */
     readonly value?: string;
 }
@@ -3458,11 +3458,11 @@ export class Ec2InstanceVpcIdPropertyList extends cdktn.ComplexList {
 }
 export interface EcrImageArchitectureProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#comparison CcFilter#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#comparison CcFilter#comparison}
     */
     readonly comparison?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#value CcFilter#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#value CcFilter#value}
     */
     readonly value?: string;
 }
@@ -3570,11 +3570,11 @@ export class EcrImageArchitecturePropertyList extends cdktn.ComplexList {
 }
 export interface EcrImageHashProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#comparison CcFilter#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#comparison CcFilter#comparison}
     */
     readonly comparison?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#value CcFilter#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#value CcFilter#value}
     */
     readonly value?: string;
 }
@@ -3682,11 +3682,11 @@ export class EcrImageHashPropertyList extends cdktn.ComplexList {
 }
 export interface DateFilterProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#end_inclusive CcFilter#end_inclusive}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#end_inclusive CcFilter#end_inclusive}
     */
     readonly endInclusive?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#start_inclusive CcFilter#start_inclusive}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#start_inclusive CcFilter#start_inclusive}
     */
     readonly startInclusive?: number;
 }
@@ -3794,11 +3794,11 @@ export class DateFilterPropertyList extends cdktn.ComplexList {
 }
 export interface EcrImageRegistryProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#comparison CcFilter#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#comparison CcFilter#comparison}
     */
     readonly comparison?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#value CcFilter#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#value CcFilter#value}
     */
     readonly value?: string;
 }
@@ -3906,11 +3906,11 @@ export class EcrImageRegistryPropertyList extends cdktn.ComplexList {
 }
 export interface EcrImageRepositoryNameProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#comparison CcFilter#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#comparison CcFilter#comparison}
     */
     readonly comparison?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#value CcFilter#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#value CcFilter#value}
     */
     readonly value?: string;
 }
@@ -4018,11 +4018,11 @@ export class EcrImageRepositoryNamePropertyList extends cdktn.ComplexList {
 }
 export interface EcrImageTagsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#comparison CcFilter#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#comparison CcFilter#comparison}
     */
     readonly comparison?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#value CcFilter#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#value CcFilter#value}
     */
     readonly value?: string;
 }
@@ -4130,11 +4130,11 @@ export class EcrImageTagsPropertyList extends cdktn.ComplexList {
 }
 export interface NumberFilterProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#lower_inclusive CcFilter#lower_inclusive}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#lower_inclusive CcFilter#lower_inclusive}
     */
     readonly lowerInclusive?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#upper_inclusive CcFilter#upper_inclusive}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#upper_inclusive CcFilter#upper_inclusive}
     */
     readonly upperInclusive?: number;
 }
@@ -4242,11 +4242,11 @@ export class NumberFilterPropertyList extends cdktn.ComplexList {
 }
 export interface ExploitAvailableProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#comparison CcFilter#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#comparison CcFilter#comparison}
     */
     readonly comparison?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#value CcFilter#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#value CcFilter#value}
     */
     readonly value?: string;
 }
@@ -4354,11 +4354,11 @@ export class ExploitAvailablePropertyList extends cdktn.ComplexList {
 }
 export interface FindingArnProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#comparison CcFilter#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#comparison CcFilter#comparison}
     */
     readonly comparison?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#value CcFilter#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#value CcFilter#value}
     */
     readonly value?: string;
 }
@@ -4466,11 +4466,11 @@ export class FindingArnPropertyList extends cdktn.ComplexList {
 }
 export interface FindingStatusProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#comparison CcFilter#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#comparison CcFilter#comparison}
     */
     readonly comparison?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#value CcFilter#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#value CcFilter#value}
     */
     readonly value?: string;
 }
@@ -4578,11 +4578,11 @@ export class FindingStatusPropertyList extends cdktn.ComplexList {
 }
 export interface FindingTypeProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#comparison CcFilter#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#comparison CcFilter#comparison}
     */
     readonly comparison?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#value CcFilter#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#value CcFilter#value}
     */
     readonly value?: string;
 }
@@ -4690,11 +4690,11 @@ export class FindingTypePropertyList extends cdktn.ComplexList {
 }
 export interface FirstObservedAtProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#end_inclusive CcFilter#end_inclusive}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#end_inclusive CcFilter#end_inclusive}
     */
     readonly endInclusive?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#start_inclusive CcFilter#start_inclusive}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#start_inclusive CcFilter#start_inclusive}
     */
     readonly startInclusive?: number;
 }
@@ -4802,11 +4802,11 @@ export class FirstObservedAtPropertyList extends cdktn.ComplexList {
 }
 export interface FixAvailableProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#comparison CcFilter#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#comparison CcFilter#comparison}
     */
     readonly comparison?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#value CcFilter#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#value CcFilter#value}
     */
     readonly value?: string;
 }
@@ -4914,11 +4914,11 @@ export class FixAvailablePropertyList extends cdktn.ComplexList {
 }
 export interface InspectorScoreProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#lower_inclusive CcFilter#lower_inclusive}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#lower_inclusive CcFilter#lower_inclusive}
     */
     readonly lowerInclusive?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#upper_inclusive CcFilter#upper_inclusive}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#upper_inclusive CcFilter#upper_inclusive}
     */
     readonly upperInclusive?: number;
 }
@@ -5026,11 +5026,11 @@ export class InspectorScorePropertyList extends cdktn.ComplexList {
 }
 export interface LambdaFunctionExecutionRoleArnProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#comparison CcFilter#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#comparison CcFilter#comparison}
     */
     readonly comparison?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#value CcFilter#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#value CcFilter#value}
     */
     readonly value?: string;
 }
@@ -5138,11 +5138,11 @@ export class LambdaFunctionExecutionRoleArnPropertyList extends cdktn.ComplexLis
 }
 export interface LambdaFunctionLastModifiedAtProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#end_inclusive CcFilter#end_inclusive}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#end_inclusive CcFilter#end_inclusive}
     */
     readonly endInclusive?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#start_inclusive CcFilter#start_inclusive}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#start_inclusive CcFilter#start_inclusive}
     */
     readonly startInclusive?: number;
 }
@@ -5250,11 +5250,11 @@ export class LambdaFunctionLastModifiedAtPropertyList extends cdktn.ComplexList 
 }
 export interface LambdaFunctionLayersProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#comparison CcFilter#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#comparison CcFilter#comparison}
     */
     readonly comparison?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#value CcFilter#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#value CcFilter#value}
     */
     readonly value?: string;
 }
@@ -5362,11 +5362,11 @@ export class LambdaFunctionLayersPropertyList extends cdktn.ComplexList {
 }
 export interface LambdaFunctionNameProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#comparison CcFilter#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#comparison CcFilter#comparison}
     */
     readonly comparison?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#value CcFilter#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#value CcFilter#value}
     */
     readonly value?: string;
 }
@@ -5474,11 +5474,11 @@ export class LambdaFunctionNamePropertyList extends cdktn.ComplexList {
 }
 export interface LambdaFunctionRuntimeProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#comparison CcFilter#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#comparison CcFilter#comparison}
     */
     readonly comparison?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#value CcFilter#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#value CcFilter#value}
     */
     readonly value?: string;
 }
@@ -5586,11 +5586,11 @@ export class LambdaFunctionRuntimePropertyList extends cdktn.ComplexList {
 }
 export interface LastObservedAtProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#end_inclusive CcFilter#end_inclusive}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#end_inclusive CcFilter#end_inclusive}
     */
     readonly endInclusive?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#start_inclusive CcFilter#start_inclusive}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#start_inclusive CcFilter#start_inclusive}
     */
     readonly startInclusive?: number;
 }
@@ -5698,11 +5698,11 @@ export class LastObservedAtPropertyList extends cdktn.ComplexList {
 }
 export interface NetworkProtocolProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#comparison CcFilter#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#comparison CcFilter#comparison}
     */
     readonly comparison?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#value CcFilter#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#value CcFilter#value}
     */
     readonly value?: string;
 }
@@ -5810,11 +5810,11 @@ export class NetworkProtocolPropertyList extends cdktn.ComplexList {
 }
 export interface PortRangeFilterProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#begin_inclusive CcFilter#begin_inclusive}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#begin_inclusive CcFilter#begin_inclusive}
     */
     readonly beginInclusive?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#end_inclusive CcFilter#end_inclusive}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#end_inclusive CcFilter#end_inclusive}
     */
     readonly endInclusive?: number;
 }
@@ -5922,11 +5922,11 @@ export class PortRangeFilterPropertyList extends cdktn.ComplexList {
 }
 export interface RelatedVulnerabilitiesProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#comparison CcFilter#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#comparison CcFilter#comparison}
     */
     readonly comparison?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#value CcFilter#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#value CcFilter#value}
     */
     readonly value?: string;
 }
@@ -6034,11 +6034,11 @@ export class RelatedVulnerabilitiesPropertyList extends cdktn.ComplexList {
 }
 export interface ResourceIdProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#comparison CcFilter#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#comparison CcFilter#comparison}
     */
     readonly comparison?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#value CcFilter#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#value CcFilter#value}
     */
     readonly value?: string;
 }
@@ -6146,15 +6146,15 @@ export class ResourceIdPropertyList extends cdktn.ComplexList {
 }
 export interface MapFilterProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#comparison CcFilter#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#comparison CcFilter#comparison}
     */
     readonly comparison?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#key CcFilter#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#key CcFilter#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#value CcFilter#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#value CcFilter#value}
     */
     readonly value?: string;
 }
@@ -6284,11 +6284,11 @@ export class MapFilterPropertyList extends cdktn.ComplexList {
 }
 export interface ResourceTypeProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#comparison CcFilter#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#comparison CcFilter#comparison}
     */
     readonly comparison?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#value CcFilter#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#value CcFilter#value}
     */
     readonly value?: string;
 }
@@ -6396,11 +6396,11 @@ export class ResourceTypePropertyList extends cdktn.ComplexList {
 }
 export interface SeverityProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#comparison CcFilter#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#comparison CcFilter#comparison}
     */
     readonly comparison?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#value CcFilter#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#value CcFilter#value}
     */
     readonly value?: string;
 }
@@ -6508,11 +6508,11 @@ export class SeverityPropertyList extends cdktn.ComplexList {
 }
 export interface TitleProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#comparison CcFilter#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#comparison CcFilter#comparison}
     */
     readonly comparison?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#value CcFilter#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#value CcFilter#value}
     */
     readonly value?: string;
 }
@@ -6620,11 +6620,11 @@ export class TitlePropertyList extends cdktn.ComplexList {
 }
 export interface UpdatedAtProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#end_inclusive CcFilter#end_inclusive}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#end_inclusive CcFilter#end_inclusive}
     */
     readonly endInclusive?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#start_inclusive CcFilter#start_inclusive}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#start_inclusive CcFilter#start_inclusive}
     */
     readonly startInclusive?: number;
 }
@@ -6732,11 +6732,11 @@ export class UpdatedAtPropertyList extends cdktn.ComplexList {
 }
 export interface VendorSeverityProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#comparison CcFilter#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#comparison CcFilter#comparison}
     */
     readonly comparison?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#value CcFilter#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#value CcFilter#value}
     */
     readonly value?: string;
 }
@@ -6844,11 +6844,11 @@ export class VendorSeverityPropertyList extends cdktn.ComplexList {
 }
 export interface VulnerabilityIdProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#comparison CcFilter#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#comparison CcFilter#comparison}
     */
     readonly comparison?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#value CcFilter#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#value CcFilter#value}
     */
     readonly value?: string;
 }
@@ -6956,11 +6956,11 @@ export class VulnerabilityIdPropertyList extends cdktn.ComplexList {
 }
 export interface VulnerabilitySourceProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#comparison CcFilter#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#comparison CcFilter#comparison}
     */
     readonly comparison?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#value CcFilter#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#value CcFilter#value}
     */
     readonly value?: string;
 }
@@ -7068,11 +7068,11 @@ export class VulnerabilitySourcePropertyList extends cdktn.ComplexList {
 }
 export interface ArchitectureProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#comparison CcFilter#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#comparison CcFilter#comparison}
     */
     readonly comparison?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#value CcFilter#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#value CcFilter#value}
     */
     readonly value?: string;
 }
@@ -7158,11 +7158,11 @@ export class ArchitecturePropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface EpochProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#lower_inclusive CcFilter#lower_inclusive}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#lower_inclusive CcFilter#lower_inclusive}
     */
     readonly lowerInclusive?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#upper_inclusive CcFilter#upper_inclusive}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#upper_inclusive CcFilter#upper_inclusive}
     */
     readonly upperInclusive?: number;
 }
@@ -7248,11 +7248,11 @@ export class EpochPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface FilePathProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#comparison CcFilter#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#comparison CcFilter#comparison}
     */
     readonly comparison?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#value CcFilter#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#value CcFilter#value}
     */
     readonly value?: string;
 }
@@ -7338,11 +7338,11 @@ export class FilePathPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface NameProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#comparison CcFilter#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#comparison CcFilter#comparison}
     */
     readonly comparison?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#value CcFilter#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#value CcFilter#value}
     */
     readonly value?: string;
 }
@@ -7428,11 +7428,11 @@ export class NamePropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface ReleaseProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#comparison CcFilter#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#comparison CcFilter#comparison}
     */
     readonly comparison?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#value CcFilter#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#value CcFilter#value}
     */
     readonly value?: string;
 }
@@ -7518,11 +7518,11 @@ export class ReleasePropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface SourceLambdaLayerArnProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#comparison CcFilter#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#comparison CcFilter#comparison}
     */
     readonly comparison?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#value CcFilter#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#value CcFilter#value}
     */
     readonly value?: string;
 }
@@ -7608,11 +7608,11 @@ export class SourceLambdaLayerArnPropertyOutputReference extends cdktn.ComplexOb
 }
 export interface SourceLayerHashProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#comparison CcFilter#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#comparison CcFilter#comparison}
     */
     readonly comparison?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#value CcFilter#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#value CcFilter#value}
     */
     readonly value?: string;
 }
@@ -7698,11 +7698,11 @@ export class SourceLayerHashPropertyOutputReference extends cdktn.ComplexObject 
 }
 export interface VersionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#comparison CcFilter#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#comparison CcFilter#comparison}
     */
     readonly comparison?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#value CcFilter#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#value CcFilter#value}
     */
     readonly value?: string;
 }
@@ -7788,35 +7788,35 @@ export class VersionPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface PackageFilterProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#architecture CcFilter#architecture}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#architecture CcFilter#architecture}
     */
     readonly architecture?: ArchitectureProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#epoch CcFilter#epoch}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#epoch CcFilter#epoch}
     */
     readonly epoch?: EpochProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#file_path CcFilter#file_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#file_path CcFilter#file_path}
     */
     readonly filePath?: FilePathProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#name CcFilter#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#name CcFilter#name}
     */
     readonly name?: NameProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#release CcFilter#release}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#release CcFilter#release}
     */
     readonly release?: ReleaseProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#source_lambda_layer_arn CcFilter#source_lambda_layer_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#source_lambda_layer_arn CcFilter#source_lambda_layer_arn}
     */
     readonly sourceLambdaLayerArn?: SourceLambdaLayerArnProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#source_layer_hash CcFilter#source_layer_hash}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#source_layer_hash CcFilter#source_layer_hash}
     */
     readonly sourceLayerHash?: SourceLayerHashProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#version CcFilter#version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#version CcFilter#version}
     */
     readonly version?: VersionProperty;
 }
@@ -8056,171 +8056,171 @@ export class PackageFilterPropertyList extends cdktn.ComplexList {
 }
 export interface FilterCriteriaProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#aws_account_id CcFilter#aws_account_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#aws_account_id CcFilter#aws_account_id}
     */
     readonly awsAccountId?: StringFilterProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#code_vulnerability_detector_name CcFilter#code_vulnerability_detector_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#code_vulnerability_detector_name CcFilter#code_vulnerability_detector_name}
     */
     readonly codeVulnerabilityDetectorName?: CodeVulnerabilityDetectorNameProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#code_vulnerability_detector_tags CcFilter#code_vulnerability_detector_tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#code_vulnerability_detector_tags CcFilter#code_vulnerability_detector_tags}
     */
     readonly codeVulnerabilityDetectorTags?: CodeVulnerabilityDetectorTagsProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#code_vulnerability_file_path CcFilter#code_vulnerability_file_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#code_vulnerability_file_path CcFilter#code_vulnerability_file_path}
     */
     readonly codeVulnerabilityFilePath?: CodeVulnerabilityFilePathProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#component_id CcFilter#component_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#component_id CcFilter#component_id}
     */
     readonly componentId?: ComponentIdProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#component_type CcFilter#component_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#component_type CcFilter#component_type}
     */
     readonly componentType?: ComponentTypeProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#ec_2_instance_image_id CcFilter#ec_2_instance_image_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#ec_2_instance_image_id CcFilter#ec_2_instance_image_id}
     */
     readonly ec2InstanceImageId?: Ec2InstanceImageIdProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#ec_2_instance_subnet_id CcFilter#ec_2_instance_subnet_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#ec_2_instance_subnet_id CcFilter#ec_2_instance_subnet_id}
     */
     readonly ec2InstanceSubnetId?: Ec2InstanceSubnetIdProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#ec_2_instance_vpc_id CcFilter#ec_2_instance_vpc_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#ec_2_instance_vpc_id CcFilter#ec_2_instance_vpc_id}
     */
     readonly ec2InstanceVpcId?: Ec2InstanceVpcIdProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#ecr_image_architecture CcFilter#ecr_image_architecture}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#ecr_image_architecture CcFilter#ecr_image_architecture}
     */
     readonly ecrImageArchitecture?: EcrImageArchitectureProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#ecr_image_hash CcFilter#ecr_image_hash}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#ecr_image_hash CcFilter#ecr_image_hash}
     */
     readonly ecrImageHash?: EcrImageHashProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#ecr_image_pushed_at CcFilter#ecr_image_pushed_at}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#ecr_image_pushed_at CcFilter#ecr_image_pushed_at}
     */
     readonly ecrImagePushedAt?: DateFilterProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#ecr_image_registry CcFilter#ecr_image_registry}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#ecr_image_registry CcFilter#ecr_image_registry}
     */
     readonly ecrImageRegistry?: EcrImageRegistryProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#ecr_image_repository_name CcFilter#ecr_image_repository_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#ecr_image_repository_name CcFilter#ecr_image_repository_name}
     */
     readonly ecrImageRepositoryName?: EcrImageRepositoryNameProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#ecr_image_tags CcFilter#ecr_image_tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#ecr_image_tags CcFilter#ecr_image_tags}
     */
     readonly ecrImageTags?: EcrImageTagsProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#epss_score CcFilter#epss_score}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#epss_score CcFilter#epss_score}
     */
     readonly epssScore?: NumberFilterProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#exploit_available CcFilter#exploit_available}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#exploit_available CcFilter#exploit_available}
     */
     readonly exploitAvailable?: ExploitAvailableProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#finding_arn CcFilter#finding_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#finding_arn CcFilter#finding_arn}
     */
     readonly findingArn?: FindingArnProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#finding_status CcFilter#finding_status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#finding_status CcFilter#finding_status}
     */
     readonly findingStatus?: FindingStatusProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#finding_type CcFilter#finding_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#finding_type CcFilter#finding_type}
     */
     readonly findingType?: FindingTypeProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#first_observed_at CcFilter#first_observed_at}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#first_observed_at CcFilter#first_observed_at}
     */
     readonly firstObservedAt?: FirstObservedAtProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#fix_available CcFilter#fix_available}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#fix_available CcFilter#fix_available}
     */
     readonly fixAvailable?: FixAvailableProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#inspector_score CcFilter#inspector_score}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#inspector_score CcFilter#inspector_score}
     */
     readonly inspectorScore?: InspectorScoreProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#lambda_function_execution_role_arn CcFilter#lambda_function_execution_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#lambda_function_execution_role_arn CcFilter#lambda_function_execution_role_arn}
     */
     readonly lambdaFunctionExecutionRoleArn?: LambdaFunctionExecutionRoleArnProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#lambda_function_last_modified_at CcFilter#lambda_function_last_modified_at}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#lambda_function_last_modified_at CcFilter#lambda_function_last_modified_at}
     */
     readonly lambdaFunctionLastModifiedAt?: LambdaFunctionLastModifiedAtProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#lambda_function_layers CcFilter#lambda_function_layers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#lambda_function_layers CcFilter#lambda_function_layers}
     */
     readonly lambdaFunctionLayers?: LambdaFunctionLayersProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#lambda_function_name CcFilter#lambda_function_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#lambda_function_name CcFilter#lambda_function_name}
     */
     readonly lambdaFunctionName?: LambdaFunctionNameProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#lambda_function_runtime CcFilter#lambda_function_runtime}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#lambda_function_runtime CcFilter#lambda_function_runtime}
     */
     readonly lambdaFunctionRuntime?: LambdaFunctionRuntimeProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#last_observed_at CcFilter#last_observed_at}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#last_observed_at CcFilter#last_observed_at}
     */
     readonly lastObservedAt?: LastObservedAtProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#network_protocol CcFilter#network_protocol}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#network_protocol CcFilter#network_protocol}
     */
     readonly networkProtocol?: NetworkProtocolProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#port_range CcFilter#port_range}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#port_range CcFilter#port_range}
     */
     readonly portRange?: PortRangeFilterProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#related_vulnerabilities CcFilter#related_vulnerabilities}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#related_vulnerabilities CcFilter#related_vulnerabilities}
     */
     readonly relatedVulnerabilities?: RelatedVulnerabilitiesProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#resource_id CcFilter#resource_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#resource_id CcFilter#resource_id}
     */
     readonly resourceId?: ResourceIdProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#resource_tags CcFilter#resource_tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#resource_tags CcFilter#resource_tags}
     */
     readonly resourceTags?: MapFilterProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#resource_type CcFilter#resource_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#resource_type CcFilter#resource_type}
     */
     readonly resourceType?: ResourceTypeProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#severity CcFilter#severity}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#severity CcFilter#severity}
     */
     readonly severity?: SeverityProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#title CcFilter#title}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#title CcFilter#title}
     */
     readonly title?: TitleProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#updated_at CcFilter#updated_at}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#updated_at CcFilter#updated_at}
     */
     readonly updatedAt?: UpdatedAtProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#vendor_severity CcFilter#vendor_severity}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#vendor_severity CcFilter#vendor_severity}
     */
     readonly vendorSeverity?: VendorSeverityProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#vulnerability_id CcFilter#vulnerability_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#vulnerability_id CcFilter#vulnerability_id}
     */
     readonly vulnerabilityId?: VulnerabilityIdProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#vulnerability_source CcFilter#vulnerability_source}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#vulnerability_source CcFilter#vulnerability_source}
     */
     readonly vulnerabilitySource?: VulnerabilitySourceProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_filter#vulnerable_packages CcFilter#vulnerable_packages}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_filter#vulnerable_packages CcFilter#vulnerable_packages}
     */
     readonly vulnerablePackages?: PackageFilterProperty[] | cdktn.IResolvable;
 }

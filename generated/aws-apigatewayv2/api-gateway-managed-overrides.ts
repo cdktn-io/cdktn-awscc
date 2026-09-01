@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_api_gateway_managed_overrides
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apigatewayv2_api_gateway_managed_overrides
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,31 +9,31 @@ export interface CcApiGatewayManagedOverridesProps extends cdktn.TerraformMetaAr
     /**
     * The ID of the API for which to override the configuration of API Gateway-managed resources.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_api_gateway_managed_overrides#api_id CcApiGatewayManagedOverrides#api_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apigatewayv2_api_gateway_managed_overrides#api_id CcApiGatewayManagedOverrides#api_id}
     */
     readonly apiId: string;
     /**
     * Overrides the integration configuration for an API Gateway-managed integration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_api_gateway_managed_overrides#integration CcApiGatewayManagedOverrides#integration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apigatewayv2_api_gateway_managed_overrides#integration CcApiGatewayManagedOverrides#integration}
     */
     readonly integration?: CcApiGatewayManagedOverrides.IntegrationOverridesProperty;
     /**
     * Overrides the route configuration for an API Gateway-managed route.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_api_gateway_managed_overrides#route CcApiGatewayManagedOverrides#route}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apigatewayv2_api_gateway_managed_overrides#route CcApiGatewayManagedOverrides#route}
     */
     readonly route?: CcApiGatewayManagedOverrides.RouteOverridesProperty;
     /**
     * Overrides the stage configuration for an API Gateway-managed stage.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_api_gateway_managed_overrides#stage CcApiGatewayManagedOverrides#stage}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apigatewayv2_api_gateway_managed_overrides#stage CcApiGatewayManagedOverrides#stage}
     */
     readonly stage?: CcApiGatewayManagedOverrides.StageOverridesProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_api_gateway_managed_overrides awscc_apigatewayv2_api_gateway_managed_overrides}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apigatewayv2_api_gateway_managed_overrides awscc_apigatewayv2_api_gateway_managed_overrides}
 */
 export class CcApiGatewayManagedOverrides extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CcApiGatewayManagedOverrides extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcApiGatewayManagedOverrides resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcApiGatewayManagedOverrides to import
-    * @param importFromId The id of the existing CcApiGatewayManagedOverrides that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_api_gateway_managed_overrides#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcApiGatewayManagedOverrides that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apigatewayv2_api_gateway_managed_overrides#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcApiGatewayManagedOverrides to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CcApiGatewayManagedOverrides extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_api_gateway_managed_overrides awscc_apigatewayv2_api_gateway_managed_overrides} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apigatewayv2_api_gateway_managed_overrides awscc_apigatewayv2_api_gateway_managed_overrides} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -72,7 +72,7 @@ export class CcApiGatewayManagedOverrides extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_apigatewayv2_api_gateway_managed_overrides',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -513,25 +513,25 @@ export interface IntegrationOverridesProperty {
     /**
     * The description of the integration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_api_gateway_managed_overrides#description CcApiGatewayManagedOverrides#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apigatewayv2_api_gateway_managed_overrides#description CcApiGatewayManagedOverrides#description}
     */
     readonly description?: string;
     /**
     * Specifies the integration's HTTP method type. For WebSocket APIs, if you use a Lambda integration, you must set the integration method to POST.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_api_gateway_managed_overrides#integration_method CcApiGatewayManagedOverrides#integration_method}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apigatewayv2_api_gateway_managed_overrides#integration_method CcApiGatewayManagedOverrides#integration_method}
     */
     readonly integrationMethod?: string;
     /**
     * Specifies the format of the payload sent to an integration. Required for HTTP APIs. For HTTP APIs, supported values for Lambda proxy integrations are 1.0 and 2.0. For all other integrations, 1.0 is the only supported value
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_api_gateway_managed_overrides#payload_format_version CcApiGatewayManagedOverrides#payload_format_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apigatewayv2_api_gateway_managed_overrides#payload_format_version CcApiGatewayManagedOverrides#payload_format_version}
     */
     readonly payloadFormatVersion?: string;
     /**
     * Custom timeout between 50 and 29,000 milliseconds for WebSocket APIs and between 50 and 30,000 milliseconds for HTTP APIs. The default timeout is 29 seconds for WebSocket APIs and 30 seconds for HTTP APIs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_api_gateway_managed_overrides#timeout_in_millis CcApiGatewayManagedOverrides#timeout_in_millis}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apigatewayv2_api_gateway_managed_overrides#timeout_in_millis CcApiGatewayManagedOverrides#timeout_in_millis}
     */
     readonly timeoutInMillis?: number;
 }
@@ -663,31 +663,31 @@ export interface RouteOverridesProperty {
     /**
     * The authorization scopes supported by this route.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_api_gateway_managed_overrides#authorization_scopes CcApiGatewayManagedOverrides#authorization_scopes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apigatewayv2_api_gateway_managed_overrides#authorization_scopes CcApiGatewayManagedOverrides#authorization_scopes}
     */
     readonly authorizationScopes?: string[];
     /**
     * The authorization type for the route. To learn more, see AuthorizationType.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_api_gateway_managed_overrides#authorization_type CcApiGatewayManagedOverrides#authorization_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apigatewayv2_api_gateway_managed_overrides#authorization_type CcApiGatewayManagedOverrides#authorization_type}
     */
     readonly authorizationType?: string;
     /**
     * The identifier of the Authorizer resource to be associated with this route. The authorizer identifier is generated by API Gateway when you created the authorizer.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_api_gateway_managed_overrides#authorizer_id CcApiGatewayManagedOverrides#authorizer_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apigatewayv2_api_gateway_managed_overrides#authorizer_id CcApiGatewayManagedOverrides#authorizer_id}
     */
     readonly authorizerId?: string;
     /**
     * The operation name for the route.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_api_gateway_managed_overrides#operation_name CcApiGatewayManagedOverrides#operation_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apigatewayv2_api_gateway_managed_overrides#operation_name CcApiGatewayManagedOverrides#operation_name}
     */
     readonly operationName?: string;
     /**
     * For HTTP integrations, specify a fully qualified URL. For Lambda integrations, specify a function ARN. The type of the integration will be HTTP_PROXY or AWS_PROXY, respectively.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_api_gateway_managed_overrides#target CcApiGatewayManagedOverrides#target}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apigatewayv2_api_gateway_managed_overrides#target CcApiGatewayManagedOverrides#target}
     */
     readonly target?: string;
 }
@@ -841,13 +841,13 @@ export interface AccessLogSettingsProperty {
     /**
     * The ARN of the CloudWatch Logs log group to receive access logs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_api_gateway_managed_overrides#destination_arn CcApiGatewayManagedOverrides#destination_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apigatewayv2_api_gateway_managed_overrides#destination_arn CcApiGatewayManagedOverrides#destination_arn}
     */
     readonly destinationArn?: string;
     /**
     * A single line format of the access logs of data, as specified by selected $context variables. The format must include at least $context.requestId.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_api_gateway_managed_overrides#format CcApiGatewayManagedOverrides#format}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apigatewayv2_api_gateway_managed_overrides#format CcApiGatewayManagedOverrides#format}
     */
     readonly format?: string;
 }
@@ -935,19 +935,19 @@ export interface RouteSettingsProperty {
     /**
     * Specifies whether detailed metrics are enabled.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_api_gateway_managed_overrides#detailed_metrics_enabled CcApiGatewayManagedOverrides#detailed_metrics_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apigatewayv2_api_gateway_managed_overrides#detailed_metrics_enabled CcApiGatewayManagedOverrides#detailed_metrics_enabled}
     */
     readonly detailedMetricsEnabled?: boolean | cdktn.IResolvable;
     /**
     * Specifies the throttling burst limit.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_api_gateway_managed_overrides#throttling_burst_limit CcApiGatewayManagedOverrides#throttling_burst_limit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apigatewayv2_api_gateway_managed_overrides#throttling_burst_limit CcApiGatewayManagedOverrides#throttling_burst_limit}
     */
     readonly throttlingBurstLimit?: number;
     /**
     * Specifies the throttling rate limit.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_api_gateway_managed_overrides#throttling_rate_limit CcApiGatewayManagedOverrides#throttling_rate_limit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apigatewayv2_api_gateway_managed_overrides#throttling_rate_limit CcApiGatewayManagedOverrides#throttling_rate_limit}
     */
     readonly throttlingRateLimit?: number;
 }
@@ -1057,19 +1057,19 @@ export interface StageRouteSettingsProperty {
     /**
     * Specifies whether detailed metrics are enabled.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_api_gateway_managed_overrides#detailed_metrics_enabled CcApiGatewayManagedOverrides#detailed_metrics_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apigatewayv2_api_gateway_managed_overrides#detailed_metrics_enabled CcApiGatewayManagedOverrides#detailed_metrics_enabled}
     */
     readonly detailedMetricsEnabled?: boolean | cdktn.IResolvable;
     /**
     * Specifies the throttling burst limit.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_api_gateway_managed_overrides#throttling_burst_limit CcApiGatewayManagedOverrides#throttling_burst_limit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apigatewayv2_api_gateway_managed_overrides#throttling_burst_limit CcApiGatewayManagedOverrides#throttling_burst_limit}
     */
     readonly throttlingBurstLimit?: number;
     /**
     * Specifies the throttling rate limit.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_api_gateway_managed_overrides#throttling_rate_limit CcApiGatewayManagedOverrides#throttling_rate_limit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apigatewayv2_api_gateway_managed_overrides#throttling_rate_limit CcApiGatewayManagedOverrides#throttling_rate_limit}
     */
     readonly throttlingRateLimit?: number;
 }
@@ -1199,37 +1199,37 @@ export interface StageOverridesProperty {
     /**
     * Settings for logging access in a stage.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_api_gateway_managed_overrides#access_log_settings CcApiGatewayManagedOverrides#access_log_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apigatewayv2_api_gateway_managed_overrides#access_log_settings CcApiGatewayManagedOverrides#access_log_settings}
     */
     readonly accessLogSettings?: AccessLogSettingsProperty;
     /**
     * Specifies whether updates to an API automatically trigger a new deployment. The default value is true.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_api_gateway_managed_overrides#auto_deploy CcApiGatewayManagedOverrides#auto_deploy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apigatewayv2_api_gateway_managed_overrides#auto_deploy CcApiGatewayManagedOverrides#auto_deploy}
     */
     readonly autoDeploy?: boolean | cdktn.IResolvable;
     /**
     * The default route settings for the stage.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_api_gateway_managed_overrides#default_route_settings CcApiGatewayManagedOverrides#default_route_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apigatewayv2_api_gateway_managed_overrides#default_route_settings CcApiGatewayManagedOverrides#default_route_settings}
     */
     readonly defaultRouteSettings?: RouteSettingsProperty;
     /**
     * The description for the API stage.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_api_gateway_managed_overrides#description CcApiGatewayManagedOverrides#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apigatewayv2_api_gateway_managed_overrides#description CcApiGatewayManagedOverrides#description}
     */
     readonly description?: string;
     /**
     * Route settings for the stage.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_api_gateway_managed_overrides#route_settings CcApiGatewayManagedOverrides#route_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apigatewayv2_api_gateway_managed_overrides#route_settings CcApiGatewayManagedOverrides#route_settings}
     */
     readonly routeSettings?: { [key: string]: StageRouteSettingsProperty } | cdktn.IResolvable;
     /**
     * A map that defines the stage variables for a Stage. Variable names can have alphanumeric and underscore characters, and the values must match [A-Za-z0-9-._~:/?#&=,]+.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_api_gateway_managed_overrides#stage_variables CcApiGatewayManagedOverrides#stage_variables}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apigatewayv2_api_gateway_managed_overrides#stage_variables CcApiGatewayManagedOverrides#stage_variables}
     */
     readonly stageVariables?: { [key: string]: string };
 }

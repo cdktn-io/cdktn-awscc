@@ -1,63 +1,63 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_knowledge_base
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_knowledge_base
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcKnowledgeBaseProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_knowledge_base#access_control_configuration CcKnowledgeBase#access_control_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_knowledge_base#access_control_configuration CcKnowledgeBase#access_control_configuration}
     */
     readonly accessControlConfiguration?: CcKnowledgeBase.AccessControlConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_knowledge_base#aws_account_id CcKnowledgeBase#aws_account_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_knowledge_base#aws_account_id CcKnowledgeBase#aws_account_id}
     */
     readonly awsAccountId: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_knowledge_base#data_source_arn CcKnowledgeBase#data_source_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_knowledge_base#data_source_arn CcKnowledgeBase#data_source_arn}
     */
     readonly dataSourceArn: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_knowledge_base#description CcKnowledgeBase#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_knowledge_base#description CcKnowledgeBase#description}
     */
     readonly description?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_knowledge_base#is_email_notification_opted_for_ingestion_failures CcKnowledgeBase#is_email_notification_opted_for_ingestion_failures}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_knowledge_base#is_email_notification_opted_for_ingestion_failures CcKnowledgeBase#is_email_notification_opted_for_ingestion_failures}
     */
     readonly isEmailNotificationOptedForIngestionFailures?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_knowledge_base#knowledge_base_configuration CcKnowledgeBase#knowledge_base_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_knowledge_base#knowledge_base_configuration CcKnowledgeBase#knowledge_base_configuration}
     */
     readonly knowledgeBaseConfiguration: CcKnowledgeBase.KnowledgeBaseConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_knowledge_base#knowledge_base_id CcKnowledgeBase#knowledge_base_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_knowledge_base#knowledge_base_id CcKnowledgeBase#knowledge_base_id}
     */
     readonly knowledgeBaseId: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_knowledge_base#media_extraction_configuration CcKnowledgeBase#media_extraction_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_knowledge_base#media_extraction_configuration CcKnowledgeBase#media_extraction_configuration}
     */
     readonly mediaExtractionConfiguration?: CcKnowledgeBase.MediaExtractionConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_knowledge_base#name CcKnowledgeBase#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_knowledge_base#name CcKnowledgeBase#name}
     */
     readonly name: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_knowledge_base#permissions CcKnowledgeBase#permissions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_knowledge_base#permissions CcKnowledgeBase#permissions}
     */
     readonly permissions?: CcKnowledgeBase.ResourcePermissionProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_knowledge_base#primary_owner_arn CcKnowledgeBase#primary_owner_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_knowledge_base#primary_owner_arn CcKnowledgeBase#primary_owner_arn}
     */
     readonly primaryOwnerArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_knowledge_base#tags CcKnowledgeBase#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_knowledge_base#tags CcKnowledgeBase#tags}
     */
     readonly tags?: CcKnowledgeBase.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_knowledge_base awscc_quicksight_knowledge_base}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_knowledge_base awscc_quicksight_knowledge_base}
 */
 export class CcKnowledgeBase extends cdktn.TerraformResource {
 
@@ -73,7 +73,7 @@ export class CcKnowledgeBase extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcKnowledgeBase resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcKnowledgeBase to import
-    * @param importFromId The id of the existing CcKnowledgeBase that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_knowledge_base#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcKnowledgeBase that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_knowledge_base#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcKnowledgeBase to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -85,7 +85,7 @@ export class CcKnowledgeBase extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_knowledge_base awscc_quicksight_knowledge_base} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_knowledge_base awscc_quicksight_knowledge_base} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -96,7 +96,7 @@ export class CcKnowledgeBase extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_quicksight_knowledge_base',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -763,7 +763,7 @@ export function ccKnowledgeBaseTagPropertyToHclTerraform(struct?: CcKnowledgeBas
 export namespace CcKnowledgeBase {
 export interface AccessControlConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_knowledge_base#is_acl_enabled CcKnowledgeBase#is_acl_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_knowledge_base#is_acl_enabled CcKnowledgeBase#is_acl_enabled}
     */
     readonly isAclEnabled?: boolean | cdktn.IResolvable;
 }
@@ -827,7 +827,7 @@ export class AccessControlConfigurationPropertyOutputReference extends cdktn.Com
 }
 export interface KbTemplateConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_knowledge_base#template CcKnowledgeBase#template}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_knowledge_base#template CcKnowledgeBase#template}
     */
     readonly template?: string;
 }
@@ -891,7 +891,7 @@ export class KbTemplateConfigurationPropertyOutputReference extends cdktn.Comple
 }
 export interface KnowledgeBaseConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_knowledge_base#template_configuration CcKnowledgeBase#template_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_knowledge_base#template_configuration CcKnowledgeBase#template_configuration}
     */
     readonly templateConfiguration?: KbTemplateConfigurationProperty;
 }
@@ -955,7 +955,7 @@ export class KnowledgeBaseConfigurationPropertyOutputReference extends cdktn.Com
 }
 export interface AudioExtractionConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_knowledge_base#audio_extraction_status CcKnowledgeBase#audio_extraction_status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_knowledge_base#audio_extraction_status CcKnowledgeBase#audio_extraction_status}
     */
     readonly audioExtractionStatus?: string;
 }
@@ -1019,7 +1019,7 @@ export class AudioExtractionConfigurationPropertyOutputReference extends cdktn.C
 }
 export interface ImageExtractionConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_knowledge_base#image_extraction_status CcKnowledgeBase#image_extraction_status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_knowledge_base#image_extraction_status CcKnowledgeBase#image_extraction_status}
     */
     readonly imageExtractionStatus?: string;
 }
@@ -1083,11 +1083,11 @@ export class ImageExtractionConfigurationPropertyOutputReference extends cdktn.C
 }
 export interface VideoExtractionConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_knowledge_base#video_extraction_status CcKnowledgeBase#video_extraction_status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_knowledge_base#video_extraction_status CcKnowledgeBase#video_extraction_status}
     */
     readonly videoExtractionStatus?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_knowledge_base#video_extraction_type CcKnowledgeBase#video_extraction_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_knowledge_base#video_extraction_type CcKnowledgeBase#video_extraction_type}
     */
     readonly videoExtractionType?: string;
 }
@@ -1173,15 +1173,15 @@ export class VideoExtractionConfigurationPropertyOutputReference extends cdktn.C
 }
 export interface MediaExtractionConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_knowledge_base#audio_extraction_configuration CcKnowledgeBase#audio_extraction_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_knowledge_base#audio_extraction_configuration CcKnowledgeBase#audio_extraction_configuration}
     */
     readonly audioExtractionConfiguration?: AudioExtractionConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_knowledge_base#image_extraction_configuration CcKnowledgeBase#image_extraction_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_knowledge_base#image_extraction_configuration CcKnowledgeBase#image_extraction_configuration}
     */
     readonly imageExtractionConfiguration?: ImageExtractionConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_knowledge_base#video_extraction_configuration CcKnowledgeBase#video_extraction_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_knowledge_base#video_extraction_configuration CcKnowledgeBase#video_extraction_configuration}
     */
     readonly videoExtractionConfiguration?: VideoExtractionConfigurationProperty;
 }
@@ -1291,7 +1291,7 @@ export interface ResourcePermissionProperty {
     /**
     * <p>The IAM action to grant or revoke permissions on.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_knowledge_base#actions CcKnowledgeBase#actions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_knowledge_base#actions CcKnowledgeBase#actions}
     */
     readonly actions?: string[];
     /**
@@ -1311,11 +1311,11 @@ export interface ResourcePermissionProperty {
     *             </li>
     *          </ul>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_knowledge_base#principal CcKnowledgeBase#principal}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_knowledge_base#principal CcKnowledgeBase#principal}
     */
     readonly principal?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_knowledge_base#resource CcKnowledgeBase#resource}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_knowledge_base#resource CcKnowledgeBase#resource}
     */
     readonly resource?: string;
 }
@@ -1447,13 +1447,13 @@ export interface TagProperty {
     /**
     * <p>Tag key.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_knowledge_base#key CcKnowledgeBase#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_knowledge_base#key CcKnowledgeBase#key}
     */
     readonly key?: string;
     /**
     * <p>Tag value.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_knowledge_base#value CcKnowledgeBase#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_knowledge_base#value CcKnowledgeBase#value}
     */
     readonly value?: string;
 }

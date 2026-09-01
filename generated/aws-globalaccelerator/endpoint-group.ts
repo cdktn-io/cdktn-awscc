@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/globalaccelerator_endpoint_group
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/globalaccelerator_endpoint_group
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,63 +9,63 @@ export interface CcEndpointGroupProps extends cdktn.TerraformMetaArguments {
     /**
     * The list of endpoint objects.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/globalaccelerator_endpoint_group#endpoint_configurations CcEndpointGroup#endpoint_configurations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/globalaccelerator_endpoint_group#endpoint_configurations CcEndpointGroup#endpoint_configurations}
     */
     readonly endpointConfigurations?: CcEndpointGroup.EndpointConfigurationProperty[] | cdktn.IResolvable;
     /**
     * The name of the AWS Region where the endpoint group is located
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/globalaccelerator_endpoint_group#endpoint_group_region CcEndpointGroup#endpoint_group_region}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/globalaccelerator_endpoint_group#endpoint_group_region CcEndpointGroup#endpoint_group_region}
     */
     readonly endpointGroupRegion: string;
     /**
     * The time in seconds between each health check for an endpoint. Must be a value of 10 or 30
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/globalaccelerator_endpoint_group#health_check_interval_seconds CcEndpointGroup#health_check_interval_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/globalaccelerator_endpoint_group#health_check_interval_seconds CcEndpointGroup#health_check_interval_seconds}
     */
     readonly healthCheckIntervalSeconds?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/globalaccelerator_endpoint_group#health_check_path CcEndpointGroup#health_check_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/globalaccelerator_endpoint_group#health_check_path CcEndpointGroup#health_check_path}
     */
     readonly healthCheckPath?: string;
     /**
     * The port that AWS Global Accelerator uses to check the health of endpoints in this endpoint group.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/globalaccelerator_endpoint_group#health_check_port CcEndpointGroup#health_check_port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/globalaccelerator_endpoint_group#health_check_port CcEndpointGroup#health_check_port}
     */
     readonly healthCheckPort?: number;
     /**
     * The protocol that AWS Global Accelerator uses to check the health of endpoints in this endpoint group.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/globalaccelerator_endpoint_group#health_check_protocol CcEndpointGroup#health_check_protocol}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/globalaccelerator_endpoint_group#health_check_protocol CcEndpointGroup#health_check_protocol}
     */
     readonly healthCheckProtocol?: string;
     /**
     * The Amazon Resource Name (ARN) of the listener
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/globalaccelerator_endpoint_group#listener_arn CcEndpointGroup#listener_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/globalaccelerator_endpoint_group#listener_arn CcEndpointGroup#listener_arn}
     */
     readonly listenerArn: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/globalaccelerator_endpoint_group#port_overrides CcEndpointGroup#port_overrides}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/globalaccelerator_endpoint_group#port_overrides CcEndpointGroup#port_overrides}
     */
     readonly portOverrides?: CcEndpointGroup.PortOverrideProperty[] | cdktn.IResolvable;
     /**
     * The number of consecutive health checks required to set the state of the endpoint to unhealthy.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/globalaccelerator_endpoint_group#threshold_count CcEndpointGroup#threshold_count}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/globalaccelerator_endpoint_group#threshold_count CcEndpointGroup#threshold_count}
     */
     readonly thresholdCount?: number;
     /**
     * The percentage of traffic to sent to an AWS Region
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/globalaccelerator_endpoint_group#traffic_dial_percentage CcEndpointGroup#traffic_dial_percentage}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/globalaccelerator_endpoint_group#traffic_dial_percentage CcEndpointGroup#traffic_dial_percentage}
     */
     readonly trafficDialPercentage?: number;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/globalaccelerator_endpoint_group awscc_globalaccelerator_endpoint_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/globalaccelerator_endpoint_group awscc_globalaccelerator_endpoint_group}
 */
 export class CcEndpointGroup extends cdktn.TerraformResource {
 
@@ -81,7 +81,7 @@ export class CcEndpointGroup extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcEndpointGroup resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcEndpointGroup to import
-    * @param importFromId The id of the existing CcEndpointGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/globalaccelerator_endpoint_group#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcEndpointGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/globalaccelerator_endpoint_group#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcEndpointGroup to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -93,7 +93,7 @@ export class CcEndpointGroup extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/globalaccelerator_endpoint_group awscc_globalaccelerator_endpoint_group} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/globalaccelerator_endpoint_group awscc_globalaccelerator_endpoint_group} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -104,7 +104,7 @@ export class CcEndpointGroup extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_globalaccelerator_endpoint_group',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -475,25 +475,25 @@ export interface EndpointConfigurationProperty {
     /**
     * Attachment ARN that provides access control to the cross account endpoint. Not required for resources hosted in the same account as the endpoint group.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/globalaccelerator_endpoint_group#attachment_arn CcEndpointGroup#attachment_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/globalaccelerator_endpoint_group#attachment_arn CcEndpointGroup#attachment_arn}
     */
     readonly attachmentArn?: string;
     /**
     * true if client ip should be preserved
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/globalaccelerator_endpoint_group#client_ip_preservation_enabled CcEndpointGroup#client_ip_preservation_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/globalaccelerator_endpoint_group#client_ip_preservation_enabled CcEndpointGroup#client_ip_preservation_enabled}
     */
     readonly clientIpPreservationEnabled?: boolean | cdktn.IResolvable;
     /**
     * Id of the endpoint. For Network/Application Load Balancer this value is the ARN.  For EIP, this value is the allocation ID.  For EC2 instances, this is the EC2 instance ID
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/globalaccelerator_endpoint_group#endpoint_id CcEndpointGroup#endpoint_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/globalaccelerator_endpoint_group#endpoint_id CcEndpointGroup#endpoint_id}
     */
     readonly endpointId?: string;
     /**
     * The weight for the endpoint.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/globalaccelerator_endpoint_group#weight CcEndpointGroup#weight}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/globalaccelerator_endpoint_group#weight CcEndpointGroup#weight}
     */
     readonly weight?: number;
 }
@@ -647,13 +647,13 @@ export interface PortOverrideProperty {
     /**
     * A network port number
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/globalaccelerator_endpoint_group#endpoint_port CcEndpointGroup#endpoint_port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/globalaccelerator_endpoint_group#endpoint_port CcEndpointGroup#endpoint_port}
     */
     readonly endpointPort?: number;
     /**
     * A network port number
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/globalaccelerator_endpoint_group#listener_port CcEndpointGroup#listener_port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/globalaccelerator_endpoint_group#listener_port CcEndpointGroup#listener_port}
     */
     readonly listenerPort?: number;
 }

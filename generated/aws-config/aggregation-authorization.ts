@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/config_aggregation_authorization
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/config_aggregation_authorization
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,25 +9,25 @@ export interface CcAggregationAuthorizationProps extends cdktn.TerraformMetaArgu
     /**
     * The 12-digit account ID of the account authorized to aggregate data.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/config_aggregation_authorization#authorized_account_id CcAggregationAuthorization#authorized_account_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/config_aggregation_authorization#authorized_account_id CcAggregationAuthorization#authorized_account_id}
     */
     readonly authorizedAccountId: string;
     /**
     * The region authorized to collect aggregated data.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/config_aggregation_authorization#authorized_aws_region CcAggregationAuthorization#authorized_aws_region}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/config_aggregation_authorization#authorized_aws_region CcAggregationAuthorization#authorized_aws_region}
     */
     readonly authorizedAwsRegion: string;
     /**
     * The tags for the AggregationAuthorization.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/config_aggregation_authorization#tags CcAggregationAuthorization#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/config_aggregation_authorization#tags CcAggregationAuthorization#tags}
     */
     readonly tags?: CcAggregationAuthorization.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/config_aggregation_authorization awscc_config_aggregation_authorization}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/config_aggregation_authorization awscc_config_aggregation_authorization}
 */
 export class CcAggregationAuthorization extends cdktn.TerraformResource {
 
@@ -43,7 +43,7 @@ export class CcAggregationAuthorization extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcAggregationAuthorization resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcAggregationAuthorization to import
-    * @param importFromId The id of the existing CcAggregationAuthorization that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/config_aggregation_authorization#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcAggregationAuthorization that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/config_aggregation_authorization#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcAggregationAuthorization to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -55,7 +55,7 @@ export class CcAggregationAuthorization extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/config_aggregation_authorization awscc_config_aggregation_authorization} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/config_aggregation_authorization awscc_config_aggregation_authorization} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +66,7 @@ export class CcAggregationAuthorization extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_config_aggregation_authorization',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -218,13 +218,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 127 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/config_aggregation_authorization#key CcAggregationAuthorization#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/config_aggregation_authorization#key CcAggregationAuthorization#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 1 to 255 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/config_aggregation_authorization#value CcAggregationAuthorization#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/config_aggregation_authorization#value CcAggregationAuthorization#value}
     */
     readonly value?: string;
 }

@@ -1,47 +1,47 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_dlp_setting
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_dlp_setting
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcDLPSettingProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_dlp_setting#aws_account_id CcDLPSetting#aws_account_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_dlp_setting#aws_account_id CcDLPSetting#aws_account_id}
     */
     readonly awsAccountId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_dlp_setting#dlp_setting_id CcDLPSetting#dlp_setting_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_dlp_setting#dlp_setting_id CcDLPSetting#dlp_setting_id}
     */
     readonly dlpSettingId: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_dlp_setting#enabled CcDLPSetting#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_dlp_setting#enabled CcDLPSetting#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_dlp_setting#name CcDLPSetting#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_dlp_setting#name CcDLPSetting#name}
     */
     readonly name: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_dlp_setting#provider_config CcDLPSetting#provider_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_dlp_setting#provider_config CcDLPSetting#provider_config}
     */
     readonly providerConfig: CcDLPSetting.ProviderConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_dlp_setting#provider_outage_action CcDLPSetting#provider_outage_action}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_dlp_setting#provider_outage_action CcDLPSetting#provider_outage_action}
     */
     readonly providerOutageAction: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_dlp_setting#provider_type CcDLPSetting#provider_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_dlp_setting#provider_type CcDLPSetting#provider_type}
     */
     readonly providerType: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_dlp_setting#tags CcDLPSetting#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_dlp_setting#tags CcDLPSetting#tags}
     */
     readonly tags?: CcDLPSetting.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_dlp_setting awscc_quicksight_dlp_setting}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_dlp_setting awscc_quicksight_dlp_setting}
 */
 export class CcDLPSetting extends cdktn.TerraformResource {
 
@@ -57,7 +57,7 @@ export class CcDLPSetting extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcDLPSetting resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcDLPSetting to import
-    * @param importFromId The id of the existing CcDLPSetting that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_dlp_setting#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcDLPSetting that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_dlp_setting#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcDLPSetting to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -69,7 +69,7 @@ export class CcDLPSetting extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_dlp_setting awscc_quicksight_dlp_setting} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_dlp_setting awscc_quicksight_dlp_setting} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -80,7 +80,7 @@ export class CcDLPSetting extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_quicksight_dlp_setting',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -504,7 +504,7 @@ export function ccDLPSettingTagPropertyToHclTerraform(struct?: CcDLPSetting.TagP
 export namespace CcDLPSetting {
 export interface MicrosoftPurviewCredentialsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_dlp_setting#secret_arn CcDLPSetting#secret_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_dlp_setting#secret_arn CcDLPSetting#secret_arn}
     */
     readonly secretArn?: string;
 }
@@ -568,15 +568,15 @@ export class MicrosoftPurviewCredentialsPropertyOutputReference extends cdktn.Co
 }
 export interface LabelActionMappingProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_dlp_setting#action CcDLPSetting#action}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_dlp_setting#action CcDLPSetting#action}
     */
     readonly action?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_dlp_setting#label_id CcDLPSetting#label_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_dlp_setting#label_id CcDLPSetting#label_id}
     */
     readonly labelId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_dlp_setting#label_name CcDLPSetting#label_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_dlp_setting#label_name CcDLPSetting#label_name}
     */
     readonly labelName?: string;
 }
@@ -706,15 +706,15 @@ export class LabelActionMappingPropertyList extends cdktn.ComplexList {
 }
 export interface MicrosoftPurviewProviderConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_dlp_setting#credentials CcDLPSetting#credentials}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_dlp_setting#credentials CcDLPSetting#credentials}
     */
     readonly credentials?: MicrosoftPurviewCredentialsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_dlp_setting#label_action_mappings CcDLPSetting#label_action_mappings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_dlp_setting#label_action_mappings CcDLPSetting#label_action_mappings}
     */
     readonly labelActionMappings?: LabelActionMappingProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_dlp_setting#unmapped_action CcDLPSetting#unmapped_action}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_dlp_setting#unmapped_action CcDLPSetting#unmapped_action}
     */
     readonly unmappedAction?: string;
 }
@@ -822,7 +822,7 @@ export class MicrosoftPurviewProviderConfigPropertyOutputReference extends cdktn
 }
 export interface ProviderConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_dlp_setting#microsoft_purview CcDLPSetting#microsoft_purview}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_dlp_setting#microsoft_purview CcDLPSetting#microsoft_purview}
     */
     readonly microsoftPurview?: MicrosoftPurviewProviderConfigProperty;
 }
@@ -888,13 +888,13 @@ export interface TagProperty {
     /**
     * <p>Tag key.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_dlp_setting#key CcDLPSetting#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_dlp_setting#key CcDLPSetting#key}
     */
     readonly key?: string;
     /**
     * <p>Tag value.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_dlp_setting#value CcDLPSetting#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_dlp_setting#value CcDLPSetting#value}
     */
     readonly value?: string;
 }

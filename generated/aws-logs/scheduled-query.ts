@@ -1,71 +1,71 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/logs_scheduled_query
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/logs_scheduled_query
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcScheduledQueryProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/logs_scheduled_query#description CcScheduledQuery#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/logs_scheduled_query#description CcScheduledQuery#description}
     */
     readonly description?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/logs_scheduled_query#destination_configuration CcScheduledQuery#destination_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/logs_scheduled_query#destination_configuration CcScheduledQuery#destination_configuration}
     */
     readonly destinationConfiguration?: CcScheduledQuery.DestinationConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/logs_scheduled_query#execution_role_arn CcScheduledQuery#execution_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/logs_scheduled_query#execution_role_arn CcScheduledQuery#execution_role_arn}
     */
     readonly executionRoleArn: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/logs_scheduled_query#log_group_identifiers CcScheduledQuery#log_group_identifiers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/logs_scheduled_query#log_group_identifiers CcScheduledQuery#log_group_identifiers}
     */
     readonly logGroupIdentifiers?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/logs_scheduled_query#name CcScheduledQuery#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/logs_scheduled_query#name CcScheduledQuery#name}
     */
     readonly name: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/logs_scheduled_query#query_language CcScheduledQuery#query_language}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/logs_scheduled_query#query_language CcScheduledQuery#query_language}
     */
     readonly queryLanguage: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/logs_scheduled_query#query_string CcScheduledQuery#query_string}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/logs_scheduled_query#query_string CcScheduledQuery#query_string}
     */
     readonly queryString: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/logs_scheduled_query#schedule_end_time CcScheduledQuery#schedule_end_time}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/logs_scheduled_query#schedule_end_time CcScheduledQuery#schedule_end_time}
     */
     readonly scheduleEndTime?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/logs_scheduled_query#schedule_expression CcScheduledQuery#schedule_expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/logs_scheduled_query#schedule_expression CcScheduledQuery#schedule_expression}
     */
     readonly scheduleExpression: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/logs_scheduled_query#schedule_start_time CcScheduledQuery#schedule_start_time}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/logs_scheduled_query#schedule_start_time CcScheduledQuery#schedule_start_time}
     */
     readonly scheduleStartTime?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/logs_scheduled_query#start_time_offset CcScheduledQuery#start_time_offset}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/logs_scheduled_query#start_time_offset CcScheduledQuery#start_time_offset}
     */
     readonly startTimeOffset?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/logs_scheduled_query#state CcScheduledQuery#state}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/logs_scheduled_query#state CcScheduledQuery#state}
     */
     readonly state?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/logs_scheduled_query#tags CcScheduledQuery#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/logs_scheduled_query#tags CcScheduledQuery#tags}
     */
     readonly tags?: CcScheduledQuery.TagsItemsProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/logs_scheduled_query#timezone CcScheduledQuery#timezone}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/logs_scheduled_query#timezone CcScheduledQuery#timezone}
     */
     readonly timezone?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/logs_scheduled_query awscc_logs_scheduled_query}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/logs_scheduled_query awscc_logs_scheduled_query}
 */
 export class CcScheduledQuery extends cdktn.TerraformResource {
 
@@ -81,7 +81,7 @@ export class CcScheduledQuery extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcScheduledQuery resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcScheduledQuery to import
-    * @param importFromId The id of the existing CcScheduledQuery that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/logs_scheduled_query#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcScheduledQuery that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/logs_scheduled_query#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcScheduledQuery to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -93,7 +93,7 @@ export class CcScheduledQuery extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/logs_scheduled_query awscc_logs_scheduled_query} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/logs_scheduled_query awscc_logs_scheduled_query} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -104,7 +104,7 @@ export class CcScheduledQuery extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_logs_scheduled_query',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -596,11 +596,11 @@ export function ccScheduledQueryTagsItemsPropertyToHclTerraform(struct?: CcSched
 export namespace CcScheduledQuery {
 export interface S3ConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/logs_scheduled_query#destination_identifier CcScheduledQuery#destination_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/logs_scheduled_query#destination_identifier CcScheduledQuery#destination_identifier}
     */
     readonly destinationIdentifier?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/logs_scheduled_query#role_arn CcScheduledQuery#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/logs_scheduled_query#role_arn CcScheduledQuery#role_arn}
     */
     readonly roleArn?: string;
 }
@@ -686,7 +686,7 @@ export class S3ConfigurationPropertyOutputReference extends cdktn.ComplexObject 
 }
 export interface DestinationConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/logs_scheduled_query#s3_configuration CcScheduledQuery#s3_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/logs_scheduled_query#s3_configuration CcScheduledQuery#s3_configuration}
     */
     readonly s3Configuration?: S3ConfigurationProperty;
 }
@@ -750,11 +750,11 @@ export class DestinationConfigurationPropertyOutputReference extends cdktn.Compl
 }
 export interface TagsItemsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/logs_scheduled_query#key CcScheduledQuery#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/logs_scheduled_query#key CcScheduledQuery#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/logs_scheduled_query#value CcScheduledQuery#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/logs_scheduled_query#value CcScheduledQuery#value}
     */
     readonly value?: string;
 }

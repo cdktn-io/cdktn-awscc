@@ -1,35 +1,35 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_signal_catalog
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_signal_catalog
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcSignalCatalogProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_signal_catalog#description CcSignalCatalog#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_signal_catalog#description CcSignalCatalog#description}
     */
     readonly description?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_signal_catalog#name CcSignalCatalog#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_signal_catalog#name CcSignalCatalog#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_signal_catalog#node_counts CcSignalCatalog#node_counts}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_signal_catalog#node_counts CcSignalCatalog#node_counts}
     */
     readonly nodeCounts?: CcSignalCatalog.NodeCountsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_signal_catalog#nodes CcSignalCatalog#nodes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_signal_catalog#nodes CcSignalCatalog#nodes}
     */
     readonly nodes?: CcSignalCatalog.NodeProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_signal_catalog#tags CcSignalCatalog#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_signal_catalog#tags CcSignalCatalog#tags}
     */
     readonly tags?: CcSignalCatalog.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_signal_catalog awscc_iotfleetwise_signal_catalog}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_signal_catalog awscc_iotfleetwise_signal_catalog}
 */
 export class CcSignalCatalog extends cdktn.TerraformResource {
 
@@ -45,7 +45,7 @@ export class CcSignalCatalog extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcSignalCatalog resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcSignalCatalog to import
-    * @param importFromId The id of the existing CcSignalCatalog that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_signal_catalog#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcSignalCatalog that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_signal_catalog#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcSignalCatalog to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -57,7 +57,7 @@ export class CcSignalCatalog extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_signal_catalog awscc_iotfleetwise_signal_catalog} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_signal_catalog awscc_iotfleetwise_signal_catalog} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -68,7 +68,7 @@ export class CcSignalCatalog extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_iotfleetwise_signal_catalog',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -691,35 +691,35 @@ export class NodeCountsPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface ActuatorProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_signal_catalog#allowed_values CcSignalCatalog#allowed_values}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_signal_catalog#allowed_values CcSignalCatalog#allowed_values}
     */
     readonly allowedValues?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_signal_catalog#assigned_value CcSignalCatalog#assigned_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_signal_catalog#assigned_value CcSignalCatalog#assigned_value}
     */
     readonly assignedValue?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_signal_catalog#data_type CcSignalCatalog#data_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_signal_catalog#data_type CcSignalCatalog#data_type}
     */
     readonly dataType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_signal_catalog#description CcSignalCatalog#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_signal_catalog#description CcSignalCatalog#description}
     */
     readonly description?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_signal_catalog#fully_qualified_name CcSignalCatalog#fully_qualified_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_signal_catalog#fully_qualified_name CcSignalCatalog#fully_qualified_name}
     */
     readonly fullyQualifiedName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_signal_catalog#max CcSignalCatalog#max}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_signal_catalog#max CcSignalCatalog#max}
     */
     readonly max?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_signal_catalog#min CcSignalCatalog#min}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_signal_catalog#min CcSignalCatalog#min}
     */
     readonly min?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_signal_catalog#unit CcSignalCatalog#unit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_signal_catalog#unit CcSignalCatalog#unit}
     */
     readonly unit?: string;
 }
@@ -937,39 +937,39 @@ export class ActuatorPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface AttributeProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_signal_catalog#allowed_values CcSignalCatalog#allowed_values}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_signal_catalog#allowed_values CcSignalCatalog#allowed_values}
     */
     readonly allowedValues?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_signal_catalog#assigned_value CcSignalCatalog#assigned_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_signal_catalog#assigned_value CcSignalCatalog#assigned_value}
     */
     readonly assignedValue?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_signal_catalog#data_type CcSignalCatalog#data_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_signal_catalog#data_type CcSignalCatalog#data_type}
     */
     readonly dataType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_signal_catalog#default_value CcSignalCatalog#default_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_signal_catalog#default_value CcSignalCatalog#default_value}
     */
     readonly defaultValue?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_signal_catalog#description CcSignalCatalog#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_signal_catalog#description CcSignalCatalog#description}
     */
     readonly description?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_signal_catalog#fully_qualified_name CcSignalCatalog#fully_qualified_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_signal_catalog#fully_qualified_name CcSignalCatalog#fully_qualified_name}
     */
     readonly fullyQualifiedName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_signal_catalog#max CcSignalCatalog#max}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_signal_catalog#max CcSignalCatalog#max}
     */
     readonly max?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_signal_catalog#min CcSignalCatalog#min}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_signal_catalog#min CcSignalCatalog#min}
     */
     readonly min?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_signal_catalog#unit CcSignalCatalog#unit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_signal_catalog#unit CcSignalCatalog#unit}
     */
     readonly unit?: string;
 }
@@ -1209,11 +1209,11 @@ export class AttributePropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface BranchProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_signal_catalog#description CcSignalCatalog#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_signal_catalog#description CcSignalCatalog#description}
     */
     readonly description?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_signal_catalog#fully_qualified_name CcSignalCatalog#fully_qualified_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_signal_catalog#fully_qualified_name CcSignalCatalog#fully_qualified_name}
     */
     readonly fullyQualifiedName?: string;
 }
@@ -1299,31 +1299,31 @@ export class BranchPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface SensorProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_signal_catalog#allowed_values CcSignalCatalog#allowed_values}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_signal_catalog#allowed_values CcSignalCatalog#allowed_values}
     */
     readonly allowedValues?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_signal_catalog#data_type CcSignalCatalog#data_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_signal_catalog#data_type CcSignalCatalog#data_type}
     */
     readonly dataType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_signal_catalog#description CcSignalCatalog#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_signal_catalog#description CcSignalCatalog#description}
     */
     readonly description?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_signal_catalog#fully_qualified_name CcSignalCatalog#fully_qualified_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_signal_catalog#fully_qualified_name CcSignalCatalog#fully_qualified_name}
     */
     readonly fullyQualifiedName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_signal_catalog#max CcSignalCatalog#max}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_signal_catalog#max CcSignalCatalog#max}
     */
     readonly max?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_signal_catalog#min CcSignalCatalog#min}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_signal_catalog#min CcSignalCatalog#min}
     */
     readonly min?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_signal_catalog#unit CcSignalCatalog#unit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_signal_catalog#unit CcSignalCatalog#unit}
     */
     readonly unit?: string;
 }
@@ -1519,19 +1519,19 @@ export class SensorPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface NodeProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_signal_catalog#actuator CcSignalCatalog#actuator}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_signal_catalog#actuator CcSignalCatalog#actuator}
     */
     readonly actuator?: ActuatorProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_signal_catalog#attribute CcSignalCatalog#attribute}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_signal_catalog#attribute CcSignalCatalog#attribute}
     */
     readonly attribute?: AttributeProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_signal_catalog#branch CcSignalCatalog#branch}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_signal_catalog#branch CcSignalCatalog#branch}
     */
     readonly branch?: BranchProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_signal_catalog#sensor CcSignalCatalog#sensor}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_signal_catalog#sensor CcSignalCatalog#sensor}
     */
     readonly sensor?: SensorProperty;
 }
@@ -1683,11 +1683,11 @@ export class NodePropertyList extends cdktn.ComplexList {
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_signal_catalog#key CcSignalCatalog#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_signal_catalog#key CcSignalCatalog#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_signal_catalog#value CcSignalCatalog#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_signal_catalog#value CcSignalCatalog#value}
     */
     readonly value?: string;
 }

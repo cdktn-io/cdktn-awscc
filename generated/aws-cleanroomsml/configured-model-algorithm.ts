@@ -1,45 +1,45 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanroomsml_configured_model_algorithm
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanroomsml_configured_model_algorithm
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcConfiguredModelAlgorithmProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanroomsml_configured_model_algorithm#description CcConfiguredModelAlgorithm#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanroomsml_configured_model_algorithm#description CcConfiguredModelAlgorithm#description}
     */
     readonly description?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanroomsml_configured_model_algorithm#inference_container_config CcConfiguredModelAlgorithm#inference_container_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanroomsml_configured_model_algorithm#inference_container_config CcConfiguredModelAlgorithm#inference_container_config}
     */
     readonly inferenceContainerConfig?: CcConfiguredModelAlgorithm.InferenceContainerConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanroomsml_configured_model_algorithm#kms_key_arn CcConfiguredModelAlgorithm#kms_key_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanroomsml_configured_model_algorithm#kms_key_arn CcConfiguredModelAlgorithm#kms_key_arn}
     */
     readonly kmsKeyArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanroomsml_configured_model_algorithm#name CcConfiguredModelAlgorithm#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanroomsml_configured_model_algorithm#name CcConfiguredModelAlgorithm#name}
     */
     readonly name: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanroomsml_configured_model_algorithm#role_arn CcConfiguredModelAlgorithm#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanroomsml_configured_model_algorithm#role_arn CcConfiguredModelAlgorithm#role_arn}
     */
     readonly roleArn: string;
     /**
     * An arbitrary set of tags (key-value pairs) for this cleanrooms-ml configured model algorithm.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanroomsml_configured_model_algorithm#tags CcConfiguredModelAlgorithm#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanroomsml_configured_model_algorithm#tags CcConfiguredModelAlgorithm#tags}
     */
     readonly tags?: CcConfiguredModelAlgorithm.TagProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanroomsml_configured_model_algorithm#training_container_config CcConfiguredModelAlgorithm#training_container_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanroomsml_configured_model_algorithm#training_container_config CcConfiguredModelAlgorithm#training_container_config}
     */
     readonly trainingContainerConfig?: CcConfiguredModelAlgorithm.ContainerConfigProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanroomsml_configured_model_algorithm awscc_cleanroomsml_configured_model_algorithm}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanroomsml_configured_model_algorithm awscc_cleanroomsml_configured_model_algorithm}
 */
 export class CcConfiguredModelAlgorithm extends cdktn.TerraformResource {
 
@@ -55,7 +55,7 @@ export class CcConfiguredModelAlgorithm extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcConfiguredModelAlgorithm resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcConfiguredModelAlgorithm to import
-    * @param importFromId The id of the existing CcConfiguredModelAlgorithm that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanroomsml_configured_model_algorithm#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcConfiguredModelAlgorithm that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanroomsml_configured_model_algorithm#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcConfiguredModelAlgorithm to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -67,7 +67,7 @@ export class CcConfiguredModelAlgorithm extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanroomsml_configured_model_algorithm awscc_cleanroomsml_configured_model_algorithm} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanroomsml_configured_model_algorithm awscc_cleanroomsml_configured_model_algorithm} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -78,7 +78,7 @@ export class CcConfiguredModelAlgorithm extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_cleanroomsml_configured_model_algorithm',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -442,7 +442,7 @@ export function ccConfiguredModelAlgorithmContainerConfigPropertyToHclTerraform(
 export namespace CcConfiguredModelAlgorithm {
 export interface InferenceContainerConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanroomsml_configured_model_algorithm#image_uri CcConfiguredModelAlgorithm#image_uri}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanroomsml_configured_model_algorithm#image_uri CcConfiguredModelAlgorithm#image_uri}
     */
     readonly imageUri?: string;
 }
@@ -506,11 +506,11 @@ export class InferenceContainerConfigPropertyOutputReference extends cdktn.Compl
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanroomsml_configured_model_algorithm#key CcConfiguredModelAlgorithm#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanroomsml_configured_model_algorithm#key CcConfiguredModelAlgorithm#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanroomsml_configured_model_algorithm#value CcConfiguredModelAlgorithm#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanroomsml_configured_model_algorithm#value CcConfiguredModelAlgorithm#value}
     */
     readonly value?: string;
 }
@@ -618,11 +618,11 @@ export class TagPropertyList extends cdktn.ComplexList {
 }
 export interface MetricDefinitionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanroomsml_configured_model_algorithm#name CcConfiguredModelAlgorithm#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanroomsml_configured_model_algorithm#name CcConfiguredModelAlgorithm#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanroomsml_configured_model_algorithm#regex CcConfiguredModelAlgorithm#regex}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanroomsml_configured_model_algorithm#regex CcConfiguredModelAlgorithm#regex}
     */
     readonly regex?: string;
 }
@@ -730,19 +730,19 @@ export class MetricDefinitionPropertyList extends cdktn.ComplexList {
 }
 export interface ContainerConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanroomsml_configured_model_algorithm#arguments CcConfiguredModelAlgorithm#arguments}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanroomsml_configured_model_algorithm#arguments CcConfiguredModelAlgorithm#arguments}
     */
     readonly arguments?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanroomsml_configured_model_algorithm#entrypoint CcConfiguredModelAlgorithm#entrypoint}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanroomsml_configured_model_algorithm#entrypoint CcConfiguredModelAlgorithm#entrypoint}
     */
     readonly entrypoint?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanroomsml_configured_model_algorithm#image_uri CcConfiguredModelAlgorithm#image_uri}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanroomsml_configured_model_algorithm#image_uri CcConfiguredModelAlgorithm#image_uri}
     */
     readonly imageUri?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanroomsml_configured_model_algorithm#metric_definitions CcConfiguredModelAlgorithm#metric_definitions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanroomsml_configured_model_algorithm#metric_definitions CcConfiguredModelAlgorithm#metric_definitions}
     */
     readonly metricDefinitions?: MetricDefinitionProperty[] | cdktn.IResolvable;
 }

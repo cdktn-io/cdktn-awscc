@@ -1,59 +1,59 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_o_auth_client_application
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_o_auth_client_application
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcOAuthClientApplicationProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_o_auth_client_application#client_id CcOAuthClientApplication#client_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_o_auth_client_application#client_id CcOAuthClientApplication#client_id}
     */
     readonly clientId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_o_auth_client_application#client_secret CcOAuthClientApplication#client_secret}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_o_auth_client_application#client_secret CcOAuthClientApplication#client_secret}
     */
     readonly clientSecret?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_o_auth_client_application#data_source_type CcOAuthClientApplication#data_source_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_o_auth_client_application#data_source_type CcOAuthClientApplication#data_source_type}
     */
     readonly dataSourceType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_o_auth_client_application#identity_provider_vpc_connection_properties CcOAuthClientApplication#identity_provider_vpc_connection_properties}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_o_auth_client_application#identity_provider_vpc_connection_properties CcOAuthClientApplication#identity_provider_vpc_connection_properties}
     */
     readonly identityProviderVpcConnectionProperties?: CcOAuthClientApplication.IdentityProviderVpcConnectionPropertiesProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_o_auth_client_application#name CcOAuthClientApplication#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_o_auth_client_application#name CcOAuthClientApplication#name}
     */
     readonly name: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_o_auth_client_application#o_auth_authorization_endpoint_url CcOAuthClientApplication#o_auth_authorization_endpoint_url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_o_auth_client_application#o_auth_authorization_endpoint_url CcOAuthClientApplication#o_auth_authorization_endpoint_url}
     */
     readonly oAuthAuthorizationEndpointUrl?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_o_auth_client_application#o_auth_client_application_id CcOAuthClientApplication#o_auth_client_application_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_o_auth_client_application#o_auth_client_application_id CcOAuthClientApplication#o_auth_client_application_id}
     */
     readonly oAuthClientApplicationId: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_o_auth_client_application#o_auth_client_authentication_type CcOAuthClientApplication#o_auth_client_authentication_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_o_auth_client_application#o_auth_client_authentication_type CcOAuthClientApplication#o_auth_client_authentication_type}
     */
     readonly oAuthClientAuthenticationType: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_o_auth_client_application#o_auth_scopes CcOAuthClientApplication#o_auth_scopes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_o_auth_client_application#o_auth_scopes CcOAuthClientApplication#o_auth_scopes}
     */
     readonly oAuthScopes?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_o_auth_client_application#o_auth_token_endpoint_url CcOAuthClientApplication#o_auth_token_endpoint_url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_o_auth_client_application#o_auth_token_endpoint_url CcOAuthClientApplication#o_auth_token_endpoint_url}
     */
     readonly oAuthTokenEndpointUrl: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_o_auth_client_application#tags CcOAuthClientApplication#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_o_auth_client_application#tags CcOAuthClientApplication#tags}
     */
     readonly tags?: CcOAuthClientApplication.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_o_auth_client_application awscc_quicksight_o_auth_client_application}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_o_auth_client_application awscc_quicksight_o_auth_client_application}
 */
 export class CcOAuthClientApplication extends cdktn.TerraformResource {
 
@@ -69,7 +69,7 @@ export class CcOAuthClientApplication extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcOAuthClientApplication resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcOAuthClientApplication to import
-    * @param importFromId The id of the existing CcOAuthClientApplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_o_auth_client_application#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcOAuthClientApplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_o_auth_client_application#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcOAuthClientApplication to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -81,7 +81,7 @@ export class CcOAuthClientApplication extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_o_auth_client_application awscc_quicksight_o_auth_client_application} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_o_auth_client_application awscc_quicksight_o_auth_client_application} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -92,7 +92,7 @@ export class CcOAuthClientApplication extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_quicksight_o_auth_client_application',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -468,7 +468,7 @@ export function ccOAuthClientApplicationTagPropertyToHclTerraform(struct?: CcOAu
 export namespace CcOAuthClientApplication {
 export interface IdentityProviderVpcConnectionPropertiesProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_o_auth_client_application#vpc_connection_arn CcOAuthClientApplication#vpc_connection_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_o_auth_client_application#vpc_connection_arn CcOAuthClientApplication#vpc_connection_arn}
     */
     readonly vpcConnectionArn?: string;
 }
@@ -532,11 +532,11 @@ export class IdentityProviderVpcConnectionPropertiesPropertyOutputReference exte
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_o_auth_client_application#key CcOAuthClientApplication#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_o_auth_client_application#key CcOAuthClientApplication#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_o_auth_client_application#value CcOAuthClientApplication#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_o_auth_client_application#value CcOAuthClientApplication#value}
     */
     readonly value?: string;
 }

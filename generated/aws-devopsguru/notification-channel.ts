@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/devopsguru_notification_channel
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsguru_notification_channel
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,13 +9,13 @@ export interface CcNotificationChannelProps extends cdktn.TerraformMetaArguments
     /**
     * Information about notification channels you have configured with DevOps Guru.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/devopsguru_notification_channel#config CcNotificationChannel#config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsguru_notification_channel#config CcNotificationChannel#config}
     */
     readonly config: CcNotificationChannel.NotificationChannelConfigProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/devopsguru_notification_channel awscc_devopsguru_notification_channel}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsguru_notification_channel awscc_devopsguru_notification_channel}
 */
 export class CcNotificationChannel extends cdktn.TerraformResource {
 
@@ -31,7 +31,7 @@ export class CcNotificationChannel extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcNotificationChannel resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcNotificationChannel to import
-    * @param importFromId The id of the existing CcNotificationChannel that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/devopsguru_notification_channel#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcNotificationChannel that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsguru_notification_channel#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcNotificationChannel to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -43,7 +43,7 @@ export class CcNotificationChannel extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/devopsguru_notification_channel awscc_devopsguru_notification_channel} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsguru_notification_channel awscc_devopsguru_notification_channel} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -54,7 +54,7 @@ export class CcNotificationChannel extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_devopsguru_notification_channel',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -228,13 +228,13 @@ export interface NotificationFilterConfigProperty {
     /**
     * DevOps Guru message types to filter for
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/devopsguru_notification_channel#message_types CcNotificationChannel#message_types}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsguru_notification_channel#message_types CcNotificationChannel#message_types}
     */
     readonly messageTypes?: string[];
     /**
     * DevOps Guru insight severities to filter for
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/devopsguru_notification_channel#severities CcNotificationChannel#severities}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsguru_notification_channel#severities CcNotificationChannel#severities}
     */
     readonly severities?: string[];
 }
@@ -320,7 +320,7 @@ export class NotificationFilterConfigPropertyOutputReference extends cdktn.Compl
 }
 export interface SnsChannelConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/devopsguru_notification_channel#topic_arn CcNotificationChannel#topic_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsguru_notification_channel#topic_arn CcNotificationChannel#topic_arn}
     */
     readonly topicArn?: string;
 }
@@ -386,13 +386,13 @@ export interface NotificationChannelConfigProperty {
     /**
     * Information about filters of a notification channel configured in DevOpsGuru to filter for insights.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/devopsguru_notification_channel#filters CcNotificationChannel#filters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsguru_notification_channel#filters CcNotificationChannel#filters}
     */
     readonly filters?: NotificationFilterConfigProperty;
     /**
     * Information about a notification channel configured in DevOps Guru to send notifications when insights are created.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/devopsguru_notification_channel#sns CcNotificationChannel#sns}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsguru_notification_channel#sns CcNotificationChannel#sns}
     */
     readonly sns?: SnsChannelConfigProperty;
 }

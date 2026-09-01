@@ -1,5 +1,6 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
+export * from './cluster-snapshot';
 export * from './custom-db-engine-version';
 export * from './db-cluster';
 export * from './db-cluster-parameter-group';
@@ -9,6 +10,7 @@ export * from './db-proxy';
 export * from './db-proxy-endpoint';
 export * from './db-proxy-target-group';
 export * from './db-shard-group';
+export * from './db-snapshot';
 export * from './db-subnet-group';
 export * from './event-subscription';
 export * from './global-cluster';

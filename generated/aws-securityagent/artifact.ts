@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityagent_artifact
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityagent_artifact
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,31 +9,31 @@ export interface CcArtifactProps extends cdktn.TerraformMetaArguments {
     /**
     * The unique identifier of the agent space to add the artifact to.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityagent_artifact#agent_space_id CcArtifact#agent_space_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityagent_artifact#agent_space_id CcArtifact#agent_space_id}
     */
     readonly agentSpaceId: string;
     /**
     * The binary content of the artifact to upload, encoded as a Base64 string.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityagent_artifact#artifact_content CcArtifact#artifact_content}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityagent_artifact#artifact_content CcArtifact#artifact_content}
     */
     readonly artifactContent?: string;
     /**
     * The file type of the artifact.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityagent_artifact#artifact_type CcArtifact#artifact_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityagent_artifact#artifact_type CcArtifact#artifact_type}
     */
     readonly artifactType: string;
     /**
     * The file name of the artifact.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityagent_artifact#file_name CcArtifact#file_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityagent_artifact#file_name CcArtifact#file_name}
     */
     readonly fileName: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityagent_artifact awscc_securityagent_artifact}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityagent_artifact awscc_securityagent_artifact}
 */
 export class CcArtifact extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CcArtifact extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcArtifact resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcArtifact to import
-    * @param importFromId The id of the existing CcArtifact that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityagent_artifact#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcArtifact that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityagent_artifact#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcArtifact to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CcArtifact extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityagent_artifact awscc_securityagent_artifact} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityagent_artifact awscc_securityagent_artifact} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -72,7 +72,7 @@ export class CcArtifact extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_securityagent_artifact',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,

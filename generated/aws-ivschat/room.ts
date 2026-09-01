@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ivschat_room
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ivschat_room
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,43 +9,43 @@ export interface CcRoomProps extends cdktn.TerraformMetaArguments {
     /**
     * Array of logging configuration identifiers attached to the room.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ivschat_room#logging_configuration_identifiers CcRoom#logging_configuration_identifiers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ivschat_room#logging_configuration_identifiers CcRoom#logging_configuration_identifiers}
     */
     readonly loggingConfigurationIdentifiers?: string[];
     /**
     * The maximum number of characters in a single message.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ivschat_room#maximum_message_length CcRoom#maximum_message_length}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ivschat_room#maximum_message_length CcRoom#maximum_message_length}
     */
     readonly maximumMessageLength?: number;
     /**
     * The maximum number of messages per second that can be sent to the room.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ivschat_room#maximum_message_rate_per_second CcRoom#maximum_message_rate_per_second}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ivschat_room#maximum_message_rate_per_second CcRoom#maximum_message_rate_per_second}
     */
     readonly maximumMessageRatePerSecond?: number;
     /**
     * Configuration information for optional review of messages.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ivschat_room#message_review_handler CcRoom#message_review_handler}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ivschat_room#message_review_handler CcRoom#message_review_handler}
     */
     readonly messageReviewHandler?: CcRoom.MessageReviewHandlerProperty;
     /**
     * The name of the room. The value does not need to be unique.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ivschat_room#name CcRoom#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ivschat_room#name CcRoom#name}
     */
     readonly name?: string;
     /**
     * An array of key-value pairs to apply to this resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ivschat_room#tags CcRoom#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ivschat_room#tags CcRoom#tags}
     */
     readonly tags?: CcRoom.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ivschat_room awscc_ivschat_room}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ivschat_room awscc_ivschat_room}
 */
 export class CcRoom extends cdktn.TerraformResource {
 
@@ -61,7 +61,7 @@ export class CcRoom extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcRoom resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcRoom to import
-    * @param importFromId The id of the existing CcRoom that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ivschat_room#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcRoom that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ivschat_room#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcRoom to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -73,7 +73,7 @@ export class CcRoom extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ivschat_room awscc_ivschat_room} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ivschat_room awscc_ivschat_room} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -84,7 +84,7 @@ export class CcRoom extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_ivschat_room',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -356,13 +356,13 @@ export interface MessageReviewHandlerProperty {
     /**
     * Specifies the fallback behavior if the handler does not return a valid response, encounters an error, or times out.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ivschat_room#fallback_result CcRoom#fallback_result}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ivschat_room#fallback_result CcRoom#fallback_result}
     */
     readonly fallbackResult?: string;
     /**
     * Identifier of the message review handler.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ivschat_room#uri CcRoom#uri}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ivschat_room#uri CcRoom#uri}
     */
     readonly uri?: string;
 }
@@ -450,13 +450,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ivschat_room#key CcRoom#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ivschat_room#key CcRoom#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 0 to 256 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ivschat_room#value CcRoom#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ivschat_room#value CcRoom#value}
     */
     readonly value?: string;
 }

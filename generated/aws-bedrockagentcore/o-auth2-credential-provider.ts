@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,31 +9,31 @@ export interface CcOAuth2CredentialProviderProps extends cdktn.TerraformMetaArgu
     /**
     * The vendor of the OAuth2 credential provider
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#credential_provider_vendor CcOAuth2CredentialProvider#credential_provider_vendor}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#credential_provider_vendor CcOAuth2CredentialProvider#credential_provider_vendor}
     */
     readonly credentialProviderVendor: string;
     /**
     * The name of the OAuth2 credential provider
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#name CcOAuth2CredentialProvider#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#name CcOAuth2CredentialProvider#name}
     */
     readonly name: string;
     /**
     * The configuration settings for the OAuth2 provider
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#oauth_2_provider_config_input CcOAuth2CredentialProvider#oauth_2_provider_config_input}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#oauth_2_provider_config_input CcOAuth2CredentialProvider#oauth_2_provider_config_input}
     */
     readonly oauth2ProviderConfigInput?: CcOAuth2CredentialProvider.Oauth2ProviderConfigInputProperty;
     /**
     * Tags to assign to the OAuth2 credential provider
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#tags CcOAuth2CredentialProvider#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#tags CcOAuth2CredentialProvider#tags}
     */
     readonly tags?: CcOAuth2CredentialProvider.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider awscc_bedrockagentcore_o_auth_2_credential_provider}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider awscc_bedrockagentcore_o_auth_2_credential_provider}
 */
 export class CcOAuth2CredentialProvider extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CcOAuth2CredentialProvider extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcOAuth2CredentialProvider resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcOAuth2CredentialProvider to import
-    * @param importFromId The id of the existing CcOAuth2CredentialProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcOAuth2CredentialProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcOAuth2CredentialProvider to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CcOAuth2CredentialProvider extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider awscc_bedrockagentcore_o_auth_2_credential_provider} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider awscc_bedrockagentcore_o_auth_2_credential_provider} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -72,7 +72,7 @@ export class CcOAuth2CredentialProvider extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_bedrockagentcore_o_auth_2_credential_provider',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -2181,13 +2181,13 @@ export interface SecretReferenceProperty {
     /**
     * The JSON key within the secret that contains the credential value
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#json_key CcOAuth2CredentialProvider#json_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#json_key CcOAuth2CredentialProvider#json_key}
     */
     readonly jsonKey?: string;
     /**
     * The ID or ARN of the secret in AWS Secrets Manager
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#secret_id CcOAuth2CredentialProvider#secret_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#secret_id CcOAuth2CredentialProvider#secret_id}
     */
     readonly secretId?: string;
 }
@@ -2273,21 +2273,21 @@ export class SecretReferencePropertyOutputReference extends cdktn.ComplexObject 
 }
 export interface AtlassianOauth2ProviderConfigInputProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#client_id CcOAuth2CredentialProvider#client_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#client_id CcOAuth2CredentialProvider#client_id}
     */
     readonly clientId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#client_secret CcOAuth2CredentialProvider#client_secret}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#client_secret CcOAuth2CredentialProvider#client_secret}
     */
     readonly clientSecret?: string;
     /**
     * A reference to a customer-provided secret stored in AWS Secrets Manager
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#client_secret_config CcOAuth2CredentialProvider#client_secret_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#client_secret_config CcOAuth2CredentialProvider#client_secret_config}
     */
     readonly clientSecretConfig?: SecretReferenceProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#client_secret_source CcOAuth2CredentialProvider#client_secret_source}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#client_secret_source CcOAuth2CredentialProvider#client_secret_source}
     */
     readonly clientSecretSource?: string;
 }
@@ -2419,13 +2419,13 @@ export interface Oauth2ProviderConfigInputCustomOauth2ProviderConfigClientSecret
     /**
     * The JSON key within the secret that contains the credential value
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#json_key CcOAuth2CredentialProvider#json_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#json_key CcOAuth2CredentialProvider#json_key}
     */
     readonly jsonKey?: string;
     /**
     * The ID or ARN of the secret in AWS Secrets Manager
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#secret_id CcOAuth2CredentialProvider#secret_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#secret_id CcOAuth2CredentialProvider#secret_id}
     */
     readonly secretId?: string;
 }
@@ -2513,25 +2513,25 @@ export interface Oauth2AuthorizationServerMetadataProperty {
     /**
     * The authorization endpoint URL
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#authorization_endpoint CcOAuth2CredentialProvider#authorization_endpoint}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#authorization_endpoint CcOAuth2CredentialProvider#authorization_endpoint}
     */
     readonly authorizationEndpoint?: string;
     /**
     * The issuer URL for the OAuth2 authorization server
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#issuer CcOAuth2CredentialProvider#issuer}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#issuer CcOAuth2CredentialProvider#issuer}
     */
     readonly issuer?: string;
     /**
     * The supported response types
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#response_types CcOAuth2CredentialProvider#response_types}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#response_types CcOAuth2CredentialProvider#response_types}
     */
     readonly responseTypes?: string[];
     /**
     * The token endpoint URL
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#token_endpoint CcOAuth2CredentialProvider#token_endpoint}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#token_endpoint CcOAuth2CredentialProvider#token_endpoint}
     */
     readonly tokenEndpoint?: string;
 }
@@ -2663,13 +2663,13 @@ export interface Oauth2DiscoveryProperty {
     /**
     * Authorization server metadata for the OAuth2 provider
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#authorization_server_metadata CcOAuth2CredentialProvider#authorization_server_metadata}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#authorization_server_metadata CcOAuth2CredentialProvider#authorization_server_metadata}
     */
     readonly authorizationServerMetadata?: Oauth2AuthorizationServerMetadataProperty;
     /**
     * The discovery URL for the OAuth2 provider
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#discovery_url CcOAuth2CredentialProvider#discovery_url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#discovery_url CcOAuth2CredentialProvider#discovery_url}
     */
     readonly discoveryUrl?: string;
 }
@@ -2757,13 +2757,13 @@ export interface TokenExchangeGrantTypeConfigProperty {
     /**
     * The actor token content type
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#actor_token_content CcOAuth2CredentialProvider#actor_token_content}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#actor_token_content CcOAuth2CredentialProvider#actor_token_content}
     */
     readonly actorTokenContent?: string;
     /**
     * The actor token scopes. Only valid when ActorTokenContent is M2M.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#actor_token_scopes CcOAuth2CredentialProvider#actor_token_scopes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#actor_token_scopes CcOAuth2CredentialProvider#actor_token_scopes}
     */
     readonly actorTokenScopes?: string[];
 }
@@ -2851,13 +2851,13 @@ export interface OnBehalfOfTokenExchangeConfigProperty {
     /**
     * The grant type for on-behalf-of token exchange
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#grant_type CcOAuth2CredentialProvider#grant_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#grant_type CcOAuth2CredentialProvider#grant_type}
     */
     readonly grantType?: string;
     /**
     * Configuration for RFC 8693 Token Exchange
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#token_exchange_grant_type_config CcOAuth2CredentialProvider#token_exchange_grant_type_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#token_exchange_grant_type_config CcOAuth2CredentialProvider#token_exchange_grant_type_config}
     */
     readonly tokenExchangeGrantTypeConfig?: TokenExchangeGrantTypeConfigProperty;
 }
@@ -2945,37 +2945,37 @@ export interface ManagedVpcResourceProperty {
     /**
     * The IP address type for the resource configuration endpoint
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#endpoint_ip_address_type CcOAuth2CredentialProvider#endpoint_ip_address_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#endpoint_ip_address_type CcOAuth2CredentialProvider#endpoint_ip_address_type}
     */
     readonly endpointIpAddressType?: string;
     /**
     * An intermediate publicly resolvable domain used as the VPC Lattice resource configuration endpoint
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#routing_domain CcOAuth2CredentialProvider#routing_domain}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#routing_domain CcOAuth2CredentialProvider#routing_domain}
     */
     readonly routingDomain?: string;
     /**
     * The security group IDs to associate with the VPC Lattice resource gateway
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#security_group_ids CcOAuth2CredentialProvider#security_group_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#security_group_ids CcOAuth2CredentialProvider#security_group_ids}
     */
     readonly securityGroupIds?: string[];
     /**
     * The subnet IDs within the VPC where the VPC Lattice resource gateway is placed
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#subnet_ids CcOAuth2CredentialProvider#subnet_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#subnet_ids CcOAuth2CredentialProvider#subnet_ids}
     */
     readonly subnetIds?: string[];
     /**
     * Tags to apply to the managed VPC Lattice resource gateway
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#tags CcOAuth2CredentialProvider#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#tags CcOAuth2CredentialProvider#tags}
     */
     readonly tags?: { [key: string]: string };
     /**
     * The ID of the VPC that contains your private resource
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#vpc_identifier CcOAuth2CredentialProvider#vpc_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#vpc_identifier CcOAuth2CredentialProvider#vpc_identifier}
     */
     readonly vpcIdentifier?: string;
 }
@@ -3151,7 +3151,7 @@ export interface SelfManagedLatticeResourceProperty {
     /**
     * The ARN or ID of the VPC Lattice resource configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#resource_configuration_identifier CcOAuth2CredentialProvider#resource_configuration_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#resource_configuration_identifier CcOAuth2CredentialProvider#resource_configuration_identifier}
     */
     readonly resourceConfigurationIdentifier?: string;
 }
@@ -3217,13 +3217,13 @@ export interface PrivateEndpointProperty {
     /**
     * Configuration for a managed VPC Lattice resource. AgentCore creates and manages the VPC Lattice resource gateway and resource configuration on your behalf.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#managed_vpc_resource CcOAuth2CredentialProvider#managed_vpc_resource}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#managed_vpc_resource CcOAuth2CredentialProvider#managed_vpc_resource}
     */
     readonly managedVpcResource?: ManagedVpcResourceProperty;
     /**
     * Configuration for a self-managed VPC Lattice resource. You create and manage the VPC Lattice resource gateway and resource configuration, then provide the resource configuration identifier.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#self_managed_lattice_resource CcOAuth2CredentialProvider#self_managed_lattice_resource}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#self_managed_lattice_resource CcOAuth2CredentialProvider#self_managed_lattice_resource}
     */
     readonly selfManagedLatticeResource?: SelfManagedLatticeResourceProperty;
 }
@@ -3311,37 +3311,37 @@ export interface Oauth2ProviderConfigInputCustomOauth2ProviderConfigPrivateEndpo
     /**
     * The IP address type for the resource configuration endpoint
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#endpoint_ip_address_type CcOAuth2CredentialProvider#endpoint_ip_address_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#endpoint_ip_address_type CcOAuth2CredentialProvider#endpoint_ip_address_type}
     */
     readonly endpointIpAddressType?: string;
     /**
     * An intermediate publicly resolvable domain used as the VPC Lattice resource configuration endpoint
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#routing_domain CcOAuth2CredentialProvider#routing_domain}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#routing_domain CcOAuth2CredentialProvider#routing_domain}
     */
     readonly routingDomain?: string;
     /**
     * The security group IDs to associate with the VPC Lattice resource gateway
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#security_group_ids CcOAuth2CredentialProvider#security_group_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#security_group_ids CcOAuth2CredentialProvider#security_group_ids}
     */
     readonly securityGroupIds?: string[];
     /**
     * The subnet IDs within the VPC where the VPC Lattice resource gateway is placed
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#subnet_ids CcOAuth2CredentialProvider#subnet_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#subnet_ids CcOAuth2CredentialProvider#subnet_ids}
     */
     readonly subnetIds?: string[];
     /**
     * Tags to apply to the managed VPC Lattice resource gateway
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#tags CcOAuth2CredentialProvider#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#tags CcOAuth2CredentialProvider#tags}
     */
     readonly tags?: { [key: string]: string };
     /**
     * The ID of the VPC that contains your private resource
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#vpc_identifier CcOAuth2CredentialProvider#vpc_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#vpc_identifier CcOAuth2CredentialProvider#vpc_identifier}
     */
     readonly vpcIdentifier?: string;
 }
@@ -3517,7 +3517,7 @@ export interface Oauth2ProviderConfigInputCustomOauth2ProviderConfigPrivateEndpo
     /**
     * The ARN or ID of the VPC Lattice resource configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#resource_configuration_identifier CcOAuth2CredentialProvider#resource_configuration_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#resource_configuration_identifier CcOAuth2CredentialProvider#resource_configuration_identifier}
     */
     readonly resourceConfigurationIdentifier?: string;
 }
@@ -3583,13 +3583,13 @@ export interface Oauth2ProviderConfigInputCustomOauth2ProviderConfigPrivateEndpo
     /**
     * Configuration for a managed VPC Lattice resource. AgentCore creates and manages the VPC Lattice resource gateway and resource configuration on your behalf.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#managed_vpc_resource CcOAuth2CredentialProvider#managed_vpc_resource}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#managed_vpc_resource CcOAuth2CredentialProvider#managed_vpc_resource}
     */
     readonly managedVpcResource?: Oauth2ProviderConfigInputCustomOauth2ProviderConfigPrivateEndpointOverridesPrivateEndpointManagedVpcResourceProperty;
     /**
     * Configuration for a self-managed VPC Lattice resource. You create and manage the VPC Lattice resource gateway and resource configuration, then provide the resource configuration identifier.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#self_managed_lattice_resource CcOAuth2CredentialProvider#self_managed_lattice_resource}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#self_managed_lattice_resource CcOAuth2CredentialProvider#self_managed_lattice_resource}
     */
     readonly selfManagedLatticeResource?: Oauth2ProviderConfigInputCustomOauth2ProviderConfigPrivateEndpointOverridesPrivateEndpointSelfManagedLatticeResourceProperty;
 }
@@ -3677,13 +3677,13 @@ export interface PrivateEndpointOverrideProperty {
     /**
     * The domain to override with a private endpoint
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#domain CcOAuth2CredentialProvider#domain}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#domain CcOAuth2CredentialProvider#domain}
     */
     readonly domain?: string;
     /**
     * The private endpoint configuration for connecting to private resources in your VPC
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#private_endpoint CcOAuth2CredentialProvider#private_endpoint}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#private_endpoint CcOAuth2CredentialProvider#private_endpoint}
     */
     readonly privateEndpoint?: Oauth2ProviderConfigInputCustomOauth2ProviderConfigPrivateEndpointOverridesPrivateEndpointProperty;
 }
@@ -3793,7 +3793,7 @@ export interface KmsKeySourceTypeProperty {
     /**
     * The Amazon Resource Name (ARN) of the KMS key used to sign the JWT client assertion
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#kms_key_arn CcOAuth2CredentialProvider#kms_key_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#kms_key_arn CcOAuth2CredentialProvider#kms_key_arn}
     */
     readonly kmsKeyArn?: string;
 }
@@ -3859,7 +3859,7 @@ export interface PrivateKeySourceProperty {
     /**
     * Contains the KMS key configuration for a JWT client assertion
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#kms_key_source CcOAuth2CredentialProvider#kms_key_source}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#kms_key_source CcOAuth2CredentialProvider#kms_key_source}
     */
     readonly kmsKeySource?: KmsKeySourceTypeProperty;
 }
@@ -3925,25 +3925,25 @@ export interface PrivateKeyJwtConfigProperty {
     /**
     * A map of additional claims to include in the JWT client assertion
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#additional_header_claims CcOAuth2CredentialProvider#additional_header_claims}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#additional_header_claims CcOAuth2CredentialProvider#additional_header_claims}
     */
     readonly additionalHeaderClaims?: { [key: string]: string };
     /**
     * A map of additional claims to include in the JWT client assertion
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#additional_payload_claims CcOAuth2CredentialProvider#additional_payload_claims}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#additional_payload_claims CcOAuth2CredentialProvider#additional_payload_claims}
     */
     readonly additionalPayloadClaims?: { [key: string]: string };
     /**
     * Contains the private key source configuration for a JWT client assertion
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#private_key_source CcOAuth2CredentialProvider#private_key_source}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#private_key_source CcOAuth2CredentialProvider#private_key_source}
     */
     readonly privateKeySource?: PrivateKeySourceProperty;
     /**
     * The algorithm used to sign the JWT client assertion
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#signing_algorithm CcOAuth2CredentialProvider#signing_algorithm}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#signing_algorithm CcOAuth2CredentialProvider#signing_algorithm}
     */
     readonly signingAlgorithm?: string;
 }
@@ -4075,61 +4075,61 @@ export interface CustomOauth2ProviderConfigInputProperty {
     /**
     * The client authentication method to use when authenticating with the token endpoint
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#client_authentication_method CcOAuth2CredentialProvider#client_authentication_method}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#client_authentication_method CcOAuth2CredentialProvider#client_authentication_method}
     */
     readonly clientAuthenticationMethod?: string;
     /**
     * The client ID for the custom OAuth2 provider
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#client_id CcOAuth2CredentialProvider#client_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#client_id CcOAuth2CredentialProvider#client_id}
     */
     readonly clientId?: string;
     /**
     * The client secret for the custom OAuth2 provider
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#client_secret CcOAuth2CredentialProvider#client_secret}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#client_secret CcOAuth2CredentialProvider#client_secret}
     */
     readonly clientSecret?: string;
     /**
     * A reference to a customer-provided secret stored in AWS Secrets Manager
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#client_secret_config CcOAuth2CredentialProvider#client_secret_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#client_secret_config CcOAuth2CredentialProvider#client_secret_config}
     */
     readonly clientSecretConfig?: Oauth2ProviderConfigInputCustomOauth2ProviderConfigClientSecretConfigProperty;
     /**
     * The source of the client secret
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#client_secret_source CcOAuth2CredentialProvider#client_secret_source}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#client_secret_source CcOAuth2CredentialProvider#client_secret_source}
     */
     readonly clientSecretSource?: string;
     /**
     * Discovery information for an OAuth2 provider
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#oauth_discovery CcOAuth2CredentialProvider#oauth_discovery}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#oauth_discovery CcOAuth2CredentialProvider#oauth_discovery}
     */
     readonly oauthDiscovery?: Oauth2DiscoveryProperty;
     /**
     * Configuration for on-behalf-of token exchange
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#on_behalf_of_token_exchange_config CcOAuth2CredentialProvider#on_behalf_of_token_exchange_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#on_behalf_of_token_exchange_config CcOAuth2CredentialProvider#on_behalf_of_token_exchange_config}
     */
     readonly onBehalfOfTokenExchangeConfig?: OnBehalfOfTokenExchangeConfigProperty;
     /**
     * The private endpoint configuration for connecting to private resources in your VPC
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#private_endpoint CcOAuth2CredentialProvider#private_endpoint}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#private_endpoint CcOAuth2CredentialProvider#private_endpoint}
     */
     readonly privateEndpoint?: PrivateEndpointProperty;
     /**
     * A list of private endpoint overrides. Each override maps a specific domain to a private endpoint, enabling secure connectivity through VPC Lattice resource configurations.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#private_endpoint_overrides CcOAuth2CredentialProvider#private_endpoint_overrides}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#private_endpoint_overrides CcOAuth2CredentialProvider#private_endpoint_overrides}
     */
     readonly privateEndpointOverrides?: PrivateEndpointOverrideProperty[] | cdktn.IResolvable;
     /**
     * Configuration for private_key_jwt client authentication (RFC 7523)
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#private_key_jwt_config CcOAuth2CredentialProvider#private_key_jwt_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#private_key_jwt_config CcOAuth2CredentialProvider#private_key_jwt_config}
     */
     readonly privateKeyJwtConfig?: PrivateKeyJwtConfigProperty;
 }
@@ -4393,13 +4393,13 @@ export interface Oauth2ProviderConfigInputGithubOauth2ProviderConfigClientSecret
     /**
     * The JSON key within the secret that contains the credential value
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#json_key CcOAuth2CredentialProvider#json_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#json_key CcOAuth2CredentialProvider#json_key}
     */
     readonly jsonKey?: string;
     /**
     * The ID or ARN of the secret in AWS Secrets Manager
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#secret_id CcOAuth2CredentialProvider#secret_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#secret_id CcOAuth2CredentialProvider#secret_id}
     */
     readonly secretId?: string;
 }
@@ -4485,21 +4485,21 @@ export class Oauth2ProviderConfigInputGithubOauth2ProviderConfigClientSecretConf
 }
 export interface GithubOauth2ProviderConfigInputProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#client_id CcOAuth2CredentialProvider#client_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#client_id CcOAuth2CredentialProvider#client_id}
     */
     readonly clientId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#client_secret CcOAuth2CredentialProvider#client_secret}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#client_secret CcOAuth2CredentialProvider#client_secret}
     */
     readonly clientSecret?: string;
     /**
     * A reference to a customer-provided secret stored in AWS Secrets Manager
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#client_secret_config CcOAuth2CredentialProvider#client_secret_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#client_secret_config CcOAuth2CredentialProvider#client_secret_config}
     */
     readonly clientSecretConfig?: Oauth2ProviderConfigInputGithubOauth2ProviderConfigClientSecretConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#client_secret_source CcOAuth2CredentialProvider#client_secret_source}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#client_secret_source CcOAuth2CredentialProvider#client_secret_source}
     */
     readonly clientSecretSource?: string;
 }
@@ -4631,13 +4631,13 @@ export interface Oauth2ProviderConfigInputGoogleOauth2ProviderConfigClientSecret
     /**
     * The JSON key within the secret that contains the credential value
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#json_key CcOAuth2CredentialProvider#json_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#json_key CcOAuth2CredentialProvider#json_key}
     */
     readonly jsonKey?: string;
     /**
     * The ID or ARN of the secret in AWS Secrets Manager
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#secret_id CcOAuth2CredentialProvider#secret_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#secret_id CcOAuth2CredentialProvider#secret_id}
     */
     readonly secretId?: string;
 }
@@ -4723,21 +4723,21 @@ export class Oauth2ProviderConfigInputGoogleOauth2ProviderConfigClientSecretConf
 }
 export interface GoogleOauth2ProviderConfigInputProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#client_id CcOAuth2CredentialProvider#client_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#client_id CcOAuth2CredentialProvider#client_id}
     */
     readonly clientId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#client_secret CcOAuth2CredentialProvider#client_secret}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#client_secret CcOAuth2CredentialProvider#client_secret}
     */
     readonly clientSecret?: string;
     /**
     * A reference to a customer-provided secret stored in AWS Secrets Manager
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#client_secret_config CcOAuth2CredentialProvider#client_secret_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#client_secret_config CcOAuth2CredentialProvider#client_secret_config}
     */
     readonly clientSecretConfig?: Oauth2ProviderConfigInputGoogleOauth2ProviderConfigClientSecretConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#client_secret_source CcOAuth2CredentialProvider#client_secret_source}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#client_secret_source CcOAuth2CredentialProvider#client_secret_source}
     */
     readonly clientSecretSource?: string;
 }
@@ -4869,13 +4869,13 @@ export interface Oauth2ProviderConfigInputIncludedOauth2ProviderConfigClientSecr
     /**
     * The JSON key within the secret that contains the credential value
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#json_key CcOAuth2CredentialProvider#json_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#json_key CcOAuth2CredentialProvider#json_key}
     */
     readonly jsonKey?: string;
     /**
     * The ID or ARN of the secret in AWS Secrets Manager
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#secret_id CcOAuth2CredentialProvider#secret_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#secret_id CcOAuth2CredentialProvider#secret_id}
     */
     readonly secretId?: string;
 }
@@ -4963,37 +4963,37 @@ export interface IncludedOauth2ProviderConfigInputProperty {
     /**
     * OAuth2 authorization endpoint for your isolated OAuth2 application tenant
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#authorization_endpoint CcOAuth2CredentialProvider#authorization_endpoint}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#authorization_endpoint CcOAuth2CredentialProvider#authorization_endpoint}
     */
     readonly authorizationEndpoint?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#client_id CcOAuth2CredentialProvider#client_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#client_id CcOAuth2CredentialProvider#client_id}
     */
     readonly clientId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#client_secret CcOAuth2CredentialProvider#client_secret}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#client_secret CcOAuth2CredentialProvider#client_secret}
     */
     readonly clientSecret?: string;
     /**
     * A reference to a customer-provided secret stored in AWS Secrets Manager
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#client_secret_config CcOAuth2CredentialProvider#client_secret_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#client_secret_config CcOAuth2CredentialProvider#client_secret_config}
     */
     readonly clientSecretConfig?: Oauth2ProviderConfigInputIncludedOauth2ProviderConfigClientSecretConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#client_secret_source CcOAuth2CredentialProvider#client_secret_source}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#client_secret_source CcOAuth2CredentialProvider#client_secret_source}
     */
     readonly clientSecretSource?: string;
     /**
     * Token issuer of your isolated OAuth2 application tenant
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#issuer CcOAuth2CredentialProvider#issuer}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#issuer CcOAuth2CredentialProvider#issuer}
     */
     readonly issuer?: string;
     /**
     * OAuth2 token endpoint for your isolated OAuth2 application tenant
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#token_endpoint CcOAuth2CredentialProvider#token_endpoint}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#token_endpoint CcOAuth2CredentialProvider#token_endpoint}
     */
     readonly tokenEndpoint?: string;
 }
@@ -5191,13 +5191,13 @@ export interface Oauth2ProviderConfigInputLinkedinOauth2ProviderConfigClientSecr
     /**
     * The JSON key within the secret that contains the credential value
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#json_key CcOAuth2CredentialProvider#json_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#json_key CcOAuth2CredentialProvider#json_key}
     */
     readonly jsonKey?: string;
     /**
     * The ID or ARN of the secret in AWS Secrets Manager
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#secret_id CcOAuth2CredentialProvider#secret_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#secret_id CcOAuth2CredentialProvider#secret_id}
     */
     readonly secretId?: string;
 }
@@ -5283,21 +5283,21 @@ export class Oauth2ProviderConfigInputLinkedinOauth2ProviderConfigClientSecretCo
 }
 export interface LinkedinOauth2ProviderConfigInputProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#client_id CcOAuth2CredentialProvider#client_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#client_id CcOAuth2CredentialProvider#client_id}
     */
     readonly clientId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#client_secret CcOAuth2CredentialProvider#client_secret}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#client_secret CcOAuth2CredentialProvider#client_secret}
     */
     readonly clientSecret?: string;
     /**
     * A reference to a customer-provided secret stored in AWS Secrets Manager
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#client_secret_config CcOAuth2CredentialProvider#client_secret_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#client_secret_config CcOAuth2CredentialProvider#client_secret_config}
     */
     readonly clientSecretConfig?: Oauth2ProviderConfigInputLinkedinOauth2ProviderConfigClientSecretConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#client_secret_source CcOAuth2CredentialProvider#client_secret_source}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#client_secret_source CcOAuth2CredentialProvider#client_secret_source}
     */
     readonly clientSecretSource?: string;
 }
@@ -5429,13 +5429,13 @@ export interface Oauth2ProviderConfigInputMicrosoftOauth2ProviderConfigClientSec
     /**
     * The JSON key within the secret that contains the credential value
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#json_key CcOAuth2CredentialProvider#json_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#json_key CcOAuth2CredentialProvider#json_key}
     */
     readonly jsonKey?: string;
     /**
     * The ID or ARN of the secret in AWS Secrets Manager
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#secret_id CcOAuth2CredentialProvider#secret_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#secret_id CcOAuth2CredentialProvider#secret_id}
     */
     readonly secretId?: string;
 }
@@ -5521,27 +5521,27 @@ export class Oauth2ProviderConfigInputMicrosoftOauth2ProviderConfigClientSecretC
 }
 export interface MicrosoftOauth2ProviderConfigInputProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#client_id CcOAuth2CredentialProvider#client_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#client_id CcOAuth2CredentialProvider#client_id}
     */
     readonly clientId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#client_secret CcOAuth2CredentialProvider#client_secret}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#client_secret CcOAuth2CredentialProvider#client_secret}
     */
     readonly clientSecret?: string;
     /**
     * A reference to a customer-provided secret stored in AWS Secrets Manager
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#client_secret_config CcOAuth2CredentialProvider#client_secret_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#client_secret_config CcOAuth2CredentialProvider#client_secret_config}
     */
     readonly clientSecretConfig?: Oauth2ProviderConfigInputMicrosoftOauth2ProviderConfigClientSecretConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#client_secret_source CcOAuth2CredentialProvider#client_secret_source}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#client_secret_source CcOAuth2CredentialProvider#client_secret_source}
     */
     readonly clientSecretSource?: string;
     /**
     * The Microsoft Entra ID tenant ID
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#tenant_id CcOAuth2CredentialProvider#tenant_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#tenant_id CcOAuth2CredentialProvider#tenant_id}
     */
     readonly tenantId?: string;
 }
@@ -5695,13 +5695,13 @@ export interface Oauth2ProviderConfigInputSalesforceOauth2ProviderConfigClientSe
     /**
     * The JSON key within the secret that contains the credential value
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#json_key CcOAuth2CredentialProvider#json_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#json_key CcOAuth2CredentialProvider#json_key}
     */
     readonly jsonKey?: string;
     /**
     * The ID or ARN of the secret in AWS Secrets Manager
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#secret_id CcOAuth2CredentialProvider#secret_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#secret_id CcOAuth2CredentialProvider#secret_id}
     */
     readonly secretId?: string;
 }
@@ -5787,21 +5787,21 @@ export class Oauth2ProviderConfigInputSalesforceOauth2ProviderConfigClientSecret
 }
 export interface SalesforceOauth2ProviderConfigInputProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#client_id CcOAuth2CredentialProvider#client_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#client_id CcOAuth2CredentialProvider#client_id}
     */
     readonly clientId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#client_secret CcOAuth2CredentialProvider#client_secret}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#client_secret CcOAuth2CredentialProvider#client_secret}
     */
     readonly clientSecret?: string;
     /**
     * A reference to a customer-provided secret stored in AWS Secrets Manager
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#client_secret_config CcOAuth2CredentialProvider#client_secret_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#client_secret_config CcOAuth2CredentialProvider#client_secret_config}
     */
     readonly clientSecretConfig?: Oauth2ProviderConfigInputSalesforceOauth2ProviderConfigClientSecretConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#client_secret_source CcOAuth2CredentialProvider#client_secret_source}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#client_secret_source CcOAuth2CredentialProvider#client_secret_source}
     */
     readonly clientSecretSource?: string;
 }
@@ -5933,13 +5933,13 @@ export interface Oauth2ProviderConfigInputSlackOauth2ProviderConfigClientSecretC
     /**
     * The JSON key within the secret that contains the credential value
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#json_key CcOAuth2CredentialProvider#json_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#json_key CcOAuth2CredentialProvider#json_key}
     */
     readonly jsonKey?: string;
     /**
     * The ID or ARN of the secret in AWS Secrets Manager
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#secret_id CcOAuth2CredentialProvider#secret_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#secret_id CcOAuth2CredentialProvider#secret_id}
     */
     readonly secretId?: string;
 }
@@ -6025,21 +6025,21 @@ export class Oauth2ProviderConfigInputSlackOauth2ProviderConfigClientSecretConfi
 }
 export interface SlackOauth2ProviderConfigInputProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#client_id CcOAuth2CredentialProvider#client_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#client_id CcOAuth2CredentialProvider#client_id}
     */
     readonly clientId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#client_secret CcOAuth2CredentialProvider#client_secret}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#client_secret CcOAuth2CredentialProvider#client_secret}
     */
     readonly clientSecret?: string;
     /**
     * A reference to a customer-provided secret stored in AWS Secrets Manager
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#client_secret_config CcOAuth2CredentialProvider#client_secret_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#client_secret_config CcOAuth2CredentialProvider#client_secret_config}
     */
     readonly clientSecretConfig?: Oauth2ProviderConfigInputSlackOauth2ProviderConfigClientSecretConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#client_secret_source CcOAuth2CredentialProvider#client_secret_source}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#client_secret_source CcOAuth2CredentialProvider#client_secret_source}
     */
     readonly clientSecretSource?: string;
 }
@@ -6171,55 +6171,55 @@ export interface Oauth2ProviderConfigInputProperty {
     /**
     * Input configuration for an Atlassian OAuth2 provider
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#atlassian_oauth_2_provider_config CcOAuth2CredentialProvider#atlassian_oauth_2_provider_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#atlassian_oauth_2_provider_config CcOAuth2CredentialProvider#atlassian_oauth_2_provider_config}
     */
     readonly atlassianOauth2ProviderConfig?: AtlassianOauth2ProviderConfigInputProperty;
     /**
     * Input configuration for a custom OAuth2 provider
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#custom_oauth_2_provider_config CcOAuth2CredentialProvider#custom_oauth_2_provider_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#custom_oauth_2_provider_config CcOAuth2CredentialProvider#custom_oauth_2_provider_config}
     */
     readonly customOauth2ProviderConfig?: CustomOauth2ProviderConfigInputProperty;
     /**
     * Input configuration for a GitHub OAuth2 provider
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#github_oauth_2_provider_config CcOAuth2CredentialProvider#github_oauth_2_provider_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#github_oauth_2_provider_config CcOAuth2CredentialProvider#github_oauth_2_provider_config}
     */
     readonly githubOauth2ProviderConfig?: GithubOauth2ProviderConfigInputProperty;
     /**
     * Input configuration for a Google OAuth2 provider
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#google_oauth_2_provider_config CcOAuth2CredentialProvider#google_oauth_2_provider_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#google_oauth_2_provider_config CcOAuth2CredentialProvider#google_oauth_2_provider_config}
     */
     readonly googleOauth2ProviderConfig?: GoogleOauth2ProviderConfigInputProperty;
     /**
     * Input configuration for a supported non-custom OAuth2 provider
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#included_oauth_2_provider_config CcOAuth2CredentialProvider#included_oauth_2_provider_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#included_oauth_2_provider_config CcOAuth2CredentialProvider#included_oauth_2_provider_config}
     */
     readonly includedOauth2ProviderConfig?: IncludedOauth2ProviderConfigInputProperty;
     /**
     * Input configuration for a LinkedIn OAuth2 provider
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#linkedin_oauth_2_provider_config CcOAuth2CredentialProvider#linkedin_oauth_2_provider_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#linkedin_oauth_2_provider_config CcOAuth2CredentialProvider#linkedin_oauth_2_provider_config}
     */
     readonly linkedinOauth2ProviderConfig?: LinkedinOauth2ProviderConfigInputProperty;
     /**
     * Input configuration for a Microsoft OAuth2 provider
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#microsoft_oauth_2_provider_config CcOAuth2CredentialProvider#microsoft_oauth_2_provider_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#microsoft_oauth_2_provider_config CcOAuth2CredentialProvider#microsoft_oauth_2_provider_config}
     */
     readonly microsoftOauth2ProviderConfig?: MicrosoftOauth2ProviderConfigInputProperty;
     /**
     * Input configuration for a Salesforce OAuth2 provider
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#salesforce_oauth_2_provider_config CcOAuth2CredentialProvider#salesforce_oauth_2_provider_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#salesforce_oauth_2_provider_config CcOAuth2CredentialProvider#salesforce_oauth_2_provider_config}
     */
     readonly salesforceOauth2ProviderConfig?: SalesforceOauth2ProviderConfigInputProperty;
     /**
     * Input configuration for a Slack OAuth2 provider
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#slack_oauth_2_provider_config CcOAuth2CredentialProvider#slack_oauth_2_provider_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#slack_oauth_2_provider_config CcOAuth2CredentialProvider#slack_oauth_2_provider_config}
     */
     readonly slackOauth2ProviderConfig?: SlackOauth2ProviderConfigInputProperty;
 }
@@ -7133,11 +7133,11 @@ export class Oauth2ProviderConfigOutputPropertyOutputReference extends cdktn.Com
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#key CcOAuth2CredentialProvider#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#key CcOAuth2CredentialProvider#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#value CcOAuth2CredentialProvider#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_o_auth_2_credential_provider#value CcOAuth2CredentialProvider#value}
     */
     readonly value?: string;
 }

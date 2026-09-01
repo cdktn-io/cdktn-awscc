@@ -1,31 +1,31 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_custom_db_engine_version
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rds_custom_db_engine_version
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcCustomDBEngineVersionProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_custom_db_engine_version#database_installation_files CcCustomDBEngineVersion#database_installation_files}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rds_custom_db_engine_version#database_installation_files CcCustomDBEngineVersion#database_installation_files}
     */
     readonly databaseInstallationFiles?: string[];
     /**
     * The name of an Amazon S3 bucket that contains database installation files for your CEV. For example, a valid bucket name is ``my-custom-installation-files``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_custom_db_engine_version#database_installation_files_s3_bucket_name CcCustomDBEngineVersion#database_installation_files_s3_bucket_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rds_custom_db_engine_version#database_installation_files_s3_bucket_name CcCustomDBEngineVersion#database_installation_files_s3_bucket_name}
     */
     readonly databaseInstallationFilesS3BucketName?: string;
     /**
     * The Amazon S3 directory that contains the database installation files for your CEV. For example, a valid bucket name is ``123456789012/cev1``. If this setting isn't specified, no prefix is assumed.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_custom_db_engine_version#database_installation_files_s3_prefix CcCustomDBEngineVersion#database_installation_files_s3_prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rds_custom_db_engine_version#database_installation_files_s3_prefix CcCustomDBEngineVersion#database_installation_files_s3_prefix}
     */
     readonly databaseInstallationFilesS3Prefix?: string;
     /**
     * An optional description of your CEV.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_custom_db_engine_version#description CcCustomDBEngineVersion#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rds_custom_db_engine_version#description CcCustomDBEngineVersion#description}
     */
     readonly description?: string;
     /**
@@ -37,7 +37,7 @@ export interface CcCustomDBEngineVersionProps extends cdktn.TerraformMetaArgumen
     *   +   ``sqlserver-ee`` 
     *   +   ``sqlserver-se``
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_custom_db_engine_version#engine CcCustomDBEngineVersion#engine}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rds_custom_db_engine_version#engine CcCustomDBEngineVersion#engine}
     */
     readonly engine: string;
     /**
@@ -45,13 +45,13 @@ export interface CcCustomDBEngineVersionProps extends cdktn.TerraformMetaArgumen
     *  *Constraints:* Minimum length is 1. Maximum length is 60.
     *  *Pattern:*``^[a-z0-9_.-]{1,60$``}
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_custom_db_engine_version#engine_version CcCustomDBEngineVersion#engine_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rds_custom_db_engine_version#engine_version CcCustomDBEngineVersion#engine_version}
     */
     readonly engineVersion: string;
     /**
     * A value that indicates the ID of the AMI.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_custom_db_engine_version#image_id CcCustomDBEngineVersion#image_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rds_custom_db_engine_version#image_id CcCustomDBEngineVersion#image_id}
     */
     readonly imageId?: string;
     /**
@@ -59,7 +59,7 @@ export interface CcCustomDBEngineVersionProps extends cdktn.TerraformMetaArgumen
     *  If you have an existing symmetric encryption KMS key in your account, you can use it with RDS Custom. No further action is necessary. If you don't already have a symmetric encryption KMS key in your account, follow the instructions in [Creating a symmetric encryption KMS key](https://docs.aws.amazon.com/kms/latest/developerguide/create-keys.html#create-symmetric-cmk) in the *Key Management Service Developer Guide*.
     *  You can choose the same symmetric encryption key when you create a CEV and a DB instance, or choose different keys.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_custom_db_engine_version#kms_key_id CcCustomDBEngineVersion#kms_key_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rds_custom_db_engine_version#kms_key_id CcCustomDBEngineVersion#kms_key_id}
     */
     readonly kmsKeyId?: string;
     /**
@@ -68,37 +68,37 @@ export interface CcCustomDBEngineVersionProps extends cdktn.TerraformMetaArgumen
     *   + MediaImportTemplateVersion Version of the CEV manifest. The date is in the format YYYY-MM-DD. + databaseInstallationFileNames Ordered list of installation files for the CEV. + opatchFileNames Ordered list of OPatch installers used for the Oracle DB engine. + psuRuPatchFileNames The PSU and RU patches for this CEV. + OtherPatchFileNames The patches that are not in the list of PSU and RU patches. Amazon RDS applies these patches after applying the PSU and RU patches. 
     *  For more information, see [Creating the CEV manifest](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/custom-cev.html#custom-cev.preparing.manifest) in the *Amazon RDS User Guide*.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_custom_db_engine_version#manifest CcCustomDBEngineVersion#manifest}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rds_custom_db_engine_version#manifest CcCustomDBEngineVersion#manifest}
     */
     readonly manifest?: string;
     /**
     * The ARN of a CEV to use as a source for creating a new CEV. You can specify a different Amazon Machine Imagine (AMI) by using either ``Source`` or ``UseAwsProvidedLatestImage``. You can't specify a different JSON manifest when you specify ``SourceCustomDbEngineVersionIdentifier``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_custom_db_engine_version#source_custom_db_engine_version_identifier CcCustomDBEngineVersion#source_custom_db_engine_version_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rds_custom_db_engine_version#source_custom_db_engine_version_identifier CcCustomDBEngineVersion#source_custom_db_engine_version_identifier}
     */
     readonly sourceCustomDbEngineVersionIdentifier?: string;
     /**
     * A value that indicates the status of a custom engine version (CEV).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_custom_db_engine_version#status CcCustomDBEngineVersion#status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rds_custom_db_engine_version#status CcCustomDBEngineVersion#status}
     */
     readonly status?: string;
     /**
     * A list of tags. For more information, see [Tagging Amazon RDS Resources](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_Tagging.html) in the *Amazon RDS User Guide.*
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_custom_db_engine_version#tags CcCustomDBEngineVersion#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rds_custom_db_engine_version#tags CcCustomDBEngineVersion#tags}
     */
     readonly tags?: CcCustomDBEngineVersion.TagProperty[] | cdktn.IResolvable;
     /**
     * Specifies whether to use the latest service-provided Amazon Machine Image (AMI) for the CEV. If you specify ``UseAwsProvidedLatestImage``, you can't also specify ``ImageId``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_custom_db_engine_version#use_aws_provided_latest_image CcCustomDBEngineVersion#use_aws_provided_latest_image}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rds_custom_db_engine_version#use_aws_provided_latest_image CcCustomDBEngineVersion#use_aws_provided_latest_image}
     */
     readonly useAwsProvidedLatestImage?: boolean | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_custom_db_engine_version awscc_rds_custom_db_engine_version}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rds_custom_db_engine_version awscc_rds_custom_db_engine_version}
 */
 export class CcCustomDBEngineVersion extends cdktn.TerraformResource {
 
@@ -114,7 +114,7 @@ export class CcCustomDBEngineVersion extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcCustomDBEngineVersion resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcCustomDBEngineVersion to import
-    * @param importFromId The id of the existing CcCustomDBEngineVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_custom_db_engine_version#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcCustomDBEngineVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rds_custom_db_engine_version#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcCustomDBEngineVersion to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -126,7 +126,7 @@ export class CcCustomDBEngineVersion extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_custom_db_engine_version awscc_rds_custom_db_engine_version} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rds_custom_db_engine_version awscc_rds_custom_db_engine_version} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -137,7 +137,7 @@ export class CcCustomDBEngineVersion extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_rds_custom_db_engine_version',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -529,13 +529,13 @@ export interface TagProperty {
     /**
     * A key is the required name of the tag. The string value can be from 1 to 128 Unicode characters in length and can't be prefixed with ``aws:`` or ``rds:``. The string can only contain only the set of Unicode letters, digits, white-space, '_', '.', ':', '/', '=', '+', '-', '@' (Java regex: "^([\\p{L}\\p{Z}\\p{N}_.:/=+\\-@]*)$").
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_custom_db_engine_version#key CcCustomDBEngineVersion#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rds_custom_db_engine_version#key CcCustomDBEngineVersion#key}
     */
     readonly key?: string;
     /**
     * A value is the optional value of the tag. The string value can be from 1 to 256 Unicode characters in length and can't be prefixed with ``aws:`` or ``rds:``. The string can only contain only the set of Unicode letters, digits, white-space, '_', '.', ':', '/', '=', '+', '-', '@' (Java regex: "^([\\p{L}\\p{Z}\\p{N}_.:/=+\\-@]*)$").
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_custom_db_engine_version#value CcCustomDBEngineVersion#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rds_custom_db_engine_version#value CcCustomDBEngineVersion#value}
     */
     readonly value?: string;
 }

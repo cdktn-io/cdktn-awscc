@@ -11,3 +11,4 @@ export * from './image-builder';
 export * from './stack';
 export * from './stack-fleet-association';
 export * from './stack-user-association';
+export * from './user';

@@ -1,125 +1,125 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcJobProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#data_catalog_outputs CcJob#data_catalog_outputs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#data_catalog_outputs CcJob#data_catalog_outputs}
     */
     readonly dataCatalogOutputs?: CcJob.DataCatalogOutputProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#database_outputs CcJob#database_outputs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#database_outputs CcJob#database_outputs}
     */
     readonly databaseOutputs?: CcJob.DatabaseOutputProperty[] | cdktn.IResolvable;
     /**
     * Dataset name
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#dataset_name CcJob#dataset_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#dataset_name CcJob#dataset_name}
     */
     readonly datasetName?: string;
     /**
     * Encryption Key Arn
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#encryption_key_arn CcJob#encryption_key_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#encryption_key_arn CcJob#encryption_key_arn}
     */
     readonly encryptionKeyArn?: string;
     /**
     * Encryption mode
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#encryption_mode CcJob#encryption_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#encryption_mode CcJob#encryption_mode}
     */
     readonly encryptionMode?: string;
     /**
     * Job Sample
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#job_sample CcJob#job_sample}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#job_sample CcJob#job_sample}
     */
     readonly jobSample?: CcJob.JobSampleProperty;
     /**
     * Log subscription
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#log_subscription CcJob#log_subscription}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#log_subscription CcJob#log_subscription}
     */
     readonly logSubscription?: string;
     /**
     * Max capacity
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#max_capacity CcJob#max_capacity}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#max_capacity CcJob#max_capacity}
     */
     readonly maxCapacity?: number;
     /**
     * Max retries
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#max_retries CcJob#max_retries}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#max_retries CcJob#max_retries}
     */
     readonly maxRetries?: number;
     /**
     * Job name
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#name CcJob#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#name CcJob#name}
     */
     readonly name: string;
     /**
     * Output location
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#output_location CcJob#output_location}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#output_location CcJob#output_location}
     */
     readonly outputLocation?: CcJob.OutputLocationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#outputs CcJob#outputs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#outputs CcJob#outputs}
     */
     readonly outputs?: CcJob.OutputProperty[] | cdktn.IResolvable;
     /**
     * Profile Job configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#profile_configuration CcJob#profile_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#profile_configuration CcJob#profile_configuration}
     */
     readonly profileConfiguration?: CcJob.ProfileConfigurationProperty;
     /**
     * Project name
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#project_name CcJob#project_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#project_name CcJob#project_name}
     */
     readonly projectName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#recipe CcJob#recipe}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#recipe CcJob#recipe}
     */
     readonly recipe?: CcJob.RecipeProperty;
     /**
     * Role arn
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#role_arn CcJob#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#role_arn CcJob#role_arn}
     */
     readonly roleArn: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#tags CcJob#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#tags CcJob#tags}
     */
     readonly tags?: CcJob.TagProperty[] | cdktn.IResolvable;
     /**
     * Timeout
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#timeout CcJob#timeout}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#timeout CcJob#timeout}
     */
     readonly timeout?: number;
     /**
     * Job type
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#type CcJob#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#type CcJob#type}
     */
     readonly type: string;
     /**
     * Data quality rules configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#validation_configurations CcJob#validation_configurations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#validation_configurations CcJob#validation_configurations}
     */
     readonly validationConfigurations?: CcJob.ValidationConfigurationProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job awscc_databrew_job}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job awscc_databrew_job}
 */
 export class CcJob extends cdktn.TerraformResource {
 
@@ -135,7 +135,7 @@ export class CcJob extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcJob resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcJob to import
-    * @param importFromId The id of the existing CcJob that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcJob that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcJob to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -147,7 +147,7 @@ export class CcJob extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job awscc_databrew_job} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job awscc_databrew_job} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -158,7 +158,7 @@ export class CcJob extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_databrew_job',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -1761,15 +1761,15 @@ export function ccJobValidationConfigurationPropertyToHclTerraform(struct?: CcJo
 export namespace CcJob {
 export interface S3LocationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#bucket CcJob#bucket}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#bucket CcJob#bucket}
     */
     readonly bucket?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#bucket_owner CcJob#bucket_owner}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#bucket_owner CcJob#bucket_owner}
     */
     readonly bucketOwner?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#key CcJob#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#key CcJob#key}
     */
     readonly key?: string;
 }
@@ -1877,13 +1877,13 @@ export class S3LocationPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface DatabaseTableOutputOptionsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#table_name CcJob#table_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#table_name CcJob#table_name}
     */
     readonly tableName?: string;
     /**
     * S3 Output location
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#temp_directory CcJob#temp_directory}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#temp_directory CcJob#temp_directory}
     */
     readonly tempDirectory?: S3LocationProperty;
 }
@@ -1969,15 +1969,15 @@ export class DatabaseTableOutputOptionsPropertyOutputReference extends cdktn.Com
 }
 export interface DataCatalogOutputsS3OptionsLocationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#bucket CcJob#bucket}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#bucket CcJob#bucket}
     */
     readonly bucket?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#bucket_owner CcJob#bucket_owner}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#bucket_owner CcJob#bucket_owner}
     */
     readonly bucketOwner?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#key CcJob#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#key CcJob#key}
     */
     readonly key?: string;
 }
@@ -2087,7 +2087,7 @@ export interface S3TableOutputOptionsProperty {
     /**
     * S3 Output location
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#location CcJob#location}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#location CcJob#location}
     */
     readonly location?: DataCatalogOutputsS3OptionsLocationProperty;
 }
@@ -2151,27 +2151,27 @@ export class S3TableOutputOptionsPropertyOutputReference extends cdktn.ComplexOb
 }
 export interface DataCatalogOutputProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#catalog_id CcJob#catalog_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#catalog_id CcJob#catalog_id}
     */
     readonly catalogId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#database_name CcJob#database_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#database_name CcJob#database_name}
     */
     readonly databaseName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#database_options CcJob#database_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#database_options CcJob#database_options}
     */
     readonly databaseOptions?: DatabaseTableOutputOptionsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#overwrite CcJob#overwrite}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#overwrite CcJob#overwrite}
     */
     readonly overwrite?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#s3_options CcJob#s3_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#s3_options CcJob#s3_options}
     */
     readonly s3Options?: S3TableOutputOptionsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#table_name CcJob#table_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#table_name CcJob#table_name}
     */
     readonly tableName?: string;
 }
@@ -2367,15 +2367,15 @@ export class DataCatalogOutputPropertyList extends cdktn.ComplexList {
 }
 export interface TempDirectoryProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#bucket CcJob#bucket}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#bucket CcJob#bucket}
     */
     readonly bucket?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#bucket_owner CcJob#bucket_owner}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#bucket_owner CcJob#bucket_owner}
     */
     readonly bucketOwner?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#key CcJob#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#key CcJob#key}
     */
     readonly key?: string;
 }
@@ -2483,13 +2483,13 @@ export class TempDirectoryPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface DatabaseOptionsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#table_name CcJob#table_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#table_name CcJob#table_name}
     */
     readonly tableName?: string;
     /**
     * S3 Output location
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#temp_directory CcJob#temp_directory}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#temp_directory CcJob#temp_directory}
     */
     readonly tempDirectory?: TempDirectoryProperty;
 }
@@ -2575,19 +2575,19 @@ export class DatabaseOptionsPropertyOutputReference extends cdktn.ComplexObject 
 }
 export interface DatabaseOutputProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#database_options CcJob#database_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#database_options CcJob#database_options}
     */
     readonly databaseOptions?: DatabaseOptionsProperty;
     /**
     * Database table name
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#database_output_mode CcJob#database_output_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#database_output_mode CcJob#database_output_mode}
     */
     readonly databaseOutputMode?: string;
     /**
     * Glue connection name
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#glue_connection_name CcJob#glue_connection_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#glue_connection_name CcJob#glue_connection_name}
     */
     readonly glueConnectionName?: string;
 }
@@ -2719,13 +2719,13 @@ export interface JobSampleProperty {
     /**
     * Sample configuration mode for profile jobs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#mode CcJob#mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#mode CcJob#mode}
     */
     readonly mode?: string;
     /**
     * Sample configuration size for profile jobs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#size CcJob#size}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#size CcJob#size}
     */
     readonly size?: number;
 }
@@ -2811,15 +2811,15 @@ export class JobSamplePropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface OutputLocationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#bucket CcJob#bucket}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#bucket CcJob#bucket}
     */
     readonly bucket?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#bucket_owner CcJob#bucket_owner}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#bucket_owner CcJob#bucket_owner}
     */
     readonly bucketOwner?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#key CcJob#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#key CcJob#key}
     */
     readonly key?: string;
 }
@@ -2927,7 +2927,7 @@ export class OutputLocationPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface CsvOutputOptionsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#delimiter CcJob#delimiter}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#delimiter CcJob#delimiter}
     */
     readonly delimiter?: string;
 }
@@ -2993,7 +2993,7 @@ export interface OutputFormatOptionsProperty {
     /**
     * Output Csv options
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#csv CcJob#csv}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#csv CcJob#csv}
     */
     readonly csv?: CsvOutputOptionsProperty;
 }
@@ -3057,15 +3057,15 @@ export class OutputFormatOptionsPropertyOutputReference extends cdktn.ComplexObj
 }
 export interface OutputsLocationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#bucket CcJob#bucket}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#bucket CcJob#bucket}
     */
     readonly bucket?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#bucket_owner CcJob#bucket_owner}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#bucket_owner CcJob#bucket_owner}
     */
     readonly bucketOwner?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#key CcJob#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#key CcJob#key}
     */
     readonly key?: string;
 }
@@ -3173,35 +3173,35 @@ export class OutputsLocationPropertyOutputReference extends cdktn.ComplexObject 
 }
 export interface OutputProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#compression_format CcJob#compression_format}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#compression_format CcJob#compression_format}
     */
     readonly compressionFormat?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#format CcJob#format}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#format CcJob#format}
     */
     readonly format?: string;
     /**
     * Format options for job Output
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#format_options CcJob#format_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#format_options CcJob#format_options}
     */
     readonly formatOptions?: OutputFormatOptionsProperty;
     /**
     * S3 Output location
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#location CcJob#location}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#location CcJob#location}
     */
     readonly location?: OutputsLocationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#max_output_files CcJob#max_output_files}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#max_output_files CcJob#max_output_files}
     */
     readonly maxOutputFiles?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#overwrite CcJob#overwrite}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#overwrite CcJob#overwrite}
     */
     readonly overwrite?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#partition_columns CcJob#partition_columns}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#partition_columns CcJob#partition_columns}
     */
     readonly partitionColumns?: string[];
 }
@@ -3419,11 +3419,11 @@ export class OutputPropertyList extends cdktn.ComplexList {
 }
 export interface ColumnSelectorProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#name CcJob#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#name CcJob#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#regex CcJob#regex}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#regex CcJob#regex}
     */
     readonly regex?: string;
 }
@@ -3531,11 +3531,11 @@ export class ColumnSelectorPropertyList extends cdktn.ComplexList {
 }
 export interface StatisticOverrideProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#parameters CcJob#parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#parameters CcJob#parameters}
     */
     readonly parameters?: { [key: string]: string };
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#statistic CcJob#statistic}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#statistic CcJob#statistic}
     */
     readonly statistic?: string;
 }
@@ -3643,11 +3643,11 @@ export class StatisticOverridePropertyList extends cdktn.ComplexList {
 }
 export interface StatisticsConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#included_statistics CcJob#included_statistics}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#included_statistics CcJob#included_statistics}
     */
     readonly includedStatistics?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#overrides CcJob#overrides}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#overrides CcJob#overrides}
     */
     readonly overrides?: StatisticOverrideProperty[] | cdktn.IResolvable;
 }
@@ -3733,11 +3733,11 @@ export class StatisticsConfigurationPropertyOutputReference extends cdktn.Comple
 }
 export interface ColumnStatisticsConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#selectors CcJob#selectors}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#selectors CcJob#selectors}
     */
     readonly selectors?: ColumnSelectorProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#statistics CcJob#statistics}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#statistics CcJob#statistics}
     */
     readonly statistics?: StatisticsConfigurationProperty;
 }
@@ -3845,11 +3845,11 @@ export class ColumnStatisticsConfigurationPropertyList extends cdktn.ComplexList
 }
 export interface OverridesProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#parameters CcJob#parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#parameters CcJob#parameters}
     */
     readonly parameters?: { [key: string]: string };
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#statistic CcJob#statistic}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#statistic CcJob#statistic}
     */
     readonly statistic?: string;
 }
@@ -3957,11 +3957,11 @@ export class OverridesPropertyList extends cdktn.ComplexList {
 }
 export interface DatasetStatisticsConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#included_statistics CcJob#included_statistics}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#included_statistics CcJob#included_statistics}
     */
     readonly includedStatistics?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#overrides CcJob#overrides}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#overrides CcJob#overrides}
     */
     readonly overrides?: OverridesProperty[] | cdktn.IResolvable;
 }
@@ -4047,7 +4047,7 @@ export class DatasetStatisticsConfigurationPropertyOutputReference extends cdktn
 }
 export interface AllowedStatisticsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#statistics CcJob#statistics}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#statistics CcJob#statistics}
     */
     readonly statistics?: string[];
 }
@@ -4111,11 +4111,11 @@ export class AllowedStatisticsPropertyOutputReference extends cdktn.ComplexObjec
 }
 export interface EntityDetectorConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#allowed_statistics CcJob#allowed_statistics}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#allowed_statistics CcJob#allowed_statistics}
     */
     readonly allowedStatistics?: AllowedStatisticsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#entity_types CcJob#entity_types}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#entity_types CcJob#entity_types}
     */
     readonly entityTypes?: string[];
 }
@@ -4201,11 +4201,11 @@ export class EntityDetectorConfigurationPropertyOutputReference extends cdktn.Co
 }
 export interface ProfileColumnsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#name CcJob#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#name CcJob#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#regex CcJob#regex}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#regex CcJob#regex}
     */
     readonly regex?: string;
 }
@@ -4313,19 +4313,19 @@ export class ProfileColumnsPropertyList extends cdktn.ComplexList {
 }
 export interface ProfileConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#column_statistics_configurations CcJob#column_statistics_configurations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#column_statistics_configurations CcJob#column_statistics_configurations}
     */
     readonly columnStatisticsConfigurations?: ColumnStatisticsConfigurationProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#dataset_statistics_configuration CcJob#dataset_statistics_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#dataset_statistics_configuration CcJob#dataset_statistics_configuration}
     */
     readonly datasetStatisticsConfiguration?: DatasetStatisticsConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#entity_detector_configuration CcJob#entity_detector_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#entity_detector_configuration CcJob#entity_detector_configuration}
     */
     readonly entityDetectorConfiguration?: EntityDetectorConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#profile_columns CcJob#profile_columns}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#profile_columns CcJob#profile_columns}
     */
     readonly profileColumns?: ProfileColumnsProperty[] | cdktn.IResolvable;
 }
@@ -4457,13 +4457,13 @@ export interface RecipeProperty {
     /**
     * Recipe name
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#name CcJob#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#name CcJob#name}
     */
     readonly name?: string;
     /**
     * Recipe version
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#version CcJob#version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#version CcJob#version}
     */
     readonly version?: string;
 }
@@ -4549,11 +4549,11 @@ export class RecipePropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#key CcJob#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#key CcJob#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#value CcJob#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#value CcJob#value}
     */
     readonly value?: string;
 }
@@ -4663,11 +4663,11 @@ export interface ValidationConfigurationProperty {
     /**
     * Arn of the Ruleset
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#ruleset_arn CcJob#ruleset_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#ruleset_arn CcJob#ruleset_arn}
     */
     readonly rulesetArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_job#validation_mode CcJob#validation_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_job#validation_mode CcJob#validation_mode}
     */
     readonly validationMode?: string;
 }

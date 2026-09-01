@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/organizations_organization
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/organizations_organization
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,13 +9,13 @@ export interface CcOrganizationProps extends cdktn.TerraformMetaArguments {
     /**
     * Specifies the feature set supported by the new organization. Each feature set supports different levels of functionality.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/organizations_organization#feature_set CcOrganization#feature_set}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/organizations_organization#feature_set CcOrganization#feature_set}
     */
     readonly featureSet?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/organizations_organization awscc_organizations_organization}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/organizations_organization awscc_organizations_organization}
 */
 export class CcOrganization extends cdktn.TerraformResource {
 
@@ -31,7 +31,7 @@ export class CcOrganization extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcOrganization resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcOrganization to import
-    * @param importFromId The id of the existing CcOrganization that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/organizations_organization#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcOrganization that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/organizations_organization#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcOrganization to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -43,7 +43,7 @@ export class CcOrganization extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/organizations_organization awscc_organizations_organization} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/organizations_organization awscc_organizations_organization} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -54,7 +54,7 @@ export class CcOrganization extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_organizations_organization',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,

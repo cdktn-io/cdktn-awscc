@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/docdb_global_cluster
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/docdb_global_cluster
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,49 +9,49 @@ export interface CcGlobalClusterProps extends cdktn.TerraformMetaArguments {
     /**
     * Indicates whether the global cluster has deletion protection enabled. The global cluster can't be deleted when deletion protection is enabled.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/docdb_global_cluster#deletion_protection CcGlobalCluster#deletion_protection}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/docdb_global_cluster#deletion_protection CcGlobalCluster#deletion_protection}
     */
     readonly deletionProtection?: boolean | cdktn.IResolvable;
     /**
     * The database engine to use for this global cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/docdb_global_cluster#engine CcGlobalCluster#engine}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/docdb_global_cluster#engine CcGlobalCluster#engine}
     */
     readonly engine?: string;
     /**
     * The engine version to use for this global cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/docdb_global_cluster#engine_version CcGlobalCluster#engine_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/docdb_global_cluster#engine_version CcGlobalCluster#engine_version}
     */
     readonly engineVersion?: string;
     /**
     * The cluster identifier of the global cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/docdb_global_cluster#global_cluster_identifier CcGlobalCluster#global_cluster_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/docdb_global_cluster#global_cluster_identifier CcGlobalCluster#global_cluster_identifier}
     */
     readonly globalClusterIdentifier: string;
     /**
     * The Amazon Resource Name (ARN) to use as the primary cluster of the global cluster. You may also choose to instead specify the DBClusterIdentifier. If you provide a value for this parameter, don't specify values for the following settings because Amazon DocumentDB uses the values from the specified source DB cluster: Engine, EngineVersion, StorageEncrypted
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/docdb_global_cluster#source_db_cluster_identifier CcGlobalCluster#source_db_cluster_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/docdb_global_cluster#source_db_cluster_identifier CcGlobalCluster#source_db_cluster_identifier}
     */
     readonly sourceDbClusterIdentifier?: string;
     /**
     * Indicates whether the global cluster has storage encryption enabled.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/docdb_global_cluster#storage_encrypted CcGlobalCluster#storage_encrypted}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/docdb_global_cluster#storage_encrypted CcGlobalCluster#storage_encrypted}
     */
     readonly storageEncrypted?: boolean | cdktn.IResolvable;
     /**
     * The tags to be assigned to the Amazon DocumentDB resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/docdb_global_cluster#tags CcGlobalCluster#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/docdb_global_cluster#tags CcGlobalCluster#tags}
     */
     readonly tags?: CcGlobalCluster.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/docdb_global_cluster awscc_docdb_global_cluster}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/docdb_global_cluster awscc_docdb_global_cluster}
 */
 export class CcGlobalCluster extends cdktn.TerraformResource {
 
@@ -67,7 +67,7 @@ export class CcGlobalCluster extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcGlobalCluster resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcGlobalCluster to import
-    * @param importFromId The id of the existing CcGlobalCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/docdb_global_cluster#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcGlobalCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/docdb_global_cluster#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcGlobalCluster to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -79,7 +79,7 @@ export class CcGlobalCluster extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/docdb_global_cluster awscc_docdb_global_cluster} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/docdb_global_cluster awscc_docdb_global_cluster} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -90,7 +90,7 @@ export class CcGlobalCluster extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_docdb_global_cluster',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -346,13 +346,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/docdb_global_cluster#key CcGlobalCluster#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/docdb_global_cluster#key CcGlobalCluster#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 0 to 256 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/docdb_global_cluster#value CcGlobalCluster#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/docdb_global_cluster#value CcGlobalCluster#value}
     */
     readonly value?: string;
 }

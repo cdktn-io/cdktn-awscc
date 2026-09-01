@@ -1,31 +1,31 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_archive
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_archive
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcMailManagerArchiveProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_archive#archive_name CcMailManagerArchive#archive_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_archive#archive_name CcMailManagerArchive#archive_name}
     */
     readonly archiveName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_archive#kms_key_arn CcMailManagerArchive#kms_key_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_archive#kms_key_arn CcMailManagerArchive#kms_key_arn}
     */
     readonly kmsKeyArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_archive#retention CcMailManagerArchive#retention}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_archive#retention CcMailManagerArchive#retention}
     */
     readonly retention?: CcMailManagerArchive.ArchiveRetentionProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_archive#tags CcMailManagerArchive#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_archive#tags CcMailManagerArchive#tags}
     */
     readonly tags?: CcMailManagerArchive.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_archive awscc_ses_mail_manager_archive}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_archive awscc_ses_mail_manager_archive}
 */
 export class CcMailManagerArchive extends cdktn.TerraformResource {
 
@@ -41,7 +41,7 @@ export class CcMailManagerArchive extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcMailManagerArchive resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcMailManagerArchive to import
-    * @param importFromId The id of the existing CcMailManagerArchive that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_archive#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcMailManagerArchive that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_archive#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcMailManagerArchive to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -53,7 +53,7 @@ export class CcMailManagerArchive extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_archive awscc_ses_mail_manager_archive} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_archive awscc_ses_mail_manager_archive} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -64,7 +64,7 @@ export class CcMailManagerArchive extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_ses_mail_manager_archive',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -284,7 +284,7 @@ export function ccMailManagerArchiveTagPropertyToHclTerraform(struct?: CcMailMan
 export namespace CcMailManagerArchive {
 export interface ArchiveRetentionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_archive#retention_period CcMailManagerArchive#retention_period}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_archive#retention_period CcMailManagerArchive#retention_period}
     */
     readonly retentionPeriod?: string;
 }
@@ -348,11 +348,11 @@ export class ArchiveRetentionPropertyOutputReference extends cdktn.ComplexObject
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_archive#key CcMailManagerArchive#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_archive#key CcMailManagerArchive#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_archive#value CcMailManagerArchive#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_archive#value CcMailManagerArchive#value}
     */
     readonly value?: string;
 }

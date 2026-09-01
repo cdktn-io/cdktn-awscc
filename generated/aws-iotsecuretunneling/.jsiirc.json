@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_iotsecuretunneling"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.IoTSecureTunneling"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.iotsecuretunneling"
+    }
+  }
+}

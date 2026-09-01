@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/personalize_solution
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/personalize_solution
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,55 +9,55 @@ export interface CcSolutionProps extends cdktn.TerraformMetaArguments {
     /**
     * The ARN of the dataset group that provides the training data.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/personalize_solution#dataset_group_arn CcSolution#dataset_group_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/personalize_solution#dataset_group_arn CcSolution#dataset_group_arn}
     */
     readonly datasetGroupArn: string;
     /**
     * When your have multiple event types (using an EVENT_TYPE schema field), this parameter specifies which event type (for example, 'click' or 'like') is used for training the model. If you do not provide an eventType, Amazon Personalize will use all interactions for training with equal weight regardless of type.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/personalize_solution#event_type CcSolution#event_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/personalize_solution#event_type CcSolution#event_type}
     */
     readonly eventType?: string;
     /**
     * The name for the solution
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/personalize_solution#name CcSolution#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/personalize_solution#name CcSolution#name}
     */
     readonly name: string;
     /**
     * Whether to perform automated machine learning (AutoML). The default is false. For this case, you must specify recipeArn.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/personalize_solution#perform_auto_ml CcSolution#perform_auto_ml}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/personalize_solution#perform_auto_ml CcSolution#perform_auto_ml}
     */
     readonly performAutoMl?: boolean | cdktn.IResolvable;
     /**
     * Whether to perform hyperparameter optimization (HPO) on the specified or selected recipe. The default is false. When performing AutoML, this parameter is always true and you should not set it to false.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/personalize_solution#perform_hpo CcSolution#perform_hpo}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/personalize_solution#perform_hpo CcSolution#perform_hpo}
     */
     readonly performHpo?: boolean | cdktn.IResolvable;
     /**
     * The ARN of the recipe to use for model training. Only specified when performAutoML is false.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/personalize_solution#recipe_arn CcSolution#recipe_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/personalize_solution#recipe_arn CcSolution#recipe_arn}
     */
     readonly recipeArn?: string;
     /**
     * The configuration to use with the solution. When performAutoML is set to true, Amazon Personalize only evaluates the autoMLConfig section of the solution configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/personalize_solution#solution_config CcSolution#solution_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/personalize_solution#solution_config CcSolution#solution_config}
     */
     readonly solutionConfig?: CcSolution.SolutionConfigProperty;
     /**
     * The tags used to organize, track, or control access for this resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/personalize_solution#tags CcSolution#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/personalize_solution#tags CcSolution#tags}
     */
     readonly tags?: CcSolution.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/personalize_solution awscc_personalize_solution}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/personalize_solution awscc_personalize_solution}
 */
 export class CcSolution extends cdktn.TerraformResource {
 
@@ -73,7 +73,7 @@ export class CcSolution extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcSolution resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcSolution to import
-    * @param importFromId The id of the existing CcSolution that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/personalize_solution#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcSolution that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/personalize_solution#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcSolution to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -85,7 +85,7 @@ export class CcSolution extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/personalize_solution awscc_personalize_solution} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/personalize_solution awscc_personalize_solution} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -96,7 +96,7 @@ export class CcSolution extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_personalize_solution',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -757,13 +757,13 @@ export interface AutoMLConfigProperty {
     /**
     * The metric to optimize.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/personalize_solution#metric_name CcSolution#metric_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/personalize_solution#metric_name CcSolution#metric_name}
     */
     readonly metricName?: string;
     /**
     * The list of candidate recipes.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/personalize_solution#recipe_list CcSolution#recipe_list}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/personalize_solution#recipe_list CcSolution#recipe_list}
     */
     readonly recipeList?: string[];
 }
@@ -851,13 +851,13 @@ export interface CategoricalHyperParameterRangeProperty {
     /**
     * The name of the hyperparameter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/personalize_solution#name CcSolution#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/personalize_solution#name CcSolution#name}
     */
     readonly name?: string;
     /**
     * A list of the categories for the hyperparameter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/personalize_solution#values CcSolution#values}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/personalize_solution#values CcSolution#values}
     */
     readonly values?: string[];
 }
@@ -967,19 +967,19 @@ export interface ContinuousHyperParameterRangeProperty {
     /**
     * The maximum allowable value for the hyperparameter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/personalize_solution#max_value CcSolution#max_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/personalize_solution#max_value CcSolution#max_value}
     */
     readonly maxValue?: number;
     /**
     * The minimum allowable value for the hyperparameter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/personalize_solution#min_value CcSolution#min_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/personalize_solution#min_value CcSolution#min_value}
     */
     readonly minValue?: number;
     /**
     * The name of the hyperparameter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/personalize_solution#name CcSolution#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/personalize_solution#name CcSolution#name}
     */
     readonly name?: string;
 }
@@ -1111,19 +1111,19 @@ export interface IntegerHyperParameterRangeProperty {
     /**
     * The maximum allowable value for the hyperparameter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/personalize_solution#max_value CcSolution#max_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/personalize_solution#max_value CcSolution#max_value}
     */
     readonly maxValue?: number;
     /**
     * The minimum allowable value for the hyperparameter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/personalize_solution#min_value CcSolution#min_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/personalize_solution#min_value CcSolution#min_value}
     */
     readonly minValue?: number;
     /**
     * The name of the hyperparameter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/personalize_solution#name CcSolution#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/personalize_solution#name CcSolution#name}
     */
     readonly name?: string;
 }
@@ -1255,19 +1255,19 @@ export interface AlgorithmHyperParameterRangesProperty {
     /**
     * The categorical hyperparameters and their ranges.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/personalize_solution#categorical_hyper_parameter_ranges CcSolution#categorical_hyper_parameter_ranges}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/personalize_solution#categorical_hyper_parameter_ranges CcSolution#categorical_hyper_parameter_ranges}
     */
     readonly categoricalHyperParameterRanges?: CategoricalHyperParameterRangeProperty[] | cdktn.IResolvable;
     /**
     * The continuous hyperparameters and their ranges.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/personalize_solution#continuous_hyper_parameter_ranges CcSolution#continuous_hyper_parameter_ranges}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/personalize_solution#continuous_hyper_parameter_ranges CcSolution#continuous_hyper_parameter_ranges}
     */
     readonly continuousHyperParameterRanges?: ContinuousHyperParameterRangeProperty[] | cdktn.IResolvable;
     /**
     * The integer hyperparameters and their ranges.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/personalize_solution#integer_hyper_parameter_ranges CcSolution#integer_hyper_parameter_ranges}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/personalize_solution#integer_hyper_parameter_ranges CcSolution#integer_hyper_parameter_ranges}
     */
     readonly integerHyperParameterRanges?: IntegerHyperParameterRangeProperty[] | cdktn.IResolvable;
 }
@@ -1377,19 +1377,19 @@ export interface HpoObjectiveProperty {
     /**
     * The name of the metric
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/personalize_solution#metric_name CcSolution#metric_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/personalize_solution#metric_name CcSolution#metric_name}
     */
     readonly metricName?: string;
     /**
     * A regular expression for finding the metric in the training job logs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/personalize_solution#metric_regex CcSolution#metric_regex}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/personalize_solution#metric_regex CcSolution#metric_regex}
     */
     readonly metricRegex?: string;
     /**
     * The type of the metric. Valid values are Maximize and Minimize.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/personalize_solution#type CcSolution#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/personalize_solution#type CcSolution#type}
     */
     readonly type?: string;
 }
@@ -1499,13 +1499,13 @@ export interface HpoResourceConfigProperty {
     /**
     * The maximum number of training jobs when you create a solution version. The maximum value for maxNumberOfTrainingJobs is 40.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/personalize_solution#max_number_of_training_jobs CcSolution#max_number_of_training_jobs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/personalize_solution#max_number_of_training_jobs CcSolution#max_number_of_training_jobs}
     */
     readonly maxNumberOfTrainingJobs?: string;
     /**
     * The maximum number of parallel training jobs when you create a solution version. The maximum value for maxParallelTrainingJobs is 10.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/personalize_solution#max_parallel_training_jobs CcSolution#max_parallel_training_jobs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/personalize_solution#max_parallel_training_jobs CcSolution#max_parallel_training_jobs}
     */
     readonly maxParallelTrainingJobs?: string;
 }
@@ -1593,19 +1593,19 @@ export interface HpoConfigProperty {
     /**
     * The hyperparameters and their allowable ranges
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/personalize_solution#algorithm_hyper_parameter_ranges CcSolution#algorithm_hyper_parameter_ranges}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/personalize_solution#algorithm_hyper_parameter_ranges CcSolution#algorithm_hyper_parameter_ranges}
     */
     readonly algorithmHyperParameterRanges?: AlgorithmHyperParameterRangesProperty;
     /**
     * The metric to optimize during HPO.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/personalize_solution#hpo_objective CcSolution#hpo_objective}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/personalize_solution#hpo_objective CcSolution#hpo_objective}
     */
     readonly hpoObjective?: HpoObjectiveProperty;
     /**
     * Describes the resource configuration for hyperparameter optimization (HPO).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/personalize_solution#hpo_resource_config CcSolution#hpo_resource_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/personalize_solution#hpo_resource_config CcSolution#hpo_resource_config}
     */
     readonly hpoResourceConfig?: HpoResourceConfigProperty;
 }
@@ -1715,31 +1715,31 @@ export interface SolutionConfigProperty {
     /**
     * Lists the hyperparameter names and ranges.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/personalize_solution#algorithm_hyper_parameters CcSolution#algorithm_hyper_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/personalize_solution#algorithm_hyper_parameters CcSolution#algorithm_hyper_parameters}
     */
     readonly algorithmHyperParameters?: { [key: string]: string };
     /**
     * The AutoMLConfig object containing a list of recipes to search when AutoML is performed.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/personalize_solution#auto_ml_config CcSolution#auto_ml_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/personalize_solution#auto_ml_config CcSolution#auto_ml_config}
     */
     readonly autoMlConfig?: AutoMLConfigProperty;
     /**
     * Only events with a value greater than or equal to this threshold are used for training a model.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/personalize_solution#event_value_threshold CcSolution#event_value_threshold}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/personalize_solution#event_value_threshold CcSolution#event_value_threshold}
     */
     readonly eventValueThreshold?: string;
     /**
     * Lists the feature transformation parameters.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/personalize_solution#feature_transformation_parameters CcSolution#feature_transformation_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/personalize_solution#feature_transformation_parameters CcSolution#feature_transformation_parameters}
     */
     readonly featureTransformationParameters?: { [key: string]: string };
     /**
     * Describes the properties for hyperparameter optimization (HPO)
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/personalize_solution#hpo_config CcSolution#hpo_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/personalize_solution#hpo_config CcSolution#hpo_config}
     */
     readonly hpoConfig?: HpoConfigProperty;
 }
@@ -1891,11 +1891,11 @@ export class SolutionConfigPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/personalize_solution#key CcSolution#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/personalize_solution#key CcSolution#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/personalize_solution#value CcSolution#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/personalize_solution#value CcSolution#value}
     */
     readonly value?: string;
 }

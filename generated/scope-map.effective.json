@@ -2202,6 +2202,22 @@
     ],
     "autoExtended": true
   },
+  "aws-iotsecuretunneling": {
+    "scopes": [
+      {
+        "namespace": "AWS::IoTSecureTunneling"
+      }
+    ],
+    "autoExtended": true
+  },
+  "aws-mgn": {
+    "scopes": [
+      {
+        "namespace": "AWS::MGN"
+      }
+    ],
+    "autoExtended": true
+  },
   "aws-opensearch": {
     "scopes": [
       {
@@ -2214,6 +2230,22 @@
     "scopes": [
       {
         "namespace": "AWS::ServerlessRepo"
+      }
+    ],
+    "autoExtended": true
+  },
+  "aws-textract": {
+    "scopes": [
+      {
+        "namespace": "AWS::Textract"
+      }
+    ],
+    "autoExtended": true
+  },
+  "aws-translate": {
+    "scopes": [
+      {
+        "namespace": "AWS::Translate"
       }
     ],
     "autoExtended": true

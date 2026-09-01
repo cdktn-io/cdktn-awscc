@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/memorydb_cluster
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/memorydb_cluster
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,7 +9,7 @@ export interface CcClusterProps extends cdktn.TerraformMetaArguments {
     /**
     * The name of the Access Control List to associate with the cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/memorydb_cluster#acl_name CcCluster#acl_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/memorydb_cluster#acl_name CcCluster#acl_name}
     */
     readonly aclName: string;
     /**
@@ -17,163 +17,163 @@ export interface CcClusterProps extends cdktn.TerraformMetaArguments {
     * 
     * You cannot modify the value of AutoMinorVersionUpgrade after the cluster is created. To enable AutoMinorVersionUpgrade on a cluster you must set AutoMinorVersionUpgrade to true when you create a cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/memorydb_cluster#auto_minor_version_upgrade CcCluster#auto_minor_version_upgrade}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/memorydb_cluster#auto_minor_version_upgrade CcCluster#auto_minor_version_upgrade}
     */
     readonly autoMinorVersionUpgrade?: boolean | cdktn.IResolvable;
     /**
     * The cluster endpoint.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/memorydb_cluster#cluster_endpoint CcCluster#cluster_endpoint}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/memorydb_cluster#cluster_endpoint CcCluster#cluster_endpoint}
     */
     readonly clusterEndpoint?: CcCluster.EndpointProperty;
     /**
     * The name of the cluster. This value must be unique as it also serves as the cluster identifier.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/memorydb_cluster#cluster_name CcCluster#cluster_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/memorydb_cluster#cluster_name CcCluster#cluster_name}
     */
     readonly clusterName: string;
     /**
     * Enables data tiering. Data tiering is only supported for clusters using the r6gd node type. This parameter must be set when using r6gd nodes.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/memorydb_cluster#data_tiering CcCluster#data_tiering}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/memorydb_cluster#data_tiering CcCluster#data_tiering}
     */
     readonly dataTiering?: string;
     /**
     * An optional description of the cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/memorydb_cluster#description CcCluster#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/memorydb_cluster#description CcCluster#description}
     */
     readonly description?: string;
     /**
     * The engine type used by the cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/memorydb_cluster#engine CcCluster#engine}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/memorydb_cluster#engine CcCluster#engine}
     */
     readonly engine?: string;
     /**
     * The Redis engine version used by the cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/memorydb_cluster#engine_version CcCluster#engine_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/memorydb_cluster#engine_version CcCluster#engine_version}
     */
     readonly engineVersion?: string;
     /**
     * The user-supplied name of a final cluster snapshot. This is the unique name that identifies the snapshot. MemoryDB creates the snapshot, and then deletes the cluster immediately afterward.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/memorydb_cluster#final_snapshot_name CcCluster#final_snapshot_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/memorydb_cluster#final_snapshot_name CcCluster#final_snapshot_name}
     */
     readonly finalSnapshotName?: string;
     /**
     * For clusters wth dual stack NetworkType, IpDiscovery controls the Ip protocol (ipv4 or ipv6) returned by the engine commands such as `cluster info` and `cluster nodes` which are used by clients to connect to the nodes in the cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/memorydb_cluster#ip_discovery CcCluster#ip_discovery}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/memorydb_cluster#ip_discovery CcCluster#ip_discovery}
     */
     readonly ipDiscovery?: string;
     /**
     * The ID of the KMS key used to encrypt the cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/memorydb_cluster#kms_key_id CcCluster#kms_key_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/memorydb_cluster#kms_key_id CcCluster#kms_key_id}
     */
     readonly kmsKeyId?: string;
     /**
     * Specifies the weekly time range during which maintenance on the cluster is performed. It is specified as a range in the format ddd:hh24:mi-ddd:hh24:mi (24H Clock UTC). The minimum maintenance window is a 60 minute period.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/memorydb_cluster#maintenance_window CcCluster#maintenance_window}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/memorydb_cluster#maintenance_window CcCluster#maintenance_window}
     */
     readonly maintenanceWindow?: string;
     /**
     * The name of the Global Datastore, it is generated by MemoryDB adding a prefix to MultiRegionClusterNameSuffix.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/memorydb_cluster#multi_region_cluster_name CcCluster#multi_region_cluster_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/memorydb_cluster#multi_region_cluster_name CcCluster#multi_region_cluster_name}
     */
     readonly multiRegionClusterName?: string;
     /**
     * Must be either ipv4 | ipv6 | dual_stack.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/memorydb_cluster#network_type CcCluster#network_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/memorydb_cluster#network_type CcCluster#network_type}
     */
     readonly networkType?: string;
     /**
     * The compute and memory capacity of the nodes in the cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/memorydb_cluster#node_type CcCluster#node_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/memorydb_cluster#node_type CcCluster#node_type}
     */
     readonly nodeType: string;
     /**
     * The number of replicas to apply to each shard. The limit is 5.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/memorydb_cluster#num_replicas_per_shard CcCluster#num_replicas_per_shard}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/memorydb_cluster#num_replicas_per_shard CcCluster#num_replicas_per_shard}
     */
     readonly numReplicasPerShard?: number;
     /**
     * The number of shards the cluster will contain.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/memorydb_cluster#num_shards CcCluster#num_shards}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/memorydb_cluster#num_shards CcCluster#num_shards}
     */
     readonly numShards?: number;
     /**
     * The name of the parameter group associated with the cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/memorydb_cluster#parameter_group_name CcCluster#parameter_group_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/memorydb_cluster#parameter_group_name CcCluster#parameter_group_name}
     */
     readonly parameterGroupName?: string;
     /**
     * The port number on which each member of the cluster accepts connections.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/memorydb_cluster#port CcCluster#port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/memorydb_cluster#port CcCluster#port}
     */
     readonly port?: number;
     /**
     * One or more Amazon VPC security groups associated with this cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/memorydb_cluster#security_group_ids CcCluster#security_group_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/memorydb_cluster#security_group_ids CcCluster#security_group_ids}
     */
     readonly securityGroupIds?: string[];
     /**
     * A list of Amazon Resource Names (ARN) that uniquely identify the RDB snapshot files stored in Amazon S3. The snapshot files are used to populate the new cluster. The Amazon S3 object name in the ARN cannot contain any commas.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/memorydb_cluster#snapshot_arns CcCluster#snapshot_arns}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/memorydb_cluster#snapshot_arns CcCluster#snapshot_arns}
     */
     readonly snapshotArns?: string[];
     /**
     * The name of a snapshot from which to restore data into the new cluster. The snapshot status changes to restoring while the new cluster is being created.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/memorydb_cluster#snapshot_name CcCluster#snapshot_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/memorydb_cluster#snapshot_name CcCluster#snapshot_name}
     */
     readonly snapshotName?: string;
     /**
     * The number of days for which MemoryDB retains automatic snapshots before deleting them. For example, if you set SnapshotRetentionLimit to 5, a snapshot that was taken today is retained for 5 days before being deleted.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/memorydb_cluster#snapshot_retention_limit CcCluster#snapshot_retention_limit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/memorydb_cluster#snapshot_retention_limit CcCluster#snapshot_retention_limit}
     */
     readonly snapshotRetentionLimit?: number;
     /**
     * The daily time range (in UTC) during which MemoryDB begins taking a daily snapshot of your cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/memorydb_cluster#snapshot_window CcCluster#snapshot_window}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/memorydb_cluster#snapshot_window CcCluster#snapshot_window}
     */
     readonly snapshotWindow?: string;
     /**
     * The Amazon Resource Name (ARN) of the Amazon Simple Notification Service (SNS) topic to which notifications are sent.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/memorydb_cluster#sns_topic_arn CcCluster#sns_topic_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/memorydb_cluster#sns_topic_arn CcCluster#sns_topic_arn}
     */
     readonly snsTopicArn?: string;
     /**
     * The status of the Amazon SNS notification topic. Notifications are sent only if the status is enabled.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/memorydb_cluster#sns_topic_status CcCluster#sns_topic_status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/memorydb_cluster#sns_topic_status CcCluster#sns_topic_status}
     */
     readonly snsTopicStatus?: string;
     /**
     * The name of the subnet group to be used for the cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/memorydb_cluster#subnet_group_name CcCluster#subnet_group_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/memorydb_cluster#subnet_group_name CcCluster#subnet_group_name}
     */
     readonly subnetGroupName?: string;
     /**
     * An array of key-value pairs to apply to this cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/memorydb_cluster#tags CcCluster#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/memorydb_cluster#tags CcCluster#tags}
     */
     readonly tags?: CcCluster.TagProperty[] | cdktn.IResolvable;
     /**
@@ -181,13 +181,13 @@ export interface CcClusterProps extends cdktn.TerraformMetaArguments {
     * 
     * You cannot modify the value of TransitEncryptionEnabled after the cluster is created. To enable in-transit encryption on a cluster you must set TransitEncryptionEnabled to true when you create a cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/memorydb_cluster#tls_enabled CcCluster#tls_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/memorydb_cluster#tls_enabled CcCluster#tls_enabled}
     */
     readonly tlsEnabled?: boolean | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/memorydb_cluster awscc_memorydb_cluster}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/memorydb_cluster awscc_memorydb_cluster}
 */
 export class CcCluster extends cdktn.TerraformResource {
 
@@ -203,7 +203,7 @@ export class CcCluster extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcCluster resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcCluster to import
-    * @param importFromId The id of the existing CcCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/memorydb_cluster#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/memorydb_cluster#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcCluster to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -215,7 +215,7 @@ export class CcCluster extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/memorydb_cluster awscc_memorydb_cluster} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/memorydb_cluster awscc_memorydb_cluster} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -226,7 +226,7 @@ export class CcCluster extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_memorydb_cluster',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -1078,13 +1078,13 @@ export interface TagProperty {
     /**
     * The key for the tag. May not be null.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/memorydb_cluster#key CcCluster#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/memorydb_cluster#key CcCluster#key}
     */
     readonly key?: string;
     /**
     * The tag's value. May be null.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/memorydb_cluster#value CcCluster#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/memorydb_cluster#value CcCluster#value}
     */
     readonly value?: string;
 }

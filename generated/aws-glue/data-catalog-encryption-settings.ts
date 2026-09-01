@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_data_catalog_encryption_settings
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_data_catalog_encryption_settings
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,19 +9,19 @@ export interface CcDataCatalogEncryptionSettingsProps extends cdktn.TerraformMet
     /**
     * The ID of the Data Catalog in which the settings are created.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_data_catalog_encryption_settings#catalog_id CcDataCatalogEncryptionSettings#catalog_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_data_catalog_encryption_settings#catalog_id CcDataCatalogEncryptionSettings#catalog_id}
     */
     readonly catalogId: string;
     /**
     * Contains configuration information for maintaining Data Catalog security.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_data_catalog_encryption_settings#data_catalog_encryption_settings CcDataCatalogEncryptionSettings#data_catalog_encryption_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_data_catalog_encryption_settings#data_catalog_encryption_settings CcDataCatalogEncryptionSettings#data_catalog_encryption_settings}
     */
     readonly dataCatalogEncryptionSettings: CcDataCatalogEncryptionSettings.DataCatalogEncryptionSettingsProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_data_catalog_encryption_settings awscc_glue_data_catalog_encryption_settings}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_data_catalog_encryption_settings awscc_glue_data_catalog_encryption_settings}
 */
 export class CcDataCatalogEncryptionSettings extends cdktn.TerraformResource {
 
@@ -37,7 +37,7 @@ export class CcDataCatalogEncryptionSettings extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcDataCatalogEncryptionSettings resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcDataCatalogEncryptionSettings to import
-    * @param importFromId The id of the existing CcDataCatalogEncryptionSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_data_catalog_encryption_settings#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcDataCatalogEncryptionSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_data_catalog_encryption_settings#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcDataCatalogEncryptionSettings to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -49,7 +49,7 @@ export class CcDataCatalogEncryptionSettings extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_data_catalog_encryption_settings awscc_glue_data_catalog_encryption_settings} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_data_catalog_encryption_settings awscc_glue_data_catalog_encryption_settings} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -60,7 +60,7 @@ export class CcDataCatalogEncryptionSettings extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_glue_data_catalog_encryption_settings',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -264,13 +264,13 @@ export interface ConnectionPasswordEncryptionProperty {
     /**
     * An AWS KMS key that is used to encrypt the connection password.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_data_catalog_encryption_settings#kms_key_id CcDataCatalogEncryptionSettings#kms_key_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_data_catalog_encryption_settings#kms_key_id CcDataCatalogEncryptionSettings#kms_key_id}
     */
     readonly kmsKeyId?: string;
     /**
     * When the ReturnConnectionPasswordEncrypted flag is set to 'true', passwords remain encrypted in the responses of GetConnection and GetConnections. This encryption takes effect independently from catalog encryption.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_data_catalog_encryption_settings#return_connection_password_encrypted CcDataCatalogEncryptionSettings#return_connection_password_encrypted}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_data_catalog_encryption_settings#return_connection_password_encrypted CcDataCatalogEncryptionSettings#return_connection_password_encrypted}
     */
     readonly returnConnectionPasswordEncrypted?: boolean | cdktn.IResolvable;
 }
@@ -358,19 +358,19 @@ export interface EncryptionAtRestProperty {
     /**
     * The encryption-at-rest mode for encrypting Data Catalog data.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_data_catalog_encryption_settings#catalog_encryption_mode CcDataCatalogEncryptionSettings#catalog_encryption_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_data_catalog_encryption_settings#catalog_encryption_mode CcDataCatalogEncryptionSettings#catalog_encryption_mode}
     */
     readonly catalogEncryptionMode?: string;
     /**
     * The role that AWS Glue assumes to encrypt and decrypt the Data Catalog objects on the caller's behalf.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_data_catalog_encryption_settings#catalog_encryption_service_role CcDataCatalogEncryptionSettings#catalog_encryption_service_role}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_data_catalog_encryption_settings#catalog_encryption_service_role CcDataCatalogEncryptionSettings#catalog_encryption_service_role}
     */
     readonly catalogEncryptionServiceRole?: string;
     /**
     * The ID of the AWS KMS key to use for encryption at rest.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_data_catalog_encryption_settings#sse_aws_kms_key_id CcDataCatalogEncryptionSettings#sse_aws_kms_key_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_data_catalog_encryption_settings#sse_aws_kms_key_id CcDataCatalogEncryptionSettings#sse_aws_kms_key_id}
     */
     readonly sseAwsKmsKeyId?: string;
 }
@@ -480,13 +480,13 @@ export interface DataCatalogEncryptionSettingsProperty {
     /**
     * When connection password protection is enabled, the Data Catalog uses a customer-provided key to encrypt the password as part of CreateConnection or UpdateConnection and store it in the ENCRYPTED_PASSWORD field in the connection properties. You can enable catalog encryption or only password encryption.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_data_catalog_encryption_settings#connection_password_encryption CcDataCatalogEncryptionSettings#connection_password_encryption}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_data_catalog_encryption_settings#connection_password_encryption CcDataCatalogEncryptionSettings#connection_password_encryption}
     */
     readonly connectionPasswordEncryption?: ConnectionPasswordEncryptionProperty;
     /**
     * Specifies the encryption-at-rest configuration for the Data Catalog.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_data_catalog_encryption_settings#encryption_at_rest CcDataCatalogEncryptionSettings#encryption_at_rest}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_data_catalog_encryption_settings#encryption_at_rest CcDataCatalogEncryptionSettings#encryption_at_rest}
     */
     readonly encryptionAtRest?: EncryptionAtRestProperty;
 }

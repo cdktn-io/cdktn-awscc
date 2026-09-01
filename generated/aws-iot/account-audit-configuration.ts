@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_account_audit_configuration
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_account_audit_configuration
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,31 +9,31 @@ export interface CcAccountAuditConfigurationProps extends cdktn.TerraformMetaArg
     /**
     * Your 12-digit account ID (used as the primary identifier for the CloudFormation resource).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_account_audit_configuration#account_id CcAccountAuditConfiguration#account_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_account_audit_configuration#account_id CcAccountAuditConfiguration#account_id}
     */
     readonly accountId: string;
     /**
     * Specifies which audit checks are enabled and disabled for this account.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_account_audit_configuration#audit_check_configurations CcAccountAuditConfiguration#audit_check_configurations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_account_audit_configuration#audit_check_configurations CcAccountAuditConfiguration#audit_check_configurations}
     */
     readonly auditCheckConfigurations: CcAccountAuditConfiguration.AuditCheckConfigurationsProperty;
     /**
     * Information about the targets to which audit notifications are sent.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_account_audit_configuration#audit_notification_target_configurations CcAccountAuditConfiguration#audit_notification_target_configurations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_account_audit_configuration#audit_notification_target_configurations CcAccountAuditConfiguration#audit_notification_target_configurations}
     */
     readonly auditNotificationTargetConfigurations?: CcAccountAuditConfiguration.AuditNotificationTargetConfigurationsProperty;
     /**
     * The ARN of the role that grants permission to AWS IoT to access information about your devices, policies, certificates and other items as required when performing an audit.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_account_audit_configuration#role_arn CcAccountAuditConfiguration#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_account_audit_configuration#role_arn CcAccountAuditConfiguration#role_arn}
     */
     readonly roleArn: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_account_audit_configuration awscc_iot_account_audit_configuration}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_account_audit_configuration awscc_iot_account_audit_configuration}
 */
 export class CcAccountAuditConfiguration extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CcAccountAuditConfiguration extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcAccountAuditConfiguration resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcAccountAuditConfiguration to import
-    * @param importFromId The id of the existing CcAccountAuditConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_account_audit_configuration#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcAccountAuditConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_account_audit_configuration#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcAccountAuditConfiguration to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CcAccountAuditConfiguration extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_account_audit_configuration awscc_iot_account_audit_configuration} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_account_audit_configuration awscc_iot_account_audit_configuration} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -72,7 +72,7 @@ export class CcAccountAuditConfiguration extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_iot_account_audit_configuration',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -1003,7 +1003,7 @@ export interface AuditCheckConfigurationProperty {
     /**
     * True if the check is enabled.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_account_audit_configuration#enabled CcAccountAuditConfiguration#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_account_audit_configuration#enabled CcAccountAuditConfiguration#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -1069,7 +1069,7 @@ export interface CaCertificateExpiringCheckProperty {
     /**
     * True if the check is enabled.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_account_audit_configuration#enabled CcAccountAuditConfiguration#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_account_audit_configuration#enabled CcAccountAuditConfiguration#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -1135,7 +1135,7 @@ export interface CaCertificateKeyQualityCheckProperty {
     /**
     * True if the check is enabled.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_account_audit_configuration#enabled CcAccountAuditConfiguration#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_account_audit_configuration#enabled CcAccountAuditConfiguration#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -1201,7 +1201,7 @@ export interface ConflictingClientIdsCheckProperty {
     /**
     * True if the check is enabled.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_account_audit_configuration#enabled CcAccountAuditConfiguration#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_account_audit_configuration#enabled CcAccountAuditConfiguration#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -1267,7 +1267,7 @@ export interface CertAgeCheckCustomConfigurationProperty {
     /**
     * The configValue for configuring audit checks.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_account_audit_configuration#cert_age_threshold_in_days CcAccountAuditConfiguration#cert_age_threshold_in_days}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_account_audit_configuration#cert_age_threshold_in_days CcAccountAuditConfiguration#cert_age_threshold_in_days}
     */
     readonly certAgeThresholdInDays?: string;
 }
@@ -1333,13 +1333,13 @@ export interface DeviceCertAgeAuditCheckConfigurationProperty {
     /**
     * A structure containing the configName and corresponding configValue for configuring audit checks.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_account_audit_configuration#configuration CcAccountAuditConfiguration#configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_account_audit_configuration#configuration CcAccountAuditConfiguration#configuration}
     */
     readonly configuration?: CertAgeCheckCustomConfigurationProperty;
     /**
     * True if the check is enabled.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_account_audit_configuration#enabled CcAccountAuditConfiguration#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_account_audit_configuration#enabled CcAccountAuditConfiguration#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -1427,7 +1427,7 @@ export interface CertExpirationCheckCustomConfigurationProperty {
     /**
     * The configValue for configuring audit checks.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_account_audit_configuration#cert_expiration_threshold_in_days CcAccountAuditConfiguration#cert_expiration_threshold_in_days}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_account_audit_configuration#cert_expiration_threshold_in_days CcAccountAuditConfiguration#cert_expiration_threshold_in_days}
     */
     readonly certExpirationThresholdInDays?: string;
 }
@@ -1493,13 +1493,13 @@ export interface DeviceCertExpirationAuditCheckConfigurationProperty {
     /**
     * A structure containing the configName and corresponding configValue for configuring audit checks.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_account_audit_configuration#configuration CcAccountAuditConfiguration#configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_account_audit_configuration#configuration CcAccountAuditConfiguration#configuration}
     */
     readonly configuration?: CertExpirationCheckCustomConfigurationProperty;
     /**
     * True if the check is enabled.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_account_audit_configuration#enabled CcAccountAuditConfiguration#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_account_audit_configuration#enabled CcAccountAuditConfiguration#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -1587,7 +1587,7 @@ export interface DeviceCertificateKeyQualityCheckProperty {
     /**
     * True if the check is enabled.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_account_audit_configuration#enabled CcAccountAuditConfiguration#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_account_audit_configuration#enabled CcAccountAuditConfiguration#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -1653,7 +1653,7 @@ export interface DeviceCertificateSharedCheckProperty {
     /**
     * True if the check is enabled.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_account_audit_configuration#enabled CcAccountAuditConfiguration#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_account_audit_configuration#enabled CcAccountAuditConfiguration#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -1719,7 +1719,7 @@ export interface IntermediateCaRevokedForActiveDeviceCertificatesCheckProperty {
     /**
     * True if the check is enabled.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_account_audit_configuration#enabled CcAccountAuditConfiguration#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_account_audit_configuration#enabled CcAccountAuditConfiguration#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -1785,7 +1785,7 @@ export interface IoTPolicyPotentialMisConfigurationCheckProperty {
     /**
     * True if the check is enabled.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_account_audit_configuration#enabled CcAccountAuditConfiguration#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_account_audit_configuration#enabled CcAccountAuditConfiguration#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -1851,7 +1851,7 @@ export interface IotPolicyOverlyPermissiveCheckProperty {
     /**
     * True if the check is enabled.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_account_audit_configuration#enabled CcAccountAuditConfiguration#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_account_audit_configuration#enabled CcAccountAuditConfiguration#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -1917,7 +1917,7 @@ export interface IotRoleAliasAllowsAccessToUnusedServicesCheckProperty {
     /**
     * True if the check is enabled.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_account_audit_configuration#enabled CcAccountAuditConfiguration#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_account_audit_configuration#enabled CcAccountAuditConfiguration#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -1983,7 +1983,7 @@ export interface IotRoleAliasOverlyPermissiveCheckProperty {
     /**
     * True if the check is enabled.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_account_audit_configuration#enabled CcAccountAuditConfiguration#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_account_audit_configuration#enabled CcAccountAuditConfiguration#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -2049,7 +2049,7 @@ export interface LoggingDisabledCheckProperty {
     /**
     * True if the check is enabled.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_account_audit_configuration#enabled CcAccountAuditConfiguration#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_account_audit_configuration#enabled CcAccountAuditConfiguration#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -2115,7 +2115,7 @@ export interface RevokedCaCertificateStillActiveCheckProperty {
     /**
     * True if the check is enabled.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_account_audit_configuration#enabled CcAccountAuditConfiguration#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_account_audit_configuration#enabled CcAccountAuditConfiguration#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -2181,7 +2181,7 @@ export interface RevokedDeviceCertificateStillActiveCheckProperty {
     /**
     * True if the check is enabled.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_account_audit_configuration#enabled CcAccountAuditConfiguration#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_account_audit_configuration#enabled CcAccountAuditConfiguration#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -2247,7 +2247,7 @@ export interface UnauthenticatedCognitoRoleOverlyPermissiveCheckProperty {
     /**
     * True if the check is enabled.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_account_audit_configuration#enabled CcAccountAuditConfiguration#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_account_audit_configuration#enabled CcAccountAuditConfiguration#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -2313,103 +2313,103 @@ export interface AuditCheckConfigurationsProperty {
     /**
     * The configuration for a specific audit check.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_account_audit_configuration#authenticated_cognito_role_overly_permissive_check CcAccountAuditConfiguration#authenticated_cognito_role_overly_permissive_check}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_account_audit_configuration#authenticated_cognito_role_overly_permissive_check CcAccountAuditConfiguration#authenticated_cognito_role_overly_permissive_check}
     */
     readonly authenticatedCognitoRoleOverlyPermissiveCheck?: AuditCheckConfigurationProperty;
     /**
     * The configuration for a specific audit check.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_account_audit_configuration#ca_certificate_expiring_check CcAccountAuditConfiguration#ca_certificate_expiring_check}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_account_audit_configuration#ca_certificate_expiring_check CcAccountAuditConfiguration#ca_certificate_expiring_check}
     */
     readonly caCertificateExpiringCheck?: CaCertificateExpiringCheckProperty;
     /**
     * The configuration for a specific audit check.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_account_audit_configuration#ca_certificate_key_quality_check CcAccountAuditConfiguration#ca_certificate_key_quality_check}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_account_audit_configuration#ca_certificate_key_quality_check CcAccountAuditConfiguration#ca_certificate_key_quality_check}
     */
     readonly caCertificateKeyQualityCheck?: CaCertificateKeyQualityCheckProperty;
     /**
     * The configuration for a specific audit check.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_account_audit_configuration#conflicting_client_ids_check CcAccountAuditConfiguration#conflicting_client_ids_check}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_account_audit_configuration#conflicting_client_ids_check CcAccountAuditConfiguration#conflicting_client_ids_check}
     */
     readonly conflictingClientIdsCheck?: ConflictingClientIdsCheckProperty;
     /**
     * A structure containing the configName and corresponding configValue for configuring DeviceCertAgeCheck.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_account_audit_configuration#device_certificate_age_check CcAccountAuditConfiguration#device_certificate_age_check}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_account_audit_configuration#device_certificate_age_check CcAccountAuditConfiguration#device_certificate_age_check}
     */
     readonly deviceCertificateAgeCheck?: DeviceCertAgeAuditCheckConfigurationProperty;
     /**
     * A structure containing the configName and corresponding configValue for configuring DeviceCertExpirationCheck.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_account_audit_configuration#device_certificate_expiring_check CcAccountAuditConfiguration#device_certificate_expiring_check}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_account_audit_configuration#device_certificate_expiring_check CcAccountAuditConfiguration#device_certificate_expiring_check}
     */
     readonly deviceCertificateExpiringCheck?: DeviceCertExpirationAuditCheckConfigurationProperty;
     /**
     * The configuration for a specific audit check.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_account_audit_configuration#device_certificate_key_quality_check CcAccountAuditConfiguration#device_certificate_key_quality_check}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_account_audit_configuration#device_certificate_key_quality_check CcAccountAuditConfiguration#device_certificate_key_quality_check}
     */
     readonly deviceCertificateKeyQualityCheck?: DeviceCertificateKeyQualityCheckProperty;
     /**
     * The configuration for a specific audit check.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_account_audit_configuration#device_certificate_shared_check CcAccountAuditConfiguration#device_certificate_shared_check}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_account_audit_configuration#device_certificate_shared_check CcAccountAuditConfiguration#device_certificate_shared_check}
     */
     readonly deviceCertificateSharedCheck?: DeviceCertificateSharedCheckProperty;
     /**
     * The configuration for a specific audit check.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_account_audit_configuration#intermediate_ca_revoked_for_active_device_certificates_check CcAccountAuditConfiguration#intermediate_ca_revoked_for_active_device_certificates_check}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_account_audit_configuration#intermediate_ca_revoked_for_active_device_certificates_check CcAccountAuditConfiguration#intermediate_ca_revoked_for_active_device_certificates_check}
     */
     readonly intermediateCaRevokedForActiveDeviceCertificatesCheck?: IntermediateCaRevokedForActiveDeviceCertificatesCheckProperty;
     /**
     * The configuration for a specific audit check.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_account_audit_configuration#io_t_policy_potential_mis_configuration_check CcAccountAuditConfiguration#io_t_policy_potential_mis_configuration_check}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_account_audit_configuration#io_t_policy_potential_mis_configuration_check CcAccountAuditConfiguration#io_t_policy_potential_mis_configuration_check}
     */
     readonly ioTPolicyPotentialMisConfigurationCheck?: IoTPolicyPotentialMisConfigurationCheckProperty;
     /**
     * The configuration for a specific audit check.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_account_audit_configuration#iot_policy_overly_permissive_check CcAccountAuditConfiguration#iot_policy_overly_permissive_check}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_account_audit_configuration#iot_policy_overly_permissive_check CcAccountAuditConfiguration#iot_policy_overly_permissive_check}
     */
     readonly iotPolicyOverlyPermissiveCheck?: IotPolicyOverlyPermissiveCheckProperty;
     /**
     * The configuration for a specific audit check.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_account_audit_configuration#iot_role_alias_allows_access_to_unused_services_check CcAccountAuditConfiguration#iot_role_alias_allows_access_to_unused_services_check}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_account_audit_configuration#iot_role_alias_allows_access_to_unused_services_check CcAccountAuditConfiguration#iot_role_alias_allows_access_to_unused_services_check}
     */
     readonly iotRoleAliasAllowsAccessToUnusedServicesCheck?: IotRoleAliasAllowsAccessToUnusedServicesCheckProperty;
     /**
     * The configuration for a specific audit check.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_account_audit_configuration#iot_role_alias_overly_permissive_check CcAccountAuditConfiguration#iot_role_alias_overly_permissive_check}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_account_audit_configuration#iot_role_alias_overly_permissive_check CcAccountAuditConfiguration#iot_role_alias_overly_permissive_check}
     */
     readonly iotRoleAliasOverlyPermissiveCheck?: IotRoleAliasOverlyPermissiveCheckProperty;
     /**
     * The configuration for a specific audit check.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_account_audit_configuration#logging_disabled_check CcAccountAuditConfiguration#logging_disabled_check}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_account_audit_configuration#logging_disabled_check CcAccountAuditConfiguration#logging_disabled_check}
     */
     readonly loggingDisabledCheck?: LoggingDisabledCheckProperty;
     /**
     * The configuration for a specific audit check.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_account_audit_configuration#revoked_ca_certificate_still_active_check CcAccountAuditConfiguration#revoked_ca_certificate_still_active_check}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_account_audit_configuration#revoked_ca_certificate_still_active_check CcAccountAuditConfiguration#revoked_ca_certificate_still_active_check}
     */
     readonly revokedCaCertificateStillActiveCheck?: RevokedCaCertificateStillActiveCheckProperty;
     /**
     * The configuration for a specific audit check.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_account_audit_configuration#revoked_device_certificate_still_active_check CcAccountAuditConfiguration#revoked_device_certificate_still_active_check}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_account_audit_configuration#revoked_device_certificate_still_active_check CcAccountAuditConfiguration#revoked_device_certificate_still_active_check}
     */
     readonly revokedDeviceCertificateStillActiveCheck?: RevokedDeviceCertificateStillActiveCheckProperty;
     /**
     * The configuration for a specific audit check.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_account_audit_configuration#unauthenticated_cognito_role_overly_permissive_check CcAccountAuditConfiguration#unauthenticated_cognito_role_overly_permissive_check}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_account_audit_configuration#unauthenticated_cognito_role_overly_permissive_check CcAccountAuditConfiguration#unauthenticated_cognito_role_overly_permissive_check}
     */
     readonly unauthenticatedCognitoRoleOverlyPermissiveCheck?: UnauthenticatedCognitoRoleOverlyPermissiveCheckProperty;
 }
@@ -2827,19 +2827,19 @@ export interface AuditNotificationTargetProperty {
     /**
     * True if notifications to the target are enabled.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_account_audit_configuration#enabled CcAccountAuditConfiguration#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_account_audit_configuration#enabled CcAccountAuditConfiguration#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
     * The ARN of the role that grants permission to send notifications to the target.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_account_audit_configuration#role_arn CcAccountAuditConfiguration#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_account_audit_configuration#role_arn CcAccountAuditConfiguration#role_arn}
     */
     readonly roleArn?: string;
     /**
     * The ARN of the target (SNS topic) to which audit notifications are sent.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_account_audit_configuration#target_arn CcAccountAuditConfiguration#target_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_account_audit_configuration#target_arn CcAccountAuditConfiguration#target_arn}
     */
     readonly targetArn?: string;
 }
@@ -2947,7 +2947,7 @@ export class AuditNotificationTargetPropertyOutputReference extends cdktn.Comple
 }
 export interface AuditNotificationTargetConfigurationsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_account_audit_configuration#sns CcAccountAuditConfiguration#sns}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_account_audit_configuration#sns CcAccountAuditConfiguration#sns}
     */
     readonly sns?: AuditNotificationTargetProperty;
 }

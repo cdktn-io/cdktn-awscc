@@ -1,35 +1,35 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_browser_settings
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspacesweb_browser_settings
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcBrowserSettingsProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_browser_settings#additional_encryption_context CcBrowserSettings#additional_encryption_context}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspacesweb_browser_settings#additional_encryption_context CcBrowserSettings#additional_encryption_context}
     */
     readonly additionalEncryptionContext?: { [key: string]: string };
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_browser_settings#browser_policy CcBrowserSettings#browser_policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspacesweb_browser_settings#browser_policy CcBrowserSettings#browser_policy}
     */
     readonly browserPolicy?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_browser_settings#customer_managed_key CcBrowserSettings#customer_managed_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspacesweb_browser_settings#customer_managed_key CcBrowserSettings#customer_managed_key}
     */
     readonly customerManagedKey?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_browser_settings#tags CcBrowserSettings#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspacesweb_browser_settings#tags CcBrowserSettings#tags}
     */
     readonly tags?: CcBrowserSettings.TagProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_browser_settings#web_content_filtering_policy CcBrowserSettings#web_content_filtering_policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspacesweb_browser_settings#web_content_filtering_policy CcBrowserSettings#web_content_filtering_policy}
     */
     readonly webContentFilteringPolicy?: CcBrowserSettings.WebContentFilteringPolicyProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_browser_settings awscc_workspacesweb_browser_settings}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspacesweb_browser_settings awscc_workspacesweb_browser_settings}
 */
 export class CcBrowserSettings extends cdktn.TerraformResource {
 
@@ -45,7 +45,7 @@ export class CcBrowserSettings extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcBrowserSettings resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcBrowserSettings to import
-    * @param importFromId The id of the existing CcBrowserSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_browser_settings#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcBrowserSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspacesweb_browser_settings#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcBrowserSettings to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -57,7 +57,7 @@ export class CcBrowserSettings extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_browser_settings awscc_workspacesweb_browser_settings} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspacesweb_browser_settings awscc_workspacesweb_browser_settings} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -68,7 +68,7 @@ export class CcBrowserSettings extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_workspacesweb_browser_settings',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -321,11 +321,11 @@ export function ccBrowserSettingsWebContentFilteringPolicyPropertyToHclTerraform
 export namespace CcBrowserSettings {
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_browser_settings#key CcBrowserSettings#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspacesweb_browser_settings#key CcBrowserSettings#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_browser_settings#value CcBrowserSettings#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspacesweb_browser_settings#value CcBrowserSettings#value}
     */
     readonly value?: string;
 }
@@ -433,15 +433,15 @@ export class TagPropertyList extends cdktn.ComplexList {
 }
 export interface WebContentFilteringPolicyProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_browser_settings#allowed_urls CcBrowserSettings#allowed_urls}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspacesweb_browser_settings#allowed_urls CcBrowserSettings#allowed_urls}
     */
     readonly allowedUrls?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_browser_settings#blocked_categories CcBrowserSettings#blocked_categories}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspacesweb_browser_settings#blocked_categories CcBrowserSettings#blocked_categories}
     */
     readonly blockedCategories?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_browser_settings#blocked_urls CcBrowserSettings#blocked_urls}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspacesweb_browser_settings#blocked_urls CcBrowserSettings#blocked_urls}
     */
     readonly blockedUrls?: string[];
 }

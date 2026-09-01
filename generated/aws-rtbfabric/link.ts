@@ -1,45 +1,45 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_link
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_link
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcLinkProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_link#gateway_id CcLink#gateway_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_link#gateway_id CcLink#gateway_id}
     */
     readonly gatewayId: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_link#http_responder_allowed CcLink#http_responder_allowed}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_link#http_responder_allowed CcLink#http_responder_allowed}
     */
     readonly httpResponderAllowed?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_link#link_attributes CcLink#link_attributes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_link#link_attributes CcLink#link_attributes}
     */
     readonly linkAttributes?: CcLink.LinkAttributesProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_link#link_log_settings CcLink#link_log_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_link#link_log_settings CcLink#link_log_settings}
     */
     readonly linkLogSettings: CcLink.LinkLogSettingsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_link#module_configuration_list CcLink#module_configuration_list}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_link#module_configuration_list CcLink#module_configuration_list}
     */
     readonly moduleConfigurationList?: CcLink.ModuleConfigurationProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_link#peer_gateway_id CcLink#peer_gateway_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_link#peer_gateway_id CcLink#peer_gateway_id}
     */
     readonly peerGatewayId: string;
     /**
     * Tags to assign to the Link.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_link#tags CcLink#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_link#tags CcLink#tags}
     */
     readonly tags?: CcLink.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_link awscc_rtbfabric_link}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_link awscc_rtbfabric_link}
 */
 export class CcLink extends cdktn.TerraformResource {
 
@@ -55,7 +55,7 @@ export class CcLink extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcLink resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcLink to import
-    * @param importFromId The id of the existing CcLink that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_link#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcLink that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_link#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcLink to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -67,7 +67,7 @@ export class CcLink extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_link awscc_rtbfabric_link} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_link awscc_rtbfabric_link} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -78,7 +78,7 @@ export class CcLink extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_rtbfabric_link',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -885,19 +885,19 @@ export function ccLinkTagPropertyToHclTerraform(struct?: CcLink.TagProperty | cd
 export namespace CcLink {
 export interface ResponderErrorMaskingForHttpCodeProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_link#action CcLink#action}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_link#action CcLink#action}
     */
     readonly action?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_link#http_code CcLink#http_code}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_link#http_code CcLink#http_code}
     */
     readonly httpCode?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_link#logging_types CcLink#logging_types}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_link#logging_types CcLink#logging_types}
     */
     readonly loggingTypes?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_link#response_logging_percentage CcLink#response_logging_percentage}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_link#response_logging_percentage CcLink#response_logging_percentage}
     */
     readonly responseLoggingPercentage?: number;
 }
@@ -1049,11 +1049,11 @@ export class ResponderErrorMaskingForHttpCodePropertyList extends cdktn.ComplexL
 }
 export interface LinkAttributesProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_link#customer_provided_id CcLink#customer_provided_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_link#customer_provided_id CcLink#customer_provided_id}
     */
     readonly customerProvidedId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_link#responder_error_masking CcLink#responder_error_masking}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_link#responder_error_masking CcLink#responder_error_masking}
     */
     readonly responderErrorMasking?: ResponderErrorMaskingForHttpCodeProperty[] | cdktn.IResolvable;
 }
@@ -1139,11 +1139,11 @@ export class LinkAttributesPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface LinkApplicationLogSamplingProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_link#error_log CcLink#error_log}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_link#error_log CcLink#error_log}
     */
     readonly errorLog: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_link#filter_log CcLink#filter_log}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_link#filter_log CcLink#filter_log}
     */
     readonly filterLog: number;
 }
@@ -1223,7 +1223,7 @@ export class LinkApplicationLogSamplingPropertyOutputReference extends cdktn.Com
 }
 export interface ApplicationLogsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_link#link_application_log_sampling CcLink#link_application_log_sampling}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_link#link_application_log_sampling CcLink#link_application_log_sampling}
     */
     readonly linkApplicationLogSampling: LinkApplicationLogSamplingProperty;
 }
@@ -1284,7 +1284,7 @@ export class ApplicationLogsPropertyOutputReference extends cdktn.ComplexObject 
 }
 export interface LinkLogSettingsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_link#application_logs CcLink#application_logs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_link#application_logs CcLink#application_logs}
     */
     readonly applicationLogs: ApplicationLogsProperty;
 }
@@ -1345,15 +1345,15 @@ export class LinkLogSettingsPropertyOutputReference extends cdktn.ComplexObject 
 }
 export interface NoBidModuleParametersProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_link#pass_through_percentage CcLink#pass_through_percentage}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_link#pass_through_percentage CcLink#pass_through_percentage}
     */
     readonly passThroughPercentage?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_link#reason CcLink#reason}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_link#reason CcLink#reason}
     */
     readonly reason?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_link#reason_code CcLink#reason_code}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_link#reason_code CcLink#reason_code}
     */
     readonly reasonCode?: number;
 }
@@ -1461,11 +1461,11 @@ export class NoBidModuleParametersPropertyOutputReference extends cdktn.ComplexO
 }
 export interface HeaderTagActionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_link#name CcLink#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_link#name CcLink#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_link#value CcLink#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_link#value CcLink#value}
     */
     readonly value?: string;
 }
@@ -1551,7 +1551,7 @@ export class HeaderTagActionPropertyOutputReference extends cdktn.ComplexObject 
 }
 export interface NoBidActionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_link#no_bid_reason_code CcLink#no_bid_reason_code}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_link#no_bid_reason_code CcLink#no_bid_reason_code}
     */
     readonly noBidReasonCode?: number;
 }
@@ -1615,11 +1615,11 @@ export class NoBidActionPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface ActionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_link#header_tag CcLink#header_tag}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_link#header_tag CcLink#header_tag}
     */
     readonly headerTag?: HeaderTagActionProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_link#no_bid CcLink#no_bid}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_link#no_bid CcLink#no_bid}
     */
     readonly noBid?: NoBidActionProperty;
 }
@@ -1705,11 +1705,11 @@ export class ActionPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface FilterCriterionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_link#path CcLink#path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_link#path CcLink#path}
     */
     readonly path?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_link#values CcLink#values}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_link#values CcLink#values}
     */
     readonly values?: string[];
 }
@@ -1817,7 +1817,7 @@ export class FilterCriterionPropertyList extends cdktn.ComplexList {
 }
 export interface FilterProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_link#criteria CcLink#criteria}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_link#criteria CcLink#criteria}
     */
     readonly criteria?: FilterCriterionProperty[] | cdktn.IResolvable;
 }
@@ -1903,19 +1903,19 @@ export class FilterPropertyList extends cdktn.ComplexList {
 }
 export interface OpenRtbAttributeModuleParametersProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_link#action CcLink#action}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_link#action CcLink#action}
     */
     readonly action?: ActionProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_link#filter_configuration CcLink#filter_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_link#filter_configuration CcLink#filter_configuration}
     */
     readonly filterConfiguration?: FilterProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_link#filter_type CcLink#filter_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_link#filter_type CcLink#filter_type}
     */
     readonly filterType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_link#holdback_percentage CcLink#holdback_percentage}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_link#holdback_percentage CcLink#holdback_percentage}
     */
     readonly holdbackPercentage?: number;
 }
@@ -2045,11 +2045,11 @@ export class OpenRtbAttributeModuleParametersPropertyOutputReference extends cdk
 }
 export interface ModuleParametersProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_link#no_bid CcLink#no_bid}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_link#no_bid CcLink#no_bid}
     */
     readonly noBid?: NoBidModuleParametersProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_link#open_rtb_attribute CcLink#open_rtb_attribute}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_link#open_rtb_attribute CcLink#open_rtb_attribute}
     */
     readonly openRtbAttribute?: OpenRtbAttributeModuleParametersProperty;
 }
@@ -2135,19 +2135,19 @@ export class ModuleParametersPropertyOutputReference extends cdktn.ComplexObject
 }
 export interface ModuleConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_link#depends_on CcLink#depends_on}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_link#depends_on CcLink#depends_on}
     */
     readonly dependsOn?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_link#module_parameters CcLink#module_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_link#module_parameters CcLink#module_parameters}
     */
     readonly moduleParameters?: ModuleParametersProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_link#name CcLink#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_link#name CcLink#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_link#version CcLink#version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_link#version CcLink#version}
     */
     readonly version?: string;
 }
@@ -2301,13 +2301,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_link#key CcLink#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_link#key CcLink#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 0 to 256 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_link#value CcLink#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_link#value CcLink#value}
     */
     readonly value?: string;
 }

@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_resource_discovery_association
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_ipam_resource_discovery_association
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,25 +9,25 @@ export interface CcIPAMResourceDiscoveryAssociationProps extends cdktn.Terraform
     /**
     * The Id of the IPAM this Resource Discovery is associated to.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_resource_discovery_association#ipam_id CcIPAMResourceDiscoveryAssociation#ipam_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_ipam_resource_discovery_association#ipam_id CcIPAMResourceDiscoveryAssociation#ipam_id}
     */
     readonly ipamId: string;
     /**
     * The Amazon Resource Name (ARN) of the IPAM Resource Discovery Association.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_resource_discovery_association#ipam_resource_discovery_id CcIPAMResourceDiscoveryAssociation#ipam_resource_discovery_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_ipam_resource_discovery_association#ipam_resource_discovery_id CcIPAMResourceDiscoveryAssociation#ipam_resource_discovery_id}
     */
     readonly ipamResourceDiscoveryId: string;
     /**
     * An array of key-value pairs to apply to this resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_resource_discovery_association#tags CcIPAMResourceDiscoveryAssociation#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_ipam_resource_discovery_association#tags CcIPAMResourceDiscoveryAssociation#tags}
     */
     readonly tags?: CcIPAMResourceDiscoveryAssociation.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_resource_discovery_association awscc_ec2_ipam_resource_discovery_association}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_ipam_resource_discovery_association awscc_ec2_ipam_resource_discovery_association}
 */
 export class CcIPAMResourceDiscoveryAssociation extends cdktn.TerraformResource {
 
@@ -43,7 +43,7 @@ export class CcIPAMResourceDiscoveryAssociation extends cdktn.TerraformResource 
     * Generates CDKTN code for importing a CcIPAMResourceDiscoveryAssociation resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcIPAMResourceDiscoveryAssociation to import
-    * @param importFromId The id of the existing CcIPAMResourceDiscoveryAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_resource_discovery_association#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcIPAMResourceDiscoveryAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_ipam_resource_discovery_association#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcIPAMResourceDiscoveryAssociation to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -55,7 +55,7 @@ export class CcIPAMResourceDiscoveryAssociation extends cdktn.TerraformResource 
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_resource_discovery_association awscc_ec2_ipam_resource_discovery_association} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_ipam_resource_discovery_association awscc_ec2_ipam_resource_discovery_association} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +66,7 @@ export class CcIPAMResourceDiscoveryAssociation extends cdktn.TerraformResource 
             terraformResourceType: 'awscc_ec2_ipam_resource_discovery_association',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -253,13 +253,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_resource_discovery_association#key CcIPAMResourceDiscoveryAssociation#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_ipam_resource_discovery_association#key CcIPAMResourceDiscoveryAssociation#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 0 to 256 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_resource_discovery_association#value CcIPAMResourceDiscoveryAssociation#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_ipam_resource_discovery_association#value CcIPAMResourceDiscoveryAssociation#value}
     */
     readonly value?: string;
 }

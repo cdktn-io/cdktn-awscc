@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_code_interpreter_custom
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_code_interpreter_custom
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,43 +9,43 @@ export interface CcCodeInterpreterCustomProps extends cdktn.TerraformMetaArgumen
     /**
     * List of root CA certificates in PEM format.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_code_interpreter_custom#certificates CcCodeInterpreterCustom#certificates}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_code_interpreter_custom#certificates CcCodeInterpreterCustom#certificates}
     */
     readonly certificates?: CcCodeInterpreterCustom.CertificateProperty[] | cdktn.IResolvable;
     /**
     * The description of the code interpreter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_code_interpreter_custom#description CcCodeInterpreterCustom#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_code_interpreter_custom#description CcCodeInterpreterCustom#description}
     */
     readonly description?: string;
     /**
     * The ARN of the IAM role that the code interpreter uses to access resources.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_code_interpreter_custom#execution_role_arn CcCodeInterpreterCustom#execution_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_code_interpreter_custom#execution_role_arn CcCodeInterpreterCustom#execution_role_arn}
     */
     readonly executionRoleArn?: string;
     /**
     * The name of the code interpreter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_code_interpreter_custom#name CcCodeInterpreterCustom#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_code_interpreter_custom#name CcCodeInterpreterCustom#name}
     */
     readonly name: string;
     /**
     * Network configuration for code interpreter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_code_interpreter_custom#network_configuration CcCodeInterpreterCustom#network_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_code_interpreter_custom#network_configuration CcCodeInterpreterCustom#network_configuration}
     */
     readonly networkConfiguration: CcCodeInterpreterCustom.CodeInterpreterNetworkConfigurationProperty;
     /**
     * A map of tag keys and values
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_code_interpreter_custom#tags CcCodeInterpreterCustom#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_code_interpreter_custom#tags CcCodeInterpreterCustom#tags}
     */
     readonly tags?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_code_interpreter_custom awscc_bedrockagentcore_code_interpreter_custom}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_code_interpreter_custom awscc_bedrockagentcore_code_interpreter_custom}
 */
 export class CcCodeInterpreterCustom extends cdktn.TerraformResource {
 
@@ -61,7 +61,7 @@ export class CcCodeInterpreterCustom extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcCodeInterpreterCustom resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcCodeInterpreterCustom to import
-    * @param importFromId The id of the existing CcCodeInterpreterCustom that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_code_interpreter_custom#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcCodeInterpreterCustom that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_code_interpreter_custom#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcCodeInterpreterCustom to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -73,7 +73,7 @@ export class CcCodeInterpreterCustom extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_code_interpreter_custom awscc_bedrockagentcore_code_interpreter_custom} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_code_interpreter_custom awscc_bedrockagentcore_code_interpreter_custom} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -84,7 +84,7 @@ export class CcCodeInterpreterCustom extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_bedrockagentcore_code_interpreter_custom',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -430,7 +430,7 @@ export interface CertificateLocationProperty {
     /**
     * Secrets Manager secret ARN.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_code_interpreter_custom#secret_arn CcCodeInterpreterCustom#secret_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_code_interpreter_custom#secret_arn CcCodeInterpreterCustom#secret_arn}
     */
     readonly secretArn?: string;
 }
@@ -496,7 +496,7 @@ export interface CertificateProperty {
     /**
     * Certificate location in Secrets Manager.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_code_interpreter_custom#certificate_location CcCodeInterpreterCustom#certificate_location}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_code_interpreter_custom#certificate_location CcCodeInterpreterCustom#certificate_location}
     */
     readonly certificateLocation?: CertificateLocationProperty;
 }
@@ -584,13 +584,13 @@ export interface VpcConfigProperty {
     /**
     * Security groups for VPC
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_code_interpreter_custom#security_groups CcCodeInterpreterCustom#security_groups}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_code_interpreter_custom#security_groups CcCodeInterpreterCustom#security_groups}
     */
     readonly securityGroups?: string[];
     /**
     * Subnets for VPC
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_code_interpreter_custom#subnets CcCodeInterpreterCustom#subnets}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_code_interpreter_custom#subnets CcCodeInterpreterCustom#subnets}
     */
     readonly subnets?: string[];
 }
@@ -678,13 +678,13 @@ export interface CodeInterpreterNetworkConfigurationProperty {
     /**
     * Network modes supported by code interpreter
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_code_interpreter_custom#network_mode CcCodeInterpreterCustom#network_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_code_interpreter_custom#network_mode CcCodeInterpreterCustom#network_mode}
     */
     readonly networkMode?: string;
     /**
     * Network mode configuration for VPC
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_code_interpreter_custom#vpc_config CcCodeInterpreterCustom#vpc_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_code_interpreter_custom#vpc_config CcCodeInterpreterCustom#vpc_config}
     */
     readonly vpcConfig?: VpcConfigProperty;
 }

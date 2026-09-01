@@ -24,6 +24,7 @@ export * from './scheduled-audit';
 export * from './security-profile';
 export * from './software-package';
 export * from './software-package-version';
+export * from './stream';
 export * from './thing';
 export * from './thing-group';
 export * from './thing-type';

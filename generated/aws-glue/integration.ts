@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_integration
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_integration
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,57 +9,57 @@ export interface CcIntegrationProps extends cdktn.TerraformMetaArguments {
     /**
     * An optional set of non-secret key value pairs that contains additional contextual information about the data.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_integration#additional_encryption_context CcIntegration#additional_encryption_context}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_integration#additional_encryption_context CcIntegration#additional_encryption_context}
     */
     readonly additionalEncryptionContext?: { [key: string]: string };
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_integration#data_filter CcIntegration#data_filter}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_integration#data_filter CcIntegration#data_filter}
     */
     readonly dataFilter?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_integration#description CcIntegration#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_integration#description CcIntegration#description}
     */
     readonly description?: string;
     /**
     * The configuration settings for the integration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_integration#integration_config CcIntegration#integration_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_integration#integration_config CcIntegration#integration_config}
     */
     readonly integrationConfig?: CcIntegration.IntegrationConfigProperty;
     /**
     * The name of the integration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_integration#integration_name CcIntegration#integration_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_integration#integration_name CcIntegration#integration_name}
     */
     readonly integrationName: string;
     /**
     * An KMS key identifier for the key to use to encrypt the integration. If you don't specify an encryption key, the default AWS owned KMS key is used.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_integration#kms_key_id CcIntegration#kms_key_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_integration#kms_key_id CcIntegration#kms_key_id}
     */
     readonly kmsKeyId?: string;
     /**
     * The Amazon Resource Name (ARN) of the database to use as the source for replication
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_integration#source_arn CcIntegration#source_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_integration#source_arn CcIntegration#source_arn}
     */
     readonly sourceArn: string;
     /**
     * An array of key-value pairs to apply to this resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_integration#tags CcIntegration#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_integration#tags CcIntegration#tags}
     */
     readonly tags?: CcIntegration.TagProperty[] | cdktn.IResolvable;
     /**
     * The Amazon Resource Name (ARN) of the Glue data warehouse to use as the target for replication
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_integration#target_arn CcIntegration#target_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_integration#target_arn CcIntegration#target_arn}
     */
     readonly targetArn: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_integration awscc_glue_integration}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_integration awscc_glue_integration}
 */
 export class CcIntegration extends cdktn.TerraformResource {
 
@@ -75,7 +75,7 @@ export class CcIntegration extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcIntegration resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcIntegration to import
-    * @param importFromId The id of the existing CcIntegration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_integration#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcIntegration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_integration#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcIntegration to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -87,7 +87,7 @@ export class CcIntegration extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_integration awscc_glue_integration} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_integration awscc_glue_integration} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -98,7 +98,7 @@ export class CcIntegration extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_glue_integration',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -445,19 +445,19 @@ export interface IntegrationConfigProperty {
     /**
     * Enables continuous synchronization for on-demand data extractions.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_integration#continuous_sync CcIntegration#continuous_sync}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_integration#continuous_sync CcIntegration#continuous_sync}
     */
     readonly continuousSync?: boolean | cdktn.IResolvable;
     /**
     * Specifies the frequency at which CDC (Change Data Capture) pulls or incremental loads should occur.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_integration#refresh_interval CcIntegration#refresh_interval}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_integration#refresh_interval CcIntegration#refresh_interval}
     */
     readonly refreshInterval?: string;
     /**
     * A collection of key-value pairs that specify additional properties for the integration source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_integration#source_properties CcIntegration#source_properties}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_integration#source_properties CcIntegration#source_properties}
     */
     readonly sourceProperties?: { [key: string]: string };
 }
@@ -567,13 +567,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_integration#key CcIntegration#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_integration#key CcIntegration#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 0 to 256 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_integration#value CcIntegration#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_integration#value CcIntegration#value}
     */
     readonly value?: string;
 }

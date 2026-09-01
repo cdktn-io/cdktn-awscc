@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,217 +9,217 @@ export interface CcInstanceProps extends cdktn.TerraformMetaArguments {
     /**
     * This property is reserved for internal use. If you use it, the stack fails with this error: Bad property set: [Testing this property] (Service: AmazonEC2; Status Code: 400; Error Code: InvalidParameterCombination; Request ID: 0XXXXXX-49c7-4b40-8bcc-76885dcXXXXX).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#additional_info CcInstance#additional_info}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#additional_info CcInstance#additional_info}
     */
     readonly additionalInfo?: string;
     /**
     * Indicates whether the instance is associated with a dedicated host. If you want the instance to always restart on the same host on which it was launched, specify host. If you want the instance to restart on any available host, but try to launch onto the last host it ran on (on a best-effort basis), specify default.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#affinity CcInstance#affinity}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#affinity CcInstance#affinity}
     */
     readonly affinity?: string;
     /**
     * The Availability Zone of the instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#availability_zone CcInstance#availability_zone}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#availability_zone CcInstance#availability_zone}
     */
     readonly availabilityZone?: string;
     /**
     * The block device mapping entries that defines the block devices to attach to the instance at launch.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#block_device_mappings CcInstance#block_device_mappings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#block_device_mappings CcInstance#block_device_mappings}
     */
     readonly blockDeviceMappings?: CcInstance.BlockDeviceMappingProperty[] | cdktn.IResolvable;
     /**
     * The CPU options for the instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#cpu_options CcInstance#cpu_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#cpu_options CcInstance#cpu_options}
     */
     readonly cpuOptions?: CcInstance.CpuOptionsProperty;
     /**
     * The credit option for CPU usage of the burstable performance instance. Valid values are standard and unlimited.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#credit_specification CcInstance#credit_specification}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#credit_specification CcInstance#credit_specification}
     */
     readonly creditSpecification?: CcInstance.CreditSpecificationProperty;
     /**
     * If you set this parameter to true, you can't terminate the instance using the Amazon EC2 console, CLI, or API; otherwise, you can.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#disable_api_termination CcInstance#disable_api_termination}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#disable_api_termination CcInstance#disable_api_termination}
     */
     readonly disableApiTermination?: boolean | cdktn.IResolvable;
     /**
     * Indicates whether the instance is optimized for Amazon EBS I/O.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#ebs_optimized CcInstance#ebs_optimized}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#ebs_optimized CcInstance#ebs_optimized}
     */
     readonly ebsOptimized?: boolean | cdktn.IResolvable;
     /**
     * An elastic GPU to associate with the instance. Amazon Elastic Graphics is no longer available.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#elastic_gpu_specifications CcInstance#elastic_gpu_specifications}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#elastic_gpu_specifications CcInstance#elastic_gpu_specifications}
     */
     readonly elasticGpuSpecifications?: CcInstance.ElasticGpuSpecificationProperty[] | cdktn.IResolvable;
     /**
     * An elastic inference accelerator to associate with the instance. Amazon Elastic Inference is no longer available.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#elastic_inference_accelerators CcInstance#elastic_inference_accelerators}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#elastic_inference_accelerators CcInstance#elastic_inference_accelerators}
     */
     readonly elasticInferenceAccelerators?: CcInstance.ElasticInferenceAcceleratorProperty[] | cdktn.IResolvable;
     /**
     * Indicates whether the instance is enabled for AWS Nitro Enclaves.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#enclave_options CcInstance#enclave_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#enclave_options CcInstance#enclave_options}
     */
     readonly enclaveOptions?: CcInstance.EnclaveOptionsProperty;
     /**
     * Indicates whether an instance is enabled for hibernation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#hibernation_options CcInstance#hibernation_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#hibernation_options CcInstance#hibernation_options}
     */
     readonly hibernationOptions?: CcInstance.HibernationOptionsProperty;
     /**
     * If you specify host for the Affinity property, the ID of a dedicated host that the instance is associated with. If you don't specify an ID, Amazon EC2 launches the instance onto any available, compatible dedicated host in your account.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#host_id CcInstance#host_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#host_id CcInstance#host_id}
     */
     readonly hostId?: string;
     /**
     * The ARN of the host resource group in which to launch the instances. If you specify a host resource group ARN, omit the Tenancy parameter or set it to host.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#host_resource_group_arn CcInstance#host_resource_group_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#host_resource_group_arn CcInstance#host_resource_group_arn}
     */
     readonly hostResourceGroupArn?: string;
     /**
     * The IAM instance profile.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#iam_instance_profile CcInstance#iam_instance_profile}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#iam_instance_profile CcInstance#iam_instance_profile}
     */
     readonly iamInstanceProfile?: string;
     /**
     * The ID of the AMI. An AMI ID is required to launch an instance and must be specified here or in a launch template.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#image_id CcInstance#image_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#image_id CcInstance#image_id}
     */
     readonly imageId?: string;
     /**
     * Indicates whether an instance stops or terminates when you initiate shutdown from the instance (using the operating system command for system shutdown).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#instance_initiated_shutdown_behavior CcInstance#instance_initiated_shutdown_behavior}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#instance_initiated_shutdown_behavior CcInstance#instance_initiated_shutdown_behavior}
     */
     readonly instanceInitiatedShutdownBehavior?: string;
     /**
     * The instance type.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#instance_type CcInstance#instance_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#instance_type CcInstance#instance_type}
     */
     readonly instanceType?: string;
     /**
     * [EC2-VPC] The number of IPv6 addresses to associate with the primary network interface. Amazon EC2 chooses the IPv6 addresses from the range of your subnet.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#ipv_6_address_count CcInstance#ipv_6_address_count}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#ipv_6_address_count CcInstance#ipv_6_address_count}
     */
     readonly ipv6AddressCount?: number;
     /**
     * [EC2-VPC] The IPv6 addresses from the range of the subnet to associate with the primary network interface.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#ipv_6_addresses CcInstance#ipv_6_addresses}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#ipv_6_addresses CcInstance#ipv_6_addresses}
     */
     readonly ipv6Addresses?: CcInstance.InstanceIpv6AddressProperty[] | cdktn.IResolvable;
     /**
     * The ID of the kernel.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#kernel_id CcInstance#kernel_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#kernel_id CcInstance#kernel_id}
     */
     readonly kernelId?: string;
     /**
     * The name of the key pair.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#key_name CcInstance#key_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#key_name CcInstance#key_name}
     */
     readonly keyName?: string;
     /**
     * The launch template to use to launch the instances.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#launch_template CcInstance#launch_template}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#launch_template CcInstance#launch_template}
     */
     readonly launchTemplate?: CcInstance.LaunchTemplateSpecificationProperty;
     /**
     * The license configurations.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#license_specifications CcInstance#license_specifications}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#license_specifications CcInstance#license_specifications}
     */
     readonly licenseSpecifications?: CcInstance.LicenseSpecificationProperty[] | cdktn.IResolvable;
     /**
     * The metadata options for the instance
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#metadata_options CcInstance#metadata_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#metadata_options CcInstance#metadata_options}
     */
     readonly metadataOptions?: CcInstance.MetadataOptionsProperty;
     /**
     * Specifies whether detailed monitoring is enabled for the instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#monitoring CcInstance#monitoring}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#monitoring CcInstance#monitoring}
     */
     readonly monitoring?: boolean | cdktn.IResolvable;
     /**
     * The network interfaces to associate with the instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#network_interfaces CcInstance#network_interfaces}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#network_interfaces CcInstance#network_interfaces}
     */
     readonly networkInterfaces?: CcInstance.NetworkInterfaceProperty[] | cdktn.IResolvable;
     /**
     * The name of an existing placement group that you want to launch the instance into (cluster | partition | spread).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#placement_group_name CcInstance#placement_group_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#placement_group_name CcInstance#placement_group_name}
     */
     readonly placementGroupName?: string;
     /**
     * The options for the instance hostname.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#private_dns_name_options CcInstance#private_dns_name_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#private_dns_name_options CcInstance#private_dns_name_options}
     */
     readonly privateDnsNameOptions?: CcInstance.PrivateDnsNameOptionsProperty;
     /**
     * [EC2-VPC] The primary IPv4 address. You must specify a value from the IPv4 address range of the subnet.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#private_ip_address CcInstance#private_ip_address}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#private_ip_address CcInstance#private_ip_address}
     */
     readonly privateIpAddress?: string;
     /**
     * Indicates whether to assign the tags from the instance to all of the volumes attached to the instance at launch. If you specify true and you assign tags to the instance, those tags are automatically assigned to all of the volumes that you attach to the instance at launch. If you specify false, those tags are not assigned to the attached volumes.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#propagate_tags_to_volume_on_creation CcInstance#propagate_tags_to_volume_on_creation}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#propagate_tags_to_volume_on_creation CcInstance#propagate_tags_to_volume_on_creation}
     */
     readonly propagateTagsToVolumeOnCreation?: boolean | cdktn.IResolvable;
     /**
     * The ID of the RAM disk to select.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#ramdisk_id CcInstance#ramdisk_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#ramdisk_id CcInstance#ramdisk_id}
     */
     readonly ramdiskId?: string;
     /**
     * The IDs of the security groups.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#security_group_ids CcInstance#security_group_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#security_group_ids CcInstance#security_group_ids}
     */
     readonly securityGroupIds?: string[];
     /**
     * the names of the security groups. For a nondefault VPC, you must use security group IDs instead.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#security_groups CcInstance#security_groups}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#security_groups CcInstance#security_groups}
     */
     readonly securityGroups?: string[];
     /**
     * Specifies whether to enable an instance launched in a VPC to perform NAT.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#source_dest_check CcInstance#source_dest_check}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#source_dest_check CcInstance#source_dest_check}
     */
     readonly sourceDestCheck?: boolean | cdktn.IResolvable;
     /**
     * The SSM document and parameter values in AWS Systems Manager to associate with this instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#ssm_associations CcInstance#ssm_associations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#ssm_associations CcInstance#ssm_associations}
     */
     readonly ssmAssociations?: CcInstance.SsmAssociationProperty[] | cdktn.IResolvable;
     /**
@@ -227,37 +227,37 @@ export interface CcInstanceProps extends cdktn.TerraformMetaArguments {
     * 
     * 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#subnet_id CcInstance#subnet_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#subnet_id CcInstance#subnet_id}
     */
     readonly subnetId?: string;
     /**
     * The tags to add to the instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#tags CcInstance#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#tags CcInstance#tags}
     */
     readonly tags?: CcInstance.TagProperty[] | cdktn.IResolvable;
     /**
     * The tenancy of the instance (if the instance is running in a VPC). An instance with a tenancy of dedicated runs on single-tenant hardware.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#tenancy CcInstance#tenancy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#tenancy CcInstance#tenancy}
     */
     readonly tenancy?: string;
     /**
     * The user data to make available to the instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#user_data CcInstance#user_data}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#user_data CcInstance#user_data}
     */
     readonly userData?: string;
     /**
     * The volumes to attach to the instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#volumes CcInstance#volumes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#volumes CcInstance#volumes}
     */
     readonly volumes?: CcInstance.VolumeProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance awscc_ec2_instance}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance awscc_ec2_instance}
 */
 export class CcInstance extends cdktn.TerraformResource {
 
@@ -273,7 +273,7 @@ export class CcInstance extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcInstance resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcInstance to import
-    * @param importFromId The id of the existing CcInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcInstance to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -285,7 +285,7 @@ export class CcInstance extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance awscc_ec2_instance} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance awscc_ec2_instance} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -296,7 +296,7 @@ export class CcInstance extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_ec2_instance',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -2307,43 +2307,43 @@ export interface EbsProperty {
     /**
     * Indicates whether the EBS volume is deleted on instance termination.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#delete_on_termination CcInstance#delete_on_termination}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#delete_on_termination CcInstance#delete_on_termination}
     */
     readonly deleteOnTermination?: boolean | cdktn.IResolvable;
     /**
     * Indicates whether the volume should be encrypted.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#encrypted CcInstance#encrypted}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#encrypted CcInstance#encrypted}
     */
     readonly encrypted?: boolean | cdktn.IResolvable;
     /**
     * The number of I/O operations per second (IOPS). For gp3, io1, and io2 volumes, this represents the number of IOPS that are provisioned for the volume. For gp2 volumes, this represents the baseline performance of the volume and the rate at which the volume accumulates I/O credits for bursting.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#iops CcInstance#iops}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#iops CcInstance#iops}
     */
     readonly iops?: number;
     /**
     * The identifier of the AWS Key Management Service (AWS KMS) customer managed CMK to use for Amazon EBS encryption. If KmsKeyId is specified, the encrypted state must be true. If the encrypted state is true but you do not specify KmsKeyId, your AWS managed CMK for EBS is used.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#kms_key_id CcInstance#kms_key_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#kms_key_id CcInstance#kms_key_id}
     */
     readonly kmsKeyId?: string;
     /**
     * The ID of the snapshot.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#snapshot_id CcInstance#snapshot_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#snapshot_id CcInstance#snapshot_id}
     */
     readonly snapshotId?: string;
     /**
     * The size of the volume, in GiBs. You must specify either a snapshot ID or a volume size. If you specify a snapshot, the default is the snapshot size. You can specify a volume size that is equal to or larger than the snapshot size.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#volume_size CcInstance#volume_size}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#volume_size CcInstance#volume_size}
     */
     readonly volumeSize?: number;
     /**
     * The volume type.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#volume_type CcInstance#volume_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#volume_type CcInstance#volume_type}
     */
     readonly volumeType?: string;
 }
@@ -2541,21 +2541,21 @@ export interface BlockDeviceMappingProperty {
     /**
     * The device name (for example, /dev/sdh or xvdh).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#device_name CcInstance#device_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#device_name CcInstance#device_name}
     */
     readonly deviceName?: string;
     /**
     * Parameters used to automatically set up EBS volumes when the instance is launched.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#ebs CcInstance#ebs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#ebs CcInstance#ebs}
     */
     readonly ebs?: EbsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#no_device CcInstance#no_device}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#no_device CcInstance#no_device}
     */
     readonly noDevice?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#virtual_name CcInstance#virtual_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#virtual_name CcInstance#virtual_name}
     */
     readonly virtualName?: string;
 }
@@ -2707,11 +2707,11 @@ export class BlockDeviceMappingPropertyList extends cdktn.ComplexList {
 }
 export interface CpuOptionsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#core_count CcInstance#core_count}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#core_count CcInstance#core_count}
     */
     readonly coreCount?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#threads_per_core CcInstance#threads_per_core}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#threads_per_core CcInstance#threads_per_core}
     */
     readonly threadsPerCore?: number;
 }
@@ -2797,7 +2797,7 @@ export class CpuOptionsPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface CreditSpecificationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#cpu_credits CcInstance#cpu_credits}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#cpu_credits CcInstance#cpu_credits}
     */
     readonly cpuCredits?: string;
 }
@@ -2863,7 +2863,7 @@ export interface ElasticGpuSpecificationProperty {
     /**
     * The type of Elastic Graphics accelerator. Amazon Elastic Graphics is no longer available.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#type CcInstance#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#type CcInstance#type}
     */
     readonly type?: string;
 }
@@ -2951,13 +2951,13 @@ export interface ElasticInferenceAcceleratorProperty {
     /**
     * The number of elastic inference accelerators to attach to the instance. Amazon Elastic Inference is no longer available.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#count CcInstance#count}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#count CcInstance#count}
     */
     readonly count?: number;
     /**
     * The type of elastic inference accelerator. Amazon Elastic Inference is no longer available.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#type CcInstance#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#type CcInstance#type}
     */
     readonly type?: string;
 }
@@ -3067,7 +3067,7 @@ export interface EnclaveOptionsProperty {
     /**
     * If this parameter is set to true, the instance is enabled for AWS Nitro Enclaves; otherwise, it is not enabled for AWS Nitro Enclaves.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#enabled CcInstance#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#enabled CcInstance#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -3133,7 +3133,7 @@ export interface HibernationOptionsProperty {
     /**
     * If you set this parameter to true, your instance is enabled for hibernation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#configured CcInstance#configured}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#configured CcInstance#configured}
     */
     readonly configured?: boolean | cdktn.IResolvable;
 }
@@ -3199,7 +3199,7 @@ export interface InstanceIpv6AddressProperty {
     /**
     * The IPv6 address.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#ipv_6_address CcInstance#ipv_6_address}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#ipv_6_address CcInstance#ipv_6_address}
     */
     readonly ipv6Address?: string;
 }
@@ -3287,19 +3287,19 @@ export interface LaunchTemplateSpecificationProperty {
     /**
     * The ID of the launch template. You must specify the LaunchTemplateName or the LaunchTemplateId, but not both.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#launch_template_id CcInstance#launch_template_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#launch_template_id CcInstance#launch_template_id}
     */
     readonly launchTemplateId?: string;
     /**
     * The name of the launch template. You must specify the LaunchTemplateName or the LaunchTemplateId, but not both.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#launch_template_name CcInstance#launch_template_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#launch_template_name CcInstance#launch_template_name}
     */
     readonly launchTemplateName?: string;
     /**
     * The version number of the launch template.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#version CcInstance#version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#version CcInstance#version}
     */
     readonly version?: string;
 }
@@ -3409,7 +3409,7 @@ export interface LicenseSpecificationProperty {
     /**
     * The Amazon Resource Name (ARN) of the license configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#license_configuration_arn CcInstance#license_configuration_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#license_configuration_arn CcInstance#license_configuration_arn}
     */
     readonly licenseConfigurationArn?: string;
 }
@@ -3497,31 +3497,31 @@ export interface MetadataOptionsProperty {
     /**
     * Enables or disables the HTTP metadata endpoint on your instances. If you specify a value of disabled, you cannot access your instance metadata.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#http_endpoint CcInstance#http_endpoint}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#http_endpoint CcInstance#http_endpoint}
     */
     readonly httpEndpoint?: string;
     /**
     * Enables or disables the IPv6 endpoint for the instance metadata service. To use this option, the instance must be a Nitro-based instance launched in a subnet that supports IPv6.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#http_protocol_ipv_6 CcInstance#http_protocol_ipv_6}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#http_protocol_ipv_6 CcInstance#http_protocol_ipv_6}
     */
     readonly httpProtocolIpv6?: string;
     /**
     * The number of network hops that the metadata token can travel. Maximum is 64.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#http_put_response_hop_limit CcInstance#http_put_response_hop_limit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#http_put_response_hop_limit CcInstance#http_put_response_hop_limit}
     */
     readonly httpPutResponseHopLimit?: number;
     /**
     * Indicates whether IMDSv2 is required.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#http_tokens CcInstance#http_tokens}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#http_tokens CcInstance#http_tokens}
     */
     readonly httpTokens?: string;
     /**
     * Indicates whether tags from the instance are propagated to the EBS volumes.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#instance_metadata_tags CcInstance#instance_metadata_tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#instance_metadata_tags CcInstance#instance_metadata_tags}
     */
     readonly instanceMetadataTags?: string;
 }
@@ -3675,7 +3675,7 @@ export interface EnaSrdUdpSpecificationProperty {
     /**
     * Indicates whether UDP traffic uses ENA Express for your instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#ena_srd_udp_enabled CcInstance#ena_srd_udp_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#ena_srd_udp_enabled CcInstance#ena_srd_udp_enabled}
     */
     readonly enaSrdUdpEnabled?: boolean | cdktn.IResolvable;
 }
@@ -3741,13 +3741,13 @@ export interface EnaSrdSpecificationProperty {
     /**
     * Specifies whether ENA Express is enabled for the network interface when you launch an instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#ena_srd_enabled CcInstance#ena_srd_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#ena_srd_enabled CcInstance#ena_srd_enabled}
     */
     readonly enaSrdEnabled?: boolean | cdktn.IResolvable;
     /**
     * Contains ENA Express settings for UDP network traffic for the network interface that's attached to the instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#ena_srd_udp_specification CcInstance#ena_srd_udp_specification}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#ena_srd_udp_specification CcInstance#ena_srd_udp_specification}
     */
     readonly enaSrdUdpSpecification?: EnaSrdUdpSpecificationProperty;
 }
@@ -3835,7 +3835,7 @@ export interface Ipv6AddressesProperty {
     /**
     * The IPv6 address.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#ipv_6_address CcInstance#ipv_6_address}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#ipv_6_address CcInstance#ipv_6_address}
     */
     readonly ipv6Address?: string;
 }
@@ -3923,13 +3923,13 @@ export interface PrivateIpAddressSpecificationProperty {
     /**
     * Indicates whether the private IPv4 address is the primary private IPv4 address. Only one IPv4 address can be designated as primary.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#primary CcInstance#primary}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#primary CcInstance#primary}
     */
     readonly primary?: boolean | cdktn.IResolvable;
     /**
     * The private IPv4 addresses.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#private_ip_address CcInstance#private_ip_address}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#private_ip_address CcInstance#private_ip_address}
     */
     readonly privateIpAddress?: string;
 }
@@ -4039,85 +4039,85 @@ export interface NetworkInterfaceProperty {
     /**
     * Not currently supported by AWS CloudFormation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#associate_carrier_ip_address CcInstance#associate_carrier_ip_address}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#associate_carrier_ip_address CcInstance#associate_carrier_ip_address}
     */
     readonly associateCarrierIpAddress?: boolean | cdktn.IResolvable;
     /**
     * Indicates whether to assign a public IPv4 address to an instance you launch in a VPC.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#associate_public_ip_address CcInstance#associate_public_ip_address}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#associate_public_ip_address CcInstance#associate_public_ip_address}
     */
     readonly associatePublicIpAddress?: boolean | cdktn.IResolvable;
     /**
     * If set to true, the interface is deleted when the instance is terminated.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#delete_on_termination CcInstance#delete_on_termination}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#delete_on_termination CcInstance#delete_on_termination}
     */
     readonly deleteOnTermination?: boolean | cdktn.IResolvable;
     /**
     * The description of the network interface.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#description CcInstance#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#description CcInstance#description}
     */
     readonly description?: string;
     /**
     * The position of the network interface in the attachment order. A primary network interface has a device index of 0.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#device_index CcInstance#device_index}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#device_index CcInstance#device_index}
     */
     readonly deviceIndex?: string;
     /**
     * Specifies the ENA Express settings for the network interface that's attached to the instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#ena_srd_specification CcInstance#ena_srd_specification}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#ena_srd_specification CcInstance#ena_srd_specification}
     */
     readonly enaSrdSpecification?: EnaSrdSpecificationProperty;
     /**
     * The IDs of the security groups for the network interface.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#group_set CcInstance#group_set}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#group_set CcInstance#group_set}
     */
     readonly groupSet?: string[];
     /**
     * A number of IPv6 addresses to assign to the network interface.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#ipv_6_address_count CcInstance#ipv_6_address_count}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#ipv_6_address_count CcInstance#ipv_6_address_count}
     */
     readonly ipv6AddressCount?: number;
     /**
     * The IPv6 addresses associated with the network interface.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#ipv_6_addresses CcInstance#ipv_6_addresses}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#ipv_6_addresses CcInstance#ipv_6_addresses}
     */
     readonly ipv6Addresses?: Ipv6AddressesProperty[] | cdktn.IResolvable;
     /**
     * The ID of the network interface.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#network_interface_id CcInstance#network_interface_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#network_interface_id CcInstance#network_interface_id}
     */
     readonly networkInterfaceId?: string;
     /**
     * The private IPv4 address of the network interface.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#private_ip_address CcInstance#private_ip_address}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#private_ip_address CcInstance#private_ip_address}
     */
     readonly privateIpAddress?: string;
     /**
     * One or more private IPv4 addresses to assign to the network interface.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#private_ip_addresses CcInstance#private_ip_addresses}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#private_ip_addresses CcInstance#private_ip_addresses}
     */
     readonly privateIpAddresses?: PrivateIpAddressSpecificationProperty[] | cdktn.IResolvable;
     /**
     * The number of secondary private IPv4 addresses.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#secondary_private_ip_address_count CcInstance#secondary_private_ip_address_count}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#secondary_private_ip_address_count CcInstance#secondary_private_ip_address_count}
     */
     readonly secondaryPrivateIpAddressCount?: number;
     /**
     * The ID of the subnet.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#subnet_id CcInstance#subnet_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#subnet_id CcInstance#subnet_id}
     */
     readonly subnetId?: string;
 }
@@ -4491,19 +4491,19 @@ export interface PrivateDnsNameOptionsProperty {
     /**
     * Indicates whether to respond to DNS queries for instance hostnames with DNS A records. For more information, see Amazon EC2 instance hostname types in the Amazon Elastic Compute Cloud User Guide.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#enable_resource_name_dns_a_record CcInstance#enable_resource_name_dns_a_record}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#enable_resource_name_dns_a_record CcInstance#enable_resource_name_dns_a_record}
     */
     readonly enableResourceNameDnsARecord?: boolean | cdktn.IResolvable;
     /**
     * Indicates whether to respond to DNS queries for instance hostnames with DNS AAAA records. For more information, see Amazon EC2 instance hostname types in the Amazon Elastic Compute Cloud User Guide.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#enable_resource_name_dns_aaaa_record CcInstance#enable_resource_name_dns_aaaa_record}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#enable_resource_name_dns_aaaa_record CcInstance#enable_resource_name_dns_aaaa_record}
     */
     readonly enableResourceNameDnsAaaaRecord?: boolean | cdktn.IResolvable;
     /**
     * The type of hostnames to assign to instances in the subnet at launch. For IPv4 only subnets, an instance DNS name must be based on the instance IPv4 address. For IPv6 only subnets, an instance DNS name must be based on the instance ID. For dual-stack subnets, you can specify whether DNS names use the instance IPv4 address or the instance ID. For more information, see Amazon EC2 instance hostname types in the Amazon Elastic Compute Cloud User Guide.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#hostname_type CcInstance#hostname_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#hostname_type CcInstance#hostname_type}
     */
     readonly hostnameType?: string;
 }
@@ -4613,13 +4613,13 @@ export interface AssociationParameterProperty {
     /**
     * The name of an input parameter that is in the associated SSM document.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#key CcInstance#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#key CcInstance#key}
     */
     readonly key?: string;
     /**
     * The value of an input parameter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#value CcInstance#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#value CcInstance#value}
     */
     readonly value?: string[];
 }
@@ -4729,13 +4729,13 @@ export interface SsmAssociationProperty {
     /**
     * The input parameter values to use with the associated SSM document.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#association_parameters CcInstance#association_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#association_parameters CcInstance#association_parameters}
     */
     readonly associationParameters?: AssociationParameterProperty[] | cdktn.IResolvable;
     /**
     * The name of an SSM document to associate with the instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#document_name CcInstance#document_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#document_name CcInstance#document_name}
     */
     readonly documentName?: string;
 }
@@ -4881,11 +4881,11 @@ export class StatePropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#key CcInstance#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#key CcInstance#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#value CcInstance#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#value CcInstance#value}
     */
     readonly value?: string;
 }
@@ -4995,13 +4995,13 @@ export interface VolumeProperty {
     /**
     * The device name (for example, /dev/sdh or xvdh).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#device CcInstance#device}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#device CcInstance#device}
     */
     readonly device?: string;
     /**
     * The ID of the EBS volume. The volume and instance must be within the same Availability Zone.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_instance#volume_id CcInstance#volume_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_instance#volume_id CcInstance#volume_id}
     */
     readonly volumeId?: string;
 }

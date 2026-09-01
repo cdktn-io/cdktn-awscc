@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_capacity_reservation
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_capacity_reservation
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,31 +9,31 @@ export interface CcCapacityReservationProps extends cdktn.TerraformMetaArguments
     /**
     * Assignment configuration to assign workgroups to a reservation
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_capacity_reservation#capacity_assignment_configuration CcCapacityReservation#capacity_assignment_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_capacity_reservation#capacity_assignment_configuration CcCapacityReservation#capacity_assignment_configuration}
     */
     readonly capacityAssignmentConfiguration?: CcCapacityReservation.CapacityAssignmentConfigurationProperty;
     /**
     * The reservation name.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_capacity_reservation#name CcCapacityReservation#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_capacity_reservation#name CcCapacityReservation#name}
     */
     readonly name: string;
     /**
     * An array of key-value pairs to apply to this resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_capacity_reservation#tags CcCapacityReservation#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_capacity_reservation#tags CcCapacityReservation#tags}
     */
     readonly tags?: CcCapacityReservation.TagProperty[] | cdktn.IResolvable;
     /**
     * The number of DPUs to request to be allocated to the reservation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_capacity_reservation#target_dpus CcCapacityReservation#target_dpus}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_capacity_reservation#target_dpus CcCapacityReservation#target_dpus}
     */
     readonly targetDpus: number;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_capacity_reservation awscc_athena_capacity_reservation}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_capacity_reservation awscc_athena_capacity_reservation}
 */
 export class CcCapacityReservation extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CcCapacityReservation extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcCapacityReservation resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcCapacityReservation to import
-    * @param importFromId The id of the existing CcCapacityReservation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_capacity_reservation#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcCapacityReservation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_capacity_reservation#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcCapacityReservation to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CcCapacityReservation extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_capacity_reservation awscc_athena_capacity_reservation} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_capacity_reservation awscc_athena_capacity_reservation} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -72,7 +72,7 @@ export class CcCapacityReservation extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_athena_capacity_reservation',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -326,7 +326,7 @@ export function ccCapacityReservationTagPropertyToHclTerraform(struct?: CcCapaci
 export namespace CcCapacityReservation {
 export interface CapacityAssignmentProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_capacity_reservation#workgroup_names CcCapacityReservation#workgroup_names}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_capacity_reservation#workgroup_names CcCapacityReservation#workgroup_names}
     */
     readonly workgroupNames?: string[];
 }
@@ -414,7 +414,7 @@ export interface CapacityAssignmentConfigurationProperty {
     /**
     * List of capacity assignments
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_capacity_reservation#capacity_assignments CcCapacityReservation#capacity_assignments}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_capacity_reservation#capacity_assignments CcCapacityReservation#capacity_assignments}
     */
     readonly capacityAssignments?: CapacityAssignmentProperty[] | cdktn.IResolvable;
 }
@@ -478,11 +478,11 @@ export class CapacityAssignmentConfigurationPropertyOutputReference extends cdkt
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_capacity_reservation#key CcCapacityReservation#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_capacity_reservation#key CcCapacityReservation#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_capacity_reservation#value CcCapacityReservation#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_capacity_reservation#value CcCapacityReservation#value}
     */
     readonly value?: string;
 }

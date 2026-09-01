@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ivs_recording_configuration
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ivs_recording_configuration
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,43 +9,43 @@ export interface CcRecordingConfigurationProps extends cdktn.TerraformMetaArgume
     /**
     * Recording Destination Configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ivs_recording_configuration#destination_configuration CcRecordingConfiguration#destination_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ivs_recording_configuration#destination_configuration CcRecordingConfiguration#destination_configuration}
     */
     readonly destinationConfiguration: CcRecordingConfiguration.DestinationConfigurationProperty;
     /**
     * Recording Configuration Name.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ivs_recording_configuration#name CcRecordingConfiguration#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ivs_recording_configuration#name CcRecordingConfiguration#name}
     */
     readonly name?: string;
     /**
     * Recording Reconnect Window Seconds. (0 means disabled)
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ivs_recording_configuration#recording_reconnect_window_seconds CcRecordingConfiguration#recording_reconnect_window_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ivs_recording_configuration#recording_reconnect_window_seconds CcRecordingConfiguration#recording_reconnect_window_seconds}
     */
     readonly recordingReconnectWindowSeconds?: number;
     /**
     * Rendition Configuration describes which renditions should be recorded for a stream.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ivs_recording_configuration#rendition_configuration CcRecordingConfiguration#rendition_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ivs_recording_configuration#rendition_configuration CcRecordingConfiguration#rendition_configuration}
     */
     readonly renditionConfiguration?: CcRecordingConfiguration.RenditionConfigurationProperty;
     /**
     * A list of key-value pairs that contain metadata for the asset model.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ivs_recording_configuration#tags CcRecordingConfiguration#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ivs_recording_configuration#tags CcRecordingConfiguration#tags}
     */
     readonly tags?: CcRecordingConfiguration.TagProperty[] | cdktn.IResolvable;
     /**
     * Recording Thumbnail Configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ivs_recording_configuration#thumbnail_configuration CcRecordingConfiguration#thumbnail_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ivs_recording_configuration#thumbnail_configuration CcRecordingConfiguration#thumbnail_configuration}
     */
     readonly thumbnailConfiguration?: CcRecordingConfiguration.ThumbnailConfigurationProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ivs_recording_configuration awscc_ivs_recording_configuration}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ivs_recording_configuration awscc_ivs_recording_configuration}
 */
 export class CcRecordingConfiguration extends cdktn.TerraformResource {
 
@@ -61,7 +61,7 @@ export class CcRecordingConfiguration extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcRecordingConfiguration resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcRecordingConfiguration to import
-    * @param importFromId The id of the existing CcRecordingConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ivs_recording_configuration#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcRecordingConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ivs_recording_configuration#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcRecordingConfiguration to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -73,7 +73,7 @@ export class CcRecordingConfiguration extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ivs_recording_configuration awscc_ivs_recording_configuration} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ivs_recording_configuration awscc_ivs_recording_configuration} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -84,7 +84,7 @@ export class CcRecordingConfiguration extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_ivs_recording_configuration',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -462,7 +462,7 @@ export function ccRecordingConfigurationThumbnailConfigurationPropertyToHclTerra
 export namespace CcRecordingConfiguration {
 export interface S3DestinationConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ivs_recording_configuration#bucket_name CcRecordingConfiguration#bucket_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ivs_recording_configuration#bucket_name CcRecordingConfiguration#bucket_name}
     */
     readonly bucketName?: string;
 }
@@ -528,7 +528,7 @@ export interface DestinationConfigurationProperty {
     /**
     * Recording S3 Destination Configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ivs_recording_configuration#s3 CcRecordingConfiguration#s3}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ivs_recording_configuration#s3 CcRecordingConfiguration#s3}
     */
     readonly s3?: S3DestinationConfigurationProperty;
 }
@@ -594,13 +594,13 @@ export interface RenditionConfigurationProperty {
     /**
     * Resolution Selection indicates which set of renditions are recorded for a stream.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ivs_recording_configuration#rendition_selection CcRecordingConfiguration#rendition_selection}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ivs_recording_configuration#rendition_selection CcRecordingConfiguration#rendition_selection}
     */
     readonly renditionSelection?: string;
     /**
     * Renditions indicates which renditions are recorded for a stream.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ivs_recording_configuration#renditions CcRecordingConfiguration#renditions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ivs_recording_configuration#renditions CcRecordingConfiguration#renditions}
     */
     readonly renditions?: string[];
 }
@@ -688,13 +688,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ivs_recording_configuration#key CcRecordingConfiguration#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ivs_recording_configuration#key CcRecordingConfiguration#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 0 to 256 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ivs_recording_configuration#value CcRecordingConfiguration#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ivs_recording_configuration#value CcRecordingConfiguration#value}
     */
     readonly value?: string;
 }
@@ -804,25 +804,25 @@ export interface ThumbnailConfigurationProperty {
     /**
     * Thumbnail Recording Mode, which determines whether thumbnails are recorded at an interval or are disabled.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ivs_recording_configuration#recording_mode CcRecordingConfiguration#recording_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ivs_recording_configuration#recording_mode CcRecordingConfiguration#recording_mode}
     */
     readonly recordingMode?: string;
     /**
     * Resolution indicates the desired resolution of recorded thumbnails.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ivs_recording_configuration#resolution CcRecordingConfiguration#resolution}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ivs_recording_configuration#resolution CcRecordingConfiguration#resolution}
     */
     readonly resolution?: string;
     /**
     * Storage indicates the format in which thumbnails are recorded.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ivs_recording_configuration#storage CcRecordingConfiguration#storage}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ivs_recording_configuration#storage CcRecordingConfiguration#storage}
     */
     readonly storage?: string[];
     /**
     * Target Interval Seconds defines the interval at which thumbnails are recorded. This field is required if RecordingMode is INTERVAL.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ivs_recording_configuration#target_interval_seconds CcRecordingConfiguration#target_interval_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ivs_recording_configuration#target_interval_seconds CcRecordingConfiguration#target_interval_seconds}
     */
     readonly targetIntervalSeconds?: number;
 }

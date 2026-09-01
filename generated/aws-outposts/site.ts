@@ -1,43 +1,43 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/outposts_site
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/outposts_site
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcSiteProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/outposts_site#description CcSite#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/outposts_site#description CcSite#description}
     */
     readonly description?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/outposts_site#name CcSite#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/outposts_site#name CcSite#name}
     */
     readonly name: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/outposts_site#notes CcSite#notes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/outposts_site#notes CcSite#notes}
     */
     readonly notes?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/outposts_site#operating_address CcSite#operating_address}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/outposts_site#operating_address CcSite#operating_address}
     */
     readonly operatingAddress?: CcSite.AddressProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/outposts_site#rack_physical_properties CcSite#rack_physical_properties}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/outposts_site#rack_physical_properties CcSite#rack_physical_properties}
     */
     readonly rackPhysicalProperties?: CcSite.RackPhysicalPropertiesProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/outposts_site#shipping_address CcSite#shipping_address}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/outposts_site#shipping_address CcSite#shipping_address}
     */
     readonly shippingAddress?: CcSite.ShippingAddressProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/outposts_site#tags CcSite#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/outposts_site#tags CcSite#tags}
     */
     readonly tags?: CcSite.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/outposts_site awscc_outposts_site}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/outposts_site awscc_outposts_site}
 */
 export class CcSite extends cdktn.TerraformResource {
 
@@ -53,7 +53,7 @@ export class CcSite extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcSite resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcSite to import
-    * @param importFromId The id of the existing CcSite that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/outposts_site#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcSite that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/outposts_site#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcSite to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -65,7 +65,7 @@ export class CcSite extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/outposts_site awscc_outposts_site} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/outposts_site awscc_outposts_site} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -76,7 +76,7 @@ export class CcSite extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_outposts_site',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -616,47 +616,47 @@ export function ccSiteTagPropertyToHclTerraform(struct?: CcSite.TagProperty | cd
 export namespace CcSite {
 export interface AddressProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/outposts_site#address_line_1 CcSite#address_line_1}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/outposts_site#address_line_1 CcSite#address_line_1}
     */
     readonly addressLine1?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/outposts_site#address_line_2 CcSite#address_line_2}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/outposts_site#address_line_2 CcSite#address_line_2}
     */
     readonly addressLine2?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/outposts_site#address_line_3 CcSite#address_line_3}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/outposts_site#address_line_3 CcSite#address_line_3}
     */
     readonly addressLine3?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/outposts_site#city CcSite#city}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/outposts_site#city CcSite#city}
     */
     readonly city?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/outposts_site#contact_name CcSite#contact_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/outposts_site#contact_name CcSite#contact_name}
     */
     readonly contactName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/outposts_site#contact_phone_number CcSite#contact_phone_number}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/outposts_site#contact_phone_number CcSite#contact_phone_number}
     */
     readonly contactPhoneNumber?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/outposts_site#country_code CcSite#country_code}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/outposts_site#country_code CcSite#country_code}
     */
     readonly countryCode?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/outposts_site#district_or_county CcSite#district_or_county}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/outposts_site#district_or_county CcSite#district_or_county}
     */
     readonly districtOrCounty?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/outposts_site#municipality CcSite#municipality}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/outposts_site#municipality CcSite#municipality}
     */
     readonly municipality?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/outposts_site#postal_code CcSite#postal_code}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/outposts_site#postal_code CcSite#postal_code}
     */
     readonly postalCode?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/outposts_site#state_or_region CcSite#state_or_region}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/outposts_site#state_or_region CcSite#state_or_region}
     */
     readonly stateOrRegion?: string;
 }
@@ -940,39 +940,39 @@ export class AddressPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface RackPhysicalPropertiesProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/outposts_site#fiber_optic_cable_type CcSite#fiber_optic_cable_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/outposts_site#fiber_optic_cable_type CcSite#fiber_optic_cable_type}
     */
     readonly fiberOpticCableType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/outposts_site#maximum_supported_weight_lbs CcSite#maximum_supported_weight_lbs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/outposts_site#maximum_supported_weight_lbs CcSite#maximum_supported_weight_lbs}
     */
     readonly maximumSupportedWeightLbs?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/outposts_site#optical_standard CcSite#optical_standard}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/outposts_site#optical_standard CcSite#optical_standard}
     */
     readonly opticalStandard?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/outposts_site#power_connector CcSite#power_connector}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/outposts_site#power_connector CcSite#power_connector}
     */
     readonly powerConnector?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/outposts_site#power_draw_kva CcSite#power_draw_kva}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/outposts_site#power_draw_kva CcSite#power_draw_kva}
     */
     readonly powerDrawKva?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/outposts_site#power_feed_drop CcSite#power_feed_drop}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/outposts_site#power_feed_drop CcSite#power_feed_drop}
     */
     readonly powerFeedDrop?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/outposts_site#power_phase CcSite#power_phase}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/outposts_site#power_phase CcSite#power_phase}
     */
     readonly powerPhase?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/outposts_site#uplink_count CcSite#uplink_count}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/outposts_site#uplink_count CcSite#uplink_count}
     */
     readonly uplinkCount?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/outposts_site#uplink_gbps CcSite#uplink_gbps}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/outposts_site#uplink_gbps CcSite#uplink_gbps}
     */
     readonly uplinkGbps?: string;
 }
@@ -1212,47 +1212,47 @@ export class RackPhysicalPropertiesPropertyOutputReference extends cdktn.Complex
 }
 export interface ShippingAddressProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/outposts_site#address_line_1 CcSite#address_line_1}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/outposts_site#address_line_1 CcSite#address_line_1}
     */
     readonly addressLine1?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/outposts_site#address_line_2 CcSite#address_line_2}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/outposts_site#address_line_2 CcSite#address_line_2}
     */
     readonly addressLine2?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/outposts_site#address_line_3 CcSite#address_line_3}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/outposts_site#address_line_3 CcSite#address_line_3}
     */
     readonly addressLine3?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/outposts_site#city CcSite#city}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/outposts_site#city CcSite#city}
     */
     readonly city?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/outposts_site#contact_name CcSite#contact_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/outposts_site#contact_name CcSite#contact_name}
     */
     readonly contactName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/outposts_site#contact_phone_number CcSite#contact_phone_number}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/outposts_site#contact_phone_number CcSite#contact_phone_number}
     */
     readonly contactPhoneNumber?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/outposts_site#country_code CcSite#country_code}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/outposts_site#country_code CcSite#country_code}
     */
     readonly countryCode?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/outposts_site#district_or_county CcSite#district_or_county}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/outposts_site#district_or_county CcSite#district_or_county}
     */
     readonly districtOrCounty?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/outposts_site#municipality CcSite#municipality}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/outposts_site#municipality CcSite#municipality}
     */
     readonly municipality?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/outposts_site#postal_code CcSite#postal_code}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/outposts_site#postal_code CcSite#postal_code}
     */
     readonly postalCode?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/outposts_site#state_or_region CcSite#state_or_region}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/outposts_site#state_or_region CcSite#state_or_region}
     */
     readonly stateOrRegion?: string;
 }
@@ -1536,11 +1536,11 @@ export class ShippingAddressPropertyOutputReference extends cdktn.ComplexObject 
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/outposts_site#key CcSite#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/outposts_site#key CcSite#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/outposts_site#value CcSite#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/outposts_site#value CcSite#value}
     */
     readonly value?: string;
 }

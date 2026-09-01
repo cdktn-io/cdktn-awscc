@@ -1,43 +1,43 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_storage_system
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_storage_system
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcStorageSystemProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_storage_system#agent_arns CcStorageSystem#agent_arns}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_storage_system#agent_arns CcStorageSystem#agent_arns}
     */
     readonly agentArns: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_storage_system#cloudwatch_log_group_arn CcStorageSystem#cloudwatch_log_group_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_storage_system#cloudwatch_log_group_arn CcStorageSystem#cloudwatch_log_group_arn}
     */
     readonly cloudwatchLogGroupArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_storage_system#name CcStorageSystem#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_storage_system#name CcStorageSystem#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_storage_system#server_configuration CcStorageSystem#server_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_storage_system#server_configuration CcStorageSystem#server_configuration}
     */
     readonly serverConfiguration: CcStorageSystem.ServerConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_storage_system#server_credentials CcStorageSystem#server_credentials}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_storage_system#server_credentials CcStorageSystem#server_credentials}
     */
     readonly serverCredentials?: CcStorageSystem.ServerCredentialsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_storage_system#system_type CcStorageSystem#system_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_storage_system#system_type CcStorageSystem#system_type}
     */
     readonly systemType: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_storage_system#tags CcStorageSystem#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_storage_system#tags CcStorageSystem#tags}
     */
     readonly tags?: CcStorageSystem.TagsProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_storage_system awscc_datasync_storage_system}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_storage_system awscc_datasync_storage_system}
 */
 export class CcStorageSystem extends cdktn.TerraformResource {
 
@@ -53,7 +53,7 @@ export class CcStorageSystem extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcStorageSystem resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcStorageSystem to import
-    * @param importFromId The id of the existing CcStorageSystem that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_storage_system#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcStorageSystem that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_storage_system#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcStorageSystem to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -65,7 +65,7 @@ export class CcStorageSystem extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_storage_system awscc_datasync_storage_system} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_storage_system awscc_datasync_storage_system} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -76,7 +76,7 @@ export class CcStorageSystem extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_datasync_storage_system',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -408,11 +408,11 @@ export function ccStorageSystemTagsPropertyToHclTerraform(struct?: CcStorageSyst
 export namespace CcStorageSystem {
 export interface ServerConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_storage_system#server_hostname CcStorageSystem#server_hostname}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_storage_system#server_hostname CcStorageSystem#server_hostname}
     */
     readonly serverHostname: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_storage_system#server_port CcStorageSystem#server_port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_storage_system#server_port CcStorageSystem#server_port}
     */
     readonly serverPort?: number;
 }
@@ -495,11 +495,11 @@ export class ServerConfigurationPropertyOutputReference extends cdktn.ComplexObj
 }
 export interface ServerCredentialsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_storage_system#password CcStorageSystem#password}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_storage_system#password CcStorageSystem#password}
     */
     readonly password?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_storage_system#username CcStorageSystem#username}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_storage_system#username CcStorageSystem#username}
     */
     readonly username?: string;
 }
@@ -585,11 +585,11 @@ export class ServerCredentialsPropertyOutputReference extends cdktn.ComplexObjec
 }
 export interface TagsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_storage_system#key CcStorageSystem#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_storage_system#key CcStorageSystem#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_storage_system#value CcStorageSystem#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_storage_system#value CcStorageSystem#value}
     */
     readonly value?: string;
 }

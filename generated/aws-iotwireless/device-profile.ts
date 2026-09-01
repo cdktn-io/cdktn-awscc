@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_device_profile
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotwireless_device_profile
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,25 +9,25 @@ export interface CcDeviceProfileProps extends cdktn.TerraformMetaArguments {
     /**
     * LoRaWANDeviceProfile supports all LoRa specific attributes for service profile for CreateDeviceProfile operation
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_device_profile#lo_ra_wan CcDeviceProfile#lo_ra_wan}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotwireless_device_profile#lo_ra_wan CcDeviceProfile#lo_ra_wan}
     */
     readonly loRaWan?: CcDeviceProfile.LoRaWANDeviceProfileProperty;
     /**
     * Name of service profile
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_device_profile#name CcDeviceProfile#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotwireless_device_profile#name CcDeviceProfile#name}
     */
     readonly name?: string;
     /**
     * A list of key-value pairs that contain metadata for the device profile.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_device_profile#tags CcDeviceProfile#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotwireless_device_profile#tags CcDeviceProfile#tags}
     */
     readonly tags?: CcDeviceProfile.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_device_profile awscc_iotwireless_device_profile}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotwireless_device_profile awscc_iotwireless_device_profile}
 */
 export class CcDeviceProfile extends cdktn.TerraformResource {
 
@@ -43,7 +43,7 @@ export class CcDeviceProfile extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcDeviceProfile resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcDeviceProfile to import
-    * @param importFromId The id of the existing CcDeviceProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_device_profile#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcDeviceProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotwireless_device_profile#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcDeviceProfile to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -55,7 +55,7 @@ export class CcDeviceProfile extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_device_profile awscc_iotwireless_device_profile} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotwireless_device_profile awscc_iotwireless_device_profile} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +66,7 @@ export class CcDeviceProfile extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_iotwireless_device_profile',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -383,79 +383,79 @@ export function ccDeviceProfileTagPropertyToHclTerraform(struct?: CcDeviceProfil
 export namespace CcDeviceProfile {
 export interface LoRaWANDeviceProfileProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_device_profile#class_b_timeout CcDeviceProfile#class_b_timeout}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotwireless_device_profile#class_b_timeout CcDeviceProfile#class_b_timeout}
     */
     readonly classBTimeout?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_device_profile#class_c_timeout CcDeviceProfile#class_c_timeout}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotwireless_device_profile#class_c_timeout CcDeviceProfile#class_c_timeout}
     */
     readonly classCTimeout?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_device_profile#factory_preset_freqs_list CcDeviceProfile#factory_preset_freqs_list}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotwireless_device_profile#factory_preset_freqs_list CcDeviceProfile#factory_preset_freqs_list}
     */
     readonly factoryPresetFreqsList?: number[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_device_profile#mac_version CcDeviceProfile#mac_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotwireless_device_profile#mac_version CcDeviceProfile#mac_version}
     */
     readonly macVersion?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_device_profile#max_duty_cycle CcDeviceProfile#max_duty_cycle}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotwireless_device_profile#max_duty_cycle CcDeviceProfile#max_duty_cycle}
     */
     readonly maxDutyCycle?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_device_profile#max_eirp CcDeviceProfile#max_eirp}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotwireless_device_profile#max_eirp CcDeviceProfile#max_eirp}
     */
     readonly maxEirp?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_device_profile#ping_slot_dr CcDeviceProfile#ping_slot_dr}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotwireless_device_profile#ping_slot_dr CcDeviceProfile#ping_slot_dr}
     */
     readonly pingSlotDr?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_device_profile#ping_slot_freq CcDeviceProfile#ping_slot_freq}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotwireless_device_profile#ping_slot_freq CcDeviceProfile#ping_slot_freq}
     */
     readonly pingSlotFreq?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_device_profile#ping_slot_period CcDeviceProfile#ping_slot_period}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotwireless_device_profile#ping_slot_period CcDeviceProfile#ping_slot_period}
     */
     readonly pingSlotPeriod?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_device_profile#reg_params_revision CcDeviceProfile#reg_params_revision}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotwireless_device_profile#reg_params_revision CcDeviceProfile#reg_params_revision}
     */
     readonly regParamsRevision?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_device_profile#rf_region CcDeviceProfile#rf_region}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotwireless_device_profile#rf_region CcDeviceProfile#rf_region}
     */
     readonly rfRegion?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_device_profile#rx_data_rate_2 CcDeviceProfile#rx_data_rate_2}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotwireless_device_profile#rx_data_rate_2 CcDeviceProfile#rx_data_rate_2}
     */
     readonly rxDataRate2?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_device_profile#rx_delay_1 CcDeviceProfile#rx_delay_1}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotwireless_device_profile#rx_delay_1 CcDeviceProfile#rx_delay_1}
     */
     readonly rxDelay1?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_device_profile#rx_dr_offset_1 CcDeviceProfile#rx_dr_offset_1}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotwireless_device_profile#rx_dr_offset_1 CcDeviceProfile#rx_dr_offset_1}
     */
     readonly rxDrOffset1?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_device_profile#rx_freq_2 CcDeviceProfile#rx_freq_2}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotwireless_device_profile#rx_freq_2 CcDeviceProfile#rx_freq_2}
     */
     readonly rxFreq2?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_device_profile#supports_32_bit_f_cnt CcDeviceProfile#supports_32_bit_f_cnt}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotwireless_device_profile#supports_32_bit_f_cnt CcDeviceProfile#supports_32_bit_f_cnt}
     */
     readonly supports32BitFCnt?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_device_profile#supports_class_b CcDeviceProfile#supports_class_b}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotwireless_device_profile#supports_class_b CcDeviceProfile#supports_class_b}
     */
     readonly supportsClassB?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_device_profile#supports_class_c CcDeviceProfile#supports_class_c}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotwireless_device_profile#supports_class_c CcDeviceProfile#supports_class_c}
     */
     readonly supportsClassC?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_device_profile#supports_join CcDeviceProfile#supports_join}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotwireless_device_profile#supports_join CcDeviceProfile#supports_join}
     */
     readonly supportsJoin?: boolean | cdktn.IResolvable;
 }
@@ -915,11 +915,11 @@ export class LoRaWANDeviceProfilePropertyOutputReference extends cdktn.ComplexOb
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_device_profile#key CcDeviceProfile#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotwireless_device_profile#key CcDeviceProfile#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_device_profile#value CcDeviceProfile#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotwireless_device_profile#value CcDeviceProfile#value}
     */
     readonly value?: string;
 }

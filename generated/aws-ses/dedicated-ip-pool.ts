@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_dedicated_ip_pool
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_dedicated_ip_pool
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,25 +9,25 @@ export interface CcDedicatedIpPoolProps extends cdktn.TerraformMetaArguments {
     /**
     * The name of the dedicated IP pool.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_dedicated_ip_pool#pool_name CcDedicatedIpPool#pool_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_dedicated_ip_pool#pool_name CcDedicatedIpPool#pool_name}
     */
     readonly poolName?: string;
     /**
     * Specifies whether the dedicated IP pool is managed or not. The default value is STANDARD.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_dedicated_ip_pool#scaling_mode CcDedicatedIpPool#scaling_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_dedicated_ip_pool#scaling_mode CcDedicatedIpPool#scaling_mode}
     */
     readonly scalingMode?: string;
     /**
     * The tags (keys and values) associated with the dedicated IP pool.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_dedicated_ip_pool#tags CcDedicatedIpPool#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_dedicated_ip_pool#tags CcDedicatedIpPool#tags}
     */
     readonly tags?: CcDedicatedIpPool.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_dedicated_ip_pool awscc_ses_dedicated_ip_pool}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_dedicated_ip_pool awscc_ses_dedicated_ip_pool}
 */
 export class CcDedicatedIpPool extends cdktn.TerraformResource {
 
@@ -43,7 +43,7 @@ export class CcDedicatedIpPool extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcDedicatedIpPool resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcDedicatedIpPool to import
-    * @param importFromId The id of the existing CcDedicatedIpPool that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_dedicated_ip_pool#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcDedicatedIpPool that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_dedicated_ip_pool#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcDedicatedIpPool to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -55,7 +55,7 @@ export class CcDedicatedIpPool extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_dedicated_ip_pool awscc_ses_dedicated_ip_pool} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_dedicated_ip_pool awscc_ses_dedicated_ip_pool} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +66,7 @@ export class CcDedicatedIpPool extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_ses_dedicated_ip_pool',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -217,11 +217,11 @@ export function ccDedicatedIpPoolTagPropertyToHclTerraform(struct?: CcDedicatedI
 export namespace CcDedicatedIpPool {
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_dedicated_ip_pool#key CcDedicatedIpPool#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_dedicated_ip_pool#key CcDedicatedIpPool#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_dedicated_ip_pool#value CcDedicatedIpPool#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_dedicated_ip_pool#value CcDedicatedIpPool#value}
     */
     readonly value?: string;
 }

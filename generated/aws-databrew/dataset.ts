@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_dataset
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_dataset
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,47 +9,47 @@ export interface CcDatasetProps extends cdktn.TerraformMetaArguments {
     /**
     * Dataset format
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_dataset#format CcDataset#format}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_dataset#format CcDataset#format}
     */
     readonly format?: string;
     /**
     * Format options for dataset
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_dataset#format_options CcDataset#format_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_dataset#format_options CcDataset#format_options}
     */
     readonly formatOptions?: CcDataset.FormatOptionsProperty;
     /**
     * Input
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_dataset#input CcDataset#input}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_dataset#input CcDataset#input}
     */
     readonly input: CcDataset.InputProperty;
     /**
     * Dataset name
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_dataset#name CcDataset#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_dataset#name CcDataset#name}
     */
     readonly name: string;
     /**
     * PathOptions
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_dataset#path_options CcDataset#path_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_dataset#path_options CcDataset#path_options}
     */
     readonly pathOptions?: CcDataset.PathOptionsProperty;
     /**
     * Source type of the dataset
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_dataset#source CcDataset#source}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_dataset#source CcDataset#source}
     */
     readonly source?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_dataset#tags CcDataset#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_dataset#tags CcDataset#tags}
     */
     readonly tags?: CcDataset.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_dataset awscc_databrew_dataset}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_dataset awscc_databrew_dataset}
 */
 export class CcDataset extends cdktn.TerraformResource {
 
@@ -65,7 +65,7 @@ export class CcDataset extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcDataset resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcDataset to import
-    * @param importFromId The id of the existing CcDataset that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_dataset#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcDataset that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_dataset#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcDataset to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -77,7 +77,7 @@ export class CcDataset extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_dataset awscc_databrew_dataset} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_dataset awscc_databrew_dataset} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -88,7 +88,7 @@ export class CcDataset extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_databrew_dataset',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -1174,11 +1174,11 @@ export function ccDatasetTagPropertyToHclTerraform(struct?: CcDataset.TagPropert
 export namespace CcDataset {
 export interface CsvOptionsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_dataset#delimiter CcDataset#delimiter}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_dataset#delimiter CcDataset#delimiter}
     */
     readonly delimiter?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_dataset#header_row CcDataset#header_row}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_dataset#header_row CcDataset#header_row}
     */
     readonly headerRow?: boolean | cdktn.IResolvable;
 }
@@ -1264,15 +1264,15 @@ export class CsvOptionsPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface ExcelOptionsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_dataset#header_row CcDataset#header_row}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_dataset#header_row CcDataset#header_row}
     */
     readonly headerRow?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_dataset#sheet_indexes CcDataset#sheet_indexes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_dataset#sheet_indexes CcDataset#sheet_indexes}
     */
     readonly sheetIndexes?: number[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_dataset#sheet_names CcDataset#sheet_names}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_dataset#sheet_names CcDataset#sheet_names}
     */
     readonly sheetNames?: string[];
 }
@@ -1380,7 +1380,7 @@ export class ExcelOptionsPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface JsonOptionsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_dataset#multi_line CcDataset#multi_line}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_dataset#multi_line CcDataset#multi_line}
     */
     readonly multiLine?: boolean | cdktn.IResolvable;
 }
@@ -1446,17 +1446,17 @@ export interface FormatOptionsProperty {
     /**
     * Csv options
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_dataset#csv CcDataset#csv}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_dataset#csv CcDataset#csv}
     */
     readonly csv?: CsvOptionsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_dataset#excel CcDataset#excel}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_dataset#excel CcDataset#excel}
     */
     readonly excel?: ExcelOptionsProperty;
     /**
     * Json options
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_dataset#json CcDataset#json}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_dataset#json CcDataset#json}
     */
     readonly json?: JsonOptionsProperty;
 }
@@ -1564,17 +1564,17 @@ export class FormatOptionsPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface S3LocationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_dataset#bucket CcDataset#bucket}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_dataset#bucket CcDataset#bucket}
     */
     readonly bucket?: string;
     /**
     * Bucket owner
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_dataset#bucket_owner CcDataset#bucket_owner}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_dataset#bucket_owner CcDataset#bucket_owner}
     */
     readonly bucketOwner?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_dataset#key CcDataset#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_dataset#key CcDataset#key}
     */
     readonly key?: string;
 }
@@ -1684,25 +1684,25 @@ export interface DataCatalogInputDefinitionProperty {
     /**
     * Catalog id
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_dataset#catalog_id CcDataset#catalog_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_dataset#catalog_id CcDataset#catalog_id}
     */
     readonly catalogId?: string;
     /**
     * Database name
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_dataset#database_name CcDataset#database_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_dataset#database_name CcDataset#database_name}
     */
     readonly databaseName?: string;
     /**
     * Table name
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_dataset#table_name CcDataset#table_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_dataset#table_name CcDataset#table_name}
     */
     readonly tableName?: string;
     /**
     * Input location
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_dataset#temp_directory CcDataset#temp_directory}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_dataset#temp_directory CcDataset#temp_directory}
     */
     readonly tempDirectory?: S3LocationProperty;
 }
@@ -1832,17 +1832,17 @@ export class DataCatalogInputDefinitionPropertyOutputReference extends cdktn.Com
 }
 export interface TempDirectoryProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_dataset#bucket CcDataset#bucket}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_dataset#bucket CcDataset#bucket}
     */
     readonly bucket?: string;
     /**
     * Bucket owner
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_dataset#bucket_owner CcDataset#bucket_owner}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_dataset#bucket_owner CcDataset#bucket_owner}
     */
     readonly bucketOwner?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_dataset#key CcDataset#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_dataset#key CcDataset#key}
     */
     readonly key?: string;
 }
@@ -1952,25 +1952,25 @@ export interface DatabaseInputDefinitionProperty {
     /**
     * Database table name
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_dataset#database_table_name CcDataset#database_table_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_dataset#database_table_name CcDataset#database_table_name}
     */
     readonly databaseTableName?: string;
     /**
     * Glue connection name
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_dataset#glue_connection_name CcDataset#glue_connection_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_dataset#glue_connection_name CcDataset#glue_connection_name}
     */
     readonly glueConnectionName?: string;
     /**
     * Custom SQL to run against the provided AWS Glue connection. This SQL will be used as the input for DataBrew projects and jobs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_dataset#query_string CcDataset#query_string}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_dataset#query_string CcDataset#query_string}
     */
     readonly queryString?: string;
     /**
     * Input location
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_dataset#temp_directory CcDataset#temp_directory}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_dataset#temp_directory CcDataset#temp_directory}
     */
     readonly tempDirectory?: TempDirectoryProperty;
 }
@@ -2102,7 +2102,7 @@ export interface MetadataProperty {
     /**
     * Arn of the source of the dataset. For e.g.: AppFlow Flow ARN.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_dataset#source_arn CcDataset#source_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_dataset#source_arn CcDataset#source_arn}
     */
     readonly sourceArn?: string;
 }
@@ -2166,17 +2166,17 @@ export class MetadataPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface S3InputDefinitionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_dataset#bucket CcDataset#bucket}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_dataset#bucket CcDataset#bucket}
     */
     readonly bucket?: string;
     /**
     * Bucket owner
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_dataset#bucket_owner CcDataset#bucket_owner}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_dataset#bucket_owner CcDataset#bucket_owner}
     */
     readonly bucketOwner?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_dataset#key CcDataset#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_dataset#key CcDataset#key}
     */
     readonly key?: string;
 }
@@ -2284,21 +2284,21 @@ export class S3InputDefinitionPropertyOutputReference extends cdktn.ComplexObjec
 }
 export interface InputProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_dataset#data_catalog_input_definition CcDataset#data_catalog_input_definition}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_dataset#data_catalog_input_definition CcDataset#data_catalog_input_definition}
     */
     readonly dataCatalogInputDefinition?: DataCatalogInputDefinitionProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_dataset#database_input_definition CcDataset#database_input_definition}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_dataset#database_input_definition CcDataset#database_input_definition}
     */
     readonly databaseInputDefinition?: DatabaseInputDefinitionProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_dataset#metadata CcDataset#metadata}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_dataset#metadata CcDataset#metadata}
     */
     readonly metadata?: MetadataProperty;
     /**
     * Input location
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_dataset#s3_input_definition CcDataset#s3_input_definition}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_dataset#s3_input_definition CcDataset#s3_input_definition}
     */
     readonly s3InputDefinition?: S3InputDefinitionProperty;
 }
@@ -2430,19 +2430,19 @@ export interface FilesLimitProperty {
     /**
     * Maximum number of files
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_dataset#max_files CcDataset#max_files}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_dataset#max_files CcDataset#max_files}
     */
     readonly maxFiles?: number;
     /**
     * Order
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_dataset#order CcDataset#order}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_dataset#order CcDataset#order}
     */
     readonly order?: string;
     /**
     * Ordered by
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_dataset#ordered_by CcDataset#ordered_by}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_dataset#ordered_by CcDataset#ordered_by}
     */
     readonly orderedBy?: string;
 }
@@ -2550,13 +2550,13 @@ export class FilesLimitPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface FilterValueProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_dataset#value CcDataset#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_dataset#value CcDataset#value}
     */
     readonly value?: string;
     /**
     * Variable name
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_dataset#value_reference CcDataset#value_reference}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_dataset#value_reference CcDataset#value_reference}
     */
     readonly valueReference?: string;
 }
@@ -2666,11 +2666,11 @@ export interface FilterExpressionProperty {
     /**
     * Filtering expression for a parameter
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_dataset#expression CcDataset#expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_dataset#expression CcDataset#expression}
     */
     readonly expression?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_dataset#values_map CcDataset#values_map}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_dataset#values_map CcDataset#values_map}
     */
     readonly valuesMap?: FilterValueProperty[] | cdktn.IResolvable;
 }
@@ -2758,19 +2758,19 @@ export interface DatetimeOptionsProperty {
     /**
     * Date/time format of a date parameter
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_dataset#format CcDataset#format}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_dataset#format CcDataset#format}
     */
     readonly format?: string;
     /**
     * Locale code for a date parameter
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_dataset#locale_code CcDataset#locale_code}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_dataset#locale_code CcDataset#locale_code}
     */
     readonly localeCode?: string;
     /**
     * Timezone offset
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_dataset#timezone_offset CcDataset#timezone_offset}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_dataset#timezone_offset CcDataset#timezone_offset}
     */
     readonly timezoneOffset?: string;
 }
@@ -2878,13 +2878,13 @@ export class DatetimeOptionsPropertyOutputReference extends cdktn.ComplexObject 
 }
 export interface ValuesMapProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_dataset#value CcDataset#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_dataset#value CcDataset#value}
     */
     readonly value?: string;
     /**
     * Variable name
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_dataset#value_reference CcDataset#value_reference}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_dataset#value_reference CcDataset#value_reference}
     */
     readonly valueReference?: string;
 }
@@ -2994,11 +2994,11 @@ export interface FilterProperty {
     /**
     * Filtering expression for a parameter
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_dataset#expression CcDataset#expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_dataset#expression CcDataset#expression}
     */
     readonly expression?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_dataset#values_map CcDataset#values_map}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_dataset#values_map CcDataset#values_map}
     */
     readonly valuesMap?: ValuesMapProperty[] | cdktn.IResolvable;
 }
@@ -3086,27 +3086,27 @@ export interface DatasetParameterProperty {
     /**
     * Add the value of this parameter as a column in a dataset.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_dataset#create_column CcDataset#create_column}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_dataset#create_column CcDataset#create_column}
     */
     readonly createColumn?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_dataset#datetime_options CcDataset#datetime_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_dataset#datetime_options CcDataset#datetime_options}
     */
     readonly datetimeOptions?: DatetimeOptionsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_dataset#filter CcDataset#filter}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_dataset#filter CcDataset#filter}
     */
     readonly filter?: FilterProperty;
     /**
     * Parameter name
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_dataset#name CcDataset#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_dataset#name CcDataset#name}
     */
     readonly name?: string;
     /**
     * Parameter type
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_dataset#type CcDataset#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_dataset#type CcDataset#type}
     */
     readonly type?: string;
 }
@@ -3258,13 +3258,13 @@ export class DatasetParameterPropertyOutputReference extends cdktn.ComplexObject
 }
 export interface PathParameterProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_dataset#dataset_parameter CcDataset#dataset_parameter}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_dataset#dataset_parameter CcDataset#dataset_parameter}
     */
     readonly datasetParameter?: DatasetParameterProperty;
     /**
     * Parameter name
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_dataset#path_parameter_name CcDataset#path_parameter_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_dataset#path_parameter_name CcDataset#path_parameter_name}
     */
     readonly pathParameterName?: string;
 }
@@ -3372,15 +3372,15 @@ export class PathParameterPropertyList extends cdktn.ComplexList {
 }
 export interface PathOptionsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_dataset#files_limit CcDataset#files_limit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_dataset#files_limit CcDataset#files_limit}
     */
     readonly filesLimit?: FilesLimitProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_dataset#last_modified_date_condition CcDataset#last_modified_date_condition}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_dataset#last_modified_date_condition CcDataset#last_modified_date_condition}
     */
     readonly lastModifiedDateCondition?: FilterExpressionProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_dataset#parameters CcDataset#parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_dataset#parameters CcDataset#parameters}
     */
     readonly parameters?: PathParameterProperty[] | cdktn.IResolvable;
 }
@@ -3488,11 +3488,11 @@ export class PathOptionsPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_dataset#key CcDataset#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_dataset#key CcDataset#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_dataset#value CcDataset#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_dataset#value CcDataset#value}
     */
     readonly value?: string;
 }

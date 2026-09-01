@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_origin_request_policy
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudfront_origin_request_policy
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,13 +9,13 @@ export interface CcOriginRequestPolicyProps extends cdktn.TerraformMetaArguments
     /**
     * The origin request policy configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_origin_request_policy#origin_request_policy_config CcOriginRequestPolicy#origin_request_policy_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudfront_origin_request_policy#origin_request_policy_config CcOriginRequestPolicy#origin_request_policy_config}
     */
     readonly originRequestPolicyConfig: CcOriginRequestPolicy.OriginRequestPolicyConfigProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_origin_request_policy awscc_cloudfront_origin_request_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudfront_origin_request_policy awscc_cloudfront_origin_request_policy}
 */
 export class CcOriginRequestPolicy extends cdktn.TerraformResource {
 
@@ -31,7 +31,7 @@ export class CcOriginRequestPolicy extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcOriginRequestPolicy resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcOriginRequestPolicy to import
-    * @param importFromId The id of the existing CcOriginRequestPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_origin_request_policy#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcOriginRequestPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudfront_origin_request_policy#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcOriginRequestPolicy to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -43,7 +43,7 @@ export class CcOriginRequestPolicy extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_origin_request_policy awscc_cloudfront_origin_request_policy} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudfront_origin_request_policy awscc_cloudfront_origin_request_policy} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -54,7 +54,7 @@ export class CcOriginRequestPolicy extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_cloudfront_origin_request_policy',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -302,13 +302,13 @@ export interface CookiesConfigProperty {
     *   +  ``all`` ? All cookies in viewer requests are included in requests that CloudFront sends to the origin.
     *   +  ``allExcept`` ? All cookies in viewer requests are included in requests that CloudFront sends to the origin, *except* for those listed in the ``CookieNames`` type, which are not included.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_origin_request_policy#cookie_behavior CcOriginRequestPolicy#cookie_behavior}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudfront_origin_request_policy#cookie_behavior CcOriginRequestPolicy#cookie_behavior}
     */
     readonly cookieBehavior: string;
     /**
     * Contains a list of cookie names.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_origin_request_policy#cookies CcOriginRequestPolicy#cookies}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudfront_origin_request_policy#cookies CcOriginRequestPolicy#cookies}
     */
     readonly cookies?: string[];
 }
@@ -398,13 +398,13 @@ export interface HeadersConfigProperty {
     *   +  ``allViewerAndWhitelistCloudFront`` ? All HTTP headers in viewer requests and the additional CloudFront headers that are listed in the ``Headers`` type are included in requests that CloudFront sends to the origin. The additional headers are added by CloudFront.
     *   +  ``allExcept`` ? All HTTP headers in viewer requests are included in requests that CloudFront sends to the origin, *except* for those listed in the ``Headers`` type, which are not included.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_origin_request_policy#header_behavior CcOriginRequestPolicy#header_behavior}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudfront_origin_request_policy#header_behavior CcOriginRequestPolicy#header_behavior}
     */
     readonly headerBehavior: string;
     /**
     * Contains a list of HTTP header names.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_origin_request_policy#headers CcOriginRequestPolicy#headers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudfront_origin_request_policy#headers CcOriginRequestPolicy#headers}
     */
     readonly headers?: string[];
 }
@@ -493,13 +493,13 @@ export interface QueryStringsConfigProperty {
     *   +  ``all`` ? All query strings in viewer requests are included in requests that CloudFront sends to the origin.
     *   +  ``allExcept`` ? All query strings in viewer requests are included in requests that CloudFront sends to the origin, *except* for those listed in the ``QueryStringNames`` type, which are not included.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_origin_request_policy#query_string_behavior CcOriginRequestPolicy#query_string_behavior}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudfront_origin_request_policy#query_string_behavior CcOriginRequestPolicy#query_string_behavior}
     */
     readonly queryStringBehavior: string;
     /**
     * Contains a list of query string names.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_origin_request_policy#query_strings CcOriginRequestPolicy#query_strings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudfront_origin_request_policy#query_strings CcOriginRequestPolicy#query_strings}
     */
     readonly queryStrings?: string[];
 }
@@ -584,31 +584,31 @@ export interface OriginRequestPolicyConfigProperty {
     /**
     * A comment to describe the origin request policy. The comment cannot be longer than 128 characters.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_origin_request_policy#comment CcOriginRequestPolicy#comment}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudfront_origin_request_policy#comment CcOriginRequestPolicy#comment}
     */
     readonly comment?: string;
     /**
     * The cookies from viewer requests to include in origin requests.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_origin_request_policy#cookies_config CcOriginRequestPolicy#cookies_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudfront_origin_request_policy#cookies_config CcOriginRequestPolicy#cookies_config}
     */
     readonly cookiesConfig: CookiesConfigProperty;
     /**
     * The HTTP headers to include in origin requests. These can include headers from viewer requests and additional headers added by CloudFront.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_origin_request_policy#headers_config CcOriginRequestPolicy#headers_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudfront_origin_request_policy#headers_config CcOriginRequestPolicy#headers_config}
     */
     readonly headersConfig: HeadersConfigProperty;
     /**
     * A unique name to identify the origin request policy.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_origin_request_policy#name CcOriginRequestPolicy#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudfront_origin_request_policy#name CcOriginRequestPolicy#name}
     */
     readonly name: string;
     /**
     * The URL query strings from viewer requests to include in origin requests.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_origin_request_policy#query_strings_config CcOriginRequestPolicy#query_strings_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudfront_origin_request_policy#query_strings_config CcOriginRequestPolicy#query_strings_config}
     */
     readonly queryStringsConfig: QueryStringsConfigProperty;
 }

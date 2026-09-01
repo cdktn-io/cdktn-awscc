@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,43 +9,43 @@ export interface CcKnowledgeBaseProps extends cdktn.TerraformMetaArguments {
     /**
     * Description of the Resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#description CcKnowledgeBase#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#description CcKnowledgeBase#description}
     */
     readonly description?: string;
     /**
     * Contains details about the embeddings model used for the knowledge base.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#knowledge_base_configuration CcKnowledgeBase#knowledge_base_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#knowledge_base_configuration CcKnowledgeBase#knowledge_base_configuration}
     */
     readonly knowledgeBaseConfiguration: CcKnowledgeBase.KnowledgeBaseConfigurationProperty;
     /**
     * The name of the knowledge base.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#name CcKnowledgeBase#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#name CcKnowledgeBase#name}
     */
     readonly name: string;
     /**
     * The ARN of the IAM role with permissions to invoke API operations on the knowledge base. The ARN must begin with AmazonBedrockExecutionRoleForKnowledgeBase_
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#role_arn CcKnowledgeBase#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#role_arn CcKnowledgeBase#role_arn}
     */
     readonly roleArn: string;
     /**
     * The vector store service in which the knowledge base is stored.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#storage_configuration CcKnowledgeBase#storage_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#storage_configuration CcKnowledgeBase#storage_configuration}
     */
     readonly storageConfiguration?: CcKnowledgeBase.StorageConfigurationProperty;
     /**
     * A map of tag keys and values
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#tags CcKnowledgeBase#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#tags CcKnowledgeBase#tags}
     */
     readonly tags?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base awscc_bedrock_knowledge_base}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base awscc_bedrock_knowledge_base}
 */
 export class CcKnowledgeBase extends cdktn.TerraformResource {
 
@@ -61,7 +61,7 @@ export class CcKnowledgeBase extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcKnowledgeBase resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcKnowledgeBase to import
-    * @param importFromId The id of the existing CcKnowledgeBase that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcKnowledgeBase that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcKnowledgeBase to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -73,7 +73,7 @@ export class CcKnowledgeBase extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base awscc_bedrock_knowledge_base} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base awscc_bedrock_knowledge_base} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -84,7 +84,7 @@ export class CcKnowledgeBase extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_bedrock_knowledge_base',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -2302,7 +2302,7 @@ export interface KendraKnowledgeBaseConfigurationProperty {
     /**
     * Arn of a Kendra index
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#kendra_index_arn CcKnowledgeBase#kendra_index_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#kendra_index_arn CcKnowledgeBase#kendra_index_arn}
     */
     readonly kendraIndexArn?: string;
 }
@@ -2368,7 +2368,7 @@ export interface AudioSegmentationConfigurationProperty {
     /**
     * Duration in seconds to segment the multi modal media
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#fixed_length_duration CcKnowledgeBase#fixed_length_duration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#fixed_length_duration CcKnowledgeBase#fixed_length_duration}
     */
     readonly fixedLengthDuration?: number;
 }
@@ -2434,7 +2434,7 @@ export interface AudioConfigurationProperty {
     /**
     * Configure the audio segmentation configuration for multi modal ingestion.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#segmentation_configuration CcKnowledgeBase#segmentation_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#segmentation_configuration CcKnowledgeBase#segmentation_configuration}
     */
     readonly segmentationConfiguration?: AudioSegmentationConfigurationProperty;
 }
@@ -2522,7 +2522,7 @@ export interface VideoSegmentationConfigurationProperty {
     /**
     * Duration in seconds to segment the multi modal media
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#fixed_length_duration CcKnowledgeBase#fixed_length_duration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#fixed_length_duration CcKnowledgeBase#fixed_length_duration}
     */
     readonly fixedLengthDuration?: number;
 }
@@ -2588,7 +2588,7 @@ export interface VideoConfigurationProperty {
     /**
     * Configure the video segmentation configuration for multi modal ingestion.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#segmentation_configuration CcKnowledgeBase#segmentation_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#segmentation_configuration CcKnowledgeBase#segmentation_configuration}
     */
     readonly segmentationConfiguration?: VideoSegmentationConfigurationProperty;
 }
@@ -2676,25 +2676,25 @@ export interface BedrockEmbeddingModelConfigurationProperty {
     /**
     * List of audio configurations for multi modal ingestion.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#audio CcKnowledgeBase#audio}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#audio CcKnowledgeBase#audio}
     */
     readonly audio?: AudioConfigurationProperty[] | cdktn.IResolvable;
     /**
     * The dimensions details for the vector configuration used on the Bedrock embeddings model.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#dimensions CcKnowledgeBase#dimensions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#dimensions CcKnowledgeBase#dimensions}
     */
     readonly dimensions?: number;
     /**
     * The data type for the vectors when using a model to convert text into vector embeddings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#embedding_data_type CcKnowledgeBase#embedding_data_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#embedding_data_type CcKnowledgeBase#embedding_data_type}
     */
     readonly embeddingDataType?: string;
     /**
     * List of video configurations for multi modal ingestion.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#video CcKnowledgeBase#video}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#video CcKnowledgeBase#video}
     */
     readonly video?: VideoConfigurationProperty[] | cdktn.IResolvable;
 }
@@ -2826,7 +2826,7 @@ export interface EmbeddingModelConfigurationProperty {
     /**
     * The vector configuration details for the Bedrock embeddings model.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#bedrock_embedding_model_configuration CcKnowledgeBase#bedrock_embedding_model_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#bedrock_embedding_model_configuration CcKnowledgeBase#bedrock_embedding_model_configuration}
     */
     readonly bedrockEmbeddingModelConfiguration?: BedrockEmbeddingModelConfigurationProperty;
 }
@@ -2892,7 +2892,7 @@ export interface ManagedKnowledgeBaseServerSideEncryptionConfigurationProperty {
     /**
     * The ARN of the AWS KMS key used to encrypt the managed knowledge base.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#kms_key_arn CcKnowledgeBase#kms_key_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#kms_key_arn CcKnowledgeBase#kms_key_arn}
     */
     readonly kmsKeyArn?: string;
 }
@@ -2958,25 +2958,25 @@ export interface ManagedKnowledgeBaseConfigurationProperty {
     /**
     * The ARN of the model used to create vector embeddings for the knowledge base.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#embedding_model_arn CcKnowledgeBase#embedding_model_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#embedding_model_arn CcKnowledgeBase#embedding_model_arn}
     */
     readonly embeddingModelArn?: string;
     /**
     * The embeddings model configuration details for the vector model used in Knowledge Base.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#embedding_model_configuration CcKnowledgeBase#embedding_model_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#embedding_model_configuration CcKnowledgeBase#embedding_model_configuration}
     */
     readonly embeddingModelConfiguration?: EmbeddingModelConfigurationProperty;
     /**
     * The type of embedding model to use for the managed knowledge base.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#embedding_model_type CcKnowledgeBase#embedding_model_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#embedding_model_type CcKnowledgeBase#embedding_model_type}
     */
     readonly embeddingModelType?: string;
     /**
     * Contains details about the server-side encryption for the managed knowledge base.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#server_side_encryption_configuration CcKnowledgeBase#server_side_encryption_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#server_side_encryption_configuration CcKnowledgeBase#server_side_encryption_configuration}
     */
     readonly serverSideEncryptionConfiguration?: ManagedKnowledgeBaseServerSideEncryptionConfigurationProperty;
 }
@@ -3108,19 +3108,19 @@ export interface RedshiftProvisionedAuthConfigurationProperty {
     /**
     * Redshift database user
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#database_user CcKnowledgeBase#database_user}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#database_user CcKnowledgeBase#database_user}
     */
     readonly databaseUser?: string;
     /**
     * Provisioned Redshift auth type
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#type CcKnowledgeBase#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#type CcKnowledgeBase#type}
     */
     readonly type?: string;
     /**
     * Arn of a SecretsManager Secret
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#username_password_secret_arn CcKnowledgeBase#username_password_secret_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#username_password_secret_arn CcKnowledgeBase#username_password_secret_arn}
     */
     readonly usernamePasswordSecretArn?: string;
 }
@@ -3230,13 +3230,13 @@ export interface RedshiftProvisionedConfigurationProperty {
     /**
     * Configurations for Redshift query engine provisioned auth setup
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#auth_configuration CcKnowledgeBase#auth_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#auth_configuration CcKnowledgeBase#auth_configuration}
     */
     readonly authConfiguration?: RedshiftProvisionedAuthConfigurationProperty;
     /**
     * Redshift cluster identifier
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#cluster_identifier CcKnowledgeBase#cluster_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#cluster_identifier CcKnowledgeBase#cluster_identifier}
     */
     readonly clusterIdentifier?: string;
 }
@@ -3324,13 +3324,13 @@ export interface RedshiftServerlessAuthConfigurationProperty {
     /**
     * Serverless Redshift auth type
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#type CcKnowledgeBase#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#type CcKnowledgeBase#type}
     */
     readonly type?: string;
     /**
     * Arn of a SecretsManager Secret
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#username_password_secret_arn CcKnowledgeBase#username_password_secret_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#username_password_secret_arn CcKnowledgeBase#username_password_secret_arn}
     */
     readonly usernamePasswordSecretArn?: string;
 }
@@ -3418,13 +3418,13 @@ export interface RedshiftServerlessConfigurationProperty {
     /**
     * Configurations for Redshift query engine serverless auth setup
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#auth_configuration CcKnowledgeBase#auth_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#auth_configuration CcKnowledgeBase#auth_configuration}
     */
     readonly authConfiguration?: RedshiftServerlessAuthConfigurationProperty;
     /**
     * Workgroup arn
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#workgroup_arn CcKnowledgeBase#workgroup_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#workgroup_arn CcKnowledgeBase#workgroup_arn}
     */
     readonly workgroupArn?: string;
 }
@@ -3512,19 +3512,19 @@ export interface RedshiftQueryEngineConfigurationProperty {
     /**
     * Configurations for provisioned Redshift query engine
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#provisioned_configuration CcKnowledgeBase#provisioned_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#provisioned_configuration CcKnowledgeBase#provisioned_configuration}
     */
     readonly provisionedConfiguration?: RedshiftProvisionedConfigurationProperty;
     /**
     * Configurations for serverless Redshift query engine
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#serverless_configuration CcKnowledgeBase#serverless_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#serverless_configuration CcKnowledgeBase#serverless_configuration}
     */
     readonly serverlessConfiguration?: RedshiftServerlessConfigurationProperty;
     /**
     * Redshift query engine type
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#type CcKnowledgeBase#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#type CcKnowledgeBase#type}
     */
     readonly type?: string;
 }
@@ -3634,13 +3634,13 @@ export interface CuratedQueryProperty {
     /**
     * Question for the curated query
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#natural_language CcKnowledgeBase#natural_language}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#natural_language CcKnowledgeBase#natural_language}
     */
     readonly naturalLanguage?: string;
     /**
     * Answer for the curated query
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#sql CcKnowledgeBase#sql}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#sql CcKnowledgeBase#sql}
     */
     readonly sql?: string;
 }
@@ -3750,19 +3750,19 @@ export interface QueryGenerationColumnProperty {
     /**
     * Description for the attached entity
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#description CcKnowledgeBase#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#description CcKnowledgeBase#description}
     */
     readonly description?: string;
     /**
     * Include or Exclude status for an entity
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#inclusion CcKnowledgeBase#inclusion}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#inclusion CcKnowledgeBase#inclusion}
     */
     readonly inclusion?: string;
     /**
     * Query generation column name
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#name CcKnowledgeBase#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#name CcKnowledgeBase#name}
     */
     readonly name?: string;
 }
@@ -3894,25 +3894,25 @@ export interface QueryGenerationTableProperty {
     /**
     * List of Redshift query generation columns
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#columns CcKnowledgeBase#columns}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#columns CcKnowledgeBase#columns}
     */
     readonly columns?: QueryGenerationColumnProperty[] | cdktn.IResolvable;
     /**
     * Description for the attached entity
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#description CcKnowledgeBase#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#description CcKnowledgeBase#description}
     */
     readonly description?: string;
     /**
     * Include or Exclude status for an entity
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#inclusion CcKnowledgeBase#inclusion}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#inclusion CcKnowledgeBase#inclusion}
     */
     readonly inclusion?: string;
     /**
     * Query generation table name. Must follow three-part notation
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#name CcKnowledgeBase#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#name CcKnowledgeBase#name}
     */
     readonly name?: string;
 }
@@ -4066,13 +4066,13 @@ export interface QueryGenerationContextProperty {
     /**
     * List of example queries and results
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#curated_queries CcKnowledgeBase#curated_queries}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#curated_queries CcKnowledgeBase#curated_queries}
     */
     readonly curatedQueries?: CuratedQueryProperty[] | cdktn.IResolvable;
     /**
     * List of tables used for Redshift query generation context
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#tables CcKnowledgeBase#tables}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#tables CcKnowledgeBase#tables}
     */
     readonly tables?: QueryGenerationTableProperty[] | cdktn.IResolvable;
 }
@@ -4160,13 +4160,13 @@ export interface QueryGenerationConfigurationProperty {
     /**
     * Max query execution timeout
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#execution_timeout_seconds CcKnowledgeBase#execution_timeout_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#execution_timeout_seconds CcKnowledgeBase#execution_timeout_seconds}
     */
     readonly executionTimeoutSeconds?: number;
     /**
     * Context used to improve query generation
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#generation_context CcKnowledgeBase#generation_context}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#generation_context CcKnowledgeBase#generation_context}
     */
     readonly generationContext?: QueryGenerationContextProperty;
 }
@@ -4254,7 +4254,7 @@ export interface RedshiftQueryEngineAwsDataCatalogStorageConfigurationProperty {
     /**
     * List of table names in AWS Data Catalog. Must follow two part notation
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#table_names CcKnowledgeBase#table_names}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#table_names CcKnowledgeBase#table_names}
     */
     readonly tableNames?: string[];
 }
@@ -4320,7 +4320,7 @@ export interface RedshiftQueryEngineRedshiftStorageConfigurationProperty {
     /**
     * Redshift database name
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#database_name CcKnowledgeBase#database_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#database_name CcKnowledgeBase#database_name}
     */
     readonly databaseName?: string;
 }
@@ -4386,19 +4386,19 @@ export interface RedshiftQueryEngineStorageConfigurationProperty {
     /**
     * Configurations for Redshift query engine AWS Data Catalog backed storage
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#aws_data_catalog_configuration CcKnowledgeBase#aws_data_catalog_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#aws_data_catalog_configuration CcKnowledgeBase#aws_data_catalog_configuration}
     */
     readonly awsDataCatalogConfiguration?: RedshiftQueryEngineAwsDataCatalogStorageConfigurationProperty;
     /**
     * Configurations for Redshift query engine Redshift backed storage
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#redshift_configuration CcKnowledgeBase#redshift_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#redshift_configuration CcKnowledgeBase#redshift_configuration}
     */
     readonly redshiftConfiguration?: RedshiftQueryEngineRedshiftStorageConfigurationProperty;
     /**
     * Redshift query engine storage type
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#type CcKnowledgeBase#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#type CcKnowledgeBase#type}
     */
     readonly type?: string;
 }
@@ -4530,19 +4530,19 @@ export interface RedshiftConfigurationProperty {
     /**
     * Configurations for Redshift query engine
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#query_engine_configuration CcKnowledgeBase#query_engine_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#query_engine_configuration CcKnowledgeBase#query_engine_configuration}
     */
     readonly queryEngineConfiguration?: RedshiftQueryEngineConfigurationProperty;
     /**
     * Configurations for generating Redshift engine queries
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#query_generation_configuration CcKnowledgeBase#query_generation_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#query_generation_configuration CcKnowledgeBase#query_generation_configuration}
     */
     readonly queryGenerationConfiguration?: QueryGenerationConfigurationProperty;
     /**
     * List of configurations for available Redshift query engine storage types
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#storage_configurations CcKnowledgeBase#storage_configurations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#storage_configurations CcKnowledgeBase#storage_configurations}
     */
     readonly storageConfigurations?: RedshiftQueryEngineStorageConfigurationProperty[] | cdktn.IResolvable;
 }
@@ -4652,13 +4652,13 @@ export interface SqlKnowledgeBaseConfigurationProperty {
     /**
     * Configurations for a Redshift knowledge base
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#redshift_configuration CcKnowledgeBase#redshift_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#redshift_configuration CcKnowledgeBase#redshift_configuration}
     */
     readonly redshiftConfiguration?: RedshiftConfigurationProperty;
     /**
     * SQL query engine type
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#type CcKnowledgeBase#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#type CcKnowledgeBase#type}
     */
     readonly type?: string;
 }
@@ -4746,7 +4746,7 @@ export interface KnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbed
     /**
     * Duration in seconds to segment the multi modal media
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#fixed_length_duration CcKnowledgeBase#fixed_length_duration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#fixed_length_duration CcKnowledgeBase#fixed_length_duration}
     */
     readonly fixedLengthDuration?: number;
 }
@@ -4812,7 +4812,7 @@ export interface AudioProperty {
     /**
     * Configure the audio segmentation configuration for multi modal ingestion.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#segmentation_configuration CcKnowledgeBase#segmentation_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#segmentation_configuration CcKnowledgeBase#segmentation_configuration}
     */
     readonly segmentationConfiguration?: KnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationAudioSegmentationConfigurationProperty;
 }
@@ -4900,7 +4900,7 @@ export interface KnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbed
     /**
     * Duration in seconds to segment the multi modal media
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#fixed_length_duration CcKnowledgeBase#fixed_length_duration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#fixed_length_duration CcKnowledgeBase#fixed_length_duration}
     */
     readonly fixedLengthDuration?: number;
 }
@@ -4966,7 +4966,7 @@ export interface VideoProperty {
     /**
     * Configure the video segmentation configuration for multi modal ingestion.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#segmentation_configuration CcKnowledgeBase#segmentation_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#segmentation_configuration CcKnowledgeBase#segmentation_configuration}
     */
     readonly segmentationConfiguration?: KnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationVideoSegmentationConfigurationProperty;
 }
@@ -5054,25 +5054,25 @@ export interface KnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbed
     /**
     * List of audio configurations for multi modal ingestion.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#audio CcKnowledgeBase#audio}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#audio CcKnowledgeBase#audio}
     */
     readonly audio?: AudioProperty[] | cdktn.IResolvable;
     /**
     * The dimensions details for the vector configuration used on the Bedrock embeddings model.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#dimensions CcKnowledgeBase#dimensions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#dimensions CcKnowledgeBase#dimensions}
     */
     readonly dimensions?: number;
     /**
     * The data type for the vectors when using a model to convert text into vector embeddings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#embedding_data_type CcKnowledgeBase#embedding_data_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#embedding_data_type CcKnowledgeBase#embedding_data_type}
     */
     readonly embeddingDataType?: string;
     /**
     * List of video configurations for multi modal ingestion.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#video CcKnowledgeBase#video}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#video CcKnowledgeBase#video}
     */
     readonly video?: VideoProperty[] | cdktn.IResolvable;
 }
@@ -5204,7 +5204,7 @@ export interface KnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbed
     /**
     * The vector configuration details for the Bedrock embeddings model.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#bedrock_embedding_model_configuration CcKnowledgeBase#bedrock_embedding_model_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#bedrock_embedding_model_configuration CcKnowledgeBase#bedrock_embedding_model_configuration}
     */
     readonly bedrockEmbeddingModelConfiguration?: KnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationProperty;
 }
@@ -5270,7 +5270,7 @@ export interface S3LocationProperty {
     /**
     * The location's URI
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#uri CcKnowledgeBase#uri}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#uri CcKnowledgeBase#uri}
     */
     readonly uri?: string;
 }
@@ -5336,13 +5336,13 @@ export interface SupplementalDataStorageLocationProperty {
     /**
     * An Amazon S3 location.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#s3_location CcKnowledgeBase#s3_location}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#s3_location CcKnowledgeBase#s3_location}
     */
     readonly s3Location?: S3LocationProperty;
     /**
     * Supplemental data storage location type.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#supplemental_data_storage_location_type CcKnowledgeBase#supplemental_data_storage_location_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#supplemental_data_storage_location_type CcKnowledgeBase#supplemental_data_storage_location_type}
     */
     readonly supplementalDataStorageLocationType?: string;
 }
@@ -5452,7 +5452,7 @@ export interface SupplementalDataStorageConfigurationProperty {
     /**
     * List of supplemental data storage locations.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#supplemental_data_storage_locations CcKnowledgeBase#supplemental_data_storage_locations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#supplemental_data_storage_locations CcKnowledgeBase#supplemental_data_storage_locations}
     */
     readonly supplementalDataStorageLocations?: SupplementalDataStorageLocationProperty[] | cdktn.IResolvable;
 }
@@ -5518,19 +5518,19 @@ export interface VectorKnowledgeBaseConfigurationProperty {
     /**
     * The ARN of the model used to create vector embeddings for the knowledge base.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#embedding_model_arn CcKnowledgeBase#embedding_model_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#embedding_model_arn CcKnowledgeBase#embedding_model_arn}
     */
     readonly embeddingModelArn?: string;
     /**
     * The embeddings model configuration details for the vector model used in Knowledge Base.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#embedding_model_configuration CcKnowledgeBase#embedding_model_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#embedding_model_configuration CcKnowledgeBase#embedding_model_configuration}
     */
     readonly embeddingModelConfiguration?: KnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationProperty;
     /**
     * Configurations for supplemental data storage.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#supplemental_data_storage_configuration CcKnowledgeBase#supplemental_data_storage_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#supplemental_data_storage_configuration CcKnowledgeBase#supplemental_data_storage_configuration}
     */
     readonly supplementalDataStorageConfiguration?: SupplementalDataStorageConfigurationProperty;
 }
@@ -5640,31 +5640,31 @@ export interface KnowledgeBaseConfigurationProperty {
     /**
     * Configurations for a Kendra knowledge base
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#kendra_knowledge_base_configuration CcKnowledgeBase#kendra_knowledge_base_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#kendra_knowledge_base_configuration CcKnowledgeBase#kendra_knowledge_base_configuration}
     */
     readonly kendraKnowledgeBaseConfiguration?: KendraKnowledgeBaseConfigurationProperty;
     /**
     * Contains details about the model used to create vector embeddings for a managed knowledge base.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#managed_knowledge_base_configuration CcKnowledgeBase#managed_knowledge_base_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#managed_knowledge_base_configuration CcKnowledgeBase#managed_knowledge_base_configuration}
     */
     readonly managedKnowledgeBaseConfiguration?: ManagedKnowledgeBaseConfigurationProperty;
     /**
     * Configurations for a SQL knowledge base
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#sql_knowledge_base_configuration CcKnowledgeBase#sql_knowledge_base_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#sql_knowledge_base_configuration CcKnowledgeBase#sql_knowledge_base_configuration}
     */
     readonly sqlKnowledgeBaseConfiguration?: SqlKnowledgeBaseConfigurationProperty;
     /**
     * The type of a knowledge base.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#type CcKnowledgeBase#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#type CcKnowledgeBase#type}
     */
     readonly type: string;
     /**
     * Contains details about the model used to create vector embeddings for the knowledge base.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#vector_knowledge_base_configuration CcKnowledgeBase#vector_knowledge_base_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#vector_knowledge_base_configuration CcKnowledgeBase#vector_knowledge_base_configuration}
     */
     readonly vectorKnowledgeBaseConfiguration?: VectorKnowledgeBaseConfigurationProperty;
 }
@@ -5815,19 +5815,19 @@ export interface MongoDbAtlasFieldMappingProperty {
     /**
     * The name of the field in which Amazon Bedrock stores metadata about the vector store.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#metadata_field CcKnowledgeBase#metadata_field}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#metadata_field CcKnowledgeBase#metadata_field}
     */
     readonly metadataField?: string;
     /**
     * The name of the field in which Amazon Bedrock stores the raw text from your data. The text is split according to the chunking strategy you choose.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#text_field CcKnowledgeBase#text_field}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#text_field CcKnowledgeBase#text_field}
     */
     readonly textField?: string;
     /**
     * The name of the field in which Amazon Bedrock stores the vector embeddings for your data sources.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#vector_field CcKnowledgeBase#vector_field}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#vector_field CcKnowledgeBase#vector_field}
     */
     readonly vectorField?: string;
 }
@@ -5937,49 +5937,49 @@ export interface MongoDbAtlasConfigurationProperty {
     /**
     * Name of the collection within MongoDB Atlas.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#collection_name CcKnowledgeBase#collection_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#collection_name CcKnowledgeBase#collection_name}
     */
     readonly collectionName?: string;
     /**
     * The ARN of the secret that you created in AWS Secrets Manager that is linked to your Amazon Mongo database.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#credentials_secret_arn CcKnowledgeBase#credentials_secret_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#credentials_secret_arn CcKnowledgeBase#credentials_secret_arn}
     */
     readonly credentialsSecretArn?: string;
     /**
     * Name of the database within MongoDB Atlas.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#database_name CcKnowledgeBase#database_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#database_name CcKnowledgeBase#database_name}
     */
     readonly databaseName?: string;
     /**
     * MongoDB Atlas endpoint.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#endpoint CcKnowledgeBase#endpoint}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#endpoint CcKnowledgeBase#endpoint}
     */
     readonly endpoint?: string;
     /**
     * MongoDB Atlas endpoint service name.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#endpoint_service_name CcKnowledgeBase#endpoint_service_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#endpoint_service_name CcKnowledgeBase#endpoint_service_name}
     */
     readonly endpointServiceName?: string;
     /**
     * Contains the names of the fields to which to map information about the vector store.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#field_mapping CcKnowledgeBase#field_mapping}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#field_mapping CcKnowledgeBase#field_mapping}
     */
     readonly fieldMapping?: MongoDbAtlasFieldMappingProperty;
     /**
     * Name of a MongoDB Atlas text index.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#text_index_name CcKnowledgeBase#text_index_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#text_index_name CcKnowledgeBase#text_index_name}
     */
     readonly textIndexName?: string;
     /**
     * Name of a MongoDB Atlas index.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#vector_index_name CcKnowledgeBase#vector_index_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#vector_index_name CcKnowledgeBase#vector_index_name}
     */
     readonly vectorIndexName?: string;
 }
@@ -6199,13 +6199,13 @@ export interface NeptuneAnalyticsFieldMappingProperty {
     /**
     * The name of the field in which Amazon Bedrock stores metadata about the vector store.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#metadata_field CcKnowledgeBase#metadata_field}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#metadata_field CcKnowledgeBase#metadata_field}
     */
     readonly metadataField?: string;
     /**
     * The name of the field in which Amazon Bedrock stores the raw text from your data. The text is split according to the chunking strategy you choose.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#text_field CcKnowledgeBase#text_field}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#text_field CcKnowledgeBase#text_field}
     */
     readonly textField?: string;
 }
@@ -6293,13 +6293,13 @@ export interface NeptuneAnalyticsConfigurationProperty {
     /**
     * A mapping of Bedrock Knowledge Base fields to Neptune Analytics fields.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#field_mapping CcKnowledgeBase#field_mapping}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#field_mapping CcKnowledgeBase#field_mapping}
     */
     readonly fieldMapping?: NeptuneAnalyticsFieldMappingProperty;
     /**
     * ARN for Neptune Analytics graph database.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#graph_arn CcKnowledgeBase#graph_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#graph_arn CcKnowledgeBase#graph_arn}
     */
     readonly graphArn?: string;
 }
@@ -6387,19 +6387,19 @@ export interface OpenSearchManagedClusterFieldMappingProperty {
     /**
     * The name of the field in which Amazon Bedrock stores metadata about the vector store.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#metadata_field CcKnowledgeBase#metadata_field}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#metadata_field CcKnowledgeBase#metadata_field}
     */
     readonly metadataField?: string;
     /**
     * The name of the field in which Amazon Bedrock stores the raw text from your data. The text is split according to the chunking strategy you choose.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#text_field CcKnowledgeBase#text_field}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#text_field CcKnowledgeBase#text_field}
     */
     readonly textField?: string;
     /**
     * The name of the field in which Amazon Bedrock stores the vector embeddings for your data sources.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#vector_field CcKnowledgeBase#vector_field}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#vector_field CcKnowledgeBase#vector_field}
     */
     readonly vectorField?: string;
 }
@@ -6509,25 +6509,25 @@ export interface OpenSearchManagedClusterConfigurationProperty {
     /**
     * The Amazon Resource Name (ARN) of the OpenSearch domain.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#domain_arn CcKnowledgeBase#domain_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#domain_arn CcKnowledgeBase#domain_arn}
     */
     readonly domainArn?: string;
     /**
     * The endpoint URL the OpenSearch domain.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#domain_endpoint CcKnowledgeBase#domain_endpoint}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#domain_endpoint CcKnowledgeBase#domain_endpoint}
     */
     readonly domainEndpoint?: string;
     /**
     * A mapping of Bedrock Knowledge Base fields to OpenSearch Managed Cluster field names
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#field_mapping CcKnowledgeBase#field_mapping}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#field_mapping CcKnowledgeBase#field_mapping}
     */
     readonly fieldMapping?: OpenSearchManagedClusterFieldMappingProperty;
     /**
     * The name of the vector store.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#vector_index_name CcKnowledgeBase#vector_index_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#vector_index_name CcKnowledgeBase#vector_index_name}
     */
     readonly vectorIndexName?: string;
 }
@@ -6659,19 +6659,19 @@ export interface OpenSearchServerlessFieldMappingProperty {
     /**
     * The name of the field in which Amazon Bedrock stores metadata about the vector store.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#metadata_field CcKnowledgeBase#metadata_field}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#metadata_field CcKnowledgeBase#metadata_field}
     */
     readonly metadataField?: string;
     /**
     * The name of the field in which Amazon Bedrock stores the raw text from your data. The text is split according to the chunking strategy you choose.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#text_field CcKnowledgeBase#text_field}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#text_field CcKnowledgeBase#text_field}
     */
     readonly textField?: string;
     /**
     * The name of the field in which Amazon Bedrock stores the vector embeddings for your data sources.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#vector_field CcKnowledgeBase#vector_field}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#vector_field CcKnowledgeBase#vector_field}
     */
     readonly vectorField?: string;
 }
@@ -6781,19 +6781,19 @@ export interface OpenSearchServerlessConfigurationProperty {
     /**
     * The ARN of the OpenSearch Service vector store.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#collection_arn CcKnowledgeBase#collection_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#collection_arn CcKnowledgeBase#collection_arn}
     */
     readonly collectionArn?: string;
     /**
     * A mapping of Bedrock Knowledge Base fields to OpenSearch Serverless field names
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#field_mapping CcKnowledgeBase#field_mapping}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#field_mapping CcKnowledgeBase#field_mapping}
     */
     readonly fieldMapping?: OpenSearchServerlessFieldMappingProperty;
     /**
     * The name of the vector store.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#vector_index_name CcKnowledgeBase#vector_index_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#vector_index_name CcKnowledgeBase#vector_index_name}
     */
     readonly vectorIndexName?: string;
 }
@@ -6903,13 +6903,13 @@ export interface PineconeFieldMappingProperty {
     /**
     * The name of the field in which Amazon Bedrock stores metadata about the vector store.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#metadata_field CcKnowledgeBase#metadata_field}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#metadata_field CcKnowledgeBase#metadata_field}
     */
     readonly metadataField?: string;
     /**
     * The name of the field in which Amazon Bedrock stores the raw text from your data. The text is split according to the chunking strategy you choose.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#text_field CcKnowledgeBase#text_field}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#text_field CcKnowledgeBase#text_field}
     */
     readonly textField?: string;
 }
@@ -6997,25 +6997,25 @@ export interface PineconeConfigurationProperty {
     /**
     * The endpoint URL for your index management page.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#connection_string CcKnowledgeBase#connection_string}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#connection_string CcKnowledgeBase#connection_string}
     */
     readonly connectionString?: string;
     /**
     * The ARN of the secret that you created in AWS Secrets Manager that is linked to your Pinecone API key.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#credentials_secret_arn CcKnowledgeBase#credentials_secret_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#credentials_secret_arn CcKnowledgeBase#credentials_secret_arn}
     */
     readonly credentialsSecretArn?: string;
     /**
     * Contains the names of the fields to which to map information about the vector store.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#field_mapping CcKnowledgeBase#field_mapping}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#field_mapping CcKnowledgeBase#field_mapping}
     */
     readonly fieldMapping?: PineconeFieldMappingProperty;
     /**
     * The namespace to be used to write new data to your database.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#namespace CcKnowledgeBase#namespace}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#namespace CcKnowledgeBase#namespace}
     */
     readonly namespace?: string;
 }
@@ -7147,31 +7147,31 @@ export interface RdsFieldMappingProperty {
     /**
     * The name of the field in which Amazon Bedrock stores custom metadata about the vector store.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#custom_metadata_field CcKnowledgeBase#custom_metadata_field}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#custom_metadata_field CcKnowledgeBase#custom_metadata_field}
     */
     readonly customMetadataField?: string;
     /**
     * The name of the field in which Amazon Bedrock stores metadata about the vector store.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#metadata_field CcKnowledgeBase#metadata_field}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#metadata_field CcKnowledgeBase#metadata_field}
     */
     readonly metadataField?: string;
     /**
     * The name of the field in which Amazon Bedrock stores the ID for each entry.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#primary_key_field CcKnowledgeBase#primary_key_field}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#primary_key_field CcKnowledgeBase#primary_key_field}
     */
     readonly primaryKeyField?: string;
     /**
     * The name of the field in which Amazon Bedrock stores the raw text from your data. The text is split according to the chunking strategy you choose.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#text_field CcKnowledgeBase#text_field}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#text_field CcKnowledgeBase#text_field}
     */
     readonly textField?: string;
     /**
     * The name of the field in which Amazon Bedrock stores the vector embeddings for your data sources.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#vector_field CcKnowledgeBase#vector_field}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#vector_field CcKnowledgeBase#vector_field}
     */
     readonly vectorField?: string;
 }
@@ -7325,31 +7325,31 @@ export interface RdsConfigurationProperty {
     /**
     * The ARN of the secret that you created in AWS Secrets Manager that is linked to your Amazon RDS database.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#credentials_secret_arn CcKnowledgeBase#credentials_secret_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#credentials_secret_arn CcKnowledgeBase#credentials_secret_arn}
     */
     readonly credentialsSecretArn?: string;
     /**
     * The name of your Amazon RDS database.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#database_name CcKnowledgeBase#database_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#database_name CcKnowledgeBase#database_name}
     */
     readonly databaseName?: string;
     /**
     * Contains the names of the fields to which to map information about the vector store.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#field_mapping CcKnowledgeBase#field_mapping}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#field_mapping CcKnowledgeBase#field_mapping}
     */
     readonly fieldMapping?: RdsFieldMappingProperty;
     /**
     * The ARN of the vector store.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#resource_arn CcKnowledgeBase#resource_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#resource_arn CcKnowledgeBase#resource_arn}
     */
     readonly resourceArn?: string;
     /**
     * The name of the table in the database.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#table_name CcKnowledgeBase#table_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#table_name CcKnowledgeBase#table_name}
     */
     readonly tableName?: string;
 }
@@ -7503,19 +7503,19 @@ export interface S3VectorsConfigurationProperty {
     /**
     * The Amazon Resource Name (ARN) of the vector index used for the knowledge base. This ARN identifies the specific vector index resource within Amazon Bedrock.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#index_arn CcKnowledgeBase#index_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#index_arn CcKnowledgeBase#index_arn}
     */
     readonly indexArn?: string;
     /**
     * The name of the vector index used for the knowledge base. This name identifies the vector index within the Amazon Bedrock service.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#index_name CcKnowledgeBase#index_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#index_name CcKnowledgeBase#index_name}
     */
     readonly indexName?: string;
     /**
     * The Amazon Resource Name (ARN) of the S3 bucket where vector embeddings are stored. This bucket contains the vector data used by the knowledge base.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#vector_bucket_arn CcKnowledgeBase#vector_bucket_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#vector_bucket_arn CcKnowledgeBase#vector_bucket_arn}
     */
     readonly vectorBucketArn?: string;
 }
@@ -7625,49 +7625,49 @@ export interface StorageConfigurationProperty {
     /**
     * Contains the storage configuration of the knowledge base in MongoDb Atlas Cloud.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#mongo_db_atlas_configuration CcKnowledgeBase#mongo_db_atlas_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#mongo_db_atlas_configuration CcKnowledgeBase#mongo_db_atlas_configuration}
     */
     readonly mongoDbAtlasConfiguration?: MongoDbAtlasConfigurationProperty;
     /**
     * Contains the configurations to use Neptune Analytics as Vector Store.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#neptune_analytics_configuration CcKnowledgeBase#neptune_analytics_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#neptune_analytics_configuration CcKnowledgeBase#neptune_analytics_configuration}
     */
     readonly neptuneAnalyticsConfiguration?: NeptuneAnalyticsConfigurationProperty;
     /**
     * Contains the storage configuration of the knowledge base in Amazon OpenSearch Service.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#opensearch_managed_cluster_configuration CcKnowledgeBase#opensearch_managed_cluster_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#opensearch_managed_cluster_configuration CcKnowledgeBase#opensearch_managed_cluster_configuration}
     */
     readonly opensearchManagedClusterConfiguration?: OpenSearchManagedClusterConfigurationProperty;
     /**
     * Contains the storage configuration of the knowledge base in Amazon OpenSearch Service.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#opensearch_serverless_configuration CcKnowledgeBase#opensearch_serverless_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#opensearch_serverless_configuration CcKnowledgeBase#opensearch_serverless_configuration}
     */
     readonly opensearchServerlessConfiguration?: OpenSearchServerlessConfigurationProperty;
     /**
     * Contains the storage configuration of the knowledge base in Pinecone.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#pinecone_configuration CcKnowledgeBase#pinecone_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#pinecone_configuration CcKnowledgeBase#pinecone_configuration}
     */
     readonly pineconeConfiguration?: PineconeConfigurationProperty;
     /**
     * Contains details about the storage configuration of the knowledge base in Amazon RDS. For more information, see Create a vector index in Amazon RDS.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#rds_configuration CcKnowledgeBase#rds_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#rds_configuration CcKnowledgeBase#rds_configuration}
     */
     readonly rdsConfiguration?: RdsConfigurationProperty;
     /**
     * Contains the storage configuration of the knowledge base for S3 vectors.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#s3_vectors_configuration CcKnowledgeBase#s3_vectors_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#s3_vectors_configuration CcKnowledgeBase#s3_vectors_configuration}
     */
     readonly s3VectorsConfiguration?: S3VectorsConfigurationProperty;
     /**
     * The storage type of a knowledge base.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_knowledge_base#type CcKnowledgeBase#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_knowledge_base#type CcKnowledgeBase#type}
     */
     readonly type?: string;
 }

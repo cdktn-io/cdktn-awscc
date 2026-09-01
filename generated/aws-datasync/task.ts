@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_task
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_task
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,75 +9,75 @@ export interface CcTaskProps extends cdktn.TerraformMetaArguments {
     /**
     * The ARN of the Amazon CloudWatch log group that is used to monitor and log events in the task.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_task#cloudwatch_log_group_arn CcTask#cloudwatch_log_group_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_task#cloudwatch_log_group_arn CcTask#cloudwatch_log_group_arn}
     */
     readonly cloudwatchLogGroupArn?: string;
     /**
     * The ARN of an AWS storage resource's location.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_task#destination_location_arn CcTask#destination_location_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_task#destination_location_arn CcTask#destination_location_arn}
     */
     readonly destinationLocationArn: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_task#excludes CcTask#excludes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_task#excludes CcTask#excludes}
     */
     readonly excludes?: CcTask.FilterRuleProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_task#includes CcTask#includes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_task#includes CcTask#includes}
     */
     readonly includes?: CcTask.IncludesProperty[] | cdktn.IResolvable;
     /**
     * Configures a manifest, which is a list of files or objects that you want DataSync to transfer.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_task#manifest_config CcTask#manifest_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_task#manifest_config CcTask#manifest_config}
     */
     readonly manifestConfig?: CcTask.ManifestConfigProperty;
     /**
     * The name of a task. This value is a text reference that is used to identify the task in the console.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_task#name CcTask#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_task#name CcTask#name}
     */
     readonly name?: string;
     /**
     * Represents the options that are available to control the behavior of a StartTaskExecution operation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_task#options CcTask#options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_task#options CcTask#options}
     */
     readonly options?: CcTask.OptionsProperty;
     /**
     * Specifies the schedule you want your task to use for repeated executions.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_task#schedule CcTask#schedule}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_task#schedule CcTask#schedule}
     */
     readonly schedule?: CcTask.TaskScheduleProperty;
     /**
     * The ARN of the source location for the task.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_task#source_location_arn CcTask#source_location_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_task#source_location_arn CcTask#source_location_arn}
     */
     readonly sourceLocationArn: string;
     /**
     * An array of key-value pairs to apply to this resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_task#tags CcTask#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_task#tags CcTask#tags}
     */
     readonly tags?: CcTask.TagProperty[] | cdktn.IResolvable;
     /**
     * Specifies the task mode for the task.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_task#task_mode CcTask#task_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_task#task_mode CcTask#task_mode}
     */
     readonly taskMode?: string;
     /**
     * Specifies how you want to configure a task report, which provides detailed information about for your Datasync transfer.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_task#task_report_config CcTask#task_report_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_task#task_report_config CcTask#task_report_config}
     */
     readonly taskReportConfig?: CcTask.TaskReportConfigProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_task awscc_datasync_task}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_task awscc_datasync_task}
 */
 export class CcTask extends cdktn.TerraformResource {
 
@@ -93,7 +93,7 @@ export class CcTask extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcTask resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcTask to import
-    * @param importFromId The id of the existing CcTask that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_task#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcTask that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_task#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcTask to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -105,7 +105,7 @@ export class CcTask extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_task awscc_datasync_task} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_task awscc_datasync_task} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -116,7 +116,7 @@ export class CcTask extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_datasync_task',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -1166,13 +1166,13 @@ export interface FilterRuleProperty {
     /**
     * The type of filter rule to apply. AWS DataSync only supports the SIMPLE_PATTERN rule type.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_task#filter_type CcTask#filter_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_task#filter_type CcTask#filter_type}
     */
     readonly filterType?: string;
     /**
     * A single filter string that consists of the patterns to include or exclude. The patterns are delimited by "|".
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_task#value CcTask#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_task#value CcTask#value}
     */
     readonly value?: string;
 }
@@ -1282,13 +1282,13 @@ export interface IncludesProperty {
     /**
     * The type of filter rule to apply. AWS DataSync only supports the SIMPLE_PATTERN rule type.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_task#filter_type CcTask#filter_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_task#filter_type CcTask#filter_type}
     */
     readonly filterType?: string;
     /**
     * A single filter string that consists of the patterns to include or exclude. The patterns are delimited by "|".
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_task#value CcTask#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_task#value CcTask#value}
     */
     readonly value?: string;
 }
@@ -1398,25 +1398,25 @@ export interface ManifestConfigSourceS3Property {
     /**
     * Specifies the AWS Identity and Access Management (IAM) role that allows DataSync to access your manifest.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_task#bucket_access_role_arn CcTask#bucket_access_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_task#bucket_access_role_arn CcTask#bucket_access_role_arn}
     */
     readonly bucketAccessRoleArn?: string;
     /**
     * Specifies the Amazon S3 object key of your manifest.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_task#manifest_object_path CcTask#manifest_object_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_task#manifest_object_path CcTask#manifest_object_path}
     */
     readonly manifestObjectPath?: string;
     /**
     * Specifies the object version ID of the manifest that you want DataSync to use.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_task#manifest_object_version_id CcTask#manifest_object_version_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_task#manifest_object_version_id CcTask#manifest_object_version_id}
     */
     readonly manifestObjectVersionId?: string;
     /**
     * Specifies the Amazon Resource Name (ARN) of the S3 bucket where you're hosting your manifest.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_task#s3_bucket_arn CcTask#s3_bucket_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_task#s3_bucket_arn CcTask#s3_bucket_arn}
     */
     readonly s3BucketArn?: string;
 }
@@ -1548,7 +1548,7 @@ export interface SourceProperty {
     /**
     * Specifies the S3 bucket where you're hosting the manifest that you want AWS DataSync to use.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_task#s3 CcTask#s3}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_task#s3 CcTask#s3}
     */
     readonly s3?: ManifestConfigSourceS3Property;
 }
@@ -1614,19 +1614,19 @@ export interface ManifestConfigProperty {
     /**
     * Specifies what DataSync uses the manifest for.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_task#action CcTask#action}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_task#action CcTask#action}
     */
     readonly action?: string;
     /**
     * Specifies the file format of your manifest.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_task#format CcTask#format}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_task#format CcTask#format}
     */
     readonly format?: string;
     /**
     * Specifies the manifest that you want DataSync to use and where it's hosted.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_task#source CcTask#source}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_task#source CcTask#source}
     */
     readonly source?: SourceProperty;
 }
@@ -1736,91 +1736,91 @@ export interface OptionsProperty {
     /**
     * A file metadata value that shows the last time a file was accessed (that is, when the file was read or written to).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_task#atime CcTask#atime}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_task#atime CcTask#atime}
     */
     readonly atime?: string;
     /**
     * A value that limits the bandwidth used by AWS DataSync.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_task#bytes_per_second CcTask#bytes_per_second}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_task#bytes_per_second CcTask#bytes_per_second}
     */
     readonly bytesPerSecond?: number;
     /**
     * The group ID (GID) of the file's owners.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_task#gid CcTask#gid}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_task#gid CcTask#gid}
     */
     readonly gid?: string;
     /**
     * A value that determines the types of logs that DataSync publishes to a log stream in the Amazon CloudWatch log group that you provide.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_task#log_level CcTask#log_level}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_task#log_level CcTask#log_level}
     */
     readonly logLevel?: string;
     /**
     * A value that indicates the last time that a file was modified (that is, a file was written to) before the PREPARING phase.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_task#mtime CcTask#mtime}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_task#mtime CcTask#mtime}
     */
     readonly mtime?: string;
     /**
     * A value that determines whether object tags should be read from the source object store and written to the destination object store.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_task#object_tags CcTask#object_tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_task#object_tags CcTask#object_tags}
     */
     readonly objectTags?: string;
     /**
     * A value that determines whether files at the destination should be overwritten or preserved when copying files.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_task#overwrite_mode CcTask#overwrite_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_task#overwrite_mode CcTask#overwrite_mode}
     */
     readonly overwriteMode?: string;
     /**
     * A value that determines which users or groups can access a file for a specific purpose such as reading, writing, or execution of the file.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_task#posix_permissions CcTask#posix_permissions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_task#posix_permissions CcTask#posix_permissions}
     */
     readonly posixPermissions?: string;
     /**
     * A value that specifies whether files in the destination that don't exist in the source file system should be preserved.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_task#preserve_deleted_files CcTask#preserve_deleted_files}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_task#preserve_deleted_files CcTask#preserve_deleted_files}
     */
     readonly preserveDeletedFiles?: string;
     /**
     * A value that determines whether AWS DataSync should preserve the metadata of block and character devices in the source file system, and recreate the files with that device name and metadata on the destination.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_task#preserve_devices CcTask#preserve_devices}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_task#preserve_devices CcTask#preserve_devices}
     */
     readonly preserveDevices?: string;
     /**
     * A value that determines which components of the SMB security descriptor are copied during transfer.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_task#security_descriptor_copy_flags CcTask#security_descriptor_copy_flags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_task#security_descriptor_copy_flags CcTask#security_descriptor_copy_flags}
     */
     readonly securityDescriptorCopyFlags?: string;
     /**
     * A value that determines whether tasks should be queued before executing the tasks.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_task#task_queueing CcTask#task_queueing}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_task#task_queueing CcTask#task_queueing}
     */
     readonly taskQueueing?: string;
     /**
     * A value that determines whether DataSync transfers only the data and metadata that differ between the source and the destination location, or whether DataSync transfers all the content from the source, without comparing to the destination location.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_task#transfer_mode CcTask#transfer_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_task#transfer_mode CcTask#transfer_mode}
     */
     readonly transferMode?: string;
     /**
     * The user ID (UID) of the file's owner.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_task#uid CcTask#uid}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_task#uid CcTask#uid}
     */
     readonly uid?: string;
     /**
     * A value that determines whether a data integrity verification should be performed at the end of a task execution after all data and metadata have been transferred.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_task#verify_mode CcTask#verify_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_task#verify_mode CcTask#verify_mode}
     */
     readonly verifyMode?: string;
 }
@@ -2194,13 +2194,13 @@ export interface TaskScheduleProperty {
     /**
     * A cron expression that specifies when AWS DataSync initiates a scheduled transfer from a source to a destination location
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_task#schedule_expression CcTask#schedule_expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_task#schedule_expression CcTask#schedule_expression}
     */
     readonly scheduleExpression?: string;
     /**
     * Specifies status of a schedule.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_task#status CcTask#status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_task#status CcTask#status}
     */
     readonly status?: string;
 }
@@ -2288,13 +2288,13 @@ export interface TagProperty {
     /**
     * The key for an AWS resource tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_task#key CcTask#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_task#key CcTask#key}
     */
     readonly key?: string;
     /**
     * The value for an AWS resource tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_task#value CcTask#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_task#value CcTask#value}
     */
     readonly value?: string;
 }
@@ -2404,19 +2404,19 @@ export interface TaskReportConfigDestinationS3Property {
     /**
     * Specifies the Amazon Resource Name (ARN) of the IAM policy that allows Datasync to upload a task report to your S3 bucket.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_task#bucket_access_role_arn CcTask#bucket_access_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_task#bucket_access_role_arn CcTask#bucket_access_role_arn}
     */
     readonly bucketAccessRoleArn?: string;
     /**
     * Specifies the ARN of the S3 bucket where Datasync uploads your report.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_task#s3_bucket_arn CcTask#s3_bucket_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_task#s3_bucket_arn CcTask#s3_bucket_arn}
     */
     readonly s3BucketArn?: string;
     /**
     * Specifies a bucket prefix for your report.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_task#subdirectory CcTask#subdirectory}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_task#subdirectory CcTask#subdirectory}
     */
     readonly subdirectory?: string;
 }
@@ -2526,7 +2526,7 @@ export interface DestinationProperty {
     /**
     * Specifies the Amazon S3 bucket where DataSync uploads your task report.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_task#s3 CcTask#s3}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_task#s3 CcTask#s3}
     */
     readonly s3?: TaskReportConfigDestinationS3Property;
 }
@@ -2592,7 +2592,7 @@ export interface DeletedProperty {
     /**
     * Specifies whether you want your task report to include only what went wrong with your transfer or a list of what succeeded and didn't.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_task#report_level CcTask#report_level}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_task#report_level CcTask#report_level}
     */
     readonly reportLevel?: string;
 }
@@ -2658,7 +2658,7 @@ export interface SkippedProperty {
     /**
     * Specifies whether you want your task report to include only what went wrong with your transfer or a list of what succeeded and didn't.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_task#report_level CcTask#report_level}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_task#report_level CcTask#report_level}
     */
     readonly reportLevel?: string;
 }
@@ -2724,7 +2724,7 @@ export interface TransferredProperty {
     /**
     * Specifies whether you want your task report to include only what went wrong with your transfer or a list of what succeeded and didn't.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_task#report_level CcTask#report_level}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_task#report_level CcTask#report_level}
     */
     readonly reportLevel?: string;
 }
@@ -2790,7 +2790,7 @@ export interface VerifiedProperty {
     /**
     * Specifies whether you want your task report to include only what went wrong with your transfer or a list of what succeeded and didn't.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_task#report_level CcTask#report_level}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_task#report_level CcTask#report_level}
     */
     readonly reportLevel?: string;
 }
@@ -2856,25 +2856,25 @@ export interface OverridesProperty {
     /**
     * Specifies the level of reporting for the files, objects, and directories that Datasync attempted to delete in your destination location. This only applies if you configure your task to delete data in the destination that isn't in the source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_task#deleted CcTask#deleted}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_task#deleted CcTask#deleted}
     */
     readonly deleted?: DeletedProperty;
     /**
     * Specifies the level of reporting for the files, objects, and directories that Datasync attempted to skip during your transfer.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_task#skipped CcTask#skipped}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_task#skipped CcTask#skipped}
     */
     readonly skipped?: SkippedProperty;
     /**
     * Specifies the level of reporting for the files, objects, and directories that Datasync attempted to transfer.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_task#transferred CcTask#transferred}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_task#transferred CcTask#transferred}
     */
     readonly transferred?: TransferredProperty;
     /**
     * Specifies the level of reporting for the files, objects, and directories that Datasync attempted to verify at the end of your transfer. This only applies if you configure your task to verify data during and after the transfer (which Datasync does by default)
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_task#verified CcTask#verified}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_task#verified CcTask#verified}
     */
     readonly verified?: VerifiedProperty;
 }
@@ -3006,31 +3006,31 @@ export interface TaskReportConfigProperty {
     /**
     * Specifies where DataSync uploads your task report.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_task#destination CcTask#destination}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_task#destination CcTask#destination}
     */
     readonly destination?: DestinationProperty;
     /**
     * Specifies whether your task report includes the new version of each object transferred into an S3 bucket, this only applies if you enable versioning on your bucket.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_task#object_version_ids CcTask#object_version_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_task#object_version_ids CcTask#object_version_ids}
     */
     readonly objectVersionIds?: string;
     /**
     * Specifies the type of task report that you want.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_task#output_type CcTask#output_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_task#output_type CcTask#output_type}
     */
     readonly outputType?: string;
     /**
     * Customizes the reporting level for aspects of your task report. For example, your report might generally only include errors, but you could specify that you want a list of successes and errors just for the files that Datasync attempted to delete in your destination location.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_task#overrides CcTask#overrides}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_task#overrides CcTask#overrides}
     */
     readonly overrides?: OverridesProperty;
     /**
     * Specifies whether you want your task report to include only what went wrong with your transfer or a list of what succeeded and didn't.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_task#report_level CcTask#report_level}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_task#report_level CcTask#report_level}
     */
     readonly reportLevel?: string;
 }

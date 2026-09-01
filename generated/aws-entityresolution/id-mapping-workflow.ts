@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/entityresolution_id_mapping_workflow
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/entityresolution_id_mapping_workflow
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,43 +9,43 @@ export interface CcIdMappingWorkflowProps extends cdktn.TerraformMetaArguments {
     /**
     * The description of the IdMappingWorkflow
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/entityresolution_id_mapping_workflow#description CcIdMappingWorkflow#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/entityresolution_id_mapping_workflow#description CcIdMappingWorkflow#description}
     */
     readonly description?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/entityresolution_id_mapping_workflow#id_mapping_incremental_run_config CcIdMappingWorkflow#id_mapping_incremental_run_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/entityresolution_id_mapping_workflow#id_mapping_incremental_run_config CcIdMappingWorkflow#id_mapping_incremental_run_config}
     */
     readonly idMappingIncrementalRunConfig?: CcIdMappingWorkflow.IdMappingIncrementalRunConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/entityresolution_id_mapping_workflow#id_mapping_techniques CcIdMappingWorkflow#id_mapping_techniques}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/entityresolution_id_mapping_workflow#id_mapping_techniques CcIdMappingWorkflow#id_mapping_techniques}
     */
     readonly idMappingTechniques: CcIdMappingWorkflow.IdMappingTechniquesProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/entityresolution_id_mapping_workflow#input_source_config CcIdMappingWorkflow#input_source_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/entityresolution_id_mapping_workflow#input_source_config CcIdMappingWorkflow#input_source_config}
     */
     readonly inputSourceConfig: CcIdMappingWorkflow.IdMappingWorkflowInputSourceProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/entityresolution_id_mapping_workflow#output_source_config CcIdMappingWorkflow#output_source_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/entityresolution_id_mapping_workflow#output_source_config CcIdMappingWorkflow#output_source_config}
     */
     readonly outputSourceConfig?: CcIdMappingWorkflow.IdMappingWorkflowOutputSourceProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/entityresolution_id_mapping_workflow#role_arn CcIdMappingWorkflow#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/entityresolution_id_mapping_workflow#role_arn CcIdMappingWorkflow#role_arn}
     */
     readonly roleArn: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/entityresolution_id_mapping_workflow#tags CcIdMappingWorkflow#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/entityresolution_id_mapping_workflow#tags CcIdMappingWorkflow#tags}
     */
     readonly tags?: CcIdMappingWorkflow.TagProperty[] | cdktn.IResolvable;
     /**
     * The name of the IdMappingWorkflow
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/entityresolution_id_mapping_workflow#workflow_name CcIdMappingWorkflow#workflow_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/entityresolution_id_mapping_workflow#workflow_name CcIdMappingWorkflow#workflow_name}
     */
     readonly workflowName: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/entityresolution_id_mapping_workflow awscc_entityresolution_id_mapping_workflow}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/entityresolution_id_mapping_workflow awscc_entityresolution_id_mapping_workflow}
 */
 export class CcIdMappingWorkflow extends cdktn.TerraformResource {
 
@@ -61,7 +61,7 @@ export class CcIdMappingWorkflow extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcIdMappingWorkflow resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcIdMappingWorkflow to import
-    * @param importFromId The id of the existing CcIdMappingWorkflow that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/entityresolution_id_mapping_workflow#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcIdMappingWorkflow that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/entityresolution_id_mapping_workflow#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcIdMappingWorkflow to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -73,7 +73,7 @@ export class CcIdMappingWorkflow extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/entityresolution_id_mapping_workflow awscc_entityresolution_id_mapping_workflow} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/entityresolution_id_mapping_workflow awscc_entityresolution_id_mapping_workflow} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -84,7 +84,7 @@ export class CcIdMappingWorkflow extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_entityresolution_id_mapping_workflow',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -682,7 +682,7 @@ export function ccIdMappingWorkflowTagPropertyToHclTerraform(struct?: CcIdMappin
 export namespace CcIdMappingWorkflow {
 export interface IdMappingIncrementalRunConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/entityresolution_id_mapping_workflow#incremental_run_type CcIdMappingWorkflow#incremental_run_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/entityresolution_id_mapping_workflow#incremental_run_type CcIdMappingWorkflow#incremental_run_type}
     */
     readonly incrementalRunType?: string;
 }
@@ -748,7 +748,7 @@ export interface IntermediateSourceConfigurationProperty {
     /**
     * The s3 path that would be used to stage the intermediate data being generated during workflow execution.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/entityresolution_id_mapping_workflow#intermediate_s3_path CcIdMappingWorkflow#intermediate_s3_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/entityresolution_id_mapping_workflow#intermediate_s3_path CcIdMappingWorkflow#intermediate_s3_path}
     */
     readonly intermediateS3Path?: string;
 }
@@ -812,19 +812,19 @@ export class IntermediateSourceConfigurationPropertyOutputReference extends cdkt
 }
 export interface ProviderPropertiesProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/entityresolution_id_mapping_workflow#intermediate_source_configuration CcIdMappingWorkflow#intermediate_source_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/entityresolution_id_mapping_workflow#intermediate_source_configuration CcIdMappingWorkflow#intermediate_source_configuration}
     */
     readonly intermediateSourceConfiguration?: IntermediateSourceConfigurationProperty;
     /**
     * Additional Provider configuration that would be required for the provider service. The Configuration must be in JSON string format
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/entityresolution_id_mapping_workflow#provider_configuration CcIdMappingWorkflow#provider_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/entityresolution_id_mapping_workflow#provider_configuration CcIdMappingWorkflow#provider_configuration}
     */
     readonly providerConfiguration?: { [key: string]: string };
     /**
     * Arn of the Provider Service being used.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/entityresolution_id_mapping_workflow#provider_service_arn CcIdMappingWorkflow#provider_service_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/entityresolution_id_mapping_workflow#provider_service_arn CcIdMappingWorkflow#provider_service_arn}
     */
     readonly providerServiceArn?: string;
 }
@@ -932,11 +932,11 @@ export class ProviderPropertiesPropertyOutputReference extends cdktn.ComplexObje
 }
 export interface RuleProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/entityresolution_id_mapping_workflow#matching_keys CcIdMappingWorkflow#matching_keys}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/entityresolution_id_mapping_workflow#matching_keys CcIdMappingWorkflow#matching_keys}
     */
     readonly matchingKeys?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/entityresolution_id_mapping_workflow#rule_name CcIdMappingWorkflow#rule_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/entityresolution_id_mapping_workflow#rule_name CcIdMappingWorkflow#rule_name}
     */
     readonly ruleName?: string;
 }
@@ -1044,19 +1044,19 @@ export class RulePropertyList extends cdktn.ComplexList {
 }
 export interface IdMappingRuleBasedPropertiesProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/entityresolution_id_mapping_workflow#attribute_matching_model CcIdMappingWorkflow#attribute_matching_model}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/entityresolution_id_mapping_workflow#attribute_matching_model CcIdMappingWorkflow#attribute_matching_model}
     */
     readonly attributeMatchingModel?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/entityresolution_id_mapping_workflow#record_matching_model CcIdMappingWorkflow#record_matching_model}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/entityresolution_id_mapping_workflow#record_matching_model CcIdMappingWorkflow#record_matching_model}
     */
     readonly recordMatchingModel?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/entityresolution_id_mapping_workflow#rule_definition_type CcIdMappingWorkflow#rule_definition_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/entityresolution_id_mapping_workflow#rule_definition_type CcIdMappingWorkflow#rule_definition_type}
     */
     readonly ruleDefinitionType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/entityresolution_id_mapping_workflow#rules CcIdMappingWorkflow#rules}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/entityresolution_id_mapping_workflow#rules CcIdMappingWorkflow#rules}
     */
     readonly rules?: RuleProperty[] | cdktn.IResolvable;
 }
@@ -1186,19 +1186,19 @@ export class IdMappingRuleBasedPropertiesPropertyOutputReference extends cdktn.C
 }
 export interface IdMappingTechniquesProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/entityresolution_id_mapping_workflow#id_mapping_type CcIdMappingWorkflow#id_mapping_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/entityresolution_id_mapping_workflow#id_mapping_type CcIdMappingWorkflow#id_mapping_type}
     */
     readonly idMappingType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/entityresolution_id_mapping_workflow#normalization_version CcIdMappingWorkflow#normalization_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/entityresolution_id_mapping_workflow#normalization_version CcIdMappingWorkflow#normalization_version}
     */
     readonly normalizationVersion?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/entityresolution_id_mapping_workflow#provider_properties CcIdMappingWorkflow#provider_properties}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/entityresolution_id_mapping_workflow#provider_properties CcIdMappingWorkflow#provider_properties}
     */
     readonly providerProperties?: ProviderPropertiesProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/entityresolution_id_mapping_workflow#rule_based_properties CcIdMappingWorkflow#rule_based_properties}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/entityresolution_id_mapping_workflow#rule_based_properties CcIdMappingWorkflow#rule_based_properties}
     */
     readonly ruleBasedProperties?: IdMappingRuleBasedPropertiesProperty;
 }
@@ -1330,17 +1330,17 @@ export interface IdMappingWorkflowInputSourceProperty {
     /**
     * An Glue table ARN for the input source table, MatchingWorkflow arn or IdNamespace ARN
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/entityresolution_id_mapping_workflow#input_source_arn CcIdMappingWorkflow#input_source_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/entityresolution_id_mapping_workflow#input_source_arn CcIdMappingWorkflow#input_source_arn}
     */
     readonly inputSourceArn: string;
     /**
     * The SchemaMapping arn associated with the Schema
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/entityresolution_id_mapping_workflow#schema_arn CcIdMappingWorkflow#schema_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/entityresolution_id_mapping_workflow#schema_arn CcIdMappingWorkflow#schema_arn}
     */
     readonly schemaArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/entityresolution_id_mapping_workflow#type CcIdMappingWorkflow#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/entityresolution_id_mapping_workflow#type CcIdMappingWorkflow#type}
     */
     readonly type?: string;
 }
@@ -1467,13 +1467,13 @@ export class IdMappingWorkflowInputSourcePropertyList extends cdktn.ComplexList 
 }
 export interface IdMappingWorkflowOutputSourceProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/entityresolution_id_mapping_workflow#kms_arn CcIdMappingWorkflow#kms_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/entityresolution_id_mapping_workflow#kms_arn CcIdMappingWorkflow#kms_arn}
     */
     readonly kmsArn?: string;
     /**
     * The S3 path to which Entity Resolution will write the output table
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/entityresolution_id_mapping_workflow#output_s3_path CcIdMappingWorkflow#output_s3_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/entityresolution_id_mapping_workflow#output_s3_path CcIdMappingWorkflow#output_s3_path}
     */
     readonly outputS3Path?: string;
 }
@@ -1583,13 +1583,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/entityresolution_id_mapping_workflow#key CcIdMappingWorkflow#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/entityresolution_id_mapping_workflow#key CcIdMappingWorkflow#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 0 to 256 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/entityresolution_id_mapping_workflow#value CcIdMappingWorkflow#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/entityresolution_id_mapping_workflow#value CcIdMappingWorkflow#value}
     */
     readonly value?: string;
 }

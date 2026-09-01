@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wellarchitected_workload
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wellarchitected_workload
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,91 +9,91 @@ export interface CcWorkloadProps extends cdktn.TerraformMetaArguments {
     /**
     * The list of Amazon Web Services account IDs associated with the workload.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wellarchitected_workload#account_ids CcWorkload#account_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wellarchitected_workload#account_ids CcWorkload#account_ids}
     */
     readonly accountIds?: string[];
     /**
     * The URL of the architectural design for the workload.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wellarchitected_workload#architectural_design CcWorkload#architectural_design}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wellarchitected_workload#architectural_design CcWorkload#architectural_design}
     */
     readonly architecturalDesign?: string;
     /**
     * The list of Amazon Web Services Regions associated with the workload.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wellarchitected_workload#aws_regions CcWorkload#aws_regions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wellarchitected_workload#aws_regions CcWorkload#aws_regions}
     */
     readonly awsRegions?: string[];
     /**
     * The description for the workload.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wellarchitected_workload#description CcWorkload#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wellarchitected_workload#description CcWorkload#description}
     */
     readonly description: string;
     /**
     * Discovery configuration associated to the workload.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wellarchitected_workload#discovery_config CcWorkload#discovery_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wellarchitected_workload#discovery_config CcWorkload#discovery_config}
     */
     readonly discoveryConfig?: CcWorkload.DiscoveryConfigProperty;
     /**
     * The environment for the workload.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wellarchitected_workload#environment CcWorkload#environment}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wellarchitected_workload#environment CcWorkload#environment}
     */
     readonly environment: string;
     /**
     * The industry for the workload.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wellarchitected_workload#industry CcWorkload#industry}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wellarchitected_workload#industry CcWorkload#industry}
     */
     readonly industry?: string;
     /**
     * The industry type for the workload.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wellarchitected_workload#industry_type CcWorkload#industry_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wellarchitected_workload#industry_type CcWorkload#industry_type}
     */
     readonly industryType?: string;
     /**
     * The list of lenses associated with the workload.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wellarchitected_workload#lenses CcWorkload#lenses}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wellarchitected_workload#lenses CcWorkload#lenses}
     */
     readonly lenses: string[];
     /**
     * The list of non-Amazon Web Services Regions associated with the workload.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wellarchitected_workload#non_aws_regions CcWorkload#non_aws_regions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wellarchitected_workload#non_aws_regions CcWorkload#non_aws_regions}
     */
     readonly nonAwsRegions?: string[];
     /**
     * The notes associated with the workload.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wellarchitected_workload#notes CcWorkload#notes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wellarchitected_workload#notes CcWorkload#notes}
     */
     readonly notes?: string;
     /**
     * The review owner of the workload.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wellarchitected_workload#review_owner CcWorkload#review_owner}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wellarchitected_workload#review_owner CcWorkload#review_owner}
     */
     readonly reviewOwner?: string;
     /**
     * The tags associated with the workload.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wellarchitected_workload#tags CcWorkload#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wellarchitected_workload#tags CcWorkload#tags}
     */
     readonly tags?: CcWorkload.TagsItemsProperty[] | cdktn.IResolvable;
     /**
     * The name of the workload.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wellarchitected_workload#workload_name CcWorkload#workload_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wellarchitected_workload#workload_name CcWorkload#workload_name}
     */
     readonly workloadName: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wellarchitected_workload awscc_wellarchitected_workload}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wellarchitected_workload awscc_wellarchitected_workload}
 */
 export class CcWorkload extends cdktn.TerraformResource {
 
@@ -109,7 +109,7 @@ export class CcWorkload extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcWorkload resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcWorkload to import
-    * @param importFromId The id of the existing CcWorkload that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wellarchitected_workload#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcWorkload that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wellarchitected_workload#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcWorkload to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -121,7 +121,7 @@ export class CcWorkload extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wellarchitected_workload awscc_wellarchitected_workload} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wellarchitected_workload awscc_wellarchitected_workload} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -132,7 +132,7 @@ export class CcWorkload extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_wellarchitected_workload',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -589,13 +589,13 @@ export interface DiscoveryConfigProperty {
     /**
     * Discovery integration status in respect to Trusted Advisor for the workload.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wellarchitected_workload#trusted_advisor_integration_status CcWorkload#trusted_advisor_integration_status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wellarchitected_workload#trusted_advisor_integration_status CcWorkload#trusted_advisor_integration_status}
     */
     readonly trustedAdvisorIntegrationStatus?: string;
     /**
     * The mode to use for identifying resources associated with the workload.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wellarchitected_workload#workload_resource_definition CcWorkload#workload_resource_definition}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wellarchitected_workload#workload_resource_definition CcWorkload#workload_resource_definition}
     */
     readonly workloadResourceDefinition?: string[];
 }
@@ -681,11 +681,11 @@ export class DiscoveryConfigPropertyOutputReference extends cdktn.ComplexObject 
 }
 export interface TagsItemsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wellarchitected_workload#key CcWorkload#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wellarchitected_workload#key CcWorkload#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wellarchitected_workload#value CcWorkload#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wellarchitected_workload#value CcWorkload#value}
     */
     readonly value?: string;
 }

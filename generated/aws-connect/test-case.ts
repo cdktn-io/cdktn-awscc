@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_test_case
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_test_case
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,55 +9,55 @@ export interface CcTestCaseProps extends cdktn.TerraformMetaArguments {
     /**
     * The content of the test case.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_test_case#content CcTestCase#content}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_test_case#content CcTestCase#content}
     */
     readonly content: string;
     /**
     * The description of the test case.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_test_case#description CcTestCase#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_test_case#description CcTestCase#description}
     */
     readonly description?: string;
     /**
     * Entry point for Testcase.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_test_case#entry_point CcTestCase#entry_point}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_test_case#entry_point CcTestCase#entry_point}
     */
     readonly entryPoint?: CcTestCase.EntryPointProperty;
     /**
     * The initialization data of the test case.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_test_case#initialization_data CcTestCase#initialization_data}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_test_case#initialization_data CcTestCase#initialization_data}
     */
     readonly initializationData?: string;
     /**
     * The identifier of the Amazon Connect instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_test_case#instance_arn CcTestCase#instance_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_test_case#instance_arn CcTestCase#instance_arn}
     */
     readonly instanceArn: string;
     /**
     * The name of the test case.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_test_case#name CcTestCase#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_test_case#name CcTestCase#name}
     */
     readonly name: string;
     /**
     * The status of the test case.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_test_case#status CcTestCase#status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_test_case#status CcTestCase#status}
     */
     readonly status?: string;
     /**
     * One or more tags.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_test_case#tags CcTestCase#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_test_case#tags CcTestCase#tags}
     */
     readonly tags?: CcTestCase.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_test_case awscc_connect_test_case}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_test_case awscc_connect_test_case}
 */
 export class CcTestCase extends cdktn.TerraformResource {
 
@@ -73,7 +73,7 @@ export class CcTestCase extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcTestCase resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcTestCase to import
-    * @param importFromId The id of the existing CcTestCase that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_test_case#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcTestCase that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_test_case#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcTestCase to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -85,7 +85,7 @@ export class CcTestCase extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_test_case awscc_connect_test_case} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_test_case awscc_connect_test_case} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -96,7 +96,7 @@ export class CcTestCase extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_connect_test_case',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -493,7 +493,7 @@ export interface ChatEntryPointParametersProperty {
     /**
     * The flow id used for the TestCase
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_test_case#flow_id CcTestCase#flow_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_test_case#flow_id CcTestCase#flow_id}
     */
     readonly flowId?: string;
 }
@@ -559,19 +559,19 @@ export interface VoiceCallEntryPointParametersProperty {
     /**
     * The destination phonenumber of the EntryPoint
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_test_case#destination_phone_number CcTestCase#destination_phone_number}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_test_case#destination_phone_number CcTestCase#destination_phone_number}
     */
     readonly destinationPhoneNumber?: string;
     /**
     * The flow id used for the TestCase
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_test_case#flow_id CcTestCase#flow_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_test_case#flow_id CcTestCase#flow_id}
     */
     readonly flowId?: string;
     /**
     * The source phonenumber of the EntryPoint
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_test_case#source_phone_number CcTestCase#source_phone_number}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_test_case#source_phone_number CcTestCase#source_phone_number}
     */
     readonly sourcePhoneNumber?: string;
 }
@@ -681,19 +681,19 @@ export interface EntryPointProperty {
     /**
     * The chat entry point parameters for the test case
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_test_case#chat_entry_point_parameters CcTestCase#chat_entry_point_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_test_case#chat_entry_point_parameters CcTestCase#chat_entry_point_parameters}
     */
     readonly chatEntryPointParameters?: ChatEntryPointParametersProperty;
     /**
     * The type of the Entry Point
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_test_case#type CcTestCase#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_test_case#type CcTestCase#type}
     */
     readonly type?: string;
     /**
     * The voice call entry point parameters for the test case
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_test_case#voice_call_entry_point_parameters CcTestCase#voice_call_entry_point_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_test_case#voice_call_entry_point_parameters CcTestCase#voice_call_entry_point_parameters}
     */
     readonly voiceCallEntryPointParameters?: VoiceCallEntryPointParametersProperty;
 }
@@ -803,13 +803,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_test_case#key CcTestCase#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_test_case#key CcTestCase#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is maximum of 256 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_test_case#value CcTestCase#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_test_case#value CcTestCase#value}
     */
     readonly value?: string;
 }

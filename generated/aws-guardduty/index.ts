@@ -1,5 +1,6 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
+export * from './custom-detection-rule-association';
 export * from './detector';
 export * from './filter';
 export * from './ip-set';

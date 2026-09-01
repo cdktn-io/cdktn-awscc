@@ -167,7 +167,7 @@ describe("moduleForCfnType via the vendored scope-map", () => {
 const full = process.env.RUN_FULL === "1" ? describe : describe.skip;
 
 full("full schema (RUN_FULL=1)", () => {
-  it("maps at least 1450 of the 1494 awscc resources with no ambiguity", () => {
+  it("maps at least 1450 of the 1532 awscc resources with no ambiguity", () => {
     const schema = JSON.parse(fs.readFileSync(fullSchemaPath, "utf8"));
     const full_report: CfnMapReport = cfnMap.buildCfnMap(schema, db, {
       fqpn: AWSCC_FQPN,
@@ -178,7 +178,7 @@ full("full schema (RUN_FULL=1)", () => {
       JSON.stringify(full_report, null, 2) + "\n",
     );
     expect(full_report.ambiguous).toEqual([]);
-    expect(full_report.counts.awscc).toBe(1494);
+    expect(full_report.counts.awscc).toBe(1532);
     expect(full_report.counts.matched).toBeGreaterThanOrEqual(1450);
   }, 300000);
 });

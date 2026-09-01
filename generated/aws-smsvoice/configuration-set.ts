@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/smsvoice_configuration_set
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/smsvoice_configuration_set
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,43 +9,43 @@ export interface CcConfigurationSetProps extends cdktn.TerraformMetaArguments {
     /**
     * The name to use for the configuration set.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/smsvoice_configuration_set#configuration_set_name CcConfigurationSet#configuration_set_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/smsvoice_configuration_set#configuration_set_name CcConfigurationSet#configuration_set_name}
     */
     readonly configurationSetName?: string;
     /**
     * The default sender ID to set for the ConfigurationSet.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/smsvoice_configuration_set#default_sender_id CcConfigurationSet#default_sender_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/smsvoice_configuration_set#default_sender_id CcConfigurationSet#default_sender_id}
     */
     readonly defaultSenderId?: string;
     /**
     * An event destination is a location where you send message events.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/smsvoice_configuration_set#event_destinations CcConfigurationSet#event_destinations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/smsvoice_configuration_set#event_destinations CcConfigurationSet#event_destinations}
     */
     readonly eventDestinations?: CcConfigurationSet.EventDestinationProperty[] | cdktn.IResolvable;
     /**
     * Set to true to enable message feedback.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/smsvoice_configuration_set#message_feedback_enabled CcConfigurationSet#message_feedback_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/smsvoice_configuration_set#message_feedback_enabled CcConfigurationSet#message_feedback_enabled}
     */
     readonly messageFeedbackEnabled?: boolean | cdktn.IResolvable;
     /**
     * The unique identifier for the protect configuration to be associated to the configuration set.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/smsvoice_configuration_set#protect_configuration_id CcConfigurationSet#protect_configuration_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/smsvoice_configuration_set#protect_configuration_id CcConfigurationSet#protect_configuration_id}
     */
     readonly protectConfigurationId?: string;
     /**
     * An array of key-value pairs to apply to this resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/smsvoice_configuration_set#tags CcConfigurationSet#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/smsvoice_configuration_set#tags CcConfigurationSet#tags}
     */
     readonly tags?: CcConfigurationSet.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/smsvoice_configuration_set awscc_smsvoice_configuration_set}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/smsvoice_configuration_set awscc_smsvoice_configuration_set}
 */
 export class CcConfigurationSet extends cdktn.TerraformResource {
 
@@ -61,7 +61,7 @@ export class CcConfigurationSet extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcConfigurationSet resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcConfigurationSet to import
-    * @param importFromId The id of the existing CcConfigurationSet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/smsvoice_configuration_set#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcConfigurationSet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/smsvoice_configuration_set#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcConfigurationSet to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -73,7 +73,7 @@ export class CcConfigurationSet extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/smsvoice_configuration_set awscc_smsvoice_configuration_set} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/smsvoice_configuration_set awscc_smsvoice_configuration_set} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -84,7 +84,7 @@ export class CcConfigurationSet extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_smsvoice_configuration_set',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -483,13 +483,13 @@ export interface CloudWatchLogsDestinationProperty {
     /**
     * The Amazon Resource Name (ARN) of an AWS Identity and Access Management role that is able to write event data to an Amazon CloudWatch destination.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/smsvoice_configuration_set#iam_role_arn CcConfigurationSet#iam_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/smsvoice_configuration_set#iam_role_arn CcConfigurationSet#iam_role_arn}
     */
     readonly iamRoleArn?: string;
     /**
     * The name of the Amazon CloudWatch log group that you want to record events in.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/smsvoice_configuration_set#log_group_arn CcConfigurationSet#log_group_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/smsvoice_configuration_set#log_group_arn CcConfigurationSet#log_group_arn}
     */
     readonly logGroupArn?: string;
 }
@@ -577,13 +577,13 @@ export interface KinesisFirehoseDestinationProperty {
     /**
     * The Amazon Resource Name (ARN) of the delivery stream.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/smsvoice_configuration_set#delivery_stream_arn CcConfigurationSet#delivery_stream_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/smsvoice_configuration_set#delivery_stream_arn CcConfigurationSet#delivery_stream_arn}
     */
     readonly deliveryStreamArn?: string;
     /**
     * The Amazon Resource Name (ARN) of an AWS Identity and Access Management role that is able to write event data to an Amazon CloudWatch destination.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/smsvoice_configuration_set#iam_role_arn CcConfigurationSet#iam_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/smsvoice_configuration_set#iam_role_arn CcConfigurationSet#iam_role_arn}
     */
     readonly iamRoleArn?: string;
 }
@@ -671,7 +671,7 @@ export interface SnsDestinationProperty {
     /**
     * The Amazon Resource Name (ARN) of the Amazon SNS topic that you want to publish events to.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/smsvoice_configuration_set#topic_arn CcConfigurationSet#topic_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/smsvoice_configuration_set#topic_arn CcConfigurationSet#topic_arn}
     */
     readonly topicArn?: string;
 }
@@ -737,37 +737,37 @@ export interface EventDestinationProperty {
     /**
     * An object that contains IamRoleArn and LogGroupArn associated with an Amazon CloudWatch event destination.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/smsvoice_configuration_set#cloudwatch_logs_destination CcConfigurationSet#cloudwatch_logs_destination}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/smsvoice_configuration_set#cloudwatch_logs_destination CcConfigurationSet#cloudwatch_logs_destination}
     */
     readonly cloudwatchLogsDestination?: CloudWatchLogsDestinationProperty;
     /**
     * When set to true events will be logged. By default this is set to true
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/smsvoice_configuration_set#enabled CcConfigurationSet#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/smsvoice_configuration_set#enabled CcConfigurationSet#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
     * The name that identifies the event destination.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/smsvoice_configuration_set#event_destination_name CcConfigurationSet#event_destination_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/smsvoice_configuration_set#event_destination_name CcConfigurationSet#event_destination_name}
     */
     readonly eventDestinationName?: string;
     /**
     * An object that contains IamRoleArn and DeliveryStreamArn associated with an Amazon Kinesis Firehose event destination.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/smsvoice_configuration_set#kinesis_firehose_destination CcConfigurationSet#kinesis_firehose_destination}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/smsvoice_configuration_set#kinesis_firehose_destination CcConfigurationSet#kinesis_firehose_destination}
     */
     readonly kinesisFirehoseDestination?: KinesisFirehoseDestinationProperty;
     /**
     * An array of event types that determine which events to log. If 'ALL' is used, then AWS End User Messaging SMS and Voice logs every event type.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/smsvoice_configuration_set#matching_event_types CcConfigurationSet#matching_event_types}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/smsvoice_configuration_set#matching_event_types CcConfigurationSet#matching_event_types}
     */
     readonly matchingEventTypes?: string[];
     /**
     * An object that contains SNS TopicArn event destination.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/smsvoice_configuration_set#sns_destination CcConfigurationSet#sns_destination}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/smsvoice_configuration_set#sns_destination CcConfigurationSet#sns_destination}
     */
     readonly snsDestination?: SnsDestinationProperty;
 }
@@ -965,13 +965,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/smsvoice_configuration_set#key CcConfigurationSet#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/smsvoice_configuration_set#key CcConfigurationSet#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 0 to 256 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/smsvoice_configuration_set#value CcConfigurationSet#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/smsvoice_configuration_set#value CcConfigurationSet#value}
     */
     readonly value?: string;
 }

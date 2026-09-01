@@ -1,29 +1,29 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/notificationscontacts_email_contact
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/notificationscontacts_email_contact
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcEmailContactProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/notificationscontacts_email_contact#email_address CcEmailContact#email_address}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/notificationscontacts_email_contact#email_address CcEmailContact#email_address}
     */
     readonly emailAddress: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/notificationscontacts_email_contact#name CcEmailContact#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/notificationscontacts_email_contact#name CcEmailContact#name}
     */
     readonly name: string;
     /**
     * A list of tags that are attached to the role.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/notificationscontacts_email_contact#tags CcEmailContact#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/notificationscontacts_email_contact#tags CcEmailContact#tags}
     */
     readonly tags?: CcEmailContact.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/notificationscontacts_email_contact awscc_notificationscontacts_email_contact}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/notificationscontacts_email_contact awscc_notificationscontacts_email_contact}
 */
 export class CcEmailContact extends cdktn.TerraformResource {
 
@@ -39,7 +39,7 @@ export class CcEmailContact extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcEmailContact resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcEmailContact to import
-    * @param importFromId The id of the existing CcEmailContact that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/notificationscontacts_email_contact#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcEmailContact that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/notificationscontacts_email_contact#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcEmailContact to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -51,7 +51,7 @@ export class CcEmailContact extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/notificationscontacts_email_contact awscc_notificationscontacts_email_contact} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/notificationscontacts_email_contact awscc_notificationscontacts_email_contact} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -62,7 +62,7 @@ export class CcEmailContact extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_notificationscontacts_email_contact',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -297,11 +297,11 @@ export class EmailContactPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/notificationscontacts_email_contact#key CcEmailContact#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/notificationscontacts_email_contact#key CcEmailContact#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/notificationscontacts_email_contact#value CcEmailContact#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/notificationscontacts_email_contact#value CcEmailContact#value}
     */
     readonly value?: string;
 }

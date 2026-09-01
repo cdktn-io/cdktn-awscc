@@ -1,23 +1,23 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bcmdataexports_export
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bcmdataexports_export
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcExportProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bcmdataexports_export#export CcExport#export}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bcmdataexports_export#export CcExport#export}
     */
     readonly export: CcExport.ExportProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bcmdataexports_export#tags CcExport#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bcmdataexports_export#tags CcExport#tags}
     */
     readonly tags?: CcExport.ResourceTagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bcmdataexports_export awscc_bcmdataexports_export}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bcmdataexports_export awscc_bcmdataexports_export}
 */
 export class CcExport extends cdktn.TerraformResource {
 
@@ -33,7 +33,7 @@ export class CcExport extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcExport resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcExport to import
-    * @param importFromId The id of the existing CcExport that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bcmdataexports_export#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcExport that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bcmdataexports_export#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcExport to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -45,7 +45,7 @@ export class CcExport extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bcmdataexports_export awscc_bcmdataexports_export} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bcmdataexports_export awscc_bcmdataexports_export} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -56,7 +56,7 @@ export class CcExport extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_bcmdataexports_export',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -449,11 +449,11 @@ export function ccExportResourceTagPropertyToHclTerraform(struct?: CcExport.Reso
 export namespace CcExport {
 export interface DataQueryProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bcmdataexports_export#query_statement CcExport#query_statement}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bcmdataexports_export#query_statement CcExport#query_statement}
     */
     readonly queryStatement: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bcmdataexports_export#table_configurations CcExport#table_configurations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bcmdataexports_export#table_configurations CcExport#table_configurations}
     */
     readonly tableConfigurations?: { [key: string]: { [key: string]: string } } | cdktn.IResolvable;
 }
@@ -536,19 +536,19 @@ export class DataQueryPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface S3OutputConfigurationsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bcmdataexports_export#compression CcExport#compression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bcmdataexports_export#compression CcExport#compression}
     */
     readonly compression: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bcmdataexports_export#format CcExport#format}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bcmdataexports_export#format CcExport#format}
     */
     readonly format: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bcmdataexports_export#output_type CcExport#output_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bcmdataexports_export#output_type CcExport#output_type}
     */
     readonly outputType: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bcmdataexports_export#overwrite CcExport#overwrite}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bcmdataexports_export#overwrite CcExport#overwrite}
     */
     readonly overwrite: string;
 }
@@ -666,23 +666,23 @@ export class S3OutputConfigurationsPropertyOutputReference extends cdktn.Complex
 }
 export interface S3DestinationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bcmdataexports_export#s3_bucket CcExport#s3_bucket}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bcmdataexports_export#s3_bucket CcExport#s3_bucket}
     */
     readonly s3Bucket: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bcmdataexports_export#s3_bucket_owner CcExport#s3_bucket_owner}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bcmdataexports_export#s3_bucket_owner CcExport#s3_bucket_owner}
     */
     readonly s3BucketOwner?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bcmdataexports_export#s3_output_configurations CcExport#s3_output_configurations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bcmdataexports_export#s3_output_configurations CcExport#s3_output_configurations}
     */
     readonly s3OutputConfigurations: S3OutputConfigurationsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bcmdataexports_export#s3_prefix CcExport#s3_prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bcmdataexports_export#s3_prefix CcExport#s3_prefix}
     */
     readonly s3Prefix: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bcmdataexports_export#s3_region CcExport#s3_region}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bcmdataexports_export#s3_region CcExport#s3_region}
     */
     readonly s3Region: string;
 }
@@ -822,7 +822,7 @@ export class S3DestinationPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface DestinationConfigurationsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bcmdataexports_export#s3_destination CcExport#s3_destination}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bcmdataexports_export#s3_destination CcExport#s3_destination}
     */
     readonly s3Destination: S3DestinationProperty;
 }
@@ -883,7 +883,7 @@ export class DestinationConfigurationsPropertyOutputReference extends cdktn.Comp
 }
 export interface RefreshCadenceProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bcmdataexports_export#frequency CcExport#frequency}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bcmdataexports_export#frequency CcExport#frequency}
     */
     readonly frequency: string;
 }
@@ -944,23 +944,23 @@ export class RefreshCadencePropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface ExportProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bcmdataexports_export#data_query CcExport#data_query}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bcmdataexports_export#data_query CcExport#data_query}
     */
     readonly dataQuery: DataQueryProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bcmdataexports_export#description CcExport#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bcmdataexports_export#description CcExport#description}
     */
     readonly description?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bcmdataexports_export#destination_configurations CcExport#destination_configurations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bcmdataexports_export#destination_configurations CcExport#destination_configurations}
     */
     readonly destinationConfigurations: DestinationConfigurationsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bcmdataexports_export#name CcExport#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bcmdataexports_export#name CcExport#name}
     */
     readonly name: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bcmdataexports_export#refresh_cadence CcExport#refresh_cadence}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bcmdataexports_export#refresh_cadence CcExport#refresh_cadence}
     */
     readonly refreshCadence: RefreshCadenceProperty;
 }
@@ -1105,11 +1105,11 @@ export class ExportPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface ResourceTagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bcmdataexports_export#key CcExport#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bcmdataexports_export#key CcExport#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bcmdataexports_export#value CcExport#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bcmdataexports_export#value CcExport#value}
     */
     readonly value?: string;
 }

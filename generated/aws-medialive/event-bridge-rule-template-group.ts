@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_event_bridge_rule_template_group
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_event_bridge_rule_template_group
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,25 +9,25 @@ export interface CcEventBridgeRuleTemplateGroupProps extends cdktn.TerraformMeta
     /**
     * A resource's optional description.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_event_bridge_rule_template_group#description CcEventBridgeRuleTemplateGroup#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_event_bridge_rule_template_group#description CcEventBridgeRuleTemplateGroup#description}
     */
     readonly description?: string;
     /**
     * A resource's name. Names must be unique within the scope of a resource type in a specific region.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_event_bridge_rule_template_group#name CcEventBridgeRuleTemplateGroup#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_event_bridge_rule_template_group#name CcEventBridgeRuleTemplateGroup#name}
     */
     readonly name: string;
     /**
     * Represents the tags associated with a resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_event_bridge_rule_template_group#tags CcEventBridgeRuleTemplateGroup#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_event_bridge_rule_template_group#tags CcEventBridgeRuleTemplateGroup#tags}
     */
     readonly tags?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_event_bridge_rule_template_group awscc_medialive_event_bridge_rule_template_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_event_bridge_rule_template_group awscc_medialive_event_bridge_rule_template_group}
 */
 export class CcEventBridgeRuleTemplateGroup extends cdktn.TerraformResource {
 
@@ -43,7 +43,7 @@ export class CcEventBridgeRuleTemplateGroup extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcEventBridgeRuleTemplateGroup resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcEventBridgeRuleTemplateGroup to import
-    * @param importFromId The id of the existing CcEventBridgeRuleTemplateGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_event_bridge_rule_template_group#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcEventBridgeRuleTemplateGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_event_bridge_rule_template_group#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcEventBridgeRuleTemplateGroup to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -55,7 +55,7 @@ export class CcEventBridgeRuleTemplateGroup extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_event_bridge_rule_template_group awscc_medialive_event_bridge_rule_template_group} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_event_bridge_rule_template_group awscc_medialive_event_bridge_rule_template_group} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +66,7 @@ export class CcEventBridgeRuleTemplateGroup extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_medialive_event_bridge_rule_template_group',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,

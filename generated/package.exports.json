@@ -215,6 +215,10 @@
     "types": "./generated/aws-codebuild/index.d.ts",
     "default": "./generated/aws-codebuild/index.js"
   },
+  "./aws-codecommit": {
+    "types": "./generated/aws-codecommit/index.d.ts",
+    "default": "./generated/aws-codecommit/index.js"
+  },
   "./aws-codeconnections": {
     "types": "./generated/aws-codeconnections/index.d.ts",
     "default": "./generated/aws-codeconnections/index.js"
@@ -539,6 +543,10 @@
     "types": "./generated/aws-iotfleetwise/index.d.ts",
     "default": "./generated/aws-iotfleetwise/index.js"
   },
+  "./aws-iotsecuretunneling": {
+    "types": "./generated/aws-iotsecuretunneling/index.d.ts",
+    "default": "./generated/aws-iotsecuretunneling/index.js"
+  },
   "./aws-iotsitewise": {
     "types": "./generated/aws-iotsitewise/index.d.ts",
     "default": "./generated/aws-iotsitewise/index.js"
@@ -674,6 +682,10 @@
   "./aws-memorydb": {
     "types": "./generated/aws-memorydb/index.d.ts",
     "default": "./generated/aws-memorydb/index.js"
+  },
+  "./aws-mgn": {
+    "types": "./generated/aws-mgn/index.d.ts",
+    "default": "./generated/aws-mgn/index.js"
   },
   "./aws-mpa": {
     "types": "./generated/aws-mpa/index.d.ts",
@@ -939,6 +951,10 @@
     "types": "./generated/aws-scn/index.d.ts",
     "default": "./generated/aws-scn/index.js"
   },
+  "./aws-sdb": {
+    "types": "./generated/aws-sdb/index.d.ts",
+    "default": "./generated/aws-sdb/index.js"
+  },
   "./aws-secretsmanager": {
     "types": "./generated/aws-secretsmanager/index.d.ts",
     "default": "./generated/aws-secretsmanager/index.js"
@@ -1035,6 +1051,10 @@
     "types": "./generated/aws-supportapp/index.d.ts",
     "default": "./generated/aws-supportapp/index.js"
   },
+  "./aws-supportauthz": {
+    "types": "./generated/aws-supportauthz/index.d.ts",
+    "default": "./generated/aws-supportauthz/index.js"
+  },
   "./aws-synthetics": {
     "types": "./generated/aws-synthetics/index.d.ts",
     "default": "./generated/aws-synthetics/index.js"
@@ -1042,6 +1062,10 @@
   "./aws-systemsmanagersap": {
     "types": "./generated/aws-systemsmanagersap/index.d.ts",
     "default": "./generated/aws-systemsmanagersap/index.js"
+  },
+  "./aws-textract": {
+    "types": "./generated/aws-textract/index.d.ts",
+    "default": "./generated/aws-textract/index.js"
   },
   "./aws-timestream": {
     "types": "./generated/aws-timestream/index.d.ts",
@@ -1054,6 +1078,10 @@
   "./aws-transfer": {
     "types": "./generated/aws-transfer/index.d.ts",
     "default": "./generated/aws-transfer/index.js"
+  },
+  "./aws-translate": {
+    "types": "./generated/aws-translate/index.d.ts",
+    "default": "./generated/aws-translate/index.js"
   },
   "./aws-uxc": {
     "types": "./generated/aws-uxc/index.d.ts",

@@ -1,50 +1,50 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_theme
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_theme
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcThemeProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_theme#aws_account_id CcTheme#aws_account_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_theme#aws_account_id CcTheme#aws_account_id}
     */
     readonly awsAccountId: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_theme#base_theme_id CcTheme#base_theme_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_theme#base_theme_id CcTheme#base_theme_id}
     */
     readonly baseThemeId: string;
     /**
     * <p>The theme configuration. This configuration contains all of the display properties for
     *             a theme.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_theme#configuration CcTheme#configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_theme#configuration CcTheme#configuration}
     */
     readonly configuration: CcTheme.ThemeConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_theme#name CcTheme#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_theme#name CcTheme#name}
     */
     readonly name: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_theme#permissions CcTheme#permissions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_theme#permissions CcTheme#permissions}
     */
     readonly permissions?: CcTheme.ResourcePermissionProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_theme#tags CcTheme#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_theme#tags CcTheme#tags}
     */
     readonly tags?: CcTheme.TagProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_theme#theme_id CcTheme#theme_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_theme#theme_id CcTheme#theme_id}
     */
     readonly themeId: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_theme#version_description CcTheme#version_description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_theme#version_description CcTheme#version_description}
     */
     readonly versionDescription?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_theme awscc_quicksight_theme}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_theme awscc_quicksight_theme}
 */
 export class CcTheme extends cdktn.TerraformResource {
 
@@ -60,7 +60,7 @@ export class CcTheme extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcTheme resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcTheme to import
-    * @param importFromId The id of the existing CcTheme that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_theme#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcTheme that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_theme#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcTheme to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -72,7 +72,7 @@ export class CcTheme extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_theme awscc_quicksight_theme} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_theme awscc_quicksight_theme} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -83,7 +83,7 @@ export class CcTheme extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_quicksight_theme',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -1161,20 +1161,20 @@ export interface DataColorPaletteProperty {
     /**
     * <p>The hexadecimal codes for the colors.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_theme#colors CcTheme#colors}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_theme#colors CcTheme#colors}
     */
     readonly colors?: string[];
     /**
     * <p>The hexadecimal code of a color that applies to charts where a lack of data is
     *             highlighted.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_theme#empty_fill_color CcTheme#empty_fill_color}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_theme#empty_fill_color CcTheme#empty_fill_color}
     */
     readonly emptyFillColor?: string;
     /**
     * <p>The minimum and maximum hexadecimal codes that describe a color gradient. </p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_theme#min_max_gradient CcTheme#min_max_gradient}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_theme#min_max_gradient CcTheme#min_max_gradient}
     */
     readonly minMaxGradient?: string[];
 }
@@ -1284,7 +1284,7 @@ export interface BorderStyleProperty {
     /**
     * <p>The option to enable display of borders for visuals.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_theme#show CcTheme#show}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_theme#show CcTheme#show}
     */
     readonly show?: boolean | cdktn.IResolvable;
 }
@@ -1350,7 +1350,7 @@ export interface TileStyleProperty {
     /**
     * <p>The display options for tile borders for visuals.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_theme#border CcTheme#border}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_theme#border CcTheme#border}
     */
     readonly border?: BorderStyleProperty;
 }
@@ -1417,7 +1417,7 @@ export interface GutterStyleProperty {
     * <p>This Boolean value controls whether to display a gutter space between sheet tiles.
     *         </p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_theme#show CcTheme#show}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_theme#show CcTheme#show}
     */
     readonly show?: boolean | cdktn.IResolvable;
 }
@@ -1483,7 +1483,7 @@ export interface MarginStyleProperty {
     /**
     * <p>This Boolean value controls whether to display sheet margins.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_theme#show CcTheme#show}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_theme#show CcTheme#show}
     */
     readonly show?: boolean | cdktn.IResolvable;
 }
@@ -1549,13 +1549,13 @@ export interface TileLayoutStyleProperty {
     /**
     * <p>The display options for gutter spacing between tiles on a sheet.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_theme#gutter CcTheme#gutter}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_theme#gutter CcTheme#gutter}
     */
     readonly gutter?: GutterStyleProperty;
     /**
     * <p>The display options for margins around the outside edge of sheets.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_theme#margin CcTheme#margin}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_theme#margin CcTheme#margin}
     */
     readonly margin?: MarginStyleProperty;
 }
@@ -1643,13 +1643,13 @@ export interface SheetStyleProperty {
     /**
     * <p>Display options related to tiles on a sheet.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_theme#tile CcTheme#tile}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_theme#tile CcTheme#tile}
     */
     readonly tile?: TileStyleProperty;
     /**
     * <p>The display options for the layout of tiles on a sheet.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_theme#tile_layout CcTheme#tile_layout}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_theme#tile_layout CcTheme#tile_layout}
     */
     readonly tileLayout?: TileLayoutStyleProperty;
 }
@@ -1735,7 +1735,7 @@ export class SheetStylePropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface FontProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_theme#font_family CcTheme#font_family}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_theme#font_family CcTheme#font_family}
     */
     readonly fontFamily?: string;
 }
@@ -1821,7 +1821,7 @@ export class FontPropertyList extends cdktn.ComplexList {
 }
 export interface TypographyProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_theme#font_families CcTheme#font_families}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_theme#font_families CcTheme#font_families}
     */
     readonly fontFamilies?: FontProperty[] | cdktn.IResolvable;
 }
@@ -1887,107 +1887,107 @@ export interface UIColorPaletteProperty {
     /**
     * <p>This color is that applies to selected states and buttons.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_theme#accent CcTheme#accent}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_theme#accent CcTheme#accent}
     */
     readonly accent?: string;
     /**
     * <p>The foreground color that applies to any text or other elements that appear over the
     *             accent color.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_theme#accent_foreground CcTheme#accent_foreground}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_theme#accent_foreground CcTheme#accent_foreground}
     */
     readonly accentForeground?: string;
     /**
     * <p>The color that applies to error messages.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_theme#danger CcTheme#danger}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_theme#danger CcTheme#danger}
     */
     readonly danger?: string;
     /**
     * <p>The foreground color that applies to any text or other elements that appear over the
     *             error color.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_theme#danger_foreground CcTheme#danger_foreground}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_theme#danger_foreground CcTheme#danger_foreground}
     */
     readonly dangerForeground?: string;
     /**
     * <p>The color that applies to the names of fields that are identified as
     *             dimensions.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_theme#dimension CcTheme#dimension}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_theme#dimension CcTheme#dimension}
     */
     readonly dimension?: string;
     /**
     * <p>The foreground color that applies to any text or other elements that appear over the
     *             dimension color.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_theme#dimension_foreground CcTheme#dimension_foreground}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_theme#dimension_foreground CcTheme#dimension_foreground}
     */
     readonly dimensionForeground?: string;
     /**
     * <p>The color that applies to the names of fields that are identified as measures.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_theme#measure CcTheme#measure}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_theme#measure CcTheme#measure}
     */
     readonly measure?: string;
     /**
     * <p>The foreground color that applies to any text or other elements that appear over the
     *             measure color.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_theme#measure_foreground CcTheme#measure_foreground}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_theme#measure_foreground CcTheme#measure_foreground}
     */
     readonly measureForeground?: string;
     /**
     * <p>The background color that applies to visuals and other high emphasis UI.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_theme#primary_background CcTheme#primary_background}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_theme#primary_background CcTheme#primary_background}
     */
     readonly primaryBackground?: string;
     /**
     * <p>The color of text and other foreground elements that appear over the primary
     *             background regions, such as grid lines, borders, table banding, icons, and so on.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_theme#primary_foreground CcTheme#primary_foreground}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_theme#primary_foreground CcTheme#primary_foreground}
     */
     readonly primaryForeground?: string;
     /**
     * <p>The background color that applies to the sheet background and sheet controls.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_theme#secondary_background CcTheme#secondary_background}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_theme#secondary_background CcTheme#secondary_background}
     */
     readonly secondaryBackground?: string;
     /**
     * <p>The foreground color that applies to any sheet title, sheet control text, or UI that
     *             appears over the secondary background.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_theme#secondary_foreground CcTheme#secondary_foreground}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_theme#secondary_foreground CcTheme#secondary_foreground}
     */
     readonly secondaryForeground?: string;
     /**
     * <p>The color that applies to success messages, for example the check mark for a
     *             successful download.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_theme#success CcTheme#success}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_theme#success CcTheme#success}
     */
     readonly success?: string;
     /**
     * <p>The foreground color that applies to any text or other elements that appear over the
     *             success color.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_theme#success_foreground CcTheme#success_foreground}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_theme#success_foreground CcTheme#success_foreground}
     */
     readonly successForeground?: string;
     /**
     * <p>This color that applies to warning and informational messages.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_theme#warning CcTheme#warning}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_theme#warning CcTheme#warning}
     */
     readonly warning?: string;
     /**
     * <p>The foreground color that applies to any text or other elements that appear over the
     *             warning color.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_theme#warning_foreground CcTheme#warning_foreground}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_theme#warning_foreground CcTheme#warning_foreground}
     */
     readonly warningForeground?: string;
 }
@@ -2385,17 +2385,17 @@ export interface ThemeConfigurationProperty {
     *             hexadecimal color code that consists of six alphanumerical characters, prefixed with
     *                 <code>#</code>, for example #37BFF5. </p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_theme#data_color_palette CcTheme#data_color_palette}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_theme#data_color_palette CcTheme#data_color_palette}
     */
     readonly dataColorPalette?: DataColorPaletteProperty;
     /**
     * <p>The theme display options for sheets. </p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_theme#sheet CcTheme#sheet}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_theme#sheet CcTheme#sheet}
     */
     readonly sheet?: SheetStyleProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_theme#typography CcTheme#typography}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_theme#typography CcTheme#typography}
     */
     readonly typography?: TypographyProperty;
     /**
@@ -2405,7 +2405,7 @@ export interface ThemeConfigurationProperty {
     *                 Guide.</i>
     *          </p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_theme#ui_color_palette CcTheme#ui_color_palette}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_theme#ui_color_palette CcTheme#ui_color_palette}
     */
     readonly uiColorPalette?: UIColorPaletteProperty;
 }
@@ -2537,7 +2537,7 @@ export interface ResourcePermissionProperty {
     /**
     * <p>The IAM action to grant or revoke permissions on.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_theme#actions CcTheme#actions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_theme#actions CcTheme#actions}
     */
     readonly actions?: string[];
     /**
@@ -2557,7 +2557,7 @@ export interface ResourcePermissionProperty {
     *             </li>
     *          </ul>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_theme#principal CcTheme#principal}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_theme#principal CcTheme#principal}
     */
     readonly principal?: string;
 }
@@ -2667,13 +2667,13 @@ export interface TagProperty {
     /**
     * <p>Tag key.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_theme#key CcTheme#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_theme#key CcTheme#key}
     */
     readonly key?: string;
     /**
     * <p>Tag value.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_theme#value CcTheme#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_theme#value CcTheme#value}
     */
     readonly value?: string;
 }

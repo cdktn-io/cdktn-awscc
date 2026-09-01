@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_guardrail
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_guardrail
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,85 +9,85 @@ export interface CcGuardrailProps extends cdktn.TerraformMetaArguments {
     /**
     * Optional configuration for integrating Automated Reasoning policies with the guardrail.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_guardrail#automated_reasoning_policy_config CcGuardrail#automated_reasoning_policy_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_guardrail#automated_reasoning_policy_config CcGuardrail#automated_reasoning_policy_config}
     */
     readonly automatedReasoningPolicyConfig?: CcGuardrail.AutomatedReasoningPolicyConfigProperty;
     /**
     * Messaging for when violations are detected in text
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_guardrail#blocked_input_messaging CcGuardrail#blocked_input_messaging}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_guardrail#blocked_input_messaging CcGuardrail#blocked_input_messaging}
     */
     readonly blockedInputMessaging: string;
     /**
     * Messaging for when violations are detected in text
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_guardrail#blocked_outputs_messaging CcGuardrail#blocked_outputs_messaging}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_guardrail#blocked_outputs_messaging CcGuardrail#blocked_outputs_messaging}
     */
     readonly blockedOutputsMessaging: string;
     /**
     * Content policy config for a guardrail.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_guardrail#content_policy_config CcGuardrail#content_policy_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_guardrail#content_policy_config CcGuardrail#content_policy_config}
     */
     readonly contentPolicyConfig?: CcGuardrail.ContentPolicyConfigProperty;
     /**
     * Contextual grounding policy config for a guardrail.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_guardrail#contextual_grounding_policy_config CcGuardrail#contextual_grounding_policy_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_guardrail#contextual_grounding_policy_config CcGuardrail#contextual_grounding_policy_config}
     */
     readonly contextualGroundingPolicyConfig?: CcGuardrail.ContextualGroundingPolicyConfigProperty;
     /**
     * The system-defined guardrail profile that you?re using with your guardrail
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_guardrail#cross_region_config CcGuardrail#cross_region_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_guardrail#cross_region_config CcGuardrail#cross_region_config}
     */
     readonly crossRegionConfig?: CcGuardrail.GuardrailCrossRegionConfigProperty;
     /**
     * Description of the guardrail or its version
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_guardrail#description CcGuardrail#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_guardrail#description CcGuardrail#description}
     */
     readonly description?: string;
     /**
     * The KMS key with which the guardrail was encrypted at rest
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_guardrail#kms_key_arn CcGuardrail#kms_key_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_guardrail#kms_key_arn CcGuardrail#kms_key_arn}
     */
     readonly kmsKeyArn?: string;
     /**
     * Name of the guardrail
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_guardrail#name CcGuardrail#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_guardrail#name CcGuardrail#name}
     */
     readonly name: string;
     /**
     * Sensitive information policy config for a guardrail.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_guardrail#sensitive_information_policy_config CcGuardrail#sensitive_information_policy_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_guardrail#sensitive_information_policy_config CcGuardrail#sensitive_information_policy_config}
     */
     readonly sensitiveInformationPolicyConfig?: CcGuardrail.SensitiveInformationPolicyConfigProperty;
     /**
     * List of Tags
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_guardrail#tags CcGuardrail#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_guardrail#tags CcGuardrail#tags}
     */
     readonly tags?: CcGuardrail.TagProperty[] | cdktn.IResolvable;
     /**
     * Topic policy config for a guardrail.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_guardrail#topic_policy_config CcGuardrail#topic_policy_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_guardrail#topic_policy_config CcGuardrail#topic_policy_config}
     */
     readonly topicPolicyConfig?: CcGuardrail.TopicPolicyConfigProperty;
     /**
     * Word policy config for a guardrail.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_guardrail#word_policy_config CcGuardrail#word_policy_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_guardrail#word_policy_config CcGuardrail#word_policy_config}
     */
     readonly wordPolicyConfig?: CcGuardrail.WordPolicyConfigProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_guardrail awscc_bedrock_guardrail}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_guardrail awscc_bedrock_guardrail}
 */
 export class CcGuardrail extends cdktn.TerraformResource {
 
@@ -103,7 +103,7 @@ export class CcGuardrail extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcGuardrail resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcGuardrail to import
-    * @param importFromId The id of the existing CcGuardrail that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_guardrail#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcGuardrail that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_guardrail#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcGuardrail to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -115,7 +115,7 @@ export class CcGuardrail extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_guardrail awscc_bedrock_guardrail} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_guardrail awscc_bedrock_guardrail} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -126,7 +126,7 @@ export class CcGuardrail extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_bedrock_guardrail',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -1331,13 +1331,13 @@ export interface AutomatedReasoningPolicyConfigProperty {
     /**
     * The confidence threshold for triggering guardrail actions based on Automated Reasoning policy violations.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_guardrail#confidence_threshold CcGuardrail#confidence_threshold}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_guardrail#confidence_threshold CcGuardrail#confidence_threshold}
     */
     readonly confidenceThreshold?: number;
     /**
     * The list of Automated Reasoning policy ARNs to include in the guardrail configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_guardrail#policies CcGuardrail#policies}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_guardrail#policies CcGuardrail#policies}
     */
     readonly policies?: string[];
 }
@@ -1425,7 +1425,7 @@ export interface ContentFiltersTierConfigProperty {
     /**
     * Tier name for tier configuration in content filters policy
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_guardrail#tier_name CcGuardrail#tier_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_guardrail#tier_name CcGuardrail#tier_name}
     */
     readonly tierName?: string;
 }
@@ -1489,49 +1489,49 @@ export class ContentFiltersTierConfigPropertyOutputReference extends cdktn.Compl
 }
 export interface ContentFilterConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_guardrail#input_action CcGuardrail#input_action}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_guardrail#input_action CcGuardrail#input_action}
     */
     readonly inputAction?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_guardrail#input_enabled CcGuardrail#input_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_guardrail#input_enabled CcGuardrail#input_enabled}
     */
     readonly inputEnabled?: boolean | cdktn.IResolvable;
     /**
     * List of modalities
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_guardrail#input_modalities CcGuardrail#input_modalities}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_guardrail#input_modalities CcGuardrail#input_modalities}
     */
     readonly inputModalities?: string[];
     /**
     * Strength for filters
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_guardrail#input_strength CcGuardrail#input_strength}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_guardrail#input_strength CcGuardrail#input_strength}
     */
     readonly inputStrength?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_guardrail#output_action CcGuardrail#output_action}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_guardrail#output_action CcGuardrail#output_action}
     */
     readonly outputAction?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_guardrail#output_enabled CcGuardrail#output_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_guardrail#output_enabled CcGuardrail#output_enabled}
     */
     readonly outputEnabled?: boolean | cdktn.IResolvable;
     /**
     * List of modalities
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_guardrail#output_modalities CcGuardrail#output_modalities}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_guardrail#output_modalities CcGuardrail#output_modalities}
     */
     readonly outputModalities?: string[];
     /**
     * Strength for filters
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_guardrail#output_strength CcGuardrail#output_strength}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_guardrail#output_strength CcGuardrail#output_strength}
     */
     readonly outputStrength?: string;
     /**
     * Type of filter in content policy
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_guardrail#type CcGuardrail#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_guardrail#type CcGuardrail#type}
     */
     readonly type?: string;
 }
@@ -1795,13 +1795,13 @@ export interface ContentPolicyConfigProperty {
     /**
     * Guardrail tier config for content policy
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_guardrail#content_filters_tier_config CcGuardrail#content_filters_tier_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_guardrail#content_filters_tier_config CcGuardrail#content_filters_tier_config}
     */
     readonly contentFiltersTierConfig?: ContentFiltersTierConfigProperty;
     /**
     * List of content filter configs in content policy.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_guardrail#filters_config CcGuardrail#filters_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_guardrail#filters_config CcGuardrail#filters_config}
     */
     readonly filtersConfig?: ContentFilterConfigProperty[] | cdktn.IResolvable;
 }
@@ -1887,23 +1887,23 @@ export class ContentPolicyConfigPropertyOutputReference extends cdktn.ComplexObj
 }
 export interface ContextualGroundingFilterConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_guardrail#action CcGuardrail#action}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_guardrail#action CcGuardrail#action}
     */
     readonly action?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_guardrail#enabled CcGuardrail#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_guardrail#enabled CcGuardrail#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
     * The threshold for this filter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_guardrail#threshold CcGuardrail#threshold}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_guardrail#threshold CcGuardrail#threshold}
     */
     readonly threshold?: number;
     /**
     * Type of contextual grounding filter
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_guardrail#type CcGuardrail#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_guardrail#type CcGuardrail#type}
     */
     readonly type?: string;
 }
@@ -2057,7 +2057,7 @@ export interface ContextualGroundingPolicyConfigProperty {
     /**
     * List of contextual grounding filter configs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_guardrail#filters_config CcGuardrail#filters_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_guardrail#filters_config CcGuardrail#filters_config}
     */
     readonly filtersConfig?: ContextualGroundingFilterConfigProperty[] | cdktn.IResolvable;
 }
@@ -2123,7 +2123,7 @@ export interface GuardrailCrossRegionConfigProperty {
     /**
     * The Amazon Resource Name (ARN) of the guardrail profile
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_guardrail#guardrail_profile_arn CcGuardrail#guardrail_profile_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_guardrail#guardrail_profile_arn CcGuardrail#guardrail_profile_arn}
     */
     readonly guardrailProfileArn?: string;
 }
@@ -2189,33 +2189,33 @@ export interface PiiEntityConfigProperty {
     /**
     * Options for sensitive information action.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_guardrail#action CcGuardrail#action}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_guardrail#action CcGuardrail#action}
     */
     readonly action?: string;
     /**
     * Options for sensitive information action.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_guardrail#input_action CcGuardrail#input_action}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_guardrail#input_action CcGuardrail#input_action}
     */
     readonly inputAction?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_guardrail#input_enabled CcGuardrail#input_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_guardrail#input_enabled CcGuardrail#input_enabled}
     */
     readonly inputEnabled?: boolean | cdktn.IResolvable;
     /**
     * Options for sensitive information action.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_guardrail#output_action CcGuardrail#output_action}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_guardrail#output_action CcGuardrail#output_action}
     */
     readonly outputAction?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_guardrail#output_enabled CcGuardrail#output_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_guardrail#output_enabled CcGuardrail#output_enabled}
     */
     readonly outputEnabled?: boolean | cdktn.IResolvable;
     /**
     * The currently supported PII entities
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_guardrail#type CcGuardrail#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_guardrail#type CcGuardrail#type}
     */
     readonly type?: string;
 }
@@ -2413,45 +2413,45 @@ export interface RegexConfigProperty {
     /**
     * Options for sensitive information action.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_guardrail#action CcGuardrail#action}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_guardrail#action CcGuardrail#action}
     */
     readonly action?: string;
     /**
     * The regex description.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_guardrail#description CcGuardrail#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_guardrail#description CcGuardrail#description}
     */
     readonly description?: string;
     /**
     * Options for sensitive information action.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_guardrail#input_action CcGuardrail#input_action}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_guardrail#input_action CcGuardrail#input_action}
     */
     readonly inputAction?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_guardrail#input_enabled CcGuardrail#input_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_guardrail#input_enabled CcGuardrail#input_enabled}
     */
     readonly inputEnabled?: boolean | cdktn.IResolvable;
     /**
     * The regex name.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_guardrail#name CcGuardrail#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_guardrail#name CcGuardrail#name}
     */
     readonly name?: string;
     /**
     * Options for sensitive information action.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_guardrail#output_action CcGuardrail#output_action}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_guardrail#output_action CcGuardrail#output_action}
     */
     readonly outputAction?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_guardrail#output_enabled CcGuardrail#output_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_guardrail#output_enabled CcGuardrail#output_enabled}
     */
     readonly outputEnabled?: boolean | cdktn.IResolvable;
     /**
     * The regex pattern.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_guardrail#pattern CcGuardrail#pattern}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_guardrail#pattern CcGuardrail#pattern}
     */
     readonly pattern?: string;
 }
@@ -2693,13 +2693,13 @@ export interface SensitiveInformationPolicyConfigProperty {
     /**
     * List of entities.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_guardrail#pii_entities_config CcGuardrail#pii_entities_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_guardrail#pii_entities_config CcGuardrail#pii_entities_config}
     */
     readonly piiEntitiesConfig?: PiiEntityConfigProperty[] | cdktn.IResolvable;
     /**
     * List of regex.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_guardrail#regexes_config CcGuardrail#regexes_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_guardrail#regexes_config CcGuardrail#regexes_config}
     */
     readonly regexesConfig?: RegexConfigProperty[] | cdktn.IResolvable;
 }
@@ -2787,13 +2787,13 @@ export interface TagProperty {
     /**
     * Tag Key
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_guardrail#key CcGuardrail#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_guardrail#key CcGuardrail#key}
     */
     readonly key?: string;
     /**
     * Tag Value
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_guardrail#value CcGuardrail#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_guardrail#value CcGuardrail#value}
     */
     readonly value?: string;
 }
@@ -2903,41 +2903,41 @@ export interface TopicConfigProperty {
     /**
     * Definition of topic in topic policy
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_guardrail#definition CcGuardrail#definition}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_guardrail#definition CcGuardrail#definition}
     */
     readonly definition?: string;
     /**
     * List of text examples
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_guardrail#examples CcGuardrail#examples}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_guardrail#examples CcGuardrail#examples}
     */
     readonly examples?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_guardrail#input_action CcGuardrail#input_action}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_guardrail#input_action CcGuardrail#input_action}
     */
     readonly inputAction?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_guardrail#input_enabled CcGuardrail#input_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_guardrail#input_enabled CcGuardrail#input_enabled}
     */
     readonly inputEnabled?: boolean | cdktn.IResolvable;
     /**
     * Name of topic in topic policy
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_guardrail#name CcGuardrail#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_guardrail#name CcGuardrail#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_guardrail#output_action CcGuardrail#output_action}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_guardrail#output_action CcGuardrail#output_action}
     */
     readonly outputAction?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_guardrail#output_enabled CcGuardrail#output_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_guardrail#output_enabled CcGuardrail#output_enabled}
     */
     readonly outputEnabled?: boolean | cdktn.IResolvable;
     /**
     * Type of topic in a policy
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_guardrail#type CcGuardrail#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_guardrail#type CcGuardrail#type}
     */
     readonly type?: string;
 }
@@ -3179,7 +3179,7 @@ export interface TopicsTierConfigProperty {
     /**
     * Tier name for tier configuration in topic policy
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_guardrail#tier_name CcGuardrail#tier_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_guardrail#tier_name CcGuardrail#tier_name}
     */
     readonly tierName?: string;
 }
@@ -3245,13 +3245,13 @@ export interface TopicPolicyConfigProperty {
     /**
     * List of topic configs in topic policy.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_guardrail#topics_config CcGuardrail#topics_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_guardrail#topics_config CcGuardrail#topics_config}
     */
     readonly topicsConfig?: TopicConfigProperty[] | cdktn.IResolvable;
     /**
     * Guardrail tier config for topic policy
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_guardrail#topics_tier_config CcGuardrail#topics_tier_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_guardrail#topics_tier_config CcGuardrail#topics_tier_config}
     */
     readonly topicsTierConfig?: TopicsTierConfigProperty;
 }
@@ -3337,25 +3337,25 @@ export class TopicPolicyConfigPropertyOutputReference extends cdktn.ComplexObjec
 }
 export interface ManagedWordsConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_guardrail#input_action CcGuardrail#input_action}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_guardrail#input_action CcGuardrail#input_action}
     */
     readonly inputAction?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_guardrail#input_enabled CcGuardrail#input_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_guardrail#input_enabled CcGuardrail#input_enabled}
     */
     readonly inputEnabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_guardrail#output_action CcGuardrail#output_action}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_guardrail#output_action CcGuardrail#output_action}
     */
     readonly outputAction?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_guardrail#output_enabled CcGuardrail#output_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_guardrail#output_enabled CcGuardrail#output_enabled}
     */
     readonly outputEnabled?: boolean | cdktn.IResolvable;
     /**
     * Options for managed words.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_guardrail#type CcGuardrail#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_guardrail#type CcGuardrail#type}
     */
     readonly type?: string;
 }
@@ -3529,25 +3529,25 @@ export class ManagedWordsConfigPropertyList extends cdktn.ComplexList {
 }
 export interface WordConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_guardrail#input_action CcGuardrail#input_action}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_guardrail#input_action CcGuardrail#input_action}
     */
     readonly inputAction?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_guardrail#input_enabled CcGuardrail#input_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_guardrail#input_enabled CcGuardrail#input_enabled}
     */
     readonly inputEnabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_guardrail#output_action CcGuardrail#output_action}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_guardrail#output_action CcGuardrail#output_action}
     */
     readonly outputAction?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_guardrail#output_enabled CcGuardrail#output_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_guardrail#output_enabled CcGuardrail#output_enabled}
     */
     readonly outputEnabled?: boolean | cdktn.IResolvable;
     /**
     * The custom word text.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_guardrail#text CcGuardrail#text}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_guardrail#text CcGuardrail#text}
     */
     readonly text?: string;
 }
@@ -3723,13 +3723,13 @@ export interface WordPolicyConfigProperty {
     /**
     * A config for the list of managed words.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_guardrail#managed_word_lists_config CcGuardrail#managed_word_lists_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_guardrail#managed_word_lists_config CcGuardrail#managed_word_lists_config}
     */
     readonly managedWordListsConfig?: ManagedWordsConfigProperty[] | cdktn.IResolvable;
     /**
     * List of custom word configs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_guardrail#words_config CcGuardrail#words_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_guardrail#words_config CcGuardrail#words_config}
     */
     readonly wordsConfig?: WordConfigProperty[] | cdktn.IResolvable;
 }

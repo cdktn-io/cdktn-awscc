@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_mlflow_tracking_server
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_mlflow_tracking_server
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,55 +9,55 @@ export interface CcMlflowTrackingServerProps extends cdktn.TerraformMetaArgument
     /**
     * The Amazon S3 URI for MLFlow Tracking Server artifacts.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_mlflow_tracking_server#artifact_store_uri CcMlflowTrackingServer#artifact_store_uri}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_mlflow_tracking_server#artifact_store_uri CcMlflowTrackingServer#artifact_store_uri}
     */
     readonly artifactStoreUri: string;
     /**
     * A flag to enable Automatic SageMaker Model Registration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_mlflow_tracking_server#automatic_model_registration CcMlflowTrackingServer#automatic_model_registration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_mlflow_tracking_server#automatic_model_registration CcMlflowTrackingServer#automatic_model_registration}
     */
     readonly automaticModelRegistration?: boolean | cdktn.IResolvable;
     /**
     * The MLFlow Version used on the MLFlow Tracking Server.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_mlflow_tracking_server#mlflow_version CcMlflowTrackingServer#mlflow_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_mlflow_tracking_server#mlflow_version CcMlflowTrackingServer#mlflow_version}
     */
     readonly mlflowVersion?: string;
     /**
     * The Amazon Resource Name (ARN) of an IAM role that enables Amazon SageMaker to perform tasks on behalf of the customer.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_mlflow_tracking_server#role_arn CcMlflowTrackingServer#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_mlflow_tracking_server#role_arn CcMlflowTrackingServer#role_arn}
     */
     readonly roleArn: string;
     /**
     * An array of key-value pairs to apply to this resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_mlflow_tracking_server#tags CcMlflowTrackingServer#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_mlflow_tracking_server#tags CcMlflowTrackingServer#tags}
     */
     readonly tags?: CcMlflowTrackingServer.TagProperty[] | cdktn.IResolvable;
     /**
     * The name of the MLFlow Tracking Server.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_mlflow_tracking_server#tracking_server_name CcMlflowTrackingServer#tracking_server_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_mlflow_tracking_server#tracking_server_name CcMlflowTrackingServer#tracking_server_name}
     */
     readonly trackingServerName: string;
     /**
     * The size of the MLFlow Tracking Server.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_mlflow_tracking_server#tracking_server_size CcMlflowTrackingServer#tracking_server_size}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_mlflow_tracking_server#tracking_server_size CcMlflowTrackingServer#tracking_server_size}
     */
     readonly trackingServerSize?: string;
     /**
     * The start of the time window for maintenance of the MLFlow Tracking Server in UTC time.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_mlflow_tracking_server#weekly_maintenance_window_start CcMlflowTrackingServer#weekly_maintenance_window_start}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_mlflow_tracking_server#weekly_maintenance_window_start CcMlflowTrackingServer#weekly_maintenance_window_start}
     */
     readonly weeklyMaintenanceWindowStart?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_mlflow_tracking_server awscc_sagemaker_mlflow_tracking_server}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_mlflow_tracking_server awscc_sagemaker_mlflow_tracking_server}
 */
 export class CcMlflowTrackingServer extends cdktn.TerraformResource {
 
@@ -73,7 +73,7 @@ export class CcMlflowTrackingServer extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcMlflowTrackingServer resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcMlflowTrackingServer to import
-    * @param importFromId The id of the existing CcMlflowTrackingServer that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_mlflow_tracking_server#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcMlflowTrackingServer that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_mlflow_tracking_server#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcMlflowTrackingServer to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -85,7 +85,7 @@ export class CcMlflowTrackingServer extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_mlflow_tracking_server awscc_sagemaker_mlflow_tracking_server} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_mlflow_tracking_server awscc_sagemaker_mlflow_tracking_server} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -96,7 +96,7 @@ export class CcMlflowTrackingServer extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_sagemaker_mlflow_tracking_server',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -365,13 +365,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 127 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_mlflow_tracking_server#key CcMlflowTrackingServer#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_mlflow_tracking_server#key CcMlflowTrackingServer#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 1 to 255 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_mlflow_tracking_server#value CcMlflowTrackingServer#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_mlflow_tracking_server#value CcMlflowTrackingServer#value}
     */
     readonly value?: string;
 }

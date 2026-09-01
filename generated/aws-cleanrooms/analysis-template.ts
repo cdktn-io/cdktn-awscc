@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_analysis_template
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_analysis_template
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,55 +9,55 @@ export interface CcAnalysisTemplateProps extends cdktn.TerraformMetaArguments {
     /**
     * The member who can query can provide this placeholder for a literal data value in an analysis template
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_analysis_template#analysis_parameters CcAnalysisTemplate#analysis_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_analysis_template#analysis_parameters CcAnalysisTemplate#analysis_parameters}
     */
     readonly analysisParameters?: CcAnalysisTemplate.AnalysisParameterProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_analysis_template#description CcAnalysisTemplate#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_analysis_template#description CcAnalysisTemplate#description}
     */
     readonly description?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_analysis_template#error_message_configuration CcAnalysisTemplate#error_message_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_analysis_template#error_message_configuration CcAnalysisTemplate#error_message_configuration}
     */
     readonly errorMessageConfiguration?: CcAnalysisTemplate.ErrorMessageConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_analysis_template#format CcAnalysisTemplate#format}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_analysis_template#format CcAnalysisTemplate#format}
     */
     readonly format: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_analysis_template#membership_identifier CcAnalysisTemplate#membership_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_analysis_template#membership_identifier CcAnalysisTemplate#membership_identifier}
     */
     readonly membershipIdentifier: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_analysis_template#name CcAnalysisTemplate#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_analysis_template#name CcAnalysisTemplate#name}
     */
     readonly name: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_analysis_template#schema CcAnalysisTemplate#schema}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_analysis_template#schema CcAnalysisTemplate#schema}
     */
     readonly schema?: CcAnalysisTemplate.AnalysisSchemaProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_analysis_template#source CcAnalysisTemplate#source}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_analysis_template#source CcAnalysisTemplate#source}
     */
     readonly source: CcAnalysisTemplate.AnalysisSourceProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_analysis_template#source_metadata CcAnalysisTemplate#source_metadata}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_analysis_template#source_metadata CcAnalysisTemplate#source_metadata}
     */
     readonly sourceMetadata?: CcAnalysisTemplate.AnalysisSourceMetadataProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_analysis_template#synthetic_data_parameters CcAnalysisTemplate#synthetic_data_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_analysis_template#synthetic_data_parameters CcAnalysisTemplate#synthetic_data_parameters}
     */
     readonly syntheticDataParameters?: CcAnalysisTemplate.SyntheticDataParametersProperty;
     /**
     * An arbitrary set of tags (key-value pairs) for this cleanrooms analysis template.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_analysis_template#tags CcAnalysisTemplate#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_analysis_template#tags CcAnalysisTemplate#tags}
     */
     readonly tags?: CcAnalysisTemplate.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_analysis_template awscc_cleanrooms_analysis_template}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_analysis_template awscc_cleanrooms_analysis_template}
 */
 export class CcAnalysisTemplate extends cdktn.TerraformResource {
 
@@ -73,7 +73,7 @@ export class CcAnalysisTemplate extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcAnalysisTemplate resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcAnalysisTemplate to import
-    * @param importFromId The id of the existing CcAnalysisTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_analysis_template#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcAnalysisTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_analysis_template#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcAnalysisTemplate to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -85,7 +85,7 @@ export class CcAnalysisTemplate extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_analysis_template awscc_cleanrooms_analysis_template} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_analysis_template awscc_cleanrooms_analysis_template} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -96,7 +96,7 @@ export class CcAnalysisTemplate extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_cleanrooms_analysis_template',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -1046,15 +1046,15 @@ export function ccAnalysisTemplateTagPropertyToHclTerraform(struct?: CcAnalysisT
 export namespace CcAnalysisTemplate {
 export interface AnalysisParameterProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_analysis_template#default_value CcAnalysisTemplate#default_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_analysis_template#default_value CcAnalysisTemplate#default_value}
     */
     readonly defaultValue?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_analysis_template#name CcAnalysisTemplate#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_analysis_template#name CcAnalysisTemplate#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_analysis_template#type CcAnalysisTemplate#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_analysis_template#type CcAnalysisTemplate#type}
     */
     readonly type?: string;
 }
@@ -1184,7 +1184,7 @@ export class AnalysisParameterPropertyList extends cdktn.ComplexList {
 }
 export interface ErrorMessageConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_analysis_template#type CcAnalysisTemplate#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_analysis_template#type CcAnalysisTemplate#type}
     */
     readonly type?: string;
 }
@@ -1248,7 +1248,7 @@ export class ErrorMessageConfigurationPropertyOutputReference extends cdktn.Comp
 }
 export interface AnalysisSchemaProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_analysis_template#referenced_tables CcAnalysisTemplate#referenced_tables}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_analysis_template#referenced_tables CcAnalysisTemplate#referenced_tables}
     */
     readonly referencedTables?: string[];
 }
@@ -1312,11 +1312,11 @@ export class AnalysisSchemaPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface S3LocationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_analysis_template#bucket CcAnalysisTemplate#bucket}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_analysis_template#bucket CcAnalysisTemplate#bucket}
     */
     readonly bucket?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_analysis_template#key CcAnalysisTemplate#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_analysis_template#key CcAnalysisTemplate#key}
     */
     readonly key?: string;
 }
@@ -1402,7 +1402,7 @@ export class S3LocationPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface AnalysisTemplateArtifactProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_analysis_template#location CcAnalysisTemplate#location}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_analysis_template#location CcAnalysisTemplate#location}
     */
     readonly location?: S3LocationProperty;
 }
@@ -1488,11 +1488,11 @@ export class AnalysisTemplateArtifactPropertyList extends cdktn.ComplexList {
 }
 export interface LocationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_analysis_template#bucket CcAnalysisTemplate#bucket}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_analysis_template#bucket CcAnalysisTemplate#bucket}
     */
     readonly bucket?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_analysis_template#key CcAnalysisTemplate#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_analysis_template#key CcAnalysisTemplate#key}
     */
     readonly key?: string;
 }
@@ -1578,7 +1578,7 @@ export class LocationPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface EntryPointProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_analysis_template#location CcAnalysisTemplate#location}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_analysis_template#location CcAnalysisTemplate#location}
     */
     readonly location?: LocationProperty;
 }
@@ -1642,15 +1642,15 @@ export class EntryPointPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface AnalysisTemplateArtifactsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_analysis_template#additional_artifacts CcAnalysisTemplate#additional_artifacts}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_analysis_template#additional_artifacts CcAnalysisTemplate#additional_artifacts}
     */
     readonly additionalArtifacts?: AnalysisTemplateArtifactProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_analysis_template#entry_point CcAnalysisTemplate#entry_point}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_analysis_template#entry_point CcAnalysisTemplate#entry_point}
     */
     readonly entryPoint?: EntryPointProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_analysis_template#role_arn CcAnalysisTemplate#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_analysis_template#role_arn CcAnalysisTemplate#role_arn}
     */
     readonly roleArn?: string;
 }
@@ -1758,11 +1758,11 @@ export class AnalysisTemplateArtifactsPropertyOutputReference extends cdktn.Comp
 }
 export interface AnalysisSourceProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_analysis_template#artifacts CcAnalysisTemplate#artifacts}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_analysis_template#artifacts CcAnalysisTemplate#artifacts}
     */
     readonly artifacts?: AnalysisTemplateArtifactsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_analysis_template#text CcAnalysisTemplate#text}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_analysis_template#text CcAnalysisTemplate#text}
     */
     readonly text?: string;
 }
@@ -1848,7 +1848,7 @@ export class AnalysisSourcePropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface HashProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_analysis_template#sha_256 CcAnalysisTemplate#sha_256}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_analysis_template#sha_256 CcAnalysisTemplate#sha_256}
     */
     readonly sha256?: string;
 }
@@ -1934,7 +1934,7 @@ export class HashPropertyList extends cdktn.ComplexList {
 }
 export interface EntryPointHashProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_analysis_template#sha_256 CcAnalysisTemplate#sha_256}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_analysis_template#sha_256 CcAnalysisTemplate#sha_256}
     */
     readonly sha256?: string;
 }
@@ -1998,11 +1998,11 @@ export class EntryPointHashPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface AnalysisTemplateArtifactMetadataProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_analysis_template#additional_artifact_hashes CcAnalysisTemplate#additional_artifact_hashes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_analysis_template#additional_artifact_hashes CcAnalysisTemplate#additional_artifact_hashes}
     */
     readonly additionalArtifactHashes?: HashProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_analysis_template#entry_point_hash CcAnalysisTemplate#entry_point_hash}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_analysis_template#entry_point_hash CcAnalysisTemplate#entry_point_hash}
     */
     readonly entryPointHash?: EntryPointHashProperty;
 }
@@ -2088,7 +2088,7 @@ export class AnalysisTemplateArtifactMetadataPropertyOutputReference extends cdk
 }
 export interface AnalysisSourceMetadataProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_analysis_template#artifacts CcAnalysisTemplate#artifacts}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_analysis_template#artifacts CcAnalysisTemplate#artifacts}
     */
     readonly artifacts?: AnalysisTemplateArtifactMetadataProperty;
 }
@@ -2152,15 +2152,15 @@ export class AnalysisSourceMetadataPropertyOutputReference extends cdktn.Complex
 }
 export interface SyntheticDataColumnPropertiesProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_analysis_template#column_name CcAnalysisTemplate#column_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_analysis_template#column_name CcAnalysisTemplate#column_name}
     */
     readonly columnName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_analysis_template#column_type CcAnalysisTemplate#column_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_analysis_template#column_type CcAnalysisTemplate#column_type}
     */
     readonly columnType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_analysis_template#is_predictive_value CcAnalysisTemplate#is_predictive_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_analysis_template#is_predictive_value CcAnalysisTemplate#is_predictive_value}
     */
     readonly isPredictiveValue?: boolean | cdktn.IResolvable;
 }
@@ -2290,7 +2290,7 @@ export class SyntheticDataColumnPropertiesPropertyList extends cdktn.ComplexList
 }
 export interface ColumnClassificationDetailsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_analysis_template#column_mapping CcAnalysisTemplate#column_mapping}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_analysis_template#column_mapping CcAnalysisTemplate#column_mapping}
     */
     readonly columnMapping?: SyntheticDataColumnPropertiesProperty[] | cdktn.IResolvable;
 }
@@ -2354,15 +2354,15 @@ export class ColumnClassificationDetailsPropertyOutputReference extends cdktn.Co
 }
 export interface MLSyntheticDataParametersProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_analysis_template#column_classification CcAnalysisTemplate#column_classification}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_analysis_template#column_classification CcAnalysisTemplate#column_classification}
     */
     readonly columnClassification?: ColumnClassificationDetailsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_analysis_template#epsilon CcAnalysisTemplate#epsilon}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_analysis_template#epsilon CcAnalysisTemplate#epsilon}
     */
     readonly epsilon?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_analysis_template#max_membership_inference_attack_score CcAnalysisTemplate#max_membership_inference_attack_score}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_analysis_template#max_membership_inference_attack_score CcAnalysisTemplate#max_membership_inference_attack_score}
     */
     readonly maxMembershipInferenceAttackScore?: number;
 }
@@ -2470,7 +2470,7 @@ export class MLSyntheticDataParametersPropertyOutputReference extends cdktn.Comp
 }
 export interface SyntheticDataParametersProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_analysis_template#ml_synthetic_data_parameters CcAnalysisTemplate#ml_synthetic_data_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_analysis_template#ml_synthetic_data_parameters CcAnalysisTemplate#ml_synthetic_data_parameters}
     */
     readonly mlSyntheticDataParameters?: MLSyntheticDataParametersProperty;
 }
@@ -2534,11 +2534,11 @@ export class SyntheticDataParametersPropertyOutputReference extends cdktn.Comple
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_analysis_template#key CcAnalysisTemplate#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_analysis_template#key CcAnalysisTemplate#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cleanrooms_analysis_template#value CcAnalysisTemplate#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_analysis_template#value CcAnalysisTemplate#value}
     */
     readonly value?: string;
 }

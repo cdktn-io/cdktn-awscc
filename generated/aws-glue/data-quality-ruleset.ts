@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_data_quality_ruleset
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_data_quality_ruleset
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,43 +9,43 @@ export interface CcDataQualityRulesetProps extends cdktn.TerraformMetaArguments 
     /**
     * A unique token for idempotency.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_data_quality_ruleset#client_token CcDataQualityRuleset#client_token}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_data_quality_ruleset#client_token CcDataQualityRuleset#client_token}
     */
     readonly clientToken?: string;
     /**
     * A description of the data quality ruleset.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_data_quality_ruleset#description CcDataQualityRuleset#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_data_quality_ruleset#description CcDataQualityRuleset#description}
     */
     readonly description?: string;
     /**
     * A unique name for the data quality ruleset.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_data_quality_ruleset#name CcDataQualityRuleset#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_data_quality_ruleset#name CcDataQualityRuleset#name}
     */
     readonly name: string;
     /**
     * A Data Quality Definition Language (DQDL) ruleset.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_data_quality_ruleset#ruleset CcDataQualityRuleset#ruleset}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_data_quality_ruleset#ruleset CcDataQualityRuleset#ruleset}
     */
     readonly ruleset?: string;
     /**
     * A map of key-value pairs to apply to this resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_data_quality_ruleset#tags CcDataQualityRuleset#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_data_quality_ruleset#tags CcDataQualityRuleset#tags}
     */
     readonly tags?: { [key: string]: string };
     /**
     * An object representing an AWS Glue table.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_data_quality_ruleset#target_table CcDataQualityRuleset#target_table}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_data_quality_ruleset#target_table CcDataQualityRuleset#target_table}
     */
     readonly targetTable?: CcDataQualityRuleset.DataQualityTargetTableProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_data_quality_ruleset awscc_glue_data_quality_ruleset}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_data_quality_ruleset awscc_glue_data_quality_ruleset}
 */
 export class CcDataQualityRuleset extends cdktn.TerraformResource {
 
@@ -61,7 +61,7 @@ export class CcDataQualityRuleset extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcDataQualityRuleset resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcDataQualityRuleset to import
-    * @param importFromId The id of the existing CcDataQualityRuleset that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_data_quality_ruleset#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcDataQualityRuleset that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_data_quality_ruleset#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcDataQualityRuleset to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -73,7 +73,7 @@ export class CcDataQualityRuleset extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_data_quality_ruleset awscc_glue_data_quality_ruleset} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_data_quality_ruleset awscc_glue_data_quality_ruleset} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -84,7 +84,7 @@ export class CcDataQualityRuleset extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_glue_data_quality_ruleset',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -306,13 +306,13 @@ export interface DataQualityTargetTableProperty {
     /**
     * The name of the database where the AWS Glue table exists.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_data_quality_ruleset#database_name CcDataQualityRuleset#database_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_data_quality_ruleset#database_name CcDataQualityRuleset#database_name}
     */
     readonly databaseName?: string;
     /**
     * The name of the AWS Glue table.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_data_quality_ruleset#table_name CcDataQualityRuleset#table_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_data_quality_ruleset#table_name CcDataQualityRuleset#table_name}
     */
     readonly tableName?: string;
 }

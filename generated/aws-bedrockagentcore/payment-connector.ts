@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_payment_connector
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_payment_connector
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,35 +9,41 @@ export interface CcPaymentConnectorProps extends cdktn.TerraformMetaArguments {
     /**
     * The name of the payment connector
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_payment_connector#connector_name CcPaymentConnector#connector_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_payment_connector#connector_name CcPaymentConnector#connector_name}
     */
     readonly connectorName: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_payment_connector#connector_type CcPaymentConnector#connector_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_payment_connector#connector_type CcPaymentConnector#connector_type}
     */
     readonly connectorType: string;
     /**
-    * The credential provider configurations for the connector
+    * The credential provider configurations for the connector. Required when ProvisionMode is MANUAL or not specified. Empty for QUICK_CREATE until provisioning completes.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_payment_connector#credential_provider_configurations CcPaymentConnector#credential_provider_configurations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_payment_connector#credential_provider_configurations CcPaymentConnector#credential_provider_configurations}
     */
-    readonly credentialProviderConfigurations: CcPaymentConnector.CredentialsProviderConfigurationProperty[] | cdktn.IResolvable;
+    readonly credentialProviderConfigurations?: CcPaymentConnector.CredentialsProviderConfigurationProperty[] | cdktn.IResolvable;
     /**
     * A description of the payment connector
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_payment_connector#description CcPaymentConnector#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_payment_connector#description CcPaymentConnector#description}
     */
     readonly description?: string;
     /**
     * The identifier of the parent payment manager
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_payment_connector#payment_manager_id CcPaymentConnector#payment_manager_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_payment_connector#payment_manager_id CcPaymentConnector#payment_manager_id}
     */
     readonly paymentManagerId: string;
+    /**
+    * The provision mode for creating the connector. MANUAL requires CredentialProviderConfigurations; QUICK_CREATE orchestrates OAuth consent and credential provisioning.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_payment_connector#provision_mode CcPaymentConnector#provision_mode}
+    */
+    readonly provisionMode?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_payment_connector awscc_bedrockagentcore_payment_connector}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_payment_connector awscc_bedrockagentcore_payment_connector}
 */
 export class CcPaymentConnector extends cdktn.TerraformResource {
 
@@ -53,7 +59,7 @@ export class CcPaymentConnector extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcPaymentConnector resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcPaymentConnector to import
-    * @param importFromId The id of the existing CcPaymentConnector that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_payment_connector#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcPaymentConnector that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_payment_connector#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcPaymentConnector to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -65,7 +71,7 @@ export class CcPaymentConnector extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_payment_connector awscc_bedrockagentcore_payment_connector} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_payment_connector awscc_bedrockagentcore_payment_connector} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -76,7 +82,7 @@ export class CcPaymentConnector extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_bedrockagentcore_payment_connector',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -91,11 +97,17 @@ export class CcPaymentConnector extends cdktn.TerraformResource {
         this._credentialProviderConfigurations.internalValue = config.credentialProviderConfigurations;
         this._description = config.description;
         this._paymentManagerId = config.paymentManagerId;
+        this._provisionMode = config.provisionMode;
     }
 
     // ==========
     // ATTRIBUTES
     // ==========
+
+    // authorization_url - computed: true, optional: false, required: false
+    public get authorizationUrl() {
+        return this.getStringAttribute('authorization_url');
+    }
 
     // connector_created_at - computed: true, optional: false, required: false
     public get connectorCreatedAt() {
@@ -138,13 +150,16 @@ export class CcPaymentConnector extends cdktn.TerraformResource {
         return this._connectorType;
     }
 
-    // credential_provider_configurations - computed: false, optional: false, required: true
+    // credential_provider_configurations - computed: true, optional: true, required: false
     private _credentialProviderConfigurations = new CcPaymentConnector.CredentialsProviderConfigurationPropertyList(this, "credential_provider_configurations", false);
     public get credentialProviderConfigurations() {
         return this._credentialProviderConfigurations;
     }
     public putCredentialProviderConfigurations(value: CcPaymentConnector.CredentialsProviderConfigurationProperty[] | cdktn.IResolvable) {
         this._credentialProviderConfigurations.internalValue = value;
+    }
+    public resetCredentialProviderConfigurations() {
+        this._credentialProviderConfigurations.internalValue = undefined;
     }
     // Temporarily expose input value. Use with caution.
     public get credentialProviderConfigurationsInput() {
@@ -195,6 +210,22 @@ export class CcPaymentConnector extends cdktn.TerraformResource {
         return this._paymentManagerId;
     }
 
+    // provision_mode - computed: true, optional: true, required: false
+    private _provisionMode?: string; 
+    public get provisionMode() {
+        return this.getStringAttribute('provision_mode');
+    }
+    public set provisionMode(value: string) {
+        this._provisionMode = value;
+    }
+    public resetProvisionMode() {
+        this._provisionMode = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get provisionModeInput() {
+        return this._provisionMode;
+    }
+
     // =========
     // SYNTHESIS
     // =========
@@ -206,6 +237,7 @@ export class CcPaymentConnector extends cdktn.TerraformResource {
             credential_provider_configurations: cdktn.listMapper(ccPaymentConnectorCredentialsProviderConfigurationPropertyToTerraform, false)(this._credentialProviderConfigurations.internalValue),
             description: cdktn.stringToTerraform(this._description),
             payment_manager_id: cdktn.stringToTerraform(this._paymentManagerId),
+            provision_mode: cdktn.stringToTerraform(this._provisionMode),
         };
     }
 
@@ -237,6 +269,12 @@ export class CcPaymentConnector extends cdktn.TerraformResource {
             },
             payment_manager_id: {
                 value: cdktn.stringToHclTerraform(this._paymentManagerId),
+                isBlock: false,
+                type: "simple",
+                storageClassType: "string",
+            },
+            provision_mode: {
+                value: cdktn.stringToHclTerraform(this._provisionMode),
                 isBlock: false,
                 type: "simple",
                 storageClassType: "string",
@@ -350,7 +388,7 @@ export interface PaymentCredentialProviderConfigurationProperty {
     /**
     * The ARN of the payment credential provider
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_payment_connector#credential_provider_arn CcPaymentConnector#credential_provider_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_payment_connector#credential_provider_arn CcPaymentConnector#credential_provider_arn}
     */
     readonly credentialProviderArn?: string;
 }
@@ -416,7 +454,7 @@ export interface StripePrivyProperty {
     /**
     * The ARN of the payment credential provider
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_payment_connector#credential_provider_arn CcPaymentConnector#credential_provider_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_payment_connector#credential_provider_arn CcPaymentConnector#credential_provider_arn}
     */
     readonly credentialProviderArn?: string;
 }
@@ -480,11 +518,11 @@ export class StripePrivyPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface CredentialsProviderConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_payment_connector#coinbase_cdp CcPaymentConnector#coinbase_cdp}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_payment_connector#coinbase_cdp CcPaymentConnector#coinbase_cdp}
     */
     readonly coinbaseCdp?: PaymentCredentialProviderConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_payment_connector#stripe_privy CcPaymentConnector#stripe_privy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_payment_connector#stripe_privy CcPaymentConnector#stripe_privy}
     */
     readonly stripePrivy?: StripePrivyProperty;
 }

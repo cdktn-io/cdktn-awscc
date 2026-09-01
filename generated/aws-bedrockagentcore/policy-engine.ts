@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_policy_engine
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_policy_engine
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,31 +9,31 @@ export interface CcPolicyEngineProps extends cdktn.TerraformMetaArguments {
     /**
     * A human-readable description of the policy engine's purpose and scope
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_policy_engine#description CcPolicyEngine#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_policy_engine#description CcPolicyEngine#description}
     */
     readonly description?: string;
     /**
     * The ARN of the KMS key used to encrypt the policy engine data
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_policy_engine#encryption_key_arn CcPolicyEngine#encryption_key_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_policy_engine#encryption_key_arn CcPolicyEngine#encryption_key_arn}
     */
     readonly encryptionKeyArn?: string;
     /**
     * The customer-assigned immutable name for the policy engine
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_policy_engine#name CcPolicyEngine#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_policy_engine#name CcPolicyEngine#name}
     */
     readonly name: string;
     /**
     * A list of tags to assign to the policy engine.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_policy_engine#tags CcPolicyEngine#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_policy_engine#tags CcPolicyEngine#tags}
     */
     readonly tags?: CcPolicyEngine.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_policy_engine awscc_bedrockagentcore_policy_engine}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_policy_engine awscc_bedrockagentcore_policy_engine}
 */
 export class CcPolicyEngine extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CcPolicyEngine extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcPolicyEngine resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcPolicyEngine to import
-    * @param importFromId The id of the existing CcPolicyEngine that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_policy_engine#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcPolicyEngine that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_policy_engine#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcPolicyEngine to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CcPolicyEngine extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_policy_engine awscc_bedrockagentcore_policy_engine} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_policy_engine awscc_bedrockagentcore_policy_engine} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -72,7 +72,7 @@ export class CcPolicyEngine extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_bedrockagentcore_policy_engine',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -274,11 +274,11 @@ export function ccPolicyEngineTagPropertyToHclTerraform(struct?: CcPolicyEngine.
 export namespace CcPolicyEngine {
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_policy_engine#key CcPolicyEngine#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_policy_engine#key CcPolicyEngine#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_policy_engine#value CcPolicyEngine#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_policy_engine#value CcPolicyEngine#value}
     */
     readonly value?: string;
 }

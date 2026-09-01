@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssmguiconnect_preferences
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssmguiconnect_preferences
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,13 +9,13 @@ export interface CcPreferencesProps extends cdktn.TerraformMetaArguments {
     /**
     * The set of preferences used for recording RDP connections in the requesting AWS account and AWS Region. This includes details such as which S3 bucket recordings are stored in.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssmguiconnect_preferences#connection_recording_preferences CcPreferences#connection_recording_preferences}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssmguiconnect_preferences#connection_recording_preferences CcPreferences#connection_recording_preferences}
     */
     readonly connectionRecordingPreferences?: CcPreferences.ConnectionRecordingPreferencesProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssmguiconnect_preferences awscc_ssmguiconnect_preferences}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssmguiconnect_preferences awscc_ssmguiconnect_preferences}
 */
 export class CcPreferences extends cdktn.TerraformResource {
 
@@ -31,7 +31,7 @@ export class CcPreferences extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcPreferences resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcPreferences to import
-    * @param importFromId The id of the existing CcPreferences that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssmguiconnect_preferences#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcPreferences that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssmguiconnect_preferences#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcPreferences to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -43,7 +43,7 @@ export class CcPreferences extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssmguiconnect_preferences awscc_ssmguiconnect_preferences} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssmguiconnect_preferences awscc_ssmguiconnect_preferences} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -54,7 +54,7 @@ export class CcPreferences extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_ssmguiconnect_preferences',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -231,13 +231,13 @@ export interface S3BucketProperty {
     /**
     * The name of the S3 bucket where RDP connection recordings are stored.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssmguiconnect_preferences#bucket_name CcPreferences#bucket_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssmguiconnect_preferences#bucket_name CcPreferences#bucket_name}
     */
     readonly bucketName?: string;
     /**
     * The AWS account number that owns the S3 bucket.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssmguiconnect_preferences#bucket_owner CcPreferences#bucket_owner}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssmguiconnect_preferences#bucket_owner CcPreferences#bucket_owner}
     */
     readonly bucketOwner?: string;
 }
@@ -347,7 +347,7 @@ export interface RecordingDestinationsProperty {
     /**
     * The S3 bucket where RDP connection recordings are stored.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssmguiconnect_preferences#s3_buckets CcPreferences#s3_buckets}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssmguiconnect_preferences#s3_buckets CcPreferences#s3_buckets}
     */
     readonly s3Buckets?: S3BucketProperty[] | cdktn.IResolvable;
 }
@@ -413,13 +413,13 @@ export interface ConnectionRecordingPreferencesProperty {
     /**
     * The ARN of a AWS KMS key that is used to encrypt data while it is being processed by the service. This key must exist in the same AWS Region as the node you start an RDP connection to.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssmguiconnect_preferences#kms_key_arn CcPreferences#kms_key_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssmguiconnect_preferences#kms_key_arn CcPreferences#kms_key_arn}
     */
     readonly kmsKeyArn?: string;
     /**
     * Determines where recordings of RDP connections are stored.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssmguiconnect_preferences#recording_destinations CcPreferences#recording_destinations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssmguiconnect_preferences#recording_destinations CcPreferences#recording_destinations}
     */
     readonly recordingDestinations?: RecordingDestinationsProperty;
 }

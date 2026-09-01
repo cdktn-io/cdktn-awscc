@@ -1,27 +1,27 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/arczonalshift_zonal_autoshift_configuration
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/arczonalshift_zonal_autoshift_configuration
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcZonalAutoshiftConfigurationProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/arczonalshift_zonal_autoshift_configuration#practice_run_configuration CcZonalAutoshiftConfiguration#practice_run_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/arczonalshift_zonal_autoshift_configuration#practice_run_configuration CcZonalAutoshiftConfiguration#practice_run_configuration}
     */
     readonly practiceRunConfiguration?: CcZonalAutoshiftConfiguration.PracticeRunConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/arczonalshift_zonal_autoshift_configuration#resource_identifier CcZonalAutoshiftConfiguration#resource_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/arczonalshift_zonal_autoshift_configuration#resource_identifier CcZonalAutoshiftConfiguration#resource_identifier}
     */
     readonly resourceIdentifier?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/arczonalshift_zonal_autoshift_configuration#zonal_autoshift_status CcZonalAutoshiftConfiguration#zonal_autoshift_status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/arczonalshift_zonal_autoshift_configuration#zonal_autoshift_status CcZonalAutoshiftConfiguration#zonal_autoshift_status}
     */
     readonly zonalAutoshiftStatus?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/arczonalshift_zonal_autoshift_configuration awscc_arczonalshift_zonal_autoshift_configuration}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/arczonalshift_zonal_autoshift_configuration awscc_arczonalshift_zonal_autoshift_configuration}
 */
 export class CcZonalAutoshiftConfiguration extends cdktn.TerraformResource {
 
@@ -37,7 +37,7 @@ export class CcZonalAutoshiftConfiguration extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcZonalAutoshiftConfiguration resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcZonalAutoshiftConfiguration to import
-    * @param importFromId The id of the existing CcZonalAutoshiftConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/arczonalshift_zonal_autoshift_configuration#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcZonalAutoshiftConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/arczonalshift_zonal_autoshift_configuration#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcZonalAutoshiftConfiguration to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -49,7 +49,7 @@ export class CcZonalAutoshiftConfiguration extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/arczonalshift_zonal_autoshift_configuration awscc_arczonalshift_zonal_autoshift_configuration} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/arczonalshift_zonal_autoshift_configuration awscc_arczonalshift_zonal_autoshift_configuration} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -60,7 +60,7 @@ export class CcZonalAutoshiftConfiguration extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_arczonalshift_zonal_autoshift_configuration',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -299,11 +299,11 @@ export function ccZonalAutoshiftConfigurationPracticeRunConfigurationPropertyToH
 export namespace CcZonalAutoshiftConfiguration {
 export interface ControlConditionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/arczonalshift_zonal_autoshift_configuration#alarm_identifier CcZonalAutoshiftConfiguration#alarm_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/arczonalshift_zonal_autoshift_configuration#alarm_identifier CcZonalAutoshiftConfiguration#alarm_identifier}
     */
     readonly alarmIdentifier?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/arczonalshift_zonal_autoshift_configuration#type CcZonalAutoshiftConfiguration#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/arczonalshift_zonal_autoshift_configuration#type CcZonalAutoshiftConfiguration#type}
     */
     readonly type?: string;
 }
@@ -411,11 +411,11 @@ export class ControlConditionPropertyList extends cdktn.ComplexList {
 }
 export interface OutcomeAlarmsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/arczonalshift_zonal_autoshift_configuration#alarm_identifier CcZonalAutoshiftConfiguration#alarm_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/arczonalshift_zonal_autoshift_configuration#alarm_identifier CcZonalAutoshiftConfiguration#alarm_identifier}
     */
     readonly alarmIdentifier?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/arczonalshift_zonal_autoshift_configuration#type CcZonalAutoshiftConfiguration#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/arczonalshift_zonal_autoshift_configuration#type CcZonalAutoshiftConfiguration#type}
     */
     readonly type?: string;
 }
@@ -523,19 +523,19 @@ export class OutcomeAlarmsPropertyList extends cdktn.ComplexList {
 }
 export interface PracticeRunConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/arczonalshift_zonal_autoshift_configuration#blocked_dates CcZonalAutoshiftConfiguration#blocked_dates}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/arczonalshift_zonal_autoshift_configuration#blocked_dates CcZonalAutoshiftConfiguration#blocked_dates}
     */
     readonly blockedDates?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/arczonalshift_zonal_autoshift_configuration#blocked_windows CcZonalAutoshiftConfiguration#blocked_windows}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/arczonalshift_zonal_autoshift_configuration#blocked_windows CcZonalAutoshiftConfiguration#blocked_windows}
     */
     readonly blockedWindows?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/arczonalshift_zonal_autoshift_configuration#blocking_alarms CcZonalAutoshiftConfiguration#blocking_alarms}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/arczonalshift_zonal_autoshift_configuration#blocking_alarms CcZonalAutoshiftConfiguration#blocking_alarms}
     */
     readonly blockingAlarms?: ControlConditionProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/arczonalshift_zonal_autoshift_configuration#outcome_alarms CcZonalAutoshiftConfiguration#outcome_alarms}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/arczonalshift_zonal_autoshift_configuration#outcome_alarms CcZonalAutoshiftConfiguration#outcome_alarms}
     */
     readonly outcomeAlarms?: OutcomeAlarmsProperty[] | cdktn.IResolvable;
 }

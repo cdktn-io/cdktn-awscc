@@ -1,91 +1,91 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_campaign
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_campaign
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcCampaignProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_campaign#action CcCampaign#action}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_campaign#action CcCampaign#action}
     */
     readonly action?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_campaign#collection_scheme CcCampaign#collection_scheme}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_campaign#collection_scheme CcCampaign#collection_scheme}
     */
     readonly collectionScheme: CcCampaign.CollectionSchemeProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_campaign#compression CcCampaign#compression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_campaign#compression CcCampaign#compression}
     */
     readonly compression?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_campaign#data_destination_configs CcCampaign#data_destination_configs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_campaign#data_destination_configs CcCampaign#data_destination_configs}
     */
     readonly dataDestinationConfigs?: CcCampaign.DataDestinationConfigProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_campaign#data_extra_dimensions CcCampaign#data_extra_dimensions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_campaign#data_extra_dimensions CcCampaign#data_extra_dimensions}
     */
     readonly dataExtraDimensions?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_campaign#data_partitions CcCampaign#data_partitions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_campaign#data_partitions CcCampaign#data_partitions}
     */
     readonly dataPartitions?: CcCampaign.DataPartitionProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_campaign#description CcCampaign#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_campaign#description CcCampaign#description}
     */
     readonly description?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_campaign#diagnostics_mode CcCampaign#diagnostics_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_campaign#diagnostics_mode CcCampaign#diagnostics_mode}
     */
     readonly diagnosticsMode?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_campaign#expiry_time CcCampaign#expiry_time}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_campaign#expiry_time CcCampaign#expiry_time}
     */
     readonly expiryTime?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_campaign#name CcCampaign#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_campaign#name CcCampaign#name}
     */
     readonly name: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_campaign#post_trigger_collection_duration CcCampaign#post_trigger_collection_duration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_campaign#post_trigger_collection_duration CcCampaign#post_trigger_collection_duration}
     */
     readonly postTriggerCollectionDuration?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_campaign#priority CcCampaign#priority}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_campaign#priority CcCampaign#priority}
     */
     readonly priority?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_campaign#signal_catalog_arn CcCampaign#signal_catalog_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_campaign#signal_catalog_arn CcCampaign#signal_catalog_arn}
     */
     readonly signalCatalogArn: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_campaign#signals_to_collect CcCampaign#signals_to_collect}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_campaign#signals_to_collect CcCampaign#signals_to_collect}
     */
     readonly signalsToCollect?: CcCampaign.SignalInformationProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_campaign#signals_to_fetch CcCampaign#signals_to_fetch}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_campaign#signals_to_fetch CcCampaign#signals_to_fetch}
     */
     readonly signalsToFetch?: CcCampaign.SignalFetchInformationProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_campaign#spooling_mode CcCampaign#spooling_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_campaign#spooling_mode CcCampaign#spooling_mode}
     */
     readonly spoolingMode?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_campaign#start_time CcCampaign#start_time}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_campaign#start_time CcCampaign#start_time}
     */
     readonly startTime?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_campaign#tags CcCampaign#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_campaign#tags CcCampaign#tags}
     */
     readonly tags?: CcCampaign.TagProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_campaign#target_arn CcCampaign#target_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_campaign#target_arn CcCampaign#target_arn}
     */
     readonly targetArn: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_campaign awscc_iotfleetwise_campaign}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_campaign awscc_iotfleetwise_campaign}
 */
 export class CcCampaign extends cdktn.TerraformResource {
 
@@ -101,7 +101,7 @@ export class CcCampaign extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcCampaign resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcCampaign to import
-    * @param importFromId The id of the existing CcCampaign that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_campaign#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcCampaign that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_campaign#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcCampaign to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -113,7 +113,7 @@ export class CcCampaign extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_campaign awscc_iotfleetwise_campaign} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_campaign awscc_iotfleetwise_campaign} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -124,7 +124,7 @@ export class CcCampaign extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_iotfleetwise_campaign',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -1359,19 +1359,19 @@ export function ccCampaignTagPropertyToHclTerraform(struct?: CcCampaign.TagPrope
 export namespace CcCampaign {
 export interface ConditionBasedCollectionSchemeProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_campaign#condition_language_version CcCampaign#condition_language_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_campaign#condition_language_version CcCampaign#condition_language_version}
     */
     readonly conditionLanguageVersion?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_campaign#expression CcCampaign#expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_campaign#expression CcCampaign#expression}
     */
     readonly expression?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_campaign#minimum_trigger_interval_ms CcCampaign#minimum_trigger_interval_ms}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_campaign#minimum_trigger_interval_ms CcCampaign#minimum_trigger_interval_ms}
     */
     readonly minimumTriggerIntervalMs?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_campaign#trigger_mode CcCampaign#trigger_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_campaign#trigger_mode CcCampaign#trigger_mode}
     */
     readonly triggerMode?: string;
 }
@@ -1501,7 +1501,7 @@ export class ConditionBasedCollectionSchemePropertyOutputReference extends cdktn
 }
 export interface TimeBasedCollectionSchemeProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_campaign#period_ms CcCampaign#period_ms}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_campaign#period_ms CcCampaign#period_ms}
     */
     readonly periodMs?: number;
 }
@@ -1565,11 +1565,11 @@ export class TimeBasedCollectionSchemePropertyOutputReference extends cdktn.Comp
 }
 export interface CollectionSchemeProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_campaign#condition_based_collection_scheme CcCampaign#condition_based_collection_scheme}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_campaign#condition_based_collection_scheme CcCampaign#condition_based_collection_scheme}
     */
     readonly conditionBasedCollectionScheme?: ConditionBasedCollectionSchemeProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_campaign#time_based_collection_scheme CcCampaign#time_based_collection_scheme}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_campaign#time_based_collection_scheme CcCampaign#time_based_collection_scheme}
     */
     readonly timeBasedCollectionScheme?: TimeBasedCollectionSchemeProperty;
 }
@@ -1655,11 +1655,11 @@ export class CollectionSchemePropertyOutputReference extends cdktn.ComplexObject
 }
 export interface MqttTopicConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_campaign#execution_role_arn CcCampaign#execution_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_campaign#execution_role_arn CcCampaign#execution_role_arn}
     */
     readonly executionRoleArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_campaign#mqtt_topic_arn CcCampaign#mqtt_topic_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_campaign#mqtt_topic_arn CcCampaign#mqtt_topic_arn}
     */
     readonly mqttTopicArn?: string;
 }
@@ -1745,19 +1745,19 @@ export class MqttTopicConfigPropertyOutputReference extends cdktn.ComplexObject 
 }
 export interface S3ConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_campaign#bucket_arn CcCampaign#bucket_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_campaign#bucket_arn CcCampaign#bucket_arn}
     */
     readonly bucketArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_campaign#data_format CcCampaign#data_format}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_campaign#data_format CcCampaign#data_format}
     */
     readonly dataFormat?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_campaign#prefix CcCampaign#prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_campaign#prefix CcCampaign#prefix}
     */
     readonly prefix?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_campaign#storage_compression_format CcCampaign#storage_compression_format}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_campaign#storage_compression_format CcCampaign#storage_compression_format}
     */
     readonly storageCompressionFormat?: string;
 }
@@ -1887,11 +1887,11 @@ export class S3ConfigPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface TimestreamConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_campaign#execution_role_arn CcCampaign#execution_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_campaign#execution_role_arn CcCampaign#execution_role_arn}
     */
     readonly executionRoleArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_campaign#timestream_table_arn CcCampaign#timestream_table_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_campaign#timestream_table_arn CcCampaign#timestream_table_arn}
     */
     readonly timestreamTableArn?: string;
 }
@@ -1977,15 +1977,15 @@ export class TimestreamConfigPropertyOutputReference extends cdktn.ComplexObject
 }
 export interface DataDestinationConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_campaign#mqtt_topic_config CcCampaign#mqtt_topic_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_campaign#mqtt_topic_config CcCampaign#mqtt_topic_config}
     */
     readonly mqttTopicConfig?: MqttTopicConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_campaign#s3_config CcCampaign#s3_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_campaign#s3_config CcCampaign#s3_config}
     */
     readonly s3Config?: S3ConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_campaign#timestream_config CcCampaign#timestream_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_campaign#timestream_config CcCampaign#timestream_config}
     */
     readonly timestreamConfig?: TimestreamConfigProperty;
 }
@@ -2115,11 +2115,11 @@ export class DataDestinationConfigPropertyList extends cdktn.ComplexList {
 }
 export interface StorageMaximumSizeProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_campaign#unit CcCampaign#unit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_campaign#unit CcCampaign#unit}
     */
     readonly unit?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_campaign#value CcCampaign#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_campaign#value CcCampaign#value}
     */
     readonly value?: number;
 }
@@ -2205,11 +2205,11 @@ export class StorageMaximumSizePropertyOutputReference extends cdktn.ComplexObje
 }
 export interface StorageMinimumTimeToLiveProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_campaign#unit CcCampaign#unit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_campaign#unit CcCampaign#unit}
     */
     readonly unit?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_campaign#value CcCampaign#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_campaign#value CcCampaign#value}
     */
     readonly value?: number;
 }
@@ -2295,15 +2295,15 @@ export class StorageMinimumTimeToLivePropertyOutputReference extends cdktn.Compl
 }
 export interface DataPartitionStorageOptionsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_campaign#maximum_size CcCampaign#maximum_size}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_campaign#maximum_size CcCampaign#maximum_size}
     */
     readonly maximumSize?: StorageMaximumSizeProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_campaign#minimum_time_to_live CcCampaign#minimum_time_to_live}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_campaign#minimum_time_to_live CcCampaign#minimum_time_to_live}
     */
     readonly minimumTimeToLive?: StorageMinimumTimeToLiveProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_campaign#storage_location CcCampaign#storage_location}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_campaign#storage_location CcCampaign#storage_location}
     */
     readonly storageLocation?: string;
 }
@@ -2411,11 +2411,11 @@ export class DataPartitionStorageOptionsPropertyOutputReference extends cdktn.Co
 }
 export interface DataPartitionUploadOptionsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_campaign#condition_language_version CcCampaign#condition_language_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_campaign#condition_language_version CcCampaign#condition_language_version}
     */
     readonly conditionLanguageVersion?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_campaign#expression CcCampaign#expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_campaign#expression CcCampaign#expression}
     */
     readonly expression?: string;
 }
@@ -2501,18 +2501,18 @@ export class DataPartitionUploadOptionsPropertyOutputReference extends cdktn.Com
 }
 export interface DataPartitionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_campaign#id CcCampaign#id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_campaign#id CcCampaign#id}
     *
     * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
     * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
     */
     readonly id?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_campaign#storage_options CcCampaign#storage_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_campaign#storage_options CcCampaign#storage_options}
     */
     readonly storageOptions?: DataPartitionStorageOptionsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_campaign#upload_options CcCampaign#upload_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_campaign#upload_options CcCampaign#upload_options}
     */
     readonly uploadOptions?: DataPartitionUploadOptionsProperty;
 }
@@ -2642,19 +2642,19 @@ export class DataPartitionPropertyList extends cdktn.ComplexList {
 }
 export interface SignalInformationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_campaign#data_partition_id CcCampaign#data_partition_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_campaign#data_partition_id CcCampaign#data_partition_id}
     */
     readonly dataPartitionId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_campaign#max_sample_count CcCampaign#max_sample_count}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_campaign#max_sample_count CcCampaign#max_sample_count}
     */
     readonly maxSampleCount?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_campaign#minimum_sampling_interval_ms CcCampaign#minimum_sampling_interval_ms}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_campaign#minimum_sampling_interval_ms CcCampaign#minimum_sampling_interval_ms}
     */
     readonly minimumSamplingIntervalMs?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_campaign#name CcCampaign#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_campaign#name CcCampaign#name}
     */
     readonly name?: string;
 }
@@ -2806,11 +2806,11 @@ export class SignalInformationPropertyList extends cdktn.ComplexList {
 }
 export interface ConditionBasedSignalFetchConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_campaign#condition_expression CcCampaign#condition_expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_campaign#condition_expression CcCampaign#condition_expression}
     */
     readonly conditionExpression?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_campaign#trigger_mode CcCampaign#trigger_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_campaign#trigger_mode CcCampaign#trigger_mode}
     */
     readonly triggerMode?: string;
 }
@@ -2896,7 +2896,7 @@ export class ConditionBasedSignalFetchConfigPropertyOutputReference extends cdkt
 }
 export interface TimeBasedSignalFetchConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_campaign#execution_frequency_ms CcCampaign#execution_frequency_ms}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_campaign#execution_frequency_ms CcCampaign#execution_frequency_ms}
     */
     readonly executionFrequencyMs?: number;
 }
@@ -2960,11 +2960,11 @@ export class TimeBasedSignalFetchConfigPropertyOutputReference extends cdktn.Com
 }
 export interface SignalFetchConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_campaign#condition_based CcCampaign#condition_based}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_campaign#condition_based CcCampaign#condition_based}
     */
     readonly conditionBased?: ConditionBasedSignalFetchConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_campaign#time_based CcCampaign#time_based}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_campaign#time_based CcCampaign#time_based}
     */
     readonly timeBased?: TimeBasedSignalFetchConfigProperty;
 }
@@ -3050,19 +3050,19 @@ export class SignalFetchConfigPropertyOutputReference extends cdktn.ComplexObjec
 }
 export interface SignalFetchInformationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_campaign#actions CcCampaign#actions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_campaign#actions CcCampaign#actions}
     */
     readonly actions?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_campaign#condition_language_version CcCampaign#condition_language_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_campaign#condition_language_version CcCampaign#condition_language_version}
     */
     readonly conditionLanguageVersion?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_campaign#fully_qualified_name CcCampaign#fully_qualified_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_campaign#fully_qualified_name CcCampaign#fully_qualified_name}
     */
     readonly fullyQualifiedName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_campaign#signal_fetch_config CcCampaign#signal_fetch_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_campaign#signal_fetch_config CcCampaign#signal_fetch_config}
     */
     readonly signalFetchConfig?: SignalFetchConfigProperty;
 }
@@ -3214,11 +3214,11 @@ export class SignalFetchInformationPropertyList extends cdktn.ComplexList {
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_campaign#key CcCampaign#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_campaign#key CcCampaign#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotfleetwise_campaign#value CcCampaign#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotfleetwise_campaign#value CcCampaign#value}
     */
     readonly value?: string;
 }

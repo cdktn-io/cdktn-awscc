@@ -1,53 +1,53 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_queue
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_queue
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcJobQueueProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_queue#compute_environment_order CcJobQueue#compute_environment_order}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_queue#compute_environment_order CcJobQueue#compute_environment_order}
     */
     readonly computeEnvironmentOrder?: CcJobQueue.ComputeEnvironmentOrderProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_queue#job_queue_name CcJobQueue#job_queue_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_queue#job_queue_name CcJobQueue#job_queue_name}
     */
     readonly jobQueueName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_queue#job_queue_type CcJobQueue#job_queue_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_queue#job_queue_type CcJobQueue#job_queue_type}
     */
     readonly jobQueueType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_queue#job_state_time_limit_actions CcJobQueue#job_state_time_limit_actions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_queue#job_state_time_limit_actions CcJobQueue#job_state_time_limit_actions}
     */
     readonly jobStateTimeLimitActions?: CcJobQueue.JobStateTimeLimitActionProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_queue#priority CcJobQueue#priority}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_queue#priority CcJobQueue#priority}
     */
     readonly priority: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_queue#scheduling_policy_arn CcJobQueue#scheduling_policy_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_queue#scheduling_policy_arn CcJobQueue#scheduling_policy_arn}
     */
     readonly schedulingPolicyArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_queue#service_environment_order CcJobQueue#service_environment_order}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_queue#service_environment_order CcJobQueue#service_environment_order}
     */
     readonly serviceEnvironmentOrder?: CcJobQueue.ServiceEnvironmentOrderProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_queue#state CcJobQueue#state}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_queue#state CcJobQueue#state}
     */
     readonly state?: string;
     /**
     * A key-value pair to associate with a resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_queue#tags CcJobQueue#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_queue#tags CcJobQueue#tags}
     */
     readonly tags?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_queue awscc_batch_job_queue}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_queue awscc_batch_job_queue}
 */
 export class CcJobQueue extends cdktn.TerraformResource {
 
@@ -63,7 +63,7 @@ export class CcJobQueue extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcJobQueue resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcJobQueue to import
-    * @param importFromId The id of the existing CcJobQueue that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_queue#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcJobQueue that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_queue#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcJobQueue to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -75,7 +75,7 @@ export class CcJobQueue extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_queue awscc_batch_job_queue} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_queue awscc_batch_job_queue} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -86,7 +86,7 @@ export class CcJobQueue extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_batch_job_queue',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -471,11 +471,11 @@ export function ccJobQueueServiceEnvironmentOrderPropertyToHclTerraform(struct?:
 export namespace CcJobQueue {
 export interface ComputeEnvironmentOrderProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_queue#compute_environment CcJobQueue#compute_environment}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_queue#compute_environment CcJobQueue#compute_environment}
     */
     readonly computeEnvironment?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_queue#order CcJobQueue#order}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_queue#order CcJobQueue#order}
     */
     readonly order?: number;
 }
@@ -583,19 +583,19 @@ export class ComputeEnvironmentOrderPropertyList extends cdktn.ComplexList {
 }
 export interface JobStateTimeLimitActionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_queue#action CcJobQueue#action}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_queue#action CcJobQueue#action}
     */
     readonly action?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_queue#max_time_seconds CcJobQueue#max_time_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_queue#max_time_seconds CcJobQueue#max_time_seconds}
     */
     readonly maxTimeSeconds?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_queue#reason CcJobQueue#reason}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_queue#reason CcJobQueue#reason}
     */
     readonly reason?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_queue#state CcJobQueue#state}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_queue#state CcJobQueue#state}
     */
     readonly state?: string;
 }
@@ -747,11 +747,11 @@ export class JobStateTimeLimitActionPropertyList extends cdktn.ComplexList {
 }
 export interface ServiceEnvironmentOrderProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_queue#order CcJobQueue#order}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_queue#order CcJobQueue#order}
     */
     readonly order?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_queue#service_environment CcJobQueue#service_environment}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_queue#service_environment CcJobQueue#service_environment}
     */
     readonly serviceEnvironment?: string;
 }

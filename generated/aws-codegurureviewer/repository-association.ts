@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/codegurureviewer_repository_association
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/codegurureviewer_repository_association
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,43 +9,43 @@ export interface CcRepositoryAssociationProps extends cdktn.TerraformMetaArgumen
     /**
     * The name of the S3 bucket associated with an associated S3 repository. It must start with `codeguru-reviewer-`.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/codegurureviewer_repository_association#bucket_name CcRepositoryAssociation#bucket_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/codegurureviewer_repository_association#bucket_name CcRepositoryAssociation#bucket_name}
     */
     readonly bucketName?: string;
     /**
     * The Amazon Resource Name (ARN) of an AWS CodeStar Connections connection.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/codegurureviewer_repository_association#connection_arn CcRepositoryAssociation#connection_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/codegurureviewer_repository_association#connection_arn CcRepositoryAssociation#connection_arn}
     */
     readonly connectionArn?: string;
     /**
     * Name of the repository to be associated.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/codegurureviewer_repository_association#name CcRepositoryAssociation#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/codegurureviewer_repository_association#name CcRepositoryAssociation#name}
     */
     readonly name: string;
     /**
     * The owner of the repository. For a Bitbucket repository, this is the username for the account that owns the repository.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/codegurureviewer_repository_association#owner CcRepositoryAssociation#owner}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/codegurureviewer_repository_association#owner CcRepositoryAssociation#owner}
     */
     readonly owner?: string;
     /**
     * The tags associated with a repository association.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/codegurureviewer_repository_association#tags CcRepositoryAssociation#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/codegurureviewer_repository_association#tags CcRepositoryAssociation#tags}
     */
     readonly tags?: CcRepositoryAssociation.TagProperty[] | cdktn.IResolvable;
     /**
     * The type of repository to be associated.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/codegurureviewer_repository_association#type CcRepositoryAssociation#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/codegurureviewer_repository_association#type CcRepositoryAssociation#type}
     */
     readonly type: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/codegurureviewer_repository_association awscc_codegurureviewer_repository_association}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/codegurureviewer_repository_association awscc_codegurureviewer_repository_association}
 */
 export class CcRepositoryAssociation extends cdktn.TerraformResource {
 
@@ -61,7 +61,7 @@ export class CcRepositoryAssociation extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcRepositoryAssociation resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcRepositoryAssociation to import
-    * @param importFromId The id of the existing CcRepositoryAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/codegurureviewer_repository_association#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcRepositoryAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/codegurureviewer_repository_association#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcRepositoryAssociation to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -73,7 +73,7 @@ export class CcRepositoryAssociation extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/codegurureviewer_repository_association awscc_codegurureviewer_repository_association} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/codegurureviewer_repository_association awscc_codegurureviewer_repository_association} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -84,7 +84,7 @@ export class CcRepositoryAssociation extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_codegurureviewer_repository_association',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -308,13 +308,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. The allowed characters across services are: letters, numbers, and spaces representable in UTF-8, and the following characters: + - = . _ : / @.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/codegurureviewer_repository_association#key CcRepositoryAssociation#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/codegurureviewer_repository_association#key CcRepositoryAssociation#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 0 to 256 Unicode characters in length. The allowed characters across services are: letters, numbers, and spaces representable in UTF-8, and the following characters: + - = . _ : / @.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/codegurureviewer_repository_association#value CcRepositoryAssociation#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/codegurureviewer_repository_association#value CcRepositoryAssociation#value}
     */
     readonly value?: string;
 }

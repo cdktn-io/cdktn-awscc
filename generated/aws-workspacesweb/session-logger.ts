@@ -1,39 +1,39 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_session_logger
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspacesweb_session_logger
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcSessionLoggerProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_session_logger#additional_encryption_context CcSessionLogger#additional_encryption_context}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspacesweb_session_logger#additional_encryption_context CcSessionLogger#additional_encryption_context}
     */
     readonly additionalEncryptionContext?: { [key: string]: string };
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_session_logger#customer_managed_key CcSessionLogger#customer_managed_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspacesweb_session_logger#customer_managed_key CcSessionLogger#customer_managed_key}
     */
     readonly customerManagedKey?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_session_logger#display_name CcSessionLogger#display_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspacesweb_session_logger#display_name CcSessionLogger#display_name}
     */
     readonly displayName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_session_logger#event_filter CcSessionLogger#event_filter}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspacesweb_session_logger#event_filter CcSessionLogger#event_filter}
     */
     readonly eventFilter: CcSessionLogger.EventFilterProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_session_logger#log_configuration CcSessionLogger#log_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspacesweb_session_logger#log_configuration CcSessionLogger#log_configuration}
     */
     readonly logConfiguration: CcSessionLogger.LogConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_session_logger#tags CcSessionLogger#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspacesweb_session_logger#tags CcSessionLogger#tags}
     */
     readonly tags?: CcSessionLogger.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_session_logger awscc_workspacesweb_session_logger}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspacesweb_session_logger awscc_workspacesweb_session_logger}
 */
 export class CcSessionLogger extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CcSessionLogger extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcSessionLogger resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcSessionLogger to import
-    * @param importFromId The id of the existing CcSessionLogger that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_session_logger#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcSessionLogger that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspacesweb_session_logger#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcSessionLogger to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CcSessionLogger extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_session_logger awscc_workspacesweb_session_logger} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspacesweb_session_logger awscc_workspacesweb_session_logger} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -72,7 +72,7 @@ export class CcSessionLogger extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_workspacesweb_session_logger',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -429,11 +429,11 @@ export function ccSessionLoggerTagPropertyToHclTerraform(struct?: CcSessionLogge
 export namespace CcSessionLogger {
 export interface EventFilterProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_session_logger#all CcSessionLogger#all}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspacesweb_session_logger#all CcSessionLogger#all}
     */
     readonly all?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_session_logger#include CcSessionLogger#include}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspacesweb_session_logger#include CcSessionLogger#include}
     */
     readonly include?: string[];
 }
@@ -519,23 +519,23 @@ export class EventFilterPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface S3LogConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_session_logger#bucket CcSessionLogger#bucket}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspacesweb_session_logger#bucket CcSessionLogger#bucket}
     */
     readonly bucket?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_session_logger#bucket_owner CcSessionLogger#bucket_owner}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspacesweb_session_logger#bucket_owner CcSessionLogger#bucket_owner}
     */
     readonly bucketOwner?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_session_logger#folder_structure CcSessionLogger#folder_structure}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspacesweb_session_logger#folder_structure CcSessionLogger#folder_structure}
     */
     readonly folderStructure?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_session_logger#key_prefix CcSessionLogger#key_prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspacesweb_session_logger#key_prefix CcSessionLogger#key_prefix}
     */
     readonly keyPrefix?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_session_logger#log_file_format CcSessionLogger#log_file_format}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspacesweb_session_logger#log_file_format CcSessionLogger#log_file_format}
     */
     readonly logFileFormat?: string;
 }
@@ -687,7 +687,7 @@ export class S3LogConfigurationPropertyOutputReference extends cdktn.ComplexObje
 }
 export interface LogConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_session_logger#s3 CcSessionLogger#s3}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspacesweb_session_logger#s3 CcSessionLogger#s3}
     */
     readonly s3?: S3LogConfigurationProperty;
 }
@@ -751,11 +751,11 @@ export class LogConfigurationPropertyOutputReference extends cdktn.ComplexObject
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_session_logger#key CcSessionLogger#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspacesweb_session_logger#key CcSessionLogger#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_session_logger#value CcSessionLogger#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspacesweb_session_logger#value CcSessionLogger#value}
     */
     readonly value?: string;
 }

@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53resolver_resolver_endpoint
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53resolver_resolver_endpoint
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -12,85 +12,85 @@ export interface CcResolverEndpointProps extends cdktn.TerraformMetaArguments {
     * - OUTBOUND: allows DNS queries from your VPC to your network 
     * - INBOUND_DELEGATION: allows DNS queries to your VPC from your network with authoritative answers from private hosted zones
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53resolver_resolver_endpoint#direction CcResolverEndpoint#direction}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53resolver_resolver_endpoint#direction CcResolverEndpoint#direction}
     */
     readonly direction: string;
     /**
     * Specifies whether DNS64 is enabled for the Inbound Resolver Endpoint. When set to true, if a DNS AAAA query is made for a domain that has only an A (IPv4) record, the resolver automatically synthesizes an AAAA (IPv6) response by embedding the IPv4 address into the well-known prefix 64:ff9b::/96. Default is false.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53resolver_resolver_endpoint#dns_64_enabled CcResolverEndpoint#dns_64_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53resolver_resolver_endpoint#dns_64_enabled CcResolverEndpoint#dns_64_enabled}
     */
     readonly dns64Enabled?: boolean | cdktn.IResolvable;
     /**
     * The subnets and IP addresses in your VPC that DNS queries originate from (for outbound endpoints) or that you forward DNS queries to (for inbound endpoints). The subnet ID uniquely identifies a VPC.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53resolver_resolver_endpoint#ip_addresses CcResolverEndpoint#ip_addresses}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53resolver_resolver_endpoint#ip_addresses CcResolverEndpoint#ip_addresses}
     */
     readonly ipAddresses: CcResolverEndpoint.IpAddressRequestProperty[] | cdktn.IResolvable;
     /**
     * Specifies whether IPv6 Internet Gateway access is enabled through the Outbound Resolver Endpoint. When set to true, this property allows your Endpoint ENIs to reach public IPv6 target nameservers through an internet gateway. Default is false.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53resolver_resolver_endpoint#ipv_6_internet_access_enabled CcResolverEndpoint#ipv_6_internet_access_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53resolver_resolver_endpoint#ipv_6_internet_access_enabled CcResolverEndpoint#ipv_6_internet_access_enabled}
     */
     readonly ipv6InternetAccessEnabled?: boolean | cdktn.IResolvable;
     /**
     * A friendly name that lets you easily find a configuration in the Resolver dashboard in the Route 53 console.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53resolver_resolver_endpoint#name CcResolverEndpoint#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53resolver_resolver_endpoint#name CcResolverEndpoint#name}
     */
     readonly name?: string;
     /**
     * The ARN (Amazon Resource Name) for the Outpost.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53resolver_resolver_endpoint#outpost_arn CcResolverEndpoint#outpost_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53resolver_resolver_endpoint#outpost_arn CcResolverEndpoint#outpost_arn}
     */
     readonly outpostArn?: string;
     /**
     * The Amazon EC2 instance type.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53resolver_resolver_endpoint#preferred_instance_type CcResolverEndpoint#preferred_instance_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53resolver_resolver_endpoint#preferred_instance_type CcResolverEndpoint#preferred_instance_type}
     */
     readonly preferredInstanceType?: string;
     /**
     * Protocols used for the endpoint. DoH-FIPS is applicable for inbound endpoints only.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53resolver_resolver_endpoint#protocols CcResolverEndpoint#protocols}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53resolver_resolver_endpoint#protocols CcResolverEndpoint#protocols}
     */
     readonly protocols?: string[];
     /**
     * The Resolver endpoint IP address type.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53resolver_resolver_endpoint#resolver_endpoint_type CcResolverEndpoint#resolver_endpoint_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53resolver_resolver_endpoint#resolver_endpoint_type CcResolverEndpoint#resolver_endpoint_type}
     */
     readonly resolverEndpointType?: string;
     /**
     * Specifies whether RNI enhanced metrics are enabled for the Resolver Endpoints. When set to true, one-minute granular metrics are published in CloudWatch for each RNI associated with this endpoint. When set to false, metrics are not published. Default is false.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53resolver_resolver_endpoint#rni_enhanced_metrics_enabled CcResolverEndpoint#rni_enhanced_metrics_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53resolver_resolver_endpoint#rni_enhanced_metrics_enabled CcResolverEndpoint#rni_enhanced_metrics_enabled}
     */
     readonly rniEnhancedMetricsEnabled?: boolean | cdktn.IResolvable;
     /**
     * The ID of one or more security groups that control access to this VPC. The security group must include one or more inbound rules (for inbound endpoints) or outbound rules (for outbound endpoints). Inbound and outbound rules must allow TCP and UDP access. For inbound access, open port 53. For outbound access, open the port that you're using for DNS queries on your network.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53resolver_resolver_endpoint#security_group_ids CcResolverEndpoint#security_group_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53resolver_resolver_endpoint#security_group_ids CcResolverEndpoint#security_group_ids}
     */
     readonly securityGroupIds: string[];
     /**
     * An array of key-value pairs to apply to this resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53resolver_resolver_endpoint#tags CcResolverEndpoint#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53resolver_resolver_endpoint#tags CcResolverEndpoint#tags}
     */
     readonly tags?: CcResolverEndpoint.TagProperty[] | cdktn.IResolvable;
     /**
     * Specifies whether target name server metrics are enabled for the Outbound Resolver Endpoint. When set to true, one-minute granular metrics are published in CloudWatch for each target name server associated with this endpoint. When set to false, metrics are not published. Default is false.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53resolver_resolver_endpoint#target_name_server_metrics_enabled CcResolverEndpoint#target_name_server_metrics_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53resolver_resolver_endpoint#target_name_server_metrics_enabled CcResolverEndpoint#target_name_server_metrics_enabled}
     */
     readonly targetNameServerMetricsEnabled?: boolean | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53resolver_resolver_endpoint awscc_route53resolver_resolver_endpoint}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53resolver_resolver_endpoint awscc_route53resolver_resolver_endpoint}
 */
 export class CcResolverEndpoint extends cdktn.TerraformResource {
 
@@ -106,7 +106,7 @@ export class CcResolverEndpoint extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcResolverEndpoint resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcResolverEndpoint to import
-    * @param importFromId The id of the existing CcResolverEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53resolver_resolver_endpoint#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcResolverEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53resolver_resolver_endpoint#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcResolverEndpoint to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -118,7 +118,7 @@ export class CcResolverEndpoint extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53resolver_resolver_endpoint awscc_route53resolver_resolver_endpoint} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53resolver_resolver_endpoint awscc_route53resolver_resolver_endpoint} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -129,7 +129,7 @@ export class CcResolverEndpoint extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_route53resolver_resolver_endpoint',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -577,19 +577,19 @@ export interface IpAddressRequestProperty {
     /**
     * The IPv4 address that you want to use for DNS queries.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53resolver_resolver_endpoint#ip CcResolverEndpoint#ip}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53resolver_resolver_endpoint#ip CcResolverEndpoint#ip}
     */
     readonly ip?: string;
     /**
     * The IPv6 address that you want to use for DNS queries.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53resolver_resolver_endpoint#ipv_6 CcResolverEndpoint#ipv_6}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53resolver_resolver_endpoint#ipv_6 CcResolverEndpoint#ipv_6}
     */
     readonly ipv6?: string;
     /**
     * The ID of the subnet that contains the IP address.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53resolver_resolver_endpoint#subnet_id CcResolverEndpoint#subnet_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53resolver_resolver_endpoint#subnet_id CcResolverEndpoint#subnet_id}
     */
     readonly subnetId: string;
 }
@@ -718,13 +718,13 @@ export interface TagProperty {
     /**
     * The name for the tag. For example, if you want to associate Resolver resources with the account IDs of your customers for billing purposes, the value of Key might be account-id.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53resolver_resolver_endpoint#key CcResolverEndpoint#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53resolver_resolver_endpoint#key CcResolverEndpoint#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. For example, if Key is account-id, then Value might be the ID of the customer account that you're creating the resource for.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53resolver_resolver_endpoint#value CcResolverEndpoint#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53resolver_resolver_endpoint#value CcResolverEndpoint#value}
     */
     readonly value?: string;
 }

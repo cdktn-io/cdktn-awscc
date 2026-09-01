@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_app_image_config
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_app_image_config
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,37 +9,37 @@ export interface CcAppImageConfigProps extends cdktn.TerraformMetaArguments {
     /**
     * The Name of the AppImageConfig.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_app_image_config#app_image_config_name CcAppImageConfig#app_image_config_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_app_image_config#app_image_config_name CcAppImageConfig#app_image_config_name}
     */
     readonly appImageConfigName: string;
     /**
     * The CodeEditorAppImageConfig.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_app_image_config#code_editor_app_image_config CcAppImageConfig#code_editor_app_image_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_app_image_config#code_editor_app_image_config CcAppImageConfig#code_editor_app_image_config}
     */
     readonly codeEditorAppImageConfig?: CcAppImageConfig.CodeEditorAppImageConfigProperty;
     /**
     * The JupyterLabAppImageConfig.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_app_image_config#jupyter_lab_app_image_config CcAppImageConfig#jupyter_lab_app_image_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_app_image_config#jupyter_lab_app_image_config CcAppImageConfig#jupyter_lab_app_image_config}
     */
     readonly jupyterLabAppImageConfig?: CcAppImageConfig.JupyterLabAppImageConfigProperty;
     /**
     * The KernelGatewayImageConfig.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_app_image_config#kernel_gateway_image_config CcAppImageConfig#kernel_gateway_image_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_app_image_config#kernel_gateway_image_config CcAppImageConfig#kernel_gateway_image_config}
     */
     readonly kernelGatewayImageConfig?: CcAppImageConfig.KernelGatewayImageConfigProperty;
     /**
     * A list of tags to apply to the AppImageConfig.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_app_image_config#tags CcAppImageConfig#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_app_image_config#tags CcAppImageConfig#tags}
     */
     readonly tags?: CcAppImageConfig.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_app_image_config awscc_sagemaker_app_image_config}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_app_image_config awscc_sagemaker_app_image_config}
 */
 export class CcAppImageConfig extends cdktn.TerraformResource {
 
@@ -55,7 +55,7 @@ export class CcAppImageConfig extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcAppImageConfig resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcAppImageConfig to import
-    * @param importFromId The id of the existing CcAppImageConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_app_image_config#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcAppImageConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_app_image_config#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcAppImageConfig to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -67,7 +67,7 @@ export class CcAppImageConfig extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_app_image_config awscc_sagemaker_app_image_config} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_app_image_config awscc_sagemaker_app_image_config} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -78,7 +78,7 @@ export class CcAppImageConfig extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_sagemaker_app_image_config',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -619,11 +619,11 @@ export function ccAppImageConfigTagPropertyToHclTerraform(struct?: CcAppImageCon
 export namespace CcAppImageConfig {
 export interface CustomImageContainerEnvironmentVariableProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_app_image_config#key CcAppImageConfig#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_app_image_config#key CcAppImageConfig#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_app_image_config#value CcAppImageConfig#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_app_image_config#value CcAppImageConfig#value}
     */
     readonly value?: string;
 }
@@ -733,19 +733,19 @@ export interface ContainerConfigProperty {
     /**
     * A list of arguments to apply to the container.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_app_image_config#container_arguments CcAppImageConfig#container_arguments}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_app_image_config#container_arguments CcAppImageConfig#container_arguments}
     */
     readonly containerArguments?: string[];
     /**
     * The custom entry point to use on container.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_app_image_config#container_entrypoint CcAppImageConfig#container_entrypoint}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_app_image_config#container_entrypoint CcAppImageConfig#container_entrypoint}
     */
     readonly containerEntrypoint?: string[];
     /**
     * A list of variables to apply to the custom container.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_app_image_config#container_environment_variables CcAppImageConfig#container_environment_variables}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_app_image_config#container_environment_variables CcAppImageConfig#container_environment_variables}
     */
     readonly containerEnvironmentVariables?: CustomImageContainerEnvironmentVariableProperty[] | cdktn.IResolvable;
 }
@@ -855,7 +855,7 @@ export interface CodeEditorAppImageConfigProperty {
     /**
     * The container configuration for a SageMaker image.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_app_image_config#container_config CcAppImageConfig#container_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_app_image_config#container_config CcAppImageConfig#container_config}
     */
     readonly containerConfig?: ContainerConfigProperty;
 }
@@ -919,11 +919,11 @@ export class CodeEditorAppImageConfigPropertyOutputReference extends cdktn.Compl
 }
 export interface ContainerEnvironmentVariablesProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_app_image_config#key CcAppImageConfig#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_app_image_config#key CcAppImageConfig#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_app_image_config#value CcAppImageConfig#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_app_image_config#value CcAppImageConfig#value}
     */
     readonly value?: string;
 }
@@ -1033,19 +1033,19 @@ export interface JupyterLabAppImageConfigContainerConfigProperty {
     /**
     * A list of arguments to apply to the container.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_app_image_config#container_arguments CcAppImageConfig#container_arguments}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_app_image_config#container_arguments CcAppImageConfig#container_arguments}
     */
     readonly containerArguments?: string[];
     /**
     * The custom entry point to use on container.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_app_image_config#container_entrypoint CcAppImageConfig#container_entrypoint}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_app_image_config#container_entrypoint CcAppImageConfig#container_entrypoint}
     */
     readonly containerEntrypoint?: string[];
     /**
     * A list of variables to apply to the custom container.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_app_image_config#container_environment_variables CcAppImageConfig#container_environment_variables}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_app_image_config#container_environment_variables CcAppImageConfig#container_environment_variables}
     */
     readonly containerEnvironmentVariables?: ContainerEnvironmentVariablesProperty[] | cdktn.IResolvable;
 }
@@ -1155,7 +1155,7 @@ export interface JupyterLabAppImageConfigProperty {
     /**
     * The container configuration for a SageMaker image.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_app_image_config#container_config CcAppImageConfig#container_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_app_image_config#container_config CcAppImageConfig#container_config}
     */
     readonly containerConfig?: JupyterLabAppImageConfigContainerConfigProperty;
 }
@@ -1221,19 +1221,19 @@ export interface FileSystemConfigProperty {
     /**
     * The default POSIX group ID (GID). If not specified, defaults to 100.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_app_image_config#default_gid CcAppImageConfig#default_gid}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_app_image_config#default_gid CcAppImageConfig#default_gid}
     */
     readonly defaultGid?: number;
     /**
     * The default POSIX user ID (UID). If not specified, defaults to 1000.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_app_image_config#default_uid CcAppImageConfig#default_uid}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_app_image_config#default_uid CcAppImageConfig#default_uid}
     */
     readonly defaultUid?: number;
     /**
     * The path within the image to mount the user's EFS home directory. The directory should be empty. If not specified, defaults to /home/sagemaker-user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_app_image_config#mount_path CcAppImageConfig#mount_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_app_image_config#mount_path CcAppImageConfig#mount_path}
     */
     readonly mountPath?: string;
 }
@@ -1343,13 +1343,13 @@ export interface KernelSpecProperty {
     /**
     * The display name of the kernel.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_app_image_config#display_name CcAppImageConfig#display_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_app_image_config#display_name CcAppImageConfig#display_name}
     */
     readonly displayName?: string;
     /**
     * The name of the kernel.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_app_image_config#name CcAppImageConfig#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_app_image_config#name CcAppImageConfig#name}
     */
     readonly name?: string;
 }
@@ -1459,13 +1459,13 @@ export interface KernelGatewayImageConfigProperty {
     /**
     * The Amazon Elastic File System (EFS) storage configuration for a SageMaker image.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_app_image_config#file_system_config CcAppImageConfig#file_system_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_app_image_config#file_system_config CcAppImageConfig#file_system_config}
     */
     readonly fileSystemConfig?: FileSystemConfigProperty;
     /**
     * The specification of the Jupyter kernels in the image.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_app_image_config#kernel_specs CcAppImageConfig#kernel_specs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_app_image_config#kernel_specs CcAppImageConfig#kernel_specs}
     */
     readonly kernelSpecs?: KernelSpecProperty[] | cdktn.IResolvable;
 }
@@ -1551,11 +1551,11 @@ export class KernelGatewayImageConfigPropertyOutputReference extends cdktn.Compl
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_app_image_config#key CcAppImageConfig#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_app_image_config#key CcAppImageConfig#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_app_image_config#value CcAppImageConfig#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_app_image_config#value CcAppImageConfig#value}
     */
     readonly value?: string;
 }

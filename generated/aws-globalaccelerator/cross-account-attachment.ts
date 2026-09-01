@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/globalaccelerator_cross_account_attachment
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/globalaccelerator_cross_account_attachment
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,29 +9,29 @@ export interface CcCrossAccountAttachmentProps extends cdktn.TerraformMetaArgume
     /**
     * The Friendly identifier of the attachment.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/globalaccelerator_cross_account_attachment#name CcCrossAccountAttachment#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/globalaccelerator_cross_account_attachment#name CcCrossAccountAttachment#name}
     */
     readonly name: string;
     /**
     * Principals to share the resources with.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/globalaccelerator_cross_account_attachment#principals CcCrossAccountAttachment#principals}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/globalaccelerator_cross_account_attachment#principals CcCrossAccountAttachment#principals}
     */
     readonly principals?: string[];
     /**
     * Resources shared using the attachment.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/globalaccelerator_cross_account_attachment#resources CcCrossAccountAttachment#resources}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/globalaccelerator_cross_account_attachment#resources CcCrossAccountAttachment#resources}
     */
     readonly resources?: CcCrossAccountAttachment.ResourceProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/globalaccelerator_cross_account_attachment#tags CcCrossAccountAttachment#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/globalaccelerator_cross_account_attachment#tags CcCrossAccountAttachment#tags}
     */
     readonly tags?: CcCrossAccountAttachment.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/globalaccelerator_cross_account_attachment awscc_globalaccelerator_cross_account_attachment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/globalaccelerator_cross_account_attachment awscc_globalaccelerator_cross_account_attachment}
 */
 export class CcCrossAccountAttachment extends cdktn.TerraformResource {
 
@@ -47,7 +47,7 @@ export class CcCrossAccountAttachment extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcCrossAccountAttachment resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcCrossAccountAttachment to import
-    * @param importFromId The id of the existing CcCrossAccountAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/globalaccelerator_cross_account_attachment#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcCrossAccountAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/globalaccelerator_cross_account_attachment#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcCrossAccountAttachment to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -59,7 +59,7 @@ export class CcCrossAccountAttachment extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/globalaccelerator_cross_account_attachment awscc_globalaccelerator_cross_account_attachment} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/globalaccelerator_cross_account_attachment awscc_globalaccelerator_cross_account_attachment} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -70,7 +70,7 @@ export class CcCrossAccountAttachment extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_globalaccelerator_cross_account_attachment',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -291,15 +291,15 @@ export function ccCrossAccountAttachmentTagPropertyToHclTerraform(struct?: CcCro
 export namespace CcCrossAccountAttachment {
 export interface ResourceProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/globalaccelerator_cross_account_attachment#cidr CcCrossAccountAttachment#cidr}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/globalaccelerator_cross_account_attachment#cidr CcCrossAccountAttachment#cidr}
     */
     readonly cidr?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/globalaccelerator_cross_account_attachment#endpoint_id CcCrossAccountAttachment#endpoint_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/globalaccelerator_cross_account_attachment#endpoint_id CcCrossAccountAttachment#endpoint_id}
     */
     readonly endpointId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/globalaccelerator_cross_account_attachment#region CcCrossAccountAttachment#region}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/globalaccelerator_cross_account_attachment#region CcCrossAccountAttachment#region}
     */
     readonly region?: string;
 }
@@ -431,13 +431,13 @@ export interface TagProperty {
     /**
     * Key of the tag. Value can be 1 to 127 characters.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/globalaccelerator_cross_account_attachment#key CcCrossAccountAttachment#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/globalaccelerator_cross_account_attachment#key CcCrossAccountAttachment#key}
     */
     readonly key?: string;
     /**
     * Value for the tag. Value can be 1 to 255 characters.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/globalaccelerator_cross_account_attachment#value CcCrossAccountAttachment#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/globalaccelerator_cross_account_attachment#value CcCrossAccountAttachment#value}
     */
     readonly value?: string;
 }

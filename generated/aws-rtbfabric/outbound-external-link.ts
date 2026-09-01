@@ -1,37 +1,37 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_outbound_external_link
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_outbound_external_link
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcOutboundExternalLinkProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_outbound_external_link#gateway_id CcOutboundExternalLink#gateway_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_outbound_external_link#gateway_id CcOutboundExternalLink#gateway_id}
     */
     readonly gatewayId: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_outbound_external_link#link_attributes CcOutboundExternalLink#link_attributes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_outbound_external_link#link_attributes CcOutboundExternalLink#link_attributes}
     */
     readonly linkAttributes?: CcOutboundExternalLink.LinkAttributesProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_outbound_external_link#link_log_settings CcOutboundExternalLink#link_log_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_outbound_external_link#link_log_settings CcOutboundExternalLink#link_log_settings}
     */
     readonly linkLogSettings: CcOutboundExternalLink.LinkLogSettingsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_outbound_external_link#public_endpoint CcOutboundExternalLink#public_endpoint}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_outbound_external_link#public_endpoint CcOutboundExternalLink#public_endpoint}
     */
     readonly publicEndpoint: string;
     /**
     * Tags to assign to the Link.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_outbound_external_link#tags CcOutboundExternalLink#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_outbound_external_link#tags CcOutboundExternalLink#tags}
     */
     readonly tags?: CcOutboundExternalLink.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_outbound_external_link awscc_rtbfabric_outbound_external_link}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_outbound_external_link awscc_rtbfabric_outbound_external_link}
 */
 export class CcOutboundExternalLink extends cdktn.TerraformResource {
 
@@ -47,7 +47,7 @@ export class CcOutboundExternalLink extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcOutboundExternalLink resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcOutboundExternalLink to import
-    * @param importFromId The id of the existing CcOutboundExternalLink that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_outbound_external_link#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcOutboundExternalLink that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_outbound_external_link#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcOutboundExternalLink to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -59,7 +59,7 @@ export class CcOutboundExternalLink extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_outbound_external_link awscc_rtbfabric_outbound_external_link} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_outbound_external_link awscc_rtbfabric_outbound_external_link} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -70,7 +70,7 @@ export class CcOutboundExternalLink extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_rtbfabric_outbound_external_link',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -470,19 +470,19 @@ export function ccOutboundExternalLinkTagPropertyToHclTerraform(struct?: CcOutbo
 export namespace CcOutboundExternalLink {
 export interface ResponderErrorMaskingForHttpCodeProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_outbound_external_link#action CcOutboundExternalLink#action}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_outbound_external_link#action CcOutboundExternalLink#action}
     */
     readonly action?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_outbound_external_link#http_code CcOutboundExternalLink#http_code}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_outbound_external_link#http_code CcOutboundExternalLink#http_code}
     */
     readonly httpCode?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_outbound_external_link#logging_types CcOutboundExternalLink#logging_types}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_outbound_external_link#logging_types CcOutboundExternalLink#logging_types}
     */
     readonly loggingTypes?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_outbound_external_link#response_logging_percentage CcOutboundExternalLink#response_logging_percentage}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_outbound_external_link#response_logging_percentage CcOutboundExternalLink#response_logging_percentage}
     */
     readonly responseLoggingPercentage?: number;
 }
@@ -634,11 +634,11 @@ export class ResponderErrorMaskingForHttpCodePropertyList extends cdktn.ComplexL
 }
 export interface LinkAttributesProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_outbound_external_link#customer_provided_id CcOutboundExternalLink#customer_provided_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_outbound_external_link#customer_provided_id CcOutboundExternalLink#customer_provided_id}
     */
     readonly customerProvidedId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_outbound_external_link#responder_error_masking CcOutboundExternalLink#responder_error_masking}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_outbound_external_link#responder_error_masking CcOutboundExternalLink#responder_error_masking}
     */
     readonly responderErrorMasking?: ResponderErrorMaskingForHttpCodeProperty[] | cdktn.IResolvable;
 }
@@ -724,11 +724,11 @@ export class LinkAttributesPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface LinkApplicationLogSamplingProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_outbound_external_link#error_log CcOutboundExternalLink#error_log}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_outbound_external_link#error_log CcOutboundExternalLink#error_log}
     */
     readonly errorLog: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_outbound_external_link#filter_log CcOutboundExternalLink#filter_log}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_outbound_external_link#filter_log CcOutboundExternalLink#filter_log}
     */
     readonly filterLog: number;
 }
@@ -808,7 +808,7 @@ export class LinkApplicationLogSamplingPropertyOutputReference extends cdktn.Com
 }
 export interface ApplicationLogsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_outbound_external_link#link_application_log_sampling CcOutboundExternalLink#link_application_log_sampling}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_outbound_external_link#link_application_log_sampling CcOutboundExternalLink#link_application_log_sampling}
     */
     readonly linkApplicationLogSampling: LinkApplicationLogSamplingProperty;
 }
@@ -869,7 +869,7 @@ export class ApplicationLogsPropertyOutputReference extends cdktn.ComplexObject 
 }
 export interface LinkLogSettingsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_outbound_external_link#application_logs CcOutboundExternalLink#application_logs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_outbound_external_link#application_logs CcOutboundExternalLink#application_logs}
     */
     readonly applicationLogs: ApplicationLogsProperty;
 }
@@ -932,13 +932,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_outbound_external_link#key CcOutboundExternalLink#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_outbound_external_link#key CcOutboundExternalLink#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 0 to 256 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_outbound_external_link#value CcOutboundExternalLink#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_outbound_external_link#value CcOutboundExternalLink#value}
     */
     readonly value?: string;
 }
